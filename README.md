@@ -10,7 +10,6 @@ See also:
 * https://vipps.no/developer
 * Products, personal: http://vipps.no/privat
 * Products, business: http://vipps.no/bedrift
-* High-level overview of the APIs: https://github.io/vippsas
+* High-level overview of the APIs: http://vippsas.github.io
 
 The Vipps Integration team
-integration@vipps.no
