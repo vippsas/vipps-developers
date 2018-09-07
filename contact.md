@@ -1,11 +1,11 @@
-# How to Contact Vipps integration
+# How to contact Vipps Integration
 
 Hello! 👋 We love email!
 
 ## We help with technical issues
 
 First of all: Vipps Integration helps with _technical_ issues, such as
-technical questions about using our APIs. For general inquiries, please use
+questions about using our APIs. For general inquiries, please use
 the [Contact us](https://www.vipps.no/privat/kontakt-oss) form on vipps.no,
 and if you have suggestions for improvements to Vipps products,
 please use [this form](https://www.vipps.no/tips-og-tilbakemeldinger).
