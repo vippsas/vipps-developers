@@ -45,6 +45,9 @@ sent to all email addresses in the original email.
 If you want to send additional information about the same issue,
 please reply to the email, without changing the `Subject` line.
 
+Please remove previous communication when replying to an email, do _not_ quote
+all the other messages. We already have them.
+
 # Automatic reply
 
 You will get an auto-reply from us with an issue number like `VSD-1234` in the `Subject` line.
