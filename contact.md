@@ -1,14 +1,16 @@
 # How to Contact Vipps integration
 
-Hello! 👋
+Hello! 👋 We love email!
 
-# We love email
+## We help with technical issues
 
 First of all: Vipps Integration helps with _technical_ issues, such as
 problems with integration with our APIs. For general inquiries, please use
 [the "Contact us" form on vipps.no](https://www.vipps.no/privat/kontakt-oss).
 If you have suggestions for improvements to Vipps products,
 please use [this form](https://www.vipps.no/tips-og-tilbakemeldinger).
+
+# Email TODO list
 
 So, for *technical questions*: Send an email to integration@vipps.no with all relevant information:
 
@@ -29,17 +31,16 @@ So, for *technical questions*: Send an email to integration@vipps.no with all re
 * Screenshots, if applicable
 * Any other information that may be relevant
 
-# Keep your colleagues up to date
+## Keep your colleagues up to date
 
 If you want colleagues to be included in all communication regarding this issue,
 add them in the `To:` or `CC:` field of the email. Any updates to the issue will be
 sent to all email addresses in the original email.
 
-# Response time
+## Adding additional information
 
-We will help as quickly as possible, but due to large variations in the number
-of requests and the varying complexity of resolving them, we can not guarantee response times.
-We normally reply the same day, or the next day. 
+If you want to send additional information about the same issue,
+please reply to the email, without changing the `Subject` line.
 
 # Automatic reply
 
@@ -49,10 +50,11 @@ about this issue in our systems.
 
 The auto-reply is sent from a real address, which you can reply to ✌️
 
-# Adding additional information
+# Response time
 
-If you want to send additional information about the same issue,
-please reply to the email, without changing the `Subject` line.
+We will help as quickly as possible, but due to large variations in the number
+of requests and the varying complexity of resolving them, we can not guarantee response times.
+We normally reply the same day, or the next day.
 
 # More than one problem, or a new one?
 
