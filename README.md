@@ -7,9 +7,9 @@ This repository contains various resources for Vipps developers, including:
 * [How to contact us](contact.md) in the Vipps Integration team
 
 See also:
-* https://vipps.no/developer
+* Developer overview: https://vipps.no/developer
+* High-level overview of the APIs: http://vippsas.github.io
 * Products, personal: http://vipps.no/privat
 * Products, business: http://vipps.no/bedrift
-* High-level overview of the APIs: http://vippsas.github.io
 
 The Vipps Integration team
