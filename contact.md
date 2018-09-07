@@ -31,6 +31,9 @@ So, for *technical questions*: Send an email to integration@vipps.no with all re
 * Screenshots, if applicable
 * Any other information that may be relevant
 
+[Click here](mailto:integration@vipps.no?subject=Self-explanatory%20subject%20line%20goes%20here&body=Your%20contact%20information%3A%0A-%20Name%3A%0A-%20Phone%20number%0A%0ACompany%20details%0A-%20Company%20name%3A%0A-%20Organization%20number%3A%0A-%20Merchant%20Serial%20Number%3A%0A%0AWhich%20Vipps%20product%20this%20is%20about%3A%0A%0AComplete%20%60request%60%20and%20%60response%60%20details%3A%0A%0AFor%20app%20issues%3A%20Specify%20iOS%20or%20Android%2C%20and%20app%20version%3A%0A%0AAttache%20screenshots%2C%20if%20applicable.%0A%0AAny%20other%20information%20that%20may%20be%20relevant%3A)
+for a draft email to integration@vipps.no.
+
 ## Keep your colleagues up to date
 
 If you want colleagues to be included in all communication regarding this issue,
