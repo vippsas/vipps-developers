@@ -23,7 +23,7 @@ So, for _*technical questions*_: Send an email to integration@vipps.no with all 
   - Organization number (check https://brreg.no)
   - Merchant Serial Number (MSN, found in the [Developer Portal](vipps-developer-portal-getting-started.md))
 * Which [Vipps product](https://www.vipps.no/bedrift) this is about
-* For eCommerce issues: Which eCommerce solution nyou are using (WooCommerce, Magento, etc)
+* For eCommerce issues: Which eCommerce solution you are using, and which version
   - For WooCommerce: See the [support forum](https://wordpress.org/support/plugin/woo-vipps) and https://github.com/vippsas/vipps-woocommerce
   - For Magento: See https://github.com/vippsas/vipps-magento
 * For API issues: Complete `request` and `response` details ([curl](https://curl.haxx.se) is good)
