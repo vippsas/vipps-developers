@@ -6,26 +6,26 @@ Hello! 👋 We love email!
 
 First of all: Vipps Integration helps with _technical_ issues, such as
 technical questions about using our APIs. For general inquiries, please use
-[the "Contact us" form on vipps.no](https://www.vipps.no/privat/kontakt-oss),
+the [Contact us](https://www.vipps.no/privat/kontakt-oss) form on vipps.no,
 and if you have suggestions for improvements to Vipps products,
 please use [this form](https://www.vipps.no/tips-og-tilbakemeldinger).
 
 # What to include in the email
 
-So, for *technical questions*: Send an email to integration@vipps.no with all relevant information:
+So, for _*technical questions*_: Send an email to integration@vipps.no with all relevant information:
 
 * An email a self-explanatory `Subject` line ("`POST:/something` gives `HTTP 400` response")
 * Your contact information (if not in your email signature):
-⋅⋅* Name
-⋅⋅* Phone number
+  - Name
+  - Phone number
 * Company details
-⋅⋅* Company name
-⋅⋅* Organization number (check https://brreg.no)
-⋅⋅* Merchant Serial Number (MSN, found in the [Developer Portal](vipps-developer-portal-getting-started.md))
+  - Company name
+  - Organization number (check https://brreg.no)
+  - Merchant Serial Number (MSN, found in the [Developer Portal](vipps-developer-portal-getting-started.md))
 * Which [Vipps product](https://www.vipps.no/bedrift) this is about
 * For eCommerce issues: Which eCommerce solution nyou are using (WooCommerce, Magento, etc)
-⋅⋅* For WooCommerce: See the [support forum](https://wordpress.org/support/plugin/woo-vipps) and https://github.com/vippsas/vipps-woocommerce
-⋅⋅* For Magento: See https://github.com/vippsas/vipps-magento
+  - For WooCommerce: See the [support forum](https://wordpress.org/support/plugin/woo-vipps) and https://github.com/vippsas/vipps-woocommerce
+  - For Magento: See https://github.com/vippsas/vipps-magento
 * For API issues: Complete `request` and `response` details (curl is good)
 * For app issues: Specify iOS or Android, and app version
 * Screenshots, if applicable
