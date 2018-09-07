@@ -5,12 +5,12 @@ Hello! 👋 We love email!
 ## We help with technical issues
 
 First of all: Vipps Integration helps with _technical_ issues, such as
-problems with integration with our APIs. For general inquiries, please use
-[the "Contact us" form on vipps.no](https://www.vipps.no/privat/kontakt-oss).
-If you have suggestions for improvements to Vipps products,
+technical questions about using our APIs. For general inquiries, please use
+[the "Contact us" form on vipps.no](https://www.vipps.no/privat/kontakt-oss),
+and if you have suggestions for improvements to Vipps products,
 please use [this form](https://www.vipps.no/tips-og-tilbakemeldinger).
 
-# Email TODO list
+# What to include in the email
 
 So, for *technical questions*: Send an email to integration@vipps.no with all relevant information:
 
@@ -32,7 +32,7 @@ So, for *technical questions*: Send an email to integration@vipps.no with all re
 * Any other information that may be relevant
 
 [Click here](mailto:integration@vipps.no?subject=Self-explanatory%20subject%20line%20goes%20here&body=Your%20contact%20information%3A%0A-%20Name%3A%0A-%20Phone%20number%0A%0ACompany%20details%0A-%20Company%20name%3A%0A-%20Organization%20number%3A%0A-%20Merchant%20Serial%20Number%3A%0A%0AWhich%20Vipps%20product%20this%20is%20about%3A%0A%0AComplete%20%60request%60%20and%20%60response%60%20details%3A%0A%0AFor%20app%20issues%3A%20Specify%20iOS%20or%20Android%2C%20and%20app%20version%3A%0A%0AAttache%20screenshots%2C%20if%20applicable.%0A%0AAny%20other%20information%20that%20may%20be%20relevant%3A)
-for a draft email to integration@vipps.no.
+for a draft email that includes placeholders for the above.
 
 ## Keep your colleagues up to date
 
@@ -58,6 +58,7 @@ The auto-reply is sent from a real address, which you can reply to ✌️
 We will help as quickly as possible, but due to large variations in the number
 of requests and the varying complexity of resolving them, we can not guarantee response times.
 We normally reply the same day, or the next day.
+And _sometimes_ also later than that - sorry.
 
 # More than one problem, or a new one?
 
