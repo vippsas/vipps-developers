@@ -10,9 +10,9 @@ problems with integration with our APIs. For general inquiries, please use
 If you have suggestions for improvements to Vipps products,
 please use [this form](https://www.vipps.no/tips-og-tilbakemeldinger).
 
-So, for *technical questions*: Send an email to integration@vipps.no with all relevant information included:
+So, for *technical questions*: Send an email to integration@vipps.no with all relevant information:
 
-* An email a self-explanatory `Subject` line
+* An email a self-explanatory `Subject` line ("`POST:/something` gives `HTTP 400` response")
 * Your contact information (if not in your email signature):
 ⋅⋅* Name
 ⋅⋅* Phone number
@@ -21,7 +21,7 @@ So, for *technical questions*: Send an email to integration@vipps.no with all re
 ⋅⋅* Organization number (check https://brreg.no)
 ⋅⋅* Merchant Serial Number (MSN, found in the [Developer Portal](vipps-developer-portal-getting-started.md))
 * Which [Vipps product](https://www.vipps.no/bedrift) this is about
-* For eCommerce issues: Which eCommerce solution (WooCommerce, Magento, etc)
+* For eCommerce issues: Which eCommerce solution nyou are using (WooCommerce, Magento, etc)
 ⋅⋅* For WooCommerce: See the [support forum](https://wordpress.org/support/plugin/woo-vipps) and https://github.com/vippsas/vipps-woocommerce
 ⋅⋅* For Magento: See https://github.com/vippsas/vipps-magento
 * For API issues: Complete `request` and `response` details (curl is good)
@@ -32,21 +32,22 @@ So, for *technical questions*: Send an email to integration@vipps.no with all re
 # Keep your colleagues up to date
 
 If you want colleagues to be included in all communication regarding this issue,
-add them in the `CC` field of the email. Any updates to the issue will be
+add them in the `To:` or `CC:` field of the email. Any updates to the issue will be
 sent to all email addresses in the original email.
 
 # Response time
 
 We will help as quickly as possible, but due to large variations in the number
-of requests and the varying complexity to resolve them, we can not guarantee response times.
-We normally reply the same day, or the next day.
+of requests and the varying complexity of resolving them, we can not guarantee response times.
+We normally reply the same day, or the next day. 
 
 # Automatic reply
 
-You will get an auto-reply from integration@support.vipps.no, with an issue number
-like `VSD-1234` in the `Subject` line.
+You will get an auto-reply from us with an issue number like `VSD-1234` in the `Subject` line.
 This is the unique number for this specific issue, and is used to connect all communication
 about this issue in our systems.
+
+The auto-reply is sent from a real address, which you can reply to ✌️
 
 # Adding additional information
 
@@ -55,5 +56,5 @@ please reply to the email, without changing the `Subject` line.
 
 # More than one problem, or a new one?
 
-Please send separate emails for each problem. Do _not_ send an email about a
-new problem by replying to an old issue.
+Please send separate emails for each problem. If you send an email about a
+new problem by replying to an old issue, it may delay our response.
