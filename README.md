@@ -1,7 +1,9 @@
-# Vipps API Common Files
+# Vipps Developers
 
-These files are common for all Vipps APIs on GitHub.
+This repository contains various resources for Vipps developers, including:
 
-Copy them to the API repo.  
+* Getting started with the Vipps Developer Portal
+* How to contribute to Vipps projects on GitHub
+* How to contact the Vipps Integration team
 
-See `git-api-fix.sh` for housekeeping help.
+See https://github.io/vippsas for a high-level overview of the APIs
