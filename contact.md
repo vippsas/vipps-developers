@@ -26,7 +26,7 @@ So, for _*technical questions*_: Send an email to integration@vipps.no with all 
 * For eCommerce issues: Which eCommerce solution nyou are using (WooCommerce, Magento, etc)
   - For WooCommerce: See the [support forum](https://wordpress.org/support/plugin/woo-vipps) and https://github.com/vippsas/vipps-woocommerce
   - For Magento: See https://github.com/vippsas/vipps-magento
-* For API issues: Complete `request` and `response` details (curl is good)
+* For API issues: Complete `request` and `response` details ([curl](https://curl.haxx.se) is good)
 * For app issues: Specify iOS or Android, and app version
 * Screenshots, if applicable
 * Any other information that may be relevant
