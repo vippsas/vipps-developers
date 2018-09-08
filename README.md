@@ -11,23 +11,16 @@ This repository contains various resources for Vipps developers, including:
 If you want to clone all the Vipps repos, this works for macOS:
 
 1. Install Homebrew
-
 [Homebrew](https://brew.sh): The missing package manager for macOS.
-
 ```
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
-
 1. Install jq
-
 [jq](https://stedolan.github.io/jq/) is a lightweight and flexible command-line JSON processor.
-
 ```
 brew install jq
 ```
-
 2. Run this command
-
 ```
 curl -s https://api.github.com/orgs/vippsas/repos | jq .[].git_url | xargs -n 1 git clone
 ```
