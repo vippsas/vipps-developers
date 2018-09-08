@@ -10,7 +10,7 @@ This repository contains various resources for Vipps developers, including:
 
 To clone all the Vipps repos, this works for macOS:
 
-1. Install [Homebrew](https://brew.sh): The missing package manager for macOS  
+1. Install [Homebrew](https://brew.sh), the missing package manager for macOS  
         ```Shell
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
         ```
@@ -25,6 +25,8 @@ curl -s https://api.github.com/orgs/vippsas/repos | jq .[].git_url | xargs -n 1 
 
 ## Pull all GitHub repos in the current directory
 
+Creating an alias like `gitall` for this command may be useful:
+
 ```
 find . -type d -depth 1 -exec git --git-dir={}/.git --work-tree=$PWD/{} pull origin master \;'
 ```
@@ -36,4 +38,6 @@ find . -type d -depth 1 -exec git --git-dir={}/.git --work-tree=$PWD/{} pull ori
 * Products, personal: http://vipps.no/privat
 * Products, business: http://vipps.no/bedrift
 
-The Vipps Integration team
+The Vipps Integration team  
+
+Get in touch: [How to contact us](contact.md)
