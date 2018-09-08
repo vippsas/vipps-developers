@@ -8,8 +8,8 @@ For more information about this product, please see
 is still the official documentation, but we are working on making the same
 information available in more developer friendly formats.
 
-See the Vipps Developers repository for
-a "getting started" guide,
+See the [Vipps Developers](https://github.com/vippsas/vipps-developers) repository for
+the [Getting started](https://github.com/vippsas/vipps-developers/blob/master/vipps-developer-portal-getting-started.md) guide,
 information about product activation,
 contact information,
 contribution guidelines,
