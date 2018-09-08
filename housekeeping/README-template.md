@@ -13,7 +13,6 @@ the [Getting started](https://github.com/vippsas/vipps-developers/blob/master/vi
 information about product activation,
 contact information,
 contribution guidelines,
-etc:
-https://github.com/vippsas/vipps-developers  
+etc.
 
 You can peruse the API docs at https://vippsas.github.io/vipps-NAME-api/
