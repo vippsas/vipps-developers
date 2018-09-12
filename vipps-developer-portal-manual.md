@@ -2,7 +2,7 @@
 
 _*Work in progress. See the PDF version for the official version: https://github.com/vippsas/vipps-developers*_
 
-See also: [Vipps Developer POrtal: Getting Started](vipps-developer-portal-getting-started.md).
+See also: [Vipps Developer Portal: Getting Started](vipps-developer-portal-getting-started.md).
 
 Document version: 0.1.
 
