@@ -2,6 +2,8 @@
 
 These are the steps after you have received in the onboarding email from Vipps. You should have received proper credentials with username on email and password on the admin-phonenumber. Use those credentials to log into Vipps Developer Portal in either test or production.
 
+For in-depth information about the Vipps Developer Portal, see the PDF manual: https://github.com/vippsas/vipps-developers
+
 # Step 0
 
 Make sure you have an active subscription to the relevant Vipps product(s): https://www.vipps.no/bedrift
