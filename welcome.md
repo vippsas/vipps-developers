@@ -8,25 +8,36 @@ If you do not find the information you need on this page, please [contact us](co
 
 This is the standard welcome email sent to new developers:
 
-_Hi <full name>
+Hi <full name>
 
-You have now been registered for Vipps developer portal. Use this link to access the portal: https://api-portal.vipps.no .
+You have now been registered for Vipps Developer Portal, where you can log in with:
+* Username: `yourname@apivipps.no`
+* Password: (Sent as SMS to your registered number)
 
-Portal login user name is: `yourname@apivipps.no` and default password is sent in your registered mobile number.
+To complete the registration:
 
-To complete the registration the following steps have to be completed:
+1. Click on the `Register Application` tab in navigation bar to navigate to the application registration page.
+2. Fill in all the required fields: `Application Name`, `Saleunit URL`, `Saleunit Sign on URL`
+3. After confirming the registration, you will see your `client_id` and `client_secret`.
 
-1. Click on the Register Application tab in navigation bar to navigate to the application registration page.
-2. Fill in all the required fields, Application Name, Saleunit URL, Saleunit Sign on URL
-3. After confirming the registration the Client ID and Client Secret are displayed, these values are needed in the integration.
-
-You may find a guide for Vipps Developer Portal at http://dev.vippsbedrift.no/files/User-manual-for-developer-portal.pdf
+For more information, please see the Vipps Developer Portal guide:
+https://github.com/vippsas/vipps-developers/blob/master/vipps-developer-portal-getting-started.md
 
 Best Regards,
-Vipps_
+Vipps
+
+# Developer resources
+
+* Developer Portal guide
+* etc
+
 
 # WooCommerce for Wordpress
 
-
+* Product page
+* Repo
 
 # Magento
+
+* Product page
+* Repo
