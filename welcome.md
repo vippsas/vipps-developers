@@ -1,19 +1,18 @@
 _*Work in progress!*_
 
-
 # Welcome, Vipps Developer!
 
-If you do not find the paymentInformation you need on this page, please [contact us](contact.md).
+If you do not find the information you need on this page, please [contact us](contact.md).
 
 # Welcome email
 
 This is the standard welcome email sent to new developers:
 
-Hi <full name>
+_Hi <full name>
 
 You have now been registered for Vipps developer portal. Use this link to access the portal: https://api-portal.vipps.no .
 
-Portal login user name is: nishaas@apivipps.no and default password is sent in your registered mobile number.
+Portal login user name is: `yourname@apivipps.no` and default password is sent in your registered mobile number.
 
 To complete the registration the following steps have to be completed:
 
@@ -24,9 +23,10 @@ To complete the registration the following steps have to be completed:
 You may find a guide for Vipps Developer Portal at http://dev.vippsbedrift.no/files/User-manual-for-developer-portal.pdf
 
 Best Regards,
-Vipps
+Vipps_
 
 # WooCommerce for Wordpress
+
 
 
 # Magento
