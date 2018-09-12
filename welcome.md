@@ -16,7 +16,7 @@ You have now been registered for Vipps Developer Portal, where you can log in wi
 
 To complete the registration:
 
-1. Click on the `Register Application` tab in navigation bar to navigate to the application registration page.
+1. Click on the `Register Application` tab to go to the application registration page.
 2. Fill in all the required fields: `Application Name`, `Saleunit URL`, `Saleunit Sign on URL`
 3. After confirming the registration, you will see your `client_id` and `client_secret`.
 
