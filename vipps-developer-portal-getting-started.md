@@ -86,4 +86,4 @@ The `Ocp-Apim-Subscription-Key` is right below the `Access Token` key. You have 
 
 The `MerchantSerialNumber` (MSN) is the number right next to the name of your Salesunit, `100848` in this example.
 
-Now you should have `Client_id`, `Client_secret`, `Access_token`, `Ocp-Apim-Subscription-Key` and `SerialMerchantNumber`, and you can proceed with the payment flow.
+Now you should have `Client_id`, `Client_secret`, `Access_token`, `Ocp-Apim-Subscription-Key` and `merchantSerialNumber`, and you can proceed with the payment flow.
