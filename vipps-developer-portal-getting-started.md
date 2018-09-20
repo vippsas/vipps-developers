@@ -76,14 +76,16 @@ Under the tab **"REGISTER APPLICATION"** it should say, marked in red:
 
 'All existing products have been subscribed'
 
+# Step 5
+
 Under the profile tab (the account name at the top right, "TOM KVAM" in this example) you will find your two last keys.
 
 ![Keys profile](images/keys_profile.PNG?raw=true "Title")
 
 You have the `Access Token` key on the top. You have to click "Show" on the right side to make the keys appear. And as marked in yellow, it's the `Primary key` you are after. If the key for some reason does not work, then you can hit "Regenerate", right next to "Show".
 
-The `Ocp-Apim-Subscription-Key` is right below the `Access Token` key. You have to click "Show" on the right side to make the keys appear. And as marked in yellow, it's the `Primary key` you are after. If the key for some reason does not work, then you can hit "Regenerate", right next to "show".
+The `Ocp-Apim-Subscription-Key` is right below the `Access Token` key. You have to click "Show" on the right side to make the keys appear. And as marked in yellow, you can use the `Primary key` or the `Secondary key`.
 
 The `MerchantSerialNumber` (MSN) is the number right next to the name of your Salesunit, `100848` in this example.
 
-Now you should have `Client_id`, `Client_secret`, `Access_token`, `Ocp-Apim-Subscription-Key` and `SerialMerchantNumber`, and you can proceed with the payment flow.
+Now you should have `Client_id`, `Client_secret`, `Access Token Subscription Key`, `Product Subscription Key` and `merchantSerialNumber`. It is important to note that while doing payments you will use the product subscription key and when getting the access token you will use the Access Token Subscription key.
