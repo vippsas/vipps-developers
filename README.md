@@ -27,9 +27,7 @@ curl -s https://api.github.com/orgs/vippsas/repos | jq .[].git_url | xargs -n 1 
 
 Creating an alias like `gitall` for this command may be useful:
 
-```
-find . -type d -depth 1 -exec git --git-dir={}/.git --work-tree=$PWD/{} pull origin master \;'
-```
+```find . -type d -depth 1 -exec git --git-dir={}/.git --work-tree=$PWD/{} pull origin master \;'```
 
 # Additional developer resources
 
