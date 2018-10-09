@@ -4,6 +4,10 @@ These are the steps after you have received in the onboarding email from Vipps. 
 
 For in-depth information about the Vipps Developer Portal, see the PDF manual: https://github.com/vippsas/vipps-developers
 
+_*Please note:*:_ We have recently updated the colors for the test and production environments,
+and the screenshots in the documentation have not yet been updated. The navigation and functionality
+is unchanged.
+
 # Step 0
 
 Make sure you have an active subscription to the relevant Vipps product(s): https://www.vipps.no/bedrift
@@ -17,17 +21,25 @@ For general questions about products, please use the contact form: https://www.v
 
 We start with the typical Sign-in screen:
 
-![Sign-in screen](images/Vipps_sign_in.PNG?raw=true "Title")
+![Vipps Developer Portal: Test: Sign in](images/vipps-developer-portal-test-signin.png)
 
 You type in your username and password here. Please note that there's a difference between the test and production environments when it comes to Vipps Developer Portal:
 
-## Test environment
+## Test environment: Purple
+
+The test environment has a purple header:
+
+![Vipps Developer Portal: Test](images/vipps-developer-portal-test.png)
 
 * Vipps Developer Portal URL: https://apitest-portal.vipps.no/
 * A username that looks like this: username@**testapivipps**.no
 * A default password.
 
-## Production environment
+## Production environment: Orange
+
+The test environment has an orange header:
+
+![Vipps Developer Portal: Production](images/vipps-developer-portal-production.png)
 
 * Vipps Developer Portal URL: https://api-portal.vipps.no/
 * A username that looks like this: username@**apivipps**.no`
