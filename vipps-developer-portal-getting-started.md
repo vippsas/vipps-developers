@@ -4,9 +4,8 @@ These are the steps after you have received in the onboarding email from Vipps. 
 
 For in-depth information about the Vipps Developer Portal, see the PDF manual: https://github.com/vippsas/vipps-developers
 
-_*Please note:*:_ We have recently updated the colors for the test and production environments,
-and the screenshots in the documentation have not yet been updated. The navigation and functionality
-is unchanged.
+**Please note:** _We have recently updated the colors for the Test (purple) and Production (orange) environments.
+The screenshots in the documentation have not yet been updated, but the functionality is unchanged._
 
 # Step 0
 
