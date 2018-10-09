@@ -57,7 +57,7 @@ If you see an error page similar to the one above:
 
 # Step 2
 
-After an successful log in you will see the account name up in the right corner of the screen ("TOM KVAM" in this example). On the left you have several tabs.
+After a successful log in you will see the account name in the top right corner of the screen ("TOM KVAM" in this example). On the left you have several tabs.
 The **"MANAGE USERS"** tab allows you to add users:
 
 ![Add users](images/add_user_vipps_developer_portal.PNG?raw=true "Title")
