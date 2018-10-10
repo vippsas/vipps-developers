@@ -54,7 +54,7 @@ You will get an auto-reply from us with an issue number like `VSD-1234` in the `
 This is the unique number for this specific issue, and is used to connect all communication
 about this issue in our systems.
 
-The auto-reply is sent from a real address, which you can reply to ✌️
+The auto-reply is sent from a real e-mail address, which you can reply to ✌️
 
 # Response time
 
