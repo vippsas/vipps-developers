@@ -12,7 +12,7 @@ please use [this form](https://www.vipps.no/tips-og-tilbakemeldinger).
 
 # What to include in the email
 
-So, for _*technical questions*_: Send an email to integration@vipps.no with all relevant information:
+So, for _*technical questions*_: Send an e-mail to integration@vipps.no with all relevant information:
 
 * An email a self-explanatory `Subject` line ("`POST:/something` gives `HTTP 400` response")
 * Your contact information (if not in your email signature):
