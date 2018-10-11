@@ -57,22 +57,28 @@ If you see an error page similar to the one above:
 
 # Step 2
 
-After an successful log in you will see the account name up in the right corner of the screen ("TOM KVAM" in this example). On the left you have several tabs.
+After an successful log in you will see the account name up in the right corner of the screen ("FIRSTNAME|LASTNAME" in this example). On the left you have several tabs.
 The **"MANAGE USERS"** tab allows you to add users:
 
-![Add users](images/add_user_vipps_developer_portal.PNG?raw=true "Title")
+When adding a new developer, note that we dont support specialcases like _**æ**_,_**ø**_,_**å**_. Adding a name like "_**Bjørn**_" will result in error. This can be solved by using "_**Bjorn**_" instead. 
+
+![Add users](images/vipps-developer-portal-test-manageusers.png)
 
 # Step 3
 
 The next tab **"PRODUCTS"** shows you the APIs you currently have. As you see from the picture below you can have multiple products:
 
-![Products](images/products_vipps_dev.PNG?raw=true "Title")
+![Products](images/vipps-developer-portal-test-products.png)
 
 Click on the **"TEST THE API(S)"** button:
-![Test the API(s)](images/Test_the_api.PNG?raw=true "Title")
+![Test the API(s)](images/vipps-developer-portal-test-products-accesstoken.png)
+
+You may have several API's here depending on what product you want:
+
+![Test the API(s)](images/vipps-developer-portal-test-products-ecommerce.png)
 
 Click on the **"Try it"** button:
-![Try it](images/Try_it_out.PNG?raw=true "Title")
+![Try it](images/vipps-developer-portal-test-products-ecommerce-testtheapis.png)
 
 Add the the proper keys to initiate your request (see the next steps):
 ![Request payment](images/Request_payment.PNG?raw=true "Title")
@@ -81,17 +87,21 @@ Add the the proper keys to initiate your request (see the next steps):
 
 To get your API keys, open the **"APPLICATIONS"** tab (in a new browser tab) and click on the unit with the number-identificator that fits your Salesunit. You will find both `client_id` and `client_secret`.
 
-![keys applications](images/keys_application.PNG?raw=true "Title")
+![keys applications](images/vipps-developer-portal-applications-viewsecret.png)
 
 Under the tab **"REGISTER APPLICATION"** it should say, marked in red:
 
 'All existing products have been subscribed'
 
+![registerapplication](images/vipps-developer-portal-test-registerapplication.png)
+
+If you want more applications, please contact integration@vipps.no
+
 # Step 5
 
-Under the profile tab (the account name at the top right, "TOM KVAM" in this example) you will find your two last keys.
+Under the profile tab (the account name at the top right, "FIRSTNAME |LASTNAME" in this example) you will find your two last keys.
 
-![Keys profile](images/keys_profile.PNG?raw=true "Title")
+![Keys profile](images/vipps-developer-portal-test-products-accesstoken-defaultaccesstoken.png)
 
 You have the `Access Token` key on the top. You have to click "Show" on the right side to make the keys appear. And as marked in yellow, it's the `Primary key` you are after. If the key for some reason does not work, then you can hit "Regenerate", right next to "Show".
 
