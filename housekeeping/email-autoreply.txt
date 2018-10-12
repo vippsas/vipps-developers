@@ -1,69 +1,61 @@
-Hei, og takk for at du kontakter Vipps!
+*Hei, og takk for at du kontakter Vipps!*
 
 Dette er en automatisk melding for å bekrefte at vi har mottatt e-posten din, og at vi vil hjelpe deg så raskt vi kan.
 
-Hvis du vil legge til ny informasjon til denne saken, vennligst svar på denne meldingen uten å endre emnefeltet ("Subject"-linjen). Dette sikrer at informasjonen automatisk kobles sammen i vårt system, så vi kan hjelpe deg raskere.
+Hvis henvendelsen gjelder noe annet enn teknisk integrasjon med Vipps API-er, får du raskest hjelp ved å kontakte Vipps Kundesenter på (+47) 22 48 28 00. Vipps Kundesenter kan f.eks. hjelpe med oppgjørskonto o.l. Husk at du selv kan endre logo, navn o.l. på [Vippsportalen|https://portal.vipps.no/login].
 
-Hvis henvendelsen gjelder noe annet enn teknisk integrasjon med Vipps API-er, får du raskest hjelp ved å kontakte Vipps Kundesenter på (+47) 22 48 28 00. Vipps Kundesenter kan f.eks. hjelpe med oppgjørskonto o.l. Husk at du selv kan endre logo, navn o.l. på Vippsportalen: https://portal.vipps.no/login
+Hvis du vil legge til informasjon til denne saken, vennligst svar på denne meldingen.
 
-Hvis du ikke allerede har oppgitt det, er det fint om du sender følgende opplysninger:
+*Hvis du ikke allerede har oppgitt det, er det fint om du sender følgende opplysninger:*
 * Organisasjonsnummer for bedriften
-* Telefonnummer hvis vi trenger å ringe deg
-* Hvilken Vipps-løsning det gjelder
+* Ditt telefonnummer
+* Hvilken [Vipps-løsning|https://www.vipps.no/bedrift] dette gjelder
 * Skjermbilder (hvis relevant)
 * Feilmeldinger og logger (hvis relevant)
-* Komplette API-kall i curl-format (hvis relevant): https://curl.haxx.se
+* Komplette API-kall i [curl|https://curl.haxx.se]-format (hvis relevant)
 * Hvilken versjon av iOS- eller Android-appen det gjelder (hvis relevant)
-* Se også "How to contact Vipps Integration": https://github.com/vippsas/vipps-developers/blob/master/contact.md
+* Se også [How to contact Vipps Integration|https://github.com/vippsas/vipps-developers/blob/master/contact.md]
 
-Her er noen linker som kan være nyttige:
+*Her er noen linker som kan være nyttige:*
 * [Vipps produkter, privat|https://www.vipps.no/privat]
 * [Vipps produkter, bedrift|https://www.vipps.no/bedrift]
 * [Vipps developer (API-er, etc)|https://www.vipps.no/developer]
 * [Vipps på GitHub|https://github.com/vippsas]
 
-Vennligst IKKE inkludere tidligere meldinger når du svarer på e-post, siden vi allerede har full historikk for saken.
+Det er _ikke_ nødvendig å inkludere tidligere meldinger når du svarer på e-post, siden vi allerede har full historikk for saken.
 
-Hilsen Integrasjonsteamet i Vipps
-[Vipps Integration|https://github.com/vippsas/vipps-developers/blob/master/contact.md]
-
+Integrasjonsteamet i Vipps
 http://vipps.no/developer
 https://github.com/vippsas
 
-
 ------------------------------------------------------------------------------------------------
 
-
-Hi, and thank you for contacting Vipps!
+*Hi, and thank you for contacting Vipps!*
 
 This is an automatic reply confirming we have received your email, and that we will help you as soon as possible.
 
-If you have new information to add to this case, please reply to this message without changing the "Subject" line. This will ensure that the information is automatically connected in our system, so that we can help you faster.
+If this request is for something else than technical integration with the Vipps APIs, you will get faster help by contacting the Vipps Customer Centre on (+47) 22 48 28 00. The Vipps Customer Centre can help with settlement account, etc. Please remember that you can change logo, name, etc on the [Vipps portal|https://portal.vipps.no/login].
 
-If this request is for something else than technical integration with the Vipps APIs, you will get faster help by contacting the Vipps Customer Centre on (+47) 22 48 28 00. The Vipps Customer Centre can help with settlement account, etc. Please remember that you can change logo, name, etc on the Vipps portal: https://portal.vipps.no/login
+If you have information to add to this case, please reply to this message.
 
-Unless you have already provided, please reply to this message with the following information
+*Unless you have already provided it, please reply to this message with the following information:*
 * The organisation number for your company
-* Your phone number, if we need to call you
-* Which Vipps solution you are using
+* Your phone number
+* Which [Vipps solution|https://www.vipps.no/bedrift] this is about
 * Screenshots (if relevant)
 * Error messages and logs (if relevant)
-* Complete API calls in curl format (if relevant): https://curl.haxx.se
+* Complete API calls in [curl|https://curl.haxx.se] format (if relevant)
 * Which version of the iOS or Android app this is about (if relevant)
-* See also “How to contact Vipps Integration": https://github.com/vippsas/vipps-developers/blob/master/contact.md
+* See also [How to contact Vipps Integration|https://github.com/vippsas/vipps-developers/blob/master/contact.md]
 
-Here are some links to information that may be useful:
+*Here are some links to information that may be useful:*
 * [Vipps products, personal|https://www.vipps.no/privat]
 * [Vipps products, business|https://www.vipps.no/bedrift]
 * [Vipps developer (APIs, etc)|https://www.vipps.no/developer]
 * [Vipps on GitHub|https://github.com/vippsas]
 
-If your request is regarding something other than technical integration with Vipps APIs, you will receive a quicker response by contacting Vipps Customer Service at (+47) 22 48 28 00. Vipps Customer Service can help with changing logo, name, settlement account etc.
-
-Please do NOT include earlier messages when replying, as we already have the full history for this case.
+It is _not_ necessary to include earlier messages when replying, as we already have the full history for this case.
 
 The Vipps Integration Team
-[Vipps Integration|https://github.com/vippsas/vipps-developers/blob/master/contact.md]
-
 http://vipps.no/developer
 https://github.com/vippsas
