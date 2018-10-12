@@ -19,9 +19,32 @@ The Vipps Test environment contains synthetic data useful for testing.
 
 # Creating more test data
 
-##
+## DNB Open Banking
 
 DNB Open banking has some useful tools for generating synthetic "Norwegian" data: https://github.com/DNBbank/dnbtestdata
+
+The file [fake-people-100k.json](fake-people-100k.json)
+contains 100,000 synthetic users in JSON format (took ~30 minutes to create), like this:
+
+```json
+{
+  "ssn": "07073319586",
+  "firstName": "Berit",
+  "lastName": "Birkeland",
+  "dateOfBirth": "1933-07-07",
+  "gender": "Female",
+  "nationality": "Norwegian",
+  "address": {
+    "street": "Sivertsentjernet 55H",
+    "postalCode": "2997",
+    "city": "Sørensen",
+    "country": "NO"
+  },
+  "phoneNumber": "08 67 82 12",
+  "email": "birkeland1933@example.com",
+  "idType": "passport"
+}
+```
 
 ## Faker
 
