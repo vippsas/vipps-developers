@@ -79,11 +79,48 @@ This can be solved by using "_**Bjorn**_" instead.
 
 # Step 3
 
+## Your first Access Token
+
 The next tab **"PRODUCTS"** shows you the APIs you currently have. As you see from the picture below you can have multiple products:
 
 ![Products](images/devportal-test-products.png)
 
 You may have several APIs available.
+We are now gonna try to fetch the Access Token, this token is needed for giving Authorization for further API-calls.
+
+You access it by clicking "_**Test the API(S)**_"
+![Access Token](images/devportal-test-products-accesstoken.png)
+
+Click the "_**Try**_"-button
+
+![Access Token - tryit](images/devportal-test-products-accesstoken-tryit.png)
+
+You will then be directed to this site:
+
+![Access Token - credentials](images/devportal-test-product-accesstoken.png)
+
+Fill in your client_id and client_secret from the tab "_**Applications**_".
+
+![Client_ID and Client_Secret](images/devportal-test-applications-viewsecrets.png)
+This is also shown in Step 5.
+
+Then you will end up with following data:
+
+![Access Token filled with credentials](images/devportal-test-getaccesstoken-1.png)
+
+Now push the button "_**Send**_"
+
+![Access Token Send](images/devportal-test-getaccesstoken-2.png)
+
+This will result inn a Response status: 200 OK, and you will have generated your first Access Token:
+
+![Access Token Response Status: 200 OK](images/devportal-test-getaccesstoken-3.png)
+
+
+
+
+# Step 4
+
 In this example we will use `eCommerce-Express-Checkout-Signup-Login-Services`,
 and this page is shown after you click the product name:
 
@@ -102,7 +139,7 @@ Add the the proper keys to initiate your request:
 
 ![Test: Access Token](images/devportal-test-getorderstatus-2.png)
 
-# Step 4
+# Step 5
 
 To get your API keys, open the **"APPLICATIONS"** tab (in a new browser tab)
 and click on the correct sale unit number (Merchant Serial Number: MSN).
@@ -118,7 +155,7 @@ Under the tab **"REGISTER APPLICATION"** it should say, marked in red: 'All exis
 
 If you need more Vipps applications, please contact integration@vipps.no.
 
-# Step 5
+# Step 6
 
 Under the profile tab (the account name at the top right, "FIRSTNAME LASTNAME" in this example) you will find your two last keys:
 
@@ -131,7 +168,7 @@ Click "Show" to view the values:
 
 ![Profile: Keys shown](images/devportal-test-profile-subkey-show.png)
 
-## Access tokens
+## Access Tokens
 
 You have the `Access Token` key on the top. You have to click "Show" on the right side to make the keys appear.
 It is the `Primary key` you are after.
