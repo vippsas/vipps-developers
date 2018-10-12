@@ -22,6 +22,7 @@ public class VIPPS_APIKeys {
 	public static String clientSecret;
 	public static String accessTokenSubscriptionKey;
 	public static String urlRoot;
+	public static String geckodriverLocation;
 	
 	public static void incrementOrderId() {
 		
@@ -53,7 +54,8 @@ public class VIPPS_APIKeys {
 			clientId = keysContainer.getClientId();
 			clientSecret = keysContainer.getClientSecret();
 			accessTokenSubscriptionKey = keysContainer.getAccessTokenSubscriptionKey();
-			urlRoot = keysContainer.getUrlRoot();			
+			urlRoot = keysContainer.getUrlRoot();		
+			geckodriverLocation = keysContainer.getGeckodriverLocation();
 		  }
 	}
 	

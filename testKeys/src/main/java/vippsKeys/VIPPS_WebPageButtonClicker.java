@@ -10,8 +10,7 @@ public class VIPPS_WebPageButtonClicker {
 	public static boolean main(String url) throws Exception
 	{	
 		
-		// OOPS! This will fail unlesss you specify geckodriver here: (http://www.github.c
-		System.setProperty("webdriver.gecko.driver", "c:\\geckodriver\\geckodriver.exe");
+		System.setProperty("webdriver.gecko.driver", VIPPS_APIKeys.geckodriverLocation);
 		
 		System.out.println("WebpagebuttonClicker activated!");
 		
