@@ -66,7 +66,7 @@ If you get an error page similar to the one above:
 
 # Step 2
 
-After an successful log in you will see the account name up in the right corner of the screen ("FIRSTNAME LASTNAME" in this example). On the left you have several tabs.
+After an successful log in you will see the account name in the top right corner of the screen ("FIRSTNAME LASTNAME" in this example). On the left you have several tabs.
 The **"MANAGE USERS"** tab allows you to add users:
 
 When adding a new developer, note that we don't support non-Latin characters such as
