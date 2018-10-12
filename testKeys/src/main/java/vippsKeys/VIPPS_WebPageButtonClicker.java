@@ -23,6 +23,7 @@ public class VIPPS_WebPageButtonClicker {
 		    {	        
 			    driver.findElement(By.id("okButton")).click();
 			    System.out.println("clicked!");   
+			    Thread.sleep(3000);
 		    }
 		    else System.out.println("ID: \"okButton\" not found!");
 		    driver.quit();
