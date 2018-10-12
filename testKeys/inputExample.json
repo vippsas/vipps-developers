@@ -1,0 +1,11 @@
+{
+  "mobileNumber": "",
+  "merchantSerialNumber": "",
+	"producturi": "/ecomm/v2/payments",
+	"productSubscriptionKey": "",
+	"accesstokenuri": "/accesstoken/get",
+	"clientId": "",
+	"clientSecret": "",
+	"accessTokenSubscriptionKey": "",
+	"urlRoot": "apitest.vipps.no"
+}
