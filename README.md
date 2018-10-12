@@ -20,7 +20,7 @@ brew install jq
        ```
 3. Run this command  
         ```
-curl -s https://api.github.com/orgs/vippsas/repos | jq .[].git_url | xargs -n 1 git clone
+curl -s https://api.github.com/orgs/vippsas/repos | jq .[].clone_url | xargs -n 1 git clone
         ```
 
 ## Pull all GitHub repos in the current directory
