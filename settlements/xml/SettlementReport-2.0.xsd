@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema elementFormDefault="qualified" version="2.0" targetNamespace="http://vipps.dnb.no/XMLSchema/SettlementReport.xsd" xmlns:tns="http://vipps.dnb.no/XMLSchema/SettlementReport.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="FeeDetailsInfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="tns:FeeInfo" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="FeeInfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="FeeDate" type="xs:string"/>
+        <xs:element name="FeeID" type="xs:long"/>
+        <xs:element name="FeeAmount" type="xs:decimal"/>
+        <xs:element name="FeeAccount" type="xs:integer"/>
+        <xs:element name="FeeType" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="PaymentsInfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ReportDateFrom" type="xs:string"/>
+        <xs:element name="ReportDateTo" type="xs:string"/>
+        <xs:element name="SettlementCurrencyCode" type="xs:string"/>
+        <xs:element name="TotalSettledGrossAmount" type="xs:decimal"/>
+        <xs:element name="TotalSettledNetAmount" type="xs:decimal"/>
+        <xs:element name="TotalSettledFeeAmount" type="xs:decimal"/>
+        <xs:element name="TotalSettledRefundAmount" type="xs:decimal"/>
+        <xs:element name="ReportReferenceNum" type="xs:string" minOccurs="0"/>
+        <xs:element name="SettlementAccountNum" type="xs:string"/>
+        <xs:element name="NumOfSettlements" type="xs:long"/>
+        <xs:element ref="tns:SettlementInfo" maxOccurs="unbounded"/>
+        <xs:element ref="tns:FeeDetailsInfo" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="SettlementDetailsInfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="SaleUnitName" type="xs:string"/>
+        <xs:element name="SerialNumber" type="xs:string"/>
+        <xs:element name="OrganizationName" type="xs:string"/>
+        <xs:element name="OrganizationNumber" type="xs:string"/>
+        <xs:element name="MainAddress" type="xs:string"/>
+        <xs:element name="MainAddressZipCode" type="xs:string"/>
+        <xs:element name="MainAddressCity" type="xs:NCName"/>
+        <xs:element name="MainAddressCountryCode" type="xs:string"/>
+        <xs:element ref="tns:PaymentsInfo"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="SettlementInfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="SettlementBatchDate" type="xs:string"/>
+        <xs:element name="SettlementID" type="xs:string"/>
+        <xs:element name="SettlementCurrencyCode" type="xs:string"/>
+        <xs:element name="GrossSettlementAmount" type="xs:decimal"/>
+        <xs:element name="NetSettlementAmount" type="xs:decimal"/>
+        <xs:element name="FeeSettlementAmount" type="xs:decimal"/>
+        <xs:element name="NumOfTransactions" type="xs:long"/>
+        <xs:element ref="tns:TransactionInfo" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="SettlementReport">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="tns:SettlementDetailsInfo" maxOccurs="unbounded"/>
+        <xs:element ref="tns:VippsInfo"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="TransactionInfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="TransactionDate" type="xs:string"/>
+        <xs:element name="TransactionGrossAmount" type="xs:decimal"/>
+        <xs:element name="TransactionNetAmount" type="xs:decimal"/>
+        <xs:element name="TransactionFeeAmount" type="xs:decimal"/>
+        <xs:element name="SettlementCurrencyCode" type="xs:string"/>
+        <xs:element name="TransactionID" type="xs:long"/>
+        <xs:element name="OrderID" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="VippsInfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Name" type="xs:string"/>
+        <xs:element name="WebSite" type="xs:NCName"/>
+        <xs:element name="VisitingAddress" type="xs:string"/>
+        <xs:element name="PostBox" type="xs:string"/>
+        <xs:element name="PostAddress" type="xs:string"/>
+        <xs:element name="Country" type="xs:NCName"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
+
