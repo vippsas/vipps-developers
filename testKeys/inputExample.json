@@ -7,5 +7,6 @@
 	"clientId": "",
 	"clientSecret": "",
 	"accessTokenSubscriptionKey": "",
-	"urlRoot": "apitest.vipps.no"
+	"urlRoot": "apitest.vipps.no",
+  "geckodriverLocation": "c:\\geckodriver\\geckodriver.exe"
 }

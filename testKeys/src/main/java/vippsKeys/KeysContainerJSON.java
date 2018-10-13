@@ -8,6 +8,9 @@ public class KeysContainerJSON {
 @SerializedName("mobileNumber")
 @Expose
 private String mobileNumber;
+@SerializedName("geckodriverLocation")
+@Expose
+private String geckodriverLocation;
 @SerializedName("merchantSerialNumber")
 @Expose
 private String merchantSerialNumber;
@@ -103,6 +106,13 @@ return urlRoot;
 
 public void setUrlRoot(String urlRoot) {
 this.urlRoot = urlRoot;
+}
+
+public String getGeckodriverLocation() {
+return geckodriverLocation;
+}
+public void setGeckodriverLocation(String geckodriverLocation) {
+this.geckodriverLocation = geckodriverLocation;
 }
 
 }
