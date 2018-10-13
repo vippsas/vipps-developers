@@ -5,104 +5,111 @@ import com.google.gson.annotations.SerializedName;
 
 public class KeysContainerJSON {
 
-@SerializedName("mobileNumber")
-@Expose
-private String mobileNumber;
-@SerializedName("merchantSerialNumber")
-@Expose
-private String merchantSerialNumber;
-@SerializedName("producturi")
-@Expose
-private String producturi;
-@SerializedName("productSubscriptionKey")
-@Expose
-private String productSubscriptionKey;
-@SerializedName("accesstokenuri")
-@Expose
-private String accesstokenuri;
-@SerializedName("clientId")
-@Expose
-private String clientId;
-@SerializedName("clientSecret")
-@Expose
-private String clientSecret;
-@SerializedName("accessTokenSubscriptionKey")
-@Expose
-private String accessTokenSubscriptionKey;
-@SerializedName("urlRoot")
-@Expose
-private String urlRoot;
+  @SerializedName("mobileNumber")
+  @Expose
+  private String mobileNumber;
 
-public String getMobileNumber() {
-return mobileNumber;
-}
+  @SerializedName("merchantSerialNumber")
+  @Expose
+  private String merchantSerialNumber;
 
-public void setMobileNumber(String mobileNumber) {
-this.mobileNumber = mobileNumber;
-}
+  @SerializedName("producturi")
+  @Expose
+  private String producturi;
 
-public String getMerchantSerialNumber() {
-return merchantSerialNumber;
-}
+  @SerializedName("productSubscriptionKey")
+  @Expose
+  private String productSubscriptionKey;
 
-public void setMerchantSerialNumber(String merchantSerialNumber) {
-this.merchantSerialNumber = merchantSerialNumber;
-}
+  @SerializedName("accesstokenuri")
+  @Expose
+  private String accesstokenuri;
 
-public String getProducturi() {
-return producturi;
-}
+  @SerializedName("clientId")
+  @Expose
+  private String clientId;
 
-public void setProducturi(String producturi) {
-this.producturi = producturi;
-}
+  @SerializedName("clientSecret")
+  @Expose
+  private String clientSecret;
 
-public String getProductSubscriptionKey() {
-return productSubscriptionKey;
-}
+  @SerializedName("accessTokenSubscriptionKey")
+  @Expose
+  private String accessTokenSubscriptionKey;
 
-public void setProductSubscriptionKey(String productSubscriptionKey) {
-this.productSubscriptionKey = productSubscriptionKey;
-}
+  @SerializedName("urlRoot")
+  @Expose
+  private String urlRoot;
 
-public String getAccesstokenuri() {
-return accesstokenuri;
-}
+  public String getMobileNumber() {
+    return mobileNumber;
+  }
 
-public void setAccesstokenuri(String accesstokenuri) {
-this.accesstokenuri = accesstokenuri;
-}
+  public void setMobileNumber(String mobileNumber) {
+    this.mobileNumber = mobileNumber;
+  }
 
-public String getClientId() {
-return clientId;
-}
+  public String getMerchantSerialNumber() {
+    return merchantSerialNumber;
+  }
 
-public void setClientId(String clientId) {
-this.clientId = clientId;
-}
+  public void setMerchantSerialNumber(String merchantSerialNumber) {
+    this.merchantSerialNumber = merchantSerialNumber;
+  }
 
-public String getClientSecret() {
-return clientSecret;
-}
+  public String getProducturi() {
+    return producturi;
+  }
 
-public void setClientSecret(String clientSecret) {
-this.clientSecret = clientSecret;
-}
+  public void setProducturi(String producturi) {
+    this.producturi = producturi;
+  }
 
-public String getAccessTokenSubscriptionKey() {
-return accessTokenSubscriptionKey;
-}
+  public String getProductSubscriptionKey() {
+    return productSubscriptionKey;
+  }
 
-public void setAccessTokenSubscriptionKey(String accessTokenSubscriptionKey) {
-this.accessTokenSubscriptionKey = accessTokenSubscriptionKey;
-}
+  public void setProductSubscriptionKey(String productSubscriptionKey) {
+    this.productSubscriptionKey = productSubscriptionKey;
+  }
 
-public String getUrlRoot() {
-return urlRoot;
-}
+  public String getAccesstokenuri() {
+    return accesstokenuri;
+  }
 
-public void setUrlRoot(String urlRoot) {
-this.urlRoot = urlRoot;
-}
+  public void setAccesstokenuri(String accesstokenuri) {
+    this.accesstokenuri = accesstokenuri;
+  }
 
+  public String getClientId() {
+    return clientId;
+  }
+
+  public void setClientId(String clientId) {
+    this.clientId = clientId;
+  }
+
+  public String getClientSecret() {
+    return clientSecret;
+  }
+
+  public void setClientSecret(String clientSecret) {
+    this.clientSecret = clientSecret;
+  }
+
+  public String getAccessTokenSubscriptionKey() {
+    return accessTokenSubscriptionKey;
+  }
+
+  public void setAccessTokenSubscriptionKey(String accessTokenSubscriptionKey) {
+    this.accessTokenSubscriptionKey = accessTokenSubscriptionKey;
+  }
+
+  public String getUrlRoot() {
+    return urlRoot;
+  }
+
+  public void setUrlRoot(String urlRoot) {
+    this.urlRoot = urlRoot;
+  }
 }
