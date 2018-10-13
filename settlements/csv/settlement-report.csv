@@ -1,0 +1,18 @@
+OrganizationNumber,MerchantName
+918713867,Vipps AS
+Name,VisitingAddress,Postbox,Zipno,Place,Country,CompanyNumber
+Vipps AS,Dronning Eufemias Gate 42,,0191,Oslo,Norway,918713867
+SettlementInfo,SalesUnitName,SaleUnitNumber,SettlementDate,SettlementID,SettlementAccount,Gross,Currency,Fee,Refund,Net,NumberOfTransactions
+SettlementInfo,VippsExampleStore,513428,12.04.2018,2000001,15039794613,1.00,NOK,-0.02,0.00,0.98,1
+SettlementInfo,VippsExampleStore,513428,13.04.2018,2000002,15039794613,1.00,NOK,-0.02,0.00,0.98,1
+FeeInfo,SettlementDate,SaleUnitName,SaleUnitNumber,FeeAccount,Fee,Currency
+TransactionInfo,SalesDate,SaleUnitName,SaleUnitNumber,TransactionId,SettlementId,OrderID,SettlementDate,Gross,Currency,Fee,Refund,Net
+TransactionInfo,11.04.2018,VippsExampleStore,513428,5554795401,2000001,1911652,12.04.2018,1.00,NOK,-0.02,0.00,0.98
+TransactionInfo,13.04.2018,VippsExampleStore,513428,5555094801,2000002,1923885,13.04.2018,1.00,NOK,-0.02,0.00,0.98
+SettlementInfo,SalesUnitName,SaleUnitNumber,SettlementDate,SettlementID,SettlementAccount,Gross,Currency,Fee,Refund,Net,NumberOfTransactions
+SettlementInfo,VippsExampleStore,513428,12.04.2018,2000001,15039794613,1.00,NOK,-0.02,0.00,0.98,1
+SettlementInfo,VippsExampleStore,513428,13.04.2018,2000002,15039794613,1.00,NOK,-0.02,0.00,0.98,1
+FeeInfo,SettlementDate,SaleUnitName,SaleUnitNumber,FeeAccount,Fee,Currency
+TransactionInfo,SalesDate,SaleUnitName,SaleUnitNumber,TransactionId,SettlementId,OrderID,SettlementDate,Gross,Currency,Fee,Refund,Net
+TransactionInfo,11.04.2018,VippsExampleStore,513428,5554795401,2000001,1911652,12.04.2018,1.00,NOK,-0.02,0.00,0.98
+TransactionInfo,13.04.2018,VippsExampleStore,513428,5555094801,2000002,1923885,13.04.2018,1.00,NOK,-0.02,0.00,0.98
