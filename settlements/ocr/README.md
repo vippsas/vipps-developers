@@ -1,3 +1,3 @@
 # Vipps settlements: OCR
 
-See the [Settlements] overview.
+See the [Settlements](..) overview.
