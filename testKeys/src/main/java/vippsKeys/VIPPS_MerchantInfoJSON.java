@@ -5,49 +5,51 @@ import com.google.gson.annotations.SerializedName;
 
 public class VIPPS_MerchantInfoJSON {
 
-@SerializedName("merchantSerialNumber")
-@Expose
-private String merchantSerialNumber;
-@SerializedName("callbackPrefix")
-@Expose
-private String callbackPrefix;
-@SerializedName("fallBack")
-@Expose
-private String fallBack;
-@SerializedName("isApp")
-@Expose
-private Boolean isApp;
+  @SerializedName("merchantSerialNumber")
+  @Expose
+  private String merchantSerialNumber;
 
-public String getMerchantSerialNumber() {
-return merchantSerialNumber;
-}
+  @SerializedName("callbackPrefix")
+  @Expose
+  private String callbackPrefix;
 
-public void setMerchantSerialNumber(String merchantSerialNumber) {
-this.merchantSerialNumber = merchantSerialNumber;
-}
+  @SerializedName("fallBack")
+  @Expose
+  private String fallBack;
 
-public String getCallbackPrefix() {
-return callbackPrefix;
-}
+  @SerializedName("isApp")
+  @Expose
+  private Boolean isApp;
 
-public void setCallbackPrefix(String callbackPrefix) {
-this.callbackPrefix = callbackPrefix;
-}
+  public String getMerchantSerialNumber() {
+    return merchantSerialNumber;
+  }
 
-public String getFallBack() {
-return fallBack;
-}
+  public void setMerchantSerialNumber(String merchantSerialNumber) {
+    this.merchantSerialNumber = merchantSerialNumber;
+  }
 
-public void setFallBack(String fallBack) {
-this.fallBack = fallBack;
-}
+  public String getCallbackPrefix() {
+    return callbackPrefix;
+  }
 
-public Boolean getIsApp() {
-return isApp;
-}
+  public void setCallbackPrefix(String callbackPrefix) {
+    this.callbackPrefix = callbackPrefix;
+  }
 
-public void setIsApp(Boolean isApp) {
-this.isApp = isApp;
-}
+  public String getFallBack() {
+    return fallBack;
+  }
 
+  public void setFallBack(String fallBack) {
+    this.fallBack = fallBack;
+  }
+
+  public Boolean getIsApp() {
+    return isApp;
+  }
+
+  public void setIsApp(Boolean isApp) {
+    this.isApp = isApp;
+  }
 }

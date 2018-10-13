@@ -5,114 +5,123 @@ import com.google.gson.annotations.SerializedName;
 
 public class KeysContainerJSON {
 
-@SerializedName("mobileNumber")
-@Expose
-private String mobileNumber;
-@SerializedName("geckodriverLocation")
-@Expose
-private String geckodriverLocation;
-@SerializedName("merchantSerialNumber")
-@Expose
-private String merchantSerialNumber;
-@SerializedName("producturi")
-@Expose
-private String producturi;
-@SerializedName("productSubscriptionKey")
-@Expose
-private String productSubscriptionKey;
-@SerializedName("accesstokenuri")
-@Expose
-private String accesstokenuri;
-@SerializedName("clientId")
-@Expose
-private String clientId;
-@SerializedName("clientSecret")
-@Expose
-private String clientSecret;
-@SerializedName("accessTokenSubscriptionKey")
-@Expose
-private String accessTokenSubscriptionKey;
-@SerializedName("urlRoot")
-@Expose
-private String urlRoot;
+  @SerializedName("mobileNumber")
+  @Expose
+  private String mobileNumber;
 
-public String getMobileNumber() {
-return mobileNumber;
-}
+  @SerializedName("geckodriverLocation")
+  @Expose
+  private String geckodriverLocation;
 
-public void setMobileNumber(String mobileNumber) {
-this.mobileNumber = mobileNumber;
-}
+  @SerializedName("merchantSerialNumber")
+  @Expose
+  private String merchantSerialNumber;
 
-public String getMerchantSerialNumber() {
-return merchantSerialNumber;
-}
+  @SerializedName("producturi")
+  @Expose
+  private String producturi;
 
-public void setMerchantSerialNumber(String merchantSerialNumber) {
-this.merchantSerialNumber = merchantSerialNumber;
-}
+  @SerializedName("productSubscriptionKey")
+  @Expose
+  private String productSubscriptionKey;
 
-public String getProducturi() {
-return producturi;
-}
+  @SerializedName("accesstokenuri")
+  @Expose
+  private String accesstokenuri;
 
-public void setProducturi(String producturi) {
-this.producturi = producturi;
-}
+  @SerializedName("clientId")
+  @Expose
+  private String clientId;
 
-public String getProductSubscriptionKey() {
-return productSubscriptionKey;
-}
+  @SerializedName("clientSecret")
+  @Expose
+  private String clientSecret;
 
-public void setProductSubscriptionKey(String productSubscriptionKey) {
-this.productSubscriptionKey = productSubscriptionKey;
-}
+  @SerializedName("accessTokenSubscriptionKey")
+  @Expose
+  private String accessTokenSubscriptionKey;
 
-public String getAccesstokenuri() {
-return accesstokenuri;
-}
+  @SerializedName("urlRoot")
+  @Expose
+  private String urlRoot;
 
-public void setAccesstokenuri(String accesstokenuri) {
-this.accesstokenuri = accesstokenuri;
-}
+  public String getMobileNumber() {
+    return mobileNumber;
+  }
 
-public String getClientId() {
-return clientId;
-}
+  public void setMobileNumber(String mobileNumber) {
+    this.mobileNumber = mobileNumber;
+  }
 
-public void setClientId(String clientId) {
-this.clientId = clientId;
-}
+  public String getMerchantSerialNumber() {
+    return merchantSerialNumber;
+  }
 
-public String getClientSecret() {
-return clientSecret;
-}
+  public void setMerchantSerialNumber(String merchantSerialNumber) {
+    this.merchantSerialNumber = merchantSerialNumber;
+  }
 
-public void setClientSecret(String clientSecret) {
-this.clientSecret = clientSecret;
-}
+  public String getProducturi() {
+    return producturi;
+  }
 
-public String getAccessTokenSubscriptionKey() {
-return accessTokenSubscriptionKey;
-}
+  public void setProducturi(String producturi) {
+    this.producturi = producturi;
+  }
 
-public void setAccessTokenSubscriptionKey(String accessTokenSubscriptionKey) {
-this.accessTokenSubscriptionKey = accessTokenSubscriptionKey;
-}
+  public String getProductSubscriptionKey() {
+    return productSubscriptionKey;
+  }
 
-public String getUrlRoot() {
-return urlRoot;
-}
+  public void setProductSubscriptionKey(String productSubscriptionKey) {
+    this.productSubscriptionKey = productSubscriptionKey;
+  }
 
-public void setUrlRoot(String urlRoot) {
-this.urlRoot = urlRoot;
-}
+  public String getAccesstokenuri() {
+    return accesstokenuri;
+  }
 
-public String getGeckodriverLocation() {
-return geckodriverLocation;
-}
-public void setGeckodriverLocation(String geckodriverLocation) {
-this.geckodriverLocation = geckodriverLocation;
-}
+  public void setAccesstokenuri(String accesstokenuri) {
+    this.accesstokenuri = accesstokenuri;
+  }
 
+  public String getClientId() {
+    return clientId;
+  }
+
+  public void setClientId(String clientId) {
+    this.clientId = clientId;
+  }
+
+  public String getClientSecret() {
+    return clientSecret;
+  }
+
+  public void setClientSecret(String clientSecret) {
+    this.clientSecret = clientSecret;
+  }
+
+  public String getAccessTokenSubscriptionKey() {
+    return accessTokenSubscriptionKey;
+  }
+
+  public void setAccessTokenSubscriptionKey(String accessTokenSubscriptionKey) {
+    this.accessTokenSubscriptionKey = accessTokenSubscriptionKey;
+  }
+
+  public String getUrlRoot() {
+    return urlRoot;
+  }
+
+  public void setUrlRoot(String urlRoot) {
+    this.urlRoot = urlRoot;
+  }
+
+  public String getGeckodriverLocation() {
+    return geckodriverLocation;
+  }
+
+  public void setGeckodriverLocation(String geckodriverLocation) {
+    this.geckodriverLocation = geckodriverLocation;
+  }
 }
