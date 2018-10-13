@@ -27,7 +27,34 @@ curl -s https://api.github.com/orgs/vippsas/repos | jq .[].clone_url | xargs -n 
 
 Creating an alias like `gitall` for this command may be useful:
 
-```find . -type d -depth 1 -exec git --git-dir={}/.git --work-tree=$PWD/{} pull origin master \;'```
+```
+find . -type d -depth 1 -exec git --git-dir={}/.git --work-tree=$PWD/{} pull origin master \;
+```
+
+# API Documentation
+
+The main source for the API documentation is the Swagger files.
+We offer both YAML and JSON versions.
+
+HTML documentation is generated using:
+
+| Generator                                          | Example                  |
+| -------------------------------------------------- | ------------------------ |
+| [Swagger] UI(https://swagger.io/tools/swagger-ui/) | [Vipps Invoice ISP](https://vippsas.github.io/vipps-invoice-api/isp.html) |
+| [Redoc](https://github.com/Rebilly/ReDoc)          | [Vipps Invoice ISP](https://vippsas.github.io/vipps-invoice-api/redoc-isp.html) |
+| [Spectacle](https://sourcey.com/spectacle/)        |  |
+
+To convert to other formats, [api-spec-converter](https://github.com/LucyBot-Inc/api-spec-converter/) may be useful.
+
+# Postman
+
+[Postman](https://www.getpostman.com/) is a common tool for working with REST APIs.
+We offer [Postman Collections](https://www.getpostman.com/collection)
+for some APIs, and aim to offer this for all public APIs.
+
+Postman supports importing Swagger files directly, so a collection is not required.
+
+See the [Postman documentation](https://www.getpostman.com/docs/) for more information about using Postman.
 
 # Additional developer resources
 
@@ -36,5 +63,7 @@ Creating an alias like `gitall` for this command may be useful:
 * Products, personal: http://vipps.no/privat
 * Products, business: http://vipps.no/bedrift
 
-The Vipps Integration team  
-Get in touch: [How to contact us](contact.md)
+
+
+**The Vipps Integration team**
+[Get in touch](contact.md)
