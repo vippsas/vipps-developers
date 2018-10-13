@@ -3,7 +3,7 @@
 # Mini maintenance script for keeping common Vipps API files updated.
 # Christian Løverås, cl@vipps.no
 
-# Directory with all the "vipps-XXX-api" repositories.
+# The directory with all the "vipps-XXX-api" repositories.
 main_dir=/Users/cl/Dev
 
 # End of "configuration"

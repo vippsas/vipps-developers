@@ -5,38 +5,39 @@ import com.google.gson.annotations.SerializedName;
 
 public class VIPPS_TransactionJSON {
 
-@SerializedName("orderId")
-@Expose
-private String orderId;
-@SerializedName("amount")
-@Expose
-private String amount;
-@SerializedName("transactionText")
-@Expose
-private String transactionText;
+  @SerializedName("orderId")
+  @Expose
+  private String orderId;
 
-public String getOrderId() {
-return orderId;
-}
+  @SerializedName("amount")
+  @Expose
+  private String amount;
 
-public void setOrderId(String orderId) {
-this.orderId = orderId;
-}
+  @SerializedName("transactionText")
+  @Expose
+  private String transactionText;
 
-public String getAmount() {
-return amount;
-}
+  public String getOrderId() {
+    return orderId;
+  }
 
-public void setAmount(String amount) {
-this.amount = amount;
-}
+  public void setOrderId(String orderId) {
+    this.orderId = orderId;
+  }
 
-public String getTransactionText() {
-return transactionText;
-}
+  public String getAmount() {
+    return amount;
+  }
 
-public void setTransactionText(String transactionText) {
-this.transactionText = transactionText;
-}
+  public void setAmount(String amount) {
+    this.amount = amount;
+  }
 
+  public String getTransactionText() {
+    return transactionText;
+  }
+
+  public void setTransactionText(String transactionText) {
+    this.transactionText = transactionText;
+  }
 }
