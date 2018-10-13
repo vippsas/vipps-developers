@@ -1,19 +1,12 @@
 # Vipps XML reports
 
-The contents of this repository has moved to
-[Settlements](https://github.com/vippsas/vipps-developers/tree/master/settlements).
-
-The old content is kept here, for reference.
-
-## Old contents, for reference
-
 This repository contains schemas and example files for Vipps XML settlement reports.
 
 Both [the current settlement report schema v3.0](SettlementReport-3.0.xsd) and the [old v2.0 version](SettlementReport-2.0.xsd) are available.
 
 Example files are available both for [Gross](Example-Gross.xml) and [Net](Example-Gross.xml) settlements.
 
-### Changes to the Vipps settlement report XML schema from v2.0 to v3.0
+## Changes to the Vipps settlement report XML schema from v2.0 to v3.0
 
 **NB!** New settlements will contain a mix of captures and refunds.
 To make the numbers unambiguous we have introduced new fields
