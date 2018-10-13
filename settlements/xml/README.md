@@ -1,7 +1,7 @@
 # Vipps XML reports
 
 The contents of this repository has moved to
-[Settlements](https://github.com/vippsas/vipps-developers/tree/master/settlements)
+[Settlements](https://github.com/vippsas/vipps-developers/tree/master/settlements).
 
 The old content is kept here, for reference.
 
