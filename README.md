@@ -27,7 +27,20 @@ curl -s https://api.github.com/orgs/vippsas/repos | jq .[].clone_url | xargs -n 
 
 Creating an alias like `gitall` for this command may be useful:
 
-```find . -type d -depth 1 -exec git --git-dir={}/.git --work-tree=$PWD/{} pull origin master \;'```
+```
+find . -type d -depth 1 -exec git --git-dir={}/.git --work-tree=$PWD/{} pull origin master \;
+```
+# Postman
+
+[Postman](https://www.getpostman.com/) is a common tool for working with REST APIs.
+We offer [Postman Collections](https://www.getpostman.com/collection) for some APIs.
+
+With Postman you can make calls to all the API endpoints and see the full
+`request` and `response` for each call, including headers.
+
+Postman can import Swagger files directly, so collections is not a requirement.
+
+See the [Postman documentation](https://www.getpostman.com/docs/) for more information about using Postman.
 
 # Additional developer resources
 
