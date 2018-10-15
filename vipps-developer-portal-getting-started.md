@@ -148,7 +148,7 @@ Please install Postman if you have not already and familiarize yourself with the
 
 This is the get Access Token call in JSON:
 
-![Get Access Token](Postman/Vipps-Ecommerce-v2-api-postman-access-token.json)
+![Get Access Token](Postman/Vipps-ecom-api-postman-access-token.json)
 
 
 
