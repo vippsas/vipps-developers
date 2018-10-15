@@ -1,0 +1,112 @@
+{
+  "id": "38b0dc13-bc07-26e4-f48b-dc8f0eb59ac9",
+  "name": "MTE - eCommerce InApp Alignment",
+  "values": [
+    {
+      "enabled": true,
+      "key": "MSN",
+      "value": "<Go To Developer Portal->Select the Applications tab->Copy the Saleunit Serial Number from the application you registered for eCommerce InApp Alignment product here>",
+      "type": "text"
+    },
+    {
+      "enabled": true,
+      "key": "Ocp_Apim_Key",
+      "value": "<Go To Developer Portal->Click on your name on top right->select profile->find subscription relevant to your eCommerce InApp Alignment Product and copy the Primary key here>",
+      "type": "text"
+    },
+    {
+      "enabled": true,
+      "key": "Client_Id",
+      "value": "<Go To Developer Portal->Select the Applications tab->Select View secret for the application you registered for eCommerce InApp Alignment product->copy the Client Id here>",
+      "type": "text"
+    },
+    {
+      "enabled": true,
+      "key": "Client_Secret",
+      "value": "<Go To Developer Portal->Select the Applications tab->Select View secret for the application you registered for eCommerce InApp Alignment product->copy the Client secret here>",
+      "type": "text"
+    },
+    {
+      "enabled": true,
+      "key": "Customer_Mobile",
+      "value": "<input the mobile number for the test app profile you have received or registered",
+      "type": "text"
+    },
+    {
+      "enabled": true,
+      "key": "isoTime",
+      "value": "<This value will be overwritten after each API call>",
+      "type": "text"
+    },
+    {
+      "enabled": true,
+      "key": "callBackUrl",
+      "value": "<Input your callback URL here - this is where we will send the callback after user has confirmed payment>",
+      "type": "text"
+    },
+    {
+      "enabled": true,
+      "key": "fallBack",
+      "value": "<Input your fallback URL here - this is where the user will be redirected to after confirming mobile number>",
+      "type": "text"
+    },
+    {
+      "enabled": true,
+      "key": "Access_Token",
+      "value": "<This value will be overwritten when you call the Get Access Token API when having selected eCommerce v2 - MTE environment>",
+      "type": "text"
+    },
+    {
+      "enabled": true,
+      "key": "URL_ROOT",
+      "value": "https://apitest.vipps.no/ecomm/v2/payments",
+      "type": "text"
+    },
+    {
+      "enabled": true,
+      "key": "AT_Ocp_Apim_Key",
+      "value": "<Go To Developer Portal->Click on your name on top right->select profile->find subscription named DEFAULT_ACCESSTOKEN and copy the value from Primary key here>",
+      "type": "text"
+    },
+    {
+      "enabled": true,
+      "key": "orderId",
+      "value": "<This value will be overwritten on each Initiate Payment call with MSN + timestamp>",
+      "type": "text"
+    },
+    {
+      "enabled": true,
+      "key": "amount",
+      "value": "<Enter desired amount Integer value minimum 100 in Øre>",
+      "type": "text"
+    },
+    {
+      "enabled": true,
+      "key": "TransactionTextInitiate",
+      "value": "Transaction initiated through Postman",
+      "type": "text"
+    },
+    {
+      "enabled": true,
+      "key": "TransactionTextCapture",
+      "value": "Transaction captured through Postman",
+      "type": "text"
+    },
+    {
+      "enabled": true,
+      "key": "TransactionTextRefund",
+      "value": "Transaction refunded through Postman",
+      "type": "text"
+    },
+    {
+      "enabled": true,
+      "key": "TransactionTextCancel",
+      "value": "Transaction cancelled through Postman",
+      "type": "text"
+    }
+  ],
+  "timestamp": 1519059297626,
+  "_postman_variable_scope": "environment",
+  "_postman_exported_at": "2018-02-19T16:55:00.128Z",
+  "_postman_exported_using": "Postman/5.5.3"
+}

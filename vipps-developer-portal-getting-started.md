@@ -93,6 +93,8 @@ This can be solved by using "_**Bjorn**_" instead.
 | **merchantSerialNumber** | Go to Developer Portal -> Select the Applications tab -> Copy the Saleunit Serial Number from your application |
 | **Ocp_Apim_Key eCommerce product** | Go to Developer Portal -> Click on your name on top right -> Select profile -> find subscription relevant to your eCommerce Product and copy the Primary key across |
 
+
+
 # Step 4
 
 ## Your first Access Token
@@ -132,6 +134,21 @@ This will result inn a Response status: 200 OK, and you will have generated your
 
 ![Access Token Response Status: 200 OK](images/devportal-test-getaccesstoken-3.png)
 
+## Using Postman to fetch Access Tokens
+
+**Setting up Postman**
+
+Please install Postman if you have not already and familiarize yourself with the tool. You can download Postman here: https://www.getpostman.com/
+
+1. Import the Postman Collection( https://dev.vippsbedrift.no/MTE%20-%20eCommerce%20InApp%20Alignment%20API.postman_collection.json)
+2. Import the Postman Environment File (https://dev.vippsbedrift.no/MTE%20-%20eCommerce%20InApp%Alignment.postman_environment.json)
+3. Click on the config cog on the top right corner of Postman and select "Manage Environments"
+4. Select "MTE - eCommerce Inapp Alignment" and update values with values for your application. If in doubt read the description for guidance.
+5. Make a Get Access Token call.
+
+This is the get Access Token call in JSON:
+
+![Get Access Token](Postman/Vipps-Ecommerce-v2-api-postman-access-token.json)
 
 
 
