@@ -79,6 +79,22 @@ This can be solved by using "_**Bjorn**_" instead.
 
 # Step 3
 
+## Collecting credentials
+
+| Keys              |  Value                                       |
+|-------------------|----------------------------------------------|
+| **OCP_Apim_Key Access Token** | Go to Developer Portal -> Click on your name on top right -> select profile -> find subscription named DEFAULT_ACCESSTOKEN and copy the value from Primary key here |
+| **Client_Id**  | Go to Developer Portal -> Select the Applications tab -> Select View secret for your application -> Client_Id|
+| **Client_secret** | Go to Developer Portal -> Select the Applications tab -> Select View secret for your application -> Client_Secret|
+| **orderId**   | Any value to start your sequence - recommend using your ORG Number followed by 00000 and the incremented |
+| **Authorization** | "Bearer" followed by the Access Token obtained from the Get Access Token call|
+| **Timestamp** | All timestamps need to be in isoTime-format (example: 2018-01-31T16:14:02.715Z)|
+| **X-Request-Id** | Any value string limited to 30 characters|
+| **merchantSerialNumber** | Go to Developer Portal -> Select the Applications tab -> Copy the Saleunit Serial Number from your application |
+| **Ocp_Apim_Key eCommerce product** | Go to Developer Portal -> Click on your name on top right -> Select profile -> find subscription relevant to your eCommerce Product and copy the Primary key across |
+
+# Step 4
+
 ## Your first Access Token
 
 The next tab **"PRODUCTS"** shows you the APIs you currently have. As you see from the picture below you can have multiple products:
@@ -119,7 +135,7 @@ This will result inn a Response status: 200 OK, and you will have generated your
 
 
 
-# Step 4
+# Step 5
 
 In this example we will use `eCommerce-Express-Checkout-Signup-Login-Services`,
 and this page is shown after you click the product name:
@@ -139,7 +155,7 @@ Add the the proper keys to initiate your request:
 
 ![Test: Access Token](images/devportal-test-getorderstatus-2.png)
 
-# Step 5
+# Step 6
 
 To get your API keys, open the **"APPLICATIONS"** tab (in a new browser tab)
 and click on the correct sale unit number (Merchant Serial Number: MSN).
@@ -155,7 +171,7 @@ Under the tab **"REGISTER APPLICATION"** it should say, marked in red: 'All exis
 
 If you need more Vipps applications, please contact integration@vipps.no.
 
-# Step 6
+# Step 7
 
 Under the profile tab (the account name at the top right, "FIRSTNAME LASTNAME" in this example) you will find your two last keys:
 
