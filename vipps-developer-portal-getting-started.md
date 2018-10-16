@@ -136,21 +136,44 @@ This will result inn a Response status: 200 OK, and you will have generated your
 
 ## Using Postman to fetch Access Tokens
 
-**Setting up Postman**
+[Postman](https://www.getpostman.com/)
+is a common tool for working with REST APIs. We offer a
+[Postman Collection](https://www.getpostman.com/collection)
+for Vipps Regninger to make development easier.
+See the
+[Postman documentation](https://www.getpostman.com/docs/)
+for more information about using Postman.
 
-Please install Postman if you have not already and familiarize yourself with the tool. You can download Postman here: https://www.getpostman.com/
+By following the steps below, you can make calls to all the Vipps Regninger
+endpoints, and see the full `request` and `response` for each call.
 
-1. Import the Postman Collection( https://dev.vippsbedrift.no/MTE%20-%20eCommerce%20InApp%20Alignment%20API.postman_collection.json)
-2. Import the Postman Environment File (https://dev.vippsbedrift.no/MTE%20-%20eCommerce%20InApp%Alignment.postman_environment.json)
-3. Click on the config cog on the top right corner of Postman and select "Manage Environments"
-4. Select "MTE - eCommerce Inapp Alignment" and update values with values for your application. If in doubt read the description for guidance.
-5. Make a Get Access Token call.
+### Setting up Postman
 
-This is the get Access Token call in JSON:
+#### Step 1: Import the Postman Collection
 
-![Get Access Token](Postman/Vipps-ecom-api-postman-access-token.json)
+1. Click `Import` in the upper left corner.
+2. Import the [vipps-ecom-api-postman-collection.json](https://github.com/vippsas/vipps-ecom-api/blob/master/tools/vipps-ecom-api-postman-collection.json) file
 
+#### Step 2: Import the Postman Environment
 
+1. Click `Import` in the upper left corner.
+2. Import the [vipps-ecom-api-postman-enviroment.json](https://github.com/vippsas/vipps-ecom-api/blob/master/tools/vipps-ecom-api-postman-enviroment.json) file
+
+#### Step 3: Setup Postman Environment
+
+1. Click the "eye" icon in the top right corner.
+2. In the dropdown window, click `Edit` in the top right corner.
+3. Fill in the `Current Value` for the following fields to get started.
+   - `access-token-key`
+   - `subscription-key`
+   - `client-id`
+   - `client-secret`
+
+### Obtaining an Access Token with Postman
+
+Make a `Get Access Token` call.
+
+This is the get Access Token call in JSON: ![Get Access Token](Postman/Vipps-ecom-api-postman-access-token.json)
 
 # Step 5
 
