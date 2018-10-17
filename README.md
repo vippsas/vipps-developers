@@ -44,7 +44,7 @@ See the [Postman documentation](https://www.getpostman.com/docs/) for more infor
 
 # Vipps test app
 
-# iOS
+## iOS
 
 The iOS test app is available in Apple TestFlight: https://testflight.apple.com/join/hTAYrwea
 
@@ -56,7 +56,7 @@ To get your own test users created in the MT environment, please [contact us](co
 * First name and last name
 * Account number
 
-# Android
+## Android
 
 We are working on a test app for Android, and will update this page when it is available.
 
