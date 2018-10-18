@@ -44,11 +44,11 @@ See the [Postman documentation](https://www.getpostman.com/docs/) for more infor
 
 # Vipps test app
 
-# iOS
+## iOS
 
 The iOS test app is available in Apple TestFlight: https://testflight.apple.com/join/hTAYrwea
 
-The app is identical to the production app, but connects to the Vipps test environment instead of the production environment.
+The app is identical to the production app, but connects to the Vipps test environment (MT: Merchant Test) instead of the production environment.
 
 To get your own test users created in the MT environment, please [contact us](contact.md). We will need the following:
 * Phone number, 8 digits (Norwegian numbers only)
@@ -56,7 +56,7 @@ To get your own test users created in the MT environment, please [contact us](co
 * First name and last name
 * Account number
 
-# Android
+## Android
 
 We are working on a test app for Android, and will update this page when it is available.
 
