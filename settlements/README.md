@@ -15,6 +15,8 @@ Settlement reports are provided in these formats:
 OCR files are distributed in different ways, and will soon move to an
 [SFTP](https://en.wikipedia.org/wiki/SSH_File_Transfer_Protocol)-based distribution.
 
+Documentation for the legacy solution: [Vipps Faktura](ocr/vipps-invoice-api-vipps-faktura.pdf).
+
 Details: See the [ocr](ocr/) folder.
 
 # CSV
