@@ -46,13 +46,13 @@ See the [Postman documentation](https://www.getpostman.com/docs/) for more infor
 
 # iOS
 
-The iOS test app is vailable in Apple TestFlight: https://testflight.apple.com/join/hTAYrwea
+The iOS test app is available in Apple TestFlight: https://testflight.apple.com/join/hTAYrwea
 
 The app is identical to the production app, but connects to the Vipps test environment instead of the production environment.
 
 To get your own test users created in the MT environment, please [contact us](contact.md). We will need the following:
 * Phone number, 8 digits (Norwegian numbers only)
-* SSN (fødselsnummer), 11 digits
+* NIN (National Identity Number, fødselsnummer), 11 digits
 * First name and last name
 * Account number
 
