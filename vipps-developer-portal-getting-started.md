@@ -79,11 +79,7 @@ This can be solved by using "_**Bjorn**_" instead.
 
 # Step 3
 
-<<<<<<< HEAD
-## Collecting credentials
-=======
 ## Where are my credentials
->>>>>>> upstream/master
 
 | Keys              |  Value                                       |
 |-------------------|----------------------------------------------|
@@ -97,11 +93,7 @@ This can be solved by using "_**Bjorn**_" instead.
 | **merchantSerialNumber** | Go to Developer Portal -> Select the Applications tab -> Copy the Saleunit Serial Number from your application |
 | **Ocp_Apim_Key eCommerce product** | Go to Developer Portal -> Click on your name on top right -> Select profile -> find subscription relevant to your eCommerce Product and copy the Primary key across |
 
-<<<<<<< HEAD
-=======
 
-
->>>>>>> upstream/master
 # Step 4
 
 ## Your first Access Token
@@ -154,8 +146,6 @@ for more information about using Postman.
 By following the steps below, you can make calls to all the Vipps Regninger
 endpoints, and see the full `request` and `response` for each call.
 
-<<<<<<< HEAD
-=======
 ### Setting up Postman
 
 #### Step 1: Import the Postman Collection
@@ -182,9 +172,62 @@ endpoints, and see the full `request` and `response` for each call.
 
 Make a `Get Access Token` call.
 
-This is the get Access Token call in JSON: ![Get Access Token](Postman/Vipps-ecom-api-postman-access-token.json)
+This is the get Access Token call in JSON:
 
->>>>>>> upstream/master
+```json
+
+{
+   "name":"Get Access Token",
+   "event":[
+      {
+         "listen":"test",
+         "script":{
+            "id":"e82847b6-91eb-4ce3-9fb5-8198d399ff0a",
+            "type":"text/javascript",
+            "exec":[
+               "pm.environment.set(\"Access_Token\", pm.response.json().access_token);"
+            ]
+         }
+      }
+   ],
+   "request":{
+      "method":"POST",
+      "header":[
+         {
+            "key":"client_id",
+            "value":"{{Client_Id}}"
+         },
+         {
+            "key":"client_secret",
+            "value":"{{Client_Secret}}"
+         },
+         {
+            "key":"Ocp-Apim-Subscription-Key",
+            "value":"{{AT_Ocp_Apim_Key}}"
+         }
+      ],
+      "body":{
+         "mode":"raw",
+         "raw":""
+      },
+      "url":{
+         "raw":"https://apitest.vipps.no/accessToken/get",
+         "protocol":"https",
+         "host":[
+            "apitest",
+            "vipps",
+            "no"
+         ],
+         "path":[
+            "accessToken",
+            "get"
+         ]
+      },
+      "description":null
+   }
+}
+```
+
 # Step 5
 
 In this example we will use `eCommerce-Express-Checkout-Signup-Login-Services`,
