@@ -79,7 +79,11 @@ This can be solved by using "_**Bjorn**_" instead.
 
 # Step 3
 
+<<<<<<< HEAD
 ## Collecting credentials
+=======
+## Where are my credentials
+>>>>>>> upstream/master
 
 | Keys              |  Value                                       |
 |-------------------|----------------------------------------------|
@@ -93,6 +97,11 @@ This can be solved by using "_**Bjorn**_" instead.
 | **merchantSerialNumber** | Go to Developer Portal -> Select the Applications tab -> Copy the Saleunit Serial Number from your application |
 | **Ocp_Apim_Key eCommerce product** | Go to Developer Portal -> Click on your name on top right -> Select profile -> find subscription relevant to your eCommerce Product and copy the Primary key across |
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> upstream/master
 # Step 4
 
 ## Your first Access Token
@@ -132,9 +141,50 @@ This will result inn a Response status: 200 OK, and you will have generated your
 
 ![Access Token Response Status: 200 OK](images/devportal-test-getaccesstoken-3.png)
 
+## Using Postman to fetch Access Tokens
 
+[Postman](https://www.getpostman.com/)
+is a common tool for working with REST APIs. We offer a
+[Postman Collection](https://www.getpostman.com/collection)
+for Vipps Regninger to make development easier.
+See the
+[Postman documentation](https://www.getpostman.com/docs/)
+for more information about using Postman.
 
+By following the steps below, you can make calls to all the Vipps Regninger
+endpoints, and see the full `request` and `response` for each call.
 
+<<<<<<< HEAD
+=======
+### Setting up Postman
+
+#### Step 1: Import the Postman Collection
+
+1. Click `Import` in the upper left corner.
+2. Import the [vipps-ecom-api-postman-collection.json](https://github.com/vippsas/vipps-ecom-api/blob/master/tools/vipps-ecom-api-postman-collection.json) file
+
+#### Step 2: Import the Postman Environment
+
+1. Click `Import` in the upper left corner.
+2. Import the [vipps-ecom-api-postman-enviroment.json](https://github.com/vippsas/vipps-ecom-api/blob/master/tools/vipps-ecom-api-postman-enviroment.json) file
+
+#### Step 3: Setup Postman Environment
+
+1. Click the "eye" icon in the top right corner.
+2. In the dropdown window, click `Edit` in the top right corner.
+3. Fill in the `Current Value` for the following fields to get started.
+   - `access-token-key`
+   - `subscription-key`
+   - `client-id`
+   - `client-secret`
+
+### Obtaining an Access Token with Postman
+
+Make a `Get Access Token` call.
+
+This is the get Access Token call in JSON: ![Get Access Token](Postman/Vipps-ecom-api-postman-access-token.json)
+
+>>>>>>> upstream/master
 # Step 5
 
 In this example we will use `eCommerce-Express-Checkout-Signup-Login-Services`,

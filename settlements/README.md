@@ -10,26 +10,28 @@ Settlement reports are provided in these formats:
 | PDF    | [PDF](pdf/Vipps-oppgjørsrapport-16655-2018-09-23.pdf) | - |
 | XLSX   | [XLSX](xlsx/Vipps-oppgjørsrapport-16655-2018-09-23.xlsx) | - |
 
-## OCR
+# OCR
 
 OCR files are distributed in different ways, and will soon move to an
 [SFTP](https://en.wikipedia.org/wiki/SSH_File_Transfer_Protocol)-based distribution.
 
+Documentation for the legacy solution: [Vipps Faktura](ocr/vipps-invoice-api-vipps-faktura.pdf).
+
 Details: See the [ocr](ocr/) folder.
 
-## CSV
+# CSV
 
 CSV files are sent by email.
 
 Details: See the [csv](csv/) folder.
 
-## XML
+# XML
 
 XML files are sent by email.
 
 Details: See the [xml](xml/) folder.
 
-## PDF
+# PDF
 
 PDF files are sent by email.
 
