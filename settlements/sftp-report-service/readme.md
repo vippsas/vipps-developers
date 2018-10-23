@@ -2,9 +2,9 @@
 #### Product description
 The SFTP report service is used for downloading settlement reports. SFTP-users are created, associated with a public key, and given access to the reports of one or more merchants. The reports are generated dynamically upon request.
 
-#### How to set up users for connecting to the SFTP server
+#### How to configure users for access to the SFTP Report Service
 
-1.	Login to https://portal.vipps.no and click ìBedriftsinfoî under Bedrift and Organization name.
+1.	Login to https://portal.vipps.no and click ‚ÄúBedriftsinfo‚Äù under Bedrift and Organization name.
 
 ![alt text](images/01_velg_profil.png "Velg profil")
 
@@ -22,4 +22,7 @@ This is the directory structure:
 /settlements/[inbox|archive]/[file extension]/[orgnum]/[sales unit serial]/[sales unit serial]-[settlement number].[file extension]
 
 #### How to use it
-Reports under "/settlements/inbox" can be "deleted" (actually hidden) in order to keep track of already processed reports. They are deleted by using the ìrmî command in SFTP or the delete function in your SFTP interface. Reports under "/settlements/archive" cannot be removed
+The SFTP Report Service works like a regular sftp server, meaning commands like 'get', 'ls', 'cd' and 'rm' are very useful. Reports in /settlements/inbox can be deleted (actually hidden). They are deleted by using the ‚Äúrm‚Äù ssh command or the delete function in your SFTP interface. Reports under /settlements/archive cannot be deleted. The intended use is to delete the report from inbox when they are downloaded to keep track of which reports are read, and then eventually use settlements/archive for historical data.
+
+### Questions
+I have you encounter problems integrating with the report servic please don't hesitate to contact us: https://github.com/vippsas/vipps-developers/blob/master/contact.md
