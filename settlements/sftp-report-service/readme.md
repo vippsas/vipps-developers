@@ -4,11 +4,11 @@ The SFTP report service is used for downloading settlement reports. SFTP-users a
 
 #### How to set up users for connecting to the SFTP server
 
-1.	Login to https://portal.vipps.no and click “profil” under organization name
+1.	Login to https://portal.vipps.no and click “Bedriftsinfo” under Bedrift and Organization name.
 
 ![alt text](images/01_velg_profil.png "Velg profil")
 
-2. Find the small hyperlink text under [+ Ny bruker] to add users for SFTP-access. 
+2. Find and click the small hyperlink text under the information to add users for SFTP-access. 
 
 ![alt text](images/02_SFTP_tilgang.png "lag tilgang")
 
