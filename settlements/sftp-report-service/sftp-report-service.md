@@ -12,7 +12,7 @@ More information about SFTP: [SSH File Transfer Protocol](https://en.wikipedia.o
 
 ![Velg profil](images/01_velg_profil.png "Velg profil")
 
-2. Find and click the small hyperlink text under the information to add users for SFTP-access.
+2. Click the hyperlink text under the information to add users for SFTP-access.
 
 ![Lag tilgang](images/02_SFTP_tilgang.png "Lag tilgang")
 
