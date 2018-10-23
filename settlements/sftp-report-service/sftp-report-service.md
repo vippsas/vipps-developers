@@ -8,11 +8,11 @@ More information about SFTP: [SSH File Transfer Protocol](https://en.wikipedia.o
 
 # How to set up users for connecting to the SFTP server
 
-1.	Login to https://portal.vipps.no and click �profil� under organization name
+1. Login to https://portal.vipps.no and click Bedriftsinfo under Bedrift organization name
 
 ![Velg profil](images/01_velg_profil.png "Velg profil")
 
-2. Find the small hyperlink text under [+ Ny bruker] to add users for SFTP-access.
+2. Find and click the small hyperlink text under the information to add users for SFTP-access.
 
 ![Lag tilgang](images/02_SFTP_tilgang.png "Lag tilgang")
 
