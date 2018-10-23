@@ -12,11 +12,11 @@ More information about SFTP: [SSH File Transfer Protocol](https://en.wikipedia.o
 
 ![Velg profil](images/01_velg_profil.png "Velg profil")
 
-2. Click the hyperlink text under the information to add users for SFTP-access.
+2. Click the link under the information to add users for SFTP-access.
 
 ![Lag tilgang](images/02_SFTP_tilgang.png "Lag tilgang")
 
-3. In the next window you can add the public keys of the user(s). We support RSA, EdDSA and Ed25519 keys in OpenSSH format (and reject DSA keys). After this you should see the user created.
+3. In the next window you can add the public keys of the user(s). We support RSA, EdDSA and Ed25519 keys in OpenSSH format (and reject DSA keys). After this you should see the newly created user.
 
 ![Bruker opprettet](images/03_bruker_opprettet.png "bruker opprettet")
 
