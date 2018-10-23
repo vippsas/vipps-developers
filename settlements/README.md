@@ -10,6 +10,15 @@ Settlement reports are provided in these formats:
 | PDF    | [PDF](pdf/Vipps-oppgjørsrapport-16655-2018-09-23.pdf) | - |
 | XLSX   | [XLSX](xlsx/Vipps-oppgjørsrapport-16655-2018-09-23.xlsx) | - |
 
+# SFTP report service
+
+The SFTP report service is used for downloading settlement reports.
+SFTP-users are created, associated with a public key, and given access to the
+reports of one or more merchants.
+The reports are generated dynamically upon request.
+
+Details: See the [sftp-report-service](sftp-report-service/) folder.
+
 # OCR
 
 OCR files are distributed in different ways, and will soon move to an
