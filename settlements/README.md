@@ -36,3 +36,8 @@ Details: See the [xml](xml/) folder.
 PDF files are sent by email.
 
 Details: See the [pdf](pdf/) folder.
+
+# SFTP Report Service
+
+Reports can also be fetched by SFTP instead of being delivered by Mail. 
+See the [sftp-report-service](sftp-report-service/) folder.
