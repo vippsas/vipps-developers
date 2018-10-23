@@ -8,7 +8,7 @@ More information about SFTP: [SSH File Transfer Protocol](https://en.wikipedia.o
 
 # How to set up users for connecting to the SFTP server
 
-1. Login to https://portal.vipps.no and click Bedriftsinfo under Bedrift organization name
+1. Login to https://portal.vipps.no and click Bedriftsinfo under Bedrift and Organization name
 
 ![Velg profil](images/01_velg_profil.png "Velg profil")
 
