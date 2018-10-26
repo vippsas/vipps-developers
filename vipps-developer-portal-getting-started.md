@@ -45,7 +45,7 @@ The test environment has a purple header:
 
 ## Production environment: Orange
 
-The test environment has an orange header:
+The production environment has an orange header:
 
 ![Vipps Developer Portal: Production](images/devportal-prod-home.png)
 
