@@ -1,10 +1,5 @@
 # Vipps Settlements
 
-Dag 1: Kunden utfører kjøpet og transaksjonen gjennomføres. Hvis varene sendes senere så regnes «dag 1» fra den dagen hvor bedriften belaster kundens konto.
-Natt til dag 2: Oppgjørsfiler sendes ut, og er tilgjengelig i VippsPortalen
-Dag 3 (neste bankdag) kl. 16: Utbetaling skjer fra Vipps.
-Dag 5 (3. bankdag): Oppgjør bokført inn med referanse i bank.
-
 The settlement flow is as follows:
 
 1. Day 1: A customer makes a purchase and the transaction is completed. If the purchased product is shipped later, the "day 1" is the day the product is shiopped and the customer's account is charged.
@@ -15,7 +10,7 @@ The settlement flow is as follows:
 See https://www.vipps.no/sporsmal for more details.
 
 # Settlement reports
-
+Dag
 Settlement reports are provided in these formats:
 
 | Format | Example            | Specification      |
