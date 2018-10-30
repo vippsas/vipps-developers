@@ -42,15 +42,38 @@ Postman can import Swagger files directly, so collections is not a requirement.
 
 See the [Postman documentation](https://www.getpostman.com/docs/) for more information about using Postman.
 
+# The Vipps test environment (MT)
+
+The Merchant Test Environment (MT) is available for all Vipps customers.
+The environment is suitable for testing _most_ of the Vipps functionality, but some
+functionality in the production environment is not available in MT.
+In general, MT does not contain functionality that requires integration with
+third parties, such as Payment Service Providers, EVRY, Nets, banks, etc.
+
+Functionality not available in MT (a non-exhaustive list):
+* Payment of invoices, both for Vipps Regninger and Vipps Faktura
+* Push alerts may be unstable
+* Limited support for testing card statuses that require connections to Nets, etc
+* Limited support for looking up customer information in KAR, etc
+
+To test functionality that is not available in MT, you will have to use the
+production environment in a controlled manner. One example may be to test
+Vipps Regninger with real invoices, but with small amounts.
+
 # Vipps test app
 
 ## iOS
+
+![Vipps test app icon](images/vipps-testapp-app-store-icon.jp)
 
 The iOS test app is available in Apple TestFlight: https://testflight.apple.com/join/hTAYrwea
 
 The app is identical to the production app, but connects to the Vipps test environment (MT: Merchant Test) instead of the production environment.
 
+### Test users
+
 To get your own test users created in the MT environment, please [contact us](contact.md). We will need the following:
+
 * Phone number, 8 digits (Norwegian numbers only)
 * NIN (National Identity Number, fødselsnummer), 11 digits
 * First name and last name
