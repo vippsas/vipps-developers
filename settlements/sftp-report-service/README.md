@@ -8,7 +8,7 @@ More information about SFTP: [SSH File Transfer Protocol](https://en.wikipedia.o
 
 # How to set up users for connecting to the SFTP server
 
-1. Login to https://portal.vipps.no and click Bedriftsinfo under Bedrift and Organization name
+1. Login to https://portal.vipps.no and click `Bedriftsinfo` under your Bedrift and Organization name.
 
 ![Velg profil](images/01_velg_profil.png "Velg profil")
 
@@ -27,6 +27,53 @@ The address of the SFTP server is `sftp.vipps.no`.
 This is the directory structure:
 ```
 /settlements/[inbox|archive]/[file extension]/[orgnum]/[sales unit serial]/[sales unit serial]-[settlement number].[file extension]
+```
+## Example SFTP session
+
+Below is an example of an SFTP session, with line breaks added for readability.
+
+```
+$ sftp sftp.vipps.no
+Connected to sftp.vipps.no.
+
+sftp> ls
+settlements  
+
+sftp> ls settlements
+settlements/archive   
+settlements/inbox     
+
+sftp> ls settlements/inbox
+settlements/inbox/csv        
+settlements/inbox/pdf        
+settlements/inbox/xlsx       
+settlements/inbox/xml        
+settlements/inbox/xml.zip    
+
+sftp> ls settlements/inbox/xml
+settlements/inbox/xml/998724341   
+
+sftp> ls settlements/inbox/xml/998724341
+settlements/inbox/xml/998724341/16655    
+
+sftp> ls settlements/inbox/xml/998724341/16655
+settlements/inbox/xml/998724341/16655/16655-2000001.xml             
+settlements/inbox/xml/998724341/16655/16655-2000002.xml            
+settlements/inbox/xml/998724341/16655/16655-2000003.xml             
+settlements/inbox/xml/998724341/16655/16655-2000004.xml             
+
+sftp> mget settlements/inbox/xml/998724341/16655/*
+Fetching /settlements/inbox/xml/998724341/16655/16655-2000001.xml to 16655-2000001.xml
+Fetching /settlements/inbox/xml/998724341/16655/16655-2000002.xml to 16655-2000002.xml
+Fetching /settlements/inbox/xml/998724341/16655/16655-2000003.xml to 16655-2000003.xml
+Fetching /settlements/inbox/xml/998724341/16655/16655-2000004.xml to 16655-2000004.xml
+
+sftp> !ls -1
+16655-2000001.xml
+16655-2000002.xml
+16655-2000003.xml
+16655-2000004.xml
+sftp> quit
 ```
 
 # How to use it
