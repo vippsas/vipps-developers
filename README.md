@@ -60,28 +60,42 @@ To test functionality that is not available in MT, you will have to use the
 production environment in a controlled manner. One example may be to test
 Vipps Regninger with real invoices, but with small amounts.
 
+### Test users
+
+The welcome email contains information about your test user, which has:
+
+* A dummy phone phone number
+* A PIN
+* A dummy bank account number
+* A dummy credit card number
+
+#### Additional test users
+
+We aim to offer support for creating your own test user(s) in MT, in steps
+similar to this (we do not yet have an ETA on this):
+
+0. Download the test app (see below).
+1. Create a valid, dummy NIN (National Identity number, "fødselsnummer"): http://prag.matisk.com/ssn
+2. Register in the MT app with your own phone number and your own name
+3. You will automatically get an account number and a credit card number
+4. One Time Password (OTP) for activation: Use 1234 (or any number)
+
 # Vipps test app
 
 ## iOS
 
-![Vipps test app icon](images/vipps-testapp-app-store-icon.jpg)
+![Vipps test app icon](images/vipps-testapp-app-store-icon.jpg | width=200)
 
 The iOS test app is available in Apple TestFlight: https://testflight.apple.com/join/hTAYrwea
 
-The app is identical to the production app, but connects to the Vipps test environment (MT: Merchant Test) instead of the production environment.
-
-### Test users
-
-To get your own test users created in the MT environment, please [contact us](contact.md). We will need the following:
-
-* Phone number, 8 digits (Norwegian numbers only)
-* NIN (National Identity Number, fødselsnummer), 11 digits
-* First name and last name
-* Account number
+The app is identical to the production app, but connects to the
+Vipps test environment (MT: Merchant Test) instead of the production environment.
 
 ## Android
 
-We are working on a test app for Android, and will update this page when it is available.
+We aim to offer a test app for Android, and will update this page when it is available.
+There is no date for when this will be available. If you need an Android test app,
+please [contact us](contact.md).
 
 # Additional developer resources
 
