@@ -19,6 +19,17 @@ The Vipps Test environment contains synthetic data useful for testing.
 
 # Creating more test data
 
+## Credit card numbers
+
+Nets offers a series of credit cards with pre-defined characteristics: https://shop.nets.eu/web/partners/test-cards
+Response codes: https://shop.nets.eu/web/partners/response-codes
+
+BIN Codes: Credit Card & Debit Card Number Tools: https://www.bincodes.com/bin-creditcard-generator/
+
+## Faker
+
+The Faker Python library may also be useful: https://github.com/joke2k/faker
+
 ## DNB Open Banking
 
 DNB Open banking has some useful tools for generating synthetic "Norwegian" data: https://github.com/DNBbank/dnbtestdata
@@ -46,14 +57,3 @@ contains 100,000 synthetic users in JSON format (took ~30 minutes to create), li
 }
 ```
 
-## Faker
-
-The Faker Python library may also be useful: https://github.com/joke2k/faker
-
-# Third party test data
-
-## Nets
-
-Nets offers a series of credit cards with pre-defined characteristics: https://shop.nets.eu/web/partners/test-cards
-
-Response codes: https://shop.nets.eu/web/partners/response-codes
