@@ -14,7 +14,7 @@ please use [this form](https://www.vipps.no/tips-og-tilbakemeldinger).
 
 So, for _*technical questions*_: Send an email to integration@vipps.no with all relevant information:
 
-* An email a self-explanatory `Subject` line ("`POST:/something` gives `HTTP 400` response")
+* A concise, self-explanatory `Subject` line ("`POST:/something` gives `HTTP 400` response")
 * Your contact information (if not in your email signature):
   - Name
   - Phone number
