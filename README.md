@@ -84,7 +84,7 @@ similar to this (we do not yet have an ETA on this):
 
 ## iOS
 
-![Vipps test app icon](images/vipps-testapp-app-store-icon.jpg | width=200)
+![Vipps test app icon](images/vipps-testapp-app-store-icon.jpg)
 
 The iOS test app is available in Apple TestFlight: https://testflight.apple.com/join/hTAYrwea
 
