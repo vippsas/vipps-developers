@@ -62,14 +62,17 @@ Vipps Regninger with real invoices, but with small amounts.
 
 ### Test users
 
-The welcome email contains information about your test user, which has:
+The welcome email contains information about your test user, which has the following dummy data:
 
-* A dummy phone phone number
-* A PIN
-* A dummy bank account number
-* A dummy credit card number
+* Name
+* Phone number
+* PIN
+* Bank account number
+* Credit card number
 
-#### Additional test users
+You can use tyhis test user to in the test app.
+
+#### Creating additional test users
 
 We aim to offer support for creating your own test user(s) in MT, in steps
 similar to this (we do not yet have an ETA on this):
