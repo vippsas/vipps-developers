@@ -70,7 +70,7 @@ The welcome email contains information about your test user, which has the follo
 * Bank account number
 * Credit card number
 
-You can use tyhis test user to in the test app.
+You can use this test user to in the test app.
 
 #### Creating additional test users
 
