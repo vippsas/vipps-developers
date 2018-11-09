@@ -8,7 +8,7 @@ This repository contains various resources for Vipps developers, including:
 
 # Vipps repositories on GitHub
 
-To clone all the Vipps repos, this works for macOS:
+To clone [all the Vipps repositories](https://github.com/vippsas), this works for macOS:
 
 1. Install [Homebrew](https://brew.sh), the missing package manager for macOS  
         ```
