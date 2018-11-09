@@ -89,7 +89,7 @@ similar to this (we do not yet have an ETA on this):
 
 ![Vipps test app icon](images/vipps-testapp-app-store-icon.jpg)
 
-The iOS test app is available in Apple TestFlight: https://testflight.apple.com/join/hTAYrwea
+The iOS test app is available in Apple TestFlight: https://testflight.apple.com/join/hTAYrwea (you do not need an activation code).
 
 The app is identical to the production app, but connects to the
 Vipps test environment (MT: Merchant Test) instead of the production environment.
