@@ -92,7 +92,7 @@ similar to this (we do not yet have an ETA on this):
 The iOS test app is available in Apple TestFlight: https://testflight.apple.com/join/hTAYrwea (you do not need an activation code).
 
 The app is identical to the production app, but connects to the
-Vipps test environment (MT: Merchant Test) instead of the production environment.
+Vipps test environment [The Vipps test environment (MT)](#the-vipps-test-environment-mt) instead of the production environment.
 
 ## Android
 
