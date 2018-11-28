@@ -23,7 +23,7 @@ brew install jq
 curl -s https://api.github.com/orgs/vippsas/repos | jq .[].clone_url | xargs -n 1 git clone
         ```
 
-## Pull all GitHub repos in the current directory
+## Pull all GitHub repositories in the current directory
 
 Creating an alias like `gitall` for this command may be useful:
 
@@ -34,11 +34,13 @@ find . -type d -depth 1 -exec git --git-dir={}/.git --work-tree=$PWD/{} pull ori
 
 [Postman](https://www.getpostman.com/) is a common tool for working with REST APIs.
 We offer [Postman Collections](https://www.getpostman.com/collection) for some APIs.
+Postman can import Swagger files directly, so collections is not a requirement.
 
 With Postman you can make calls to all the API endpoints and see the full
-`request` and `response` for each call, including headers.
+request and response for each call, including headers.
 
-Postman can import Swagger files directly, so collections is not a requirement.
+When contacting us about API issues, we are usually able to help faster if you send us 
+the complete request and response.
 
 See the [Postman documentation](https://www.getpostman.com/docs/) for more information about using Postman.
 
@@ -51,14 +53,14 @@ In general, MT does not contain functionality that requires integration with
 third parties, such as Payment Service Providers, EVRY, Nets, banks, etc.
 
 Functionality not available in MT (a non-exhaustive list):
-* Payment of invoices, both for Vipps Regninger and Vipps Faktura
 * Push alerts may be unstable
+* Payment of invoices, both for Vipps Regninger and Vipps Faktura
 * Limited support for testing card statuses that require connections to Nets, etc
-* Limited support for looking up customer information in KAR, etc
+* Limited support for looking up customer information in [KAR](https://www.bits.no/en/bank/konto-og-adresseringsregister-kar/), etc
 
 To test functionality that is not available in MT, you will have to use the
 production environment in a controlled manner. One example may be to test
-Vipps Regninger with real invoices, but with small amounts.
+Vipps Regninger with real invoices, but with small amounts. We recommend 2 NOK.
 
 Other differences in MT:
 * We allow 10,000 incorrect PIN attempts before locking the Vipps user's account
@@ -92,10 +94,10 @@ similar to this (we do not yet have an ETA on this):
 
 ![Vipps test app icon](images/vipps-testapp-app-store-icon.jpg)
 
-The iOS test app is available in Apple TestFlight: https://testflight.apple.com/join/hTAYrwea (you do not need an activation code).
+The iOS test app is available in Apple TestFlight: https://testflight.apple.com/join/hTAYrwea (you do *not* need an activation code).
 
 The app is identical to the production app, but connects to the
-Vipps test environment [The Vipps test environment (MT)](#the-vipps-test-environment-mt) instead of the production environment.
+Vipps [the Vipps test environment (MT)](#the-vipps-test-environment-mt) instead of the production environment.
 
 ## Android
 
@@ -110,5 +112,5 @@ please [contact us](contact.md).
 * Products, personal: http://vipps.no/privat
 * Products, business: http://vipps.no/bedrift
 
-The Vipps Integration team  
-Get in touch: [How to contact us](contact.md)
+**The Vipps Integration team**  
+[Get in touch here](contact.md)
