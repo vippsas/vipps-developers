@@ -60,6 +60,9 @@ To test functionality that is not available in MT, you will have to use the
 production environment in a controlled manner. One example may be to test
 Vipps Regninger with real invoices, but with small amounts.
 
+Other differences in MT:
+* We allow 10,000 incorrect PIN attempts before locking the Vipps user's account
+
 ### Test users
 
 The welcome email contains information about your test user, which has the following dummy data:
