@@ -88,16 +88,16 @@ similar to this (we do not yet have an ETA on this):
 3. You will automatically get an account number and a credit card number
 4. One Time Password (OTP) for activation: Use 1234 (or any number)
 
-# Vipps test app
+# Vipps test apps
+
+The test apps are identical to the production app, but connects to the
+Vipps [the Vipps test environment (MT)](#the-vipps-test-environment-mt) instead of the production environment.
 
 ## iOS
 
 ![Vipps test app icon](images/vipps-testapp-app-store-icon.jpg)
 
 The iOS test app is available in Apple TestFlight: https://testflight.apple.com/join/hTAYrwea (you do *not* need an activation code).
-
-The app is identical to the production app, but connects to the
-Vipps [the Vipps test environment (MT)](#the-vipps-test-environment-mt) instead of the production environment.
 
 ## Android
 
