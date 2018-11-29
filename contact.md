@@ -5,9 +5,10 @@ Hello! 👋 We love email!
 ## We help with technical issues
 
 We help with _technical_ issues, such as questions about using our APIs.
-For general inquiries, please use the
-[contact us](https://www.vipps.no/privat/kontakt-oss) form on vipps.no,
-and if you have suggestions for improvements to Vipps products,
+* General inquiries: Please use the
+[contact us](https://www.vipps.no/privat/kontakt-oss) form on vipps.no
+* Vipps through partners: Please contact partnerbestilling@vipps.no
+* If you have suggestions for improvements to Vipps products,
 please use [this form](https://www.vipps.no/tips-og-tilbakemeldinger).
 
 # What to include in the email
