@@ -101,9 +101,7 @@ Vipps [the Vipps test environment (MT)](#the-vipps-test-environment-mt) instead 
 
 ## Android
 
-We aim to offer a test app for Android, and will update this page when it is available.
-There is no date for when this will be available. If you need an Android test app,
-please [contact us](contact.md).
+The Android test app will be available early December 2018. We are doing the final testing.
 
 # Additional developer resources
 
