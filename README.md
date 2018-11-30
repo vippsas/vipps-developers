@@ -39,7 +39,7 @@ Postman can import Swagger files directly, so collections is not a requirement.
 With Postman you can make calls to all the API endpoints and see the full
 request and response for each call, including headers.
 
-When contacting us about API issues, we are usually able to help faster if you send us 
+When contacting us about API issues, we are usually able to help faster if you send us
 the complete request and response.
 
 See the [Postman documentation](https://www.getpostman.com/docs/) for more information about using Postman.
@@ -97,7 +97,17 @@ Vipps [the Vipps test environment (MT)](#the-vipps-test-environment-mt) instead 
 
 ![Vipps test app icon](images/vipps-testapp-app-store-icon.jpg)
 
-The iOS test app is available in Apple TestFlight: https://testflight.apple.com/join/hTAYrwea (you do *not* need an activation code).
+The iOS test app is available in Apple TestFlight: https://testflight.apple.com/join/hTAYrwea
+
+Please log in with your test user, that was sent in the welcome email to the email address
+used in the registration. You do *not* need an activation code.
+
+From the instructions in the link above:
+
+> Installing a Beta iOS App from an Invitation Email or Public Link:
+> 1. Install TestFlight on the iOS device that you’ll use for testing.
+> 2. Open your invitation email or tap on the public link on your iOS device.
+> 3. Tap View in TestFlight or Start Testing; or tap Accept, Install, or Update for the app you want to test.
 
 ## Android
 
