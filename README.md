@@ -75,7 +75,7 @@ The welcome email contains information about your test user, which has the follo
 * Bank account number
 * Credit card number
 
-You can use this test user to in the test app.
+You can use this test user to in the [Vipps test apps](#vipps-test-apps).
 
 #### Creating additional test users
 
