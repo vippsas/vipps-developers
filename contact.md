@@ -27,8 +27,9 @@ So, for _*technical questions*_: Send an email to integration@vipps.no with all 
 * For eCommerce issues: Which eCommerce solution you are using, and which version
   - For WooCommerce: See the [support forum](https://wordpress.org/support/plugin/woo-vipps) and https://github.com/vippsas/vipps-woocommerce
   - For Magento: See https://github.com/vippsas/vipps-magento
-* For API issues: Complete `request` and `response` details ([curl](https://curl.haxx.se) is preferred, and ensures the quickest response)
-* For app issues: Specify iOS or Android, and app version
+* A detailed description of the problem
+* For API issues: Complete `request` and `response` details (plaint HTTP from Postman, or [curl](https://curl.haxx.se) is preferred, and ensures the quickest response)
+* For app issues: Specify iOS or Android, and the app version
 * Screenshots, if applicable
 * Any other information that may be relevant
 
@@ -41,14 +42,6 @@ If you want colleagues to be included in all communication regarding this issue,
 add them in the `To:` or `CC:` field of the email. Any updates to the issue will be
 sent to all email addresses in the original email.
 
-## Adding additional information
-
-If you want to send additional information about the same issue,
-please reply to the email, without changing the `Subject` line.
-
-Please remove previous communication when replying to an email, do _not_ quote
-all the other messages. We already have them.
-
 # Automatic reply
 
 You will get an auto-reply from us with an issue number like `VSD-1234` in the `Subject` line.
@@ -57,12 +50,18 @@ about this issue in our systems.
 
 The auto-reply is sent from a real e-mail address, which you can reply to ✌️
 
+## Adding additional information
+
+If you want to send additional information about the same issue,
+please reply to the email, without changing the `Subject` line.
+
+Please remove previous communication when replying to an email, do _not_ quote
+all the other messages - we already have them.
+
 # Response time
 
 We will help as quickly as possible, but due to large variations in the number
 of requests and the varying complexity of resolving them, we can not guarantee response times.
-We normally reply the same day, or the next day.
-And _sometimes_ also later than that - sorry.
 
 # More than one problem, or a new one?
 
