@@ -111,7 +111,10 @@ From the instructions in the link above:
 
 ## Android
 
-The Android test app will be available early December 2018. We are doing the final testing.
+The Android test app is available at: https://install.appcenter.ms/orgs/vipps/apps/vipps-android/distribution_groups/mt%20testers
+
+Please log in with your test user, that was sent in the welcome email to the email address
+used in the registration. You do *not* need an activation code.
 
 # Additional developer resources
 
