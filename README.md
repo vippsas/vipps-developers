@@ -77,6 +77,8 @@ The welcome email contains information about your test user, which has the follo
 
 You can use this test user to in the [Vipps test apps](#vipps-test-apps).
 
+See also: [Vipps Test Datas[(https://github.com/vippsas/vipps-developers/blob/master/testdata/README.md).
+
 #### Creating additional test users
 
 We aim to offer support for creating your own test user(s) in MT, in steps
