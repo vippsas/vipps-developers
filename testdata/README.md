@@ -2,7 +2,7 @@
 
 **Work in progress!**
 
-The Vipps Test environment contains synthetic data useful for testing.
+The [Vipps Test environment (MT)](https://github.com/vippsas/vipps-developers#the-vipps-test-environment-mt) contains synthetic data useful for testing.
 
 ## Users
 
