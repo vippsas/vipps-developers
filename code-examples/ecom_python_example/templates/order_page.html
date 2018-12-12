@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order</title>
+</head>
+<body>
+<h1>Manage Order</h1>
+{% if payment_url %}
+<span style="font-weight:bold">Vipps link:</span><br>
+<a href="{{ payment_url }}">Confirm payment</a> <br>
+{% endif %}
+<span style="font-weight:bold">Order status</span> <br>
+{{ order_status }} <br>
+<span style="font-weight:bold">Order history</span> <br>
+{% for history_item in order_history %}
+   {{ history_item|tojson|safe }}<br>
+{% endfor %}
+<br><br>
+<form method=post action="{{ url_for('order_page', order_id=order_id) }}">
+    {{ form.cancel_order }}
+    {{ form.capture_order }}
+    {{ form.refund_order }}
+</form>
+</body>
+</html>

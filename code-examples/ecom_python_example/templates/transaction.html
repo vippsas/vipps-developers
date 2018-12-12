@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Transaction</title>
+</head>
+<body>
+<h1>Pay what you want for nothing</h1>
+<form method=post action="{{ url_for('initiate_payment') }}">
+    <table>
+        <tr>
+            <th align="left">Mobile number:</th>
+            <th>{{ form.customer_number }}</th>
+        </tr>
+        <tr>
+            <th align="left">What to pay:</th>
+            <th>{{ form.transaction_amount }}</th>
+        </tr>
+        <tr>
+            <th align="left">Transaction text:</th>
+            <th>{{ form.transaction_text }}</th>
+        </tr>
+        <tr>
+            <th align="left">Express checkout:</th>
+            <th>{{ form.express_checkout }}</th>
+        </tr>
+
+    </table>
+  <p><input type=submit value=Buy>
+</form>
+</body>
+</html>
