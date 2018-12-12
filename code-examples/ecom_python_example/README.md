@@ -13,3 +13,6 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 ### Running express checkout:
 - For express payment the API require an externally accessible host address. To enable flask to be externally accessible, change app.run() to app.run(host='0.0.0.0').
 - Express checkout and merchant end point functionality is untested and not currently working.
+
+### Basic manage order page:
+![](images\manage_order.png)

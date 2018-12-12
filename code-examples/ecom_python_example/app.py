@@ -62,7 +62,7 @@ def order_page(order_id):
             capture_payment(order_id, access_token)
         elif form.refund_order.data:
             refund_payment(order_id, access_token)
-    if order_id == session["order_id"]:
+    if session.get("order_id") == order_id:
         payment_url = session["payment_url"]
     else:
         payment_url = ""
