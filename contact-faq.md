@@ -10,7 +10,7 @@
 
 # Jeg lurer på ...
 
-Ta en titt på [Spørsmål og svar](https://www.vipps.no/sporsmal) på vipps.no først.
+Ta en titt på [Spørsmål og svar for bedrifter](https://www.vipps.no/sporsmal#bedriftspm) på vipps.no først.
 
 # Jeg ønsker en integrasjon, men vet ikke hva slags løsning jeg skal ha?
 
