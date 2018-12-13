@@ -18,7 +18,7 @@ Dette gjøres av registrert administrator, ved å logge inn med BankID på https
 
 # Jeg er kunde hos [en Vipps-partner] og lurer på _____
 
-Da må du henvende seg ti partneren. Hvis det er behov for hjelp fra Vipps, må henvendelsen
+Da må du henvende seg til partneren. Hvis det er behov for hjelp fra Vipps, må henvendelsen
 komme fra partneren.
 
 # Jeg har bestilt Vipps, men ikke mottatt e-post med brukernavn, passord, API-nøkler, etc
