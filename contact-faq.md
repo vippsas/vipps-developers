@@ -8,6 +8,10 @@
 - [Vi har WooCmmerce / andre løsninger og har noen tekniske problemer](#vi-har-woocmmerce---andre-l-sninger-og-har-noen-tekniske-problemer)
 - [Det er beløp som vi ikke får sjekket ut](#det-er-bel-p-som-vi-ikke-f-r-sjekket-ut)
 
+# Jeg lurer på ...
+
+Ta en titt på [Spørsmål og svar](https://www.vipps.no/sporsmal) på vipps.no først.
+
 # Jeg ønsker en integrasjon, men vet ikke hva slags løsning jeg skal ha?
 
 Se: https://www.vipps.no/bedrift/vippshjelper
