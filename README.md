@@ -6,7 +6,7 @@ This repository contains various resources for Vipps developers, including:
 * [How to contribute](contribute.md) to Vipps projects on GitHub
 * [How to contact us](contact.md) in the Vipps Integration team
 
-# Table of contents
+## Table of contents
 
 - [Vipps repositories on GitHub](#vipps-repositories-on-github)
   * [Pull all GitHub repositories in the current directory](#pull-all-github-repositories-in-the-current-directory)
