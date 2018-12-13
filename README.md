@@ -6,6 +6,20 @@ This repository contains various resources for Vipps developers, including:
 * [How to contribute](contribute.md) to Vipps projects on GitHub
 * [How to contact us](contact.md) in the Vipps Integration team
 
+# Table of contents
+
+- [Vipps repositories on GitHub](#vipps-repositories-on-github)
+  * [Pull all GitHub repositories in the current directory](#pull-all-github-repositories-in-the-current-directory)
+- [Postman](#postman)
+- [The Vipps test environment (MT)](#the-vipps-test-environment--mt-)
+    + [Test users](#test-users)
+      - [Creating additional test users](#creating-additional-test-users)
+- [Vipps test apps](#vipps-test-apps)
+  * [iOS](#ios)
+  * [Android](#android)
+- [Vipps design guidelines](#vipps-design-guidelines)
+- [Additional developer resources](#additional-developer-resources)
+
 # Vipps repositories on GitHub
 
 To clone [all the Vipps repositories](https://github.com/vippsas), this works for macOS:
@@ -117,6 +131,10 @@ The Android test app is available at: https://install.appcenter.ms/orgs/vipps/ap
 
 Please log in with your test user, that was sent in the welcome email to the email address
 used in the registration. You do *not* need an activation code.
+
+# Vipps design guidelines
+
+Guidelines, logos, buttons, etc: https://github.com/vippsas/vipps-design-guidelines
 
 # Additional developer resources
 
