@@ -6,9 +6,6 @@ Use those credentials to log into Vipps Developer Portal in either Test or Produ
 
 For in-depth information about the Vipps Developer Portal, see the PDF manual: https://github.com/vippsas/vipps-developers
 
-**Please note:** _We have recently updated the colors for the Test (purple) and Production (orange) environments.
-The screenshots in the documentation have not yet been updated, but the functionality is unchanged._
-
 # Step 0
 
 Make sure you have an active subscription to the relevant Vipps product(s): https://www.vipps.no/bedrift
