@@ -1,4 +1,4 @@
-from flask import Flask, request, render_template, redirect, url_for, session
+from flask import Flask, request, render_template, redirect, url_for, session, jsonify
 
 from rest_requests import token_request, create_payment, order_status, cancel_order, order_details, refund_payment, \
     capture_payment
@@ -36,7 +36,10 @@ def initiate_payment():
         order_id = generate_random_order_id()
         payment = create_payment(order_id, access_token, transaction_amount, transaction_text, customer_number,
                                  express_checkout=form.express_checkout.data)
-        payment_url = payment["url"]
+        if "url" in payment:
+            payment_url = payment["url"]
+        else:
+            return payment
         session['payment_url'] = payment_url
         session['order_id'] = order_id
         return redirect(url_for('order_page', order_id=order_id))
@@ -72,7 +75,7 @@ def order_page(order_id):
                            order_id=order_id, order_history=history)
 
 
-@app.route('/v2/payments/<order_id>', methods=['POST'])
+@app.route('/vipps/v2/payments/<order_id>', methods=['POST'])
 def callback_route(order_id):
     """
     Endpoint for Vipps to provide transaction updates.
@@ -81,12 +84,13 @@ def callback_route(order_id):
     :return: Vipps requires no return for callback.
     """
     response = request.get_json()
-    if response["transactionInfo"]["status"] == "Reserved":
+    if response["transactionInfo"]["status"] == "RESERVED":
         access_token = token_request()["access_token"]
         capture_payment(order_id, access_token)
+    return ""
 
 
-@app.route('/v2/payments/<order_id>/shippingDetails', methods=['POST'])
+@app.route('/vipps/v2/payments/<order_id>/shippingDetails', methods=['POST'])
 def provide_shipping_details(order_id):
     """
     Provides the shipping details for the specified order.
@@ -98,10 +102,10 @@ def provide_shipping_details(order_id):
     """
     vipps_request = request.get_json()
     shipping_details_response = get_shipping_details_response(order_id, int(vipps_request["addressId"]))
-    return shipping_details_response
+    return jsonify(shipping_details_response)
 
 
-@app.route('/v2/consents/<userId>', methods=['DELETE'])
+@app.route('/vipps/v2/consents/<userId>', methods=['DELETE'])
 def remove_consent(user_id):
     """
     This function does nothing, as this examples stores no permanent user information. A cookie delete could be done.
@@ -113,4 +117,5 @@ def remove_consent(user_id):
     return
 
 
+#app.run(host='0.0.0.0', port=80)
 app.run()

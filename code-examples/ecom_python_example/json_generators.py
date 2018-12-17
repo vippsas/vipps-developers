@@ -23,25 +23,27 @@ def generate_random_order_id():
 
     :return: A random 6 character string that can be used as order
     """
-    return ''.join(random.choices(string.ascii_lowercase + string.digits, k=6))
+    return ''.join(random.choices(string.ascii_lowercase + string.digits, k=12))
 
 
 def get_initiate_payment_http_body(order_id, transaction_amount, transaction_text, customer_number, express_checkout):
     """
     Creates a initiate payment HTTP body.
 
-    :param order_id: ID for the transaction
-    :param transaction_amount: The amount to reserve for the transaction
-    :param transaction_text: The text attached to the transaction
-    :param customer_number: The number for the Vipps account that will pay for the transaction
-    :return: Returns a HTTP body for making a initiate payment request to Vipps
+    :param express_checkout: Enables express checkout.
+    :param order_id: ID for the transaction.
+    :param transaction_amount: The amount to reserve for the transaction.
+    :param transaction_text: The text attached to the transaction.
+    :param customer_number: The number for the Vipps account that will pay for the transaction.
+    :return: Returns a HTTP body for making a initiate payment request to Vipps.
     """
     ecom_initiate_payment_body = config['ecom_initiate_payment_body'].copy()
     host = config["host_server"]
-    ecom_initiate_payment_body["merchantInfo"]["shippingDetailsPrefix"] = host
-    ecom_initiate_payment_body["merchantInfo"]["consetRemovalPrefix"] = host
-    ecom_initiate_payment_body["merchantInfo"]["callbackPrefix"] = host
+    ecom_initiate_payment_body["merchantInfo"]["shippingDetailsPrefix"] = "{}/vipps".format(host)
+    ecom_initiate_payment_body["merchantInfo"]["consentRemovalPrefix"] = "{}/vipps".format(host)
+    ecom_initiate_payment_body["merchantInfo"]["callbackPrefix"] = "{}/vipps".format(host)
     ecom_initiate_payment_body["merchantInfo"]["fallBack"] = '{}/order/{}'.format(host, order_id)
+    ecom_initiate_payment_body["merchantInfo"]["isApp"] = False
     ecom_initiate_payment_body["transaction"] = {}
     ecom_initiate_payment_body["customerInfo"] = {}
     ecom_initiate_payment_body["customerInfo"]["mobileNumber"] = customer_number
@@ -50,7 +52,7 @@ def get_initiate_payment_http_body(order_id, transaction_amount, transaction_tex
     ecom_initiate_payment_body["transaction"]["amount"] = transaction_amount
     ecom_initiate_payment_body["transaction"]["transactionText"] = transaction_text
     if express_checkout:
-        ecom_initiate_payment_body["transaction"]["paymentType"] = "eComm Express Payment"
+        ecom_initiate_payment_body["merchantInfo"]["paymentType"] = "eComm Express Payment"
     return ecom_initiate_payment_body
 
 
@@ -110,7 +112,7 @@ def get_shipping_details_response(order_id, address_id):
             {
                 "isDefault": "string",
                 "priority": 0,
-                "shippingCost": 0,
+                "shippingCost": 0.0,
                 "shippingMethod": "string"
             }
         ]
