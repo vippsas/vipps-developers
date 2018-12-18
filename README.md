@@ -91,6 +91,10 @@ The welcome email contains information about your test user, which has the follo
 
 You can use this test user to in the [Vipps test apps](#vipps-test-apps).
 
+If you need additional payment cards, you can add it in the Vipps app. 
+See [Credit card numbers](https://github.com/vippsas/vipps-developers/tree/master/testdata#credit-card-numbers) 
+for more details.
+
 See also: [Vipps Test Datas[(https://github.com/vippsas/vipps-developers/blob/master/testdata/README.md).
 
 #### Creating additional test users
