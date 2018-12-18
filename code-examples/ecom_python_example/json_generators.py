@@ -110,10 +110,19 @@ def get_shipping_details_response(order_id, address_id):
         "orderId": order_id,
         "shippingDetails": [
             {
-                "isDefault": "string",
-                "priority": 0,
-                "shippingCost": 0.0,
-                "shippingMethod": "string"
+                "isDefault": "N",
+                "priority": 1,
+                "shippingCost": 30.0,
+                "shippingMethod": "postNord",
+                "shippingMethodId": "".join(random.choices(string.ascii_lowercase + string.digits, k=6))
+            },
+
+            {
+                "isDefault": "Y",
+                "priority": 2,
+                "shippingCost": 30.0,
+                "shippingMethod": "Posten",
+                "shippingMethodId": "".join(random.choices(string.ascii_lowercase + string.digits, k=6))
             }
         ]
     }

@@ -84,7 +84,7 @@ def callback_route(order_id):
     :return: Vipps requires no return for callback.
     """
     response = request.get_json()
-    if response["transactionInfo"]["status"] == "RESERVED":
+    if response["transactionInfo"]["status"] == "RESERVE":
         access_token = token_request()["access_token"]
         capture_payment(order_id, access_token)
     return ""
