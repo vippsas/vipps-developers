@@ -35,7 +35,7 @@ def initiate_payment():
         access_token = token_request()["access_token"]
         order_id = generate_random_order_id()
         payment = create_payment(order_id, access_token, transaction_amount, transaction_text, customer_number,
-                                 express_checkout=form.express_checkout.data)
+                                 express_checkout=form.express_checkout.data, is_app=form.is_app.data)
         if "url" in payment:
             payment_url = payment["url"]
         else:

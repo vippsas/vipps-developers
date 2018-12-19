@@ -26,7 +26,8 @@ def generate_random_order_id():
     return ''.join(random.choices(string.ascii_lowercase + string.digits, k=12))
 
 
-def get_initiate_payment_http_body(order_id, transaction_amount, transaction_text, customer_number, express_checkout):
+def get_initiate_payment_http_body(order_id, transaction_amount, transaction_text, customer_number, express_checkout,
+                                   is_app):
     """
     Creates a initiate payment HTTP body.
 
@@ -43,7 +44,10 @@ def get_initiate_payment_http_body(order_id, transaction_amount, transaction_tex
     ecom_initiate_payment_body["merchantInfo"]["consentRemovalPrefix"] = "{}/vipps".format(host)
     ecom_initiate_payment_body["merchantInfo"]["callbackPrefix"] = "{}/vipps".format(host)
     ecom_initiate_payment_body["merchantInfo"]["fallBack"] = '{}/order/{}'.format(host, order_id)
-    ecom_initiate_payment_body["merchantInfo"]["isApp"] = False
+    if is_app:
+        ecom_initiate_payment_body["merchantInfo"]["isApp"] = True
+    else:
+        ecom_initiate_payment_body["merchantInfo"]["isApp"] = False
     ecom_initiate_payment_body["transaction"] = {}
     ecom_initiate_payment_body["customerInfo"] = {}
     ecom_initiate_payment_body["customerInfo"]["mobileNumber"] = customer_number
@@ -53,6 +57,8 @@ def get_initiate_payment_http_body(order_id, transaction_amount, transaction_tex
     ecom_initiate_payment_body["transaction"]["transactionText"] = transaction_text
     if express_checkout:
         ecom_initiate_payment_body["merchantInfo"]["paymentType"] = "eComm Express Payment"
+    else:
+        ecom_initiate_payment_body["merchantInfo"]["paymentType"] = "eComm Regular Payment"
     return ecom_initiate_payment_body
 
 

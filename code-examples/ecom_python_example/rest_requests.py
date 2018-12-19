@@ -23,7 +23,7 @@ def token_request():
 
 
 def create_payment(order_id, access_token, transaction_amount, transaction_text, customer_number,
-                   express_checkout=False):
+                   express_checkout=False, is_app=False):
     """
     Creates a initiate payment request to Vipps.
 
@@ -38,7 +38,7 @@ def create_payment(order_id, access_token, transaction_amount, transaction_text,
     url = base_url + '/ecomm/v2/payments'
     headers = get_base_ecom_headers(access_token)
     body = get_initiate_payment_http_body(order_id, transaction_amount, transaction_text, customer_number,
-                                          express_checkout=express_checkout)
+                                          express_checkout=express_checkout, is_app=is_app)
     response = requests.post(url=url, headers=headers, json=body)
     return response.json()
 

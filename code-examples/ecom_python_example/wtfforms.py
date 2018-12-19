@@ -7,6 +7,7 @@ class Transaction(Form):
     transaction_amount = StringField(validators=[DataRequired()])
     transaction_text = StringField(validators=[DataRequired()])
     express_checkout = BooleanField()
+    is_app = BooleanField()
 
 
 class OrderPage(Form):
