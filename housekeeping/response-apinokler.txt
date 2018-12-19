@@ -1,0 +1,23 @@
+Hei
+
+Innloggingsinformasjon til utviklerportalen, der man kan logge inn og hente API-nøkler, sendes automatisk:
+
+1) Kunde bestiller en Vipps-løsning. Se https://www.vipps.no/bedrift.
+2) Vipps gjennomfører kundekontroll (KYC, AML, etc). Dette kan ta flere dager, og det hender vi etterspø tilleggsinformasjon.
+3) Vipps oppretter kundeforhold, med API-nøkler, etc.
+4) Vipps sender e-post til e-postadressen kunden oppga ved registrering med innloggingsinformasjon til utviklerportalen
+
+Se "Getting Started" for informasjon om utviklerportalen og hvordan man henter API-nøkler: https://github.com/vippsas/vipps-developers
+
+Hvis du har spørsmål om status på bestillingen, hjelper Vipps kundesenter med dette:
+Telefon: 22 48 28 00. 
+Kontaktskjema: https://www.vipps.no/bedrift/kontakt-oss
+
+$cursor$
+
+--
+$currentUserName$
+[Vipps Integration|https://github.com/vippsas/vipps-developers/blob/master/contact.md]
+
+http://vipps.no/developer
+https://github.com/vippsas
