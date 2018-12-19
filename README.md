@@ -11,6 +11,7 @@ This repository contains various resources for Vipps developers, including:
 - [Vipps repositories on GitHub](#vipps-repositories-on-github)
   * [Pull all GitHub repositories in the current directory](#pull-all-github-repositories-in-the-current-directory)
 - [Postman](#postman)
+- [Example code](#example-code)
 - [The Vipps test environment (MT)](#the-vipps-test-environment--mt-)
     + [Test users](#test-users)
       - [Creating additional test users](#creating-additional-test-users)
@@ -57,6 +58,11 @@ When contacting us about API issues, we are usually able to help faster if you s
 the complete request and response.
 
 See the [Postman documentation](https://www.getpostman.com/docs/) for more information about using Postman.
+
+# Example code
+
+We have made some code available, in hope that it may be useful: 
+https://github.com/vippsas/vipps-developers/tree/master/code-examples
 
 # The Vipps test environment (MT)
 
