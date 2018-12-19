@@ -1,7 +1,7 @@
-# Ofte stilte spørsmål
-
-_Dette er foreløpøig å anse som et arbeidsdokument for å finne jut hvordan Vipps kan hjelpe
+_Dette er foreløpøig å anse som et arbeidsdokument for å finne ut hvordan Vipps kan hjelpe
 kunder mest mulig effektivt._
+
+# Ofte stilte spørsmål
 
 - [Jeg ønsker en integrasjon, men vet ikke hva slags løsning jeg skal ha?](#jeg--nsker-en-integrasjon--men-vet-ikke-hva-slags-l-sning-jeg-skal-ha-)
 - [Jeg ønsker å endre logo, navn, mottaker av oppgjør, adminbruker eller andre administrative endringer knyttet til salgsenhet](#jeg--nsker---endre-logo--navn--mottaker-av-oppgj-r--adminbruker-eller-andre-administrative-endringer-knyttet-til-salgsenhet)
