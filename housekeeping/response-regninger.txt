@@ -1,0 +1,21 @@
+Hei
+
+Vipps Regninger er en ny løsning som er annonsert, og som blir tilgjengelig for kunder inne kort tid. Se https://www.vipps.no/privat/vippsregninger for mer informasjon.
+
+Vipps Regninger erstatter Vipps Faktura, som vil bli faset ut 31. mars 2019.
+
+Vi har samlet en del spørsmål og svar om Vipps Regninger her: https://www.vipps.no/sporsmal#3jo7g2-accordion-label
+
+Vipps Regninger er ment for IPP og ISPer. Det er dessverre ikke slik at man kan sende regninger direkte til kunder, ved mindre man selvsagt er en ISP.
+Les om IPP og ISP her: https://github.com/vippsas/vipps-invoice-api#isp-invoice-service-provider
+
+Dokumentasjon for API-et for integrasjon med Vipps Regninger er tilgjengelig på GitHub: https://github.com/vippsas/vipps-invoice-api
+
+$cursor$
+
+--
+$currentUserName$
+Vipps Integration
+
+http://vipps.no/developer
+https://github.com/vippsas

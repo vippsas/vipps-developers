@@ -1,0 +1,20 @@
+Hei
+
+Vipps for Magento er utviklet for oss av vår partner Vaimo: https://vaimo.com
+
+Vaimo er eksperter på Magento, og den raskeste måten å få Magento-spesifikk hjelp på, er på GitHub: https://github.com/vippsas/vipps-magento 
+
+Bruk GitHubs innebygde funksjonalitet for "issues" for å rapportere feil eller stille spørsmål, på engelsk, så vil Vaimo svare. Mer informasjon om "issues": https://help.github.com/articles/about-issues/
+
+For Vipps-relaterte problemer hjelper vi selvsagt.
+
+Magento-pluginen er også open source, hvis det er interessant: https://github.com/vippsas/vipps-magento
+
+$cursor$
+
+--
+$currentUserName$
+[Vipps Integration|https://github.com/vippsas/vipps-developers/blob/master/contact.md]
+
+http://vipps.no/developer
+https://github.com/vippsas

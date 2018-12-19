@@ -1,0 +1,12 @@
+Hi 
+
+The credentials for the Vipps Developer Portal are sent automatically to the email used in the registration. The client_secret is sent by SMS.
+
+See the [Vipps Developer Portal guide](https://github.com/vippsas/vipps-developers/blob/master/vipps-developer-portal-getting-started.md) for how to log in to test and production, how to generate keys, etc.
+
+--
+$currentUserName$
+[Vipps Integration|https://github.com/vippsas/vipps-developers/blob/master/contact.md]
+
+http://vipps.no/developer
+https://github.com/vippsas

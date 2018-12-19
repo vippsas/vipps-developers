@@ -1,0 +1,15 @@
+Hei
+
+Vipps Faktura er en løsning som fases ut. Den nye løsningen er Vipps Regninger:
+https://www.vipps.no/privat/vippsregninger
+
+API-dokumentasjon: https://github.com/vippsas/vipps-invoice-api
+
+$cursor$
+
+--
+$currentUserName$
+Vipps Integration
+
+http://vipps.no/developer
+https://github.com/vippsas

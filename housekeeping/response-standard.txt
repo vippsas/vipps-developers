@@ -1,0 +1,10 @@
+Hei
+
+$cursor$
+
+--
+$currentUserName$
+[Vipps Integration|https://github.com/vippsas/vipps-developers/blob/master/contact.md]
+
+http://vipps.no/developer
+https://github.com/vippsas

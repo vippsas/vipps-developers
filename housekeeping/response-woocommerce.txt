@@ -1,0 +1,29 @@
+Hei
+
+Vipps for WooCommerce er utviklet for oss av vår partner WP-Hosting: https://www.wp-hosting.no
+
+WP-Hosting er eksperter på WooCommerce og Wordpress, og hvis du kan be om hjelp i supportforumet der, hjelper de deg der: https://wordpress.org/support/plugin/woo-vipps
+
+Her er svar på noen vanlige spørsmål:
+
+* Hvis du har problemer i forbindelse med Vipps Hurtigkasse, kan det skyldes at tredjeparts fraktmoduler ikke fungerer med Vipps, eventuelt at tredjepartsmodulen må tilpasses Vipps. En midlertidig løsning kan være å deaktiveer VBipps Hurtiogkasse inntil tredjepartsmodulen er tilpasset.
+
+* En annen vanlig feil er at beløpet som i første omgang reserveres ifor lavt til at fraktskostnadene kan inkluderes når man gjør capture. 
+
+* Hvis du har spørsmål om "reserve capture" og "direct capture", se FAQ-en: 
+https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-faq.md#what-is-the-difference-between-reserve-capture-and-direct-capture-and-how-do-i-change-payment-type
+
+For Vipps-relaterte problemer hjelper vi selvsagt, og vi bidrar også i forumet.
+
+WooCommerce-puginen er også open source, hvis det er interessant: https://github.com/vippsas/vipps-woocommerce
+
+Testing av WooCommerce: Denne pluginen er ment å være "plug and play", og vi tilbyr ikke eget utviklingsmiljø for WooCommerce. Når Vipps for WooCommerce for installert og konfigurert iht. dokumentasjonen, kan man gjennomføre små kjøp, f.eks. 2 kr, for å verifisere at løsningen fungerer. 
+
+$cursor$
+
+--
+$currentUserName$
+[Vipps Integration|https://github.com/vippsas/vipps-developers/blob/master/contact.md]
+
+http://vipps.no/developer
+https://github.com/vippsas

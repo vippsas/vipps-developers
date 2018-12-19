@@ -1,0 +1,14 @@
+Hei
+
+Vi jobber med en løsning som vi forventer i markedet tidlig neste år. Hvis dere ønsker et innblikk i hvordan vi tenker, og vil gi oss noen innspill, ta kontakt med tore.endre.eidem@vipps.no, så setter han opp et møte. 
+
+Han blir også informert om denne henvendelsen. 
+
+$cursor$
+
+--
+$currentUserName$
+[Vipps Integration|https://github.com/vippsas/vipps-developers/blob/master/contact.md]
+
+http://vipps.no/developer
+https://github.com/vippsas

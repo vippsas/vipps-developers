@@ -1,0 +1,18 @@
+Hei
+
+Når du driver handel av fysiske produkter er du lovpålagt å vente med å trekke beløp inntil varen er på fysisk vei til kunden. Dette er ikke regler Vipps setter, men følger av norsk lovgivning.
+
+Når en kunde betaler, skal beløpet reserveres på kundens bankkonto. Dere skal trekke betalingen (gjøre "capture") først når varen sendes.
+
+Det er kun om du står i en fysisk butikk og gir kunden vare fra hånd til hånd, eller at du f.eks. selger nedlastbare produkter på nett, at du kan trekke beløp umiddelbart.
+
+For å søke om "direct capture" og trekke beløpet umiddelbart, er det noen krav som må innfris. Se mer detaljer her: https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-faq.md#what-is-the-difference-between-reserve-capture-and-direct-capture
+
+$cursor$
+
+--
+$currentUserName$
+[Vipps Integration|https://github.com/vippsas/vipps-developers/blob/master/contact.md]
+
+http://vipps.no/developer
+https://github.com/vippsas
