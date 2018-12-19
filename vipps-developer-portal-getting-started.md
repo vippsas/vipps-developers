@@ -29,6 +29,9 @@ You type in your username and password here:
 
 On first sign-in to the test-developer portal, you will be asked for verification. You can skip this process by clicking the "Cancel" button. (This only works for test)
 
+![Verification](images/devportal-test-verification.png)
+
+
 Please note the difference between the Test and Production environments,
 both in appearance and login credentials:
 
