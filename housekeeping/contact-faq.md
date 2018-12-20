@@ -19,6 +19,9 @@ kunder mest mulig effektivt._
 
 Ta en titt på [Spørsmål og svar for bedrifter](https://www.vipps.no/sporsmal#bedriftspm) på vipps.no først.
 
+Hvis henvendelsen skal videresendes til Inrtegration:
+Se [denne siden](https://github.com/vippsas/vipps-developers/blob/master/contact.md) for hva vi trenger for å hjelpe.
+
 # Jeg ønsker en integrasjon, men vet ikke hva slags løsning jeg skal ha?
 
 Se: https://www.vipps.no/bedrift/vippshjelper
