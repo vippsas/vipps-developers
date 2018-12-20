@@ -14,7 +14,7 @@ tredjeparts fraktmoduler ikke fungerer med Vipps, eventuelt at tredjepartsmodule
 må tilpasses Vipps. En midlertidig løsning kan være å deaktiveer Vipps Hurtigkasse
 inntil tredjepartsmodulen er tilpasset.
 
-* En annen vanlig feil er at beløpet som i første omgang reserveres ifor lavt
+* En annen vanlig feil er at beløpet som i første omgang reserveres for lavt
 til at fraktskostnadene kan inkluderes når man gjør capture.
 
 * Hvis du har spørsmål om "reserve capture" og "direct capture", se FAQ-en:
