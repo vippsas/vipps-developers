@@ -1,8 +1,10 @@
 Hei
 
-Vi jobber med en løsning som vi forventer i markedet tidlig neste år. Hvis dere ønsker et innblikk i hvordan vi tenker, og vil gi oss noen innspill, ta kontakt med tore.endre.eidem@vipps.no, så setter han opp et møte. 
+Vi jobber med en løsning som vi forventer i markedet tidlig neste år.
+Hvis dere ønsker et innblikk i hvordan vi tenker, og vil gi oss noen innspill,
+ta kontakt med tore.endre.eidem@vipps.no, så setter han opp et møte. 
 
-Han blir også informert om denne henvendelsen. 
+Han blir også informert om denne henvendelsen.
 
 $cursor$
 

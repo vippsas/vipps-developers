@@ -1,8 +1,10 @@
-Hi 
+Hi
 
-We are currently working on an API for recurring payments. You can have a look at this page https://github.com/vippsas/vipps-recurring-api for more information. 
+We are currently working on an API for recurring payments. You can have a look
+at this page https://github.com/vippsas/vipps-recurring-api for more information.
 
-Be advised though that we do not have a release date for this product and it is under continuous improvement and changes often.
+Be advised though that we do not have a release date for this product and it is
+under continuous improvement and changes often.
 
 --
 $currentUserName$

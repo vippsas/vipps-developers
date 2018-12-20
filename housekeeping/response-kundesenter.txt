@@ -1,14 +1,18 @@
 Hei
 
-Du har sendt en henvendelse til Vipps Integration. Vi hjelper med tekniske spørsmål, f.eks. i forbindelse med integrasjon og utvikling basert på Vipps' API-er: https://github.com/vippsas
+Du har sendt en henvendelse til Vipps Integration. Vi hjelper med tekniske
+spørsmål, f.eks. i forbindelse med integrasjon og utvikling basert på
+Vipps' API-er: https://github.com/vippsas
 
-Hvis du ønsker hjelp med en feil eller et problem som gjelder én kunde (eller en liten gruppe kunder), er det normalt en sak for Vipps Kundesenter.
+Hvis du ønsker hjelp med en feil eller et problem som gjelder én kunde (eller
+en liten gruppe kunder), er det normalt en sak for Vipps Kundesenter.
 
 Vipps Kundesenter:
-Telefon: 22 48 28 00. 
+Telefon: 22 48 28 00.
 Kontaktskjema: https://www.vipps.no/bedrift/kontakt-oss
 
-Husk at du selv kan endre logo, navn, opprette nye salgsenheter, se transaksjoner, hente oppgjørsrapporter o.l. på Vippsportalen: https://portal.vipps.no
+Husk at du selv kan endre logo, navn, opprette nye salgsenheter, se transaksjoner,
+hente oppgjørsrapporter o.l. på Vippsportalen: https://portal.vipps.no
 
 $cursor$
 

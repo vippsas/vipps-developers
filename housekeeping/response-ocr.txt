@@ -1,14 +1,18 @@
 Hei
 
-Vi beklager at dere ikke har mottatt OCR-filer. 
+Vi beklager at dere ikke har mottatt OCR-filer.
 
-Filer er normalt tilgjengelige fra kl 08:00 norsk tid. 
+Filer er normalt tilgjengelige fra kl 08:00 norsk tid.
 
-Hvis det oppstår feil i produksjon og utsending av OCR-filer, oppdager vi det normalt automatisk. De manglende transaksjonene blir inkludert i neste dags OCR-fil.
+Hvis det oppstår feil i produksjon og utsending av OCR-filer, oppdager vi det
+normalt automatisk. De manglende transaksjonene blir inkludert i neste dags OCR-fil.
 
 Se her for mer informasjon om oppgjørsfiler: https://github.com/vippsas/vipps-developers/tree/master/settlements
 
-Vi vil også nevne at Vipps Faktura etterhvert erstattes av Vipps Regninger, der betalinger går direkte fra Vipps-brukeren til dere. Da er det ikke nødvendig med OCR-filer for oppgjør. Se mer om Vipps Regninger på https://www.vipps.no/bedrift/vipps-regninger og https://www.vipps.no/privat/vippsregninger
+Vi vil også nevne at Vipps Faktura etterhvert erstattes av Vipps Regninger, der
+betalinger går direkte fra Vipps-brukeren til dere. Da er det ikke nødvendig med
+OCR-filer for oppgjør. Se mer om Vipps Regninger på
+https://www.vipps.no/bedrift/vipps-regninger og https://www.vipps.no/privat/vippsregninger
 
 --
 $currentUserName$

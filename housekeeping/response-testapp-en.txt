@@ -1,10 +1,17 @@
 Hi
 
-Vipps has a test environment called Merchant Test, or "MT" in short: https://github.com/vippsas/vipps-developers#the-vipps-test-environment-mt
+Vipps has a test environment called Merchant Test, or "MT" in short:
+https://github.com/vippsas/vipps-developers#the-vipps-test-environment-mt
 
-Vipps also have test apps for iOS (in TestFlight) and Android, which are identical to the normal Vipps app, except that they have a different logo and is connected to MT instead of the production environment. Details here: https://github.com/vippsas/vipps-developers#vipps-test-apps
+Vipps also have test apps for iOS (in TestFlight) and Android, which are
+identical to the normal Vipps app, except that they have a different logo
+and is connected to MT instead of the production environment. Details here:
+https://github.com/vippsas/vipps-developers#vipps-test-apps
 
-Please note that "app switching" is done with the same URL (vipps://) both for the test and the production app. Who doing "app switch", iOS may therefore open the test app instead of the production app. For development, we recommend to only have the test app installed.
+Please note that "app switching" is done with the same URL (vipps://) both for
+the test and the production app. Who doing "app switch", iOS may therefore open
+the test app instead of the production app. For development, we recommend to
+only have the test app installed.
 
 $cursor$
 

@@ -2,14 +2,20 @@ Hei
 
 Vipps har dessverre ingen løsning for Shopify enda.
 
-Vi ser stor interesse for Shopify, og vil gjerne komme med en løsning. Vipps har open-source
-plugins for WooCommerce https://www.vipps.no/bedrift/vipps-pa-nett/woocommerce) og Magento (https://www.vipps.no/bedrift/vipps-pa-nett/magento).
+Vi ser stor interesse for Shopify, og vil gjerne komme med en løsning.
+Vipps har open-source plugins for
+WooCommerce https://www.vipps.no/bedrift/vipps-pa-nett/woocommerce) og
+Magento (https://www.vipps.no/bedrift/vipps-pa-nett/magento).
 
 Se https://github.com/vippsas/vipps-shopify for siste nytt.
 
-I påvente av en offisiell Vipps-løsning for Shopify, vil den beste løsningen være å bruke en PSP (Payment Service Provider) som støtter både Shopify og Vipps, som Quickpay: https://quickpay.net/no/
+I påvente av en offisiell Vipps-løsning for Shopify, vil den beste løsningen
+være å bruke en PSP (Payment Service Provider) som støtter både Shopify og
+Vipps, som Quickpay: https://quickpay.net/no/
 
-Standard Vipps eCommerce API er tilgjengelig her: https://help.shopify.com/en/api/getting-started, og Shopify APIet er tilgjengelig her: https://help.shopify.com/en/api/getting-started
+Standard Vipps eCommerce API er tilgjengelig her:
+https://help.shopify.com/en/api/getting-started, og Shopify APIet er
+tilgjengelig her: https://help.shopify.com/en/api/getting-started
 
 --
 $currentUserName$
