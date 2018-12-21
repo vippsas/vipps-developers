@@ -15,27 +15,27 @@ kunder mest mulig effektivt._
 - [Vi har ikke mottatt OCR-filer for Vipps Faktura](#vi-har-ikke-mottatt-ocr-filer-for-vipps-faktura)
 - [Vi har sendt epost til integration, men får ikke svar](#vi-har-sendt-epost-til-integration--men-f-r-ikke-svar)
 
-# Jeg lurer på ...
+## Jeg lurer på ...
 
 Ta en titt på [Spørsmål og svar for bedrifter](https://www.vipps.no/sporsmal#bedriftspm) på vipps.no først.
 
 Hvis henvendelsen skal videresendes til Inrtegration:
 Se [denne siden](https://github.com/vippsas/vipps-developers/blob/master/contact.md) for hva vi trenger for å hjelpe.
 
-# Jeg ønsker en integrasjon, men vet ikke hva slags løsning jeg skal ha?
+## Jeg ønsker en integrasjon, men vet ikke hva slags løsning jeg skal ha?
 
 Se: https://www.vipps.no/bedrift/vippshjelper
 
-# Jeg ønsker å endre logo, navn, mottaker av oppgjør, adminbruker eller andre administrative endringer knyttet til salgsenhet
+## Jeg ønsker å endre logo, navn, mottaker av oppgjør, adminbruker eller andre administrative endringer knyttet til salgsenhet
 
 Dette gjøres av registrert administrator, ved å logge inn med BankID på https://portal.vipps.no
 
-# Jeg er kunde hos [en Vipps-partner] og lurer på _____
+## Jeg er kunde hos [en Vipps-partner] og lurer på _____
 
 Da må du henvende seg til partneren. Hvis det er behov for hjelp fra Vipps, må henvendelsen
 komme fra partneren.
 
-# Jeg har bestilt Vipps, men ikke mottatt e-post med brukernavn, passord, API-nøkler, etc
+## Jeg har bestilt Vipps, men ikke mottatt e-post med brukernavn, passord, API-nøkler, etc
 
 Innloggingsinformasjon til utviklerportalen, der man kan logge inn og hente API-nøkler, sendes automatisk etter bestilling av en Vipps-løsning:
 
@@ -50,29 +50,29 @@ Hvis du har spørsmål om status på bestillingen, hjelper Vipps kundesenter med
 * Telefon: 22 48 28 00.
 * Kontaktskjema: https://www.vipps.no/bedrift/kontakt-oss
 
-# Vi har WooCommerce / andre løsninger og har noen tekniske problemer
+## Vi har WooCommerce / andre løsninger og har noen tekniske problemer
 
 * WooCommerce: https://github.com/vippsas/vipps-developers/blob/master/housekeeping/response-woocommerce.txt
 * Magento: https://github.com/vippsas/vipps-developers/blob/master/housekeeping/response-magento.txt
 * Shophify https://github.com/vippsas/vipps-developers/blob/master/housekeeping/response-shopify-no.txt
 
-# Jeg ønsker tilgang til testmiljøet og testapp for iOS og Android
+## Jeg ønsker tilgang til testmiljøet og testapp for iOS og Android
 
 https://github.com/vippsas/vipps-developers/blob/master/housekeeping/response-testapp-no.txt
 
-# Det er beløp som vi ikke får sjekket ut
+## Det er beløp som vi ikke får sjekket ut
 
 Se eCom FAQ: https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-faq.md
 
-# Vi ønsker "direct capture" (direkte trekk)
+## Vi ønsker "direct capture" (direkte trekk)
 
 https://github.com/vippsas/vipps-developers/blob/master/housekeeping/response-capture.txt
 
-# Vi har ikke mottatt OCR-filer for Vipps Faktura
+## Vi har ikke mottatt OCR-filer for Vipps Faktura
 
 https://github.com/vippsas/vipps-developers/blob/master/housekeeping/response-ocr.txt
 
-# Vi har sendt epost til integration, men får ikke svar
+## Vi har sendt epost til integration, men får ikke svar
 
 Integration får _mange_ henvendelser, og ofte er det ikke henvendelser om utvikling e.l.
 Det gjør at det tar lenger tid for alle å få svar.
