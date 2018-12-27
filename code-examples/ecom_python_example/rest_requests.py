@@ -5,6 +5,7 @@ import requests
 from config import config
 from json_generators import get_base_ecom_headers, get_initiate_payment_http_body, get_capture_payment_http_body, \
     get_order_ecom_headers, get_order_ecom_cancel_body
+from logger import get_logger, log_request
 
 base_url = 'https://apitest.vipps.no'
 order_id = ''
@@ -40,6 +41,7 @@ def create_payment(order_id, access_token, transaction_amount, transaction_text,
     body = get_initiate_payment_http_body(order_id, transaction_amount, transaction_text, customer_number,
                                           express_checkout=express_checkout, is_app=is_app)
     response = requests.post(url=url, headers=headers, json=body)
+    log_request(__name__ + ".create_payment", headers=headers, body=body, response=response.json())
     return response.json()
 
 
@@ -57,6 +59,7 @@ def capture_payment(order_id, access_token, transaction_amount=0, transaction_te
     headers = get_order_ecom_headers(order_id, access_token)
     body = get_capture_payment_http_body(transaction_amount, transaction_text)
     response = requests.post(url=url, headers=headers, json=body)
+    log_request(__name__ + ".capture_payment", headers=headers, body=body, response=response.json())
     return response.json()
 
 
@@ -71,6 +74,7 @@ def order_status(order_id, access_token):
     url = base_url + '/ecomm/v2/payments/{order_id}/status'.format(order_id=order_id)
     headers = get_order_ecom_headers(order_id, access_token)
     response = requests.get(url=url, headers=headers)
+    #log_request(__name__ + ".order_status", headers=headers, response=response.json())
     return response.json()
 
 
@@ -87,6 +91,7 @@ def cancel_order(order_id, access_token, transaction_text):
     headers = get_order_ecom_headers(order_id, access_token)
     body = get_order_ecom_cancel_body(transaction_text)
     response = requests.put(url, headers=headers, json=body)
+    log_request(__name__ + ".cancel_order", headers=headers, body=body, response=response.json())
     return response.json()
 
 
@@ -101,6 +106,7 @@ def order_details(order_id, access_token):
     url = base_url + '/ecomm/v2/payments/{order_id}/details'.format(order_id=order_id)
     headers = get_order_ecom_headers(order_id, access_token)
     response = requests.get(url=url, headers=headers)
+    #log_request(__name__ + ".order_details", headers=headers, response=response.json())
     return response.json()
 
 
@@ -118,4 +124,5 @@ def refund_payment(order_id, access_token, transaction_amount=0, transaction_tex
     headers = get_order_ecom_headers(order_id, access_token)
     body = get_capture_payment_http_body(transaction_amount, transaction_text)
     response = requests.post(url=url, headers=headers, json=body)
+    log_request(__name__ + ".refund_payment", headers=headers, body=body, response=response.json())
     return response.json()

@@ -1,5 +1,6 @@
 from flask import Flask, request, render_template, redirect, url_for, session, jsonify
 
+from logger import log_callback
 from rest_requests import token_request, create_payment, order_status, cancel_order, order_details, refund_payment, \
     capture_payment
 from json_generators import generate_random_order_id, get_shipping_details_response
@@ -39,7 +40,7 @@ def initiate_payment():
         if "url" in payment:
             payment_url = payment["url"]
         else:
-            return payment
+            return jsonify(payment)
         session['payment_url'] = payment_url
         session['order_id'] = order_id
         return redirect(url_for('order_page', order_id=order_id))
@@ -83,8 +84,9 @@ def callback_route(order_id):
     :param order_id: The ID for the order there is updated information about.
     :return: Vipps requires no return for callback.
     """
-    response = request.get_json()
-    if response["transactionInfo"]["status"] == "RESERVE":
+    callback_msg = request.get_json()
+    log_callback(__name__ + ".callback_route", callback_msg=callback_msg)
+    if callback_msg["transactionInfo"]["status"] == "RESERVE":
         access_token = token_request()["access_token"]
         capture_payment(order_id, access_token)
     return ""
@@ -100,8 +102,10 @@ def provide_shipping_details(order_id):
     :param order_id: ID for the order.
     :return: The required shipping details. Does not return this in example.
     """
-    vipps_request = request.get_json()
-    shipping_details_response = get_shipping_details_response(order_id, int(vipps_request["addressId"]))
+    callback_msg = request.get_json()
+    shipping_details_response = get_shipping_details_response(order_id, int(callback_msg["addressId"]))
+    log_callback(__name__ + ".provide_shipping_details", callback_msg=callback_msg,
+                 return_msg=shipping_details_response)
     return jsonify(shipping_details_response)
 
 
@@ -114,6 +118,8 @@ def remove_consent(user_id):
     :param user_id: ID for a Vipps user.
     :return: Nothing
     """
+    callback_msg = request.get_json()
+    log_callback(__name__ + ".callback_route", callback_msg=callback_msg)
     return
 
 

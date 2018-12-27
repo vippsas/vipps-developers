@@ -15,4 +15,4 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 - Express checkout and merchant end point functionality is untested and not currently working.
 
 ### Basic manage order page:
-![](images\manage_order.png)
+![](images/manage_order.png)
