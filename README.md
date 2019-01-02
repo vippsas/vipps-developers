@@ -61,12 +61,13 @@ See the [Postman documentation](https://www.getpostman.com/docs/) for more infor
 
 # Example code
 
-We have made some code available, in hope that it may be useful: 
+We have made some example code available, in hope that it may be useful: 
 https://github.com/vippsas/vipps-developers/tree/master/code-examples
 
 # The Vipps test environment (MT)
 
 The Merchant Test Environment (MT) is available for all Vipps customers.
+
 The environment is suitable for testing _most_ of the Vipps functionality, but some
 functionality in the production environment is not available in MT.
 In general, MT does not contain functionality that requires integration with
