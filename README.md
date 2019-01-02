@@ -8,8 +8,6 @@ This repository contains various resources for Vipps developers, including:
 
 ## Table of contents
 
-- [Vipps repositories on GitHub](#vipps-repositories-on-github)
-  * [Pull all GitHub repositories in the current directory](#pull-all-github-repositories-in-the-current-directory)
 - [Postman](#postman)
 - [Example code](#example-code)
 - [The Vipps test environment (MT)](#the-vipps-test-environment--mt-)
@@ -19,32 +17,10 @@ This repository contains various resources for Vipps developers, including:
   * [iOS](#ios)
   * [Android](#android)
 - [Vipps design guidelines](#vipps-design-guidelines)
+- [Vipps repositories on GitHub](#vipps-repositories-on-github)
+  * [Pull all GitHub repositories in the current directory](#pull-all-github-repositories-in-the-current-directory)
 - [Additional developer resources](#additional-developer-resources)
 
-# Vipps repositories on GitHub
-
-To clone [all the Vipps repositories](https://github.com/vippsas), this works for macOS:
-
-1. Install [Homebrew](https://brew.sh), the missing package manager for macOS  
-        ```
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-        ```
-2. Install [jq](https://stedolan.github.io/jq/), a lightweight and flexible command-line JSON processor  
-        ```
-brew install jq
-       ```
-3. Run this command  
-        ```
-curl -s https://api.github.com/orgs/vippsas/repos | jq .[].clone_url | xargs -n 1 git clone
-        ```
-
-## Pull all GitHub repositories in the current directory
-
-Creating an alias like `gitall` for this command may be useful:
-
-```
-find . -type d -depth 1 -exec git --git-dir={}/.git --work-tree=$PWD/{} pull origin master \;
-```
 # Postman
 
 [Postman](https://www.getpostman.com/) is a common tool for working with REST APIs.
@@ -146,6 +122,31 @@ used in the registration. You do *not* need an activation code.
 # Vipps design guidelines
 
 Guidelines, logos, buttons, etc: https://github.com/vippsas/vipps-design-guidelines
+
+# Vipps repositories on GitHub
+
+To clone [all the Vipps repositories](https://github.com/vippsas), this works for macOS:
+
+1. Install [Homebrew](https://brew.sh), the missing package manager for macOS  
+        ```
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+        ```
+2. Install [jq](https://stedolan.github.io/jq/), a lightweight and flexible command-line JSON processor  
+        ```
+brew install jq
+       ```
+3. Run this command  
+        ```
+curl -s https://api.github.com/orgs/vippsas/repos | jq .[].clone_url | xargs -n 1 git clone
+        ```
+
+## Pull all GitHub repositories in the current directory
+
+Creating an alias like `gitall` for this command may be useful:
+
+```
+find . -type d -depth 1 -exec git --git-dir={}/.git --work-tree=$PWD/{} pull origin master \;
+```
 
 # Additional developer resources
 
