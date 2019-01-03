@@ -2,7 +2,7 @@
 
 The SFTP report service is used for downloading settlement reports. SFTP-users
 are created, associated with a public key, and given access to the reports of
-one or more merchants. The reports are generated dynamically upon request.
+one or more merchants. 
 
 More information about SFTP: [SSH File Transfer Protocol](https://en.wikipedia.org/wiki/SSH_File_Transfer_Protocol).
 
