@@ -1,4 +1,4 @@
-_Dette er foreløpøig å anse som et arbeidsdokument for å finne ut hvordan Vipps kan hjelpe
+_Dette er foreløpig å anse som et arbeidsdokument for å finne ut hvordan Vipps kan hjelpe
 kunder mest mulig effektivt. Se også FAQ for eCom: https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-faq.md_
 
 # Ofte stilte spørsmål
