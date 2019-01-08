@@ -16,20 +16,20 @@ please use [this form](https://www.vipps.no/tips-og-tilbakemeldinger).
 
 So, for _*technical questions*_: Send an email to integration@vipps.no with all relevant information:
 
-* A concise, self-explanatory `Subject` line ("`POST:/something` gives `HTTP 400` response")
+* A concise, self-explanatory `Subject` line, such as "`POST:/something` gives `HTTP 400` response".
 * Your contact information (if not in your email signature):
   - Name
   - Phone number
 * Company details
-  - Company name
   - Organization number (check https://brreg.no)
   - Merchant Serial Number (MSN, found in the [Developer Portal](vipps-developer-portal-getting-started.md))
 * Which [Vipps product](https://www.vipps.no/bedrift) this is about
+* If you are a new Vipps customer, please include detailas about when and how you ordered Vipps.
 * For eCommerce issues: Which eCommerce solution you are using, and which version
   - For WooCommerce: See the [support forum](https://wordpress.org/support/plugin/woo-vipps) and https://github.com/vippsas/vipps-woocommerce
   - For Magento: See https://github.com/vippsas/vipps-magento
-* **A detailed description of the problem**
-* For API issues: Complete `request` and `response` details (plaint HTTP from Postman, or [curl](https://curl.haxx.se) is preferred, and ensures the quickest response)
+* **Always include a detailed description of the problem**
+* For API issues: Complete `request` and `response` details (plain HTTP from Postman, or [curl](https://curl.haxx.se) is preferred, and ensures the quickest response)
 * For app issues: Specify iOS or Android, and the app version
 * Screenshots, if applicable
 * Any other information that may be relevant
