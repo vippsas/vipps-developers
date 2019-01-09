@@ -1,0 +1,20 @@
+Hei, 
+
+Vipps for MyStore er utviklet og vedlikeholdes for oss av vår partner MyStore: https://www.mystore.no/vipps/
+
+På overstående link finner dere igjen ofte stilte spørsmål om modulen. 
+
+For Vipps-relaterte problemer hjelper vi selvsagt.
+
+Testing av MyStore: Denne modulen er ment å være "plug and play", og vi tilbyr ikke eget utviklingsmiljø for MyStore. Når modulen for installert og konfigurert iht. dokumentasjonen, kan man gjennomføre små kjøp, f.eks. 2 kr, for å verifisere at løsningen fungerer. 
+
+Vi anbefaler da å kjøre gjennom en full kjøpsprosess inkludert kreditering av ordre: https://support.mystore.no/hc/no/articles/360004972693-Kreditere-Vipps-ordre
+
+$cursor$
+
+--
+$currentUserName$
+[Vipps Integration|https://github.com/vippsas/vipps-developers/blob/master/contact.md]
+
+http://vipps.no/developer
+https://github.com/vippsas
