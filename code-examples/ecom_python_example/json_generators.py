@@ -38,27 +38,31 @@ def get_initiate_payment_http_body(order_id, transaction_amount, transaction_tex
     :param customer_number: The number for the Vipps account that will pay for the transaction.
     :return: Returns a HTTP body for making a initiate payment request to Vipps.
     """
-    ecom_initiate_payment_body = config['ecom_initiate_payment_body'].copy()
     host = config["host_server"]
-    ecom_initiate_payment_body["merchantInfo"]["shippingDetailsPrefix"] = "{}/vipps".format(host)
-    ecom_initiate_payment_body["merchantInfo"]["consentRemovalPrefix"] = "{}/vipps".format(host)
-    ecom_initiate_payment_body["merchantInfo"]["callbackPrefix"] = "{}/vipps".format(host)
-    ecom_initiate_payment_body["merchantInfo"]["fallBack"] = '{}/order/{}'.format(host, order_id)
+    ecom_initiate_payment_body = {
+        "customerInfo": {
+            "mobileNumber": customer_number
+        },
+        "merchantInfo": {
+            "consentRemovalPrefix": "{}/vipps".format(host),
+            "callbackPrefix": "{}/vipps".format(host),
+            "shippingDetailsPrefix": "{}/vipps".format(host),
+            "fallBack": "{}/order/{}".format(host, order_id),
+            "isApp": False,
+            "merchantSerialNumber": config["ecom_initiate_payment_body"]["merchantInfo"]["merchantSerialNumber"],
+            "paymentType": "eComm Regular Payment"
+        },
+        "transaction": {
+            "amount": transaction_amount,
+            "orderId": order_id,
+            "timeStamp": datetime.datetime.now().isoformat(),
+            "transactionText": transaction_text
+        }
+    }
     if is_app:
         ecom_initiate_payment_body["merchantInfo"]["isApp"] = True
-    else:
-        ecom_initiate_payment_body["merchantInfo"]["isApp"] = False
-    ecom_initiate_payment_body["transaction"] = {}
-    ecom_initiate_payment_body["customerInfo"] = {}
-    ecom_initiate_payment_body["customerInfo"]["mobileNumber"] = customer_number
-    ecom_initiate_payment_body["transaction"]["orderId"] = order_id
-    ecom_initiate_payment_body["transaction"]["timeStamp"] = datetime.datetime.now().isoformat()
-    ecom_initiate_payment_body["transaction"]["amount"] = transaction_amount
-    ecom_initiate_payment_body["transaction"]["transactionText"] = transaction_text
     if express_checkout:
         ecom_initiate_payment_body["merchantInfo"]["paymentType"] = "eComm Express Payment"
-    else:
-        ecom_initiate_payment_body["merchantInfo"]["paymentType"] = "eComm Regular Payment"
     return ecom_initiate_payment_body
 
 
@@ -70,10 +74,15 @@ def get_capture_payment_http_body(transaction_amount, transaction_text):
     :param transaction_text: The associated text for the capture.
     :return: A HTTP request body for payment capture.
     """
-    ecom_capture_payment_body = config['ecom_initiate_payment_body'].copy()
-    ecom_capture_payment_body["transaction"] = {}
-    ecom_capture_payment_body["transaction"]["amount"] = transaction_amount
-    ecom_capture_payment_body["transaction"]["transactionText"] = transaction_text
+    ecom_capture_payment_body = {
+        "merchantInfo": {
+            "merchantSerialNumber": config["ecom_initiate_payment_body"]["merchantInfo"]["merchantSerialNumber"]
+        },
+        "transaction": {
+            "amount": transaction_amount,
+            "transactionText": transaction_text
+        }
+    }
     return ecom_capture_payment_body
 
 
@@ -97,9 +106,13 @@ def get_order_ecom_cancel_body(transaction_text):
     :param transaction_text: Text describing the cancel request.
     :return: A HTTP request body for cancel order.
     """
-    ecom_cancel_body = {"merchantInfo": {
-        "merchantSerialNumber": config['ecom_initiate_payment_body']['merchantInfo']['merchantSerialNumber']},
-        "transaction": {"transactionText": transaction_text}}
+    ecom_cancel_body = {
+        "merchantInfo": {
+            "merchantSerialNumber": config['ecom_initiate_payment_body']['merchantInfo']['merchantSerialNumber']},
+        "transaction": {
+            "transactionText": transaction_text
+        }
+    }
     return ecom_cancel_body
 
 
