@@ -108,7 +108,7 @@ used in the registration. You do *not* need an activation code.
 From the instructions in the link above:
 
 > Installing a Beta iOS App from an Invitation Email or Public Link:
-> 1. Install TestFlight on the iOS device that you’ll use for testing.
+> 1. Install [TestFlight](https://itunes.apple.com/no/app/testflight/id899247664?mt=8) on the iOS device that you’ll use for testing.
 > 2. Open your invitation email or tap on the [public link](https://testflight.apple.com/join/hTAYrwea) on your iOS device.
 > 3. Tap View in TestFlight or Start Testing; or tap Accept, Install, or Update for the app you want to test.
 
