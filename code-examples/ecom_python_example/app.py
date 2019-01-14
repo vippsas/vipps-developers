@@ -1,3 +1,6 @@
+import json
+import os
+
 from flask import Flask, request, render_template, redirect, url_for, session, jsonify
 
 from logger import log_callback
@@ -85,7 +88,7 @@ def callback_route(order_id):
     :return: Vipps requires no return for callback.
     """
     callback_msg = request.get_json()
-    log_callback(__name__ + ".callback_route", callback_msg=callback_msg)
+    log_callback(__name__ + ".callback_route", callback_msg=callback_msg, path_var=order_id)
     if callback_msg["transactionInfo"]["status"] == "RESERVE":
         access_token = token_request()["access_token"]
         capture_payment(order_id, access_token)
@@ -105,22 +108,21 @@ def provide_shipping_details(order_id):
     callback_msg = request.get_json()
     shipping_details_response = get_shipping_details_response(order_id, int(callback_msg["addressId"]))
     log_callback(__name__ + ".provide_shipping_details", callback_msg=callback_msg,
-                 return_msg=shipping_details_response)
+                 return_msg=shipping_details_response, path_var=order_id)
     return jsonify(shipping_details_response)
 
 
-@app.route('/vipps/v2/consents/<userId>', methods=['DELETE'])
+@app.route('/vipps/v2/consents/<user_id>', methods=['DELETE'])
 def remove_consent(user_id):
     """
     This function does nothing, as this examples stores no permanent user information. A cookie delete could be done.
-    For a complete implementation, this function needs to remove user details, as per the GDPR guidelines.
+    For a complete implementation, this function needs to remove stored user details, as per the GDPR guidelines.
 
     :param user_id: ID for a Vipps user.
     :return: Nothing
     """
-    callback_msg = request.get_json()
-    log_callback(__name__ + ".callback_route", callback_msg=callback_msg)
-    return
+    log_callback(__name__ + ".remove_consent", path_var=user_id)
+    return ""
 
 
 #app.run(host='0.0.0.0', port=80)

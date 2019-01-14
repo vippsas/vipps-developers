@@ -48,8 +48,10 @@ def log_request(facility, headers=None, body=None, response=None):
     return
 
 
-def log_callback(facility, callback_msg=None, return_msg=None):
+def log_callback(facility, callback_msg=None, return_msg=None, path_var=None):
     logger = get_logger(facility)
+    if path_var:
+        logger.info("Path var: {}".format(path_var))
     if callback_msg:
         logger.info("Callback message: {}".format(callback_msg))
     if return_msg:
