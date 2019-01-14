@@ -153,12 +153,12 @@ endpoints, and see the full `request` and `response` for each call.
 #### Step 1: Import the Postman Collection
 
 1. Click `Import` in the upper left corner.
-2. Import the [vipps-ecom-api-postman-collection.json](https://github.com/vippsas/vipps-ecom-api/blob/master/tools/vipps-ecom-api-postman-collection.json) file
+2. Import the [vipps-ecom-api-postman-collection.json](https://raw.githubusercontent.com/vippsas/vipps-ecom-api/master/tools/vipps-ecom-api-postman-collection.json) file
 
 #### Step 2: Import the Postman Environment
 
 1. Click `Import` in the upper left corner.
-2. Import the [vipps-ecom-api-postman-enviroment.json](https://github.com/vippsas/vipps-ecom-api/blob/master/tools/vipps-ecom-api-postman-enviroment.json) file
+2. Import the [vipps-ecom-api-postman-enviroment.json](https://raw.githubusercontent.com/vippsas/vipps-ecom-api/master/tools/vipps-ecom-api-postman-enviroment.json) file
 
 #### Step 3: Setup Postman Environment
 
