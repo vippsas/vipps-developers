@@ -12,7 +12,6 @@ This repository contains various resources for Vipps developers, including:
 - [Example code](#example-code)
 - [The Vipps test environment (MT)](#the-vipps-test-environment--mt-)
     + [Test users](#test-users)
-      - [Creating additional test users](#creating-additional-test-users)
 - [Vipps test apps](#vipps-test-apps)
   * [iOS](#ios)
   * [Android](#android)
