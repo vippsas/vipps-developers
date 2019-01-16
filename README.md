@@ -78,18 +78,7 @@ If you need additional payment cards, you can add it in the Vipps app.
 See [Credit card numbers](https://github.com/vippsas/vipps-developers/tree/master/testdata#credit-card-numbers) 
 for more details.
 
-See also: [Vipps Test Datas[(https://github.com/vippsas/vipps-developers/blob/master/testdata/README.md).
-
-#### Creating additional test users
-
-We aim to offer support for creating your own test user(s) in MT, in steps
-similar to this (we do not yet have an ETA on this):
-
-0. Download the test app (see below).
-1. Create a valid, dummy NIN (National Identity number, "fødselsnummer"): http://prag.matisk.com/ssn
-2. Register in the MT app with your own phone number and your own name
-3. You will automatically get an account number and a credit card number
-4. One Time Password (OTP) for activation: Use 1234 (or any number)
+See also: [Vipps Test Data](https://github.com/vippsas/vipps-developers/blob/master/testdata/README.md).
 
 # Vipps test apps
 
