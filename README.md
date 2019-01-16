@@ -91,8 +91,9 @@ Vipps [the Vipps test environment (MT)](#the-vipps-test-environment-mt) instead 
 
 The iOS test app is available in Apple TestFlight: https://testflight.apple.com/join/hTAYrwea
 
-Please log in with your test user, that was sent in the welcome email to the email address
-used in the registration. You do *not* need an activation code.
+Please log into the test app with your test user, that was sent in the welcome email to the email address
+used in the registration (your normal Vipps user is not available in the test envirbnment). 
+You do *not* need an activation code.
 
 From the instructions in the link above:
 
