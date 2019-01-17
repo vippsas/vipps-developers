@@ -10,7 +10,7 @@ The settlement flow is as follows:
 See https://www.vipps.no/sporsmal for more details.
 
 # Settlement reports
-Dag
+
 Settlement reports are provided in these formats:
 
 | Format | Example            | Specification      |
@@ -20,6 +20,8 @@ Settlement reports are provided in these formats:
 | XML    | [Example-Gross.xml](xml/Example-Gross.xml), [Example-Net.xml](xml/Example-Net.xml) | [SettlementReport-3.0.xsd](xml/SettlementReport-3.0.xsd) |
 | PDF    | [PDF](pdf/Vipps-oppgjørsrapport-16655-2018-09-23.pdf) | - |
 | XLSX   | [XLSX](xlsx/Vipps-oppgjørsrapport-16655-2018-09-23.xlsx) | - |
+
+Please note: Vipps does not provide settlement reports for Regninger, as payments are made directly from the user to the merchant. 
 
 ## SFTP report service
 
