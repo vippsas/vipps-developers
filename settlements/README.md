@@ -21,7 +21,7 @@ Settlement reports are provided in these formats:
 | PDF    | [PDF](pdf/Vipps-oppgjørsrapport-16655-2018-09-23.pdf) | - |
 | XLSX   | [XLSX](xlsx/Vipps-oppgjørsrapport-16655-2018-09-23.xlsx) | - |
 
-Please note: Vipps does not provide settlement reports for Regninger, as payments are made directly from the user to the merchant. 
+Please note: Vipps does not provide settlement reports for Vipps Regninger, as payments are made directly from the user to the merchant. All payments are included in the OCR files provided by the merchant's bank.
 
 ## SFTP report service
 
