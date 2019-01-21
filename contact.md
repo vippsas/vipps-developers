@@ -5,12 +5,12 @@ Hello! 👋 We love email!
 ## We help with technical issues
 
 We help with _technical_ issues, such as questions about using our APIs.
-* General inquiries: Please use the
-[contact us](https://www.vipps.no/privat/kontakt-oss) form on vipps.no
-* See also the FAQ (work in progress): https://github.com/vippsas/vipps-developers/blob/master/housekeeping/contact-faq.md
+* General inquiries: Please see the FAQ [Spørsmål og svar](https://www.vipps.no/sporsmal#bedriftspm), and use the
+[contact us](https://www.vipps.no/privat/kontakt-oss) form.
+* See also the developer FAQ (work in progress): https://github.com/vippsas/vipps-developers/blob/master/housekeeping/contact-faq.md
 * If you have suggestions for improvements to Vipps products,
 please use [this form](https://www.vipps.no/tips-og-tilbakemeldinger).
-* Vipps through partners: Please contact your partner. Enquiries about ordering Vipps through a partner: partnerbestilling@vipps.no
+* If you use Vipps through a partner: Please contact your partner. Enquiries about ordering Vipps through a partner: partnerbestilling@vipps.no
 
 # What to include in the email
 
@@ -29,7 +29,7 @@ So, for _*technical questions*_: Send an email to integration@vipps.no with all 
   - For WooCommerce: See the [support forum](https://wordpress.org/support/plugin/woo-vipps) and https://github.com/vippsas/vipps-woocommerce
   - For Magento: See https://github.com/vippsas/vipps-magento
 * **Always include a detailed description of the problem**
-* For API issues: Complete `request` and `response` details (plain HTTP from Postman, or [curl](https://curl.haxx.se) is preferred, and ensures the quickest response)
+* For API issues: Complete `request` and `response` details (plain HTTP from Postman, or [curl](https://curl.haxx.se) ensures the quickest response)
 * For app issues: Specify iOS or Android, and the app version
 * Screenshots, if applicable
 * Any other information that may be relevant
@@ -45,7 +45,7 @@ sent to all email addresses in the original email.
 
 # Automatic reply
 
-You will get an auto-reply from us with an issue number like `VSD-1234` in the `Subject` line.
+You will get an auto-reply from us with an issue number like `VSD-12345` in the `Subject` line.
 This is the unique number for this specific issue, and is used to connect all communication
 about this issue in our systems.
 
@@ -57,7 +57,7 @@ If you want to send additional information about the same issue,
 please reply to the email, without changing the `Subject` line.
 
 Please remove previous communication when replying to an email, do _not_ quote
-all the other messages - we already have them.
+all the previous messages - we already have them.
 
 # Response time
 
