@@ -7,7 +7,7 @@ The settlement flow is as follows:
 3. Day 3 (the next _bank day_) at 16:00: Payments are made from Vipps.
 4. Day 5 (the third _bank day_): The settlement is booked with reference by the bank.
 
-A Vipps merchant normally receives daily settlements. This can be changed to weekly, monthly settlements. See https://www.vipps.no/sporsmal#bedriftspm for more details.
+A Vipps merchant normally receives daily settlements. This can be changed to weekly, monthly settlements. See [the FAQ](https://www.vipps.no/sporsmal#bedriftspm) for more details.
 
 # Settlement reports
 
@@ -20,6 +20,10 @@ Settlement reports are provided in these formats:
 | XML    | [Example-Gross.xml](xml/Example-Gross.xml), [Example-Net.xml](xml/Example-Net.xml) | [SettlementReport-3.0.xsd](xml/SettlementReport-3.0.xsd) |
 | PDF    | [PDF](pdf/Vipps-oppgjørsrapport-16655-2018-09-23.pdf) | - |
 | XLSX   | [XLSX](xlsx/Vipps-oppgjørsrapport-16655-2018-09-23.xlsx) | - |
+
+Settlements reports are available both with and withour personal details of the customer. 
+This is due to [GDPR](https://ec.europa.eu/info/law/law-topic/data-protection_en), and whether
+the data processor is Vipps or the merchant. 
 
 Please note: Vipps does not provide settlement reports for Vipps Regninger, as payments are made directly from the user to the merchant. All payments are included in the OCR files provided by the merchant's bank.
 
