@@ -7,7 +7,7 @@ The settlement flow is as follows:
 3. Day 3 (the next _bank day_) at 16:00: Payments are made from Vipps.
 4. Day 5 (the third _bank day_): The settlement is booked with reference by the bank.
 
-See https://www.vipps.no/sporsmal for more details.
+A Vipps merchant normally receives daily settlements. This can be changed to weekly, monthly settlements. See https://www.vipps.no/sporsmal#bedriftspm for more details.
 
 # Settlement reports
 
