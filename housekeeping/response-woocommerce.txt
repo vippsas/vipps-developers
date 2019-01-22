@@ -28,13 +28,14 @@ https://github.com/vippsas/vipps-woocommerce
 Testing av WooCommerce: Denne pluginen er ment å være "plug and play", og vi
 tilbyr ikke eget utviklingsmiljø for WooCommerce. Når Vipps for WooCommerce
 for installert og konfigurert iht. dokumentasjonen, kan man gjennomføre små kjøp,
-f.eks. 2 kr, for å verifisere at løsningen fungerer. 
+f.eks. 2 kr, for å verifisere at løsningen fungerer.
 
 $cursor$
 
 --
 $currentUserName$
-[Vipps Integration|https://github.com/vippsas/vipps-developers/blob/master/contact.md]
+Vipps Integration
 
-http://vipps.no/developer
-https://github.com/vippsas
+[Contact info|https://github.com/vippsas/vipps-developers/blob/master/contact.md]
+[Vipps on GitHub|https://github.com/vippsas]
+[Technical newsletter for developers|https://cloud.hei.vipps.no/utv] 

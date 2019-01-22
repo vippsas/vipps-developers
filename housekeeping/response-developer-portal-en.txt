@@ -8,7 +8,8 @@ for how to log in to test and production, how to generate keys, etc.
 
 --
 $currentUserName$
-[Vipps Integration|https://github.com/vippsas/vipps-developers/blob/master/contact.md]
+Vipps Integration
 
-http://vipps.no/developer
-https://github.com/vippsas
+[Contact info|https://github.com/vippsas/vipps-developers/blob/master/contact.md]
+[Vipps on GitHub|https://github.com/vippsas]
+[Technical newsletter for developers|https://cloud.hei.vipps.no/utv] 

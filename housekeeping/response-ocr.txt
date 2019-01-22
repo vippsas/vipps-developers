@@ -14,7 +14,8 @@ https://www.vipps.no/bedrift/vipps-regninger og https://www.vipps.no/privat/vipp
 
 --
 $currentUserName$
-[Vipps Integration|https://github.com/vippsas/vipps-developers/blob/master/contact.md]
+Vipps Integration
 
-http://vipps.no/developer
-https://github.com/vippsas
+[Contact info|https://github.com/vippsas/vipps-developers/blob/master/contact.md]
+[Vipps on GitHub|https://github.com/vippsas]
+[Technical newsletter for developers|https://cloud.hei.vipps.no/utv] 

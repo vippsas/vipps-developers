@@ -11,5 +11,6 @@ $cursor$
 $currentUserName$
 Vipps Integration
 
-http://vipps.no/developer
-https://github.com/vippsas
+[Contact info|https://github.com/vippsas/vipps-developers/blob/master/contact.md]
+[Vipps on GitHub|https://github.com/vippsas]
+[Technical newsletter for developers|https://cloud.hei.vipps.no/utv] 
