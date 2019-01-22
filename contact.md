@@ -12,6 +12,9 @@ We help with _technical_ issues, such as questions about using our APIs.
 please use [this form](https://www.vipps.no/tips-og-tilbakemeldinger).
 * If you use Vipps through a partner: Please contact your partner. Enquiries about ordering Vipps through a partner: partnerbestilling@vipps.no
 
+We also have a technical newsletter for developers:
+[Sign up here](https://cloud.hei.vipps.no/utv) (low volume, no marketing).
+
 # What to include in the email
 
 So, for _*technical questions*_: Send an email to integration@vipps.no with all relevant information:
