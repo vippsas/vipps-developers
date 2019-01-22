@@ -8,7 +8,7 @@ Mange VippsGO-kunder ønsker å integrere Vipps-betalingen med sine kassasysteme
 
 VippsGO-kunder som ønsker å integrere med disse kassasystemene bes ta kontakt med kassaleverandøren. 
 
-Det er ikke mulig å integrere mot SMS/Aksess, PCK, eller andre systemer i dag. Vi har ikke tilstrekkelig kapasitet til det som trengs fra vår side, og heller ikke til oppfølging etterpå.
+Det er ikke mulig å integrere mot SMS/Aksess, PCK, eller andre systemer i dag. Vår underleverandør Weorder har en løsning som kan integreres mot PCK, men VippsGO er på en annen plattform som ikke har integrasjon mot PCK. Vi har ikke tilstrekkelig kapasitet til det som kreves fra vår side for integrasjon med andre løsninger enn nevnt ovenfor, og heller ikke til oppfølging etterpå. 
 
 For øyeblikket jobber vi med å bygge et team som skal jobbe med bedre løsninger for små bedrifter, organisasjoner og lag. I den prosessen vil vi også bestemme hvilken rolle Vipps skal ha i sammenheng med systemer som vil integreres  i dette markedet.
 
