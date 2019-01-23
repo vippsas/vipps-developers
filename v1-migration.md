@@ -5,17 +5,22 @@ This is a work in progress. See the respective documentation for differences.
 ## Landing page
 Universal payment flows are essential for a good user experience. This is why the v2 api has a single landing page for all payments.
 The initiate payment response will contain a unique URL to the landing page for each order.
-![landing-page](images/landing-page.png)
 
-*Note: the landing page is only on regular eCommerce orders. If initiate payment is called from an app, then the user will be taken directly to the Vipps-app*
+<img src="images/landing-page.png" width="300">
+
+*Note: If the landing page realize it's on a mobile browser it will switch to the Vipps app if it is installed.*
 
 ## Phone number is optional
 Initiate payment call no longer requires a phone number. Instead, the user will be asked to fill in the phone number on the landing page. If phone number is included in the initiate payment body, then the landing page wil be "pre-filled" with that number
 
 ## Deeplink is automatically generated
-If  ```"isApp": true``` in the initiate payment body, then the response will contain a deeplink with a unique token for that specific order.
+If  ```"isApp": false``` in the initiate payment body, then a https deeplink with a unique token for that specific order will be generated.
+
+If  ```"isApp": true``` then a an appswitch deeplink with a unique token for that specific orde will be generated.
 
 ### Initiate payment example
+See [here](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#initiate-payment-flows) for full overview of initiate payment
+
 #### Request Body
 ```
 {
@@ -51,6 +56,8 @@ Initiate payment must contain a fallback URL to redirect after payment. This is 
 
 For apps, this URL will be the appswitch-URL.
 
+See [here](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#url-validation) for details.
+
 # Migration
 If you have already signed an agreement with Vipps, and would like move from v1 to v2, then send a request to ```integration@vipps.no``` with the merchant serial number of the sale unit you want to be moved to v2. 
 
@@ -65,8 +72,13 @@ Test: ```https://apitest-portal.vipps.no/```
 
 Prod: ```https://api-portal.vipps.no```
 
+See the [Getting started guide](https://github.com/vippsas/vipps-developers/blob/master/vipps-developer-portal-getting-started.md) for full details
+
 ## New endpoint
 The v2 API is available at ```ecomm/v2/payments```
+
+Test: ```https://apitest.vipps.no/ecomm/v2/payments```
+Prod: ```https://api.vipps.no/ecomm/v2/payments```
 
 ## Documentation
 The v2 API documentation is available in markdown on [github](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md)
