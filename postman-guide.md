@@ -1,4 +1,4 @@
-# Postman manual
+# Postman guide
 
 A guide on how to set up a Postman collection and environment for Vipps APIs.
 
