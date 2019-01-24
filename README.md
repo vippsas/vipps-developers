@@ -32,7 +32,17 @@ request and response for each call, including headers.
 When contacting us about API issues, we are usually able to help faster if you send us
 the complete request and response.
 
-See the [Postman documentation](https://www.getpostman.com/docs/) for more information about using Postman.
+See our [Postman guide](https://github.com/vippsas/vipps-developers/blob/master/postman-manual.md) or the
+ [Postman documentation](https://www.getpostman.com/docs/) for more information about using Postman.
+
+## Our Postman collections and environments
+
+| Product           | Github Link |
+|:------------------|:------------
+| eCommerce V2      | [https://github.com/vippsas/vipps-ecom-api/tree/master/tools](https://github.com/vippsas/vipps-ecom-api/tree/master/tools)            |
+| Invoice           | [https://github.com/vippsas/vipps-invoice-api/tree/master/tools](https://github.com/vippsas/vipps-invoice-api/tree/master/tools)      |
+| Recurring         | [https://github.com/vippsas/vipps-recurring-api/tree/master/tools](https://github.com/vippsas/vipps-recurring-api/tree/master/tools)  |
+
 
 # Example code
 
