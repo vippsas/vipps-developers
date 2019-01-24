@@ -88,7 +88,7 @@ This can be solved by using "_**Bjorn**_" instead.
 | `ocp-apim-subscription-key` For Access Token | Go to Developer Portal -> Click on your name on top right -> select profile -> find subscription named DEFAULT_ACCESSTOKEN and copy the value from Primary key here |
 | `Client_Id`  | Go to Developer Portal -> Select the Applications tab -> Select View secret for your application -> Client_Id|
 | `Client_secret` | Go to Developer Portal -> Select the Applications tab -> Select View secret for your application -> Client_Secret|
-| `orderId`   | Any value to start your sequence - recommend using your ORG Number followed by 00000 and the incremented |
+| `orderId`   | A numeric or alphanumeric id that uniquely identifies the order.  |
 | `Authorization` | "Bearer" followed by the Access Token obtained from the Get Access Token call|
 | `Timestamp` | All timestamps need to be in isoTime-format (example: 2018-01-31T16:14:02.715Z)|
 | `X-Request-Id` | Any value string limited to 30 characters|
