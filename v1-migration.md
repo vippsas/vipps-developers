@@ -3,20 +3,20 @@ This is a work in progress. See the respective documentation for differences.
 
 # Key differences
 ## Landing page
-Universal payment flows are essential for a good user experience. This is why the v2 api has a single landing page for all payments.
+Universal payment flows are essential for a good user experience. This is why the v2 API has a single, mandatory landing page for all payments.
 The initiate payment response will contain a unique URL to the landing page for each order.
 
 <img src="images/landing-page.png" width="300">
 
-*Note: If the landing page realize it's on a mobile browser it will switch to the Vipps app if it is installed.*
+*Note: If the landing page realize it's on a mobile browser it will [switch to the Vipps app](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#desktop-browsers-and-mobile-browsers) if it is installed.*
 
 ## Phone number is optional
-Initiate payment call no longer requires a phone number. Instead, the user will be asked to fill in the phone number on the landing page. If phone number is included in the initiate payment body, then the landing page wil be "pre-filled" with that number
+IThe initiate payment call no longer requires a phone number. Instead, the user will be asked to fill in the phone number on the landing page. If phone number is included in the initiate payment body, then the landing page wil be "pre-filled" with that number.
 
 ## Deeplink is automatically generated
 If  ```"isApp": false``` in the initiate payment body, then a https deeplink with a unique token for that specific order will be generated.
 
-If  ```"isApp": true``` then a an appswitch deeplink with a unique token for that specific orde will be generated.
+If  ```"isApp": true``` then an appswitch deeplink with a unique token for that specific orde will be generated.
 
 ### Initiate payment example
 See [here](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#initiate-payment-flows) for full overview of initiate payment
@@ -52,7 +52,7 @@ See [here](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.
 ```
 
 ## Fallback url is required
-Initiate payment must contain a fallback URL to redirect after payment. This is set in the initiate payment body. 
+The initiate payment must contain a fallback URL to redirect after payment. This is set in the initiate payment body. 
 
 For apps, this URL will be the appswitch-URL.
 
@@ -66,22 +66,17 @@ Keep in mind that the old salesunit will not be affected, and your old integrati
 We will create a mirror of the old salesunit in both production and test, and update it with the v2 API. 
 
 ## Subscription keys
-When you have received confirmation that your new salesunit is created, then you can retrieve the keys in the developer portal.
-
-Test: ```https://apitest-portal.vipps.no/```
-
-Prod: ```https://api-portal.vipps.no```
-
-See the [Getting started guide](https://github.com/vippsas/vipps-developers/blob/master/vipps-developer-portal-getting-started.md) for full details
+When you have received confirmation that your new salesunit is created, then you can retrieve the keys in the developer portal. See the [Getting started guide](https://github.com/vippsas/vipps-developers/blob/master/vipps-developer-portal-getting-started.md) for full details
 
 ## New endpoint
-The v2 API is available at ```ecomm/v2/payments```
+The v2 API is available at ```ecomm/v2/payments```:
 
-Test: ```https://apitest.vipps.no/ecomm/v2/payments```
-Prod: ```https://api.vipps.no/ecomm/v2/payments```
+* Test: ```https://apitest.vipps.no/ecomm/v2/payments```
+* Prod: ```https://api.vipps.no/ecomm/v2/payments```
 
 ## Documentation
-The v2 API documentation is available in markdown on [github](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md)
+
+The v2 API documentation is available in markdown on [GitHub](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md)
 
 Technical documentation is available in swagger-format [here](https://vippsas.github.io/vipps-ecom-api/)
 
