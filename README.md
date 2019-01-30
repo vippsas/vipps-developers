@@ -2,7 +2,7 @@
 
 This repository contains various resources for Vipps developers, including:
 
-* [Getting started](vipps-developer-portal-getting-started.md) with the Vipps Developer Portal
+* [Getting started](vipps-getting-started.md) with the Vipps Developer Portal and API requests
 * [How to contribute](contribute.md) to Vipps projects on GitHub
 * [How to contact us](contact.md) in the Vipps Integration team
 
