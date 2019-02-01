@@ -19,7 +19,10 @@ Click the eye to see all variables.
 
 ## Insert values
 
-Click `Edit`and paste in values for each variable. Some variables will be set/updated automatically throughout the calls. 
+Click `Edit`and paste in values for each variable.
+Make sure the values are pasted into both INITIAL VALUE and CURRENT VALUE.
+
+Some variables will be set/updated automatically throughout the calls.
 
 Read the documentation to find out which [variables](https://github.com/vippsas/vipps-developers/blob/master/vipps-developer-portal-getting-started.md#step-3) that must be set manually.
 
