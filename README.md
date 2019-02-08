@@ -104,7 +104,7 @@ You do *not* need an activation code.
 1. Open the [TestFlight](https://testflight.apple.com/join/hTAYrwea) link
 2. Install the "Vipps MT" app
 3. Open the "Vipps MT" app
-4. Log in with the test phone number, that was sent in the welcome email to the email address used in the registration. Your normal Vipps user is not available in the test environment.
+4. Enter the test phone number, that was sent in the welcome email to the email address used in the registration. Your normal Vipps user is not available in the test environment.
 5. On the "Verify your number" screen: Use PIN  `1236`.
 6. On the "Enter your code" screen: Use PIN `1236`.
 7. Enable FaceID (or TouchID) and confirm with PIN  `1236`.
@@ -119,9 +119,19 @@ You are now ready to use the iOS test app connected to the Vipps test environmen
 The Android test app is available at: https://install.appcenter.ms/orgs/vipps/apps/vipps-android/distribution_groups/mt%20testers
 You do *not* need an activation code.
 
-Please log into the test app with your test user, that was sent in the welcome email to the email address
-used in the registration (your normal Vipps user is not available in the test environment).
-You do *not* need an activation code.
+1. Open the [Appcenter link](https://install.appcenter.ms/orgs/vipps/apps/vipps-android/distribution_groups/mt%20testers) link. If you get a push message prompting to whitelist the source, you should be able to do this via the "Settings" button.
+2. Install the "Vipps MT" app
+3. Open the "Vipps MT" app
+4. Enter the test phone number, that was sent in the welcome email to the email address used in the registration. Your normal Vipps user is not available in the test environment.
+5. On the "Verify your number" screen: Use PIN  `1236`.
+6. On the "Enter your code" screen: Use PIN `1236`.
+7. Enable FaceID (or TouchID) and confirm with PIN  `1236`.
+8. Accept push notifications.
+
+You are now ready to use the Android test app connected to the Vipps test environment.
+
+**Important:** Do _not_ use the test phone number in production, as the test number may be a real phone number for a Vipps user.
+
 
 # Vipps design guidelines
 
