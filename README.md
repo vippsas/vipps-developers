@@ -91,8 +91,11 @@ See also: [Vipps Test Data](https://github.com/vippsas/vipps-developers/blob/mas
 
 # Vipps test apps
 
-The test apps are identical to the production app, but connects to the
+The test apps for iOS and Android are identical to the production apps, but connects to the
 Vipps [the Vipps test environment (MT)](#the-vipps-test-environment-mt) instead of the production environment.
+
+Only test accounts, with random phone numbers, are available in the test environments.
+Normal Vipps users are not available, so you can not use your own phone number with the test apps.
 
 ## iOS
 
@@ -119,13 +122,13 @@ You are now ready to use the iOS test app connected to the Vipps test environmen
 The Android test app is available at: https://install.appcenter.ms/orgs/vipps/apps/vipps-android/distribution_groups/mt%20testers
 You do *not* need an activation code.
 
-1. Open the [Appcenter link](https://install.appcenter.ms/orgs/vipps/apps/vipps-android/distribution_groups/mt%20testers) link. If you get a push message prompting to whitelist the source, you should be able to do this via the "Settings" button.
-2. Install the "Vipps MT" app
-3. Open the "Vipps MT" app
+1. Open the [App Center](https://install.appcenter.ms/orgs/vipps/apps/vipps-android/distribution_groups/mt%20testers) link. If you get a push message prompting to whitelist the source, you should be able to do this via the "Settings" button.
+2. Install the "Vipps Android" app
+3. Open the "Vipps Android" app
 4. Enter the test phone number, that was sent in the welcome email to the email address used in the registration. Your normal Vipps user is not available in the test environment.
 5. On the "Verify your number" screen: Use PIN  `1236`.
 6. On the "Enter your code" screen: Use PIN `1236`.
-7. Enable FaceID (or TouchID) and confirm with PIN  `1236`.
+7. Enable touch id and confirm with PIN  `1236`.
 8. Accept push notifications.
 
 You are now ready to use the Android test app connected to the Vipps test environment.
