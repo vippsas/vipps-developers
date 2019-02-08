@@ -143,11 +143,7 @@ You do *not* need an activation code.
 
 You are now ready to use the Android test app connected to the Vipps test environment.
 
-**Please note:** App-switching on Android will always open the production
-Vipps app, not the MT test app. This means that even if you have the MT test app
-installed, a `vipps://` URL will be opened with the production Vipps app. If the
-production Vipps app is not installed, the app-switch will direct to Google Play
-to download the production Vipps app.
+**Please note:** Using mobile browser for the landing page will currently not work in the test environmet. This is because it will always redirect to the production Vipps app, not the MT test app. If the production Vipps app is not installed, the redirect will open Google Play to download the production Vipps app.
 
 **Important:** Do _not_ use the test phone number in production,
 as the test number may be a real phone number for a real Vipps user.
