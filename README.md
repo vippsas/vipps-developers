@@ -46,7 +46,7 @@ See our [Postman guide](https://github.com/vippsas/vipps-developers/blob/master/
 
 # Example code
 
-We have made some example code available, in hope that it may be useful: 
+We have made some example code available, in hope that it may be useful:
 https://github.com/vippsas/vipps-developers/tree/master/code-examples
 
 # The Vipps test environment (MT)
@@ -83,8 +83,8 @@ The welcome email contains information about your test user, which has the follo
 
 You can use this test user to in the [Vipps test apps](#vipps-test-apps).
 
-If you need additional payment cards, you can add it in the Vipps app. 
-See [Credit card numbers](https://github.com/vippsas/vipps-developers/tree/master/testdata#credit-card-numbers) 
+If you need additional payment cards, you can add it in the Vipps app.
+See [Credit card numbers](https://github.com/vippsas/vipps-developers/tree/master/testdata#credit-card-numbers)
 for more details.
 
 See also: [Vipps Test Data](https://github.com/vippsas/vipps-developers/blob/master/testdata/README.md).
@@ -99,24 +99,29 @@ Vipps [the Vipps test environment (MT)](#the-vipps-test-environment-mt) instead 
 ![Vipps test app icon](images/vipps-testapp-app-store-icon.jpg)
 
 The iOS test app is available in Apple TestFlight: https://testflight.apple.com/join/hTAYrwea
-
-Please log into the test app with your test user, that was sent in the welcome email to the email address
-used in the registration (your normal Vipps user is not available in the test envirbnment). 
 You do *not* need an activation code.
 
-From the instructions in the link above:
+1. Open the [TestFlight](https://testflight.apple.com/join/hTAYrwea) link
+2. Install the "Vipps MT" app
+3. Open the "Vipps MT" app
+4. Log in with the test phone number, that was sent in the welcome email to the email address used in the registration. Your normal Vipps user is not available in the test environment.
+5. On the "Verify your number" screen: Use PIN  `1236`.
+6. On the "Enter your code" screen: Use PIN `1236`.
+7. Enable FaceID (or TouchID) and confirm with PIN  `1236`.
+8. Accept push notifications.
 
-> Installing a Beta iOS App from an Invitation Email or Public Link:
-> 1. Install [TestFlight](https://itunes.apple.com/no/app/testflight/id899247664?mt=8) on the iOS device that you’ll use for testing.
-> 2. Open your invitation email or tap on the [public link](https://testflight.apple.com/join/hTAYrwea) on your iOS device.
-> 3. Tap View in TestFlight or Start Testing; or tap Accept, Install, or Update for the app you want to test.
+You are now ready to use the iOS test app connected to the Vipps test environment.
+
+**Important:** Do _not_ use the test phone number in production, as the test number may be a real phone number for a Vipps user.
 
 ## Android
 
 The Android test app is available at: https://install.appcenter.ms/orgs/vipps/apps/vipps-android/distribution_groups/mt%20testers
+You do *not* need an activation code.
 
-Please log in with your test user, that was sent in the welcome email to the email address
-used in the registration. You do *not* need an activation code.
+Please log into the test app with your test user, that was sent in the welcome email to the email address
+used in the registration (your normal Vipps user is not available in the test environment).
+You do *not* need an activation code.
 
 # Vipps design guidelines
 
