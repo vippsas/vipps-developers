@@ -118,6 +118,12 @@ You do *not* need an activation code.
 
 You are now ready to use the iOS test app connected to the Vipps test environment.
 
+**Please note:** App-switching on iOS uses the same URL pattern for both the
+production Vipps app (in App Store) and the MT test app (in TestFlight).
+This means that iOS may open either of the apps for a `vipps://` URL, as iOS
+can not know which of the apps to open. Because of this, we recommend to
+only have one of the apps installed on the same device.
+
 **Important:** Do _not_ use the test phone number in production,
 as the test number may be a real phone number for a real Vipps user.
 
@@ -136,6 +142,12 @@ You do *not* need an activation code.
 8. Accept push notifications.
 
 You are now ready to use the Android test app connected to the Vipps test environment.
+
+**Please note:** App-switching on Android will always open the production
+Vipps app, not the MT test app. This means that even if you have the MT test app
+installed, a `vipps://` URL will be opened with the production Vipps app. If the
+production Vipps app is not installed, the app-switch will direct to Google Play
+to download the production Vipps app.
 
 **Important:** Do _not_ use the test phone number in production,
 as the test number may be a real phone number for a real Vipps user.
