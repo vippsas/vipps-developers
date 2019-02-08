@@ -83,6 +83,9 @@ The welcome email contains information about your test user, which has the follo
 
 You can use this test user to in the [Vipps test apps](#vipps-test-apps).
 
+**Important:** Do _not_ use the test phone number in production,
+as the test number may be a real phone number for a real Vipps user.
+
 If you need additional payment cards, you can add it in the Vipps app.
 See [Credit card numbers](https://github.com/vippsas/vipps-developers/tree/master/testdata#credit-card-numbers)
 for more details.
@@ -115,7 +118,8 @@ You do *not* need an activation code.
 
 You are now ready to use the iOS test app connected to the Vipps test environment.
 
-**Important:** Do _not_ use the test phone number in production, as the test number may be a real phone number for a Vipps user.
+**Important:** Do _not_ use the test phone number in production,
+as the test number may be a real phone number for a real Vipps user.
 
 ## Android
 
@@ -133,8 +137,8 @@ You do *not* need an activation code.
 
 You are now ready to use the Android test app connected to the Vipps test environment.
 
-**Important:** Do _not_ use the test phone number in production, as the test number may be a real phone number for a Vipps user.
-
+**Important:** Do _not_ use the test phone number in production,
+as the test number may be a real phone number for a real Vipps user.
 
 # Vipps design guidelines
 
