@@ -11,7 +11,7 @@ The initiate payment response will contain a unique URL to the landing page for 
 *Note: If the landing page realize it's on a mobile browser it will [switch to the Vipps app](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#desktop-browsers-and-mobile-browsers) if it is installed.*
 
 ## Phone number is optional
-IThe initiate payment call no longer requires a phone number. Instead, the user will be asked to fill in the phone number on the landing page. If phone number is included in the initiate payment body, then the landing page wil be "pre-filled" with that number.
+The initiate payment call no longer requires a phone number. Instead, the user will be asked to fill in the phone number on the landing page. If phone number is included in the initiate payment body, then the landing page wil be "pre-filled" with that number.
 
 ## Deeplink is automatically generated
 If  ```"isApp": false``` in the initiate payment body, then a https deeplink with a unique token for that specific order will be generated.
