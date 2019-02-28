@@ -124,7 +124,7 @@ By following the steps below, you can make calls to the Access Token
 endpoint, and see the full `request` and `response` for the calls. While in [Step 4](#step-4) we show how to proceed with a full order using the eCommerce API.
 
 ### Setting up Postman
-We will only provide a quick guide to setting up Postman here, for a more complete guide with pictures please see the [Postman Guide](https://github.com/vippsas/vipps-developers/blob/master/postman-manual.md).
+We will only provide a quick guide to setting up Postman here, for a more complete guide with pictures please see the [Postman Guide](https://github.com/vippsas/vipps-developers/blob/master/postman-guide.md).
 
 As all transaction with our API's require a Access Token we include a Access Token request in some of our Postman collections and environments. We will use the Access Token request from the eCommerce Postman collection and environment in this guide, as it will be used as example in [Step 4](#step-4).
 
