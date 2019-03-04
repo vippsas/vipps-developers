@@ -107,8 +107,8 @@ To get the last API key needed for a Access Token request you will need to acces
 | Keys              |  Value                                       |
 |-------------------|----------------------------------------------|
 | `Ocp-Apim-Subscription-Key` | Go to Developer Portal -> Click on your name on top right -> select profile -> find subscription named `DEFAULT_ACCESSTOKEN` and copy the value from Primary key here. Note that for new eCommerce merchants you may only have one key for the product `Vipps-eCommerce-Services-API` that is valid for both eCommerce and access token requests. |
-| `client_id`  | Go to Developer Portal -> Select the Applications tab -> Select View secret for your application -> Client_Id|
-| `client_secret` | Go to Developer Portal -> Select the Applications tab -> Select View secret for your application -> Client_Secret|
+| `client_id`  | Go to Developer Portal -> Select the Applications tab -> Select View secret for your application -> `Client Id`|
+| `client_secret` | Go to Developer Portal -> Select the Applications tab -> Select View secret for your application -> `Client secret`|
 
 ## Using Postman to fetch Access Tokens
 
