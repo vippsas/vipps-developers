@@ -99,7 +99,7 @@ Under the tab **"REGISTER APPLICATION"** it should say, marked in red: 'All exis
 
 If you need more Vipps applications, please contact integration@vipps.no.
 
-To get the last API key needed for a Access Token request you will need to access the profile tab. This tab is accessed by selecting your account name in the top right(FIRSTNAME LASTNAME in the image bellow), and then selecting PROFILE. On this tab you will find your `Ocp-Apim-Subscription-Key` under DEFAULT_ACCESSTOKEN.
+To get the last API key needed for a Access Token request you will need to access the profile tab. This tab is accessed by selecting your account name in the top right(FIRSTNAME LASTNAME in the image bellow), and then selecting PROFILE. On this tab you will find your `Ocp-Apim-Subscription-Key` under DEFAULT_ACCESSTOKEN. Note that for new eCommerce merchants you may only have one key for the product `Vipps-eCommerce-Services-API` that is valid for both eCommerce and access token requests.
 
 ![Profile](images/devportal-test-profile.png)
 
