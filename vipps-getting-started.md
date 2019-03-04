@@ -99,14 +99,14 @@ Under the tab **"REGISTER APPLICATION"** it should say, marked in red: 'All exis
 
 If you need more Vipps applications, please contact integration@vipps.no.
 
-To get the last API key needed for a Access Token request you will need to access the profile tab. This tab is accessed by selecting your account name in the top right(FIRSTNAME LASTNAME in the image bellow), and then selecting PROFILE. On this tab you will find your `ocp-apim-subscription-key` under DEFAULT_ACCESSTOKEN.
+To get the last API key needed for a Access Token request you will need to access the profile tab. This tab is accessed by selecting your account name in the top right(FIRSTNAME LASTNAME in the image bellow), and then selecting PROFILE. On this tab you will find your `Ocp-Apim-Subscription-Key` under DEFAULT_ACCESSTOKEN.
 
 ![Profile](images/devportal-test-profile.png)
 
 ### Overview for keys needed for a Access Token request
 | Keys              |  Value                                       |
 |-------------------|----------------------------------------------|
-| `ocp-apim-subscription-key` | Go to Developer Portal -> Click on your name on top right -> select profile -> find subscription named DEFAULT_ACCESSTOKEN and copy the value from Primary key here |
+| `Ocp-Apim-Subscription-Key` | Go to Developer Portal -> Click on your name on top right -> select profile -> find subscription named `DEFAULT_ACCESSTOKEN` and copy the value from Primary key here. Note that for new eCommerce merchants you may only have one key for the product `Vipps-eCommerce-Services-API` that is valid for both eCommerce and access token requests. |
 | `client_id`  | Go to Developer Portal -> Select the Applications tab -> Select View secret for your application -> Client_Id|
 | `client_secret` | Go to Developer Portal -> Select the Applications tab -> Select View secret for your application -> Client_Secret|
 
@@ -143,14 +143,14 @@ As all transaction with our API's require a Access Token we include a Access Tok
 1. Click the "eye" icon in the top right corner.
 2. In the dropdown window, click `Edit` in the top right corner.
 3. Fill in the `Current Value` for the following fields to get started.
-   - `ocp-apim-subscription-key-access-token`
+   - `Ocp-Apim-Subscription-Key-Access-Token`
    - `client_id`
    - `client_secret`
 
 #### Obtaining an Access Token with Postman
 
 Make a `Get Access Token` call by selecting the `Get Access Token` call, and click send.
-The test script in the Postman request will then add the Access Token from the response to the `authorization` environment variable.
+The test script in the Postman request will then add the Access Token from the response to the `Authorization` environment variable.
 
 # Step 4
 
@@ -167,9 +167,9 @@ We will in this step show how to make a transaction using the eCommerce API, but
 | Keys              |  Value                                       |
 |-------------------|----------------------------------------------|
 | `orderId`                                 | Max length 30 characters string created by the merchant. |
-| `authorization`                           | "Bearer" followed by the Access Token obtained from the Get Access Token call (example: `"Bearer Im5iQ3dXMTF3M1hrQi14VWFYd0t <snip>"`)|
+| `Authorization`                           | "Bearer" followed by the Access Token obtained from the Get Access Token call (example: `"Bearer Im5iQ3dXMTF3M1hrQi14VWFYd0t <snip>"`)|
 | `merchantSerialNumber`                    | Go to Developer Portal -> Select the Applications tab -> Copy the Saleunit Serial Number from your application |
-| `ocp-apim-subscription-key` For eCommerce | Go to Developer Portal -> Click on your name on top right -> Select profile -> find subscription relevant to your product and copy the Primary key across |
+| `Ocp-Apim-Subscription-Key` For eCommerce | Go to Developer Portal -> Click on your name on top right -> Select profile -> find subscription relevant to your product and copy the Primary key across |
 | `amount`                                  | The amount in øre that the customer should pay. |
 | `fallBack`                                | The URL that the landing page will redirect after |
 | `callbackPrefix`                          | The URL that Vipps will send callback requests to |
@@ -180,7 +180,7 @@ We will in this step show how to make a transaction using the eCommerce API, but
 Acquire a `access_token`as shown in [Step 3](#Step-3).
 
 #### Product request -  Step 2 - additional values
-Fill in the `Current Value` for the values provided in the [values table](#values-required-for-ecommerce-transactions), where `ocp-apim-subscription-key` is `ocp-apim-subscription-key-ecom` in the Postman environment.
+Fill in the `Current Value` for the values provided in the [values table](#values-required-for-ecommerce-transactions), where `Ocp-Apim-Subscription-Key` is `Ocp-Apim-Subscription-Key-Ecom` in the Postman environment.
 
 #### Product request -  Step 3 - initiate payment
 Select Initiate Payment and send. This will return a `url` that will take the user to the Vipps landing page. To proceed to the next step the user will have to accept on this landing page and in the app. See the [Vipps Developers README page](https://github.com/vippsas/vipps-developers#the-vipps-test-environment-mt) for information about acquiring the test apps.
