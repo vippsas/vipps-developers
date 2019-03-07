@@ -97,7 +97,7 @@ Under the tab **"REGISTER APPLICATION"** it should say, marked in red: 'All exis
 
 ![registerapplication](images/devportal-test-registerapplication.png)
 
-If you need more Vipps applications, please contact integration@vipps.no.
+If you need more Vipps test products, please contact integration@vipps.no.
 
 To get the last API key needed for a Access Token request you will need to access the profile tab. This tab is accessed by selecting your account name in the top right(FIRSTNAME LASTNAME in the image bellow), and then selecting PROFILE. On this tab you will find your `Ocp-Apim-Subscription-Key` under DEFAULT_ACCESSTOKEN. 
 
@@ -156,14 +156,26 @@ The test script in the Postman request will then add the Access Token from the r
 
 # Step 4
 
+## Our mobile test apps
+The test apps for iOS and Android are identical to the production apps, but connects to the Vipps the [Vipps test environment (MT)](https://github.com/vippsas/vipps-developers#the-vipps-test-environment-mt) instead of the production environment.
+
+The test apps does not need any activation codes and all PIN codes including verifying your number is `1236`. See the [Vipps test apps information](https://github.com/vippsas/vipps-developers#vipps-test-apps) for more information and detailed instructions.
+
+The android app is available at this app center link: https://install.appcenter.ms/orgs/vipps/apps/vipps-android/distribution_groups/mt%20testers
+
+The iOS test app is available at Testflight: https://testflight.apple.com/join/hTAYrwea
 ## Your first product call
 We will in this step show how to make a transaction using the eCommerce API, but using the API's for our other products should be similar.
 
-### Resources and guides for other products
+### Resources and guides for products
 | Product | Resource             |
 |---------|----------------------|
-| Vipps Invoice | [Github Page](https://github.com/vippsas/vipps-invoice-api)   |
-| Vipps PSP     | [Github Page](https://github.com/vippsas/vipps-psp-api)       |
+| Vipps Invoice         | [Github Page](https://github.com/vippsas/vipps-invoice-api), [Guide](https://github.com/vippsas/vipps-invoice-api/blob/master/vipps-invoice-api.md), [Swagger IPP](https://vippsas.github.io/vipps-invoice-api/ipp.html), [Swagger ISP](https://vippsas.github.io/vipps-invoice-api/isp.html)   |
+| Vipps PSP             | [Github Page](https://github.com/vippsas/vipps-psp-api), [Guide](https://github.com/vippsas/vipps-psp-api/blob/master/vipps-psp-api.md), [Swagger](https://vippsas.github.io/vipps-psp-api/)       |
+| Vipps Recurring       | [Github Page](https://github.com/vippsas/vipps-recurring-api), [Guide](https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api.md), [Swagger](https://github.com/vippsas/vipps-recurring-api) |
+| Vipps eCommerce v2    | [Github Page](https://github.com/vippsas/vipps-ecom-api), [Guide](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md), [Swagger](https://vippsas.github.io/vipps-ecom-api/) |
+
+
 
 ### Values required for eCommerce transactions
 | Keys              |  Value                                       |
