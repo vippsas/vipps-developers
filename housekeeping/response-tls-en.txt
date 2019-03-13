@@ -1,0 +1,40 @@
+Hi
+
+Vipps is constantly tightening its security.
+
+In some case, this means an upgrade may affect you and this is one of them.
+
+TLS (Transport Layer Security) is a protocol between a client and server. Old versions have known vulnerabilities which allow for malicious third parties to intercept the connection between your endpoint and ours.
+
+On February 14th 2019, we made a change in our test environment to restrict all traffic to TLS 1.2 and use latest ciphers on all on services.
+
+How does this affect you? Some older browsers/phones/code libraries use TLS 1.1 (or earlier) and will no longer be supported. Because those browsers and clients will no longer be able to communicate with our services, your integration with Vipps may stop working.
+
+Here is a non-exhaustive list of clients affected
+https://help.salesforce.com/articleView?id=000220586&language=en_US&type=1
+
+You can also test your browser: https://www.ssllabs.com/ssltest/viewMyClient.html
+
+Due to the nature of the problem, which is protocol related, an old client will not receive an error message and will simply "hang" or see a blank page.
+
+How do you know if you are affected?
+
+1) Contact your technical team. Chances are, they know exactly what this upgrade is about.
+
+2) Review your integration and find out if you use/have old clients, or use libraries that handle connections through the unsupported protocol.
+
+3) Test against api-test.vipps.no 
+
+If you are affected, you must upgrade in order to continue integrating with Vipps.
+
+We apologize for the inconvenience and we are sure you understand Vipps must always do what is best to ensure the safety of its clients.
+
+$cursor$
+
+--
+$currentUserName$
+Vipps Integration
+
+[Contact info|https://github.com/vippsas/vipps-developers/blob/master/contact.md]
+[Vipps on GitHub|https://github.com/vippsas]
+[Technical newsletter for developers|https://cloud.hei.vipps.no/utv] 
