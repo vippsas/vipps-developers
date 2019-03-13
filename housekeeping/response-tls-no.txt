@@ -8,8 +8,8 @@ TLS (Transport Layer Security) er protokoll mellom klient og server. Tidligere
 versjoner har kjente sårbarheter som gjør det mulig for ondsinnede tredjeparter
 å fange opp forbindelsen mellom endepunkter.
 
-Den 14 februar 2019 gjorde vi en endring i våre testmiljøer for å begrense all
-trafikk til TLS 1.2 og bruke moderne cyphers på alle tjenester.
+11. mars 2019 gjorde vi en endring i våre systemer for å begrense all
+trafikk til TLS 1.2 og bruke moderne ciphers på alle tjenester.
 
 Hvordan påvirker dette deg?
 
@@ -29,8 +29,12 @@ motta en feilmelding og vil ganske enkelt "henge" eller se en tom side.
 
 Hvordan vet du om du er berørt?
 
-1. Kontakt ditt tekniske team. Sjansen er stor at de vet nøyaktig hva denne oppgraderingen handler om.
-2. Gjennomgå integrasjonen din og finn ut om du bruker / har gamle kunder, eller bruk biblioteker som håndterer tilkoblinger via den ikke støttede protokollen.
+1. Kontakt ditt tekniske team. Sjansen er stor at de vet nøyaktig hva denne
+oppgraderingen handler om.
+
+2. Gjennomgå integrasjonen din og finn ut om du bruker / har gamle kunder,
+eller bruk biblioteker som håndterer tilkoblinger via den ikke støttede protokollen.
+
 3. Test mot apitest.vipps.no
 
 Hvis du er berørt, må du oppgradere for å fortsette å integrere med Vipps.
