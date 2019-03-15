@@ -1,0 +1,68 @@
+Hei
+
+Dessverre har vi ennå ikke gode nok rutiner for dette - som dere og kundene deres beklageligvis merket veldig godt.
+
+Vi varslet de 50 største kundene, alle PSP-er og alle som har integreret med Vipps Regninger. Siden annonseringen av at vi fortsatt støttet TLS 1.0 og 1.1 også var å annonsere at vi var sårbare, valgte vi å gå litt (for?) forsiktig ut. 
+
+TLS 1.0 og 1.1 har i mange sammenhenger vært uaktuelle i lang tid, så vi endret først til TLS 1.2 i testmiljøet 14. februar, og da vi etter en tid ikke opplevde problemer der, sendte vi oppdatering og gjennomførte endringen i produksjon 11. mars.
+
+Vi forsøkte å sjekke logger for å finne de som eventuelt fortsatt brukte TLS 1.0 og 1.1, men Azure har foreløpig ikke mulighet for dette.
+
+Jeg jobber for å få flere ting på plass, inkludert:
+
+- Statusside med driftsmeldinger, se test på https://vipps.statuspage.io
+- Kontinuerlig testing av test- og produksjonsmiljø og validering av Swagger mot implementasjonen
+
+Vi har et nyhetsbrev for utviklere: https://cloud.hei.vipps.no/utv
+
+Nedenfor er varselet vi sendte:
+
+---
+
+I Vipps jobber vi konstant med sikkerhet på tjenestene våre.
+
+I enkelte tilfeller kan det medføre at endringer påvirker våre kunder og
+partnere, og dette er en av dem.
+
+TLS (Transport Layer Security) er protokoll mellom klient og server. Tidligere
+versjoner har kjente sårbarheter som gjør det mulig for ondsinnede tredjeparter
+å fange opp forbindelsen mellom endepunkter.
+
+Den 14 februar 2019 gjorde vi en endring i våre testmiljøer for å begrense all
+trafikk til TLS 1.2 og bruke moderne cyphers på alle tjenester.
+
+Hvordan påvirker dette deg?
+
+Enkelte eldre nettlesere/telefoner/kodebiblioteker bruker TLS 1.1 (eller
+tidligere versjoner) og vil ikke lenger støttes.
+
+Fordi disse nettleserne og klientene ikke lenger kan kommunisere med våre
+tjenester, kan integrasjonen med Vipps slutte å fungere.
+
+Her er en liste over klienter som er berørt (ikke fullstendig):
+https://help.salesforce.com/articleView?id=000220586&language=en_US&type=1
+
+Du kan også teste din nettleser her: https://www.ssllabs.com/ssltest/viewMyClient.html
+
+På grunn av problemet, som er protokollrelatert, vil en gammel klient ikke
+motta en feilmelding og vil ganske enkelt "henge" eller se en tom side.
+
+Hvordan vet du om du er berørt?
+
+1. Kontakt ditt tekniske team. Sjansen er stor at de vet nøyaktig hva denne oppgraderingen handler om.
+2. Gjennomgå integrasjonen din og finn ut om du bruker / har gamle kunder, eller bruk biblioteker som håndterer tilkoblinger via den ikke støttede protokollen.
+3. Test mot apitest.vipps.no
+
+Hvis du er berørt, må du oppgradere for å fortsette å integrere med Vipps.
+
+Vi beklager ulempen, men vi er sikker på at du forstår Vipps må alltid gjøre det som er best for å sikre sikkerheten til våre kunder.
+
+$cursor$
+
+--
+$currentUserName$
+Vipps Integration
+
+[Contact info|https://github.com/vippsas/vipps-developers/blob/master/contact.md]
+[Vipps on GitHub|https://github.com/vippsas]
+[Technical newsletter for developers|https://cloud.hei.vipps.no/utv]
