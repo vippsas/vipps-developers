@@ -4,6 +4,15 @@ A guide on how to set up a Postman collection and environment for Vipps APIs.
 
 Go to [Github](https://github.com/vippsas) and download the JSON files for the API that you want to test (or `copy raw text`).
 
+## Vipps Postman resources
+| Product | Resource             |
+|---------|----------------------|
+| Vipps Invoice         | [Folder](https://github.com/vippsas/vipps-invoice-api/tree/master/tools)|
+| Vipps PSP             | [Collection](https://raw.githubusercontent.com/vippsas/vipps-psp-api/master/tools/Vipps%20PSPv2%20example.postman_collection.json), [Folder](https://github.com/vippsas/vipps-psp-api/tree/master/tools)       |
+| Vipps Recurring       | [Collection](https://raw.githubusercontent.com/vippsas/vipps-recurring-api/master/tools/vipps-recurring-api-postman-collection.json), [Environment](https://raw.githubusercontent.com/vippsas/vipps-recurring-api/master/tools/vipps-recurring-api-postman-environment.json), [Folder](https://github.com/vippsas/vipps-recurring-api/tree/master/tools) |
+| Vipps eCommerce v2    | [Collection](https://raw.githubusercontent.com/vippsas/vipps-ecom-api/master/tools/vipps-ecom-api-postman-collection.json), [Environment](https://raw.githubusercontent.com/vippsas/vipps-ecom-api/master/tools/vipps-ecom-api-postman-enviroment.json), [Folder](https://github.com/vippsas/vipps-ecom-api/tree/master/tools) |
+
+
 ## Import files
 
 Start by importing the JSON files into Postman (or `paste raw text`).
