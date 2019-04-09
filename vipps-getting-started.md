@@ -97,7 +97,7 @@ Under the tab **"REGISTER APPLICATION"** it should say, marked in red: 'All exis
 
 ![registerapplication](images/devportal-test-registerapplication.png)
 
-If you need more Vipps test products, please contact integration@vipps.no.
+If you need more Vipps test products, please [contact us](contact.md).
 
 To get the last API key needed for a Access Token request you will need to access the profile tab. This tab is accessed by selecting your account name in the top right(FIRSTNAME LASTNAME in the image bellow), and then selecting PROFILE. On this tab you will find your `Ocp-Apim-Subscription-Key` under DEFAULT_ACCESSTOKEN. 
 
