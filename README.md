@@ -100,6 +100,11 @@ Vipps [the Vipps test environment (MT)](#the-vipps-test-environment-mt) instead 
 Only test accounts, with random phone numbers, are available in the test environments.
 Normal Vipps users are not available, so you can not use your own phone number with the test apps.
 
+## Limitations of the test apps
+
+* Push alerts do not work
+* There may be conflicts with the production apps, and we recommend to only have one of the apps installed
+
 ## iOS
 
 ![Vipps test app icon](images/vipps-testapp-app-store-icon.jpg)
