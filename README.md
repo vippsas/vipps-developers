@@ -157,30 +157,29 @@ as the test number may be a real phone number for a real Vipps user.
 
 Guidelines, logos, buttons, etc: https://github.com/vippsas/vipps-design-guidelines
 
-# Vipps repositories on GitHub
+## Vipps request servers
 
-To clone [all the Vipps repositories](https://github.com/vippsas), this works for macOS:
+Requests made by Vipps are made from the following servers:
 
-1. Install [Homebrew](https://brew.sh), the missing package manager for macOS  
-        ```
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-        ```
-2. Install [jq](https://stedolan.github.io/jq/), a lightweight and flexible command-line JSON processor  
-        ```
-brew install jq
-       ```
-3. Run this command  
-        ```
-curl -s https://api.github.com/orgs/vippsas/repos | jq .[].clone_url | xargs -n 1 git clone
-        ```
-
-## Pull all GitHub repositories in the current directory
-
-Creating an alias like `gitall` for this command may be useful:
-
+**Production environment:**
 ```
-find . -type d -depth 1 -exec git --git-dir={}/.git --work-tree=$PWD/{} pull origin master \;
+callback-1.vipps.no
+callback-2.vipps.no
+callback-3.vipps.no
+callback-4.vipps.no
 ```
+
+**Test environment:**
+```
+callback-mt-1.vipps.no
+callback-mt-2.vipps.no
+callback-mt-3.vipps.no
+callback-mt-4.vipps.no
+```
+
+For products that Vipps makes requests please make sure that requests from these servers are allowed through firewalls, etc. 
+
+**Note:** Vipps may change the IP addresses that we make callbacks from. To ensure that you are whitelisting the corrects IP addresses please use these hostnames.
 
 # Additional developer resources
 
