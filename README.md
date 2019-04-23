@@ -16,8 +16,7 @@ This repository contains various resources for Vipps developers, including:
   * [iOS](#ios)
   * [Android](#android)
 - [Vipps design guidelines](#vipps-design-guidelines)
-- [Vipps repositories on GitHub](#vipps-repositories-on-github)
-  * [Pull all GitHub repositories in the current directory](#pull-all-github-repositories-in-the-current-directory)
+- [Vipps request servers](#vipps-request-servers)
 - [Additional developer resources](#additional-developer-resources)
 
 # Postman
@@ -179,7 +178,7 @@ callback-mt-4.vipps.no
 
 For products that Vipps makes requests please make sure that requests from these servers are allowed through firewalls, etc. 
 
-**Note:** Vipps may change the IP addresses that we make callbacks from. To ensure that you are whitelisting the corrects IP addresses please use these hostnames.
+**Note:** Vipps may change the IP addresses that we make requests from. To ensure that you are whitelisting the corrects IP addresses please use these hostnames.
 
 # Additional developer resources
 
