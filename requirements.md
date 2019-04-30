@@ -6,4 +6,4 @@ Vipps has some requirements that your company must fulfill in order to use Vipps
 * An appointed contact person with a Norwegian phone and identity number
 
 Vipps payments can only be made by customers with a Norwegian phone number and with a Norwegian national identity number or D-number (given to foreign persons who do not have a national identity number, but have a need for identification with the Norwegian authorities).
-Read more on how to [apply](https://www.brreg.no/bedrift/d-nummer/) for a D-number.
+Read more on how to [apply](https://www.skatteetaten.no/en/person/foreign/norwegian-identification-number/) for a D-number.
