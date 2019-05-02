@@ -24,7 +24,7 @@ This repository contains various resources for Vipps developers, including:
 
 [Postman](https://www.getpostman.com/) is a common tool for working with REST APIs.
 We offer [Postman Collections](https://www.getpostman.com/collection) for some APIs.
-Postman can import Swagger files directly, so collections is not a requirement.
+Postman can import Swagger files directly, so collections are not a requirement.
 
 With Postman you can make calls to all the API endpoints and see the full
 request and response for each call, including headers.
