@@ -32,7 +32,7 @@ request and response for each call, including headers.
 When contacting us about API issues, we are usually able to help faster if you send us
 the complete request and response.
 
-See our [Postman guide](https://github.com/vippsas/vipps-developers/blob/master/postman-manual.md) or the
+See our [Postman guide](https://github.com/vippsas/vipps-developers/blob/master/postman-guide.md) or the
  [Postman documentation](https://www.getpostman.com/docs/) for more information about using Postman.
 
 ## Our Postman collections and environments
