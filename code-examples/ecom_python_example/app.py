@@ -89,7 +89,7 @@ def callback_route(order_id):
     """
     callback_msg = request.get_json()
     log_callback(__name__ + ".callback_route", callback_msg=callback_msg, path_var=order_id)
-    if callback_msg["transactionInfo"]["status"] == "RESERVE":
+    if callback_msg["transactionInfo"]["status"] == "RESERVED":
         access_token = token_request()["access_token"]
         capture_payment(order_id, access_token)
     return ""
