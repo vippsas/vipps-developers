@@ -6,6 +6,8 @@ The SFTP report service is used for downloading settlement reports in the follow
 * PDF
 * Excel (.xslx)
 
+The files are generated on-demand. 
+
 SFTP-users are created, associated with a public key, and given access to the reports of
 one or more merchants. 
 
