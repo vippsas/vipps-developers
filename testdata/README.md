@@ -16,6 +16,7 @@ The [Vipps Test environment (MT)](https://github.com/vippsas/vipps-developers#th
 | Name               | Org. number | Account number |
 | ------------------ |------------ | -------------- |
 | Vipps Teknologi AS | 918130047   | 15038366383    |
+| Merchant test account | -        | 18000000000 |
 
 # Creating more test data
 
