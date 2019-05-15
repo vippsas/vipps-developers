@@ -15,9 +15,8 @@ Settlement reports are provided in these formats:
 
 | Format | Example            | Specification      |
 | ------ | ------------------ | ------------------ |
-| OCR    | [OCRV20170114.sample.txt](ocr/OCRV20170114.sample.txt) | [ocr-spec.xlsx](ocr/ocr-spec.xlsx) |
-| CSV    | [settlement-report.csv](csv/settlement-report.csv) | - |
 | XML    | [Example-Gross.xml](xml/Example-Gross.xml), [Example-Net.xml](xml/Example-Net.xml) | [SettlementReport-3.0.xsd](xml/SettlementReport-3.0.xsd) |
+| CSV    | [settlement-report.csv](csv/settlement-report.csv) | - |
 | PDF    | [PDF](pdf/Vipps-oppgjørsrapport-16655-2018-09-23.pdf) | - |
 | XLSX   | [XLSX](xlsx/Vipps-oppgjørsrapport-16655-2018-09-23.xlsx) | - |
 
@@ -36,6 +35,18 @@ The reports are generated dynamically upon request.
 
 Details: See the [sftp-report-service](sftp-report-service/) folder.
 
+## XML
+
+Details: See the [xml](xml/) folder.
+
+## CSV
+
+Details: See the [csv](csv/) folder.
+
+## PDF
+
+Details: See the [pdf](pdf/) folder.
+
 ## OCR
 
 OCR files are no longer provided by Vipps. 
@@ -43,20 +54,3 @@ Documentation for the legacy solution: [Vipps Faktura](ocr/vipps-invoice-api-vip
 
 Details: See the [ocr](ocr/) folder.
 
-## CSV
-
-CSV files are sent by email.
-
-Details: See the [csv](csv/) folder.
-
-## XML
-
-XML files are sent by email.
-
-Details: See the [xml](xml/) folder.
-
-## PDF
-
-PDF files are sent by email.
-
-Details: See the [pdf](pdf/) folder.
