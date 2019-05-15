@@ -38,6 +38,7 @@ Details: See the [sftp-report-service](sftp-report-service/) folder.
 
 ## OCR
 
+OCR files are no longer provided by Vipps. 
 Documentation for the legacy solution: [Vipps Faktura](ocr/vipps-invoice-api-vipps-faktura.pdf).
 
 Details: See the [ocr](ocr/) folder.
