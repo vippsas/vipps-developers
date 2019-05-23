@@ -17,7 +17,7 @@ For general questions about products, please use the contact form: https://www.v
 
 # Step 1
 
-We start with the main page for the Test portal (https://apitest-portal.vipps.no/) and the sign-in screen (please noty that WooCommerce customers do not get access to the test environment, just production - see below):
+We start with the main page for the Test portal (https://apitest-portal.vipps.no/) and the sign-in screen (please note that WooCommerce customers do not get access to the test environment, just production):
 
 ![Frontpage](images/devportal-test-home.png)
 
@@ -31,7 +31,6 @@ On first sign-in to the test-developer portal, you will be asked for verificatio
 
 ![Verification](images/devportal-test-verification.png)
 
-
 Please note the difference between the Test and Production environments,
 both in appearance and login credentials:
 
@@ -44,6 +43,8 @@ The test environment has a purple header:
 * Vipps Developer Portal URL: https://apitest-portal.vipps.no/
 * A username that looks like this: username@**testapivipps**.no
 * A default password.
+
+Please note that WooCommerce customers do not get access to the test environment, just production.
 
 ## Production environment: Orange
 
