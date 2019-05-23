@@ -17,7 +17,7 @@ For general questions about products, please use the contact form: https://www.v
 
 # Step 1
 
-We start with the main page for the Test portal (https://apitest-portal.vipps.no/) and the sign-in screen:
+We start with the main page for the Test portal (https://apitest-portal.vipps.no/) and the sign-in screen (please noty that WooCommerce customers do not get access to the test environment, just production - see below):
 
 ![Frontpage](images/devportal-test-home.png)
 
