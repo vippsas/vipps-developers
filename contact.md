@@ -7,7 +7,7 @@ Hello! 👋 We love email!
 We help with _technical_ issues, such as questions about using our APIs.
 * General inquiries: Please see the FAQ [Spørsmål og svar](https://www.vipps.no/sporsmal#bedriftspm), and use the
 [contact us](https://www.vipps.no/privat/kontakt-oss) form.
-* See also the [developer FAQ](https://github.com/vippsas/vipps-developers/blob/master/housekeeping/contact-faq.md) (work in progress).
+* See also the [developer FAQ](https://github.com/vippsas/vipps-developers/blob/master/housekeeping/contact-faq.md) (work in progress, in Norwegian).
 * If you have suggestions for improvements to Vipps products,
 please use [this form](https://www.vipps.no/tips-og-tilbakemeldinger).
 * If you use Vipps through a partner: Please contact your partner. Enquiries about ordering Vipps through a partner: partnerbestilling@vipps.no
