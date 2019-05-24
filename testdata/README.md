@@ -6,7 +6,6 @@ The [Vipps Test environment (MT)](https://github.com/vippsas/vipps-developers#th
 
 ## Users
 
-
 | customerId | NIN (fødselsnummer) | MSISDN (phone number) | First name   | Last name |
 | ---------- | ------------------- | --------------------- | ------------ | --------- |
 | 10003301	 | 01032300371         | 4797777776            | Willhelm Fos | Kluvstad  |
@@ -57,4 +56,3 @@ contains 100,000 synthetic users in JSON format (took ~30 minutes to create), li
   "idType": "passport"
 }
 ```
-

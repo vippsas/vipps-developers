@@ -90,7 +90,28 @@ If you need additional payment cards, you can add it in the Vipps app.
 See [Credit card numbers](https://github.com/vippsas/vipps-developers/tree/master/testdata#credit-card-numbers)
 for more details.
 
+If you have not yet received the welcome email, see the
+[standard reply](https://github.com/vippsas/vipps-developers/blob/master/housekeeping/response-apinokler.txt)
+(in Norwegian) for requests for this.
+
 See also: [Vipps Test Data](https://github.com/vippsas/vipps-developers/blob/master/testdata/README.md).
+
+### Test amounts
+
+Vipps supports using special amounts that are always "approved in the app", etc -
+without anyone needing to use the app. This is useful for testing,
+test automation, etc.
+
+| Amount | Error                      | 
+| ------ | -------------------------- |
+| 1.51   | Not sufficient funds       |
+| 1.86   | Expired Card               |
+| 1.87   | Invalid card               |
+| 1.82   | Refused by issuer          |
+| 1.83   | Suspected fraud            |
+| 1.84   | Withdrawal limit exceeded  |
+| 1.97   | 3D Secure denied           |
+
 
 # Vipps test apps
 
@@ -177,7 +198,7 @@ callback-mt-3.vipps.no
 callback-mt-4.vipps.no
 ```
 
-For products that Vipps makes requests please make sure that requests from these servers are allowed through firewalls, etc. 
+For products that Vipps makes requests please make sure that requests from these servers are allowed through firewalls, etc.
 
 **Note:** Vipps may change the IP addresses that we make requests from. To ensure that you are whitelisting the corrects IP addresses please use these hostnames.
 
