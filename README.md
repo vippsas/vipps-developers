@@ -200,7 +200,7 @@ callback-mt-4.vipps.no
 
 For products that Vipps makes requests please make sure that requests from these servers are allowed through firewalls, etc.
 
-**Note:** Vipps may change the IP addresses that we make requests from. To ensure that you are whitelisting the corrects IP addresses please use these hostnames.
+**Note:** Vipps may change the IP addresses that we make requests from. To ensure that you are whitelisting the correct IP addresses please use these hostnames, and update your firewall rules if there are DNS changes.
 
 # Additional developer resources
 
