@@ -178,11 +178,11 @@ as the test number may be a real phone number for a real Vipps user.
 
 Guidelines, logos, buttons, etc: https://github.com/vippsas/vipps-design-guidelines
 
-## Vipps request servers
+# Vipps request servers
 
 Requests made by Vipps are made from the following servers:
 
-**Production environment:**
+## Production environment
 ```
 callback-1.vipps.no
 callback-2.vipps.no
@@ -190,7 +190,7 @@ callback-3.vipps.no
 callback-4.vipps.no
 ```
 
-**Test environment:**
+## Test environment
 ```
 callback-mt-1.vipps.no
 callback-mt-2.vipps.no
