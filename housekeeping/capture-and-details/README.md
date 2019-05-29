@@ -1,5 +1,6 @@
 ## Capture eCom v2 payments
- 
+Requires the programming language Go (https://golang.org/)
+
 To run a capture batch in production<br/>
 `go run main.go -config config.json -orders orders.txt -capture -production`<br/>
 To run in test simply omit "-production" 
