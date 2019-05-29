@@ -1,0 +1,7 @@
+{
+  "access_token": "Dev portal -> Profile -> (Access-TokenService OR Vipps-eCommerce-Services-API) => Primary Key",
+  "ecom_subscription_key": "Dev portal -> Profile -> (eCommerve-Express-Checkout-Signup-Login-Services-API OR Vipps-Vipps-eCommerce-Services-API) => Primary Key",
+  "client_id": "Dev portal -> Applications->YourSaleUnitNumber->Client Id",
+  "client_secret": "Dev portal -> Applications->YourSaleUnitNumber->Client secret",
+  "msn": "Merchant Serial Number, found in dev portal as well. One company can have many MSNs'"
+}
