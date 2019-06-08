@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Oauth2 callback</title>
+
+    <style>
+        #detailsCode, #detailsToken {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h2>Step 2: Client received callback</h2>
+
+    <div id="detailsCode">
+        <div><button>Fetch token</button></div>
+
+        Normally your app would directly perform a POST to <code class="token_endpoint"></code> with this payload:<br />
+        <pre class="payload"></pre>
+    </div>
+
+    <div id="detailsToken">
+        <div class="status"></div>
+
+        <h3>id_token decoded</h3>
+        <pre class="idToken"></pre>
+    </div>
+
+
+    <p><a href="">Front page</a></p>
+</body>
+<script>
+
+
+const idProviderConfigurations = {
+    "vipps": {
+        "authorization_endpoint": "https://apitest.vipps.no/access-management-1.0/access/oauth2/auth",
+        "token_endpoint": "https://apitest.vipps.no/access-management-1.0/access/oauth2/token",
+        "redirect_uri": "http://localhost:8087/callback",
+        "client_id": "vipps-integration",
+        "scope": "sub openid"
+    }
+};
+console.log("Hash:");
+const hash = location.hash.substring(1);
+
+console.log("Location:");
+console.log(location);
+
+//const parameters = JSON.parse('{"' + hash.replace(/&/g, '","').replace(/=/g,'":"') + '"}', function(key, value) { return key===""?value:decodeURIComponent(value) })
+
+const provider = window.localStorage.getItem("loginProvider");
+console.log("provider");
+console.log(provider);
+
+const idProviderConfig = idProviderConfigurations[provider];
+console.log("idproviderconfig");
+console.log(idProviderConfig);
+
+function receiveCode() {
+    console.log("In recieveCode");
+    const payload = "client_id=" + idProviderConfig.client_id +
+        "&redirect_uri=" + idProviderConfig.redirect_uri +
+        "&grant_type=authorization_code" +
+        "&code=" + parameters.code
+        ;
+
+    const details = document.getElementById("details");
+
+    details.querySelector(".token_endpoint").innerHTML = idProviderConfig.token_endpoint;
+    details.querySelector(".payload").innerHTML = payload.replace(/[&?]/g, "\n\t$&");
+    details.querySelector("button").addEventListener("click", () => fetchToken(idProviderConfig.token_endpoint, payload));
+
+    details.style.display = "block";
+}
+
+function receiveIdToken() {
+    console.log("In recivedIdToken");
+    const loginState = window.localStorage.getItem("loginState");
+
+    console.log(loginState)
+
+    const details = document.getElementById("detailsToken");
+
+    console.log(details)
+
+    if (loginState === parameters.state) {
+        details.querySelector(".status").innerHTML = "Login state matches";
+    } else {
+        details.querySelector(".status").innerHTML = "Login state MISMATCH";
+    }
+
+    const parts = parameters.id_token.split(".");
+
+    console.log(parts)
+    const idTokenDecoded = JSON.parse(atob(parts[1]));
+    const idTokenElement = details.querySelector(".idToken");
+    idTokenElement.innerHTML = JSON.stringify(idTokenDecoded, null, 2);
+
+    details.style.display = "block";
+}
+
+
+if (parameters.id_token) {
+    receiveIdToken();
+}
+
+
+</script>
+</html>
