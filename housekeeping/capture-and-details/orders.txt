@@ -1,2 +1,3 @@
-Example-OrderId-1
-Example-OrderId-2
+OrderID;CaptureAmount
+Example-OrderId-1;500
+Example-OrderId-2;

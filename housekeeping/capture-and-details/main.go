@@ -1,18 +1,25 @@
 package main
 
 import (
-	"bufio"
 	"bytes"
+	"encoding/csv"
 	"encoding/json"
+	"errors"
 	"flag"
 	"fmt"
 	"io/ioutil"
 	"log"
 	"net/http"
 	"os"
+	"strconv"
 	"strings"
 	"time"
 )
+
+type OrderInput struct {
+	OrderID       string
+	CaptureAmount int
+}
 
 type CaptureResponse struct {
 	OrderId      string             `json:"orderId"`
@@ -53,7 +60,7 @@ type ErrorResponse struct {
 	ErrorMessage string `json:"errorMessage"`
 }
 
-var orderIdFilePath string
+var ordersFilePath string
 var configFilePath string
 var doCapture bool
 var doDetails bool
@@ -63,16 +70,16 @@ func init() {
 	flag.BoolVar(&doCapture, "capture", false, "Specify this flag to perform CAPTURE on Orders specified in -orders fileName")
 	flag.BoolVar(&doDetails, "detail", false, "Specify this flag to perform a DETAILS request on Orders specified in -orders fileName")
 	flag.BoolVar(&production, "production", false, "Specify to use the production environment. Otherwise it will default to Test (MT)")
-	flag.StringVar(&orderIdFilePath, "o", "", "Path to file text file with Order IDs'")
-	flag.StringVar(&orderIdFilePath, "orders", "", "Path to file text file with Order IDs'")
+	flag.StringVar(&ordersFilePath, "o", "", "Path to file text file with Order IDs'")
+	flag.StringVar(&ordersFilePath, "orders", "", "Path to file text file with Order IDs'")
 	flag.StringVar(&configFilePath, "c", "", "Path to file configuration file to use")
 	flag.StringVar(&configFilePath, "conf", "", "Path to file configuration file to use")
 }
 
 func main() {
 	flag.Parse()
-	fmt.Println("FilePath:", orderIdFilePath)
-	if orderIdFilePath == "" || configFilePath == "" {
+	fmt.Println("FilePath:", ordersFilePath)
+	if ordersFilePath == "" || configFilePath == "" {
 		flag.PrintDefaults()
 		os.Exit(1)
 	}
@@ -89,70 +96,33 @@ func main() {
 
 	config := readConfig(configFilePath)
 
-	// Read in the order IDs
-	orderIds, err := readOrderIdFile(orderIdFilePath)
+	orders, err, notParsedLines := readOrderIdCsvFile(ordersFilePath)
 	if err != nil {
-		log.Printf("Error during reading of OrderID file, %v", err)
+		log.Println(err)
 		os.Exit(1)
 	}
-	fmt.Printf("Lines in OrderID file (some might be empty): %v\n", len(orderIds))
-	
+
+	// If we have lines that have not been parsed we should let the user know.
+	if len(notParsedLines) > 0 {
+		fmt.Println("********************************************\n" +
+			"* Lines we could for some reason not parse *\n" +
+			"********************************************")
+		for _, line := range notParsedLines {
+			fmt.Printf("%v\n", line)
+		}
+		fmt.Println("Finished listing lines we couldn't parse.")
+	}
+
 	fetchAccessToken(config)
 
 	if doCapture {
-		performCaptures(config, orderIds)
+		performCaptures(config, orders)
 	} else if doDetails {
-		performDetails(config, orderIds)
+		performDetails(config, orders)
 	}
 }
 
-func performDetails(config *Configuration, orderIds []string) {
-	/*client := &http.Client{}
-	for _, orderId := range orderIds {
-		// Remove leading and trailing whitespaces, then check if orderId is empty.
-		orderId = strings.TrimSpace(orderId)
-		if orderId == "" {
-			emptyLinesCount++
-			continue
-		}
-
-		url := fmt.Sprintf("https://apitest.vipps.no/ecomm/v2/payments/%v/details", orderId)
-		request, err := http.NewRequest("GET", url, bytes.NewBuffer())
-		if err != nil {
-			log.Println("capture->error: ", err)
-			return
-		}
-		// Standard HTTP headers required for using the eCom v2 API.
-		request.Header.Add("Authorization", config.BearerToken)
-		request.Header.Add("Ocp-Apim-Subscription-Key", config.EComSubscriptionKey)
-		request.Header.Add("Content-Type", "application/json")
-
-		response, err := client.Do(request)
-		if err != nil {
-			log.Println("doRequest:", err)
-			failedCapturesCount++
-			failedCaptures = append(failedCaptures, orderId)
-			return
-		}
-	}*/
-}
-
-func performCaptures(config *Configuration, orderIds []string) {
-	// Initializing capture request struct
-	captureReq := CaptureRequest{
-		MerchantInfo: MerchantInfo{
-			MerchantSerialNumber: config.MSN,
-		},
-		Transaction: Transaction{
-			// Amount set to 0 to capture the entire amount available.
-			Amount:          0,
-			TransactionText: "Captured by Vipps Integration",
-		},
-	}
-	reqBody, err := json.Marshal(captureReq)
-	if err != nil {
-		log.Printf("Error marshalling request body: %v\n", err)
-	}
+func performDetails(config *Configuration, orders []OrderInput) {
 	var baseUrl string
 	if production {
 		baseUrl = "https://api.vipps.no"
@@ -160,26 +130,117 @@ func performCaptures(config *Configuration, orderIds []string) {
 		baseUrl = "https://apitest.vipps.no"
 	}
 
-	var emptyLinesCount int
+	resultFile, err := os.Create(fmt.Sprintf("detailsResults_%v_%v.txt", config.MSN, time.Now().UnixNano()/1000000))
+	if err != nil {
+		log.Fatal("Cannot create file", err)
+	}
+	defer resultFile.Close()
+
+	var failedDetailsRequestCount = 0
+	var failedDetails []OrderInput
+
+	var headerWritten = false
+	client := &http.Client{}
+	for _, order := range orders {
+
+		url := fmt.Sprintf("%v/ecomm/v2/payments/%v/details", baseUrl, order.OrderID)
+		request, err := http.NewRequest("GET", url, nil)
+		if err != nil {
+			log.Println("details->error: ", err)
+			return
+		}
+		// Standard HTTP headers required for using the eCom v2 API.
+		request.Header.Add("Authorization", config.BearerToken)
+		request.Header.Add("Ocp-Apim-Subscription-Key", config.EComSubscriptionKey)
+		request.Header.Add("Content-Type", "application/json")
+
+		response, err := client.Do(request)
+		if err != nil {
+			log.Println("doRequest:", err)
+			failedDetailsRequestCount++
+			failedDetails = append(failedDetails, order)
+			continue
+		}
+		data, _ := ioutil.ReadAll(response.Body)
+		err = response.Body.Close()
+		if err != nil {
+			log.Println("Error when closing http body:", err)
+		}
+		// If the HTTP Status Code is anything but a 2xx code we know something went wrong
+		// and we didn't manage to perform a capture
+		if response.StatusCode > 299 || response.StatusCode < 200 {
+			fmt.Printf("error, http status code for '%v' is '%v' with status message: '%v'\n", nil, response.StatusCode, response.Status)
+			continue
+		} else {
+			dr := DetailsResponse{}
+			err = json.Unmarshal(data, &dr)
+			if err != nil {
+				log.Fatal("Decoding error: ", err, string(data))
+			}
+
+			if !headerWritten {
+				header := "Order ID;Captured Amount;Uncaptured Amount Remaining;Refunded Amount;Remaining Amount available for refund;LastTransaction ID;LastTransaction Operation;LastTransaction TimeStamp;LastTransaction Amount"
+				fmt.Println(header)
+				fmt.Fprintln(resultFile, header)
+				headerWritten = true
+			}
+			ts := dr.TransactionSummary
+			lle := dr.TransactionLogHistory[0]
+			output := fmt.Sprintf("%v;%v;%v;%v;%v;%v;%v;%v;%v\n", dr.OrderID, ts.CapturedAmount, ts.RemainingAmountToCapture, ts.RefundedAmount, ts.RemainingAmountToRefund, lle.TransactionID, lle.Operation, lle.TimeStamp, lle.Amount)
+
+			fmt.Fprint(resultFile, output)
+			fmt.Print(output)
+		}
+
+	}
+}
+
+func performCaptures(config *Configuration, orders []OrderInput) {
+	// NOTE Doesn't check that access token is valid, though with a 24 hour lifespan in production this isn't likely to ever be an actual issue.
+	// TODO Handle potential error in writing results to file
+
+	var baseUrl string
+	if production {
+		baseUrl = "https://api.vipps.no"
+	} else {
+		baseUrl = "https://apitest.vipps.no"
+	}
+
+	// File we write the results of the captures too.
+	resultFile, err := os.Create(fmt.Sprintf("captureResults_%v_%v.txt", config.MSN, time.Now().UnixNano()/1000000))
+	if err != nil {
+		log.Fatal("Cannot create file", err)
+	}
+	defer resultFile.Close()
+
 	var failedCapturesCount int
 	var failedCaptures []string
 	var capturedCount int
 	var captured []string
 	client := &http.Client{}
-	for _, orderId := range orderIds {
-		// Remove leading and trailing whitespaces, then check if orderId is empty.
-		orderId = strings.TrimSpace(orderId)
-		if orderId == "" {
-			emptyLinesCount++
-			continue
+	var headerWritten = false
+	for _, order := range orders {
+		// Initializing capture request struct
+		captureReq := CaptureRequest{
+			MerchantInfo: MerchantInfo{
+				MerchantSerialNumber: config.MSN,
+			},
+			Transaction: Transaction{
+				Amount:          order.CaptureAmount,
+				TransactionText: "Captured by Vipps Integration",
+			},
+		}
+		reqBody, err := json.Marshal(captureReq)
+		if err != nil {
+			log.Printf("Error marshalling request body: %v\n", err)
 		}
 
-		url := fmt.Sprintf(baseUrl+"/ecomm/v2/payments/%v/capture", orderId)
+		url := fmt.Sprintf(baseUrl+"/ecomm/v2/payments/%v/capture", order.OrderID)
 		request, err := http.NewRequest("POST", url, bytes.NewBuffer(reqBody))
 		if err != nil {
 			log.Println("capture->error: ", err)
 			failedCapturesCount++
-			failedCaptures = append(failedCaptures, orderId)
+			failedCaptures = append(failedCaptures, order.OrderID)
 			return
 		}
 
@@ -192,7 +253,7 @@ func performCaptures(config *Configuration, orderIds []string) {
 		if err != nil {
 			log.Println("doRequest:", err)
 			failedCapturesCount++
-			failedCaptures = append(failedCaptures, orderId)
+			failedCaptures = append(failedCaptures, order.OrderID)
 			return
 		}
 
@@ -201,19 +262,26 @@ func performCaptures(config *Configuration, orderIds []string) {
 		if err != nil {
 			log.Println("Error when closing http body:", err)
 		}
-
+		if !headerWritten {
+			header := "Order ID;Transaction Status;Captured Amount;Uncaptured Amount Remaining"
+			fmt.Println(header)
+			fmt.Fprintln(resultFile, header)
+			headerWritten = true
+		}
 		// If the HTTP Status Code is anything but a 2xx code we know something went wrong
 		// and we didn't manage to perform a capture
 		if response.StatusCode > 299 || response.StatusCode < 200 {
 			var er []ErrorResponse
 			err = json.Unmarshal(data, &er)
 			failedCapturesCount++
-			failedCaptures = append(failedCaptures, orderId)
+			failedCaptures = append(failedCaptures, order.OrderID)
 			if err != nil {
 				log.Printf("Decoding error: %v => '%v'\n", err, string(data))
 				continue
 			}
-			fmt.Printf("%v;%v;%v;%v\n", orderId, er[0].ErrorCode, er[0].ErrorGroup, er[0].ErrorMessage)
+			outputString := fmt.Sprintf("%v;%v;%v;%v\n", order.OrderID, er[0].ErrorCode, er[0].ErrorGroup, er[0].ErrorMessage)
+			fmt.Print(outputString)
+			fmt.Fprint(resultFile, outputString)
 			continue
 		} else {
 			cr := CaptureResponse{}
@@ -223,10 +291,12 @@ func performCaptures(config *Configuration, orderIds []string) {
 			}
 			if cr.TransInfo.Status == "Captured" {
 				capturedCount++
-				captured = append(captured, orderId)
+				captured = append(captured, order.OrderID)
 			}
-			fmt.Printf("%v;%v;%v;%v\n", cr.OrderId, cr.TransInfo.Status, cr.TransSummary.CapturedAmount, cr.TransSummary.RemainingAmountToCapture)
 
+			outputString := fmt.Sprintf("%v;%v;%v;%v\n", cr.OrderId, cr.TransInfo.Status, cr.TransSummary.CapturedAmount, cr.TransSummary.RemainingAmountToCapture)
+			fmt.Print(outputString)
+			fmt.Fprint(resultFile, outputString)
 		}
 	}
 
@@ -235,32 +305,10 @@ func performCaptures(config *Configuration, orderIds []string) {
 		fmt.Printf("Failed to capture the following orders:\n%v", strings.Join(failedCaptures, "\n"))
 		fmt.Println()
 	}
+
 	if capturedCount > 0 {
 		fmt.Printf("Captured the following orders:\n%v", strings.Join(captured, "\n"))
 	}
-}
-
-/*
-Reads the file with the order IDs into memory
-*/
-func readOrderIdFile(path string) ([]string, error) {
-	file, err := os.Open(path)
-	if err != nil {
-		return nil, err
-	}
-	defer func() {
-		err := file.Close()
-		if err != nil {
-			log.Println("Error while closing order file, ", err)
-		}
-	}()
-
-	var lines []string
-	scanner := bufio.NewScanner(file)
-	for scanner.Scan() {
-		lines = append(lines, scanner.Text())
-	}
-	return lines, scanner.Err()
 }
 
 // Configuration struct to contain API keys in addition to client id and secret
@@ -299,7 +347,7 @@ func fetchAccessToken(config *Configuration) {
 	defer func() {
 		err := response.Body.Close()
 		if err != nil {
-			log.Println("Erorr while closing HTTP response body:", err)
+			log.Println("Error while closing HTTP response body:", err)
 		}
 	}()
 
@@ -343,7 +391,7 @@ func readConfig(path string) *Configuration {
 }
 
 //
-// Details Request structs
+// Details Request struct
 type DetailsResponse struct {
 	OrderID               string                  `json:"orderId"`
 	TransactionSummary    TransactionSummary      `json:"transactionSummary"`
@@ -358,4 +406,77 @@ type TransactionLogHistory struct {
 	Operation        string    `json:"operation"`
 	RequestID        string    `json:"requestId"`
 	OperationSuccess bool      `json:"operationSuccess"`
+}
+
+func readOrderIdCsvFile(path string) ([]OrderInput, error, [][]string) {
+	// TODO Handle quotation marks in header and rows.
+	// TODO Ensure that user hasn't forgotten to strip away decimal point/comma and/or other separators and currency marks.
+	// TODO Lookup rules for OrderID and which characters are allowed
+
+	file, err := os.Open(path)
+	if err != nil {
+		return make([]OrderInput, 0), err, make([][]string, 0)
+	}
+	defer func() {
+		err := file.Close()
+		if err != nil {
+			log.Println("Error while closing order CSV file,", err)
+		}
+	}()
+
+	reader := csv.NewReader(file)
+	reader.Comma = ';'
+	lines, err := reader.ReadAll()
+	if err != nil {
+		panic(err)
+	}
+
+	// Verify that we actually have a file with something more than a header or an empty file
+	if len(lines) <= 1 {
+		// Might be just as well to just throw a nil instead of OrderInput with size 0.
+		return make([]OrderInput, 0), errors.New("input order file contains 1 or 0 entries. Need HEADER (column names) and rows with data"), make([][]string, 0)
+	}
+
+	// Figure out in which order the columns are defined.
+	var orderIdCol = -1
+	var orderCapAmountCol = -1
+	header := lines[0]
+	for i, column := range header {
+		switch column {
+		case "OrderID":
+			orderIdCol = i
+		case "CaptureAmount":
+			orderCapAmountCol = i
+		}
+	}
+	if orderIdCol == -1 || orderCapAmountCol == -1 {
+		return make([]OrderInput, 0), errors.New("column marked 'OrderID' AND 'CaptureAmount' MUST exist in orders file"), make([][]string, 0)
+	}
+
+	// Read orders into OrderInput struct, and do some checks on content
+	var orders []OrderInput
+	var notParsedLines [][]string
+
+	for _, line := range lines[1:] {
+		if len(strings.TrimSpace(line[orderIdCol])) == 0 {
+			fmt.Printf("Empty OrderID not allowed. Complete line:'%v'\n", line)
+			notParsedLines = append(notParsedLines, line)
+			continue
+		}
+
+		amount, err := strconv.Atoi(line[orderCapAmountCol])
+		if err != nil {
+			fmt.Printf("Error while converting '%v' to int, error: %v\t\n", line[orderCapAmountCol], err)
+			notParsedLines = append(notParsedLines, line)
+			continue
+		}
+		// Finally we create the struct with the order line
+		order := OrderInput{
+			OrderID:       line[orderIdCol],
+			CaptureAmount: amount,
+		}
+		orders = append(orders, order)
+	}
+
+	return orders, err, notParsedLines
 }
