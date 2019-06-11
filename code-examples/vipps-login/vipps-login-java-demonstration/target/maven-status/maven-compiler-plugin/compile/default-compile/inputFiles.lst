@@ -1,0 +1,13 @@
+/home/aridder/Projects/vipps-login-java-demonstration/src/main/java/no/vipps/OpenIdConnectServlet.java
+/home/aridder/Projects/vipps-login-java-demonstration/src/main/java/no/vipps/Oauth2Servlet.java
+/home/aridder/Projects/vipps-login-java-demonstration/src/main/java/no/vipps/util/BearerToken.java
+/home/aridder/Projects/vipps-login-java-demonstration/src/main/java/no/vipps/UserServlet.java
+/home/aridder/Projects/vipps-login-java-demonstration/src/main/java/no/vipps/JwtTokenValidationException.java
+/home/aridder/Projects/vipps-login-java-demonstration/src/main/java/no/vipps/HttpAuthorization.java
+/home/aridder/Projects/vipps-login-java-demonstration/src/main/java/no/vipps/CallbackServlet.java
+/home/aridder/Projects/vipps-login-java-demonstration/src/main/java/no/vipps/OpenidConfiguration.java
+/home/aridder/Projects/vipps-login-java-demonstration/src/main/java/no/vipps/JwtToken.java
+/home/aridder/Projects/vipps-login-java-demonstration/src/main/java/no/vipps/util/CertificateCache.java
+/home/aridder/Projects/vipps-login-java-demonstration/src/main/java/no/vipps/UserSession.java
+/home/aridder/Projects/vipps-login-java-demonstration/src/main/java/no/vipps/IdentityServer.java
+/home/aridder/Projects/vipps-login-java-demonstration/src/main/java/no/vipps/Oauth2ClientConfiguration.java

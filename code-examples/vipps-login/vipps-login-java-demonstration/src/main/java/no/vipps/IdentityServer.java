@@ -68,18 +68,4 @@ public class IdentityServer {
         webAppContext.addServlet(new ServletHolder(servlet), pathSpec);
     }
 
-    private Oauth2ClientConfiguration getOauth2ClientConfiguration(String providerName) throws IOException {
-        Properties properties = new Properties();
-
-        try (FileReader reader = new FileReader("src/vipps-login.properties")) {
-            properties.load(reader);
-        }
-
-        Oauth2ClientConfiguration configuration = new Oauth2ClientConfiguration(providerName);
-        configuration.setClientId(properties.getProperty(providerName + ".client_id"));
-        configuration.setClientSecret(properties.getProperty(providerName + ".client_secret"));
-        configuration.setRedirectUri(properties.getProperty(providerName + ".redirect_uri"));
-        return configuration;
-    }
-
 }

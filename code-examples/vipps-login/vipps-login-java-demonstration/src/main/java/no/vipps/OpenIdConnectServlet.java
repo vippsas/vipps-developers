@@ -189,7 +189,7 @@ public class OpenIdConnectServlet extends HttpServlet {
 
         String payload =
                 "redirect_uri=" + redirectUri
-                + "&" + "code=" + code
+                + "&" + "<span style=\"color: red;\">code=" + code + "</span>"
                 + "&" + "grant_type=" + "client_credentials";
 
 
