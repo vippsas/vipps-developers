@@ -28,6 +28,7 @@ public class OpenIdConnectServlet extends HttpServlet {
     private String clientId;
     private String clientSecret;
     private String redirectUri;
+    private String grantType;
 
     private URL authorizationEndpoint;
     private URL tokenEndpoint;
@@ -57,7 +58,8 @@ public class OpenIdConnectServlet extends HttpServlet {
         this.authorizationEndpoint = configuration.getAuthorizationEndpoint();
         this.tokenEndpoint = configuration.getTokenEndpoint();
         this.userInfoEndpoint = configuration.getUserinfoEndpoint();
-        this.scope = "openid";
+        this.scope = "openid name nnin birthDate email phoneNumber address";
+        this.grantType = "authorization_code";
     }
 
 
@@ -100,8 +102,6 @@ public class OpenIdConnectServlet extends HttpServlet {
                 getToken(req, resp);
             } else if (action.equals("session")) {
                 setupSession(req, resp);
-            }else if (action.equals("refresh")) {
-                refreshAccessToken(req);
             }else if (action.equals("logout")) {
                 logoutSession(req, resp);
             } else {
@@ -189,8 +189,8 @@ public class OpenIdConnectServlet extends HttpServlet {
 
         String payload =
                 "redirect_uri=" + redirectUri
-                + "&" + "<span style=\"color: red;\">code=" + code + "</span>"
-                + "&" + "grant_type=" + "client_credentials";
+                + "&" + "code=" + code
+                + "&" + "grant_type=" + grantType;
 
 
 
@@ -297,29 +297,6 @@ public class OpenIdConnectServlet extends HttpServlet {
 
         UserSession.getFromSession(req).addSession(session);
         resp.sendRedirect("/");
-    }
-
-    private void refreshAccessToken(HttpServletRequest req) throws IOException {
-        UserSession session = UserSession.getFromSession(req);
-        UserSession.IdProviderSession idProviderSession = session.getIdProviderSessions().stream()
-                .filter(s -> s.getControlUrl().equals(req.getServletPath()))
-                .findAny().orElseThrow(() -> new IllegalArgumentException("Can't refresh non-existing session"));
-
-        String payload = "client_id=" + clientId
-                + "&" + "client_secret=" + clientSecret
-                + "&" + "redirect_uri=" + redirectUri
-                + "&" + "refresh_token=" + idProviderSession.getRefreshToken()
-                + "&" + "grant_type=" + "refresh_token";
-        HttpURLConnection connection = (HttpURLConnection) tokenEndpoint.openConnection();
-        connection.setDoOutput(true);
-        connection.setDoInput(true);
-        try (OutputStream outputStream = connection.getOutputStream()) {
-            outputStream.write(payload.getBytes());
-        }
-        JsonObject jsonObject = JsonParser.parseToObject(connection);
-        logger.debug("Refreshed session: {}", jsonObject);
-
-        idProviderSession.setAccessToken(jsonObject.requiredString("access_token"));
     }
 
     private void logoutSession(HttpServletRequest req, HttpServletResponse resp) {
