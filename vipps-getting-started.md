@@ -100,16 +100,15 @@ Under the tab **"REGISTER APPLICATION"** it should say, marked in red: 'All exis
 
 If you need more Vipps test products, please [contact us](contact.md).
 
-To get the last API key needed for a Access Token request you will need to access the profile tab. This tab is accessed by selecting your account name in the top right(FIRSTNAME LASTNAME in the image bellow), and then selecting PROFILE. On this tab you will find your `Ocp-Apim-Subscription-Key` under DEFAULT_ACCESSTOKEN. 
+To get the last API key needed for a Access Token request and product requests you will need to access the profile tab. This tab is accessed by selecting your account name in the top right(FIRSTNAME LASTNAME in the image bellow), and then selecting PROFILE. On this tab you will find your Access Token/subscription key under **Your subscriptions**.
 
-**Note:** For new eCommerce merchants you may only have one key for the product `Vipps-eCommerce-Services-API` that should be used for both Access Token requests and product requests.
 
 ![Profile](images/devportal-test-profile.png)
 
 ### Overview for keys needed for a Access Token request
 | Keys              |  Value                                       |
 |-------------------|----------------------------------------------|
-| `Ocp-Apim-Subscription-Key` | Go to Developer Portal -> Click on your name on top right -> select profile -> find subscription named `DEFAULT_ACCESSTOKEN` and copy the value from Primary key here. **Note:** For new eCommerce merchants you may only have one key for the product `Vipps-eCommerce-Services-API` that should be used for both Access Token requests and product requests. |
+| `Ocp-Apim-Subscription-Key-Access-Token` | Go to Developer Portal -> Click on your name on top right -> select profile -> find the key under **Your subscriptions** and copy the value from Primary key here. This key should be used for both Access Token requests and product requests. |
 | `client_id`  | Go to Developer Portal -> Select the Applications tab -> Select View secret for your application -> `Client Id`|
 | `client_secret` | Go to Developer Portal -> Select the Applications tab -> Select View secret for your application -> `Client secret`|
 
@@ -202,7 +201,7 @@ Select Initiate Payment and send. This will return a `url` that will take the us
 
 #### Product request -  Step 4 - reserved
 ##### Product request - Step 4.1 - callback
-When the customer has accepted the payment, or the payment failed, Vipps will send a callback to `callbackPrefix`/v2/payments/`orderId`. As Postman does not support callbacks, we will not use it in this example. Please read the corresponding section about callbacks for the relevant product (for eCommerce see [this link](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#callback)). 
+When the customer has accepted the payment, or the payment failed, Vipps will send a callback to `callbackPrefix`/v2/payments/`orderId`. As Postman does not support callbacks, we will not use it in this example. Please read the corresponding section about callbacks for the relevant product (for eCommerce see [this link](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#callback)).
 
 ##### Product request - Step 4.1 - details request
 The details request endpoint provided by the eCommerce API allows you to get the history and current status of a order. If you have initiated a order in Postman all variables should have been set, so to send the request select the request and send.
@@ -266,6 +265,7 @@ When a order has been identified as reserved, the merchant will need to capture 
 
 ## Summary
 
-Now you should have `Client_id`, `Client_secret`, `Access Token Subscription Key`, `Product Subscription Key` and `merchantSerialNumber`.
+Now you should have `Client_id`, `Client_secret`, `Access Token Subscription Key`/`Product Subscription Key` and `merchantSerialNumber`.
 
-**Important**: While doing payments you will use the `Product Subscription Key` and when getting the access token you will use the `Access Token Subscription Key`.
+**Important**: When getting the access token or doing payments you will use the Primary key from the Profile tab under
+**Your subscriptions**.
