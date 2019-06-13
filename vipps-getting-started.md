@@ -3,6 +3,21 @@
 This guide covers what you need to get started with Vipps development, after
 you have received the welcome email.
 
+- [Getting the API keys](#getting-the-api-keys)
+  * [API key details](#api-key-details)
+- [API products](#api-products)
+  * [Vipps-API](#vipps-api)
+  * [Legacy API products](#legacy-api-products)
+- [Quick overview of how to make an API call](#quick-overview-of-how-to-make-an-api-call)
+  * [Get an access token](#get-an-access-token)
+    + [Request](#request)
+    + [Response](#response)
+    + [HTTP response codes](#http-response-codes)
+    + [Make an eCom v2 API call](#make-an-ecom-v2-api-call)
+- [Questions?](#questions-)
+
+Version: 2.0.0.
+
 # Getting the API keys
 
 API keys are available in the Vipps Portal: https://portal.vipps.no
