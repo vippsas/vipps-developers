@@ -78,9 +78,9 @@ This is no longer the case: New customers now get the `Vipps-API` API product.
 
 This API product includes the following APIs:
 
-| API            | Description              | Documentation |
-| -------------- | ------------------------ | ------------- |
-| Access Token   | Required to obtain a JWT | See [Get an access token](#get-an-access-token) |
+| API              | Description                         | Documentation |
+| ---------------- | ----------------------------------- | ------------- |
+| Access Token   | Required to obtain a JWT | See: [Get an access token](#get-an-access-token) |
 | eCom v2        | eCommerce, including express checkout | https://github.com/vippsas/vipps-ecom-api  |
 | Recurring      | Recurring API            | https://github.com/vippsas/vipps-recurring-api  |
 | Vipps Log In   | Identification           | https://github.com/vippsas/vipps-login-api  |
@@ -102,12 +102,16 @@ Old API products have the `ZZZ` prefix to make them easy to distinguish,
 and to always sort them at the bottom of lists.
 One example is `ZZZ eCommerce-Classic-Services-API`.
 
-The API products prefixed with `ZZZ` have been updated to also include the
-APIs in Vipps-API. This means that a salesunit that could previously only use
-eCom v1, can now also use eCom v2, with the same API keys as before.
+The legacy API products prefixed with `ZZZ` have been updated to also include the
+current, corresponding APIs in Vipps-API.
+This means that a salesunit that could previously only use eCom v1,
+can now also use eCom v2, with the same API keys as before.
 
 The legacy API products still work, and there is no need to "upgrade" to Vipps-API,
 unless there are technical problems.
+
+The current APIs offer substantial improvements over the legacy APIs, and
+we strongly recommend upgrading to the current version as soon as possible.
 
 # Quick overview of how to make an API call
 
@@ -162,7 +166,7 @@ JWT properties:
 
 **Please note:** The access token is valid for 1 hour in MT and 24 hours in Production. To be sure that you are using correct time please use `expires_in` or `expires_on`.
 
-### HTTP response codes
+#### HTTP response codes
 
 This API returns the following HTTP statuses in the responses:
 
