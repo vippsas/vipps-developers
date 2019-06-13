@@ -18,7 +18,7 @@ after you have received the welcome email.
     + [Make an eCom v2 API call](#make-an-ecom-v2-api-call)
 - [Questions?](#questions-)
 
-Version: 2.0.1.
+Version: 2.0.2.
 
 # First of all
 
@@ -47,9 +47,9 @@ API keys are available in the Vipps Portal: https://portal.vipps.no
 
 The registered admin user can log in with BankID and fetch the API keys.
 
-Please note that Vipps can not provide API keys in any other way, as the
-API keys give access to transferring money. Vipps will never ask for your
-API keys, and you should keep them secret.
+**Please note:** Vipps can not provide API keys in any other way, such as by
+email, as the API keys give access to transferring money.
+Vipps will never ask for your API keys, and you should keep them secret.
 
 ## API key details
 
@@ -59,7 +59,7 @@ API keys, and you should keep them secret.
 | `client_id`       | The "username"  |
 | `client_secret`   | The "password". Keep this secret.|
 
-Please note: `Vipps-Subscription-Key` was previously called `Ocp-Apim-Subscription-Key`.
+**Please note:** `Vipps-Subscription-Key` was previously called `Ocp-Apim-Subscription-Key`.
 The legacy name still works, but please change to the current version as soon
 as possible.
 
@@ -164,7 +164,8 @@ JWT properties:
 | `resource`       | For the product for which token has been issued. |
 | `access_token`   | The actual access token that needs to be used in `Authorization` request header. |
 
-**Please note:** The access token is valid for 1 hour in MT and 24 hours in Production. To be sure that you are using correct time please use `expires_in` or `expires_on`.
+**Please note:** The JWT (access token) is valid for 1 hour in MT (test) and 24 hours in Production.
+To be sure that you are using correct time please use `expires_in` or `expires_on`.
 
 #### HTTP response codes
 
@@ -176,9 +177,9 @@ This API returns the following HTTP statuses in the responses:
 | `400 Bad Request`   | Invalid request, see the `error` for details.  |
 | `401 Unauthorized`  | Invalid authorization.                         |
 | `403 Forbidden`     | Authentication ok, but credentials lacks authorization.  |
-| `500 Server Error`  | An internal Vipps problem.  
+| `500 Server Error`  | An internal Vipps problem.  |
 
-### Make an eCom v2 API call
+## Make an eCom v2 API call
 
 See the eCom v2 API documentation for
 [Initiate payment](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#initiate-payment).
