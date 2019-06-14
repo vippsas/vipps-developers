@@ -12,6 +12,7 @@ This repository contains various resources for Vipps developers, including:
 - [Postman](#postman)
 - [Example code](#example-code)
 - [The Vipps test environment (MT)](#the-vipps-test-environment-mt)
+    + [Status page for the test environment](#status-page-for-the-test-environment)
     + [Test users](#test-users)
 - [Vipps test apps](#vipps-test-apps)
   * [iOS](#ios)
@@ -70,6 +71,10 @@ Vipps Regninger with real invoices, but with small amounts. We recommend 2 NOK.
 
 Other differences in MT:
 * We allow 10,000 incorrect PIN attempts before locking the Vipps user's account
+
+### Status page for the test environment
+
+https://vipps.statuspage.io
 
 ### Test users
 
