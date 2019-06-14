@@ -35,6 +35,16 @@ This is the directory structure:
 ```
 /settlements/[inbox|archive]/[file extension]/[orgnum]/[sales unit serial]/[sales unit serial]-[settlement number].[file extension]
 ```
+
+# How to use it
+
+Reports under `/settlements/inbox` can be "deleted" (actually hidden) 
+in order to keep track of already processed reports. 
+
+Reports are deleted by using the `rm` command in SFTP or the delete function in your SFTP interface. 
+
+Reports under `/settlements/archive` cannot be removed.
+
 ## Example SFTP session
 
 Below is an example of an SFTP session, with line breaks added for readability.
@@ -83,11 +93,9 @@ sftp> !ls -1
 sftp> quit
 ```
 
-# How to use it
+# Questions?
 
-Reports under `/settlements/inbox` can be "deleted" (actually hidden) 
-in order to keep track of already processed reports. 
-
-Reports are deleted by using the `rm` command in SFTP or the delete function in your SFTP interface. 
-
-Reports under `/settlements/archive` cannot be removed.
+We're always happy to help with code or other questions you might have!
+Please create an [issue](https://github.com/vippsas/vipps-developers/issues),
+a [pull request](https://github.com/vippsas/vipps-developers/pulls),
+or [contact us](https://github.com/vippsas/vipps-developers/blob/master/contact.md).
