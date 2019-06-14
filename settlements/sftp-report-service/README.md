@@ -85,7 +85,9 @@ sftp> quit
 
 # How to use it
 
-Reports under `/settlements/inbox` can be "deleted" (actually hidden) in order
-to keep track of already processed reports. They are deleted by using the `rm`
-command in SFTP or the delete function in your SFTP interface. Reports under
-`/settlements/archive` cannot be removed.
+Reports under `/settlements/inbox` can be "deleted" (actually hidden) 
+in order to keep track of already processed reports. 
+
+Reports are deleted by using the `rm` command in SFTP or the delete function in your SFTP interface. 
+
+Reports under `/settlements/archive` cannot be removed.
