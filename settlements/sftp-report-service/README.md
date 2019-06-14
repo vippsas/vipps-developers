@@ -1,7 +1,7 @@
 # Vipps SFTP Report Service
 
 The SFTP report service is used for downloading settlement reports in the following formats:
-* XML
+* [XML](../xml/)
 * CSV
 * PDF
 * Excel (.xslx)
