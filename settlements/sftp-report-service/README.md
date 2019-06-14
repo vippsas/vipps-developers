@@ -2,9 +2,9 @@
 
 The SFTP report service is used for downloading settlement reports in the following formats:
 * [XML](../xml/)
-* CSV
-* PDF
-* Excel (.xslx)
+* [CSV](../csv/)
+* [PDF](../pdf/)
+* [Excel](../xslx) (.xslx)
 
 The files are generated on-demand. 
 
