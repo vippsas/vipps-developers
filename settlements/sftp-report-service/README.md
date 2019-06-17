@@ -8,6 +8,9 @@ The SFTP report service is used for downloading settlement reports in the follow
 
 The files are generated on-demand. 
 
+See [the general inforation about reports](../) for information about the report formats, 
+availability of personal information about customers, GDPR, etc.
+
 SFTP-users are created, associated with a public key, and given access to the reports of
 one or more merchants. 
 
