@@ -20,11 +20,10 @@ Settlement reports are provided in these formats:
 | PDF    | [PDF](pdf/Vipps-oppgjørsrapport-16655-2018-09-23.pdf) | - |
 | XLSX   | [XLSX](xlsx/Vipps-oppgjørsrapport-16655-2018-09-23.xlsx) | - |
 
-Settlements reports are available both with and withour personal details of the customer. 
-This is due to [GDPR](https://ec.europa.eu/info/law/law-topic/data-protection_en), and whether
-the data processor is Vipps or the merchant. 
+Settlements reports are available both with and without personal details of the customer. 
 
-Please note: Vipps does not provide settlement reports for Vipps Regninger, as payments are made directly from the user to the merchant. All payments are included in the OCR files provided by the merchant's bank.
+This is due to [GDPR](https://ec.europa.eu/info/law/law-topic/data-protection_en), and whether
+the data processor is Vipps or the merchant. See [GDPR](#gdpr) below.
 
 # GDPR
 
@@ -37,6 +36,10 @@ The Norwegian text from [portal.vipps.no](https://portal.vipps.no):
 
 _Velger du å laste ned rapporter med personinformasjon blir bedriften din selvstendig behandlingsansvarlig for personinformasjonen som lastes ned. Dette betyr at bedriften din er selv ansvarlig for å sikre etterlevelse av peronvernreglene. For mer informasjon, vennligst se Vipps [vilkår](https://www.vipps.no/vilkar/) for bruk._
 
+# portal.vipps.no
+
+Customers can log in to [portal.vipps.no](https://portal.vipps.no), choose "Rapporter" and download reports
+in the formats mentioned above. Reports with personal details of the customers are also available.
 
 # SFTP report service
 
@@ -44,6 +47,8 @@ The SFTP report service is used for downloading settlement reports.
 SFTP-users are created, associated with a public key, and given access to the
 reports of one or more merchants.
 The reports are generated dynamically upon request.
+
+These reports do not contain personal details of the customers.
 
 Details: See the [sftp-report-service](sftp-report-service/) folder.
 
