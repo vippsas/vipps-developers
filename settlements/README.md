@@ -26,7 +26,19 @@ the data processor is Vipps or the merchant.
 
 Please note: Vipps does not provide settlement reports for Vipps Regninger, as payments are made directly from the user to the merchant. All payments are included in the OCR files provided by the merchant's bank.
 
-## SFTP report service
+# GDPR
+
+The settlement reports available by SFTP (see below) do not contain detailed information about the
+transactions. Reports containing personal information requires a data processor agreement.
+Due to this, reports with personal information can only be downloaded by logging in with 
+BankID on portal.vipps.no and accepting the terms there.
+
+The Norwegian text from portal.vipps.no:
+
+_Velger du å laste ned rapporter med personinformasjon blir bedriften din selvstendig behandlingsansvarlig for personinformasjonen som lastes ned. Dette betyr at bedriften din er selv ansvarlig for å sikre etterlevelse av peronvernreglene. For mer informasjon, vennligst se Vipps [vilkår](https://www.vipps.no/vilkar/) for bruk._
+
+
+# SFTP report service
 
 The SFTP report service is used for downloading settlement reports.
 SFTP-users are created, associated with a public key, and given access to the
