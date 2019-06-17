@@ -15,7 +15,7 @@ after you have received the welcome email.
     + [Request](#request)
     + [Response](#response)
     + [HTTP response codes](#http-response-codes)
-    + [Make an eCom v2 API call](#make-an-ecom-v2-api-call)
+  * [Make an eCom v2 API call](#make-an-ecom-v2-api-call)
 - [Questions?](#questions-)
 
 Version: 2.0.2.
