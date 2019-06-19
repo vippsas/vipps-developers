@@ -84,10 +84,9 @@ controller.hears('\\d(.{0,2}\\d){10}', ['direct_mention', 'mention', 'direct_mes
 
   if(socialSecurityNumber === true || accountNumber === true ){
     var response = 'Nummeret du har tastet inn kan være et fødselsnummer eller kontonummer. Les mer om hvilke personopplysninger som ikke bør deles i Slack ' + 'https://www.datatilsynet.no/rettigheter-og-plikter/personopplysninger/'
+    bot.reply(message, response)
   }
-
-  bot.reply(message, response)
-
+  
 });
 
 /**
