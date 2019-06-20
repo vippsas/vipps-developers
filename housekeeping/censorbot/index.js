@@ -83,10 +83,10 @@ controller.hears('\\d(.{0,2}\\d){10}', ['direct_mention', 'mention', 'direct_mes
   var accountNumber = validateAccountNumber(message.text)
 
   if(socialSecurityNumber === true || accountNumber === true ){
-    var response = 'Nummeret du har tastet inn kan være et fødselsnummer eller kontonummer. Les mer om hvilke personopplysninger som ikke bør deles i Slack ' + 'https://www.datatilsynet.no/rettigheter-og-plikter/personopplysninger/'
+		var response = ':warning: *Friendly reminder:* Nummeret i meldingen ser ut som et fødselsnummer eller kontonummer. Hvis det er nødvendig å poste sensitiv persondata i Slack, vurder å sende dette i en _privat_ melding.'
     bot.reply(message, response)
   }
-  
+
 });
 
 /**
