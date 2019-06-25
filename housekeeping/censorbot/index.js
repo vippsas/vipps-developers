@@ -79,11 +79,22 @@ controller.on('bot_channel_join', function (bot, message) {
 // Look for social security number or account number
 controller.hears('\\d(.{0,2}\\d){10}', ['direct_mention', 'mention', 'direct_message'], function(bot, message) {
 
-  var socialSecurityNumber = birthNumber(message.text)
-  var accountNumber = validateAccountNumber(message.text)
+	/* If there are multiple numbers in the message, trim() will remove whitespaces in the string
+	 * and look for the number with 11 digits
+	 */
+	var removeWhitespace = message.text.trim()
+	var number = removeWhitespace.match(/\d(.{0,2}\d){10}/).toString()
 
+  // Strip all non-numeric characters from {number}
+	var strippedNumber = number.replace(/\D/g,'')
+
+	// Check if the number is either a social security number or a bank account number
+  var socialSecurityNumber = birthNumber(strippedNumber)
+  var accountNumber = validateAccountNumber(strippedNumber)
+
+	// If at least one of the statements is true the bot will reply to the user
   if(socialSecurityNumber === true || accountNumber === true ){
-		var response = ':warning: *Friendly reminder:* Nummeret i meldingen ser ut som et fødselsnummer eller kontonummer. Hvis det er nødvendig å poste sensitiv persondata i Slack, vurder å sende dette i en _privat_ melding.'
+    var response = ':warning: *Friendly reminder:* Et nummer i meldingen ser ut som et `fødselsnummer` eller `kontonummer`. Hvis det er nødvendig å poste sensitiv persondata i Slack, vurder å sende dette i en _privat_ melding.'
     bot.reply(message, response)
   }
 
@@ -95,7 +106,6 @@ controller.hears('\\d(.{0,2}\\d){10}', ['direct_mention', 'mention', 'direct_mes
 
 // Validate account number
 var validateAccountNumber = function (accountNumber) {
-    accountNumber = accountNumber.replace(/\s/g,'')
 
     if (!accountNumber) {
         return false;
@@ -111,7 +121,6 @@ var validateAccountNumber = function (accountNumber) {
 
 // Validate social security number
 var birthNumber = function(birthNumber){
-   birthNumber = birthNumber.replace(/\s/g,'')
 
     var _sum = function(birthNumber, factors){
         var sum = 0;
