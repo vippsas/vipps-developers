@@ -1,0 +1,34 @@
+{
+  "name": "censorbot",
+  "version": "1.0.0",
+  "description": "The awesomest bot evar.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DEGoodmanWilson/easy-peasy-bot-app.git"
+  },
+  "keywords": [
+    "slack",
+    "bot"
+  ],
+  "author": "D.E. Goodman-Wilson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DEGoodmanWilson/easy-peasy-bot-app/issues"
+  },
+  "homepage": "https://github.com/DEGoodmanWilson/easy-peasy-bot-app#readme",
+  "engines": {
+    "node": "5.1.1"
+  },
+  "dependencies": {
+    "botbuilder-adapter-slack": "^1.0.3",
+    "botkit": "0.2.2",
+    "botkit-storage-mongo": "^1.0.2",
+    "mongodb": "^1.4.39",
+    "norwegian-national-id-validator": "^1.3.2"
+  }
+}
