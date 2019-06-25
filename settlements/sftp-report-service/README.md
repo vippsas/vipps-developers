@@ -1,10 +1,10 @@
 # Vipps SFTP Report Service
 
 The SFTP report service is used for downloading settlement reports in the following formats:
-* XML
-* CSV
-* PDF
-* Excel (.xslx)
+* [XML](../xml/)
+* [CSV](../csv/)
+* [PDF](../pdf/)
+* [Excel](../xslx) (.xslx)
 
 The files are generated on-demand. 
 
@@ -23,7 +23,7 @@ More information about SFTP: [SSH File Transfer Protocol](https://en.wikipedia.o
 
 ![Lag tilgang](images/02_SFTP_tilgang.png "Lag tilgang")
 
-3. In the next window you can add the public keys of the user(s). We support RSA, EdDSA and Ed25519 keys in OpenSSH format (and reject DSA keys). After this you should see the newly created user. For help creating SSH keys, the GitHub documentation may be helpful: https://help.github.com/articles/connecting-to-github-with-ssh/
+3. In the next window you can add the public keys of the user(s). We support RSA (minimum 2048-bit), EdDSA and Ed25519 keys in OpenSSH format (and reject DSA keys). After this you should see the newly created user. For help creating SSH keys, the GitHub documentation may be helpful: https://help.github.com/articles/connecting-to-github-with-ssh/
 
 ![Bruker opprettet](images/03_bruker_opprettet.png "bruker opprettet")
 
@@ -35,6 +35,16 @@ This is the directory structure:
 ```
 /settlements/[inbox|archive]/[file extension]/[orgnum]/[sales unit serial]/[sales unit serial]-[settlement number].[file extension]
 ```
+
+# How to use it
+
+Reports under `/settlements/inbox` can be "deleted" (actually hidden) 
+in order to keep track of already processed reports. 
+
+Reports are deleted by using the `rm` command in SFTP or the delete function in your SFTP interface. 
+
+Reports under `/settlements/archive` cannot be removed.
+
 ## Example SFTP session
 
 Below is an example of an SFTP session, with line breaks added for readability.
@@ -83,9 +93,9 @@ sftp> !ls -1
 sftp> quit
 ```
 
-# How to use it
+# Questions?
 
-Reports under `/settlements/inbox` can be "deleted" (actually hidden) in order
-to keep track of already processed reports. They are deleted by using the `rm`
-command in SFTP or the delete function in your SFTP interface. Reports under
-`/settlements/archive` cannot be removed.
+We're always happy to help with code or other questions you might have!
+Please create an [issue](https://github.com/vippsas/vipps-developers/issues),
+a [pull request](https://github.com/vippsas/vipps-developers/pulls),
+or [contact us](https://github.com/vippsas/vipps-developers/blob/master/contact.md).
