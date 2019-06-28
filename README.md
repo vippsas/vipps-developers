@@ -103,7 +103,7 @@ See also: [Vipps Test Data](https://github.com/vippsas/vipps-developers/blob/mas
 
 ### Test amounts
 
-Vipps supports using special amounts that are always "approved in the app", etc -
+Vipps supports using special amounts that are always "rejecdted in the app", etc -
 without anyone needing to use the app. This is useful for testing,
 test automation, etc.
 
