@@ -173,7 +173,7 @@ We will in this step show how to make a transaction using the eCommerce API, but
 |---------|----------------------|
 | Vipps Invoice         | [Github Page](https://github.com/vippsas/vipps-invoice-api), [Guide](https://github.com/vippsas/vipps-invoice-api/blob/master/vipps-invoice-api.md), [Swagger IPP](https://vippsas.github.io/vipps-invoice-api/ipp.html), [Swagger ISP](https://vippsas.github.io/vipps-invoice-api/isp.html)   |
 | Vipps PSP             | [Github Page](https://github.com/vippsas/vipps-psp-api), [Guide](https://github.com/vippsas/vipps-psp-api/blob/master/vipps-psp-api.md), [Swagger](https://vippsas.github.io/vipps-psp-api/)       |
-| Vipps Recurring       | [Github Page](https://github.com/vippsas/vipps-recurring-api), [Guide](https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api.md), [Swagger](https://github.com/vippsas/vipps-recurring-api) |
+| Vipps Recurring       | [Github Page](https://github.com/vippsas/vipps-recurring-api), [Guide](https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api.md), [Swagger](https://vippsas.github.io/vipps-recurring-api/) |
 | Vipps eCommerce v2    | [Github Page](https://github.com/vippsas/vipps-ecom-api), [Guide](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md), [Swagger](https://vippsas.github.io/vipps-ecom-api/) |
 
 
