@@ -18,7 +18,7 @@ after you have received the welcome email.
   * [Make an eCom v2 API call](#make-an-ecom-v2-api-call)
 - [Questions?](#questions-)
 
-Version: 2.0.2.
+Version: 2.0.3.
 
 # First of all
 
@@ -43,13 +43,22 @@ Please see the general developer information: https://github.com/vippsas/vipps-d
 
 # Getting the API keys
 
-API keys are available in the Vipps Portal: https://portal.vipps.no
+API keys are available in the Vipps Portal, under the `Utvikler` menu item in the top menu:
+https://portal.vipps.no
 
-The registered admin user can log in with BankID and fetch the API keys.
+The registered admin user can log in with bankID and fetch the API keys.
 
 **Please note:** Vipps can not provide API keys in any other way, such as by
 email, as the API keys give access to transferring money.
 Vipps will never ask for your API keys, and you should keep them secret.
+
+## The API products for a salesunit
+
+![portal.vipps.no: The API products for a sales unit](images/portalvippsno-salesunit-products.png)
+
+## API keys for a salesunit
+
+![portal.vipps.no: The API keys for a sales unit](images/portalvippsno-salesunit-keys.png)
 
 ## API key details
 
@@ -60,8 +69,8 @@ Vipps will never ask for your API keys, and you should keep them secret.
 | `client_secret`   | The "password". Keep this secret.|
 
 **Please note:** `Vipps-Subscription-Key` was previously called `Ocp-Apim-Subscription-Key`.
-The legacy name still works, but please change to the current version as soon
-as possible.
+The legacy name `Ocp-Apim-Subscription-Key` _must still be used in requests and code_,
+but we are working to make `Vipps-Subscription-Key` work ASAP.
 
 # API products
 
@@ -90,7 +99,7 @@ Vipps-API also includes some legacy APIs:
 | API              | Description                         | Documentation |
 | ---------------- | ----------------------------------- | ------------- |
 | eCom v1          | eCommerce, legacy version, to be phased out. |  https://github.com/vippsas/vipps-ecom-api-v1 |
-| Signup and Login | Legacy API, superseeded by Vipps Log In |  https://github.com/vippsas/vipps-signuplogin-api |
+| Signup and Login | Legacy API, superseded by Vipps Log In |  https://github.com/vippsas/vipps-signuplogin-api |
 
 If you are still using a legacy API, you should upgrade as soon as possible.
 The best way to keep up to date of changes is to
@@ -126,7 +135,7 @@ header, required in all Vipps API calls.
 POST https://apitest.vipps.no/accessToken/get
 client_id: <client_id>
 client_secret: <client_secret>
-Vipps-Subscription-Key: <Vipps-Subscription-Key>
+Ocp-Apim-Subscription-Key: <Vipps-Subscription-Key>
 ```
 
 Header details:
