@@ -107,7 +107,7 @@ Vipps supports using special amounts that are always "rejecdted in the app", etc
 without anyone needing to use the app. This is useful for testing,
 test automation, etc.
 
-| Amount | Error                      | 
+| Amount | Error                      |
 | ------ | -------------------------- |
 | 1.51   | Not sufficient funds       |
 | 1.86   | Expired Card               |
