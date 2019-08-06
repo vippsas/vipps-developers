@@ -3,14 +3,17 @@ Hei
 Her er en beskrivelse av prosessen fra man bestiller en Vipps-løsning til man får tilgang til portal.vipps.no og API-nøkler der:
 
 1) Kunde bestiller en Vipps-løsning på https://www.vipps.no/bedrift
-2) Vipps gjennomfører kundekontroll (KYC, AML, etc). Dette kan ta flere dager, og det hender vi etterspør tilleggsinformasjon. Sjekk e-posten, inkludert spam, for adressen som ble brukt i bestillingen.
-3) Vipps oppretter kundeforhold, med API-nøkler, etc.
-4) Vipps sender e-post til e-postadressen kunden oppga med informasjon om at API-nøkler kan hjentes på portal.vipps.no ved å logge inn med bankID.
 
-Se "Getting Started" her: https://github.com/vippsas/vipps-developers
+2) Vipps gjennomfører kundekontroll (KYC, AML, etc). Dette kan ta flere dager, og det hender vi etterspør tilleggsinformasjon. Sjekk e-posten, inkludert spam, for adressen som ble brukt i bestillingen.
+
+3) Vipps oppretter kundeforhold, med API-nøkler, etc.
+
+4) Vipps sender e-post til e-postadressen kunden oppga med informasjon om at API-nøkler kan hentes på portal.vipps.no ved å logge inn med bankID.
+
+Se "Getting Started" her: https://github.com/vippsas/vipps-developers/blob/master/vipps-getting-started.md#getting-the-api-keys
 
 Hvis du har spørsmål om status på bestillingen, hjelper Vipps kundesenter med dette:
-Telefon: 22 48 28 00.
+Telefon: 22 48 28 00. 
 Kontaktskjema: https://www.vipps.no/bedrift/kontakt-oss
 
 $cursor$
