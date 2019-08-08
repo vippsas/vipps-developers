@@ -1,6 +1,8 @@
 Hei
 
-Her er en beskrivelse av prosessen fra man bestiller en Vipps-løsning til man får tilgang til portal.vipps.no og API-nøkler der:
+Vi kan dessverre ikke sende API-nøkler, siden de gir tilgang til alle funksjoner i våre API-er, inkludert flytting av penger. API-nøkler hentes ved å logge inn med bankID på portal.vipps.no.
+
+Her er en beskrivelse av prosessen fra man bestiller en Vipps-løsning til man får tilgang til portal.vipps.no og API-nøklene der:
 
 1) Kunde bestiller en Vipps-løsning på https://www.vipps.no/bedrift
 
