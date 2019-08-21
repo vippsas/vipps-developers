@@ -6,7 +6,7 @@ Hello! 👋 We love email!
 
 We help with _**technical**_ issues, such as questions about using our APIs.
 
-* General inquiries: See the (contact details on vipps.no)[https://www.vipps.no/kontakt-oss/]
+* General inquiries: See the [contact details on vipps.no](https://www.vipps.no/kontakt-oss/)
 * If you have suggestions for improvements to Vipps products, please use [this form](https://www.vipps.no/tips-og-tilbakemeldinger).
 * If you use Vipps through a partner: Please contact your partner. Enquiries about ordering Vipps through a partner: partnerbestilling@vipps.no
 
