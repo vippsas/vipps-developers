@@ -1,5 +1,14 @@
 # Vipps Settlements
 
+# Frequency
+
+Vipps merchants can select daily, weekly or monthly settlement frequency by logging in with BankID on portal.vipps.no.
+
+Vipps pays merchants every Monday or every 1. of the month, depending on the merchant preference.
+It then takes 1-3 bank days before the money reaches the merchant settlement account.
+
+# Settlement flow
+
 The settlement flow is as follows:
 
 1. Day 1: A customer makes a purchase and the transaction is completed. If the purchased product is shipped later, the "day 1" is the day the product is shipped and the customer's account is charged.
