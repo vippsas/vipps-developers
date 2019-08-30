@@ -13,7 +13,7 @@ It then takes 1-3 bank days before the money reaches the merchant settlement acc
 The settlement flow is as follows:
 
 1. Day 1: A customer makes a purchase and the transaction is completed. If the purchased product is shipped later, the "day 1" is the day the product is shipped and the customer's account is charged.
-2. Day 2: Settlement files are distributed, and are available in the Vipps portal: [portal.vipps.no](https://portal.vipps.no.
+2. Day 2: Settlement files are distributed, and are available on [portal.vipps.no](https://portal.vipps.no).
 3. Day 3 (the next _bank day_) at 16:00: Payments are made from Vipps.
 4. Day 5 (the third _bank day_): The settlement is booked with reference by the bank.
 
