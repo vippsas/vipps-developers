@@ -14,7 +14,7 @@ Her er en beskrivelse av prosessen fra man bestiller en Vipps-løsning til man f
 
 5) Vipps oppretter kunden i produksjonsmiljøet.
 
-6) Kunden får epost med informasjon om at API-nøkler for _produklsjonsmiljøet_ kan hentes på portal.vipps.no ved å logge inn med bankID.
+6) Kunden får epost med informasjon om at API-nøkler for _produksjonsmiljøet_ kan hentes på portal.vipps.no ved å logge inn med bankID.
 
 Se "Getting Started" her: https://github.com/vippsas/vipps-developers/blob/master/vipps-getting-started.md#getting-the-api-keys
 
