@@ -129,6 +129,11 @@ we strongly recommend upgrading to the current version as soon as possible.
 The Access Token API provides the JWT bearer token used in the `Authorization`
 header, required in all Vipps API calls.
 
+The API keys needed the access token are the same as for the API products:
+* client_id: <client_id>
+* client_secret: <client_secret>
+* Ocp-Apim-Subscription-Key: <Vipps-Subscription-Key>
+
 ### Request
 
 ```
