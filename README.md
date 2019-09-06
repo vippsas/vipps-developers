@@ -6,6 +6,7 @@ This repository contains various resources for Vipps developers, including:
 * [How to contribute](contribute.md) to Vipps projects on GitHub
 * [How to contact us](contact.md) in the Vipps Integration team
 * [Requirements](requirements.md) for foreign companies in order to use Vipps
+* [Settlements](https://github.com/vippsas/vipps-developers/tree/master/settlements) for information about settlements
 
 ## Table of contents
 
