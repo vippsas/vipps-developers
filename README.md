@@ -6,6 +6,7 @@ This repository contains various resources for Vipps developers, including:
 * [How to contribute](contribute.md) to Vipps projects on GitHub
 * [How to contact us](contact.md) in the Vipps Integration team
 * [Requirements](requirements.md) for foreign companies in order to use Vipps
+* [Settlements](https://github.com/vippsas/vipps-developers/tree/master/settlements) for information about settlements
 
 ## Table of contents
 
@@ -103,7 +104,7 @@ See also: [Vipps Test Data](https://github.com/vippsas/vipps-developers/blob/mas
 
 ### Test amounts
 
-Vipps supports using special amounts that are always "rejecdted in the app", etc -
+Vipps supports using special amounts that are always "rejected in the app", etc -
 without anyone needing to use the app. This is useful for testing,
 test automation, etc.
 
