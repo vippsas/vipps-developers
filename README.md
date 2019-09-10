@@ -215,6 +215,7 @@ callback-dr-4.vipps.no
 The disaster recovery environment is as important as the production environment.
 
 ## Test environment
+
 ```
 callback-mt-1.vipps.no
 callback-mt-2.vipps.no
@@ -222,9 +223,9 @@ callback-mt-3.vipps.no
 callback-mt-4.vipps.no
 ```
 
-For products that Vipps makes requests please make sure that requests from these servers are allowed through firewalls, etc.
+For API products where Vipps makes requests to your servers, please make sure that these request servers are allowed through firewalls, etc.
 
-**Note:** Vipps may change the IP addresses that we make requests from. To ensure that you are whitelisting the correct IP addresses please use these hostnames, and update your firewall rules if there are DNS changes.
+**Note:** Vipps may change the IP addresses for the request servers. To ensure that you are whitelisting the correct IP addresses please use these hostnames and DNS, and automatically update your firewall rules if there are DNS changes.
 
 # Additional developer resources
 
