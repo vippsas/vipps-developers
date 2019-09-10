@@ -24,8 +24,8 @@ This repository contains various resources for Vipps developers, including:
 - [Vipps design guidelines](#vipps-design-guidelines)
 - [Vipps request servers](#vipps-request-servers)
   * [Production environment](#production-environment)
-  * [Test environment](#test-environment)
   * [Disaster recovery (DR) environment](#disaster-recovery--dr--environment)
+  * [Test environment](#test-environment)
 - [Additional developer resources](#additional-developer-resources)
 
 # Postman
@@ -202,13 +202,6 @@ callback-3.vipps.no
 callback-4.vipps.no
 ```
 
-## Test environment
-```
-callback-mt-1.vipps.no
-callback-mt-2.vipps.no
-callback-mt-3.vipps.no
-callback-mt-4.vipps.no
-```
 
 ## Disaster recovery (DR) environment
 
@@ -217,6 +210,16 @@ callback-dr-1.vipps.no
 callback-dr-2.vipps.no
 callback-dr-3.vipps.no
 callback-dr-4.vipps.no
+```
+
+The disaster recovery environment is as important as the production environment.
+
+## Test environment
+```
+callback-mt-1.vipps.no
+callback-mt-2.vipps.no
+callback-mt-3.vipps.no
+callback-mt-4.vipps.no
 ```
 
 For products that Vipps makes requests please make sure that requests from these servers are allowed through firewalls, etc.
