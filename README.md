@@ -11,15 +11,21 @@ This repository contains various resources for Vipps developers, including:
 ## Table of contents
 
 - [Postman](#postman)
+  * [Our Postman collections and environments](#our-postman-collections-and-environments)
 - [Example code](#example-code)
-- [The Vipps test environment (MT)](#the-vipps-test-environment-mt)
+- [The Vipps test environment (MT)](#the-vipps-test-environment--mt-)
     + [Status page for the test environment](#status-page-for-the-test-environment)
     + [Test users](#test-users)
+    + [Test amounts](#test-amounts)
 - [Vipps test apps](#vipps-test-apps)
+  * [Limitations of the test apps](#limitations-of-the-test-apps)
   * [iOS](#ios)
   * [Android](#android)
 - [Vipps design guidelines](#vipps-design-guidelines)
 - [Vipps request servers](#vipps-request-servers)
+  * [Production environment](#production-environment)
+  * [Test environment](#test-environment)
+  * [Disaster recovery (DR) environment](#disaster-recovery--dr--environment)
 - [Additional developer resources](#additional-developer-resources)
 
 # Postman
