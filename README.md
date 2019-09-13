@@ -205,7 +205,8 @@ Guidelines, logos, buttons, etc: https://github.com/vippsas/vipps-design-guideli
 
 # Vipps request servers
 
-Requests made by Vipps are made from the following servers:
+Requests made by Vipps are made from the servers specified below. 
+Vipps normally only uses one server at a time, and change servers approximately every three months.
 
 ## Production environment
 ```
