@@ -139,7 +139,7 @@ In a short period, the automatically built and updated test apps may not work pr
 Please use these versions of the test apps while this notice is here:
 
 iOS:
-* 2.5.2
+* 2.5.2 (Press "Previous builds" in TestFlight)
 
 Android:
 * Version 2.7.0-rc01-MT (293)
