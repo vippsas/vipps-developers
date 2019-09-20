@@ -227,7 +227,7 @@ func performCaptures(config *Configuration, orders []OrderInput) {
 			},
 			Transaction: Transaction{
 				Amount:          order.CaptureAmount,
-				TransactionText: "Captured by Vipps Integration",
+				TransactionText: "Captured by CAD-tool",
 			},
 		}
 		reqBody, err := json.Marshal(captureReq)
