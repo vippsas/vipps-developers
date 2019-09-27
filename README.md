@@ -13,7 +13,7 @@ This repository contains various resources for Vipps developers, including:
 - [Postman](#postman)
   * [Our Postman collections and environments](#our-postman-collections-and-environments)
 - [Example code](#example-code)
-- [The Vipps test environment (MT)](#the-vipps-test-environment--mt)
+- [The Vipps test environment (MT)](#the-vipps-test-environment-mt)
     + [Status page for the test environment](#status-page-for-the-test-environment)
     + [Test users](#test-users)
     + [Test amounts](#test-amounts)
