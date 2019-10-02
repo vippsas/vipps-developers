@@ -33,6 +33,7 @@ So, for _*technical questions*_: Send an email to integration@vipps.no with all 
   - For Magento: See https://github.com/vippsas/vipps-magento
 * **Always include a detailed description of the problem**
 * For API issues: Complete `request` and `response` details (plain HTTP from Postman, or [curl](https://curl.haxx.se) ensures the quickest response)
+* Include `orderID`, `transactionId`and `contextId` to make it posible to search in logs.
 * For app issues: Specify iOS or Android, and the app version
 * Screenshots, if applicable
 * Any other information that may be relevant
