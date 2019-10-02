@@ -5,6 +5,7 @@ after you have received the welcome email.
 
 - [First of all](#first-of-all)
   * [API documentation](#api-documentation)
+- [Getting a test account (and a production account)](#getting-a-test-account-and-a-production-account))
 - [Getting the API keys](#getting-the-api-keys)
   * [API key details](#api-key-details)
 - [API products](#api-products)
@@ -18,7 +19,7 @@ after you have received the welcome email.
   * [Make an eCom v2 API call](#make-an-ecom-v2-api-call)
 - [Questions?](#questions-)
 
-Version: 2.0.3.
+Version: 2.1.0.
 
 # First of all
 
@@ -40,6 +41,17 @@ https://www.vipps.no/bedrift/kontakt-oss
 All Vipps APIs are documented on GitHub: https://github.com/vippsas/
 
 Please see the general developer information: https://github.com/vippsas/vipps-developers
+
+# Getting a test account (and a production account)
+
+The fastest way to get a Vipps developer account for the test and production
+environments, is to
+[order Vipps on vipps.no](https://www.vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/).
+Choose the "direct integration".
+
+If you plan to use Vipps through a Partner or a PSP, you will have to
+order the appropriate Vipps solution, and then contact the Partner or PSP
+to have _them_ help you with developer access.
 
 # Getting the API keys
 
