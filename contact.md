@@ -25,9 +25,9 @@ So, for _*technical questions*_: Send an email to integration@vipps.no with all 
   - Phone number
 * Company details
   - Organization number (check https://brreg.no)
-  - Merchant Serial Number (MSN, found in the [Developer Portal](vipps-developer-portal-getting-started.md))
+  - Merchant Serial Number (MSN, see [Getting started](vipps-developer-portal-getting-started.md))
 * Which [Vipps product](https://www.vipps.no/bedrift) this is about
-* If you are a new Vipps customer, please include detailas about when and how you ordered Vipps.
+* If you are a new Vipps customer, please include detailas about when and how you ordered Vipps. For status on the order, please see the [contact info for companies on vipps.no](https://www.vipps.no/kontakt-oss/bedrift/)
 * For eCommerce issues: Which eCommerce solution you are using, and which version
   - For WooCommerce: See the [support forum](https://wordpress.org/support/plugin/woo-vipps) and https://github.com/vippsas/vipps-woocommerce
   - For Magento: See https://github.com/vippsas/vipps-magento
@@ -37,9 +37,6 @@ So, for _*technical questions*_: Send an email to integration@vipps.no with all 
 * For app issues: Specify iOS or Android, and the app version
 * Screenshots, if applicable
 * Any other information that may be relevant
-
-[Click here](mailto:integration@vipps.no?subject=Self-explanatory%20subject%20line%20goes%20here&body=Your%20contact%20information%3A%0A-%20Name%3A%0A-%20Phone%20number%0A%0ACompany%20details%0A-%20Company%20name%3A%0A-%20Organization%20number%3A%0A-%20Merchant%20Serial%20Number%3A%0A%0AWhich%20Vipps%20product%20this%20is%20about%3A%0A%0AComplete%20%60request%60%20and%20%60response%60%20details%3A%0A%0AFor%20app%20issues%3A%20Specify%20iOS%20or%20Android%2C%20and%20app%20version%3A%0A%0AAttache%20screenshots%2C%20if%20applicable.%0A%0AAny%20other%20information%20that%20may%20be%20relevant%3A)
-for a draft email that includes placeholders for the above.
 
 ## Keep your colleagues up to date
 
