@@ -19,7 +19,7 @@ after you have received the welcome email.
   * [Make an eCom v2 API call](#make-an-ecom-v2-api-call)
 - [Questions?](#questions-)
 
-Version: 2.1.0.
+Version: 2.1.1.
 
 # First of all
 
@@ -48,8 +48,13 @@ The fastest way to get a Vipps developer account for the test and production
 environments, is to
 [order Vipps on vipps.no](https://www.vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/).
 Choose the "direct integration".
+You will need a Norwegian organization number, and to sign the order with BankID.
 
-If you plan to use Vipps through a Partner or a PSP, you will have to
+Test accounts are normally available 24 hours after we receive the order,
+depending on the order volume. You will receive an email, and the
+API keys can be retrieved by logging in to https://portal.vipps.no with BankID.
+
+Please note: If you plan to use Vipps through a Partner or a PSP, you will have to
 order the appropriate Vipps solution, and then contact the Partner or PSP
 to have _them_ help you with developer access.
 
