@@ -18,6 +18,7 @@ This repository contains various resources for Vipps developers, including:
     + [Test users](#test-users)
     + [Test amounts](#test-amounts)
 - [Vipps test apps](#vipps-test-apps)
+  * [Test app versions](#test-app-versions)
   * [Limitations of the test apps](#limitations-of-the-test-apps)
   * [iOS](#ios)
   * [Android](#android)
@@ -132,6 +133,8 @@ Vipps [the Vipps test environment (MT)](#the-vipps-test-environment-mt) instead 
 
 Only test accounts, with random phone numbers, are available in the test environments.
 Normal Vipps users are not available, so you can not use your own phone number with the test apps.
+
+## Test app versions
 
 :bangbang: **IMPORTANT:** PSD2 went into effect on Saturday September 14, and Vipps has worked very hard to 
 update the apps to comply with the new SCA (Secure Customer Authentication) requirements.
