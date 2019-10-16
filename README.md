@@ -249,7 +249,7 @@ For API products where Vipps makes requests to your servers, please make sure th
 # Additional developer resources
 
 * Developer overview: https://vipps.no/developer
-* High-level overview of the APIs: http://vippsas.github.io
+* High-level overview of the API documentation: https://vipps.no/developer/documentation/
 * Products, personal: http://vipps.no/privat
 * Products, business: http://vipps.no/bedrift
 
