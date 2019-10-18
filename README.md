@@ -10,6 +10,7 @@ This repository contains various resources for Vipps developers, including:
 
 ## Table of contents
 
+- [API documentation](#api-documentation)
 - [Postman](#postman)
   * [Our Postman collections and environments](#our-postman-collections-and-environments)
 - [Example code](#example-code)
@@ -28,6 +29,10 @@ This repository contains various resources for Vipps developers, including:
   * [Disaster recovery (DR) environment](#disaster-recovery--dr--environment)
   * [Test environment](#test-environment)
 - [Additional developer resources](#additional-developer-resources)
+
+# API documentation
+
+See: [Getting started](vipps-getting-started.md).
 
 # Postman
 
