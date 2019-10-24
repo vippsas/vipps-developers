@@ -13,7 +13,7 @@ We help with _**technical**_ issues from developers, such as questions about usi
   - Vipps for WooCommerce, please use the [support forum on wordpress.org](https://wordpress.org/support/plugin/woo-vipps/), where the developers can help directly.
   - Vipps for Magento, please [submit an issue on GitHub](https://github.com/vippsas/vipps-magento).
 * Ifg you have questions about settlements, invoices or similar: operations@vipps.no
-* Enquiries about _ordering_ Vipps through a partner: partnerbestilling@vipps.no
+* Enquiries about _ordering_ Vipps through a partner (also for partners): partnerbestilling@vipps.no
 
 We also have a technical newsletter for developers:
 [Sign up here](https://cloud.hei.vipps.no/utv) (low volume, no marketing).
