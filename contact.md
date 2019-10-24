@@ -22,8 +22,6 @@ We also have a technical newsletter for developers:
 
 So, for _*technical questions*_: Send an email to integration@vipps.no with all relevant information:
 
-(You can also [try the web interface](https://vippsas.atlassian.net/servicedesk/customer/portal/2))
-
 * A concise, self-explanatory `Subject` line, such as "`POST:/something` gives `HTTP 400` response".
 * Your contact information (if not in your email signature):
   - Name
@@ -42,6 +40,8 @@ So, for _*technical questions*_: Send an email to integration@vipps.no with all 
 * For app issues: Specify iOS or Android, and the app version
 * Screenshots, if applicable
 * Any other information that may be relevant
+
+(You can also [try the web interface](https://vippsas.atlassian.net/servicedesk/customer/portal/2))
 
 ## Keep your colleagues up to date
 
