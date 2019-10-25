@@ -6,14 +6,15 @@ Hello! 👋 We love email!
 
 We help with _**technical**_ issues from developers, such as questions about using our APIs. 
 
-* General inquiries: See the [contact info for companies on vipps.no](https://www.vipps.no/kontakt-oss/bedrift/)
-* If you have suggestions for improvements to Vipps products, please use [this form](https://www.vipps.no/tips-og-tilbakemeldinger).
-* If you use Vipps through a partner: Please [contact your partner](https://www.vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-3). 
+* General questions: See the [contact info for companies on vipps.no](https://www.vipps.no/kontakt-oss/bedrift/)
+* Questions about applications for Vipps products: See the [contact info for companies on vipps.no](https://www.vipps.no/kontakt-oss/bedrift/)
+* Suggestions for improvements to Vipps products: Use [this form](https://www.vipps.no/tips-og-tilbakemeldinger).
+* Vipps through a partner: Please [contact your partner directly](https://www.vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-3). 
+* Questions about _ordering_ Vipps through a partner (also for partners): partnerbestilling@vipps.no
 * If you have questions about the plugins:
-  - Vipps for WooCommerce, please use the [support forum on wordpress.org](https://wordpress.org/support/plugin/woo-vipps/), where the developers can help directly.
-  - Vipps for Magento, please [submit an issue on GitHub](https://github.com/vippsas/vipps-magento).
-* Ifg you have questions about settlements, invoices or similar: operations@vipps.no
-* Enquiries about _ordering_ Vipps through a partner (also for partners): partnerbestilling@vipps.no
+  - WooCommerce: Please use the [support forum on wordpress.org](https://wordpress.org/support/plugin/woo-vipps/), where the developers can help directly.
+  - Magento: Please [submit an issue on GitHub](https://github.com/vippsas/vipps-magento).
+* Questions about settlements, invoices or similar: operations@vipps.no
 
 We also have a technical newsletter for developers:
 [Sign up here](https://cloud.hei.vipps.no/utv) (low volume, no marketing).
