@@ -221,6 +221,21 @@ Version 3.0.0:
   }
 ```  
 
+If the ISO 3166 country code was _added_, it would be a non-breaking change,
+and only a minor version:
+
+Version 2.1.0:
+
+```
+"address": {
+  "addressLine1": "Robert Levins gate 5",
+  "city": "Oslo",
+  "postCode": "0154",
+  "country": "Norway"
+  "countryCode": "NO",
+  }
+```  
+
 ## Adding a new required parameter
 
 A new required parameter that results in previously valid requests no longer
