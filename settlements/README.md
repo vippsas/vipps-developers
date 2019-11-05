@@ -22,6 +22,21 @@ Please make sure your servers' clocks are correct, e.g. by using [NTP](https://e
 
 A Vipps merchant normally receives daily settlements. This can be changed to weekly, monthly settlements. See [the FAQ](https://www.vipps.no/sporsmal#bedriftspm) for more details.
 
+# Net and gross settlements
+
+Merchants with a "net settlement" contract receive the users' payments
+excluding the Vipps fees. On other words: The Vipps fees are deducted
+from the settlement amount.
+
+Merchants with a "gross settlement" contract receive the _full amount_
+of the users' payments
+_including_ the Vipps fees, and are then invoiced for the Vipps fees.
+
+If the merchant's organization number is registered as an EHF recipient, 
+Vipps sends and EHF. If not, the invoices are sent by email.
+To change invoice recipient, please
+[contact customer service](https://vipps.no/kontakt-oss/bedrift/vipps/).
+
 # Settlement report formats
 
 Settlement reports are provided in these formats:
