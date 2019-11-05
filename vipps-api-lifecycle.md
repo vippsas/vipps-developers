@@ -54,7 +54,8 @@ has been superseeded.
 
 Vipps will inform about upcoming deprecation of an API as early as possible.
 The minimum time from Vipps informs about an API's deprecation until the actual
-deprecation is specified in the contract. This is usually three months.
+deprecation is specified in the contract. This is usually four (4) months, and 
+we will soon change this to be six (6) months as standard.
 
 ## Who Vipps will inform
 
