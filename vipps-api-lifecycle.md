@@ -1,16 +1,21 @@
 # Vipps API Lifecycle
 
-Document version: 0.1.1.
+Document version: 0.1.2.
 
 # Table of Contents
 
 - [Versioning](#versioning)
+  * [Version number in the endpoint URIs](#version-number-in-the-endpoint-uris)
 - [Lifecycle](#lifecycle)
   * [Major version](#major-version)
   * [Minor version](#minor-version)
   * [Patch version](#patch-version)
 - [Notice of deprecation](#notice-of-deprecation)
-  * [Who Vipps will inform](#who-vipps-will-inform)
+  * [How Vipps will inform](#how-vipps-will-inform)
+    + [Email](#email)
+    + [Mailing list](#mailing-list)
+    + [Key accounts](#key-accounts)
+    + [Make sure Vipps has the correct contact information](#make-sure-vipps-has-the-correct-contact-information)
   * [Vipps APIs](#vipps-apis)
   * [Vipps API documentation](#vipps-api-documentation)
 - [Backwards compatibility](#backwards-compatibility)
@@ -19,8 +24,11 @@ Document version: 0.1.1.
   * [Adding an optional field to a response](#adding-an-optional-field-to-a-response)
     + [Example](#example-1)
 - [Breaking changes](#breaking-changes)
+  * [Changing the properties of an object](#changing-the-properties-of-an-object)
   * [Adding a new required parameter](#adding-a-new-required-parameter)
+  * [Changing an endpoints URL](#changing-an-endpoints-url)
 - [Questions?](#questions-)
+
 
 # Versioning
 
@@ -65,13 +73,27 @@ small bug so the API works as intended and documented in the first place.
 
 Vipps will inform about upcoming deprecation of an API as early as possible.
 The minimum time from Vipps informs about an API's deprecation until the actual
-deprecation is specified in the contract. This is usually three months.
+deprecation is specified in the contract. This is usually four (4) months, and
+we will soon change this to six (6) months as standard, in new contracts.
 
-## Who Vipps will inform
+## How Vipps will inform
+
+### Email
 
 Vipps will email the technical contact registered for each customer.
 If the customer does not have a registered technical contact,
 Vipps will inform the main contact.
+
+### Mailing list
+
+Vipps will send information to
+[the technical newsletter for developers](https://cloud.hei.vipps.no/utv).
+
+### Key accounts
+
+Customers with a key account manager will (in addition) be contacted personally.
+
+### Make sure Vipps has the correct contact information
 
 It is the customer's responsibility to make sure Vipps has the correct
 contact information. See the
