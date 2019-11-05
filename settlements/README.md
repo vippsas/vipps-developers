@@ -28,9 +28,13 @@ Merchants with a "net settlement" contract receive the users' payments
 excluding the Vipps fees. On other words: The Vipps fees are deducted
 from the settlement amount.
 
-Merchants with a "gross settlement" contract receive the users' payments
+Merchants with a "gross settlement" contract receive the _full amount_
+of the users' payments
 _including_ the Vipps fees, and are then invoiced for the Vipps fees.
-The invoices are sent by email. To change invoice recipient, please
+
+If the merchant's organization number is registered as an EHF recipient, 
+Vipps sends and EHF. If not, the invoices are sent by email.
+To change invoice recipient, please
 [contact customer service](https://vipps.no/kontakt-oss/bedrift/vipps/).
 
 # Settlement report formats
