@@ -1,6 +1,6 @@
 # Vipps API Lifecycle
 
-Document version: 0.1.0.
+Document version: 0.1.1.
 
 # Table of Contents
 
