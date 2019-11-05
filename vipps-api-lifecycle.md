@@ -1,6 +1,6 @@
 # Vipps API Lifecycle
 
-Document version: 0.1.0.
+Document version: 0.1.1.
 
 # Table of Contents
 
@@ -32,6 +32,14 @@ Vipps APIs uses [Semantic Versioning](https://semver.org), which states:
 > MINOR version when you add functionality in a backwards compatible manner, and
 > PATCH version when you make backwards compatible bug fixes.
 
+## Version number in the endpoint URIs
+
+Vipps versions API endpoints in the URIs:
+`GET:/someapi/v1/some/more/path` and `GET:/someapi/v2/some/more/path`.
+
+There are other ways to manage versions, and many (strong) opinions about them,
+and Vipps has chosen the above.
+
 # Lifecycle
 
 ## Major version
@@ -43,12 +51,15 @@ See "Notice of deprecation".
 
 A minor version is automatically superseded by a newer minor version.
 If a customer uses version `2.1.0`, that version is automatically
-superseeded when version `2.2.0` is available.
+superseded when version `2.2.0` is available.
 
 There will be no bugfixes or other improvements to a minor version that
-has been superseeded.
+has been superseded.
 
 ## Patch version
+
+A patch version fixes one or more small problems, such as correcting a
+small bug so the API works as intended and documented in the first place.
 
 # Notice of deprecation
 
@@ -76,7 +87,8 @@ Only the major version is specified.
 The Vipps API documentation is updated frequently, and we use the versioning
 like this:
 
-* Major version: A major change to the documentation, such as adding "recurring" functionality to the Vipps eCom API.
+* Major version: A major change to the documentation, such as adding "recurring"
+  functionality to the Vipps eCom API.
 * Minor version: A new section, new flowcharts, or another significant change.
 * Patch version: Text changes, typos, small fixes.
 
@@ -134,8 +146,8 @@ Version 2.0.0:
 "address": {
   "addressLine1": "Robert Levins gate 5",
   "city": "Oslo",
-  "country": "Norway",
-  "postCode": "0154"
+  "postCode": "0154",
+  "country": "Norway"
   }
 ```  
 
@@ -145,8 +157,8 @@ Version 2.1.0:
 "address": {
   "addressLine1": "Robert Levins gate 5",
   "city": "Oslo",
-  "country": "Norway",
   "postCode": "0154",
+  "country": "Norway",
   "addressType": "business"
   }
 ```  
@@ -158,6 +170,34 @@ a new major version. This means a bump from `2.3.4` from `3.0.0`.
 
 The API endpoints will also get a new version parameter in the path:
 from `v2` to `v3`.
+
+## Changing the properties of an object
+
+A change in the format for `country` from the full name of the country
+(`Norway`) to ISO 3166 (`NO`) is considered a breaking change, as
+it requires a change in code.
+
+Version 2.0.0:
+
+```
+"address": {
+  "addressLine1": "Robert Levins gate 5",
+  "city": "Oslo",
+  "postCode": "0154",
+  "country": "Norway"
+  }
+```  
+
+Version 3.0.0:
+
+```
+"address": {
+  "addressLine1": "Robert Levins gate 5",
+  "city": "Oslo",
+  "postCode": "0154",
+  "country": "NO",
+  }
+```  
 
 ## Adding a new required parameter
 
