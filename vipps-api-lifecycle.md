@@ -131,8 +131,8 @@ the API will never offer less than before the optional parameter was added.
 
 ### Example
 
-Vipps may add a `msisdn` field to suopport international phone numbers, in addition to
-Norwegian phone numbers:
+Vipps may add a `msisdn` field to support international phone numbers,
+in addition to Norwegian phone numbers:
 
 Version 2.0.0:
 
@@ -221,8 +221,8 @@ Version 3.0.0:
   }
 ```  
 
-If the ISO 3166 country code was _added_, it would be a non-breaking change,
-and only a minor version:
+If the ISO 3166 country code was _added_ as `countryCode`, it would be a
+non-breaking change, and only a minor version:
 
 Version 2.1.0:
 
