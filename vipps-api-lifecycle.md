@@ -161,9 +161,13 @@ from `v2` to `v3`.
 
 ## Adding a new required parameter
 
+A new required parameter that results in previously valid requests no longer
+being valid, is considered a breaking change.
 
+## Changing an endpoints URL
 
-
+It is considered a breaking change to change from `POST:/accesstoken/get` to
+`POST:/accesstokens`.
 
 # Questions?
 
