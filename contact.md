@@ -8,7 +8,7 @@ We help with _**technical**_ issues from developers, such as questions about usi
 
 * General questions: See the [contact info for companies on vipps.no](https://www.vipps.no/kontakt-oss/bedrift/)
 * Questions about applications for Vipps products: See the [contact info for companies on vipps.no](https://www.vipps.no/kontakt-oss/bedrift/)
-* Suggestions for improvements to Vipps products: Use [this form](https://www.vipps.no/tips-og-tilbakemeldinger).
+* Suggestions for improvements to Vipps products: Use [this form](https://www.vipps.no/kontakt-oss/bedrift/).
 * Vipps through a partner: Please [contact your partner directly](https://www.vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-3). 
 * Questions about _ordering_ Vipps through a partner (also for partners): partnerbestilling@vipps.no
 * If you have questions about the plugins:
