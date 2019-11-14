@@ -8,19 +8,13 @@ The Vipps eCom API v1 was superseded by the eCom v2 API around two years ago.
 The eCom v2 API has all the functionality of eCom v1, and there is no reason
 for not upgrading to eCom v2.
 
-**The Vipps eCom v1 API will be shut down on June 1 2020.**
-
-Se more details [here](https://github.com/vippsas/vipps-ecom-api/blob/master/v1-deprecation.md).
+Se [more details about eCom v1](https://github.com/vippsas/vipps-ecom-api/blob/master/v1-deprecation.md),
+and
+[more details about the various Vipps APIs](https://github.com/vippsas/vipps-developers/blob/master/vipps-getting-started.md#api-products).
 
 # Vipps InApp API to be phased out December 31 2019
 
 This was communicated July, but we mention it again, just in case.
-
-# API products
-
-See
-[this page](https://github.com/vippsas/vipps-developers/blob/master/vipps-getting-started.md#api-products)
-for more details about the various APIs.
 
 # vipps.no/developer
 
