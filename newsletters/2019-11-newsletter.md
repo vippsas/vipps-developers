@@ -33,10 +33,11 @@ We will soon launch status pages:
 
 We are working on more developer resources, including a data API and
 a developer dashboard. We can not provide any dates yet, but we
-welcome input on https://github.com/vippsas/vipps-developers.
+welcome input in the form of issues on https://github.com/vippsas/vipps-developers.
 
 # Questions or comments?
 
 We're always happy to help with code or other questions you might have!
-Please create [GitHub issues or pull requests](https://github.com/vippsas),
+Please create [GitHub issues or pull requests](https://github.com/vippsas)
+for the relevant API, 
 or [contact us](https://github.com/vippsas/vipps-developers/blob/master/contact.md).
