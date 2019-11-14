@@ -16,6 +16,11 @@ and
 
 This was communicated July, but we mention it again, just in case.
 
+# API lifecycle
+
+We are working on this, and the current version/draft is
+[available on GitHub](https://github.com/vippsas/vipps-developers/blob/master/vipps-api-lifecycle.md).
+
 # vipps.no/developer
 
 New developer pages, in addition to
@@ -39,5 +44,5 @@ welcome input in the form of issues on https://github.com/vippsas/vipps-develope
 
 We're always happy to help with code or other questions you might have!
 Please create [GitHub issues or pull requests](https://github.com/vippsas)
-for the relevant API, 
+for the relevant API,
 or [contact us](https://github.com/vippsas/vipps-developers/blob/master/contact.md).
