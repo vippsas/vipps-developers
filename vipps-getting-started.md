@@ -93,12 +93,12 @@ but we are working to make `Vipps-Subscription-Key` work ASAP.
 
 An _API product_ is a "package" consisting of one or more APIs.
 
-Vipps has previously had separate API keys for each API product, and
-a set of API keys were directly linked to one salesunit.
-This meant that customers needed to keep track of multiple API keys,
-and that access to a new API required a new salesunit.
+Vipps has previously had separate API keys for each API product, and a set of API keys were directly linked to one sale unit. This meant that customers needed to keep track of multiple API keys, and that access to a new API required a new sale unit.
 
 This is no longer the case: New customers now get the `Vipps-API` API product.
+
+The Vipps-API API product give access to all current APIs, and the API keys for the Vipps eCom v1 and v2 APIs have been “upgraded” to include the same APIs as Vipps API.
+
 
 ## Vipps-API
 
