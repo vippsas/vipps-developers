@@ -143,11 +143,9 @@ Normal Vipps users are not available, so you can not use your own phone number w
 
 :bangbang: **IMPORTANT:** PSD2 went into effect on Saturday September 14, and Vipps has worked very hard to
 update the apps to comply with the new SCA (Secure Customer Authentication) requirements.
-In a short period, the automatically built and updated test apps may not work properly.
-Please use these versions of the test apps while this notice is here:
 
 iOS:
-* 2.5.2 (Press "Previous builds" in TestFlight)
+* 2.6.9 or newer
 
 Android:
 * Version 2.9.*-MT (2.9-g3100d2-b119922-MT (341) in Appcenter, or any newer -MT suffixed version.)
