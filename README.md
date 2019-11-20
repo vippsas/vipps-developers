@@ -11,11 +11,13 @@ This repository contains various resources for Vipps developers, including:
 ## Table of contents
 
 - [API documentation](#api-documentation)
+- [Status page](#status-page)
+  * [Status page for the test environment](#status-page-for-the-test-environment)
+  * [Status page for the production environment](#status-page-for-the-production-environment)
 - [Postman](#postman)
   * [Our Postman collections and environments](#our-postman-collections-and-environments)
 - [Example code](#example-code)
-- [The Vipps test environment (MT)](#the-vipps-test-environment-mt)
-    + [Status page for the test environment](#status-page-for-the-test-environment)
+- [The Vipps test environment (MT)](#the-vipps-test-environment--mt-)
     + [Test users](#test-users)
     + [Test amounts](#test-amounts)
 - [Vipps test apps](#vipps-test-apps)
@@ -33,6 +35,18 @@ This repository contains various resources for Vipps developers, including:
 # API documentation
 
 See: [Getting started](vipps-getting-started.md).
+
+# Status page
+
+## Status page for the test environment
+
+https://vipps-test.statuspage.io
+
+## Status page for the production environment
+
+https://vipps.statuspage.io
+
+<script src="https://shplmykhz0ky.statuspage.io/embed/script.js"></script>
 
 # Postman
 
@@ -56,7 +70,6 @@ See our [Postman guide](https://github.com/vippsas/vipps-developers/blob/master/
 | eCommerce V2      | [https://github.com/vippsas/vipps-ecom-api/tree/master/tools](https://github.com/vippsas/vipps-ecom-api/tree/master/tools)            |
 | Invoice           | [https://github.com/vippsas/vipps-invoice-api/tree/master/tools](https://github.com/vippsas/vipps-invoice-api/tree/master/tools)      |
 | Recurring         | [https://github.com/vippsas/vipps-recurring-api/tree/master/tools](https://github.com/vippsas/vipps-recurring-api/tree/master/tools)  |
-
 
 # Example code
 
@@ -84,10 +97,6 @@ Vipps Regninger with real invoices, but with small amounts. We recommend 2 NOK.
 
 Other differences in MT:
 * We allow 10,000 incorrect PIN attempts before locking the Vipps user's account
-
-### Status page for the test environment
-
-https://vipps.statuspage.io
 
 ### Test users
 
