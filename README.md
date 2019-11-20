@@ -46,8 +46,6 @@ https://vipps-test.statuspage.io
 
 https://vipps.statuspage.io
 
-<script src="https://shplmykhz0ky.statuspage.io/embed/script.js"></script>
-
 # Postman
 
 [Postman](https://www.getpostman.com/) is a common tool for working with REST APIs.
