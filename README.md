@@ -155,7 +155,7 @@ iOS:
 * 2.6.9 or newer
 
 Android:
-* Version 2.9.*-MT (2.9-g3100d2-b119922-MT (341) in Appcenter, or any newer -MT suffixed version.)
+* Version 2.10.2-MT (346) in Appcenter.
 
 
 ## Limitations of the test apps
