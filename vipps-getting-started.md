@@ -3,6 +3,8 @@
 This guide covers what you need to get started with Vipps development,
 after you have received the welcome email.
 
+Version: 2.1.2.
+
 - [First of all](#first-of-all)
   * [API documentation](#api-documentation)
 - [Getting a test account (and a production account)](#getting-a-test-account-and-a-production-account))
@@ -18,8 +20,6 @@ after you have received the welcome email.
     + [HTTP response codes](#http-response-codes)
   * [Make an eCom v2 API call](#make-an-ecom-v2-api-call)
 - [Questions?](#questions-)
-
-Version: 2.1.1.
 
 # First of all
 
@@ -64,6 +64,14 @@ API keys are available in the Vipps Portal, under the `Utvikler` menu item in th
 https://portal.vipps.no
 
 The registered admin user can log in with bankID and fetch the API keys.
+
+All Vipps customers must have a Norwegian organization number, and the customer
+agreements are signed with BankID. Since portal.vipps.no give access to APIn keys
+for both the test and production environment, we require BankID for loging in.
+The customer's administrator can create additional users on portal.vipps.no
+
+If you do not have BankID, you will need the admin to log in and provide the
+API keys to you.
 
 **Please note:** Vipps can not provide API keys in any other way, such as by
 email, as the API keys give access to transferring money.
