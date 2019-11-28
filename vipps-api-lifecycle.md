@@ -1,6 +1,6 @@
 # Vipps API Lifecycle
 
-Document version: 0.1.2.
+Document version: 0.1.3.
 
 # Table of Contents
 
@@ -91,7 +91,7 @@ Vipps will send information to
 
 ### Key accounts
 
-Customers with a key account manager will (in addition) be contacted personally.
+Customers with a key account manager will (in addition to the above) be contacted personally.
 
 ### Make sure Vipps has the correct contact information
 
