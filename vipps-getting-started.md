@@ -63,10 +63,10 @@ to have _them_ help you with developer access.
 API keys are available in the Vipps Portal, under the `Utvikler` menu item in the top menu:
 https://portal.vipps.no
 
-The registered admin user can log in with bankID and fetch the API keys.
+The registered admin user can log in with BankID and fetch the API keys.
 
 All Vipps customers must have a Norwegian organization number, and the customer
-agreements are signed with BankID. Since portal.vipps.no give access to APIn keys
+agreements are signed with BankID. Since portal.vipps.no give access to API keys
 for both the test and production environment, we require BankID for loging in.
 The customer's administrator can create additional users on portal.vipps.no
 
