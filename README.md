@@ -119,6 +119,9 @@ If you have not yet received the welcome email, see the
 [standard reply](https://github.com/vippsas/vipps-developers/blob/master/housekeeping/response-apinokler.txt)
 (in Norwegian) for requests for this.
 
+There is no way to get a test user in the production environment. 
+The production environment only contains real users and data.
+
 See also: [Vipps Test Data](https://github.com/vippsas/vipps-developers/blob/master/testdata/README.md).
 
 ### Test amounts
