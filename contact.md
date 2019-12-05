@@ -15,6 +15,7 @@ Hello! 👋 We love email!
 # We help with technical issues
 
 We help with _**technical**_ issues from developers, such as questions about using our APIs. 
+If you do not have a technical issue, the fastest way to get help is to use the right method:
 
 * General questions: See the [contact info for companies on vipps.no](https://www.vipps.no/kontakt-oss/bedrift/)
 * Questions about applications for Vipps products: See the [contact info for companies on vipps.no](https://www.vipps.no/kontakt-oss/bedrift/)
@@ -24,6 +25,9 @@ We help with _**technical**_ issues from developers, such as questions about usi
 * If you have questions about the plugins:
   - WooCommerce: Please use the [support forum on wordpress.org](https://wordpress.org/support/plugin/woo-vipps/), where the developers can help directly.
   - Magento: Please [submit an issue on GitHub](https://github.com/vippsas/vipps-magento).
+  - Drupal: Please see the [plugin on drupal.org](https://www.drupal.org/project/commerce_vipps).
+  - Episerver: TBD (not yet officially released).
+  - Shopify: TBD (not yet officiallyv released).
 * Questions about settlements, invoices or similar: operations@vipps.no
 
 We also have a technical newsletter for developers:
