@@ -22,10 +22,10 @@ If you do not have a technical issue, the fastest way to get help is to use the 
 * Suggestions for improvements to Vipps products: Use [this form](https://www.vipps.no/kontakt-oss/bedrift/).
 * Vipps through a partner: Please [contact your partner directly](https://www.vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-3). 
 * Questions about _ordering_ Vipps through a partner (also for partners): partnerbestilling@vipps.no
-* If you have questions about the plugins:
-  - WooCommerce: Please use the [support forum on wordpress.org](https://wordpress.org/support/plugin/woo-vipps/), where the developers can help directly.
+* If you have questions about the plugins, the best way to get help is from the plugin developers directly:
+  - WooCommerce: Please use [the support forum on wordpress.org](https://wordpress.org/support/plugin/woo-vipps/).
   - Magento: Please [submit an issue on GitHub](https://github.com/vippsas/vipps-magento).
-  - Drupal: Please see the [plugin on drupal.org](https://www.drupal.org/project/commerce_vipps).
+  - Drupal: Please see [the plugin on drupal.org](https://www.drupal.org/project/commerce_vipps).
   - Episerver: TBD (not yet officially released).
   - Shopify: TBD (not yet officiallyv released).
 * Questions about settlements, invoices or similar: operations@vipps.no
