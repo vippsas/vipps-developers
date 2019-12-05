@@ -2,7 +2,17 @@
 
 Hello! 👋 We love email!
 
-## We help with technical issues
+# Table of contents
+
+- [We help with technical issues](#we-help-with-technical-issues)
+- [What to include in the email](#what-to-include-in-the-email)
+  * [Keep your colleagues up to date](#keep-your-colleagues-up-to-date)
+- [Automatic reply](#automatic-reply)
+  * [Adding additional information](#adding-additional-information)
+- [Response time](#response-time)
+- [More than one problem, or a new one?](#more-than-one-problem--or-a-new-one-)
+
+# We help with technical issues
 
 We help with _**technical**_ issues from developers, such as questions about using our APIs. 
 
