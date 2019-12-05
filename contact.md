@@ -2,7 +2,7 @@
 
 Hello! 👋 We love email!
 
-# Table of contents
+## Table of contents
 
 - [We help with technical issues](#we-help-with-technical-issues)
 - [What to include in the email](#what-to-include-in-the-email)
