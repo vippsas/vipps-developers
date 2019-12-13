@@ -1,6 +1,6 @@
 # Vipps API Lifecycle
 
-Document version: 0.1.3.
+Document version: 0.2.0.
 
 # Table of Contents
 
@@ -23,6 +23,10 @@ Document version: 0.1.3.
     + [Example](#example)
   * [Adding an optional field to a response](#adding-an-optional-field-to-a-response)
     + [Example](#example-1)
+  * [Adding a new enum value](#adding-a-new-enum-value)
+  * [Relaxing some of the constraints on an existing request parameter](#relaxing-some-of-the-constraints-on-an-existing-request-parameter)
+  * [Adding a new response parameter to the API response](#adding-a-new-response-parameter-to-the-api-response)
+  * [Changing the order in which parameters are returned in existing API responses](#changing-the-order-in-which-parameters-are-returned-in-existing-api-responses)
 - [Breaking changes](#breaking-changes)
   * [Changing the properties of an object](#changing-the-properties-of-an-object)
   * [Adding a new required parameter](#adding-a-new-required-parameter)
@@ -126,6 +130,9 @@ An optional parameter for a request is considered a backwards compatible change.
 The caller may choose to send the new, optional parameter, but there is no
 obligation to do so.
 
+The parameter can be added as part of the request body, as a URL parameter, or
+an HTTP header field.
+
 Some optional parameters may offer additional or improved functionality, but
 the API will never offer less than before the optional parameter was added.
 
@@ -153,6 +160,9 @@ Version 2.1.0:
 ## Adding an optional field to a response
 
 An optional parameter for a response is considered a backwards compatible change.
+
+The parameter can be added as part of the request body, as a URL parameter, or
+an HTTP header field.
 
 It is the caller's responsibility to manage the response in a way that
 correctly handles new, optional parameters. This is normally done automatically,
@@ -184,6 +194,28 @@ Version 2.1.0:
   "addressType": "business"
   }
 ```  
+
+## Adding a new enum value
+
+The value may be added either in the request or in the response.
+
+Response parsing must be robust: Ignore any unknown fields or enum values
+received as part of API responses.
+
+## Relaxing some of the constraints on an existing request parameter
+
+For example, making it optional.
+
+## Adding a new response parameter to the API response
+
+Response parsing must be robust, and able to handle new parameters.
+
+The parameter can be added as part of the request body, as a URL parameter, or
+an HTTP header field.
+
+## Changing the order in which parameters are returned in existing API responses
+
+Response parsing must be robust.
 
 # Breaking changes
 
