@@ -149,18 +149,6 @@ Vipps [the Vipps test environment (MT)](#the-vipps-test-environment-mt) instead 
 Only test accounts, with random phone numbers, are available in the test environments.
 Normal Vipps users are not available, so you can not use your own phone number with the test apps.
 
-## Test app versions
-
-:bangbang: **IMPORTANT:** PSD2 went into effect on Saturday September 14, and Vipps has worked very hard to
-update the apps to comply with the new SCA (Secure Customer Authentication) requirements.
-
-iOS:
-* 2.6.9 or newer
-
-Android:
-* Version 2.10.2-MT (346) in Appcenter.
-
-
 ## Limitations of the test apps
 
 * Push alerts do not work
