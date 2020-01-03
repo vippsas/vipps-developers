@@ -98,13 +98,7 @@ Other differences in MT:
 
 ### Test users
 
-The welcome email contains information about your test user, which has the following dummy data:
-
-* Name
-* Phone number
-* PIN
-* Bank account number
-* Credit card number
+The welcome email contains information about your test profile. The test mobile number is registered with everything required to complete a payment.
 
 You can use this test user to in the [Vipps test apps](#vipps-test-apps).
 
