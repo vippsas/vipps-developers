@@ -2,24 +2,40 @@
 
 Hello! 👋 We love email!
 
-## We help with technical issues
+## Table of contents
 
-We help with _technical_ issues, such as questions about using our APIs.
-* General inquiries: Please see the FAQ [Spørsmål og svar](https://www.vipps.no/sporsmal#bedriftspm), and use the
-[contact us](https://www.vipps.no/privat/kontakt-oss) form.
-* See also the [developer FAQ](https://github.com/vippsas/vipps-developers/blob/master/housekeeping/contact-faq.md) (work in progress, in Norwegian).
-* If you have suggestions for improvements to Vipps products,
-please use [this form](https://www.vipps.no/tips-og-tilbakemeldinger).
-* If you use Vipps through a partner: Please contact your partner. Enquiries about ordering Vipps through a partner: partnerbestilling@vipps.no
+- [We help with technical issues](#we-help-with-technical-issues)
+- [What to include in the email](#what-to-include-in-the-email)
+  * [Keep your colleagues up to date](#keep-your-colleagues-up-to-date)
+- [Automatic reply](#automatic-reply)
+  * [Adding additional information](#adding-additional-information)
+- [Response time](#response-time)
+- [More than one problem, or a new one?](#more-than-one-problem--or-a-new-one-)
+
+# We help with technical issues
+
+We help with _**technical**_ issues from developers, such as questions about using our APIs. 
+If you do not have a technical issue, the fastest way to get help is to use the right method:
+
+* General questions: See the [contact info for companies on vipps.no](https://www.vipps.no/kontakt-oss/bedrift/)
+* Questions about applications for Vipps products: See the [contact info for companies on vipps.no](https://www.vipps.no/kontakt-oss/bedrift/)
+* Suggestions for improvements to Vipps products: Use [this form](https://www.vipps.no/kontakt-oss/bedrift/).
+* Vipps through a partner: Please [contact your partner directly](https://www.vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-3). 
+* Questions about _ordering_ Vipps through a partner (also for partners): partnerbestilling@vipps.no
+* If you have questions about the plugins, the best way to get help is from the plugin developers directly:
+  - WooCommerce: Please use [the support forum on wordpress.org](https://wordpress.org/support/plugin/woo-vipps/).
+  - Magento: Please [submit an issue on GitHub](https://github.com/vippsas/vipps-magento).
+  - Drupal: Please see [the plugin on drupal.org](https://www.drupal.org/project/commerce_vipps).
+  - Episerver: TBD (not yet officially released).
+  - Shopify: TBD (not yet officially released).
+* Questions about settlements, invoices or similar: operations@vipps.no
 
 We also have a technical newsletter for developers:
 [Sign up here](https://cloud.hei.vipps.no/utv) (low volume, no marketing).
 
 # What to include in the email
 
-So, for _*technical questions*_: Send an email to integration@vipps.no with all relevant information:
-
-(You can also [try the web interface](https://vippsas.atlassian.net/servicedesk/customer/portal/2))
+So, for _*technical questions*_: Send an email with all relevant information to the address below:
 
 * A concise, self-explanatory `Subject` line, such as "`POST:/something` gives `HTTP 400` response".
 * Your contact information (if not in your email signature):
@@ -27,20 +43,22 @@ So, for _*technical questions*_: Send an email to integration@vipps.no with all 
   - Phone number
 * Company details
   - Organization number (check https://brreg.no)
-  - Merchant Serial Number (MSN, found in the [Developer Portal](vipps-developer-portal-getting-started.md))
+  - Merchant Serial Number (MSN, see [Getting started](vipps-developer-portal-getting-started.md))
 * Which [Vipps product](https://www.vipps.no/bedrift) this is about
-* If you are a new Vipps customer, please include detailas about when and how you ordered Vipps.
+* If you are a new Vipps customer, please include detailas about when and how you ordered Vipps. For status on the order, please see the [contact info for companies on vipps.no](https://www.vipps.no/kontakt-oss/bedrift/)
 * For eCommerce issues: Which eCommerce solution you are using, and which version
   - For WooCommerce: See the [support forum](https://wordpress.org/support/plugin/woo-vipps) and https://github.com/vippsas/vipps-woocommerce
   - For Magento: See https://github.com/vippsas/vipps-magento
 * **Always include a detailed description of the problem**
 * For API issues: Complete `request` and `response` details (plain HTTP from Postman, or [curl](https://curl.haxx.se) ensures the quickest response)
+* Include `orderID`, `transactionId`and `contextId` to make it posible to search in logs.
 * For app issues: Specify iOS or Android, and the app version
 * Screenshots, if applicable
 * Any other information that may be relevant
 
-[Click here](mailto:integration@vipps.no?subject=Self-explanatory%20subject%20line%20goes%20here&body=Your%20contact%20information%3A%0A-%20Name%3A%0A-%20Phone%20number%0A%0ACompany%20details%0A-%20Company%20name%3A%0A-%20Organization%20number%3A%0A-%20Merchant%20Serial%20Number%3A%0A%0AWhich%20Vipps%20product%20this%20is%20about%3A%0A%0AComplete%20%60request%60%20and%20%60response%60%20details%3A%0A%0AFor%20app%20issues%3A%20Specify%20iOS%20or%20Android%2C%20and%20app%20version%3A%0A%0AAttache%20screenshots%2C%20if%20applicable.%0A%0AAny%20other%20information%20that%20may%20be%20relevant%3A)
-for a draft email that includes placeholders for the above.
+The Integration email address is: integration@vipps.no 
+
+(You can also [try the web interface](https://vippsas.atlassian.net/servicedesk/customer/portal/2))
 
 ## Keep your colleagues up to date
 

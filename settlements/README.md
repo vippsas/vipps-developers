@@ -1,18 +1,43 @@
 # Vipps Settlements
 
+# Frequency
+
+Vipps merchants can select daily, weekly or monthly settlement frequency by logging in with BankID on
+[portal.vipps.no](https://portal.vipps.no).
+
+Vipps pays merchants every Monday or every 1. of the month, depending on the merchant preference.
+It then takes 1-3 bank days before the money reaches the merchant settlement account.
+
+# Settlement flow
+
 The settlement flow is as follows:
 
 1. Day 1: A customer makes a purchase and the transaction is completed. If the purchased product is shipped later, the "day 1" is the day the product is shipped and the customer's account is charged.
-2. Day 2: Settlement files are distributed, and are available in the Vipps portal: https://portal.vipps.no.
+2. Day 2: Settlement files are distributed, and are available on [portal.vipps.no](https://portal.vipps.no).
 3. Day 3 (the next _bank day_) at 16:00: Payments are made from Vipps.
 4. Day 5 (the third _bank day_): The settlement is booked with reference by the bank.
 
-A day starts and ends at midnight, Oslo time: Start `00:00:00`, end `23:59:59` (subseconds not specified). 
+A day starts and ends at midnight, Oslo time: Start `00:00:00`, end `23:59:59` (subseconds not specified).
 Please make sure your servers' clocks are correct, e.g. by using [NTP](https://en.wikipedia.org/wiki/Network_Time_Protocol).
 
 A Vipps merchant normally receives daily settlements. This can be changed to weekly, monthly settlements. See [the FAQ](https://www.vipps.no/sporsmal#bedriftspm) for more details.
 
-# Settlement reports
+# Net and gross settlements
+
+Merchants with a "net settlement" contract receive the users' payments
+excluding the Vipps fees. On other words: The Vipps fees are deducted
+from the settlement amount.
+
+Merchants with a "gross settlement" contract receive the _full amount_
+of the users' payments
+_including_ the Vipps fees, and are then invoiced for the Vipps fees.
+
+If the merchant's organization number is registered as an EHF recipient, 
+Vipps sends and EHF. If not, the invoices are sent by email.
+To change invoice recipient, please
+[contact customer service](https://vipps.no/kontakt-oss/bedrift/vipps/).
+
+# Settlement report formats
 
 Settlement reports are provided in these formats:
 
@@ -23,16 +48,34 @@ Settlement reports are provided in these formats:
 | PDF    | [PDF](pdf/Vipps-oppgjørsrapport-16655-2018-09-23.pdf) | - |
 | XLSX   | [XLSX](xlsx/Vipps-oppgjørsrapport-16655-2018-09-23.xlsx) | - |
 
-Settlements reports are available both with and without personal details of the customer. 
+Settlements reports are available both with and without personal details of the customer.
 
 This is due to [GDPR](https://ec.europa.eu/info/law/law-topic/data-protection_en), and whether
 the data processor is Vipps or the merchant. See [GDPR](#gdpr) below.
+
+## Availability
+
+Settlement reports are available by 12:00 noon. The reports are generated around
+01-03 at night, but may be delayed due to technical changes, maintenance in
+various systems, etc.
+
+### Daily reports
+
+The settlement reports are available by 12:00 noon.
+
+### Weekly reports
+
+The settlement report is generated on Mondays, by 12:00 noon.
+
+## Monthly reports
+
+The settlement report is generated on the 1st of the month, by 12:00 noon.
 
 # GDPR
 
 The settlement reports available by SFTP (see below) do not contain detailed information about the
 transactions. Reports containing personal information requires a data processor agreement.
-Due to this, reports with personal information can only be downloaded by logging in with 
+Due to this, reports with personal information can only be downloaded by logging in with
 BankID on [portal.vipps.no](https://portal.vipps.no) and accepting the terms there.
 
 The Norwegian text from [portal.vipps.no](https://portal.vipps.no):
@@ -69,8 +112,7 @@ Details: See the [pdf](pdf/) folder.
 
 ## OCR
 
-OCR files are no longer provided by Vipps. 
+OCR files are no longer provided by Vipps.
 Documentation for the legacy solution: [Vipps Faktura](ocr/vipps-invoice-api-vipps-faktura.pdf).
 
 Details: See the [ocr](ocr/) folder.
-

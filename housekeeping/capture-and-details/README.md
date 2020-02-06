@@ -1,4 +1,4 @@
-# Capture or run details request on eComV2 transactions
+# Capture or details request on eCom v2 transactions
 Requires the programming language [Go](https://golang.org/)
 
 To run a capture batch in production<br/>

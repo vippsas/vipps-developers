@@ -2,24 +2,49 @@
 
 This repository contains various resources for Vipps developers, including:
 
-* [Getting started](vipps-getting-started.md) with the Vipps Developer Portal and API requests
+* [Getting started](vipps-getting-started.md) with Vipps development
 * [How to contribute](contribute.md) to Vipps projects on GitHub
 * [How to contact us](contact.md) in the Vipps Integration team
 * [Requirements](requirements.md) for foreign companies in order to use Vipps
+* [Settlements](https://github.com/vippsas/vipps-developers/tree/master/settlements) for information about settlements
 
 ## Table of contents
 
+- [API documentation](#api-documentation)
+- [Status page](#status-page)
+  * [Status page for the test environment](#status-page-for-the-test-environment)
+  * [Status page for the production environment](#status-page-for-the-production-environment)
 - [Postman](#postman)
+  * [Our Postman collections and environments](#our-postman-collections-and-environments)
 - [Example code](#example-code)
-- [The Vipps test environment (MT)](#the-vipps-test-environment-mt)
-    + [Status page for the test environment](#status-page-for-the-test-environment)
+- [The Vipps test environment (MT)](#the-vipps-test-environment--mt-)
     + [Test users](#test-users)
+    + [Test amounts](#test-amounts)
 - [Vipps test apps](#vipps-test-apps)
+  * [Test app versions](#test-app-versions)
+  * [Limitations of the test apps](#limitations-of-the-test-apps)
   * [iOS](#ios)
   * [Android](#android)
 - [Vipps design guidelines](#vipps-design-guidelines)
 - [Vipps request servers](#vipps-request-servers)
+  * [Production environment](#production-environment)
+  * [Disaster recovery (DR) environment](#disaster-recovery--dr--environment)
+  * [Test environment](#test-environment)
 - [Additional developer resources](#additional-developer-resources)
+
+# API documentation
+
+See: [Getting started](vipps-getting-started.md).
+
+# Status page
+
+## Status page for the test environment
+
+https://vipps-test.statuspage.io
+
+## Status page for the production environment
+
+https://vipps.statuspage.io
 
 # Postman
 
@@ -43,7 +68,6 @@ See our [Postman guide](https://github.com/vippsas/vipps-developers/blob/master/
 | eCommerce V2      | [https://github.com/vippsas/vipps-ecom-api/tree/master/tools](https://github.com/vippsas/vipps-ecom-api/tree/master/tools)            |
 | Invoice           | [https://github.com/vippsas/vipps-invoice-api/tree/master/tools](https://github.com/vippsas/vipps-invoice-api/tree/master/tools)      |
 | Recurring         | [https://github.com/vippsas/vipps-recurring-api/tree/master/tools](https://github.com/vippsas/vipps-recurring-api/tree/master/tools)  |
-
 
 # Example code
 
@@ -72,19 +96,9 @@ Vipps Regninger with real invoices, but with small amounts. We recommend 2 NOK.
 Other differences in MT:
 * We allow 10,000 incorrect PIN attempts before locking the Vipps user's account
 
-### Status page for the test environment
-
-https://vipps.statuspage.io
-
 ### Test users
 
-The welcome email contains information about your test user, which has the following dummy data:
-
-* Name
-* Phone number
-* PIN
-* Bank account number
-* Credit card number
+The welcome email contains information about your test profile. The test mobile number is registered with everything required to complete a payment.
 
 You can use this test user to in the [Vipps test apps](#vipps-test-apps).
 
@@ -99,15 +113,18 @@ If you have not yet received the welcome email, see the
 [standard reply](https://github.com/vippsas/vipps-developers/blob/master/housekeeping/response-apinokler.txt)
 (in Norwegian) for requests for this.
 
+There is no way to get a test user in the production environment. 
+The production environment only contains real users and data.
+
 See also: [Vipps Test Data](https://github.com/vippsas/vipps-developers/blob/master/testdata/README.md).
 
 ### Test amounts
 
-Vipps supports using special amounts that are always "rejecdted in the app", etc -
+Vipps supports using special amounts that are always "rejected in the app", etc -
 without anyone needing to use the app. This is useful for testing,
 test automation, etc.
 
-| Amount | Error                      | 
+| Amount | Error                      |
 | ------ | -------------------------- |
 | 1.51   | Not sufficient funds       |
 | 1.86   | Expired Card               |
@@ -135,7 +152,7 @@ Normal Vipps users are not available, so you can not use your own phone number w
 
 ![Vipps test app icon](images/vipps-testapp-app-store-icon.jpg)
 
-The iOS test app is available in Apple TestFlight: https://testflight.apple.com/join/hTAYrwea
+The iOS test app is available in Apple TestFlight.
 You do *not* need an activation code.
 
 1. Open the [TestFlight](https://testflight.apple.com/join/hTAYrwea) link
@@ -160,7 +177,7 @@ as the test number may be a real phone number for a real Vipps user.
 
 ## Android
 
-The Android test app is available at: https://install.appcenter.ms/orgs/vipps/apps/vipps-android/distribution_groups/mt%20testers
+The Android test app is available in App Center.
 You do *not* need an activation code.
 
 1. Open the [App Center](https://install.appcenter.ms/orgs/vipps/apps/vipps-android/distribution_groups/mt%20testers) link. If you get a push message prompting to whitelist the source, you should be able to do this via the "Settings" button.
@@ -185,7 +202,8 @@ Guidelines, logos, buttons, etc: https://github.com/vippsas/vipps-design-guideli
 
 # Vipps request servers
 
-Requests made by Vipps are made from the following servers:
+Requests made by Vipps are made from the servers specified below.
+Vipps normally only uses one server at a time, and change servers approximately every three months.
 
 ## Production environment
 ```
@@ -195,7 +213,20 @@ callback-3.vipps.no
 callback-4.vipps.no
 ```
 
+
+## Disaster recovery (DR) environment
+
+```
+callback-dr-1.vipps.no
+callback-dr-2.vipps.no
+callback-dr-3.vipps.no
+callback-dr-4.vipps.no
+```
+
+The disaster recovery environment is as important as the production environment.
+
 ## Test environment
+
 ```
 callback-mt-1.vipps.no
 callback-mt-2.vipps.no
@@ -203,16 +234,16 @@ callback-mt-3.vipps.no
 callback-mt-4.vipps.no
 ```
 
-For products that Vipps makes requests please make sure that requests from these servers are allowed through firewalls, etc.
+For API products where Vipps makes requests to your servers, please make sure that these request servers are allowed through firewalls, etc.
 
-**Note:** Vipps may change the IP addresses that we make requests from. To ensure that you are whitelisting the correct IP addresses please use these hostnames, and update your firewall rules if there are DNS changes.
+**Note:** Vipps may change the IP addresses for the request servers. To ensure that you are whitelisting the correct IP addresses please use these hostnames and DNS, and automatically update your firewall rules if there are DNS changes.
 
 # Additional developer resources
 
 * Developer overview: https://vipps.no/developer
-* High-level overview of the APIs: http://vippsas.github.io
+* High-level overview of the API documentation: https://vipps.no/developer/documentation/
 * Products, personal: http://vipps.no/privat
 * Products, business: http://vipps.no/bedrift
 
-**The Vipps Integration team**  
+**The Vipps Integration team**
 [Get in touch here](contact.md)

@@ -2,7 +2,7 @@ Hei
 
 Vipps for WooCommerce er utviklet for oss av vår partner WP-Hosting: https://www.wp-hosting.no
 
-WP-Hosting er eksperter på WooCommerce og Wordpress, og hvis du kan be om hjelp i supportforumet der, hjelper de deg der: https://wordpress.org/support/plugin/woo-vipps
+WP-Hosting er eksperter på WooCommerce og WordPress, og hvis du kan be om hjelp i supportforumet der, hjelper de deg der: https://wordpress.org/support/plugin/woo-vipps
 
 Her er svar på noen vanlige spørsmål:
 

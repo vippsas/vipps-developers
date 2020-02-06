@@ -330,7 +330,7 @@ func performCaptures(config *Configuration, orders []OrderInput) {
 			},
 			Transaction: Transaction{
 				Amount:          order.CaptureAmount,
-				TransactionText: "Captured by Vipps Integration",
+				TransactionText: "Captured by CAD-tool",
 			},
 		}
 		reqBody, err := json.Marshal(captureReq)
@@ -472,8 +472,7 @@ func fetchAccessToken(config *Configuration) {
 
 /**
 * Reads in the Vipps API keys from configuration file in JSON format
-* The keys can be found at https://apitest-portal.vipps.no/ for our Merchant Test (MT) environment.
-* For production they can be found at https://api-portal.vipps.no/
+* The keys can be found at https://portal.vipps.no/
  */
 func readConfig(path string) *Configuration {
 	configFile, err := os.Open(path)

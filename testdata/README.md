@@ -6,11 +6,18 @@ The [Vipps Test environment (MT)](https://github.com/vippsas/vipps-developers#th
 
 ## Users
 
+All Vipps customers get a dedicated test user with a (for the test environmenty)
+unique phone number. The common test user below may be used in situations where
+the dedicated test user, for some reason, can not be used.
+
 | customerId | NIN (fødselsnummer) | MSISDN (phone number) | First name   | Last name |
 | ---------- | ------------------- | --------------------- | ------------ | --------- |
 | 10003301	 | 01032300371         | 4797777776            | Willhelm Fos | Kluvstad  |
 
 ## Merchants
+
+All Vipps customers get a dedicated test merchant. The test merchants below are common 
+for all customers.
 
 | Name               | Org. number | Account number |
 | ------------------ |------------ | -------------- |

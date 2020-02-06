@@ -38,17 +38,15 @@ More information about SFTP: [SSH File Transfer Protocol](https://en.wikipedia.o
 
 ### How to set up users for connecting to the SFTP server
 
-1. Login to https://portal.vipps.no and click `Bedriftsinfo` under your Bedrift and Organization name.
+1. Login to https://portal.vipps.no and click `Utvikler` in the menu.
 
 ![Velg profil](images/01_velg_profil.png "Velg profil")
 
-2. Click the link under the information to add users for SFTP-access.
+2. Click the tab `SFTP Access` to add users for SFTP-access.
 
-![Lag tilgang](images/02_SFTP_tilgang.png "Lag tilgang")
+3. You can add the public keys of the user(s). We support RSA (minimum 2048-bit), EdDSA and Ed25519 keys in OpenSSH format (and reject DSA keys). After this you should see the newly created user. For help creating SSH keys, the GitHub documentation may be helpful: https://help.github.com/articles/connecting-to-github-with-ssh/
 
-3. In the next window you can add the public keys of the user(s). We support RSA (minimum 2048-bit), EdDSA and Ed25519 keys in OpenSSH format (and reject DSA keys). After this you should see the newly created user. For help creating SSH keys, the GitHub documentation may be helpful: https://help.github.com/articles/connecting-to-github-with-ssh/
-
-![Bruker opprettet](images/03_bruker_opprettet.png "bruker opprettet")
+![Bruker opprettet](images/02_bruker_opprettet.png "bruker opprettet")
 
 ### Connecting to the SFTP server
 
