@@ -60,15 +60,31 @@ type ErrorResponse struct {
 	ErrorMessage string `json:"errorMessage"`
 }
 
+// Cancel Response struct
+type CancelResponse struct {
+	OrderID string `json:"orderId"`
+	TransInfo TransactionInfo `json:"transactionInfo"`
+	TransSum TransactionSummary
+}
+type CancelTransaction struct {
+	TransactionText string `json:"transactionText"`
+}
+type CancelRequest struct {
+	MerchantInfo MerchantInfo `json:"merchantInfo"`
+	Transaction CancelTransaction `json:"transaction"`
+}
+
 var ordersFilePath string
 var configFilePath string
 var doCapture bool
 var doDetails bool
+var doCancel bool
 var production bool
 
 func init() {
 	flag.BoolVar(&doCapture, "capture", false, "Specify this flag to perform CAPTURE on Orders specified in -orders fileName")
 	flag.BoolVar(&doDetails, "detail", false, "Specify this flag to perform a DETAILS request on Orders specified in -orders fileName")
+	flag.BoolVar(&doCancel, "cancel", false, "Specify this flag to perform a CANCEL request on Orders specified in -orders fileName")
 	flag.BoolVar(&production, "production", false, "Specify to use the production environment. Otherwise it will default to Test (MT)")
 	flag.StringVar(&ordersFilePath, "o", "", "Path to file text file with Order IDs'")
 	flag.StringVar(&ordersFilePath, "orders", "", "Path to file text file with Order IDs'")
@@ -83,8 +99,8 @@ func main() {
 		flag.PrintDefaults()
 		os.Exit(1)
 	}
-	if !doCapture && !doDetails {
-		fmt.Println("You must specify either '-capture' or '-detail'.")
+	if !doCapture && !doDetails && !doCancel {
+		fmt.Println("You must specify either '-capture', '-detail' or '-cancel'.")
 		flag.PrintDefaults()
 		os.Exit(1)
 	}
@@ -119,6 +135,92 @@ func main() {
 		performCaptures(config, orders)
 	} else if doDetails {
 		performDetails(config, orders)
+	} else if doCancel {
+		performCancel(config, orders)
+	}
+}
+
+func performCancel(config *Configuration, orders []OrderInput) {
+	var baseUrl string
+	if production {
+		baseUrl = "https://api.vipps.no"
+	} else {
+		baseUrl = "https://apitest.vipps.no"
+	}
+
+	resultFile, err := os.Create(fmt.Sprintf("cancelResults_%v_%v.txt", config.MSN, time.Now().UnixNano()/1000000))
+	if err != nil {
+		log.Fatal("Cannot create file", err)
+	}
+	defer resultFile.Close()
+
+	var failedCancelRequestCount = 0
+	var failedCancels []OrderInput
+
+	var headerWritten = false
+	client := &http.Client{}
+	for _, order := range orders {
+
+		cancelRequestBody := CancelRequest{
+			MerchantInfo: MerchantInfo{MerchantSerialNumber:config.MSN},
+			Transaction:  CancelTransaction{TransactionText:"Cancel payment"},
+		}
+		body, err := json.Marshal(cancelRequestBody)
+		if err != nil {
+			log.Printf("Error marshalling request body: %v\n", err)
+		}
+
+		url := fmt.Sprintf("%v/ecomm/v2/payments/%v/cancel", baseUrl, order.OrderID)
+		request, err := http.NewRequest("PUT", url, bytes.NewBuffer(body))
+		if err != nil {
+			log.Println("cancel->error: ", err)
+			return
+		}
+		// Standard HTTP headers required for using the eCom v2 API.
+		request.Header.Add("Authorization", config.BearerToken)
+		request.Header.Add("Ocp-Apim-Subscription-Key", config.EComSubscriptionKey)
+		request.Header.Add("Content-Type", "application/json")
+
+		response, err := client.Do(request)
+		if err != nil {
+			log.Println("doRequest:", err)
+			failedCancelRequestCount++
+			failedCancels = append(failedCancels, order)
+			continue
+		}
+		data, _ := ioutil.ReadAll(response.Body)
+		err = response.Body.Close()
+		if err != nil {
+			log.Println("Error when closing http body:", err)
+		}
+		// If the HTTP Status Code is anything but a 2xx code we know something went wrong
+		// and we didn't manage to perform a cancel
+		if response.StatusCode > 299 || response.StatusCode < 200 {
+			fmt.Printf("error, http status code for '%v' is '%v' with status message: '%v'\n", nil, response.StatusCode, response.Status)
+			// TODO Should write to the file if we encounter an error. Might be a wrong OrderID for instance resulting in a 404.
+			continue
+		} else {
+			dr := CancelResponse{}
+			err = json.Unmarshal(data, &dr)
+			if err != nil {
+				log.Fatal("Decoding error: ", err, string(data))
+			}
+
+			if !headerWritten {
+				header := "Order ID;Captured Amount;Uncaptured Amount Remaining;Refunded Amount;Remaining Amount available for refund;LastTransaction ID;Status;TimeStamp;Transaction Amount"
+				fmt.Println(header)
+				fmt.Fprintln(resultFile, header)
+				headerWritten = true
+			}
+			ts := dr.TransSum
+			lle := dr.TransInfo
+			output := fmt.Sprintf("%v;%v;%v;%v;%v;%v;%v;%v;%v\n", dr.OrderID, ts.CapturedAmount, ts.RemainingAmountToCapture, ts.RefundedAmount, ts.RemainingAmountToRefund, lle.TransactionId, lle.Status, lle.TimeStamp, lle.Amount)
+
+			fmt.Fprint(resultFile, output)
+			fmt.Print(output)
+		}
+
+
 	}
 }
 
@@ -170,6 +272,7 @@ func performDetails(config *Configuration, orders []OrderInput) {
 		// and we didn't manage to perform a capture
 		if response.StatusCode > 299 || response.StatusCode < 200 {
 			fmt.Printf("error, http status code for '%v' is '%v' with status message: '%v'\n", nil, response.StatusCode, response.Status)
+			// TODO Should write to the file if we encounter an error. Might be a wrong OrderID for instance resulting in a 404.
 			continue
 		} else {
 			dr := DetailsResponse{}
