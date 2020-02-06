@@ -19,9 +19,10 @@ import (
 type OrderInput struct {
 	OrderID       string
 	CaptureAmount int
+	IdempotencyKey string
 }
 
-type CaptureResponse struct {
+type CaptureAndRefundResponse struct {
 	OrderId      string             `json:"orderId"`
 	TransInfo    TransactionInfo    `json:"transactionInfo"`
 	TransSummary TransactionSummary `json:"transactionSummary"`
@@ -42,7 +43,7 @@ type TransactionSummary struct {
 	RemainingAmountToRefund  int `json:"remainingAmountToRefund"`
 }
 
-type CaptureRequest struct {
+type CaptureAndRefundRequest struct {
 	MerchantInfo MerchantInfo `json:"merchantInfo"`
 	Transaction  Transaction  `json:"transaction"`
 }
@@ -79,12 +80,14 @@ var configFilePath string
 var doCapture bool
 var doDetails bool
 var doCancel bool
+var doRefund bool
 var production bool
 
 func init() {
 	flag.BoolVar(&doCapture, "capture", false, "Specify this flag to perform CAPTURE on Orders specified in -orders fileName")
 	flag.BoolVar(&doDetails, "detail", false, "Specify this flag to perform a DETAILS request on Orders specified in -orders fileName")
 	flag.BoolVar(&doCancel, "cancel", false, "Specify this flag to perform a CANCEL request on Orders specified in -orders fileName")
+	flag.BoolVar(&doRefund, "refund", false, "Specify this flag to perform a REFUND request on Orders specified in -orders fileName")
 	flag.BoolVar(&production, "production", false, "Specify to use the production environment. Otherwise it will default to Test (MT)")
 	flag.StringVar(&ordersFilePath, "o", "", "Path to file text file with Order IDs'")
 	flag.StringVar(&ordersFilePath, "orders", "", "Path to file text file with Order IDs'")
@@ -99,7 +102,7 @@ func main() {
 		flag.PrintDefaults()
 		os.Exit(1)
 	}
-	if !doCapture && !doDetails && !doCancel {
+	if !doCapture && !doDetails && !doCancel && !doRefund {
 		fmt.Println("You must specify either '-capture', '-detail' or '-cancel'.")
 		flag.PrintDefaults()
 		os.Exit(1)
@@ -137,8 +140,133 @@ func main() {
 		performDetails(config, orders)
 	} else if doCancel {
 		performCancel(config, orders)
+	} else if doRefund {
+		performRefund(config, orders)
 	}
 }
+
+func performRefund(config *Configuration, orders []OrderInput) {
+	var baseUrl string
+	if production {
+		baseUrl = "https://api.vipps.no"
+	} else {
+		baseUrl = "https://apitest.vipps.no"
+	}
+
+	// File we write the results of the captures too.
+	resultFile, err := os.Create(fmt.Sprintf("refundResults_%v_%v.txt", config.MSN, time.Now().UnixNano()/1000000))
+	if err != nil {
+		log.Fatal("Cannot create file", err)
+	}
+	defer resultFile.Close()
+
+	var failedRefundCount int
+	var failedRefunds []string
+	var refundedCount int
+	var refunded []string
+	client := &http.Client{}
+	var headerWritten = false
+	for _, order := range orders {
+		// Initializing capture request struct which is equal to a refund request
+		refundRequest := CaptureAndRefundRequest{
+			MerchantInfo: MerchantInfo{
+				MerchantSerialNumber: config.MSN,
+			},
+			Transaction: Transaction{
+				Amount:          order.CaptureAmount,
+				TransactionText: fmt.Sprintf("Refund of order %v", order.OrderID),
+			},
+		}
+		reqBody, err := json.Marshal(refundRequest)
+		if err != nil {
+			log.Printf("Error marshalling request body: %v\n", err)
+		}
+
+		url := fmt.Sprintf(baseUrl+"/ecomm/v2/payments/%v/refund", order.OrderID)
+		request, err := http.NewRequest("POST", url, bytes.NewBuffer(reqBody))
+		if err != nil {
+			log.Println("refund->error: ", err)
+			failedRefundCount++
+			failedRefunds = append(failedRefunds, order.OrderID)
+			return
+		}
+
+		// Standard HTTP headers required for using the eCom v2 API.
+		request.Header.Add("Authorization", config.BearerToken)
+		request.Header.Add("Ocp-Apim-Subscription-Key", config.EComSubscriptionKey)
+		request.Header.Add("Content-Type", "application/json")
+		if len(order.IdempotencyKey) > 0 {
+			request.Header.Add("X-Request-Id", order.IdempotencyKey)
+		}
+
+		response, err := client.Do(request)
+		if err != nil {
+			log.Println("doRequest:", err)
+			failedRefundCount++
+			failedRefunds = append(failedRefunds, order.OrderID)
+			return
+		}
+
+		data, _ := ioutil.ReadAll(response.Body)
+		err = response.Body.Close()
+		if err != nil {
+			log.Println("Error when closing http body:", err)
+		}
+		if !headerWritten {
+			header := "Order ID;Transaction Status;Captured Amount;Uncaptured Amount Remaining;Refunded Amount;Remaining Amount To Refund"
+			fmt.Println(header)
+			fmt.Fprintln(resultFile, header)
+			headerWritten = true
+		}
+		// If the HTTP Status Code is anything but a 2xx code we know something went wrong
+		// and we didn't manage to perform a capture
+		if response.StatusCode > 299 || response.StatusCode < 200 {
+			var er []ErrorResponse
+			err = json.Unmarshal(data, &er)
+			failedRefundCount++
+			failedRefunds = append(failedRefunds, order.OrderID)
+			if err != nil {
+				log.Printf("Decoding error: %v => '%v'\n", err, string(data))
+				continue
+			}
+			outputString := fmt.Sprintf("%v;%v;%v;%v\n", order.OrderID, er[0].ErrorCode, er[0].ErrorGroup, er[0].ErrorMessage)
+			fmt.Print(outputString)
+			fmt.Fprint(resultFile, outputString)
+			continue
+		} else {
+			cr := CaptureAndRefundResponse{}
+			err = json.Unmarshal(data, &cr)
+			if err != nil {
+				log.Fatal("Decoding error: ", err, string(data))
+			}
+			if cr.TransInfo.Status == "Refund" {
+				refundedCount++
+				refunded = append(refunded, order.OrderID)
+			}
+			// "Order ID;Transaction Status;Uncaptured Amount Remaining;Refunded Amount;Remaining Amount To Refund"
+			outputString := fmt.Sprintf("%v;%v;%v;%v;%v;%v\n",
+				cr.OrderId,
+				cr.TransInfo.Status,
+				cr.TransSummary.CapturedAmount,
+				cr.TransSummary.RemainingAmountToCapture,
+				cr.TransSummary.RefundedAmount,
+				cr.TransSummary.RemainingAmountToCapture)
+			fmt.Print(outputString)
+			fmt.Fprint(resultFile, outputString)
+		}
+	}
+
+	fmt.Printf("Refunded: %v orders. Failed to Refund: %v\n", refundedCount, failedRefundCount)
+	if failedRefundCount > 0 {
+		fmt.Printf("Failed to refund the following orders:\n%v", strings.Join(failedRefunds, "\n"))
+		fmt.Println()
+	}
+
+	if refundedCount > 0 {
+		fmt.Printf("Refunded the following orders:\n%v", strings.Join(refunded, "\n"))
+	}
+}
+
 
 func performCancel(config *Configuration, orders []OrderInput) {
 	var baseUrl string
@@ -324,7 +452,7 @@ func performCaptures(config *Configuration, orders []OrderInput) {
 	var headerWritten = false
 	for _, order := range orders {
 		// Initializing capture request struct
-		captureReq := CaptureRequest{
+		captureReq := CaptureAndRefundRequest{
 			MerchantInfo: MerchantInfo{
 				MerchantSerialNumber: config.MSN,
 			},
@@ -387,7 +515,7 @@ func performCaptures(config *Configuration, orders []OrderInput) {
 			fmt.Fprint(resultFile, outputString)
 			continue
 		} else {
-			cr := CaptureResponse{}
+			cr := CaptureAndRefundResponse{}
 			err = json.Unmarshal(data, &cr)
 			if err != nil {
 				log.Fatal("Decoding error: ", err, string(data))
@@ -542,6 +670,7 @@ func readOrderIdCsvFile(path string) ([]OrderInput, error, [][]string) {
 	// Figure out in which order the columns are defined.
 	var orderIdCol = -1
 	var orderCapAmountCol = -1
+	var idempotencyCol = -1
 	header := lines[0]
 	for i, column := range header {
 		switch column {
@@ -549,6 +678,8 @@ func readOrderIdCsvFile(path string) ([]OrderInput, error, [][]string) {
 			orderIdCol = i
 		case "CaptureAmount":
 			orderCapAmountCol = i
+		case "IdempotencyKey":
+			idempotencyCol = i
 		}
 	}
 	if orderIdCol == -1 || orderCapAmountCol == -1 {
@@ -576,6 +707,7 @@ func readOrderIdCsvFile(path string) ([]OrderInput, error, [][]string) {
 		order := OrderInput{
 			OrderID:       line[orderIdCol],
 			CaptureAmount: amount,
+			IdempotencyKey: line[idempotencyCol],
 		}
 		orders = append(orders, order)
 	}

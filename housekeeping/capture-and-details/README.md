@@ -1,12 +1,21 @@
 # Capture or details request on eCom v2 transactions
 Requires the programming language [Go](https://golang.org/)
 
-To run a capture batch in production<br/>
+To run `capture` requests on a batch batch in production<br/>
 `go run main.go -config config.json -orders orders.txt -capture -production`<br/>
-To run in test simply omit "-production" 
 
-To run detail requests on a batch of orders<br/>
+To run `detail` requests on a batch of orders in production  
 `go run main.go -config config.json -orders orders.txt -detail -production`<br/>
+  
+
+To run `cancel` requests on a batch orders in production  
+`go run main.go -config config.json -orders orders.txt -cancel -production`    
+  
+
+To run `refund` requests on a batch of orders in production  
+`go run main.go -config config.json -orders orders.txt -refund -production`  
+
+**To run in test (MT) simply omit "-production"**  
 
 `conf.json` and `orders.txt` need to either be filled in or you can refer to some other file above.
 
@@ -15,16 +24,21 @@ Running program without any arguments will give you the list of parameters avail
 ## Input
 ### Orders input
 The order input _must_ be filled with a single OrderID and the amount to be captured per line.<br/>
+For REFUND and CAPTURE you also have the possibility to add a `IdempotencyKey` that will be used in the request  
+this way you will not be able to capture or refund the same amount twice.  
+  
+The `IdempotencyKey` can be empty, but the column must exist in the order file.
+
 Regardless of if you wish to perform a details request or a capture on the orders.<br/>
 *If you only wish to perform a details request just fill in 0*
 ```
-OrderID;CaptureAmount
-Woo123;0
-Woo200;5000
+OrderID;CaptureAmount;IdempotencyKey
+Woo123;0;
+Woo200;5000;
 ```
 **Note** The amount captured should be an integer and "øre" (cent in EUR/USD) in case of NOK.<br/>
 Thus "NOK 50,95" would written as 5095 and NOK 50,- would be 5000.<br/>
-**0 means "capture everything"**
+**0 means "capture/refund everything"**
 
 ### Configuration file
 You'll find the required information for this file in the developer portal.<br/>
