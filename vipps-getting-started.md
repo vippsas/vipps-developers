@@ -5,23 +5,26 @@ after you have received the welcome email.
 
 Version: 2.1.2.
 
-- [First of all](#first-of-all)
-  * [API documentation](#api-documentation)
-- [Getting a test account (and a production account)](#getting-a-test-account-and-a-production-account))
-- [Getting the API keys](#getting-the-api-keys)
-  * [API key details](#api-key-details)
-- [API products](#api-products)
-  * [Vipps-API](#vipps-api)
-  * [Legacy API products](#legacy-api-products)
-- [Quick overview of how to make an API call](#quick-overview-of-how-to-make-an-api-call)
-  * [Get an access token](#get-an-access-token)
-    + [Request](#request)
-    + [Response](#response)
-    + [HTTP response codes](#http-response-codes)
-  * [Make an eCom v2 API call](#make-an-ecom-v2-api-call)
-- [Questions?](#questions-)
+## Table of contents
+  - [First of all](#first-of-all)
+    - [API documentation](#api-documentation)
+  - [Getting a test account (and a production account)](#getting-a-test-account-and-a-production-account)
+  - [Getting the API keys](#getting-the-api-keys)
+    - [The API products for a salesunit](#the-api-products-for-a-salesunit)
+    - [API keys for a salesunit](#api-keys-for-a-salesunit)
+    - [API key details](#api-key-details)
+  - [API products](#api-products)
+    - [Vipps-API](#vipps-api)
+    - [Legacy API products](#legacy-api-products)
+  - [Quick overview of how to make an API call](#quick-overview-of-how-to-make-an-api-call)
+    - [Get an access token](#get-an-access-token)
+      - [Request](#request)
+      - [Response](#response)
+      - [HTTP response codes](#http-response-codes)
+    - [Make an eCom v2 API call](#make-an-ecom-v2-api-call)
+- [Questions?](#questions)
 
-# First of all
+## First of all
 
 Make sure you have a customer relationship with Vipps, and that you have
 an active subscription for the relevant Vipps solution(s):
@@ -36,13 +39,13 @@ a Vipps customer.
 For general questions about products, please use the contact form:
 https://www.vipps.no/bedrift/kontakt-oss
 
-## API documentation
+### API documentation
 
 All Vipps APIs are documented on GitHub: https://github.com/vippsas/
 
 Please see the general developer information: https://github.com/vippsas/vipps-developers
 
-# Getting a test account (and a production account)
+## Getting a test account (and a production account)
 
 The fastest way to get a Vipps developer account for the test and production
 environments, is to
@@ -58,7 +61,7 @@ Please note: If you plan to use Vipps through a Partner or a PSP, you will have 
 order the appropriate Vipps solution, and then contact the Partner or PSP
 to have _them_ help you with developer access.
 
-# Getting the API keys
+## Getting the API keys
 
 API keys are available in the Vipps Portal, under the `Utvikler` menu item in the top menu:
 https://portal.vipps.no
@@ -77,27 +80,27 @@ API keys to you.
 email, as the API keys give access to transferring money.
 Vipps will never ask for your API keys, and you should keep them secret.
 
-## The API products for a salesunit
+### The API products for a salesunit
 
 ![portal.vipps.no: The API products for a sales unit](images/portalvippsno-salesunit-products.png)
 
-## API keys for a salesunit
+### API keys for a salesunit
 
 ![portal.vipps.no: The API keys for a sales unit](images/portalvippsno-salesunit-keys.png)
 
-## API key details
+### API key details
 
-| Keys              |  Value                                       |
-|------------------ |----------------------------------------------|
+| Keys                     | Value                                            |
+| ------------------------ | ------------------------------------------------ |
 | `Vipps-Subscription-Key` | This is used in the header for all API requests. |
-| `client_id`       | The "username"  |
-| `client_secret`   | The "password". Keep this secret.|
+| `client_id`              | The "username"                                   |
+| `client_secret`          | The "password". Keep this secret.                |
 
 **Please note:** `Vipps-Subscription-Key` was previously called `Ocp-Apim-Subscription-Key`.
 The legacy name `Ocp-Apim-Subscription-Key` _must still be used in requests and code_,
 but we are working to make `Vipps-Subscription-Key` work ASAP.
 
-# API products
+## API products
 
 An _API product_ is a "package" consisting of one or more APIs.
 
@@ -108,29 +111,29 @@ This is no longer the case: New customers now get the `Vipps-API` API product.
 The Vipps-API API product give access to all current APIs, and the API keys for the Vipps eCom v1 and v2 APIs have been “upgraded” to include the same APIs as Vipps API.
 
 
-## Vipps-API
+### Vipps-API
 
 This API product includes the following APIs:
 
-| API              | Description                         | Documentation |
-| ---------------- | ----------------------------------- | ------------- |
-| Access Token   | Required to obtain a JWT | See: [Get an access token](#get-an-access-token) |
-| eCom v2        | eCommerce, including express checkout | https://github.com/vippsas/vipps-ecom-api  |
-| Recurring      | Recurring API            | https://github.com/vippsas/vipps-recurring-api  |
-| Vipps Log In   | Identification           | https://github.com/vippsas/vipps-login-api  |
+| API          | Description                           | Documentation                                    |
+| ------------ | ------------------------------------- | ------------------------------------------------ |
+| Access Token | Required to obtain a JWT              | See: [Get an access token](#get-an-access-token) |
+| eCom v2      | eCommerce, including express checkout | https://github.com/vippsas/vipps-ecom-api        |
+| Recurring    | Recurring API                         | https://github.com/vippsas/vipps-recurring-api   |
+| Vipps Log In | Identification                        | https://github.com/vippsas/vipps-login-api       |
 
 Vipps-API also includes some legacy APIs:
 
-| API              | Description                         | Documentation |
-| ---------------- | ----------------------------------- | ------------- |
-| eCom v1          | eCommerce, legacy version, to be phased out. |  https://github.com/vippsas/vipps-ecom-api-v1 |
-| Signup and Login | Legacy API (superseded by Vipps Log In), end of life Dec 31 2019 |  https://github.com/vippsas/vipps-signuplogin-api |
+| API              | Description                                                      | Documentation                                    |
+| ---------------- | ---------------------------------------------------------------- | ------------------------------------------------ |
+| eCom v1          | eCommerce, legacy version, to be phased out.                     | https://github.com/vippsas/vipps-ecom-api-v1     |
+| Signup and Login | Legacy API (superseded by Vipps Log In), end of life Dec 31 2019 | https://github.com/vippsas/vipps-signuplogin-api |
 
 If you are still using a legacy API, you should upgrade as soon as possible.
 The best way to keep up to date of changes is to
 [star the API repository on GitHub](https://help.github.com/en/articles/about-stars).
 
-## Legacy API products
+### Legacy API products
 
 Old API products have the `ZZZ` prefix to make them easy to distinguish,
 and to always sort them at the bottom of lists.
@@ -147,9 +150,9 @@ unless there are technical problems.
 The current APIs offer substantial improvements over the legacy APIs, and
 we strongly recommend upgrading to the current version as soon as possible.
 
-# Quick overview of how to make an API call
+## Quick overview of how to make an API call
 
-## Get an access token
+### Get an access token
 
 The Access Token API provides the JWT bearer token used in the `Authorization`
 header, required in all Vipps API calls.
@@ -159,7 +162,7 @@ The API keys needed the access token are the same as for the API products:
 * client_secret: <client_secret>
 * Ocp-Apim-Subscription-Key: <Vipps-Subscription-Key>
 
-### Request
+#### Request
 
 ```
 POST https://apitest.vipps.no/accessToken/get
@@ -176,7 +179,7 @@ Header details:
 | `client_secret`          | Base 64 encoded string | Client Secret for the merchant   |
 | `Vipps-Subscription-Key` | Base 64 encoded string | Subscription key for the product |
 
-### Response
+#### Response
 
 ```
 HTTP 200 OK
@@ -193,14 +196,14 @@ HTTP 200 OK
 
 JWT properties:
 
-| Name             | Description                                 |
-| ---------------- | ------------------------------------------- |
-| `token_type`     | It’s a `Bearer` token. The word `Bearer` should be added before the token |
-| `expires_in`     | Token expiry duration in seconds. |
-| `ext_expires_in` | Extra expiry time. Not used. |
-| `expires_on`     | Token expiry time in epoch time format. |
-| `not_before`     | Token creation time in epoch time format. |
-| `resource`       | For the product for which token has been issued. |
+| Name             | Description                                                                      |
+| ---------------- | -------------------------------------------------------------------------------- |
+| `token_type`     | It’s a `Bearer` token. The word `Bearer` should be added before the token        |
+| `expires_in`     | Token expiry duration in seconds.                                                |
+| `ext_expires_in` | Extra expiry time. Not used.                                                     |
+| `expires_on`     | Token expiry time in epoch time format.                                          |
+| `not_before`     | Token creation time in epoch time format.                                        |
+| `resource`       | For the product for which token has been issued.                                 |
 | `access_token`   | The actual access token that needs to be used in `Authorization` request header. |
 
 **Please note:** The JWT (access token) is valid for 1 hour in MT (test) and 24 hours in Production.
@@ -210,15 +213,15 @@ To be sure that you are using correct time please use `expires_in` or `expires_o
 
 This API returns the following HTTP statuses in the responses:
 
-| HTTP status         | Description                                 |
-| ------------------- | ------------------------------------------- |
-| `200 OK`            | Request successful.                          |
-| `400 Bad Request`   | Invalid request, see the `error` for details.  |
-| `401 Unauthorized`  | Invalid authorization.                         |
-| `403 Forbidden`     | Authentication ok, but credentials lacks authorization.  |
-| `500 Server Error`  | An internal Vipps problem.  |
+| HTTP status        | Description                                             |
+| ------------------ | ------------------------------------------------------- |
+| `200 OK`           | Request successful.                                     |
+| `400 Bad Request`  | Invalid request, see the `error` for details.           |
+| `401 Unauthorized` | Invalid authorization.                                  |
+| `403 Forbidden`    | Authentication ok, but credentials lacks authorization. |
+| `500 Server Error` | An internal Vipps problem.                              |
 
-## Make an eCom v2 API call
+### Make an eCom v2 API call
 
 See the eCom v2 API documentation for
 [Initiate payment](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#initiate-payment).
