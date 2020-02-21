@@ -33,11 +33,11 @@ See our [Postman guide](https://github.com/vippsas/vipps-developers/blob/master/
 We have made some example code available, in hope that it may be useful:
 https://github.com/vippsas/vipps-developers/tree/master/code-examples
 
-# Vipps design guidelines
+## Vipps design guidelines
 
 Guidelines, logos, buttons, etc: https://github.com/vippsas/vipps-design-guidelines
 
-# Vipps request servers
+## Vipps request servers
 
 Requests made by Vipps are made from the servers specified below.
 Vipps normally only uses one server at a time, and change servers approximately every three months.
@@ -75,7 +75,7 @@ For API products where Vipps makes requests to your servers, please make sure th
 
 **Note:** Vipps may change the IP addresses for the request servers. To ensure that you are whitelisting the correct IP addresses please use these hostnames and DNS, and automatically update your firewall rules if there are DNS changes.
 
-# Additional developer resources
+## Additional developer resources
 
 * Developer overview: https://vipps.no/developer
 * High-level overview of the API documentation: https://vipps.no/developer/documentation/
