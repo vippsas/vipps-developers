@@ -32,7 +32,7 @@ Merchants with a "gross settlement" contract receive the _full amount_
 of the users' payments
 _including_ the Vipps fees, and are then invoiced for the Vipps fees.
 
-If the merchant's organization number is registered as an EHF recipient, 
+If the merchant's organization number is registered as an EHF recipient,
 Vipps sends and EHF. If not, the invoices are sent by email.
 To change invoice recipient, please
 [contact customer service](https://vipps.no/kontakt-oss/bedrift/vipps/).
@@ -58,6 +58,11 @@ the data processor is Vipps or the merchant. See [GDPR](#gdpr) below.
 Settlement reports are available by 12:00 noon. The reports are generated around
 01-03 at night, but may be delayed due to technical changes, maintenance in
 various systems, etc.
+
+**Impoertant:** If a merchant has refunded more money than the sum of payments,
+so that the balance is negative, Vipps will not create settlement reports.
+Vipps covers the negative balance for a (short) while, but if it persists,
+Vipps will send an invoice to the merchant to settle the balance.
 
 ### Daily reports
 
