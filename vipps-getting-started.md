@@ -78,11 +78,11 @@ API keys to you.
 email, as the API keys give access to transferring money.
 Vipps will never ask for your API keys, and you should keep them secret.
 
-## The API products for a salesunit
+### The API products for a salesunit
 
 ![portal.vipps.no: The API products for a sales unit](images/portalvippsno-salesunit-products.png)
 
-## API keys for a salesunit
+### API keys for a salesunit
 
 ![portal.vipps.no: The API keys for a sales unit](images/portalvippsno-salesunit-keys.png)
 
