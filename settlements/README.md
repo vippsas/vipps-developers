@@ -37,6 +37,9 @@ Vipps sends and EHF. If not, the invoices are sent by email.
 To change invoice recipient, please
 [contact customer service](https://vipps.no/kontakt-oss/bedrift/vipps/).
 
+See [Availability](#availability) below for information about settlement files
+when the balance is negative.
+
 # Settlement report formats
 
 Settlement reports are provided in these formats:
@@ -59,7 +62,7 @@ Settlement reports are available by 12:00 noon. The reports are generated around
 01-03 at night, but may be delayed due to technical changes, maintenance in
 various systems, etc.
 
-**Impoertant:** If a merchant has refunded more money than the sum of payments,
+**Important:** If a merchant has refunded more money than the sum of payments,
 so that the balance is negative, Vipps will not create settlement reports.
 Vipps covers the negative balance for a (short) while, but if it persists,
 Vipps will send an invoice to the merchant to settle the balance.
