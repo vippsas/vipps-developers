@@ -100,7 +100,7 @@ but we are working to make `Vipps-Subscription-Key` work ASAP.
 
 ## API keys for different use
 
-The same API keys are used for manye types of integration:
+The same API keys are used for many types of integration:
 Direct integration,
 native apps for iOS and Android,
 point of sale integrations,
