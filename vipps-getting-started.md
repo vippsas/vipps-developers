@@ -3,7 +3,7 @@
 This guide covers what you need to get started with Vipps development,
 after you have received the welcome email.
 
-Version: 2.1.3.
+Version: 2.1.4.
 
 - [First of all](#first-of-all)
   * [API documentation](#api-documentation)
@@ -100,7 +100,10 @@ but we are working to make `Vipps-Subscription-Key` work ASAP.
 
 ## API keys for different use
 
-The same API keys are used for direct integration,
+The same API keys are used for manye types of integration:
+Direct integration,
+native apps for iOS and Android,
+point of sale integrations,
 [WooCommerce](https://github.com/vippsas/vipps-woocommerce),
 [Magento](https://github.com/vippsas/vipps-magento) (both 1 and 2),
 [Episerver](https://github.com/vippsas/vipps-episerver),
