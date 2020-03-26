@@ -10,6 +10,7 @@ Version: 2.1.3.
 - [Getting a test account (and a production account)](#getting-a-test-account-and-a-production-account))
 - [Getting the API keys](#getting-the-api-keys)
   * [API key details](#api-key-details)
+  * [API keys for different use](#api-keys-for-different-use)
 - [API products](#api-products)
   * [Vipps-API](#vipps-api)
   * [Legacy API products](#legacy-api-products)
@@ -77,16 +78,6 @@ API keys to you.
 email, as the API keys give access to transferring money.
 Vipps will never ask for your API keys, and you should keep them secret.
 
-## API keys for different use
-
-The same API keys are used for direct integration,
-[WooCommerce](https://github.com/vippsas/vipps-woocommerce),
-[Magento](https://github.com/vippsas/vipps-magento) (both 1 and 2),
-[Episerver](https://github.com/vippsas/vipps-episerver),
-[Shopify](https://github.com/vippsas/vipps-shopify),
-[Drupal](https://github.com/vippsas/vipps-drupal)
-and any other solution based on the Vipps eCom API v2.
-
 ## The API products for a salesunit
 
 ![portal.vipps.no: The API products for a sales unit](images/portalvippsno-salesunit-products.png)
@@ -106,6 +97,16 @@ and any other solution based on the Vipps eCom API v2.
 **Please note:** `Vipps-Subscription-Key` was previously called `Ocp-Apim-Subscription-Key`.
 The legacy name `Ocp-Apim-Subscription-Key` _must still be used in requests and code_,
 but we are working to make `Vipps-Subscription-Key` work ASAP.
+
+## API keys for different use
+
+The same API keys are used for direct integration,
+[WooCommerce](https://github.com/vippsas/vipps-woocommerce),
+[Magento](https://github.com/vippsas/vipps-magento) (both 1 and 2),
+[Episerver](https://github.com/vippsas/vipps-episerver),
+[Shopify](https://github.com/vippsas/vipps-shopify),
+[Drupal](https://github.com/vippsas/vipps-drupal)
+and any other solution based on the Vipps eCom API v2.
 
 # API products
 
