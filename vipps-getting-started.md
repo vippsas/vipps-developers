@@ -3,7 +3,7 @@
 This guide covers what you need to get started with Vipps development,
 after you have received the welcome email.
 
-Version: 2.1.2.
+Version: 2.1.3.
 
 - [First of all](#first-of-all)
   * [API documentation](#api-documentation)
@@ -76,6 +76,16 @@ API keys to you.
 **Please note:** Vipps can not provide API keys in any other way, such as by
 email, as the API keys give access to transferring money.
 Vipps will never ask for your API keys, and you should keep them secret.
+
+## API keys for different use
+
+The same API keys are used for direct integration,
+[WooCommerce](https://github.com/vippsas/vipps-woocommerce),
+[Magento](https://github.com/vippsas/vipps-magento) (both 1 and 2),
+[Episerver](https://github.com/vippsas/vipps-episerver),
+[Shopify](https://github.com/vippsas/vipps-shopify),
+[Drupal](https://github.com/vippsas/vipps-drupal)
+and any other solution based on the Vipps eCom API v2.
 
 ## The API products for a salesunit
 
