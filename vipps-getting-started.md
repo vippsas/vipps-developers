@@ -3,7 +3,7 @@
 This guide covers what you need to get started with Vipps development,
 after you have received the welcome email.
 
-Version: 2.1.4.
+Version: 2.1.5.
 
 - [First of all](#first-of-all)
   * [API documentation](#api-documentation)
@@ -115,12 +115,16 @@ and any other solution based on the Vipps eCom API v2.
 
 An _API product_ is a "package" consisting of one or more APIs.
 
-Vipps has previously had separate API keys for each API product, and a set of API keys were directly linked to one sale unit. This meant that customers needed to keep track of multiple API keys, and that access to a new API required a new sale unit.
+Vipps has previously had separate API keys for each API product, and a set of
+API keys were directly linked to one sale unit. This meant that customers
+needed to keep track of multiple API keys, and that access to a new API
+required a new sale unit.
 
 This is no longer the case: New customers now get the `Vipps-API` API product.
 
-The Vipps-API API product give access to all current APIs, and the API keys for the Vipps eCom v1 and v2 APIs have been “upgraded” to include the same APIs as Vipps API.
-
+The Vipps-API API product give access to all current APIs, and the API keys for
+the Vipps eCom v1 and v2 APIs have been “upgraded” to include the same APIs as
+Vipps API.
 
 ## Vipps-API
 
@@ -133,12 +137,16 @@ This API product includes the following APIs:
 | Recurring      | Recurring API            | https://github.com/vippsas/vipps-recurring-api  |
 | Vipps Log In   | Identification           | https://github.com/vippsas/vipps-login-api  |
 
-Vipps-API also includes some legacy APIs:
+Vipps-API also includes some _legacy_ APIs:
 
 | API              | Description                         | Documentation |
 | ---------------- | ----------------------------------- | ------------- |
-| eCom v1          | eCommerce, legacy version, to be phased out. |  https://github.com/vippsas/vipps-ecom-api-v1 |
+| eCom v1          | eCommerce, legacy version, to be phased out on September 1 2020. |  https://github.com/vippsas/vipps-ecom-api-v1 |
 | Signup and Login | Legacy API (superseded by Vipps Log In), end of life Dec 31 2019 |  https://github.com/vippsas/vipps-signuplogin-api |
+
+See more details about the
+[phase-out of eCom API v1](https://github.com/vippsas/vipps-ecom-api/blob/master/v1-deprecation.md)
+on September 1 2020.
 
 If you are still using a legacy API, you should upgrade as soon as possible.
 The best way to keep up to date of changes is to
@@ -152,7 +160,7 @@ One example is `ZZZ eCommerce-Classic-Services-API`.
 
 The legacy API products prefixed with `ZZZ` have been updated to also include the
 current, corresponding APIs in Vipps-API.
-This means that a salesunit that could previously only use eCom v1,
+This means that a sale unit that could previously only use eCom v1,
 can now also use eCom v2, with the same API keys as before.
 
 The legacy API products still work, and there is no need to "upgrade" to Vipps-API,
