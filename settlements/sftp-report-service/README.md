@@ -8,9 +8,6 @@ transaction) or negative (e.g. due to refunds), a settlement will not be created
 until the balance becomes positive. This means that a settlement report may in
 some cases include transactions spanning several days back in time.
 
-Please see 
-[the main page for settlements](https://github.com/vippsas/vipps-developers/tree/master/settlements/sftp-report-service#how-to-set-up-users-for-connecting-to-the-sftp-server) 
-for more information
 
 ## Reports
 
