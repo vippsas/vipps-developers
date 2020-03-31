@@ -33,7 +33,7 @@ The SFTP report service is used for downloading settlement reports in the follow
 * [Excel](../xslx) (.xslx)
 
 SFTP-users are created, associated with a public key, and given access to the reports of
-one or more merchants. 
+one or more merchants.
 
 More information about SFTP: [SSH File Transfer Protocol](https://en.wikipedia.org/wiki/SSH_File_Transfer_Protocol).
 
@@ -55,15 +55,15 @@ The address of the SFTP server is `sftp.vipps.no`.
 
 This is the directory structure:
 ```
-/settlements/[inbox|archive]/[file extension]/[orgnum]/[sales unit serial]/[sales unit serial]-[settlement number].[file extension]
+/settlements/[inbox|archive]/[file extension]/[orgno.]/[merchant serial number]/[merchant serial number]-[settlement number].[file extension]
 ```
 
 ### How to use it
 
-Reports under `/settlements/inbox` can be "deleted" (actually hidden) 
-in order to keep track of already processed reports. 
+Reports under `/settlements/inbox` can be "deleted" (actually hidden)
+in order to keep track of already processed reports.
 
-Reports are deleted by using the `rm` command in SFTP or the delete function in your SFTP interface. 
+Reports are deleted by using the `rm` command in SFTP or the delete function in your SFTP interface.
 
 Reports under `/settlements/archive` cannot be removed.
 
