@@ -70,7 +70,6 @@ Example files, with full path:
 /settlements/archive/csv/998724341/16655/16655-2000001.csv
 ```
 
-
 ### How to use it
 
 Reports under `/settlements/inbox` can be "deleted" (actually hidden)
@@ -79,6 +78,11 @@ in order to keep track of already processed reports.
 Reports are deleted by using the `rm` command in SFTP or the delete function in your SFTP interface.
 
 Reports under `/settlements/archive` cannot be removed.
+
+**Important:** All files are generated on-the-fly. Some SFTP clients
+check the file size with a `ls` command. Since the files have not yet
+been created, the service can not provide correct size information.
+It is therefore not possible to check the size of a file with `ls`.
 
 #### Example SFTP session
 
