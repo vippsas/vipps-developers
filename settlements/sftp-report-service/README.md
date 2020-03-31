@@ -57,11 +57,19 @@ This is the directory structure:
 ```
 /settlements/[inbox|archive]/[file extension]/[orgno.]/[merchant serial number]/[merchant serial number]-[settlement number].[file extension]
 ```
-
 The `orgno.` is the company's organization number, nine digits.
 The `merchant serial number` (also called MSN) is the unique five or six digit
 id for the sale unit.
-In the example below, the `orgno.` is 998724341, and the `merchant serial number` is 16655.
+
+In the examples on this page, the `orgno.` is 998724341, and the `merchant serial number` is 16655.
+
+Example files, with full path:
+```
+/settlements/inbox/xml/998724341/16655/16655-2000001.xml
+/settlements/inbox/pdf/998724341/16655/16655-2000001.pdf
+/settlements/archive/csv/998724341/16655/16655-2000001.csv
+```
+
 
 ### How to use it
 
