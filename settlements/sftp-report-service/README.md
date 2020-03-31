@@ -1,5 +1,13 @@
 # Vipps SFTP Report Service
 
+This service allows for retrieval of settlement files with SFTP.
+
+See [the general information about settlements and reports](../) for information
+about the report formats, availability of personal information about customers,
+GDPR, etc.
+
+Vipps does not have an API to retrieve settlements files.
+
 ## Settlements
 
 Settlements are created every day, but only as long as the balance is positive.
@@ -8,20 +16,17 @@ transaction) or negative (e.g. due to refunds), a settlement will not be created
 until the balance becomes positive. This means that a settlement report may in
 some cases include transactions spanning several days back in time.
 
-
 ## Reports
 
 Settlement reports should be available by 12:00 on the day after the
 transactions were made, as long as a settlement were created (i.e. the balance
-were positive). There will never be more than one new file per. sales unit each
+was positive).
+
+There will never be more than one new file per sales unit each
 day (and there may be none).
 
 Note that the reports are generated on-demand, which is why the file size is
 reported as zero (the size is unknown at the time of listing).
-
-See [the general information about settlements and reports](../) for information
-about the report formats, availability of personal information about customers,
-GDPR, etc.
 
 ## SFTP Service
 
@@ -79,9 +84,10 @@ Reports are deleted by using the `rm` command in SFTP or the delete function in 
 
 Reports under `/settlements/archive` cannot be removed.
 
-**Important:** All files are generated on-the-fly. Some SFTP clients
+**Important:** The reports are generated on-demand. Some SFTP clients
 check the file size with a `ls` command. Since the files have not yet
-been created, the service can not provide correct size information.
+been created, the file size is reported as zero.
+The service can not provide correct size information.
 It is therefore not possible to check the size of a file with `ls`.
 
 #### Example SFTP session
