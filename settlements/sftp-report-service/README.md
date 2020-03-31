@@ -58,6 +58,11 @@ This is the directory structure:
 /settlements/[inbox|archive]/[file extension]/[orgno.]/[merchant serial number]/[merchant serial number]-[settlement number].[file extension]
 ```
 
+The `orgno.` is the company's organization number, nine digits.
+The `merchant serial number` (also called MSN) is the unique five or six digit
+id for the sale unit.
+In the example below, the `orgno.` is 998724341, and the `merchant serial number` is 16655.
+
 ### How to use it
 
 Reports under `/settlements/inbox` can be "deleted" (actually hidden)
