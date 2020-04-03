@@ -11,6 +11,7 @@ This repository contains various resources for Vipps developers, including:
 ## Table of contents
 
 - [API documentation](#api-documentation)
+- [Plugins](#plugins)
 - [Status page](#status-page)
   * [Status page for the test environment](#status-page-for-the-test-environment)
   * [Status page for the production environment](#status-page-for-the-production-environment)
@@ -35,6 +36,19 @@ This repository contains various resources for Vipps developers, including:
 # API documentation
 
 See: [Getting started](vipps-getting-started.md).
+
+# Plugins
+
+Vipps offer several open source plugins:
+* Vipps for WooCommerce: https://github.com/vippsas/vipps-woocommerce
+* Vipps recurring payments for WooCommerce: https://github.com/vippsas/vipps-recurring-woocommerce
+* Vipps Login for WordPress: https://github.com/vippsas/vipps-login-wordpress
+* Vipps for Magento 2: https://github.com/vippsas/vipps-magento
+* Vipps Login for Magento: https://github.com/vippsas/vipps-login-magento
+* Vipps for Magento 1: https://github.com/vippsas/vipps-magento-v1
+* Vipps for Episerver: https://github.com/vippsas/vipps-episerver
+* Vipps for Drupal: https://github.com/vippsas/vipps-drupal
+* * Vips for Shopify: https://github.com/vippsas/vipps-shopify
 
 # Status page
 
@@ -113,7 +127,7 @@ If you have not yet received the welcome email, see the
 [standard reply](https://github.com/vippsas/vipps-developers/blob/master/housekeeping/response-apinokler.txt)
 (in Norwegian) for requests for this.
 
-There is no way to get a test user in the production environment. 
+There is no way to get a test user in the production environment.
 The production environment only contains real users and data.
 
 See also: [Vipps Test Data](https://github.com/vippsas/vipps-developers/blob/master/testdata/README.md).
