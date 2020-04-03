@@ -40,15 +40,15 @@ See: [Getting started](vipps-getting-started.md).
 # Plugins
 
 Vipps offer several open source plugins:
-* Vipps for WooCommerce: https://github.com/vippsas/vipps-woocommerce
-* Vipps recurring payments for WooCommerce: https://github.com/vippsas/vipps-recurring-woocommerce
-* Vipps Login for WordPress: https://github.com/vippsas/vipps-login-wordpress
-* Vipps for Magento 2: https://github.com/vippsas/vipps-magento
-* Vipps Login for Magento: https://github.com/vippsas/vipps-login-magento
-* Vipps for Magento 1: https://github.com/vippsas/vipps-magento-v1
-* Vipps for Episerver: https://github.com/vippsas/vipps-episerver
-* Vipps for Drupal: https://github.com/vippsas/vipps-drupal
-* * Vips for Shopify: https://github.com/vippsas/vipps-shopify
+* WooCommerce: https://github.com/vippsas/vipps-woocommerce
+* WooCommerce: Recurring payments: https://github.com/vippsas/vipps-recurring-woocommerce
+* WordPress: Login: https://github.com/vippsas/vipps-login-wordpress
+* Magento 2: https://github.com/vippsas/vipps-magento
+* Magento 2: Login: https://github.com/vippsas/vipps-login-magento
+* Magento 1: https://github.com/vippsas/vipps-magento-v1
+* Episerver: https://github.com/vippsas/vipps-episerver
+* Drupal: https://github.com/vippsas/vipps-drupal
+* Shopify: https://github.com/vippsas/vipps-shopify
 
 # Status page
 
