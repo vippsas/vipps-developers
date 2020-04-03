@@ -39,7 +39,7 @@ See: [Getting started](vipps-getting-started.md).
 
 # Plugins
 
-Vipps offer several open source plugins:
+Vipps offers several open source plugins:
 * WooCommerce: https://github.com/vippsas/vipps-woocommerce
 * WooCommerce: Recurring payments: https://github.com/vippsas/vipps-recurring-woocommerce
 * WordPress: Login: https://github.com/vippsas/vipps-login-wordpress
