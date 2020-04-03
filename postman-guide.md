@@ -54,7 +54,7 @@ You might want to make the same request from your own application. You can gener
 ![Vipps Developer Postman: Tabs](images/postman-tabs.png)
 
 ## Postman variables overview
-This is an overview of where to obtain Postman values for each of our APIs.
+This is an overview of where to obtain Postman values for each of our APIs. Please read our [Get started guide](vipps-getting-started.md) for information about access to VippsPortal and credentials.
 
 ### Common variables
 These variables are required for all Vipps APIs
