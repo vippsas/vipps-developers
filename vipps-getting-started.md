@@ -78,5 +78,5 @@ Click `Show keys` on the relevant sale unit to display credentials.
 
 ## Your first Vipps API request
 
-We reccomend getting familiar with the Vipps APIs using Postman. We have a guide, complete with resources for all Vipps APIs available [here](postman-guide.md)
+We reccomend getting familiar with the Vipps APIs using Postman. We have a guide, complete with resources for all Vipps APIs available [here](https://github.com/vippsas/vipps-developers/blob/devpages-restructure/postman-guide.md)
 
