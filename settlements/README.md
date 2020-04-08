@@ -51,10 +51,16 @@ Settlement reports are provided in these formats:
 | PDF    | [PDF](pdf/Vipps-oppgjørsrapport-16655-2018-09-23.pdf) | - |
 | XLSX   | [XLSX](xlsx/Vipps-oppgjørsrapport-16655-2018-09-23.xlsx) | - |
 
-Settlements reports are available both with and without personal details of the customer.
-
+**Important:** Settlements reports are available both with and without personal details of the customer.
 This is due to [GDPR](https://ec.europa.eu/info/law/law-topic/data-protection_en), and whether
 the data processor is Vipps or the merchant. See [GDPR](#gdpr) below.
+
+Payments made with 
+[Vippsnummer](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-i-butikk/ta-betalt-med-vipps/) 
+do not have an `orderId`. 
+If you need an `orderId` to identify a payment, you need to use 
+[Vipps på nett](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/).
+See also the Vipps eCom API.
 
 ## Availability
 
