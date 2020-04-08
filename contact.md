@@ -24,7 +24,7 @@ If you do not have a technical issue, the fastest way to get help is to use the 
 * Questions about _ordering_ Vipps through a partner (also for partners): partnerbestilling@vipps.no
 * If you have questions about the plugins, the best way to get help is from the plugin developers directly:
   - WooCommerce: Please use [the support forum on wordpress.org](https://wordpress.org/support/plugin/woo-vipps/).
-  - Magento: Please [submit an issue on GitHub](https://github.com/vippsas/vipps-magento).
+  - Magento: Please contact vipps@vaimo.no or [submit an issue on GitHub](https://github.com/vippsas/vipps-magento).
   - Drupal: Please see [the plugin on drupal.org](https://www.drupal.org/project/commerce_vipps).
   - Episerver: TBD (not yet officially released).
   - Shopify: TBD (not yet officially released).
