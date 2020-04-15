@@ -32,7 +32,7 @@ If you do not have a technical issue, the fastest way to get help is to use the 
 | Vipps for [Drupal](https://www.drupal.org/project/commerce_vipps) | Please see [the plugin on drupal.org](https://www.drupal.org/project/commerce_vipps) |
 | Vipps for [Episerver](https://github.com/vippsas/vipps-episerver) | Please [submit an issue on GitHub](https://github.com/vippsas/vipps-episerver) |
 | Vipps for [Shopify](https://www.vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/shopify/) | For the plugin, not Shopify itself: Please [submit an issue on GitHub](https://github.com/vippsas/vipps-shopify) |
-| [Settlements](https://github.com/vippsas/vipps-developers/tree/master/settlements), invoices or similar | Please see [Settlements] |
+| [Settlements](https://github.com/vippsas/vipps-developers/tree/master/settlements), invoices or similar | Please see [Settlements](https://github.com/vippsas/vipps-developers/tree/master/settlements) |
 
 For _**technical**_ issues: Please see below.
 
