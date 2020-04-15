@@ -55,10 +55,10 @@ Settlement reports are provided in these formats:
 This is due to [GDPR](https://ec.europa.eu/info/law/law-topic/data-protection_en), and whether
 the data processor is Vipps or the merchant. See [GDPR](#gdpr) below.
 
-Payments made with 
-[Vippsnummer](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-i-butikk/ta-betalt-med-vipps/) 
-do not have an `orderId`. 
-If you need an `orderId` to identify a payment, you need to use 
+Payments made with
+[Vippsnummer](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-i-butikk/ta-betalt-med-vipps/)
+do not have an `orderId`.
+If you need an `orderId` to identify a payment, you need to use
 [Vipps på nett](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/).
 See also the Vipps eCom API.
 
@@ -130,3 +130,13 @@ OCR files are no longer provided by Vipps.
 Documentation for the legacy solution: [Vipps Faktura](ocr/vipps-invoice-api-vipps-faktura.pdf).
 
 Details: See the [ocr](ocr/) folder.
+
+## Questions?
+
+We're always happy to help with code or other questions you might have!
+
+For customer-specific questions about settlements, please contact operations@vipps.no.
+
+For general questions: Please create an [issue](https://github.com/vippsas/vipps-ecom-api/issues),
+a [pull request](https://github.com/vippsas/vipps-ecom-api/pulls),
+or [contact us](https://github.com/vippsas/vipps-developers/blob/master/contact.md).

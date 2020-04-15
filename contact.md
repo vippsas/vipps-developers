@@ -14,21 +14,23 @@ Hello! 👋 We love email!
 
 # We help with technical issues
 
-We help with _**technical**_ issues from developers, such as questions about using our APIs. 
+We help with _**technical**_ issues from developers, such as questions about using our APIs.
 If you do not have a technical issue, the fastest way to get help is to use the right method:
 
-* General questions: See the [contact info for companies on vipps.no](https://www.vipps.no/kontakt-oss/bedrift/)
-* Questions about applications for Vipps products: See the [contact info for companies on vipps.no](https://www.vipps.no/kontakt-oss/bedrift/)
-* Suggestions for improvements to Vipps products: Use [this form](https://www.vipps.no/kontakt-oss/bedrift/).
-* Vipps through a partner: Please [contact your partner directly](https://www.vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-3). 
-* Questions about _ordering_ Vipps through a partner (also for partners): partnerbestilling@vipps.no
-* If you have questions about the plugins, the best way to get help is from the plugin developers directly:
-  - WooCommerce: Please use [the support forum on wordpress.org](https://wordpress.org/support/plugin/woo-vipps/).
-  - Magento: Please contact vipps@vaimo.no or [submit an issue on GitHub](https://github.com/vippsas/vipps-magento).
-  - Drupal: Please see [the plugin on drupal.org](https://www.drupal.org/project/commerce_vipps).
-  - Episerver: TBD (not yet officially released).
-  - Shopify: TBD (not yet officially released).
-* Questions about settlements, invoices or similar: operations@vipps.no
+| Topic               | How to get help |
+| ------------------- | --------------- |
+| General questions   | Please see the [contact info for companies on vipps.no](https://www.vipps.no/kontakt-oss/bedrift/) |
+| Applications for Vipps products | Please see the [contact info for companies on vipps.no](https://www.vipps.no/kontakt-oss/bedrift/) |
+| Suggestions for improvements to Vipps products | Please use [this form](https://www.vipps.no/kontakt-oss/bedrift/) |
+| Using Vipps through a partner | Please [contact your partner directly](https://www.vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-3) |
+| _Ordering_ Vipps through a partner | Please contact partnerbestilling@vipps.no |
+| If you are a partner and need help   | Please contact partnerbestilling@vipps.no  |
+| WooCommerce | Please use [the support forum on wordpress.org](https://wordpress.org/support/plugin/woo-vipps/) |
+| Magento | Please contact vipps@vaimo.no or [submit an issue on GitHub](https://github.com/vippsas/vipps-magento) |
+| Drupal | Please see [the plugin on drupal.org](https://www.drupal.org/project/commerce_vipps) |
+| Episerver | Please [submit an issue on GitHub](https://github.com/vippsas/vipps-episerver) |
+| Shopify | For the plugin, not Shopify itself: Please [submit an issue on GitHub](https://github.com/vippsas/vipps-shopify) |
+| Settlements, invoices or similar | Please see [Settlements] |
 
 We also have a technical newsletter for developers:
 [Sign up here](https://cloud.hei.vipps.no/utv) (low volume, no marketing).
@@ -56,7 +58,7 @@ So, for _*technical questions*_: Send an email with all relevant information to 
 * Screenshots, if applicable
 * Any other information that may be relevant
 
-The Integration email address is: integration@vipps.no 
+The Integration email address is: integration@vipps.no
 
 (You can also [try the web interface](https://vippsas.atlassian.net/servicedesk/customer/portal/2))
 
