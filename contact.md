@@ -21,16 +21,16 @@ If you do not have a technical issue, the fastest way to get help is to use the 
 | ------------------- | --------------- |
 | General questions   | Please see the [contact info for companies on vipps.no](https://www.vipps.no/kontakt-oss/bedrift/) |
 | Applications for Vipps products | Please see the [contact info for companies on vipps.no](https://www.vipps.no/kontakt-oss/bedrift/) |
-| Suggestions for improvements to Vipps products | Please use [this form](https://www.vipps.no/kontakt-oss/bedrift/) |
+| Suggestions for improvements to [Vipps products](https://www.vipps.no/produkter-og-tjenester/bedrift/) | Please use [this form](https://www.vipps.no/kontakt-oss/bedrift/) |
 | Using Vipps through a partner | Please [contact your partner directly](https://www.vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-3) |
-| _Ordering_ Vipps through a partner | Please contact partnerbestilling@vipps.no |
-| If you are a partner and need help   | Please contact partnerbestilling@vipps.no  |
-| WooCommerce | Please use [the support forum on wordpress.org](https://wordpress.org/support/plugin/woo-vipps/) |
-| Magento | Please contact vipps@vaimo.no or [submit an issue on GitHub](https://github.com/vippsas/vipps-magento) |
-| Drupal | Please see [the plugin on drupal.org](https://www.drupal.org/project/commerce_vipps) |
-| Episerver | Please [submit an issue on GitHub](https://github.com/vippsas/vipps-episerver) |
-| Shopify | For the plugin, not Shopify itself: Please [submit an issue on GitHub](https://github.com/vippsas/vipps-shopify) |
-| Settlements, invoices or similar | Please see [Settlements] |
+| Ordering Vipps through a partner | Please contact partnerbestilling@vipps.no |
+| If you are a partner and need help | Please contact partnerbestilling@vipps.no  |
+| [WooCommerce](https://www.vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/woocommerce/) | Please use [the support forum on wordpress.org](https://wordpress.org/support/plugin/woo-vipps/) |
+| [Magento](https://www.vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/magento/) | Please contact vipps@vaimo.no or [submit an issue on GitHub](https://github.com/vippsas/vipps-magento) |
+| [Drupal](https://www.drupal.org/project/commerce_vipps) | Please see [the plugin on drupal.org](https://www.drupal.org/project/commerce_vipps) |
+| [Episerver](https://github.com/vippsas/vipps-episerver) | Please [submit an issue on GitHub](https://github.com/vippsas/vipps-episerver) |
+| [Shopify](https://www.vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/shopify/) | For the plugin, not Shopify itself: Please [submit an issue on GitHub](https://github.com/vippsas/vipps-shopify) |
+| [Settlements](https://github.com/vippsas/vipps-developers/tree/master/settlements), invoices or similar | Please see [Settlements] |
 
 We also have a technical newsletter for developers:
 [Sign up here](https://cloud.hei.vipps.no/utv) (low volume, no marketing).
