@@ -12,6 +12,8 @@ Hello! 👋 We love email!
 - [Response time](#response-time)
 - [More than one problem, or a new one?](#more-than-one-problem--or-a-new-one-)
 
+Version: 2.0.0.
+
 # We help with technical issues
 
 We help with _**technical**_ issues from developers, such as questions about using our APIs.
@@ -32,35 +34,35 @@ If you do not have a technical issue, the fastest way to get help is to use the 
 | [Shopify](https://www.vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/shopify/) | For the plugin, not Shopify itself: Please [submit an issue on GitHub](https://github.com/vippsas/vipps-shopify) |
 | [Settlements](https://github.com/vippsas/vipps-developers/tree/master/settlements), invoices or similar | Please see [Settlements] |
 
+For _**technical**_ issues: Please see below.
+
 We also have a technical newsletter for developers:
 [Sign up here](https://cloud.hei.vipps.no/utv) (low volume, no marketing).
 
 # What to include in the email
 
-So, for _*technical questions*_: Send an email with all relevant information to the address below:
+Please send an email with all relevant information to the address below:
 
+* **Please: Always include a _detailed_ description of the problem**
 * A concise, self-explanatory `Subject` line, such as "`POST:/something` gives `HTTP 400` response".
-* Your contact information (if not in your email signature):
+* Company details
+  - Organization number (find your at https://brreg.no)
+  - Merchant Serial Number (MSN, see [Getting started](vipps-developer-portal-getting-started.md))
+* Is it a problem in the Test (MT) or the Production environment?
+* Include `orderId`, `transactionId` and `contextId` to make it possible to search in logs.
+* If you are a new Vipps customer, please include details about when and how you ordered Vipps.
+* Which [Vipps product](https://www.vipps.no/produkter-og-tjenester/bedrift/) or [Vipps API](https://github.com/vippsas) this is about.
+* For API issues: Complete `request` and `response` details (plain HTTP from Postman, or [curl](https://curl.haxx.se) ensures the quickest response)
+* For app issues: Specify iOS or Android, and the app version
+* Please provide screenshots, if applicable
+* Please provide your contact information (if not in your email signature):
   - Name
   - Phone number
-* Company details
-  - Organization number (check https://brreg.no)
-  - Merchant Serial Number (MSN, see [Getting started](vipps-developer-portal-getting-started.md))
-* Which [Vipps product](https://www.vipps.no/bedrift) this is about
-* If you are a new Vipps customer, please include detailas about when and how you ordered Vipps. For status on the order, please see the [contact info for companies on vipps.no](https://www.vipps.no/kontakt-oss/bedrift/)
-* For eCommerce issues: Which eCommerce solution you are using, and which version
-  - For WooCommerce: See the [support forum](https://wordpress.org/support/plugin/woo-vipps) and https://github.com/vippsas/vipps-woocommerce
-  - For Magento: See https://github.com/vippsas/vipps-magento
-* **Always include a detailed description of the problem**
-* For API issues: Complete `request` and `response` details (plain HTTP from Postman, or [curl](https://curl.haxx.se) ensures the quickest response)
-* Include `orderID`, `transactionId`and `contextId` to make it posible to search in logs.
-* For app issues: Specify iOS or Android, and the app version
-* Screenshots, if applicable
-* Any other information that may be relevant
+* Please include any other information that may be relevant or possibly helpful.
 
 The Integration email address is: integration@vipps.no
 
-(You can also [try the web interface](https://vippsas.atlassian.net/servicedesk/customer/portal/2))
+(You can also [use the web interface](https://vippsas.atlassian.net/servicedesk/customer/portal/2))
 
 ## Keep your colleagues up to date
 
