@@ -222,7 +222,7 @@ Guidelines, logos, buttons, etc: https://github.com/vippsas/vipps-design-guideli
 
 # Vipps API servers
 
-Test (MT): api-test.vipps.no
+Test (MT): api-test.vipps.no 
 Production: api.vipps.no
 
 The IP addresses for these servers _may_ change wirthgout notice.
