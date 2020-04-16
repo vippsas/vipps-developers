@@ -3,7 +3,7 @@
 This guide covers what you need to get started with Vipps development,
 after you have received the welcome email.
 
-Version: 2.1.5.
+Version: 2.1.6.
 
 - [First of all](#first-of-all)
   * [API documentation](#api-documentation)
@@ -68,7 +68,7 @@ The registered admin user can log in with BankID and fetch the API keys.
 
 All Vipps customers must have a Norwegian organization number, and the customer
 agreements are signed with BankID. Since portal.vipps.no give access to API keys
-for both the test and production environment, we require BankID for loging in.
+for both the test and production environment, we require BankID for logging in.
 The customer's administrator can create additional users on portal.vipps.no
 
 If you do not have BankID, you will need the admin to log in and provide the
