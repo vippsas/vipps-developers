@@ -1,6 +1,6 @@
 # Vipps Developers
 
-Version: 2.0.1.
+Version: 2.0.2.
 
 This repository contains various resources for Vipps developers, including:
 
@@ -29,6 +29,7 @@ This repository contains various resources for Vipps developers, including:
   * [iOS](#ios)
   * [Android](#android)
 - [Vipps design guidelines](#vipps-design-guidelines)
+- [Vipps API servers](#vipps-api-servers)
 - [Vipps request servers](#vipps-request-servers)
   * [Production environment](#production-environment)
   * [Disaster recovery (DR) environment](#disaster-recovery--dr--environment)
@@ -218,6 +219,16 @@ as the test number may be a real phone number for a real Vipps user.
 # Vipps design guidelines
 
 Guidelines, logos, buttons, etc: https://github.com/vippsas/vipps-design-guidelines
+
+# Vipps API servers
+
+Test (MT): api-test.vipps.no
+Production: api.vipps.no
+
+The IP addresses for these servers _may_ change wirthgout notice.
+We do not have plans to do so, but necessary changes to our hosting environment
+may require it. Because of this, all firewall configurations, etc must be
+based on DNS, and not hardcoded IP addresses.
 
 # Vipps request servers
 
