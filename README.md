@@ -225,7 +225,7 @@ Guidelines, logos, buttons, etc: https://github.com/vippsas/vipps-design-guideli
 Test (MT): api-test.vipps.no<br/>
 Production: api.vipps.no
 
-**Note:*** Vipps may change the IP addresses for the API servers. To ensure
+**Note:** Vipps may change the IP addresses for the API servers. To ensure
 that you are whitelisting the correct IP addresses please use these hostnames
 and DNS, and automatically update your firewall rules if there are DNS changes.
 
