@@ -225,10 +225,9 @@ Guidelines, logos, buttons, etc: https://github.com/vippsas/vipps-design-guideli
 Test (MT): api-test.vipps.no<br/>
 Production: api.vipps.no
 
-The IP addresses for these servers _may_ change without notice.
-We do not have plans to do so, but necessary changes to our hosting environment
-may require it. Because of this, all firewall configurations, etc must be
-based on DNS, and not hardcoded IP addresses.
+**Note:*** Vipps may change the IP addresses for the API servers. To ensure
+that you are whitelisting the correct IP addresses please use these hostnames
+and DNS, and automatically update your firewall rules if there are DNS changes.
 
 # Vipps request servers
 
