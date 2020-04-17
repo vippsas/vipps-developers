@@ -1,6 +1,6 @@
 # Vipps Developers
 
-Version: 2.0.2.
+Version: 2.0.3.
 
 This repository contains various resources for Vipps developers, including:
 
@@ -222,7 +222,7 @@ Guidelines, logos, buttons, etc: https://github.com/vippsas/vipps-design-guideli
 
 # Vipps API servers
 
-Test (MT): api-test.vipps.no<br/>
+Test (MT): apitest.vipps.no<br/>
 Production: api.vipps.no
 
 **Note:** Vipps may change the IP addresses for the API servers. To ensure
