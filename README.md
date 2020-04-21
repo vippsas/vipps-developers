@@ -165,7 +165,9 @@ Normal Vipps users are not available, so you can not use your own phone number w
 
 ## Limitations of the test apps
 
-* Push alerts do not work
+* Push alerts do not work for 
+  [eCom](https://github.com/vippsas/vipps-ecom-api)
+  (but works [login](https://github.com/vippsas/vipps-login-api))
 * For iOS: There may be conflicts with the production apps, and we recommend to only have one of the apps installed
 
 ## iOS
