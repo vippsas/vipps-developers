@@ -21,7 +21,7 @@ If you do not have a technical issue, the fastest way to get help is to use the 
 
 | Topic               | How to get help |
 | ------------------- | --------------- |
-| General questions, including changes to the customer relationship, change of admin, etc   | Please see the [contact info for companies on vipps.no](https://www.vipps.no/kontakt-oss/bedrift/) |
+| General questions, including changes to the customer relationship, creating eCom sale units, change of admins, etc   | Please see the [contact info for companies on vipps.no](https://www.vipps.no/kontakt-oss/bedrift/) |
 | Applications for Vipps products | Please see the [contact info for companies on vipps.no](https://www.vipps.no/kontakt-oss/bedrift/) |
 | Suggestions for improvements to [Vipps products](https://www.vipps.no/produkter-og-tjenester/bedrift/) | Please use [this form](https://www.vipps.no/kontakt-oss/bedrift/) |
 | Using Vipps through a partner | Please [contact your partner directly](https://www.vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-3) |
