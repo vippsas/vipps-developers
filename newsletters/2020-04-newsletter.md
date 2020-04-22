@@ -117,7 +117,7 @@ Please see
 
 ## Newsletter archive
 
-See: https://github.com/vippsas/vipps-developers/tree/master/newsletters
+Please see: https://github.com/vippsas/vipps-developers/tree/master/newsletters
 
 # Questions or comments?
 
