@@ -1,7 +1,5 @@
 # Technical newsletter for developers 2020-04
 
-** 🥁 Draft 🥁 **
-
 This newsletter was sent in April 2020.
 
 # Much faster payments on phones
@@ -34,9 +32,9 @@ for details.
 
 # eCom: Cancel pending payments
 
-The `/cancel` endpoint may now be called _before_ the payment has been reserved,
-meaning before the user has accepted/rejected in Vipps.
-This may be useful in face-to-face situations where a customer's phone runs out of battery.
+The `/cancel` endpoint may now also be called _before_ the payment has been
+reserved, meaning before the user has accepted/rejected in Vipps. This may be
+useful in face-to-face situations where a customer's phone runs out of battery.
 
 See
 [Cancelling a pending order](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#Cancelling-a-pending-order).
@@ -74,8 +72,8 @@ is very welcome. We know there are some (minor?) issues, please bear with us.
 
 # API documentation in HTML format with Slate
 
-We now offer generated HTML documentation in three formats. Examples for
-the eCom API:
+We now offer generated HTML documentation in three formats for most APIs.
+Examples for the eCom API:
 
 * Swagger UI: https://vippsas.github.io/vipps-ecom-api/
 * ReDoc: https://vippsas.github.io/vipps-ecom-api/redoc.html
@@ -86,25 +84,25 @@ is very welcome.
 
 # How it works
 
-We have made some more in-depth product information with screenshots:
+We have made some more in-depth product information pages with screenshots:
 
 * eCom (Vipps på Nett): https://vipps.no/developers-page/ecom/how-it-works/
 * Recurring: https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api-howitworks.md
 
 # Plugin overview
 
-We have plugins for WordPress/WooCommerce, Magento, Episerver, Shopify, Drupal:
+We now have plugins for WordPress/WooCommerce, Magento, Episerver, Shopify, Drupal:
 https://github.com/vippsas/vipps-developers#plugins
 
 We have some more candidates too.
 
 # Reminders
 
-We have mentioned this before, and take the chance to remind you:
+We have mentioned some things before, and take this opportunity to remind you:
 
 ## API lifecycle
 
-Just a reminder: Our API lifecycle policy is available here:
+Our API lifecycle policy is
 [available on GitHub](https://github.com/vippsas/vipps-developers/blob/master/vipps-api-lifecycle.md).
 
 ## Status pages for test and production environments
