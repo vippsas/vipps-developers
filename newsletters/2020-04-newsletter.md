@@ -11,9 +11,6 @@ There is no longer a need to first log in and then confirm the payment.
 
 This dramatically reduces the time it takes to pay with Vipps.
 
-Even though we are talking seconds, it adds up: A quick estimate indicates
-that Vipps users save a total of _one year_ each month because of faster payments.
-
 And: Since the "login" is connected to the payment, we have better logging and
 more data, so _if_ something goes wrong, we can fix it faster.
 
