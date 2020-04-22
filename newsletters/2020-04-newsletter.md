@@ -12,8 +12,8 @@ This dramatically reduces the time it takes to pay with Vipps.
 Even though we are talking seconds, it adds up: A quick estimate indicates
 that Vipps users save a total of _one year_ each month because of faster payments.
 
-Another benefit is that better logging and more data, so
-_if_ something goes wrong, we can find out more, and fix the problem.
+And: Since the "login" is connected to the payment, we have better logging and
+more data, so _if_ something goes wrong, we can fix it faster.
 
 # POS integration
 
@@ -27,14 +27,16 @@ and the
 # eCom: skipLandingPage
 
 If there is no way to show the Vipps landing page, it can be skipped.
+
 This may be useful for POS integration, vending machines, etc.
 See
 [Skip landing page](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#skip-landing-page)
-in the documentation for details.
+for details.
 
 # eCom: Cancel before reservation
 
-The `/cancel` endpoint may now be called before the payment has been reserved.
+The `/cancel` endpoint may now be called _before_ the payment has been reserved,
+meaning before the user has accepted/rejected in Vipps.
 This may be useful in face-to-face situations where a customer's phone runs out of battery.
 
 See
@@ -64,11 +66,24 @@ without using the app.
 We now offer nicely formatted and Vipps-branded developer pages at
 https://vipps.no/developer.
 
-The content is the same as on GitHub.
+The pages are automatically generated from the GitHub repos, so the
+content is the same, and you can choose what to use.
 
 We are just getting started, and
 [feedback](https://github.com/vippsas/vipps-developers/blob/master/contact.md)
 is very welcome. We know there are some (minor?) issues, please bear with us.
+
+# API documentation in HTML format with Slate
+
+We now offer generated HTML documentation in three formats. Examples for
+the eCom API:
+
+* Swagger UI: https://vippsas.github.io/vipps-ecom-api/
+* ReDoc: https://vippsas.github.io/vipps-ecom-api/redoc.html
+* Slate: https://vippsas.github.io/vipps-ecom-api/slate/
+
+[Feedback](https://github.com/vippsas/vipps-developers/blob/master/contact.md)
+is very welcome.
 
 # How it works
 
