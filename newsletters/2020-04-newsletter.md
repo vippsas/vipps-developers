@@ -115,6 +115,10 @@ Our API lifecycle policy is
 Please see
 [this page](https://github.com/vippsas/vipps-developers/blob/master/contact.md).
 
+## Newsletter archive
+
+See: https://github.com/vippsas/vipps-developers/tree/master/newsletters
+
 # Questions or comments?
 
 We're always happy to help with code or other questions you might have!
