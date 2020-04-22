@@ -7,7 +7,7 @@ This newsletter was sent in April 2020.
 Vipps eCom payments using app-switch are now done in the same biometric operation.
 There is no longer a need to first log in and then confirm the payment.
 
-This dramatically reduces the time it takes to pay with Vipps.
+This reduces the time it takes to pay with Vipps.
 
 And: Since the "login" is connected to the payment, we have better logging and
 more data, so _if_ something goes wrong, we can fix it faster.
