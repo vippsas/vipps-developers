@@ -1,4 +1,4 @@
-# Technical newsletter for developers 2019-11
+# Technical newsletter for developers 2020-04
 
 **Draft:** This newsletter for April 2020.
 
