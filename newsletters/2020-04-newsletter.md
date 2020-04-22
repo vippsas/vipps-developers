@@ -1,11 +1,13 @@
 # Technical newsletter for developers 2020-04
 
-**Draft:** This newsletter for April 2020.
+** 🥁 Draft 🥁 **
 
-# Much faster payments
+This newsletter was sent in April 2020.
 
-Vipps eCom payments are confirmed without first logging in to the app:
-The login and payment confirmation is done with the same biometric operation.
+# Much faster payments on phones
+
+Vipps eCom payments using app-switch are now done in the same biometric operation.
+There is no longer a need to first log in and then confirm the payment.
 
 This dramatically reduces the time it takes to pay with Vipps.
 
@@ -33,7 +35,7 @@ See
 [Skip landing page](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#skip-landing-page)
 for details.
 
-# eCom: Cancel before reservation
+# eCom: Cancel pending payments
 
 The `/cancel` endpoint may now be called _before_ the payment has been reserved,
 meaning before the user has accepted/rejected in Vipps.
