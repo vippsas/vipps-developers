@@ -19,10 +19,10 @@ Start by importing the JSON files into Postman (or `paste raw text`).
 
 ![Vipps Developer Postman: Import](images/postman-import.png)
 
-The Postman collection will appear in the left sidebar. 
-Select the associated environment from the drop-down menu. 
+The Postman collection will appear in the left sidebar.
+Select the associated environment from the drop-down menu.
 
-Click the eye to see all variables. 
+Click the eye to see all variables.
 
 ![Vipps Developer Postman: Imported](images/postman-imported.png)
 
@@ -39,12 +39,17 @@ Read the documentation to find out which [variables](https://github.com/vippsas/
 
 ## Tabs
 
-Some methods requires a `body` with information that gets sent with the request. Vipps provide pre-populated test data, but this can be modified. 
+Some methods requires a `body` with information that gets sent with the request. Vipps provide pre-populated test data, but this can be modified.
 
-You might want to make the same request from your own application. You can generate snippets of code in various languages that will help you do this. Click the Code link to open the "Generate code snippets" modal. 
+You might want to make the same request from your own application. You can generate snippets of code in various languages that will help you do this. Click the Code link to open the "Generate code snippets" modal.
 
 ![Vipps Developer Postman: Tabs](images/postman-tabs.png)
 
+# Questions?
 
+We're always happy to help with code or other questions you might have!
+Please create an [issue](https://github.com/vippsas/vipps-developers/issues),
+a [pull request](https://github.com/vippsas/vipps-developers/pulls),
+or [contact us](https://github.com/vippsas/vipps-developers/blob/master/contact.md).
 
-
+Sign up for our [Technical newsletter for developers](https://github.com/vippsas/vipps-developers/tree/master/newsletters).

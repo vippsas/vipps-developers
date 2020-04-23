@@ -39,3 +39,12 @@ informs users what they can and can't do (e.g., use, modify, redistribute), and 
 what they are allowing others to do.
 
 The Vipps API documentation is licensed under the MIT licence: https://choosealicense.com/licenses/mit/
+
+# Questions?
+
+We're always happy to help with code or other questions you might have!
+Please create an [issue](https://github.com/vippsas/vipps-developers/issues),
+a [pull request](https://github.com/vippsas/vipps-developers/pulls),
+or [contact us](https://github.com/vippsas/vipps-developers/blob/master/contact.md).
+
+Sign up for our [Technical newsletter for developers](https://github.com/vippsas/vipps-developers/tree/master/newsletters).
