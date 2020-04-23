@@ -1,5 +1,8 @@
 # Vipps eCom python example
+
 A simple example implementation for the eCom API.
+
+API documentation: https://github.com/vippsas/vipps-ecom-api
 
 ## Disclaimer:
 
@@ -16,3 +19,12 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 
 ### Basic manage order page:
 ![](images/manage_order.png)
+
+# Questions?
+
+We're always happy to help with code or other questions you might have!
+Please create an [issue](https://github.com/vippsas/vipps-ecom-api/issues),
+a [pull request](https://github.com/vippsas/vipps-ecom-api/pulls),
+or [contact us](https://github.com/vippsas/vipps-developers/blob/master/contact.md).
+
+Sign up for our [Technical newsletter for developers](https://github.com/vippsas/vipps-developers/tree/master/newsletters).

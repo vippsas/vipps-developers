@@ -12,7 +12,7 @@ Hello! 👋 We love email!
 - [Response time](#response-time)
 - [More than one problem, or a new one?](#more-than-one-problem--or-a-new-one-)
 
-Version: 2.0.0.
+Version: 2.0.1.
 
 # We help with technical issues
 
@@ -95,3 +95,7 @@ of requests and the varying complexity of resolving them, we can not guarantee r
 
 Please send separate emails for each problem. If you send an email about a
 new problem by replying to an old issue, it may delay our response.
+
+# Newsletter
+
+Sign up for our [Technical newsletter for developers](https://github.com/vippsas/vipps-developers/tree/master/newsletters).
