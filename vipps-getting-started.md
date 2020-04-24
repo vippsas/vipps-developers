@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # First og all
 This guide only applies to the following APIs: Ecommerce, Recurring and Login. 
 
@@ -9,74 +8,23 @@ If you are using an e-commerce platform, integration partner or PSP, please see 
 * [PSP](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-2)
 
 ## Table of contents
-  - [First of all](#first-of-all)
-    - [API documentation](#api-documentation)
-  - [Getting a test account (and a production account)](#getting-a-test-account-and-a-production-account)
+  - [Get credentials](#get-credentials)
   - [Getting the API keys](#getting-the-api-keys)
-    - [The API products for a salesunit](#the-api-products-for-a-salesunit)
+    - [List of sale units](#list-of-sale-units)
     - [API keys for a salesunit](#api-keys-for-a-salesunit)
     - [API key details](#api-key-details)
-  - [API products](#api-products)
-    - [Vipps-API](#vipps-api)
-    - [Legacy API products](#legacy-api-products)
-  - [Quick overview of how to make an API call](#quick-overview-of-how-to-make-an-api-call)
-    - [Get an access token](#get-an-access-token)
-      - [Request](#request)
-      - [Response](#response)
+  - [API keys for different use](#api-keys-for-different-use)
+- [API products](#api-products)
+  - [Vipps-API](#vipps-api)
+  - [Legacy API products](#legacy-api-products)
+- [Quick overview of how to make an API call](#quick-overview-of-how-to-make-an-api-call)
+  - [Get an access token](#get-an-access-token)
+    - [Request](#request)
+    - [Response](#response)
       - [HTTP response codes](#http-response-codes)
-    - [Make an eCom v2 API call](#make-an-ecom-v2-api-call)
-- [Questions?](#questions)
+  - [Your first Vipps API request](#your-first-vipps-api-request)
 
 ## Get credentials
-=======
-# Vipps: Getting Started
-
-This guide covers what you need to get started with Vipps development,
-after you have received the welcome email.
-
-Version: 2.1.6.
-
-- [First of all](#first-of-all)
-  * [API documentation](#api-documentation)
-- [Getting a test account (and a production account)](#getting-a-test-account-and-a-production-account))
-- [Getting the API keys](#getting-the-api-keys)
-  * [API key details](#api-key-details)
-  * [API keys for different use](#api-keys-for-different-use)
-- [API products](#api-products)
-  * [Vipps-API](#vipps-api)
-  * [Legacy API products](#legacy-api-products)
-- [Quick overview of how to make an API call](#quick-overview-of-how-to-make-an-api-call)
-  * [Get an access token](#get-an-access-token)
-    + [Request](#request)
-    + [Response](#response)
-    + [HTTP response codes](#http-response-codes)
-  * [Make an eCom v2 API call](#make-an-ecom-v2-api-call)
-- [Questions?](#questions-)
-
-# First of all
-
-Make sure you have a customer relationship with Vipps, and that you have
-an active subscription for the relevant Vipps solution(s):
-https://www.vipps.no/produkter-og-tjenester/bedrift/
-
-After ordering a Vipps solution, you will get a welcome email.
-This normally takes 1-3 days.
-
-We do not (yet) offer access to the test environment unless you are
-a Vipps customer.
-
-For general questions about products, please use the contact form:
-https://www.vipps.no/bedrift/kontakt-oss
-
-## API documentation
-
-All Vipps APIs are documented on GitHub: https://github.com/vippsas/
-
-Please see the general developer information: https://github.com/vippsas/vipps-developers
-
-# Getting a test account (and a production account)
-
->>>>>>> a89023ee6b2d4a88657165a03423256ecbf7c20f
 The fastest way to get a Vipps developer account for the test and production
 environments, is to apply for a product at [vipps.no](https://vipps.no/produkter-og-tjenester/bedrift/).
 
@@ -108,21 +56,12 @@ API keys to you.
 email, as the API keys give access to transferring money.
 Vipps will never ask for your API keys, and you should keep them secret.
 
-<<<<<<< HEAD
 ### List of sale units
 Click `Show keys` on the relevant sale unit to display credentials.
  
 ![portal.vipps.no: The API products for a sales unit](images/portalvippsno-salesunit-products.png)
 
 ### API keys for a salesunit
-=======
-### The API products for a salesunit
-
-![portal.vipps.no: The API products for a sales unit](images/portalvippsno-salesunit-products.png)
-
-### API keys for a salesunit
-
->>>>>>> a89023ee6b2d4a88657165a03423256ecbf7c20f
 ![portal.vipps.no: The API keys for a sales unit](images/portalvippsno-salesunit-keys.png)
 
 ### API key details
