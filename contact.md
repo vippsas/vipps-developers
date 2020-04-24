@@ -23,7 +23,7 @@ If you do not have a technical issue, the fastest way to get help is to use the 
 | ------------------- | --------------- |
 | General questions, including changes to the customer relationship, creating eCom sale units, change of admins, etc   | Please see the [contact info for companies on vipps.no](https://www.vipps.no/kontakt-oss/bedrift/) |
 | Applications for Vipps products | Please see the [contact info for companies on vipps.no](https://www.vipps.no/kontakt-oss/bedrift/) |
-| VippsGO | For POS (Point Of Sale) integrations: Please contact your POS vendor. For other issues, please see the [contact info for companies on vipps.no](https://www.vipps.no/kontakt-oss/bedrift/)  |
+| VippsGO | Please see the self-service portal:  https://vippsadmin.snappo.com/. For questions about POS (Point Of Sale) integrations: Please contact your POS vendor. For other issues, please see the [contact info for companies on vipps.no](https://www.vipps.no/kontakt-oss/bedrift/)  |
 | Suggestions for improvements to [Vipps products](https://www.vipps.no/produkter-og-tjenester/bedrift/) | Please use [this form](https://www.vipps.no/kontakt-oss/bedrift/) |
 | Using Vipps through a partner | Please [contact your partner directly](https://www.vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-3) |
 | Ordering Vipps through a partner | Please contact partnerbestilling@vipps.no |
