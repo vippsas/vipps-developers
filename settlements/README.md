@@ -32,10 +32,13 @@ Merchants with a "gross settlement" contract receive the _full amount_
 of the users' payments
 _including_ the Vipps fees, and are then invoiced for the Vipps fees.
 
-If the merchant's organization number is registered as an EHF recipient, 
+If the merchant's organization number is registered as an EHF recipient,
 Vipps sends and EHF. If not, the invoices are sent by email.
 To change invoice recipient, please
 [contact customer service](https://vipps.no/kontakt-oss/bedrift/vipps/).
+
+See [Availability](#availability) below for information about settlement files
+when the balance is negative.
 
 # Settlement report formats
 
@@ -48,16 +51,27 @@ Settlement reports are provided in these formats:
 | PDF    | [PDF](pdf/Vipps-oppgjørsrapport-16655-2018-09-23.pdf) | - |
 | XLSX   | [XLSX](xlsx/Vipps-oppgjørsrapport-16655-2018-09-23.xlsx) | - |
 
-Settlements reports are available both with and without personal details of the customer.
-
+**Important:** Settlements reports are available both with and without personal details of the customer.
 This is due to [GDPR](https://ec.europa.eu/info/law/law-topic/data-protection_en), and whether
 the data processor is Vipps or the merchant. See [GDPR](#gdpr) below.
+
+Payments made with
+[Vippsnummer](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-i-butikk/ta-betalt-med-vipps/)
+do not have an `orderId`.
+If you need an `orderId` to identify a payment, you need to use
+[Vipps på nett](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/).
+See also the Vipps eCom API.
 
 ## Availability
 
 Settlement reports are available by 12:00 noon. The reports are generated around
 01-03 at night, but may be delayed due to technical changes, maintenance in
 various systems, etc.
+
+**Important:** If a merchant has refunded more money than the sum of payments,
+so that the balance is negative, Vipps will not create settlement reports.
+Vipps covers the negative balance for a (short) while, but if it persists,
+Vipps will send an invoice to the merchant to settle the balance.
 
 ### Daily reports
 
@@ -116,3 +130,13 @@ OCR files are no longer provided by Vipps.
 Documentation for the legacy solution: [Vipps Faktura](ocr/vipps-invoice-api-vipps-faktura.pdf).
 
 Details: See the [ocr](ocr/) folder.
+
+## Questions?
+
+We're always happy to help with code or other questions you might have!
+
+For customer-specific questions about settlements, please contact operations@vipps.no.
+
+For general questions: Please create an [issue](https://github.com/vippsas/vipps-ecom-api/issues),
+a [pull request](https://github.com/vippsas/vipps-ecom-api/pulls),
+or [contact us](https://github.com/vippsas/vipps-developers/blob/master/contact.md).

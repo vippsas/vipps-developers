@@ -1,5 +1,13 @@
 # Vipps SFTP Report Service
 
+This service allows for retrieval of settlement files with SFTP.
+
+See [the general information about settlements and reports](../) for information
+about the report formats, availability of personal information about customers,
+GDPR, etc.
+
+Vipps does not have an API to retrieve settlements files.
+
 ## Settlements
 
 Settlements are created every day, but only as long as the balance is positive.
@@ -12,15 +20,13 @@ some cases include transactions spanning several days back in time.
 
 Settlement reports should be available by 12:00 on the day after the
 transactions were made, as long as a settlement were created (i.e. the balance
-were positive). There will never be more than one new file per. sales unit each
+was positive).
+
+There will never be more than one new file per sales unit each
 day (and there may be none).
 
 Note that the reports are generated on-demand, which is why the file size is
 reported as zero (the size is unknown at the time of listing).
-
-See [the general information about settlements and reports](../) for information
-about the report formats, availability of personal information about customers,
-GDPR, etc.
 
 ## SFTP Service
 
@@ -32,7 +38,7 @@ The SFTP report service is used for downloading settlement reports in the follow
 * [Excel](../xslx) (.xslx)
 
 SFTP-users are created, associated with a public key, and given access to the reports of
-one or more merchants. 
+one or more merchants.
 
 More information about SFTP: [SSH File Transfer Protocol](https://en.wikipedia.org/wiki/SSH_File_Transfer_Protocol).
 
@@ -54,17 +60,35 @@ The address of the SFTP server is `sftp.vipps.no`.
 
 This is the directory structure:
 ```
-/settlements/[inbox|archive]/[file extension]/[orgnum]/[sales unit serial]/[sales unit serial]-[settlement number].[file extension]
+/settlements/[inbox|archive]/[file extension]/[orgno.]/[merchant serial number]/[merchant serial number]-[settlement number].[file extension]
+```
+The `orgno.` is the company's organization number, nine digits.
+The `merchant serial number` (also called MSN) is the unique five or six digit
+id for the sale unit.
+
+In the examples on this page, the `orgno.` is 998724341, and the `merchant serial number` is 16655.
+
+Example files, with full path:
+```
+/settlements/inbox/xml/998724341/16655/16655-2000001.xml
+/settlements/inbox/pdf/998724341/16655/16655-2000001.pdf
+/settlements/archive/csv/998724341/16655/16655-2000001.csv
 ```
 
 ### How to use it
 
-Reports under `/settlements/inbox` can be "deleted" (actually hidden) 
-in order to keep track of already processed reports. 
+Reports under `/settlements/inbox` can be "deleted" (actually hidden)
+in order to keep track of already processed reports.
 
-Reports are deleted by using the `rm` command in SFTP or the delete function in your SFTP interface. 
+Reports are deleted by using the `rm` command in SFTP or the delete function in your SFTP interface.
 
 Reports under `/settlements/archive` cannot be removed.
+
+**Important:** The reports are generated on-demand. Some SFTP clients
+check the file size with a `ls` command. Since the files have not yet
+been created, the file size is reported as zero.
+The service can not provide correct size information.
+It is therefore not possible to check the size of a file with `ls`.
 
 #### Example SFTP session
 

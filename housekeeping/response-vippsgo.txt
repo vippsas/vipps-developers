@@ -1,16 +1,20 @@
 Hei
 
-Nedenfor følger litt informasjon om VippsGO og (kassa)integrasjoner.
+Mange VippsGO-kunder ønsker å integrere Vipps-betalingen med sine kassasystemer. 
+I dag er det mulig å bruke VippsGO med tre løsninger:
 
-Mange VippsGO-kunder ønsker å integrere Vipps-betalingen med sine kassasystemer. I dag er det mulig å bruke VioppsGO med to løsninger:
 * KDR: https://kdr.no
 * RSPOS: https://retailsolution.no
+* SMS: https://www.sms.no
 
 VippsGO-kunder som ønsker å integrere med disse kassasystemene bes ta kontakt med kassaleverandøren.
 
-Det er ikke mulig å integrere mot SMS/Aksess, PCK, eller andre systemer i dag. Vår underleverandør Weorder har en løsning som kan integreres mot PCK, men VippsGO er på en annen plattform som ikke har integrasjon mot PCK. Vi har ikke tilstrekkelig kapasitet til det som kreves fra vår side for integrasjon med andre løsninger enn nevnt ovenfor, og heller ikke til oppfølging etterpå.
+Det er ikke mulig å integrere VippsGO mot andre systemer i dag, og vi jobber heller ikke med å få 
+på flere leverandører. Vi fokuserer heller på å tilby mer åpne APIer som flere kan integrere mot 
+fremfor å integrere mot enkeltsystemer.
 
-For øyeblikket jobber vi med å bygge et team som skal jobbe med bedre løsninger for små bedrifter, organisasjoner og lag. I den prosessen vil vi også bestemme hvilken rolle Vipps skal ha i sammenheng med systemer som vil integreres  i dette markedet.
+Se mer informasjon om VippsGO her: 
+https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-i-butikk/vis-frem-varene-dine-i-vipps/
 
 $cursor$
 

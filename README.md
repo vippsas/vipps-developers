@@ -1,5 +1,7 @@
 # Vipps Developers
 
+Version: 2.0.3.
+
 This repository contains various resources for Vipps developers, including:
 
 * [Getting started](vipps-getting-started.md) with Vipps development
@@ -8,10 +10,48 @@ This repository contains various resources for Vipps developers, including:
 * [Requirements](requirements.md) for foreign companies in order to use Vipps
 * [Settlements](https://github.com/vippsas/vipps-developers/tree/master/settlements) for information about settlements
 
+## Table of contents
 
-## Status page
+- [API documentation](#api-documentation)
+- [Plugins](#plugins)
+- [Status page](#status-page)
+  - [Status page for the test environment](#status-page-for-the-test-environment)
+    - [Status page for the production environment](#status-page-for-the-production-environment)
+  - [The Vipps test environment (MT)](#the-vipps-test-environment-mt)
+  - [Postman](#postman)
+  - [Example code](#example-code)
+  - [Vipps design guidelines](#vipps-design-guidelines)
+  - [Vipps API servers](#vipps-api-servers)
+  - [Vipps request servers](#vipps-request-servers)
+  - [Production environment](#production-environment)
+  - [Disaster recovery (DR) environment](#disaster-recovery-dr-environment)
+  - [Test environment](#test-environment)
+  - [Additional developer resources](#additional-developer-resources)
+- [Questions?](#questions)
 
-### Status page for the test environment
+# API documentation
+
+See: [Getting started](vipps-getting-started.md).
+
+# Plugins
+
+| Platform/solution  | eCommerce                                                                                                   | Recurring                                                                                              | Login                                                                                                        |
+| ------------------ | ----------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------ |
+| Vipps product info | [Vipps på nett](https://www.vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/) | [Faste betalinger](https://vipps.no/produkter-og-tjenester/bedrift/faste-betalinger/faste-betalinger/) | [Vipps Logg Inn](https://www.vipps.no/produkter-og-tjenester/bedrift/logg-inn-med-vipps/logg-inn-med-vipps/) |
+| WooCommerce        | [vipps-woocommerce](https://github.com/vippsas/vipps-woocommerce)                                           | [vipps-recurring-woocommerce](https://github.com/vippsas/vipps-recurring-woocommerce)                  | -                                                                                                            |
+| WordPress          | -                                                                                                           | -                                                                                                      | [vipps-login-wordpress](https://github.com/vippsas/vipps-login-wordpress)                                    |
+| Magento 2          | [vipps-magento](https://github.com/vippsas/vipps-magento)                                                   | -                                                                                                      | [vipps-login-magento](https://github.com/vippsas/vipps-login-magento)                                        |
+| Magento 1          | [vipps-magento-v1](https://github.com/vippsas/vipps-magento-v1)                                             | -                                                                                                      | To be decided.                                                                                               |
+| Episerver          | [vipps-episerver](https://github.com/vippsas/vipps-episerver)                                               | -                                                                                                      | Coming soon.                                                                                                 |
+| Drupal             | [vipps-drupal](https://github.com/vippsas/vipps-drupal)                                                     | Coming soon.                                                                                           | Coming soon.                                                                                                 |
+| Shopify            | [vipps-shopify](https://github.com/vippsas/vipps-shopify)                                                   | -                                                                                                      | -                                                                                                            |
+| Craft Commerce     | To be decided.                                                                                              | -                                                                                                      | Coming soon.                                                                                                 |
+| Wix                | To be decided.                                                                                              | -                                                                                                      | -                                                                                                            |
+| BigCommerce        | To be decided.                                                                                              | -                                                                                                      | -                                                                                                            |
+
+# Status page
+
+## Status page for the test environment
 
 https://vipps-test.statuspage.io
 
@@ -36,6 +76,15 @@ https://github.com/vippsas/vipps-developers/tree/master/code-examples
 ## Vipps design guidelines
 
 Guidelines, logos, buttons, etc: https://github.com/vippsas/vipps-design-guidelines
+
+## Vipps API servers
+
+Test (MT): apitest.vipps.no<br/>
+Production: api.vipps.no
+
+**Note:** Vipps may change the IP addresses for the API servers. To ensure
+that you are whitelisting the correct IP addresses please use these hostnames
+and DNS, and automatically update your firewall rules if there are DNS changes.
 
 ## Vipps request servers
 
@@ -82,5 +131,11 @@ For API products where Vipps makes requests to your servers, please make sure th
 * Products, personal: http://vipps.no/privat
 * Products, business: http://vipps.no/bedrift
 
-**The Vipps Integration team**
-[Get in touch here](contact.md)
+# Questions?
+
+We're always happy to help with code or other questions you might have!
+Please create an [issue](https://github.com/vippsas/vipps-developers/issues),
+a [pull request](https://github.com/vippsas/vipps-developers/pulls),
+or [contact us](https://github.com/vippsas/vipps-developers/blob/master/contact.md).
+
+Sign up for our [Technical newsletter for developers](https://github.com/vippsas/vipps-developers/tree/master/newsletters).

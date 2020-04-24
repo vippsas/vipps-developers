@@ -47,9 +47,9 @@ Click `Edit` and paste in values for each variable.
 
 ## Tabs
 
-Some methods requires a `body` with information that gets sent with the request. Vipps provide pre-populated test data, but this can be modified. 
+Some methods requires a `body` with information that gets sent with the request. Vipps provide pre-populated test data, but this can be modified.
 
-You might want to make the same request from your own application. You can generate snippets of code in various languages that will help you do this. Click the Code link to open the "Generate code snippets" modal. 
+You might want to make the same request from your own application. You can generate snippets of code in various languages that will help you do this. Click the Code link to open the "Generate code snippets" modal.
 
 ![Vipps Developer Postman: Tabs](images/postman-tabs.png)
 
@@ -102,3 +102,11 @@ These variables are required for all Vipps APIs
 | pspRedirectUrl       | Redirect URL which the user is redirected to after approving/rejecting the payment.                                                                   |
 | merchantSerialNumber | Provided by Vipps via email.                                                                                                                          |
 | PSP-ID               | Provided by Vipps via email.                                                                                                                          |
+# Questions?
+
+We're always happy to help with code or other questions you might have!
+Please create an [issue](https://github.com/vippsas/vipps-developers/issues),
+a [pull request](https://github.com/vippsas/vipps-developers/pulls),
+or [contact us](https://github.com/vippsas/vipps-developers/blob/master/contact.md).
+
+Sign up for our [Technical newsletter for developers](https://github.com/vippsas/vipps-developers/tree/master/newsletters).

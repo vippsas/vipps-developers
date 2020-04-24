@@ -386,3 +386,12 @@ Once you get an access token, now you can call an API. Before calling an API fro
 ### API calls pseudo code
 
 *TODO: Replace with HTTP examples, make sections/paragraphs, use Java "pesudo" code in addition, but in smaller chunks*
+
+# Questions?
+
+We're always happy to help with code or other questions you might have!
+Please create an [issue](https://github.com/vippsas/vipps-developers/issues),
+a [pull request](https://github.com/vippsas/vipps-developers/pulls),
+or [contact us](https://github.com/vippsas/vipps-developers/blob/master/contact.md).
+
+Sign up for our [Technical newsletter for developers](https://github.com/vippsas/vipps-developers/tree/master/newsletters).
