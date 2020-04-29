@@ -44,9 +44,7 @@ See also: [Vipps Test Data](https://github.com/vippsas/vipps-developers/blob/mas
 
 ## Test amounts
 
-Vipps supports using special amounts that are always "rejected in the app", etc -
-without anyone needing to use the app. This is useful for testing,
-test automation, etc.
+Vipps supports using special amounts that are always rejected when approving the payment in the Vipps test app. The force approve endpoint is not validated for this functionality and will result in different behaviours. 
 
 | Amount | Error                     |
 |--------|---------------------------|
