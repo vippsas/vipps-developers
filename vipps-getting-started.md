@@ -1,4 +1,4 @@
-# First og all
+# First of all
 This guide only applies to the following APIs: Ecommerce, Recurring and Login. 
 
 If you are using an e-commerce platform, integration partner or PSP, please see the respective resources:
