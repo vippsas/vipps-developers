@@ -21,8 +21,8 @@ If you are using an e-commerce platform, integration partner or PSP, please see 
   - [Get an access token](#get-an-access-token)
     - [Request](#request)
     - [Response](#response)
-      - [HTTP response codes](#http-response-codes)
-  - [Your first Vipps API request](#your-first-vipps-api-request)
+  - [HTTP response codes](#http-response-codes)
+
 
 ## Get credentials
 The fastest way to get a Vipps developer account for the test and production
@@ -206,7 +206,7 @@ JWT properties:
 **Please note:** The JWT (access token) is valid for 1 hour in MT (test) and 24 hours in Production.
 To be sure that you are using correct time please use `expires_in` or `expires_on`.
 
-#### HTTP response codes
+### HTTP response codes
 
 This API returns the following HTTP statuses in the responses:
 
@@ -218,11 +218,9 @@ This API returns the following HTTP statuses in the responses:
 | `403 Forbidden`    | Authentication ok, but credentials lacks authorization. |
 | `500 Server Error` | An internal Vipps problem.                              |
 
-*Note:* Vipps-Subscription-Key was previously called Ocp-Apim-Subscription-Key. The legacy name Ocp-Apim-Subscription-Key must still be used in request headers.
+**Please note:** `Vipps-Subscription-Key` was previously called `Ocp-Apim-Subscription-Key`. The legacy name `Ocp-Apim-Subscription-Key` must still be used in request headers. We will at some point phase out the old name completely, but it is not trivial and will take some time.
 
-## Your first Vipps API request
-
-We reccomend getting familiar with the Vipps APIs using Postman. We have a guide, complete with resources for all Vipps APIs available [here](https://github.com/vippsas/vipps-developers/blob/master/postman-guide.md)
+## Questions?
 
 We're always happy to help with code or other questions you might have!
 Please create an [issue](https://github.com/vippsas/vipps-developers/issues),
