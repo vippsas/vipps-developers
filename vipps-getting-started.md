@@ -22,7 +22,7 @@ If you are using an e-commerce platform, integration partner or PSP, please see 
     - [Request](#request)
     - [Response](#response)
   - [HTTP response codes](#http-response-codes)
-
+- [Questions?](#questions)
 
 ## Get credentials
 The fastest way to get a Vipps developer account for the test and production
