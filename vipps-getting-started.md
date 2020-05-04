@@ -28,12 +28,14 @@ If you are using an e-commerce platform, integration partner or PSP, please see 
 The fastest way to get a Vipps developer account for the test and production
 environments, is to apply for a product at [vipps.no](https://vipps.no/produkter-og-tjenester/bedrift/).
 
-*Note: You will need a Norwegian organization number to apply for Vipps services*
+**Please note:** You will need a Norwegian organization number to apply for Vipps services.
 
-Test credentials are normally available 24 hours after we receive the order. When the application has been processed You will receive an email, and the
+Test credentials are normally available 24 hours after we receive the application.
+When the application has been processed you will receive an email, and the
 API keys can be retrieved by logging in to https://portal.vipps.no with BankID.
+This normally takes a few days. 
 
-Please note: If you plan to use Vipps through a Partner or a PSP, you will have to
+**Please note:** If you plan to use Vipps through a Partner or a PSP, you will have to
 order the appropriate Vipps solution, and then contact the Partner or PSP
 to have _them_ help you with developer access.
 
