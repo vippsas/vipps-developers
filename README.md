@@ -1,6 +1,6 @@
 # Vipps Developers
 
-Version: 2.0.5.
+Version: 2.0.6.
 
 This repository contains various resources for Vipps developers, including:
 
@@ -50,9 +50,8 @@ BigCommerce | To be decided. | - | -
 
 ## Status page
 
-Test environment: https://vipps-test.statuspage.io
-
-Production environment: https://vipps.statuspage.io
+* Test environment: https://vipps-test.statuspage.io
+* Production environment: https://vipps.statuspage.io
 
 ## The Vipps test environment (MT)
 
@@ -71,8 +70,10 @@ for more information about using Postman.
 
 ## Example code
 
-We have made some example code available, in hope that it may be useful:
-https://github.com/vippsas/vipps-developers/tree/master/code-examples
+We have made some
+[example code](https://github.com/vippsas/vipps-developers/tree/master/code-examples)
+available, in hope that it may be useful:
+
 
 ## Vipps design guidelines
 
@@ -80,10 +81,10 @@ Guidelines, logos, buttons, etc: https://github.com/vippsas/vipps-design-guideli
 
 ## Vipps API servers
 
-Test (MT): apitest.vipps.no<br/>
-Production: api.vipps.no
+* Test (MT): apitest.vipps.no
+* Production: api.vipps.no
 
-**Note:** Vipps may change the IP addresses for the API servers. To ensure
+**Please note:** Vipps may change the IP addresses for the API servers. To ensure
 that you are whitelisting the correct IP addresses please use these hostnames
 and DNS, and automatically update your firewall rules if there are DNS changes.
 
@@ -126,7 +127,7 @@ callback-mt-4.vipps.no
 For API products where Vipps makes requests to your servers, please make sure
 that these request servers are allowed through firewalls, etc.
 
-**Note:** Vipps may change the IP addresses for the request servers. To ensure
+**Please note:** Vipps may change the IP addresses for the request servers. To ensure
 that you are whitelisting the correct IP addresses please use these hostnames
 and DNS, and automatically update your firewall rules if there are DNS changes.
 
