@@ -1,6 +1,6 @@
 # Vipps Developers
 
-Version: 2.0.4.
+Version: 2.0.5.
 
 This repository contains various resources for Vipps developers, including:
 
@@ -22,9 +22,9 @@ This repository contains various resources for Vipps developers, including:
 - [Vipps design guidelines](#vipps-design-guidelines)
 - [Vipps API servers](#vipps-api-servers)
 - [Vipps request servers](#vipps-request-servers)
-- [Production environment](#production-environment)
-- [Disaster recovery (DR) environment](#disaster-recovery-dr-environment)
-- [Test environment](#test-environment)
+  - [Production environment](#production-environment)
+  - [Disaster recovery (DR) environment](#disaster-recovery-dr-environment)
+  - [Test environment](#test-environment)
 - [Additional developer resources](#additional-developer-resources)
 - [Questions?](#questions)
 
@@ -56,7 +56,10 @@ Production environment: https://vipps.statuspage.io
 
 ## The Vipps test environment (MT)
 
-https://github.com/vippsas/vipps-developers/blob/master/vipps-test-environment.md
+See
+[The Vipps test environment (MT)](https://github.com/vippsas/vipps-developers/blob/master/vipps-test-environment.md)
+for more information about general test functionality,
+the iOS and Android test apps, etc
 
 ## Postman
 
@@ -90,7 +93,8 @@ Requests made by Vipps are made from the servers specified below.
 Vipps normally only uses one server at a time, and change servers approximately
 every three months.
 
-## Production environment
+### Production environment
+
 ```
 callback-1.vipps.no
 callback-2.vipps.no
@@ -99,7 +103,7 @@ callback-4.vipps.no
 ```
 
 
-## Disaster recovery (DR) environment
+### Disaster recovery (DR) environment
 
 ```
 callback-dr-1.vipps.no
@@ -110,7 +114,7 @@ callback-dr-4.vipps.no
 
 The disaster recovery environment is as important as the production environment.
 
-## Test environment
+### Test environment
 
 ```
 callback-mt-1.vipps.no
