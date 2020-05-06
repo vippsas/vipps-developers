@@ -86,8 +86,8 @@ is very welcome.
 
 We have made some more in-depth product information pages with screenshots:
 
-* eCom (Vipps på Nett): https://vipps.no/developers-page/ecom/how-it-works/
-* Recurring: https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api-howitworks.md
+* eCom (Vipps på Nett): https://vipps.no/developers-documentation/ecom/how-it-works/
+* Recurring: https://vipps.no/developers-documentation/recurring/how-it-works/
 
 # Plugin overview
 
