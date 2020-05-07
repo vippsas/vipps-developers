@@ -6,9 +6,11 @@ The [Vipps Test environment (MT)](https://github.com/vippsas/vipps-developers#th
 
 ## Users
 
-All Vipps customers get a dedicated test user with a (for the test environmenty)
-unique phone number. The common test user below may be used in situations where
-the dedicated test user, for some reason, can not be used.
+All Vipps customers get a dedicated test user with a unique phone number to use in 
+[the test environment](https://github.com/vippsas/vipps-developers/blob/master/vipps-test-environment.md).
+
+The common test user below may be used in situations where the dedicated test user, 
+for some reason, can not be used.
 
 | customerId | NIN (fødselsnummer) | MSISDN (phone number) | First name   | Last name |
 | ---------- | ------------------- | --------------------- | ------------ | --------- |
