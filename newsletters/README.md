@@ -1,6 +1,8 @@
 # Technical newsletter for developers
 
-You can sign up here: https://cloud.hei.vipps.no/utv
+A low volume newsletter with important information about Vipps' APIs.
+
+Sign up here: https://cloud.hei.vipps.no/utv
 
 # Questions?
 
