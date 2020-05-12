@@ -1,6 +1,6 @@
 # Vipps Developers
 
-Version: 2.0.6.
+Version: 2.0.7.
 
 This repository contains various resources for Vipps developers, including:
 
@@ -126,7 +126,7 @@ and DNS, and automatically update your firewall rules if there are DNS changes.
 ## Additional developer resources
 
 * Developer overview: https://vipps.no/developer
-* High-level overview of the API documentation: https://vipps.no/developer/documentation/
+* High-level overview of the API documentation: https://vipps.no/developer/
 * Products, personal: http://vipps.no/privat
 * Products, business: http://vipps.no/bedrift
 
