@@ -1,15 +1,15 @@
 # Vipps Developers
 
-Version: 2.0.7.
+Version: 2.0.8.
 
 This repository contains various resources for Vipps developers, including:
 
 * [Getting started](vipps-getting-started.md) with Vipps development
-* [How to contribute](contribute.md) to Vipps projects on GitHub
 * [How to contact us](contact.md) in the Vipps Integration team
 * [Requirements](requirements.md) for foreign companies in order to use Vipps
 * [Settlements](https://github.com/vippsas/vipps-developers/tree/master/settlements)
   for information about settlements
+* [How to contribute](contribute.md) to Vipps projects on GitHub
 
 ## Table of contents
 
