@@ -7,7 +7,7 @@ If you are using an e-commerce platform, integration partner or PSP, please see 
 * [Partner](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-3)
 * [PSP](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-2)
 
-Document version 3.0.1.
+Document version 3.1.0.
 
 ## Table of contents
   - [Get credentials](#get-credentials)
@@ -52,9 +52,11 @@ or
 [Vipps Logg Inn](https://www.vipps.no/produkter-og-tjenester/bedrift/logg-inn-med-vipps/logg-inn-med-vipps/).
 See
 [Vipps products](https://vipps.no/produkter-og-tjenester/bedrift/)
-for an overview of all Vipps products.
+for an overview of all Vipps products, and
+also the
+[Vipps plugins](https://github.com/vippsas/vipps-developers#plugins).
 
-API keys are available in the Vipps Portal:
+API keys are available in the Vipps portal:
 The merchant's administrator can log in with BankID at
 [portal.vipps.no](https://portal.vipps.no)
 and retrieve the API keys under the `Utvikler` menu item.
@@ -67,7 +69,7 @@ The customer's administrator can create additional users on
 [portal.vipps.no](https://portal.vipps.no).
 
 If you do not have BankID, you will need the administrator to log in and provide
-the API keys to you. 
+the API keys to you.
 
 **Please note:** Vipps can not provide API keys in any other way, such as by
 email, as the API keys give access to transferring money.
@@ -83,11 +85,11 @@ Click `Show keys` on the relevant sale unit to display credentials.
 
 ### API key details
 
-| Keys                     | Value                                            |
-| ------------------------ | ------------------------------------------------ |
-| `Vipps-Subscription-Key` | This is used in the header for all API requests. |
-| `client_id`              | The "username"                                   |
-| `client_secret`          | The "password". Keep this secret.                |
+| Name                     | Format | Example                              |  Description                     |
+| ------------------------ | ------ | ------------------------------------ | -------------------------------- |
+| `client_id`              | GUID   | fb492b5e-7907-4d83-bc20-c7fb60ca35de | Client ID for the merchant (the "username")     |
+| `client_secret`          | Base64 | Y8Kteew6GE3ZmeycEt6egg==             | Client Secret for the merchant (the "password") |
+| `Vipps-Subscription-Key` | Base64 | 0f14ebcab0eb4b29ae0cb90d91b4a84a     | Subscription key for the product |
 
 **Please note:** `Vipps-Subscription-Key` was previously called `Ocp-Apim-Subscription-Key`.
 The legacy name `Ocp-Apim-Subscription-Key` _must still be used in requests and code_,
@@ -172,10 +174,8 @@ we strongly recommend upgrading to the current version as soon as possible.
 The Access Token API provides the JWT bearer token used in the `Authorization`
 header, required in all Vipps API calls.
 
-The API keys needed the access token are the same as for the API products:
-* client_id: <client_id>
-* client_secret: <client_secret>
-* Ocp-Apim-Subscription-Key: <Vipps-Subscription-Key>
+The API keys needed the access token are the same as for the API products,
+see [API key details](#api-key-details).
 
 ### Request
 
@@ -185,14 +185,6 @@ client_id: fb492b5e-7907-4d83-bc20-c7fb60ca35de
 client_secret: Y8Kteew6GE3ZmeycEt6egg==
 Ocp-Apim-Subscription-Key: 0f14ebcab0eb4b29ae0cb90d91b4a84a
 ```
-
-Header details:
-
-| Name                     | Value                  | Description                      |
-| ------------------------ | ---------------------- | -------------------------------- |
-| `client_id`              | A GUID value           | Client ID for the merchant       |
-| `client_secret`          | Base 64 encoded string | Client Secret for the merchant   |
-| `Vipps-Subscription-Key` | Base 64 encoded string | Subscription key for the product |
 
 ### Response
 
