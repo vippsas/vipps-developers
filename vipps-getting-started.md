@@ -1,11 +1,13 @@
 # First of all
-This guide only applies to the following APIs: Ecommerce, Recurring and Login. 
+This guide only applies to the following APIs: Ecommerce, Recurring and Login.
 
 If you are using an e-commerce platform, integration partner or PSP, please see the respective resources:
 
 * [Ecommerce platform](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-1)
 * [Partner](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-3)
 * [PSP](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-2)
+
+Document version 3.0.0.
 
 ## Table of contents
   - [Get credentials](#get-credentials)
@@ -33,7 +35,7 @@ environments, is to apply for a product at [vipps.no](https://vipps.no/produkter
 Test credentials are normally available 24 hours after we receive the application.
 When the application has been processed you will receive an email, and the
 API keys can be retrieved by logging in to https://portal.vipps.no with BankID.
-This normally takes a few days. 
+This normally takes a few days.
 
 **Please note:** If you plan to use Vipps through a Partner or a PSP, you will have to
 order the appropriate Vipps solution, and then contact the Partner or PSP
@@ -42,17 +44,32 @@ to have _them_ help you with developer access.
 ## Getting the API keys
 
 API keys are available in the Vipps Portal, under the `Utvikler` menu item in the top menu:
-https://portal.vipps.no
+[portal.vipps.no](https://portal.vipps.no).
 
-The registered admin can log in with BankID and fetch the API keys.
+Please note that API keys are _not_ available for
+[Vippsnummer](https://www.vipps.no/produkter-og-tjenester/bedrift/ta-betalt-i-butikk/ta-betalt-med-vipps/).
+You may need to order
+[Vipps på nett](https://www.vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/),
+[Vipps faste betalinger](https://www.vipps.no/produkter-og-tjenester/bedrift/faste-betalinger/faste-betalinger/)
+or
+[Vipps Logg Inn](https://www.vipps.no/produkter-og-tjenester/bedrift/logg-inn-med-vipps/logg-inn-med-vipps/).
+See
+[Vipps products](https://vipps.no/produkter-og-tjenester/bedrift/)
+for an overview of all Vipps products.
+
+The merchant's registered admin can log in at
+[portal.vipps.no](https://portal.vipps.no)
+with BankID and fetch the API keys.
 
 All Vipps customers must have a Norwegian organization number, and the customer
-agreements are signed with BankID. Since portal.vipps.no give access to API keys
-for both the test and production environment, we require BankID for logging in.
-The customer's administrator can create additional users on portal.vipps.no
+agreements are signed with BankID. Since [portal.vipps.no](https://portal.vipps.no)
+gives access to API keys for both the test and production environment, we require
+BankID for logging in.
+The customer's administrator can create additional users on
+[portal.vipps.no](https://portal.vipps.no).
 
 If you do not have BankID, you will need the admin to log in and provide the
-API keys to you.
+API keys to you. Remember to keep them secret.
 
 **Please note:** Vipps can not provide API keys in any other way, such as by
 email, as the API keys give access to transferring money.
@@ -60,7 +77,7 @@ Vipps will never ask for your API keys, and you should keep them secret.
 
 ### List of sale units
 Click `Show keys` on the relevant sale unit to display credentials.
- 
+
 ![portal.vipps.no: The API products for a sales unit](images/portalvippsno-salesunit-products.png)
 
 ### API keys for a salesunit
@@ -88,8 +105,9 @@ point of sale integrations,
 [Magento](https://github.com/vippsas/vipps-magento) (both 1 and 2),
 [Episerver](https://github.com/vippsas/vipps-episerver),
 [Shopify](https://github.com/vippsas/vipps-shopify),
-[Drupal](https://github.com/vippsas/vipps-drupal)
-and any other solution based on the Vipps eCom API v2.
+[Drupal](https://github.com/vippsas/vipps-drupal),
+[other plugins](https://github.com/vippsas/vipps-developers#plugins)
+and any other solution based on the Vipps eCom API.
 
 # API products
 
@@ -165,9 +183,9 @@ The API keys needed the access token are the same as for the API products:
 
 ```
 POST https://apitest.vipps.no/accessToken/get
-client_id: <client_id>
-client_secret: <client_secret>
-Ocp-Apim-Subscription-Key: <Vipps-Subscription-Key>
+client_id: fb492b5e-7907-4d83-bc20-c7fb60ca35de
+client_secret: Y8Kteew6GE3ZmeycEt6egg==
+Ocp-Apim-Subscription-Key: 0f14ebcab0eb4b29ae0cb90d91b4a84a
 ```
 
 Header details:
