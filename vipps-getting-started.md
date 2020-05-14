@@ -7,7 +7,7 @@ If you are using an e-commerce platform, integration partner or PSP, please see 
 * [Partner](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-3)
 * [PSP](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-2)
 
-Document version 3.0.0.
+Document version 3.0.1.
 
 ## Table of contents
   - [Get credentials](#get-credentials)
@@ -43,9 +43,6 @@ to have _them_ help you with developer access.
 
 ## Getting the API keys
 
-API keys are available in the Vipps Portal, under the `Utvikler` menu item in the top menu:
-[portal.vipps.no](https://portal.vipps.no).
-
 Please note that API keys are _not_ available for
 [Vippsnummer](https://www.vipps.no/produkter-og-tjenester/bedrift/ta-betalt-i-butikk/ta-betalt-med-vipps/).
 You may need to order
@@ -57,9 +54,10 @@ See
 [Vipps products](https://vipps.no/produkter-og-tjenester/bedrift/)
 for an overview of all Vipps products.
 
-The merchant's registered admin can log in at
+API keys are available in the Vipps Portal:
+The merchant's administrator can log in with BankID at
 [portal.vipps.no](https://portal.vipps.no)
-with BankID and fetch the API keys.
+and retrieve the API keys under the `Utvikler` menu item.
 
 All Vipps customers must have a Norwegian organization number, and the customer
 agreements are signed with BankID. Since [portal.vipps.no](https://portal.vipps.no)
@@ -68,8 +66,8 @@ BankID for logging in.
 The customer's administrator can create additional users on
 [portal.vipps.no](https://portal.vipps.no).
 
-If you do not have BankID, you will need the admin to log in and provide the
-API keys to you. Remember to keep them secret.
+If you do not have BankID, you will need the administrator to log in and provide
+the API keys to you. 
 
 **Please note:** Vipps can not provide API keys in any other way, such as by
 email, as the API keys give access to transferring money.
