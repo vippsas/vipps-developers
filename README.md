@@ -1,6 +1,6 @@
 # Vipps Developers
 
-Version: 2.0.8.
+Document version: 2.1.0.
 
 This repository contains various resources for Vipps developers, including:
 
@@ -69,7 +69,8 @@ for more information about using Postman.
 
 ## Vipps design guidelines
 
-Guidelines, logos, buttons, etc: https://github.com/vippsas/vipps-design-guidelines
+Guidelines, logos, buttons, etc is here:
+[vipps-design-guidelines](https://github.com/vippsas/vipps-design-guidelines).
 
 ## Vipps API servers
 
@@ -86,47 +87,25 @@ Requests made by Vipps are made from the servers specified below.
 Vipps normally only uses one server at a time, and change servers approximately
 every three months.
 
-### Production environment
-
-```
-callback-1.vipps.no
-callback-2.vipps.no
-callback-3.vipps.no
-callback-4.vipps.no
-```
-
-
-### Disaster recovery (DR) environment
-
-```
-callback-dr-1.vipps.no
-callback-dr-2.vipps.no
-callback-dr-3.vipps.no
-callback-dr-4.vipps.no
-```
+| Production (Prod)   | Disaster recovery (DR) | Test (MT)              |
+| ------------------- | ---------------------- | ---------------------- |
+| callback-1.vipps.no | callback-dr-1.vipps.no | callback-mt-1.vipps.no |
+| callback-2.vipps.no | callback-dr-2.vipps.no | callback-mt-2.vipps.no |
+| callback-3.vipps.no | callback-dr-3.vipps.no | callback-mt-3.vipps.no |
+| callback-4.vipps.no | callback-dr-4.vipps.no | callback-mt-4.vipps.no |
 
 The disaster recovery environment is as important as the production environment.
-
-### Test environment
-
-```
-callback-mt-1.vipps.no
-callback-mt-2.vipps.no
-callback-mt-3.vipps.no
-callback-mt-4.vipps.no
-```
-
-For API products where Vipps makes requests to your servers, please make sure
-that these request servers are allowed through firewalls, etc.
 
 **Please note:** Vipps may change the IP addresses for the request servers. To ensure
 that you are whitelisting the correct IP addresses please use these hostnames
 and DNS, and automatically update your firewall rules if there are DNS changes.
 
+For API products where Vipps makes requests to your servers, please make sure
+that these request servers are allowed through firewalls, etc.
+
 ## Additional developer resources
 
 * Developer overview: https://vipps.no/developer
-* High-level overview of the API documentation: https://vipps.no/developer/
 * Products, personal: http://vipps.no/privat
 * Products, business: http://vipps.no/bedrift
 
