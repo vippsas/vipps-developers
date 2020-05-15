@@ -13,7 +13,7 @@ Hello! 👋 We love email!
   - [More than one problem, or a new one?](#more-than-one-problem-or-a-new-one)
 - [Newsletter](#newsletter)
 
-Version: 2.1.0.
+Document version: 2.1.0.
 
 # We help with technical issues
 
