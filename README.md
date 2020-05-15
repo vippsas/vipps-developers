@@ -1,6 +1,6 @@
 # Vipps Developers
 
-Document version: 2.1.0.
+Document version: 2.1.1.
 
 This repository contains various resources for Vipps developers, including:
 
@@ -21,9 +21,6 @@ This repository contains various resources for Vipps developers, including:
 - [Vipps design guidelines](#vipps-design-guidelines)
 - [Vipps API servers](#vipps-api-servers)
 - [Vipps request servers](#vipps-request-servers)
-  - [Production environment](#production-environment)
-  - [Disaster recovery (DR) environment](#disaster-recovery-dr-environment)
-  - [Test environment](#test-environment)
 - [Additional developer resources](#additional-developer-resources)
 - [Questions?](#questions)
 
