@@ -2,20 +2,18 @@
 
 Hello! 👋 We love email!
 
-## Table of contents
-
 - [We help with technical issues](#we-help-with-technical-issues)
-  - [What to include in the email](#what-to-include-in-the-email)
-    - [Keep your colleagues up to date](#keep-your-colleagues-up-to-date)
-  - [Automatic reply](#automatic-reply)
-    - [Adding additional information](#adding-additional-information)
-  - [Response time](#response-time)
-  - [More than one problem, or a new one?](#more-than-one-problem-or-a-new-one)
+- [What to include in the email](#what-to-include-in-the-email)
+- [Keep your colleagues up to date](#keep-your-colleagues-up-to-date)
+- [Automatic reply](#automatic-reply)
+- [Adding additional information](#adding-additional-information)
+- [Response time](#response-time)
+- [More than one problem, or a new one?](#more-than-one-problem-or-a-new-one)
 - [Newsletter](#newsletter)
 
-Document version: 2.1.0.
+Document version: 2.2.0.
 
-# We help with technical issues
+## We help with technical issues
 
 We help with _**technical**_ issues from developers, such as questions about using our APIs.
 If you do not have a technical issue, the fastest way to get help is to use the right method:
@@ -66,7 +64,7 @@ The Integration email address is: integration@vipps.no
 
 (You can also [use the web interface](https://vippsas.atlassian.net/servicedesk/customer/portal/2))
 
-### Keep your colleagues up to date
+## Keep your colleagues up to date
 
 If you want colleagues to be included in all communication regarding this issue,
 add them in the `To:` or `CC:` field of the email. Any updates to the issue will be
@@ -80,7 +78,7 @@ about this issue in our systems.
 
 The auto-reply is sent from a real e-mail address, which you can reply to ✌️
 
-### Adding additional information
+## Adding additional information
 
 If you want to send additional information about the same issue,
 please reply to the email, without changing the `Subject` line.
@@ -98,6 +96,6 @@ of requests and the varying complexity of resolving them, we can not guarantee r
 Please send separate emails for each problem. If you send an email about a
 new problem by replying to an old issue, it may delay our response.
 
-# Newsletter
+## Newsletter
 
 Sign up for our [Technical newsletter for developers](https://github.com/vippsas/vipps-developers/tree/master/newsletters).
