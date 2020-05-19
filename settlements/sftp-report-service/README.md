@@ -56,7 +56,8 @@ More information about SFTP: [SSH File Transfer Protocol](https://en.wikipedia.o
 
 ### Connecting to the SFTP server
 
-The address of the SFTP server is `sftp.vipps.no`.
+The address of the SFTP server is `sftp.vipps.no`.  
+When connecting to the SFTP server you need to supply the username you created. In the picture above this is "hakon".
 
 This is the directory structure:
 ```
