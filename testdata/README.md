@@ -1,6 +1,6 @@
 # Vipps Test Data
 
-**Work in progress!**
+Document version 1.0.0.
 
 The [Vipps Test environment (MT)](https://github.com/vippsas/vipps-developers#the-vipps-test-environment-mt) contains synthetic data useful for testing.
 
@@ -18,8 +18,10 @@ for some reason, can not be used.
 
 ## Merchants
 
-All Vipps customers get a dedicated test merchant. The test merchants below are common 
-for all customers.
+All Vipps customers get a dedicated test merchant. 
+
+The common merchants below may be used in situations where the dedicated test merchant, 
+for some reason, can not be used.
 
 | Name               | Org. number | Account number |
 | ------------------ |------------ | -------------- |
