@@ -8,6 +8,7 @@ The [Vipps Test environment (MT)](https://github.com/vippsas/vipps-developers#th
 
 All Vipps customers get a dedicated test user with a unique phone number to use in 
 [the test environment](https://github.com/vippsas/vipps-developers/blob/master/vipps-test-environment.md).
+Please use this test user for all development and testing.
 
 The common test user below may be used in situations where the dedicated test user, 
 for some reason, can not be used.
@@ -18,7 +19,9 @@ for some reason, can not be used.
 
 ## Merchants
 
-All Vipps customers get a dedicated test merchant. 
+All Vipps customers get a dedicated test merchant to use in 
+[the test environment](https://github.com/vippsas/vipps-developers/blob/master/vipps-test-environment.md).
+Please use this test merchant for all development and testing.
 
 The common merchants below may be used in situations where the dedicated test merchant, 
 for some reason, can not be used.
