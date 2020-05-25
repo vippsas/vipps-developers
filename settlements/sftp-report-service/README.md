@@ -8,6 +8,8 @@ GDPR, etc.
 
 Vipps does not have an API to retrieve settlements files.
 
+Document version: 2.0.0.
+
 ## Settlements
 
 Settlements are created every day, but only as long as the balance is positive.
@@ -57,6 +59,8 @@ More information about SFTP: [SSH File Transfer Protocol](https://en.wikipedia.o
 ### Connecting to the SFTP server
 
 The address of the SFTP server is `sftp.vipps.no`.
+
+**Please note:** Vipps may change the IP addresses of `sftp.vipps.no`. To ensure that you are whitelisting the correct IP addresses please use the hostname and DNS, and automatically update your firewall rules if there are DNS changes.
 
 This is the directory structure:
 ```
