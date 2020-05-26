@@ -10,12 +10,7 @@ All Vipps customers get a dedicated test user with a unique phone number to use 
 [the test environment](https://github.com/vippsas/vipps-developers/blob/master/vipps-test-environment.md).
 Please use this test user for all development and testing.
 
-The common test user below may be used in situations where the dedicated test user, 
-for some reason, can not be used.
-
-| customerId | NIN (fødselsnummer) | MSISDN (phone number) | First name   | Last name |
-| ---------- | ------------------- | --------------------- | ------------ | --------- |
-| 10003301	 | 01032300371         | 4797777776            | Willhelm Fos | Kluvstad  |
+Please use your dedicated test user for all your testing.
 
 ## Merchants
 
