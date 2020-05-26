@@ -10,8 +10,6 @@ All Vipps customers get a dedicated test user with a unique phone number to use 
 [the test environment](https://github.com/vippsas/vipps-developers/blob/master/vipps-test-environment.md).
 Please use this test user for all development and testing.
 
-Please use your dedicated test user for all your testing.
-
 ## Merchants
 
 All Vipps customers get a dedicated test merchant to use in 
