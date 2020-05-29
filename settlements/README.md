@@ -65,7 +65,7 @@ See also the Vipps eCom API.
 ### Additional info for recurring payments
 For recurring payments the `ordreID` is an optional field.
 If `ordreID` is not sent, the settlement report shows `chargeID` in the `orderID` field.
-If `ordreID` is in use, we replace the `chargeID` value, with `orderID`
+If `ordreID` is in use, we replace the `chargeID` value, with `orderID`.
 
 ## Availability
 
