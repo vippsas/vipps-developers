@@ -62,6 +62,11 @@ If you need an `orderId` to identify a payment, you need to use
 [Vipps på nett](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/).
 See also the Vipps eCom API.
 
+### Additional info for recurring payments
+For recurring payments the `ordreID` is an optional field.
+If `ordreID` is not sent, the settlement report shows `chargeID` in the `orderID` field.
+If `ordreID` is in use, we replace the `chargeID` value, with `orderID`
+
 ## Availability
 
 Settlement reports are available by 12:00 noon. The reports are generated around
