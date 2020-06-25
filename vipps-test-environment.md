@@ -99,7 +99,7 @@ only have one of the apps installed on the same device.
 The Android test app is available in App Center.
 You do *not* need an activation code.
 
-1. Open the [App Center](https://install.appcenter.ms/orgs/vipps/apps/vipps-android/distribution_groups/mt%20testers) link. If you get a push message prompting to whitelist the source, you should be able to do this via the "Settings" button.
+1. Open the [App Center](https://install.appcenter.ms/orgs/vipps/apps/vipps-android/distribution_groups/mt%20testers) link on your Android phone. If you get a push message prompting to whitelist the source, you should be able to do this via the "Settings" button.
 2. Install the "Vipps Android" app
 3. Open the "Vipps Android" app
 4. Enter the test phone number, that was sent in the welcome email to the email address used in the registration. Your normal Vipps user is not available in the test environment.
