@@ -77,7 +77,7 @@ Normal Vipps users are not available, so you can not use your own phone number w
 The iOS test app is available in Apple TestFlight.
 You do *not* need an activation code.
 
-1. Open the [TestFlight](https://testflight.apple.com/join/hTAYrwea) link
+1. Open the [TestFlight](https://testflight.apple.com/join/hTAYrwea) link on your iOS phone
 2. Install the "Vipps MT" app
 3. Open the "Vipps MT" app
 4. Enter the test phone number, that was sent in the welcome email to the email address used in the registration. Your normal Vipps user is not available in the test environment.
