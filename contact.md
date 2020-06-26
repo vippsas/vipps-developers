@@ -4,6 +4,7 @@ Hello! 👋 We love email!
 
 - [We help with technical issues](#we-help-with-technical-issues)
 - [What to include in the email](#what-to-include-in-the-email)
+- [Can I call you?](#can-i-call-you)
 - [Keep your colleagues up to date](#keep-your-colleagues-up-to-date)
 - [Automatic reply](#automatic-reply)
 - [Adding additional information](#adding-additional-information)
@@ -11,7 +12,7 @@ Hello! 👋 We love email!
 - [More than one problem, or a new one?](#more-than-one-problem-or-a-new-one)
 - [Newsletter](#newsletter)
 
-Document version: 2.2.0.
+Document version: 2.3.0.
 
 ## We help with technical issues
 
@@ -66,6 +67,13 @@ Please send an email with all relevant information to the address below:
 The Integration email address is: integration@vipps.no
 
 (You can also [use the web interface](https://vippsas.atlassian.net/servicedesk/customer/portal/2))
+
+## Can I call you?
+
+No, we do not have a phone number for Integration, and we do not have the capacity to
+help 1:1 on phone, sorry. Most cases involve information that needs to be in written form,
+such as ids, API requests/responses, etc. We do sometimes set up Slack channels for
+customers, so you can request that if you expect to be contacting us a lot.
 
 ## Keep your colleagues up to date
 
