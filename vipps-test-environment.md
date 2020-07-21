@@ -1,4 +1,4 @@
-# The Vipps test environment (MT)
+# The Vipps Test Environment (MT)
 
 The Merchant Test Environment (MT) is available for all Vipps customers.
 
