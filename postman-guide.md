@@ -60,9 +60,9 @@ These variables are required for all Vipps APIs
 
 Variable | Located
 -------- | -------
-client-id | [VippsPortal](https://portal.vipps.no/) -> Utvikler -> Show keys -> client_id
-client-secret | [VippsPortal](https://portal.vipps.no/) -> Utvikler -> Show keys -> client_secret
-Ocp-Apim-Subscription-Key | [VippsPortal](https://portal.vipps.no/) -> Utvikler -> Show keys -> client_id 
+client-id | [VippsPortal](https://portal.vipps.no/) -> Utvikler -> Show keys -> Client id
+client-secret | [VippsPortal](https://portal.vipps.no/) -> Utvikler -> Show keys -> Client secret
+Ocp-Apim-Subscription-Key | [VippsPortal](https://portal.vipps.no/) -> Utvikler -> Show keys -> Subscription Key
 
 
 ### eCommerce API specific variables
