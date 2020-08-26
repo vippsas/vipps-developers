@@ -40,7 +40,7 @@ Magento 1 | [vipps-magento-v1](https://github.com/vippsas/vipps-magento-v1) | - 
 Episerver | [vipps-episerver](https://github.com/vippsas/vipps-episerver) | - | Coming soon.
 Drupal | [vipps-drupal](https://github.com/vippsas/vipps-drupal) | Coming soon. | Coming soon.
 Shopify | [vipps-shopify](https://github.com/vippsas/vipps-shopify) | - | - |
-Craft Commerce | To be decided. | - | Coming soon.
+Craft Commerce | To be decided. | - | [vipps-craft-login](https://github.com/vippsas/vipps-craft-login)
 Wix | To be decided. | - | -
 BigCommerce | To be decided. | - | -
 
