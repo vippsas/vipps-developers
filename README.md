@@ -35,13 +35,13 @@ See: [Getting started](vipps-getting-started.md).
 Platform/solution | eCommerce | Recurring  | Login
 ----------------- | --------- | ---------- | -----
 Vipps product info | [Vipps på nett](https://www.vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/) | [Faste betalinger](https://vipps.no/produkter-og-tjenester/bedrift/faste-betalinger/faste-betalinger/) | [Vipps Logg Inn](https://www.vipps.no/produkter-og-tjenester/bedrift/logg-inn-med-vipps/logg-inn-med-vipps/)
-WooCommerce | [vipps-woocommerce](https://github.com/vippsas/vipps-woocommerce) <br/>:question: [Support](https://wordpress.org/support/plugin/woo-vipps/)| [vipps-recurring-woocommerce](https://github.com/vippsas/vipps-recurring-woocommerce)<br/>:question: [Support](https://wordpress.org/support/plugin/vipps-recurring-payments-gateway-for-woocommerce/) | - |
-WordPress | - | - | [vipps-login-wordpress](https://github.com/vippsas/vipps-login-wordpress) <br/>:question: [Support](https://wordpress.org/support/plugin/login-with-vipps/)
-Magento 2 | [vipps-magento](https://github.com/vippsas/vipps-magento) | - | [vipps-login-magento](https://github.com/vippsas/vipps-login-magento)
-Magento 1 | [vipps-magento-v1](https://github.com/vippsas/vipps-magento-v1) | - | To be decided.
+WooCommerce | [vipps-woocommerce](https://github.com/vippsas/vipps-woocommerce) <br/>For support, use [wordpress.org](https://wordpress.org/support/plugin/woo-vipps/)| [vipps-recurring-woocommerce](https://github.com/vippsas/vipps-recurring-woocommerce)<br/>For support, use [wordpress.org](https://wordpress.org/support/plugin/vipps-recurring-payments-gateway-for-woocommerce/) | - |
+WordPress | - | - | [vipps-login-wordpress](https://github.com/vippsas/vipps-login-wordpress) <br/>For support, use [wordpress.org](https://wordpress.org/support/plugin/login-with-vipps/)
+Magento 2 | [vipps-magento](https://github.com/vippsas/vipps-magento)<br/>For support, use vipps@vaimo.no<br/> or [submit an issue on GitHub](https://github.com/vippsas/vipps-magento) | - | [vipps-login-magento](https://github.com/vippsas/vipps-login-magento)<br/>For support, use vipps@vaimo.no <br/>or [submit an issue on GitHub](https://github.com/vippsas/vipps-login-magento)
+Magento 1 | [vipps-magento-v1](https://github.com/vippsas/vipps-magento-v1)<br/> For support, use vipps@vaimo.no<br/> or [submit an issue on GitHub](https://github.com/vippsas/vipps-magento-v1) | - | To be decided.
 Episerver | [vipps-episerver](https://github.com/vippsas/vipps-episerver) | - | Coming soon.
 Drupal | [vipps-drupal](https://github.com/vippsas/vipps-drupal) | Coming soon. | Coming soon.
-Shopify | [vipps-shopify](https://github.com/vippsas/vipps-shopify) | - | - |
+Shopify | [vipps-shopify](https://github.com/vippsas/vipps-shopify)<br/>For support, [submit an issue on GitHub](https://github.com/vippsas/vipps-shopify) | - | - |
 Craft Commerce | To be decided. | - | [vipps-craft-login](https://github.com/vippsas/vipps-craft-login)
 Wix | To be decided. | - | -
 BigCommerce | To be decided. | - | -
