@@ -37,8 +37,8 @@ WooCommerce | [vipps-woocommerce](https://github.com/vippsas/vipps-woocommerce) 
 WordPress | - | - | [vipps-login-wordpress](https://github.com/vippsas/vipps-login-wordpress)
 Magento 2 | [vipps-magento](https://github.com/vippsas/vipps-magento) | - | [vipps-login-magento](https://github.com/vippsas/vipps-login-magento)
 Magento 1 | [vipps-magento-v1](https://github.com/vippsas/vipps-magento-v1) | - | To be decided.
-Episerver | [vipps-episerver](https://github.com/vippsas/vipps-episerver) | - | Coming soon.
-Drupal | [vipps-drupal](https://github.com/vippsas/vipps-drupal) | Coming soon. | Coming soon.
+Episerver | [vipps-episerver](https://github.com/vippsas/vipps-episerver) | - | [vipps-login-dotnet](https://github.com/vippsas/vipps-login-dotnet)
+Drupal | [vipps-drupal](https://github.com/vippsas/vipps-drupal) | Coming soon. | [vipps-login-drupal](https://github.com/vippsas/vipps-login-drupal)
 Shopify | [vipps-shopify](https://github.com/vippsas/vipps-shopify) | - | - |
 Craft Commerce | To be decided. | - | [vipps-craft-login](https://github.com/vippsas/vipps-craft-login)
 Wix | To be decided. | - | -
