@@ -48,12 +48,12 @@ Vipps product info | [Vipps på nett](https://www.vipps.no/produkter-og-tjeneste
 WooCommerce | [vipps-woocommerce](https://github.com/vippsas/vipps-woocommerce) | [vipps-recurring-woocommerce](https://github.com/vippsas/vipps-recurring-woocommerce) | - | [Details](#woocommerce)
 WordPress | - | - | [vipps-login-wordpress](https://github.com/vippsas/vipps-login-wordpress) | [Details](#wordpress) |
 Magento 2 | [vipps-magento](https://github.com/vippsas/vipps-magento) | - | [vipps-login-magento](https://github.com/vippsas/vipps-login-magento) | [Details](#magento-2)
-Magento 1 | [vipps-magento-v1](https://github.com/vippsas/vipps-magento-v1) | - | To be decided.| [Details](#magento-1)
+Magento 1 | [vipps-magento-v1](https://github.com/vippsas/vipps-magento-v1) | - | -| [Details](#magento-1)
 Episerver | [vipps-episerver](https://github.com/vippsas/vipps-episerver) | - | [vipps-login-dotnet](https://github.com/vippsas/vipps-login-dotnet) |-
 Drupal | [vipps-drupal](https://github.com/vippsas/vipps-drupal) | Coming soon. | [vipps-login-drupal](https://github.com/vippsas/vipps-login-drupal) |[Details](#drupal)
 Shopify | [vipps-shopify](https://github.com/vippsas/vipps-shopify) | - | - | [Details](#shopify)
 Craft Commerce | To be decided. | - | [vipps-craft-login](https://github.com/vippsas/vipps-craft-login)|-
-Wix | To be decided. | - | -|-
+Wix | Coming soon. | - | -|-
 BigCommerce | To be decided. | - | -|-
 
 ### Craft Commerce
@@ -89,7 +89,7 @@ BigCommerce | To be decided. | - | -|-
 
 **eCommerce**: [vipps-magento-v1](https://github.com/vippsas/vipps-magento-v1) **Support:** vipps@vaimo.no or [submit an issue on GitHub](https://github.com/vippsas/vipps-magento-v1)  
 **Recurring**: N/A  
-**Login**: To be decided.  
+**Login**: N/A  
 
 ### Shopify  
 
@@ -121,9 +121,9 @@ BigCommerce | To be decided. | - | -|-
 
 ### Wix  
 
-**eCommerce**:  
-**Recurring**:  
-**Login**:  
+**eCommerce**: Coming soon.  
+**Recurring**: N/A 
+**Login**: N/A  
 
 [craft-cms-logo]: images/logos/logo-craft-cms.svg "craft cms logo"
 [drupal-logo]: images/logos/drupal.png "craft cms logo"
