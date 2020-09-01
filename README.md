@@ -46,7 +46,7 @@ Platform/solution | eCommerce | Recurring  | Login | Support
 ----------------- | --------- | ---------- | ----- | -------
 Vipps product info | [Vipps på nett](https://www.vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/) | [Faste betalinger](https://vipps.no/produkter-og-tjenester/bedrift/faste-betalinger/faste-betalinger/) | [Vipps Logg Inn](https://www.vipps.no/produkter-og-tjenester/bedrift/logg-inn-med-vipps/logg-inn-med-vipps/) | - |
 WooCommerce | [vipps-woocommerce](https://github.com/vippsas/vipps-woocommerce) | [vipps-recurring-woocommerce](https://github.com/vippsas/vipps-recurring-woocommerce) | - | [Support details](#woocommerce)
-WordPress | - | - | [vipps-login-wordpress](https://github.com/vippsas/vipps-login-wordpress) | For support, use [wordpress.org](https://wordpress.org/support/plugin/login-with-vipps/)|
+WordPress | - | - | [vipps-login-wordpress](https://github.com/vippsas/vipps-login-wordpress) | [Support details](#wordpress) |
 Magento 2 | [vipps-magento](https://github.com/vippsas/vipps-magento) | - | [vipps-login-magento](https://github.com/vippsas/vipps-login-magento) | [Support details](#magento-2)
 Magento 1 | [vipps-magento-v1](https://github.com/vippsas/vipps-magento-v1) | - | To be decided.| [Support details](#magento-1)
 Episerver | [vipps-episerver](https://github.com/vippsas/vipps-episerver) | - | [vipps-login-dotnet](https://github.com/vippsas/vipps-login-dotnet) |-
