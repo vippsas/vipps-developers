@@ -66,8 +66,8 @@ BigCommerce | To be decided. | - | -|-
 ### Drupal  
 
 ![alt text][drupal-logo]  
-**eCommerce**: [vipps-drupal](https://github.com/vippsas/vipps-drupal) **Support:** [submit an issue on GitHub](https://github.com/vippsas/vipps-drupal)  
-**Recurring**: Coming soon.  
+**eCommerce**: [vipps-drupal](https://github.com/vippsas/vipps-drupal)  
+**Recurring**: [vipps-recurring-drupal](https://github.com/vippsas/vipps-recurring-drupal)  
 **Login**: [vipps-login-drupal](https://github.com/vippsas/vipps-login-drupal)  
 
 ### Episerver  
