@@ -102,13 +102,13 @@ BigCommerce | To be decided. | - | -|-
 ![alt text][woocommerce-logo]  
 **eCommerce**: [vipps-woocommerce](https://github.com/vippsas/vipps-woocommerce) **Support:** [wordpress.org](https://wordpress.org/support/plugin/woo-vipps/)  
 **Recurring**: [vipps-recurring-woocommerce](https://github.com/vippsas/vipps-recurring-woocommerce) **Support:** [wordpress.org](https://wordpress.org/support/plugin/vipps-recurring-payments-gateway-for-woocommerce/)  
-**Login**: See WordPress.  
+**Login**: [See WordPress.](#wordpress)  
 
 ### WordPress
 
 ![alt text][wordpress-logo]  
-**eCommerce**: See WooCommerce.  
-**Recurring**: See WooCommerce.  
+**eCommerce**: [See WooCommerce.](#woocommerce)  
+**Recurring**: [See WooCommerce.](#woocommerce)  
 **Login**: [vipps-login-wordpress](https://github.com/vippsas/vipps-login-wordpress) **Support:** [wordpress.org](https://wordpress.org/support/plugin/login-with-vipps/)  
 
 ### BigCommerce  
