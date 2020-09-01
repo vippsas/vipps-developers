@@ -93,8 +93,9 @@ BigCommerce | To be decided. | - | -|-
 
 ### Shopify  
 
+![alt text][shopify-logo]  
 **eCommerce**: [vipps-shopify](https://github.com/vippsas/vipps-shopify) **Support:** [submit an issue on GitHub](https://github.com/vippsas/vipps-shopify)  
-**Recurring**:  N/A
+**Recurring**:  N/A  
 **Login**:  N/A
 
 ### WooCommerce
@@ -112,23 +113,25 @@ BigCommerce | To be decided. | - | -|-
 **Login**: [vipps-login-wordpress](https://github.com/vippsas/vipps-login-wordpress) **Support:** [wordpress.org](https://wordpress.org/support/plugin/login-with-vipps/)  
 
 ### BigCommerce  
-
-**eCommerce**:  
-**Recurring**:  
-**Login**:  
-
-
+![alt text][bigcommerce-logo]  
+**eCommerce**: To be decided.  
+**Recurring**: N/A  
+**Login**: N/A  
 
 ### Wix  
 
+![alt text][wix-logo]  
 **eCommerce**: Coming soon.  
-**Recurring**: N/A 
+**Recurring**: N/A  
 **Login**: N/A  
 
+[bigcommerce-logo]: images/logos/bigcommerce.png "BigCommerce logo"
 [craft-cms-logo]: images/logos/logo-craft-cms.svg "craft cms logo"
 [drupal-logo]: images/logos/drupal.png "craft cms logo"
 [episerver-logo]: images/logos/episerver.png "EpiServer logo"
 [magento-logo]: images/logos/Magento.png "Magento logo"
+[shopify-logo]: images/logos/shopify.png "Shopify logo"
+[wix-logo]: images/logos/wix.png "Wix logo"
 [wordpress-logo]: images/logos/WordPress.png "Wordpress logo"
 [woocommerce-logo]: images/logos/WooCommerce.png "WooCommerce logo"
 
