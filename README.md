@@ -49,8 +49,8 @@ WooCommerce | [vipps-woocommerce](https://github.com/vippsas/vipps-woocommerce) 
 WordPress | - | - | [vipps-login-wordpress](https://github.com/vippsas/vipps-login-wordpress) | For support, use [wordpress.org](https://wordpress.org/support/plugin/login-with-vipps/)|
 Magento 2 | [vipps-magento](https://github.com/vippsas/vipps-magento) | - | [vipps-login-magento](https://github.com/vippsas/vipps-login-magento) | [Support details](#magento-2)
 Magento 1 | [vipps-magento-v1](https://github.com/vippsas/vipps-magento-v1) | - | To be decided.| [Support details](#magento-1)
-Episerver | [vipps-episerver](https://github.com/vippsas/vipps-episerver) | - | Coming soon.|-
-Drupal | [vipps-drupal](https://github.com/vippsas/vipps-drupal) | Coming soon. | Coming soon.|[Support details](#drupal)
+Episerver | [vipps-episerver](https://github.com/vippsas/vipps-episerver) | - | [vipps-login-dotnet](https://github.com/vippsas/vipps-login-dotnet) |-
+Drupal | [vipps-drupal](https://github.com/vippsas/vipps-drupal) | Coming soon. | [vipps-login-drupal](https://github.com/vippsas/vipps-login-drupal) |[Support details](#drupal)
 Shopify | [vipps-shopify](https://github.com/vippsas/vipps-shopify) | - | - | [Support details](#shopify)
 Craft Commerce | To be decided. | - | [vipps-craft-login](https://github.com/vippsas/vipps-craft-login)|-
 Wix | To be decided. | - | -|-
@@ -68,14 +68,14 @@ BigCommerce | To be decided. | - | -|-
 ![alt text][drupal-logo]  
 **eCommerce**: [vipps-drupal](https://github.com/vippsas/vipps-drupal) **Support:** [submit an issue on GitHub](https://github.com/vippsas/vipps-drupal)  
 **Recurring**: Coming soon.  
-**Login**: Coming soon.  
+**Login**: [vipps-login-drupal](https://github.com/vippsas/vipps-login-drupal)  
 
 ### Episerver  
 
 ![alt text][episerver-logo]  
 **eCommerce**: [vipps-episerver](https://github.com/vippsas/vipps-episerver)  
 **Recurring**: N/A  
-**Login**: Coming soon.  
+**Login**: [vipps-login-dotnet](https://github.com/vippsas/vipps-login-dotnet)  
 
 ![alt text][magento-logo]  
 
@@ -131,7 +131,6 @@ BigCommerce | To be decided. | - | -|-
 [magento-logo]: images/logos/Magento.png "Magento logo"
 [wordpress-logo]: images/logos/WordPress.png "Wordpress logo"
 [woocommerce-logo]: images/logos/WooCommerce.png "WooCommerce logo"
-
 
 ## Status page
 
