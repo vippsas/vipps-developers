@@ -50,7 +50,7 @@ WordPress | - | - | [vipps-login-wordpress](https://github.com/vippsas/vipps-log
 Magento 2 | [vipps-magento](https://github.com/vippsas/vipps-magento) | - | [vipps-login-magento](https://github.com/vippsas/vipps-login-magento) | [Details](#magento-2)
 Magento 1 | [vipps-magento-v1](https://github.com/vippsas/vipps-magento-v1) | - | -| [Details](#magento-1)
 Episerver | [vipps-episerver](https://github.com/vippsas/vipps-episerver) | - | [vipps-login-dotnet](https://github.com/vippsas/vipps-login-dotnet) |-
-Drupal | [vipps-drupal](https://github.com/vippsas/vipps-drupal) | Coming soon. | [vipps-login-drupal](https://github.com/vippsas/vipps-login-drupal) |[Details](#drupal)
+Drupal | [vipps-drupal](https://github.com/vippsas/vipps-drupal) | [vipps-recurring-drupal](https://github.com/vippsas/vipps-recurring-drupal) | [vipps-login-drupal](https://github.com/vippsas/vipps-login-drupal) |[Details](#drupal)
 Shopify | [vipps-shopify](https://github.com/vippsas/vipps-shopify) | - | - | [Details](#shopify)
 Craft Commerce | To be decided. | - | [vipps-craft-login](https://github.com/vippsas/vipps-craft-login)|-
 Wix | Coming soon. | - | -|-
