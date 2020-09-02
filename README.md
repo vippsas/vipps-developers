@@ -1,6 +1,6 @@
 # Vipps Developers
 
-Document version: 2.1.1.
+Document version: 2.1.2.
 
 This repository contains various resources for Vipps developers, including:
 
@@ -42,6 +42,9 @@ See: [Getting started](vipps-getting-started.md).
 
 ## Plugins
 
+Vipps provides several open source plugins for various web solutions.
+This table below gives an overview, and the sections below have more details.
+
 Platform/solution | eCommerce | Recurring  | Login | Support
 ----------------- | --------- | ---------- | ----- | -------
 Vipps product info | [Vipps på nett](https://www.vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/) | [Faste betalinger](https://vipps.no/produkter-og-tjenester/bedrift/faste-betalinger/faste-betalinger/) | [Vipps Logg Inn](https://www.vipps.no/produkter-og-tjenester/bedrift/logg-inn-med-vipps/logg-inn-med-vipps/) | - |
@@ -65,19 +68,19 @@ BigCommerce | To be decided. | - | -|-
 
 ### Drupal  
 
-![alt text][drupal-logo]  
+![Drupal logo][drupal-logo]  
 **eCommerce**: [vipps-drupal](https://github.com/vippsas/vipps-drupal)  
 **Recurring**: [vipps-recurring-drupal](https://github.com/vippsas/vipps-recurring-drupal)  
 **Login**: [vipps-login-drupal](https://github.com/vippsas/vipps-login-drupal)  
 
 ### Episerver  
 
-![alt text][episerver-logo]  
+![Episerver logo][episerver-logo]  
 **eCommerce**: [vipps-episerver](https://github.com/vippsas/vipps-episerver)  
 **Recurring**: N/A  
 **Login**: [vipps-login-dotnet](https://github.com/vippsas/vipps-login-dotnet)  
 
-![alt text][magento-logo]  
+![Magento logo][magento-logo]  
 
 ### Magento 2
 
@@ -93,34 +96,34 @@ BigCommerce | To be decided. | - | -|-
 
 ### Shopify  
 
-![alt text][shopify-logo]  
+![Shopify logo][shopify-logo]  
 **eCommerce**: [vipps-shopify](https://github.com/vippsas/vipps-shopify) **Support:** [submit an issue on GitHub](https://github.com/vippsas/vipps-shopify)  
 **Recurring**:  N/A  
 **Login**:  N/A
 
 ### WooCommerce
 
-![alt text][woocommerce-logo]  
+![WooCommerce logo][woocommerce-logo]  
 **eCommerce**: [vipps-woocommerce](https://github.com/vippsas/vipps-woocommerce) **Support:** [wordpress.org](https://wordpress.org/support/plugin/woo-vipps/)  
 **Recurring**: [vipps-recurring-woocommerce](https://github.com/vippsas/vipps-recurring-woocommerce) **Support:** [wordpress.org](https://wordpress.org/support/plugin/vipps-recurring-payments-gateway-for-woocommerce/)  
 **Login**: [See WordPress.](#wordpress)  
 
 ### WordPress
 
-![alt text][wordpress-logo]  
+![Wordpress logo][wordpress-logo]  
 **eCommerce**: [See WooCommerce.](#woocommerce)  
 **Recurring**: [See WooCommerce.](#woocommerce)  
 **Login**: [vipps-login-wordpress](https://github.com/vippsas/vipps-login-wordpress) **Support:** [wordpress.org](https://wordpress.org/support/plugin/login-with-vipps/)  
 
 ### BigCommerce  
-![alt text][bigcommerce-logo]  
+![BigCommerce logo][bigcommerce-logo]  
 **eCommerce**: To be decided.  
 **Recurring**: N/A  
 **Login**: N/A  
 
 ### Wix  
 
-![alt text][wix-logo]  
+![Wix logo][wix-logo]  
 **eCommerce**: Coming soon.  
 **Recurring**: N/A  
 **Login**: N/A  
