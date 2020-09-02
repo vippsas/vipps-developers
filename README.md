@@ -129,11 +129,11 @@ BigCommerce | To be decided. | - | -|-
 [craft-cms-logo]: images/logos/logo-craft-cms.svg "craft cms logo"
 [drupal-logo]: images/logos/drupal.png "craft cms logo"
 [episerver-logo]: images/logos/episerver.png "EpiServer logo"
-[magento-logo]: images/logos/Magento.png "Magento logo"
+[magento-logo]: images/logos/magento.png "Magento logo"
 [shopify-logo]: images/logos/shopify.png "Shopify logo"
 [wix-logo]: images/logos/wix.png "Wix logo"
-[wordpress-logo]: images/logos/WordPress.png "Wordpress logo"
-[woocommerce-logo]: images/logos/WooCommerce.png "WooCommerce logo"
+[wordpress-logo]: images/logos/wordpress.png "Wordpress logo"
+[woocommerce-logo]: images/logos/woocommerce.png "WooCommerce logo"
 
 ## Status page
 
