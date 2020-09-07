@@ -15,7 +15,7 @@ every merchant: It is sufficient to use the partner's own API keys.
 The partner's API keys only work for merchants that are registered
 in Vipps as customers of that partner.
 
-# Partner onboarding
+# Onboarding
 
 A new Vipps partner typically goes through the following steps:
 
@@ -55,7 +55,7 @@ TODO: Tidy up!
     - [ ] Vipps-System-Plugin-Name
     - [ ] Vipps-System-Plugin-Version    
 
-## Flow to go live for direct integrations
+# Flow to go live new partners
 
 1. The partner orders [Vipps på Nett](https://www.vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/).
 2. Vipps completes customer control (KYC, PEP, AML, etc).
@@ -72,6 +72,12 @@ TODO: Tidy up!
 9. Vipps adds the partner to vipps.no, including the signup forms for merchants.
 10. The partner add its merchant to their solution.
 11. The partner goes live 🎉
+
+# Flow to go live for new merchants
+
+1. The merchant signs up for [Vipps på Nett](https://www.vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/) and selects the partner in the form.
+2. Vipps completes customer control (KYC, PEP, AML, etc).
+3. Hmmm?
 
 ## Questions?
 
