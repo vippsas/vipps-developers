@@ -1,6 +1,6 @@
 # Vipps Partners
 
-Document version: 0.0.1.
+Document version: 0.0.2.
 
 Vipps partners can represent multiple Vipps merchants, and can make transactions
 on behalf of the merchants.
@@ -59,8 +59,8 @@ TODO: Tidy up!
 
 1. The partner orders [Vipps på Nett](https://www.vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/).
 2. Vipps completes customer control (KYC, PEP, AML, etc).
-3. The merchant receives an email from Vipps saying that they can log in with bankID on [portal.vipps.no](https://portal.vipps.no) and retrieve API keys.
-4. The partner completes all checklist items.
+3. The partner receives an email from Vipps saying that they can log in with bankID on [portal.vipps.no](https://portal.vipps.no) and retrieve the API keys.
+4. The partner completes all checklist items above.
 5. The partner [contacts Vipps](https://github.com/vippsas/vipps-developers/blob/master/contact.md) with test IDs (`orderId`) in the [Vipps test environment](https://github.com/vippsas/vipps-developers#the-vipps-test-environment-mt), showing that all checklist items have been fulfilled.
     - A complete order ending in `REFUND` ([`/refund`](https://vippsas.github.io/vipps-ecom-api/#/Vipps%20eCom%20API/refundPaymentUsingPOST) request).
     - A complete order ending in `VOID` ([`/cancel`](https://vippsas.github.io/vipps-ecom-api/#/Vipps%20eCom%20API/cancelPaymentRequestUsingPUT) request).
@@ -68,16 +68,16 @@ TODO: Tidy up!
 7. The partner [contacts Vipps](https://github.com/vippsas/vipps-developers/blob/master/contact.md) to verify the integration in the production environment:
     - A complete order ending in `REFUND` ([`/refund`](https://vippsas.github.io/vipps-ecom-api/#/Vipps%20eCom%20API/refundPaymentUsingPOST) request).
     - For *reserve capture*: A complete order ending in `VOID` ([`/cancel`](https://vippsas.github.io/vipps-ecom-api/#/Vipps%20eCom%20API/cancelPaymentRequestUsingPUT) request after reserve).
-8. The partner goes live 🎉
+8. The partner receives an email from Vipps saying that the implementation is OK.
+9. Vipps adds the partner to vipps.no, including the signup forms for merchants.
+10. The partner add its merchant to their solution.
+11. The partner goes live 🎉
 
-## Flow to go live for direct integrations for partners
+## Questions?
 
-1. The partner becomes a partner by [applying here](https://www.vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/)
-2. The partner completes the integration, with the API test keys
-3. The partner [contacts Vipps](https://github.com/vippsas/vipps-developers/blob/master/contact.md) with test IDs (`orderId`) in the [Vipps test environment](https://github.com/vippsas/vipps-developers#the-vipps-test-environment-mt), showing that all checklist items have been fulfilled.
-    - A complete order ending in `REFUND` ([`/refund`](https://vippsas.github.io/vipps-ecom-api/#/Vipps%20eCom%20API/refundPaymentUsingPOST) request).
-    - For *reserve capture*: A complete order ending in `VOID` ([`/cancel`](https://vippsas.github.io/vipps-ecom-api/#/Vipps%20eCom%20API/cancelPaymentRequestUsingPUT) request after reserve).
-4. The partner receives an email from Vipps saying that the implementation is OK.
-5. Vipps adds the partner to vipps.no, including the signup forms for merchants.
-6. The partner add its merchant to their solution.
-7. The Merchant goes live 🎉
+We're always happy to help with code or other questions you might have!
+Please create an [issue](https://github.com/vippsas/vipps-developers/issues),
+a [pull request](https://github.com/vippsas/vipps-developers/pulls),
+or contact us by email: partnerbestilling@vipps.no.
+
+Sign up for our [Technical newsletter for developers](https://github.com/vippsas/vipps-developers/tree/master/newsletters).
