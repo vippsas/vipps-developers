@@ -1,6 +1,8 @@
 # Vipps Partners
 
-Document version: 0.0.2.
+💥 Work in progress! 💥
+
+Document version: 0.0.3.
 
 Vipps partners can represent multiple Vipps merchants, and can make transactions
 on behalf of the merchants.
@@ -12,6 +14,7 @@ on behalf of the merchants.
 A partner has API keys that also work for all the partner's merchants.
 This means that the partner does noe have to manage the API keys for
 every merchant: It is sufficient to use the partner's own API keys.
+
 The partner's API keys only work for merchants that are registered
 in Vipps as customers of that partner.
 
@@ -42,7 +45,7 @@ TODO: Tidy up!
     - [ ] Cancel [`PUT:/ecomm/v2/payments/{orderId}/cancel`](https://vippsas.github.io/vipps-ecom-api/#/Vipps%20eCom%20API/cancelPaymentRequestUsingPUT)
     - [ ] Refund [`POST:/ecomm/v2/payments/{orderId}/refund`](https://vippsas.github.io/vipps-ecom-api/#/Vipps%20eCom%20API/refundPaymentUsingPOST)
     - [ ] Details [`GET:/ecomm/v2/payments/{orderId}/details`](https://vippsas.github.io/vipps-ecom-api/#/Vipps%20eCom%20API/getPaymentDetailsUsingGET)
-- [ ] The merchant correctly handles callbacks, both for successful and unsuccessful payments
+- [ ] The pertner correctly handles callbacks, both for successful and unsuccessful payments
     - [ ] Callback [`POST:[callbackPrefix]/v2/payments/{orderId}`](https://vippsas.github.io/vipps-ecom-api/#/Endpoints_required_by_Vipps_from_the_merchant/transactionUpdateCallbackForRegularPaymentUsingPOST)
     - [ ] For express checkout only: Shipping details [`POST:[shippingDetailsPrefix]/v2/payments/{orderId}/shippingDetails`](https://vippsas.github.io/vipps-ecom-api/#/Endpoints_required_by_Vipps_from_the_merchant/fetchShippingCostUsingPOST)
     - [ ] For express checkout only: Remove consent [`DELETE:[consetRemovalPrefix]/v2/consents/{userId}`](https://vippsas.github.io/vipps-ecom-api/#/Endpoints_required_by_Vipps_from_the_merchant/removeUserConsentUsingDELETE)
@@ -77,7 +80,7 @@ TODO: Tidy up!
 
 1. The merchant signs up for [Vipps på Nett](https://www.vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/) and selects the partner in the form.
 2. Vipps completes customer control (KYC, PEP, AML, etc).
-3. Hmmm?
+3.
 
 ## Questions?
 
