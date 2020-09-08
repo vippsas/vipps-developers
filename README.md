@@ -1,6 +1,6 @@
 # Vipps Developers
 
-Document version: 2.1.2.
+Document version: 2.1.3.
 
 This repository contains various resources for Vipps developers, including:
 
@@ -44,6 +44,7 @@ See: [Getting started](vipps-getting-started.md).
 
 Vipps provides several open source plugins for various web solutions.
 This table below gives an overview, and the sections below have more details.
+We update this table as soon as statuses or plans change.
 
 Platform/solution | eCommerce | Recurring  | Login | Support
 ----------------- | --------- | ---------- | ----- | -------
