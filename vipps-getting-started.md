@@ -37,8 +37,9 @@ If you have questions about your customer relationship, please
 
 Test credentials are normally available 24 hours after we receive the application.
 When the application has been processed you will receive an email, and the
-API keys can be retrieved by logging in to https://portal.vipps.no with BankID.
-This normally takes a few days.
+API keys can be retrieved by logging in to
+[portal.vipps.no](https://portal.vipps.no)
+with BankID. This normally takes a few days.
 
 **Please note:** If you plan to use Vipps through a Partner or a PSP, you will have to
 order the appropriate Vipps solution, and then contact the Partner or PSP
@@ -49,8 +50,8 @@ to have _them_ help you with developer access.
 Please note that API keys are _not_ available for
 [Vippsnummer](https://www.vipps.no/produkter-og-tjenester/bedrift/ta-betalt-i-butikk/ta-betalt-med-vipps/).
 You may need to order
-[Vipps på nett](https://www.vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/),
-[Vipps faste betalinger](https://www.vipps.no/produkter-og-tjenester/bedrift/faste-betalinger/faste-betalinger/)
+[Vipps På Nett](https://www.vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/),
+[Vipps Faste Betalinger](https://www.vipps.no/produkter-og-tjenester/bedrift/faste-betalinger/faste-betalinger/)
 or
 [Vipps Logg Inn](https://www.vipps.no/produkter-og-tjenester/bedrift/logg-inn-med-vipps/logg-inn-med-vipps/).
 See
