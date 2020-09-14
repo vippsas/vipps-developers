@@ -40,6 +40,8 @@ This repository contains various resources for Vipps developers, including:
 
 See: [Getting started](vipps-getting-started.md).
 
+All Vipps APIs are available here: https://github.com/vippsas
+
 ## Plugins
 
 Vipps provides several open source plugins for various web solutions.
