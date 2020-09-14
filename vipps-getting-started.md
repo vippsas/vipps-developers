@@ -27,8 +27,11 @@ Document version 3.1.0.
 - [Questions?](#questions)
 
 ## Get credentials
+
 The fastest way to get a Vipps developer account for the test and production
 environments, is to apply for a product at [vipps.no](https://vipps.no/produkter-og-tjenester/bedrift/).
+If you have questions about your customer relationship, please
+[contact customer service](https://www.vipps.no/kontakt-oss/bedrift/).
 
 **Please note:** You will need a Norwegian organization number to apply for Vipps services.
 
