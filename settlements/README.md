@@ -49,7 +49,7 @@ Settlement reports are provided in these formats:
 | XML    | [Example-Gross.xml](xml/Example-Gross.xml), [Example-Net.xml](xml/Example-Net.xml) | [SettlementReport-3.0.xsd](xml/SettlementReport-3.0.xsd) |
 | CSV    | [settlement-report.csv](csv/settlement-report.csv) | - |
 | PDF    | [PDF](pdf/Vipps-oppgjørsrapport-16655-2018-09-23.pdf) | - |
-| XLSX   | [XLSX](xlsx/Vipps-oppgjørsrapport-16655-2018-09-23.xlsx) | - |
+| XLSX   | [XLSX](xlsx/vipps-settlement-example.xlsx) | - |
 
 **Important:** Settlements reports are available both with and without personal details of the customer.
 This is due to [GDPR](https://ec.europa.eu/info/law/law-topic/data-protection_en), and whether
