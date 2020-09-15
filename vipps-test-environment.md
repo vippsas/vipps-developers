@@ -63,12 +63,11 @@ The test apps for iOS and Android are identical to the production apps, but conn
 Vipps [the Vipps test environment (MT)](#the-vipps-test-environment-mt) instead of the production environment.
 
 Only test accounts, with random phone numbers, are available in the test environments.
-Normal Vipps users are not available, so you can not use your own phone number with the test apps.
+Normal Vipps users are not available, so you can not use your own phone number with the test apps.  
 
 ### Limitations of the test apps
 
 * Push alerts do not work
-* For iOS: There may be conflicts with the production apps, and we recommend to only have one of the apps installed
 
 ### iOS
 
@@ -87,12 +86,6 @@ You do *not* need an activation code.
 8. Accept push notifications.
 
 You are now ready to use the iOS test app connected to the Vipps test environment.
-
-**Please note:** App-switching on iOS uses the same URL pattern for both the
-production Vipps app (in App Store) and the MT test app (in TestFlight).
-This means that iOS may open either of the apps for a `vipps://` URL, as iOS
-can not know which of the apps to open. Because of this, we recommend to
-only have one of the apps installed on the same device.
 
 ### Android
 
