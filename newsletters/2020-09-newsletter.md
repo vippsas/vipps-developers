@@ -8,6 +8,18 @@ This newsletter was sent in September 2020.
 
 # PSP v3
 
+Vipps is launching the PSP V3 API to coincide with our migration of our users cards from PAN to EMVco Network Tokens. This technological migration is Vipps' strategy for achieving delegated SCA once PSD2 comes into force for card payments.
+
+Encrypted cards will still be sent for our users cards that have not yet been migrated.
+
+The V3 API is functionaly identical to V2 apart from the additional payment source format, there are also minor changes to namings of properties to bring the API in-line with Vipps' API Standards.
+
+Please refer to our migration guide here: [v2-deprecation.md](v2-deprecation.md).
+
+See the
+[EMVco documentation](https://www.emvco.com/emv-technologies/payment-tokenisation/)
+for more information regarding Network Tokens.
+
 # Rate limiting
 
 
