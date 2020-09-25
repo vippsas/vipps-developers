@@ -58,7 +58,8 @@ More information about SFTP: [SSH File Transfer Protocol](https://en.wikipedia.o
 
 ### Connecting to the SFTP server
 
-The address of the SFTP server is `sftp.vipps.no`.
+The address of the SFTP server is `sftp.vipps.no`.  
+When connecting to the SFTP server you need to supply the username you created. In the picture above this is "hakon".
 
 **Please note:** Vipps may change the IP addresses of `sftp.vipps.no`. To ensure that you are whitelisting the correct IP addresses please use the hostname and DNS, and automatically update your firewall rules if there are DNS changes.
 
