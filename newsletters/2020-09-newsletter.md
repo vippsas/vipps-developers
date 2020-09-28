@@ -17,7 +17,7 @@ Please refer to our migration guide here: [v2-deprecation.md](v2-deprecation.md)
 
 # Rate limiting
 
-
+Vipps has implemented Rate Limiting on our external apis in order to create a more robust and secure application. Most of these limits are only created to counteract unexpected behaviour and it's nothing you should notice under normal operation. More information about this is available in the doc for [recurring](https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api.md#rate-limiting) and [ecom](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#rate-limiting)
 
 # Reminders
 
