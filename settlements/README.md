@@ -132,7 +132,9 @@ Details: See the [pdf](pdf/) folder.
 ## OCR
 
 OCR files are no longer provided by Vipps.
-Documentation for the legacy solution: [Vipps Faktura](ocr/vipps-invoice-api-vipps-faktura.pdf).
+Invoice payments are made directly from the user to the merchant, so settlement files
+are provided by the bank, not Vipps.
+Documentation for the legacy invoice solution: [Vipps Faktura](ocr/vipps-invoice-api-vipps-faktura.pdf).
 
 Details: See the [ocr](ocr/) folder.
 
