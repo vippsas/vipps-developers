@@ -8,7 +8,7 @@ This newsletter was sent in October 2020.
 
 Vipps now offers the possibility for merchants to
 [ask for the user's profile information](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#userinfo)
-as part of the payment flow. This is done by adding a scope
+as part of the payment flow in the Vipps eCom API v2. This is done by adding a scope
 parameter to the initiate call: `POST:/ecomm/v2/payments`:
 
 - address
@@ -19,10 +19,18 @@ parameter to the initiate call: `POST:/ecomm/v2/payments`:
 - nin (fødselsnummer)
 - accountNumbers
 
-The Userinfo endpoint is shared with Vipps Login and the merchant needs to
+The userinfo endpoint is shared with Vipps Login and the merchant needs to
 have activated
 [Vipps Login](https://github.com/vippsas/vipps-login-api)
 to use this feature.
+
+# New plugins
+
+There are now 12 Vipps plugins for various ecommerce platforms:
+WooCommerce, WordPress, Magento, Episerver, Drupal, Shopify, Craft and more.
+
+All plugins are open source. See the complete list
+[here](https://github.com/vippsas/vipps-developers#plugins).
 
 # PSP v3
 
