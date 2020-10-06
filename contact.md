@@ -9,10 +9,11 @@ Hello! 👋 We love email!
 - [Automatic reply](#automatic-reply)
 - [Adding additional information](#adding-additional-information)
 - [Response time](#response-time)
+- [Escalation](#escalation)
 - [More than one problem, or a new one?](#more-than-one-problem-or-a-new-one)
 - [Newsletter](#newsletter)
 
-Document version: 2.3.0.
+Document version: 2.3.1.
 
 ## We help with technical issues
 
@@ -101,6 +102,13 @@ all the previous messages - we already have them.
 
 We will help as quickly as possible, but due to large variations in the number
 of requests and the varying complexity of resolving them, we can not guarantee response times.
+
+## Escalation
+
+If you have a KAM (Key Account Manager), please contact her/him.
+If you do not, plese reply to the issue, and add any relevant information.
+Please note that everyone thinks that their problem is the most important to solve,
+but that Vipps must sometimes prioritize differently.
 
 ## More than one problem, or a new one?
 
