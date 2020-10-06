@@ -19,10 +19,19 @@ parameter to the initiate call: `POST:/ecomm/v2/payments`:
 - nin (fødselsnummer)
 - accountNumbers
 
-The userinfo endpoint is shared with Vipps Login and the merchant needs to
-have activated
+The userinfo endpoint is shared with
 [Vipps Login](https://github.com/vippsas/vipps-login-api)
-to use this feature.
+and the merchant needs to have
+activated Vipps Login on their account to use this feature. Information on how
+to do this can be found
+[here](https://github.com/vippsas/vipps-login-api/blob/master/vipps-login-api-faq.md#how-can-i-activate-and-set-up-vipps-login).
+Using the Vipps Login service itself is optional.
+
+## Customer registration
+
+Vipps Login can also be used if you need to register your customers because of
+the Covid-19 pandemic. See our information in Norwegian:
+[https://vipps.no/om-oss/nyheter/vipps-innsjekk-for-serveringssteder/](https://vipps.no/om-oss/nyheter/vipps-innsjekk-for-serveringssteder/).
 
 # New plugins
 
