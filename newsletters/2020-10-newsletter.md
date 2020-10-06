@@ -1,7 +1,5 @@
 # Technical newsletter for developers 2020-10
 
-💥Draft!💥
-
 This newsletter was sent in October 2020.
 
 # Userinfo
