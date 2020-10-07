@@ -7,7 +7,7 @@ This newsletter was sent in October 2020.
 Vipps now offers the possibility for merchants to
 [ask for the user's profile information](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#userinfo)
 as part of the payment flow in the Vipps eCom API v2. This is done by adding a scope
-parameter to the initiate call: `POST:/ecomm/v2/payments`:
+parameter to the initiate call:
 
 - address
 - birthDate
