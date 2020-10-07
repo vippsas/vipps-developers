@@ -4,10 +4,16 @@ This newsletter was sent in October 2020.
 
 # Userinfo
 
-Vipps now offers the possibility for merchants to
-[ask for the user's profile information](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#userinfo)
-as part of the payment flow in the Vipps eCom API v2. This is done by adding a scope
-parameter to the initiate call:
+Vipps now offers the possibility for merchants to as part of the payment flow in the
+[Vipps eCom API v2](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#userinfo)
+and
+[Vipps Recurring API](https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api.md#userinfo).
+
+This is done by adding a `scope` parameter to the initiate calls:
+[`POST:/ecomm/v2/payments`](https://vippsas.github.io/vipps-ecom-api/#/Vipps%20eCom%20API/initiatePaymentV3UsingPOST) (eCom)
+and
+[`POST:/recurring/v2/agreements`](https://vippsas.github.io/vipps-recurring-api/#/Agreement%20Controller/draftAgreement) (Recurring):
+
 
 - address
 - birthDate
