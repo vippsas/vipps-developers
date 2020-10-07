@@ -1,0 +1,23 @@
+Hei
+
+Vi vil gjerne hjelpe, men trenger litt mer informasjon. Se denne siden for tips om hva vi trenger: https://github.com/vippsas/vipps-developers/blob/master/contact.md
+
+Vi har også samlet de vanligste spørsmålene i en FAQ, kanskje det kan være nyttig: https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-faq.md
+
+--
+
+Hi
+
+We want to help, but we need a little more information. Please see this page for tips about what information we need to be able to help: https://github.com/vippsas/vipps-developers/blob/master/contact.md
+
+We also have a FAQ with the most common questions, maybe the can be useful: https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-faq.md
+
+$cursor$
+
+--
+$currentUserName$
+Vipps Integration
+
+[Contact info|https://github.com/vippsas/vipps-developers/blob/master/contact.md]
+[Vipps on GitHub|https://github.com/vippsas]
+[Technical newsletter for developers|https://cloud.hei.vipps.no/utv] 
