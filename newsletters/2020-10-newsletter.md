@@ -4,7 +4,7 @@ This newsletter was sent in October 2020.
 
 # Userinfo
 
-Vipps now offers the possibility for merchants to as part of the payment flow in the
+Vipps now offers the possibility for merchants to ask for user profile details as part of the payment flow in the
 [Vipps eCom API v2](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#userinfo)
 and
 [Vipps Recurring API](https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api.md#userinfo).
