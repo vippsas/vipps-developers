@@ -1,17 +1,13 @@
 Hei
 
 Vipps har et eget testmiljø for Merchant Test, eller "MT":
-https://github.com/vippsas/vipps-developers#the-vipps-test-environment-mt
+https://github.com/vippsas/vipps-developers/blob/master/vipps-test-environment.md
 
 Vipps har også test-apper for iOS (i TestFlight) og Android. De er identiske
 med den vanlige appen i App Store, bortsett fra at de er koblet til testmiljøet
 og har en annen logo. Se detaljer her:
-https://github.com/vippsas/vipps-developers#vipps-test-apps
+https://github.com/vippsas/vipps-developers/blob/master/vipps-test-environment.md#vipps-test-apps
 
-Vår oppmerksom på at "app switch" til Vipps bruker samme URL (vipps://) både
-for testappen og den vanlige appen. Ved "app switch" kan iOS derfor åpne
-testappen i stedet for den offisielle appen. Ved utvikling anbefaler vi å kun
-ha én av appene installert.
 
 $cursor$
 
