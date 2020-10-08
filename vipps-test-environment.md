@@ -22,11 +22,13 @@ Other differences in MT:
 
 ## Test users
 
-The welcome email contains information about your test profile. The test mobile number is registered with everything required to complete a payment.
-
+The welcome email contains information about your test profile.
 You can use this test user to in the [Vipps test apps](#vipps-test-apps).
 
-**Important:** Do _not_ use the test phone number in production,
+The test mobile number is registered with everything required to complete a payment.
+You may use the test user on multiple devices.
+
+**Important:** Do _not_ use the test phone number in the production environment,
 as the test number may be a real phone number for a real Vipps user.
 
 If you need additional payment cards, you can add it in the Vipps app.
@@ -35,7 +37,7 @@ for more details.
 
 If you have not yet received the welcome email, see the
 [standard reply](https://github.com/vippsas/vipps-developers/blob/master/housekeeping/response-apinokler.txt)
-(in Norwegian) for requests for this.
+(in Norwegian) for requests about this.
 
 There is no way to get a test user in the production environment. 
 The production environment only contains real users and data.
@@ -44,7 +46,7 @@ See also: [Vipps Test Data](https://github.com/vippsas/vipps-developers/blob/mas
 
 ## Test amounts
 
-Vipps supports using special amounts that are always rejected when approving the payment in the Vipps test app. The force approve endpoint is not validated for this functionality and will result in different behaviours. 
+Vipps supports using special amounts that are always rejected when approving the payment in the Vipps test app.
 
 | Amount | Error                     |
 |--------|---------------------------|
@@ -56,14 +58,18 @@ Vipps supports using special amounts that are always rejected when approving the
 | 1.84   | Withdrawal limit exceeded |
 | 1.97   | 3D Secure denied          |
 
+**Please note:** The "force approve" endpoint is not validated for this functionality and will result in different behaviour. 
 
 ## Vipps test apps
 
 The test apps for iOS and Android are identical to the production apps, but connects to the
 Vipps [the Vipps test environment (MT)](#the-vipps-test-environment-mt) instead of the production environment.
 
-Only test accounts, with random phone numbers, are available in the test environments.
+Only test accounts, with random "fake" phone numbers, are available in the test environments.
 Normal Vipps users are not available, so you can not use your own phone number with the test apps.  
+
+**Important:** Do _not_ use the test phone number in the production environment,
+as the test number may be a real phone number for a real Vipps user.
 
 ### Limitations of the test apps
 
