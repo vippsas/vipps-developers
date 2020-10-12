@@ -71,7 +71,7 @@ and
 
 ## Deprecation of `/status`
 
-The `/details` ending in the Vipps eCom API v2 offers more than the old
+The `/details` endpoint in the Vipps eCom API v2 offers more than the old
 and long deprecated `/status` endpoint. We still see some customers using
 the old endpoint and strongly recommend to update to the
 [current one](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#get-payment-details).
