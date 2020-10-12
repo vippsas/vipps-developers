@@ -7,7 +7,7 @@ If you are using an e-commerce platform, integration partner or PSP, please see 
 * [Partner](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-3)
 * [PSP](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-2)
 
-Document version 3.1.0.
+Document version 3.1.1.
 
 ## Table of contents
   - [Get credentials](#get-credentials)
@@ -94,6 +94,11 @@ Click `Show keys` on the relevant sale unit to display credentials.
 | `client_id`              | GUID   | fb492b5e-7907-4d83-bc20-c7fb60ca35de | Client ID for the merchant (the "username")     |
 | `client_secret`          | Base64 | Y8Kteew6GE3ZmeycEt6egg==             | Client Secret for the merchant (the "password") |
 | `Vipps-Subscription-Key` | Base64 | 0f14ebcab0eb4b29ae0cb90d91b4a84a     | Subscription key for the product |
+
+There are both a primary and secondary `Vipps-Subscription-Key`.
+The primary and secondary keys are interchangeable; you can use either one,
+they both work in the same way. Having two active keys enables you to
+regenerate one subscription key, while still using the other key, without downtime.
 
 **Please note:** `Vipps-Subscription-Key` was previously called `Ocp-Apim-Subscription-Key`.
 The legacy name `Ocp-Apim-Subscription-Key` _must still be used in requests and code_,
