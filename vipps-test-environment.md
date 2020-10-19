@@ -82,7 +82,7 @@ as the test number may be a real phone number for a real Vipps user.
 The iOS test app is available in Apple TestFlight.
 You do *not* need an invitation or an activation code.
 
-1. Open the [TestFlight](https://testflight.apple.com/join/hTAYrwea) link on your iOS phone
+1. Open the [TestFlight](https://testflight.apple.com/join/hTAYrwea) link on your iOS phone (it will not work in macOS)
 2. Install the "Vipps MT" app
 3. Open the "Vipps MT" app
 4. Enter the test phone number, that was sent in the welcome email to the email address used in the registration. Your normal Vipps user is not available in the test environment.
@@ -98,7 +98,7 @@ You are now ready to use the iOS test app connected to the Vipps test environmen
 The Android test app is available in App Center.
 You do *not* need an invitation or an activation code.
 
-1. Open the [App Center](https://install.appcenter.ms/orgs/vipps/apps/vipps-android/distribution_groups/mt%20testers) link on your Android phone. If you get a push message prompting to whitelist the source, you should be able to do this via the "Settings" button.
+1. Open the [App Center](https://install.appcenter.ms/orgs/vipps/apps/vipps-android/distribution_groups/mt%20testers) link on your Android phone (it will nok work on a PC/Mac)). If you get a push message prompting to whitelist the source, you should be able to do this via the "Settings" button.
 2. Install the "Vipps Android" app
 3. Open the "Vipps Android" app
 4. Enter the test phone number, that was sent in the welcome email to the email address used in the registration. Your normal Vipps user is not available in the test environment.
