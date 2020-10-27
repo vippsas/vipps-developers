@@ -1,4 +1,4 @@
-# Technical newsletter for developers 2020-10
+# Technical newsletter for developers 2020-11
 
 💥 DRAFT! 💥
 
@@ -37,7 +37,7 @@ easier for integrators to find errors and possible improvements in the use of
 the Vipps APIs.
 
 The MVP will show the statuses for the most recent API calls, making it possible
-to see trends and areas to investigate. 
+to see trends and areas to investigate.
 
 Once the initial version is available, we are very interested in
 suggestions for improvement.
