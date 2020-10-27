@@ -35,16 +35,19 @@ which help Vipps improve our services, and also help in investigating problems.
 
 # API Dashboard
 
-We are working on making an API Dashboard available under "Utvikler" on
-[portal.vipps.no](https://portal.vipps.no). The API Dashboard will make it
-easier for integrators to find errors and possible improvements in the use of
-the Vipps APIs.
+We are working on an API Dashboard that will be available under "Utvikler" on
+[portal.vipps.no](https://portal.vipps.no).
+The API Dashboard will make it easier for integrators to find errors and
+possible improvements in the use of the Vipps APIs.
 
 The MVP will show the statuses for the most recent API calls, making it possible
 to see trends and areas to investigate.
 
 Once the initial version is available, we are very interested in
-suggestions for improvement.
+suggestions for improvement. You can even start suggesting features now:
+Please create one issue per suggestion/wish in the
+[vipps-developers](https://github.com/vippsas/vipps-developers)
+repo on GitHUb.
 
 # Reminders
 
