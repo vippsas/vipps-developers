@@ -63,7 +63,8 @@ How to do it:
 
 While we are keen to fix even the tiniest typos, we hope to get as many
 "real" improvements as possible and not drown in microscopic issues, so:
-Be smart. Thanks!
+Be smart. Thanks! If we get more improvements than the number of socks we have,
+we will do a scientifically randomized drawing.
 
 # Reminders
 
