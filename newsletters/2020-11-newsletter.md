@@ -12,6 +12,10 @@ backend is based on the same Userinfo functionality used by the
 and the
 [Vipps Recurring API](https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api.md#userinfo).
 
+Hurtigkasse flow (not final, may change slightly):
+
+![Vipps Hurtigkasse improvements](2020-11-hurtigkasse.png)
+
 # Optional HTTP Headers
 
 We recommend using the following _optional_ HTTP headers for all requests to the
