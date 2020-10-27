@@ -49,6 +49,22 @@ Please create one issue per suggestion/wish in the
 [vipps-developers](https://github.com/vippsas/vipps-developers)
 repo on GitHUb.
 
+# Suggest improvements, get a pair of Vipps socks
+
+We appreciate all suggestions for improvement to our development platform,
+including complaints! To encourage you to let us know about, we will send a
+pair of Vipps socks to everyone that creates an issue or PR for our API
+documentation in November.
+
+How to do it:
+1. Create an issue or PR in the appropriate GitHub repo.
+2. See our comment (it may not be immediate).
+3. If "OK", we will ask you to send an email to us with your address.
+
+While we are keen to fix even the tiniest typos, we hope to get as many
+"real" improvements as possible and not drown in microscopic issues, so:
+Be smart. Thanks!
+
 # Reminders
 
 We have mentioned some things before, and take this opportunity to remind you:
