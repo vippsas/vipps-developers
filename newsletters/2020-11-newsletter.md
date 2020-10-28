@@ -16,6 +16,14 @@ Hurtigkasse flow (not final, may change slightly):
 
 ![Vipps Hurtigkasse improvements](images/2020-11-hurtigkasse.png)
 
+# Vipps login improvements 🎉
+Vipps login now have support for merchants to control the login experience on mobile. The merchant can chose whether the user should be automatically taken back to the browser after completing an authentication in the Vipps app. We have also added a spesific flow for integrations from apps.
+
+More information on the new flows can be found [in our documentation](https://github.com/vippsas/vipps-login-api/blob/master/vipps-login-api.md#mobile-flow---app-switch-based-flow).
+
+To have a unified way of serving a merchant user information between our services in Vipps we have implemented a new application handling this responsibility. To support this, we are unifying and standardizing data formats, within Vipps and with the OIDC standard, and we are moving delivery of user information to this service. To do this we have been required to introduce a new version of our Vipps login API. **The previous version (Version 1) of the Vipps login API will have end of life on February 28th 2021**. Information on the migration from version 1 to 2 can be found [here](https://github.com/vippsas/vipps-login-api/blob/master/vipps-login-migrate-api-1.0-to-2.0.md).
+
+
 # Optional HTTP Headers ℹ️
 
 We recommend using the following _optional_ HTTP headers for all requests to the
