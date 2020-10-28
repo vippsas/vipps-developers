@@ -7,7 +7,7 @@ This newsletter was sent in November 2020.
 # Vipps Hurtigkasse improvements 💸
 
 From December it will be easier to select the right address and shipping method, and the
-backend is based on the same Userinfo functionality used by the
+backend is based on the same _Userinfo_ functionality used by the
 [Vipps eCom API v2](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#userinfo)
 and the
 [Vipps Recurring API](https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api.md#userinfo).
@@ -19,11 +19,9 @@ Hurtigkasse flow (not final, may change slightly):
 # Optional HTTP Headers ℹ️
 
 We recommend using the following _optional_ HTTP headers for all requests to the
-[Vipps eCom API v2](https://github.com/vippsas/vipps-ecom-api/)
+[Vipps eCom API](https://github.com/vippsas/vipps-ecom-api/)
 and the
 [Vipps Recurring API](https://github.com/vippsas/vipps-recurring-api/).
-These headers provide useful metadata about the merchant's system,
-which help Vipps improve our services, and also help in investigating problems.   
 
 | Header                        | Description                                  | Example value        |
 | ----------------------------- | -------------------------------------------- | -------------------- |
@@ -32,6 +30,9 @@ which help Vipps improve our services, and also help in investigating problems.
 | `Vipps-System-Version`        | The version number of the ecommerce solution | `5.4`                |
 | `Vipps-System-Plugin-Name`    | The name of the ecommerce plugin             | `vipps-woocommerce`  |
 | `Vipps-System-Plugin-Version` | The version number of the ecommerce plugin   | `1.4.1`              |
+
+These headers provide useful metadata about the merchant's system,
+which help Vipps improve our services, and also help in investigating problems.   
 
 # API Dashboard 🚦
 
@@ -51,17 +52,17 @@ repo on GitHUb.
 
 # Suggest improvements, get a pair of Vipps socks 🧦
 
-![Vipps socks orange](images/2020-11-sock-orange.jpg)![Vipps socks purple](images/2020-11-sock-purple.jpg)
+![Vipps socks orange](images/2020-11-sock-orange.jpg)
 
 We appreciate all suggestions for improvement to our development platform,
-including complaints! To encourage you to let us know about, we will send a
-pair of Vipps socks to everyone that creates an issue or PR for our API
+including complaints! To encourage this, we will send two (2) Vipps socks to
+everyone that creates a (somewhat meaningful) issue or PR for our API
 documentation in November.
 
-How to do it:
+What do do:
 1. Create an issue or PR in the appropriate GitHub repo.
 2. Wait for our comment (it may not be immediate).
-3. If "OK", we will ask you to send an email to us with your address.
+3. If we think it's "OK", we will ask you to send an email to us with your address.
 
 While we are keen to fix even the tiniest typos, we hope to get as many
 "real" improvements as possible and not drown in microscopic issues, so:
@@ -69,6 +70,26 @@ Be smart. Thanks!
 
 If we get more improvements than the number of socks we have,
 we will do a scientifically randomized drawing.
+
+# Do you want a Slack channel? 📢
+
+We can set up a dedicated, temporary Slack channel to help fast-track your
+Vipps development. Send an email to integration@vipps.no with a list of
+email addresses to invite, with the same people on CC. We fix the rest.
+
+This does ,unfortunately, not apply to customers using one of our
+[plugins](https://github.com/vippsas/vipps-developers#plugins), or
+customers using Vipps through a partner.
+
+# Technical workshop 🛠
+
+We can set up a dedicated video workshop to help fast-track your
+Vipps development. Send an email to integration@vipps.no with a list of
+email addresses to invite, with the same people on CC. We fix the rest.
+
+This does ,unfortunately, not apply to customers using one of our
+[plugins](https://github.com/vippsas/vipps-developers#plugins), or
+customers using Vipps through a partner.
 
 # Reminders
 
