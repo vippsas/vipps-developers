@@ -21,8 +21,8 @@ Hurtigkasse flow (not final, may change slightly):
 Vipps Login now lets merchants to control the login experience on phones: The
 merchant can choose whether the user should be automatically taken back to the
 browser after completing an authentication in the Vipps app.
-We have also added a specific flow for integrations from apps.
-More information on the new flows can be found in our
+We have also added a specific flow for integrations with apps.
+More information, and screenshots of the new flows, can be found in the
 [documentation](https://github.com/vippsas/vipps-login-api/blob/master/vipps-login-api.md#mobile-flow---app-switch-based-flow).
 
 To have a unified way of providing user information across Vipps services
