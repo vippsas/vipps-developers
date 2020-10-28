@@ -14,7 +14,7 @@ and the
 
 Hurtigkasse flow (not final, may change slightly):
 
-![Vipps Hurtigkasse improvements](2020-11-hurtigkasse.png)
+![Vipps Hurtigkasse improvements](images/2020-11-hurtigkasse.png)
 
 # Optional HTTP Headers ℹ️
 
@@ -51,7 +51,7 @@ repo on GitHUb.
 
 # Suggest improvements, get a pair of Vipps socks 🧦
 
-![Vipps socks orange](2020-11-sock-orange.jpg)![Vipps socks purple](2020-11-sock-purple.jpg)
+![Vipps socks orange](images/2020-11-sock-orange.jpg)![Vipps socks purple](images/2020-11-sock-purple.jpg)
 
 We appreciate all suggestions for improvement to our development platform,
 including complaints! To encourage you to let us know about, we will send a
