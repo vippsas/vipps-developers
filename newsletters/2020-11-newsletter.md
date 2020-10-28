@@ -4,9 +4,9 @@
 
 This newsletter was sent in November 2020.
 
-# Vipps Hurtigkasse improvements
+# Vipps Hurtigkasse improvements 💸
 
-It will be easier to select the right address and shipping method, and the
+From December it will be easier to select the right address and shipping method, and the
 backend is based on the same Userinfo functionality used by the
 [Vipps eCom API v2](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#userinfo)
 and the
@@ -16,7 +16,7 @@ Hurtigkasse flow (not final, may change slightly):
 
 ![Vipps Hurtigkasse improvements](2020-11-hurtigkasse.png)
 
-# Optional HTTP Headers
+# Optional HTTP Headers ℹ️
 
 We recommend using the following _optional_ HTTP headers for all requests to the
 [Vipps eCom API v2](https://github.com/vippsas/vipps-ecom-api/)
@@ -33,7 +33,7 @@ which help Vipps improve our services, and also help in investigating problems.
 | `Vipps-System-Plugin-Name`    | The name of the ecommerce plugin             | `vipps-woocommerce`  |
 | `Vipps-System-Plugin-Version` | The version number of the ecommerce plugin   | `1.4.1`              |
 
-# API Dashboard
+# API Dashboard 🚦
 
 We are working on an API Dashboard that will be available under "Utvikler" on
 [portal.vipps.no](https://portal.vipps.no).
@@ -49,7 +49,9 @@ Please create one issue per suggestion/wish in the
 [vipps-developers](https://github.com/vippsas/vipps-developers)
 repo on GitHUb.
 
-# Suggest improvements, get a pair of Vipps socks
+# Suggest improvements, get a pair of Vipps socks 🧦
+
+![Vipps socks orange](2020-11-sock-orange.jpg)![Vipps socks purple](2020-11-sock-purple.jpg)
 
 We appreciate all suggestions for improvement to our development platform,
 including complaints! To encourage you to let us know about, we will send a
@@ -58,12 +60,14 @@ documentation in November.
 
 How to do it:
 1. Create an issue or PR in the appropriate GitHub repo.
-2. See our comment (it may not be immediate).
+2. Wait for our comment (it may not be immediate).
 3. If "OK", we will ask you to send an email to us with your address.
 
 While we are keen to fix even the tiniest typos, we hope to get as many
 "real" improvements as possible and not drown in microscopic issues, so:
-Be smart. Thanks! If we get more improvements than the number of socks we have,
+Be smart. Thanks!
+
+If we get more improvements than the number of socks we have,
 we will do a scientifically randomized drawing.
 
 # Reminders
