@@ -27,7 +27,7 @@ You can use this test user to in the [Vipps test apps](#vipps-test-apps).
 
 The test mobile number is registered with everything required to complete a payment.
 You may use the test user on multiple devices.
-The test mobile number works on all phone and on all networks.
+The test mobile number works on all phones and on all networks.
 
 **Important:** Do _not_ use the test phone number in the production environment,
 as the test number may be a real phone number for a real Vipps user.
