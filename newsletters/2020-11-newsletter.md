@@ -1,7 +1,5 @@
 # Technical newsletter for developers 2020-11
 
-💥 DRAFT! 💥
-
 This newsletter was sent in November 2020.
 
 # Vipps Hurtigkasse improvements 💸
