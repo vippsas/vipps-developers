@@ -7,7 +7,7 @@ If you are using an e-commerce platform, integration partner or PSP, please see 
 * [Partner](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-3)
 * [PSP](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-2)
 
-Document version 3.1.2.
+Document version 3.1.3.
 
 ## Table of contents
   - [Get credentials](#get-credentials)
