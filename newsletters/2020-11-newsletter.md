@@ -97,17 +97,17 @@ We can set up a dedicated, temporary Slack channel to help fast-track your
 Vipps development. Send an email to integration@vipps.no with a list of
 email addresses to invite, with the same people on CC. We fix the rest.
 
-This does ,unfortunately, not apply to customers using one of our
+This does, unfortunately, not apply to customers using one of our
 [plugins](https://github.com/vippsas/vipps-developers#plugins), or
 customers using Vipps through a partner.
 
-# Technical workshop 🛠
+# Do you want a technical workshop? 🛠
 
 We can set up a dedicated video workshop to help fast-track your
 Vipps development. Send an email to integration@vipps.no with a list of
 email addresses to invite, with the same people on CC. We fix the rest.
 
-This does ,unfortunately, not apply to customers using one of our
+This does, unfortunately, not apply to customers using one of our
 [plugins](https://github.com/vippsas/vipps-developers#plugins), or
 customers using Vipps through a partner.
 
