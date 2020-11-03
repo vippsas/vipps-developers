@@ -225,7 +225,7 @@ Response:
 }
 ```
 
-JWT properties:
+An explanation of the contents of the access token (the JWT properties):
 
 | Name                        | Description                                 |
 | --------------------------- | ------------------------------------------- |
@@ -237,11 +237,12 @@ JWT properties:
 | `resource`                  | For the product for which token has been issued. |
 | `access_token`              | The actual access token that needs to be used in `Authorization` request header. |
 
-**Please note:** The access token is valid for 1 hour in MT (Merchant Test)
-and 24 hours in Production. To be sure that you are using correct time please
-use `expires_in` or `expires_on`.
+**Please note:** The access token is valid for 1 hour in the test environment
+and 24 hours in the production environment. To be sure that you are using
+correct time please use `expires_in` or `expires_on`.
 
-Example of an error response body (formatted for readability):
+This is an example of an error caused by mixing the API keys for test and
+production (formatted for readability):
 
 ```json
 {
@@ -258,9 +259,9 @@ Example of an error response body (formatted for readability):
 }
 ```
 
-After obtaining the ac cess token (JWT), it is then used for the "real" calls
+After obtaining the access token (JWT), it is then used for the "real" calls
 to the API, with the `Bearer` keyword (an example with the optional
-  `Vipps-*` HTTP headers):
+`Vipps-*` HTTP headers):
 
 ```http
 Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1Ni <snip>
