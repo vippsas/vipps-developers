@@ -22,22 +22,13 @@ If you do not have a technical issue, the fastest way to get help is to use the 
 
 | Topic               | How to get help |
 | ------------------- | --------------- |
-| General questions, including changes to the customer relationship, creating eCom sale units, change of admins, etc   | Please see the [contact info for companies on vipps.no](https://www.vipps.no/kontakt-oss/bedrift/) |
+| General questions, including the (new) customer relationship, creating sale units, change of admins, etc   | Please see the [contact info for companies on vipps.no](https://www.vipps.no/kontakt-oss/bedrift/) |
 | Applications for Vipps products | Please see the [contact info for companies on vipps.no](https://www.vipps.no/kontakt-oss/bedrift/) |
-| VippsGO | Please see the self-service portal:  https://vippsadmin.snappo.com/. For questions about POS (Point Of Sale) integrations: Please contact your POS vendor. For other issues, please see the [contact info for companies on vipps.no](https://www.vipps.no/kontakt-oss/bedrift/)  |
-| Suggestions for improvements to [Vipps products](https://www.vipps.no/produkter-og-tjenester/bedrift/) | Please use [this form](https://www.vipps.no/kontakt-oss/bedrift/) |
-| Using Vipps through a partner | Please [contact your partner directly](https://www.vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-3) |
-| Ordering Vipps through a partner | Please contact partnerbestilling@vipps.no |
-| If you are a partner and need help | Please contact partnerbestilling@vipps.no  |
-| Vipps for [WooCommerce](https://www.vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/woocommerce/) | Please use [the support forum on wordpress.org](https://wordpress.org/support/plugin/woo-vipps/) |
-| Vipps Recurring Payments for [Wordpress](https://wordpress.org/plugins/vipps-recurring-payments-gateway-for-woocommerce/) | Please use [the support forum on wordpress.org](https://wordpress.org/support/plugin/vipps-recurring-payments-gateway-for-woocommerce/) |
-| Vipps Login for [Wordpress](https://wordpress.org/plugins/login-with-vipps/) | Please use [the support forum on wordpress.org](https://wordpress.org/support/plugin/login-with-vipps/) |
-| Vipps Payment modules for [Magento](https://www.vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/magento/) | Please contact vipps@vaimo.no or submit an issue on GitHub [for Magento 2](https://github.com/vippsas/vipps-magento) or for [for Magento 1](https://github.com/vippsas/vipps-magento-v1)|
-| Vipps Login for [Magento 2](https://marketplace.magento.com/vipps-module-login.html) | Please contact vipps@vaimo.no or [submit an issue on GitHub](https://github.com/vippsas/vipps-login-magento) |
-| Vipps for [Drupal](https://www.drupal.org/project/commerce_vipps) | Please see [the plugin on drupal.org](https://www.drupal.org/project/commerce_vipps) |
-| Vipps for [Episerver](https://github.com/vippsas/vipps-episerver) | Please [submit an issue on GitHub](https://github.com/vippsas/vipps-episerver) |
-| Vipps for [Shopify](https://www.vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/shopify/) | For the plugin, not Shopify itself: Please [submit an issue on GitHub](https://github.com/vippsas/vipps-shopify) |
+| Using Vipps through a partner (for merchants) | Please [contact your partner directly](https://www.vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-3) |
+| Partner assistance (for partners) | Please contact partnerbestilling@vipps.no  |
+| Vipps plugins (WooCommerce, WordPress, Magento, Drupal, Shopify, etc)| Please see the [plugin overview](https://github.com/vippsas/vipps-developers#plugins) |
 | [Settlements](https://github.com/vippsas/vipps-developers/tree/master/settlements), invoices or similar | Please see [Settlements](https://github.com/vippsas/vipps-developers/tree/master/settlements) |
+| Suggestions for improvements to [Vipps products](https://www.vipps.no/produkter-og-tjenester/bedrift/) | Please use [this form](https://www.vipps.no/kontakt-oss/bedrift/) |
 
 For _**technical**_ issues: Please see below.
 
