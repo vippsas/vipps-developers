@@ -7,7 +7,7 @@ If you are using an e-commerce platform, integration partner or PSP, please see 
 * [Partner](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-3)
 * [PSP](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-2)
 
-Document version 3.1.1.
+Document version 3.1.2.
 
 ## Table of contents
   - [Get credentials](#get-credentials)
@@ -180,25 +180,44 @@ we strongly recommend upgrading to the current version as soon as possible.
 
 ## Get an access token
 
-The Access Token API provides the JWT bearer token used in the `Authorization`
-header, required in all Vipps API calls.
+All Vipps API requests must include an `Authorization` header with
+a JSON Web Token (JWT), which we call the _access token_.
+The access token is obtained by calling
+[`POST:/accesstoken/get`](https://vippsas.github.io/vipps-ecom-api/#/Authorization_Service/fetchAuthorizationTokenUsingPost)
+and passing the `client_id`, `client_secret` and `Ocp-Apim-Subscription-Key`.
+(We _are_ aware that this is a `POST`, without a body, to an endpoint with
+`get` in the URL, and hope to fix it in a later version of the API. Sorry.)
 
-The API keys needed the access token are the same as for the API products,
-see [API key details](#api-key-details).
+Request (including the optional `Vipps-*` HTTP headers):
 
-### Request
-
+```http
+POST https://apitest.vipps.no/accesstoken/get
+client_id: fb492b5e-7907-4d83-ba20-c7fb60ca35de
+client_secret: Y8Kteew6GE2ZmeycEt6egg==
+Ocp-Apim-Subscription-Key: 0f14ebcab0ec4b29ae0cb90d91b4a84a
+Vipps-System-Name: Acme Enterprises Ecommerce DeLuxe
+Vipps-System-Version: 3.1.2
+Vipps-System-Plugin-Name: Point Of Sale Excellence
+Vipps-System-Plugin-Version 4.5.6
 ```
-POST https://apitest.vipps.no/accessToken/get
-client_id: fb492b5e-7907-4d83-bc20-c7fb60ca35de
-client_secret: Y8Kteew6GE3ZmeycEt6egg==
-Ocp-Apim-Subscription-Key: 0f14ebcab0eb4b29ae0cb90d91b4a84a
-```
 
-### Response
+The `client_id`, `client_secret` and `Ocp-Apim-Subscription-Key`are unique per
+`merchantSerialNumber` (MSN, i.e. the number of the sale unit) and can be found on
+[portal.vipps.no](https://portal.vipps.no).
 
-```
+| Header Name | Header Value | Description |
+| ----------- | ------------ | ----------- |
+| `client_id` | A GUID value | Client ID for the sale unit |
+| `client_secret` | Base 64 encoded string | Client Secret for the sale unit |
+| `Ocp-Apim-Subscription-Key` | Base 64 encoded string | Subscription key for the product |
+
+Response:
+
+````http
 HTTP 200 OK
+````
+
+```json
 {
   "token_type": "Bearer",
   "expires_in": "86398",
@@ -212,18 +231,52 @@ HTTP 200 OK
 
 JWT properties:
 
-| Name             | Description                                                                      |
-| ---------------- | -------------------------------------------------------------------------------- |
-| `token_type`     | It’s a `Bearer` token. The word `Bearer` should be added before the token        |
-| `expires_in`     | Token expiry duration in seconds.                                                |
-| `ext_expires_in` | Extra expiry time. Not used.                                                     |
-| `expires_on`     | Token expiry time in epoch time format.                                          |
-| `not_before`     | Token creation time in epoch time format.                                        |
-| `resource`       | For the product for which token has been issued.                                 |
-| `access_token`   | The actual access token that needs to be used in `Authorization` request header. |
+| Name                        | Description                                 |
+| --------------------------- | ------------------------------------------- |
+| `Bearer`                    | It’s a `Bearer` token. The word `Bearer` should be added before the token |
+| `expires_in`                | Token expiry duration in seconds. |
+| `ext_expires_in`            | Extra expiry time. Not used. |
+| `expires_on`                | Token expiry time in epoch time format. |
+| `not_before`                | Token creation time in epoch time format. |
+| `resource`                  | For the product for which token has been issued. |
+| `access_token`              | The actual access token that needs to be used in `Authorization` request header. |
 
-**Please note:** The JWT (access token) is valid for 1 hour in MT (test) and 24 hours in Production.
-To be sure that you are using correct time please use `expires_in` or `expires_on`.
+**Please note:** The access token is valid for 1 hour in MT (Merchant Test)
+and 24 hours in Production. To be sure that you are using correct time please
+use `expires_in` or `expires_on`.
+
+Example of an error response body (formatted for readability):
+
+```json
+{
+  "error": "unauthorized_client",
+  "error_description":
+    "AADSTS70001: Application with identifier 'e9b6c99d-2442-4a5d-84a2-\
+     c53a807fe0c4' was not found in the directory testapivipps.no\
+     Trace ID: 3bc2b2a0-d9bb-4c2e-8367- 5633866f1300\r\nCorrelation ID:\
+     bb2f4093-70af-446a-a26d-ed8becca1a1a\r\nTimestamp: 2017-05-19 09:21:28Z",
+  "error_codes": [ 70001 ],
+  "timestamp": "2017-05-19 09:21:28Z",
+  "trace_id": "3bc2b2a0-d9bb-4c2e-8367-5633866f1300",
+  "correlation_id": "bb2f4093-70af-446a-a26d-ed8becca1a1a"
+}
+```
+
+After obtaining the ac cess token (JWT), it is then used for the "real" calls
+to the API, with the `Bearer` keyword (an example with the optional
+  `Vipps-*` HTTP headers):
+
+```http
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1Ni <snip>
+Ocp-Apim-Subscription-Key: 0f14ebcab0ec4b29ae0cb90d91b4a84a
+Vipps-System-Name: Acme Enterprises Ecommerce DeLuxe
+Vipps-System-Version: 3.1.2
+Vipps-System-Plugin-Name: Point Of Sale Excellence
+Vipps-System-Plugin-Version 4.5.6
+```
+
+For more details: See the OpenAPI specifications and Postman collections
+for the APIs.
 
 ### HTTP response codes
 
