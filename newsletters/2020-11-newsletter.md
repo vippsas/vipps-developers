@@ -1,7 +1,5 @@
 # Technical newsletter for developers 2020-11
 
-💥 DRAFT! 💥
-
 This newsletter was sent in November 2020.
 
 # Vipps Hurtigkasse improvements 💸
@@ -15,6 +13,11 @@ and the
 Hurtigkasse flow (not final, may change slightly):
 
 ![Vipps Hurtigkasse improvements](images/2020-11-hurtigkasse.png)
+
+**Please note:** Users will now have to select address and shipping method.
+Merchants that do not ship anything should use the
+[Userinfo](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#userinfo)
+functionality instead of Vipps Hurtigkasse.
 
 # Vipps Login improvements 🎉
 
