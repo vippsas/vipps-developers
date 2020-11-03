@@ -213,11 +213,7 @@ The `client_id`, `client_secret` and `Ocp-Apim-Subscription-Key`are unique per
 
 Response:
 
-````http
-HTTP 200 OK
-````
-
-```json
+````json
 {
   "token_type": "Bearer",
   "expires_in": "86398",
