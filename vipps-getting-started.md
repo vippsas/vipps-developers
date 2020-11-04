@@ -269,7 +269,7 @@ Ocp-Apim-Subscription-Key: 0f14ebcab0ec4b29ae0cb90d91b4a84a
 Vipps-System-Name: Acme Enterprises Ecommerce DeLuxe
 Vipps-System-Version: 3.1.2
 Vipps-System-Plugin-Name: Point Of Sale Excellence
-Vipps-System-Plugin-Version 4.5.6
+Vipps-System-Plugin-Version: 4.5.6
 ```
 
 For more details: See the OpenAPI specifications and Postman collections
