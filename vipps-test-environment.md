@@ -1,5 +1,7 @@
 # The Vipps Test Environment (MT)
 
+Document version: 2.0.0.
+
 The Merchant Test Environment (MT) is available for all Vipps customers.
 
 The environment is suitable for testing _most_ of the Vipps functionality, but some
@@ -25,6 +27,15 @@ Other differences in MT:
 The welcome email contains information about your test profile.
 You can use this test user to in the [Vipps test apps](#vipps-test-apps).
 
+If you have not yet received the welcome email, see the
+[standard reply](https://github.com/vippsas/vipps-developers/blob/master/housekeeping/response-apinokler.txt)
+(in Norwegian) for requests about this.
+
+There is no way to get a test user in the production environment.
+The production environment only contains real users and data.
+
+### Phone number
+
 The test mobile number is registered with everything required to complete a payment.
 You may use the test user on multiple devices.
 The test mobile number works on all phones and on all networks.
@@ -32,18 +43,42 @@ The test mobile number works on all phones and on all networks.
 **Important:** Do _not_ use the test phone number in the production environment,
 as the test number may be a real phone number for a real Vipps user.
 
+### Payment card
+
+The test mobile number is registered with a payment card.
+
 If you need additional payment cards, you can add it in the Vipps app.
 See [Credit card numbers](https://github.com/vippsas/vipps-developers/tree/master/testdata#credit-card-numbers)
 for more details.
 
-If you have not yet received the welcome email, see the
-[standard reply](https://github.com/vippsas/vipps-developers/blob/master/housekeeping/response-apinokler.txt)
-(in Norwegian) for requests about this.
+### Bank accounts
 
-There is no way to get a test user in the production environment. 
-The production environment only contains real users and data.
+The test mobile number is registered with a bank account.
 
-See also: [Vipps Test Data](https://github.com/vippsas/vipps-developers/blob/master/testdata/README.md).
+If you need additional bank accounts, you can add it in the Vipps app.
+
+Fake bank account numbers can be generated with
+[Faker](https://github.com/joke2k/faker)
+```
+faker -l no_NO bban
+```
+
+**Important:** Bank accounts in the test environment must start with the
+following digits:
+* 8606
+* 9810
+* 9710
+* 4692
+* 9128
+* 1111
+* 6787
+* 6767
+* 6576
+* 1234
+
+### Test data
+
+See: [Vipps Test Data](https://github.com/vippsas/vipps-developers/blob/master/testdata/README.md).
 
 ## Test amounts
 
@@ -59,7 +94,7 @@ Vipps supports using special amounts that are always rejected when approving the
 | 1.84   | Withdrawal limit exceeded |
 | 1.97   | 3D Secure denied          |
 
-**Please note:** The "force approve" endpoint is not validated for this functionality and will result in different behaviour. 
+**Please note:** The "force approve" endpoint is not validated for this functionality and will result in different behaviour.
 
 ## Vipps test apps
 
