@@ -1,6 +1,6 @@
 # The Vipps Test Environment (MT)
 
-Document version: 2.0.1.
+Document version: 2.0.2.
 
 The Merchant Test Environment (MT) is available for all Vipps customers.
 
@@ -61,14 +61,14 @@ Fake bank account numbers can be generated with
 [Faker](https://github.com/joke2k/faker)
 `faker -l no_NO bban`.
 
-**Important:** Bank accounts in the test environment must start with the a valid Norwegian bankplass series
-Recommended series: 
-DNB = 1201, 1207, 1208, 1542
-SPAREBANK = 2601, 4605, 4609, 4658, 4730
-NORDEA = 8841, 9406, 6509, 6446
-SBANKEN = 9710, 9712, 9729, 9810
-HANDELSBANKEN = 9499, 9049, 9688
-DANSKEBANK = 8606, 9760, 9747, 9065
+**Important:** Bank accounts in the test environment must start with the a
+valid Norwegian "bankplass" series. Recommended series:
+* DNB = 1201, 1207, 1208, 1542
+* Sparebank = 2601, 4605, 4609, 4658, 4730
+* Nordea = 8841, 9406, 6509, 6446
+* Sbanken = 9710, 9712, 9729, 9810
+* Handelsbanken = 9499, 9049, 9688
+* Danske Bank = 8606, 9760, 9747, 9065
 
 ### Test data
 
