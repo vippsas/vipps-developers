@@ -61,8 +61,14 @@ Fake bank account numbers can be generated with
 [Faker](https://github.com/joke2k/faker)
 `faker -l no_NO bban`.
 
-**Important:** Bank accounts in the test environment must start with the
-following digits: 8606, 9810, 9710, 4692, 9128, 1111, 6787, 6767, 6576, 1234.
+**Important:** Bank accounts in the test environment must start with the a valid Norwegian bankplass series
+Recommended series: 
+DNB = 1201, 1207, 1208, 1542
+SPAREBANK = 2601, 4605, 4609, 4658, 4730
+NORDEA = 8841, 9406, 6509, 6446
+SBANKEN = 9710, 9712, 9729, 9810
+HANDELSBANKEN = 9499, 9049, 9688
+DANSKEBANK = 8606, 9760, 9747, 9065
 
 ### Test data
 
