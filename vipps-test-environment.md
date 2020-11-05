@@ -1,6 +1,6 @@
 # The Vipps Test Environment (MT)
 
-Document version: 2.0.0.
+Document version: 2.0.1.
 
 The Merchant Test Environment (MT) is available for all Vipps customers.
 
@@ -59,22 +59,10 @@ If you need additional bank accounts, you can add it in the Vipps app.
 
 Fake bank account numbers can be generated with
 [Faker](https://github.com/joke2k/faker)
-```
-faker -l no_NO bban
-```
+`faker -l no_NO bban`.
 
 **Important:** Bank accounts in the test environment must start with the
-following digits:
-* 8606
-* 9810
-* 9710
-* 4692
-* 9128
-* 1111
-* 6787
-* 6767
-* 6576
-* 1234
+following digits: 8606, 9810, 9710, 4692, 9128, 1111, 6787, 6767, 6576, 1234.
 
 ### Test data
 
