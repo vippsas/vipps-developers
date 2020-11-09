@@ -4,7 +4,7 @@ This newsletter was sent in November 2020.
 
 # Vipps Hurtigkasse improvements 💸
 
-From December it will be easier to select the right address and shipping method, and the
+The latest versions of Vipps make it easier for users to select the right address and shipping method, and the
 backend is based on the same _Userinfo_ functionality used by the
 [Vipps eCom API v2](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#userinfo)
 and the
