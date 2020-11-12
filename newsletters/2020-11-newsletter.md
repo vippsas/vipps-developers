@@ -2,23 +2,6 @@
 
 This newsletter was sent in November 2020.
 
-# Vipps Hurtigkasse improvements 💸
-
-The latest versions of Vipps make it easier for users to select the right address and shipping method, and the
-backend is based on the same _Userinfo_ functionality used by the
-[Vipps eCom API v2](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#userinfo)
-and the
-[Vipps Recurring API](https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api.md#userinfo).
-
-Hurtigkasse flow (not final, may change slightly):
-
-![Vipps Hurtigkasse improvements](images/2020-11-hurtigkasse.png)
-
-**Please note:** Users will now have to select address and shipping method.
-Merchants that do not ship anything should use the
-[Userinfo](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#userinfo)
-functionality instead of Vipps Hurtigkasse.
-
 # Vipps Login improvements 🎉
 
 Vipps Login now lets merchants to control the login experience on phones: The
