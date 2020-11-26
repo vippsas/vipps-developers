@@ -1,6 +1,6 @@
 # Technical newsletter for developers 2020-11
 
-This newsletter was sent in November 2020.
+This newsletter _will be sent_ in November 2020.
 
 # Vipps Login improvements 🎉
 
