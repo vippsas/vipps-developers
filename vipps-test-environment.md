@@ -59,7 +59,7 @@ If you need additional bank accounts, you can add it in the Vipps app.
 
 Fake bank account numbers can be generated with
 [Faker](https://github.com/joke2k/faker):
-`faker -l no_NO bban`.
+`faker -l no_NO bban`
 
 **Important:** Bank accounts in the test environment must start with the a
 valid Norwegian "bankplass" series. Recommended series:
