@@ -2,6 +2,15 @@
 
 This newsletter _will be sent_ in November 2020.
 
+Contents:
+- [Vipps Login improvements](#vipps-login-improvements-)
+- [Optional HTTP Headers](#optional-http-headers-ℹ%EF%B8%8F)
+- [API Dashboard](#api-dashboard-)
+- [Suggest improvements, get a pair of Vipps socks](#suggest-improvements-get-a-pair-of-vipps-socks-)
+- [Do you want a Slack channel?](#do-you-want-a-slack-channel-)
+- [Do you want a technical workshop?](#do-you-want-a-technical-workshop-)
+- [Reminders](#reminders)
+
 # Vipps Login improvements 🎉
 
 Vipps Login now lets merchants to control the login experience on phones: The
