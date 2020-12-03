@@ -1,0 +1,17 @@
+Hei
+
+Vipps eCom API v1 er ikke lenger tilgjengelig. 
+
+Vi har varslet flere ganger siden høsten 2019 om at det ville bli fases ut, og den opprinnelige fristen 1. juni 2020 er blitt forlenget flere ganger, til endelig dato 4. desember 2020.
+
+Se her for mer informasjon: https://github.com/vippsas/vipps-ecom-api/blob/master/v1-deprecation.md
+
+$cursor$
+
+--
+$currentUserName$
+Vipps Integration
+
+[Contact info|https://github.com/vippsas/vipps-developers/blob/master/contact.md]
+[Vipps on GitHub|https://github.com/vippsas]
+[Technical newsletter for developers|https://cloud.hei.vipps.no/utv] 
