@@ -1,8 +1,9 @@
-# Technical newsletter for developers 2020-11
+# Technical newsletter for developers 2020-12
 
-This newsletter _will be sent_ in November 2020.
+This newsletter was sent in December 2020.
 
 Contents:
+- [The Vipps eCom API v1 is disabled](#the-vipps-ecom-api-v1-is-disabled)
 - [Vipps Login improvements](#vipps-login-improvements-)
 - [Optional HTTP Headers](#optional-http-headers-ℹ%EF%B8%8F)
 - [API Dashboard](#api-dashboard-)
@@ -10,6 +11,18 @@ Contents:
 - [Do you want a Slack channel?](#do-you-want-a-slack-channel-)
 - [Do you want a technical workshop?](#do-you-want-a-technical-workshop-)
 - [Reminders](#reminders)
+
+# The Vipps eCom API v1 is disabled
+
+After several extensions to the original June 1 deadline, the Vipps eCom API v1
+was shut down on December 4. The Vipps eCom API v2 has been available for
+about three years, and offers more functionality than the old version.
+
+See the
+[deprecation notice](https://github.com/vippsas/vipps-ecom-api/blob/master/v1-deprecation.md)
+and
+[migration guide](https://github.com/vippsas/vipps-ecom-api/blob/master/v1-migration.md)
+if you _still_ need to upgrade.
 
 # Vipps Login improvements 🎉
 
@@ -69,7 +82,7 @@ repo on GitHUb.
 We appreciate all suggestions for improvement to our development platform,
 including complaints! To encourage this, we will send two (2) Vipps socks to
 everyone that creates a (somewhat meaningful) issue or PR for our API
-documentation in November.
+documentation before January 31 2021.
 
 What do do:
 1. Create an issue or PR in the appropriate GitHub repo.
