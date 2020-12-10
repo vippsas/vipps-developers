@@ -19,7 +19,7 @@ For Vipps-relaterte problemer hjelper vi selvsagt, og vi bidrar også i forumet.
 
 WooCommerce-puginen er også open source, hvis det er interessant: https://github.com/vippsas/vipps-woocommerce
 
-Testing av WooCommerce: Denne pluginen er ment å være "plug and play", og vi tilbyr ikke eget utviklingsmiljø for WooCommerce. Når Vipps for WooCommerce for installert og konfigurert iht. dokumentasjonen, kan man gjennomføre små kjøp, f.eks. 2 kr, for å verifisere at løsningen fungerer. 
+Testing av WooCommerce: Denne pluginen er ment å være "plug and play", og ved vanlig bruk er det ikke nødvendig å bruke testmiljøet for WooCommerce. Når Vipps for WooCommerce for installert og konfigurert iht. dokumentasjonen, kan man gjennomføre små kjøp, f.eks. 2 kr, for å verifisere at løsningen fungerer. 
 
 $cursor$
 
