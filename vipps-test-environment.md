@@ -20,7 +20,7 @@ production environment in a controlled manner. One example may be to test
 Vipps Regninger with real invoices, but with small amounts. We recommend 2 NOK.
 
 Other differences in MT:
-* There is not equivalent to [portal.vipps.no](https://portal.vipps.no) for the test environment.
+* There is no equivalent to [portal.vipps.no](https://portal.vipps.no) for the test environment.
   Payments must be checked with the API, as there is no web interface.
 * We allow 10,000 incorrect PIN attempts before locking the Vipps user's account
 
