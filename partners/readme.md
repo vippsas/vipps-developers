@@ -84,7 +84,7 @@ TODO: Tidy up!
 
 ## Partner terms and conditions
 
-As a partner you accept the [Partner terms and conditions](https://github.com/vippsas/vipps-developers/partners/partnerterms.md)
+As a partner you accept the [Partner terms and conditions](https://github.com/vippsas/vipps-developers/blob/master/partners/partnerterms.md)
 
 ## Questions?
 
