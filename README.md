@@ -16,6 +16,7 @@ This repository contains various resources for Vipps developers, including:
 - [Vipps Developers](#vipps-developers)
   - [Table of contents](#table-of-contents)
   - [API documentation](#api-documentation)
+  - [Partners](#partners)
   - [Plugins](#plugins)
   - [Status page](#status-page)
   - [The Vipps test environment (MT)](#the-vipps-test-environment-mt)
@@ -31,6 +32,11 @@ This repository contains various resources for Vipps developers, including:
 See: [Getting started](vipps-getting-started.md).
 
 All Vipps APIs are available here: https://github.com/vippsas
+
+## Partners
+
+See our [Partner section](partners/).
+
 
 ## Plugins
 
