@@ -7,4 +7,10 @@ Foreløpig er testmiljøet ikke helt identisk med produksjonsmiljøet.
 De samme endringene må jo gjøres der, men vi er nødt til å prioritere
 produksjonsmiljøet. 
 
-Se bakgrunnsinfo her: https://vipps.no/om-oss/nyheter/flere-nettbetalinger-far-bankid-bekreftelse-fra-nyttar/ 
+I tillegg er koden i appene for iOS og Android den samme for test-
+og produksjonsmiljøet, då det skaper litt eksrta utfordringer.
+
+Beklager problemene dette skaper for dere. Vi jobber så raskt vi kan!
+
+Se bakgrunnsinfo her:
+https://vipps.no/om-oss/nyheter/flere-nettbetalinger-far-bankid-bekreftelse-fra-nyttar/ 
