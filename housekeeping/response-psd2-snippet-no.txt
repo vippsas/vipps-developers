@@ -1,0 +1,10 @@
+Vi har gjort store endringer i betalingsmotoren vår ifm. PSD2, og det er
+nesten daglig endringer hos banker og betalingsleverandører for hvor
+godt de støtter lovpålagte krav. Mye av våre utviklingsressurser går
+derfor med til å følge opp dette, og dessverre går det utover testmiljøet vårt.
+
+Foreløpig er testmiljøet ikke helt identisk med produksjonsmiljøet.
+De samme endringene må jo gjøres der, men vi er nødt til å prioritere
+produksjonsmiljøet. 
+
+Se bakgrunnsinfo her: https://vipps.no/om-oss/nyheter/flere-nettbetalinger-far-bankid-bekreftelse-fra-nyttar/ 
