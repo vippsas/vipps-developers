@@ -10,6 +10,25 @@ produksjonsmiljøet.
 I tillegg er koden i appene for iOS og Android den samme for test-
 og produksjonsmiljøet, då det skaper litt eksrta utfordringer.
 
+Vipps er med i VISAs "Delagated Authentication" (DA), som betyr at Vipps
+kan gjølre sikker kundeautentisering (SCA) i Vipps med vår bankgodkjente
+autentisering.
+
+Visa markerer kryptogrammet som DA, og bankene gjør dermed ikke "soft decline",
+og brukeren trenger ikke gjøre noen annen autentisering.
+
+Vi ser for tiden 99,9 % suksessrate på alle tokeniserte VISA-kort.
+
+For MastertCard er det foreløpig ikke noe tilsvarende program, men Vipps vil
+bli med på det så snart det er tilgerngelig. I mellomtiden inngår Vipps
+bilaterale avtaler med de største MasterCard-utstederne for å bli hvitelistet
+for PSD2-regelverket basert på vår token requestor id (TRID), som er
+inkludert i kryptogrammet.
+
+For  tiden er det 5-10 % av norske kort som ikke støtter tokenisering.
+Vipps er i dialog med disse utstederne og de er i process med å vurdere
+om de ønsker å bli med på de repsektive tokeniseringsprogrammene.
+
 Beklager problemene dette skaper for dere. Vi jobber så raskt vi kan!
 
 Se bakgrunnsinfo her:
