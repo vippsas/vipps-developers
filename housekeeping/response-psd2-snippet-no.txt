@@ -11,7 +11,7 @@ I tillegg er koden i appene for iOS og Android den samme for test-
 og produksjonsmiljøet, då det skaper litt eksrta utfordringer.
 
 Vipps er med i VISAs "Delagated Authentication" (DA), som betyr at Vipps
-kan gjølre sikker kundeautentisering (SCA) i Vipps med vår bankgodkjente
+kan gjøre sikker kundeautentisering (SCA) i Vipps med vår bankgodkjente
 autentisering.
 
 Visa markerer kryptogrammet som DA, og bankene gjør dermed ikke "soft decline",
