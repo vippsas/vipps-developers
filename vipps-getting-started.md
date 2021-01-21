@@ -33,13 +33,22 @@ environments, is to apply for a product at [vipps.no](https://vipps.no/produkter
 If you have questions about your customer relationship, please
 [contact customer service](https://www.vipps.no/kontakt-oss/bedrift/).
 
-**Please note:** You will need a Norwegian organization number to apply for Vipps services.
+**Please note:** You will need a Norwegian organization number and BankID to apply for Vipps services.
 
-Test credentials are normally available 24 hours after we receive the application.
 When the application has been processed you will receive an email, and the
 API keys can be retrieved by logging in to
 [portal.vipps.no](https://portal.vipps.no)
-with BankID. This normally takes a few days.
+with BankID. 
+
+* API keys for the
+  [test environment](https://github.com/vippsas/vipps-developers/blob/master/vipps-test-environment.md):
+  Normally available on
+  [portal.vipps.no](https://portal.vipps.no)
+  24 hours after we receive the application.
+
+* API keys for the production environment are normally available on
+  [portal.vipps.no](https://portal.vipps.no)
+  after a few days, depending on the workload and whether we need additional information.
 
 **Please note:** If you plan to use Vipps through a Partner or a PSP, you will have to
 order the appropriate Vipps solution, and then contact the Partner or PSP
@@ -77,7 +86,9 @@ the API keys to you.
 
 **Please note:** Vipps can not provide API keys in any other way, such as by
 email, as the API keys give access to transferring money.
-Vipps will never ask for your API keys, and you should keep them secret.
+Vipps will never ask for your API keys, and you must keep them secret.
+If you accidentally share your API keys, you must generate new ones on
+[portal.vipps.no](https://portal.vipps.no).
 
 ### List of sale units
 Click `Show keys` on the relevant sale unit to display credentials.
