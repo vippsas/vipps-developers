@@ -26,7 +26,7 @@ If you do not have a technical issue, the fastest way to get help is to use the 
 | Applications for Vipps products | Please see the [contact info for companies on vipps.no](https://www.vipps.no/kontakt-oss/bedrift/) |
 | Using Vipps through a partner (for merchants) | Please [contact your partner directly](https://www.vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-3) |
 | Partner assistance (for partners) | Please contact partnerbestilling@vipps.no  |
-| Vipps plugins (WooCommerce, WordPress, Magento, Drupal, Shopify, etc)| Please see the [plugin overview](https://github.com/vippsas/vipps-developers#plugins) |
+| Vipps plugins (WooCommerce, WordPress, Magento, Drupal, Shopify, etc)| Please see the [plugin overview](https://github.com/vippsas/vipps-plugins) |
 | Settlements, invoices or similar | Please see [Settlements](https://github.com/vippsas/vipps-developers/tree/master/settlements) |
 | Suggestions for improvements to [Vipps products](https://www.vipps.no/produkter-og-tjenester/bedrift/) | Please use [this form](https://www.vipps.no/kontakt-oss/bedrift/) |
 

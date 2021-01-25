@@ -2,7 +2,7 @@
 
 💥 Work in progress! 💥
 
-Document version: 0.0.4.
+Document version: 0.9.
 
 Vipps partners can represent multiple Vipps merchants, and can make transactions
 on behalf of the merchants.
@@ -57,6 +57,7 @@ TODO: Tidy up!
     - [ ] Vipps-System-Version
     - [ ] Vipps-System-Plugin-Name
     - [ ] Vipps-System-Plugin-Version    
+- [ ] As a partner you accept the [Partner terms and conditions](https://github.com/vippsas/vipps-developers/blob/master/partners/partnerterms.md)
 
 ## Flow to go live new partners
 
@@ -80,7 +81,7 @@ TODO: Tidy up!
 
 1. The merchant signs up for [Vipps på Nett](https://www.vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/) and selects the partner in the form.
 2. Vipps completes customer control (KYC, PEP, AML, etc).
-3.
+3. Merchant keys are available for the merchant on [portal.vipps.no](https://portal.vipps.no), or sent directly to partner if [signup API](https://github.com/vippsas/vipps-signup-api) is implemented.
 
 ## Partner terms and conditions
 

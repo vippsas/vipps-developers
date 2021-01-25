@@ -1,0 +1,22 @@
+Hei
+
+Der kan selv sjekke om dere har “reserve capture” eller “direct capture” på salgsenheten på portal.vipps.no.
+Der står det også hvordan dere ev. ber om å få det endret.
+
+På portal.vipps.no kan du også se alle transaksjoner, hente rapporter, osv.
+
+Se FAQ: 
+
+What is the difference between "Reserve Capture" and "Direct Capture"?
+https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-faq.md#what-is-the-difference-between-reserve-capture-and-direct-capture
+
+How can I check if I have "reserve capture" or "direct capture"?
+https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-faq.md#how-can-i-check-if-i-have-reserve-capture-or-direct-capture
+
+$cursor$
+
+--
+$currentUserName$
+Vipps Integration
+
+[Contact info|https://github.com/vippsas/vipps-developers/blob/master/contact.md] [Vipps on GitHub|https://github.com/vippsas] [Technical newsletter for developers|https://cloud.hei.vipps.no/utv]
