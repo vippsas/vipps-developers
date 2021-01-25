@@ -34,6 +34,8 @@ for details on moving from version 1 to 2.
 
 # API Dashboard 🚦
 
+![API Dashboaard](images/2021-02-api-dashboard-initiate-payment.png)
+
 The API Dashboard is now available on
 [portal.vipps.no](https://portal.vipps.no)
 under the "Utvikler" ("Developer") tab.
@@ -70,7 +72,7 @@ which help Vipps improve our services, and also help in investigating problems.
 We appreciate all suggestions for improvement to our development platform,
 including complaints! To encourage this, we will send two (2) Vipps socks to
 everyone that creates a (somewhat meaningful) issue or PR for our API
-documentation before January 31 2021.
+documentation before February 28 2021.
 
 What do do:
 1. Create an issue or PR in the appropriate GitHub repo.
