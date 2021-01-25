@@ -1,36 +1,38 @@
 # Technical newsletter for developers 2021-02
 
-💥 DRAFT! 💥 
+💥 DRAFT! 💥
 
 This newsletter was sent in February 2021.
 
 
 # The deprecated eCom API `/status` endpoint will be removed
 
-The `/status` endpoint has been deprecated for a long time, and we will remove it on March 1.
+The
+[`/status`](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#get-payment-status)
+endpoint has been deprecated for a long time, and we will remove it on March 1.
 
-The `/details` endpoint gives more data and details: The full payment history of the orderId. 
+The
+[`/details`](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#get-payment-details)
+endpoint has been available for a long time, and gives more data and details: The full payment history of the orderId.
 
-See the documentation for more:
-* `/details`: https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#get-payment-details
-* `/status`: https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#get-payment-status
 
-# Vipps Login improvements 🎉
-
-Vipps Login now lets merchants to control the login experience on phones: The
-merchant can choose whether the user should be automatically taken back to the
-browser after completing an authentication in the Vipps app.
-We have also added a specific flow for integrations with apps.
-More information, and screenshots of the new flows, can be found in the
-[documentation](https://github.com/vippsas/vipps-login-api/blob/master/vipps-login-api.md#mobile-flow---app-switch-based-flow).
+# Vipps Login API version 2
 
 To have a unified way of providing user information across Vipps services
 we are standardising the data formats, both within Vipps and with the OIDC standard.
-To do this we have been required to introduce a new version of our Vipps login API.
+To do this we have to introduce a new version of our Vipps login API.
 **The previous version (Version 1) of the Vipps login API will have end of life on February 28th 2021**.
 See
 [the API migration guide](https://github.com/vippsas/vipps-login-api/blob/master/vipps-login-migrate-api-1.0-to-2.0.md)
 for details on moving from version 1 to 2.
+
+# Vipps Login improvements 🎉
+
+The merchant can now choose whether the user should be automatically returned
+to the browser after completing the authentication Vipps.
+We have also added a specific flow for integrations with native apps.
+More information, and screenshots of the new flows, can be found in the
+[documentation](https://github.com/vippsas/vipps-login-api/blob/master/vipps-login-api.md#mobile-flow---app-switch-based-flow).
 
 # API Dashboard 🚦
 
@@ -40,14 +42,13 @@ The API Dashboard is now available on
 [portal.vipps.no](https://portal.vipps.no)
 under the "Utvikler" ("Developer") tab.
 
-This is just the st art. Please let us know what you think and suggest improvements.
-
+This is just the start. Please let us know what you think and suggest improvements.
 
 # Reminders
 
 We have mentioned some things before, and take this opportunity to remind you:
 
-#$ Optional HTTP Headers ℹ️
+## Optional HTTP Headers ℹ️
 
 We recommend using the following _optional_ HTTP headers for all requests to the
 [Vipps eCom API](https://github.com/vippsas/vipps-ecom-api/)
@@ -72,9 +73,8 @@ which help Vipps improve our services, and also help in investigating problems.
 We appreciate all suggestions for improvement to our development platform,
 including complaints! To encourage this, we will send two (2) Vipps socks to
 everyone that creates a (somewhat meaningful) issue or PR for our API
-documentation before February 28 2021.
+documentation before February 28 2021:
 
-What do do:
 1. Create an issue or PR in the appropriate GitHub repo.
 2. Wait for our comment (it may not be immediate).
 3. If we think it's "OK", we will ask you to send an email to us with your address.
@@ -90,7 +90,7 @@ we will do a scientifically randomized drawing.
 
 We can set up a dedicated, temporary Slack channel to help fast-track your
 Vipps development. Send an email to integration@vipps.no with a list of
-email addresses to invite, with the same people on CC. We fix the rest.
+email addresses to invite, with the same people on CC. We'll fix the rest.
 
 This does, unfortunately, not apply to customers using one of our
 [plugins](https://github.com/vippsas/vipps-developers#plugins), or
@@ -99,7 +99,7 @@ customers using Vipps through a partner.
 ## Do you want a technical workshop? 🛠
 
 We can set up a dedicated video workshop to help fast-track your
-Vipps development. Send an email to integration@vipps.no with a list of
+Vipps integration. Send an email to integration@vipps.no with a list of
 email addresses to invite, with the same people on CC. We fix the rest.
 
 This does, unfortunately, not apply to customers using one of our
