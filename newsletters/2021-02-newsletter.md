@@ -1,8 +1,8 @@
-# Technical newsletter for developers 2021-01
+# Technical newsletter for developers 2021-02
 
 💥 DRAFT! 💥 
 
-This newsletter was sent in January 2021.
+This newsletter was sent in February 2021.
 
 
 # The deprecated eCom API `/status` endpoint will be removed
