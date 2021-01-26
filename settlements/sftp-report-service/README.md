@@ -7,8 +7,9 @@ about the report formats, availability of personal information about customers,
 GDPR, etc.
 
 Vipps does not have an API to retrieve settlements files.
+We are aware of the interest for an API, and it is on our roadmap - but no ETA yet.
 
-Document version: 2.0.0.
+Document version: 2.0.1.
 
 ## Settlements
 
@@ -23,6 +24,9 @@ some cases include transactions spanning several days back in time.
 Settlement reports should be available by 12:00 on the day after the
 transactions were made, as long as a settlement were created (i.e. the balance
 was positive).
+
+Each merchant (organization number) has its own settlement reports.
+It is not possible to aggregate reports from multiple sale units into one report.
 
 There will never be more than one new file per sales unit each
 day (and there may be none).
@@ -41,6 +45,8 @@ The SFTP report service is used for downloading settlement reports in the follow
 
 SFTP-users are created, associated with a public key, and given access to the reports of
 one or more merchants.
+
+It possible to use the same SSH key for multiple merchants.
 
 More information about SFTP: [SSH File Transfer Protocol](https://en.wikipedia.org/wiki/SSH_File_Transfer_Protocol).
 
