@@ -1,6 +1,6 @@
 # Vipps Developers
 
-Document version: 2.1.3.
+Document version: 2.1.4.
 
 This repository contains various resources for Vipps developers, including:
 
@@ -47,6 +47,8 @@ All Vipps plugins are available here: https://github.com/vippsas/vipps-plugins
 
 * Test environment: https://vipps-test.statuspage.io
 * Production environment: https://vipps.statuspage.io
+* BankID production: https://www.bankid.no/status/
+* BankID preprod: https://bankidpreprod.statuspage.io
 
 ## The Vipps test environment (MT)
 
