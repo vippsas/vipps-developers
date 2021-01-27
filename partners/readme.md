@@ -57,6 +57,8 @@ TODO: Tidy up!
     - [ ] Vipps-System-Version
     - [ ] Vipps-System-Plugin-Name
     - [ ] Vipps-System-Plugin-Version    
+- [ ] Technical documentation for merchants
+    - [ ] Documentation for merchants regarding how to apply for Vipps products
 - [ ] As a partner you accept the [Partner terms and conditions](https://github.com/vippsas/vipps-developers/blob/master/partners/partnerterms.md)
 
 ## Flow to go live new partners
