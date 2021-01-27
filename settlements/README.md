@@ -118,26 +118,12 @@ See "GDPR" above.
 
 Details: See the [sftp-report-service](sftp-report-service/) folder.
 
-## XML
+## Formats
 
-Details: See the [xml](xml/) folder.
-
-## CSV
-
-Details: See the [csv](csv/) folder.
-
-## PDF
-
-Details: See the [pdf](pdf/) folder.
-
-## OCR
-
-OCR files are no longer provided by Vipps.
-Invoice payments are made directly from the user to the merchant, so settlement files
-are provided by the bank, not Vipps.
-Documentation for the legacy invoice solution: [Vipps Faktura](ocr/vipps-invoice-api-vipps-faktura.pdf).
-
-Details: See the [ocr](ocr/) folder.
+* XML: See the [xml](xml/) folder.
+* CSV: See the [csv](csv/) folder.
+* PDF: See the [pdf](pdf/) folder.
+* OCR: Not available. See the [ocr](ocr/) folder.
 
 ## Questions?
 
