@@ -114,6 +114,7 @@ reports of one or more merchants.
 The reports are generated dynamically upon request.
 
 These reports do not contain personal details of the customers.
+See "GDPR" above.
 
 Details: See the [sftp-report-service](sftp-report-service/) folder.
 
