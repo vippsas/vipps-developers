@@ -1,6 +1,6 @@
 # Vipps Developers
 
-Document version: 2.3.0.
+Document version: 2.3.1.
 
 This repository contains various resources for Vipps developers, including:
 
@@ -8,7 +8,6 @@ This repository contains various resources for Vipps developers, including:
 * [Settlements](https://github.com/vippsas/vipps-developers/tree/master/settlements)
   for information about settlements
 * [How to contribute](contribute.md) to Vipps projects on GitHub
-* [How to contact us](contact.md) in the Vipps Integration team
 
 ## Table of contents
 
