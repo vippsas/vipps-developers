@@ -1,6 +1,6 @@
 # Vipps Developers
 
-Document version: 2.3.1.
+Document version: 2.3.2.
 
 This repository contains various resources for Vipps developers, including:
 
@@ -18,14 +18,14 @@ This repository contains various resources for Vipps developers, including:
 - [The Vipps test environment (MT)](#the-vipps-test-environment-mt)
 - [Postman](#postman)
 - [API Dashboard](#api-dashboard)
-- [Vipps design guidelines](#vipps-design-guidelines)
 - [Vipps API servers](#vipps-api-servers)
-  - [Vipps request servers](#vipps-request-servers)
+- [Vipps request servers](#vipps-request-servers)
+- [Vipps design guidelines](#vipps-design-guidelines)
 - [Questions?](#questions)
 
 ## API documentation
 
-See: [Getting started](vipps-getting-started.md).
+First of all: See [Getting started](vipps-getting-started.md).
 
 The most commonly used APIs:
 * [Vipps eCom API](https://github.com/vippsas/vipps-ecom-api)
@@ -77,11 +77,6 @@ Here's an example for one endpoint:
 
 ![API Dashboaard](newsletters/images/2021-02-api-dashboard-initiate-payment.png)
 
-## Vipps design guidelines
-
-Guidelines, logos, buttons, etc is here:
-[vipps-design-guidelines](https://github.com/vippsas/vipps-design-guidelines).
-
 ## Vipps API servers
 
 The environments are separate and require different API credentials:
@@ -94,7 +89,7 @@ The environments are separate and require different API credentials:
 that you are whitelisting the correct IP addresses please use these hostnames
 and DNS, and automatically update your firewall rules if there are DNS changes.
 
-### Vipps request servers
+## Vipps request servers
 
 Requests made by Vipps are made from the servers specified below.
 Vipps normally only uses one server at a time, and change servers approximately
@@ -115,6 +110,11 @@ and DNS, and automatically update your firewall rules if there are DNS changes.
 
 For API products where Vipps makes requests to your servers, please make sure
 that these request servers are allowed through firewalls, etc.
+
+## Vipps design guidelines
+
+Guidelines, logos, buttons, etc is here:
+[vipps-design-guidelines](https://github.com/vippsas/vipps-design-guidelines).
 
 ## Questions?
 
