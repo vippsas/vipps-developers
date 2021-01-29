@@ -14,14 +14,13 @@ This repository contains various resources for Vipps developers, including:
 - [API documentation](#api-documentation)
 - [Partners](#partners)
 - [Plugins](#plugins)
-- [Status page](#status-page)
+- [Status pages](#status-pages)
 - [The Vipps test environment (MT)](#the-vipps-test-environment-mt)
 - [Postman](#postman)
 - [API Dashboard](#api-dashboard)
 - [Vipps design guidelines](#vipps-design-guidelines)
 - [Vipps API servers](#vipps-api-servers)
-- [Vipps request servers](#vipps-request-servers)
-- [Additional developer resources](#additional-developer-resources)
+  - [Vipps request servers](#vipps-request-servers)
 - [Questions?](#questions)
 
 ## API documentation
@@ -44,7 +43,9 @@ See our [Partner section](partners/).
 Vipps provides several open source plugins for various web solutions.
 See our [Plugins section](https://github.com/vippsas/vipps-plugins).
 
-## Status page
+## Status pages
+
+We have several status pages, where you can also subscribe to alerts:
 
 * Test environment: https://vipps-test.statuspage.io
 * Production environment: https://vipps.statuspage.io
@@ -68,7 +69,7 @@ for more information about using Postman.
 
 ## API Dashboard
 
-All customers have acces to an API Dashboard on
+All customers have access to an API Dashboard on
 [portal.vipps.no](https://portal.vipps.no) under the "Utvikler" tab.
 
 It show information about your API usage, an overview of errors, etc.
@@ -83,14 +84,17 @@ Guidelines, logos, buttons, etc is here:
 
 ## Vipps API servers
 
-* Test (MT): apitest.vipps.no
-* Production: api.vipps.no
+The environments are separate and require different API credentials:
+
+| Production (Prod)   | Test (MT)              |
+| ------------------- | ---------------------- |
+| api.vipps.no        | apitest.vipps.no       |
 
 **Please note:** Vipps may change the IP addresses for the API servers. To ensure
 that you are whitelisting the correct IP addresses please use these hostnames
 and DNS, and automatically update your firewall rules if there are DNS changes.
 
-## Vipps iremest servers
+### Vipps request servers
 
 Requests made by Vipps are made from the servers specified below.
 Vipps normally only uses one server at a time, and change servers approximately
@@ -111,12 +115,6 @@ and DNS, and automatically update your firewall rules if there are DNS changes.
 
 For API products where Vipps makes requests to your servers, please make sure
 that these request servers are allowed through firewalls, etc.
-
-## Additional developer resources
-
-* Developer overview: https://vipps.no/developer
-* Products, personal: http://vipps.no/privat
-* Products, business: http://vipps.no/bedrift
 
 ## Questions?
 
