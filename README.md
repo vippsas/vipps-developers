@@ -1,6 +1,6 @@
 # Vipps Developers
 
-Document version: 2.1.4.
+Document version: 2.2.0.
 
 This repository contains various resources for Vipps developers, including:
 
@@ -31,17 +31,21 @@ This repository contains various resources for Vipps developers, including:
 
 See: [Getting started](vipps-getting-started.md).
 
+The most commonly used APIs:
+* [Vipps eCom API](https://github.com/vippsas/vipps-ecom-api)
+* [Vipps Login API](https://github.com/vippsas/vipps-login-api)
+* [Vipps Recurring API](https://github.com/vippsas/vipps-recurring-api)
+
 All Vipps APIs are available here: https://github.com/vippsas
 
 ## Partners
 
 See our [Partner section](partners/).
 
-
 ## Plugins
 
 Vipps provides several open source plugins for various web solutions.
-All Vipps plugins are available here: https://github.com/vippsas/vipps-plugins
+See our [Plugins section](https://github.com/vippsas/vipps-plugins).
 
 ## Status page
 
@@ -64,6 +68,16 @@ See our
 or the
 [Postman documentation](https://www.getpostman.com/docs/)
 for more information about using Postman.
+
+## API Dashboard
+
+All customers have acces to an API Dashboard on
+[portal.vipps.no](https://portal.vipps.no) under the "Utvikler" tab.
+
+It show information about your API usage, an overview of errors, etc.
+Here's an example for one endpoint:
+
+![API Dashboaard](newsletters/images/2021-02-api-dashboard-initiate-payment.png)
 
 ## Vipps design guidelines
 
