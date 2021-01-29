@@ -5,7 +5,6 @@ Document version: 2.3.0.
 This repository contains various resources for Vipps developers, including:
 
 * [Getting started](vipps-getting-started.md) with Vipps development
-* [Requirements](requirements.md) for foreign companies in order to use Vipps
 * [Settlements](https://github.com/vippsas/vipps-developers/tree/master/settlements)
   for information about settlements
 * [How to contribute](contribute.md) to Vipps projects on GitHub
@@ -92,7 +91,7 @@ Guidelines, logos, buttons, etc is here:
 that you are whitelisting the correct IP addresses please use these hostnames
 and DNS, and automatically update your firewall rules if there are DNS changes.
 
-## Vipps request servers
+## Vipps iremest servers
 
 Requests made by Vipps are made from the servers specified below.
 Vipps normally only uses one server at a time, and change servers approximately

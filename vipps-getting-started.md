@@ -15,6 +15,8 @@ Document version 3.1.4.
 
 ## Table of contents
 - [Requirements](#requirements)
+  - [Foreign companies](#foreign-companies)
+  - [Vipps users](#vipps-users)
 - [Get credentials](#get-credentials)
 - [Getting the API keys](#getting-the-api-keys)
   - [List of sale units](#list-of-sale-units)
@@ -33,11 +35,30 @@ Document version 3.1.4.
 
 ## Requirements
 
-You will need a Norwegian organization number and BankID to apply for Vipps services.
+Merchants need a Norwegian organization number and BankID to apply for Vipps services.
 
 The fastest way to get a Vipps developer account for the test and production
 environments, is to apply for a product at
 [vipps.no](https://vipps.no/produkter-og-tjenester/bedrift/).
+
+### Foreign companies
+
+Foreign companies must have the following in order to use Vipps as a payment
+provider and to receive payments from Vipps users:
+* A Norwegian organization number
+* A Norwegian bank account
+* An appointed contact person with a Norwegian phone and identity number
+
+### Vipps users
+
+Vipps payments can only be made by customers with a Norwegian phone number and
+with a Norwegian national identity number or D-number.
+This is required by the government.
+
+A D-number is given to foreign persons who do not have a national identity number,
+but have a need for identification for the Norwegian authorities.
+Read more on how to
+[apply for a D-number](https://www.skatteetaten.no/en/person/foreign/norwegian-identification-number/).
 
 ## Get credentials
 
