@@ -1,31 +1,30 @@
 # Vipps Developers
 
-Document version: 2.2.0.
+Document version: 2.3.0.
 
 This repository contains various resources for Vipps developers, including:
 
 * [Getting started](vipps-getting-started.md) with Vipps development
-* [How to contact us](contact.md) in the Vipps Integration team
 * [Requirements](requirements.md) for foreign companies in order to use Vipps
 * [Settlements](https://github.com/vippsas/vipps-developers/tree/master/settlements)
   for information about settlements
 * [How to contribute](contribute.md) to Vipps projects on GitHub
+* [How to contact us](contact.md) in the Vipps Integration team
 
 ## Table of contents
 
-- [Vipps Developers](#vipps-developers)
-  - [Table of contents](#table-of-contents)
-  - [API documentation](#api-documentation)
-  - [Partners](#partners)
-  - [Plugins](#plugins)
-  - [Status page](#status-page)
-  - [The Vipps test environment (MT)](#the-vipps-test-environment-mt)
-  - [Postman](#postman)
-  - [Vipps design guidelines](#vipps-design-guidelines)
-  - [Vipps API servers](#vipps-api-servers)
-  - [Vipps request servers](#vipps-request-servers)
-  - [Additional developer resources](#additional-developer-resources)
-  - [Questions?](#questions)
+- [API documentation](#api-documentation)
+- [Partners](#partners)
+- [Plugins](#plugins)
+- [Status page](#status-page)
+- [The Vipps test environment (MT)](#the-vipps-test-environment-mt)
+- [Postman](#postman)
+- [API Dashboard](#api-dashboard)
+- [Vipps design guidelines](#vipps-design-guidelines)
+- [Vipps API servers](#vipps-api-servers)
+- [Vipps request servers](#vipps-request-servers)
+- [Additional developer resources](#additional-developer-resources)
+- [Questions?](#questions)
 
 ## API documentation
 

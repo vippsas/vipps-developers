@@ -1,44 +1,78 @@
 # Getting Started
-This guide only applies to the following APIs: Ecommerce, Recurring and Login.
 
-If you are using an e-commerce platform, integration partner or PSP, please see the respective resources:
+This guide only applies to the following APIs:
+* [Vipps eCom API](https://github.com/vippsas/vipps-ecom-api)
+* [Vipps Login API](https://github.com/vippsas/vipps-login-api)
+* [Vipps Recurring API](https://github.com/vippsas/vipps-recurring-api)
+
+If you are using Vipps through an e-commerce platform, integration partner or PSP, please see the respective resources:
 
 * [Ecommerce platform](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-1)
 * [Partner](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-3)
 * [PSP](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-2)
 
-Document version 3.1.3.
+Document version 3.1.4.
 
 ## Table of contents
-  - [Get credentials](#get-credentials)
-  - [Getting the API keys](#getting-the-api-keys)
-    - [List of sale units](#list-of-sale-units)
-    - [API keys for a salesunit](#api-keys-for-a-salesunit)
-    - [API key details](#api-key-details)
-  - [API keys for different use](#api-keys-for-different-use)
+- [Requirements](#requirements)
+- [Get credentials](#get-credentials)
+- [Getting the API keys](#getting-the-api-keys)
+  - [List of sale units](#list-of-sale-units)
+  - [API keys for a salesunit](#api-keys-for-a-salesunit)
+  - [API key details](#api-key-details)
+- [API keys for different use](#api-keys-for-different-use)
 - [API products](#api-products)
-  - [Vipps-API](#vipps-api)
-  - [Legacy API products](#legacy-api-products)
+- [Vipps-API](#vipps-api)
+- [Legacy API products](#legacy-api-products)
 - [Quick overview of how to make an API call](#quick-overview-of-how-to-make-an-api-call)
-  - [Get an access token](#get-an-access-token)
-    - [Request](#request)
-    - [Response](#response)
-  - [HTTP response codes](#http-response-codes)
+- [Get an access token](#get-an-access-token)
+  - [Request](#request)
+  - [Response](#response)
+- [HTTP response codes](#http-response-codes)
 - [Questions?](#questions)
+
+## Requirements
+
+You will need a Norwegian organization number and BankID to apply for Vipps services.
+
+The fastest way to get a Vipps developer account for the test and production
+environments, is to apply for a product at
+[vipps.no](https://vipps.no/produkter-og-tjenester/bedrift/).
 
 ## Get credentials
 
-The fastest way to get a Vipps developer account for the test and production
-environments, is to apply for a product at [vipps.no](https://vipps.no/produkter-og-tjenester/bedrift/).
-If you have questions about your customer relationship, please
+When the application has been processed you will receive an email, and the
+API keys can be retrieved by logging in with BankID on
+[portal.vipps.no](https://portal.vipps.no).
+
+If you have questions about your customer relationship, or an application, please
 [contact customer service](https://www.vipps.no/kontakt-oss/bedrift/).
 
-**Please note:** You will need a Norwegian organization number and BankID to apply for Vipps services.
+**Please note:** If you plan to use Vipps through a Partner or a PSP, you will have to
+order the appropriate Vipps solution, and then contact the Partner or PSP
+to have _them_ help you with developer access.
 
-When the application has been processed you will receive an email, and the
-API keys can be retrieved by logging in to
+## Getting the API keys
+
+API keys can be retrieved by logging in with BankID on
+[portal.vipps.no](https://portal.vipps.no),
+under the `Utvikler` menu item.
+Since this gives access to API keys for both the test and production environment,
+we require BankID for logging in.
+
+**Please note:** Vipps can not provide API keys in any other way, such as by
+email, as the API keys give access to transferring money.
+Vipps will never ask for your API keys, and you must keep them secret.
+If you accidentally share your API keys, you must generate new ones on
+[portal.vipps.no](https://portal.vipps.no).
+
+If you do not have BankID, you will need the administrator to log in
 [portal.vipps.no](https://portal.vipps.no)
-with BankID. 
+and provide the API keys to you.
+The merchant's administrator can create additional users.
+If you don't know who the administrator is, you can check
+[Brønnøysundregistrene](https://www.brreg.no)
+and see who has the right to sigh for the company.
 
 * API keys for the
   [test environment](https://github.com/vippsas/vipps-developers/blob/master/vipps-test-environment.md):
@@ -49,12 +83,6 @@ with BankID.
 * API keys for the production environment are normally available on
   [portal.vipps.no](https://portal.vipps.no)
   after a few days, depending on the workload and whether we need additional information.
-
-**Please note:** If you plan to use Vipps through a Partner or a PSP, you will have to
-order the appropriate Vipps solution, and then contact the Partner or PSP
-to have _them_ help you with developer access.
-
-## Getting the API keys
 
 Please note that API keys are _not_ available for
 [Vippsnummer](https://www.vipps.no/produkter-og-tjenester/bedrift/ta-betalt-i-butikk/ta-betalt-med-vipps/).
@@ -67,35 +95,17 @@ See
 [Vipps products](https://vipps.no/produkter-og-tjenester/bedrift/)
 for an overview of all Vipps products, and
 also the
-[Vipps plugins](https://github.com/vippsas/vipps-developers#plugins).
-
-API keys are available in the Vipps portal:
-The merchant's administrator can log in with BankID at
-[portal.vipps.no](https://portal.vipps.no)
-and retrieve the API keys under the `Utvikler` menu item.
-
-All Vipps customers must have a Norwegian organization number, and the customer
-agreements are signed with BankID. Since [portal.vipps.no](https://portal.vipps.no)
-gives access to API keys for both the test and production environment, we require
-BankID for logging in.
-The customer's administrator can create additional users on
-[portal.vipps.no](https://portal.vipps.no).
-
-If you do not have BankID, you will need the administrator to log in and provide
-the API keys to you.
-
-**Please note:** Vipps can not provide API keys in any other way, such as by
-email, as the API keys give access to transferring money.
-Vipps will never ask for your API keys, and you must keep them secret.
-If you accidentally share your API keys, you must generate new ones on
-[portal.vipps.no](https://portal.vipps.no).
+[Vipps plugins](https://github.com/vippsas/vipps-plugins).
 
 ### List of sale units
-Click `Show keys` on the relevant sale unit to display credentials.
+
+Select the `production keys` or `test keys`,
+then select `Show keys` for the relevant sale unit to display the credentials.
 
 ![portal.vipps.no: The API products for a sales unit](images/portalvippsno-salesunit-products.png)
 
 ### API keys for a salesunit
+
 ![portal.vipps.no: The API keys for a sales unit](images/portalvippsno-salesunit-keys.png)
 
 ### API key details
@@ -126,7 +136,7 @@ point of sale integrations,
 [Episerver](https://github.com/vippsas/vipps-episerver),
 [Shopify](https://github.com/vippsas/vipps-shopify),
 [Drupal](https://github.com/vippsas/vipps-drupal),
-[other plugins](https://github.com/vippsas/vipps-developers#plugins)
+[other plugins](https://github.com/vippsas/vipps-plugins)
 and any other solution based on the Vipps eCom API.
 
 # API products
@@ -298,7 +308,9 @@ This API returns the following HTTP statuses in the responses:
 | `403 Forbidden`    | Authentication ok, but credentials lacks authorization. |
 | `500 Server Error` | An internal Vipps problem.                              |
 
-**Please note:** `Vipps-Subscription-Key` was previously called `Ocp-Apim-Subscription-Key`. The legacy name `Ocp-Apim-Subscription-Key` must still be used in request headers. We will at some point phase out the old name completely, but it is not trivial and will take some time.
+**Please note:** `Vipps-Subscription-Key` was previously called `Ocp-Apim-Subscription-Key`.
+The legacy name `Ocp-Apim-Subscription-Key` must still be used in request headers.
+We will at some point phase out the old name completely, but it is not trivial and will take some time.
 
 ## Questions?
 
