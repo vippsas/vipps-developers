@@ -11,7 +11,7 @@ If you are using Vipps through an e-commerce platform, integration partner or PS
 * [Partner](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-3)
 * [PSP](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-2)
 
-Document version 3.1.4.
+Document version 3.1.5.
 
 ## Table of contents
 - [Requirements](#requirements)
@@ -75,11 +75,11 @@ to have _them_ help you with developer access.
 
 ## Getting the API keys
 
-API keys can be retrieved by logging in with BankID on
+API keys can be retrieved, by logging in with BankID on
 [portal.vipps.no](https://portal.vipps.no),
 under the `Utvikler` menu item.
 Since this gives access to API keys for both the test and production environment,
-we require BankID for logging in.
+we require BankID.
 
 **Please note:** Vipps can not provide API keys in any other way, such as by
 email, as the API keys give access to transferring money.
@@ -89,11 +89,11 @@ If you accidentally share your API keys, you must generate new ones on
 
 If you do not have BankID, you will need the administrator to log in
 [portal.vipps.no](https://portal.vipps.no)
-and provide the API keys to you.
+and provide the API keys to you in a secure way.
 The merchant's administrator can create additional users.
 If you don't know who the administrator is, you can check
 [Brønnøysundregistrene](https://www.brreg.no)
-and see who has the right to sigh for the company.
+and see who has the right to sign for the company.
 
 * API keys for the
   [test environment](https://github.com/vippsas/vipps-developers/blob/master/vipps-test-environment.md):
@@ -135,7 +135,7 @@ then select `Show keys` for the relevant sale unit to display the credentials.
 | ------------------------ | ------ | ------------------------------------ | -------------------------------- |
 | `client_id`              | GUID   | fb492b5e-7907-4d83-bc20-c7fb60ca35de | Client ID for the merchant (the "username")     |
 | `client_secret`          | Base64 | Y8Kteew6GE3ZmeycEt6egg==             | Client Secret for the merchant (the "password") |
-| `Vipps-Subscription-Key` | Base64 | 0f14ebcab0eb4b29ae0cb90d91b4a84a     | Subscription key for the product |
+| `Vipps-Subscription-Key` | Base64 | 0f14ebcab0eb4b29ae0cb90d91b4a84a     | Subscription key for the API product |
 
 There are both a primary and secondary `Vipps-Subscription-Key`.
 The primary and secondary keys are interchangeable; you can use either one,
@@ -144,7 +144,7 @@ regenerate one subscription key, while still using the other key, without downti
 
 **Please note:** `Vipps-Subscription-Key` was previously called `Ocp-Apim-Subscription-Key`.
 The legacy name `Ocp-Apim-Subscription-Key` _must still be used in requests and code_,
-but we are working to make `Vipps-Subscription-Key` work ASAP.
+but we are working to make `Vipps-Subscription-Key` work everywhere.
 
 ## API keys for different use
 
@@ -152,12 +152,7 @@ The same API keys are used for many types of integration:
 Direct integration,
 native apps for iOS and Android,
 point of sale integrations,
-[WooCommerce](https://github.com/vippsas/vipps-woocommerce),
-[Magento](https://github.com/vippsas/vipps-magento) (both 1 and 2),
-[Episerver](https://github.com/vippsas/vipps-episerver),
-[Shopify](https://github.com/vippsas/vipps-shopify),
-[Drupal](https://github.com/vippsas/vipps-drupal),
-[other plugins](https://github.com/vippsas/vipps-plugins)
+[all the Vipps plugins](https://github.com/vippsas/vipps-plugins)
 and any other solution based on the Vipps eCom API.
 
 # API products
@@ -168,7 +163,6 @@ Vipps has previously had separate API keys for each API product, and a set of
 API keys were directly linked to one sale unit. This meant that customers
 needed to keep track of multiple API keys, and that access to a new API
 required a new sale unit.
-
 This is no longer the case: New customers now get the `Vipps-API` API product.
 
 The Vipps-API API product give access to all current APIs, and the API keys for
@@ -190,7 +184,7 @@ Vipps-API also includes some _legacy_ APIs:
 
 | API              | Description                                                      | Documentation                                    |
 | ---------------- | ---------------------------------------------------------------- | ------------------------------------------------ |
-| eCom v1          | eCommerce, legacy version, to be phased out on September 1 2020. | https://github.com/vippsas/vipps-ecom-api-v1     |
+| eCom v1          | eCommerce, legacy version, phased out on September 1 2020.       | https://github.com/vippsas/vipps-ecom-api-v1     |
 | Signup and Login | Legacy API (superseded by Vipps Log In), end of life Dec 31 2019 | https://github.com/vippsas/vipps-signuplogin-api |
 
 See more details about the
@@ -200,6 +194,9 @@ on September 1 2020.
 If you are still using a legacy API, you should upgrade as soon as possible.
 The best way to keep up to date of changes is to
 [star the API repository on GitHub](https://help.github.com/en/articles/about-stars).
+
+See:
+[Vipps API Lifecycle](vipps-api-lifecycle.md).
 
 ## Legacy API products
 
@@ -212,7 +209,7 @@ current, corresponding APIs in Vipps-API.
 This means that a sale unit that could previously only use eCom v1,
 can now also use eCom v2, with the same API keys as before.
 
-The legacy API products still work, and there is no need to "upgrade" to Vipps-API,
+The legacy `ZZZ` API products still work, and there is no need to "upgrade" to Vipps-API,
 unless there are technical problems.
 
 The current APIs offer substantial improvements over the legacy APIs, and
@@ -247,10 +244,10 @@ The `client_id`, `client_secret` and `Ocp-Apim-Subscription-Key`are unique per
 `merchantSerialNumber` (MSN, i.e. the number of the sale unit) and can be found on
 [portal.vipps.no](https://portal.vipps.no).
 
-| Header Name | Header Value | Description |
-| ----------- | ------------ | ----------- |
-| `client_id` | A GUID value | Client ID for the sale unit |
-| `client_secret` | Base 64 encoded string | Client Secret for the sale unit |
+| Header Name                 | Header Value           | Description                      |
+| --------------------------- | ---------------------- | -------------------------------- |
+| `client_id`                 | A GUID value           | Client ID for the sale unit      |
+| `client_secret`             | Base 64 encoded string | Client Secret for the sale unit  |
 | `Ocp-Apim-Subscription-Key` | Base 64 encoded string | Subscription key for the product |
 
 Response:
@@ -267,7 +264,7 @@ Response:
 }
 ```
 
-An explanation of the contents of the access token (the JWT properties):
+Explanation of the contents of the access token (the JWT properties):
 
 | Name                        | Description                                 |
 | --------------------------- | ------------------------------------------- |
@@ -316,6 +313,9 @@ Vipps-System-Plugin-Version: 4.5.6
 
 For more details: See the OpenAPI specifications and Postman collections
 for the APIs.
+
+See:
+[Common errors](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-faq.md#common-errors).
 
 ### HTTP response codes
 
