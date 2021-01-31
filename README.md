@@ -1,13 +1,13 @@
 # Vipps Developers
 
-Document version: 2.3.2.
-
 This repository contains various resources for Vipps developers, including:
 
 * [Getting started](vipps-getting-started.md) with Vipps development
 * [Settlements](https://github.com/vippsas/vipps-developers/tree/master/settlements)
   for information about settlements
 * [How to contribute](contribute.md) to Vipps projects on GitHub
+
+Document version: 2.3.3.
 
 ## Table of contents
 
@@ -72,14 +72,14 @@ for more information about using Postman.
 All customers have access to an API Dashboard on
 [portal.vipps.no](https://portal.vipps.no) under the "Utvikler" tab.
 
-It show information about your API usage, an overview of errors, etc.
+It shows information about your API usage, an overview of errors, etc.
 Here's an example for one endpoint:
 
 ![API Dashboaard](newsletters/images/2021-02-api-dashboard-initiate-payment.png)
 
 ## Vipps API servers
 
-The environments are separate and require different API credentials:
+The test and production environments are separate and require different API credentials:
 
 | Production (Prod)   | Test (MT)              |
 | ------------------- | ---------------------- |
