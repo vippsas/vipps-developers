@@ -69,13 +69,15 @@ for more information about using Postman.
 
 ## API Dashboard
 
-All customers have access to an API Dashboard on
-[portal.vipps.no](https://portal.vipps.no) under the "Utvikler" tab.
+All merchants have access to an API Dashboard on
+[portal.vipps.no](https://portal.vipps.no) under the "Utvikler" tab. Keep in mind that the "Utvikler" tab is only available to users with admin or developer roles.
 
 It shows information about your API usage, an overview of errors, etc.
 Here's an example for one endpoint:
 
 ![API Dashboaard](newsletters/images/2021-02-api-dashboard-initiate-payment.png)
+
+*Note: The API dashboard is not real-time, and events might take up to 10 minutes before they appear.*
 
 ## Vipps API servers
 
