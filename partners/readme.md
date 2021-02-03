@@ -2,14 +2,14 @@
 
 💥 Work in progress! 💥
 
-Document version: 0.9.
-
 Vipps partners can represent multiple Vipps merchants, and can make transactions
 on behalf of the merchants.
 
+Document version: 0.10.0.
+
 ## Partner keys
 
-**Note: This is new functionality currently being rolled out.**
+**Note: This is new functionality currently being implemented.**
 
 A partner has API keys that also work for all the partner's merchants.
 This means that the partner does noe have to manage the API keys for
@@ -37,57 +37,57 @@ A new Vipps partner typically goes through the following steps:
 
 ## Integration checklist
 
-TODO: Tidy up!
+Partners should use the standard
+[eCom API checklist](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-checklist.md).
 
-- [ ] Integrate _all_ the [API endpoints](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#api-endpoints):
-    - [ ] Initiate [`POST:/ecomm/v2/payments`](https://vippsas.github.io/vipps-ecom-api/#/Vipps%20eCom%20API/initiatePaymentV3UsingPOST)
-    - [ ] Capture [`POST:/ecomm/v2/payments/{orderId}/capture`](https://vippsas.github.io/vipps-ecom-api/#/Vipps%20eCom%20API/capturePaymentUsingPOST)
-    - [ ] Cancel [`PUT:/ecomm/v2/payments/{orderId}/cancel`](https://vippsas.github.io/vipps-ecom-api/#/Vipps%20eCom%20API/cancelPaymentRequestUsingPUT)
-    - [ ] Refund [`POST:/ecomm/v2/payments/{orderId}/refund`](https://vippsas.github.io/vipps-ecom-api/#/Vipps%20eCom%20API/refundPaymentUsingPOST)
-    - [ ] Details [`GET:/ecomm/v2/payments/{orderId}/details`](https://vippsas.github.io/vipps-ecom-api/#/Vipps%20eCom%20API/getPaymentDetailsUsingGET)
-- [ ] The pertner correctly handles callbacks, both for successful and unsuccessful payments
-    - [ ] Callback [`POST:[callbackPrefix]/v2/payments/{orderId}`](https://vippsas.github.io/vipps-ecom-api/#/Endpoints_required_by_Vipps_from_the_merchant/transactionUpdateCallbackForRegularPaymentUsingPOST)
-    - [ ] For express checkout only: Shipping details [`POST:[shippingDetailsPrefix]/v2/payments/{orderId}/shippingDetails`](https://vippsas.github.io/vipps-ecom-api/#/Endpoints_required_by_Vipps_from_the_merchant/fetchShippingCostUsingPOST)
-    - [ ] For express checkout only: Remove consent [`DELETE:[consetRemovalPrefix]/v2/consents/{userId}`](https://vippsas.github.io/vipps-ecom-api/#/Endpoints_required_by_Vipps_from_the_merchant/removeUserConsentUsingDELETE)
-- [ ] Avoid Integration pitfalls
-    - [ ] The Partner _must not_ rely on `fallback` or `callback` alone
-    - [ ] The Vipps branding must be according to the [Vipps design guidelines](https://github.com/vippsas/vipps-design-guidelines)
-- [ ] Integrate [HTTP headers](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#optional-vipps-http-headers) for better tracking (Mandatory for partners and plattforms)
-    - [ ] Vipps-System-Name
-    - [ ] Vipps-System-Version
-    - [ ] Vipps-System-Plugin-Name
-    - [ ] Vipps-System-Plugin-Version    
-- [ ] Technical documentation for merchants
-    - [ ] Documentation for merchants regarding how to apply for Vipps products
+In addition:
 - [ ] As a partner you accept the [Partner terms and conditions](https://github.com/vippsas/vipps-developers/blob/master/partners/partnerterms.md)
 
-## Flow to go live new partners
+## Flow to go live for direct integrations for partners
 
-1. The partner orders [Vipps på Nett](https://www.vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/).
-2. Vipps completes customer control (KYC, PEP, AML, etc).
-3. The partner receives an email from Vipps saying that they can log in with bankID on [portal.vipps.no](https://portal.vipps.no) and retrieve the API keys.
-4. The partner completes all checklist items above.
-5. The partner [contacts Vipps](https://github.com/vippsas/vipps-developers/blob/master/contact.md) with test IDs (`orderId`) in the [Vipps test environment](https://github.com/vippsas/vipps-developers#the-vipps-test-environment-mt), showing that all checklist items have been fulfilled.
-    - A complete order ending in `REFUND` ([`/refund`](https://vippsas.github.io/vipps-ecom-api/#/Vipps%20eCom%20API/refundPaymentUsingPOST) request).
-    - A complete order ending in `VOID` ([`/cancel`](https://vippsas.github.io/vipps-ecom-api/#/Vipps%20eCom%20API/cancelPaymentRequestUsingPUT) request).
-6. The partner receives an email from Vipps saying that the orders are OK.
-7. The partner [contacts Vipps](https://github.com/vippsas/vipps-developers/blob/master/contact.md) to verify the integration in the production environment:
-    - A complete order ending in `REFUND` ([`/refund`](https://vippsas.github.io/vipps-ecom-api/#/Vipps%20eCom%20API/refundPaymentUsingPOST) request).
-    - For *reserve capture*: A complete order ending in `VOID` ([`/cancel`](https://vippsas.github.io/vipps-ecom-api/#/Vipps%20eCom%20API/cancelPaymentRequestUsingPUT) request after reserve).
-8. The partner receives an email from Vipps saying that the implementation is OK.
-9. Vipps adds the partner to vipps.no, including the signup forms for merchants.
-10. The partner add its merchant to their solution.
-11. The partner goes live 🎉
+1. The partner becomes a partner by
+   [applying here](https://www.vipps.no/produkter-og-tjenester/bedrift/ta-betalt-i-butikk/vipps-i-kassa/#kom-i-gang-med-vipps-i-kassa-category-3).
+2. The partner completes the integration, with the API test keys.
+3. The partner
+   [contacts Vipps](https://github.com/vippsas/vipps-developers/blob/master/contact.md)
+   with test IDs (`orderId`) in the
+   [Vipps test environment](https://github.com/vippsas/vipps-developers#the-vipps-test-environment-mt),
+   showing that all checklist items have been completed:
+    - A complete order ending in `REFUND`
+      ([`/refund`](https://vippsas.github.io/vipps-ecom-api/#/Vipps%20eCom%20API/refundPaymentUsingPOST)
+      request).
+    - For *reserve capture* (not "direct capture"): A complete order ending in `VOID`
+      ([`/cancel`](https://vippsas.github.io/vipps-ecom-api/#/Vipps%20eCom%20API/cancelPaymentRequestUsingPUT)
+      request after reserve).
+    - We recommend checking this using both the API itself and the API Dashboard available under "Utvikler" on
+      [portal.vipps.no](https://portal.vipps.no).
+4. The partner receives an email from Vipps saying that the implementation is OK.
+5. Vipps adds the partner to vipps.no, including the signup forms for merchants.
+6. The partner add its merchant to their solution, usually by configuring the POS with the merchant's API keys.
+7. The Merchant goes live 🎉
+
+**Please note:** For POS integrations that can not display the Vipps
+landing page, it is important that all sale units are configured with
+`skipLandingPage`. See the
+[Frequently Asked Questions for POS integrations](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-faq.md#frequently-asked-questions-for-pos-integrations).
 
 ## Flow to go live for new merchants
 
-1. The merchant signs up for [Vipps på Nett](https://www.vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/) and selects the partner in the form.
+1. The merchant signs up for
+   [Vipps på Nett](https://www.vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/)
+   and selects the partner in the form.
 2. Vipps completes customer control (KYC, PEP, AML, etc).
-3. Merchant keys are available for the merchant on [portal.vipps.no](https://portal.vipps.no), or sent directly to partner if [signup API](https://github.com/vippsas/vipps-signup-api) is implemented.
+3. Merchant keys are available for the merchant on
+   [portal.vipps.no](https://portal.vipps.no),
+   or sent directly to partner if the
+   [Signup API](https://github.com/vippsas/vipps-signup-api)
+   is implemented.
+   Using the Signup API speeds up customer control and API key distribution.
 
 ## Partner terms and conditions
 
-As a partner you accept the [Partner terms and conditions](https://github.com/vippsas/vipps-developers/blob/master/partners/partnerterms.md)
+As a partner you accept the
+[Partner terms and conditions](https://github.com/vippsas/vipps-developers/blob/master/partners/partner-terms.md).
 
 ## Questions?
 
