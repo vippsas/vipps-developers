@@ -18,12 +18,12 @@
         <dependency>
             <groupId>org.eclipse.jetty</groupId>
             <artifactId>jetty-webapp</artifactId>
-            <version>9.4.11.v20180605</version>
+            <version>[9.4.33)</version>
         </dependency>
         <dependency>
             <groupId>org.eclipse.jetty</groupId>
             <artifactId>jetty-rewrite</artifactId>
-            <version>9.4.11.v20180605</version>
+            <version>[9.4.33)</version>
         </dependency>
         <dependency>
             <groupId>commons-codec</groupId>
