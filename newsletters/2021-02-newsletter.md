@@ -4,7 +4,6 @@
 
 This newsletter was sent in February 2021.
 
-
 # The deprecated eCom API `/status` endpoint will be removed
 
 The
@@ -14,7 +13,6 @@ endpoint has been deprecated for a long time, and we will remove it on March 1.
 The
 [`/details`](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#get-payment-details)
 endpoint has been available for a long time, and gives more data and details: The full payment history of the orderId.
-
 
 # Vipps Login API version 2
 
@@ -43,6 +41,19 @@ The API Dashboard is now available on
 under the "Utvikler" ("Developer") tab.
 
 This is just the start. Please let us know what you think and suggest improvements.
+
+# Use Userinfo
+
+Vipps Hurgigkasse is for shipping products to the customer.
+Some use it for other purposes, but if no products are shipped,
+you should not ask the customer for address and shipping method.
+
+You should avoid asking the customer in a pub for the shipping method for the drinks, etc.
+
+Instead: Use _Userinfo_ to ask for the user's details. See
+[Userinfo for eCom](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#userinfo)
+and
+[Userinfo for Recurring](https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api.md#userinfo).
 
 # Reminders
 
