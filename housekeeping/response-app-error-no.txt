@@ -4,7 +4,8 @@ Dette skal vi finne ut av, men vi trenger litt mer informasjon:
 
 Miljø: Er dette i test (MT) eller produksjon?
 
-App: Er det iOS og/eller Android, og hvilken versjon(er)?
+App: Er det iOS og/eller Android, og hvilken versjon(er)? Vi vil veldig gjerne vite
+om feilen er på både iOS og Android, og ber dere teste dette.
 
 Hvor mange opplever feilen hver dag, sånn omtrent?
 
