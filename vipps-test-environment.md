@@ -10,7 +10,7 @@ In general, MT does not contain functionality that requires integration with
 third parties, such as Payment Service Providers, EVRY, Nets, banks, etc.
 
 Functionality not available in MT (a non-exhaustive list):
-* Push alerts may be unstable. To see payment requests: Open Vipps and manually go to the "Send" page.
+* Push alerts may be unstable. To see payment requests: Open Vipps and manually go to the "Betalinger" (in English: "Send") page.
 * Payment of invoices, both for Vipps Regninger and Vipps Faktura
 * Limited support for testing card statuses that require connections to Nets, etc
 * Limited support for looking up customer information in [KAR](https://www.bits.no/en/bank/konto-og-adresseringsregister-kar/), etc
@@ -114,7 +114,7 @@ with details.
 
 ### Limitations of the test apps
 
-* Push alerts do not work
+* Push alerts may be unstable. To see payment requests: Open Vipps and manually go to the "Betalinger" (in English: "Send") page.
 
 ### iOS
 
