@@ -45,7 +45,8 @@ See our [Plugins section](https://github.com/vippsas/vipps-plugins).
 
 ## Status pages
 
-We have several status pages, where you can also subscribe to alerts:
+We have several status pages, and we strongly recommend to subscribe to them
+(you can also subscribe to updates for specific incidents):
 
 * Test environment: https://vipps-test.statuspage.io
 * Production environment: https://vipps.statuspage.io
