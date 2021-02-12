@@ -78,7 +78,8 @@ Here's an example for one endpoint:
 
 ![API Dashboaard](newsletters/images/2021-02-api-dashboard-initiate-payment.png)
 
-*Note: The API dashboard is not real-time, and events might take up to 10 minutes before they appear.*
+**Please note:** The API dashboard is not real-time, and events might take up to 10 minutes before they appear.
+We strongly recommend that you also monitor your Vipps integration yourself.
 
 ## Vipps API servers
 
