@@ -7,7 +7,7 @@ This repository contains various resources for Vipps developers, including:
   for information about settlements
 * [How to contribute](contribute.md) to Vipps projects on GitHub
 
-Document version: 2.3.3.
+Document version: 2.3.4.
 
 ## Table of contents
 
