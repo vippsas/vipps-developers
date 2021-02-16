@@ -44,7 +44,7 @@ This is just the start. Please let us know what you think and suggest improvemen
 
 # Use Userinfo
 
-Vipps Hurgigkasse is for shipping products to the customer.
+Vipps Hurtigkasse is for shipping products to the customer.
 Some use it for other purposes, but if no products are shipped,
 you should not ask the customer for address and shipping method.
 
