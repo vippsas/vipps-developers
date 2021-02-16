@@ -55,6 +55,11 @@ Instead: Use _Userinfo_ to ask for the user's details. See
 and
 [Userinfo for Recurring](https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api.md#userinfo).
 
+# Recurring: Info about failures
+
+You can now se _why_ a charge fails, not just that it fails:
+https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api.md#charge-failure-reasons
+
 # Reminders
 
 We have mentioned some things before, and take this opportunity to remind you:
