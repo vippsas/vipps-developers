@@ -22,7 +22,7 @@ To do this we have to introduce a new version of our Vipps login API.
 **The previous version (Version 1) of the Vipps login API will have end of life on February 28th 2021**.
 See
 [the API migration guide](https://github.com/vippsas/vipps-login-api/blob/master/vipps-login-migrate-api-1.0-to-2.0.md)
-for details on moving from version 1 to 2.
+for details on moving from version 1 to 2. Our plugins are updated to support the latest version. If you integrate with Vipps login using plugins please ensure that you use the latest version of the plugin. Our [overview of Vipps plugins](https://github.com/vippsas/vipps-plugins) shows our available plugins and links to the latest versjon av plugins and documentation.
 
 # Vipps Login improvements 🎉
 
