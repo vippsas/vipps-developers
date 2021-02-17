@@ -4,6 +4,16 @@
 
 This newsletter was sent in February 2021.
 
+# API Dashboard 🚦
+
+![API Dashboaard](images/2021-02-api-dashboard-initiate-payment.png)
+
+The API Dashboard is now available on
+[portal.vipps.no](https://portal.vipps.no)
+under the "Utvikler" ("Developer") tab.
+
+This is just the start. Please let us know what you think and suggest improvements.
+
 # The deprecated eCom API `/status` endpoint will be removed
 
 The
@@ -22,7 +32,13 @@ To do this we have to introduce a new version of our Vipps login API.
 **The previous version (Version 1) of the Vipps login API will have end of life on February 28th 2021**.
 See
 [the API migration guide](https://github.com/vippsas/vipps-login-api/blob/master/vipps-login-migrate-api-1.0-to-2.0.md)
-for details on moving from version 1 to 2. Our plugins are updated to support the latest version. If you integrate with Vipps login using plugins please ensure that you use the latest version of the plugin. Our [overview of Vipps plugins](https://github.com/vippsas/vipps-plugins) shows our available plugins and links to the latest versjon av plugins and documentation.
+for details on moving from version 1 to 2.
+
+Our plugins are updated to support the latest version.
+Make sure that you use the latest version of the plugin.
+See
+[Plugins](https://github.com/vippsas/vipps-plugins)
+for details.
 
 # Vipps Login improvements 🎉
 
@@ -31,16 +47,6 @@ to the browser after completing the authentication Vipps.
 We have also added a specific flow for integrations with native apps.
 More information, and screenshots of the new flows, can be found in the
 [documentation](https://github.com/vippsas/vipps-login-api/blob/master/vipps-login-api.md#mobile-flow---app-switch-based-flow).
-
-# API Dashboard 🚦
-
-![API Dashboaard](images/2021-02-api-dashboard-initiate-payment.png)
-
-The API Dashboard is now available on
-[portal.vipps.no](https://portal.vipps.no)
-under the "Utvikler" ("Developer") tab.
-
-This is just the start. Please let us know what you think and suggest improvements.
 
 # Use Userinfo
 
