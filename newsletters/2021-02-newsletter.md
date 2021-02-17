@@ -6,11 +6,13 @@ This newsletter was sent in February 2021.
 
 # API Dashboard 🚦
 
-![API Dashboaard](images/2021-02-api-dashboard-initiate-payment.png)
-
 The API Dashboard is now available on
 [portal.vipps.no](https://portal.vipps.no)
 under the "Utvikler" ("Developer") tab.
+It lets you see if there are problems with your use of Vipps APIs.
+Here's an example:
+
+![API Dashboaard](images/2021-02-api-dashboard-initiate-payment.png)
 
 This is just the start. Please let us know what you think and suggest improvements.
 
