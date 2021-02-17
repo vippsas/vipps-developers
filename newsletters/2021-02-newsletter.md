@@ -12,7 +12,7 @@ under the "Utvikler" ("Developer") tab.
 It lets you see if there are problems with your use of Vipps APIs.
 Here's an example:
 
-![API Dashboaard](images/2021-02-api-dashboard-initiate-payment.png)
+![API Dashboard example](images/2021-02-api-dashboard-example.png)
 
 This is just the start. Please let us know what you think and suggest improvements.
 
