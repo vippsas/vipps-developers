@@ -2,6 +2,13 @@
 
 This newsletter was sent in February 2021.
 
+# Please update your plugins
+
+Several of our plugins have been updated to use the newest versions of
+our APIs. Please make sure you have the newest version of the plugins
+you use, and keep them up to date. See the
+[the plugin overview](https://github.com/vippsas/vipps-plugins).
+
 # API Dashboard 🚦
 
 The API Dashboard is now available on
