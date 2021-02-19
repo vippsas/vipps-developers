@@ -63,8 +63,10 @@ and
 
 # Recurring: Info about failures
 
-You can now se _why_ a charge fails, not just that it fails:
-https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api.md#charge-failure-reasons
+You can now se _why_ a charge fails, not just that it fails: Insuficcient funds, invalid card, etc.
+See:
+[Charge failure reasons](https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api.md#charge-failure-reasons).
+
 
 # Reminders
 
