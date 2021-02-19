@@ -2,7 +2,7 @@
 
 A low volume newsletter with important information about Vipps' APIs.
 
-Sign up here: https://cloud.hei.vipps.no/utv
+Sign up here: https://cloud.melding.vipps.no/utv
 
 # Questions?
 
