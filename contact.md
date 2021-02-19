@@ -29,6 +29,7 @@ If you do not have a technical issue, the fastest way to get help is to use the 
 | Vipps plugins (WooCommerce, WordPress, Magento, Drupal, Shopify, etc)| Please see the [plugin overview](https://github.com/vippsas/vipps-plugins) |
 | Settlements, invoices or similar | Please see [Settlements](https://github.com/vippsas/vipps-developers/tree/master/settlements) |
 | Suggestions for improvements to [Vipps products](https://www.vipps.no/produkter-og-tjenester/bedrift/) | Please use [this form](https://www.vipps.no/kontakt-oss/bedrift/) |
+| BankID | Use the [BankID service portal](https://servicedesk.bankidnorge.no/jira/servicedesk/customer/user/login?destination=portals) |
 
 For _**technical**_ issues: Please see below.
 
