@@ -13,7 +13,7 @@ Hello! 👋 We love email!
 - [More than one problem, or a new one?](#more-than-one-problem-or-a-new-one)
 - [Newsletter](#newsletter)
 
-Document version: 2.3.1.
+Document version: 2.3.2.
 
 ## We help with technical issues
 
@@ -46,6 +46,7 @@ Please send an email with all relevant information to the address below:
   - Organization number (find your at https://brreg.no)
   - Merchant Serial Number (MSN, see [Getting started](vipps-developer-portal-getting-started.md))
 * Is it a problem in the Test (MT) or the Production environment?
+* On which date did the problem occur?
 * Include `orderId`, `transactionId` and `contextId` to make it possible to search in logs.
 * If you are a new Vipps customer, please include details about when and how you ordered Vipps.
 * Which [Vipps product](https://www.vipps.no/produkter-og-tjenester/bedrift/) or [Vipps API](https://github.com/vippsas) this is about.
