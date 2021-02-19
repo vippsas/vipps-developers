@@ -109,7 +109,7 @@ as the test number may be a real phone number for a real Vipps user.
 **Please note:** It may sometimes be necessary to use specific app versions in MT.
 This happens when the production apps and the production environment are not _quite_
 in sync with the test environment. When this happens, we update the
-[Stastuspage for the test environment](https://vipps-test.statuspage.io)
+[Statuspage for the test environment](https://vipps-test.statuspage.io)
 with details.
 
 ### Limitations of the test apps
