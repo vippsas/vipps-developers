@@ -36,7 +36,7 @@ All Vipps APIs are available here: https://github.com/vippsas
 
 ## Partners
 
-See our [Partner section](partners/).
+See our [Partner section](https://github.com/vippsas/vipps-partner#vipps-partners).
 
 ## Plugins
 
