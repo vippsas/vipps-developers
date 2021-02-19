@@ -1,7 +1,5 @@
 # Technical newsletter for developers 2021-02
 
-💥 DRAFT! 💥
-
 This newsletter was sent in February 2021.
 
 # API Dashboard 🚦
