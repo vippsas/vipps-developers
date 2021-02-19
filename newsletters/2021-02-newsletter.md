@@ -56,7 +56,11 @@ you should not ask the customer for address and shipping method.
 
 You should avoid asking the customer in a pub for the shipping method for the drinks, etc.
 
-Instead: Use _Userinfo_ to ask for the user's details. See
+Instead: Use _Userinfo_ to ask for the user's details, such as:
+phone number, name, email address, postal address, birth date, national identity number and bank accounts.
+The user must of course consent to sharing the information.
+
+See
 [Userinfo for eCom](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#userinfo)
 and
 [Userinfo for Recurring](https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api.md#userinfo).
@@ -66,7 +70,6 @@ and
 You can now se _why_ a charge fails, not just that it fails: Insuficcient funds, invalid card, etc.
 See:
 [Charge failure reasons](https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api.md#charge-failure-reasons).
-
 
 # Reminders
 
