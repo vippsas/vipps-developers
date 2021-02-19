@@ -18,7 +18,7 @@ Document version: 2.3.1.
 ## We help with technical issues
 
 We help with _**technical**_ issues from developers, such as questions about using our APIs.
-If you do not have a technical issue, the fastest way to get help is to use the right method:
+If you do not have a technical issue, the fastest way to get help is to start in the right place:
 
 | Topic               | How to get help |
 | ------------------- | --------------- |
@@ -34,7 +34,7 @@ If you do not have a technical issue, the fastest way to get help is to use the 
 For _**technical**_ issues: Please see below.
 
 We also have a technical newsletter for developers:
-[Sign up here](https://cloud.hei.vipps.no/utv) (low volume, no marketing).
+[Sign up here](https://github.com/vippsas/vipps-developers/tree/master/newsletters) (low volume, no marketing).
 
 ## What to include in the email
 
