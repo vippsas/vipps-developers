@@ -13,7 +13,7 @@ Hello! 👋 We love email!
 - [More than one problem, or a new one?](#more-than-one-problem-or-a-new-one)
 - [Newsletter](#newsletter)
 
-Document version: 2.3.2.
+Document version: 2.3.3.
 
 ## We help with technical issues
 
@@ -40,6 +40,9 @@ We also have a technical newsletter for developers:
 
 Please send an email with all relevant information to the address below:
 
+* It's nice if you can check the
+  [eCom API FAQ](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-faq.md)
+  and search to check if your problem is a common one.
 * **Please: Always include a _detailed_ description of the problem**
 * A concise, self-explanatory `Subject` line, such as "`POST:/something` gives `HTTP 400` response".
 * Company details
@@ -47,12 +50,13 @@ Please send an email with all relevant information to the address below:
   - Merchant Serial Number (MSN, see [Getting started](vipps-developer-portal-getting-started.md))
 * Is it a problem in the Test (MT) or the Production environment?
 * On which date did the problem occur?
-* Include `orderId`, `transactionId` and `contextId` to make it possible to search in logs.
+* Include `orderId`, and preferrably also `transactionId` and `contextId`, to make it possible to search in logs.
 * If you are a new Vipps customer, please include details about when and how you ordered Vipps.
 * Which [Vipps product](https://www.vipps.no/produkter-og-tjenester/bedrift/) or [Vipps API](https://github.com/vippsas) this is about.
-* For API issues: Complete `request` and `response` details (plain HTTP from Postman, or [curl](https://curl.haxx.se) ensures the quickest response)
-* For app issues: Specify iOS or Android, and the app version
-* Please provide screenshots, if applicable
+* For API issues: Complete `request` and `response` details (plain HTTP from Postman, or [curl](https://curl.haxx.se) ensures the quickest response).
+* Please provide screenshots, if possible.
+* For app issues: Specify iOS or Android, and the app version - and have a look at the
+  [standard reply for app problems](https://github.com/vippsas/vipps-developers/blob/master/housekeeping/response-app-error-en.txt).
 * Please provide your contact information (if not in your email signature):
   - Name
   - Phone number
