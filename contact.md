@@ -13,7 +13,7 @@ Hello! 👋 We love email!
 - [More than one problem, or a new one?](#more-than-one-problem-or-a-new-one)
 - [Newsletter](#newsletter)
 
-Document version: 2.3.3.
+Document version: 2.3.4.
 
 ## We help with technical issues
 
@@ -29,7 +29,7 @@ If you do not have a technical issue, the fastest way to get help is to start in
 | Vipps plugins (WooCommerce, WordPress, Magento, Drupal, Shopify, etc)| [Plugin overview](https://github.com/vippsas/vipps-plugins) |
 | Settlements, invoices or similar | [Settlements](https://github.com/vippsas/vipps-developers/tree/master/settlements) |
 | Suggestions for improvements to [Vipps products](https://www.vipps.no/produkter-og-tjenester/bedrift/) | [Use this form](https://www.vipps.no/kontakt-oss/bedrift/) |
-| BankID | BankID service portal](https://servicedesk.bankidnorge.no/jira/servicedesk/customer/user/login?destination=portals) |
+| BankID | [BankID service portal](https://servicedesk.bankidnorge.no/jira/servicedesk/customer/user/login?destination=portals) |
 
 For _**technical**_ issues: Please see below.
 
