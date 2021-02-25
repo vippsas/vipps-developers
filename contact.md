@@ -22,14 +22,14 @@ If you do not have a technical issue, the fastest way to get help is to start in
 
 | Topic               | How to get help |
 | ------------------- | --------------- |
-| General questions, including the (new) customer relationship, creating sale units, change of admins, etc   | Please see the [contact info for companies on vipps.no](https://www.vipps.no/kontakt-oss/bedrift/) |
-| Applications for Vipps products | Please see the [contact info for companies on vipps.no](https://www.vipps.no/kontakt-oss/bedrift/) |
-| Using Vipps through a partner (for merchants) | Please [contact your partner directly](https://www.vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-3) |
-| Partner assistance (for partners) | Please contact partnerbestilling@vipps.no  |
-| Vipps plugins (WooCommerce, WordPress, Magento, Drupal, Shopify, etc)| Please see the [plugin overview](https://github.com/vippsas/vipps-plugins) |
-| Settlements, invoices or similar | Please see [Settlements](https://github.com/vippsas/vipps-developers/tree/master/settlements) |
-| Suggestions for improvements to [Vipps products](https://www.vipps.no/produkter-og-tjenester/bedrift/) | Please use [this form](https://www.vipps.no/kontakt-oss/bedrift/) |
-| BankID | Use the [BankID service portal](https://servicedesk.bankidnorge.no/jira/servicedesk/customer/user/login?destination=portals) |
+| General questions, including the (new) customer relationship, creating sale units, change of admins, etc   | [Contact info for companies on vipps.no](https://www.vipps.no/kontakt-oss/bedrift/) |
+| Applications for Vipps products | [Contact info for companies on vipps.no](https://www.vipps.no/kontakt-oss/bedrift/) |
+| Using Vipps through a partner (for merchants) | [Contact your partner directly](https://www.vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-3) |
+| Partner assistance (for partners) | partnerbestilling@vipps.no  |
+| Vipps plugins (WooCommerce, WordPress, Magento, Drupal, Shopify, etc)| [Plugin overview](https://github.com/vippsas/vipps-plugins) |
+| Settlements, invoices or similar | [Settlements](https://github.com/vippsas/vipps-developers/tree/master/settlements) |
+| Suggestions for improvements to [Vipps products](https://www.vipps.no/produkter-og-tjenester/bedrift/) | [Use this form](https://www.vipps.no/kontakt-oss/bedrift/) |
+| BankID | BankID service portal](https://servicedesk.bankidnorge.no/jira/servicedesk/customer/user/login?destination=portals) |
 
 For _**technical**_ issues: Please see below.
 
