@@ -13,7 +13,7 @@ Jeg jobber for å få flere ting på plass, inkludert:
 - Statusside med driftsmeldinger, se test på https://vipps.statuspage.io
 - Kontinuerlig testing av test- og produksjonsmiljø og validering av Swagger mot implementasjonen
 
-Vi har et nyhetsbrev for utviklere: https://github.com/vippsas/vipps-developers/tree/master/newsletters
+Vi har et nyhetsbrev for utviklere: https://cloud.hei.vipps.no/utv
 
 Nedenfor er varselet vi sendte:
 
@@ -65,4 +65,4 @@ Vipps Integration
 
 [Contact info|https://github.com/vippsas/vipps-developers/blob/master/contact.md]
 [Vipps on GitHub|https://github.com/vippsas]
-[Technical newsletter for developers|https://github.com/vippsas/vipps-developers/tree/master/newsletters]
+[Technical newsletter for developers|https://cloud.hei.vipps.no/utv]
