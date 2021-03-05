@@ -1,6 +1,6 @@
 # Vipps API Lifecycle
 
-Document version: 0.2.0.
+Document version: 0.2.1.
 
 # Table of Contents
 
@@ -91,7 +91,7 @@ Vipps will inform the main contact.
 ### Mailing list
 
 Vipps will send information to
-[the technical newsletter for developers](https://cloud.hei.vipps.no/utv).
+[the technical newsletter for developers](https://github.com/vippsas/vipps-developers/tree/master/newsletters).
 
 ### Key accounts
 
