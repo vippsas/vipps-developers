@@ -7,7 +7,7 @@ This repository contains various resources for Vipps developers, including:
   for information about settlements
 * [How to contribute](contribute.md) to Vipps projects on GitHub
 
-Document version: 2.4.0.
+Document version: 2.4.1.
 
 ## Table of contents
 
@@ -20,7 +20,7 @@ Document version: 2.4.0.
 - [API Dashboard](#api-dashboard)
 - [Vipps API servers](#vipps-api-servers)
 - [Vipps request servers](#vipps-request-servers)
-- [Vipps API Lifecycle)[#vipps-api-lifecycle)
+- [Vipps API Lifecycle](#vipps-api-lifecycle)
 - [Settlements](#settlements)
 - [Vipps design guidelines](#vipps-design-guidelines)
 - [Questions?](#questions)
