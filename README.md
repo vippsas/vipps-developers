@@ -7,7 +7,7 @@ This repository contains various resources for Vipps developers, including:
   for information about settlements
 * [How to contribute](contribute.md) to Vipps projects on GitHub
 
-Document version: 2.3.4.
+Document version: 2.4.0.
 
 ## Table of contents
 
@@ -20,6 +20,8 @@ Document version: 2.3.4.
 - [API Dashboard](#api-dashboard)
 - [Vipps API servers](#vipps-api-servers)
 - [Vipps request servers](#vipps-request-servers)
+- [Vipps API Lifecycle)[#vipps-api-lifecycle)
+- [Settlements](#settlements)
 - [Vipps design guidelines](#vipps-design-guidelines)
 - [Questions?](#questions)
 
@@ -114,6 +116,14 @@ and DNS, and automatically update your firewall rules if there are DNS changes.
 
 For API products where Vipps makes requests to your servers, please make sure
 that these request servers are allowed through firewalls, etc.
+
+## Vipps API Lifecycle
+
+See: [Vipps API Lifecycle](https://github.com/vippsas/vipps-developers/blob/master/vipps-api-lifecycle.md).
+
+## Settlements
+
+See: [Settlements](https://github.com/vippsas/vipps-developers/tree/master/settlements).
 
 ## Vipps design guidelines
 
