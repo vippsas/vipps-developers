@@ -1,6 +1,6 @@
 # Vipps Test Data
 
-Document version 1.0.0.
+Document version 2.0.0.
 
 The [Vipps Test environment (MT)](https://github.com/vippsas/vipps-developers#the-vipps-test-environment-mt) contains synthetic data useful for testing.
 
@@ -28,10 +28,7 @@ for some reason, can not be used.
 
 ## Credit card numbers
 
-Nets offers a series of credit cards with pre-defined characteristics: https://shop.nets.eu/web/partners/test-cards
-Response codes: https://shop.nets.eu/web/partners/response-codes
-
-BIN Codes: Credit Card & Debit Card Number Tools: https://www.bincodes.com/bin-creditcard-generator/
+Please use the card details that was provided in the test user account.
 
 ## Faker
 
