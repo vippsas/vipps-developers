@@ -92,8 +92,6 @@ with details.
 
 ### iOS
 
-![Vipps test app icon](images/vipps-testapp-app-store-icon.jpg)
-
 The iOS test app is available in Apple TestFlight.
 You do *not* need an invitation or an activation code.
 
