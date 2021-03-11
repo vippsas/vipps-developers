@@ -30,7 +30,7 @@ for some reason, can not be used.
 
 Please use the card details that was provided in the test user account.
 
-### Bank accounts
+## Bank accounts
 
 The test mobile number is registered with a bank account.
 
