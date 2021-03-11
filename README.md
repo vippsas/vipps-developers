@@ -3,7 +3,7 @@
 This repository contains various resources for Vipps developers.
 We recommend starting with [Getting started](vipps-getting-started.md).
 
-Document version: 2.4.2.
+Document version: 2.4.3.
 
 ## Table of contents
 
@@ -74,7 +74,7 @@ All merchants have access to an API Dashboard on
 It shows information about your API usage, an overview of errors, etc.
 Here's an example for one endpoint:
 
-![API Dashboaard](newsletters/images/2021-02-api-dashboard-initiate-payment.png)
+![API Dashboaard](newsletters/images/2021-02-api-dashboard-example.png)
 
 **Please note:** The API dashboard is not real-time, and events might take up to 10 minutes before they appear.
 We strongly recommend that you also monitor your Vipps integration yourself.
