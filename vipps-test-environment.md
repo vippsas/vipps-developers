@@ -1,6 +1,6 @@
 # The Vipps Test Environment (MT)
 
-Document version: 2.0.3.
+Document version: 2.1.0.
 
 The Merchant Test Environment (MT) is available for all Vipps customers.
 
@@ -52,32 +52,6 @@ The test mobile number is registered with a payment card.
 If you need additional payment cards, you can add it in the Vipps app.
 See [Credit card numbers](https://github.com/vippsas/vipps-developers/tree/master/testdata#credit-card-numbers)
 for more details.
-
-### Bank accounts
-
-The test mobile number is registered with a bank account.
-
-If you need additional bank accounts, you can add it in the Vipps app.
-
-Fake bank account numbers can be generated with
-[Faker](https://github.com/joke2k/faker):
-`faker -l no_NO bban`
-
-**Important:** Bank accounts in the test environment must start with the a
-valid Norwegian "bankplass" series. Recommended series:
-* DNB = 1201, 1207, 1208, 1542
-* Sparebank = 2601, 4605, 4609, 4658, 4730
-* Nordea = 8841, 9406, 6509, 6446
-* Sbanken = 9710, 9712, 9729, 9810
-* Handelsbanken = 9499, 9049, 9688
-* Danske Bank = 8606, 9760, 9747, 9065
-
-Please note that the chance that a random number works for payments
-in the test environment is practically zero.
-
-### Test data
-
-See: [Vipps Test Data](https://github.com/vippsas/vipps-developers/blob/master/testdata/README.md).
 
 ## Test amounts
 
