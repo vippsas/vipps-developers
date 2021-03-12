@@ -3,7 +3,7 @@
 This repository contains various resources for Vipps developers.
 We recommend starting with [Getting started](vipps-getting-started.md).
 
-Document version: 2.4.3.
+Document version: 2.4.4.
 
 ## Table of contents
 
@@ -86,6 +86,8 @@ The test and production environments are separate and require different API cred
 | Production (Prod)   | Test (MT)              |
 | ------------------- | ---------------------- |
 | api.vipps.no        | apitest.vipps.no       |
+
+The servers are world accessible.
 
 **Please note:** Vipps may change the IP addresses for the API servers. To ensure
 that you are whitelisting the correct IP addresses please use these hostnames
