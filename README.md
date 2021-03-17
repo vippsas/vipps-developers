@@ -3,7 +3,7 @@
 This repository contains various resources for Vipps developers.
 We recommend starting with [Getting started](vipps-getting-started.md).
 
-Document version: 2.4.4.
+Document version: 2.4.5.
 
 ## Table of contents
 
@@ -50,6 +50,8 @@ We have several status pages, and we strongly recommend to subscribe to them
 * Production environment: https://vipps.statuspage.io
 * BankID production: https://www.bankid.no/status/
 * BankID preprod: https://bankidpreprod.statuspage.io
+
+You can use Statuspage's Atom and RSS feeds for integration with other systems.
 
 ## The Vipps test environment (MT)
 
