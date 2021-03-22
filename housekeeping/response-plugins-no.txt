@@ -4,7 +4,7 @@ Vipps har en rekke pluginer for forskjellige systemer. Alle offisielle pluginer 
 
 Se denne oversikten over offisielle Vipps-pluginer:https://github.com/vippsas/vipps-plugins
 
-Se hver enkelt plugin for informsasjon om hvordan få hjelp direktefra utviklerne av pluginen.
+Se hver enkelt plugin for informasjon om hvordan få hjelp direktefra utviklerne av pluginen.
 
 Se også linkene i signaturen for mer informasjon.
 
