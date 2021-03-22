@@ -2,9 +2,9 @@ Hei
 
 Vipps har en rekke pluginer for forskjellige systemer. Alle offisielle pluginer er åpen kildekode og gratis, og de utvikles og vedlikeholdes av våre partnere - som også hjelper hvis det er problemer med dem.
 
-Se denne oversikten over offisielle Vipps-pluginer:https://github.com/vippsas/vipps-plugins
+Se denne oversikten over offisielle Vipps-pluginer: https://github.com/vippsas/vipps-plugins
 
-Se hver enkelt plugin for informasjon om hvordan få hjelp direktefra utviklerne av pluginen.
+Se hver enkelt plugin for informasjon om hvordan få hjelp direkte fra utviklerne av pluginen.
 
 Se også linkene i signaturen for mer informasjon.
 
