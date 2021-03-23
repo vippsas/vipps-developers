@@ -11,7 +11,7 @@ If you are using Vipps through an e-commerce platform, integration partner or PS
 * [Partner](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-3)
 * [PSP](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-2)
 
-Document version 3.1.5.
+Document version 3.2.0.
 
 ## Table of contents
 - [Requirements](#requirements)
@@ -27,10 +27,11 @@ Document version 3.1.5.
 - [Vipps-API](#vipps-api)
 - [Legacy API products](#legacy-api-products)
 - [Quick overview of how to make an API call](#quick-overview-of-how-to-make-an-api-call)
-- [Get an access token](#get-an-access-token)
-  - [Request](#request)
-  - [Response](#response)
-- [HTTP response codes](#http-response-codes)
+  - [Get an access token](#get-an-access-token)
+    - [Request](#request)
+    - [Response](#response)
+  - [Make an API call](#make-an-api-call)
+  - [HTTP response codes](#http-response-codes)
 - [Questions?](#questions)
 
 ## Requirements
@@ -227,7 +228,7 @@ and passing the `client_id`, `client_secret` and `Ocp-Apim-Subscription-Key`.
 (We _are_ aware that this is a `POST`, without a body, to an endpoint with
 `get` in the URL, and hope to fix it in a later version of the API. Sorry.)
 
-Request (including the optional `Vipps-*` HTTP headers):
+Request (including the recommended `Vipps-*` HTTP headers):
 
 ```http
 POST https://apitest.vipps.no/accesstoken/get
@@ -280,26 +281,13 @@ Explanation of the contents of the access token (the JWT properties):
 and 24 hours in the production environment. To be sure that you are using
 correct time please use `expires_in` or `expires_on`.
 
-This is an example of an error caused by mixing the API keys for test and
-production (formatted for readability):
+Problems? See:
+[Common errors](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-faq.md#common-errors).
 
-```json
-{
-  "error": "unauthorized_client",
-  "error_description":
-    "AADSTS70001: Application with identifier 'e9b6c99d-2442-4a5d-84a2-\
-     c53a807fe0c4' was not found in the directory testapivipps.no\
-     Trace ID: 3bc2b2a0-d9bb-4c2e-8367- 5633866f1300\r\nCorrelation ID:\
-     bb2f4093-70af-446a-a26d-ed8becca1a1a\r\nTimestamp: 2017-05-19 09:21:28Z",
-  "error_codes": [ 70001 ],
-  "timestamp": "2017-05-19 09:21:28Z",
-  "trace_id": "3bc2b2a0-d9bb-4c2e-8367-5633866f1300",
-  "correlation_id": "bb2f4093-70af-446a-a26d-ed8becca1a1a"
-}
-```
+## Make an API call
 
 After obtaining the access token (JWT), it is then used for the "real" calls
-to the API, with the `Bearer` keyword (an example with the optional
+to the API, with the `Bearer` keyword (an example with the recommended
 `Vipps-*` HTTP headers):
 
 ```http
@@ -310,6 +298,11 @@ Vipps-System-Version: 3.1.2
 Vipps-System-Plugin-Name: Point Of Sale Excellence
 Vipps-System-Plugin-Version: 4.5.6
 ```
+
+A typical example:
+[`POST:/ecomm/v2/payments`](https://vippsas.github.io/vipps-ecom-api/#/Vipps_eCom_API/initiatePaymentV3UsingPOST)
+in the Vipps eCom API:
+[Initiate payment flow: API calls](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#initiate-payment-flow-api-calls)
 
 For more details: See the OpenAPI specifications and Postman collections
 for the APIs.
