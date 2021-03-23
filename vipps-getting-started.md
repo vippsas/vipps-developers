@@ -246,7 +246,7 @@ Vipps-System-Plugin-Name: Point Of Sale Excellence
 Vipps-System-Plugin-Version 4.5.6
 ```
 
-The `client_id`, `client_secret` and `Ocp-Apim-Subscription-Key`are unique per
+The `client_id`, `client_secret` and `Ocp-Apim-Subscription-Key` are unique per
 `merchantSerialNumber` (MSN, i.e. the number of the sale unit) and can be found on
 [portal.vipps.no](https://portal.vipps.no).
 
@@ -256,7 +256,15 @@ The `client_id`, `client_secret` and `Ocp-Apim-Subscription-Key`are unique per
 | `client_secret`             | Base 64 encoded string | Client Secret for the sale unit  |
 | `Ocp-Apim-Subscription-Key` | Base 64 encoded string | Subscription key for the product |
 
-Response:
+**Please note:** We are in process of changing the name of the header
+`Ocp-Apim-Subscription-Key` to `Vipps-Subscription-Key`. We will at some point
+phase out the old name completely, but it is not trivial and will take some time.
+You may encounter both in the developer documentation, and the actual header
+name to send is `Ocp-Apim-Subscription-Key`.
+
+The response from
+[`POST:/accesstoken/get`](https://vippsas.github.io/vipps-ecom-api/#/Authorization_Service/fetchAuthorizationTokenUsingPost)
+is like this:
 
 ```json
 {
@@ -270,11 +278,12 @@ Response:
 }
 ```
 
-Explanation of the contents of the access token (the JWT properties):
+The `access_token` is the most important part.
+An explanation of the contents of the access token (the JWT properties):
 
 | Name                        | Description                                 |
 | --------------------------- | ------------------------------------------- |
-| `Bearer`                    | It’s a `Bearer` token. The word `Bearer` should be added before the token |
+| `Bearer`                    | It’s a `Bearer` token. The word `Bearer` must be added before the token |
 | `expires_in`                | Token expiry duration in seconds. |
 | `ext_expires_in`            | Extra expiry time. Not used. |
 | `expires_on`                | Token expiry time in epoch time format. |
@@ -292,8 +301,8 @@ Problems? See:
 ## Make an API call
 
 After obtaining the access token (JWT), it is then used for the "real" calls
-to the API, with the `Bearer` keyword (an example with the recommended
-`Vipps-*` HTTP headers):
+to the Vipps API, with the `Bearer` keyword (it is case sensitive).
+Here is an example of HTTP headers, with the recommended `Vipps-*` HTTP headers:
 
 ```http
 Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1Ni <snip>
@@ -304,7 +313,7 @@ Vipps-System-Plugin-Name: Point Of Sale Excellence
 Vipps-System-Plugin-Version: 4.5.6
 ```
 
-A typical example:
+A typical example of an API endpoint:
 [`POST:/ecomm/v2/payments`](https://vippsas.github.io/vipps-ecom-api/#/Vipps_eCom_API/initiatePaymentV3UsingPOST)
 in the Vipps eCom API:
 [Initiate payment flow: API calls](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#initiate-payment-flow-api-calls)
@@ -327,9 +336,9 @@ This API returns the following HTTP statuses in the responses:
 | `403 Forbidden`    | Authentication ok, but credentials lacks authorization. |
 | `500 Server Error` | An internal Vipps problem.                              |
 
-**Please note:** `Vipps-Subscription-Key` was previously called `Ocp-Apim-Subscription-Key`.
-The legacy name `Ocp-Apim-Subscription-Key` must still be used in request headers.
-We will at some point phase out the old name completely, but it is not trivial and will take some time.
+You can use the
+[API Dashboard](https://github.com/vippsas/vipps-developers#api-dashboard)
+to check the responses to your API calls.
 
 ## Questions?
 
