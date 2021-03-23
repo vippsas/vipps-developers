@@ -1,14 +1,12 @@
 Hei
 
-Se denne oversikten over offisielle Vipps-pluginer:
-https://github.com/vippsas/vipps-plugins
+Vipps har en rekke pluginer for forskjellige systemer. Alle offisielle pluginer er åpen kildekode og gratis, og de utvikles og vedlikeholdes av våre partnere - som også hjelper hvis det er problemer med dem.
 
-Alle offisielle pluginer er påen kildekode og gratis.
+Se denne oversikten over offisielle Vipps-pluginer: https://github.com/vippsas/vipps-plugins
 
-Se hver enkelt plugin for informsadjon om hvordfan få hjelp direkte
-fra utviklerne av pluginen.
+Se hver enkelt plugin for informasjon om hvordan få hjelp direkte fra utviklerne av pluginen.
 
-Se linkene i signaturen for mer informasjon.
+Se også linkene i signaturen for mer informasjon.
 
 --
 $currentUserName$

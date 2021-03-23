@@ -11,7 +11,11 @@ If you are using Vipps through an e-commerce platform, integration partner or PS
 * [Partner](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-3)
 * [PSP](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-2)
 
+<<<<<<< HEAD
 Document version 3.2.0.
+=======
+Document version 3.1.7.
+>>>>>>> e235c54dd268748b25622cc07749234753879c60
 
 ## Table of contents
 - [Requirements](#requirements)
@@ -85,13 +89,17 @@ we require BankID.
 **Please note:** Vipps can not provide API keys in any other way, such as by
 email, as the API keys give access to transferring money.
 Vipps will never ask for your API keys, and you must keep them secret.
+If your developers do not haved BankID, you will need to retrieve the API keys
+for them, and send them to the developers in a secure way.
+Do _not_ send API keys unencrypted by email.
 If you accidentally share your API keys, you must generate new ones on
 [portal.vipps.no](https://portal.vipps.no).
 
 If you do not have BankID, you will need the administrator to log in
 [portal.vipps.no](https://portal.vipps.no)
 and provide the API keys to you in a secure way.
-The merchant's administrator can create additional users.
+The merchant's administrator can create additional users on
+[portal.vipps.no](https://portal.vipps.no).
 If you don't know who the administrator is, you can check
 [Brønnøysundregistrene](https://www.brreg.no)
 and see who has the right to sign for the company.
