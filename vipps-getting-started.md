@@ -11,13 +11,10 @@ If you are using Vipps through an e-commerce platform, integration partner or PS
 * [Partner](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-3)
 * [PSP](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-2)
 
-<<<<<<< HEAD
-Document version 3.2.0.
-=======
-Document version 3.1.7.
->>>>>>> e235c54dd268748b25622cc07749234753879c60
+Document version: 3.2.0.
 
 ## Table of contents
+
 - [Requirements](#requirements)
   - [Foreign companies](#foreign-companies)
   - [Vipps users](#vipps-users)
