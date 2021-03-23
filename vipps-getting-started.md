@@ -11,7 +11,7 @@ If you are using Vipps through an e-commerce platform, integration partner or PS
 * [Partner](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-3)
 * [PSP](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-2)
 
-Document version: 3.2.1.
+Document version: 3.2.2.
 
 ## Table of contents
 
@@ -23,7 +23,7 @@ Document version: 3.2.1.
   - [List of sale units](#list-of-sale-units)
   - [API keys for a salesunit](#api-keys-for-a-salesunit)
   - [API key details](#api-key-details)
-- [API keys for different use](#api-keys-for-different-use)
+  - [API keys for different use](#api-keys-for-different-use)
 - [API products](#api-products)
 - [Vipps-API](#vipps-api)
 - [Legacy API products](#legacy-api-products)
@@ -152,7 +152,7 @@ regenerate one subscription key, while still using the other key, without downti
 The legacy name `Ocp-Apim-Subscription-Key` _must still be used in requests and code_,
 but we are working to make `Vipps-Subscription-Key` work everywhere.
 
-## API keys for different use
+### API keys for different use
 
 The same API keys are used for many types of integration:
 Direct integration,
