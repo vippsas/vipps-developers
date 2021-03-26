@@ -11,7 +11,7 @@ If you are using Vipps through an e-commerce platform, integration partner or PS
 * [Partner](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-3)
 * [PSP](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-2)
 
-Document version: 3.2.2.
+Document version: 3.2.3.
 
 ## Table of contents
 
@@ -255,6 +255,8 @@ The `client_id`, `client_secret` and `Ocp-Apim-Subscription-Key` are unique per
 | `client_id`                 | A GUID value           | Client ID for the sale unit      |
 | `client_secret`             | Base 64 encoded string | Client Secret for the sale unit  |
 | `Ocp-Apim-Subscription-Key` | Base 64 encoded string | Subscription key for the product |
+
+**Note** You can have multiple access tokens being used at the same time.
 
 **Please note:** We are in process of changing the name of the header
 `Ocp-Apim-Subscription-Key` to `Vipps-Subscription-Key`. We will at some point
