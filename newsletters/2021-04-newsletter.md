@@ -4,6 +4,30 @@
 
 This newsletter was sent in April 2021.
 
+# "Click and collect" recommendations
+
+For "click and collect" we recommend to use
+[`staticShippingDetails`](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#shipping-and-static-shipping-details)
+(to avoid the extra roundtrip where Vipps asks the merchant
+for the shipping options and prices) and also to set the default
+shipping method to "Click and collect".
+
+This is done in
+[`POST:​/ecomm​/v2​/payments`](https://vippsas.github.io/vipps-ecom-api/#/Vipps%20eCom%20API/initiatePaymentV3UsingPOST)
+by including:
+
+```
+"staticShippingDetails": [
+  {
+    "isDefault": "Y",
+    "priority": 0,
+    "shippingCost": 9900,
+    "shippingMethod": "Posten Servicepakke",
+    "shippingMethodId": "posten-servicepakke"
+  }
+]
+```
+
 # Order new products and create new sale units on portal.vipps.no
 
 All customers can now log in on
