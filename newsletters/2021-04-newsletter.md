@@ -21,9 +21,9 @@ by including:
   {
     "isDefault": "Y",
     "priority": 0,
-    "shippingCost": 9900,
-    "shippingMethod": "Posten Servicepakke",
-    "shippingMethodId": "posten-servicepakke"
+    "shippingCost": 0,
+    "shippingMethod": "Click and collect",
+    "shippingMethodId": "click-and-collect"
   }
 ]
 ```
