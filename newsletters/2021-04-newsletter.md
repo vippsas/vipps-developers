@@ -59,14 +59,14 @@ for creating additional sale units, and you can then select
 
 We have mentioned some things before, and take this opportunity to remind you:
 
-# Please update your plugins
+## Please update your plugins
 
 Several of our plugins have been updated to use the newest versions of
 our APIs. Please make sure you have the newest version of the plugins
 you use, and keep them up to date. See the
 [the plugin overview](https://github.com/vippsas/vipps-plugins).
 
-# Use Userinfo
+## Use Userinfo
 
 Vipps Hurtigkasse is for shipping products to the customer.
 Some use it for other purposes, but if no products are shipped,
@@ -83,7 +83,7 @@ See
 and
 [Userinfo for Recurring](https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api.md#userinfo).
 
-# API Dashboard 🚦
+## API Dashboard 🚦
 
 The API Dashboard is now available on
 [portal.vipps.no](https://portal.vipps.no)
