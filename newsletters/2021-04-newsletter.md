@@ -28,6 +28,14 @@ by including:
 ]
 ```
 
+# Recurring payments and campaigns
+
+Tip: Use
+[Campaigns](https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api.md#campaigns)
+if the subscription is cheaper in the beginning. If you use
+`initialcharge`, users will be confused by how it appears in Vipps, as it
+looks like the full price period starts immediately.
+
 # Order new products and create new sale units on portal.vipps.no
 
 All customers can now log in on
