@@ -1,6 +1,6 @@
 # The Vipps Test Environment (MT)
 
-Document version: 2.1.0.
+Document version: 2.1.1.
 
 The Merchant Test Environment (MT) is available for all Vipps customers.
 
@@ -22,6 +22,7 @@ Vipps Regninger with real invoices, but with small amounts. We recommend 2 NOK.
 Other differences in MT:
 * There is no equivalent to [portal.vipps.no](https://portal.vipps.no) for the test environment.
   Payments must be checked with the API, as there is no web interface.
+* There is no API Dashboard for the test environment.
 * We allow 10,000 incorrect PIN attempts before locking the Vipps user's account
 
 ## Test users
