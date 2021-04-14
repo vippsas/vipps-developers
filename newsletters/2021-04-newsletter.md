@@ -36,6 +36,16 @@ if the subscription is cheaper in the beginning. If you use
 `initialcharge`, users will be confused by how it appears in Vipps, as it
 looks like the full price period starts immediately.
 
+# Partner keys
+
+If you are a Vipps partner that is managing transactions on behalf of other
+Vipps merchants you can use your own credentials to authenticate, and then send
+the Merchant-Serial-Number to identify which of your Vipps Merchant you are
+acting on behalf of. 
+
+See:
+[Partner keys](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#partner-keys).
+
 # Order new products and create new sale units on portal.vipps.no
 
 All customers can now log in on
