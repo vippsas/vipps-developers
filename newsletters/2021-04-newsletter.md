@@ -38,9 +38,9 @@ looks like the full price period starts immediately.
 
 # Partner keys
 
-If you are a Vipps partner that is managing transactions on behalf of other
+If you are a Vipps partner and manage transactions on behalf of other
 Vipps merchants you can use your own credentials to authenticate, and then send
-the Merchant-Serial-Number to identify which of your Vipps Merchant you are
+the `Merchant-Serial-Number`header to identify which of your merchants you are
 acting on behalf of. 
 
 See:
