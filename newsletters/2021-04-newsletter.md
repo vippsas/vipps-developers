@@ -40,11 +40,21 @@ looks like the full price period starts immediately.
 
 If you are a Vipps partner and manage transactions on behalf of other
 Vipps merchants you can use your own credentials to authenticate, and then send
-the `Merchant-Serial-Number`header to identify which of your merchants you are
-acting on behalf of. 
+the `Merchant-Serial-Number` header to identify which of your merchants you are
+acting on behalf of.
+
+The same set of partner keys can be used for both the
+[Vipps eCom API](https://github.com/vippsas/vipps-ecom-api)
+and the
+[Vipps Recurring API](https://github.com/vippsas/vipps-recurring-api),
+including the
+[Userinfo](#use-userinfo)
+endpoints for both.
 
 See:
-[Partner keys](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#partner-keys).
+[Partner keys for eCom](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#partner-keys)
+and
+[Partner keys for Recurring](https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api.md#partner-keys)
 
 # Order new products and create new sale units on portal.vipps.no
 
