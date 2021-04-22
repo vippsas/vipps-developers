@@ -1,3 +1,3 @@
 # Vipps Partners
 
-We moved our [partner section here](https://github.com/vippsas/vipps-partner#vipps-partners).
+We moved our [partner section here](https://github.com/vippsas/vipps-partner).
