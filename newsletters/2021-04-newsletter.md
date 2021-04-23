@@ -36,6 +36,23 @@ if the subscription is cheaper in the beginning. If you use
 `initialcharge`, users will be confused by how it appears in Vipps, as it
 looks like the full price period starts immediately.
 
+See more details and screenshots here:
+[When to use campaigns or initial charge](https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api.md#when-to-use-campaigns-or-initial-charge).
+
+# Easier to use Userinfo
+
+The authentication is now much easier, with no need for additional keys, both for
+the eCom and Recurring AOPIs. See the call by call guides:
+* [eCom API](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#userinfo-call-by-call-guide)
+* [Recurring API](https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api.md#userinfo-call-by-call-guide)
+
+# New limits for capture and cancel
+
+Payments can be captured up to 365 days after reservation,
+and can be cancelled up to 180 days after reservation.
+Attempts at capturing and cancelling older payments will result in
+a `HTTP 400 Bad Request` with more details in the request body.
+
 # Partner keys
 
 If you are a Vipps partner and manage transactions on behalf of other
