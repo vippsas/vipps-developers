@@ -48,7 +48,7 @@ the eCom and Recurring AOPIs. See the call by call guides:
 * [eCom API](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#userinfo-call-by-call-guide)
 * [Recurring API](https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api.md#userinfo-call-by-call-guide)
 
-# New limits for capture and cancel
+# New date limits for capture and cancel
 
 Payments can be captured up to 365 days after reservation,
 and can be cancelled up to 180 days after reservation.
@@ -80,10 +80,10 @@ and
 All customers can now log in on
 [portal.vipps.no](https://portal.vipps.no)
 and order new products, which automatically creates a new sale unit:
-* [Vipps på Nett](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/) (
- [eCom API](https://github.com/vippsas/vipps-ecom-api),
- for both
- [webshops and apps](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/))
+* [Vipps på Nett](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/)
+  ([eCom API](https://github.com/vippsas/vipps-ecom-api),
+  for both
+  [webshops and apps](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/))
 * [Vipps rett i Kassa](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-i-butikk/vipps-i-kassa/)
   ([eCom API](https://github.com/vippsas/vipps-ecom-api))
 * [Vipps Faste betalinger](https://vipps.no/produkter-og-tjenester/bedrift/faste-betalinger/faste-betalinger/)
