@@ -75,6 +75,17 @@ See:
 and
 [Partner keys for Recurring](https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api.md#partner-keys)
 
+# PSP Signup API
+
+Payment Service Providers can use their existing API keys with the PSP Signup API to:
+
+* List all or one merchant(s) under them
+* Create a new merchant under them
+* Update an existing merchant
+
+See:
+[PSP Signup API](https://github.com/vippsas/vipps-psp-api/blob/master/vipps-psp-api.md#psp-signup-api).
+
 # Order new products and create new sale units on portal.vipps.no
 
 All customers can now log in on
