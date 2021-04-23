@@ -8,13 +8,15 @@ This newsletter was sent in April 2021.
 
 For "click and collect" we recommend to use
 [`staticShippingDetails`](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#shipping-and-static-shipping-details)
-(to avoid the extra roundtrip where Vipps asks the merchant
+(to avoid the extra HTTP roundtrip where Vipps asks the merchant
 for the shipping options and prices) and also to set the default
 shipping method to "Click and collect".
 
-This is done in
+This will significantly speed up the payment process for customers.
+
+This is done in the
 [`POST:​/ecomm​/v2​/payments`](https://vippsas.github.io/vipps-ecom-api/#/Vipps%20eCom%20API/initiatePaymentV3UsingPOST)
-by including:
+call by including:
 
 ```
 "staticShippingDetails": [
