@@ -88,9 +88,8 @@ and order new products, which automatically creates a new sale unit:
   ([eCom API](https://github.com/vippsas/vipps-ecom-api))
 * [Vipps Faste betalinger](https://vipps.no/produkter-og-tjenester/bedrift/faste-betalinger/faste-betalinger/)
   ([Recurring API](https://github.com/vippsas/vipps-recurring-api))
-* [Vipps Logg inn](https://vipps.no/produkter-og-tjenester/bedrift/logg-inn-med-vipps/logg-inn-med-vipps/) (
-  [Login API](https://github.com/vippsas/vipps-login-api)
-  )
+* [Vipps Logg inn](https://vipps.no/produkter-og-tjenester/bedrift/logg-inn-med-vipps/logg-inn-med-vipps/)
+  ([Login API](https://github.com/vippsas/vipps-login-api))
 
 # Create new sale units in the test environment
 
