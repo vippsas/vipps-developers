@@ -94,11 +94,14 @@ and order new products, which automatically creates a new sale unit:
 
 You can create new sale units in the
 [test environment](https://github.com/vippsas/vipps-developers/blob/master/vipps-test-environment.md)
-yourself on
+on
 [portal.vipps.no](https://portal.vipps.no):
+
 On the page with the API keys for the test environment there is a button
 for creating additional sale units, and you can then select
 "direct capture" or "reserve capture", and also `skipLandingPage`.
+
+This is available for all customers, also those that do not yet have any API access.
 
 # Reminders
 
