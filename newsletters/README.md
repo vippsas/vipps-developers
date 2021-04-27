@@ -1,6 +1,6 @@
 # Technical newsletter for developers
 
-A low volume newsletter with important information about Vipps' APIs.
+A low volume newsletter with important information to developers about Vipps' APIs and products.
 
 Sign up here: https://cloud.melding.vipps.no/utv
 
