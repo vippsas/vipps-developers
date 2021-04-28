@@ -34,7 +34,8 @@ Tip: Use
 [Campaigns](https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api.md#campaigns)
 if the subscription is cheaper in the beginning. If you use
 `initialcharge`, users will be confused by how it appears in Vipps, as it
-looks like the full price period starts immediately.
+looks like the full price period starts immediately. Initial charge should be used for situations where
+the customer pays for a phone and a phone subscription, and the first payment includes the phone.
 
 See more details and screenshots here:
 [When to use campaigns or initial charge](https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api.md#when-to-use-campaigns-or-initial-charge).
