@@ -1,7 +1,5 @@
 # Technical newsletter for developers 2021-04
 
-💥DRAFT 💥
-
 This newsletter was sent in April 2021.
 
 # "Click and collect" recommendations
