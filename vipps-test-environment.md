@@ -75,6 +75,9 @@ Vipps supports using special amounts that are always rejected when approving the
 The test apps for iOS and Android are identical to the production apps, but connects to the
 Vipps [the Vipps test environment (MT)](#the-vipps-test-environment-mt) instead of the production environment.
 
+The test apps can be installed on the same device as the production apps. The test apps use the
+`vippsMT://` URL scheme, and the production apps use `vipps://`.
+
 Only test accounts, with random "fake" phone numbers, are available in the test environments.
 Normal Vipps users are not available, so you can not use your own phone number with the test apps.  
 
