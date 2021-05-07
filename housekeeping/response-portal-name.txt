@@ -1,17 +1,18 @@
-Hei
-
-Visning av betalers navn i Vipps’ kundeportal (portal.vipps.no) og i oppgjørsfiler er en funksjon som er tilgjengelig for Vippsnummer. Både brukervilkår og bedriftsvilkår spesifiserer at Vippsnummer-transaksjoner inneholder betalerens navn.
+Visning av betalers navn i Vipps’ kundeportal (portal.vipps.no) og i oppgjørsfiler er en funksjon som er tilgjengelig for Vippsnummer. Både brukervilkår og bedriftsvilkår spesifiserer at Vippsnummer-transaksjoner inneholder betalerens navn. 
 
 For “Vipps på nett” er kundens navn kun tilgjengelig for brukerstedet hvis brukeren har gitt samtykke til å dele det, og ev. også annen informasjon som adresse, e-postadresse, bankkontoer og fødselsnummer.
 
-Visning av betalerens navn på portal.vipps.no for “Vipps på nett”-betalinger var en feil, som nylig ble rettet opp. Vipps har faktisk mottatt klager fra enkelte brukersteder på at navn ble vist, blant annet fra kollektivselskaper som har et krav at man skal kunne reise anonymt.  For oss er det viktig at kunder har mulighet til å betale anonymt med Vipps hvis brukerstedet legger til rette for det.
+Visning av betalerens navn på portal.vipps.no for “Vipps på nett”-betalinger var en feil, som nylig ble rettet opp. Vipps har faktisk mottatt klager fra enkelte brukersteder på at navn ble vist, blant annet fra kollektivselskaper som har et krav at man skal kunne reise anonymt.  For oss er det viktig at kunder har mulighet til å betale anonymt med Vipps hvis brukerstedet legger til rette for det. 
 
-Nå viser det seg at enkelte “Vipps på nett”-brukersteder baserte seg på kunders navn for avstemming o.l, i stedet for å bruker ordre-id-en som spesifiseres av brukerstedet selv. Vilkårene og dokumentasjonen vår sier ingenting om at vi automatisk deler denne typen informasjon for “Vipps på nett”, og derfor har våre brukere ikke samtykket til en sånn deling. Dette betyr at vi heller ikke har lov til å dele denne informasjonen med brukerstedene. Det er svært viktig for Vipps å ivareta personvern og følge reglene vi pålegges med GDPR, og brudd kan ha store konsekvenser for Vipps. Derfor er det brukerstedets ansvar å samle inn informasjon om sine kunder. Vi kan tilrettelegge denne prosessen både med Vipps Hurtigkasse og Vipps Login og “Userinfo-“-funksjonaliteten for “Vipps på nett” og “Vipps faste betalinger”. Ved å bruke “Userinfo”-funksjonaliteten kan brukerstedet enkelt be om kundens samtykke til å dele informasjon, og brukerstedet spesifiserer hvilke opplysninger man ønsker.
+Nå viser det seg at enkelte “Vipps på nett”-brukersteder baserte seg på kunders navn for avstemming o.l, i stedet for å bruker ordre-id-en som spesifiseres av brukerstedet selv. 
+ 
+Vilkårene og dokumentasjonen vår sier ingenting om at vi automatisk deler denne typen informasjon for “Vipps på nett”, og derfor har våre brukere ikke samtykket til en slik deling. Dette betyr at vi heller ikke har lov til å dele denne informasjonen med brukerstedene. Det er svært viktig for Vipps å ivareta personvern og følge rammebetingelsene, herunder også GDPR.
+ 
+Derfor er det brukerstedets ansvar å ha behandlingsgrunnlag for å samle inn informasjon om sine kunder. Vi kan tilrettelegge denne prosessen både med Vipps Hurtigkasse og Vipps Login og “Userinfo-“-funksjonaliteten for “Vipps på nett” og “Vipps faste betalinger”. Ved å bruke “Userinfo”-funksjonaliteten kan brukerstedet enkelt be om kundens samtykke til å dele informasjon, og brukerstedet spesifiserer hvilke opplysninger man ønsker.
 
 Det er i “orderId”, en unik id for hver betaling, som identifiserer betalinger som gjøres med Vipps eCom API (“Vipps på nett”), og det er brukerstedet som ser ansvarlig for å ha oversikt over sine orderId-er, og hvilken kunde som har betalt for hvilken ordre. Vipps har aldri tilrettelagt for at kundens navn skal brukes til avstemming av ordre.
-
-Brukersteder som har basert seg på å bruke kundenes navn for avstemming o.l. kan, som en midlertidig løsning, bruke orderId til å sende med identifiserende informasjon på transaksjonsteksten i Vipps. Dette er informasjon som vil vises i transaksjonene på portal.vipps.no. Vær oppmerksom på at kunden også vil se orderId i bekreftelsesskjermen i Vipps, så det er ikke helt ideelt. Vi jobber kontinuerlig med å forbedre Vipps, og hører gjerne fra dere hvis dere har forbedringsforslag og andre innspill.
-
+ 
+Vi jobber kontinuerlig med å forbedre Vipps, og hører gjerne fra dere hvis dere har forbedringsforslag og andre innspill.
 --
 $ cursor $
 
