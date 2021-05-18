@@ -9,7 +9,7 @@ GDPR, etc.
 Vipps does not have an API to retrieve settlements files.
 We are aware of the interest for an API, and it is on our roadmap - but no ETA yet.
 
-Document version: 2.1.0.
+Document version: 2.1.1.
 
 ## Settlements
 
@@ -64,7 +64,7 @@ More information about SFTP: [SSH File Transfer Protocol](https://en.wikipedia.o
 
 **Please note:** Vipps can not add the SFTP key for you.
 If you do not have BankID, or you do not have the required permissions
-add the SSH key, you will need the administrator to do it for you, or
+to add the SSH key, you will need the administrator to do it for you, or
 to update your permissions on
 [portal.vipps.no](https://portal.vipps.no).
 The administrator can create additional users on
