@@ -1,47 +1,63 @@
 # The Vipps Test Environment (MT)
 
-Document version: 2.1.1.
+Document version: 2.2.0.
 
 The Merchant Test Environment (MT) is available for all Vipps customers.
+
+
+## About the test environment
 
 The environment is suitable for testing _most_ of the Vipps functionality, but some
 functionality in the production environment is not available in MT.
 In general, MT does not contain functionality that requires integration with
-third parties, such as Payment Service Providers, EVRY, Nets, banks, etc.
+third parties.
 
 Functionality not available in MT (a non-exhaustive list):
-* Push alerts may be unstable. To see payment requests: Open Vipps and manually go to the "Betalinger" (in English: "Payments") at the bottom of the main screen.
+* Push alerts may be unstable. To see payment requests: Open Vipps and manually
+  go to the "Betalinger" (in English: "Payments") at the bottom of the main screen.
 * Payment of invoices, both for Vipps Regninger and Vipps Faktura
 * Limited support for testing card statuses that require connections to Nets, etc
-* Limited support for looking up customer information in [KAR](https://www.bits.no/en/bank/konto-og-adresseringsregister-kar/), etc
+* Limited support for looking up customer information in
+  [KAR](https://www.bits.no/en/bank/konto-og-adresseringsregister-kar/), etc
 
 To test functionality that is not available in MT, you will have to use the
 production environment in a controlled manner. One example may be to test
 Vipps Regninger with real invoices, but with small amounts. We recommend 2 NOK.
 
-Other differences in MT:
+Other differences between Prod and MT:
+
 * There is no equivalent to [portal.vipps.no](https://portal.vipps.no) for the test environment.
   Payments must be checked with the API, as there is no web interface.
 * There is no API Dashboard for the test environment.
 * We allow 10,000 incorrect PIN attempts before locking the Vipps user's account
 
+## Test merchants
+
+All Vipps customers can create sale units in the test environment on
+[portal.vipps.no](https://portal.vipps.no)
+under the "Utvikler" tab: Choose "test keys" and then press
+"Add test sale unit".
+
+You can configure the sale unit with "direct capture" or "reserve capture",
+"skipLandingPage", etc.
+
+It is not possible to _change_ an existing sale unit in the test environment,
+but you can create as many as you need.
+
 ## Test users
 
-The welcome email contains information about your test profile.
-You can use this test user to in the [Vipps test apps](#vipps-test-apps).
-
-If you have not yet received the welcome email, see the
-[standard reply](https://github.com/vippsas/vipps-developers/blob/master/housekeeping/response-apinokler.txt)
-(in Norwegian) for requests about this.
+The welcome email that is automatically sent to all new customers contains
+information about your test user for the test environment.
+You can use this test user in the [Vipps test apps](#vipps-test-apps).
 
 There is no way to get a test user in the production environment.
 The production environment only contains real users and data.
 
 ### Phone number
 
-The test mobile number is registered with everything required to complete a payment.
-You may use the test user on multiple devices.
-The test mobile number works on all phones and on all networks.
+The test user has everything required to complete a payment.
+You may use the same test user on multiple devices.
+The test user's mobile number works on all phones and on all networks.
 
 **Important:** Do _not_ use the test phone number in the production environment,
 as the test number may be a real phone number for a real Vipps user.
@@ -68,17 +84,21 @@ Vipps supports using special amounts that are always rejected when approving the
 | 1.84   | Withdrawal limit exceeded |
 | 1.97   | 3D Secure denied          |
 
-**Please note:** The "force approve" endpoint is not validated for this functionality and will result in different behaviour.
+**Please note:** The
+[force approve](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#testing)
+endpoint does not support this functionality.
 
 ## Vipps test apps
 
-The test apps for iOS and Android are identical to the production apps, but connects to the
-Vipps [the Vipps test environment (MT)](#the-vipps-test-environment-mt) instead of the production environment.
+The test apps for iOS and Android are identical to the production apps, but connect to the
+Vipps
+[the Vipps test environment (MT)](#the-vipps-test-environment-mt)
+instead of the production environment.
 
-The test apps can be installed on the same device as the production apps. The test apps use the
-`vippsMT://` URL scheme, and the production apps use `vipps://`.
+The test apps can be installed on the same device as the production apps without conflicts.
+The test apps use the `vippsMT://` URL scheme, and the production apps use `vipps://`.
 
-Only test accounts, with random "fake" phone numbers, are available in the test environments.
+Only test users, with random "fake" phone numbers, are available in the test environments.
 Normal Vipps users are not available, so you can not use your own phone number with the test apps.  
 
 **Important:** Do _not_ use the test phone number in the production environment,
@@ -92,17 +112,22 @@ with details.
 
 ### Limitations of the test apps
 
-* Push alerts may be unstable. To see payment requests: Open Vipps and manually go to the "Betalinger" (in English: "Payments") at the bottom of the main screen.
+* Push alerts may be unstable. To see payment requests: Open Vipps and manually
+  go to the "Betalinger" (in English: "Payments") at the bottom of the main screen.
 
 ### iOS
 
 The iOS test app is available in Apple TestFlight.
 You do *not* need an invitation or an activation code.
 
-1. Open the [TestFlight](https://testflight.apple.com/join/hTAYrwea) link on your iOS phone (it will not work on macOS)
+1. Open the
+   [TestFlight](https://testflight.apple.com/join/hTAYrwea)
+   link on your iOS phone (it will not work on macOS)
 2. Install the "Vipps MT" app
 3. Open the "Vipps MT" app
-4. Enter the test phone number, that was sent in the welcome email to the email address used in the registration. Your normal Vipps user is not available in the test environment.
+4. Enter the test phone number, that was sent in the welcome email to the email
+   address used in the registration. Your normal Vipps user is not available in
+   the test environment.
 5. On the "Verify your number" screen: Use PIN  `1236`.
 6. On the "Enter your code" screen: Use PIN `1236`.
 7. Enable FaceID (or TouchID) and confirm with PIN  `1236`.
@@ -115,10 +140,16 @@ You are now ready to use the iOS test app connected to the Vipps test environmen
 The Android test app is available in App Center.
 You do *not* need an invitation or an activation code.
 
-1. Open the [App Center](https://install.appcenter.ms/orgs/vipps/apps/vipps-android/distribution_groups/mt%20testers) link on your Android phone (it will nok work on a PC/Mac). If you get a push message prompting to whitelist the source, you should be able to do this via the "Settings" button.
+1. Open the
+   [App Center](https://install.appcenter.ms/orgs/vipps/apps/vipps-android/distribution_groups/mt%20testers)
+   link on your Android phone (it will nok work on a PC/Mac). If you get a push
+   message prompting to whitelist the source, you should be able to do this via
+   the "Settings" button.
 2. Install the "Vipps Android" app
 3. Open the "Vipps Android" app
-4. Enter the test phone number, that was sent in the welcome email to the email address used in the registration. Your normal Vipps user is not available in the test environment.
+4. Enter the test phone number, that was sent in the welcome email to the email
+   address used in the registration. Your normal Vipps user is not available in
+   the test environment.
 5. On the "Verify your number" screen: Use PIN  `1236`.
 6. On the "Enter your code" screen: Use PIN `1236`.
 7. Enable touch id and confirm with PIN  `1236`.
