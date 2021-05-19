@@ -1,6 +1,6 @@
 # The Vipps Test Environment (MT)
 
-Document version: 3.0.0.
+Document version: 3.0.1.
 
 The Merchant Test Environment (MT) is available for all Vipps customers.
 
@@ -55,6 +55,10 @@ You can configure the sale unit with "direct capture" or "reserve capture",
 
 It is not possible to _change_ an existing sale unit in the test environment,
 but you can create as many as you need.
+
+**Please note:** Sale units in the _production_ environment must follow strict rules
+(regulatory and other), so you may not be able to get the same sale unit configuration
+(like "direct capture") there, even though you have it in the test environment. 
 
 ## Test users
 
