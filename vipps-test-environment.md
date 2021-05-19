@@ -89,6 +89,7 @@ for more details.
 ## Test amounts
 
 Vipps supports using special amounts that are always rejected when approving the payment in the Vipps test app.  
+
 These test amounts currently **only** works with Reserve Capture.
 
 | Amount | Error                     |
