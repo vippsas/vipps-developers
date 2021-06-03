@@ -18,7 +18,7 @@ Her er en beskrivelse av prosessen fra man bestiller en Vipps-løsning til alt e
 
 6) Kunden får epost med informasjon om at API-nøkler for _produksjonsmiljøet_ kan hentes på https://portal.vipps.no ved å logge inn med BankID.
 
-Status for bestillingen kan sjekkes når somn helst på https://portal.vipps.no
+Status for bestillingen kan sjekkes når som helst på https://portal.vipps.no
 
 Hvis du har spørsmål om bestillingen, hjelper Vipps kundesenter med dette:
 Telefon: 22 48 28 00. 
