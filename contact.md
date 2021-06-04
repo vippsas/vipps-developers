@@ -14,7 +14,7 @@ Hello! We can help!
 - [More than one problem, or a new one?](#more-than-one-problem-or-a-new-one)
 - [Newsletter](#newsletter)
 
-Document version: 2.4.0.
+Document version: 2.4.1.
 
 ## We help with technical issues
 
@@ -79,7 +79,7 @@ customers, so you can request that if you expect to be contacting us a lot.
 
 ## Can we have a meeting?
 
-Nope. Can I call you?](#can-i-call-you)
+Nope. [Can I call you?](#can-i-call-you)
 
 ## Keep your colleagues up to date
 
