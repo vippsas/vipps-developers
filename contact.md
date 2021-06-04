@@ -79,7 +79,7 @@ customers, so you can request that if you expect to be contacting us a lot.
 
 ## Can we have a meeting?
 
-Nope. [Can I call you?](#can-i-call-you)
+Nope. See: [Can I call you?](#can-i-call-you)
 
 ## Keep your colleagues up to date
 
