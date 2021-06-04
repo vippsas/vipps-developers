@@ -1,10 +1,11 @@
 # How to contact Vipps Integration
 
-Hello! 👋 We love email!
+Hello! We can help!
 
 - [We help with technical issues](#we-help-with-technical-issues)
 - [What to include in the email](#what-to-include-in-the-email)
 - [Can I call you?](#can-i-call-you)
+- [Can we have a meeting?](#can-we-have-a-meeting)
 - [Keep your colleagues up to date](#keep-your-colleagues-up-to-date)
 - [Automatic reply](#automatic-reply)
 - [Adding additional information](#adding-additional-information)
@@ -13,11 +14,11 @@ Hello! 👋 We love email!
 - [More than one problem, or a new one?](#more-than-one-problem-or-a-new-one)
 - [Newsletter](#newsletter)
 
-Document version: 2.3.5.
+Document version: 2.4.0.
 
 ## We help with technical issues
 
-We help with _**technical**_ issues from developers, such as questions about using our APIs.
+Vipps Integration helps with _**technical**_ questions from developers, such as questions about using our APIs.
 If you do not have a technical issue, the fastest way to get help is to start in the right place:
 
 | Topic               | How to get help |
@@ -39,11 +40,13 @@ We also have a technical newsletter for developers:
 
 ## What to include in the email
 
-Please send an email with all relevant information to the address below:
+First of all: It's nice if you can check the FAQs and search to check if your problem is a common one:
+* eCom: [[eCom API FAQ](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-faq.md),
+* [Recurring API FAQ](https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api-faq.md)
+* [Login API FAQ](https://github.com/vippsas/vipps-login-api/blob/master/vipps-login-api-faq.md)
 
-* It's nice if you can check the
-  [eCom API FAQ](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-faq.md)
-  and search to check if your problem is a common one.
+If it's not: Please send an email with all relevant information to the address below:
+
 * **Please: Always include a _detailed_ description of the problem**
 * A concise, self-explanatory `Subject` line, such as "`POST:/something` gives `HTTP 400` response".
 * Company details
@@ -51,7 +54,7 @@ Please send an email with all relevant information to the address below:
   - Merchant Serial Number (MSN, see [Getting started](vipps-developer-portal-getting-started.md))
 * Is it a problem in the Test (MT) or the Production environment?
 * On which date did the problem occur?
-* Include `orderId`, and preferrably also `transactionId` and `contextId`, to make it possible to search in logs.
+* Include `orderId`, and preferably also `transactionId` and `contextId`, to make it possible to search in logs.
 * If you are a new Vipps customer, please include details about when and how you ordered Vipps.
 * Which [Vipps product](https://www.vipps.no/produkter-og-tjenester/bedrift/) or [Vipps API](https://github.com/vippsas) this is about.
 * For API issues: Complete `request` and `response` details (plain HTTP from Postman, or [curl](https://curl.haxx.se) ensures the quickest response).
@@ -69,10 +72,14 @@ The Integration email address is: integration@vipps.no
 
 ## Can I call you?
 
-No, we do not have a phone number for Integration, and we do not have the capacity to
+Nope. We do not have a phone number for Integration, and we do not have the capacity to
 help 1:1 on phone, sorry. Most cases involve information that needs to be in written form,
 such as ids, API requests/responses, etc. We do sometimes set up Slack channels for
 customers, so you can request that if you expect to be contacting us a lot.
+
+## Can we have a meeting?
+
+Nope. Can I call you?](#can-i-call-you)
 
 ## Keep your colleagues up to date
 
