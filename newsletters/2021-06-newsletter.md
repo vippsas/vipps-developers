@@ -18,7 +18,7 @@ Here's an example:
 
 We have mentioned some things before, and take this opportunity to remind you:
 
-# Manage "everything" on portal.vipps.no
+## Manage "everything" on portal.vipps.no
 
 All customers can now log in on
 [portal.vipps.no](https://portal.vipps.no)
