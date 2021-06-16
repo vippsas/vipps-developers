@@ -12,7 +12,7 @@ See it on
 under the "Utvikler" ("Developer") tab.
 Here's an example:
 
-![API Dashboard example](images/2021-02-api-dashboard-example.png)
+<img src="images/2021-06-api-dashboard-login.png" alt="api-dashboard login data" style="width:1000px;"/>
 
 # Reminders
 
