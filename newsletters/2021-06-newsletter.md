@@ -18,6 +18,31 @@ Here's an example:
 
 We have mentioned some things before, and take this opportunity to remind you:
 
+## Manage "everything" on portal.vipps.no
+
+All customers can now log in on
+[portal.vipps.no](https://portal.vipps.no)
+and order new products, which automatically creates a new sale unit:
+* [Vipps på Nett](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/)
+  ([eCom API](https://github.com/vippsas/vipps-ecom-api),
+  for both
+  [webshops and apps](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/))
+* [Vipps rett i Kassa](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-i-butikk/vipps-i-kassa/)
+  ([eCom API](https://github.com/vippsas/vipps-ecom-api))
+* [Vipps Faste betalinger](https://vipps.no/produkter-og-tjenester/bedrift/faste-betalinger/faste-betalinger/)
+  ([Recurring API](https://github.com/vippsas/vipps-recurring-api))
+* [Vipps Logg inn](https://vipps.no/produkter-og-tjenester/bedrift/logg-inn-med-vipps/logg-inn-med-vipps/)
+  ([Login API](https://github.com/vippsas/vipps-login-api))
+
+You can create also new sale units in the
+[test environment](https://github.com/vippsas/vipps-developers/blob/master/vipps-test-environment.md)
+on
+[portal.vipps.no](https://portal.vipps.no):
+On the page with the API keys for the test environment there is a button
+for creating additional sale units, and you can then select
+"direct capture" or "reserve capture", and also `skipLandingPage`.
+This is available for all customers, also those that do not yet have any API access.  
+
 ## Please update your plugins
 
 Several of our plugins have been updated to use the newest versions of
