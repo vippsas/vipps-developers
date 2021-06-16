@@ -18,7 +18,7 @@ Here's an example:
 
 We have mentioned some things before, and take this opportunity to remind you:
 
-# Order new products and create new sale units on portal.vipps.no
+# Manage "everything" on portal.vipps.no
 
 All customers can now log in on
 [portal.vipps.no](https://portal.vipps.no)
@@ -33,6 +33,15 @@ and order new products, which automatically creates a new sale unit:
   ([Recurring API](https://github.com/vippsas/vipps-recurring-api))
 * [Vipps Logg inn](https://vipps.no/produkter-og-tjenester/bedrift/logg-inn-med-vipps/logg-inn-med-vipps/)
   ([Login API](https://github.com/vippsas/vipps-login-api))
+
+You can create also new sale units in the
+[test environment](https://github.com/vippsas/vipps-developers/blob/master/vipps-test-environment.md)
+on
+[portal.vipps.no](https://portal.vipps.no):
+On the page with the API keys for the test environment there is a button
+for creating additional sale units, and you can then select
+"direct capture" or "reserve capture", and also `skipLandingPage`.
+This is available for all customers, also those that do not yet have any API access.  
 
 ## Please update your plugins
 
