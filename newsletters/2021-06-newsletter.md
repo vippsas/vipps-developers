@@ -1,4 +1,4 @@
-# Technical newsletter for developers 2021-04
+# Technical newsletter for developers 2021-06
 
 💥 DRAFT 💥
 
