@@ -20,6 +20,9 @@ More information:
 * [Userinfo for eCom](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#userinfo)
 * [Userinfo for Recurring](https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api.md#userinfo)
 
+**Please note:** When a user pays with a debit or credit card using Vipps,
+all the benefits apply, just as when the payment card is used outside of Vipps.
+
 # API Dashboard for Vipps Login API
 
 The API Dashboard now also shows data for the Login API.
