@@ -17,8 +17,8 @@ discounts, freebies, connect them to your own loyalty programme, etc.
 More information:
 * [Vipps Logg inn: Product information](https://www.vipps.no/produkter-og-tjenester/bedrift/innlogging-og-identifisering/logg-inn-med-vipps/)
 * [Vipps Login API](https://github.com/vippsas/vipps-login-api)
-* [Userinfo for eCom](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#userinfo)
-* [Userinfo for Recurring](https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api.md#userinfo)
+* [Userinfo for the Vipps eCom API](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#userinfo)
+* [Userinfo for the Vipps Recurring API](https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api.md#userinfo)
 
 **Please note:** When a user pays with a debit or credit card using Vipps,
 all the benefits apply, just as when the payment card is used outside of Vipps.
