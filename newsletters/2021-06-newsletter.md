@@ -1,7 +1,5 @@
 # Technical newsletter for developers 2021-06
 
-💥 DRAFT 💥
-
 This newsletter was sent in June 2021.
 
 # Recognize your loyal customers
