@@ -75,7 +75,8 @@ Please see
 
 ## Newsletter archive
 
-Please see: https://github.com/vippsas/vipps-developers/tree/master/newsletters
+All the previous newsletters are in the
+[newsletter archive](https://github.com/vippsas/vipps-developers/tree/master/newsletters).
 
 # Questions or comments?
 
