@@ -14,8 +14,7 @@ them to your loyalty program:
 
 You can then automatically give your loyal customers benefits such as
 discounts, freebies, connect them to your own loyalty programme, etc.
-
-See:
+More information:
 * [Vipps Logg inn: Product information](https://www.vipps.no/produkter-og-tjenester/bedrift/innlogging-og-identifisering/logg-inn-med-vipps/)
 * [Vipps Login API](https://github.com/vippsas/vipps-login-api)
 * [Userinfo for eCom](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#userinfo)
