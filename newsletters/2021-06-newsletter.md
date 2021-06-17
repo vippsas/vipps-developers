@@ -4,6 +4,24 @@
 
 This newsletter was sent in June 2021.
 
+# Recognize your loyal customers
+
+With Vipps you can always know who your customers are, and optionally connect
+them to your loyalty program.
+
+Use _Userinfo_ to ask for the user's details, such as:
+phone number, name, email address, postal address, birth date, national identity number and bank accounts.
+
+The user must of course consent to sharing the information.
+
+You can then automatically give your loyal customers benefits such as
+discounts, freebies, etc.
+
+See
+[Userinfo for eCom](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#userinfo)
+and
+[Userinfo for Recurring](https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api.md#userinfo).
+
 # API Dashboard for Vipps Login API
 
 The API Dashboard now also shows data for the Login API.
