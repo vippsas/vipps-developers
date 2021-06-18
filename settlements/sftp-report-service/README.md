@@ -1,8 +1,10 @@
 # Vipps SFTP Report Service
 
 This service allows for retrieval of settlement files with SFTP.
+
 SFTP can be used manually (interactively), or automatically/programmatically
 by using SFTP as part of an integration.
+Vipps can not help with SFTP basics, but recommend this for an overview: https://www.ssh.com/ssh/sftp/
 
 See [the general information about settlements and reports](../) for information
 about the report formats, availability of personal information about customers,
