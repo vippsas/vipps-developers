@@ -45,7 +45,7 @@ See more details and screenshots here:
 # Easier to use Userinfo
 
 The authentication is now much easier, with no need for additional keys, both for
-the eCom and Recurring AOPIs. See the call by call guides:
+the eCom and Recurring APIs. See the call by call guides:
 * [eCom API](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#userinfo-call-by-call-guide)
 * [Recurring API](https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api.md#userinfo-call-by-call-guide)
 
