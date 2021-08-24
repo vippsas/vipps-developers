@@ -3,7 +3,7 @@
 This repository contains various resources for Vipps developers.
 We recommend starting with [Getting started](vipps-getting-started.md).
 
-Document version: 2.4.6.
+Document version: 2.4.7.
 
 ## Table of contents
 
@@ -58,7 +58,9 @@ You can use Statuspage's Atom and RSS feeds for integration with other systems.
 See
 [The Vipps test environment (MT)](https://github.com/vippsas/vipps-developers/blob/master/vipps-test-environment.md)
 for more information about general test functionality,
-the iOS and Android test apps, etc
+the iOS and Android test apps, etc.
+
+MT is short for Merchant Test.
 
 ## Postman
 
