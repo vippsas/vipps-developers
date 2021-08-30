@@ -1,6 +1,6 @@
 # The Vipps Test Environment (MT)
 
-Document version: 3.0.1.
+Document version: 3.1.0.
 
 The Merchant Test Environment (MT) is available for all Vipps customers.
 
@@ -174,3 +174,13 @@ You do *not* need an invitation or an activation code.
 8. Accept push notifications.
 
 You are now ready to use the Android test app connected to the Vipps test environment.
+
+# Questions?
+
+We're always happy to help with code or other questions you might have!
+Please create an [issue](https://github.com/vippsas/vipps-developers/issues),
+a [pull request](https://github.com/vippsas/vipps-developers/pulls),
+or [contact us](https://github.com/vippsas/vipps-developers/blob/master/contact.md).
+
+Sign up for our [Technical newsletter for developers](https://github.com/vippsas/vipps-developers/tree/master/newsletters).
+
