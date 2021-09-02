@@ -34,7 +34,17 @@ https://github.com/vippsas/vipps-merchant-management-api
 
 The Vipps Merchant Management API lets partners, banks and large corporations
 manage their merchants and sale units. See the GitHub repository for
-background and priorities. 
+background and priorities.
+
+# API Dashboard for the test environment
+
+The API Dashboard is now available for both the production and test environments.
+See it on
+[portal.vipps.no](https://portal.vipps.no)
+under the "Utvikler" ("Developer") tab.
+Here's an example:
+
+<img src="images/2021-06-api-dashboard-login-example.png" alt="api-dashboard login data" style="width:1000px;"/>
 
 ## How to get help quickly
 
