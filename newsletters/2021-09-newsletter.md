@@ -50,7 +50,7 @@ The Vipps Login service has been extended with Client Initiated Backchannel Auth
 This could typically be physical contexts like point of sales (POS) solutions, on the
 phone in call center solutions, or devices/terminals like TV boxes.
 
-More information can be found in [our documentation](https://github.com/vippsas/vipps-login-api/blob/master/vipps-login-api.md#client-initiated-backchannel-authentication-flows-ciba---special-cases-where-login-does-not-start-in-browser-or-app)
+More information can be found in [our documentation](https://github.com/vippsas/vipps-login-api/blob/master/vipps-login-api.md#client-initiated-backchannel-authentication-flows-ciba---special-cases-where-login-does-not-start-in-browser-or-app).
 
 # API Dashboard for the test environment
 
@@ -62,12 +62,7 @@ Here's an example:
 
 <img src="images/2021-06-api-dashboard-login-example.png" alt="api-dashboard login data" style="width:1000px;"/>
 
-## How to get help quickly
-
-Please see
-[this page](https://github.com/vippsas/vipps-developers/blob/master/contact.md).
-
-## Newsletter archive
+# Newsletter archive
 
 All the previous newsletters are in the
 [newsletter archive](https://github.com/vippsas/vipps-developers/tree/master/newsletters).
