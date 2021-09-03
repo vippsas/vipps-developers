@@ -4,6 +4,12 @@
 
 This newsletter was sent in September 2021.
 
+- [The Vipps QR API](#the-vipps-qr-api)
+- [The Vipps Order Management API](#the-vipps-order-management-api)
+- [The Vipps Merchant Management API](#the-vipps-merchant-management-api)
+- [Vipps Login support for authentication/registration outside of browser/app (CIBA)](#vipps-login-support-for-authentication-registration-outside-of-browser-app--ciba-)
+- [API Dashboard for the test environment](#api-dashboard-for-the-test-environment)
+
 # The Vipps QR API
 
 An early version of the Vipps QR API is available on GitHub:
@@ -32,12 +38,19 @@ and direct payments, but not for passthrough payments.
 An early version of the Vipps Merchant Management API is available on GitHub:
 https://github.com/vippsas/vipps-merchant-management-api
 
-The Vipps Merchant Management API lets partners, banks and large corporations
+The Vipps Merchant Management API will let partners, banks and large corporations
 manage their merchants and sale units. See the GitHub repository for
 background and priorities.
 
 # Vipps Login support for authentication/registration outside of browser/app (CIBA)
-The Vipps Login service has been extended with Client initiated backchannel authentication flows (CIBA) to support use-cases where authentication/registration does not start in a browser or an app. This could typically be physical contexts e.g point of sales solutions, on the phone e.g call-center solutions or devices/terminals e.g TV-boxes. More information can be found in [our documentation](https://github.com/vippsas/vipps-login-api/blob/master/vipps-login-api.md#client-initiated-backchannel-authentication-flows-ciba---special-cases-where-login-does-not-start-in-browser-or-app)
+
+The Vipps Login service has been extended with Client Initiated Backchannel Authentication
+(CIBA) flows to support use cases where authentication/registration does not start in a browser or an app.
+
+This could typically be physical contexts like point of sales (POS) solutions, on the
+phone in call center solutions, or devices/terminals like TV boxes.
+
+More information can be found in [our documentation](https://github.com/vippsas/vipps-login-api/blob/master/vipps-login-api.md#client-initiated-backchannel-authentication-flows-ciba---special-cases-where-login-does-not-start-in-browser-or-app)
 
 # API Dashboard for the test environment
 
