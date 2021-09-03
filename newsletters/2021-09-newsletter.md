@@ -36,6 +36,9 @@ The Vipps Merchant Management API lets partners, banks and large corporations
 manage their merchants and sale units. See the GitHub repository for
 background and priorities.
 
+# Vipps Login support for authentication/registration outside of browser/app (CIBA)
+The Vipps Login service has been extended with Client initiated backchannel authentication flows (CIBA) to support use-cases where authentication/registration does not start in a browser or an app. This could typically be physical contexts e.g point of sales solutions, on the phone e.g call-center solutions or devices/terminals e.g TV-boxes. More information can be found in [our documentation](https://github.com/vippsas/vipps-login-api/blob/master/vipps-login-api.md#client-initiated-backchannel-authentication-flows-ciba---special-cases-where-login-does-not-start-in-browser-or-app)
+
 # API Dashboard for the test environment
 
 The API Dashboard is now available for both the production and test environments.
