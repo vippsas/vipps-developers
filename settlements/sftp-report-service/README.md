@@ -13,7 +13,7 @@ GDPR, etc.
 Vipps does not have an API to retrieve settlements files.
 We are aware of the interest for an API, and it is on our roadmap - but no ETA yet.
 
-Document version: 2.1.1.
+Document version: 2.1.2.
 
 ## Settlements
 
@@ -37,6 +37,13 @@ day (and there may be none).
 
 Note that the reports are generated on-demand, which is why the file size is
 reported as zero (the size is unknown at the time of listing).
+
+**Please note:** There will be no settlement reports for dates without completed
+payments. In these cases, neither the settlement files nor the directories that
+should have contained settlement files will exist.
+Please see
+[Availability](https://github.com/vippsas/vipps-developers/tree/master/settlements#availability)
+for details.
 
 ## SFTP Service
 
