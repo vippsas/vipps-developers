@@ -9,6 +9,7 @@ This newsletter was sent in September 2021.
 - [The Vipps Merchant Management API](#the-vipps-merchant-management-api)
 - [Vipps Login support for authentication/registration outside of browser/app (CIBA)](#vipps-login-support-for-authentication-registration-outside-of-browser-app--ciba-)
 - [API Dashboard for the test environment](#api-dashboard-for-the-test-environment)
+- [Removed HTTP 402 errors](#removed-http-402-errors)
 
 # The Vipps QR API
 
@@ -61,6 +62,16 @@ under the "Utvikler" ("Developer") tab.
 Here's an example:
 
 <img src="images/2021-06-api-dashboard-login-example.png" alt="api-dashboard login data" style="width:1000px;"/>
+
+# Removed HTTP 402 errors
+
+The Vipps eCom API previously sent `HTTP 402 Payment Required` for some errors.
+That HTTP status is "reserved for future use", and our use was a bit .. creative.
+
+We now send `HTTP 400 Bad Request` instead, with more details in the message body.
+
+Since this is _still_ an error that can and must be fixed by the merchant,
+we have concluded that the change does not require a new version of the API.
 
 # Newsletter archive
 
