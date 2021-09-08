@@ -8,7 +8,7 @@ This newsletter was sent in September 2021.
 - [The Vipps Order Management API](#the-vipps-order-management-api)
 - [The Vipps Merchant Management API](#the-vipps-merchant-management-api)
 - [Vipps Login support for authentication/registration outside of browser/app (CIBA)](#vipps-login-support-for-authenticationregistration-outside-of-browserapp-ciba)
-- [Vipps Recurring agreement with variable amount](#vipps-recurring-agreement-with-variable-amount)
+- [The Vipps Recurring API now supports variable amounts](#the-vipps-recurring-api-now-suports-variable-amounts)
 - [API Dashboard for the test environment](#api-dashboard-for-the-test-environment)
 - [Removed HTTP 402 errors](#removed-http-402-errors)
 
@@ -54,9 +54,9 @@ phone in call center solutions, or devices/terminals like TV boxes.
 
 More information can be found in [our documentation](https://github.com/vippsas/vipps-login-api/blob/master/vipps-login-api.md#client-initiated-backchannel-authentication-flows-ciba---special-cases-where-login-does-not-start-in-browser-or-app).
 
-# Vipps Recurring agreement with variable amount
+# The Vipps Recurring API now supports variable amounts
 
-Recurring agreements with variable amount offer merchants a way to charge users a different amount each interval, based on the users specified max amount.
+Recurring agreements with variable amount lets merchants charge users a different amount each for interval, based on the user's specified max amount.
 
 More information can be found in [our documentation](https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api.md#recurring-agreements-with-variable-amount).
 
