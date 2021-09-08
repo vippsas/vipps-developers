@@ -8,7 +8,7 @@ This newsletter was sent in September 2021.
 - [The Vipps Order Management API](#the-vipps-order-management-api)
 - [The Vipps Merchant Management API](#the-vipps-merchant-management-api)
 - [Vipps Login support for authentication/registration outside of browser/app (CIBA)](#vipps-login-support-for-authenticationregistration-outside-of-browserapp-ciba)
-- [The Vipps Recurring API now supports variable amounts](#the-vipps-recurring-api-now-suports-variable-amounts)
+- [The Vipps Recurring API now supports variable amounts](#the-vipps-recurring-api-now-supports-variable-amounts)
 - [API Dashboard for the test environment](#api-dashboard-for-the-test-environment)
 - [Removed HTTP 402 errors](#removed-http-402-errors)
 
