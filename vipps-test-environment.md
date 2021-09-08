@@ -1,6 +1,6 @@
 # The Vipps Test Environment (MT)
 
-Document version: 3.1.0.
+Document version: 3.1.1.
 
 The Merchant Test Environment (MT) is available for all Vipps customers.
 
@@ -27,6 +27,8 @@ third parties.
 Functionality not available in MT (a non-exhaustive list):
 * Push alerts may be unstable. To see payment requests: Open Vipps and manually
   go to the "Betalinger" (in English: "Payments") at the bottom of the main screen.
+  The details: The app id for the test and production apps are the same, and we
+  are not able to distinguish between the apps when sending push messages.
 * Payment of invoices, both for Vipps Regninger and Vipps Faktura
 * Limited support for testing card statuses that require connections to Nets, etc
 * Limited support for looking up customer information in
