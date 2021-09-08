@@ -4,7 +4,6 @@
 
 This newsletter was sent in September 2021.
 
-- [Technical newsletter for developers 2021-09](#technical-newsletter-for-developers-2021-09)
 - [The Vipps QR API](#the-vipps-qr-api)
 - [The Vipps Order Management API](#the-vipps-order-management-api)
 - [The Vipps Merchant Management API](#the-vipps-merchant-management-api)
@@ -12,8 +11,6 @@ This newsletter was sent in September 2021.
 - [Vipps Recurring agreement with variable amount](#vipps-recurring-agreement-with-variable-amount)
 - [API Dashboard for the test environment](#api-dashboard-for-the-test-environment)
 - [Removed HTTP 402 errors](#removed-http-402-errors)
-- [Newsletter archive](#newsletter-archive)
-- [Questions or comments?](#questions-or-comments)
 
 # The Vipps QR API
 
