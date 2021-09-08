@@ -1,7 +1,5 @@
 # Technical newsletter for developers 2021-09
 
-💥 DRAFT! 💥
-
 This newsletter was sent in September 2021.
 
 - [The Vipps QR API](#the-vipps-qr-api)
