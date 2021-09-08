@@ -161,8 +161,7 @@ Version 2.1.0:
 
 An optional parameter for a response is considered a backwards compatible change.
 
-The parameter can be added as part of the request body, as a URL parameter, or
-an HTTP header field.
+The parameter can be added as part of the response body or an HTTP header field.
 
 It is the caller's responsibility to manage the response in a way that
 correctly handles new, optional parameters. This is normally done automatically,
