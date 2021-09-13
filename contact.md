@@ -14,7 +14,7 @@ Hello! We can help!
 - [More than one problem, or a new one?](#more-than-one-problem-or-a-new-one)
 - [Newsletter](#newsletter)
 
-Document version: 2.4.1.
+Document version: 2.4.2.
 
 ## We help with technical issues
 
@@ -67,8 +67,6 @@ If it's not: Please send an email with all relevant information to the address b
 * Please include any other information that may be relevant or possibly helpful.
 
 The Integration email address is: integration@vipps.no
-
-(You can also [use the web interface](https://vippsas.atlassian.net/servicedesk/customer/portal/2))
 
 ## Can I call you?
 
