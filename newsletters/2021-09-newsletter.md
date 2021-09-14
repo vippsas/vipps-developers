@@ -48,7 +48,7 @@ The Vipps Login service has been extended with Client Initiated Backchannel Auth
 (CIBA) flows to support use cases where authentication/registration does not start in a browser or an app.
 
 This could typically be physical contexts like point of sales (POS) solutions, on the
-phone in call center solutions, or devices/terminals like TV boxes.
+phone in call center solutions, or devices/terminals like TV boxes. We currently support initiating logins based on the users phone number. We are also working on supporting the same flows with the user scanning the merchant's QR-code as a starting point. 
 
 More information can be found in [our documentation](https://github.com/vippsas/vipps-login-api/blob/master/vipps-login-api.md#client-initiated-backchannel-authentication-flows-ciba---special-cases-where-login-does-not-start-in-browser-or-app).
 
