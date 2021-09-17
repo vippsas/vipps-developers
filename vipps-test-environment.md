@@ -90,9 +90,10 @@ See [Credit card numbers](https://github.com/vippsas/vipps-developers/tree/maste
 for more details.
 
 ### Email address
-You can add a real email address on a test user from the Profile -> Personal information -> Email section in the app. 
-Plesae note: In MT verification of emails can only be triggered in a Vipps Login flow (if the merchant requests email), or from clicking “send email” from the email address section under profile-page (after updating the email address you will need to close and reopen the app for this option to be available). Just updating the email and storing it will not trigger an email to be sent for verification. The indication on the profile page that the email is not verified can be ignored. 
 
+You can add a real email address on a test user from the `Profile` -> `Personal information` -> `Email` section in the app.
+
+**Plesae note:** In MT verification of emails can only be triggered in a Vipps Login flow (if the merchant requests email), or from clicking “send email” from the email address section under profile-page (after updating the email address you will need to close and reopen the app for this option to be available). Just updating the email and storing it will _not_ trigger an email to be sent for verification. The indication on the profile page that the email is not verified can be ignored. 
 
 ## Test amounts
 
