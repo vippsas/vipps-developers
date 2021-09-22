@@ -11,7 +11,7 @@ If you are using Vipps through an e-commerce platform, integration partner or PS
 * [Partner](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-3)
 * [PSP](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-2)
 
-Document version: 3.2.3.
+Document version: 3.2.4.
 
 ## Table of contents
 
@@ -86,7 +86,7 @@ we require BankID.
 **Please note:** Vipps can not provide API keys in any other way, such as by
 email, as the API keys give access to transferring money.
 Vipps will never ask for your API keys, and you must keep them secret.
-If your developers do not haved BankID, you will need to retrieve the API keys
+If your developers do not have Norwegian BankID, you will need to retrieve the API keys
 for them, and send them to the developers in a secure way.
 Do _not_ send API keys unencrypted by email.
 If you accidentally share your API keys, you must generate new ones on
