@@ -3,7 +3,7 @@
 This repository contains various resources for Vipps developers.
 We recommend starting with [Getting started](vipps-getting-started.md).
 
-Document version: 2.4.7.
+Document version: 2.4.8.
 
 ## Table of contents
 
@@ -31,6 +31,10 @@ The most commonly used APIs:
 * [Vipps Recurring API](https://github.com/vippsas/vipps-recurring-api)
 
 All Vipps APIs are available here: https://github.com/vippsas
+
+The API documentation is frequently improved and increasingly extensive.
+Please use the search functionality in your browser and on GitHub to find
+what you are looking for.
 
 ## Partners
 
@@ -73,15 +77,17 @@ for more information about using Postman.
 ## API Dashboard
 
 All merchants have access to an API Dashboard on
-[portal.vipps.no](https://portal.vipps.no) under the "Utvikler" tab. Keep in mind that the "Utvikler" tab is only available to users with admin or developer roles.
+[portal.vipps.no](https://portal.vipps.no) under the "Utvikler" tab.
+Keep in mind that the "Utvikler" tab is only available to users with admin or developer roles.
 
-It shows information about your API usage, an overview of errors, etc.
+The API Dashboard shows information about your API usage, an overview of errors, etc.
 Here's an example for one endpoint:
 
 ![API Dashboaard](newsletters/images/2021-02-api-dashboard-example.png)
 
-**Please note:** The API dashboard is not real-time, and events might take up to 10 minutes before they appear.
-We strongly recommend that you also monitor your Vipps integration yourself.
+**Please note:** The API dashboard is not real-time, and events might take up to
+10 minutes before they appear. We strongly recommend that you also monitor your
+Vipps integration yourself.
 
 ## Vipps API servers
 
@@ -92,11 +98,12 @@ The test and production environments are separate and require different API cred
 | api.vipps.no        | apitest.vipps.no       |
 
 The servers are world accessible. Vipps only relies on the API keys, and
-no requests to our servers are blocked by IP addresses or similar.
+no requests to our servers are blocked on our side by IP addresses or similar.
 
 **Please note:** Vipps may change the IP addresses for the API servers. To ensure
 that you are whitelisting the correct IP addresses please use these hostnames
 and DNS, and automatically update your firewall rules if there are DNS changes.
+We can not provide the IP addresses in any other way than DNS.
 
 ## Vipps request servers
 
@@ -116,22 +123,28 @@ The disaster recovery environment is as important as the production environment.
 **Please note:** Vipps may change the IP addresses for the request servers. To ensure
 that you are whitelisting the correct IP addresses please use these hostnames
 and DNS, and automatically update your firewall rules if there are DNS changes.
+We can not provide the IP addresses in any other way than DNS.
 
 For API products where Vipps makes requests to your servers, please make sure
 that these request servers are allowed through firewalls, etc.
 
 ## Vipps API Lifecycle
 
-See: [Vipps API Lifecycle](https://github.com/vippsas/vipps-developers/blob/master/vipps-api-lifecycle.md).
+See:
+[Vipps API Lifecycle](https://github.com/vippsas/vipps-developers/blob/master/vipps-api-lifecycle.md).
 
 ## Settlements
 
-See: [Settlements](https://github.com/vippsas/vipps-developers/tree/master/settlements).
+See:
+[Settlements](https://github.com/vippsas/vipps-developers/tree/master/settlements).
 
 ## Vipps design guidelines
 
 Guidelines, logos, buttons, etc is here:
 [vipps-design-guidelines](https://github.com/vippsas/vipps-design-guidelines).
+
+And here:
+[brand.vipps.no](https://brand.vipps.no).
 
 ## Questions?
 

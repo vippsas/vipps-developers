@@ -109,7 +109,7 @@ of requests and the varying complexity of resolving them, we can not guarantee r
 ## Escalation
 
 If you have a KAM (Key Account Manager), please contact her/him.
-If you do not, plese reply to the issue, and add any relevant information.
+If you do not, please reply to the issue, and add any relevant information.
 Please note that everyone thinks that their problem is the most important to solve,
 but that Vipps must sometimes prioritize differently.
 

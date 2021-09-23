@@ -1,6 +1,6 @@
 # The Vipps Test Environment (MT)
 
-Document version: 3.1.1.
+Document version: 3.1.2.
 
 The Merchant Test Environment (MT) is available for all Vipps customers.
 
@@ -61,7 +61,7 @@ but you can create as many as you need.
 
 **Please note:** Sale units in the _production_ environment must follow strict rules
 (regulatory and other), so you may not be able to get the same sale unit configuration
-(like "direct capture") there, even though you have it in the test environment. 
+(like "direct capture") there, even though you have it in the test environment.
 
 ## Test users
 
@@ -93,7 +93,12 @@ for more details.
 
 You can add a real email address on a test user from the `Profile` -> `Personal information` -> `Email` section in the app.
 
-**Plesae note:** In MT verification of emails can only be triggered in a Vipps Login flow (if the merchant requests email), or from clicking “send email” from the email address section under profile-page (after updating the email address you will need to close and reopen the app for this option to be available). Just updating the email and storing it will _not_ trigger an email to be sent for verification. The indication on the profile page that the email is not verified can be ignored. 
+**Plesae note:** In MT verification of emails can only be triggered in a Vipps Login flow (if the merchant requests email), or from clicking “send email” from the email address section under profile-page (after updating the email address you will need to close and reopen the app for this option to be available). Just updating the email and storing it will _not_ trigger an email to be sent for verification. The indication on the profile page that the email is not verified can be ignored.
+
+### Other data
+
+The test user's name, birth date, etc. are randomly generated when the test user
+is created and can not be changed.
 
 ## Test amounts
 
@@ -117,8 +122,7 @@ endpoint does not support this functionality.
 
 ## Vipps test apps
 
-The test apps for iOS and Android are identical to the production apps, but connect to the
-Vipps
+The test apps for iOS and Android are identical to the production apps, but connect to
 [the Vipps test environment (MT)](#the-vipps-test-environment-mt)
 instead of the production environment.
 
@@ -192,4 +196,3 @@ a [pull request](https://github.com/vippsas/vipps-developers/pulls),
 or [contact us](https://github.com/vippsas/vipps-developers/blob/master/contact.md).
 
 Sign up for our [Technical newsletter for developers](https://github.com/vippsas/vipps-developers/tree/master/newsletters).
-
