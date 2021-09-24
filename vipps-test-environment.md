@@ -1,6 +1,6 @@
 # The Vipps Test Environment (MT)
 
-Document version: 3.1.2.
+Document version: 3.1.3.
 
 The Merchant Test Environment (MT) is available for all Vipps customers.
 
@@ -69,13 +69,17 @@ The welcome email that is automatically sent to all new customers contains
 information about your test user for the test environment.
 You can use this test user in the [Vipps test apps](#vipps-test-apps).
 
+You may use the same test user on multiple devices.
+
+If you need more than one test user, please
+[contact us](https://github.com/vippsas/vipps-developers/blob/master/contact.md).
+
 There is no way to get a test user in the production environment.
 The production environment only contains real users and data.
 
 ### Phone number
 
 The test user has everything required to complete a payment.
-You may use the same test user on multiple devices.
 The test user's mobile number works on all phones and on all networks.
 
 **Important:** Do _not_ use the test phone number in the production environment,
@@ -93,7 +97,13 @@ for more details.
 
 You can add a real email address on a test user from the `Profile` -> `Personal information` -> `Email` section in the app.
 
-**Plesae note:** In MT verification of emails can only be triggered in a Vipps Login flow (if the merchant requests email), or from clicking “send email” from the email address section under profile-page (after updating the email address you will need to close and reopen the app for this option to be available). Just updating the email and storing it will _not_ trigger an email to be sent for verification. The indication on the profile page that the email is not verified can be ignored.
+**Plesae note:** In MT verification of emails can only be triggered in a
+Vipps Login flow (if the merchant requests email), or from clicking “send email”
+from the email address section under profile-page (after updating the email
+address you will need to close and reopen the app for this option to be
+available). Just updating the email and storing it will _not_ trigger an email
+to be sent for verification. The indication on the profile page that the email
+is not verified can be ignored.
 
 ### Other data
 
@@ -104,7 +114,7 @@ is created and can not be changed.
 
 Vipps supports using special amounts that are always rejected when approving the payment in the Vipps test app.  
 
-These test amounts currently **only** works with Reserve Capture.
+These test amounts currently **only** works with "reserve capture".
 
 | Amount | Error                     |
 |--------|---------------------------|
