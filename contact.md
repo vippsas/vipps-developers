@@ -14,7 +14,7 @@ Hello! We can help!
 - [More than one problem, or a new one?](#more-than-one-problem-or-a-new-one)
 - [Newsletter](#newsletter)
 
-Document version: 2.4.2.
+Document version: 2.4.3.
 
 ## We help with technical issues
 
@@ -91,7 +91,7 @@ You will get an auto-reply from us with an issue number like `VSD-12345` in the 
 This is the unique number for this specific issue, and is used to connect all communication
 about this issue in our systems.
 
-The auto-reply is sent from a real e-mail address, which you can reply to ✌️
+The auto-reply is sent from a real e-mail address, which you can reply to.
 
 ## Adding additional information
 
@@ -110,8 +110,7 @@ of requests and the varying complexity of resolving them, we can not guarantee r
 
 If you have a KAM (Key Account Manager), please contact her/him.
 If you do not, please reply to the issue, and add any relevant information.
-Please note that everyone thinks that their problem is the most important to solve,
-but that Vipps must sometimes prioritize differently.
+Please note that we understand that your problem is important to you, but that Vipps must sometimes prioritize differently.
 
 ## More than one problem, or a new one?
 
