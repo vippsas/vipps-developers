@@ -13,7 +13,7 @@ GDPR, etc.
 Vipps does not have an API to retrieve settlements files.
 We are aware of the interest for an API, and it is on our roadmap - but no ETA yet.
 
-Document version: 2.1.2.
+Document version: 2.1.3.
 
 ## Settlements
 
@@ -70,6 +70,11 @@ More information about SFTP: [SSH File Transfer Protocol](https://en.wikipedia.o
 2. Click the tab `SFTP Access` to add users for SFTP-access.
 
 3. You can add the public keys of the user(s). We support RSA (minimum 2048-bit), EdDSA and Ed25519 keys in OpenSSH format (and reject DSA keys). After this you should see the newly created user. For help creating SSH keys, the GitHub documentation may be helpful: https://help.github.com/articles/connecting-to-github-with-ssh/
+
+An example of a puiblic SSH key:
+```
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOu1WvDcTWwZumZZwTvfqUKMA4ouG3mniNsvpNWorm5m user@example.com
+```
 
 ![Bruker opprettet](images/02_bruker_opprettet.png "bruker opprettet")
 
