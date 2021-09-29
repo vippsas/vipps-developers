@@ -75,6 +75,7 @@ An example of a puiblic SSH key:
 ```
 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOu1WvDcTWwZumZZwTvfqUKMA4ouG3mniNsvpNWorm5m user@example.com
 ```
+This is how it looks on portal.vips.no:
 
 ![Bruker opprettet](images/02_bruker_opprettet.png "bruker opprettet")
 
