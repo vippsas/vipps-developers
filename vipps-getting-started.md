@@ -11,7 +11,7 @@ If you are using Vipps through an e-commerce platform, integration partner or PS
 * [Partner](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-3)
 * [PSP](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-2)
 
-Document version: 3.2.4.
+Document version: 3.2.5.
 
 ## Table of contents
 
@@ -233,6 +233,8 @@ and passing the `client_id`, `client_secret` and `Ocp-Apim-Subscription-Key`.
 (We _are_ aware that this is a `POST`, without a body, to an endpoint with
 `get` in the URL, and hope to fix it in a later version of the API. Sorry.)
 
+### Request
+
 Request (including the recommended `Vipps-*` HTTP headers):
 
 ```http
@@ -263,6 +265,8 @@ The `client_id`, `client_secret` and `Ocp-Apim-Subscription-Key` are unique per
 phase out the old name completely, but it is not trivial and will take some time.
 You may encounter both in the developer documentation, and the actual header
 name to send is `Ocp-Apim-Subscription-Key`.
+
+### Response
 
 The response from
 [`POST:/accesstoken/get`](https://vippsas.github.io/vipps-ecom-api/#/Authorization_Service/fetchAuthorizationTokenUsingPost)
