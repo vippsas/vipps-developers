@@ -37,11 +37,13 @@ Document version: 3.2.5.
 
 ## Requirements
 
-Merchants need a Norwegian organization number and BankID to apply for Vipps services.
+Merchants need a Norwegian organization number and BankID to apply for Vipps services. 
 
-The fastest way to get a Vipps developer account for the test and production
-environments, is to apply for a product at
-[vipps.no](https://vipps.no/produkter-og-tjenester/bedrift/).
+Before they can order any services, they first need to apply for a Merchant Agreement. This is a legal agreement between the merchant and Vipps. When the merchant agreement has been sent, the merchant can apply for the services they want. 
+
+Everything can be done through [portal.vipps.no](https://portal.vipps.no). For an overview of all products, see [vipps.no](https://vipps.no/produkter-og-tjenester/bedrift/).
+
+As soon as the Merchant Agreement has been approved, and a product order is sent, access to test is created, and details are sent on email to the user who ordered the product. 
 
 ### Foreign companies
 
