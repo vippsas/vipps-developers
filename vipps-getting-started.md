@@ -11,7 +11,7 @@ If you are using Vipps through an e-commerce platform, integration partner or PS
 * [Partner](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-3)
 * [PSP](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-2)
 
-Document version: 3.2.6.
+Document version: 3.2.7.
 
 ## Table of contents
 
@@ -37,7 +37,7 @@ Document version: 3.2.6.
 
 ## Requirements
 
-Merchants need a Norwegian organization number and BankID to apply for Vipps services.
+Merchants need a Norwegian organization number and Norwegian BankID to apply for Vipps services.
 
 The fastest way to get a Vipps developer account for the test and production
 environments, is to apply for a product at
@@ -55,9 +55,9 @@ provider and to receive payments from Vipps users:
 
 Vipps payments can only be made by customers with a Norwegian phone number and
 with a Norwegian national identity number or D-number.
-This is required by the government.
+This is required by the Norwegian government.
 
-A D-number is given to foreign persons who do not have a national identity number,
+A D-number is given to foreign persons who do not have a Norwegian national identity number,
 but have a need for identification for the Norwegian authorities.
 Read more on how to
 [apply for a D-number](https://www.skatteetaten.no/en/person/foreign/norwegian-identification-number/).
@@ -105,7 +105,7 @@ and see who has the right to sign for the company.
   [test environment](https://github.com/vippsas/vipps-developers/blob/master/vipps-test-environment.md):
   Normally available on
   [portal.vipps.no](https://portal.vipps.no)
-  24 hours after we receive the application.
+  a few minutes after we receive the application.
 
 * API keys for the production environment are normally available on
   [portal.vipps.no](https://portal.vipps.no)
@@ -147,6 +147,7 @@ There are both a primary and secondary `Vipps-Subscription-Key`.
 The primary and secondary keys are interchangeable; you can use either one,
 they both work in the same way. Having two active keys enables you to
 regenerate one subscription key, while still using the other key, without downtime.
+If you don't understand what the second key is for, you can just ignore it.
 
 **Please note:** `Vipps-Subscription-Key` was previously called `Ocp-Apim-Subscription-Key`.
 The legacy name `Ocp-Apim-Subscription-Key` _must still be used in requests and code_,
