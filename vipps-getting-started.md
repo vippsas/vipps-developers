@@ -11,7 +11,7 @@ If you are using Vipps through an e-commerce platform, integration partner or PS
 * [Partner](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-3)
 * [PSP](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-2)
 
-Document version: 3.2.5.
+Document version: 3.2.6.
 
 ## Table of contents
 
@@ -25,8 +25,8 @@ Document version: 3.2.5.
   - [API key details](#api-key-details)
   - [API keys for different use](#api-keys-for-different-use)
 - [API products](#api-products)
-- [Vipps-API](#vipps-api)
-- [Legacy API products](#legacy-api-products)
+  - [Vipps-API](#vipps-api)
+  - [Legacy API products](#legacy-api-products)
 - [Quick overview of how to make an API call](#quick-overview-of-how-to-make-an-api-call)
   - [Get an access token](#get-an-access-token)
     - [Request](#request)
