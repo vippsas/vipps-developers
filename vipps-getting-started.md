@@ -39,7 +39,7 @@ Document version: 3.2.8.
 
 Merchants need a Norwegian organization number and Norwegian BankID to apply for Vipps services.
 
-Before they can order any services, they first need to apply for a Merchant Agreement. This is a legal agreement between the merchant and Vipps. When the merchant agreement has been sent, the merchant can apply for the services they want. 
+Before they can order any services, they first need to apply for a Merchant Agreement. This is a legal agreement between the merchant and Vipps. When the Merchant Agreement has been sent, the merchant can apply for the services they want. 
 
 Everything can be done through [portal.vipps.no](https://portal.vipps.no). For an overview of all products, see [vipps.no](https://vipps.no/produkter-og-tjenester/bedrift/).
 
