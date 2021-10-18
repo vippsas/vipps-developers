@@ -1,6 +1,6 @@
 # Vipps Settlements
 
-Document version 2.0.0.
+Document version 2.0.1.
 
 # Frequency
 
@@ -88,6 +88,10 @@ should have contained settlement files will exist.
 so that the balance is negative, Vipps will not create settlement reports.
 Vipps covers the negative balance for a (short) while, but if it persists,
 Vipps will send an invoice to the merchant to settle the balance.
+
+There are no settlement reports for the 
+[test environment](https://github.com/vippsas/vipps-developers/blob/master/vipps-test-environment.md).
+
 
 ### Daily reports
 
