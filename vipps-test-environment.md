@@ -1,6 +1,6 @@
 # The Vipps Test Environment (MT)
 
-Document version: 3.1.4.
+Document version: 3.1.5.
 
 The Merchant Test Environment (MT) is available for all Vipps customers.
 
@@ -71,6 +71,9 @@ information about your test user for the test environment.
 You can use this test user in the [Vipps test apps](#vipps-test-apps).
 
 You may use the same test user on multiple devices.
+
+Test users can are not connected to any merchant, they can be used with any
+merchant and sale unit on the test environment.
 
 If you need more than one test user, please
 [contact us](https://github.com/vippsas/vipps-developers/blob/master/contact.md).
