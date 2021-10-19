@@ -11,7 +11,7 @@ If you are using Vipps through an e-commerce platform, integration partner or PS
 * [Partner](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-3)
 * [PSP](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-2)
 
-Document version: 3.2.8.
+Document version: 3.2.9.
 
 ## Table of contents
 
@@ -254,6 +254,8 @@ Vipps-System-Plugin-Version 4.5.6
 The `client_id`, `client_secret` and `Ocp-Apim-Subscription-Key` are unique per
 `merchantSerialNumber` (MSN, i.e. the number of the sale unit) and can be found on
 [portal.vipps.no](https://portal.vipps.no).
+
+Please note: Partners can use [partner keys](https://github.com/vippsas/vipps-partner/blob/main/README.md#partner-keys).
 
 | Header Name                 | Header Value           | Description                      |
 | --------------------------- | ---------------------- | -------------------------------- |
