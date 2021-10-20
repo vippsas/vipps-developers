@@ -17,12 +17,12 @@
     + [Monthly reports](#monthly-reports)
 - [Questions?](#questions-)
 
-Document version 2.2.2.
+Document version 2.2.4.
 
 # Settlement flow
 
 Settlements are done as quickly as possible, and depend on banks. 
-The current solution is as fast as possible.
+The current solution is as fast as technically possible.
 The settlement flow is as follows:
 
 1. Day 1: A customer makes a purchase and the transaction is completed.
@@ -30,8 +30,8 @@ The settlement flow is as follows:
    product is shipped and the customer's account is charged.
 2. Day 2: Settlement files are distributed, and are available on
    [portal.vipps.no](https://portal.vipps.no).
-3. Day 3 (the next _bank day_) at 16:00: Payments are made from Vipps.
-4. Day 5 (the third _bank day_): The settlement is booked with reference by the bank.
+3. Day 3 (the next _bank day_) at 16:00: Payments are made from Vipps' bank account to the merchant's bank account.
+4. Day 5 (the third _bank day_): The settlement is booked, with reference, by the bank.
 
 A day starts and ends at midnight, Oslo time: Start `00:00:00`, end `23:59:59` (subseconds not specified).
 Please make sure your servers' clocks are correct, e.g. by using [NTP](https://en.wikipedia.org/wiki/Network_Time_Protocol).
@@ -41,8 +41,8 @@ Please make sure your servers' clocks are correct, e.g. by using [NTP](https://e
 Vipps merchants can select daily, weekly or monthly settlement frequency by logging in with BankID on
 [portal.vipps.no](https://portal.vipps.no).
 
-Vipps pays merchants every Monday or every 1. of the month, depending on the merchant preference.
-It then takes 1-3 bank days before the money reaches the merchant settlement account.
+Vipps pays merchants every Monday for weekly settlements,
+and on the 1. of the month for montly settlements.
 
 See [the FAQ](https://www.vipps.no/sporsmal#bedriftspm) for more details.
 
@@ -94,6 +94,10 @@ For recurring payments the `ordreID` is an optional field.
 If `ordreID` is not specified by the merchant when making a charge,
 the settlement report shows the automatically generated `chargeID` in the `orderID` field.
 If `ordreID` is in use, that is also used in the settlement report.
+
+See the 
+[Recurring API](https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api.md#create-a-charge)
+for more details.
 
 ## GDPR
 
