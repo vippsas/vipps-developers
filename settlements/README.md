@@ -1,7 +1,5 @@
 # Vipps Settlements
 
-Document version 2.2.1.
-
 - [Settlement flow](#settlement-flow)
 - [Frequency](#frequency)
 - [Net and gross settlements](#net-and-gross-settlements)
@@ -18,6 +16,8 @@ Document version 2.2.1.
     + [Weekly reports](#weekly-reports)
     + [Monthly reports](#monthly-reports)
 - [Questions?](#questions-)
+
+Document version 2.2.2.
 
 # Settlement flow
 
