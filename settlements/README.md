@@ -2,21 +2,23 @@
 
 Document version 2.1.0.
 
+- [Vipps Settlements](#vipps-settlements)
 - [Frequency](#frequency)
 - [Settlement flow](#settlement-flow)
 - [Net and gross settlements](#net-and-gross-settlements)
 - [Settlement report formats](#settlement-report-formats)
     + [Additional info for recurring payments](#additional-info-for-recurring-payments)
 - [How to get settlement files](#how-to-get-settlement-files)
-  * [Availability](#availability)
+  * [portal.vipps.no](#portalvippsno)
+  * [Email](#email)
+  * [SFTP](#sftp)
+  * [API](#api)
+- [Availability](#availability)
     + [Daily reports](#daily-reports)
     + [Weekly reports](#weekly-reports)
-  * [Monthly reports](#monthly-reports)
+    + [Monthly reports](#monthly-reports)
 - [GDPR](#gdpr)
-- [portal.vipps.no](#portalvippsno)
-- [SFTP report service](#sftp-report-service)
-  * [Formats](#formats)
-  * [Questions?](#questions-)
+- [Questions?](#questions-)
 
 # Frequency
 
@@ -74,6 +76,12 @@ Settlement reports are provided in these formats:
 | PDF    | [PDF](pdf/Vipps-oppgjørsrapport-16655-2018-09-23.pdf) | - |
 | XLSX   | [XLSX](xlsx/vipps-settlement-example.xlsx) | - |
 
+More details:
+* XML: See the [xml](xml/) folder.
+* CSV: See the [csv](csv/) folder.
+* PDF: See the [pdf](pdf/) folder.
+* OCR: Not available. See the [ocr](ocr/) folder.
+
 **Important:** Settlements reports are available both with and without personal details of the customer.
 This is due to [GDPR](https://ec.europa.eu/info/law/law-topic/data-protection_en), and whether
 the data processor is Vipps or the merchant. See [GDPR](#gdpr) below.
@@ -93,15 +101,37 @@ If `ordreID` is in use, we replace the `chargeID` value, with `orderID`.
 
 # How to get settlement files
 
+## portal.vipps.no
+
+Customers can log in to [portal.vipps.no](https://portal.vipps.no), choose "Rapporter" and download reports
+in the formats mentioned above. Reports with personal details of the customers are also available.
+
+## Email
+
 Merchants can log in on
 [portal.vipps.no](https://portal.vipps.no)
 and specify email addresses that Vipps will send settlement reports to.
 
-Merchant can use the [SFTP report service](#sftp-report-service).
+## SFTP
+
+The SFTP report service is used for downloading settlement reports.
+SFTP-users are created, associated with a public key, and given access to the
+reports of one or more merchants.
+The reports are generated dynamically upon request.
+
+See [Availability](#availability) for information about when the files
+and directories are available.
+
+These reports do not contain personal details of the customers.
+See "GDPR" above.
+
+Details: See the [sftp-report-service](sftp-report-service/) folder.
+
+## API
 
 There is no API for retrieving settlement data.
 
-## Availability
+# Availability
 
 Settlement reports are available by 12:00 noon. The reports are generated around
 01-03 at night, but may be delayed due to technical changes, maintenance in
@@ -128,7 +158,7 @@ The settlement reports are available by 12:00 noon.
 
 The settlement report is generated on Mondays, by 12:00 noon.
 
-## Monthly reports
+### Monthly reports
 
 The settlement report is generated on the 1st of the month, by 12:00 noon.
 
@@ -143,34 +173,7 @@ The Norwegian text from [portal.vipps.no](https://portal.vipps.no):
 
 _Velger du å laste ned rapporter med personinformasjon blir bedriften din selvstendig behandlingsansvarlig for personinformasjonen som lastes ned. Dette betyr at bedriften din er selv ansvarlig for å sikre etterlevelse av peronvernreglene. For mer informasjon, vennligst se Vipps [vilkår](https://www.vipps.no/vilkar/) for bruk._
 
-# portal.vipps.no
-
-Customers can log in to [portal.vipps.no](https://portal.vipps.no), choose "Rapporter" and download reports
-in the formats mentioned above. Reports with personal details of the customers are also available.
-
-# SFTP report service
-
-The SFTP report service is used for downloading settlement reports.
-SFTP-users are created, associated with a public key, and given access to the
-reports of one or more merchants.
-The reports are generated dynamically upon request.
-
-See [Availability](#availability) for information about when the files
-and directories are available.
-
-These reports do not contain personal details of the customers.
-See "GDPR" above.
-
-Details: See the [sftp-report-service](sftp-report-service/) folder.
-
-## Formats
-
-* XML: See the [xml](xml/) folder.
-* CSV: See the [csv](csv/) folder.
-* PDF: See the [pdf](pdf/) folder.
-* OCR: Not available. See the [ocr](ocr/) folder.
-
-## Questions?
+# Questions?
 
 We're always happy to help with code or other questions you might have!
 
