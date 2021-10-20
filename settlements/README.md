@@ -1,6 +1,6 @@
 # Vipps Settlements
 
-Document version 2.2.0.
+Document version 2.2.1.
 
 - [Settlement flow](#settlement-flow)
 - [Frequency](#frequency)
@@ -21,7 +21,9 @@ Document version 2.2.0.
 
 # Settlement flow
 
-Settlements are done as quickly as possible, and depends on banks. The settlement flow is as follows:
+Settlements are done as quickly as possible, and depend on banks. 
+The current solution is as fast as possible.
+The settlement flow is as follows:
 
 1. Day 1: A customer makes a purchase and the transaction is completed.
    If the purchased product is shipped later, the "day 1" is the day the
