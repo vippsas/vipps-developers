@@ -1,6 +1,22 @@
 # Vipps Settlements
 
-Document version 2.0.1.
+Document version 2.1.0.
+
+- [Frequency](#frequency)
+- [Settlement flow](#settlement-flow)
+- [Net and gross settlements](#net-and-gross-settlements)
+- [Settlement report formats](#settlement-report-formats)
+    + [Additional info for recurring payments](#additional-info-for-recurring-payments)
+- [How to get settlement files](#how-to-get-settlement-files)
+  * [Availability](#availability)
+    + [Daily reports](#daily-reports)
+    + [Weekly reports](#weekly-reports)
+  * [Monthly reports](#monthly-reports)
+- [GDPR](#gdpr)
+- [portal.vipps.no](#portalvippsno)
+- [SFTP report service](#sftp-report-service)
+  * [Formats](#formats)
+  * [Questions?](#questions-)
 
 # Frequency
 
@@ -70,9 +86,20 @@ If you need an `orderId` to identify a payment, you need to use
 See also the Vipps eCom API.
 
 ### Additional info for recurring payments
+
 For recurring payments the `ordreID` is an optional field.
 If `ordreID` is not sent, the settlement report shows `chargeID` in the `orderID` field.
 If `ordreID` is in use, we replace the `chargeID` value, with `orderID`.
+
+# How to get settlement files
+
+Merchants can log in on
+[portal.vipps.no](https://portal.vipps.no)
+and specify email addresses that Vipps will send settlement reports to.
+
+Merchant can use the [SFTP report service](#sftp-report-service).
+
+There is no API for retrieving settlement data.
 
 ## Availability
 
