@@ -1,13 +1,13 @@
 # Vipps Settlements
 
-Document version 2.1.0.
+Document version 2.1.1.
 
-- [Vipps Settlements](#vipps-settlements)
-- [Frequency](#frequency)
 - [Settlement flow](#settlement-flow)
+- [Frequency](#frequency)
 - [Net and gross settlements](#net-and-gross-settlements)
 - [Settlement report formats](#settlement-report-formats)
-    + [Additional info for recurring payments](#additional-info-for-recurring-payments)
+  * [Additional info for recurring payments](#additional-info-for-recurring-payments)
+  * [GDPR](#gdpr)
 - [How to get settlement files](#how-to-get-settlement-files)
   * [portal.vipps.no](#portalvippsno)
   * [Email](#email)
@@ -17,16 +17,7 @@ Document version 2.1.0.
     + [Daily reports](#daily-reports)
     + [Weekly reports](#weekly-reports)
     + [Monthly reports](#monthly-reports)
-- [GDPR](#gdpr)
 - [Questions?](#questions-)
-
-# Frequency
-
-Vipps merchants can select daily, weekly or monthly settlement frequency by logging in with BankID on
-[portal.vipps.no](https://portal.vipps.no).
-
-Vipps pays merchants every Monday or every 1. of the month, depending on the merchant preference.
-It then takes 1-3 bank days before the money reaches the merchant settlement account.
 
 # Settlement flow
 
@@ -46,6 +37,15 @@ Please make sure your servers' clocks are correct, e.g. by using [NTP](https://e
 A Vipps merchant normally receives daily settlements.
 This can be changed to weekly, monthly settlements.
 See [the FAQ](https://www.vipps.no/sporsmal#bedriftspm) for more details.
+
+# Frequency
+
+Vipps merchants can select daily, weekly or monthly settlement frequency by logging in with BankID on
+[portal.vipps.no](https://portal.vipps.no).
+
+Vipps pays merchants every Monday or every 1. of the month, depending on the merchant preference.
+It then takes 1-3 bank days before the money reaches the merchant settlement account.
+
 
 # Net and gross settlements
 
@@ -82,10 +82,6 @@ More details:
 * PDF: See the [pdf](pdf/) folder.
 * OCR: Not available. See the [ocr](ocr/) folder.
 
-**Important:** Settlements reports are available both with and without personal details of the customer.
-This is due to [GDPR](https://ec.europa.eu/info/law/law-topic/data-protection_en), and whether
-the data processor is Vipps or the merchant. See [GDPR](#gdpr) below.
-
 Payments made with
 [Vippsnummer](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-i-butikk/ta-betalt-med-vipps/)
 do not have an `orderId`.
@@ -93,11 +89,28 @@ If you need an `orderId` to identify a payment, you need to use
 [Vipps på nett](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/).
 See also the Vipps eCom API.
 
-### Additional info for recurring payments
+## Additional info for recurring payments
 
 For recurring payments the `ordreID` is an optional field.
 If `ordreID` is not sent, the settlement report shows `chargeID` in the `orderID` field.
 If `ordreID` is in use, we replace the `chargeID` value, with `orderID`.
+
+## GDPR
+
+**Important:** Settlements reports are available both with and without personal details of the customer.
+This is due to [GDPR](https://ec.europa.eu/info/law/law-topic/data-protection_en), and whether
+the data processor is Vipps or the merchant.
+
+The settlement reports available by
+[SFTP](#sftp)
+do not contain detailed information about the
+transactions. Reports containing personal information requires a data processor agreement.
+Due to this, reports with personal information can only be downloaded by logging in with
+BankID on [portal.vipps.no](https://portal.vipps.no) and accepting the terms there.
+
+The Norwegian text from [portal.vipps.no](https://portal.vipps.no):
+
+_Velger du å laste ned rapporter med personinformasjon blir bedriften din selvstendig behandlingsansvarlig for personinformasjonen som lastes ned. Dette betyr at bedriften din er selv ansvarlig for å sikre etterlevelse av peronvernreglene. For mer informasjon, vennligst se Vipps [vilkår](https://www.vipps.no/vilkar/) for bruk._
 
 # How to get settlement files
 
@@ -161,17 +174,6 @@ The settlement report is generated on Mondays, by 12:00 noon.
 ### Monthly reports
 
 The settlement report is generated on the 1st of the month, by 12:00 noon.
-
-# GDPR
-
-The settlement reports available by SFTP (see below) do not contain detailed information about the
-transactions. Reports containing personal information requires a data processor agreement.
-Due to this, reports with personal information can only be downloaded by logging in with
-BankID on [portal.vipps.no](https://portal.vipps.no) and accepting the terms there.
-
-The Norwegian text from [portal.vipps.no](https://portal.vipps.no):
-
-_Velger du å laste ned rapporter med personinformasjon blir bedriften din selvstendig behandlingsansvarlig for personinformasjonen som lastes ned. Dette betyr at bedriften din er selv ansvarlig for å sikre etterlevelse av peronvernreglene. For mer informasjon, vennligst se Vipps [vilkår](https://www.vipps.no/vilkar/) for bruk._
 
 # Questions?
 
