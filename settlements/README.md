@@ -17,11 +17,11 @@
     + [Monthly reports](#monthly-reports)
 - [Questions?](#questions-)
 
-Document version 2.2.4.
+Document version 2.2.5.
 
 # Settlement flow
 
-Settlements are done as quickly as possible, and depend on banks. 
+Settlements are done as quickly as possible, and depend on banks.
 The current solution is as fast as technically possible.
 The settlement flow is as follows:
 
@@ -95,7 +95,7 @@ If `ordreID` is not specified by the merchant when making a charge,
 the settlement report shows the automatically generated `chargeID` in the `orderID` field.
 If `ordreID` is in use, that is also used in the settlement report.
 
-See the 
+See the
 [Recurring API](https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api.md#create-a-charge)
 for more details.
 
@@ -121,7 +121,7 @@ transactions, as the API can not obtain the data processor agreement.
 ## portal.vipps.no
 
 Customers can log in to [portal.vipps.no](https://portal.vipps.no), choose "Rapporter" and download reports
-in the formats mentioned above. 
+in the formats mentioned above.
 
 Reports with personal details of the customers are also available, see
 [GDPR](#gdpr).
@@ -156,8 +156,15 @@ There is no API for retrieving settlement data.
 
 # Availability
 
+Settlements are created every day, but only as long as the balance is positive.
+
+In other words, if the balance for a day is zero (e.g. due to lack of
+transaction) or negative (e.g. due to refunds), a settlement will not be created
+until the balance becomes positive. This means that a settlement report may in
+some cases include transactions spanning several days back in time.
+
 Settlement reports are available by 12:00 noon. The reports are generated around
-01-03 at night, but may be delayed due to technical changes, maintenance in
+01:00-03:00 at night, but may be delayed due to technical changes, maintenance in
 various systems, etc.
 
 **Please note:** There will be no settlement reports for dates without completed
@@ -169,7 +176,7 @@ so that the balance is negative, Vipps will not create settlement reports.
 Vipps covers the negative balance for a (short) while, but if it persists,
 Vipps will send an invoice to the merchant to settle the balance.
 
-There are no settlement reports for the 
+There are no settlement reports for the
 [test environment](https://github.com/vippsas/vipps-developers/blob/master/vipps-test-environment.md).
 
 

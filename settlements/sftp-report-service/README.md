@@ -4,32 +4,29 @@ This service allows for retrieval of settlement files with SFTP.
 
 SFTP can be used manually (interactively), or automatically/programmatically
 by using SFTP as part of an integration.
-Vipps can not help with SFTP basics, but recommend this for an overview: https://www.ssh.com/ssh/sftp/
 
-See [the general information about settlements and reports](../) for information
-about the report formats, availability of personal information about customers,
-GDPR, etc.
+See
+[Settlements](https://github.com/vippsas/vipps-developers/tree/master/settlements)
+for more information about settlements.
 
-Vipps does not have an API to retrieve settlements files.
-We are aware of the interest for an API, and it is on our roadmap - but no ETA yet.
+- [Reports](#reports)
+  * [Availability](#availability)
+- [SFTP Service](#sftp-service)
+  * [Security](#security)
+  * [SFTP users](#sftp-users)
+  * [How to set up users for connecting to the SFTP service](#how-to-set-up-users-for-connecting-to-the-sftp-service)
+  * [Connecting to the SFTP server](#connecting-to-the-sftp-server)
+  * [Directory structure](#directory-structure)
+- [How to use it](#how-to-use-it)
+  * [Example SFTP session](#example-sftp-session)
+- [Questions?](#questions-)
 
-Document version: 2.1.4.
+Document version: 3.0.0.
 
-## Settlements
+# Reports
 
-Settlements are created every day, but only as long as the balance is positive.
-In other words, if the balance for a day is zero (e.g. due to lack of
-transaction) or negative (e.g. due to refunds), a settlement will not be created
-until the balance becomes positive. This means that a settlement report may in
-some cases include transactions spanning several days back in time.
-
-## Reports
-
-Settlement reports should be available by 12:00 on the day after the
-transactions were made, as long as a settlement were created (i.e. the balance
-was positive).
-
-Each merchant (organization number) has its own settlement reports.
+Each MSN (Merchant Serial Number, the unique id of a sale unit) merchant has
+its own settlement reports.
 It is not possible to aggregate reports from multiple sale units into one report.
 
 There will never be more than one new file per sales unit each
@@ -45,41 +42,75 @@ Please see
 [Availability](https://github.com/vippsas/vipps-developers/tree/master/settlements#availability)
 for details.
 
-## SFTP Service
+## Availability
 
-The SFTP report service is used for downloading settlement reports in the following formats:
+Settlements are created every day, but only as long as the balance is positive.
 
-* [XML](../xml/)
-* [CSV](../csv/)
-* [PDF](../pdf/)
-* [Excel](../xslx) (.xslx)
+See [Availability](https://github.com/vippsas/vipps-developers/tree/master/settlements#availability)
+for more details.
 
-SFTP-users are created, associated with a public key, and given access to the reports of
-one or more merchants.
+# SFTP Service
 
-It possible to use the same SSH key for multiple merchants.
+Vipps can not help with SFTP basics, but recommend this for an overview: https://www.ssh.com/ssh/sftp/
 
-More information about SFTP: [SSH File Transfer Protocol](https://en.wikipedia.org/wiki/SSH_File_Transfer_Protocol).
+The SFTP report service is used for downloading settlement reports in
+[several formats](https://github.com/vippsas/vipps-developers/tree/master/settlements#settlement-report-formats).
 
-### How to set up users for connecting to the SFTP server
+## Security
 
-1. Login to https://portal.vipps.no and click `Utvikler` in the menu.
+SFTP (SSH File Transfer Protocol) is a network protocol that provides
+(among other things) file transfer and file management over any reliable data stream.
+SFTP is based on SSH.
+SSH (Secure Shell) is a cryptographic network protocol for operating network
+services securely over an unsecured network.
+
+For Vipps' SFTP service the public SSH key must be added by logging in with BankID on
+[portal.vipps.no](https://portal.vipps.no).
+
+More information about SFTP:
+[SSH File Transfer Protocol](https://en.wikipedia.org/wiki/SSH_File_Transfer_Protocol).
+
+## SFTP users
+
+SFTP users are created, associated with a public SSH key, and given access to the reports of
+one or more MSNs (Merchant Serial Numbers, typically "sale units").
+
+It possible to use the same public SSH key for multiple MSNs.
+
+Partners may provide all their merchants with a common public SSH key
+that the merchants can use to give the partner access their settlements.
+
+One merchant may have multiple MSNs, and give several partners access to
+one or more of them independently.
+
+## How to set up users for connecting to the SFTP service
+
+All merchants can set up SFTP:
+
+1. Log in with BankID on
+  [portal.vipps.no](https://portal.vipps.no)
+  and select `Utvikler` in the menu.
 
 ![Velg profil](images/01_velg_profil.png "Velg profil")
 
-2. Click the tab `SFTP Access` to add users for SFTP-access.
+2. Click the tab `SFTP Access` to add users for SFTP access.
 
-3. You can add the public keys of the user(s). We support RSA (minimum 2048-bit), EdDSA and Ed25519 keys in OpenSSH format (and reject DSA keys). After this you should see the newly created user. For help creating SSH keys, the GitHub documentation may be helpful: https://help.github.com/articles/connecting-to-github-with-ssh/
+3. You can add the public keys of the user(s).
+   We support RSA (minimum 2048-bit),
+   EdDSA and Ed25519 keys in OpenSSH format (and reject DSA keys).
+   After this you should see the newly created user.
+   For help creating SSH keys, the GitHub documentation may be helpful:
+   https://help.github.com/articles/connecting-to-github-with-ssh/
 
 An example of a public SSH key:
 ```
 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOu1WvDcTWwZumZZwTvfqUKMA4ouG3mniNsvpNWorm5m user@example.com
 ```
-This is how it looks on portal.vips.no:
+This is what it looks like on portal.vips.no:
 
 ![Bruker opprettet](images/02_bruker_opprettet.png "bruker opprettet")
 
-**Please note:** Vipps can not add the SFTP key for you.
+**Please note:** Vipps can not add the SSH key for you.
 If you do not have BankID, or you do not have the required permissions
 to add the SSH key, you will need the administrator to do it for you, or
 to update your permissions on
@@ -90,15 +121,21 @@ If you don't know who the administrator is, you can check
 [Brønnøysundregistrene](https://www.brreg.no)
 and see who has the right to sign for the company.
 
-### Connecting to the SFTP server
+## Connecting to the SFTP server
 
 This is a standard SFTP service, and the address of the SFTP server is `sftp.vipps.no`.
+
 When connecting to the SFTP server you need to supply the username you created.
 In the picture above this is "hakon".
 
-Vipps can not help with SFTP basics, but recommend this for an overview: https://www.ssh.com/ssh/sftp/
+Vipps can not help with SFTP basics, but recommend this for an overview:
+https://www.ssh.com/ssh/sftp/
 
-**Please note:** Vipps may change the IP addresses of `sftp.vipps.no`. To ensure that you are whitelisting the correct IP addresses please use the hostname and DNS, and automatically update your firewall rules if there are DNS changes.
+**Please note:** Vipps may change the IP addresses of `sftp.vipps.no`.
+To ensure that you are whitelisting the correct IP addresses please use the
+hostname and DNS, and automatically update your firewall rules if there are DNS changes.
+
+## Directory structure
 
 This is the directory structure:
 ```
@@ -117,24 +154,27 @@ Example files, with full path:
 /settlements/archive/csv/998724341/16655/16655-2000001.csv
 ```
 
-### How to use it
+# How to use it
 
 Reports under `/settlements/inbox` can be "deleted" (actually hidden)
-in order to keep track of already processed reports.
+with the SFTP client in order to keep track of already processed reports.
 
-Reports are deleted by using the `rm` command in SFTP or the delete function in your SFTP interface.
+Reports are deleted by using the `rm` command in SFTP or the "delete" function
+in your SFTP interface.
 
 Reports under `/settlements/archive` cannot be removed.
 
-**Important:** The reports are generated on-demand. Some SFTP clients
-check the file size with a `ls` command. Since the files have not yet
-been created, the file size is reported as zero.
+**Important:** The reports are generated on-demand.
+There are no real files on the server, all data is generated dynamically.
+Some SFTP clients check the file size with a `ls` command.
+Since the files have not yet been created, the file size is reported as zero.
 The service can not provide correct size information.
 It is therefore not possible to check the size of a file with `ls`.
 
-#### Example SFTP session
+## Example SFTP session
 
-Below is an example of an SFTP session, with line breaks added for readability.
+Below is an example of an SFTP session, using the command-line,
+with line breaks added for readability.
 
 ```
 $ sftp sftp.vipps.no
@@ -180,7 +220,7 @@ sftp> !ls -1
 sftp> quit
 ```
 
-## Questions?
+# Questions?
 
 We're always happy to help with code or other questions you might have!
 Please create an [issue](https://github.com/vippsas/vipps-developers/issues),
