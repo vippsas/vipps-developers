@@ -247,7 +247,7 @@ and passing the `client_id`, `client_secret` and `Ocp-Apim-Subscription-Key`.
 
 Request (including the recommended `Vipps-*` HTTP headers):
 
-```http
+```
 POST https://apitest.vipps.no/accesstoken/get
 client_id: fb492b5e-7907-4d83-ba20-c7fb60ca35de
 client_secret: Y8Kteew6GE2ZmeycEt6egg==
@@ -322,7 +322,7 @@ After obtaining the access token (JWT), it is then used for the "real" calls
 to the Vipps API, with the `Bearer` keyword (it is case sensitive).
 Here is an example of HTTP headers, with the recommended `Vipps-*` HTTP headers:
 
-```http
+```
 Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1Ni <snip>
 Ocp-Apim-Subscription-Key: 0f14ebcab0ec4b29ae0cb90d91b4a84a
 Vipps-System-Name: Acme Enterprises Ecommerce DeLuxe
