@@ -17,12 +17,13 @@
     + [Monthly reports](#monthly-reports)
 - [Questions?](#questions-)
 
-Document version 2.2.5.
+Document version 2.2.6.
 
 # Settlement flow
 
 Settlements are done as quickly as possible, and depend on banks.
 The current solution is as fast as technically possible.
+
 The settlement flow is as follows:
 
 1. Day 1: A customer makes a purchase and the transaction is completed.
@@ -38,11 +39,12 @@ Please make sure your servers' clocks are correct, e.g. by using [NTP](https://e
 
 # Frequency
 
-Vipps merchants can select daily, weekly or monthly settlement frequency by logging in with BankID on
-[portal.vipps.no](https://portal.vipps.no).
+Vipps merchants can log in on
+[portal.vipps.no](https://portal.vipps.no)
+and select daily, weekly or monthly settlement frequency.
 
 Vipps pays merchants every Monday for weekly settlements,
-and on the 1. of the month for montly settlements.
+and on the first day of the month for montly settlements.
 
 See [the FAQ](https://www.vipps.no/sporsmal#bedriftspm) for more details.
 
@@ -61,7 +63,7 @@ Vipps sends invoices as EHF. If not, the invoices are sent by email.
 To change invoice recipient, please
 [contact customer service](https://vipps.no/kontakt-oss/bedrift/vipps/).
 
-See [Availability](#availability) below for information about settlement files
+See [Availability](#availability) for information about settlement files
 when the balance is negative.
 
 # Settlement report formats
@@ -114,7 +116,7 @@ The Norwegian text from [portal.vipps.no](https://portal.vipps.no):
 _Velger du å laste ned rapporter med personinformasjon blir bedriften din selvstendig behandlingsansvarlig for personinformasjonen som lastes ned. Dette betyr at bedriften din er selv ansvarlig for å sikre etterlevelse av peronvernreglene. For mer informasjon, vennligst se Vipps [vilkår](https://www.vipps.no/vilkar/) for bruk._
 
 The settlement reports available by [SFTP](#sftp) do not contain detailed information about the
-transactions, as the API can not obtain the data processor agreement.
+transactions, as the SFTP service can not obtain the data processor agreement in a legally binding manner.
 
 # How to get settlement files
 
