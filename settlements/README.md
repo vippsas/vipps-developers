@@ -17,7 +17,7 @@
     + [Monthly reports](#monthly-reports)
 - [Questions?](#questions-)
 
-Document version 2.2.6.
+Document version 2.2.7.
 
 # Settlement flow
 
@@ -155,6 +155,7 @@ Details: See the [sftp-report-service](sftp-report-service/) folder.
 ## API
 
 There is no API for retrieving settlement data.
+[SFTP](#sftp) is the closest alternative.
 
 # Availability
 
