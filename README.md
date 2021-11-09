@@ -3,8 +3,6 @@
 This repository contains various resources for Vipps developers.
 We recommend starting with [Getting started](vipps-getting-started.md).
 
-Document version: 2.4.8.
-
 ## Table of contents
 
 - [API documentation](#api-documentation)
@@ -20,6 +18,8 @@ Document version: 2.4.8.
 - [Settlements](#settlements)
 - [Vipps design guidelines](#vipps-design-guidelines)
 - [Questions?](#questions)
+
+Document version: 2.4.9.
 
 ## API documentation
 
