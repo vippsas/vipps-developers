@@ -158,7 +158,7 @@ with details.
 ### Limitations of the test apps
 
 * Push alerts may be unstable. To see payment requests: Open Vipps and manually
-  go to the "Betalinger" (in English: "Payments") at the bottom of the main screen.
+  go to "Betalinger" (in English: "Payments") at the bottom of the main screen.
 
 ### iOS
 
