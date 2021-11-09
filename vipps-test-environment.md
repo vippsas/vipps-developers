@@ -16,11 +16,20 @@ The Merchant Test Environment (MT) is available for all Vipps customers.
   * [iOS](#ios)
   * [Android](#android)
 
-Document version: 3.1.6.
+Document version: 3.1.7.
 
 ## About the test environment
 
-The environment is suitable for testing _most_ of the Vipps functionality, but some
+All Vipps customers with access to
+[Vipps På Nett](https://www.vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/),
+[Vipps Faste Betalinger](https://www.vipps.no/produkter-og-tjenester/bedrift/faste-betalinger/faste-betalinger/)
+and
+[Vipps Logg Inn](https://www.vipps.no/produkter-og-tjenester/bedrift/logg-inn-med-vipps/logg-inn-med-vipps/)
+have access to the test environment. See
+[Getting started](https://github.com/vippsas/vipps-developers/blob/master/vipps-getting-started.md)
+for more information.
+
+The test environment is suitable for testing _most_ of the Vipps functionality, but some
 functionality in the production environment is not available in MT.
 In general, MT does not contain functionality that requires integration with
 third parties.
