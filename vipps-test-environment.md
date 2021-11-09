@@ -1,7 +1,5 @@
 # The Vipps Test Environment (MT)
 
-Document version: 3.1.5.
-
 The Merchant Test Environment (MT) is available for all Vipps customers.
 
 ## Table of contents
@@ -17,6 +15,8 @@ The Merchant Test Environment (MT) is available for all Vipps customers.
   * [Limitations of the test apps](#limitations-of-the-test-apps)
   * [iOS](#ios)
   * [Android](#android)
+
+Document version: 3.1.6.
 
 ## About the test environment
 
