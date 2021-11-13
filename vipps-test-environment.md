@@ -52,7 +52,6 @@ Other differences between Prod and MT:
 
 * There is no equivalent to [portal.vipps.no](https://portal.vipps.no) for the test environment.
   Payments must be checked with the API, as there is no web interface.
-* There is no API Dashboard for the test environment.
 * We allow 10,000 incorrect PIN attempts before locking the Vipps user's account
 * There are no settlement reports or SFTP service.
 
