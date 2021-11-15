@@ -1,6 +1,6 @@
 # Vipps API Lifecycle
 
-Document version: 1.0.0.
+Document version: 1.0.1.
 
 # Table of Contents
 
@@ -32,7 +32,6 @@ Document version: 1.0.0.
   * [Adding a new required parameter](#adding-a-new-required-parameter)
   * [Changing an endpoints URL](#changing-an-endpoints-url)
 - [Questions?](#questions-)
-
 
 # Versioning
 
@@ -76,6 +75,7 @@ small bug so the API works as intended and documented in the first place.
 # Notice of deprecation
 
 Vipps will inform about upcoming deprecation of an API as early as possible.
+
 The minimum time from Vipps informs about an API's deprecation until the actual
 deprecation is specified in the contract. This is usually four (4) months, and
 we will soon change this to six (6) months as standard, in new contracts.
@@ -91,11 +91,13 @@ Vipps will inform the main contact.
 ### Mailing list
 
 Vipps will send information to
-[the technical newsletter for developers](https://github.com/vippsas/vipps-developers/tree/master/newsletters).
+[the technical newsletter for developers](https://github.com/vippsas/vipps-developers/tree/master/newsletters)
+as soon as there is a decision to deprecate an API.
 
 ### Key accounts
 
-Customers with a key account manager will (in addition to the above) be contacted personally.
+Customers with a key account manager (KAM) will, in addition to the above,
+be contacted personally by the KAM.
 
 ### Make sure Vipps has the correct contact information
 
@@ -118,9 +120,13 @@ like this:
 * Minor version: A new section, new flowcharts, or another significant change.
 * Patch version: Text changes, typos, small fixes.
 
+See
+[Versioning](#versioning)
+for more details.
+
 # Backwards compatibility
 
-Vipps strives to improves existing APIs while also maintaining backwards compatibility.
+Vipps strives to improve existing APIs while also maintaining backwards compatibility.
 
 Vipps considers the following changes to be backwards compatible:
 
@@ -128,7 +134,8 @@ Vipps considers the following changes to be backwards compatible:
 
 An optional parameter for a request is considered a backwards compatible change.
 The caller may choose to send the new, optional parameter, but there is no
-obligation to do so.
+obligation to do so. There is no change in the API's functionality if the
+new, optional parameter is omitted.
 
 The parameter can be added as part of the request body, as a URL parameter, or
 an HTTP header field.
@@ -139,7 +146,7 @@ the API will never offer less than before the optional parameter was added.
 ### Example
 
 Vipps may add a `msisdn` field to support international phone numbers,
-in addition to Norwegian phone numbers:
+in addition to Norwegian-only phone numbers:
 
 Version 2.0.0:
 
@@ -169,7 +176,7 @@ but we want to explicitly mention this.
 
 ### Example
 
-Vipps may add an `addressType` field to the `address` object:
+Vipps may add an `type` field to the `address` object:
 
 Version 2.0.0:
 
@@ -190,7 +197,7 @@ Version 2.1.0:
   "city": "Oslo",
   "postCode": "0154",
   "country": "Norway",
-  "addressType": "business"
+  "type": "business"
   }
 ```  
 
@@ -216,6 +223,11 @@ an HTTP header field.
 
 Response parsing must be robust.
 
+## Correcting faulty functionality in edge cases
+
+If the API has offered unintended, undocumented functionality, we consider it a
+backwards compatible change to correct it.
+
 # Breaking changes
 
 Changes that are incompatible with previous versions of an API requires
@@ -228,7 +240,7 @@ from `v2` to `v3`.
 
 A change in the format for `country` from the full name of the country
 (`Norway`) to ISO 3166 (`NO`) is considered a breaking change, as
-it requires a change in code.
+it requires a change in code that uses the API.
 
 Version 2.0.0:
 
