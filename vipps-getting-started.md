@@ -7,13 +7,15 @@ This guide is for the following APIs:
 * [Vipps QR API](https://github.com/vippsas/vipps-qr-api )
 * [Vipps Order Management API](https://github.com/vippsas/vipps-order-management-api)
 
-If you are using Vipps through an e-commerce platform, integration partner or PSP, please see the respective resources:
+Please note that API keys are _not_ available for
+[Vippsnummer](https://www.vipps.no/produkter-og-tjenester/bedrift/ta-betalt-i-butikk/ta-betalt-med-vipps/).
 
+If you are using Vipps through an e-commerce platform, integration partner or PSP, please see the respective resources:
 * [E-commerce platform](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-1)
 * [Partner](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-3)
 * [PSP](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-2)
 
-Document version: 3.2.16.
+Document version: 3.2.17.
 
 ## Table of contents
 
@@ -76,7 +78,10 @@ When the application has been processed you will receive an email, and the
 API keys can be retrieved by logging in with BankID on
 [portal.vipps.no](https://portal.vipps.no).
 
-If you have questions about your customer relationship, or an application, please
+If you have questions about your application, please check the status on
+[portal.vipps.no](https://portal.vipps.no).
+
+If you have questions about your customer relationship, please
 [contact customer service](https://www.vipps.no/kontakt-oss/bedrift/).
 
 **Please note:** If you plan to use Vipps through a PSP, you will have to
@@ -123,19 +128,6 @@ grant you developer access for the sales unit you need access to.
 * API keys for the production environment are normally available on
   [portal.vipps.no](https://portal.vipps.no)
   after a few days, depending on the workload and whether we need additional information.
-
-Please note that API keys are _not_ available for
-[Vippsnummer](https://www.vipps.no/produkter-og-tjenester/bedrift/ta-betalt-i-butikk/ta-betalt-med-vipps/).
-You may need to order
-[Vipps På Nett](https://www.vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/),
-[Vipps Faste Betalinger](https://www.vipps.no/produkter-og-tjenester/bedrift/faste-betalinger/faste-betalinger/)
-or
-[Vipps Logg Inn](https://www.vipps.no/produkter-og-tjenester/bedrift/logg-inn-med-vipps/logg-inn-med-vipps/).
-See
-[Vipps products](https://vipps.no/produkter-og-tjenester/bedrift/)
-for an overview of all Vipps products, and
-also the
-[Vipps plugins](https://github.com/vippsas/vipps-plugins).
 
 ### List of sale units
 
