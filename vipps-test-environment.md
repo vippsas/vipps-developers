@@ -16,7 +16,7 @@ The Merchant Test Environment (MT) is available for all Vipps customers.
   * [iOS](#ios)
   * [Android](#android)
 
-Document version: 3.1.7.
+Document version: 3.1.8.
 
 ## About the test environment
 
@@ -56,6 +56,18 @@ Other differences between Prod and MT:
 * There are no settlement reports or SFTP service.
 
 ## Test merchants
+
+Sale unit sin the test environment has access to these APIs:
+* [Vipps Access Token API](https://github.com/vippsas/vipps-developers/blob/master/vipps-getting-started.md#get-an-access-token)
+* [Vipps eCom API](https://github.com/vippsas/vipps-ecom-api)
+* [Vipps Recurring API](https://github.com/vippsas/vipps-recurring-api)
+* [Vipps Login API](https://github.com/vippsas/vipps-login-api)
+* [Vipps QR API](https://github.com/vippsas/vipps-qr-api )
+* [Vipps Order Management API](https://github.com/vippsas/vipps-order-management-api)
+
+See
+[API Products](https://github.com/vippsas/vipps-developers/blob/master/vipps-getting-started.md#api-products)
+for more details.
 
 All Vipps customers can create sale units in the test environment on
 [portal.vipps.no](https://portal.vipps.no)

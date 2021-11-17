@@ -11,7 +11,7 @@ If you are using Vipps through an e-commerce platform, integration partner or PS
 * [Partner](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-3)
 * [PSP](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-2)
 
-Document version: 3.2.14.
+Document version: 3.2.15.
 
 ## Table of contents
 
@@ -189,18 +189,20 @@ Vipps API.
 
 This API product includes the following APIs:
 
-| API          | Description                           | Documentation                                    |
-| ------------ | ------------------------------------- | ------------------------------------------------ |
-| Access Token | Required to obtain a JWT              | See: [Get an access token](#get-an-access-token) |
-| eCom v2      | eCommerce, including express checkout | https://github.com/vippsas/vipps-ecom-api        |
-| Recurring    | Recurring API                         | https://github.com/vippsas/vipps-recurring-api   |
-| Vipps Log In | Identification                        | https://github.com/vippsas/vipps-login-api       |
+| API                  | Description                           | Documentation                                    |
+| -------------------- | ------------------------------------- | ------------------------------------------------ |
+| Access Token API     | Required to obtain a JWT              | See: [Get an access token](#get-an-access-token) |
+| eCom API             | eCommerce, including express checkout | https://github.com/vippsas/vipps-ecom-api        |
+| Recurring API        | Recurring API                         | https://github.com/vippsas/vipps-recurring-api   |
+| Log In API           | Identification                        | https://github.com/vippsas/vipps-login-api       |
+| QR API               | QR codes                              | https://github.com/vippsas/vipps-qr-api          |
+| Order Management API | Add data to orders                    | https://github.com/vippsas/vipps-order-management-api |
 
 Vipps-API also includes some _legacy_ APIs:
 
 | API              | Description                                                      | Documentation                                    |
 | ---------------- | ---------------------------------------------------------------- | ------------------------------------------------ |
-| eCom v1          | eCommerce, legacy version, phased out on September 1 2020.       | https://github.com/vippsas/vipps-ecom-api-v1     |
+| eCom API v1      | eCommerce, legacy version, phased out on September 1 2020.       | https://github.com/vippsas/vipps-ecom-api-v1     |
 | Signup and Login | Legacy API (superseded by Vipps Log In), end of life Dec 31 2019 | https://github.com/vippsas/vipps-signuplogin-api |
 
 See more details about the
