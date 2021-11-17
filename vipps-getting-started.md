@@ -1,17 +1,19 @@
 # Getting Started
 
-This guide only applies to the following APIs:
+This guide is for the following APIs:
 * [Vipps eCom API](https://github.com/vippsas/vipps-ecom-api)
-* [Vipps Login API](https://github.com/vippsas/vipps-login-api)
 * [Vipps Recurring API](https://github.com/vippsas/vipps-recurring-api)
+* [Vipps Login API](https://github.com/vippsas/vipps-login-api)
+* [Vipps QR API](https://github.com/vippsas/vipps-qr-api )
+* [Vipps Order Management API](https://github.com/vippsas/vipps-order-management-api)
 
 If you are using Vipps through an e-commerce platform, integration partner or PSP, please see the respective resources:
 
-* [Ecommerce platform](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-1)
+* [E-commerce platform](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-1)
 * [Partner](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-3)
 * [PSP](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-2)
 
-Document version: 3.2.15.
+Document version: 3.2.16.
 
 ## Table of contents
 
@@ -49,6 +51,7 @@ As soon as the Merchant Agreement has been approved, and a product order is sent
 
 Foreign companies must have the following in order to use Vipps as a payment
 provider and to receive payments from Vipps users:
+
 * A Norwegian organization number
 * A Norwegian bank account
 * An appointed contact person with a Norwegian phone number and Norwegian identity number ("fødselsnummer" or "D-nummer", 11 digits).
@@ -76,9 +79,9 @@ API keys can be retrieved by logging in with BankID on
 If you have questions about your customer relationship, or an application, please
 [contact customer service](https://www.vipps.no/kontakt-oss/bedrift/).
 
-**Please note:** If you plan to use Vipps through a Partner or a PSP, you will have to
-order the appropriate Vipps solution, and then contact the Partner or PSP
-to have _them_ help you with developer access.
+**Please note:** If you plan to use Vipps through a PSP, you will have to
+order the appropriate Vipps solution from the PSP,
+and have _them_ help you with developer access to their systems.
 
 ## Getting the API keys
 
@@ -88,14 +91,15 @@ under the `Utvikler` menu item.
 Since this gives access to API keys for both the test and production environment,
 we require BankID.
 
-**Please note:** Vipps can not provide API keys in any other way, such as by
-email, as the API keys give access to transferring money.
-Vipps will never ask for your API keys, and you must keep them secret.
-If your developers do not have Norwegian BankID, you will need to retrieve the API keys
-for them, and send them to the developers in a secure way.
-Do _not_ send API keys unencrypted by email.
-If you accidentally share your API keys, you must generate new ones on
-[portal.vipps.no](https://portal.vipps.no).
+**Please note:**
+* Vipps can not provide API keys in any other way, such as by
+  email, as the API keys give access to transferring money.
+* Vipps will never ask for your API keys, and you must keep them secret.
+* If your developers do not have Norwegian BankID, you will need to retrieve the API keys
+  for them, and send them to the developers in a secure way.
+* Do _not_ send API keys unencrypted by email.
+* If you accidentally share your API keys, you must generate new ones on
+  [portal.vipps.no](https://portal.vipps.no).
 
 If you do not have BankID, you will need the administrator to log in
 [portal.vipps.no](https://portal.vipps.no)
