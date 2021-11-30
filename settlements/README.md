@@ -35,9 +35,9 @@ The settlement flow is as follows:
 
 Settlement process will always adhere to [Vipps' terms and conditions](https://vipps.no/vilkar/vilkar-bedrift/), section 5 "OPPGJØR OG FORHOLD TIL VIPPS INNLØSER".
 
-Days are bank days, Monday - Friday, excluding banking holidays. In other words, a capture made on Monday will be on merchant's account on Wednesday, while a capture made on Friday will be on merchant's account on Wednesday.
+Days are bank days, Monday - Friday, excluding banking holidays. In other words, a capture made on Monday will be on merchant's account on Wednesday, while a capture made on Friday will be on merchant's account on Tuesday.
 
-Usually, funds will be available before lunch on day 3. 
+Usually, funds will be available before noon on day 3. 
 
 A day starts and ends at midnight, Oslo time: Start `00:00:00`, end `23:59:59` (subseconds not specified).
 Please make sure your servers' clocks are correct, e.g. by using [NTP](https://en.wikipedia.org/wiki/Network_Time_Protocol).
@@ -108,8 +108,10 @@ for more details.
 
 ## GDPR
 
-Settlements reports are no longer available with personal details of the customer.
-This is due to [GDPR](https://ec.europa.eu/info/law/law-topic/data-protection_en).
+Vipps does not provide personal details of the customer to the merchant as part of settlement reports, as there is no legal basis for Vipps as a data processor under European Data Protection laws to do this for all payments.
+
+Accordingly, settlement reports with personal details of the customer are not available.
+Further information can be found here: [GDPR](https://ec.europa.eu/info/law/law-topic/data-protection_en).
 
 # How to get settlement files
 
