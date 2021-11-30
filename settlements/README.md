@@ -22,17 +22,21 @@ Document version 2.2.7.
 # Settlement flow
 
 Settlements are done as quickly as possible, and depend on banks.
-The current solution is as fast as technically possible.
+
 
 The settlement flow is as follows:
 
 1. Day 1: A customer makes a purchase and the transaction is completed.
-   If the purchased product is shipped later, the "day 1" is the day the
+   Since a merchant should not capture the amount, i.e. charge the customer, until the purchased product is shipped, the "day 1" is the day the
    product is shipped and the customer's account is charged.
 2. Day 2: Settlement files are distributed, and are available on
    [portal.vipps.no](https://portal.vipps.no).
-3. Day 3 (the next _bank day_) at 16:00: Payments are made from Vipps' bank account to the merchant's bank account.
-4. Day 5 (the third _bank day_): The settlement is booked, with reference, by the bank.
+3. Day 3: Payments are made from Vipps' bank account to the merchant's bank account.
+4. Day 5: The settlement is booked, with reference, by the bank.
+
+Days are bank days, Monday - Friday, excluding banking holidays. In other words, a capture made on Monday will be on merchant's account on Wednesday, while a capture made on Friday will be on merchant's account on Wednesday.
+
+Usually, funds will be available before lunch on day 3. 
 
 A day starts and ends at midnight, Oslo time: Start `00:00:00`, end `23:59:59` (subseconds not specified).
 Please make sure your servers' clocks are correct, e.g. by using [NTP](https://en.wikipedia.org/wiki/Network_Time_Protocol).
@@ -103,20 +107,8 @@ for more details.
 
 ## GDPR
 
-Settlements reports are available both with and without personal details of the customer.
-This is due to [GDPR](https://ec.europa.eu/info/law/law-topic/data-protection_en), and whether
-the data processor is Vipps or the merchant.
-
-Reports containing personal information requires a data processor agreement.
-Due to this, reports with personal information can only be downloaded by logging in with
-BankID on [portal.vipps.no](https://portal.vipps.no) and accepting the terms there.
-
-The Norwegian text from [portal.vipps.no](https://portal.vipps.no):
-
-_Velger du å laste ned rapporter med personinformasjon blir bedriften din selvstendig behandlingsansvarlig for personinformasjonen som lastes ned. Dette betyr at bedriften din er selv ansvarlig for å sikre etterlevelse av peronvernreglene. For mer informasjon, vennligst se Vipps [vilkår](https://www.vipps.no/vilkar/) for bruk._
-
-The settlement reports available by [SFTP](#sftp) do not contain detailed information about the
-transactions, as the SFTP service can not obtain the data processor agreement in a legally binding manner.
+Settlements reports are no longer available with personal details of the customer.
+This is due to [GDPR](https://ec.europa.eu/info/law/law-topic/data-protection_en).
 
 # How to get settlement files
 
