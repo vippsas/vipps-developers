@@ -32,7 +32,8 @@ The settlement flow is as follows:
 2. Day 2: Settlement files are distributed, and are available on
    [portal.vipps.no](https://portal.vipps.no).
 3. Day 3: Payments are made from Vipps' bank account to the merchant's bank account.
-4. Day 5: The settlement is booked, with reference, by the bank.
+
+Settlement process will always adhere to [Vipps' terms and conditions](https://vipps.no/vilkar/vilkar-bedrift/), section 5 "OPPGJØR OG FORHOLD TIL VIPPS INNLØSER".
 
 Days are bank days, Monday - Friday, excluding banking holidays. In other words, a capture made on Monday will be on merchant's account on Wednesday, while a capture made on Friday will be on merchant's account on Wednesday.
 
