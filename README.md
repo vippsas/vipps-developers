@@ -20,13 +20,18 @@ We recommend starting with [Getting started](vipps-getting-started.md).
 - [Vipps design guidelines](#vipps-design-guidelines)
 - [Questions?](#questions)
 
-Document version: 2.5.0.
+Document version: 2.5.1.
 
 ## Vipps demo store
 
 You can test Vipps with a _production_ version of the Vipps app
 (the normal one in Apple Store and Google Play) here:
 [demo.vipps.no](https://demo.vipps.no).
+
+Maybe you want to start buy scanning this QR code and go directly to
+Vipps Hurtigkasse (express checkout)?
+
+![QR code to Vipps Hurtigkasse](images/demostore-qr-hurtigkasse.png)
 
 ## API documentation
 
