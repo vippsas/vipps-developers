@@ -5,6 +5,7 @@ We recommend starting with [Getting started](vipps-getting-started.md).
 
 ## Table of contents
 
+- [Vipps demo store](#vipps-demo-store)
 - [API documentation](#api-documentation)
 - [Partners](#partners)
 - [Plugins](#plugins)
@@ -19,7 +20,13 @@ We recommend starting with [Getting started](vipps-getting-started.md).
 - [Vipps design guidelines](#vipps-design-guidelines)
 - [Questions?](#questions)
 
-Document version: 2.4.9.
+Document version: 2.5.0.
+
+## Vipps demo store
+
+You can test Vipps with a _production_ version of the Vipps app
+(the normal one in Apple Store and Google Play) here:
+[demo.vipps.no](https://demo.vipps.no).
 
 ## API documentation
 
