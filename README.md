@@ -31,7 +31,7 @@ You can test Vipps with a _production_ version of the Vipps app
 Maybe you want to start buy scanning this QR code and go directly to
 Vipps Hurtigkasse (express checkout)?
 
-![QR code to Vipps Hurtigkasse](images/demostore-qr-hurtigkasse.png)
+![QR code to Vipps Hurtigkasse](images/demostore-qr-vipps-hurtigkasse.png)
 
 ## API documentation
 
