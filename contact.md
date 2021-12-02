@@ -27,17 +27,17 @@ If you do not have a technical issue, the fastest way to get help is to start in
 | Applications for Vipps products | [Contact info for companies on vipps.no](https://www.vipps.no/kontakt-oss/bedrift/) |
 | Using Vipps through a partner (for merchants) | [Contact your partner directly](https://www.vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-3) |
 | Vipps through a PSP (Payment Service Provider) | Please contact your PSP. |
-| Partner assistance (for partners) | See [vipps-partner](https://github.com/vippsas/vipps-partner). If that is not enough: partnerbestilling@vipps.no  |
+| Partner assistance (for partners) | See [Vipps partner](https://github.com/vippsas/vipps-partner).  |
 | Vipps plugins (WooCommerce, WordPress, Magento, Drupal, Shopify, etc)| [Plugin overview](https://github.com/vippsas/vipps-plugins) |
-| Vipps through a POS vendor | Please contact your vendor. |
+| Vipps through a POS (Point of Sale) vendor | Please contact your vendor. |
 | Settlements, invoices or similar | [Settlements](https://github.com/vippsas/vipps-developers/tree/master/settlements) |
 | Suggestions for improvements to [Vipps products](https://www.vipps.no/produkter-og-tjenester/bedrift/) | [Use this form](https://www.vipps.no/kontakt-oss/bedrift/) |
 | BankID | [BankID service portal](https://servicedesk.bankidnorge.no/jira/servicedesk/customer/user/login?destination=portals) |
 
-For _**technical**_ issues: Please see below.
+For _**technical**_ issues related to Vipps and development of services using our APIs: Please see below.
 
 We also have a technical newsletter for developers:
-[Sign up here](https://github.com/vippsas/vipps-developers/tree/master/newsletters) (low volume, no marketing).
+[Sign up and access the archives here](https://github.com/vippsas/vipps-developers/tree/master/newsletters) (low volume, no marketing).
 
 ## What to include in the email
 
