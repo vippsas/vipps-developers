@@ -14,7 +14,7 @@ Hello! We can help!
 - [More than one problem, or a new one?](#more-than-one-problem-or-a-new-one)
 - [Newsletter](#newsletter)
 
-Document version: 2.4.5.
+Document version: 2.4.6.
 
 ## We help with technical issues
 
@@ -51,7 +51,7 @@ If it's not: Please send an email with all relevant information to the address b
 * **Please: Always include a _detailed_ description of the problem**
 * A concise, self-explanatory `Subject` line, such as "`POST:/something` gives `HTTP 400` response".
 * Company details
-  - Organization number (find yours at https://brreg.no)
+  - Organization number (find yours at [Brønnøysundregistrene](https://brreg.no))
   - Merchant Serial Number (MSN, see [Getting started](vipps-developer-portal-getting-started.md))
 * Is it a problem in the Test (MT) or the Production environment?
 * On which date did the problem occur?
