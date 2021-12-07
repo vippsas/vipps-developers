@@ -16,7 +16,7 @@ The Merchant Test Environment (MT) is available for all Vipps customers.
   * [iOS](#ios)
   * [Android](#android)
 
-Document version: 3.1.8.
+Document version: 3.1.9.
 
 ## About the test environment
 
@@ -174,6 +174,10 @@ This happens when the production apps and the production environment are not _qu
 in sync with the test environment. When this happens, we update the
 [Statuspage for the test environment](https://vipps-test.statuspage.io)
 with details.
+
+**Please note:** If you use an emulator, and not the native apps installed on
+a phone, you may experience problems - such as having to log in "from scratch"
+every time you start Vipps in the emulator.
 
 ### Limitations of the test apps
 
