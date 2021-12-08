@@ -156,7 +156,7 @@ Here's an example:
 
 This is just the start. Please let us know what you think and suggest improvements.
 
-## Optional HTTP Headers ℹ️
+## Vipps HTTP Headers ℹ️
 
 We recommend using the following _optional_ HTTP headers for all requests to the
 [Vipps eCom API](https://github.com/vippsas/vipps-ecom-api/)

@@ -5,7 +5,7 @@ This newsletter was sent in December 2020.
 Contents:
 - [The Vipps eCom API v1 is disabled](#the-vipps-ecom-api-v1-is-disabled)
 - [Vipps Login improvements](#vipps-login-improvements-)
-- [Optional HTTP Headers](#optional-http-headers-ℹ%EF%B8%8F)
+- [Vipps HTTP Headers](#vipps-http-headers-ℹ%EF%B8%8F)
 - [API Dashboard](#api-dashboard-)
 - [Suggest improvements, get a pair of Vipps socks](#suggest-improvements-get-a-pair-of-vipps-socks-)
 - [Do you want a Slack channel?](#do-you-want-a-slack-channel-)
@@ -41,7 +41,7 @@ See
 [the API migration guide](https://github.com/vippsas/vipps-login-api/blob/master/vipps-login-migrate-api-1.0-to-2.0.md)
 for details on moving from version 1 to 2.
 
-# Optional HTTP Headers ℹ️
+# Vipps HTTP Headers ℹ️
 
 We recommend using the following _optional_ HTTP headers for all requests to the
 [Vipps eCom API](https://github.com/vippsas/vipps-ecom-api/)
