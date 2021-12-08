@@ -2,8 +2,8 @@
 
 This newsletter was sent in December 2021.
 
-- [Use the API Dashboard to find problems with your integration](#use-the-api-dashboard-to-find-problems-with-your-integration)
 - [Omikron tips](#omikron-tips)
+- [Use the API Dashboard to find problems with your integration](#use-the-api-dashboard-to-find-problems-with-your-integration)
 - [Important information for partners](#important-information-for-partners)
 - [Reminders](#reminders)
   * [Use Userinfo to register visitors](#use-userinfo-to-register-visitors)
@@ -13,6 +13,20 @@ This newsletter was sent in December 2021.
   * [The Vipps Recurring API now supports variable amounts](#the-vipps-recurring-api-now-supports-variable-amounts)
 - [Newsletter archive](#newsletter-archive)
 - [Questions or comments?](#questions-or-comments-)
+
+# Omikron tips
+
+These Vipps solutions are extra relevant (again):
+
+- Use
+  [Vipps Logg inn](https://vipps.no/produkter-og-tjenester/privat/logg-inn-med-vipps/logg-inn-med-vipps/)
+  and the
+  [Vipps Login API](https://github.com/vippsas/vipps-login-api)
+  to register visitors - it's free.
+- [Use Userinfo to register visitors](#use-userinfo-to-register-visitors)
+  as an easy-to-use step in a normal Vipps payment.
+- ["Click and collect" recommendations](#-click-and-collect--recommendations)
+  to speed up the user experience for your customers.
 
 # Use the API Dashboard to find problems with your integration
 
@@ -28,20 +42,6 @@ under the "Utvikler" ("Developer") tab.
 Here's an example:
 
 <img src="images/2021-06-api-dashboard-login-example.png" alt="api-dashboard login data" style="width:1000px;"/>
-
-# Omikron tips
-
-These Vipps solutions are extra relevant (again):
-
-- Use
-  [Vipps Logg inn](https://vipps.no/produkter-og-tjenester/privat/logg-inn-med-vipps/logg-inn-med-vipps/)
-  and the
-  [Vipps Login API](https://github.com/vippsas/vipps-login-api)
-  to register visitors - it's free.
-- [Use Userinfo to register visitors](#use-userinfo-to-register-visitors)
-  as an easy-to-use step in a normal Vipps payment.
-- ["Click and collect" recommendations](#-click-and-collect--recommendations)
-  to speed up the user experience for your customers.
 
 # Important information for partners
 
