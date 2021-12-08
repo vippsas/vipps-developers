@@ -40,7 +40,7 @@ See it on
 under the "Utvikler" ("Developer") tab.
 Here's an example for the eComn API's `/refund` endpoint:
 
-<img src="images/2021-02-api-dashboard-example.png" alt="api-dashboard refund example" style="width:1000px;"/>
+![API Dashboard example](images/2021-02-api-dashboard-example.png)
 
 # Important information for partners
 
