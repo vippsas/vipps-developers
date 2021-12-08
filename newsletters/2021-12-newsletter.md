@@ -11,6 +11,7 @@ This newsletter was sent in December 2021.
   * [The Vipps QR API](#the-vipps-qr-api)
   * [The Vipps Order Management API](#the-vipps-order-management-api)
   * [The Vipps Recurring API now supports variable amounts](#the-vipps-recurring-api-now-supports-variable-amounts)
+  * [Vipps Login support for authentication/registration outside of browser/app (CIBA)](#vipps-login-support-for-authenticationregistration-outside-of-browserapp-ciba)
 - [Newsletter archive](#newsletter-archive)
 - [Questions or comments?](#questions-or-comments-)
 
@@ -120,6 +121,16 @@ amount each for interval, based on the user's specified max amount.
 
 More information can be found in
 [our documentation](https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api.md#recurring-agreements-with-variable-amount).
+
+## Vipps Login support for authentication/registration outside of browser/app (CIBA)
+
+The Vipps Login service has been extended with Client Initiated Backchannel Authentication
+(CIBA) flows to support use cases where authentication/registration does not start in a browser or an app.
+
+This could typically be physical contexts like point of sales (POS) solutions, on the
+phone in call center solutions, or devices/terminals like TV boxes. We currently support initiating logins based on the users phone number. We are also working on supporting the same flows with the user scanning the merchant's QR-code as a starting point. 
+
+More information can be found in [our documentation](https://github.com/vippsas/vipps-login-api/blob/master/vipps-login-api.md#client-initiated-backchannel-authentication-flows-ciba---special-cases-where-login-does-not-start-in-browser-or-app).
 
 # Newsletter archive
 
