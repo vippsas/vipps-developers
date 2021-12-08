@@ -38,7 +38,7 @@ problems you need to investigate.
 See it on
 [portal.vipps.no](https://portal.vipps.no)
 under the "Utvikler" ("Developer") tab.
-Here's an example for the eComn API's `/refund` endpoint:
+Here's an example for the Vipps eCom API's `/refund` endpoint:
 
 ![API Dashboard example](images/2021-02-api-dashboard-example.png)
 
