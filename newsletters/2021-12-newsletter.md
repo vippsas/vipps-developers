@@ -32,16 +32,15 @@ These Vipps solutions are extra relevant (again):
 
 The API Dashboard is available for both the production and test environments,
 and is an easy way to see if you are using the Vipps APIs correctly.
-
 Think of it as a "health check", that you can use to see if there are any
 problems you need to investigate.
 
 See it on
 [portal.vipps.no](https://portal.vipps.no)
 under the "Utvikler" ("Developer") tab.
-Here's an example:
+Here's an example for the eComn API's `/refund` endpoint:
 
-<img src="images/2021-06-api-dashboard-login-example.png" alt="api-dashboard login data" style="width:1000px;"/>
+<img src="images/2021-02-api-dashboard-example.png" alt="api-dashboard refund example" style="width:1000px;"/>
 
 # Important information for partners
 
