@@ -97,7 +97,7 @@ https://github.com/vippsas/vipps-qr-api
 
 The Vipps QR API lets merchants generate Vipps QR codes that can be used to pay
 over the counter, without requiring the Vipps user to provide their telephone
-number to the merchant.
+number to the merchant. Or you can create your own QR with a [short URL](https://github.com/vippsas/vipps-qr-api/blob/main/vipps-qr-api.md#qr-formats) we provide.
 
 The QR code, when scanned and opened, will redirect the user to the Vipps
 landing page, which on the phone will automatically trigger a switch to the
