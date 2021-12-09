@@ -3,6 +3,7 @@
 This newsletter was sent in December 2021.
 
 - [Omikron tips](#omikron-tips)
+- [Vipps Hurtigkasse: Use the explicit flow](#vipps-hurtigkasse-use-the-explicit-flow)
 - [Use the API Dashboard to find problems with your integration](#use-the-api-dashboard-to-find-problems-with-your-integration)
 - [Important information for partners](#important-information-for-partners)
 - [Reminders](#reminders)
@@ -27,6 +28,24 @@ These Vipps solutions are extra relevant (again):
   as an easy-to-use step in a normal Vipps payment.
 - ["Click and collect" recommendations](#-click-and-collect--recommendations)
   to speed up the user experience for your customers.
+
+# Vipps Hurtigkasse: Use the explicit flow
+
+When users are prompted to select shipping address and shipping address, the
+explicit flow is _strongly_ recommended. The user then has to actively
+select shipping address and shipping method.
+
+The "old" flow does not prompt the user in the same way, and some users
+do not notice that they select an incorrect/old/outdated address.
+
+Using the explicit flow is simple: Just specify
+`"useExplicitCheckoutFlow": true`
+in
+[`POST:/ecomm/v2/payments`](https://vippsas.github.io/vipps-ecom-api/#/Vipps%20eCom%20API/initiatePaymentV3UsingPOST).
+
+See
+[Old and new express checkout flow](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#old-and-new-express-checkout-flow)
+for more details.
 
 # Use the API Dashboard to find problems with your integration
 
