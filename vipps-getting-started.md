@@ -15,7 +15,7 @@ If you are using Vipps through an e-commerce platform, integration partner or PS
 * [Partner](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-3)
 * [PSP](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-2)
 
-Document version: 3.2.21.
+Document version: 3.2.22.
 
 # Table of contents
 
@@ -271,32 +271,36 @@ and passing the `client_id`, `client_secret` and `Ocp-Apim-Subscription-Key`.
 
 ### Request
 
-Request (including the recommended `Vipps-*` HTTP headers):
+Request to
+[`POST:/accesstoken/get`](https://vippsas.github.io/vipps-ecom-api/#/Authorization_Service/fetchAuthorizationTokenUsingPost)
+(including the Vipps HTTP headers):
 
 ```
-POST https://apitest.vipps.no/accesstoken/get
 client_id: fb492b5e-7907-4d83-ba20-c7fb60ca35de
 client_secret: Y8Kteew6GE2ZmeycEt6egg==
 Ocp-Apim-Subscription-Key: 0f14ebcab0ec4b29ae0cb90d91b4a84a
+Merchant-Serial-Number: 123456
 Vipps-System-Name: Acme Enterprises Ecommerce DeLuxe
 Vipps-System-Version: 3.1.2
 Vipps-System-Plugin-Name: Point Of Sale Excellence
 Vipps-System-Plugin-Version 4.5.6
 ```
 
+| Header                        | Description                                  | Example value       |
+| ----------------------------- | -------------------------------------------- | ------------------- |
+| `Merchant-Serial-Number`      | The MSN for the sale unit                    | `123456`            |
+| `Vipps-System-Name`           | The name of the ecommerce solution           | `woocommerce`       |
+| `Vipps-System-Version`        | The version number of the ecommerce solution | `5.4`               |
+| `Vipps-System-Plugin-Name`    | The name of the ecommerce plugin             | `vipps-woocommerce` |
+| `Vipps-System-Plugin-Version` | The version number of the ecommerce plugin   | `1.4.1`             |
+
 The `client_id`, `client_secret` and `Ocp-Apim-Subscription-Key` are unique per
-`merchantSerialNumber` (MSN, i.e. the number of the sale unit) and can be found on
-[portal.vipps.no](https://portal.vipps.no).
+`merchantSerialNumber` (MSN, i.e. the number of the sale unit).
 
-Please note: Partners can use [partner keys](https://github.com/vippsas/vipps-partner/blob/main/README.md#partner-keys).
+Please note: Partners can use
+[partner keys](https://github.com/vippsas/vipps-partner/blob/main/README.md#partner-keys).
 
-| Header Name                 | Header Value           | Description                      |
-| --------------------------- | ---------------------- | -------------------------------- |
-| `client_id`                 | A GUID value           | Client ID for the sale unit      |
-| `client_secret`             | Base 64 encoded string | Client Secret for the sale unit  |
-| `Ocp-Apim-Subscription-Key` | Base 64 encoded string | Subscription key for the product |
-
-**Note** You can have multiple access tokens being used at the same time.
+**Please note:** You can have multiple access tokens being used at the same time.
 
 **Please note:** We are in process of changing the name of the header
 `Ocp-Apim-Subscription-Key` to `Vipps-Subscription-Key`. We will at some point
@@ -346,21 +350,26 @@ Problems? See:
 
 After obtaining the access token (JWT), it is then used for the "real" calls
 to the Vipps API, with the `Bearer` keyword (it is case sensitive).
-Here is an example of HTTP headers, with the recommended `Vipps-*` HTTP headers:
-
-```
-Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1Ni <snip>
-Ocp-Apim-Subscription-Key: 0f14ebcab0ec4b29ae0cb90d91b4a84a
-Vipps-System-Name: Acme Enterprises Ecommerce DeLuxe
-Vipps-System-Version: 3.1.2
-Vipps-System-Plugin-Name: Point Of Sale Excellence
-Vipps-System-Plugin-Version: 4.5.6
-```
 
 A typical example of an API endpoint:
 [`POST:/ecomm/v2/payments`](https://vippsas.github.io/vipps-ecom-api/#/Vipps_eCom_API/initiatePaymentV3UsingPOST)
 in the Vipps eCom API:
 [Initiate payment flow: API calls](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#initiate-payment-flow-api-calls).
+
+Here is an example with `Authorization` and `Ocp-Apim-Subscription-Key` (but
+without the `client_id` and `client_secret`, since they are only used for the
+[`POST:/accesstoken/get`](https://vippsas.github.io/vipps-ecom-api/#/Authorization_Service/fetchAuthorizationTokenUsingPost)
+call), including the Vipps HTTP headers:
+
+```
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1Ni <snip>
+Ocp-Apim-Subscription-Key: 0f14ebcab0ec4b29ae0cb90d91b4a84a
+Merchant-Serial-Number: 123456
+Vipps-System-Name: Acme Enterprises Ecommerce DeLuxe
+Vipps-System-Version: 3.1.2
+Vipps-System-Plugin-Name: Point Of Sale Excellence
+Vipps-System-Plugin-Version 4.5.6
+```
 
 For more details: See the OpenAPI specifications and Postman collections
 for the APIs.
