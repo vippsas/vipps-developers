@@ -15,7 +15,7 @@ If you are using Vipps through an e-commerce platform, integration partner or PS
 * [Partner](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-3)
 * [PSP](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-2)
 
-Document version: 3.2.20.
+Document version: 3.2.21.
 
 # Table of contents
 
@@ -149,12 +149,22 @@ or provide the API keys to you in a secure way. See also:
 
 ## List of sale units
 
-Select the `production keys` or `test keys`,
-then select `Show keys` for the relevant sale unit to display the credentials.
+Select the `production keys` or `test keys`, then select `Show keys` for
+the relevant sale unit to display the API keys.
+
+Click the `i` to get additional information about that column, including
+information about how to
+[change between "direct capture" and "reserve capture"](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-faq.md#how-do-i-turn-direct-capture-on-or-off)
+and
+[how to activate `skipLandingPage`](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-faq.md#is-it-possible-to-skip-the-landing-page).
 
 ![portal.vipps.no: The API products for a sales unit](images/portalvippsno-salesunit-products.png)
 
 ## API keys for a sale unit
+
+This screen shows the API keys for the selected sale unit.
+Some of the API keys are hidden because the logged-in user does not have the
+required permissions.
 
 ![portal.vipps.no: The API keys for a sales unit](images/portalvippsno-salesunit-keys.png)
 
