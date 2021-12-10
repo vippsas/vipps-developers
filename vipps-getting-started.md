@@ -15,7 +15,7 @@ If you are using Vipps through an e-commerce platform, integration partner or PS
 * [Partner](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-3)
 * [PSP](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-2)
 
-Document version: 3.2.17.
+Document version: 3.2.18.
 
 ## Table of contents
 
@@ -106,9 +106,12 @@ we require BankID.
 * If you accidentally share your API keys, you must generate new ones on
   [portal.vipps.no](https://portal.vipps.no).
 
-If you do not have BankID, you will need the administrator to log in
+If you do not have BankID,
+or you have BankID but not access to the right merchant,
+you will need the administrator to log in
 [portal.vipps.no](https://portal.vipps.no)
 and provide the API keys to you in a secure way.
+
 The merchant's administrator can create additional users on
 [portal.vipps.no](https://portal.vipps.no).
 If you don't know who the administrator is, you can check
