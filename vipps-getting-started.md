@@ -15,29 +15,31 @@ If you are using Vipps through an e-commerce platform, integration partner or PS
 * [Partner](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-3)
 * [PSP](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-2)
 
-Document version: 3.2.18.
+Document version: 3.2.19.
 
 ## Table of contents
 
-- [Requirements](#requirements)
-  - [Foreign companies](#foreign-companies)
-  - [Vipps users](#vipps-users)
-- [Get credentials](#get-credentials)
-- [Getting the API keys](#getting-the-api-keys)
-  - [List of sale units](#list-of-sale-units)
-  - [API keys for a salesunit](#api-keys-for-a-salesunit)
-  - [API key details](#api-key-details)
-  - [API keys for different use](#api-keys-for-different-use)
+* [Requirements](#requirements)
+  + [Foreign companies](#foreign-companies)
+  + [Vipps users](#vipps-users)
+* [Get credentials](#get-credentials)
+* [Getting the API keys](#getting-the-api-keys)
+  + [Permissions and users](#permissions-and-users)
+  + [Test and production environments](#test-and-production-environments)
+  + [List of sale units](#list-of-sale-units)
+  + [API keys for a salesunit](#api-keys-for-a-salesunit)
+  + [API key details](#api-key-details)
+  + [API keys for different use](#api-keys-for-different-use)
 - [API products](#api-products)
-  - [Vipps-API](#vipps-api)
-  - [Legacy API products](#legacy-api-products)
+  + [Vipps-API](#vipps-api)
+* [Legacy API products](#legacy-api-products)
 - [Quick overview of how to make an API call](#quick-overview-of-how-to-make-an-api-call)
-  - [Get an access token](#get-an-access-token)
-    - [Request](#request)
-    - [Response](#response)
-  - [Make an API call](#make-an-api-call)
-  - [HTTP response codes](#http-response-codes)
-- [Questions?](#questions)
+* [Get an access token](#get-an-access-token)
+  + [Request](#request)
+  + [Response](#response)
+* [Make an API call](#make-an-api-call)
+  + [HTTP response codes](#http-response-codes)
+* [Questions?](#questions-)
 
 ## Requirements
 
@@ -106,6 +108,8 @@ we require BankID.
 * If you accidentally share your API keys, you must generate new ones on
   [portal.vipps.no](https://portal.vipps.no).
 
+### Permissions and users
+
 If you do not have BankID,
 or you have BankID but not access to the right merchant,
 you will need the administrator to log in
@@ -121,6 +125,8 @@ and see who has the right to sign for the company.
 If you can login to [portal.vipps.no](https://portal.vipps.no) but cannot see
 the “developer” selection in the top-menu you need to have the administrator
 grant you developer access for the sales unit you need access to.
+
+### Test and production environments
 
 * API keys for the
   [test environment](https://github.com/vippsas/vipps-developers/blob/master/vipps-test-environment.md):
@@ -184,7 +190,7 @@ The Vipps-API API product give access to all current APIs, and the API keys for
 the Vipps eCom v1 and v2 APIs have been “upgraded” to include the same APIs as
 Vipps API.
 
-## Vipps-API
+### Vipps-API
 
 This API product includes the following APIs:
 
