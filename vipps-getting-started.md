@@ -23,7 +23,7 @@ Document version: 3.2.19.
   * [Foreign companies](#foreign-companies)
   * [Vipps users](#vipps-users)
 - [Get credentials](#get-credentials)
-- [Getting the API keys](#getting-the-api-keys)
+  * [Getting the API keys](#getting-the-api-keys)
   * [Permissions and users](#permissions-and-users)
   * [Test and production environments](#test-and-production-environments)
   * [List of sale units](#list-of-sale-units)
@@ -90,7 +90,7 @@ If you have questions about your customer relationship, please
 order the appropriate Vipps solution from the PSP,
 and have _them_ help you with developer access to their systems.
 
-# Getting the API keys
+## Getting the API keys
 
 API keys can be retrieved, by logging in with BankID on
 [portal.vipps.no](https://portal.vipps.no),
