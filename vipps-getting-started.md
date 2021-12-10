@@ -17,31 +17,31 @@ If you are using Vipps through an e-commerce platform, integration partner or PS
 
 Document version: 3.2.19.
 
-## Table of contents
+# Table of contents
 
-* [Requirements](#requirements)
-  + [Foreign companies](#foreign-companies)
-  + [Vipps users](#vipps-users)
-* [Get credentials](#get-credentials)
-* [Getting the API keys](#getting-the-api-keys)
-  + [Permissions and users](#permissions-and-users)
-  + [Test and production environments](#test-and-production-environments)
-  + [List of sale units](#list-of-sale-units)
-  + [API keys for a salesunit](#api-keys-for-a-salesunit)
-  + [API key details](#api-key-details)
-  + [API keys for different use](#api-keys-for-different-use)
+- [Requirements](#requirements)
+  * [Foreign companies](#foreign-companies)
+  * [Vipps users](#vipps-users)
+- [Get credentials](#get-credentials)
+- [Getting the API keys](#getting-the-api-keys)
+  * [Permissions and users](#permissions-and-users)
+  * [Test and production environments](#test-and-production-environments)
+  * [List of sale units](#list-of-sale-units)
+  * [API keys for a sale unit](#api-keys-for-a-sale-unit)
+  * [API key details](#api-key-details)
+  * [API keys for different use](#api-keys-for-different-use)
 - [API products](#api-products)
-  + [Vipps-API](#vipps-api)
-* [Legacy API products](#legacy-api-products)
+  * [Vipps-API](#vipps-api)
+  * [Legacy API products](#legacy-api-products)
 - [Quick overview of how to make an API call](#quick-overview-of-how-to-make-an-api-call)
-* [Get an access token](#get-an-access-token)
-  + [Request](#request)
-  + [Response](#response)
-* [Make an API call](#make-an-api-call)
-  + [HTTP response codes](#http-response-codes)
-* [Questions?](#questions-)
+  * [Get an access token](#get-an-access-token)
+    + [Request](#request)
+    + [Response](#response)
+  * [Make an API call](#make-an-api-call)
+  * [HTTP response codes](#http-response-codes)
+- [Questions?](#questions-)
 
-## Requirements
+# Requirements
 
 Merchants need a Norwegian organization number and Norwegian BankID to apply for Vipps services.
 
@@ -51,7 +51,7 @@ Everything can be done through [portal.vipps.no](https://portal.vipps.no). For a
 
 As soon as the Merchant Agreement has been approved, and a product order is sent, access to test is created, and details are sent on email to the user who ordered the product.
 
-### Foreign companies
+## Foreign companies
 
 Foreign companies must have the following in order to use Vipps as a payment
 provider and to receive payments from Vipps users:
@@ -63,7 +63,7 @@ provider and to receive payments from Vipps users:
 If the above is impossible, the company can use Vipps through a
 [Payment Service Provider (PSP)](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-2).
 
-### Vipps users
+## Vipps users
 
 Vipps payments can only be made by customers with a Norwegian phone number and
 with a Norwegian national identity number or D-number.
@@ -74,7 +74,7 @@ but have a need for identification for the Norwegian authorities.
 Read more on how to
 [apply for a D-number](https://www.skatteetaten.no/en/person/foreign/norwegian-identification-number/).
 
-## Get credentials
+# Get credentials
 
 When the application has been processed you will receive an email, and the
 API keys can be retrieved by logging in with BankID on
@@ -90,7 +90,7 @@ If you have questions about your customer relationship, please
 order the appropriate Vipps solution from the PSP,
 and have _them_ help you with developer access to their systems.
 
-## Getting the API keys
+# Getting the API keys
 
 API keys can be retrieved, by logging in with BankID on
 [portal.vipps.no](https://portal.vipps.no),
@@ -108,7 +108,7 @@ we require BankID.
 * If you accidentally share your API keys, you must generate new ones on
   [portal.vipps.no](https://portal.vipps.no).
 
-### Permissions and users
+## Permissions and users
 
 If you do not have BankID,
 or you have BankID but not access to the right merchant,
@@ -126,7 +126,7 @@ If you can login to [portal.vipps.no](https://portal.vipps.no) but cannot see
 the “developer” selection in the top-menu you need to have the administrator
 grant you developer access for the sales unit you need access to.
 
-### Test and production environments
+## Test and production environments
 
 * API keys for the
   [test environment](https://github.com/vippsas/vipps-developers/blob/master/vipps-test-environment.md):
@@ -138,18 +138,18 @@ grant you developer access for the sales unit you need access to.
   [portal.vipps.no](https://portal.vipps.no)
   after a few days, depending on the workload and whether we need additional information.
 
-### List of sale units
+## List of sale units
 
 Select the `production keys` or `test keys`,
 then select `Show keys` for the relevant sale unit to display the credentials.
 
 ![portal.vipps.no: The API products for a sales unit](images/portalvippsno-salesunit-products.png)
 
-### API keys for a salesunit
+## API keys for a sale unit
 
 ![portal.vipps.no: The API keys for a sales unit](images/portalvippsno-salesunit-keys.png)
 
-### API key details
+## API key details
 
 | Name                     | Format | Example                              |  Description                     |
 | ------------------------ | ------ | ------------------------------------ | -------------------------------- |
@@ -167,7 +167,7 @@ If you don't understand what the second key is for, you can just ignore it.
 The legacy name `Ocp-Apim-Subscription-Key` _must still be used in requests and code_,
 but we are working to make `Vipps-Subscription-Key` work everywhere.
 
-### API keys for different use
+## API keys for different use
 
 The same API keys are used for many types of integration:
 Direct integration,
@@ -190,7 +190,7 @@ The Vipps-API API product give access to all current APIs, and the API keys for
 the Vipps eCom v1 and v2 APIs have been “upgraded” to include the same APIs as
 Vipps API.
 
-### Vipps-API
+## Vipps-API
 
 This API product includes the following APIs:
 
@@ -349,7 +349,7 @@ for the APIs.
 Problems? See:
 [Common errors](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-faq.md#common-errors).
 
-### HTTP response codes
+## HTTP response codes
 
 This API returns the following HTTP statuses in the responses:
 
@@ -365,7 +365,7 @@ You can use the
 [API Dashboard](https://github.com/vippsas/vipps-developers#api-dashboard)
 to check the responses to your API calls.
 
-## Questions?
+# Questions?
 
 We're always happy to help with code or other questions you might have!
 Please create an [issue](https://github.com/vippsas/vipps-developers/issues),
