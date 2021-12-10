@@ -15,7 +15,7 @@ If you are using Vipps through an e-commerce platform, integration partner or PS
 * [Partner](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-3)
 * [PSP](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-2)
 
-Document version: 3.2.19.
+Document version: 3.2.20.
 
 # Table of contents
 
@@ -99,6 +99,7 @@ Since this gives access to API keys for both the test and production environment
 we require BankID.
 
 **Please note:**
+
 * Vipps can not provide API keys in any other way, such as by
   email, as the API keys give access to transferring money.
 * Vipps will never ask for your API keys, and you must keep them secret.
@@ -112,19 +113,27 @@ we require BankID.
 
 If you do not have BankID,
 or you have BankID but not access to the right merchant,
-you will need the administrator to log in
+you will need the merchant's administrator to log in on
 [portal.vipps.no](https://portal.vipps.no)
 and provide the API keys to you in a secure way.
 
-The merchant's administrator can create additional users on
+The merchant's administrator can also create additional users on
 [portal.vipps.no](https://portal.vipps.no).
 If you don't know who the administrator is, you can check
 [Brønnøysundregistrene](https://www.brreg.no)
 and see who has the right to sign for the company.
 
 If you can login to [portal.vipps.no](https://portal.vipps.no) but cannot see
-the “developer” selection in the top-menu you need to have the administrator
-grant you developer access for the sales unit you need access to.
+the "Utvikler" (developer) selection in the menu you need to have the
+merchant's administrator grant you developer access for the sales unit you
+need access to.
+
+For integration partners: You will need the merchant's administrator to either
+log in on
+[portal.vipps.no](https://portal.vipps.no)
+and grant you developer access for the sales unit you need access to,
+or provide the API keys to you in a secure way. See also:
+[Vippps Partners](https://github.com/vippsas/vipps-partner).
 
 ## Test and production environments
 
