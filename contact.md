@@ -28,15 +28,15 @@ If you do not have a technical issue, the fastest way to get help is to start in
 | Topic                                      | How to get help                             |
 | ------------------------------------------ | ------------------------------------------- |
 | General questions, including the (new) customer relationship,<br/>creating sale units, change of admins, etc   | [Contact info for companies on vipps.no](https://www.vipps.no/kontakt-oss/bedrift/) |
-| Applications for Vipps products | Check the status on [portal.vipps.no](https://portal.vipps.no). [Contact info for companies on vipps.no](https://www.vipps.no/kontakt-oss/bedrift/) |
+| Applications for Vipps products | Check the status on [portal.vipps.no](https://portal.vipps.no).<br/>[Contact info for companies on vipps.no](https://www.vipps.no/kontakt-oss/bedrift/) |
 | Using Vipps through a partner (for merchants) | [Contact your partner directly](https://www.vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-3) |
-| Vipps through a PSP (Payment Service Provider) | Please contact your PSP. Vipps can not help with your PSP's services. |
-| Partner assistance (for partners) | See [Vipps partner](https://github.com/vippsas/vipps-partner). Vipps can not help with your partners services. |
-| Vipps plugins (WooCommerce, Shopify, Wix, WordPress,<br/>Wix, Shopify, Magento, EPiServer, etc)| [Plugin overview](https://github.com/vippsas/vipps-plugins) |
-| Vipps through a POS (Point of Sale) vendor | Please contact your vendor. |
+| Vipps through a PSP (Payment Service Provider) | Please contact your PSP.<br/>Vipps can not help with your PSP's services. |
+| Partner assistance (for partners) | See [Vipps partner](https://github.com/vippsas/vipps-partner).<br/>Vipps can not help with your partners services. |
+| Vipps plugins (WooCommerce, Shopify, Wix, WordPress,<br/>Wix, Shopify, Magento, EPiServer, etc)| See the support info for your plugin:<br/>[Plugin overview](https://github.com/vippsas/vipps-plugins) |
+| Vipps through a POS (Point of Sale) vendor | Please contact your vendor. <br/>Vipps can not help with your vendfor's services.|
 | Settlements, invoices or similar | [Settlements](https://github.com/vippsas/vipps-developers/tree/master/settlements) |
 | Suggestions for improvements to [Vipps products](https://www.vipps.no/produkter-og-tjenester/bedrift/) | [Use this form](https://www.vipps.no/kontakt-oss/bedrift/) |
-| BankID | [BankID service portal](https://servicedesk.bankidnorge.no/jira/servicedesk/customer/user/login?destination=portals) |
+| BankID | Please contact your BankID vendor.<br/>[BankID service portal](https://servicedesk.bankidnorge.no/jira/servicedesk/customer/user/login?destination=portals) |
 
 For _**technical**_ issues related to Vipps and development of services using our APIs: Please see below.
 
