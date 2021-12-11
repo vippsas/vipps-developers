@@ -14,16 +14,17 @@ Hello! We can help!
 - [More than one problem, or a new one?](#more-than-one-problem-or-a-new-one)
 - [Newsletter](#newsletter)
 
-Document version: 2.4.6.
+Document version: 2.4.7.
 
 ## We help with technical issues
 
 Vipps Integration helps with _**technical**_ questions from developers, such as questions about using our APIs.
 If you do not have a technical issue, the fastest way to get help is to start in the right place:
 
-| Topic               | How to get help |
-| ------------------- | --------------- |
-| General questions, including the (new) customer relationship, creating sale units, change of admins, etc   | [Contact info for companies on vipps.no](https://www.vipps.no/kontakt-oss/bedrift/) |
+| Topic                                      | How to get help                             |
+| ------------------------------------------ | ------------------------------------------- |
+| General questions, including the (new) customer relationship,
+creating sale units, change of admins, etc   | [Contact info for companies on vipps.no](https://www.vipps.no/kontakt-oss/bedrift/) |
 | Applications for Vipps products | [Contact info for companies on vipps.no](https://www.vipps.no/kontakt-oss/bedrift/) |
 | Using Vipps through a partner (for merchants) | [Contact your partner directly](https://www.vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-3) |
 | Vipps through a PSP (Payment Service Provider) | Please contact your PSP. |
