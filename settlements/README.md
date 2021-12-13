@@ -17,7 +17,7 @@
     + [Monthly reports](#monthly-reports)
 - [Questions?](#questions-)
 
-Document version 2.2.7.
+Document version 2.2.8.
 
 # Settlement flow
 
@@ -108,13 +108,13 @@ for more details.
 
 ## GDPR
 
-The transaction overview on portal.vipps.no shows the customer names for Vippsnummer payments. For other payments, such as Vipps på nett and Vipps Faste betalinger the orderId is shown instead of the customer name.
+Vipps needs the customer's consent before sharing personal information with the merchant.
 
-You can click the little "i" in the header on the transaction overview and see the same info as above.
+The settlement reports do not contain personal information - except for payments made with Vippsnummer.
 
-The orderId is specified by the merchant. See the orderId recommendations.
+See the eCom API FAQ:
+[Why are the customer names not shown on the transaction overview?](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-faq.md#why-are-the-customer-names-not-shown-on-the-transaction-overview).
 
-Use Userinfo to get customer's consent to share name, email address, etc.
 
 # How to get settlement files
 
