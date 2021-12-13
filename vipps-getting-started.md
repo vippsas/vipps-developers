@@ -15,7 +15,7 @@ If you are using Vipps through an e-commerce platform, integration partner or PS
 * [Partner](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-3)
 * [PSP](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-2)
 
-Document version: 3.2.22.
+Document version: 3.2.23.
 
 # Table of contents
 
@@ -68,6 +68,8 @@ If the above is impossible, the company can use Vipps through a
 Vipps payments can only be made by customers with a Norwegian phone number and
 with a Norwegian national identity number or D-number.
 This is required by the Norwegian government.
+
+Vipps users must authenticate with Norwegian BankID when creating the Vipps account.
 
 A D-number is given to foreign persons who do not have a Norwegian national identity number,
 but have a need for identification for the Norwegian authorities.
