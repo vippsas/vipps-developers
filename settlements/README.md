@@ -108,10 +108,13 @@ for more details.
 
 ## GDPR
 
-Vipps does not provide personal details of the customer to the merchant as part of settlement reports, as there is no legal basis for Vipps as a data processor under European Data Protection laws to do this for all payments.
+The transaction overview on portal.vipps.no shows the customer names for Vippsnummer payments. For other payments, such as Vipps på nett and Vipps Faste betalinger the orderId is shown instead of the customer name.
 
-Accordingly, settlement reports with personal details of the customer are not available.
-Further information can be found here: [GDPR](https://ec.europa.eu/info/law/law-topic/data-protection_en).
+You can click the little "i" in the header on the transaction overview and see the same info as above.
+
+The orderId is specified by the merchant. See the orderId recommendations.
+
+Use Userinfo to get customer's consent to share name, email address, etc.
 
 # How to get settlement files
 
