@@ -1,6 +1,6 @@
 # Vipps API Lifecycle
 
-Document version: 1.0.1.
+Document version: 1.0.2.
 
 # Table of Contents
 
@@ -231,7 +231,7 @@ backwards compatible change to correct it.
 # Breaking changes
 
 Changes that are incompatible with previous versions of an API requires
-a new major version. This means a bump from `2.3.4` from `3.0.0`.
+a new major version. This means a bump from `2.3.4` to `3.0.0`.
 
 The API endpoints will also get a new version parameter in the path:
 from `v2` to `v3`.
