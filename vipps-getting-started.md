@@ -15,7 +15,7 @@ If you are using Vipps through an e-commerce platform, integration partner or PS
 * [Partner](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-3)
 * [PSP](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-2)
 
-Document version: 3.2.23.
+Document version: 3.2.24.
 
 # Table of contents
 
@@ -59,6 +59,12 @@ provider and to receive payments from Vipps users:
 * A Norwegian organization number
 * A Norwegian bank account
 * An appointed contact person with a Norwegian phone number and Norwegian identity number ("fødselsnummer" or "D-nummer", 11 digits).
+
+If the foreign company has not yet been formally established, Vipps can
+manually send the agreement for digital signing with Danish NemID,
+Swedish BankID, etc. Please contact your partner manager (if you are a partner) or
+[customer service](https://vipps.no/kontakt-oss/)
+if this is required.
 
 If the above is impossible, the company can use Vipps through a
 [Payment Service Provider (PSP)](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-2).
