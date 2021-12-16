@@ -7,8 +7,8 @@ This newsletter was sent in January 2022.
 * [Recurring API: Processing](#recurring-api-processing)
 * [Deprecation of the Vipps Signup API](#deprecation-of-the-vipps-signup-api)
 * [Reminders](#reminders)
-* [Omikron tips](#omikron-tips)
-* [Vipps Hurtigkasse: Use the explicit flow](#vipps-hurtigkasse-use-the-explicit-flow)
+  * [Omikron tips](#omikron-tips)
+  * [Vipps Hurtigkasse: Use the explicit flow](#vipps-hurtigkasse-use-the-explicit-flow)
   * [Use the API Dashboard to find problems with your integration](#use-the-api-dashboard-to-find-problems-with-your-integration)
   * [Use Userinfo to register visitors](#use-userinfo-to-register-visitors)
   * ["Click and collect" recommendations](#click-and-collect-recommendations)
@@ -41,7 +41,7 @@ and
 
 # Reminders
 
-# Omikron tips
+## Omikron tips
 
 These Vipps solutions are extra relevant (again):
 
@@ -55,7 +55,7 @@ These Vipps solutions are extra relevant (again):
 - ["Click and collect" recommendations](#-click-and-collect--recommendations)
   to speed up the user experience for your customers.
 
-# Vipps Hurtigkasse: Use the explicit flow
+## Vipps Hurtigkasse: Use the explicit flow
 
 When users are prompted to select shipping address and shipping address, the
 explicit flow is _strongly_ recommended. The user then has to actively
