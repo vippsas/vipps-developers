@@ -127,8 +127,8 @@ every three months.
 | ------------------- | ---------------------- | ---------------------- |
 | callback-1.vipps.no | callback-dr-1.vipps.no | callback-mt-1.vipps.no |
 | callback-2.vipps.no | callback-dr-2.vipps.no | callback-mt-2.vipps.no |
-| callback-3.vipps.no | callback-dr-3.vipps.no | callback-mt-3.vipps.no |
-| callback-4.vipps.no | callback-dr-4.vipps.no | callback-mt-4.vipps.no |
+| callback-3.vipps.no | callback-dr-3.vipps.no |  |
+| callback-4.vipps.no | callback-dr-4.vipps.no |  |
 
 The disaster recovery environment is as important as the production environment.
 
