@@ -7,9 +7,9 @@ This newsletter was sent in January 2022.
 * [Recurring API: Processing](#recurring-api-processing)
 * [Deprecation of the Vipps Signup API](#deprecation-of-the-vipps-signup-api)
 * [Reminders](#reminders)
+  * [Use the API Dashboard to find problems with your integration](#use-the-api-dashboard-to-find-problems-with-your-integration)
   * [Omikron tips](#omikron-tips)
   * [Vipps Hurtigkasse: Use the explicit flow](#vipps-hurtigkasse-use-the-explicit-flow)
-  * [Use the API Dashboard to find problems with your integration](#use-the-api-dashboard-to-find-problems-with-your-integration)
   * [Use Userinfo to register visitors](#use-userinfo-to-register-visitors)
   * ["Click and collect" recommendations](#click-and-collect-recommendations)
 * [Newsletter archive](#newsletter-archive)
@@ -40,6 +40,20 @@ and
 [Vipps Partners](https://github.com/vippsas/vipps-partner).
 
 # Reminders
+
+## Use the API Dashboard to find problems with your integration
+
+The API Dashboard is available for both the production and test environments,
+and is an easy way to see if you are using the Vipps APIs correctly.
+Think of it as a "health check", that you can use to see if there are any
+problems you need to investigate.
+
+See it on
+[portal.vipps.no](https://portal.vipps.no)
+under the "Utvikler" ("Developer") tab.
+Here's an example for the Vipps eCom API's `/refund` endpoint:
+
+![API Dashboard example](images/2021-02-api-dashboard-example.png)
 
 ## Omikron tips
 
@@ -72,20 +86,6 @@ in
 See
 [Old and new express checkout flow](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#old-and-new-express-checkout-flow)
 for more details.
-
-## Use the API Dashboard to find problems with your integration
-
-The API Dashboard is available for both the production and test environments,
-and is an easy way to see if you are using the Vipps APIs correctly.
-Think of it as a "health check", that you can use to see if there are any
-problems you need to investigate.
-
-See it on
-[portal.vipps.no](https://portal.vipps.no)
-under the "Utvikler" ("Developer") tab.
-Here's an example for the Vipps eCom API's `/refund` endpoint:
-
-![API Dashboard example](images/2021-02-api-dashboard-example.png)
 
 ## Use Userinfo to register visitors
 
