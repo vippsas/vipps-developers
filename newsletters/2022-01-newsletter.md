@@ -6,6 +6,7 @@ This newsletter was sent in January 2022.
 
 * [Recurring API: Processing](#recurring-api-processing)
 * [Deprecation of the Vipps Signup API](#deprecation-of-the-vipps-signup-api)
+* [Vipps Login directly from phone number and QR](#vipps-login-directly-from-phone-number-and-QR)
 * [Reminders](#reminders)
   * [Use the API Dashboard to find problems with your integration](#use-the-api-dashboard-to-find-problems-with-your-integration)
   * [Omikron tips](#omikron-tips)
@@ -38,6 +39,16 @@ be phased out. See
 [Deprecation of the Vipps Signup API](https://github.com/vippsas/vipps-signup-api/blob/master/vipps-signup-api-deprecation.md)
 and
 [Vipps Partners](https://github.com/vippsas/vipps-partner).
+
+# Vipps Login directly from phone number and QR
+
+The Vipps Login service has been extended to support both login directly from phone number and QR-code. 
+
+Vipps Login directly from phone number is a Client Initiated Backchannel Authentication (CIBA) flow to support use cases where authentication/registration does not start in a browser or an app. This could typically be physical contexts like point of sales (POS) solutions, on the phone in call center solutions, or devices/terminals like TV boxes. The user can get a confirmation on completed process in Vipps or be taken to the browser. 
+
+Vipps Login directly from QR-code allows the user to scan a QR-code either from the camera on the phone or with the scanner in Vipps to share their information. The user can get a confirmation on completed process in Vipps or be taken to the browser. This can be used in marketing, from posters, screens etc. 
+
+More information on both possibilities can be found in [our documentation](https://github.com/vippsas/vipps-login-api).
 
 # Reminders
 
@@ -123,6 +134,7 @@ call by including:
   }
 ]
 ```
+
 
 # Newsletter archive
 
