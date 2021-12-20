@@ -8,6 +8,7 @@ This newsletter was sent in January 2022.
 * [Deprecation of the Vipps Signup API](#deprecation-of-the-vipps-signup-api)
 * [Reminders](#reminders)
   * [Use the API Dashboard to find problems with your integration](#use-the-api-dashboard-to-find-problems-with-your-integration)
+  * [Use Statuspage to get information about incidents]()
   * [Omikron tips](#omikron-tips)
   * [Vipps Hurtigkasse: Use the explicit flow](#vipps-hurtigkasse-use-the-explicit-flow)
   * [Use Userinfo to register visitors](#use-userinfo-to-register-visitors)
@@ -54,6 +55,19 @@ under the "Utvikler" ("Developer") tab.
 Here's an example for the Vipps eCom API's `/refund` endpoint:
 
 ![API Dashboard example](images/2021-02-api-dashboard-example.png)
+
+## Use Statuspage to get information about incidents
+
+Vipps uses Statuspage to inform about problems, planned maintenance, etc.
+You can subscribe to get updates, and also subscribe to specific incidents.
+
+One example:
+[Apache Log4j vulnerability – No impact to Vipps](Apache Log4j vulnerability – No impact to Vipps).
+
+See:
+[Statuspage for the production environment](https://vipps.statuspage.io)
+and
+[the other status pages](https://github.com/vippsas/vipps-developers#status-pages).
 
 ## Omikron tips
 
