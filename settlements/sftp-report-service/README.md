@@ -103,7 +103,7 @@ All merchants can set up SFTP:
    EdDSA and Ed25519 keys in OpenSSH format (and reject DSA keys).
    After this you should see the newly created user.
    For help creating SSH keys, the GitHub documentation may be helpful:
-   [Generating a new SSH key](hhttps://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#generating-a-new-ssh-key).
+   [Generating a new SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#generating-a-new-ssh-key).
 
 An example of a public SSH key (normally stored in the user's home directory: `~/.ssh/id_ed25519.pub`):
 ```
