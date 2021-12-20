@@ -2,6 +2,9 @@
 
 This service allows for retrieval of settlement files with SFTP.
 
+SFTP is secure file transfer using SSH (Secure Shell), a cryptographic network
+protocol for operating network services securely over an unsecured network.
+
 SFTP can be used manually (interactively), or automatically/programmatically
 by using SFTP as part of an integration.
 
@@ -21,7 +24,7 @@ for more information about settlements.
   * [Example SFTP session](#example-sftp-session)
 - [Questions?](#questions-)
 
-Document version: 3.0.0.
+Document version: 3.0.1.
 
 # Reports
 
@@ -102,24 +105,27 @@ All merchants can set up SFTP:
    For help creating SSH keys, the GitHub documentation may be helpful:
    https://help.github.com/articles/connecting-to-github-with-ssh/
 
-An example of a public SSH key:
+An example of a public SSH key (normally stored in the user's home directory: `~/.ssh/id_ed25519.pub`):
 ```
 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOu1WvDcTWwZumZZwTvfqUKMA4ouG3mniNsvpNWorm5m user@example.com
 ```
+
 This is what it looks like on portal.vips.no:
 
 ![Bruker opprettet](images/02_bruker_opprettet.png "bruker opprettet")
 
-**Please note:** Vipps can not add the SSH key for you.
-If you do not have BankID, or you do not have the required permissions
-to add the SSH key, you will need the administrator to do it for you, or
-to update your permissions on
-[portal.vipps.no](https://portal.vipps.no).
-The administrator can create additional users on
-[portal.vipps.no](https://portal.vipps.no).
-If you don't know who the administrator is, you can check
-[Brønnøysundregistrene](https://www.brreg.no)
-and see who has the right to sign for the company.
+**Please note:**
+* Vipps can not add the SSH key for you.
+* Vipps can not test the SSH key for you.
+* If you do not have BankID, or you do not have the required permissions
+  to add the SSH key, you will need the administrator to do it for you, or
+  to update your permissions on
+  [portal.vipps.no](https://portal.vipps.no).
+* The administrator can create additional users on
+  [portal.vipps.no](https://portal.vipps.no).
+* If you don't know who the administrator is, you can check
+  [Brønnøysundregistrene](https://www.brreg.no)
+  and see who has the right to sign for the company.
 
 ## Connecting to the SFTP server
 
@@ -137,10 +143,11 @@ hostname and DNS, and automatically update your firewall rules if there are DNS 
 
 ## Directory structure
 
-This is the directory structure:
+This is the directory structure (where `[alternative1|alternative2]` indicates two alternatives):
 ```
 /settlements/[inbox|archive]/[file extension]/[orgno.]/[merchant serial number]/[merchant serial number]-[settlement number].[file extension]
 ```
+
 The `orgno.` is the company's organization number, nine digits.
 The `merchant serial number` (also called MSN) is the unique five or six digit
 id for the sale unit.
