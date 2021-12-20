@@ -59,10 +59,10 @@ Here's an example for the Vipps eCom API's `/refund` endpoint:
 ## Use Statuspage to get information about incidents
 
 Vipps uses Statuspage to inform about problems, planned maintenance, etc.
-You can subscribe to get updates, and also subscribe to specific incidents.
+You can subscribe to get all updates, and also subscribe to specific incidents.
 
 One example:
-[Apache Log4j vulnerability – No impact to Vipps](Apache Log4j vulnerability – No impact to Vipps).
+[Apache Log4j vulnerability – No impact to Vipps](https://vipps.statuspage.io/incidents/yfbhp4lm9g4j).
 
 See:
 [Statuspage for the production environment](https://vipps.statuspage.io)
