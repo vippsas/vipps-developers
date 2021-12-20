@@ -24,7 +24,7 @@ for more information about settlements.
   * [Example SFTP session](#example-sftp-session)
 - [Questions?](#questions-)
 
-Document version: 3.0.2.
+Document version: 3.0.3.
 
 # Reports
 
@@ -92,13 +92,11 @@ All merchants can set up SFTP:
 
 1. Log in with BankID on
   [portal.vipps.no](https://portal.vipps.no)
-  and select `Utvikler` in the menu.
-
-![Velg profil](images/01_velg_profil.png "Velg profil")
+  and select the `Utvikler` menu item.
 
 2. Click the tab `SFTP Access` to add users for SFTP access.
 
-3. You can add the public keys of the user(s).
+3. Add the public key(s) for the user(s) to give access.
    We support RSA (minimum 2048-bit),
    EdDSA and Ed25519 keys in OpenSSH format (and reject DSA keys).
    After this you should see the newly created user.
