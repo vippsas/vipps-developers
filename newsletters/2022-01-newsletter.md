@@ -44,7 +44,7 @@ and
 # Check your eCom API calls
 
 We see that a lot of calls to
-[`POST:/ecomm/v2/payments`](https://vippsas.github.io/vipps-ecom-api/#/Vipps_eCom_API/initiatePaymentV3UsingPOST)  
+[`POST:/ecomm/v2/payments`](https://vippsas.github.io/vipps-ecom-api/#/Vipps_eCom_API/initiatePaymentV3UsingPOST)
 use an incorrectly formatted phone number.
 
 The effect is that the user's phone number is not correctly pre-filled on
