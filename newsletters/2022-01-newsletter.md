@@ -46,14 +46,14 @@ and
 We see that a lot of calls to
 [`POST:/ecomm/v2/payments`](https://vippsas.github.io/vipps-ecom-api/#/Vipps_eCom_API/initiatePaymentV3UsingPOST)
 use an incorrectly formatted phone number.
-
 The effect is that the user's phone number is not correctly pre-filled on
 the Vipps landing page.
 
 Please make sure you send the `mobileNumber` in `91234567` format, not
-`+47 91 2 345 67` or something else.
-We have previously tried to respond with `HTTP 400 Bad Request` for incorrectly
-formatted phone numbers, but that broke _a lot_  of integrations.
+`+47 91 23 45 67` or something else.
+
+We have previously tried to respond with `HTTP 400 Bad Request` (as we should)
+for incorrectly formatted phone numbers, but that broke _a lot_  of integrations.
 
 # Reminders
 
