@@ -6,6 +6,7 @@ This newsletter was sent in January 2022.
 
 * [Recurring API: Processing](#recurring-api-processing)
 * [Deprecation of the Vipps Signup API](#deprecation-of-the-vipps-signup-api)
+* [Check your eCom API calls](#check-your-ecom-api-calls)
 * [Reminders](#reminders)
   * [Use the API Dashboard to find problems with your integration](#use-the-api-dashboard-to-find-problems-with-your-integration)
   * [Use Statuspage to get information about incidents]()
@@ -39,6 +40,20 @@ be phased out. See
 [Deprecation of the Vipps Signup API](https://github.com/vippsas/vipps-signup-api/blob/master/vipps-signup-api-deprecation.md)
 and
 [Vipps Partners](https://github.com/vippsas/vipps-partner).
+
+# Check your eCom API calls
+
+We see that a lot of calls to
+[`POST:/ecomm/v2/payments`](https://vippsas.github.io/vipps-ecom-api/#/Vipps_eCom_API/initiatePaymentV3UsingPOST)  
+use an incorrectly formatted phone number.
+
+The effect is that the user's phone number is not correctly pre-filled on
+the Vipps landing page.
+
+Please make sure you send the `mobileNumber` in `91234567` format, not
+`+47 91 2 345 67` or something else.
+We have previously tried to respond with `HTTP 400 Bad Request` for incorrectly
+formatted phone numbers, but that broke _a lot_  of integrations.
 
 # Reminders
 
