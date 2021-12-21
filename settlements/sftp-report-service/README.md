@@ -24,7 +24,7 @@ for more information about settlements.
   * [Example SFTP session](#example-sftp-session)
 - [Questions?](#questions-)
 
-Document version: 3.0.3.
+Document version: 3.0.4.
 
 # Reports
 
@@ -78,7 +78,7 @@ More information about SFTP:
 SFTP users are created, associated with a public SSH key, and given access to the reports of
 one or more MSNs (Merchant Serial Numbers, typically "sale units").
 
-It possible to use the same public SSH key for multiple MSNs.
+It possible to use the same public SSH key for multiple merchants and multiple MSNs.
 
 Partners may provide all their merchants with a common public SSH key
 that the merchants can use to give the partner access their settlements.
