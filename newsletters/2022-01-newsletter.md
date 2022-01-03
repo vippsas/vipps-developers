@@ -4,10 +4,10 @@
 
 This newsletter was sent in January 2022.
 
-* [Recurring API: Processing](#recurring-api-processing)
-* [Deprecation of the Vipps Signup API](#deprecation-of-the-vipps-signup-api)
-* [Check your eCom API calls](#check-your-ecom-api-calls)
+* [Recurring API: The "PROCESSING" status](#recurring-api-the-processing-status)
+* [Please check your eCom API calls](#please-check-your-ecom-api-calls)
 * [Vipps Login directly from phone number and QR code](#vipps-login-directly-from-phone-number-and-QR-code)
+* [Deprecation of the Vipps Signup API](#deprecation-of-the-vipps-signup-api)
 * [Reminders](#reminders)
   * [Use the API Dashboard to find problems with your integration](#use-the-api-dashboard-to-find-problems-with-your-integration)
   * [Use Statuspage to get information about incidents](#use-statuspage-to-get-information-about-incidents)
@@ -18,7 +18,7 @@ This newsletter was sent in January 2022.
 * [Newsletter archive](#newsletter-archive)
 * [Questions or comments?](#questions-or-comments)
 
-# Recurring API: "Processing"
+# Recurring API: The "PROCESSING" status
 
 We would like to emphasize: With the Vipps Recurring API merchants ask Vipps
 to make the charges, and Vipps handles _everything_ for the merchant.
@@ -35,15 +35,7 @@ will be `CHARGED` or `FAILED`. See the API documentation for more details.
 See:
 [Charge states](https://github.com/vippsas/vipps-recurring-api/blob/processing/vipps-recurring-api.md#charge-states).
 
-# Deprecation of the Vipps Signup API
-
-The old API that some partners still use to sign up new merchants will
-be phased out. See
-[Deprecation of the Vipps Signup API](https://github.com/vippsas/vipps-signup-api/blob/master/vipps-signup-api-deprecation.md)
-and
-[Vipps Partners](https://github.com/vippsas/vipps-partner).
-
-# Check your eCom API calls
+# Please check your eCom API calls
 
 We see that a lot of calls to
 [`POST:/ecomm/v2/payments`](https://vippsas.github.io/vipps-ecom-api/#/Vipps_eCom_API/initiatePaymentV3UsingPOST)
@@ -78,6 +70,14 @@ This can be used in marketing, from posters, screens etc.
 More information on both possibilities can be found in the
 [Vipps Login API](https://github.com/vippsas/vipps-login-api)
 documentation.
+
+# Deprecation of the Vipps Signup API
+
+The old API that some partners still use to sign up new merchants will
+be phased out. See
+[Deprecation of the Vipps Signup API](https://github.com/vippsas/vipps-signup-api/blob/master/vipps-signup-api-deprecation.md)
+and
+[Vipps Partners](https://github.com/vippsas/vipps-partner).
 
 # Reminders
 
