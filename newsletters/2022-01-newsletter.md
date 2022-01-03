@@ -53,16 +53,17 @@ user experience.
 
 # Vipps Login directly from phone number and QR code
 
-The Vipps Login API now supports login directly from phone number and QR code.
+The Vipps Login API now supports merchant-initiated login directly from a phone
+number, and by users scanning a QR code.
 
-Vipps Login directly from phone number is a Client Initiated Backchannel
+* Vipps Login directly from phone number is a Client Initiated Backchannel
 Authentication (CIBA) flow where authentication/registration does not start in a
 browser or an app, but is initiated by the merchant. The user simply confirms in Vipps.
 This is typically in physical contexts like point of sales (POS), on the phone
 in call center solutions, or using devices/terminals like TV boxes. The user can
 either get a confirmation in Vipps, or be taken to the merchant's confirmation page in a browser.
 
-Vipps Login directly from QR code allows the user to scan a QR code with the
+* Vipps Login directly from QR code allows the user to scan a QR code with the
 phone's camera or with Vipps and register or log in directly. The user can either get a confirmation in Vipps,
 or be taken to the merchant's confirmation page in a browser.
 This can be used in marketing, from posters, screens etc.
