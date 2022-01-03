@@ -31,7 +31,7 @@ always ask the user to check in Vipps if a charge has failed.
 We have, for a while, attempted to give the merchant up-to-date information
 about the status of the charge, with `failureReason` and `failureDescription`,
 but this causes more confusion than clarity: Even if one charge attempt fails,
-the cvarge itself has not failed until all the attempts are completed.
+the charge itself has not failed until all the attempts are completed.
 We will therefore continue to use `PROCESSING`, as we have done, but until
 all charge attempts have been made.
 
