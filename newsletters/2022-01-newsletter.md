@@ -23,7 +23,7 @@ This newsletter was sent in January 2022.
 We would like to emphasize: With the Vipps Recurring API merchants ask Vipps
 to make the charges, and Vipps handles _everything_ for the merchant.
 
-Vipps does not "leak" the customers's information about insufficient funds,
+Vipps does not "leak" the customers' information about insufficient funds,
 blocked cards, etc. Users are informed about all such problems in Vipps, which
 is the only place they can be corrected. The merchant's customer service should
 always ask the user to check in Vipps if a charge has failed.
