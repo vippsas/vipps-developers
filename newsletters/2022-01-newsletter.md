@@ -6,9 +6,11 @@ This newsletter was sent in January 2022.
 
 * [Recurring API: Processing](#recurring-api-processing)
 * [Deprecation of the Vipps Signup API](#deprecation-of-the-vipps-signup-api)
+* [Check your eCom API calls](#check-your-ecom-api-calls)
 * [Vipps Login directly from phone number and QR](#vipps-login-directly-from-phone-number-and-QR)
 * [Reminders](#reminders)
   * [Use the API Dashboard to find problems with your integration](#use-the-api-dashboard-to-find-problems-with-your-integration)
+  * [Use Statuspage to get information about incidents]()
   * [Omikron tips](#omikron-tips)
   * [Vipps Hurtigkasse: Use the explicit flow](#vipps-hurtigkasse-use-the-explicit-flow)
   * [Use Userinfo to register visitors](#use-userinfo-to-register-visitors)
@@ -40,6 +42,20 @@ be phased out. See
 and
 [Vipps Partners](https://github.com/vippsas/vipps-partner).
 
+# Check your eCom API calls
+
+We see that a lot of calls to
+[`POST:/ecomm/v2/payments`](https://vippsas.github.io/vipps-ecom-api/#/Vipps_eCom_API/initiatePaymentV3UsingPOST)
+use an incorrectly formatted phone number.
+The effect is that the user's phone number is not correctly pre-filled on
+the Vipps landing page.
+
+Please make sure you send the `mobileNumber` in `91234567` format, not
+`+47 91 23 45 67` or something else.
+
+We have previously tried to respond with `HTTP 400 Bad Request` (as we should)
+for incorrectly formatted phone numbers, but that broke _a lot_  of integrations.
+
 # Vipps Login directly from phone number and QR
 
 The Vipps Login service has been extended to support both login directly from phone number and QR-code. 
@@ -65,6 +81,19 @@ under the "Utvikler" ("Developer") tab.
 Here's an example for the Vipps eCom API's `/refund` endpoint:
 
 ![API Dashboard example](images/2021-02-api-dashboard-example.png)
+
+## Use Statuspage to get information about incidents
+
+Vipps uses Statuspage to inform about problems, planned maintenance, etc.
+You can subscribe to get all updates, and also subscribe to specific incidents.
+
+One example:
+[Apache Log4j vulnerability – No impact to Vipps](https://vipps.statuspage.io/incidents/yfbhp4lm9g4j).
+
+See:
+[Statuspage for the production environment](https://vipps.statuspage.io)
+and
+[the other status pages](https://github.com/vippsas/vipps-developers#status-pages).
 
 ## Omikron tips
 
