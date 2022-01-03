@@ -28,6 +28,13 @@ blocked cards, etc. Users are informed about all such problems in Vipps, which
 is the only place they can be corrected. The merchant's customer service should
 always ask the user to check in Vipps if a charge has failed.
 
+We have, for a while, attempted to give the merchant up-to-date information
+about the status of the charge, with `failureReason` and `failureDescription`,
+but this causes more confusion than clarity: Even if one charge attempt fails,
+the cvarge itself has not failed until all the attempts are completed.
+We will therefore continue to use `PROCESSING`, as we have done, but until
+all charge attempts have been made.
+
 The status of a charge will be `PROCESSING` while Vipps is taking care of business,
 from the `due` date until the `retryDays` have passed. After that the status
 will be `CHARGED` or `FAILED`. See the API documentation for more details.
