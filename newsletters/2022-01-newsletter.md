@@ -36,8 +36,10 @@ We will therefore continue to use `PROCESSING`, as we have done, but until
 _all_ charge attempts have been made.
 
 The status of a charge will be `PROCESSING` while Vipps is taking care of business,
-from the `due` date until the `retryDays` have passed. After that the status
-will be `CHARGED` or `FAILED`. See the API documentation for more details.
+from the `due` date until the charge has succeeded, or until the
+`retryDays` have passed without a successful charge.
+The final status will be `CHARGED` or `FAILED`.
+See the API documentation for more details.
 
 See:
 [Charge states](https://github.com/vippsas/vipps-recurring-api/blob/processing/vipps-recurring-api.md#charge-states).
