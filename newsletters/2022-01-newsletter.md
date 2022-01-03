@@ -7,10 +7,10 @@ This newsletter was sent in January 2022.
 * [Recurring API: Processing](#recurring-api-processing)
 * [Deprecation of the Vipps Signup API](#deprecation-of-the-vipps-signup-api)
 * [Check your eCom API calls](#check-your-ecom-api-calls)
-* [Vipps Login directly from phone number and QR](#vipps-login-directly-from-phone-number-and-QR)
+* [Vipps Login directly from phone number and QR code](#vipps-login-directly-from-phone-number-and-QR-code)
 * [Reminders](#reminders)
   * [Use the API Dashboard to find problems with your integration](#use-the-api-dashboard-to-find-problems-with-your-integration)
-  * [Use Statuspage to get information about incidents]()
+  * [Use Statuspage to get information about incidents](#use-statuspage-to-get-information-about-incidents)
   * [Omikron tips](#omikron-tips)
   * [Vipps Hurtigkasse: Use the explicit flow](#vipps-hurtigkasse-use-the-explicit-flow)
   * [Use Userinfo to register visitors](#use-userinfo-to-register-visitors)
@@ -18,18 +18,19 @@ This newsletter was sent in January 2022.
 * [Newsletter archive](#newsletter-archive)
 * [Questions or comments?](#questions-or-comments)
 
-# Recurring API: Processing
+# Recurring API: "Processing"
 
-We would like to emphasize: Merchants ask Vipps to make charges, and Vipps handles _everything_.
+We would like to emphasize: With the Vipps Recurring API merchants ask Vipps
+to make the charges, and Vipps handles _everything_ for the merchant.
 
 Vipps does not "leak" the customers's information about insufficient funds,
 blocked cards, etc. Users are informed about all such problems in Vipps, which
 is the only place they can be corrected. The merchant's customer service should
 always ask the user to check in Vipps if a charge has failed.
 
-The status of a charge will be `PROCESSING` while we are taking care of business,
+The status of a charge will be `PROCESSING` while Vipps is taking care of business,
 from the `due` date until the `retryDays` have passed. After that the status
-will be `CHARGED` or `FAILED`.
+will be `CHARGED` or `FAILED`. See the API documentation for more details.
 
 See:
 [Charge states](https://github.com/vippsas/vipps-recurring-api/blob/processing/vipps-recurring-api.md#charge-states).
@@ -54,17 +55,29 @@ Please make sure you send the `mobileNumber` in `91234567` format, not
 `+47 91 23 45 67` or something else.
 
 We have previously tried to respond with `HTTP 400 Bad Request` (as we should)
-for incorrectly formatted phone numbers, but that broke _a lot_  of integrations.
+for incorrectly formatted phone numbers, but that broke _a lot_  of integrations,
+so we decided to accept the incorrect API calls even though they give a poor
+user experience.
 
-# Vipps Login directly from phone number and QR
+# Vipps Login directly from phone number and QR code
 
-The Vipps Login service has been extended to support both login directly from phone number and QR-code. 
+The Vipps Login API now supports login directly from phone number and QR code.
 
-Vipps Login directly from phone number is a Client Initiated Backchannel Authentication (CIBA) flow to support use cases where authentication/registration does not start in a browser or an app. This could typically be physical contexts like point of sales (POS) solutions, on the phone in call center solutions, or devices/terminals like TV boxes. The user can get a confirmation on completed process in Vipps or be taken to the browser. 
+Vipps Login directly from phone number is a Client Initiated Backchannel
+Authentication (CIBA) flow where authentication/registration does not start in a
+browser or an app, but is initiated by the merchant. The user simply confirms in Vipps.
+This is typically in physical contexts like point of sales (POS), on the phone
+in call center solutions, or using devices/terminals like TV boxes. The user can
+either get a confirmation in Vipps, or be taken to the merchant's confirmation page in a browser.
 
-Vipps Login directly from QR-code allows the user to scan a QR-code either from the camera on the phone or with the scanner in Vipps to share their information. The user can get a confirmation on completed process in Vipps or be taken to the browser. This can be used in marketing, from posters, screens etc. 
+Vipps Login directly from QR code allows the user to scan a QR code with the
+phone's camera or with Vipps and register or log in directly. The user can either get a confirmation in Vipps,
+or be taken to the merchant's confirmation page in a browser.
+This can be used in marketing, from posters, screens etc.
 
-More information on both possibilities can be found in [our documentation](https://github.com/vippsas/vipps-login-api).
+More information on both possibilities can be found in the
+[Vipps Login API](https://github.com/vippsas/vipps-login-api)
+documentation.
 
 # Reminders
 
