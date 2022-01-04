@@ -163,7 +163,7 @@ There are no real files on the server, all data is generated dynamically.
 When you `get` a file, or `mget` multiple files, the server will automatically
 create the requested file(s).
 Some SFTP clients check the file size with a `ls` command first.
-Since the files doe not exist until the `get` or `mget` command is sent, the file size
+Since the files do not exist until the `get` or `mget` command is sent, the file size
 reported by the server is zero bytes.
 The SFTP service can not provide correct size information, since there is no real file.
 It is therefore not possible to check the size of a file with `ls`.
