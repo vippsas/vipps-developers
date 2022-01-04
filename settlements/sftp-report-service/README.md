@@ -24,7 +24,7 @@ for more information about settlements.
   * [Example SFTP session](#example-sftp-session)
 - [Questions?](#questions-)
 
-Document version: 3.0.4.
+Document version: 3.0.5.
 
 # Reports
 
@@ -35,12 +35,9 @@ It is not possible to aggregate reports from multiple sale units into one report
 There will never be more than one new file per sales unit each
 day (and there may be none).
 
-Note that the reports are generated on-demand, which is why the file size is
-reported as zero (the size is unknown at the time of listing).
-
 **Please note:** There will be no settlement reports for dates without completed
-payments. In these cases, neither the settlement files nor the directories that
-should have contained settlement files will exist.
+payments and a positive balance. In these cases, neither the settlement files
+nor the directories that should have contained settlement files will exist.
 Please see
 [Availability](https://github.com/vippsas/vipps-developers/tree/master/settlements#availability)
 for details.
@@ -161,20 +158,23 @@ Example files, with full path:
 
 # How to use it
 
-Reports under `/settlements/inbox` can be "deleted" (actually hidden)
-with the SFTP client in order to keep track of already processed reports.
+**Important:** The reports are generated on-demand:
+There are no real files on the server, all data is generated dynamically.
+When you `get` a file, or `mget` multiple files, the server will automatically
+create the requested file(s).
+Some SFTP clients check the file size with a `ls` command first.
+Since the files doe not exist until the `get` or `mget` command is sent, the file size
+reported by the server is zero bytes.
+The SFTP service can not provide correct size information, since there is no real file.
+It is therefore not possible to check the size of a file with `ls`.
+If this causes problems for your SFTP client, the solution is to use a different client.
 
-Reports are deleted by using the `rm` command in SFTP or the "delete" function
-in your SFTP interface.
+Reports under `/settlements/inbox` can be deleted by using the `rm` command in
+SFTP or the "delete" function in your SFTP interface.
+The files are not really deleted, but actually hidden, in order to keep track
+of already processed reports.
 
 Reports under `/settlements/archive` cannot be removed.
-
-**Important:** The reports are generated on-demand.
-There are no real files on the server, all data is generated dynamically.
-Some SFTP clients check the file size with a `ls` command.
-Since the files have not yet been created, the file size is reported as zero.
-The service can not provide correct size information.
-It is therefore not possible to check the size of a file with `ls`.
 
 ## Example SFTP session
 
