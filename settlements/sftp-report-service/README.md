@@ -24,7 +24,7 @@ for more information about settlements.
   * [Example SFTP session](#example-sftp-session)
 - [Questions?](#questions-)
 
-Document version: 3.0.5.
+Document version: 3.1.0.
 
 # Reports
 
@@ -181,17 +181,27 @@ Reports under `/settlements/archive` cannot be removed.
 Below is an example of an SFTP session, using the command-line,
 with line breaks added for readability.
 
+In this example the organization number is 998724341 and the MSN is 16655.
+
+Connect to the SFTP service:
 ```
 $ sftp sftp.vipps.no
 Connected to sftp.vipps.no.
+```
 
+Directory listing in the root directory:
+```
 sftp> ls
 settlements  
 
 sftp> ls settlements
 settlements/archive   
 settlements/inbox     
+```
 
+Directory listing of the `inbox/`, `inbox/xml/`, `inbox/xml/998724341/`
+and `inbox/xml/998724341/16655` directories:
+```
 sftp> ls settlements/inbox
 settlements/inbox/csv        
 settlements/inbox/pdf        
@@ -210,13 +220,21 @@ settlements/inbox/xml/998724341/16655/16655-2000001.xml
 settlements/inbox/xml/998724341/16655/16655-2000002.xml            
 settlements/inbox/xml/998724341/16655/16655-2000003.xml             
 settlements/inbox/xml/998724341/16655/16655-2000004.xml             
+```
 
+Using `mget` to get all the files in the `settlements/inbox/xml/998724341/16655` directory:
+```
 sftp> mget settlements/inbox/xml/998724341/16655/*
 Fetching /settlements/inbox/xml/998724341/16655/16655-2000001.xml to 16655-2000001.xml
 Fetching /settlements/inbox/xml/998724341/16655/16655-2000002.xml to 16655-2000002.xml
 Fetching /settlements/inbox/xml/998724341/16655/16655-2000003.xml to 16655-2000003.xml
 Fetching /settlements/inbox/xml/998724341/16655/16655-2000004.xml to 16655-2000004.xml
+```
 
+Directory listing in the _local_ directory (using the `!` prefix for the `ls` command),
+showing the retrieved files, and the `quit` command to end the SFTP session:
+
+```
 sftp> !ls -1
 16655-2000001.xml
 16655-2000002.xml
@@ -224,6 +242,9 @@ sftp> !ls -1
 16655-2000004.xml
 sftp> quit
 ```
+
+All of the above is basic SFTP use, and should be straight-forward.
+If you use a SFTP client, please refer to its user documentation.
 
 # Questions?
 
