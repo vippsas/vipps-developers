@@ -24,7 +24,7 @@ for more information about settlements.
   * [Example SFTP session](#example-sftp-session)
 - [Questions?](#questions-)
 
-Document version: 3.1.0.
+Document version: 3.1.1.
 
 # Reports
 
@@ -169,6 +169,9 @@ The SFTP service can not provide correct size information, since there is no rea
 It is therefore not possible to check the size of a file with `ls`.
 If this causes problems for your SFTP client, the solution is to use a different client.
 
+**Please note:** Some SFTP clients do not "see" the directories and require the
+full path of the directories to be explicitly provided.
+
 Reports under `/settlements/inbox` can be deleted by using the `rm` command in
 SFTP or the "delete" function in your SFTP interface.
 The files are not really deleted, but actually hidden, in order to keep track
@@ -189,7 +192,7 @@ $ sftp sftp.vipps.no
 Connected to sftp.vipps.no.
 ```
 
-Directory listing in the root directory:
+Directory listing of the root and `settlements` directories:
 ```
 sftp> ls
 settlements  
