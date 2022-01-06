@@ -21,7 +21,7 @@ We recommend starting with [Getting started](vipps-getting-started.md).
 - [Vipps design guidelines](#vipps-design-guidelines)
 - [Questions?](#questions)
 
-Document version: 2.6.0.
+Document version: 2.6.1.
 
 ## Vipps demo store
 
@@ -97,12 +97,23 @@ for more information about using Postman.
 
 All merchants have access to an API Dashboard on
 [portal.vipps.no](https://portal.vipps.no) under the "Utvikler" tab.
-Keep in mind that the "Utvikler" tab is only available to users with admin or developer roles.
 
 The API Dashboard shows information about your API usage, an overview of errors, etc.
 Here's an example for one endpoint:
 
-![API Dashboaard](newsletters/images/2021-02-api-dashboard-example.png)
+![API Dashboard](newsletters/images/2021-02-api-dashboard-example.png)
+
+The API Dashboard is available for both the production and test environments,
+and is an easy way to see if you are using the Vipps APIs correctly.
+Think of it as a "health check", that you can use to see if there are any
+problems you need to investigate.
+
+Keep in mind that the "Utvikler" tab is only available to users with admin or
+developer roles.
+
+**Important:** Partners can ask their merchants to give them access to the
+sale unit(s) the partner is making payments for, so the partner can use the
+API Dashboard.
 
 **Please note:** The API dashboard is not real-time, and events might take up to
 10 minutes before they appear. We strongly recommend that you also monitor your
