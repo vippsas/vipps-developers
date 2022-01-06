@@ -39,10 +39,9 @@ The status of a charge will be `PROCESSING` while Vipps is taking care of busine
 from the `due` date until the charge has succeeded, or until the
 `retryDays` have passed without a successful charge.
 The final status will be `CHARGED` or `FAILED`.
-See the API documentation for more details.
-
-See:
-[Charge states](https://github.com/vippsas/vipps-recurring-api/blob/processing/vipps-recurring-api.md#charge-states).
+See the
+[Recurring API documentation](https://github.com/vippsas/vipps-recurring-api)
+for more details.
 
 # Please check your eCom API calls
 
