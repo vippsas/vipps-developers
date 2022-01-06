@@ -7,6 +7,7 @@ We recommend starting with [Getting started](vipps-getting-started.md).
 
 - [Vipps demo store](#vipps-demo-store)
 - [API documentation](#api-documentation)
+- [Technical newsletter](#technical-newsletter)
 - [Partners](#partners)
 - [Plugins](#plugins)
 - [Status pages](#status-pages)
@@ -20,7 +21,7 @@ We recommend starting with [Getting started](vipps-getting-started.md).
 - [Vipps design guidelines](#vipps-design-guidelines)
 - [Questions?](#questions)
 
-Document version: 2.5.1.
+Document version: 2.6.0.
 
 ## Vipps demo store
 
@@ -47,6 +48,12 @@ All Vipps APIs are available here: https://github.com/vippsas
 The API documentation is frequently improved and increasingly extensive.
 Please use the search functionality in your browser and on GitHub to find
 what you are looking for.
+
+## Technical newsletter
+
+We have a low volume newsletter with important information to developers about
+Vipps' APIs and products. Subscribe (and access the archive) here:
+[Technical newsletter for developers](https://github.com/vippsas/vipps-developers/tree/master/newsletters).
 
 ## Partners
 
