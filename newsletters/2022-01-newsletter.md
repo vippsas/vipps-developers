@@ -82,9 +82,10 @@ phone's camera or with Vipps and register or log in directly. The user can eithe
 or be taken to the merchant's confirmation page in a browser.
 This can be used in marketing, from posters, screens etc.
 
-More information on both possibilities can be found in the
-[Vipps Login API](https://github.com/vippsas/vipps-login-api)
-documentation.
+See:
+* [Vipps Login from phone number API: How It Works](https://github.com/vippsas/vipps-login-api/blob/master/vipps-login-from-phone-number-api-howitworks.md)
+* [Vipps Login from QR-code API: How It Works](https://github.com/vippsas/vipps-login-api/blob/master/vipps-login-from-QR-api-howitworks.md)
+* [Vipps Login API](https://github.com/vippsas/vipps-login-api)
 
 # Deprecation of the Vipps Signup API
 
