@@ -110,6 +110,9 @@ Here's an example for the Vipps eCom API's `/refund` endpoint:
 
 ![API Dashboard example](images/2021-02-api-dashboard-example.png)
 
+See:
+[API Dashboard](https://github.com/vippsas/vipps-developers#api-dashboard).
+
 ## Use Statuspage to get information about incidents
 
 Vipps uses Statuspage to inform about problems, planned maintenance, etc.
