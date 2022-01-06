@@ -44,9 +44,9 @@ so we decided to accept the incorrect API calls even though they give a poor
 user experience.
 
 See:
+* [Use the API Dashboard to find problems with your integration](#use-the-api-dashboard-to-find-problems-with-your-integration)
 * "Common errors" in the
   [eCom API FAQ](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-faq.md)
-* [Use the API Dashboard to find problems with your integration](#use-the-api-dashboard-to-find-problems-with-your-integration)
 
 # Recurring API: The "PROCESSING" status
 
