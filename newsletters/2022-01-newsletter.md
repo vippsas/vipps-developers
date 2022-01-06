@@ -4,8 +4,8 @@
 
 This newsletter was sent in January 2022.
 
-* [Recurring API: The "PROCESSING" status](#recurring-api-the-processing-status)
 * [Please check your eCom API calls](#please-check-your-ecom-api-calls)
+* [Recurring API: The "PROCESSING" status](#recurring-api-the-processing-status)
 * [Vipps Login directly from phone number and QR code](#vipps-login-directly-from-phone-number-and-QR-code)
 * [Deprecation of the Vipps Signup API](#deprecation-of-the-vipps-signup-api)
 * [Reminders](#reminders)
@@ -17,6 +17,37 @@ This newsletter was sent in January 2022.
   * ["Click and collect" recommendations](#click-and-collect-recommendations)
 * [Newsletter archive](#newsletter-archive)
 * [Questions or comments?](#questions-or-comments)
+
+# Please check your eCom API calls
+
+We are working on eliminating incorrect API use. Although we always respond to
+incorrect API calls with a sensible HTTP status (usually `HTTP 400 Bad Request`)
+and an informative error message in the response body, we see that some keep
+making incorrect API calls.
+
+Please:
+- Monitor the response you get when making an API call
+- Log all errors
+- Use the API Dashboard
+- Fix errors as quickly as possible, we will help if needed
+
+One example: Far too many calls to
+[`POST:/ecomm/v2/payments`](https://vippsas.github.io/vipps-ecom-api/#/Vipps_eCom_API/initiatePaymentV3UsingPOST)
+use an incorrectly formatted phone number.
+The effect is that the user's phone number is not correctly pre-filled on
+the Vipps landing page.
+Please make sure you send the `mobileNumber` in `91234567` format, not
+`+47 91 23 45 67` or something else.
+
+We have previously tried to respond with `HTTP 400 Bad Request` (as we should)
+for incorrectly formatted phone numbers, but that broke _a lot_  of integrations,
+so we decided to accept the incorrect API calls even though they give a poor
+user experience.
+
+See:
+* "Common errors" in the
+  [eCom API FAQ](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-faq.md)
+* [Use the API Dashboard to find problems with your integration](#use-the-api-dashboard-to-find-problems-with-your-integration)
 
 # Recurring API: The "PROCESSING" status
 
@@ -42,27 +73,6 @@ The final status will be `CHARGED` or `FAILED`.
 See the
 [Recurring API documentation](https://github.com/vippsas/vipps-recurring-api)
 for more details.
-
-# Please check your eCom API calls
-
-We see that a lot of calls to
-[`POST:/ecomm/v2/payments`](https://vippsas.github.io/vipps-ecom-api/#/Vipps_eCom_API/initiatePaymentV3UsingPOST)
-use an incorrectly formatted phone number.
-The effect is that the user's phone number is not correctly pre-filled on
-the Vipps landing page.
-
-Please make sure you send the `mobileNumber` in `91234567` format, not
-`+47 91 23 45 67` or something else.
-
-We have previously tried to respond with `HTTP 400 Bad Request` (as we should)
-for incorrectly formatted phone numbers, but that broke _a lot_  of integrations,
-so we decided to accept the incorrect API calls even though they give a poor
-user experience.
-
-See:
-* "Common errors" in the
-  [eCom API FAQ](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-faq.md)
-* [Use the API Dashboard to find problems with your integration](#use-the-api-dashboard-to-find-problems-with-your-integration)
 
 # Vipps Login directly from phone number and QR code
 
