@@ -60,6 +60,11 @@ for incorrectly formatted phone numbers, but that broke _a lot_  of integrations
 so we decided to accept the incorrect API calls even though they give a poor
 user experience.
 
+See:
+* "Common errors" in the
+  [eCom API FAQ](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-faq.md)
+* [Use the API Dashboard to find problems with your integration](#use-the-api-dashboard-to-find-problems-with-your-integration)
+
 # Vipps Login directly from phone number and QR code
 
 The Vipps Login API now supports merchant-initiated login directly from a phone
