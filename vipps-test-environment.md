@@ -16,7 +16,7 @@ The Merchant Test Environment (MT) is available for all Vipps customers.
   * [iOS](#ios)
   * [Android](#android)
 
-Document version: 3.1.10.
+Document version: 3.1.11.
 
 ## About the test environment
 
@@ -43,6 +43,11 @@ Functionality not available in MT (a non-exhaustive list):
 * Limited support for testing card statuses that require connections to Nets, etc
 * Limited support for looking up customer information in
   [KAR](https://www.bits.no/en/bank/konto-og-adresseringsregister-kar/), etc
+* There is no SLA or uptime guarantee for the test environment. Vipps will
+  not make any fixes, etc. outside of typical Norwegian office hours.
+  See
+  [Statuspage](https://vipps-test.statuspage.io)
+  for automatically updated status information.
 
 To test functionality that is not available in MT, you will have to use the
 production environment in a controlled manner. One example may be to test
