@@ -1,7 +1,5 @@
 # Technical newsletter for developers 2022-01
 
-💥 DRAFT! 💥
-
 This newsletter was sent in January 2022.
 
 * [Please check your eCom API calls](#please-check-your-ecom-api-calls)
