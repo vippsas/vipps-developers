@@ -26,10 +26,11 @@ and an informative error message in the response body, we see that some keep
 making incorrect API calls.
 
 Please:
-- Monitor the response you get when making an API call
+- Monitor the responses you get when making an API calls
 - Log all errors
 - Use the API Dashboard
-- Fix errors as quickly as possible, we will help if needed
+- Fix errors as quickly as possible
+- Contact us if there is anything we can help with
 
 One example: Far too many calls to
 [`POST:/ecomm/v2/payments`](https://vippsas.github.io/vipps-ecom-api/#/Vipps_eCom_API/initiatePaymentV3UsingPOST)
