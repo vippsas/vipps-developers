@@ -20,14 +20,14 @@ This newsletter was sent in January 2022.
 
 We are working on eliminating incorrect API use. Although we always respond to
 incorrect API calls with a sensible HTTP status (usually `HTTP 400 Bad Request`)
-and an informative error message in the response body, we see that some keep
-making incorrect API calls.
+and an informative error message in the response body, we see that some merchant
+and partners keep making incorrect API calls.
 
 Please:
-- Monitor the responses you get when making an API calls
+- Monitor the responses you get when making API calls
 - Log all errors
-- Use the API Dashboard
 - Fix errors as quickly as possible
+- Use the API Dashboard
 - Contact us if there is anything we can help with
 
 One example: Far too many calls to
