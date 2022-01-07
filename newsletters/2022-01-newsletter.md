@@ -11,7 +11,7 @@ This newsletter was sent in January 2022.
   * [Use Statuspage to get information about incidents](#use-statuspage-to-get-information-about-incidents)
   * [Omikron tips](#omikron-tips)
   * [Vipps Hurtigkasse: Use the explicit flow](#vipps-hurtigkasse-use-the-explicit-flow)
-  * [Use Userinfo to register visitors](#use-userinfo-to-register-visitors)
+  * [Use Userinfo to register visitors when they pay](#use-userinfo-to-register-visitors-when-they-pay)
   * ["Click and collect" recommendations](#click-and-collect-recommendations)
 * [Newsletter archive](#newsletter-archive)
 * [Questions or comments?](#questions-or-comments)
@@ -77,20 +77,20 @@ We are also working on providing an event log for each chargeId. You can
 
 # Vipps Login directly from phone number and QR code
 
-The Vipps Login API now supports merchant-initiated login directly from a phone
-number, and by users scanning a QR code.
+The Vipps Login API now supports merchant-initiated logins using the
+user's phone number, and by users scanning a QR code.
 
-* Vipps Login directly from phone number is a Client Initiated Backchannel
-Authentication (CIBA) flow where authentication/registration does not start in a
-browser or an app, but is initiated by the merchant. The user simply confirms in Vipps.
-This is typically in physical contexts like point of sales (POS), on the phone
-in call center solutions, or using devices/terminals like TV boxes. The user can
-either get a confirmation in Vipps, or be taken to the merchant's confirmation page in a browser.
-
+* Vipps Login directly from phone number is a "Client Initiated Backchannel
+  Authentication" (CIBA) flow where authentication/registration does not start in a
+  browser or an app, but is initiated by the merchant, using the user's phone number.
+  The user simply confirms in Vipps.
+  This is typically in physical contexts like point of sales (POS), on the phone
+  in call center solutions, or using devices/terminals like TV boxes. The user can
+  either get a confirmation in Vipps, or be taken to the merchant's confirmation page in a browser.
 * Vipps Login directly from QR code allows the user to scan a QR code with the
-phone's camera or with Vipps and register or log in directly. The user can either get a confirmation in Vipps,
-or be taken to the merchant's confirmation page in a browser.
-This can be used in marketing, from posters, screens etc.
+  phone's camera or with Vipps and register or log in directly. The user can either get a confirmation in Vipps,
+  or be taken to the merchant's confirmation page in a browser.
+  This can be used in marketing, from posters, screens etc.
 
 See:
 * [Vipps Login from phone number API: How It Works](https://github.com/vippsas/vipps-login-api/blob/master/vipps-login-from-phone-number-api-howitworks.md)
@@ -99,7 +99,7 @@ See:
 
 # Deprecation of the Vipps Signup API
 
-The old API that some partners still use to sign up new merchants will
+The old API that a few partners still use to sign up new merchants will
 be phased out. See
 [Deprecation of the Vipps Signup API](https://github.com/vippsas/vipps-signup-api/blob/master/vipps-signup-api-deprecation.md)
 and
@@ -109,7 +109,7 @@ and
 
 ## Use the API Dashboard to find problems with your integration
 
-The API Dashboard is available for both the production and test environments,
+The API Dashboard is available to all merchants for both the production and test environments,
 and is an easy way to see if you are using the Vipps APIs correctly.
 Think of it as a "health check", that you can use to see if there are any
 problems you need to investigate.
@@ -146,7 +146,7 @@ These Vipps solutions are extra relevant (again):
   and the
   [Vipps Login API](https://github.com/vippsas/vipps-login-api)
   to register visitors - it's free.
-- [Use Userinfo to register visitors](#use-userinfo-to-register-visitors)
+- [Use Userinfo to register visitors when they pay](#use-userinfo-to-register-visitors-when-they-pay)
   as an easy-to-use step in a normal Vipps payment.
 - ["Click and collect" recommendations](#-click-and-collect--recommendations)
   to speed up the user experience for your customers.
@@ -169,7 +169,7 @@ See
 [Old and new express checkout flow](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#old-and-new-express-checkout-flow)
 for more details.
 
-## Use Userinfo to register visitors
+## Use Userinfo to register visitors when they pay
 
 For guest registration/tracking: Use _Userinfo_ to ask for the user's details, such as:
 phone number, name, email address, postal address, birth date, national identity number and bank accounts.
