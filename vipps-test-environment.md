@@ -29,25 +29,26 @@ have access to the test environment. See
 [Getting started](https://github.com/vippsas/vipps-developers/blob/master/vipps-getting-started.md)
 for more information.
 
+**Important:** There is no SLA or uptime guarantee for the test environment.
+Vipps will not make any fixes, etc. outside of typical Norwegian office hours.
+See
+[Statuspage](https://vipps-test.statuspage.io)
+for automatically updated status information.
+
 The test environment is suitable for testing _most_ of the Vipps functionality, but some
 functionality in the production environment is not available in MT.
 In general, MT does not contain functionality that requires integration with
 third parties.
 
 Functionality not available in MT (a non-exhaustive list):
-* Push alerts may be unstable. To see payment requests: Open Vipps and manually
+* Push alerts may be unavailable or unstable. To see payment requests: Open Vipps and manually
   go to the "Betalinger" (in English: "Payments") at the bottom of the main screen.
-  The details: The app id for the test and production apps are the same, and we
+  The background for this: The app id for the test and production apps are the same, and we
   are not able to distinguish between the apps when sending push messages.
 * Payment of invoices, both for Vipps Regninger and Vipps Faktura
-* Limited support for testing card statuses that require connections to Nets, etc
+* Limited support for testing card statuses that require connections our PSP
 * Limited support for looking up customer information in
   [KAR](https://www.bits.no/en/bank/konto-og-adresseringsregister-kar/), etc
-* There is no SLA or uptime guarantee for the test environment. Vipps will
-  not make any fixes, etc. outside of typical Norwegian office hours.
-  See
-  [Statuspage](https://vipps-test.statuspage.io)
-  for automatically updated status information.
 
 To test functionality that is not available in MT, you will have to use the
 production environment in a controlled manner. One example may be to test
