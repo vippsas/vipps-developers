@@ -15,7 +15,7 @@ If you are using Vipps through an e-commerce platform, integration partner or PS
 * [Partner](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-3)
 * [PSP](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-2)
 
-Document version: 3.2.25.
+Document version: 3.2.26.
 
 # Table of contents
 
@@ -310,8 +310,13 @@ Vipps-System-Plugin-Version 4.5.6
 The `client_id`, `client_secret` and `Ocp-Apim-Subscription-Key` are unique per
 `merchantSerialNumber` (MSN, i.e. the number of the sale unit).
 
-Please note: Partners can use
+Please note: Partners should use
 [partner keys](https://github.com/vippsas/vipps-partner/blob/main/README.md#partner-keys).
+
+Partners must always send the `Merchant-Serial-Number` header, and we recommend
+that _everyone_ sends it, also when using the merchant's own API keys.
+The `Merchant-Serial-Number` header can be used with all API keys, and can
+speed up any trouble-shooting of API problems quite a bit.
 
 **Please note:** You can have multiple access tokens being used at the same time.
 
