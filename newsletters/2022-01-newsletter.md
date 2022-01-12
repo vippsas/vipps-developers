@@ -74,7 +74,9 @@ for more details.
 
 We are also working on providing an event log for each `chargeId`, so merchants
 can get _some_ information, escpecially if a charge ends as `FAILED`.
-You can "star" the Vipps Recurring API repo or subscribe to this newsletter to get updates.
+You can "star" the
+[Vipps Recurring API repo](https://github.com/vippsas/vipps-recurring-api)
+and subscribe to this newsletter to get updates.
 
 # Vipps Login directly from phone number and QR code
 
