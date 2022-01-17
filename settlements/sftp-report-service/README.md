@@ -93,9 +93,7 @@ All merchants can set up SFTP:
 
   If you only have "Vippsnummer", you will find a link to SFTP setup under
   "Rapporter og tall".
-
 2. Click the tab `SFTP Access` to add users for SFTP access.
-
 3. Add the public key(s) for the user(s) to give access.
    We support RSA (minimum 2048-bit),
    EdDSA and Ed25519 keys in OpenSSH format (and reject DSA keys).
