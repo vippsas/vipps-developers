@@ -24,7 +24,7 @@ for more information about settlements.
   * [Example SFTP session](#example-sftp-session)
 - [Questions?](#questions-)
 
-Document version: 3.1.1.
+Document version: 3.1.2.
 
 # Reports
 
@@ -90,6 +90,9 @@ All merchants can set up SFTP:
 1. Log in with BankID on
   [portal.vipps.no](https://portal.vipps.no)
   and select the `Utvikler` menu item.
+
+  If you only have "Vippsnummer", you will find a link to SFTP setup under
+  "Rapporter og tall".
 
 2. Click the tab `SFTP Access` to add users for SFTP access.
 
