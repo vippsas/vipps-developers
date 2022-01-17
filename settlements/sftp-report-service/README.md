@@ -86,13 +86,12 @@ one or more of them independently.
 ## How to set up users for connecting to the SFTP service
 
 All merchants can set up SFTP:
-
 1. Log in with BankID on
-  [portal.vipps.no](https://portal.vipps.no)
-  and select the `Utvikler` menu item.
+   [portal.vipps.no](https://portal.vipps.no)
+   and select the `Utvikler` menu item.
 
-  If you only have "Vippsnummer", you will find a link to SFTP setup under
-  "Rapporter og tall".
+   If you only have "Vippsnummer", you will find a link to SFTP setup under
+   "Rapporter og tall".
 2. Click the tab `SFTP Access` to add users for SFTP access.
 3. Add the public key(s) for the user(s) to give access.
    We support RSA (minimum 2048-bit),
