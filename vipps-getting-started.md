@@ -7,22 +7,25 @@ This guide is for the following APIs:
 * [Vipps QR API](https://github.com/vippsas/vipps-qr-api )
 * [Vipps Order Management API](https://github.com/vippsas/vipps-order-management-api)
 
-Please note that API keys are _not_ available for
-[Vippsnummer](https://www.vipps.no/produkter-og-tjenester/bedrift/ta-betalt-i-butikk/ta-betalt-med-vipps/).
+**Please note*:: API keys are _not_ available for
+[Vippsnummer](https://www.vipps.no/produkter-og-tjenester/bedrift/ta-betalt-i-butikk/ta-betalt-med-vipps/),
+as there is no external API.
 
 If you are using Vipps through an e-commerce platform, integration partner or PSP, please see the respective resources:
 * [E-commerce platform](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-1)
 * [Partner](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-3)
 * [PSP](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-2)
 
-Document version: 3.2.26.
+Document version: 3.3.0.
 
 # Table of contents
 
-- [Requirements](#requirements)
+* [Getting Started](#getting-started)
+* [Table of contents](#table-of-contents)
+* [Requirements](#requirements)
   * [Foreign companies](#foreign-companies)
   * [Vipps users](#vipps-users)
-- [Get credentials](#get-credentials)
+* [Get credentials](#get-credentials)
   * [Getting the API keys](#getting-the-api-keys)
   * [Permissions and users](#permissions-and-users)
   * [Test and production environments](#test-and-production-environments)
@@ -30,30 +33,38 @@ Document version: 3.2.26.
   * [API keys for a sale unit](#api-keys-for-a-sale-unit)
   * [API key details](#api-key-details)
   * [API keys for different use](#api-keys-for-different-use)
-- [API products](#api-products)
+* [API products](#api-products)
   * [Vipps-API](#vipps-api)
   * [Legacy API products](#legacy-api-products)
-- [Quick overview of how to make an API call](#quick-overview-of-how-to-make-an-api-call)
+* [Quick overview of how to make an API call](#quick-overview-of-how-to-make-an-api-call)
   * [Get an access token](#get-an-access-token)
-    + [Request](#request)
-    + [Response](#response)
+    * [Request](#request)
+    * [Response](#response)
   * [Make an API call](#make-an-api-call)
   * [HTTP response codes](#http-response-codes)
-- [Questions?](#questions-)
+  * [Checking for errors with the API Dashboard](#checking-for-errors-with-the-api-dashboard)
+* [Questions?](#questions)
 
 # Requirements
 
 Merchants need a Norwegian organization number and Norwegian BankID to apply for Vipps services.
 
-Before they can order any services, they first need to apply for a Merchant Agreement. This is a legal agreement between the merchant and Vipps. When the Merchant Agreement has been sent, the merchant can apply for the services they want.
+Before the merchant can order any Vipps services, they first need to apply for
+a Merchant Agreement. This is a legal agreement between the merchant and Vipps.
+When the Merchant Agreement has been sent, the merchant can order the Vipps
+product the merchant needs.
 
-Everything can be done through [portal.vipps.no](https://portal.vipps.no). For an overview of all products, see [vipps.no](https://vipps.no/produkter-og-tjenester/bedrift/).
+Everything is done by the merchant on [portal.vipps.no](https://portal.vipps.no).
+For an overview of all products, see [vipps.no](https://vipps.no/produkter-og-tjenester/bedrift/).
 
-As soon as the Merchant Agreement has been approved, and a product order is sent, access to test is created, and details are sent on email to the user who ordered the product.
+As soon as the Merchant Agreement has been approved, and a product order is sent,
+access to
+[The Vipps test environment (MT)](https://github.com/vippsas/vipps-developers#the-vipps-test-environment-mt)
+is provided, and details are sent on email to the user who made the product order.
 
 ## Foreign companies
 
-Foreign companies must have the following in order to use Vipps as a payment
+Non-Norwegian companies must have the following in order to use Vipps as a payment
 provider and to receive payments from Vipps users:
 
 * A Norwegian organization number
@@ -89,8 +100,8 @@ Read more on how to
 
 # Get credentials
 
-When the application has been processed you will receive an email, and the
-API keys can be retrieved by logging in with BankID on
+When the application has been processed, Vipps will send an email to the merchant,
+and the API keys can be retrieved by logging in with BankID on
 [portal.vipps.no](https://portal.vipps.no).
 
 If you have questions about your application, please check the status on
@@ -105,19 +116,19 @@ and have _them_ help you with developer access to their systems.
 
 ## Getting the API keys
 
-API keys can be retrieved, by logging in with BankID on
+The API keys can be retrieved by logging in with BankID on
 [portal.vipps.no](https://portal.vipps.no),
 under the `Utvikler` menu item.
 Since this gives access to API keys for both the test and production environment,
-we require BankID.
+BankID is required.
 
 **Please note:**
 
 * Vipps can not provide API keys in any other way, such as by
   email, as the API keys give access to transferring money.
 * Vipps will never ask for your API keys, and you must keep them secret.
-* If your developers do not have Norwegian BankID, you will need to retrieve the API keys
-  for them, and send them to the developers in a secure way.
+* If your developers do not have Norwegian BankID, you will need to retrieve
+  the API keys for them, and send them to the developers in a secure way.
 * Do _not_ send API keys unencrypted by email.
 * If you accidentally share your API keys, you must generate new ones on
   [portal.vipps.no](https://portal.vipps.no).
@@ -190,7 +201,7 @@ required permissions.
 | `Vipps-Subscription-Key` | Base64 | 0f14ebcab0eb4b29ae0cb90d91b4a84a     | Subscription key for the API product |
 
 There are both a primary and secondary `Vipps-Subscription-Key`.
-The primary and secondary keys are interchangeable; you can use either one,
+The primary and secondary keys are interchangeable: You can use either one,
 they both work in the same way. Having two active keys enables you to
 regenerate one subscription key, while still using the other key, without downtime.
 If you don't understand what the second key is for, you can just ignore it.
@@ -243,7 +254,7 @@ Vipps-API also includes some _legacy_ APIs:
 | Signup and Login | Legacy API (superseded by Vipps Log In), end of life Dec 31 2019 | https://github.com/vippsas/vipps-signuplogin-api |
 
 See more details about the
-[phase-out of eCom API v1](https://github.com/vippsas/vipps-ecom-api/blob/master/v1-deprecation.md)
+[deprecation of the Vipps eCom API v1](https://github.com/vippsas/vipps-ecom-api/blob/master/v1-deprecation.md)
 on September 1 2020.
 
 If you are still using a legacy API, you should upgrade as soon as possible.
@@ -410,6 +421,15 @@ This API returns the following HTTP statuses in the responses:
 You can use the
 [API Dashboard](https://github.com/vippsas/vipps-developers#api-dashboard)
 to check the responses to your API calls.
+
+## Checking for errors with the API Dashboard
+
+All merchants have access to the
+[API Dashboard](https://github.com/vippsas/vipps-developers#api-dashboard).
+We strongly recommend to use that for detecting errors in the API use,
+in addition to normal monitoring.
+
+![API Dashboard](newsletters/images/2021-02-api-dashboard-example.png)
 
 # Questions?
 
