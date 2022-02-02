@@ -117,7 +117,6 @@ ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOu1WvDcTWwZumZZwTvfqUKMA4ouG3mniNsvpNWorm5m
 1. Log in with BankID on
    [portal.vipps.no](https://portal.vipps.no)
    and select the `Utvikler` menu item.
-
    If you only have "Vippsnummer", you will find a link to SFTP setup under
    "Rapporter og tall".
 2. Click the tab `SFTP Access` to add users for SFTP access.
@@ -160,26 +159,28 @@ will be able to download everyone's settlement reports.
 
 # How to use it
 
-**Important:** The reports are generated on-demand:
-There are no real files on the server, all data is generated dynamically.
-When you `get` a file, or `mget` multiple files, the server will automatically
-create the requested file(s).
-Some SFTP clients check the file size with a `ls` command first.
-Since the files do not exist until the `get` or `mget` command is sent, the file size
-reported by the server is zero bytes.
-The SFTP service can not provide correct size information, since there is no real file.
-It is therefore not possible to check the size of a file with `ls`.
-If this causes problems for your SFTP client, the solution is to use a different client.
+The Vipps SFTP server should be straight-foreard to use.
+It works like a normal SFTP service.
 
-**Please note:** Some SFTP clients do not "see" the directories and require the
-full path of the directories to be explicitly provided.
+## Important information
 
-Reports under `/settlements/inbox` can be deleted by using the `rm` command in
-SFTP or the "delete" function in your SFTP interface.
-The files are not really deleted, but actually hidden, in order to keep track
-of already processed reports.
-
-Reports under `/settlements/archive` cannot be removed.
+The reports are generated on-demand:
+* There are no real files on the server, all data is generated dynamically.
+* When you `get` a file, or `mget` multiple files, the server will automatically
+  create the requested file(s).
+* Some SFTP clients check the file size with a `ls` command first.
+  Since the files do not exist until the `get` or `mget` command is sent, the file size
+  reported by the server is zero bytes.
+  The SFTP service can not provide correct size information, since there is no real file.
+  It is therefore not possible to check the size of a file with `ls`.
+  If this causes problems for your SFTP client, the solution is to use a different client.
+* Some SFTP clients do not "see" the directories and require the
+  full path of the directories to be explicitly provided.
+* Reports under `/settlements/inbox` can be deleted by using the `rm` command in
+  SFTP or the "delete" function in your SFTP interface.
+  The files are not really deleted, but actually hidden, in order to keep track
+  of already processed reports.
+* Reports under `/settlements/archive` cannot be removed.
 
 ## Connecting to the SFTP server
 
