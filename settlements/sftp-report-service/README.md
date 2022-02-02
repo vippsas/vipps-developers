@@ -26,7 +26,7 @@ for more information about settlements.
   * [Example SFTP session](#example-sftp-session)
 * [Questions?](#questions)
 
-Document version: 4.0.0.
+Document version: 4.0.1.
 
 # Reports
 
@@ -92,7 +92,7 @@ ssh-keygen -t ed25519 -C "user@example.com"
 For help creating SSH keys, the GitHub documentation may be helpful:
 [Generating a new SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#generating-a-new-ssh-key).
 
-If you want to give a partner, like an accounting partner or your ERP partner,
+If you want to give a partner, like an accounting partner or ERP partner,
 access to the reports, you may need an SSH key from your partner. See:
 [Partner access](#partner-access).
 
@@ -134,7 +134,7 @@ This is what it looks like on portal.vipps.no:
 
 ## Partner access
 
-A merchant can give a partner, like an accounting partner or your ERP partner,
+A merchant can give a partner, like an accounting partner or ERP partner,
 access to the SFTP service, so the settlement reports can be automatically imported.
 
 Partners may provide their merchants with a public SSH key
