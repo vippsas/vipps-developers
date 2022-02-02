@@ -192,7 +192,7 @@ When connecting to the SFTP server you need to supply the username you created.
 In the picture above this is "hakon".
 
 Vipps can not help with SFTP basics, but recommend this for an overview:
-https://www.ssh.com/ssh/sftp/
+[SFTP File Transfer Protocol - get SFTP client & server](https://www.ssh.com/ssh/sftp/).
 
 **Please note:** Vipps may change the IP addresses of `sftp.vipps.no`.
 To ensure that you are whitelisting the correct IP addresses please use the
