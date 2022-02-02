@@ -164,8 +164,10 @@ It works like a normal SFTP service.
 
 ## Important information
 
-The reports are generated on-demand:
-* There are no real files on the server, all data is generated dynamically.
+Please read this to avoid misunderstandings:
+
+* The reports are generated on-demand: There are no real files on the server,
+  all data is generated dynamically.
 * When you `get` a file, or `mget` multiple files, the server will automatically
   create the requested file(s).
 * Some SFTP clients check the file size with a `ls` command first.
