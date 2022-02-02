@@ -11,14 +11,11 @@ See
 [Settlements](https://github.com/vippsas/vipps-developers/tree/master/settlements)
 for more information about settlements.
 
-* [Vipps SFTP Report Service](#vipps-sftp-report-service)
 * [Reports](#reports)
   * [Availability](#availability)
 * [SFTP Service](#sftp-service)
   * [Security](#security)
   * [SFTP users](#sftp-users)
-    * [Partners](#partners)
-  * [Add SFTP users](#add-sftp-users)
     * [Generate a public SSH key](#generate-a-public-ssh-key)
     * [Add the SSH key on portal.vipps.no](#add-the-ssh-key-on-portalvippsno)
   * [Partner access](#partner-access)
@@ -72,25 +69,13 @@ More information about SFTP and the underlying technology:
 
 ## SFTP users
 
+All merchants can set up SFTP on [portal.vipps.no](https://portal.vipps.no).
+A public SSH key must be provided.
+
 SFTP users are created, associated with a public SSH key, and given access to the reports of
 one or more MSNs (Merchant Serial Numbers, typically "sale units").
 
 It possible to use the same public SSH key for multiple merchants and multiple MSNs.
-
-### Partners
-
-Partners may provide their merchants with a public SSH key
-that the merchants can use to give the partner access their settlements.
-
-A merchant may have multiple MSNs, and give several partners access to
-one or more of them independently.
-
-See: [Partner access](#partner-access).
-
-## Add SFTP users
-
-All merchants can set up SFTP on [portal.vipps.no](https://portal.vipps.no)
-A public SSH key must be provided.
 
 ### Generate a public SSH key
 
@@ -151,6 +136,12 @@ This is what it looks like on portal.vipps.no:
 
 A merchant can give a partner, like an accounting partner or your ERP partner,
 access to the SFTP service, so the settlement reports can be automatically imported.
+
+Partners may provide their merchants with a public SSH key
+that the merchants can use to give the partner access their settlements.
+
+A merchant may have multiple MSNs, and give several partners access to
+one or more of them independently.
 
 This is the recommended way:
 
