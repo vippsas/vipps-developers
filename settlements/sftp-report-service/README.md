@@ -18,13 +18,14 @@ for more information about settlements.
   * [Security](#security)
   * [SFTP users](#sftp-users)
   * [How to set up users for connecting to the SFTP service](#how-to-set-up-users-for-connecting-to-the-sftp-service)
+  * [How to let an ERP partner import settlement reports automatically](#how-to-let-an-erp-partner-import-settlement-reports-automatically)
   * [Connecting to the SFTP server](#connecting-to-the-sftp-server)
   * [Directory structure](#directory-structure)
 - [How to use it](#how-to-use-it)
   * [Example SFTP session](#example-sftp-session)
 - [Questions?](#questions-)
 
-Document version: 3.1.2.
+Document version: 3.2.0.
 
 # Reports
 
@@ -85,7 +86,37 @@ one or more of them independently.
 
 ## How to set up users for connecting to the SFTP service
 
-All merchants can set up SFTP:
+All merchants can set up SFTP on portal.vipps.no.
+A public SSH key must be provided.
+
+### Generate a public SSH key
+
+We support RSA (minimum 2048-bit), EdDSA and Ed25519 keys in OpenSSH format.
+We reject DSA keys.
+
+A key is easily created with this command (replace `user@example.com`
+with your real email address):
+
+```
+ssh-keygen -t ed25519 -C "user@example.com"
+```
+
+For help creating SSH keys, the GitHub documentation may be helpful:
+[Generating a new SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#generating-a-new-ssh-key).
+
+If you want to give your ERP partner access to the reports:
+[How to let an ERP partner import settlement reports automatically](#how-to-let-an-erp-partner-import-settlement-reports-automatically).
+
+A public SSH key is normally stored in the user's home directory:
+`~/.ssh/id_ed25519.pub`):
+
+This is an example:
+```
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOu1WvDcTWwZumZZwTvfqUKMA4ouG3mniNsvpNWorm5m user@example.com
+```
+
+### Add the SSH key on portal.vipps.no
+
 1. Log in with BankID on
    [portal.vipps.no](https://portal.vipps.no)
    and select the `Utvikler` menu item.
@@ -94,18 +125,9 @@ All merchants can set up SFTP:
    "Rapporter og tall".
 2. Click the tab `SFTP Access` to add users for SFTP access.
 3. Add the public key(s) for the user(s) to give access.
-   We support RSA (minimum 2048-bit),
-   EdDSA and Ed25519 keys in OpenSSH format (and reject DSA keys).
    After this you should see the newly created user.
-   For help creating SSH keys, the GitHub documentation may be helpful:
-   [Generating a new SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#generating-a-new-ssh-key).
 
-An example of a public SSH key (normally stored in the user's home directory: `~/.ssh/id_ed25519.pub`):
-```
-ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOu1WvDcTWwZumZZwTvfqUKMA4ouG3mniNsvpNWorm5m user@example.com
-```
-
-This is what it looks like on portal.vips.no:
+This is what it looks like on portal.vipps.no:
 
 ![Bruker opprettet](images/02_bruker_opprettet.png "bruker opprettet")
 
@@ -121,6 +143,12 @@ This is what it looks like on portal.vips.no:
 * If you don't know who the administrator is, you can check
   [Brønnøysundregistrene](https://www.brreg.no)
   and see who has the right to sign for the company.
+
+## How to let an ERP partner import settlement reports automatically
+
+A merchant can give an ERP partner (or an accounting system or similar) access
+to the SFTP service, so the settlement reports can be automatically imported.
+
 
 ## Connecting to the SFTP server
 
