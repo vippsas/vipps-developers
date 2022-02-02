@@ -17,7 +17,7 @@ for more information about settlements.
   * [Security](#security)
   * [SFTP users](#sftp-users)
   * [Add SFTP users](#add-sftp-users)
-  * [Partner SFTP access](#partner-sftp-access)
+  * [Partner access](#partner-access)
 - [How to use it](#how-to-use-it)
   * [Connecting to the SFTP server](#connecting-to-the-sftp-server)
   * [Directory structure](#directory-structure)
@@ -78,9 +78,9 @@ that the merchants can use to give the partner access their settlements.
 One merchant may have multiple MSNs, and give several partners access to
 one or more of them independently.
 
-See: [How to let a partner import settlement reports automatically](#how-to-let-a-partner-import-settlement-reports-automatically).
+See: [Partner access](#partner-access).
 
-## dd SFTP users
+## Add SFTP users
 
 All merchants can set up SFTP on portal.vipps.no.
 A public SSH key must be provided.
@@ -102,7 +102,7 @@ For help creating SSH keys, the GitHub documentation may be helpful:
 
 If you want to give a partner, like an accounting partner or your ERP partner,
 access to the reports: See:
-[How to let a partner import settlement reports automatically](#how-to-let-a-partner-import-settlement-reports-automatically).
+[Partner access](#partner-access).
 
 A public SSH key is normally stored in the user's home directory:
 `~/.ssh/id_ed25519.pub`):
@@ -141,7 +141,7 @@ This is what it looks like on portal.vipps.no:
   [Brønnøysundregistrene](https://www.brreg.no)
   and see who has the right to sign for the company.
 
-## How to let an ERP partner import settlement reports automatically
+## Partner access
 
 A merchant can give a partner, like an accounting partner or your ERP partner,
 access to the SFTP service, so the settlement reports can be automatically imported.
@@ -157,6 +157,29 @@ with the public SSH key can access settlement reports for merchants that
 have added that specific SSH key. We strongly recommend that partners
 create separate keys for each merchant, otherwise all their merchants
 will be able to download everyone's settlement reports.
+
+# How to use it
+
+**Important:** The reports are generated on-demand:
+There are no real files on the server, all data is generated dynamically.
+When you `get` a file, or `mget` multiple files, the server will automatically
+create the requested file(s).
+Some SFTP clients check the file size with a `ls` command first.
+Since the files do not exist until the `get` or `mget` command is sent, the file size
+reported by the server is zero bytes.
+The SFTP service can not provide correct size information, since there is no real file.
+It is therefore not possible to check the size of a file with `ls`.
+If this causes problems for your SFTP client, the solution is to use a different client.
+
+**Please note:** Some SFTP clients do not "see" the directories and require the
+full path of the directories to be explicitly provided.
+
+Reports under `/settlements/inbox` can be deleted by using the `rm` command in
+SFTP or the "delete" function in your SFTP interface.
+The files are not really deleted, but actually hidden, in order to keep track
+of already processed reports.
+
+Reports under `/settlements/archive` cannot be removed.
 
 ## Connecting to the SFTP server
 
@@ -191,29 +214,6 @@ Example files, with full path:
 /settlements/inbox/pdf/998724341/16655/16655-2000001.pdf
 /settlements/archive/csv/998724341/16655/16655-2000001.csv
 ```
-
-# How to use it
-
-**Important:** The reports are generated on-demand:
-There are no real files on the server, all data is generated dynamically.
-When you `get` a file, or `mget` multiple files, the server will automatically
-create the requested file(s).
-Some SFTP clients check the file size with a `ls` command first.
-Since the files do not exist until the `get` or `mget` command is sent, the file size
-reported by the server is zero bytes.
-The SFTP service can not provide correct size information, since there is no real file.
-It is therefore not possible to check the size of a file with `ls`.
-If this causes problems for your SFTP client, the solution is to use a different client.
-
-**Please note:** Some SFTP clients do not "see" the directories and require the
-full path of the directories to be explicitly provided.
-
-Reports under `/settlements/inbox` can be deleted by using the `rm` command in
-SFTP or the "delete" function in your SFTP interface.
-The files are not really deleted, but actually hidden, in order to keep track
-of already processed reports.
-
-Reports under `/settlements/archive` cannot be removed.
 
 ## Example SFTP session
 
