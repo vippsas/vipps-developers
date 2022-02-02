@@ -4,7 +4,6 @@ This service allows for retrieval of settlement files with SFTP.
 
 SFTP is secure file transfer using SSH (Secure Shell), a cryptographic network
 protocol for operating network services securely over an unsecured network.
-
 SFTP can be used manually (interactively), or automatically/programmatically
 by using SFTP as part of an integration.
 
@@ -17,15 +16,15 @@ for more information about settlements.
 - [SFTP Service](#sftp-service)
   * [Security](#security)
   * [SFTP users](#sftp-users)
-  * [How to set up users for connecting to the SFTP service](#how-to-set-up-users-for-connecting-to-the-sftp-service)
-  * [How to let an ERP partner import settlement reports automatically](#how-to-let-an-erp-partner-import-settlement-reports-automatically)
+  * [Add SFTP users](#add-sftp-users)
+  * [Partner SFTP access](#partner-sftp-access)
+- [How to use it](#how-to-use-it)
   * [Connecting to the SFTP server](#connecting-to-the-sftp-server)
   * [Directory structure](#directory-structure)
-- [How to use it](#how-to-use-it)
   * [Example SFTP session](#example-sftp-session)
 - [Questions?](#questions-)
 
-Document version: 3.2.0.
+Document version: 4.0.0.
 
 # Reports
 
@@ -52,18 +51,13 @@ for more details.
 
 # SFTP Service
 
-Vipps can not help with SFTP basics, but recommend this for an overview: https://www.ssh.com/ssh/sftp/
+Vipps can not help with SFTP basics, but recommend this for an overview:
+[SFTP File Transfer Protocol - get SFTP client & server](https://www.ssh.com/ssh/sftp/).
 
 The SFTP report service is used for downloading settlement reports in
 [several formats](https://github.com/vippsas/vipps-developers/tree/master/settlements#settlement-report-formats).
 
 ## Security
-
-SFTP (SSH File Transfer Protocol) is a network protocol that provides
-(among other things) file transfer and file management over any reliable data stream.
-SFTP is based on SSH.
-SSH (Secure Shell) is a cryptographic network protocol for operating network
-services securely over an unsecured network.
 
 For Vipps' SFTP service the public SSH key must be added by logging in with BankID on
 [portal.vipps.no](https://portal.vipps.no).
@@ -84,7 +78,9 @@ that the merchants can use to give the partner access their settlements.
 One merchant may have multiple MSNs, and give several partners access to
 one or more of them independently.
 
-## How to set up users for connecting to the SFTP service
+See: [How to let a partner import settlement reports automatically](#how-to-let-a-partner-import-settlement-reports-automatically).
+
+## dd SFTP users
 
 All merchants can set up SFTP on portal.vipps.no.
 A public SSH key must be provided.
@@ -104,13 +100,14 @@ ssh-keygen -t ed25519 -C "user@example.com"
 For help creating SSH keys, the GitHub documentation may be helpful:
 [Generating a new SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#generating-a-new-ssh-key).
 
-If you want to give your ERP partner access to the reports:
-[How to let an ERP partner import settlement reports automatically](#how-to-let-an-erp-partner-import-settlement-reports-automatically).
+If you want to give a partner, like an accounting partner or your ERP partner,
+access to the reports: See:
+[How to let a partner import settlement reports automatically](#how-to-let-a-partner-import-settlement-reports-automatically).
 
 A public SSH key is normally stored in the user's home directory:
 `~/.ssh/id_ed25519.pub`):
 
-This is an example:
+Example:
 ```
 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOu1WvDcTWwZumZZwTvfqUKMA4ouG3mniNsvpNWorm5m user@example.com
 ```
@@ -146,9 +143,20 @@ This is what it looks like on portal.vipps.no:
 
 ## How to let an ERP partner import settlement reports automatically
 
-A merchant can give an ERP partner (or an accounting system or similar) access
-to the SFTP service, so the settlement reports can be automatically imported.
+A merchant can give a partner, like an accounting partner or your ERP partner,
+access to the SFTP service, so the settlement reports can be automatically imported.
 
+This is the recommended way:
+
+1. The partner provides a public SSH key to the merchant.
+2. The merchant
+
+
+**Please note:** This public SSH key does not have to be secret, but anyone
+with the public SSH key can access settlement reports for merchants that
+have added that specific SSH key. We strongly recommend that partners
+create separate keys for each merchant, otherwise all their merchants
+will be able to download everyone's settlement reports.
 
 ## Connecting to the SFTP server
 
