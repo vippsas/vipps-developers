@@ -16,7 +16,7 @@ If you are using Vipps through an e-commerce platform, integration partner or PS
 * [Partner](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-3)
 * [PSP](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-2)
 
-Document version: 3.3.0.
+Document version: 3.3.1.
 
 # Table of contents
 
@@ -156,7 +156,10 @@ For integration partners: You will need the merchant's administrator to either
 log in on
 [portal.vipps.no](https://portal.vipps.no)
 and grant you developer access for the sales unit you need access to,
-or provide the API keys to you in a secure way. See also:
+or provide the API keys to you in a secure way.
+The user persmissions are described (in Norwegian)
+[here](https://vipps.no/hjelp/vipps/kundeforholdet-mitt/hvilke-tilganger-kan-vi-opprette-i-vippsportalen/).
+See also:
 [Vippps Partners](https://github.com/vippsas/vipps-partner).
 
 ## Test and production environments
