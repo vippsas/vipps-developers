@@ -11,18 +11,23 @@ See
 [Settlements](https://github.com/vippsas/vipps-developers/tree/master/settlements)
 for more information about settlements.
 
-- [Reports](#reports)
+* [Vipps SFTP Report Service](#vipps-sftp-report-service)
+* [Reports](#reports)
   * [Availability](#availability)
-- [SFTP Service](#sftp-service)
+* [SFTP Service](#sftp-service)
   * [Security](#security)
   * [SFTP users](#sftp-users)
+    * [Partners](#partners)
   * [Add SFTP users](#add-sftp-users)
+    * [Generate a public SSH key](#generate-a-public-ssh-key)
+    * [Add the SSH key on portal.vipps.no](#add-the-ssh-key-on-portalvippsno)
   * [Partner access](#partner-access)
-- [How to use it](#how-to-use-it)
+* [How to use it](#how-to-use-it)
+  * [Important information](#important-information)
   * [Connecting to the SFTP server](#connecting-to-the-sftp-server)
   * [Directory structure](#directory-structure)
   * [Example SFTP session](#example-sftp-session)
-- [Questions?](#questions-)
+* [Questions?](#questions)
 
 Document version: 4.0.0.
 
@@ -45,24 +50,24 @@ for details.
 ## Availability
 
 Settlements are created every day, but only as long as the balance is positive.
-
 See [Availability](https://github.com/vippsas/vipps-developers/tree/master/settlements#availability)
 for more details.
+
+The SFTP report service is used for downloading settlement reports in
+[several formats](https://github.com/vippsas/vipps-developers/tree/master/settlements#settlement-report-formats).
 
 # SFTP Service
 
 Vipps can not help with SFTP basics, but recommend this for an overview:
 [SFTP File Transfer Protocol - get SFTP client & server](https://www.ssh.com/ssh/sftp/).
 
-The SFTP report service is used for downloading settlement reports in
-[several formats](https://github.com/vippsas/vipps-developers/tree/master/settlements#settlement-report-formats).
-
 ## Security
 
 For Vipps' SFTP service the public SSH key must be added by logging in with BankID on
 [portal.vipps.no](https://portal.vipps.no).
+Vipps does not sign the reports in any way.
 
-More information about SFTP:
+More information about SFTP and the underlying technology:
 [SSH File Transfer Protocol](https://en.wikipedia.org/wiki/SSH_File_Transfer_Protocol).
 
 ## SFTP users
@@ -72,17 +77,19 @@ one or more MSNs (Merchant Serial Numbers, typically "sale units").
 
 It possible to use the same public SSH key for multiple merchants and multiple MSNs.
 
-Partners may provide all their merchants with a common public SSH key
+### Partners
+
+Partners may provide their merchants with a public SSH key
 that the merchants can use to give the partner access their settlements.
 
-One merchant may have multiple MSNs, and give several partners access to
+A merchant may have multiple MSNs, and give several partners access to
 one or more of them independently.
 
 See: [Partner access](#partner-access).
 
 ## Add SFTP users
 
-All merchants can set up SFTP on portal.vipps.no.
+All merchants can set up SFTP on [portal.vipps.no](https://portal.vipps.no)
 A public SSH key must be provided.
 
 ### Generate a public SSH key
@@ -90,7 +97,7 @@ A public SSH key must be provided.
 We support RSA (minimum 2048-bit), EdDSA and Ed25519 keys in OpenSSH format.
 We reject DSA keys.
 
-A key is easily created with this command (replace `user@example.com`
+A key is typically created with this command (replace `user@example.com`
 with your real email address):
 
 ```
@@ -101,7 +108,7 @@ For help creating SSH keys, the GitHub documentation may be helpful:
 [Generating a new SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#generating-a-new-ssh-key).
 
 If you want to give a partner, like an accounting partner or your ERP partner,
-access to the reports: See:
+access to the reports, you may need an SSH key from your partner. See:
 [Partner access](#partner-access).
 
 A public SSH key is normally stored in the user's home directory:
@@ -148,8 +155,8 @@ access to the SFTP service, so the settlement reports can be automatically impor
 This is the recommended way:
 
 1. The partner provides a public SSH key to the merchant.
-2. The merchant
-
+2. The merchant adds the SSH key on [portal.vipps.no](https://portal.vipps.no)
+3. The partner retrieves the settlement reports with SFTP
 
 **Please note:** This public SSH key does not have to be secret, but anyone
 with the public SSH key can access settlement reports for merchants that
@@ -159,7 +166,7 @@ will be able to download everyone's settlement reports.
 
 # How to use it
 
-The Vipps SFTP server should be straight-foreard to use.
+The Vipps SFTP server should be straight-forward to use.
 It works like a normal SFTP service.
 
 ## Important information
