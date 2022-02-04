@@ -130,9 +130,10 @@ Reports with personal details of the customers are also available, see
 
 Merchants can log in on
 [portal.vipps.no](https://portal.vipps.no)
-and specify email addresses that Vipps will send settlement reports to.
+and specify email addresses that Vipps will send settlement reports to. 
+Reports are available in xlsx, xml.zip and csv format. 
 
-Reports with personal details of the customers can not be sent by email, , see
+Reports with personal details of the customers can not be sent by email, see
 [GDPR](#gdpr).
 
 ## SFTP
