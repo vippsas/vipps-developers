@@ -21,7 +21,7 @@ We recommend starting with [Getting started](vipps-getting-started.md).
 - [Vipps design guidelines](#vipps-design-guidelines)
 - [Questions?](#questions)
 
-Document version: 2.6.2.
+Document version: 2.6.3.
 
 ## Vipps demo store
 
@@ -132,6 +132,8 @@ The test and production environments are separate and require different API cred
 The servers are world accessible. Vipps only relies on the API keys, and
 no requests to our servers are blocked on our side by IP addresses or similar.
 
+The servers are the same for all APIs.
+
 **Please note:** Vipps may change the IP addresses for the API servers. To ensure
 that you are whitelisting the correct IP addresses please use these hostnames
 and DNS, and automatically update your firewall rules if there are DNS changes.
@@ -151,6 +153,8 @@ every three months.
 | callback-4.vipps.no | callback-dr-4.vipps.no |  |
 
 The disaster recovery environment is as important as the production environment.
+
+The servers are the same for all APIs.
 
 **Please note:** Vipps may change the IP addresses for the request servers. To ensure
 that you are whitelisting the correct IP addresses please use these hostnames
