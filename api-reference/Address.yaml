@@ -1,0 +1,36 @@
+Address:
+  title: Address
+  type: object
+  required:
+    - lines
+    - postCode
+    - city
+    - country
+  properties:
+    id:
+      type: string
+      format: uuid
+      description: 'Unique ID of the address, if relevant'
+      example: 123e4567-e89b-12d3-a456-426614174000
+    lines:
+      type: array
+      description: 'Array of addressLines, for example streetname, house number, c/o, etc'
+      items:
+        type: string
+        maxLength: 100
+        example: 'Robert Levins gate 5'
+    postCode:
+      type: string
+      description: Postcode of the address in local country format
+      maxLength: 20
+      example: '0154'
+    city:
+      type: string
+      description: 'The name of the city.'
+      maxLength: 20
+      example: 'Oslo'
+    country:
+      type: string
+      description: Country code in ISO 3166 format.
+      pattern: '^[A-Z]{2}'
+      example: 'NO'
