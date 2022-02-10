@@ -3,7 +3,7 @@ Address:
   type: object
   required:
     - lines
-    - postCode
+    - postalCode
     - city
     - country
   properties:
@@ -19,7 +19,7 @@ Address:
         type: string
         maxLength: 100
         example: 'Robert Levins gate 5'
-    postCode:
+    postalCode:
       type: string
       description: Postcode of the address in local country format
       maxLength: 20
