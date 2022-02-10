@@ -1,5 +1,6 @@
 Address:
   title: Address
+  description: 'The standard representation of a postal address'
   type: object
   required:
     - lines
