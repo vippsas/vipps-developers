@@ -7,7 +7,7 @@ This guide is for the following APIs:
 * [Vipps QR API](https://github.com/vippsas/vipps-qr-api )
 * [Vipps Order Management API](https://github.com/vippsas/vipps-order-management-api)
 
-**Please note*:: API keys are _not_ available for
+**Please note:** API keys are _not_ available for
 [Vippsnummer](https://www.vipps.no/produkter-og-tjenester/bedrift/ta-betalt-i-butikk/ta-betalt-med-vipps/),
 as there is no external API.
 
