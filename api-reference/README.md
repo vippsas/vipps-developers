@@ -8,6 +8,8 @@ for APIs.
 The goal is to have a library of standard YAML snippets that can be
 referenced from several APIs, and to avoid duplication.
 
+See the API RFC for more information.
+
 Please add more snippets using PRs:
 1. Make a branch with an easy-to-understand name
 2. Add what you want
