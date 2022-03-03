@@ -14,7 +14,7 @@ Hello! We can help!
 - [More than one problem, or a new one?](#more-than-one-problem-or-a-new-one)
 - [Newsletter](#newsletter)
 
-Document version: 2.4.7.
+Document version: 2.4.8.
 
 ## We help with technical issues
 
@@ -49,6 +49,9 @@ First of all: It's nice if you can check the FAQs and search to check if your pr
 * [eCom API FAQ](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-faq.md)
 * [Recurring API FAQ](https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api-faq.md)
 * [Login API FAQ](https://github.com/vippsas/vipps-login-api/blob/master/vipps-login-api-faq.md)
+
+Also: Please search the documentation. You can search both on GitHub and in the browser.
+Almost all questions we receive can be answered with a link to existing documentation.
 
 If it's not: Please send an email with all relevant information to the address below:
 
