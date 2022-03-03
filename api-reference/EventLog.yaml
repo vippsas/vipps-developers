@@ -1,0 +1,24 @@
+EventLog:
+  title: 'Event log'
+  description: 'The standard representation of an event log'
+  type: object
+  required:
+    - timestamp
+    - operation
+    - status
+  properties:
+    timestamp:
+      type: string
+      format: date-time
+      description: Timestamp in ISO-8601 representing when the operation was performed.
+      example: '2019-02-05T12:27:42.311Z'
+    operation:
+      type: string
+      description: 'What was done?'
+      maxLength: 20
+      example: 'Capture attempt'
+    status:
+      type: string
+      description: 'The status of the operation'
+      maxLength: 20
+      example: 'CAPTURED'
