@@ -5,6 +5,7 @@ The Merchant Test Environment (MT) is available for all Vipps customers.
 ## Table of contents
 
 - [About the test environment](#about-the-test-environment)
+  * [Limitations of the test environment](#limitations-of-the-test-environment)
 - [Test merchants](#test-merchants)
 - [Test users](#test-users)
   * [Phone number](#phone-number)
@@ -16,7 +17,7 @@ The Merchant Test Environment (MT) is available for all Vipps customers.
   * [iOS](#ios)
   * [Android](#android)
 
-Document version: 3.1.12.
+Document version: 3.1.13.
 
 ## About the test environment
 
@@ -40,7 +41,10 @@ functionality in the production environment is not available in MT.
 In general, MT does not contain functionality that requires integration with
 third parties.
 
+### Limitations of the test environment
+
 Functionality not available in MT (a non-exhaustive list):
+
 * Push alerts may be unavailable or unstable. To see payment requests: Open Vipps and manually
   go to the "Betalinger" (in English: "Payments") at the bottom of the main screen.
   The background for this: The app id for the test and production apps are the same, and we
