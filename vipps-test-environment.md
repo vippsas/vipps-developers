@@ -53,7 +53,7 @@ Functionality not available in MT (a non-exhaustive list):
 * Limited support for testing card statuses that require connections our PSP
 * Limited support for looking up customer information in
   [KAR](https://www.bits.no/en/bank/konto-og-adresseringsregister-kar/), etc
-* The Vipps QR API does not (yet) work, so QR codes can not be scanned.
+* QR codes can be generated, but they can not be scanned in the MT app (for now).
 
 To test functionality that is not available in MT, you will have to use the
 production environment in a controlled manner. One example may be to test
