@@ -1,5 +1,7 @@
 # Technical newsletter for developers 2022-03
 
+💥 Draft! 💥
+
 This newsletter was sent in March 2022.
 
 * [Reminders](#reminders)
