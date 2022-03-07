@@ -4,26 +4,43 @@
 
 This newsletter was sent in March 2022.
 
-- [Technical newsletter for developers 2022-03](#technical-newsletter-for-developers-2022-03)
-- [Recurring charge changes](#recurring-charge-changes)
-- [Some new thing 2](#some-new-thing-2)
-- [Reminders](#reminders)
-  - [Please check your eCom API calls](#please-check-your-ecom-api-calls)
-  - [Use the API Dashboard to find problems with your integration](#use-the-api-dashboard-to-find-problems-with-your-integration)
+## Table of Contents
+
+* [Refunds for remainder after doing a partial capture](#refunds-for-remainder-after-doing-a-partial-capture)
+* [Recurring charge changes](#recurring-charge-changes)
+* [Reminders](#reminders)
+  * [Please check your eCom API calls](#please-check-your-ecom-api-calls)
+  * [Use the API Dashboard to find problems with your integration](#use-the-api-dashboard-to-find-problems-with-your-integration)
+
+# Refunds for remainder after doing a partial capture
+
+The Vipps eCom API now supports both partial capture (as before) and
+release of the remainder of the reserved amount.
+
+If you wish to cancel an order which you have partially captured send a
+[`PUT:/ecomm/v2/payments/{orderId}/cancel`](https://vippsas.github.io/vipps-ecom-api/#/Vipps%20eCom%20API/cancelPaymentRequestUsingPUT)
+request with the following property added to the body `shouldReleaseRemainingFunds: true`.
+The payment must be `RESERVED` for this to take effect.
+
+See:
+[Cancelling a partially captured order](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#cancelling-a-partially-captured-order).
 
 # Recurring charge changes
 
-From **August 1st, 2022** new rules for charge creation will be enforced:
+ From **August 1st, 2022** new rules for charge creation will be enforced:
 
-- The `amount` of a charge is flexible but can not be higher than the `agreement price`.
-- For an agreement with a `campaign`, the `amount` of a charge is flexible but can not be higher than the campaign price. After the campaign expires the `amount` of a charge can not be higher than the `agreement price`.
-If the agreement was created with an initial charge and the initial charge amount is the same amount as the campaign price, then no new charges can be created until the next interval for the campaign.
+ - The `amount` of a charge is flexible but can not be higher than the
+   `agreement price`.
+ - For an agreement with a `campaign`, the `amount` of a charge is flexible but
+   can not be higher than the campaign price. After the campaign expires the
+  `amount` of a charge can not be higher than the `agreement price`.
 
-See the [recurring documentation]([https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api.md#create-charge) on how the new enforced rules are (will be enforced for normal and variable amount charges).
+ If the agreement was created with an initial charge and the initial charge
+ amount is the same amount as the campaign price, then no new charges can be
+ created until the next interval for the campaign.
 
-# Some new thing 2
-
-Text here.
+ See:
+ [Create charge]([https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api.md#create-charge).
 
 # Reminders
 
