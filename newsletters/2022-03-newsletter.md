@@ -17,11 +17,10 @@ This newsletter was sent in March 2022.
 The Vipps eCom API now supports both partial capture (as before) and
 release of the remainder of the reserved amount.
 
-If you wish to cancel an order which you have partially captured send a
+If you wish to cancel an order which you have partially captured: Send a
 [`PUT:/ecomm/v2/payments/{orderId}/cancel`](https://vippsas.github.io/vipps-ecom-api/#/Vipps%20eCom%20API/cancelPaymentRequestUsingPUT)
-request with the following property added to the body `shouldReleaseRemainingFunds: true`.
+request with `shouldReleaseRemainingFunds: true` in the body.
 The payment must be `RESERVED` for this to take effect.
-
 See:
 [Cancelling a partially captured order](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#cancelling-a-partially-captured-order).
 
