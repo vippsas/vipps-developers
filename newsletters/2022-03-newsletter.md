@@ -4,13 +4,22 @@
 
 This newsletter was sent in March 2022.
 
-* [Reminders](#reminders)
-  * [Please check your eCom API calls](#please-check-your-ecom-api-calls)
-  * [Use the API Dashboard to find problems with your integration](#use-the-api-dashboard-to-find-problems-with-your-integration)
+- [Technical newsletter for developers 2022-03](#technical-newsletter-for-developers-2022-03)
+- [Recurring charge changes](#recurring-charge-changes)
+- [Some new thing 2](#some-new-thing-2)
+- [Reminders](#reminders)
+  - [Please check your eCom API calls](#please-check-your-ecom-api-calls)
+  - [Use the API Dashboard to find problems with your integration](#use-the-api-dashboard-to-find-problems-with-your-integration)
 
-# Some new thing 1
+# Recurring charge changes
 
-Text here.
+From **August 1st, 2022** new rules for charge creation will be enforced:
+
+- The `amount` of a charge is flexible but can not be higher than the `agreement price`.
+- For an agreement with a `campaign`, the `amount` of a charge is flexible but can not be higher than the campaign price. After the campaign expires the `amount` of a charge can not be higher than the `agreement price`.
+If the agreement was created with an initial charge and the initial charge amount is the same amount as the campaign price, then no new charges can be created until the next interval for the campaign.
+
+See the [recurring documentation]([https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api.md#create-charge) on how the new enforced rules are (will be enforced for normal and variable amount charges).
 
 # Some new thing 2
 
