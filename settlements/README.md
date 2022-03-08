@@ -49,6 +49,7 @@ Please make sure your servers' clocks are correct, e.g. by using [NTP](https://e
 have been 5000 Vipps payments in one week, there will still only be one
 payment from Vipps to the merchant. A "lump sum", if you want.
 The settlement reports have all the details for each of the 5000 payments.
+Also: There is one payment per sale unit.
 
 # Frequency
 
