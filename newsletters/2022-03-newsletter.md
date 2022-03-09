@@ -41,6 +41,21 @@ See:
  See:
  [Create charge]([https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api.md#create-charge).
 
+# Logo handling changes in Signup API
+
+The response of the
+[`GET:/v1/merchants/{merchantSerialNumber}`](https://vippsas.github.io/vipps-psp-api/signup/#/Merchant/getMerchant)
+endpoint in the Signup API contains a `logo` field, that encodes the merchant's logo in base64 format.
+
+Now we are switching to host the logos on a separate, highly available service.
+A new field, `logoUrl`, is added to the response of this endpoint, that contains an URL,
+where the logo image can be directly fetched.
+At the same time, we are marking the current `logo` field in this API response **deprecated**.
+
+We encurage to switch to the new `logoUrl` field.
+
+This change does not affect the `POST` and `PATCH` endpoints.
+
 # Reminders
 
 ## Please check your eCom API calls
