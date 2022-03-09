@@ -8,6 +8,7 @@ This newsletter was sent in March 2022.
 
 * [Refunds for remainder after doing a partial capture](#refunds-for-remainder-after-doing-a-partial-capture)
 * [Recurring charge changes](#recurring-charge-changes)
+* [Logo handling changes in PSP Signup API](#logo-handling-changes-in-psp-signup-api)
 * [Reminders](#reminders)
   * [Please check your eCom API calls](#please-check-your-ecom-api-calls)
   * [Use the API Dashboard to find problems with your integration](#use-the-api-dashboard-to-find-problems-with-your-integration)
@@ -26,7 +27,7 @@ See:
 
 # Recurring charge changes
 
- From **August 1st, 2022** new rules for charge creation will be enforced:
+ From **August 1st, 2022** some new rules for charge creation will be enforced:
 
  - The `amount` of a charge is flexible but can not be higher than the
    `agreement price`.
@@ -41,20 +42,23 @@ See:
  See:
  [Create charge]([https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api.md#create-charge).
 
-# Logo handling changes in Signup API
+# Logo handling changes in PSP Signup API
 
 The response of the
 [`GET:/v1/merchants/{merchantSerialNumber}`](https://vippsas.github.io/vipps-psp-api/signup/#/Merchant/getMerchant)
-endpoint in the Signup API contains a `logo` field, that encodes the merchant's logo in base64 format.
+endpoint in the in the
+[Vipps PSP API](https://github.com/vippsas/vipps-psp-api)
+contains a `logo` field, with the merchant's logo encoded in base64 format.
 
-Now we are switching to host the logos on a separate, highly available service.
-A new field, `logoUrl`, is added to the response of this endpoint, that contains an URL,
-where the logo image can be directly fetched.
-At the same time, we are marking the current `logo` field in this API response **deprecated**.
+We are changing this to a URL, with a new field `logoUrl` in the response,
+pointing to a separate and highly available service where we will host the logo
+images.
 
-We encurage to switch to the new `logoUrl` field.
+The `logo` field in this API response is from now on **deprecated**.
 
-This change does not affect the `POST` and `PATCH` endpoints.
+Please switch to the new `logoUrl` field as soon as possible.
+
+This change only applies to the `GET` method, and does not affect the `POST` and `PATCH` methods.
 
 # Reminders
 
