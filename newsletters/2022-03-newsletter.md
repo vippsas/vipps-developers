@@ -6,7 +6,7 @@ This newsletter was sent in March 2022.
 
 ## Table of Contents
 
-* [Refunds for remainder after doing a partial capture](#refunds-for-remainder-after-doing-a-partial-capture)
+* [Release of remainder after doing a partial capture](#release-of-remainder-after-doing-a-partial-capture)
 * [The Vipps QR API now works in the test environment](#the-vipps-qr-api-now-works-in-the-test-environment)
 * [Logo handling changes in PSP Signup API](#logo-handling-changes-in-psp-signup-api)
 * [Recurring charge changes](#recurring-charge-changes)
@@ -14,7 +14,7 @@ This newsletter was sent in March 2022.
   * [Please check your eCom API calls](#please-check-your-ecom-api-calls)
   * [Use the API Dashboard to find problems with your integration](#use-the-api-dashboard-to-find-problems-with-your-integration)
 
-# Refunds for remainder after doing a partial capture
+# Release of remainder after doing a partial capture
 
 The Vipps eCom API now supports both partial capture (as before) and
 release of the remainder of the reserved amount.
