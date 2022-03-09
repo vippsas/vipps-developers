@@ -7,8 +7,9 @@ This newsletter was sent in March 2022.
 ## Table of Contents
 
 * [Refunds for remainder after doing a partial capture](#refunds-for-remainder-after-doing-a-partial-capture)
-* [Recurring charge changes](#recurring-charge-changes)
+* [The Vipps QR API now works in the test environment](#the-vipps-qr-api-now-works-in-the-test-environment)
 * [Logo handling changes in PSP Signup API](#logo-handling-changes-in-psp-signup-api)
+* [Recurring charge changes](#recurring-charge-changes)
 * [Reminders](#reminders)
   * [Please check your eCom API calls](#please-check-your-ecom-api-calls)
   * [Use the API Dashboard to find problems with your integration](#use-the-api-dashboard-to-find-problems-with-your-integration)
@@ -25,22 +26,11 @@ The payment must be `RESERVED` for this to take effect.
 See:
 [Cancelling a partially captured order](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#cancelling-a-partially-captured-order).
 
-# Recurring charge changes
+# The Vipps QR API now works in the test environment
 
- From **August 1st, 2022** some new rules for charge creation will be enforced:
-
- - The `amount` of a charge is flexible but can not be higher than the
-   `agreement price`.
- - For an agreement with a `campaign`, the `amount` of a charge is flexible but
-   can not be higher than the campaign price. After the campaign expires the
-  `amount` of a charge can not be higher than the `agreement price`.
-
- If the agreement was created with an initial charge and the initial charge
- amount is the same amount as the campaign price, then no new charges can be
- created until the next interval for the campaign.
-
- See:
- [Create charge]([https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api.md#create-charge).
+[The Vipps QR API](https://github.com/vippsas/vipps-qr-api) now works in both in
+the production and
+[test environment](https://github.com/vippsas/vipps-developers/blob/master/vipps-test-environment.md).
 
 # Logo handling changes in PSP Signup API
 
@@ -59,6 +49,23 @@ The `logo` field in this API response is from now on **deprecated**.
 Please switch to the new `logoUrl` field as soon as possible.
 
 This change only applies to the `GET` method, and does not affect the `POST` and `PATCH` methods.
+
+# Recurring charge changes
+
+ From **August 1st, 2022** some new rules for charge creation will be enforced:
+
+ - The `amount` of a charge is flexible but can not be higher than the
+   `agreement price`.
+ - For an agreement with a `campaign`, the `amount` of a charge is flexible but
+   can not be higher than the campaign price. After the campaign expires the
+  `amount` of a charge can not be higher than the `agreement price`.
+
+ If the agreement was created with an initial charge and the initial charge
+ amount is the same amount as the campaign price, then no new charges can be
+ created until the next interval for the campaign.
+
+ See:
+ [Create charge]([https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api.md#create-charge).
 
 # Reminders
 
