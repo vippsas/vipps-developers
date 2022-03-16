@@ -96,9 +96,9 @@ but you can create as many as you need.
 
 ## Test users
 
-The welcome email that is automatically sent to all new customers contains
+The welcome email that is automatically sent to _*all*_ new customers contains
 information about your test user for the test environment.
-Please search your mail, including the spam/junk folder if you do not fint it.
+Please search your mail, including the spam/junk folder if you do not find it.
 
 You can use this test user in the [Vipps test apps](#vipps-test-apps).
 
