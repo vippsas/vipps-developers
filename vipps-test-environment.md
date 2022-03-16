@@ -17,7 +17,7 @@ The Merchant Test Environment (MT) is available for all Vipps customers.
   * [iOS](#ios)
   * [Android](#android)
 
-Document version: 3.1.13.
+Document version: 3.1.14.
 
 ## About the test environment
 
@@ -98,6 +98,8 @@ but you can create as many as you need.
 
 The welcome email that is automatically sent to all new customers contains
 information about your test user for the test environment.
+Please search your mail, including the spam/junk folder if you do not fint it.
+
 You can use this test user in the [Vipps test apps](#vipps-test-apps).
 
 You may use the same test user on multiple devices.
