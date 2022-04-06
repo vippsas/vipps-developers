@@ -32,7 +32,7 @@ You can test Vipps with a _production_ version of the Vipps app
 Maybe you want to start by scanning this QR code and go directly to
 Vipps Hurtigkasse (express checkout) and buy a nice VHS cassette?
 
-![QR code to Vipps Hurtigkasse](images/demostore-qr-vipps-hurtigkasse.png)
+<img src="images/demostore-qr-vipps-hurtigkasse.png" alt="QR code to Vipps Hurtigkasse" width="285" height="400"/>
 
 ## API documentation
 
