@@ -16,7 +16,7 @@ If you are using Vipps through an e-commerce platform, integration partner or PS
 * [Partner](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-3)
 * [PSP](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-2)
 
-Document version: 3.3.1.
+Document version: 3.3.2.
 
 # Table of contents
 
@@ -163,6 +163,8 @@ See also:
 [Vippps Partners](https://github.com/vippsas/vipps-partner).
 
 ## Test and production environments
+
+The test and production environments are completely separate and use different API keys.
 
 * API keys for the
   [test environment](https://github.com/vippsas/vipps-developers/blob/master/vipps-test-environment.md):
