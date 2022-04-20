@@ -57,22 +57,19 @@ If you can not find the answer: Please send an email with all relevant informati
 
 1. **Please: Always include a _detailed_ description of the problem**
 2. A concise, self-explanatory `Subject` line, such as "`POST:/something` gives `HTTP 400` response".
-3. Company details
-  - Organization number (find yours at [Brønnøysundregistrene](https://brreg.no))
-  - Merchant Serial Number (MSN, see [Getting started](vipps-developer-portal-getting-started.md))
-4. Environment: Is it a problem in the Test (MT) or the Production environment?
-5. Date: On which date did the problem occur?
-6. Include `orderId`, and preferably also `transactionId` and `contextId`, to make it possible to search in logs.
-7. If you are a new Vipps customer, please include details about when and how you ordered Vipps.
-8. Which [Vipps product](https://www.vipps.no/produkter-og-tjenester/bedrift/) or [Vipps API](https://github.com/vippsas) this is about.
-9. For API issues: Complete `request` and `response` details (plain HTTP from Postman, or [curl](https://curl.haxx.se) ensures the quickest response).
-10. Please provide screenshots, if possible.
-11. For app issues: Specify iOS or Android, and the app version - and have a look at the
+3. Company details: Organization number (find yours at [Brønnøysundregistrene](https://brreg.no))
+4. Merchant Serial Number (MSN, see [Getting started](vipps-developer-portal-getting-started.md))
+5. Environment: Is it a problem in the Test (MT) or the Production environment?
+6. Date: On which date did the problem occur?
+7. Include `orderId`, and preferably also `transactionId` and `contextId`, to make it possible to search in logs.
+8. If you are a new Vipps customer, please include details about when and how you ordered Vipps.
+9. Which [Vipps product](https://www.vipps.no/produkter-og-tjenester/bedrift/) or [Vipps API](https://github.com/vippsas) this is about.
+10. For API issues: Complete `request` and `response` details (plain HTTP from Postman, or [curl](https://curl.haxx.se) ensures the quickest response).
+11. Please provide screenshots, if possible.
+12. For app issues: Specify iOS or Android, and the app version - and have a look at the
   [standard reply for app problems](https://github.com/vippsas/vipps-developers/blob/master/housekeeping/response-app-error-en.txt).
-12. Please provide your contact information (if not in your email signature):
-  - Name
-  - Phone number
-13. Please include any other information that may be relevant or possibly helpful.
+13. Please provide your contact information (if not in your email signature): Name and phone number
+14. Please include any other information that may be relevant or possibly helpful.
 
 The Integration email address is: integration@vipps.no
 
