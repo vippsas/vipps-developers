@@ -14,7 +14,7 @@ Hello! We can help!
 - [More than one problem, or a new one?](#more-than-one-problem-or-a-new-one)
 - [Newsletter](#newsletter)
 
-Document version: 2.4.10.
+Document version: 2.4.11.
 
 ## We help with technical issues
 
@@ -59,11 +59,11 @@ If you can not find the answer: Please send an email with all relevant informati
 2. A concise, self-explanatory `Subject` line, such as "`POST:/something` gives `HTTP 400` response".
 3. Company details: Organization number (find yours at [Brønnøysundregistrene](https://brreg.no))
 4. Merchant Serial Number (MSN, see [Getting started](vipps-developer-portal-getting-started.md))
-5. Environment: Is it a problem in the Test (MT) or the Production environment?
-6. Date: On which date did the problem occur?
+5. Which [Vipps product](https://www.vipps.no/produkter-og-tjenester/bedrift/) or [Vipps API](https://github.com/vippsas) this is about.
+6. Environment: Is it a problem in the Test (MT) or the Production environment?
 7. Include `orderId`, and preferably also `transactionId` and `contextId`, to make it possible to search in logs.
-8. If you are a new Vipps customer, please include details about when and how you ordered Vipps.
-9. Which [Vipps product](https://www.vipps.no/produkter-og-tjenester/bedrift/) or [Vipps API](https://github.com/vippsas) this is about.
+8. Date: On which date did the problem occur?
+9. If you are a new Vipps customer, please include details about when and how you ordered Vipps.
 10. For API issues: Complete `request` and `response` details (plain HTTP from Postman, or [curl](https://curl.haxx.se) ensures the quickest response).
 11. Please provide screenshots, if possible.
 12. For app issues: Specify iOS or Android, and the app version - and have a look at the
