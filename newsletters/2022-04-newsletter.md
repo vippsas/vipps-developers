@@ -1,8 +1,8 @@
-# Technical newsletter for developers 2022-03
+# Technical newsletter for developers 2022-04
 
 💥 Draft! 💥
 
-This newsletter was sent in March 2022.
+This newsletter was sent in April 2022.
 
 ## Table of Contents
 
