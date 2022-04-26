@@ -21,7 +21,7 @@ We recommend starting with [Getting started](vipps-getting-started.md).
 - [Vipps design guidelines](#vipps-design-guidelines)
 - [Questions?](#questions)
 
-Document version: 2.6.3.
+Document version: 2.6.4.
 
 ## Vipps demo store
 
@@ -32,7 +32,7 @@ You can test Vipps with a _production_ version of the Vipps app
 Maybe you want to start by scanning this QR code and go directly to
 Vipps Hurtigkasse (express checkout) and buy a nice VHS cassette?
 
-![QR code to Vipps Hurtigkasse](images/demostore-qr-vipps-hurtigkasse.png)
+<img src="images/demostore-qr-vipps-hurtigkasse.png" alt="QR code to Vipps Hurtigkasse" title="QR code to Vipps Hurtigkasse" width="285" />
 
 ## API documentation
 
@@ -42,8 +42,11 @@ The most commonly used APIs:
 * [Vipps eCom API](https://github.com/vippsas/vipps-ecom-api)
 * [Vipps Login API](https://github.com/vippsas/vipps-login-api)
 * [Vipps Recurring API](https://github.com/vippsas/vipps-recurring-api)
+* [Vipps QR API](https://github.com/vippsas/vipps-qr-api)
+* [Vipps Order Management API](https://github.com/vippsas/vipps-order-management-api)
+* [Vipps PSP API](https://github.com/vippsas/vipps-psp-api)
 
-All Vipps APIs are available here: https://github.com/vippsas
+All Vipps APIs are available (and searchable) here: https://github.com/vippsas
 
 The API documentation is frequently improved and increasingly extensive.
 Please use the search functionality in your browser and on GitHub to find

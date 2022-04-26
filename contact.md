@@ -14,7 +14,7 @@ Hello! We can help!
 - [More than one problem, or a new one?](#more-than-one-problem-or-a-new-one)
 - [Newsletter](#newsletter)
 
-Document version: 2.4.7.
+Document version: 2.4.11.
 
 ## We help with technical issues
 
@@ -50,26 +50,26 @@ First of all: It's nice if you can check the FAQs and search to check if your pr
 * [Recurring API FAQ](https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api-faq.md)
 * [Login API FAQ](https://github.com/vippsas/vipps-login-api/blob/master/vipps-login-api-faq.md)
 
-If it's not: Please send an email with all relevant information to the address below:
+Also: Please search the documentation. You can search both on GitHub and in the browser.
+Almost all questions we receive can be answered with a link to existing documentation.
 
-* **Please: Always include a _detailed_ description of the problem**
-* A concise, self-explanatory `Subject` line, such as "`POST:/something` gives `HTTP 400` response".
-* Company details
-  - Organization number (find yours at [Brønnøysundregistrene](https://brreg.no))
-  - Merchant Serial Number (MSN, see [Getting started](vipps-developer-portal-getting-started.md))
-* Is it a problem in the Test (MT) or the Production environment?
-* On which date did the problem occur?
-* Include `orderId`, and preferably also `transactionId` and `contextId`, to make it possible to search in logs.
-* If you are a new Vipps customer, please include details about when and how you ordered Vipps.
-* Which [Vipps product](https://www.vipps.no/produkter-og-tjenester/bedrift/) or [Vipps API](https://github.com/vippsas) this is about.
-* For API issues: Complete `request` and `response` details (plain HTTP from Postman, or [curl](https://curl.haxx.se) ensures the quickest response).
-* Please provide screenshots, if possible.
-* For app issues: Specify iOS or Android, and the app version - and have a look at the
+If you can not find the answer: Please send an email with all relevant information to the address below:
+
+1. **Please: Always include a _detailed_ description of the problem**
+2. A concise, self-explanatory `Subject` line, such as "`POST:/something` gives `HTTP 400` response".
+3. Company details: Organization number (find yours at [Brønnøysundregistrene](https://brreg.no))
+4. Merchant Serial Number (MSN, see [Getting started](vipps-developer-portal-getting-started.md))
+5. Which [Vipps product](https://www.vipps.no/produkter-og-tjenester/bedrift/) or [Vipps API](https://github.com/vippsas) this is about.
+6. Environment: Is it a problem in the Test (MT) or the Production environment?
+7. Include `orderId`, and preferably also `transactionId` and `contextId`, to make it possible to search in logs.
+8. Date: On which date did the problem occur?
+9. If you are a new Vipps customer, please include details about when and how you ordered Vipps.
+10. For API issues: Complete `request` and `response` details (plain HTTP from Postman, or [curl](https://curl.haxx.se) ensures the quickest response).
+11. Please provide screenshots, if possible.
+12. For app issues: Specify iOS or Android, and the app version - and have a look at the
   [standard reply for app problems](https://github.com/vippsas/vipps-developers/blob/master/housekeeping/response-app-error-en.txt).
-* Please provide your contact information (if not in your email signature):
-  - Name
-  - Phone number
-* Please include any other information that may be relevant or possibly helpful.
+13. Please provide your contact information (if not in your email signature): Name and phone number
+14. Please include any other information that may be relevant or possibly helpful.
 
 The Integration email address is: integration@vipps.no
 
