@@ -17,12 +17,11 @@
     + [Monthly reports](#monthly-reports)
 - [Questions?](#questions-)
 
-Document version 2.2.8.
+Document version 2.2.9.
 
 # Settlement flow
 
 Settlements are done as quickly as possible, and depend on banks.
-
 
 The settlement flow is as follows:
 
@@ -33,14 +32,24 @@ The settlement flow is as follows:
    [portal.vipps.no](https://portal.vipps.no).
 3. Day 3: Payments are made from Vipps' bank account to the merchant's bank account.
 
-Settlement process will always adhere to [Vipps' terms and conditions](https://vipps.no/vilkar/vilkar-bedrift/), section 5 "OPPGJØR OG FORHOLD TIL VIPPS INNLØSER".
+Settlement process will always adhere to
+[Vipps' terms and conditions](https://vipps.no/vilkar/vilkar-bedrift/),
+section 5 "OPPGJØR OG FORHOLD TIL VIPPS INNLØSER".
 
-Days are bank days, Monday - Friday, excluding banking holidays. In other words, a capture made on Monday will be on merchant's account on Wednesday, while a capture made on Friday will be on merchant's account on Tuesday.
+Days are bank days, Monday - Friday, excluding banking holidays. In other words,
+a capture made on Monday will be on merchant's account on Wednesday, while a
+capture made on Friday will be on merchant's account on Tuesday.
 
-Usually, funds will be available before noon on day 3. 
+Usually, funds will be available before noon on day 3.
 
 A day starts and ends at midnight, Oslo time: Start `00:00:00`, end `23:59:59` (subseconds not specified).
 Please make sure your servers' clocks are correct, e.g. by using [NTP](https://en.wikipedia.org/wiki/Network_Time_Protocol).
+
+**Please note:** There is only one payment per settlement period: If there
+have been 5000 Vipps payments in one week, there will still only be one
+payment from Vipps to the merchant. A "lump sum", if you want.
+The settlement reports have all the details for each of the 5000 payments.
+Also: There is one payment per sale unit.
 
 # Frequency
 
@@ -130,8 +139,8 @@ Reports with personal details of the customers are also available, see
 
 Merchants can log in on
 [portal.vipps.no](https://portal.vipps.no)
-and specify email addresses that Vipps will send settlement reports to. 
-Reports are available in xlsx, xml.zip and csv format. 
+and specify email addresses that Vipps will send settlement reports to.
+Reports are available in xlsx, xml.zip and csv format.
 
 Reports with personal details of the customers can not be sent by email, see
 [GDPR](#gdpr).

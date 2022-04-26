@@ -1,6 +1,6 @@
 Problem:
   title: Problem
-  description: 'A detailed error response, following the RFC 7807 standard'
+  description: 'A detailed error response, following the RFC 7807 standard: https://datatracker.ietf.org/doc/html/rfc7807'
   type: object
   required:
     - type

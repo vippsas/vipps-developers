@@ -14,7 +14,7 @@ Address:
       example: 123e4567-e89b-12d3-a456-426614174000
     lines:
       type: array
-      description: 'Array of addressLines, for example streetname, house number, c/o, etc'
+      description: 'Array of address lines, for example: streetname, house number, c/o, etc'
       items:
         type: string
         maxLength: 100
@@ -22,15 +22,16 @@ Address:
     postalCode:
       type: string
       description: Postcode of the address in local country format
-      maxLength: 20
+      maxLength: 50
       example: '0154'
     city:
       type: string
       description: 'The name of the city.'
-      maxLength: 20
+      maxLength: 50
       example: 'Oslo'
     country:
       type: string
       description: Country code in ISO 3166 format.
+      maxLength: 2
       pattern: '^[A-Z]{2}'
       example: 'NO'
