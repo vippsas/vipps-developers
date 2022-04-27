@@ -42,7 +42,7 @@ We are changing this to a URL, with a new field `logoUrl` in the response,
 pointing to a separate and highly available service where we will host the logo
 images.
 
-The `logo` field in this API response is from now on **deprecated**.
+The `logo` field in this API response is from now on **deprecated**, and will be removed on 30. May.
 
 Please switch to the new `logoUrl` field as soon as possible.
 
