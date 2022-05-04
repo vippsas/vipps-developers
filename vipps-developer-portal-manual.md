@@ -40,7 +40,7 @@ All the above features and functionalities are described in detail in later sect
 # Signing in
 
 See the
-[Getting Started](vipps-developer-portal-getting-started.md)
+[Getting Started](vipps-getting-started.md)
 guide for a quick intro.
 
 Please note the difference between the Test and Production environments,
@@ -106,8 +106,8 @@ Click on the **"TEST THE API(S)"** button (in this example: `GetOrderStatus_v2`)
 
 ![Test: Get Order Status](images/devportal-test-getorderstatus-0.png)
 
-Add the the proper keys to initiate your request. See
-[Vipps Developer Portal: Getting Started](vipps-developer-portal-getting-started.md)
+Add the proper keys to initiate your request. See
+[Vipps Developer Portal: Getting Started](vipps-getting-started.md)
 for how to obtain the API keys.
 
 ![Test: Get Order Status](images/devportal-test-getorderstatus-1.png)
