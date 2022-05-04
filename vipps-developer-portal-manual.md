@@ -35,12 +35,12 @@ Vipps developer portal facilitates merchant developers to perform following thin
 * View user profile information
 * View analytics and usage reports
 
-All the above features and functionalities are described in detail on the later sections.
+All the above features and functionalities are described in detail in later sections.
 
 # Signing in
 
 See the
-[Getting Started](vipps-developer-portal-getting-started.md)
+[Getting Started](vipps-getting-started.md)
 guide for a quick intro.
 
 Please note the difference between the Test and Production environments,
@@ -106,8 +106,8 @@ Click on the **"TEST THE API(S)"** button (in this example: `GetOrderStatus_v2`)
 
 ![Test: Get Order Status](images/devportal-test-getorderstatus-0.png)
 
-Add the the proper keys to initiate your request. See
-[Vipps Developer Portal: Getting Started](vipps-developer-portal-getting-started.md)
+Add the proper keys to initiate your request. See
+[Vipps Developer Portal: Getting Started](vipps-getting-started.md)
 for how to obtain the API keys.
 
 ![Test: Get Order Status](images/devportal-test-getorderstatus-1.png)
@@ -135,7 +135,7 @@ Click on the **"TEST THE API(S)"** button (in this example: `GetOrderStatus_v2`)
 
 ![Test: Access Token](images/devportal-test-getorderstatus-0.png)
 
-Add the the proper keys to initiate your request:
+Add the proper keys to initiate your request:
 
 ![Test: Access Token](images/devportal-test-getorderstatus-1.png)
 
@@ -198,7 +198,7 @@ Using developer portal:
 
 1. Click on Product tab in navigation bar to see all the Products.
 2. Click on Access Token Product to navigate to access token product page.
-3. Click on “TRYIT” button.
+3. Click on the “TRY IT” button.
 4. Enter the client Id, client secret and APIM Subscription key (Subscription key will be automatically filled) in the header and click Send button.
 5. As a response access token will be received.
 
@@ -293,19 +293,19 @@ _Note: The access token lifetime is 1 day (24 hours). It can be reused till 24 h
 
 *TODO: Fix c&p text, update with links, mention client, etc*
 
-1. OpenthepostmanfromAppslinkinGooglechrome.
-Enterthetokenendpointurl(i.e.https://apitest.vipps.no/accessToken/get)inpostman address bar.
-2. Addclient_id,client_secretandOcp-Apim-Subscription-Keyinrequestbodyaskey- value pair. The client_id, client_secret value should be the one received while registering an application. Subscription Key(Ocp-Apim-Subscription-Key) is available in user profile page.
-3. Changethehttpverbto‘POST’andhitSendbutton.Accesstokenwillbereceivedin response as shown below.
+1. Open the postman from the Apps link in Google Chrome.
+Enter the token endpoint url(i.e.https://apitest.vipps.no/accessToken/get) in postman address bar.
+2. Add client_id,client_secret an dOcp-Apim-Subscription-Key in requestbodyaskey- value pair. The client_id, client_secret value should be the one received while registering an application. Subscription Key(Ocp-Apim-Subscription-Key) is available in user profile page.
+3. Change the http verb to ‘POST’ and hit the Send button. Access token will be received in the response as shown below.
 
 *TODO: Image*
 
 After getting access token by any of the above methods please continue with the below steps to test an API.
 
 1. Click on the Product tab in navigation bar to navigate to a Product page and click on “TEST THE API(S)” button to see all the APIs of each and every product.
-2. Select the API to be tested and click on “Try It” button to test it.
+2. Select the API to be tested and click on the “Try It” button to test it.
 3. Enter the access token in authorization header, subscription key which merchants will get in their profile page for that product and other request parameters as per the API documentation.
-4. Finallyclickon“Send”button.
+4. Finally, click on the “Send” button.
 
 *TODO: Image*
 
@@ -325,7 +325,7 @@ The Analytics Reports section provides a detailed metrics and analytics report o
 
 As described in earlier sections, any application must pass the APIM subscription key and access token in request header to call a Vipps API. The access token has an expiry time of max. 1 day (24 hours).
 
-The following pseudo code samples would help a developer how to get an access token and use it to call an API from a custom application. It also shows the way of regenerating the access token and uses it for API calls once previous token is expired.
+The following pseudocode samples would help a developer how to get an access token and use it to call an API from a custom application. It also shows the way of regenerating the access token and uses it for API calls once previous token is expired.
 
 ## Define an Application Cache
 
@@ -337,7 +337,7 @@ To reuse access token we need to temporarily store it somewhere, application can
 
 ## Get Access Token
 
-*TODO: Duplicate? Replaceble with reference/link?*
+*TODO: Duplicate? Replaceable with reference/link?*
 
 Following code sample shows how to get an access token and save it in cache to reuse until it expires. To get the access token we need to call the “https://apitest.vipps.no/accessToken/get” endpoint, given in the developer portal. The “isNew” argument decides whether a new token will be generated or it will be fetched from cache. Access token endpoint url requires following parameters in the request.
 
@@ -385,7 +385,7 @@ Once you get an access token, now you can call an API. Before calling an API fro
 
 ### API calls pseudo code
 
-*TODO: Replace with HTTP examples, make sections/paragraphs, use Java "pesudo" code in addition, but in smaller chunks*
+*TODO: Replace with HTTP examples, make sections/paragraphs, use Java "pseudo" code in addition, but in smaller chunks*
 
 # Questions?
 

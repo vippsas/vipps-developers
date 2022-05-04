@@ -147,8 +147,8 @@ If you don't know who the administrator is, you can check
 [Brønnøysundregistrene](https://www.brreg.no)
 and see who has the right to sign for the company.
 
-If you can login to [portal.vipps.no](https://portal.vipps.no) but cannot see
-the "Utvikler" (developer) selection in the menu you need to have the
+If you can log in to [portal.vipps.no](https://portal.vipps.no), but cannot see
+the "Utvikler" (developer) selection in the menu, you need to have the
 merchant's administrator grant you developer access for the sales unit you
 need access to.
 
@@ -157,10 +157,10 @@ log in on
 [portal.vipps.no](https://portal.vipps.no)
 and grant you developer access for the sales unit you need access to,
 or provide the API keys to you in a secure way.
-The user persmissions are described (in Norwegian)
+The user permissions are described (in Norwegian)
 [here](https://vipps.no/hjelp/vipps/kundeforholdet-mitt/hvilke-tilganger-kan-vi-opprette-i-vippsportalen/).
 See also:
-[Vippps Partners](https://github.com/vippsas/vipps-partner).
+[Vipps Partners](https://github.com/vippsas/vipps-partner).
 
 ## Test and production environments
 
@@ -192,18 +192,18 @@ and
 ## API keys for a sale unit
 
 This screen shows the API keys for the selected sale unit.
-Some of the API keys are hidden because the logged-in user does not have the
+Some API keys are hidden because the logged-in user does not have the
 required permissions.
 
 ![portal.vipps.no: The API keys for a sales unit](images/portalvippsno-salesunit-keys.png)
 
 ## API key details
 
-| Name                     | Format | Example                              |  Description                     |
-| ------------------------ | ------ | ------------------------------------ | -------------------------------- |
+| Name                     | Format | Example                              | Description                                     |
+|--------------------------|--------|--------------------------------------|-------------------------------------------------|
 | `client_id`              | GUID   | fb492b5e-7907-4d83-bc20-c7fb60ca35de | Client ID for the merchant (the "username")     |
 | `client_secret`          | Base64 | Y8Kteew6GE3ZmeycEt6egg==             | Client Secret for the merchant (the "password") |
-| `Vipps-Subscription-Key` | Base64 | 0f14ebcab0eb4b29ae0cb90d91b4a84a     | Subscription key for the API product |
+| `Vipps-Subscription-Key` | Base64 | 0f14ebcab0eb4b29ae0cb90d91b4a84a     | Subscription key for the API product            |
 
 There are both a primary and secondary `Vipps-Subscription-Key`.
 The primary and secondary keys are interchangeable: You can use either one,
@@ -242,25 +242,25 @@ Vipps API.
 
 This API product includes the following APIs:
 
-| API                  | Description                           | Documentation                                    |
-| -------------------- | ------------------------------------- | ------------------------------------------------ |
-| Access Token API     | Required to obtain a JWT              | See: [Get an access token](#get-an-access-token) |
-| eCom API             | eCommerce, including express checkout | https://github.com/vippsas/vipps-ecom-api        |
-| Recurring API        | Recurring API                         | https://github.com/vippsas/vipps-recurring-api   |
-| Log In API           | Identification                        | https://github.com/vippsas/vipps-login-api       |
-| QR API               | QR codes                              | https://github.com/vippsas/vipps-qr-api          |
+| API                  | Description                           | Documentation                                         |
+|----------------------|---------------------------------------|-------------------------------------------------------|
+| Access Token API     | Required to obtain a JWT              | See: [Get an access token](#get-an-access-token)      |
+| eCom API             | eCommerce, including express checkout | https://github.com/vippsas/vipps-ecom-api             |
+| Recurring API        | Recurring API                         | https://github.com/vippsas/vipps-recurring-api        |
+| Log In API           | Identification                        | https://github.com/vippsas/vipps-login-api            |
+| QR API               | QR codes                              | https://github.com/vippsas/vipps-qr-api               |
 | Order Management API | Add data to orders                    | https://github.com/vippsas/vipps-order-management-api |
 
 Vipps-API also includes some _legacy_ APIs:
 
 | API              | Description                                                      | Documentation                                    |
-| ---------------- | ---------------------------------------------------------------- | ------------------------------------------------ |
+|------------------|------------------------------------------------------------------|--------------------------------------------------|
 | eCom API v1      | eCommerce, legacy version, phased out on September 1 2020.       | https://github.com/vippsas/vipps-ecom-api-v1     |
 | Signup and Login | Legacy API (superseded by Vipps Log In), end of life Dec 31 2019 | https://github.com/vippsas/vipps-signuplogin-api |
 
 See more details about the
 [deprecation of the Vipps eCom API v1](https://github.com/vippsas/vipps-ecom-api/blob/master/v1-deprecation.md)
-on September 1 2020.
+on September 1, 2020.
 
 If you are still using a legacy API, you should upgrade as soon as possible.
 The best way to keep up to date of changes is to
@@ -296,7 +296,7 @@ The access token is obtained by calling
 [`POST:/accesstoken/get`](https://vippsas.github.io/vipps-ecom-api/#/Authorization_Service/fetchAuthorizationTokenUsingPost)
 and passing the `client_id`, `client_secret` and `Ocp-Apim-Subscription-Key`.
 (We _are_ aware that this is a `POST`, without a body, to an endpoint with
-`get` in the URL, and hope to fix it in a later version of the API. Sorry.)
+`get` in the URL, and hope to fix it in a later version of the API. Sorry for the inconvenience.)
 
 ### Request
 
@@ -316,7 +316,7 @@ Vipps-System-Plugin-Version 4.5.6
 ```
 
 | Header                        | Description                                  | Example value       |
-| ----------------------------- | -------------------------------------------- | ------------------- |
+|-------------------------------|----------------------------------------------|---------------------|
 | `Merchant-Serial-Number`      | The MSN for the sale unit                    | `123456`            |
 | `Vipps-System-Name`           | The name of the ecommerce solution           | `woocommerce`       |
 | `Vipps-System-Version`        | The version number of the ecommerce solution | `5.4`               |
@@ -332,7 +332,7 @@ Please note: Partners should use
 Partners must always send the `Merchant-Serial-Number` header, and we recommend
 that _everyone_ sends it, also when using the merchant's own API keys.
 The `Merchant-Serial-Number` header can be used with all API keys, and can
-speed up any trouble-shooting of API problems quite a bit.
+speed up any troubleshooting of API problems quite a bit.
 
 **Please note:** You can have multiple access tokens being used at the same time.
 
@@ -363,15 +363,15 @@ is like this:
 The `access_token` is the most important part.
 An explanation of the contents of the access token (the JWT properties):
 
-| Name                        | Description                                 |
-| --------------------------- | ------------------------------------------- |
-| `Bearer`                    | It’s a `Bearer` token. The word `Bearer` must be added before the token |
-| `expires_in`                | Token expiry duration in seconds. |
-| `ext_expires_in`            | Extra expiry time. Not used. |
-| `expires_on`                | Token expiry time in epoch time format. |
-| `not_before`                | Token creation time in epoch time format. |
-| `resource`                  | For the product for which token has been issued. |
-| `access_token`              | The actual access token that needs to be used in `Authorization` request header. |
+| Name             | Description                                                                      |
+|------------------|----------------------------------------------------------------------------------|
+| `Bearer`         | It’s a `Bearer` token. The word `Bearer` must be added before the token          |
+| `expires_in`     | Token expiry duration in seconds.                                                |
+| `ext_expires_in` | Extra expiry time. Not used.                                                     |
+| `expires_on`     | Token expiry time in epoch time format.                                          |
+| `not_before`     | Token creation time in epoch time format.                                        |
+| `resource`       | For the product for which token has been issued.                                 |
+| `access_token`   | The actual access token that needs to be used in `Authorization` request header. |
 
 **Please note:** The access token is valid for 1 hour in the test environment
 and 24 hours in the production environment. To be sure that you are using
@@ -383,7 +383,7 @@ Problems? See:
 ## Make an API call
 
 After obtaining the access token (JWT), it is then used for the "real" calls
-to the Vipps API, with the `Bearer` keyword (it is case sensitive).
+to the Vipps API, with the `Bearer` keyword (it is case-sensitive).
 
 A typical example of an API endpoint:
 [`POST:/ecomm/v2/payments`](https://vippsas.github.io/vipps-ecom-api/#/Vipps_eCom_API/initiatePaymentV3UsingPOST)
@@ -416,7 +416,7 @@ Problems? See:
 This API returns the following HTTP statuses in the responses:
 
 | HTTP status        | Description                                             |
-| ------------------ | ------------------------------------------------------- |
+|--------------------|---------------------------------------------------------|
 | `200 OK`           | Request successful.                                     |
 | `400 Bad Request`  | Invalid request, see the `error` for details.           |
 | `401 Unauthorized` | Invalid authorization.                                  |
