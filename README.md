@@ -128,9 +128,9 @@ developer roles.
 
 The test and production environments are separate and require different API credentials:
 
-| Production (Prod)   | Test (MT)              |
-| ------------------- | ---------------------- |
-| api.vipps.no        | apitest.vipps.no       |
+| Production (Prod) | Test (MT)        |
+|-------------------|------------------|
+| api.vipps.no      | apitest.vipps.no |
 
 The servers are world accessible. Vipps only relies on the API keys, and
 no requests to our servers are blocked on our side by IP addresses or similar.
@@ -149,11 +149,11 @@ Vipps normally only uses one server at a time, and change servers approximately
 every three months.
 
 | Production (Prod)   | Disaster recovery (DR) | Test (MT)              |
-| ------------------- | ---------------------- | ---------------------- |
+|---------------------|------------------------|------------------------|
 | callback-1.vipps.no | callback-dr-1.vipps.no | callback-mt-1.vipps.no |
 | callback-2.vipps.no | callback-dr-2.vipps.no | callback-mt-2.vipps.no |
-| callback-3.vipps.no | callback-dr-3.vipps.no |  |
-| callback-4.vipps.no | callback-dr-4.vipps.no |  |
+| callback-3.vipps.no | callback-dr-3.vipps.no |                        |
+| callback-4.vipps.no | callback-dr-4.vipps.no |                        |
 
 The disaster recovery environment is as important as the production environment.
 

@@ -14,16 +14,16 @@ have trouble following the documentation, or have a question about the project â
 
 Creating an issue in GitHub is easy, and whatever issue you're having, you're likely not the only one,
 so others will find your issue helpful too. For more information on how issues work,
-check out the official Github issues guide: https://guides.github.com/features/issues/
+check out the official GitHub issues guide: https://guides.github.com/features/issues/
 
 # Contributing
 
 Contributing is easy. The steps below is intended to be helpful - please help us improve it.
 
-1. Create a personal fork of the project on GitHub
-1. Clone the fork on your local machine
-1. Create a new branch to work on, use a self-explanatory name. Example: `git branch my-new-branch master`
-1. Check out your new branch (avoid working on the `master` branch): `git checkout my-new-branch`
+1. Create a personal fork of the project on GitHub.
+1. Clone the fork on your local machine.
+1. Create a new branch to work on, use a self-explanatory name. Example: `git branch my-new-branch master`.
+1. Check out your new branch (avoid working on the `master` branch): `git checkout my-new-branch`.
 1. Make your change(s), implement your fix or feature(s), and comment your code.
 1. Follow the code style of the project, including indentation.
 1. Add or change the documentation as needed.
