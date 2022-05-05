@@ -1,27 +1,25 @@
-# Vipps Developers
+# Vipps Developers <!-- omit in toc -->
 
 This repository contains various resources for Vipps developers.
 We recommend starting with [Getting started](vipps-getting-started.md).
 
-## Table of contents
+## Table of contents <!-- omit in toc -->
 
-- [Vipps Developers](#vipps-developers)
-  - [Table of contents](#table-of-contents)
-  - [Vipps demo store](#vipps-demo-store)
-  - [API documentation](#api-documentation)
-  - [Technical newsletter](#technical-newsletter)
-  - [Partners](#partners)
-  - [Plugins](#plugins)
-  - [Status pages](#status-pages)
-  - [The Vipps test environment (MT)](#the-vipps-test-environment-mt)
-  - [Postman](#postman)
-  - [API Dashboard](#api-dashboard)
-  - [Vipps API servers](#vipps-api-servers)
-  - [Vipps request servers](#vipps-request-servers)
-  - [Vipps API Lifecycle](#vipps-api-lifecycle)
-  - [Settlements](#settlements)
-  - [Vipps design guidelines](#vipps-design-guidelines)
-  - [Questions?](#questions)
+- [Vipps demo store](#vipps-demo-store)
+- [API documentation](#api-documentation)
+- [Technical newsletter](#technical-newsletter)
+- [Partners](#partners)
+- [Plugins](#plugins)
+- [Status pages](#status-pages)
+- [The Vipps test environment (MT)](#the-vipps-test-environment-mt)
+- [Postman](#postman)
+- [API Dashboard](#api-dashboard)
+- [Vipps API servers](#vipps-api-servers)
+- [Vipps request servers](#vipps-request-servers)
+- [Vipps API Lifecycle](#vipps-api-lifecycle)
+- [Settlements](#settlements)
+- [Vipps design guidelines](#vipps-design-guidelines)
+- [Questions?](#questions)
 
 Document version: 2.6.4.
 

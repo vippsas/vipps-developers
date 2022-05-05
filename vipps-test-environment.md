@@ -1,25 +1,23 @@
-# The Vipps Test Environment (MT)
+# The Vipps Test Environment (MT) <!-- omit in toc -->
 
 The Merchant Test Environment (MT) is available for all Vipps customers.
 
-## Table of contents
+## Table of contents <!-- omit in toc -->
 
-- [The Vipps Test Environment (MT)](#the-vipps-test-environment-mt)
-  - [Table of contents](#table-of-contents)
-  - [About the test environment](#about-the-test-environment)
-    - [Limitations of the test environment](#limitations-of-the-test-environment)
-  - [Test merchants](#test-merchants)
-  - [Test users](#test-users)
-    - [Phone number](#phone-number)
-    - [Payment card](#payment-card)
-    - [Email address](#email-address)
-    - [Other data](#other-data)
-  - [Test amounts](#test-amounts)
-  - [Vipps test apps](#vipps-test-apps)
-    - [Limitations of the test apps](#limitations-of-the-test-apps)
-    - [iOS](#ios)
-    - [Android](#android)
-  - [Questions?](#questions)
+- [About the test environment](#about-the-test-environment)
+  - [Limitations of the test environment](#limitations-of-the-test-environment)
+- [Test merchants](#test-merchants)
+- [Test users](#test-users)
+  - [Phone number](#phone-number)
+  - [Payment card](#payment-card)
+  - [Email address](#email-address)
+  - [Other data](#other-data)
+- [Test amounts](#test-amounts)
+- [Vipps test apps](#vipps-test-apps)
+  - [Limitations of the test apps](#limitations-of-the-test-apps)
+  - [iOS](#ios)
+  - [Android](#android)
+- [Questions?](#questions)
 
 Document version: 3.1.14.
 

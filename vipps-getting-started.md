@@ -1,4 +1,4 @@
-# Getting Started
+# Getting Started <!-- omit in toc -->
 
 This guide is for the following APIs:
 
@@ -20,32 +20,30 @@ If you are using Vipps through an e-commerce platform, integration partner or PS
 
 Document version: 3.3.3.
 
-## Table of contents
+## Table of contents <!-- omit in toc -->
 
-- [Getting Started](#getting-started)
-  - [Table of contents](#table-of-contents)
-  - [Requirements](#requirements)
-    - [Foreign companies](#foreign-companies)
-    - [Vipps users](#vipps-users)
-  - [Get credentials](#get-credentials)
-    - [Getting the API keys](#getting-the-api-keys)
-    - [Permissions and users](#permissions-and-users)
-    - [Test and production environments](#test-and-production-environments)
-    - [List of sale units](#list-of-sale-units)
-    - [API keys for a sale unit](#api-keys-for-a-sale-unit)
-    - [API key details](#api-key-details)
-    - [API keys for different use](#api-keys-for-different-use)
-  - [API products](#api-products)
-    - [Vipps-API](#vipps-api)
-    - [Legacy API products](#legacy-api-products)
-  - [Quick overview of how to make an API call](#quick-overview-of-how-to-make-an-api-call)
-    - [Get an access token](#get-an-access-token)
-      - [Request](#request)
-      - [Response](#response)
-    - [Make an API call](#make-an-api-call)
-    - [HTTP response codes](#http-response-codes)
-    - [Checking for errors with the API Dashboard](#checking-for-errors-with-the-api-dashboard)
-  - [Questions?](#questions)
+- [Requirements](#requirements)
+  - [Foreign companies](#foreign-companies)
+  - [Vipps users](#vipps-users)
+- [Get credentials](#get-credentials)
+  - [Getting the API keys](#getting-the-api-keys)
+  - [Permissions and users](#permissions-and-users)
+  - [Test and production environments](#test-and-production-environments)
+  - [List of sale units](#list-of-sale-units)
+  - [API keys for a sale unit](#api-keys-for-a-sale-unit)
+  - [API key details](#api-key-details)
+  - [API keys for different use](#api-keys-for-different-use)
+- [API products](#api-products)
+  - [Vipps-API](#vipps-api)
+  - [Legacy API products](#legacy-api-products)
+- [Quick overview of how to make an API call](#quick-overview-of-how-to-make-an-api-call)
+  - [Get an access token](#get-an-access-token)
+    - [Request](#request)
+    - [Response](#response)
+  - [Make an API call](#make-an-api-call)
+  - [HTTP response codes](#http-response-codes)
+  - [Checking for errors with the API Dashboard](#checking-for-errors-with-the-api-dashboard)
+- [Questions?](#questions)
 
 ## Requirements
 
