@@ -1,51 +1,53 @@
 # Getting Started
 
 This guide is for the following APIs:
-* [Vipps eCom API](https://github.com/vippsas/vipps-ecom-api)
-* [Vipps Recurring API](https://github.com/vippsas/vipps-recurring-api)
-* [Vipps Login API](https://github.com/vippsas/vipps-login-api)
-* [Vipps QR API](https://github.com/vippsas/vipps-qr-api )
-* [Vipps Order Management API](https://github.com/vippsas/vipps-order-management-api)
+
+- [Vipps eCom API](https://github.com/vippsas/vipps-ecom-api)
+- [Vipps Recurring API](https://github.com/vippsas/vipps-recurring-api)
+- [Vipps Login API](https://github.com/vippsas/vipps-login-api)
+- [Vipps QR API](https://github.com/vippsas/vipps-qr-api )
+- [Vipps Order Management API](https://github.com/vippsas/vipps-order-management-api)
 
 **Please note:** API keys are _not_ available for
 [Vippsnummer](https://www.vipps.no/produkter-og-tjenester/bedrift/ta-betalt-i-butikk/ta-betalt-med-vipps/),
 as there is no external API.
 
 If you are using Vipps through an e-commerce platform, integration partner or PSP, please see the respective resources:
-* [E-commerce platform](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-1)
-* [Partner](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-3)
-* [PSP](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-2)
 
-Document version: 3.3.2.
+- [E-commerce platform](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-1)
+- [Partner](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-3)
+- [PSP](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-2)
 
-# Table of contents
+Document version: 3.3.3.
 
-* [Getting Started](#getting-started)
-* [Table of contents](#table-of-contents)
-* [Requirements](#requirements)
-  * [Foreign companies](#foreign-companies)
-  * [Vipps users](#vipps-users)
-* [Get credentials](#get-credentials)
-  * [Getting the API keys](#getting-the-api-keys)
-  * [Permissions and users](#permissions-and-users)
-  * [Test and production environments](#test-and-production-environments)
-  * [List of sale units](#list-of-sale-units)
-  * [API keys for a sale unit](#api-keys-for-a-sale-unit)
-  * [API key details](#api-key-details)
-  * [API keys for different use](#api-keys-for-different-use)
-* [API products](#api-products)
-  * [Vipps-API](#vipps-api)
-  * [Legacy API products](#legacy-api-products)
-* [Quick overview of how to make an API call](#quick-overview-of-how-to-make-an-api-call)
-  * [Get an access token](#get-an-access-token)
-    * [Request](#request)
-    * [Response](#response)
-  * [Make an API call](#make-an-api-call)
-  * [HTTP response codes](#http-response-codes)
-  * [Checking for errors with the API Dashboard](#checking-for-errors-with-the-api-dashboard)
-* [Questions?](#questions)
+## Table of contents
 
-# Requirements
+- [Getting Started](#getting-started)
+  - [Table of contents](#table-of-contents)
+  - [Requirements](#requirements)
+    - [Foreign companies](#foreign-companies)
+    - [Vipps users](#vipps-users)
+  - [Get credentials](#get-credentials)
+    - [Getting the API keys](#getting-the-api-keys)
+    - [Permissions and users](#permissions-and-users)
+    - [Test and production environments](#test-and-production-environments)
+    - [List of sale units](#list-of-sale-units)
+    - [API keys for a sale unit](#api-keys-for-a-sale-unit)
+    - [API key details](#api-key-details)
+    - [API keys for different use](#api-keys-for-different-use)
+  - [API products](#api-products)
+    - [Vipps-API](#vipps-api)
+    - [Legacy API products](#legacy-api-products)
+  - [Quick overview of how to make an API call](#quick-overview-of-how-to-make-an-api-call)
+    - [Get an access token](#get-an-access-token)
+      - [Request](#request)
+      - [Response](#response)
+    - [Make an API call](#make-an-api-call)
+    - [HTTP response codes](#http-response-codes)
+    - [Checking for errors with the API Dashboard](#checking-for-errors-with-the-api-dashboard)
+  - [Questions?](#questions)
+
+## Requirements
 
 Merchants need a Norwegian organization number and Norwegian BankID to apply for Vipps services.
 
@@ -62,14 +64,14 @@ access to
 [The Vipps test environment (MT)](https://github.com/vippsas/vipps-developers#the-vipps-test-environment-mt)
 is provided, and details are sent on email to the user who made the product order.
 
-## Foreign companies
+### Foreign companies
 
 Non-Norwegian companies must have the following in order to use Vipps as a payment
 provider and to receive payments from Vipps users:
 
-* A Norwegian organization number
-* A Norwegian bank account
-* An appointed contact person with a Norwegian phone number and Norwegian
+- A Norwegian organization number
+- A Norwegian bank account
+- An appointed contact person with a Norwegian phone number and Norwegian
   identity number ("fødselsnummer" or "D-nummer", 11 digits).
 
 If the foreign company is registered in
@@ -85,7 +87,7 @@ if this is required.
 If the above is impossible, the company can use Vipps through a
 [Payment Service Provider (PSP)](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-2).
 
-## Vipps users
+### Vipps users
 
 Vipps payments can only be made by customers with a Norwegian phone number and
 with a Norwegian national identity number or D-number.
@@ -98,7 +100,7 @@ but have a need for identification for the Norwegian authorities.
 Read more on how to
 [apply for a D-number](https://www.skatteetaten.no/en/person/foreign/norwegian-identification-number/).
 
-# Get credentials
+## Get credentials
 
 When the application has been processed, Vipps will send an email to the merchant,
 and the API keys can be retrieved by logging in with BankID on
@@ -114,7 +116,7 @@ If you have questions about your customer relationship, please
 order the appropriate Vipps solution from the PSP,
 and have _them_ help you with developer access to their systems.
 
-## Getting the API keys
+### Getting the API keys
 
 The API keys can be retrieved by logging in with BankID on
 [portal.vipps.no](https://portal.vipps.no),
@@ -124,16 +126,16 @@ BankID is required.
 
 **Please note:**
 
-* Vipps can not provide API keys in any other way, such as by
+- Vipps can not provide API keys in any other way, such as by
   email, as the API keys give access to transferring money.
-* Vipps will never ask for your API keys, and you must keep them secret.
-* If your developers do not have Norwegian BankID, you will need to retrieve
+- Vipps will never ask for your API keys, and you must keep them secret.
+- If your developers do not have Norwegian BankID, you will need to retrieve
   the API keys for them, and send them to the developers in a secure way.
-* Do _not_ send API keys unencrypted by email.
-* If you accidentally share your API keys, you must generate new ones on
+- Do _not_ send API keys unencrypted by email.
+- If you accidentally share your API keys, you must generate new ones on
   [portal.vipps.no](https://portal.vipps.no).
 
-## Permissions and users
+### Permissions and users
 
 If you do not have BankID,
 or you have BankID but not access to the right merchant,
@@ -162,21 +164,21 @@ The user permissions are described (in Norwegian)
 See also:
 [Vipps Partners](https://github.com/vippsas/vipps-partner).
 
-## Test and production environments
+### Test and production environments
 
 The test and production environments are completely separate and use different API keys.
 
-* API keys for the
+- API keys for the
   [test environment](https://github.com/vippsas/vipps-developers/blob/master/vipps-test-environment.md):
   Normally available on
   [portal.vipps.no](https://portal.vipps.no)
   a few minutes after we receive the application.
 
-* API keys for the production environment are normally available on
+- API keys for the production environment are normally available on
   [portal.vipps.no](https://portal.vipps.no)
   after a few days, depending on the workload and whether we need additional information.
 
-## List of sale units
+### List of sale units
 
 Select the `production keys` or `test keys`, then select `Show keys` for
 the relevant sale unit to display the API keys.
@@ -189,7 +191,7 @@ and
 
 ![portal.vipps.no: The API products for a sales unit](images/portalvippsno-salesunit-products.png)
 
-## API keys for a sale unit
+### API keys for a sale unit
 
 This screen shows the API keys for the selected sale unit.
 Some API keys are hidden because the logged-in user does not have the
@@ -197,7 +199,7 @@ required permissions.
 
 ![portal.vipps.no: The API keys for a sales unit](images/portalvippsno-salesunit-keys.png)
 
-## API key details
+### API key details
 
 | Name                     | Format | Example                              | Description                                     |
 |--------------------------|--------|--------------------------------------|-------------------------------------------------|
@@ -215,7 +217,7 @@ If you don't understand what the second key is for, you can just ignore it.
 The legacy name `Ocp-Apim-Subscription-Key` _must still be used in requests and code_,
 but we are working to make `Vipps-Subscription-Key` work everywhere.
 
-## API keys for different use
+### API keys for different use
 
 The same API keys are used for many types of integration:
 Direct integration,
@@ -224,7 +226,7 @@ point of sale integrations,
 [all the Vipps plugins](https://github.com/vippsas/vipps-plugins)
 and any other solution based on the Vipps eCom API.
 
-# API products
+## API products
 
 An _API product_ is a "package" consisting of one or more APIs.
 
@@ -238,25 +240,25 @@ The Vipps-API API product give access to all current APIs, and the API keys for
 the Vipps eCom v1 and v2 APIs have been “upgraded” to include the same APIs as
 Vipps API.
 
-## Vipps-API
+### Vipps-API
 
 This API product includes the following APIs:
 
 | API                  | Description                           | Documentation                                         |
 |----------------------|---------------------------------------|-------------------------------------------------------|
 | Access Token API     | Required to obtain a JWT              | See: [Get an access token](#get-an-access-token)      |
-| eCom API             | eCommerce, including express checkout | https://github.com/vippsas/vipps-ecom-api             |
-| Recurring API        | Recurring API                         | https://github.com/vippsas/vipps-recurring-api        |
-| Log In API           | Identification                        | https://github.com/vippsas/vipps-login-api            |
-| QR API               | QR codes                              | https://github.com/vippsas/vipps-qr-api               |
-| Order Management API | Add data to orders                    | https://github.com/vippsas/vipps-order-management-api |
+| eCom API             | eCommerce, including express checkout | <https://github.com/vippsas/vipps-ecom-api>             |
+| Recurring API        | Recurring API                         | <https://github.com/vippsas/vipps-recurring-api>        |
+| Log In API           | Identification                        | <https://github.com/vippsas/vipps-login-api>            |
+| QR API               | QR codes                              | <https://github.com/vippsas/vipps-qr-api>               |
+| Order Management API | Add data to orders                    | <https://github.com/vippsas/vipps-order-management-api> |
 
 Vipps-API also includes some _legacy_ APIs:
 
 | API              | Description                                                      | Documentation                                    |
 |------------------|------------------------------------------------------------------|--------------------------------------------------|
-| eCom API v1      | eCommerce, legacy version, phased out on September 1 2020.       | https://github.com/vippsas/vipps-ecom-api-v1     |
-| Signup and Login | Legacy API (superseded by Vipps Log In), end of life Dec 31 2019 | https://github.com/vippsas/vipps-signuplogin-api |
+| eCom API v1      | eCommerce, legacy version, phased out on September 1 2020.       | <https://github.com/vippsas/vipps-ecom-api-v1>     |
+| Signup and Login | Legacy API (superseded by Vipps Log In), end of life Dec 31 2019 | <https://github.com/vippsas/vipps-signuplogin-api> |
 
 See more details about the
 [deprecation of the Vipps eCom API v1](https://github.com/vippsas/vipps-ecom-api/blob/master/v1-deprecation.md)
@@ -269,7 +271,7 @@ The best way to keep up to date of changes is to
 See:
 [Vipps API Lifecycle](vipps-api-lifecycle.md).
 
-## Legacy API products
+### Legacy API products
 
 Old API products have the `ZZZ` prefix to make them easy to distinguish,
 and to always sort them at the bottom of lists.
@@ -286,9 +288,9 @@ unless there are technical problems.
 The current APIs offer substantial improvements over the legacy APIs, and
 we strongly recommend upgrading to the current version as soon as possible.
 
-# Quick overview of how to make an API call
+## Quick overview of how to make an API call
 
-## Get an access token
+### Get an access token
 
 All Vipps API requests must include an `Authorization` header with
 a JSON Web Token (JWT), which we call the _access token_.
@@ -298,13 +300,13 @@ and passing the `client_id`, `client_secret` and `Ocp-Apim-Subscription-Key`.
 (We _are_ aware that this is a `POST`, without a body, to an endpoint with
 `get` in the URL, and hope to fix it in a later version of the API. Sorry for the inconvenience.)
 
-### Request
+#### Request
 
 Request to
 [`POST:/accesstoken/get`](https://vippsas.github.io/vipps-ecom-api/#/Authorization_Service/fetchAuthorizationTokenUsingPost)
 (including the Vipps HTTP headers):
 
-```
+```json
 client_id: fb492b5e-7907-4d83-ba20-c7fb60ca35de
 client_secret: Y8Kteew6GE2ZmeycEt6egg==
 Ocp-Apim-Subscription-Key: 0f14ebcab0ec4b29ae0cb90d91b4a84a
@@ -342,7 +344,7 @@ phase out the old name completely, but it is not trivial and will take some time
 You may encounter both in the developer documentation, and the actual header
 name to send is `Ocp-Apim-Subscription-Key`.
 
-### Response
+#### Response
 
 The response from
 [`POST:/accesstoken/get`](https://vippsas.github.io/vipps-ecom-api/#/Authorization_Service/fetchAuthorizationTokenUsingPost)
@@ -380,7 +382,7 @@ correct time please use `expires_in` or `expires_on`.
 Problems? See:
 [Common errors](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-faq.md#common-errors).
 
-## Make an API call
+### Make an API call
 
 After obtaining the access token (JWT), it is then used for the "real" calls
 to the Vipps API, with the `Bearer` keyword (it is case-sensitive).
@@ -395,7 +397,7 @@ without the `client_id` and `client_secret`, since they are only used for the
 [`POST:/accesstoken/get`](https://vippsas.github.io/vipps-ecom-api/#/Authorization_Service/fetchAuthorizationTokenUsingPost)
 call), including the Vipps HTTP headers:
 
-```
+```json
 Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1Ni <snip>
 Ocp-Apim-Subscription-Key: 0f14ebcab0ec4b29ae0cb90d91b4a84a
 Merchant-Serial-Number: 123456
@@ -411,7 +413,7 @@ for the APIs.
 Problems? See:
 [Common errors](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-faq.md#common-errors).
 
-## HTTP response codes
+### HTTP response codes
 
 This API returns the following HTTP statuses in the responses:
 
@@ -427,7 +429,7 @@ You can use the
 [API Dashboard](https://github.com/vippsas/vipps-developers#api-dashboard)
 to check the responses to your API calls.
 
-## Checking for errors with the API Dashboard
+### Checking for errors with the API Dashboard
 
 All merchants have access to the
 [API Dashboard](https://github.com/vippsas/vipps-developers#api-dashboard).
@@ -436,7 +438,7 @@ in addition to normal monitoring.
 
 ![API Dashboard](newsletters/images/2021-02-api-dashboard-example.png)
 
-# Questions?
+## Questions?
 
 We're always happy to help with code or other questions you might have!
 Please create an [issue](https://github.com/vippsas/vipps-developers/issues),
