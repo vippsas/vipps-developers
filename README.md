@@ -5,23 +5,25 @@ We recommend starting with [Getting started](vipps-getting-started.md).
 
 ## Table of contents
 
-- [Vipps demo store](#vipps-demo-store)
-- [API documentation](#api-documentation)
-- [Technical newsletter](#technical-newsletter)
-- [Partners](#partners)
-- [Plugins](#plugins)
-- [Status pages](#status-pages)
-- [The Vipps test environment (MT)](#the-vipps-test-environment-mt)
-- [Postman](#postman)
-- [API Dashboard](#api-dashboard)
-- [Vipps API servers](#vipps-api-servers)
-- [Vipps request servers](#vipps-request-servers)
-- [Vipps API Lifecycle](#vipps-api-lifecycle)
-- [Settlements](#settlements)
-- [Vipps design guidelines](#vipps-design-guidelines)
-- [Questions?](#questions)
+- [Vipps Developers](#vipps-developers)
+  - [Table of contents](#table-of-contents)
+  - [Vipps demo store](#vipps-demo-store)
+  - [API documentation](#api-documentation)
+  - [Technical newsletter](#technical-newsletter)
+  - [Partners](#partners)
+  - [Plugins](#plugins)
+  - [Status pages](#status-pages)
+  - [The Vipps test environment (MT)](#the-vipps-test-environment-mt)
+  - [Postman](#postman)
+  - [API Dashboard](#api-dashboard)
+  - [Vipps API servers](#vipps-api-servers)
+  - [Vipps request servers](#vipps-request-servers)
+  - [Vipps API Lifecycle](#vipps-api-lifecycle)
+  - [Settlements](#settlements)
+  - [Vipps design guidelines](#vipps-design-guidelines)
+  - [Questions?](#questions)
 
-Document version: 2.6.4.
+Document version: 2.6.5.
 
 ## Vipps demo store
 
@@ -39,14 +41,15 @@ Vipps Hurtigkasse (express checkout) and buy a nice VHS cassette?
 First of all: See [Getting started](vipps-getting-started.md).
 
 The most commonly used APIs:
-* [Vipps eCom API](https://github.com/vippsas/vipps-ecom-api)
-* [Vipps Login API](https://github.com/vippsas/vipps-login-api)
-* [Vipps Recurring API](https://github.com/vippsas/vipps-recurring-api)
-* [Vipps QR API](https://github.com/vippsas/vipps-qr-api)
-* [Vipps Order Management API](https://github.com/vippsas/vipps-order-management-api)
-* [Vipps PSP API](https://github.com/vippsas/vipps-psp-api)
 
-All Vipps APIs are available (and searchable) here: https://github.com/vippsas
+- [Vipps eCom API](https://github.com/vippsas/vipps-ecom-api)
+- [Vipps Login API](https://github.com/vippsas/vipps-login-api)
+- [Vipps Recurring API](https://github.com/vippsas/vipps-recurring-api)
+- [Vipps QR API](https://github.com/vippsas/vipps-qr-api)
+- [Vipps Order Management API](https://github.com/vippsas/vipps-order-management-api)
+- [Vipps PSP API](https://github.com/vippsas/vipps-psp-api)
+
+All Vipps APIs are available (and searchable) here: <https://github.com/vippsas>
 
 The API documentation is frequently improved and increasingly extensive.
 Please use the search functionality in your browser and on GitHub to find
@@ -69,15 +72,15 @@ See our [Plugins section](https://github.com/vippsas/vipps-plugins).
 
 ## Status pages
 
-We have several status pages, and we strongly recommend to subscribe to them
-(you can also subscribe to updates for specific incidents):
+We have several status pages and we strongly recommend to subscribe to them.
+You can also subscribe to updates for specific incidents. For example:
 
-* Test environment: https://vipps-test.statuspage.io
-* Production environment: https://vipps.statuspage.io
-* BankID production: https://www.bankid.no/status/
-* BankID preprod: https://bankidpreprod.statuspage.io
+- Test environment: <https://vipps-test.statuspage.io>
+- Production environment: <https://vipps.statuspage.io>
+- BankID production: <https://www.bankid.no/status/>
+- BankID preprod: <https://bankidpreprod.statuspage.io>
 
-You can use Statuspage's Atom and RSS feeds for integration with other systems.
+You can use the Atom and RSS feeds on the status pages for integration with other systems.
 
 ## The Vipps test environment (MT)
 

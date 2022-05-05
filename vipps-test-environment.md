@@ -4,20 +4,24 @@ The Merchant Test Environment (MT) is available for all Vipps customers.
 
 ## Table of contents
 
-- [About the test environment](#about-the-test-environment)
-  * [Limitations of the test environment](#limitations-of-the-test-environment)
-- [Test merchants](#test-merchants)
-- [Test users](#test-users)
-  * [Phone number](#phone-number)
-  * [Payment card](#payment-card)
-  * [Email address](#email-address)
-- [Test amounts](#test-amounts)
-- [Vipps test apps](#vipps-test-apps)
-  * [Limitations of the test apps](#limitations-of-the-test-apps)
-  * [iOS](#ios)
-  * [Android](#android)
+- [The Vipps Test Environment (MT)](#the-vipps-test-environment-mt)
+  - [Table of contents](#table-of-contents)
+  - [About the test environment](#about-the-test-environment)
+    - [Limitations of the test environment](#limitations-of-the-test-environment)
+  - [Test merchants](#test-merchants)
+  - [Test users](#test-users)
+    - [Phone number](#phone-number)
+    - [Payment card](#payment-card)
+    - [Email address](#email-address)
+    - [Other data](#other-data)
+  - [Test amounts](#test-amounts)
+  - [Vipps test apps](#vipps-test-apps)
+    - [Limitations of the test apps](#limitations-of-the-test-apps)
+    - [iOS](#ios)
+    - [Android](#android)
+  - [Questions?](#questions)
 
-Document version: 3.1.14.
+Document version: 3.1.15.
 
 ## About the test environment
 
@@ -45,13 +49,13 @@ third parties.
 
 Functionality not available in MT (a non-exhaustive list):
 
-* Push alerts may be unavailable or unstable. To see payment requests: Open Vipps and manually
+- Push alerts may be unavailable or unstable. To see payment requests: Open Vipps and manually
   go to the "Betalinger" (in English: "Payments") at the bottom of the main screen.
   The background for this: The app id for the test and production apps are the same, and we
   are not able to distinguish between the apps when sending push messages.
-* Payment of invoices, both for Vipps Regninger and Vipps Faktura
-* Limited support for testing card statuses that require connections our PSP
-* Limited support for looking up customer information in
+- Payment of invoices, both for Vipps Regninger and Vipps Faktura
+- Limited support for testing card statuses that require connections our PSP
+- Limited support for looking up customer information in
   [KAR](https://www.bits.no/en/bank/konto-og-adresseringsregister-kar/), etc
 
 To test functionality that is not available in MT, you will have to use the
@@ -60,20 +64,21 @@ Vipps Regninger with real invoices, but with small amounts. We recommend 2 NOK.
 
 Other differences between Prod and MT:
 
-* There is no equivalent to [portal.vipps.no](https://portal.vipps.no) for the test environment.
+- There is no equivalent to [portal.vipps.no](https://portal.vipps.no) for the test environment.
   Payments must be checked with the API, as there is no web interface.
-* We allow 10,000 incorrect PIN attempts before locking the Vipps user's account
-* There are no settlement reports or SFTP service.
+- We allow 10,000 incorrect PIN attempts before locking the Vipps user's account
+- There are no settlement reports or SFTP service.
 
 ## Test merchants
 
 Sale units in the test environment has access to these APIs:
-* [Vipps Access Token API](https://github.com/vippsas/vipps-developers/blob/master/vipps-getting-started.md#get-an-access-token)
-* [Vipps eCom API](https://github.com/vippsas/vipps-ecom-api)
-* [Vipps Recurring API](https://github.com/vippsas/vipps-recurring-api)
-* [Vipps Login API](https://github.com/vippsas/vipps-login-api)
-* [Vipps QR API](https://github.com/vippsas/vipps-qr-api )
-* [Vipps Order Management API](https://github.com/vippsas/vipps-order-management-api)
+
+- [Vipps Access Token API](https://github.com/vippsas/vipps-developers/blob/master/vipps-getting-started.md#get-an-access-token)
+- [Vipps eCom API](https://github.com/vippsas/vipps-ecom-api)
+- [Vipps Recurring API](https://github.com/vippsas/vipps-recurring-api)
+- [Vipps Login API](https://github.com/vippsas/vipps-login-api)
+- [Vipps QR API](https://github.com/vippsas/vipps-qr-api )
+- [Vipps Order Management API](https://github.com/vippsas/vipps-order-management-api)
 
 See
 [API Products](https://github.com/vippsas/vipps-developers/blob/master/vipps-getting-started.md#api-products)
@@ -96,7 +101,7 @@ but you can create as many as you need.
 
 ## Test users
 
-The welcome email that is automatically sent to _*all*_ new customers contains
+The welcome email that is automatically sent to **all** new customers contains
 information about your test user for the test environment.
 Please search your mail, including the spam/junk folder if you do not find it.
 
@@ -193,13 +198,13 @@ every time you start Vipps in the emulator.
 
 ### Limitations of the test apps
 
-* Push alerts may be unstable. To see payment requests: Open Vipps and manually
+- Push alerts may be unstable. To see payment requests: Open Vipps and manually
   go to "Betalinger" (in English: "Payments") at the bottom of the main screen.
 
 ### iOS
 
 The iOS test app is available in Apple TestFlight.
-You do *not* need an invitation or an activation code.
+You do _not_ need an invitation or an activation code.
 
 1. Open the
    [TestFlight](https://testflight.apple.com/join/hTAYrwea)
@@ -219,7 +224,7 @@ You are now ready to use the iOS test app connected to the Vipps test environmen
 ### Android
 
 The Android test app is available in App Center.
-You do *not* need an invitation or an activation code.
+You do _not_ need an invitation or an activation code.
 
 1. Open the
    [App Center](https://install.appcenter.ms/orgs/vipps/apps/vipps-android/distribution_groups/mt%20testers)
@@ -238,7 +243,7 @@ You do *not* need an invitation or an activation code.
 
 You are now ready to use the Android test app connected to the Vipps test environment.
 
-# Questions?
+## Questions?
 
 We're always happy to help with code or other questions you might have!
 Please create an [issue](https://github.com/vippsas/vipps-developers/issues),

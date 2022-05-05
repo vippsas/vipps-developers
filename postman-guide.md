@@ -33,7 +33,7 @@ Find the collection and environment for the relevant APIs from the table below, 
 
 ## Insert values
 
-The Postman environments comes pre-filled with some values, but there are still some required values which have to be manually entered. 
+The Postman environments comes pre-filled with some values, but there are still some required values which have to be manually entered.
 For a complete overview over which values must be entered and where to find them, see [Postman variable overview](#postman-variables-overview).
 
 Click `Edit` and paste in values for each variable.
@@ -47,9 +47,11 @@ You might want to make the same request from your own application. You can gener
 ![Vipps Developer Postman: Tabs](images/postman-tabs.png)
 
 ## Postman variables overview
+
 This is an overview of where to obtain Postman values for each of our APIs. Please read our [Get started guide](vipps-getting-started.md) for information about access to VippsPortal and credentials.
 
 ### Common variables
+
 These variables are required for all Vipps APIs
 
 | Variable                  | Located                                                                              |
@@ -95,7 +97,7 @@ These variables are required for all Vipps APIs
 | merchantSerialNumber | Provided by Vipps via email.                                                                                                                          |
 | PSP-ID               | Provided by Vipps via email.                                                                                                                          |
 
-# Questions?
+## Questions?
 
 We're always happy to help with code or other questions you might have!
 Please create an [issue](https://github.com/vippsas/vipps-developers/issues),
