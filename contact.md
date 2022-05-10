@@ -14,7 +14,7 @@ Hello! We can help!
 - [More than one problem, or a new one?](#more-than-one-problem-or-a-new-one)
 - [Newsletter](#newsletter)
 
-Document version: 2.4.11.
+Document version: 2.4.12.
 
 ## We help with technical issues
 
@@ -55,7 +55,9 @@ Almost all questions we receive can be answered with a link to existing document
 
 If you can not find the answer: Please send an email with all relevant information to the address below:
 
-1. **Please: Always include a _detailed_ description of the problem**
+1. **Please: Always include a _detailed_ description of the problem.**
+  * Include a detailed step-by-step description of what you do
+  * Some screenshots or a video is often helpful
 2. A concise, self-explanatory `Subject` line, such as "`POST:/something` gives `HTTP 400` response".
 3. Company details: Organization number (find yours at [Brønnøysundregistrene](https://brreg.no))
 4. Merchant Serial Number (MSN, see [Getting started](vipps-getting-started.md))
