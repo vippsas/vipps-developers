@@ -181,23 +181,25 @@ The test apps use the `vippsMT://` URL scheme, and the production apps use `vipp
 Only test users, with random "fake" phone numbers, are available in the test environments.
 Normal Vipps users are not available, so you can not use your own phone number with the test apps.  
 
-**Important:** Do _not_ use the test phone number in the production environment,
-as the test number may be a real phone number for a real Vipps user.
+**Important:**
+* Do _not_ use the test phone number in the production environment,
+  as the test number may be a real phone number for a real Vipps user.
 
-**Please note:** It may sometimes be necessary to use specific app versions in MT.
-This happens when the production apps and the production environment are not _quite_
-in sync with the test environment. When this happens, we update the
-[Statuspage for the test environment](https://vipps-test.statuspage.io)
-with details.
-
-**Please note:** If you use an emulator, and not the native apps installed on
-a phone, you may experience problems - such as having to log in "from scratch"
-every time you start Vipps in the emulator.
+**Please note:**
+* It may sometimes be necessary to use specific app versions in MT.
+  This happens when the production apps and the production environment are not _quite_
+  in sync with the test environment. When this happens, we update the
+  [Statuspage for the test environment](https://vipps-test.statuspage.io)
+  with details.
+* If you use an emulator, and not the native apps installed on
+  a phone, you may experience problems - such as having to log in "from scratch"
+  every time you start Vipps in the emulator.
 
 ### Limitations of the test apps
 
-- Push alerts may be unstable. To see payment requests: Open Vipps and manually
+* Push alerts may be unstable. To see payment requests: Open Vipps and manually
   go to "Betalinger" (in English: "Payments") at the bottom of the main screen.
+  You may also need to pull down to refresh.
 
 ### iOS
 
