@@ -114,3 +114,19 @@ Here's an example for the Vipps eCom API's `/refund` endpoint:
 
 See:
 [API Dashboard](https://github.com/vippsas/vipps-developers#api-dashboard).
+
+## How to get help quickly
+
+Please see
+[this page](https://github.com/vippsas/vipps-developers/blob/master/contact.md).
+
+## Newsletter archive
+
+Please see: https://github.com/vippsas/vipps-developers/tree/master/newsletters
+
+# Questions or comments?
+
+We're always happy to help with code or other questions you might have!
+Please create [GitHub issues or pull requests](https://github.com/vippsas)
+for the relevant API,
+or [contact us](https://github.com/vippsas/vipps-developers/blob/master/contact.md).
