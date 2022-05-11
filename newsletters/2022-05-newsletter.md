@@ -1,10 +1,13 @@
 # Technical newsletter for developers 2022-05
 
+💥 DRAFT 💥
+
 This newsletter was sent in May 2022.
 
 ## Table of Contents
 
-* Partner API
+* Vipps Order Management API
+* Vipps Partner API
 *
 * [Reminders](#reminders)
   * [Please check your eCom API calls](#please-check-your-ecom-api-calls)
