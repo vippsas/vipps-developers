@@ -10,7 +10,7 @@ This newsletter was sent in May 2022.
 * [Vipps Partner API](#vipps-partner-api)
 * [Klarna Checkout recommendations](#klarna-checkout-recommendations)
 * [Reminders](#reminders)
-  * [Please check your eCom API calls](#please-check-your-ecom-api-calls)
+  * [Please check your eCom API calls for errors](#please-check-your-ecom-api-calls-for-errors)
   * [Use the API Dashboard to find problems with your integration](#use-the-api-dashboard-to-find-problems-with-your-integration)
   * [How to get help quickly](#how-to-get-help-quickly)
   * [Newsletter archive](#newsletter-archive)
@@ -51,7 +51,7 @@ More details:
 
 # Reminders
 
-## Please check your eCom API calls
+## Please check your eCom API calls for errors
 
 We are working on eliminating incorrect API use. Although we always respond to
 incorrect API calls with a sensible HTTP status (usually `HTTP 400 Bad Request`)
