@@ -26,7 +26,7 @@ for more information about settlements.
   * [Example SFTP session](#example-sftp-session)
 * [Questions?](#questions)
 
-Document version: 4.0.1.
+Document version: 4.0.2.
 
 # Reports
 
@@ -72,10 +72,11 @@ More information about SFTP and the underlying technology:
 All merchants can set up SFTP on [portal.vipps.no](https://portal.vipps.no).
 A public SSH key must be provided.
 
-SFTP users are created, associated with a public SSH key, and given access to the reports of
-one or more MSNs (Merchant Serial Numbers, typically "sale units").
+SFTP users are created, associated with a public SSH key, and given access to
+the reports of all the merchant's sale units (MSNs).
 
-It possible to use the same public SSH key for multiple merchants and multiple MSNs.
+It possible to use the same public SSH key for multiple merchants,
+and for multiple MSNs.
 
 ### Generate a public SSH key
 
