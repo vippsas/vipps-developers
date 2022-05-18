@@ -6,12 +6,49 @@ This newsletter was sent in May 2022.
 
 ## Table of Contents
 
-* Vipps Order Management API
-* Vipps Partner API
-*
+* [Vipps Order Management API](#vipps-order-management-api)
+* [Vipps Partner API](#vipps-partner-api)
+* [Klarna Checkout recommendations](#klarna-checkout-recommendations)
 * [Reminders](#reminders)
   * [Please check your eCom API calls](#please-check-your-ecom-api-calls)
   * [Use the API Dashboard to find problems with your integration](#use-the-api-dashboard-to-find-problems-with-your-integration)
+  * [How to get help quickly](#how-to-get-help-quickly)
+  * [Newsletter archive](#newsletter-archive)
+* [Questions or comments?](#questions-or-comments)
+
+# Vipps Order Management API
+
+The Vipps Order Management API allows merchants to send rich receipt information
+to existing Vipps transactions, including links to tracking information, tickets, etc.
+
+https://github.com/vippsas/vipps-order-management-api
+
+# Vipps Partner API
+
+[The Vipps Partner API](https://github.com/vippsas/vipps-partner-api)
+is now available for all partners using partner keys.
+We are very interested in feedback!
+
+# Klarna Checkout recommendations
+
+Please make sure to include the text saying
+"Vipps is without fees when paying businesses"
+or similar:
+
+```
+"external_payment_methods":[
+   {
+      "name": "Vipps",
+      "redirect_url": "https://example.com/vipps/ecom-api/initiate/acme-shop-123-order123abc",
+      "image_url": "https://example.com/images/vipps-logo.png",
+      "fee": 0,
+      "description": "Husk: Vipps er gebyrfritt når du betaler til bedrifter."
+   }
+]
+```
+
+More details:
+[Can I use Vipps with Klarna Checkout?](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-faq.md#can-i-use-vipps-with-klarna-checkout)
 
 # Reminders
 
