@@ -18,10 +18,9 @@ This newsletter was sent in May 2022.
 
 # Vipps Order Management API
 
-The Vipps Order Management API allows merchants to send rich receipt information
-to existing Vipps transactions, including links to tracking information, tickets, etc.
-
-https://github.com/vippsas/vipps-order-management-api
+[The Vipps Order Management API](https://github.com/vippsas/vipps-order-management-api)
+allows merchants to send rich receipt information to existing Vipps transactions,
+including links to tracking information, tickets, etc.
 
 # Vipps Partner API
 
