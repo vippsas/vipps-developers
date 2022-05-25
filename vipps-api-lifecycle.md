@@ -40,9 +40,9 @@ Vipps APIs uses [Semantic Versioning](https://semver.org), which states:
 
 > Given a version number MAJOR.MINOR.PATCH, increment the:
 >
-> - MAJOR version when you make incompatible API changes,
-> - MINOR version when you add functionality in a backwards compatible manner, and
-> - PATCH version when you make backwards compatible bug fixes.
+> - MAJOR version when you make incompatible API changes
+> - MINOR version when you add functionality in a backwards compatible manner
+> - PATCH version when you make backwards compatible bug fixes
 
 ### Version number in the endpoint URIs
 
@@ -56,8 +56,9 @@ and Vipps has chosen the above.
 
 ### Major version
 
-A major version is officially supported until the date where it is deprecated.
-See "Notice of deprecation".
+A major version is officially supported until the date when is becomes deprecated.
+See [Notice of deprecation](#notice-of-deprecation) for more information about the
+deprecation process.
 
 ### Minor version
 
@@ -65,7 +66,7 @@ A minor version is automatically superseded by a newer minor version.
 If a customer uses version `2.1.0`, that version is automatically
 superseded when version `2.2.0` is available.
 
-There will be no bugfixes or other improvements to a minor version that
+There will be no bug fixes or other improvements to a minor version that
 has been superseded.
 
 ### Patch version
