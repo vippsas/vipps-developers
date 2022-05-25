@@ -50,15 +50,15 @@ or similar:
 More details:
 [Can I use Vipps with Klarna Checkout?](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-faq.md#can-i-use-vipps-with-klarna-checkout)
 
-# Vipps eCom API deprecation reminder
+# Vipps eCom API - HTTP links deprecation
 
-From 1. August 2022 all URL links in the body of the POST call: [/ecom/v2/payments](https://vippsas.github.io/vipps-ecom-api/#/Vipps%20eCom%20API/initiatePaymentV3UsingPOST)
-will no longer support HTTP, only HTTPS.
+From October 1, 2022, URL links in the body of the Post call  [/ecom/v2/payments](https://vippsas.github.io/vipps-ecom-api/#/Vipps%20eCom%20API/initiatePaymentV3UsingPOST) will no longer support HTTP, only HTTPS
 
 This includes the following fields:
  - callbackPrefix
- - consentRemovalPrefix (for express checkout)
- - fallBack (if not isApp=true)
+ - consentRemovalPrefix
+ - fallBack
+ - shippingDetailsPrefix
 
 
 # Reminders
