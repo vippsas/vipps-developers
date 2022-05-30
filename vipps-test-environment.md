@@ -19,7 +19,7 @@ The Merchant Test Environment (MT) is available for all Vipps customers.
   - [Android](#android)
 - [Questions?](#questions)
 
-Document version: 3.1.15.
+Document version: 3.1.16.
 
 ## About the test environment
 
@@ -55,6 +55,7 @@ Functionality not available in MT (a non-exhaustive list):
 - Limited support for testing card statuses that require connections our PSP
 - Limited support for looking up customer information in
   [KAR](https://www.bits.no/en/bank/konto-og-adresseringsregister-kar/), etc
+- Some quirks around email verification, see [Email address](#email-address).  
 
 To test functionality that is not available in MT, you will have to use the
 production environment in a controlled manner. One example may be to test
