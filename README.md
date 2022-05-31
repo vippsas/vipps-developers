@@ -40,6 +40,7 @@ First of all: See [Getting started](vipps-getting-started.md).
 
 The most commonly used APIs:
 
+- [Vipps Checkout API](https://github.com/vippsas/vipps-checkout-api)
 - [Vipps eCom API](https://github.com/vippsas/vipps-ecom-api)
 - [Vipps Login API](https://github.com/vippsas/vipps-login-api)
 - [Vipps Recurring API](https://github.com/vippsas/vipps-recurring-api)
