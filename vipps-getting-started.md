@@ -2,6 +2,7 @@
 
 This guide is for the following APIs:
 
+- [Vipps Checkout API](https://github.com/vippsas/vipps-checkout-api)
 - [Vipps eCom API](https://github.com/vippsas/vipps-ecom-api)
 - [Vipps Recurring API](https://github.com/vippsas/vipps-recurring-api)
 - [Vipps Login API](https://github.com/vippsas/vipps-login-api)
