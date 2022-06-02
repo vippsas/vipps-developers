@@ -8,7 +8,9 @@ This newsletter was sent in June 2022.
 
 * [Vipps Order Management API](#vipps-order-management-api)
 * [Vipps Partner API](#vipps-partner-api)
-* [Klarna Checkout recommendations](#klarna-checkout-recommendations)
+* [All OpenAPI (Swagger) specifications and Postman collections/environments updated](#all-openapi-swagger-specifications-and-postman-collectionsenvironments-updated)
+* [Remember: Vipps is always without fees when paying to businesses](#remember-vipps-is-always-without-fees-when-paying-to-businesses)
+  * [Klarna Checkout recommendations](#klarna-checkout-recommendations)
 * [Vipps eCom API: HTTPS required for all URLs](#vipps-ecom-api-https-required-for-all-urls)
 * [Reminders](#reminders)
   * [Please check your eCom API calls for errors](#please-check-your-ecom-api-calls-for-errors)
@@ -29,10 +31,21 @@ including links to tracking information, tickets, etc.
 is now available for all partners using partner keys.
 We are very interested in feedback!
 
-# Klarna Checkout recommendations
+# All OpenAPI (Swagger) specifications and Postman collections/environments updated
+
+We have done a major overhaul of all our API specifications, so all the
+OpenAPI/Swagger specifications and all the Postman collections and environments
+have been improved. See each API's GitHub repo for details.
+
+# Remember: Vipps is always without fees when paying to businesses
+
+Just a friendly reminder: Users never have to pay a fee when they pay a business
+with Vipps. Please try to make this as clear as possible in your solution.
+
+## Klarna Checkout recommendations
 
 Please make sure to include the text saying
-"Vipps is without fees when paying businesses"
+"Remember: Vipps is always without fees when paying businesses"
 or similar:
 
 ```
@@ -42,7 +55,7 @@ or similar:
       "redirect_url": "https://example.com/vipps/ecom-api/initiate/acme-shop-123-order123abc",
       "image_url": "https://example.com/images/vipps-logo.png",
       "fee": 0,
-      "description": "Husk: Vipps er gebyrfritt når du betaler til bedrifter."
+      "description": "Husk: Vipps er alltid gebyrfritt når du betaler til bedrifter."
    }
 ]
 ```
