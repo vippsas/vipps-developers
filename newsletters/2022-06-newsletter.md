@@ -1,15 +1,15 @@
-# Technical newsletter for developers 2022-05
+# Technical newsletter for developers 2022-06
 
 💥 DRAFT 💥
 
-This newsletter was sent in May 2022.
+This newsletter was sent in June 2022.
 
 ## Table of Contents
 
 * [Vipps Order Management API](#vipps-order-management-api)
 * [Vipps Partner API](#vipps-partner-api)
 * [Klarna Checkout recommendations](#klarna-checkout-recommendations)
-* [Vipps eCom API deprecation reminder](#Vipps-eCom-API-deprecation-reminder)
+* [Vipps eCom API: HTTPS required for all URLs](#vipps-ecom-api-https-required-for-all-urls)
 * [Reminders](#reminders)
   * [Please check your eCom API calls for errors](#please-check-your-ecom-api-calls-for-errors)
   * [Use the API Dashboard to find problems with your integration](#use-the-api-dashboard-to-find-problems-with-your-integration)
@@ -50,9 +50,11 @@ or similar:
 More details:
 [Can I use Vipps with Klarna Checkout?](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-faq.md#can-i-use-vipps-with-klarna-checkout)
 
-# Vipps eCom API - HTTP links deprecation
+# Vipps eCom API: HTTPS required for all URLs
 
-From October 1, 2022, URL links in the body of the Post call  [/ecom/v2/payments](https://vippsas.github.io/vipps-ecom-api/#/Vipps%20eCom%20API/initiatePaymentV3UsingPOST) will no longer support HTTP, only HTTPS
+From October 1, 2022, URL links in the body of
+[`POST:/payments`](https://vippsas.github.io/vipps-ecom-api/#/Vipps%20eCom%20API/initiatePaymentV3UsingPOST)
+will no longer support HTTP, only HTTPS.
 
 This includes the following fields:
  - callbackPrefix
@@ -60,6 +62,9 @@ This includes the following fields:
  - fallBack
  - shippingDetailsPrefix
 
+ This has been documented for a _long_ time already, but not strictly enforced.
+ See:
+ [URL validation](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#url-validation).
 
 # Reminders
 
