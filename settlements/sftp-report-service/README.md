@@ -26,7 +26,7 @@ for more information about settlements.
   * [Example SFTP session](#example-sftp-session)
 * [Questions?](#questions)
 
-Document version: 4.0.2.
+Document version: 4.0.3.
 
 # Reports
 
@@ -163,7 +163,7 @@ It works like a normal SFTP service.
 
 ## Important information
 
-Please read this to avoid misunderstandings:
+**Important:** Please read this to avoid misunderstandings:
 
 * The reports are generated on-demand: There are no real files on the server,
   all data is generated dynamically.
@@ -179,8 +179,8 @@ Please read this to avoid misunderstandings:
   full path of the directories to be explicitly provided.
 * Reports under `/settlements/inbox` can be deleted by using the `rm` command in
   SFTP or the "delete" function in your SFTP interface.
-  The files are not really deleted, but actually hidden, in order to keep track
-  of already processed reports.
+  The files are not really deleted, but actually hidden by moving them to
+  `/settlements/archive`, in order to keep track of already processed reports.
 * Reports under `/settlements/archive` cannot be removed.
 
 ## Connecting to the SFTP server
