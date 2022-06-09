@@ -26,7 +26,7 @@ for more information about settlements.
   * [Example SFTP session](#example-sftp-session)
 * [Questions?](#questions)
 
-Document version: 4.0.3.
+Document version: 4.0.4.
 
 # Reports
 
@@ -216,6 +216,13 @@ Example files, with full path:
 /settlements/inbox/pdf/998724341/16655/16655-2000001.pdf
 /settlements/archive/csv/998724341/16655/16655-2000001.csv
 ```
+
+**Please note:**
+As mentioned in [Important information](#important-information):
+Reports under `/settlements/inbox` can be deleted by using the `rm` command in
+SFTP or the "delete" function in your SFTP interface.
+The files are not really deleted, but actually hidden by moving them to
+`/settlements/archive`, in order to keep track of already processed reports.
 
 ## Example SFTP session
 
