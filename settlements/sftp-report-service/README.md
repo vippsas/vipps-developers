@@ -218,11 +218,9 @@ Example files, with full path:
 ```
 
 **Please note:**
-As mentioned in [Important information](#important-information):
-Reports under `/settlements/inbox` can be deleted by using the `rm` command in
-SFTP or the "delete" function in your SFTP interface.
-The files are not really deleted, but actually hidden by moving them to
-`/settlements/archive`, in order to keep track of already processed reports.
+When a file in `/settlements/inbox` is retrieved, it is automatically
+moved to `/settlements/archive`.
+See also: [Important information](#important-information).
 
 ## Example SFTP session
 
