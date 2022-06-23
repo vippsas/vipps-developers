@@ -20,7 +20,7 @@ Find the collection and environment for the relevant APIs from the table below, 
 | Vipps Recurring    | [Collection](https://github.com/vippsas/vipps-recurring-api/blob/master/tools/vipps-recurring-api-postman-collection.json) | [Environment](https://github.com/vippsas/vipps-recurring-api/blob/master/tools/vipps-recurring-api-postman-environment.json) |
 | Vipps Invoice IPP  | [Collection](https://github.com/vippsas/vipps-invoice-api/blob/master/tools/vipps-invoice-ipp-api-postman-collection.json) | [Environment](https://github.com/vippsas/vipps-invoice-api/blob/master/tools/vipps-invoice-ipp-api-postman-environment.json) |
 | Vipps Invoice ISP  | [Collection](https://github.com/vippsas/vipps-invoice-api/blob/master/tools/vipps-invoice-isp-api-postman-collection.json) | [Environment](https://github.com/vippsas/vipps-invoice-api/blob/master/tools/vipps-invoice-isp-api-postman-environment.json) |
-| Vipps PSP          | [Collection](https://github.com/vippsas/vipps-psp-api/blob/master/tools/vipps-psp-v2-api-postman-collection.json)          | [Environment](https://github.com/vippsas/vipps-psp-api/blob/master/tools/vipps-psp-v2-api-postman-environment.json)          |
+| Vipps PSP          | [Collection](https://github.com/vippsas/vipps-psp-api/blob/master/tools/vipps-psp-v3-api-postman-collection.json)          | [Environment](https://github.com/vippsas/vipps-psp-api/blob/master/tools/vipps-psp-v3-api-postman-environment.json)          |
 
 ## Import files
 
