@@ -42,6 +42,9 @@ capture made on Friday will be on merchant's account on Tuesday.
 
 Usually, funds will be available before noon on day 3.
 
+Settlement files are generated every day including bank days and weekends (one file every day).
+Payout for Friday, Saturday and Sunday arrives on Thuesday (three seperate transactions).
+
 A day starts and ends at midnight, Oslo time: Start `00:00:00`, end `23:59:59` (subseconds not specified).
 Please make sure your servers' clocks are correct, e.g. by using [NTP](https://en.wikipedia.org/wiki/Network_Time_Protocol).
 
