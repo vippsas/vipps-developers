@@ -154,18 +154,16 @@ is created and can not be changed.
 
 Vipps supports using special amounts that are always rejected when approving the payment in the Vipps test app.  
 
-These test amounts currently **only** works with "reserve capture".
-
-| Amount | Error                                       |
-|--------|---------------------------------------------|
-| 1.51   | Not sufficient funds                        |
-| 1.86   | Expired Card                                |
-| 1.87   | Invalid card                                |
-| 1.82   | Refused by issuer                           |
-| 1.83   | Suspected fraud                             |
-| 1.84   | Withdrawal limit exceeded                   |
-| 1.97   | 3D Secure denied                            |
-| 2.02   | SCA required (only for "reserve capture")   |
+| Amount | Error                     |
+|--------|---------------------------|
+| 1.51   | Not sufficient funds      |
+| 1.82   | Refused by issuer         |
+| 1.83   | Suspected fraud           |
+| 1.84   | Withdrawal limit exceeded |
+| 1.86   | Expired Card              |
+| 1.87   | Invalid card              |
+| 1.97   | 3D Secure denied          |
+| 2.02   | SCA required              |
 
 **Please note:** The
 [force approve](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#testing)
