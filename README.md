@@ -1,9 +1,9 @@
-# Vipps Developers <!-- omit in toc -->
+# Vipps Developers
 
 This repository contains various resources for Vipps developers.
 We recommend starting with [Getting started](vipps-getting-started.md).
 
-## Table of contents <!-- omit in toc -->
+## Table of contents
 
 - [Vipps demo store](#vipps-demo-store)
 - [API documentation](#api-documentation)

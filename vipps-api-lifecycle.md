@@ -1,8 +1,8 @@
-# Vipps API Lifecycle <!-- omit in toc -->
+# Vipps API Lifecycle
 
 Document version: 1.0.3.
 
-## Table of Contents <!-- omit in toc -->
+## Table of Contents
 
 - [Versioning](#versioning)
   - [Version number in the endpoint URIs](#version-number-in-the-endpoint-uris)
