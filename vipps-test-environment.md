@@ -1,8 +1,8 @@
-# The Vipps Test Environment (MT) <!-- omit in toc -->
+# The Vipps Test Environment (MT)
 
 The Merchant Test Environment (MT) is available for all Vipps customers.
 
-## Table of contents <!-- omit in toc -->
+## Table of contents
 
 - [About the test environment](#about-the-test-environment)
   - [Limitations of the test environment](#limitations-of-the-test-environment)

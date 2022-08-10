@@ -1,4 +1,4 @@
-# Getting Started <!-- omit in toc -->
+# Getting Started
 
 This guide is for the following APIs:
 
@@ -21,7 +21,7 @@ If you are using Vipps through an e-commerce platform, integration partner or PS
 
 Document version: 3.3.4.
 
-## Table of contents <!-- omit in toc -->
+## Table of contents
 
 - [Requirements](#requirements)
   - [Foreign companies](#foreign-companies)
