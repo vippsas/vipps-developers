@@ -63,7 +63,7 @@ This change only applies to the `GET` method, and does not affect the `POST` and
  created until the next interval for the campaign.
 
  See:
- [Create charge]([https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api.md#create-charge).
+ [Create charge](https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api.md#create-charge).
 
 # Reminders
 
