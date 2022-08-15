@@ -66,7 +66,7 @@ See it on
 under the "Utvikler" ("Developer") tab.
 Here's an example:
 
-<img src="images/2021-06-api-dashboard-login-example.png" alt="api-dashboard login data" style="width:1000px;"/>
+<img src="images/2021-06-api-dashboard-login-example.png" alt="api-dashboard login data" width="1000" />
 
 # Removed HTTP 402 errors
 
