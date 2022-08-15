@@ -1,3 +1,9 @@
+---
+title: Technical newsletter for developers
+hide_table_of_contents: true
+---
+
+
 # Technical newsletter for developers
 
 A low volume newsletter with important information to developers about Vipps' APIs and products.
