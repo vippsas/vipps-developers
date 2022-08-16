@@ -1,3 +1,11 @@
+---
+id: doc-with-tags
+title: A doc with tags
+tags:
+  - Demo
+  - Getting started
+---
+
 # Vipps Developers
 
 This repository contains various resources for Vipps developers.
