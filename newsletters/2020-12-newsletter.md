@@ -1,7 +1,15 @@
+<!-- START_METADATA
+---
+sidebar_position: 76
+title: 2020-12
+---
+END_METADATA -->
+
 # Technical newsletter for developers 2020-12
 
 This newsletter was sent in December 2020.
 
+<!-- START_TOC -->
 Contents:
 - [The Vipps eCom API v1 is disabled](#the-vipps-ecom-api-v1-is-disabled)
 - [Vipps Login improvements](#vipps-login-improvements-)
@@ -11,6 +19,8 @@ Contents:
 - [Do you want a Slack channel?](#do-you-want-a-slack-channel-)
 - [Do you want a technical workshop?](#do-you-want-a-technical-workshop-)
 - [Reminders](#reminders)
+
+<!-- END_TOC -->
 
 # The Vipps eCom API v1 is disabled
 

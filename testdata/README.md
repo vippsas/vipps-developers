@@ -1,3 +1,10 @@
+<!-- START_METADATA
+---
+title: Test data
+sidebar_position: 11
+---
+END_METADATA -->
+
 # Vipps Test Data
 
 Document version 2.0.0.

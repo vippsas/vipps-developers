@@ -1,3 +1,10 @@
+<!-- START_METADATA
+---
+sidebar_position: 77
+title: 2019-11
+---
+END_METADATA -->
+
 # Technical newsletter for developers 2019-11
 
 This newsletter was sent November 19 2019.

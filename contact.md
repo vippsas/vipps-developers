@@ -1,6 +1,15 @@
+<!-- START_METADATA
+---
+title: Contact us
+sidebar_position: 100
+---
+END_METADATA -->
+
 # How to contact Vipps Integration
 
 Hello! We can help!
+
+<!-- START_TOC -->
 
 - [We help with technical issues](#we-help-with-technical-issues)
 - [What to include in the email](#what-to-include-in-the-email)
@@ -13,6 +22,8 @@ Hello! We can help!
 - [Escalation](#escalation)
 - [More than one problem, or a new one?](#more-than-one-problem-or-a-new-one)
 - [Newsletter](#newsletter)
+
+<!-- END_TOC -->
 
 Document version: 2.4.12.
 

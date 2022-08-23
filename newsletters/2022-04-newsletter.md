@@ -1,6 +1,15 @@
+<!-- START_METADATA
+---
+sidebar_position: 71
+title: 2022-04
+---
+END_METADATA -->
+
 # Technical newsletter for developers 2022-04
 
 This newsletter was sent in April 2022.
+
+<!-- START_TOC -->
 
 ## Table of Contents
 
@@ -11,6 +20,8 @@ This newsletter was sent in April 2022.
 * [Reminders](#reminders)
   * [Please check your eCom API calls](#please-check-your-ecom-api-calls)
   * [Use the API Dashboard to find problems with your integration](#use-the-api-dashboard-to-find-problems-with-your-integration)
+
+<!-- END_TOC -->
 
 # Release of remainder after doing a partial capture
 

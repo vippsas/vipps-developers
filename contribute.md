@@ -1,3 +1,10 @@
+<!-- START_METADATA
+---
+title: Contributing
+sidebar_position: 99
+---
+END_METADATA -->
+
 # Contributing
 
 If you want to contribute: Great! No issue or pull request is too small! 👍

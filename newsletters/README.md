@@ -1,8 +1,9 @@
+<!-- START_METADATA
 ---
-title: Technical newsletter for developers
-hide_table_of_contents: true
+sidebar_position: 60
+title: Newsletters
 ---
-
+END_METADATA -->
 
 # Technical newsletter for developers
 

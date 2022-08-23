@@ -1,6 +1,15 @@
+<!-- START_METADATA
+---
+title: The API Lifecycle
+sidebar_position: 3
+---
+END_METADATA -->
+
 # Vipps API Lifecycle
 
 Document version: 1.0.3.
+
+<!-- START_TOC -->
 
 ## Table of Contents
 
@@ -33,6 +42,8 @@ Document version: 1.0.3.
   - [Adding a new required parameter](#adding-a-new-required-parameter)
   - [Changing an endpoints URL](#changing-an-endpoints-url)
 - [Questions?](#questions)
+
+<!-- END_TOC -->
 
 ## Versioning
 

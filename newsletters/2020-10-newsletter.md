@@ -1,3 +1,10 @@
+<!-- START_METADATA
+---
+sidebar_position: 77
+title: 2020-10
+---
+END_METADATA -->
+
 # Technical newsletter for developers 2020-10
 
 This newsletter was sent in October 2020.

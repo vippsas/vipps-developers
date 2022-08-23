@@ -1,6 +1,15 @@
+<!-- START_METADATA
+---
+sidebar_position: 75
+title: 2021-09
+---
+END_METADATA -->
+
 # Technical newsletter for developers 2021-09
 
 This newsletter was sent in September 2021.
+
+<!-- START_TOC -->
 
 - [The Vipps QR API](#the-vipps-qr-api)
 - [The Vipps Order Management API](#the-vipps-order-management-api)
@@ -9,6 +18,8 @@ This newsletter was sent in September 2021.
 - [The Vipps Recurring API now supports variable amounts](#the-vipps-recurring-api-now-supports-variable-amounts)
 - [API Dashboard for the test environment](#api-dashboard-for-the-test-environment)
 - [Removed HTTP 402 errors](#removed-http-402-errors)
+
+<!-- END_TOC -->
 
 # The Vipps QR API
 
