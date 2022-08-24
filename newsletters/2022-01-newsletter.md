@@ -1,6 +1,12 @@
+---
+sidebar_position: 73
+title: 2022-01
+---
 # Technical newsletter for developers 2022-01
 
 This newsletter was sent in January 2022.
+
+<!-- START_TOC -->
 
 * [Please check your eCom API calls](#please-check-your-ecom-api-calls)
 * [Recurring API: The "PROCESSING" status](#recurring-api-the-processing-status)
@@ -15,6 +21,8 @@ This newsletter was sent in January 2022.
   * ["Click and collect" recommendations](#click-and-collect-recommendations)
 * [Newsletter archive](#newsletter-archive)
 * [Questions or comments?](#questions-or-comments)
+
+<!-- END_TOC -->
 
 # Please check your eCom API calls
 

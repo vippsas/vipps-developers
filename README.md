@@ -1,7 +1,16 @@
+<!-- START_METADATA
+---
+title: Introduction
+sidebar_position: 1
+---
+END_METADATA -->
+
 # Vipps Developers
 
 This repository contains various resources for Vipps developers.
 We recommend starting with [Getting started](vipps-getting-started.md).
+
+<!-- START_TOC -->
 
 ## Table of contents
 
@@ -20,6 +29,8 @@ We recommend starting with [Getting started](vipps-getting-started.md).
 - [Settlements](#settlements)
 - [Vipps design guidelines](#vipps-design-guidelines)
 - [Questions?](#questions)
+
+<!-- END_TOC -->
 
 Document version: 2.6.4.
 

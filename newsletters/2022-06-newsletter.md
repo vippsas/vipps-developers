@@ -1,6 +1,15 @@
+<!-- START_METADATA
+---
+sidebar_position: 70
+title: 2022-06
+---
+END_METADATA -->
+
 # Technical newsletter for developers 2022-06
 
 This newsletter was sent in June 2022.
+
+<!-- START_TOC -->
 
 ## Table of Contents
 
@@ -16,6 +25,8 @@ This newsletter was sent in June 2022.
   * [How to get help quickly](#how-to-get-help-quickly)
   * [Newsletter archive](#newsletter-archive)
 * [Questions or comments?](#questions-or-comments)
+
+<!-- END_TOC -->
 
 # Vipps Order Management API
 

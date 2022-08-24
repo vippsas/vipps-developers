@@ -1,3 +1,10 @@
+<!-- START_METADATA
+---
+sidebar_position: 76
+title: 2021-02
+---
+END_METADATA -->
+
 # Technical newsletter for developers 2021-02
 
 This newsletter was sent in February 2021.

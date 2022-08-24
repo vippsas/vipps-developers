@@ -1,3 +1,10 @@
+<!-- START_METADATA
+---
+title: Getting started
+sidebar_position: 2
+---
+END_METADATA -->
+
 # Getting Started
 
 This guide is for the following APIs:
@@ -20,6 +27,8 @@ If you are using Vipps through an e-commerce platform, integration partner or PS
 - [PSP](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-2)
 
 Document version: 3.3.4.
+
+<!-- START_TOC -->
 
 ## Table of contents
 
@@ -45,6 +54,8 @@ Document version: 3.3.4.
   - [HTTP response codes](#http-response-codes)
   - [Checking for errors with the API Dashboard](#checking-for-errors-with-the-api-dashboard)
 - [Questions?](#questions)
+
+<!-- END_TOC -->
 
 ## Requirements
 

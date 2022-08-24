@@ -1,4 +1,11 @@
-# Vipps eCom python example
+<!-- START_METADATA
+---
+title: eCom Python example
+sidebar_position: 22
+---
+END_METADATA -->
+
+# Vipps eCom Python example
 
 A simple example implementation for the eCom API.
 

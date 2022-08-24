@@ -1,3 +1,10 @@
+<!-- START_METADATA
+---
+title: Examples
+sidebar_position: 20
+---
+END_METADATA -->
+
 # Code Examples
 
 This repository some code examples for using the Vipps APIs,

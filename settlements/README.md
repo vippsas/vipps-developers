@@ -1,4 +1,13 @@
+<!-- START_METADATA
+---
+title: Settlements
+sidebar_position: 30
+---
+END_METADATA -->
+
 # Vipps Settlements
+
+<!-- START_TOC -->
 
 - [Settlement flow](#settlement-flow)
 - [Frequency](#frequency)
@@ -16,6 +25,8 @@
     + [Weekly reports](#weekly-reports)
     + [Monthly reports](#monthly-reports)
 - [Questions?](#questions-)
+
+<!-- END_TOC -->
 
 Document version 2.2.9.
 

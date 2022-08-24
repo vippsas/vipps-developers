@@ -1,3 +1,10 @@
+<!-- START_METADATA
+---
+sidebar_position: 76
+title: 2021-04
+---
+END_METADATA -->
+
 # Technical newsletter for developers 2021-04
 
 This newsletter was sent in April 2021.

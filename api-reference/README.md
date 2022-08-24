@@ -1,3 +1,9 @@
+<!-- START_METADATA
+---
+draft: true
+---
+END_METADATA -->
+
 # API specification snippets
 
 Work in progress!

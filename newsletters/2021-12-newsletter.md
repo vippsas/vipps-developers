@@ -1,6 +1,15 @@
+<!-- START_METADATA
+---
+sidebar_position: 74
+title: 2021-12
+---
+END_METADATA -->
+
 # Technical newsletter for developers 2021-12
 
 This newsletter was sent in December 2021.
+
+<!-- START_TOC -->
 
 - [Omikron tips](#omikron-tips)
 - [Vipps Hurtigkasse: Use the explicit flow](#vipps-hurtigkasse-use-the-explicit-flow)
@@ -15,6 +24,8 @@ This newsletter was sent in December 2021.
   * [Vipps Login support for authentication/registration outside of browser/app (CIBA)](#vipps-login-support-for-authenticationregistration-outside-of-browserapp-ciba)
 - [Newsletter archive](#newsletter-archive)
 - [Questions or comments?](#questions-or-comments-)
+
+<!-- END_TOC -->
 
 # Omikron tips
 

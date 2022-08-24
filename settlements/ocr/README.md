@@ -1,3 +1,10 @@
+<!-- START_METADATA
+---
+title: Settlements: OCR
+sidebar_position: 35
+---
+END_METADATA -->
+
 # Vipps settlements: OCR
 
 OCR files are no longer provided by Vipps.

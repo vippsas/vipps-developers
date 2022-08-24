@@ -1,3 +1,10 @@
+<!-- START_METADATA
+---
+title: Postman guide
+sidebar_position: 15
+---
+END_METADATA -->
+
 # Postman guide
 
 [Postman](https://www.getpostman.com/) is a common tool for working with REST APIs.
