@@ -1,6 +1,6 @@
 <!-- START_METADATA
 ---
-title: Settlements: OCR
+title: Settlements OCR
 sidebar_position: 35
 ---
 END_METADATA -->
