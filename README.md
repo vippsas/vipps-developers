@@ -43,7 +43,7 @@ You can test Vipps with a _production_ version of the Vipps app
 Maybe you want to start by scanning this QR code and go directly to
 Vipps Hurtigkasse (express checkout) and buy a nice VHS cassette?
 
-<img src="images/demostore-qr-vipps-hurtigkasse.png" alt="QR code to Vipps Hurtigkasse" title="QR code to Vipps Hurtigkasse" width="285" />
+![QR code to Vipps Hurtigkasse](images/demostore-qr-vipps-hurtigkasse_sm.png)
 
 ## API documentation
 
