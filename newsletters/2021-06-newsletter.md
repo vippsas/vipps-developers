@@ -35,7 +35,7 @@ See it on
 under the "Utvikler" ("Developer") tab.
 Here's an example:
 
-<img src="images/2021-06-api-dashboard-login-example.png" alt="api-dashboard login data" width="1000" />
+![API dashboard login data](images/2021-06-api-dashboard-login-example.png)
 
 # Reminders
 
