@@ -53,17 +53,9 @@ and `orderId` (e.g., `acme-shop-123-order123abc`).
 
 * [*Finanstilsynet*](https://www.finanstilsynet.no) - A Norwegian agency that supervises companies
 
-* *Faktura* - invoice
-
 * *Fødselsnummer* - Norwegian identity number
 
 * *Månedsabonnement* - Monthly subscription
-
-* *Neste* - Next
-
-* *Rediger* - Edit (e.g., edit your settings)
-
-* *Regninger* - bills (e.g., electric bill)
 
 * *Straksbetaling* - Instant payments
 
