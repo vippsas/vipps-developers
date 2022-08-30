@@ -30,10 +30,9 @@ provided to the customer, e.g. digital services.
 
 * Merchant - A sale unit that integrates with Vipps for online commerce.
 
-* Merchant Serial Number (MSN) - A unique id given to a sale unit by Vipps. This is used to identify a merchant in API logs.
+* Merchant Serial Number (MSN) - A unique id given to a sale unit by Vipps. A payment is uniquely identified by the combination of `merchantSerialNumber` and `orderId` (e.g., `acme-shop-123-order123abc`). Partners must always send the `Merchant-Serial-Number` header, and we recommend that everyone sends it, also when using the merchant's own API keys. The `Merchant-Serial-Number` header can be used with all API keys and can speed up any troubleshooting of API problems quite a bit.
 
-* `orderId` - Every Vipps payment needs a unique `orderId`.  A payment is uniquely identified by the combination of `merchantSerialNumber`
-and `orderId` (e.g., `acme-shop-123-order123abc`).
+* `orderId` - Every Vipps payment needs a unique `orderId`. A payment is uniquely identified by the combination of `merchantSerialNumber` and `orderId` (e.g., `acme-shop-123-order123abc`).
 
 * Partner - A Vipps partner is a company that represents several merchants by providing a platform, helping set up custom integrations, or developing Vipps' official plugins.
 
