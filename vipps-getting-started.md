@@ -72,7 +72,7 @@ Document version: 3.3.5.
 
 ### Remote transactions
 
-* *Vipps Logg Inn (VippsLog in*) - A website or app can allow the customer to log in by using their Vipps account.
+* *Vipps Logg Inn (Vipps Login*) - A website or app can allow the customer to log in by using their Vipps account.
 
 * *Vipps på nett (Vipps Online*) - An online store or app can offer Vipps as a method of payment.
 
