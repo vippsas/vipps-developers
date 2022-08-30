@@ -22,7 +22,7 @@ These are found in the [VippsPortal](https://portal.vipps.no/) in the *Utvikler*
 accepts a payment. This is an integrated part of the Vipps payment process,
 and the link should never be sent in an SMS or email.
 
-* Direct capture - **Direct capture** causes all payment reservations to be instantly be captured.
+* Direct capture - **Direct capture** causes all payment reservations to be instantly captured.
 This is intended for situations where the product or service is immediately
 provided to the customer, e.g. digital services.
 
