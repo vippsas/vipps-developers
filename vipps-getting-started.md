@@ -26,12 +26,15 @@ If you are using Vipps through an e-commerce platform, integration partner or PS
 - [Partner](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-3)
 - [PSP](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-2)
 
-Document version: 3.3.4.
+Document version: 3.3.5.
 
 <!-- START_TOC -->
 
 ## Table of contents
 
+- [Product types](#product-types)
+  - [In-person transactions](#in-person-transactions)
+  - [Remote transactions](#remote-transactions)
 - [Requirements](#requirements)
   - [Foreign companies](#foreign-companies)
   - [Vipps users](#vipps-users)
@@ -56,6 +59,27 @@ Document version: 3.3.4.
 - [Questions?](#questions)
 
 <!-- END_TOC -->
+
+## Product types
+
+### In-person transactions
+
+* *Vennebetaling (Person to Person payments*) - A person can transfer money to another person. They must both have configured their Vipps app with their respective bank account numbers. There is no API.
+
+* *Vippsnummer (Vipps number*) - An organization or company can receive an identification number from Vipps. Customers can then register their payments to this number. This gives people the possibility of paying or donating money without cash. There is no API.
+
+* *Vipps i kassa (Vipps In Store*) - A company can integrate its Point of Sale (POS) system with Vipps so that in-store customers can pay by using Vipps, and the sale will be automatically registered in their system.
+
+### Remote transactions
+
+* *Vipps Logg Inn (VippsLog in*) - A website or app can allow the customer to log in by using their Vipps account.
+
+* *Vipps på nett (Vipps Online*) - An online store or app can offer Vipps as a method of payment.
+
+* *Vipps Hurtigkasse (Vipps Express Checkout*) - An online store can offer a quick checkout option where Vipps is the method of payment and the shipping options are specified directly from the Vipps app.
+
+* *Faste betalinger med Vipps (Recurring payments*) - A business or organization can allow their customers to set up recurring payments (e.g., for subscriptions, membership, regular donations, etc.) through Vipps.
+
 
 ## Requirements
 
