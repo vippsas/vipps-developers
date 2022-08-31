@@ -78,7 +78,7 @@ Document version: 3.3.5.
 
 * *Vipps Hurtigkasse (Vipps Express Checkout*) - An online store can offer a quick checkout option where Vipps is the method of payment and the shipping options are specified directly from the Vipps app.
 
-* *Faste betalinger med Vipps (Recurring payments*) - A business or organization can allow their customers to set up recurring payments (e.g., for subscriptions, membership, regular donations, etc.) through Vipps.
+* *Faste betalinger (Recurring payments*) - A business or organization can allow their customers to set up recurring payments (e.g., for subscriptions, membership, regular donations, etc.) through Vipps.
 
 
 ## Requirements
