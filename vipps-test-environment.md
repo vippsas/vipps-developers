@@ -30,7 +30,7 @@ The Merchant Test Environment (MT) is available for all Vipps customers.
 
 <!-- END_TOC -->
 
-Document version: 3.1.18.
+Document version: 3.1.19.
 
 ## About the test environment
 
@@ -226,7 +226,7 @@ You do _not_ need an invitation or an activation code.
 
 1. Open the
    [TestFlight](https://testflight.apple.com/join/hTAYrwea)
-   link on your iOS phone (it will not work on macOS)
+   link on your iOS phone (it will not work on macOS, and you can not search for Vipps in TestFlight)
 2. Install the "Vipps MT" app
 3. Open the "Vipps MT" app
 4. Enter the test phone number, that was sent in the welcome email to the email
