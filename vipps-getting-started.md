@@ -26,7 +26,7 @@ If you are using Vipps through an e-commerce platform, integration partner or PS
 - [Partner](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-3)
 - [PSP](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-2)
 
-Document version: 3.3.5.
+Document version: 3.3.6.
 
 <!-- START_TOC -->
 
@@ -412,6 +412,7 @@ An explanation of the contents of the access token (the JWT properties):
 **Please note:** The access token is valid for 1 hour in the test environment
 and 24 hours in the production environment. To be sure that you are using
 correct time please use `expires_in` or `expires_on`.
+The access token is a JWT (JSON Web Token), and uses UTC time.
 
 Problems? See:
 [Common errors](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-faq.md#common-errors).

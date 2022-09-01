@@ -32,7 +32,7 @@ We recommend starting with [Getting started](vipps-getting-started.md).
 
 <!-- END_TOC -->
 
-Document version: 2.6.4.
+Document version: 2.6.5.
 
 ## Vipps demo store
 
@@ -149,6 +149,8 @@ The servers are world accessible. Vipps only relies on the API keys, and
 no requests to our servers are blocked on our side by IP addresses or similar.
 
 The servers are the same for all APIs.
+
+The Vipps servers all use UTC time.
 
 **Please note:** Vipps may change the IP addresses for the API servers. To ensure
 that you are whitelisting the correct IP addresses please use these hostnames
