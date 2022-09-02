@@ -153,7 +153,7 @@ This is the recommended way:
 **Please note:** This public SSH key does not have to be secret.
 To be able to retrieve the reports it is also necessary to have the
 _private_ SSH key.
-We strongly recommend that partners use the same SSH key for all their merchants.
+We recommend that partners use the same SSH key for all their merchants.
 
 # How to use it
 
