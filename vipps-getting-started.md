@@ -283,6 +283,7 @@ This API product includes the following APIs:
 | Access Token API     | Required to obtain a JWT              | See: [Get an access token](#get-an-access-token)      |
 | eCom API             | eCommerce, including express checkout | <https://github.com/vippsas/vipps-ecom-api>             |
 | Recurring API        | Recurring API                         | <https://github.com/vippsas/vipps-recurring-api>        |
+| Checkout API         | Checkout API                          | <https://github.com/vippsas/vipps-checkout-api>        |
 | Log In API           | Identification                        | <https://github.com/vippsas/vipps-login-api>            |
 | QR API               | QR codes                              | <https://github.com/vippsas/vipps-qr-api>               |
 | Order Management API | Add data to orders                    | <https://github.com/vippsas/vipps-order-management-api> |
