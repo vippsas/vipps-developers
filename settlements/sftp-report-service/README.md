@@ -26,7 +26,7 @@ for more information about settlements.
   * [Example SFTP session](#example-sftp-session)
 * [Questions?](#questions)
 
-Document version: 4.0.4.
+Document version: 4.1.0.
 
 # Reports
 
@@ -150,11 +150,10 @@ This is the recommended way:
 2. The merchant adds the SSH key on [portal.vipps.no](https://portal.vipps.no)
 3. The partner retrieves the settlement reports with SFTP
 
-**Please note:** This public SSH key does not have to be secret, but anyone
-with the public SSH key can access settlement reports for merchants that
-have added that specific SSH key. We strongly recommend that partners
-create separate keys for each merchant, otherwise all their merchants
-will be able to download everyone's settlement reports.
+**Please note:** This public SSH key does not have to be secret.
+To be able to retrieve the reports it is also necessary to have the
+_private_ SSH key.
+We strongly recommend that partners use the same SSH key for all their merchants.
 
 # How to use it
 
