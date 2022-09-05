@@ -1,3 +1,10 @@
+<!-- START_METADATA
+---
+title: XML
+sidebar_position: 20
+---
+END_METADATA -->
+
 # Vipps XML reports
 
 This repository contains schemas and example files for Vipps XML settlement reports.

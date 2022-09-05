@@ -1,7 +1,7 @@
 <!-- START_METADATA
 ---
-title: Settlements OCR
-sidebar_position: 35
+title: OCR
+sidebar_position: 80
 ---
 END_METADATA -->
 
@@ -13,6 +13,6 @@ are provided by the bank, not Vipps.
 
 Documentation for the legacy invoice solution: [Vipps Faktura](./vipps-invoice-api-vipps-faktura.pdf).
 
-Details: 
+Details:
 
 See the [Settlements](..) overview.

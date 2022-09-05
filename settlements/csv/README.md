@@ -1,11 +1,16 @@
+<!-- START_METADATA
+---
+title: CSV
+sidebar_position: 30
+---
+END_METADATA -->
+
 # Vipps settlements: CSV
 
 See the [Settlements](..) overview.
 
 The CSV settlement file contains the following info:
 
-
-	
 | Column title  | Description | Comment  |
 | ------------- | ------------- | ------------- |
 | Salgsdato  | Date of sale  | 	  |

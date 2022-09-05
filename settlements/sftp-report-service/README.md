@@ -1,3 +1,10 @@
+<!-- START_METADATA
+---
+title: SFTP Report Service
+sidebar_position: 10
+---
+END_METADATA -->
+
 # Vipps SFTP Report Service
 
 This service allows for retrieval of settlement files with SFTP.
@@ -10,6 +17,10 @@ by using SFTP as part of an integration.
 See
 [Settlements](https://github.com/vippsas/vipps-developers/tree/master/settlements)
 for more information about settlements.
+
+Document version: 4.1.0.
+
+<!-- START_TOC -->
 
 * [Reports](#reports)
   * [Availability](#availability)
@@ -26,7 +37,7 @@ for more information about settlements.
   * [Example SFTP session](#example-sftp-session)
 * [Questions?](#questions)
 
-Document version: 4.1.0.
+<!-- END_TOC -->
 
 # Reports
 
