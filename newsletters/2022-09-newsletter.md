@@ -25,7 +25,7 @@ We have a completely new, in-progress, website for all developer documentation:
 * [https://vippsas.github.io/vipps-developer-docs/](https://vippsas.github.io/vipps-developer-docs/)
 * [Known issues](https://vippsas.github.io/vipps-developer-docs/docs/examples/)
 
-![Vipps Developer Documentation](images/vipps-developer-docs.png)
+![Vipps Developer Documentation](images/2022-09-vipps-developer-docs.png)
 
 # Reminders
 
