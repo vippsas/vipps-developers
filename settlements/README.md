@@ -9,22 +9,23 @@ END_METADATA -->
 
 <!-- START_TOC -->
 
-- [Settlement flow](#settlement-flow)
-- [Frequency](#frequency)
-- [Net and gross settlements](#net-and-gross-settlements)
-- [Settlement report formats](#settlement-report-formats)
+* [Vipps Settlements](#vipps-settlements)
+* [Settlement flow](#settlement-flow)
+* [Frequency](#frequency)
+* [Net and gross settlements](#net-and-gross-settlements)
+* [Settlement report formats](#settlement-report-formats)
   * [Additional info for recurring payments](#additional-info-for-recurring-payments)
   * [GDPR](#gdpr)
-- [How to get settlement files](#how-to-get-settlement-files)
+* [How to get settlement files](#how-to-get-settlement-files)
   * [portal.vipps.no](#portalvippsno)
   * [Email](#email)
   * [SFTP](#sftp)
   * [API](#api)
-- [Availability](#availability)
-    + [Daily reports](#daily-reports)
-    + [Weekly reports](#weekly-reports)
-    + [Monthly reports](#monthly-reports)
-- [Questions?](#questions-)
+* [Availability](#availability)
+    * [Daily reports](#daily-reports)
+    * [Weekly reports](#weekly-reports)
+    * [Monthly reports](#monthly-reports)
+* [Questions?](#questions)
 
 <!-- END_TOC -->
 
