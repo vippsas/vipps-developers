@@ -14,8 +14,9 @@ This newsletter was sent in September 2022.
 * [New developer documentation](#new-developer-documentation)
 * [Inform customers that there are no fees when paying with Vipps](#inform-customers-that-there-are-no-fees-when-paying-with-vipps)
 * [Vipps on-site messaging](#vipps-on-site-messaging)
+* [Partner API: Pre-fill applications](#partner-api-pre-fill-applications)
 * [Reminders](#reminders)
-  * [Please check your eCom API calls for errors](#please-check-your-ecom-api-calls-for-errors)
+  * [Please check your API calls for errors](#please-check-your-api-calls-for-errors)
   * [Use the API Dashboard to find problems with your integration](#use-the-api-dashboard-to-find-problems-with-your-integration)
   * [How to get help quickly](#how-to-get-help-quickly)
   * [Newsletter archive](#newsletter-archive)
@@ -55,7 +56,7 @@ to pre-fill applications and
 
 # Reminders
 
-## Please check your eCom API calls for errors
+## Please check your API calls for errors
 
 We are working on eliminating incorrect API use. Although we always respond to
 incorrect API calls with a sensible HTTP status (usually `HTTP 400 Bad Request`)
