@@ -148,8 +148,6 @@ as the test number may be a real phone number for a real Vipps user.
 The test mobile number is registered with a payment card.
 
 If you need additional payment cards, you can add it in the Vipps app.
-See [Credit card numbers](https://github.com/vippsas/vipps-developers/tree/master/testdata#credit-card-numbers)
-for more details.
 
 ### Email address
 
