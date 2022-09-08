@@ -12,6 +12,7 @@ END_METADATA -->
 This newsletter was sent in September 2022.
 
 * [New developer documentation](#new-developer-documentation)
+* [ Inform customers that there are no fees when paying with Vipps](#inform-customers-that-there-are-no-fees-when-paying-with-vipps)
 * [Reminders](#reminders)
   * [Please check your eCom API calls for errors](#please-check-your-ecom-api-calls-for-errors)
   * [Use the API Dashboard to find problems with your integration](#use-the-api-dashboard-to-find-problems-with-your-integration)
@@ -25,6 +26,18 @@ We have a completely new, in-progress, website for all developer documentation:
 [https://vippsas.github.io/vipps-developer-docs/](https://vippsas.github.io/vipps-developer-docs/)
 
 ![Vipps Developer Documentation](images/2022-09-vipps-developer-docs.png)
+
+# Inform customers that there are no fees when paying with Vipps
+
+It can help conversion to remind users that:
+* There are no Vipps fees when paying a business
+* Users get all the benefits of the card when using the card in Vipps (bonus points, etc)
+
+We recommend using this text where users select payment method:
+"Husk: Vipps er alltid gebyrfritt når du betaler til bedrifter."
+
+If you use Klarna Checkout, we have some tips
+[here](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-faq.md#can-i-use-vipps-with-klarna-checkout).
 
 # Reminders
 
