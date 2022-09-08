@@ -12,7 +12,8 @@ END_METADATA -->
 This newsletter was sent in September 2022.
 
 * [New developer documentation](#new-developer-documentation)
-* [ Inform customers that there are no fees when paying with Vipps](#inform-customers-that-there-are-no-fees-when-paying-with-vipps)
+* [Inform customers that there are no fees when paying with Vipps](#inform-customers-that-there-are-no-fees-when-paying-with-vipps)
+* [Vipps on-site messaging](#vipps-on-site-messaging)
 * [Reminders](#reminders)
   * [Please check your eCom API calls for errors](#please-check-your-ecom-api-calls-for-errors)
   * [Use the API Dashboard to find problems with your integration](#use-the-api-dashboard-to-find-problems-with-your-integration)
@@ -38,6 +39,14 @@ We recommend using this text where users select payment method:
 
 If you use Klarna Checkout, we have some tips
 [here](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-faq.md#can-i-use-vipps-with-klarna-checkout).
+
+# Vipps on-site messaging
+
+Vipps On-Site Messaging contains a badges in different variants that can be
+used to let your customers know that Vipps payment is accepted.
+
+For more details:
+[Vipps on-site-messaging](https://github.com/vippsas/vipps-checkout-api/blob/main/vipps-checkout-on-site-messaging.md).
 
 # Reminders
 
