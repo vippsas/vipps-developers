@@ -1,7 +1,7 @@
 <!-- START_METADATA
 ---
 title: The API Lifecycle
-sidebar_position: 3
+sidebar_position: 39
 ---
 END_METADATA -->
 

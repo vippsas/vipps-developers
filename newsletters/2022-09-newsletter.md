@@ -46,6 +46,13 @@ If you use Klarna Checkout, we have some tips
 contains a badges in different variants that can be used to let your customers
 know that Vipps payment is accepted.
 
+# Partner API: Pre-fill applications
+
+Partners can now use the
+[Partner API](https://github.com/vippsas/vipps-partner-api)
+to pre-fill applications and
+[submit a product order for a merchant](https://github.com/vippsas/vipps-partner-api/blob/main/vipps-partner-api.md#submit-a-product-order-for-a-merchant).
+
 # Reminders
 
 ## Please check your eCom API calls for errors
