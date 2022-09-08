@@ -28,11 +28,6 @@ After several extensions to the original June 1 deadline, the Vipps eCom API v1
 was shut down on December 4. The Vipps eCom API v2 has been available for
 about three years, and offers more functionality than the old version.
 
-See the
-[deprecation notice](https://github.com/vippsas/vipps-ecom-api/blob/master/v1-deprecation.md)
-and
-[migration guide](https://github.com/vippsas/vipps-ecom-api/blob/master/v1-migration.md)
-if you _still_ need to upgrade.
 
 # Vipps Login improvements 🎉
 
