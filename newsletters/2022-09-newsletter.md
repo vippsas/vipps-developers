@@ -1,6 +1,6 @@
 <!-- START_METADATA
 ---
-sidebar_position: 80
+sidebar_position: 69
 title: 2022-09
 ---
 END_METADATA -->
@@ -42,11 +42,9 @@ If you use Klarna Checkout, we have some tips
 
 # Vipps on-site messaging
 
-Vipps On-Site Messaging contains a badges in different variants that can be
-used to let your customers know that Vipps payment is accepted.
-
-For more details:
-[Vipps on-site-messaging](https://github.com/vippsas/vipps-checkout-api/blob/main/vipps-checkout-on-site-messaging.md).
+[Vipps on-site-messaging](https://github.com/vippsas/vipps-checkout-api/blob/main/vipps-checkout-on-site-messaging.md)
+contains a badges in different variants that can be used to let your customers
+know that Vipps payment is accepted.
 
 # Reminders
 
