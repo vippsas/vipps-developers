@@ -22,8 +22,7 @@ This newsletter was sent in September 2022.
 # New developer documentation
 
 We have a completely new, in-progress, website for all developer documentation:
-* [https://vippsas.github.io/vipps-developer-docs/](https://vippsas.github.io/vipps-developer-docs/)
-* [Known issues](https://vippsas.github.io/vipps-developer-docs/docs/examples/)
+[https://vippsas.github.io/vipps-developer-docs/](https://vippsas.github.io/vipps-developer-docs/)
 
 ![Vipps Developer Documentation](images/2022-09-vipps-developer-docs.png)
 
