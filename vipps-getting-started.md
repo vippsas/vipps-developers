@@ -295,9 +295,6 @@ Vipps-API also includes some _legacy_ APIs:
 | eCom API v1      | eCommerce, legacy version, phased out on September 1 2020.       | <https://github.com/vippsas/vipps-ecom-api-v1>     |
 | Signup and Login | Legacy API (superseded by Vipps Log In), end of life Dec 31 2019 | <https://github.com/vippsas/vipps-signuplogin-api> |
 
-See more details about the
-[deprecation of the Vipps eCom API v1](https://github.com/vippsas/vipps-ecom-api/blob/master/v1-deprecation.md)
-on September 1, 2020.
 
 If you are still using a legacy API, you should upgrade as soon as possible.
 The best way to keep up to date of changes is to
