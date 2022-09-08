@@ -1,6 +1,6 @@
 <!-- START_METADATA
 ---
-sidebar_position: 60
+sidebar_position: 30
 title: Newsletters
 ---
 END_METADATA -->
