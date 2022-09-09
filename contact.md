@@ -79,10 +79,8 @@ If you can not find the answer: Please send an email with all relevant informati
 9. If you are a new Vipps customer, please include details about when and how you ordered Vipps.
 10. For API issues: Complete `request` and `response` details (plain HTTP from Postman, or [curl](https://curl.haxx.se) ensures the quickest response).
 11. Please provide screenshots, if possible.
-12. For app issues: Specify iOS or Android, and the app version - and have a look at the
-  [standard reply for app problems](https://github.com/vippsas/vipps-developers/blob/master/housekeeping/response-app-error-en.txt).
-13. Please provide your contact information (if not in your email signature): Name and phone number
-14. Please include any other information that may be relevant or possibly helpful.
+12. Please provide your contact information (if not in your email signature): Name and phone number
+13. Please include any other information that may be relevant or possibly helpful.
 
 The Integration email address is: integration@vipps.no
 
