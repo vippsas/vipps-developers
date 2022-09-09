@@ -44,9 +44,7 @@ To have a unified way of providing user information across Vipps services
 we are standardising the data formats, both within Vipps and with the OIDC standard.
 To do this we have to introduce a new version of our Vipps login API.
 **The previous version (Version 1) of the Vipps login API will have end of life on February 28th 2021**.
-See
-[the API migration guide](https://github.com/vippsas/vipps-login-api/blob/master/vipps-login-migrate-api-1.0-to-2.0.md)
-for details on moving from version 1 to 2.
+
 
 Our plugins are updated to support the latest version.
 Make sure that you use the latest version of the plugin.
