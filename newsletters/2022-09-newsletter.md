@@ -11,6 +11,8 @@ END_METADATA -->
 
 This newsletter was sent in September 2022.
 
+<!-- START_TOC -->
+
 * [New developer documentation](#new-developer-documentation)
 * [Inform customers that there are no fees when paying with Vipps](#inform-customers-that-there-are-no-fees-when-paying-with-vipps)
 * [Vipps on-site messaging](#vipps-on-site-messaging)
@@ -21,6 +23,8 @@ This newsletter was sent in September 2022.
   * [How to get help quickly](#how-to-get-help-quickly)
   * [Newsletter archive](#newsletter-archive)
 * [Questions or comments?](#questions-or-comments)
+
+<!-- END_TOC -->
 
 # New developer documentation
 
