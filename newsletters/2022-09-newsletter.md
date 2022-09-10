@@ -33,6 +33,11 @@ We have a completely new, in-progress, website for all developer documentation:
 
 ![Vipps Developer Documentation](images/2022-09-vipps-developer-docs.png)
 
+Examples:
+* [eCom API Guide](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api)
+* [eCom API specification](https://vippsas.github.io/vipps-developer-docs/api/ecom)
+* [eCom FAQ](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api-faq)
+
 # Inform customers that there are no fees when paying with Vipps
 
 It can help your conversion if you remind your users that:

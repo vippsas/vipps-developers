@@ -5,6 +5,26 @@ sidebar_position: 15
 ---
 END_METADATA -->
 
+<!-- START_TOC -->
+
+## Table of Contents
+
+* [Table of Contents](#table-of-contents)
+* [Postman guide](#postman-guide)
+  * [Select Postman resource](#select-postman-resource)
+  * [Import files](#import-files)
+  * [Insert values](#insert-values)
+  * [Tabs](#tabs)
+  * [Postman variables overview](#postman-variables-overview)
+    * [Common variables](#common-variables)
+    * [eCommerce API specific variables](#ecommerce-api-specific-variables)
+    * [Recurring API specific variables](#recurring-api-specific-variables)
+    * [Login API specific variables](#login-api-specific-variables)
+    * [PSP API specific variables](#psp-api-specific-variables)
+  * [Questions?](#questions)
+
+<!-- END_TOC -->
+
 # Postman guide
 
 [Postman](https://www.getpostman.com/) is a common tool for working with REST APIs.
