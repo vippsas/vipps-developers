@@ -7,7 +7,7 @@ END_METADATA -->
 
 # How to contact Vipps Integration
 
-Hello! We can help!
+Document version: 2.4.12.
 
 <!-- START_TOC -->
 
@@ -24,8 +24,6 @@ Hello! We can help!
 - [Newsletter](#newsletter)
 
 <!-- END_TOC -->
-
-Document version: 2.4.12.
 
 ## We help with technical issues
 
