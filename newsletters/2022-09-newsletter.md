@@ -35,7 +35,7 @@ We have a completely new, in-progress, website for all developer documentation:
 
 # Inform customers that there are no fees when paying with Vipps
 
-It can help conversion to remind users that:
+It can help your conversion if you remind your users that:
 * There are no Vipps fees when paying a business
 * Users get all the benefits of the card when using the card in Vipps (bonus points, etc)
 
@@ -64,7 +64,7 @@ to pre-fill applications and
 
 We are working on eliminating incorrect API use. Although we always respond to
 incorrect API calls with a sensible HTTP status (usually `HTTP 400 Bad Request`)
-and an informative error message in the response body, we see that some merchant
+and an informative error message in the response body, we see that some merchants
 and partners keep making incorrect API calls.
 
 Please:
@@ -74,39 +74,18 @@ Please:
 - Use the API Dashboard
 - Contact us if there is anything we can help with
 
-One example: Far too many calls to
-[`POST:/ecomm/v2/payments`](https://vippsas.github.io/vipps-ecom-api/#/Vipps_eCom_API/initiatePaymentV3UsingPOST)
-use an incorrectly formatted phone number.
-The effect is that the user's phone number is not correctly pre-filled on
-the Vipps landing page.
-Please make sure you send the `mobileNumber` in `91234567` format, not
-`+47 91 23 45 67` or something else.
-We have previously tried to respond with `HTTP 400 Bad Request` (as we should)
-for incorrectly formatted phone numbers, but that broke _a lot_  of integrations,
-so we decided to accept the incorrect API calls even though they give a poor
-user experience.
-
-See:
-* [Use the API Dashboard to find problems with your integration](#use-the-api-dashboard-to-find-problems-with-your-integration)
-* "Common errors" in the
-  [eCom API FAQ](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-faq.md)
-
 ## Use the API Dashboard to find problems with your integration
 
-The API Dashboard is available to all merchants for both the production and test environments,
+The
+[API Dashboard](https://github.com/vippsas/vipps-developers#api-dashboard)
+is available to all merchants for both the production and test environments,
 and is an easy way to see if you are using the Vipps APIs correctly.
 Think of it as a "health check", that you can use to see if there are any
 problems you need to investigate.
 
-See it on
-[portal.vipps.no](https://portal.vipps.no)
-under the "Utvikler" ("Developer") tab.
 Here's an example for the Vipps eCom API's `/refund` endpoint:
 
 ![API Dashboard example](images/2021-02-api-dashboard-example.png)
-
-See:
-[API Dashboard](https://github.com/vippsas/vipps-developers#api-dashboard).
 
 ## How to get help quickly
 
