@@ -29,7 +29,7 @@ END_METADATA -->
 
 <!-- END_TOC -->
 
-Document version 2.2.9.
+Document version 2.2.10.
 
 # Settlement flow
 
@@ -38,8 +38,10 @@ Settlements are done as quickly as possible, and depend on banks.
 The settlement flow is as follows:
 
 1. Day 1: A customer makes a purchase and the transaction is completed.
-   Since a merchant should not capture the amount, i.e. charge the customer, until the purchased product is shipped, the "day 1" is the day the
-   product is shipped and the customer's account is charged.
+   This is when the merchant captures the money.
+   Since a merchant should not capture the amount, i.e. charge the customer,
+   until the purchased product is shipped, the "day 1" is normally the day that
+   the product is shipped and the customer's account is charged.
 2. Day 2: Settlement files are distributed, and are available on
    [portal.vipps.no](https://portal.vipps.no).
 3. Day 3: Payments are made from Vipps' bank account to the merchant's bank account.
@@ -60,11 +62,11 @@ Payout for Friday, Saturday and Sunday arrives on Tuesday (three separate transa
 A day starts and ends at midnight, Oslo time: Start `00:00:00`, end `23:59:59` (subseconds not specified).
 Please make sure your servers' clocks are correct, e.g. by using [NTP](https://en.wikipedia.org/wiki/Network_Time_Protocol).
 
-**Please note:** There is only one payment per settlement period: If there
-have been 5000 Vipps payments in one week, there will still only be one
+**Please note:** There is only one payment per settlement period: Even if there
+have been thousands Vipps payments in one week, there will still only be one
 payment from Vipps to the merchant. A "lump sum", if you want.
-The settlement reports have all the details for each of the 5000 payments.
-Also: There is one payment per sale unit.
+The settlement reports have all the details for each of the thousands of payments.
+Also: There is one payment per sale unit, with its corresponding settlement file.
 
 # Frequency
 
