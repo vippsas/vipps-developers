@@ -12,6 +12,10 @@ We recommend starting with [Getting started](vipps-getting-started.md).
 
 <!-- START_TOC -->
 
+<!-- INTENTIONALLY INCLUDED IN TOC IN ORDER TO HIDE IT ON THE MIRROR SITE -->
+💥 Preview the new documentation pages here: https://vippsas.github.io/vipps-developer-docs/
+See the disclaimer: https://vippsas.github.io/vipps-developer-docs/docs/examples/
+
 ## Table of contents
 
 - [Vipps demo store](#vipps-demo-store)
