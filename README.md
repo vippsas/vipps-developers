@@ -76,7 +76,7 @@ what you are looking for.
 
 We have a low volume newsletter with important information to developers about
 Vipps' APIs and products. Subscribe (and access the archive) here:
-[Technical newsletter for developers](./newsletters).
+[Technical newsletter for developers](newsletters/README.md).
 
 ## Partners
 
@@ -197,7 +197,7 @@ See:
 ## Settlements
 
 See:
-[Settlements](./settlements).
+[Settlements](settlements/README.md).
 
 ## Vipps design guidelines
 
@@ -212,6 +212,6 @@ And here:
 We're always happy to help with code or other questions you might have!
 Please create an [issue](https://github.com/vippsas/vipps-developers/issues),
 a [pull request](https://github.com/vippsas/vipps-developers/pulls),
-or [contact us](https://github.com/vippsas/vipps-developers/blob/master/contact.md).
+or [contact us](contact.md).
 
-Sign up for our [Technical newsletter for developers](https://github.com/vippsas/vipps-developers/tree/master/newsletters).
+Sign up for our [Technical newsletter for developers](newsletters/README.md).
