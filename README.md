@@ -10,11 +10,14 @@ END_METADATA -->
 This repository contains various resources for Vipps developers.
 We recommend starting with [Getting started](vipps-getting-started.md).
 
-<!-- START_TOC -->
+<!-- START_COMMENT -->
 
-<!-- INTENTIONALLY INCLUDED IN TOC IN ORDER TO HIDE IT ON THE MIRROR SITE -->
 💥 Preview the new documentation pages here: https://vippsas.github.io/vipps-developer-docs/
 See the disclaimer: https://vippsas.github.io/vipps-developer-docs/docs/examples/
+
+<!-- END_COMMENT -->
+
+<!-- START_TOC -->
 
 ## Table of contents
 
@@ -34,7 +37,7 @@ See the disclaimer: https://vippsas.github.io/vipps-developer-docs/docs/examples
 - [Vipps design guidelines](#vipps-design-guidelines)
 - [Questions?](#questions)
 
-<!-- END_TOC -->
+<!-- END_COMMENT -->
 
 Document version: 2.6.5.
 
