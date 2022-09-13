@@ -38,16 +38,18 @@ the complete request and response.
 
 ## Select Postman resource
 
-Find the collection and environment for the relevant APIs from the table below, copy the contents for both, and import into the Postman app.
+Find the collection and environment for the relevant APIs, copy the contents for both, and import into the Postman app.
 
-| API                | Collection                                                                                                                 | Environment                                                                                                                  |
-|--------------------|----------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
-| Vipps eCommerce v2 | [Collection](https://github.com/vippsas/vipps-ecom-api/blob/master/tools/vipps-ecom-api-postman-collection.json)           | [Environment](https://github.com/vippsas/vipps-ecom-api/blob/master/tools/vipps-ecom-api-postman-environment.json)            |
-| Vipps Login        | [Collection](https://github.com/vippsas/vipps-login-api/blob/master/tools/vipps-login-api.postman_collection.json)         | [Environment](https://github.com/vippsas/vipps-login-api/blob/master/tools/vipps-login-api.postman_environment.json)         |
-| Vipps Recurring    | [Collection](https://github.com/vippsas/vipps-recurring-api/blob/master/tools/vipps-recurring-api-postman-collection.json) | [Environment](https://github.com/vippsas/vipps-recurring-api/blob/master/tools/vipps-recurring-api-postman-environment.json) |
-| Vipps Invoice IPP  | [Collection](https://github.com/vippsas/vipps-invoice-api/blob/master/tools/vipps-invoice-ipp-api-postman-collection.json) | [Environment](https://github.com/vippsas/vipps-invoice-api/blob/master/tools/vipps-invoice-ipp-api-postman-environment.json) |
-| Vipps Invoice ISP  | [Collection](https://github.com/vippsas/vipps-invoice-api/blob/master/tools/vipps-invoice-isp-api-postman-collection.json) | [Environment](https://github.com/vippsas/vipps-invoice-api/blob/master/tools/vipps-invoice-isp-api-postman-environment.json) |
-| Vipps PSP          | [Collection](https://github.com/vippsas/vipps-psp-api/blob/master/tools/vipps-psp-v3-api-postman-collection.json)          | [Environment](https://github.com/vippsas/vipps-psp-api/blob/master/tools/vipps-psp-v3-api-postman-environment.json)          |
+Each API has (or will have) a step-by-step postman guide. See this guide for examples applicable to that API.
+
+For example:
+
+* [eCom API Postman Guide](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-postman.md)
+* [Recurring API Postman Guide](https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-postman.md)
+* [Login API Postman Guide](https://github.com/vippsas/vipps-login-api/blob/master/vipps-login-postman.md)
+* [Partner API Postman Guide](https://github.com/vippsas/vipps-partner-api/blob/main/vipps-partner-postman.md)
+* [PSP API Postman Guide](https://github.com/vippsas/vipps-psp-api/blob/master/vipps-psp-postman.md)
+* [QR API Postman Guide](https://github.com/vippsas/vipps-qr-api/blob/main/vipps-qr-api-postman.md)
 
 ## Import files
 

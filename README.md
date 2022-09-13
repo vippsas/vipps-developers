@@ -10,11 +10,14 @@ END_METADATA -->
 This repository contains various resources for Vipps developers.
 We recommend starting with [Getting started](vipps-getting-started.md).
 
-<!-- START_TOC -->
+<!-- START_COMMENT -->
 
-<!-- INTENTIONALLY INCLUDED IN TOC IN ORDER TO HIDE IT ON THE MIRROR SITE -->
-💥 Preview the new documentation pages here: https://vippsas.github.io/vipps-developer-docs/
-See the disclaimer: https://vippsas.github.io/vipps-developer-docs/docs/examples/
+💥 Preview the new documentation pages here: <https://vippsas.github.io/vipps-developer-docs/>
+See the disclaimer: <https://vippsas.github.io/vipps-developer-docs/docs/examples/>
+
+<!-- END_COMMENT -->
+
+<!-- START_TOC -->
 
 ## Table of contents
 
@@ -34,7 +37,7 @@ See the disclaimer: https://vippsas.github.io/vipps-developer-docs/docs/examples
 - [Vipps design guidelines](#vipps-design-guidelines)
 - [Questions?](#questions)
 
-<!-- END_TOC -->
+<!-- END_COMMENT -->
 
 Document version: 2.6.5.
 
@@ -63,7 +66,7 @@ The most commonly used APIs:
 - [Vipps Order Management API](https://github.com/vippsas/vipps-order-management-api)
 - [Vipps PSP API](https://github.com/vippsas/vipps-psp-api)
 
-All Vipps APIs are available (and searchable) here: <https://github.com/vippsas>
+All Vipps APIs are available (and searchable) on GitHub: <https://github.com/vippsas>
 
 The API documentation is frequently improved and increasingly extensive.
 Please use the search functionality in your browser and on GitHub to find
@@ -73,7 +76,7 @@ what you are looking for.
 
 We have a low volume newsletter with important information to developers about
 Vipps' APIs and products. Subscribe (and access the archive) here:
-[Technical newsletter for developers](https://github.com/vippsas/vipps-developers/tree/master/newsletters).
+[Technical newsletter for developers](newsletters/README.md).
 
 ## Partners
 
@@ -99,7 +102,7 @@ You can use the Atom and RSS feeds on the status pages for integration with othe
 ## The Vipps test environment (MT)
 
 See
-[The Vipps test environment (MT)](https://github.com/vippsas/vipps-developers/blob/master/vipps-test-environment.md)
+[The Vipps test environment (MT)](vipps-test-environment.md)
 for more information about general test functionality,
 the iOS and Android test apps, etc.
 
@@ -108,7 +111,7 @@ MT is short for Merchant Test.
 ## Postman
 
 See our
-[Postman guide](https://github.com/vippsas/vipps-developers/blob/master/postman-guide.md)
+[Postman guide](postman-guide.md)
 or the
 [Postman documentation](https://www.getpostman.com/docs/)
 for more information about using Postman.
@@ -189,12 +192,12 @@ that these request servers are allowed through firewalls, etc.
 ## Vipps API Lifecycle
 
 See:
-[Vipps API Lifecycle](https://github.com/vippsas/vipps-developers/blob/master/vipps-api-lifecycle.md).
+[Vipps API Lifecycle](vipps-api-lifecycle.md).
 
 ## Settlements
 
 See:
-[Settlements](https://github.com/vippsas/vipps-developers/tree/master/settlements).
+[Settlements](settlements/README.md).
 
 ## Vipps design guidelines
 
@@ -209,6 +212,6 @@ And here:
 We're always happy to help with code or other questions you might have!
 Please create an [issue](https://github.com/vippsas/vipps-developers/issues),
 a [pull request](https://github.com/vippsas/vipps-developers/pulls),
-or [contact us](https://github.com/vippsas/vipps-developers/blob/master/contact.md).
+or [contact us](contact.md).
 
-Sign up for our [Technical newsletter for developers](https://github.com/vippsas/vipps-developers/tree/master/newsletters).
+Sign up for our [Technical newsletter for developers](newsletters/README.md).
