@@ -5,8 +5,10 @@ sidebar_position: 15
 ---
 END_METADATA -->
 
-<!-- START_TOC -->
 
+# Postman guide
+
+<!-- START_TOC -->
 ## Table of Contents
 
 * [Table of Contents](#table-of-contents)
@@ -25,7 +27,7 @@ END_METADATA -->
 
 <!-- END_TOC -->
 
-# Postman guide
+Document version: 3.3.6.
 
 [Postman](https://www.getpostman.com/) is a common tool for working with REST APIs.
 We offer [Postman Collections](https://www.getpostman.com/collection) for some APIs.
