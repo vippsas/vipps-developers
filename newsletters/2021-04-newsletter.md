@@ -23,7 +23,7 @@ This is done in the
 [`POST:​/ecomm​/v2​/payments`](https://vippsas.github.io/vipps-ecom-api/#/Vipps%20eCom%20API/initiatePaymentV3UsingPOST)
 call by including:
 
-```
+```json
 "staticShippingDetails": [
   {
     "isDefault": "Y",
@@ -53,6 +53,7 @@ See more details and screenshots here:
 
 The authentication is now much easier, with no need for additional keys, both for
 the eCom and Recurring APIs. See the call by call guides:
+
 * [eCom API](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#userinfo-call-by-call-guide)
 * [Recurring API](https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api.md#userinfo-call-by-call-guide)
 
@@ -92,13 +93,14 @@ Payment Service Providers can use their existing API keys with the PSP Signup AP
 * Update an existing merchant
 
 See:
-[PSP Signup API](https://github.com/vippsas/vipps-psp-api/blob/master/vipps-psp-api.md#psp-signup-api).
+[PSP Signup API](https://github.com/vippsas/vipps-psp-api/blob/master/vipps-psp-signup-api.md).
 
 # Order new products and create new sale units on portal.vipps.no
 
 All customers can now log in on
 [portal.vipps.no](https://portal.vipps.no)
 and order new products, which automatically creates a new sale unit:
+
 * [Vipps på Nett](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/)
   ([eCom API](https://github.com/vippsas/vipps-ecom-api),
   for both
@@ -179,7 +181,7 @@ and the
 | `Vipps-System-Plugin-Version` | The version number of the ecommerce plugin   | `1.4.1`              |
 
 These headers provide useful metadata about the merchant's system,
-which help Vipps improve our services, and also help in investigating problems.   
+which help Vipps improve our services, and also help in investigating problems.
 
 ## How to get help quickly
 
@@ -188,7 +190,7 @@ Please see
 
 ## Newsletter archive
 
-Please see: https://github.com/vippsas/vipps-developers/tree/master/newsletters
+Please see: [newsletters](https://github.com/vippsas/vipps-developers/tree/master/newsletters)
 
 # Questions or comments?
 
