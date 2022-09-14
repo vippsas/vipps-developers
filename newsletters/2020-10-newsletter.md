@@ -9,7 +9,7 @@ END_METADATA -->
 
 This newsletter was sent in October 2020.
 
-# Userinfo
+## Userinfo
 
 Vipps now offers the possibility for merchants to ask for user profile details as part of the payment flow in the
 [Vipps eCom API v2](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#userinfo)
@@ -34,13 +34,13 @@ to do this can be found
 [here](https://github.com/vippsas/vipps-login-api/blob/master/vipps-login-api-faq.md#how-can-i-activate-and-set-up-vipps-login).
 Using the Vipps Login service itself is optional.
 
-## Customer registration
+### Customer registration
 
 Vipps Login can also be used if you need to register your customers because of
 the Covid-19 pandemic. See our information in Norwegian:
 [https://vipps.no/om-oss/nyheter/vipps-innsjekk-for-serveringssteder/](https://vipps.no/om-oss/nyheter/vipps-innsjekk-for-serveringssteder/).
 
-# New plugins
+## New plugins
 
 There are now 12 Vipps plugins for various ecommerce platforms:
 WooCommerce, WordPress, Magento, Episerver, Drupal, Shopify, Craft and more.
@@ -48,7 +48,7 @@ WooCommerce, WordPress, Magento, Episerver, Drupal, Shopify, Craft and more.
 All plugins are open source. See the complete list
 [here](https://github.com/vippsas/vipps-developers#plugins).
 
-# PSP v3
+## PSP v3
 
 Vipps is launching the
 [PSP API v3](https://github.com/vippsas/vipps-psp-api)
@@ -63,7 +63,7 @@ properties to bring the API in line with Vipps' API standards.
 Encrypted cards will still be sent for our users cards that have not yet been
 migrated. Please see our [migration guide](https://github.com/vippsas/vipps-psp-api/blob/master/v2-deprecation.md).
 
-# Rate limiting
+## Rate limiting
 
 Vipps has implemented rate limiting on our external APIs in order to offer a
 more robust and secure service. Most of these limits are only created to
@@ -74,45 +74,45 @@ documentation for
 and
 [Vipps eCom API](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#rate-limiting)
 
-# Deprecations
+## Deprecations
 
-## Deprecation of `/status`
+### Deprecation of `/status`
 
 The `/details` endpoint in the Vipps eCom API v2 offers more than the old
 and long deprecated `/status` endpoint. We still see some customers using
 the old endpoint and strongly recommend to update to the
 [current one](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#get-payment-details).
 
-## Deprecation of Vipps for Magento 1
+### Deprecation of Vipps for Magento 1
 
 The
 [Vipps Payment Module for Magento 1](https://github.com/vippsas/vipps-magento-v1/blob/master/README.md)
 is deprecated because of the high security risk in continued use of Magento 1.
 
-# Reminders
+## Reminders
 
 We have mentioned some things before, and take this opportunity to remind you:
 
-## API lifecycle
+### API lifecycle
 
 Our API lifecycle policy is
 [available on GitHub](https://github.com/vippsas/vipps-developers/blob/master/vipps-api-lifecycle.md).
 
-## Status pages for test and production environments
+### Status pages for test and production environments
 
 * Test: https://vipps-test.statuspage.io
 * Production: https://vipps.statuspage.io
 
-## How to get help quickly
+### How to get help quickly
 
 Please see
 [this page](https://github.com/vippsas/vipps-developers/blob/master/contact.md).
 
-## Newsletter archive
+### Newsletter archive
 
 Please see: https://github.com/vippsas/vipps-developers/tree/master/newsletters
 
-# Questions or comments?
+## Questions or comments?
 
 We're always happy to help with code or other questions you might have!
 Please create [GitHub issues or pull requests](https://github.com/vippsas)

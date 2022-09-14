@@ -22,14 +22,14 @@ Contents:
 
 <!-- END_TOC -->
 
-# The Vipps eCom API v1 is disabled
+## The Vipps eCom API v1 is disabled
 
 After several extensions to the original June 1 deadline, the Vipps eCom API v1
 was shut down on December 4. The Vipps eCom API v2 has been available for
 about three years, and offers more functionality than the old version.
 
 
-# Vipps Login improvements 🎉
+## Vipps Login improvements 🎉
 
 Vipps Login now lets merchants to control the login experience on phones: The
 merchant can choose whether the user should be automatically taken back to the
@@ -44,7 +44,7 @@ To do this we have been required to introduce a new version of our Vipps login A
 **The previous version (Version 1) of the Vipps login API will have end of life on February 28th 2021**.
 
 
-# Vipps HTTP Headers ℹ️
+## Vipps HTTP Headers ℹ️
 
 We recommend using the following _optional_ HTTP headers for all requests to the
 [Vipps eCom API](https://github.com/vippsas/vipps-ecom-api/)
@@ -62,7 +62,7 @@ and the
 These headers provide useful metadata about the merchant's system,
 which help Vipps improve our services, and also help in investigating problems.   
 
-# API Dashboard 🚦
+## API Dashboard 🚦
 
 We are working on an API Dashboard that will be available under "Utvikler" on
 [portal.vipps.no](https://portal.vipps.no).
@@ -78,7 +78,7 @@ Please create one issue per suggestion/wish in the
 [vipps-developers](https://github.com/vippsas/vipps-developers)
 repo on GitHUb.
 
-# Suggest improvements, get a pair of Vipps socks 🧦
+## Suggest improvements, get a pair of Vipps socks 🧦
 
 ![Vipps socks orange](images/2020-11-sock-orange.jpg)
 
@@ -99,7 +99,7 @@ Be smart. Thanks!
 If we get more improvements than the number of socks we have,
 we will do a scientifically randomized drawing.
 
-# Do you want a Slack channel? 📢
+## Do you want a Slack channel? 📢
 
 We can set up a dedicated, temporary Slack channel to help fast-track your
 Vipps development. Send an email to integration@vipps.no with a list of
@@ -109,7 +109,7 @@ This does, unfortunately, not apply to customers using one of our
 [plugins](https://github.com/vippsas/vipps-developers#plugins), or
 customers using Vipps through a partner.
 
-# Do you want a technical workshop? 🛠
+## Do you want a technical workshop? 🛠
 
 We can set up a dedicated video workshop to help fast-track your
 Vipps development. Send an email to integration@vipps.no with a list of
@@ -119,30 +119,30 @@ This does, unfortunately, not apply to customers using one of our
 [plugins](https://github.com/vippsas/vipps-developers#plugins), or
 customers using Vipps through a partner.
 
-# Reminders
+## Reminders
 
 We have mentioned some things before, and take this opportunity to remind you:
 
-## API lifecycle
+### API lifecycle
 
 Our API lifecycle policy is
 [available on GitHub](https://github.com/vippsas/vipps-developers/blob/master/vipps-api-lifecycle.md).
 
-## Status pages for test and production environments
+### Status pages for test and production environments
 
 * Test: https://vipps-test.statuspage.io
 * Production: https://vipps.statuspage.io
 
-## How to get help quickly
+### How to get help quickly
 
 Please see
 [this page](https://github.com/vippsas/vipps-developers/blob/master/contact.md).
 
-## Newsletter archive
+### Newsletter archive
 
 Please see: https://github.com/vippsas/vipps-developers/tree/master/newsletters
 
-# Questions or comments?
+## Questions or comments?
 
 We're always happy to help with code or other questions you might have!
 Please create [GitHub issues or pull requests](https://github.com/vippsas)

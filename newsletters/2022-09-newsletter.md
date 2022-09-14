@@ -27,7 +27,7 @@ This newsletter was sent in September 2022.
 
 <!-- END_TOC -->
 
-# New developer documentation
+## New developer documentation
 
 We have a completely new, in-progress, website for all
 [developer documentation](https://vippsas.github.io/vipps-developer-docs/):
@@ -39,7 +39,7 @@ Examples:
 * [eCom API specification](https://vippsas.github.io/vipps-developer-docs/api/ecom)
 * [eCom FAQ](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api-faq)
 
-# Inform customers that there are no fees when paying with Vipps
+## Inform customers that there are no fees when paying with Vipps
 
 It can help your conversion if you remind your users that:
 * There are no Vipps fees when paying a business
@@ -51,29 +51,29 @@ We recommend using this text where users select payment method:
 If you use Klarna Checkout, we have some tips
 [here](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-faq.md#can-i-use-vipps-with-klarna-checkout).
 
-# Vipps on-site messaging
+## Vipps on-site messaging
 
 [Vipps on-site-messaging](https://github.com/vippsas/vipps-checkout-api/blob/main/vipps-checkout-on-site-messaging.md)
 contains a badges in different variants that can be used to let your customers
 know that Vipps payment is accepted.
 
-# Partner API: Pre-fill applications
+## Partner API: Pre-fill applications
 
 Partners can now use the
 [Partner API](https://github.com/vippsas/vipps-partner-api)
 to pre-fill applications and
 [submit a product order for a merchant](https://github.com/vippsas/vipps-partner-api/blob/main/vipps-partner-api.md#submit-a-product-order-for-a-merchant).
 
-# Settlement API
+## Settlement API
 
 We are in the early planning phase of developing an API for
 [settlements](https://github.com/vippsas/vipps-developers/tree/master/settlements).
 If you are interested in this and want to be kept up to date when we have
 something to share, please send an email to integraton@vipps.no.
 
-# Reminders
+## Reminders
 
-## Please check your API calls for errors
+### Please check your API calls for errors
 
 We are working on eliminating incorrect API use. Although we always respond to
 incorrect API calls with a sensible HTTP status (usually `HTTP 400 Bad Request`)
@@ -87,7 +87,7 @@ Please:
 - Use the API Dashboard
 - Contact us if there is anything we can help with
 
-## Use the API Dashboard to find problems with your integration
+### Use the API Dashboard to find problems with your integration
 
 The
 [API Dashboard](https://github.com/vippsas/vipps-developers#api-dashboard)
@@ -100,16 +100,16 @@ Here's an example for the Vipps eCom API's `/refund` endpoint:
 
 ![API Dashboard example](images/2021-02-api-dashboard-example.png)
 
-## How to get help quickly
+### How to get help quickly
 
 Please see
 [this page](https://github.com/vippsas/vipps-developers/blob/master/contact.md).
 
-## Newsletter archive
+### Newsletter archive
 
 Please see: https://github.com/vippsas/vipps-developers/tree/master/newsletters
 
-# Questions or comments?
+## Questions or comments?
 
 We're always happy to help with code or other questions you might have!
 Please create [GitHub issues or pull requests](https://github.com/vippsas)

@@ -24,7 +24,7 @@ This newsletter was sent in January 2022.
 
 <!-- END_TOC -->
 
-# Please check your eCom API calls
+## Please check your eCom API calls
 
 We are working on eliminating incorrect API use. Although we always respond to
 incorrect API calls with a sensible HTTP status (usually `HTTP 400 Bad Request`)
@@ -55,7 +55,7 @@ See:
 * "Common errors" in the
   [eCom API FAQ](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-faq.md)
 
-# Recurring API: The "PROCESSING" status
+## Recurring API: The "PROCESSING" status
 
 We would like to emphasize: With the Vipps Recurring API merchants ask Vipps
 to make the charges, and Vipps handles _everything_ for the merchant.
@@ -86,7 +86,7 @@ You can "star" the
 [Vipps Recurring API repo](https://github.com/vippsas/vipps-recurring-api)
 and subscribe to this newsletter to get updates.
 
-# Vipps Login directly from phone number and QR code
+## Vipps Login directly from phone number and QR code
 
 The Vipps Login API now supports merchant-initiated logins using the
 user's phone number, and by users scanning a QR code.
@@ -108,7 +108,7 @@ See:
 * [Vipps Login from QR-code API: How It Works](https://github.com/vippsas/vipps-login-api/blob/master/vipps-login-from-QR-api-howitworks.md)
 * [Vipps Login API](https://github.com/vippsas/vipps-login-api)
 
-# Deprecation of the Vipps Signup API
+## Deprecation of the Vipps Signup API
 
 The old API that a few partners still use to sign up new merchants will
 be phased out. See
@@ -116,9 +116,9 @@ be phased out. See
 and
 [Vipps Partners](https://github.com/vippsas/vipps-partner).
 
-# Reminders
+## Reminders
 
-## Use the API Dashboard to find problems with your integration
+### Use the API Dashboard to find problems with your integration
 
 The API Dashboard is available to all merchants for both the production and test environments,
 and is an easy way to see if you are using the Vipps APIs correctly.
@@ -135,7 +135,7 @@ Here's an example for the Vipps eCom API's `/refund` endpoint:
 See:
 [API Dashboard](https://github.com/vippsas/vipps-developers#api-dashboard).
 
-## Use Statuspage to get information about incidents
+### Use Statuspage to get information about incidents
 
 Vipps uses Statuspage to inform about problems, planned maintenance, etc.
 You can subscribe to get all updates, and also subscribe to specific incidents.
@@ -148,7 +148,7 @@ See:
 and
 [the other status pages](https://github.com/vippsas/vipps-developers#status-pages).
 
-## Omikron tips
+### Omikron tips
 
 These Vipps solutions are extra relevant (again):
 
@@ -162,7 +162,7 @@ These Vipps solutions are extra relevant (again):
 - ["Click and collect" recommendations](#-click-and-collect--recommendations)
   to speed up the user experience for your customers.
 
-## Vipps Hurtigkasse: Use the explicit flow
+### Vipps Hurtigkasse: Use the explicit flow
 
 When users are prompted to select shipping address and shipping address, the
 explicit flow is _strongly_ recommended. The user then has to actively
@@ -180,7 +180,7 @@ See
 [Old and new express checkout flow](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#old-and-new-express-checkout-flow)
 for more details.
 
-## Use Userinfo to register visitors when they pay
+### Use Userinfo to register visitors when they pay
 
 For guest registration/tracking: Use _Userinfo_ to ask for the user's details, such as:
 phone number, name, email address, postal address, birth date, national identity number and bank accounts.
@@ -191,7 +191,7 @@ See
 and
 [Userinfo for Recurring](https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api.md#userinfo).
 
-## "Click and collect" recommendations
+### "Click and collect" recommendations
 
 For "click and collect" we recommend to use
 [`staticShippingDetails`](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#shipping-and-static-shipping-details)
@@ -218,12 +218,12 @@ call by including:
 ```
 
 
-# Newsletter archive
+## Newsletter archive
 
 All the previous newsletters are in the
 [newsletter archive](https://github.com/vippsas/vipps-developers/tree/master/newsletters).
 
-# Questions or comments?
+## Questions or comments?
 
 We're always happy to help with code or other questions you might have!
 Please create [GitHub issues or pull requests](https://github.com/vippsas)

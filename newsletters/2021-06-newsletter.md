@@ -8,7 +8,7 @@ END_METADATA -->
 
 This newsletter was sent in June 2021.
 
-# Recognize your loyal customers
+## Recognize your loyal customers
 
 With Vipps you can always know who your customers are, and optionally connect
 them to your loyalty program:
@@ -27,7 +27,7 @@ More information:
 **Please note:** When a user pays with a debit or credit card using Vipps,
 all the benefits apply, just as when the payment card is used outside of Vipps.
 
-# API Dashboard for Vipps Login API
+## API Dashboard for Vipps Login API
 
 The API Dashboard now also shows data for the Login API.
 See it on
@@ -37,11 +37,11 @@ Here's an example:
 
 ![API dashboard login data](images/2021-06-api-dashboard-login-example.png)
 
-# Reminders
+## Reminders
 
 We have mentioned some things before, and take this opportunity to remind you:
 
-## Manage "everything" on portal.vipps.no
+### Manage "everything" on portal.vipps.no
 
 All customers can now log in on
 [portal.vipps.no](https://portal.vipps.no)
@@ -67,24 +67,24 @@ for creating additional sale units, and you can then select
 "direct capture" or "reserve capture", and also `skipLandingPage`.
 This is available for all customers, also those that do not yet have any API access.
 
-## Please update your plugins
+### Please update your plugins
 
 Several of our plugins have been updated to use the newest versions of
 our APIs. Please make sure you have the newest version of the plugins
 you use, and keep them up to date. See the
 [the plugin overview](https://github.com/vippsas/vipps-plugins).
 
-## How to get help quickly
+### How to get help quickly
 
 Please see
 [this page](https://github.com/vippsas/vipps-developers/blob/master/contact.md).
 
-## Newsletter archive
+### Newsletter archive
 
 All the previous newsletters are in the
 [newsletter archive](https://github.com/vippsas/vipps-developers/tree/master/newsletters).
 
-# Questions or comments?
+## Questions or comments?
 
 We're always happy to help with code or other questions you might have!
 Please create [GitHub issues or pull requests](https://github.com/vippsas)

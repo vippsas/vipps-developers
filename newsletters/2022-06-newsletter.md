@@ -11,7 +11,7 @@ This newsletter was sent in June 2022.
 
 <!-- START_TOC -->
 
-## Table of Contents
+### Table of Contents
 
 * [Vipps Order Management API](#vipps-order-management-api)
 * [Vipps Partner API](#vipps-partner-api)
@@ -28,30 +28,30 @@ This newsletter was sent in June 2022.
 
 <!-- END_TOC -->
 
-# Vipps Order Management API
+## Vipps Order Management API
 
 [The Vipps Order Management API](https://github.com/vippsas/vipps-order-management-api)
 allows merchants to send rich receipt information to existing Vipps transactions,
 including links to tracking information, tickets, etc.
 
-# Vipps Partner API
+## Vipps Partner API
 
 [The Vipps Partner API](https://github.com/vippsas/vipps-partner-api)
 is now available for all partners using partner keys.
 We are very interested in feedback!
 
-# All OpenAPI (Swagger) specifications and Postman collections/environments updated
+## All OpenAPI (Swagger) specifications and Postman collections/environments updated
 
 We have done a major overhaul of all our API specifications, so all the
 OpenAPI/Swagger specifications and all the Postman collections and environments
 have been improved. See each API's GitHub repo for details.
 
-# Remember: Vipps is always without fees when paying to businesses
+## Remember: Vipps is always without fees when paying to businesses
 
 Just a friendly reminder: Users never have to pay a fee when they pay a business
 with Vipps. Please try to make this as clear as possible in your solution.
 
-## Klarna Checkout recommendations
+### Klarna Checkout recommendations
 
 Please make sure to include the text saying
 "Remember: Vipps is always without fees when paying businesses"
@@ -72,7 +72,7 @@ or similar:
 More details:
 [Can I use Vipps with Klarna Checkout?](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-faq.md#can-i-use-vipps-with-klarna-checkout)
 
-# Vipps eCom API: HTTPS required for all URLs
+## Vipps eCom API: HTTPS required for all URLs
 
 From October 1, 2022, URL links in the body of
 [`POST:/payments`](https://vippsas.github.io/vipps-ecom-api/#/Vipps%20eCom%20API/initiatePaymentV3UsingPOST)
@@ -88,9 +88,9 @@ This includes the following fields:
  See:
  [URL validation](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#url-validation).
 
-# Reminders
+## Reminders
 
-## Please check your eCom API calls for errors
+### Please check your eCom API calls for errors
 
 We are working on eliminating incorrect API use. Although we always respond to
 incorrect API calls with a sensible HTTP status (usually `HTTP 400 Bad Request`)
@@ -121,7 +121,7 @@ See:
 * "Common errors" in the
   [eCom API FAQ](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-faq.md)
 
-## Use the API Dashboard to find problems with your integration
+### Use the API Dashboard to find problems with your integration
 
 The API Dashboard is available to all merchants for both the production and test environments,
 and is an easy way to see if you are using the Vipps APIs correctly.
@@ -138,16 +138,16 @@ Here's an example for the Vipps eCom API's `/refund` endpoint:
 See:
 [API Dashboard](https://github.com/vippsas/vipps-developers#api-dashboard).
 
-## How to get help quickly
+### How to get help quickly
 
 Please see
 [this page](https://github.com/vippsas/vipps-developers/blob/master/contact.md).
 
-## Newsletter archive
+### Newsletter archive
 
 Please see: https://github.com/vippsas/vipps-developers/tree/master/newsletters
 
-# Questions or comments?
+## Questions or comments?
 
 We're always happy to help with code or other questions you might have!
 Please create [GitHub issues or pull requests](https://github.com/vippsas)

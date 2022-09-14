@@ -9,7 +9,7 @@ END_METADATA -->
 
 This newsletter was sent in April 2021.
 
-# "Click and collect" recommendations
+## "Click and collect" recommendations
 
 For "click and collect" we recommend to use
 [`staticShippingDetails`](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#shipping-and-static-shipping-details)
@@ -35,7 +35,7 @@ call by including:
 ]
 ```
 
-# Recurring payments and campaigns
+## Recurring payments and campaigns
 
 Tip: Use
 [Campaigns](https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api.md#campaigns)
@@ -49,7 +49,7 @@ the customer pays for a phone and a phone subscription, and the first payment in
 See more details and screenshots here:
 [When to use campaigns or initial charge](https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api.md#when-to-use-campaigns-or-initial-charge).
 
-# Easier to use Userinfo
+## Easier to use Userinfo
 
 The authentication is now much easier, with no need for additional keys, both for
 the eCom and Recurring APIs. See the call by call guides:
@@ -57,14 +57,14 @@ the eCom and Recurring APIs. See the call by call guides:
 * [eCom API](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#userinfo-call-by-call-guide)
 * [Recurring API](https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api.md#userinfo-call-by-call-guide)
 
-# New date limits for capture and cancel
+## New date limits for capture and cancel
 
 Payments can be captured up to 365 days after reservation,
 and can be cancelled up to 180 days after reservation.
 Attempts at capturing and cancelling older payments will result in
 a `HTTP 400 Bad Request` with more details in the request body.
 
-# Partner keys
+## Partner keys
 
 If you are a Vipps partner and manage transactions on behalf of other
 Vipps merchants you can use your own credentials to authenticate, and then send
@@ -84,7 +84,7 @@ See:
 and
 [Partner keys for Recurring](https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api.md#partner-keys)
 
-# PSP Signup API
+## PSP Signup API
 
 Payment Service Providers can use their existing API keys with the PSP Signup API to:
 
@@ -95,7 +95,7 @@ Payment Service Providers can use their existing API keys with the PSP Signup AP
 See:
 [PSP Signup API](https://github.com/vippsas/vipps-psp-api/blob/master/vipps-psp-signup-api.md).
 
-# Order new products and create new sale units on portal.vipps.no
+## Order new products and create new sale units on portal.vipps.no
 
 All customers can now log in on
 [portal.vipps.no](https://portal.vipps.no)
@@ -112,7 +112,7 @@ and order new products, which automatically creates a new sale unit:
 * [Vipps Logg inn](https://vipps.no/produkter-og-tjenester/bedrift/logg-inn-med-vipps/logg-inn-med-vipps/)
   ([Login API](https://github.com/vippsas/vipps-login-api))
 
-# Create new sale units in the test environment
+## Create new sale units in the test environment
 
 You can create new sale units in the
 [test environment](https://github.com/vippsas/vipps-developers/blob/master/vipps-test-environment.md)
@@ -125,18 +125,18 @@ for creating additional sale units, and you can then select
 
 This is available for all customers, also those that do not yet have any API access.
 
-# Reminders
+## Reminders
 
 We have mentioned some things before, and take this opportunity to remind you:
 
-## Please update your plugins
+### Please update your plugins
 
 Several of our plugins have been updated to use the newest versions of
 our APIs. Please make sure you have the newest version of the plugins
 you use, and keep them up to date. See the
 [the plugin overview](https://github.com/vippsas/vipps-plugins).
 
-## Use Userinfo
+### Use Userinfo
 
 Vipps Hurtigkasse is for shipping products to the customer.
 Some use it for other purposes, but if no products are shipped,
@@ -153,7 +153,7 @@ See
 and
 [Userinfo for Recurring](https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api.md#userinfo).
 
-## API Dashboard 🚦
+### API Dashboard 🚦
 
 The API Dashboard is now available on
 [portal.vipps.no](https://portal.vipps.no)
@@ -165,7 +165,7 @@ Here's an example:
 
 This is just the start. Please let us know what you think and suggest improvements.
 
-## Vipps HTTP Headers ℹ️
+### Vipps HTTP Headers ℹ️
 
 We recommend using the following _optional_ HTTP headers for all requests to the
 [Vipps eCom API](https://github.com/vippsas/vipps-ecom-api/)
@@ -183,16 +183,16 @@ and the
 These headers provide useful metadata about the merchant's system,
 which help Vipps improve our services, and also help in investigating problems.
 
-## How to get help quickly
+### How to get help quickly
 
 Please see
 [this page](https://github.com/vippsas/vipps-developers/blob/master/contact.md).
 
-## Newsletter archive
+### Newsletter archive
 
 Please see: [newsletters](https://github.com/vippsas/vipps-developers/tree/master/newsletters)
 
-# Questions or comments?
+## Questions or comments?
 
 We're always happy to help with code or other questions you might have!
 Please create [GitHub issues or pull requests](https://github.com/vippsas)

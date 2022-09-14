@@ -9,14 +9,14 @@ END_METADATA -->
 
 This newsletter was sent in February 2021.
 
-# Please update your plugins
+## Please update your plugins
 
 Several of our plugins have been updated to use the newest versions of
 our APIs. Please make sure you have the newest version of the plugins
 you use, and keep them up to date. See the
 [the plugin overview](https://github.com/vippsas/vipps-plugins).
 
-# API Dashboard 🚦
+## API Dashboard 🚦
 
 The API Dashboard is now available on
 [portal.vipps.no](https://portal.vipps.no)
@@ -28,7 +28,7 @@ Here's an example:
 
 This is just the start. Please let us know what you think and suggest improvements.
 
-# The deprecated eCom API `/status` endpoint will be removed
+## The deprecated eCom API `/status` endpoint will be removed
 
 The
 [`/status`](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#get-payment-status)
@@ -38,7 +38,7 @@ The
 [`/details`](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#get-payment-details)
 endpoint has been available for a long time, and gives more data and details: The full payment history of the orderId.
 
-# Vipps Login API version 2
+## Vipps Login API version 2
 
 To have a unified way of providing user information across Vipps services
 we are standardising the data formats, both within Vipps and with the OIDC standard.
@@ -52,7 +52,7 @@ See
 [Plugins](https://github.com/vippsas/vipps-plugins)
 for details.
 
-# Vipps Login improvements 🎉
+## Vipps Login improvements 🎉
 
 The merchant can now choose whether the user should be automatically returned
 to the browser after completing the authentication Vipps.
@@ -60,7 +60,7 @@ We have also added a specific flow for integrations with native apps.
 More information, and screenshots of the new flows, can be found in the
 [documentation](https://github.com/vippsas/vipps-login-api/blob/master/vipps-login-api.md#mobile-flow---app-switch-based-flow).
 
-# Use Userinfo
+## Use Userinfo
 
 Vipps Hurtigkasse is for shipping products to the customer.
 Some use it for other purposes, but if no products are shipped,
@@ -77,17 +77,17 @@ See
 and
 [Userinfo for Recurring](https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api.md#userinfo).
 
-# Recurring: Info about failures
+## Recurring: Info about failures
 
 You can now se _why_ a charge fails, not just that it fails: Insuficcient funds, invalid card, etc.
 See:
 [Charge failure reasons](https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api.md#charge-failure-reasons).
 
-# Reminders
+## Reminders
 
 We have mentioned some things before, and take this opportunity to remind you:
 
-## Vipps HTTP Headers ℹ️
+### Vipps HTTP Headers ℹ️
 
 We recommend using the following _optional_ HTTP headers for all requests to the
 [Vipps eCom API](https://github.com/vippsas/vipps-ecom-api/)
@@ -105,7 +105,7 @@ and the
 These headers provide useful metadata about the merchant's system,
 which help Vipps improve our services, and also help in investigating problems.   
 
-## Suggest improvements, get a pair of Vipps socks 🧦
+### Suggest improvements, get a pair of Vipps socks 🧦
 
 ![Vipps socks orange](images/2020-11-sock-orange.jpg)
 
@@ -125,7 +125,7 @@ Be smart. Thanks!
 If we get more improvements than the number of socks we have,
 we will do a scientifically randomized drawing.
 
-## Do you want a Slack channel? 📢
+### Do you want a Slack channel? 📢
 
 We can set up a dedicated, temporary Slack channel to help fast-track your
 Vipps development. Send an email to integration@vipps.no with a list of
@@ -138,7 +138,7 @@ This does, unfortunately, not apply to customers using one of our
 [plugins](https://github.com/vippsas/vipps-developers#plugins), or
 customers using Vipps through a partner.
 
-## Do you want a technical workshop? 🛠
+### Do you want a technical workshop? 🛠
 
 We can set up a dedicated video workshop to help fast-track your
 Vipps integration. Send an email to integration@vipps.no with a list of
@@ -151,26 +151,26 @@ This does, unfortunately, not apply to customers using one of our
 [plugins](https://github.com/vippsas/vipps-developers#plugins), or
 customers using Vipps through a partner.
 
-## API lifecycle
+### API lifecycle
 
 Our API lifecycle policy is
 [available on GitHub](https://github.com/vippsas/vipps-developers/blob/master/vipps-api-lifecycle.md).
 
-## Status pages for test and production environments
+### Status pages for test and production environments
 
 * Test: https://vipps-test.statuspage.io
 * Production: https://vipps.statuspage.io
 
-## How to get help quickly
+### How to get help quickly
 
 Please see
 [this page](https://github.com/vippsas/vipps-developers/blob/master/contact.md).
 
-## Newsletter archive
+### Newsletter archive
 
 Please see: https://github.com/vippsas/vipps-developers/tree/master/newsletters
 
-# Questions or comments?
+## Questions or comments?
 
 We're always happy to help with code or other questions you might have!
 Please create [GitHub issues or pull requests](https://github.com/vippsas)
