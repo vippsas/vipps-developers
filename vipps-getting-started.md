@@ -26,7 +26,7 @@ If you are using Vipps through an e-commerce platform, integration partner or PS
 - [Partner](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-3)
 - [PSP](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-2)
 
-Document version: 3.3.6.
+Document version: 3.3.7.
 
 <!-- START_TOC -->
 
@@ -157,6 +157,9 @@ The API keys can be retrieved by logging in with BankID on
 under the `Utvikler` menu item.
 Since this gives access to API keys for both the test and production environment,
 BankID is required.
+
+You may have to click "Vipps På Nett" first, to open up the right menu.
+There is no "Utvikler" tab if you only have "Vippsnummer".
 
 **Please note:**
 
