@@ -14,13 +14,13 @@ This newsletter was sent in September 2022.
 <!-- START_TOC -->
 
 * [New developer documentation](#new-developer-documentation)
-* [Inform customers that there are no fees when paying with Vipps](#inform-customers-that-there-are-no-fees-when-paying-with-vipps)
+* [Inform customers that there are no fees](#inform-customers-that-there-are-no-fees)
 * [Vipps on-site messaging](#vipps-on-site-messaging)
 * [Partner API: Pre-fill applications](#partner-api-pre-fill-applications)
 * [Settlement API](#settlement-api)
 * [Reminders](#reminders)
   * [Please check your API calls for errors](#please-check-your-api-calls-for-errors)
-  * [Use the API Dashboard to find problems with your integration](#use-the-api-dashboard-to-find-problems-with-your-integration)
+  * [Use the API Dashboard to find problems ](#use-the-api-dashboard-to-find-problems)
   * [How to get help quickly](#how-to-get-help-quickly)
   * [Newsletter archive](#newsletter-archive)
 * [Questions or comments?](#questions-or-comments)
@@ -39,7 +39,7 @@ Examples:
 * [eCom API specification](https://vippsas.github.io/vipps-developer-docs/api/ecom)
 * [eCom FAQ](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api-faq)
 
-# Inform customers that there are no fees when paying with Vipps
+# Inform customers that there are no fees
 
 It can help your conversion if you remind your users that:
 * There are no Vipps fees when paying a business
@@ -87,7 +87,7 @@ Please:
 - Use the API Dashboard
 - Contact us if there is anything we can help with
 
-## Use the API Dashboard to find problems with your integration
+## Use the API Dashboard to find problems
 
 The
 [API Dashboard](https://github.com/vippsas/vipps-developers#api-dashboard)
