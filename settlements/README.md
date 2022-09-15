@@ -29,7 +29,7 @@ END_METADATA -->
 
 <!-- END_TOC -->
 
-Document version 2.2.12.
+Document version 2.3.0.
 
 ## Settlement flow
 
@@ -68,6 +68,10 @@ have been thousands Vipps payments in one week, there will still only be one
 payment from Vipps to the merchant. A "lump sum", if you want.
 The settlement reports have all the details for each of the thousands of payments.
 Also: There is one payment per sale unit, with its corresponding settlement file.
+
+### The settlement process illustrated
+
+![Settlement flow illustrated](img/settlement-process.png)
 
 ## Frequency
 
