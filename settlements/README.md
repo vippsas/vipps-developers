@@ -42,12 +42,7 @@ The settlement flow is as follows:
    Since a merchant should not capture the amount, i.e. charge the customer,
    until the purchased product is shipped, the "day 1" is normally the day that
    the product is shipped and the customer's account is charged.
-2. Day 2: Settlement files are distributed by email
-   (if the merchant has requested it on
-   [portal.vipps.no](https://portal.vipps.no)),
-   made available on
-   [portal.vipps.no](https://portal.vipps.no), and
-   available for retrieval with SFTP.
+2. Day 2: Settlement files are available (email, portal.vipps.no, SFTP).
 3. Day 3: Payments are made from Vipps' bank account to the merchant's bank
    account. Money is _normally_ available in the account before noon.
 
