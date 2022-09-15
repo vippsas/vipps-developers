@@ -44,7 +44,7 @@ the production and
 # Logo handling changes in PSP Signup API
 
 The response of the
-[`GET:/v1/merchants/{merchantSerialNumber}`](https://vippsas.github.io/vipps-psp-api/signup/#/Merchant/getMerchant)
+[`GET:/v1/merchants/{merchantSerialNumber}`](https://vippsas.github.io/vipps-developer-docs/api/psp-signup#tag/Merchant/operation/getMerchants)
 endpoint in the in the
 [Vipps PSP API](https://github.com/vippsas/vipps-psp-api)
 contains a `logo` field, with the merchant's logo encoded in base64 format.
