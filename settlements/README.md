@@ -31,7 +31,7 @@ END_METADATA -->
 
 Document version 2.2.11.
 
-# Settlement flow
+## Settlement flow
 
 Settlements are done as quickly as possible, and depend on banks.
 
@@ -71,7 +71,7 @@ payment from Vipps to the merchant. A "lump sum", if you want.
 The settlement reports have all the details for each of the thousands of payments.
 Also: There is one payment per sale unit, with its corresponding settlement file.
 
-# Frequency
+## Frequency
 
 Vipps merchants can log in on
 [portal.vipps.no](https://portal.vipps.no)
@@ -82,7 +82,7 @@ and on the first day of the month for monthly settlements.
 
 See [the FAQ](https://www.vipps.no/sporsmal#bedriftspm) for more details.
 
-# Net and gross settlements
+## Net and gross settlements
 
 Merchants with a "net settlement" contract receive the users' payments
 excluding the Vipps fees. On other words: The Vipps fees are deducted
@@ -100,7 +100,7 @@ To change invoice recipient, please
 See [Availability](#availability) for information about settlement files
 when the balance is negative.
 
-# Settlement report formats
+## Settlement report formats
 
 Settlement reports are provided in these formats:
 
@@ -124,7 +124,7 @@ If you need an `orderId` to identify a payment, you need to use
 [Vipps på nett](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/).
 See also the Vipps eCom API.
 
-## Additional info for recurring payments
+### Additional info for recurring payments
 
 For recurring payments the `ordreID` is an optional field.
 If `ordreID` is not specified by the merchant when making a charge,
@@ -135,7 +135,7 @@ See the
 [Recurring API](https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api.md#create-a-charge)
 for more details.
 
-## GDPR
+### GDPR
 
 Vipps needs the customer's consent before sharing personal information with the merchant.
 
@@ -145,9 +145,9 @@ See the eCom API FAQ:
 [Why are the customer names not shown on the transaction overview?](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-faq.md#why-are-the-customer-names-not-shown-on-the-transaction-overview).
 
 
-# How to get settlement files
+## How to get settlement files
 
-## portal.vipps.no
+### portal.vipps.no
 
 Customers can log in to [portal.vipps.no](https://portal.vipps.no), choose "Rapporter" and download reports
 in the formats mentioned above.
@@ -155,7 +155,7 @@ in the formats mentioned above.
 Reports with personal details of the customers are also available, see
 [GDPR](#gdpr).
 
-## Email
+### Email
 
 Merchants can log in on
 [portal.vipps.no](https://portal.vipps.no)
@@ -165,7 +165,7 @@ Reports are available in xlsx, xml.zip and csv format.
 Reports with personal details of the customers can not be sent by email, see
 [GDPR](#gdpr).
 
-## SFTP
+### SFTP
 
 The SFTP report service is used for downloading settlement reports.
 SFTP-users are created, associated with a public key, and given access to the
@@ -180,12 +180,12 @@ Reports with personal details of the customers can not be sent with SFTP, see
 
 Details: See the [sftp-report-service](sftp-report-service/) folder.
 
-## API
+### API
 
 There is no API for retrieving settlement data.
 [SFTP](#sftp) is the closest alternative.
 
-# Availability
+## Availability
 
 Settlements are created every day, but only as long as the balance is positive.
 
@@ -211,19 +211,19 @@ There are no settlement reports for the
 [test environment](https://github.com/vippsas/vipps-developers/blob/master/vipps-test-environment.md).
 
 
-### Daily reports
+#### Daily reports
 
 The settlement reports are available by 12:00 noon.
 
-### Weekly reports
+#### Weekly reports
 
 The settlement report is generated on Mondays, by 12:00 noon.
 
-### Monthly reports
+#### Monthly reports
 
 The settlement report is generated on the 1st of the month, by 12:00 noon.
 
-# Questions?
+## Questions?
 
 We're always happy to help with code or other questions you might have!
 
