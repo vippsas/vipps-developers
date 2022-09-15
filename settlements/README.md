@@ -29,7 +29,7 @@ END_METADATA -->
 
 <!-- END_TOC -->
 
-Document version 2.2.10.
+Document version 2.2.11.
 
 # Settlement flow
 
@@ -42,9 +42,14 @@ The settlement flow is as follows:
    Since a merchant should not capture the amount, i.e. charge the customer,
    until the purchased product is shipped, the "day 1" is normally the day that
    the product is shipped and the customer's account is charged.
-2. Day 2: Settlement files are distributed, and are available on
-   [portal.vipps.no](https://portal.vipps.no).
-3. Day 3: Payments are made from Vipps' bank account to the merchant's bank account.
+2. Day 2: Settlement files are distributed by email
+   (if the merchant has requested it on
+   [portal.vipps.no](https://portal.vipps.no)),
+   made available on
+   [portal.vipps.no](https://portal.vipps.no), and
+   available for retrieval with SFTP.
+3. Day 3: Payments are made from Vipps' bank account to the merchant's bank
+   account. Money is _normally_ available in the account before noon.
 
 Settlement process will always adhere to
 [Vipps' terms and conditions](https://vipps.no/vilkar/vilkar-bedrift/),
@@ -54,13 +59,11 @@ Days are bank days, Monday - Friday, excluding banking holidays. In other words,
 a capture made on Monday will be on merchant's account on Wednesday, while a
 capture made on Friday will be on merchant's account on Tuesday.
 
-Usually, funds will be available before noon on day 3.
+A day starts and ends at midnight, Oslo time: Start `00:00:00`, end `23:59:59` (subseconds not specified).
+Please make sure your servers' clocks are correct, e.g. by using [NTP](https://en.wikipedia.org/wiki/Network_Time_Protocol).
 
 Settlement files are generated every day including bank days and weekends (one file every day).
 Payout for Friday, Saturday and Sunday arrives on Tuesday (three separate transactions).
-
-A day starts and ends at midnight, Oslo time: Start `00:00:00`, end `23:59:59` (subseconds not specified).
-Please make sure your servers' clocks are correct, e.g. by using [NTP](https://en.wikipedia.org/wiki/Network_Time_Protocol).
 
 **Please note:** There is only one payment per settlement period: Even if there
 have been thousands Vipps payments in one week, there will still only be one
