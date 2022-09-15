@@ -11,6 +11,7 @@ END_METADATA -->
 
 * [Vipps Settlements](#vipps-settlements)
 * [Settlement flow](#settlement-flow)
+  * [Reconciliation](#reconciliation)
 * [Frequency](#frequency)
 * [Net and gross settlements](#net-and-gross-settlements)
 * [Settlement report formats](#settlement-report-formats)
@@ -69,7 +70,9 @@ payment from Vipps to the merchant. A "lump sum", if you want.
 The settlement reports have all the details for each of the thousands of payments.
 Also: There is one payment per sale unit, with its corresponding settlement file.
 
-### The settlement process illustrated
+### Reconciliation
+
+A simple illustration showing where each id is set, and how it all fits together.
 
 ![Settlement flow illustrated](img/settlement-process.png)
 
