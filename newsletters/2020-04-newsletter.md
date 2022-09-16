@@ -82,9 +82,9 @@ is very welcome. We know there are some (minor?) issues, please bear with us.
 We now offer generated HTML documentation in three formats for most APIs.
 Examples for the eCom API:
 
-* Swagger UI: https://vippsas.github.io/vipps-ecom-api/
-* ReDoc: https://vippsas.github.io/vipps-ecom-api/redoc.html
-* Slate: https://vippsas.github.io/vipps-ecom-api/slate/
+* Swagger UI: https://vippsas.github.io/vipps-developer-docs/api/ecom
+* ReDoc: <content no longer available>
+* Slate: <content no longer available>
 
 [Feedback](https://github.com/vippsas/vipps-developers/blob/master/contact.md)
 is very welcome.

@@ -20,7 +20,7 @@ shipping method to "Click and collect".
 This will significantly speed up the payment process for customers.
 
 This is done in the
-[`POST:​/ecomm​/v2​/payments`](https://vippsas.github.io/vipps-ecom-api/#/Vipps%20eCom%20API/initiatePaymentV3UsingPOST)
+[`POST:​/ecomm​/v2​/payments`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Vipps-eCom-API/operation/initiatePaymentV3UsingPOST)
 call by including:
 
 ```json

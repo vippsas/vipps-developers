@@ -328,7 +328,7 @@ we strongly recommend upgrading to the current version as soon as possible.
 All Vipps API requests must include an `Authorization` header with
 a JSON Web Token (JWT), which we call the _access token_.
 The access token is obtained by calling
-[`POST:/accesstoken/get`](https://vippsas.github.io/vipps-ecom-api/#/Authorization_Service/fetchAuthorizationTokenUsingPost)
+[`POST:/accesstoken/get`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Authorization-Service/operation/fetchAuthorizationTokenUsingPost
 and passing the `client_id`, `client_secret` and `Ocp-Apim-Subscription-Key`.
 (We _are_ aware that this is a `POST`, without a body, to an endpoint with
 `get` in the URL, and hope to fix it in a later version of the API. Sorry for the inconvenience.)
@@ -336,7 +336,7 @@ and passing the `client_id`, `client_secret` and `Ocp-Apim-Subscription-Key`.
 #### Request
 
 Request to
-[`POST:/accesstoken/get`](https://vippsas.github.io/vipps-ecom-api/#/Authorization_Service/fetchAuthorizationTokenUsingPost)
+[`POST:/accesstoken/get`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Authorization-Service/operation/fetchAuthorizationTokenUsingPost
 (including the Vipps HTTP headers):
 
 ```json
@@ -380,7 +380,7 @@ name to send is `Ocp-Apim-Subscription-Key`.
 #### Response
 
 The response from
-[`POST:/accesstoken/get`](https://vippsas.github.io/vipps-ecom-api/#/Authorization_Service/fetchAuthorizationTokenUsingPost)
+[`POST:/accesstoken/get`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Authorization-Service/operation/fetchAuthorizationTokenUsingPost
 is like this:
 
 ```json
@@ -422,13 +422,13 @@ After obtaining the access token (JWT), it is then used for the "real" calls
 to the Vipps API, with the `Bearer` keyword (it is case-sensitive).
 
 A typical example of an API endpoint:
-[`POST:/ecomm/v2/payments`](https://vippsas.github.io/vipps-ecom-api/#/Vipps_eCom_API/initiatePaymentV3UsingPOST)
+[`POST:/ecomm/v2/payments`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Vipps-eCom-API/operation/initiatePaymentV3UsingPOST)
 in the Vipps eCom API:
 [Initiate payment flow: API calls](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#initiate-payment-flow-api-calls).
 
 Here is an example with `Authorization` and `Ocp-Apim-Subscription-Key` (but
 without the `client_id` and `client_secret`, since they are only used for the
-[`POST:/accesstoken/get`](https://vippsas.github.io/vipps-ecom-api/#/Authorization_Service/fetchAuthorizationTokenUsingPost)
+[`POST:/accesstoken/get`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Authorization-Service/operation/fetchAuthorizationTokenUsingPost
 call), including the Vipps HTTP headers:
 
 ```json
