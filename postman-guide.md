@@ -92,40 +92,74 @@ These variables are required for all Vipps APIs
 
 ### eCommerce API specific variables
 
-| Variable              | Description                                                                                                                                                                                                                             |
-|-----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| merchantSerialNumber  | [VippsPortal](https://portal.vipps.no/) -> Utvikler -> Merchant Serial Number row in table.                                                                                                                                             |
-| mobileNumber          | Mobile number which the payment is sent to. See [Vipps test environment](vipps-test-environment.md) for details about test profiles.                                                                                                    |
-| fallback              | URL for redirecting user after approving/rejecting the payment.                                                                                                                                                                         |
-| callbackPrefix        | Merchant hosted endpoint where Vipps will send transaction updates. [Details](https://vippsas.github.io/vipps-ecom-api/#/Endpoints%20required%20by%20Vipps%20from%20the%20merchant/transactionUpdateCallbackForRegularPaymentUsingPOST) |
-| shippingDetailsPrefix | Merchant hosted endpoint where Vipps will fetch shipping cost and method. [Details](https://vippsas.github.io/vipps-ecom-api/#/Endpoints%20required%20by%20Vipps%20from%20the%20merchant/fetchShippingCostUsingPOST)                    |
-| consentRemovalPrefix  | Merchant hosted endpoint where Vipps send consent removal requests. [Details](https://vippsas.github.io/vipps-ecom-api/#/Endpoints%20required%20by%20Vipps%20from%20the%20merchant/fetchShippingCostUsingPOST)                          |
+| Variable | Description |
+|----------|-------------|
+| merchantSerialNumber | [VippsPortal](https://portal.vipps.no/) -> Utvikler -> Merchant Serial Number row in table. |
+| mobileNumber | Mobile number which the payment is sent to. See [Vipps test environment](vipps-test-environment.md) for details about test profiles. |
+| fallback | URL for redirecting user after approving/rejecting the payment. |
+| callbackPrefix | Merchant hosted endpoint where Vipps will send transaction updates. |
+| shippingDetailsPrefix | Merchant hosted endpoint where Vipps will fetch shipping cost and method. |
+| consentRemovalPrefix  | Merchant hosted endpoint where Vipps send consent removal requests. |
+
+For details see:
+
+* [eCommerce API guide](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md)
+* [eCommerce API postman guide](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-postman.md)
 
 ### Recurring API specific variables
 
-| Variable             | Description                                                                                                                                                                                                         |
-|----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| customerPhoneNumber  | Mobile number of Vipps profile which the agreement is sent to. See [Vipps test environment](vipps-test-environment.md) for details about test profiles.                                                             |
-| merchantRedirectUrl  | URL for redirecting user after approving/rejecting the agreement.                                                                                                                                                   |
-| merchantAgreementUrl | URL to a "My page", where the customer can manage the agreement: Change, pause, cancel, etc. [Details](https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api.md#step-1-draft-an-agreement) |
+| Variable | Description |
+|----------|-------------|
+| customerPhoneNumber  | Mobile number of Vipps profile which the agreement is sent to. See [Vipps test environment](vipps-test-environment.md) for details about test profiles. |
+| merchantRedirectUrl  | URL for redirecting user after approving/rejecting the agreement. |
+| merchantAgreementUrl | URL to a "My page", where the customer can manage the agreement: Change, pause, cancel, etc. |
+
+For details see:
+
+* [Recurring API guide](https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api.md)
+* [Recurring API postman guide](https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-postman.md)
 
 ### Login API specific variables
 
-| Variable       | Description                                                                                                                                                                                                                                                                         |
-|----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| well-known_uri | Used to retrieve configuration information for OpenID Connect clients. [Details](https://vippsas.github.io/vipps-login-api/#/Vipps%20Log%20In%20API/discoverOpenIDConfiguration)                                                                                                    |
-| redirect_uri   | Redirect URL which the user is redirected to after completing a login. [Details](https://github.com/vippsas/vipps-login-api/blob/master/vipps-login-api.md#oauth-20-authorize)  This URL has to be registered in [VippsPortal](https://portal.vipps.no/) -> Utvikler -> Setup login |
-| code           | Authorization code generated by the authorization server. [Details](https://github.com/vippsas/vipps-login-api/blob/master/vipps-login-api.md#oauth-20-authorize)                                                                                                                   |
+| Variable | Description |
+|----------|-------------|
+| well-known_uri | Used to retrieve configuration information for OpenID Connect clients.|
+| redirect_uri   | Redirect URL which the user is redirected to after completing a login. This URL has to be registered in [VippsPortal](https://portal.vipps.no/) -> Utvikler -> Setup login. |
+| code | Authorization code generated by the authorization server. |
+
+For details see:
+
+* [Login API guide](https://github.com/vippsas/vipps-login-api/blob/master/vipps-login-api.md)
+* [Login API postman guide](https://github.com/vippsas/vipps-login-api/blob/master/vipps-login-postman.md)
 
 ### PSP API specific variables
 
-| Variable             | Description                                                                                                                                           |
-|----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Variable | Description |
+|----------|-------------|
 | customerMobileNumber | Mobile number of Vipps profile which the payment is sent to. See [Vipps test environment](vipps-test-environment.md) for details about test profiles. |
-| makePaymentUrl       | URL used by Vipps to send the card data. [Details](https://github.com/vippsas/vipps-psp-api/blob/master/vipps-psp-api.md#makepaymenturl)              |
-| pspRedirectUrl       | Redirect URL which the user is redirected to after approving/rejecting the payment.                                                                   |
-| merchantSerialNumber | Provided by Vipps via email.                                                                                                                          |
-| PSP-ID               | Provided by Vipps via email.                                                                                                                          |
+| makePaymentUrl | URL used by Vipps to send the card data. |
+| pspRedirectUrl | Redirect URL which the user is redirected to after approving/rejecting the payment. |
+| merchantSerialNumber | Provided by Vipps via email. |
+| PSP-ID | Provided by Vipps via email. |
+| idempotency_key | Unique request id, needed only for creating a new merchant sale unit. |
+
+For details see:
+
+* [PSP API guide](https://github.com/vippsas/vipps-psp-api/blob/master/vipps-psp-api.md)
+* [PSP API postman guide](https://github.com/vippsas/vipps-psp-api/blob/master/vipps-psp-postman.md)
+
+### Partner API specific variables
+
+| Variable | Description |
+|----------|-------------|
+| merchantSerialNumber | [VippsPortal](https://portal.vipps.no/) -> Utvikler -> Merchant Serial Number row in table. |
+| orgno | The Organization number for the merchant. |
+
+For details see:
+
+* [PSP API guide](https://github.com/vippsas/vipps-psp-api/blob/master/vipps-psp-api.md)
+* [PSP API postman guide](https://github.com/vippsas/vipps-psp-api/blob/master/vipps-psp-postman.md)
+
 
 ## Questions?
 
