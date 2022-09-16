@@ -46,7 +46,7 @@ for more information.
 **Important:** There is no SLA or uptime guarantee for the test environment.
 Vipps will not make any fixes, etc. outside of typical Norwegian office hours.
 See
-[Statuspage](https://vipps-test.statuspage.io)
+[Status page](https://vipps-test.statuspage.io)
 for automatically updated status information.
 
 The test environment is suitable for testing _most_ of the Vipps functionality, but some
@@ -64,10 +64,10 @@ Functionality not available in MT (a non-exhaustive list):
   but it may no always be possible.
   In practice this is extremely rare.
 - Push alerts may be unavailable or unstable. To see payment requests: Open Vipps and manually
-  go to the "Betalinger" (in English: "Payments") at the bottom of the main screen.
+  go to the "Betalinger" (i.e., *Payments*) at the bottom of the main screen.
   The background for this: The app id for the test and production apps are the same, and we
   are not able to distinguish between the apps when sending push messages.
-- Payment of invoices, both for Vipps Regninger and Vipps Faktura
+- Payment of invoices, both for _Vipps Regninger_ and _Vipps Faktura_
 - Limited support for testing card statuses that require connections our PSP
 - Limited support for looking up customer information in
   [KAR](https://www.bits.no/en/bank/konto-og-adresseringsregister-kar/), etc
@@ -75,7 +75,7 @@ Functionality not available in MT (a non-exhaustive list):
 
 To test functionality that is not available in MT, you will have to use the
 production environment in a controlled manner. One example may be to test
-Vipps Regninger with real invoices, but with small amounts. We recommend 2 NOK.
+_Vipps Regninger_ with real invoices, but with small amounts. We recommend 2 NOK.
 
 Other differences between Prod and MT:
 
@@ -164,7 +164,7 @@ is not verified can be ignored.
 ### Other data
 
 The test user's name, birth date, etc. are randomly generated when the test user
-is created and can not be changed.
+is created and cannot be changed.
 
 ## Test amounts
 
@@ -195,26 +195,28 @@ The test apps can be installed on the same device as the production apps without
 The test apps use the `vippsMT://` URL scheme, and the production apps use `vipps://`.
 
 Only test users, with random "fake" phone numbers, are available in the test environments.
-Normal Vipps users are not available, so you can not use your own phone number with the test apps.  
+Normal Vipps users are not available, so you cannot use your own phone number with the test apps.  
 
 **Important:**
-* Do _not_ use the test phone number in the production environment,
+
+- Do _not_ use the test phone number in the production environment,
   as the test number may be a real phone number for a real Vipps user.
 
 **Please note:**
-* It may sometimes be necessary to use specific app versions in MT.
+
+- It may sometimes be necessary to use specific app versions in MT.
   This happens when the production apps and the production environment are not _quite_
   in sync with the test environment. When this happens, we update the
-  [Statuspage for the test environment](https://vipps-test.statuspage.io)
+  [Status page for the test environment](https://vipps-test.statuspage.io)
   with details.
-* If you use an emulator, and not the native apps installed on
+- If you use an emulator, and not the native apps installed on
   a phone, you may experience problems - such as having to log in "from scratch"
   every time you start Vipps in the emulator.
 
 ### Limitations of the test apps
 
-* Push alerts may be unstable. To see payment requests: Open Vipps and manually
-  go to "Betalinger" (in English: "Payments") at the bottom of the main screen.
+- Push alerts may be unstable. To see payment requests: Open Vipps and manually
+  go to "Betalinger" (i.e., _Payments_) at the bottom of the main screen.
   You may also need to pull down to refresh.
 
 ### iOS
@@ -224,7 +226,7 @@ You do _not_ need an invitation or an activation code.
 
 1. Open the
    [TestFlight](https://testflight.apple.com/join/hTAYrwea)
-   link on your iOS phone (it will not work on macOS, and you can not search for Vipps in TestFlight)
+   link on your iOS phone (it will not work on macOS, and you cannot search for Vipps in TestFlight)
 2. Install the "Vipps MT" app
 3. Open the "Vipps MT" app
 4. Enter the test phone number, that was sent in the welcome email to the email

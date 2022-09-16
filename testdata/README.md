@@ -24,7 +24,7 @@ All Vipps customers get a dedicated test merchant to use in
 Please use this test merchant for all development and testing.
 
 The common merchants below may be used in situations where the dedicated test merchant,
-for some reason, can not be used.
+for some reason, cannot be used.
 
 | Name               | Org. number | Account number |
 | ------------------ |------------ | -------------- |
@@ -49,6 +49,7 @@ Fake bank account numbers can be generated with
 
 **Important:** Bank accounts in the test environment must start with the a
 valid Norwegian "bankplass" series. Recommended series:
+
 * DNB = 1201, 1207, 1208, 1542
 * Sparebank = 2601, 4605, 4609, 4658, 4730
 * Nordea = 8841, 9406, 6509, 6446
@@ -61,11 +62,11 @@ in the test environment is practically zero.
 
 ## Faker
 
-The Faker Python library may also be useful: https://github.com/joke2k/faker
+The Faker Python library may also be useful: <https://github.com/joke2k/faker>
 
 ## DNB Open Banking
 
-DNB Open banking has some useful tools for generating synthetic "Norwegian" data: https://github.com/DNBbank/dnbtestdata
+DNB Open banking has some useful tools for generating synthetic "Norwegian" data: <https://github.com/DNBbank/dnbtestdata>
 
 The file [fake-people-100k.json](fake-people-100k.json)
 contains 100,000 synthetic users in JSON format (took ~30 minutes to create), like this:

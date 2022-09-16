@@ -63,11 +63,11 @@ This change only applies to the `GET` method, and does not affect the `POST` and
 
  From **August 1st, 2022** some new rules for charge creation will be enforced:
 
- - The `amount` of a charge is flexible but can not be higher than the
+ - The `amount` of a charge is flexible but cannot be higher than the
    `agreement price`.
  - For an agreement with a `campaign`, the `amount` of a charge is flexible but
-   can not be higher than the campaign price. After the campaign expires the
-  `amount` of a charge can not be higher than the `agreement price`.
+   cannot be higher than the campaign price. After the campaign expires the
+  `amount` of a charge cannot be higher than the `agreement price`.
 
  If the agreement was created with an initial charge and the initial charge
  amount is the same amount as the campaign price, then no new charges can be

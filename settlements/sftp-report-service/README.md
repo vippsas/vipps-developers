@@ -66,7 +66,7 @@ The SFTP report service is used for downloading settlement reports in
 
 # SFTP Service
 
-Vipps can not help with SFTP basics, but recommend this for an overview:
+Vipps cannot help with SFTP basics, but recommend this for an overview:
 [SFTP File Transfer Protocol - get SFTP client & server](https://www.ssh.com/ssh/sftp/).
 
 ## Security
@@ -97,7 +97,7 @@ We reject DSA keys.
 A key is typically created with this command (replace `user@example.com`
 with your real email address):
 
-```
+```text
 ssh-keygen -t ed25519 -C "user@example.com"
 ```
 
@@ -112,7 +112,8 @@ A public SSH key is normally stored in the user's home directory:
 `~/.ssh/id_ed25519.pub`):
 
 Example:
-```
+
+```bash
 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOu1WvDcTWwZumZZwTvfqUKMA4ouG3mniNsvpNWorm5m user@example.com
 ```
 
@@ -122,18 +123,19 @@ ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOu1WvDcTWwZumZZwTvfqUKMA4ouG3mniNsvpNWorm5m
    [portal.vipps.no](https://portal.vipps.no)
    and select the `Utvikler` menu item.
    If you only have "Vippsnummer", you will find a link to SFTP setup under
-   "Rapporter og tall".
+   "Rapporter og tall" (i.e., *Reports and numbers*).
 2. Click the tab `SFTP Access` to add users for SFTP access.
 3. Add the public key(s) for the user(s) to give access.
    After this you should see the newly created user.
 
 This is what it looks like on portal.vipps.no:
 
-![Bruker opprettet](images/02_bruker_opprettet.png "bruker opprettet")
+![User setup](images/02_bruker_opprettet.png "User setup")
 
 **Please note:**
-* Vipps can not add the SSH key for you.
-* Vipps can not test the SSH key for you.
+
+* Vipps cannot add the SSH key for you.
+* Vipps cannot test the SSH key for you.
 * If you do not have BankID, or you do not have the required permissions
   to add the SSH key, you will need the administrator to do it for you, or
   to update your permissions on
@@ -163,7 +165,7 @@ This is the recommended way:
 
 **Please note:** This public SSH key does not have to be secret.
 To be able to retrieve the reports it is also necessary to have the
-_private_ SSH key.
+*private* SSH key.
 We recommend that partners use the same SSH key for all their merchants.
 
 # How to use it
@@ -182,7 +184,7 @@ It works like a normal SFTP service.
 * Some SFTP clients check the file size with a `ls` command first.
   Since the files do not exist until the `get` or `mget` command is sent, the file size
   reported by the server is zero bytes.
-  The SFTP service can not provide correct size information, since there is no real file.
+  The SFTP service cannot provide correct size information, since there is no real file.
   It is therefore not possible to check the size of a file with `ls`.
   If this causes problems for your SFTP client, the solution is to use a different client.
 * Some SFTP clients do not "see" the directories and require the
@@ -198,9 +200,9 @@ It works like a normal SFTP service.
 This is a standard SFTP service, and the address of the SFTP server is `sftp.vipps.no`.
 
 When connecting to the SFTP server you need to supply the username you created.
-In the picture above this is "hakon".
+In the picture above, this is "hakon".
 
-Vipps can not help with SFTP basics, but recommend this for an overview:
+Vipps cannot help with SFTP basics, but recommend this for an overview:
 [SFTP File Transfer Protocol - get SFTP client & server](https://www.ssh.com/ssh/sftp/).
 
 **Please note:** Vipps may change the IP addresses of `sftp.vipps.no`.
@@ -210,7 +212,8 @@ hostname and DNS, and automatically update your firewall rules if there are DNS 
 ## Directory structure
 
 This is the directory structure (where `[alternative1|alternative2]` indicates two alternatives):
-```
+
+```bash
 /settlements/[inbox|archive]/[file extension]/[orgno.]/[merchant serial number]/[merchant serial number]-[settlement number].[file extension]
 ```
 
@@ -221,7 +224,8 @@ id for the sale unit.
 In the examples on this page, the `orgno.` is 998724341, and the `merchant serial number` is 16655.
 
 Example files, with full path:
-```
+
+```bash
 /settlements/inbox/xml/998724341/16655/16655-2000001.xml
 /settlements/inbox/pdf/998724341/16655/16655-2000001.pdf
 /settlements/archive/csv/998724341/16655/16655-2000001.csv
@@ -240,13 +244,15 @@ with line breaks added for readability.
 In this example the organization number is 998724341 and the MSN is 16655.
 
 Connect to the SFTP service:
-```
+
+```bash
 $ sftp sftp.vipps.no
 Connected to sftp.vipps.no.
 ```
 
 Directory listing of the root and `settlements` directories:
-```
+
+```bash
 sftp> ls
 settlements  
 
@@ -257,7 +263,8 @@ settlements/inbox
 
 Directory listing of the `inbox/`, `inbox/xml/`, `inbox/xml/998724341/`
 and `inbox/xml/998724341/16655` directories:
-```
+
+```bash
 sftp> ls settlements/inbox
 settlements/inbox/csv        
 settlements/inbox/pdf        
@@ -279,7 +286,8 @@ settlements/inbox/xml/998724341/16655/16655-2000004.xml
 ```
 
 Using `mget` to get all the files in the `settlements/inbox/xml/998724341/16655` directory:
-```
+
+```bash
 sftp> mget settlements/inbox/xml/998724341/16655/*
 Fetching /settlements/inbox/xml/998724341/16655/16655-2000001.xml to 16655-2000001.xml
 Fetching /settlements/inbox/xml/998724341/16655/16655-2000002.xml to 16655-2000002.xml
@@ -287,10 +295,10 @@ Fetching /settlements/inbox/xml/998724341/16655/16655-2000003.xml to 16655-20000
 Fetching /settlements/inbox/xml/998724341/16655/16655-2000004.xml to 16655-2000004.xml
 ```
 
-Directory listing in the _local_ directory (using the `!` prefix for the `ls` command),
+Directory listing in the *local* directory (using the `!` prefix for the `ls` command),
 showing the retrieved files, and the `quit` command to end the SFTP session:
 
-```
+```bash
 sftp> !ls -1
 16655-2000001.xml
 16655-2000002.xml

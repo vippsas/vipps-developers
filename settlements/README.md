@@ -23,9 +23,9 @@ END_METADATA -->
   * [SFTP](#sftp)
   * [API](#api)
 * [Availability](#availability)
-    * [Daily reports](#daily-reports)
-    * [Weekly reports](#weekly-reports)
-    * [Monthly reports](#monthly-reports)
+  * [Daily reports](#daily-reports)
+  * [Weekly reports](#weekly-reports)
+  * [Monthly reports](#monthly-reports)
 * [Questions?](#questions)
 
 <!-- END_TOC -->
@@ -52,7 +52,7 @@ The settlement flow is as follows:
 
 Settlement process will always adhere to
 [Vipps' terms and conditions](https://vipps.no/vilkar/vilkar-bedrift/),
-section 5 "OPPGJØR OG FORHOLD TIL VIPPS INNLØSER".
+section 5, "OPPGJØR OG FORHOLD TIL VIPPS INNLØSER" (i.e., _SETTLEMENT AND RELATIONSHIP WITH VIPPS REDEEMER_).
 
 Days are bank days, Monday - Friday, excluding banking holidays. In other words,
 a capture made on Monday will be on merchant's account on Wednesday, while a
@@ -117,6 +117,7 @@ Settlement reports are provided in these formats:
 | XLSX   | [XLSX](xlsx/vipps-settlement-example.xlsx) | - |
 
 More details:
+
 * XML: See the [xml](xml/) folder.
 * CSV: See the [csv](csv/) folder.
 * PDF: See the [pdf](pdf/) folder.
@@ -131,10 +132,10 @@ See also the Vipps eCom API.
 
 ### Additional info for recurring payments
 
-For recurring payments the `ordreID` is an optional field.
-If `ordreID` is not specified by the merchant when making a charge,
+For recurring payments the `orderID` is an optional field.
+If `orderID` is not specified by the merchant when making a charge,
 the settlement report shows the automatically generated `chargeID` in the `orderID` field.
-If `ordreID` is in use, that is also used in the settlement report.
+If `orderID` is in use, that is also used in the settlement report.
 
 See the
 [Recurring API](https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api.md#create-a-charge)
@@ -149,12 +150,11 @@ The settlement reports do not contain personal information - except for payments
 See the eCom API FAQ:
 [Why are the customer names not shown on the transaction overview?](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-faq.md#why-are-the-customer-names-not-shown-on-the-transaction-overview).
 
-
 ## How to get settlement files
 
 ### portal.vipps.no
 
-Customers can log in to [portal.vipps.no](https://portal.vipps.no), choose "Rapporter" and download reports
+Customers can log in to [portal.vipps.no](https://portal.vipps.no), choose "Rapporter" (i.e., *Reports*) and download reports
 in the formats mentioned above.
 
 Reports with personal details of the customers are also available, see
@@ -167,7 +167,7 @@ Merchants can log in on
 and specify email addresses that Vipps will send settlement reports to.
 Reports are available in xlsx, xml.zip and csv format.
 
-Reports with personal details of the customers can not be sent by email, see
+Reports with personal details of the customers cannot be sent by email, see
 [GDPR](#gdpr).
 
 ### SFTP
@@ -180,7 +180,7 @@ The reports are generated dynamically upon request.
 See [Availability](#availability) for information about when the files
 and directories are available.
 
-Reports with personal details of the customers can not be sent with SFTP, see
+Reports with personal details of the customers cannot be sent with SFTP, see
 [GDPR](#gdpr).
 
 Details: See the [sftp-report-service](sftp-report-service/) folder.
@@ -215,16 +215,15 @@ Vipps will send an invoice to the merchant to settle the balance.
 There are no settlement reports for the
 [test environment](https://github.com/vippsas/vipps-developers/blob/master/vipps-test-environment.md).
 
-
-#### Daily reports
+### Daily reports
 
 The settlement reports are available by 12:00 noon.
 
-#### Weekly reports
+### Weekly reports
 
 The settlement report is generated on Mondays, by 12:00 noon.
 
-#### Monthly reports
+### Monthly reports
 
 The settlement report is generated on the 1st of the month, by 12:00 noon.
 

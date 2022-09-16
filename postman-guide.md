@@ -5,7 +5,6 @@ sidebar_position: 15
 ---
 END_METADATA -->
 
-
 # Postman guide
 
 <!-- START_TOC -->
