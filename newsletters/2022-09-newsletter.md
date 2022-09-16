@@ -35,21 +35,24 @@ We have a completely new, in-progress, website for all
 ![Vipps Developer Documentation](images/2022-09-vipps-developer-docs.png)
 
 Examples:
-* [eCom API Guide](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api)
-* [eCom API specification](https://vippsas.github.io/vipps-developer-docs/api/ecom)
-* [eCom FAQ](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api-faq)
+* [API Guide](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api)
+* [API Reference](https://vippsas.github.io/vipps-developer-docs/api/ecom)
+* [FAQ](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api-faq)
 
 # Inform customers that there are no fees
 
 It can help your conversion if you remind your users that:
+
 * There are no Vipps fees when paying a business
 * Users get all the benefits of the card when using the card in Vipps (bonus points, etc)
 
 We recommend using this text where users select payment method:
 "Husk: Vipps er alltid gebyrfritt når du betaler til bedrifter."
 
-If you use Klarna Checkout, we have some tips
-[here](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-faq.md#can-i-use-vipps-with-klarna-checkout).
+Roughly translated, this means, "Remember: Vipps is always free from fees when you pay to companies".
+
+If you use Klarna Checkout, here are our
+[tips](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-faq.md#can-i-use-vipps-with-klarna-checkout).
 
 # Vipps on-site messaging
 
