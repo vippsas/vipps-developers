@@ -95,7 +95,7 @@ We have several status pages, and we strongly recommend to subscribe to them
 - Test environment: <https://vipps-test.statuspage.io>
 - Production environment: <https://vipps.statuspage.io>
 - BankID production: <https://www.bankid.no/status/>
-- BankID preprod: <https://bankidpreprod.statuspage.io>
+- BankID pre-production: <https://bankidpreprod.statuspage.io>
 
 You can use the Atom and RSS feeds on the status pages for integration with other systems.
 

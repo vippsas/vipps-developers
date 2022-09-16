@@ -165,7 +165,7 @@ This is the recommended way:
 
 **Please note:** This public SSH key does not have to be secret.
 To be able to retrieve the reports it is also necessary to have the
-_private_ SSH key.
+*private* SSH key.
 We recommend that partners use the same SSH key for all their merchants.
 
 # How to use it
@@ -295,7 +295,7 @@ Fetching /settlements/inbox/xml/998724341/16655/16655-2000003.xml to 16655-20000
 Fetching /settlements/inbox/xml/998724341/16655/16655-2000004.xml to 16655-2000004.xml
 ```
 
-Directory listing in the _local_ directory (using the `!` prefix for the `ls` command),
+Directory listing in the *local* directory (using the `!` prefix for the `ls` command),
 showing the retrieved files, and the `quit` command to end the SFTP session:
 
 ```bash
