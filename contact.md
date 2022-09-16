@@ -54,10 +54,13 @@ We also have a technical newsletter for developers:
 
 ## What to include in the email
 
-First of all: It's nice if you can check the FAQs and search to check if your problem is a common one.
+First of all: It's nice if you can check the FAQs and search to check if your problem is a common one:
 
-Also: Please search the documentation.
-Almost all questions we receive can be answered with a link to existing documentation.
+* [eCom API FAQ](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-faq.md)
+* [Recurring API FAQ](https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api-faq.md)
+* [Login API FAQ](https://github.com/vippsas/vipps-login-api/blob/master/vipps-login-api-faq.md)
+
+Also: Please search the documentation. You can search both on GitHub and in the browser.
 
 If you cannot find the answer: Please send an email with all relevant information to the address below:
 
