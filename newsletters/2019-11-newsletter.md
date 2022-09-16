@@ -55,7 +55,7 @@ We will soon launch status pages:
 # Further plans
 
 We are working on more developer resources, including a data API and
-a developer dashboard. We can not provide any dates yet, but we
+a developer dashboard. We cannot provide any dates yet, but we
 welcome input in the form of issues on https://github.com/vippsas/vipps-developers.
 
 # Questions or comments?

@@ -162,7 +162,7 @@ The Vipps servers all use UTC time.
 **Please note:** Vipps may change the IP addresses for the API servers. To ensure
 that you are whitelisting the correct IP addresses please use these hostnames
 and DNS, and automatically update your firewall rules if there are DNS changes.
-We can not provide the IP addresses in any other way than DNS.
+We cannot provide the IP addresses in any other way than DNS.
 
 ## Vipps request servers
 
@@ -184,7 +184,7 @@ The servers are the same for all APIs.
 **Please note:** Vipps may change the IP addresses for the request servers. To ensure
 that you are whitelisting the correct IP addresses please use these hostnames
 and DNS, and automatically update your firewall rules if there are DNS changes.
-We can not provide the IP addresses in any other way than DNS.
+We cannot provide the IP addresses in any other way than DNS.
 
 For API products where Vipps makes requests to your servers, please make sure
 that these request servers are allowed through firewalls, etc.
