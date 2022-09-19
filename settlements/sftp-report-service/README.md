@@ -97,7 +97,7 @@ We reject DSA keys.
 A key is typically created with this command (replace `user@example.com`
 with your real email address):
 
-```text
+```bash
 ssh-keygen -t ed25519 -C "user@example.com"
 ```
 
