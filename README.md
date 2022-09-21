@@ -28,7 +28,7 @@ See the disclaimer: <https://vippsas.github.io/vipps-developer-docs/docs/example
 - [Plugins](#plugins)
 - [Status pages](#status-pages)
 - [The Vipps test environment (MT)](#the-vipps-test-environment-mt)
-- [Postman](#postman)
+- [Quick start guides](#quick-start-guides)
 - [API Dashboard](#api-dashboard)
 - [Vipps API servers](#vipps-api-servers)
 - [Vipps request servers](#vipps-request-servers)
@@ -108,13 +108,11 @@ the iOS and Android test apps, etc.
 
 MT is short for Merchant Test.
 
-## Postman
+## Quick start guides
 
 See our
-[Postman guide](postman-guide.md)
-or the
-[Postman documentation](https://www.getpostman.com/docs/)
-for more information about using Postman.
+[Quick start guides](quick-start-guides.md)
+for an introduction of how to use our APIs.
 
 ## API Dashboard
 
