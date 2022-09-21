@@ -17,7 +17,7 @@ This newsletter was sent in September 2022.
 * [Inform customers that there are no fees when paying with Vipps](#inform-customers-that-there-are-no-fees-when-paying-with-vipps)
 * [Vipps on-site messaging](#vipps-on-site-messaging)
 * [Partner API: Pre-fill applications](#partner-api-pre-fill-applications)
-* [Settlement API](#settlement-api)
+* [Settlement API: In progress](#settlement-api-in-progress)
 * [Reminders](#reminders)
   * [Please check your API calls for errors](#please-check-your-api-calls-for-errors)
   * [Use the API Dashboard to find problems with your integration](#use-the-api-dashboard-to-find-problems-with-your-integration)
@@ -89,7 +89,7 @@ Partners can now use the
 to pre-fill applications and
 [submit a product order for a merchant](https://github.com/vippsas/vipps-partner-api/blob/main/vipps-partner-api.md#submit-a-product-order-for-a-merchant).
 
-## Settlement API
+## Settlement API: In progress
 
 We are in the early planning phase of developing an API for
 [settlements](https://github.com/vippsas/vipps-developers/tree/master/settlements).
