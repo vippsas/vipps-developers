@@ -29,7 +29,7 @@ The Vipps eCom API now supports both partial capture (as before) and
 release of the remainder of the reserved amount.
 
 If you wish to cancel an order which you have partially captured: Send a
-[`PUT:/ecomm/v2/payments/{orderId}/cancel`](https://vippsas.github.io/vipps-ecom-api/#/Vipps%20eCom%20API/cancelPaymentRequestUsingPUT)
+[`PUT:/ecomm/v2/payments/{orderId}/cancel`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Vipps-eCom-API/operation/cancelPaymentRequestUsingPUT)
 request with `shouldReleaseRemainingFunds: true` in the body.
 The payment must be `RESERVED` for this to take effect.
 See:
@@ -44,7 +44,7 @@ the production and
 ## Logo handling changes in PSP Signup API
 
 The response of the
-[`GET:/v1/merchants/{merchantSerialNumber}`](https://vippsas.github.io/vipps-psp-api/signup/#/Merchant/getMerchant)
+[`GET:/v1/merchants/{merchantSerialNumber}`](https://vippsas.github.io/vipps-developer-docs/api/psp-signup#tag/Merchant/operation/getMerchants)
 endpoint in the in the
 [Vipps PSP API](https://github.com/vippsas/vipps-psp-api)
 contains a `logo` field, with the merchant's logo encoded in base64 format.
@@ -63,11 +63,11 @@ This change only applies to the `GET` method, and does not affect the `POST` and
 
  From **August 1st, 2022** some new rules for charge creation will be enforced:
 
- - The `amount` of a charge is flexible but can not be higher than the
+ - The `amount` of a charge is flexible but cannot be higher than the
    `agreement price`.
  - For an agreement with a `campaign`, the `amount` of a charge is flexible but
-   can not be higher than the campaign price. After the campaign expires the
-  `amount` of a charge can not be higher than the `agreement price`.
+   cannot be higher than the campaign price. After the campaign expires the
+  `amount` of a charge cannot be higher than the `agreement price`.
 
  If the agreement was created with an initial charge and the initial charge
  amount is the same amount as the campaign price, then no new charges can be
@@ -93,7 +93,7 @@ Please:
 - Contact us if there is anything we can help with
 
 One example: Far too many calls to
-[`POST:/ecomm/v2/payments`](https://vippsas.github.io/vipps-ecom-api/#/Vipps_eCom_API/initiatePaymentV3UsingPOST)
+[`POST:/ecomm/v2/payments`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Vipps-eCom-API/operation/initiatePaymentV3UsingPOST)
 use an incorrectly formatted phone number.
 The effect is that the user's phone number is not correctly pre-filled on
 the Vipps landing page.

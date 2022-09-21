@@ -75,7 +75,7 @@ More details:
 ## Vipps eCom API: HTTPS required for all URLs
 
 From October 1, 2022, URL links in the body of
-[`POST:/payments`](https://vippsas.github.io/vipps-ecom-api/#/Vipps%20eCom%20API/initiatePaymentV3UsingPOST)
+[`POST:/payments`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Vipps-eCom-API/operation/initiatePaymentV3UsingPOST)
 will no longer support HTTP, only HTTPS.
 
 This includes the following fields:
@@ -105,7 +105,7 @@ Please:
 - Contact us if there is anything we can help with
 
 One example: Far too many calls to
-[`POST:/ecomm/v2/payments`](https://vippsas.github.io/vipps-ecom-api/#/Vipps_eCom_API/initiatePaymentV3UsingPOST)
+[`POST:/ecomm/v2/payments`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Vipps-eCom-API/operation/initiatePaymentV3UsingPOST)
 use an incorrectly formatted phone number.
 The effect is that the user's phone number is not correctly pre-filled on
 the Vipps landing page.

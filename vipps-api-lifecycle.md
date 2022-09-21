@@ -31,7 +31,7 @@ Document version: 1.0.3.
   - [Adding an optional field to a request](#adding-an-optional-field-to-a-request)
     - [Example](#example)
   - [Adding an optional field to a response](#adding-an-optional-field-to-a-response)
-    - [Example](#example-1)
+    - [Example](#example-of-option-field)
   - [Adding a new enum value](#adding-a-new-enum-value)
   - [Relaxing some of the constraints on an existing request parameter](#relaxing-some-of-the-constraints-on-an-existing-request-parameter)
   - [Adding a new response parameter to the API response](#adding-a-new-response-parameter-to-the-api-response)
@@ -188,7 +188,7 @@ It is the caller's responsibility to manage the response in a way that
 correctly handles new, optional parameters. This is normally done automatically,
 but we want to explicitly mention this.
 
-#### Example
+#### Example of option field
 
 Vipps may add an `type` field to the `address` object:
 

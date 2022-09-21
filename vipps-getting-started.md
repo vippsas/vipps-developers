@@ -62,24 +62,27 @@ Document version: 3.3.7.
 
 ## Product types
 
+### In-person and remote transactions
+
+- _Vipps Checkout (Vipps Checkout_) - A complete Checkout solution for both Vipps and card payments with auto-fill and shipping integrations.
+
 ### In-person transactions
 
-* *Vennebetaling (Person to Person payments*) - A person can transfer money to another person. They must both have configured their Vipps app with their respective bank account numbers. There is no API.
+- _Vennebetaling (Person to Person payments_) - A person can transfer money to another person. They must both have configured their Vipps app with their respective bank account numbers. There is no API.
 
-* *Vippsnummer (Vipps number*) - An organization or company can receive an identification number from Vipps. Customers can then register their payments to this number. This gives people the possibility of paying or donating money without cash. There is no API.
+- _Vippsnummer (Vipps number_) - An organization or company can receive an identification number from Vipps. Customers can then register their payments to this number. This gives people the possibility of paying or donating money without cash. There is no API.
 
-* *Vipps i kassa (Vipps In Store*) - A company can integrate its Point of Sale (POS) system with Vipps so that in-store customers can pay by using Vipps, and the sale will be automatically registered in their system.
+- _Vipps i kassa (Vipps In Store_) - A company can integrate its Point of Sale (POS) system with Vipps so that in-store customers can pay by using Vipps, and the sale will be automatically registered in their system.
 
 ### Remote transactions
 
-* *Vipps Logg Inn (Vipps Login*) - A website or app can allow the customer to log in by using their Vipps account.
+- _Vipps Logg Inn (Vipps Login_) - A website or app can allow the customer to log in by using their Vipps account.
 
-* *Vipps på nett (Vipps Online*) - An online store or app can offer Vipps as a method of payment.
+- _Vipps på nett (Vipps Online_) - An online store or app can offer Vipps as a method of payment.
 
-* *Vipps Hurtigkasse (Vipps Express Checkout*) - An online store can offer a quick checkout option where Vipps is the method of payment and the shipping options are specified directly from the Vipps app.
+- _Vipps Hurtigkasse (Vipps Express Checkout_) - An online store can offer a quick checkout option where Vipps is the method of payment and the shipping options are specified directly from the Vipps app.
 
-* *Faste betalinger (Recurring payments*) - A business or organization can allow their customers to set up recurring payments (e.g., for subscriptions, membership, regular donations, etc.) through Vipps.
-
+- _Faste betalinger (Recurring payments_) - A business or organization can allow their customers to set up recurring payments (e.g., for subscriptions, membership, regular donations, etc.) through Vipps.
 
 ## Requirements
 
@@ -106,7 +109,7 @@ provider and to receive payments from Vipps users:
 - A Norwegian organization number
 - A Norwegian bank account
 - An appointed contact person with a Norwegian phone number and Norwegian
-  identity number ("fødselsnummer" or "D-nummer", 11 digits).
+  identity number (i.e., "fødselsnummer" or "D-nummer", 11 digits).
 
 If the foreign company is registered in
 [Brønnøysundregistrene](https://breeg.no)
@@ -163,7 +166,7 @@ There is no "Utvikler" tab if you only have "Vippsnummer".
 
 **Please note:**
 
-- Vipps can not provide API keys in any other way, such as by
+- Vipps cannot provide API keys in any other way, such as by
   email, as the API keys give access to transferring money.
 - Vipps will never ask for your API keys, and you must keep them secret.
 - If your developers do not have Norwegian BankID, you will need to retrieve
@@ -298,7 +301,6 @@ Vipps-API also includes some _legacy_ APIs:
 | eCom API v1      | eCommerce, legacy version, phased out on September 1 2020.       | <https://github.com/vippsas/vipps-ecom-api-v1>     |
 | Signup and Login | Legacy API (superseded by Vipps Log In), end of life Dec 31 2019 | <https://github.com/vippsas/vipps-signuplogin-api> |
 
-
 If you are still using a legacy API, you should upgrade as soon as possible.
 The best way to keep up to date of changes is to
 [star the API repository on GitHub](https://help.github.com/en/articles/about-stars).
@@ -330,7 +332,7 @@ we strongly recommend upgrading to the current version as soon as possible.
 All Vipps API requests must include an `Authorization` header with
 a JSON Web Token (JWT), which we call the _access token_.
 The access token is obtained by calling
-[`POST:/accesstoken/get`](https://vippsas.github.io/vipps-ecom-api/#/Authorization_Service/fetchAuthorizationTokenUsingPost)
+[`POST:/accesstoken/get`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Authorization-Service/operation/fetchAuthorizationTokenUsingPost
 and passing the `client_id`, `client_secret` and `Ocp-Apim-Subscription-Key`.
 (We _are_ aware that this is a `POST`, without a body, to an endpoint with
 `get` in the URL, and hope to fix it in a later version of the API. Sorry for the inconvenience.)
@@ -338,10 +340,10 @@ and passing the `client_id`, `client_secret` and `Ocp-Apim-Subscription-Key`.
 #### Request
 
 Request to
-[`POST:/accesstoken/get`](https://vippsas.github.io/vipps-ecom-api/#/Authorization_Service/fetchAuthorizationTokenUsingPost)
+[`POST:/accesstoken/get`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Authorization-Service/operation/fetchAuthorizationTokenUsingPost
 (including the Vipps HTTP headers):
 
-```
+```json
 client_id: fb492b5e-7907-4d83-ba20-c7fb60ca35de
 client_secret: Y8Kteew6GE2ZmeycEt6egg==
 Ocp-Apim-Subscription-Key: 0f14ebcab0ec4b29ae0cb90d91b4a84a
@@ -382,10 +384,10 @@ name to send is `Ocp-Apim-Subscription-Key`.
 #### Response
 
 The response from
-[`POST:/accesstoken/get`](https://vippsas.github.io/vipps-ecom-api/#/Authorization_Service/fetchAuthorizationTokenUsingPost)
+[`POST:/accesstoken/get`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Authorization-Service/operation/fetchAuthorizationTokenUsingPost
 is like this:
 
-```
+```json
 {
   "token_type": "Bearer",
   "expires_in": "86398",
@@ -424,16 +426,16 @@ After obtaining the access token (JWT), it is then used for the "real" calls
 to the Vipps API, with the `Bearer` keyword (it is case-sensitive).
 
 A typical example of an API endpoint:
-[`POST:/ecomm/v2/payments`](https://vippsas.github.io/vipps-ecom-api/#/Vipps_eCom_API/initiatePaymentV3UsingPOST)
+[`POST:/ecomm/v2/payments`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Vipps-eCom-API/operation/initiatePaymentV3UsingPOST)
 in the Vipps eCom API:
 [Initiate payment flow: API calls](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#initiate-payment-flow-api-calls).
 
 Here is an example with `Authorization` and `Ocp-Apim-Subscription-Key` (but
 without the `client_id` and `client_secret`, since they are only used for the
-[`POST:/accesstoken/get`](https://vippsas.github.io/vipps-ecom-api/#/Authorization_Service/fetchAuthorizationTokenUsingPost)
+[`POST:/accesstoken/get`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Authorization-Service/operation/fetchAuthorizationTokenUsingPost
 call), including the Vipps HTTP headers:
 
-```
+```json
 Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1Ni <snip>
 Ocp-Apim-Subscription-Key: 0f14ebcab0ec4b29ae0cb90d91b4a84a
 Merchant-Serial-Number: 123456

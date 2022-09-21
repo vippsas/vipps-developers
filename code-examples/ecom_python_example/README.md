@@ -1,7 +1,6 @@
 <!-- START_METADATA
 ---
-title: eCom Python example
-sidebar_position: 22
+draft: true
 ---
 END_METADATA -->
 
