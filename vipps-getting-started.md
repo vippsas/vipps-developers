@@ -62,6 +62,10 @@ Document version: 3.3.7.
 
 ## Product types
 
+### In-person and remote transactions
+
+- _Vipps Checkout (Vipps Checkout_) - A complete Checkout solution for both Vipps and card payments with auto-fill and shipping integrations.
+
 ### In-person transactions
 
 - _Vennebetaling (Person to Person payments_) - A person can transfer money to another person. They must both have configured their Vipps app with their respective bank account numbers. There is no API.
