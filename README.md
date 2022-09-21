@@ -111,7 +111,7 @@ MT is short for Merchant Test.
 ## Quick start guides
 
 See our
-[Quick start guides](quick-start-guides.md)
+[Quick start guides](vipps-quick-start-guides.md)
 for an introduction of how to use our APIs.
 
 ## API Dashboard

@@ -10,16 +10,29 @@ END_METADATA -->
 <!-- START_TOC -->
 
 ## Table of Contents
+* [Quick start guides](#quick-start-guides)
 * [Postman](#postman)
   * [Import collections and environments](#import-collections-and-environments)
   * [Insert values](#insert-values)
   * [Tabs](#tabs)
-* [Quick start guides](#quick-start-guides)
 * [Questions?](#questions)
 
 <!-- END_TOC -->
 
-Document version: 4.0.0.
+Document version: 4.1.0.
+
+## Quick start guides
+
+Ae have quick start guides for these APIs:
+
+* [eCom API Quick start](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-quick-start.md)
+* [Recurring API Postman Guide](https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-postman.md)
+* [Login API Postman Guide](https://github.com/vippsas/vipps-login-api/blob/master/vipps-login-postman.md)
+* [Partner API Postman Guide](https://github.com/vippsas/vipps-partner-api/blob/main/vipps-partner-postman.md)
+* [PSP API Postman Guide](https://github.com/vippsas/vipps-psp-api/blob/master/vipps-psp-postman.md)
+* [QR API Postman Guide](https://github.com/vippsas/vipps-qr-api/blob/main/vipps-qr-api-postman.md)
+
+All of these are based on Postman, which we have some information about below.
 
 ## Postman
 
@@ -65,18 +78,6 @@ generate snippets of code in various languages that will help you do this.
 Click the Code link to open the "Generate code snippets" modal.
 
 ![Vipps Developer Postman: Tabs](images/postman-tabs.png)
-
-## Quick start guides
-
-Ae have quick start guides for these APIs:
-
-* [eCom API Quick start](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-quick-start.md)
-* [Recurring API Postman Guide](https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-postman.md)
-* [Login API Postman Guide](https://github.com/vippsas/vipps-login-api/blob/master/vipps-login-postman.md)
-* [Partner API Postman Guide](https://github.com/vippsas/vipps-partner-api/blob/main/vipps-partner-postman.md)
-* [PSP API Postman Guide](https://github.com/vippsas/vipps-psp-api/blob/master/vipps-psp-postman.md)
-* [QR API Postman Guide](https://github.com/vippsas/vipps-qr-api/blob/main/vipps-qr-api-postman.md)
-
 
 ## Questions?
 
