@@ -27,7 +27,7 @@ This newsletter was sent in December 2021.
 
 <!-- END_TOC -->
 
-# Omikron tips
+## Omikron tips
 
 These Vipps solutions are extra relevant (again):
 
@@ -41,7 +41,7 @@ These Vipps solutions are extra relevant (again):
 - ["Click and collect" recommendations](#-click-and-collect--recommendations)
   to speed up the user experience for your customers.
 
-# Vipps Hurtigkasse: Use the explicit flow
+## Vipps Hurtigkasse: Use the explicit flow
 
 When users are prompted to select shipping address and shipping address, the
 explicit flow is _strongly_ recommended. The user then has to actively
@@ -59,7 +59,7 @@ See
 [Old and new express checkout flow](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#old-and-new-express-checkout-flow)
 for more details.
 
-# Use the API Dashboard to find problems with your integration
+## Use the API Dashboard to find problems with your integration
 
 The API Dashboard is available for both the production and test environments,
 and is an easy way to see if you are using the Vipps APIs correctly.
@@ -73,16 +73,16 @@ Here's an example for the Vipps eCom API's `/refund` endpoint:
 
 ![API Dashboard example](images/2021-02-api-dashboard-example.png)
 
-# Important information for partners
+## Important information for partners
 
 There is quite a bit happening for Vipps partners.
 Please see
 [github.com/vippsas/vipps-partner](https://github.com/vippsas/vipps-partner)
 for (continuously) updated information.
 
-# Reminders
+## Reminders
 
-## Use Userinfo to register visitors
+### Use Userinfo to register visitors
 
 For guest registration/tracking: Use _Userinfo_ to ask for the user's details, such as:
 phone number, name, email address, postal address, birth date, national identity number and bank accounts.
@@ -93,7 +93,7 @@ See
 and
 [Userinfo for Recurring](https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api.md#userinfo).
 
-## "Click and collect" recommendations
+### "Click and collect" recommendations
 
 For "click and collect" we recommend to use
 [`staticShippingDetails`](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#shipping-and-static-shipping-details)
@@ -119,7 +119,7 @@ call by including:
 ]
 ```
 
-## The Vipps QR API
+### The Vipps QR API
 
 Make window shopping great again!
 
@@ -134,7 +134,7 @@ The QR code, when scanned and opened, will redirect the user to the Vipps
 landing page, which on the phone will automatically trigger a switch to the
 Vipps app where they can pay the merchant.
 
-## The Vipps Order Management API
+### The Vipps Order Management API
 
 An early version of the Vipps Order Management API is available on GitHub:
 https://github.com/vippsas/vipps-order-management-api/
@@ -144,7 +144,7 @@ existing Vipps transaction. This information is shown to the customer in the
 app in their order history. This functionality is available for both recurring
 and direct payments, but not for passthrough payments.
 
-## The Vipps Recurring API now supports variable amounts
+### The Vipps Recurring API now supports variable amounts
 
 Recurring agreements with variable amount lets merchants charge users a different
 amount each for interval, based on the user's specified max amount.
@@ -152,22 +152,22 @@ amount each for interval, based on the user's specified max amount.
 More information can be found in
 [our documentation](https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api.md#recurring-agreements-with-variable-amount).
 
-## Vipps Login support for authentication/registration outside of browser/app (CIBA)
+### Vipps Login support for authentication/registration outside of browser/app (CIBA)
 
 The Vipps Login service has been extended with Client Initiated Backchannel Authentication
 (CIBA) flows to support use cases where authentication/registration does not start in a browser or an app.
 
 This could typically be physical contexts like point of sales (POS) solutions, on the
-phone in call center solutions, or devices/terminals like TV boxes. We currently support initiating logins based on the users phone number. We are also working on supporting the same flows with the user scanning the merchant's QR-code as a starting point. 
+phone in call center solutions, or devices/terminals like TV boxes. We currently support initiating logins based on the users phone number. We are also working on supporting the same flows with the user scanning the merchant's QR-code as a starting point.
 
 More information can be found in [our documentation](https://github.com/vippsas/vipps-login-api/blob/master/vipps-login-api.md#client-initiated-backchannel-authentication-flows-ciba---special-cases-where-login-does-not-start-in-browser-or-app).
 
-# Newsletter archive
+## Newsletter archive
 
 All the previous newsletters are in the
 [newsletter archive](https://github.com/vippsas/vipps-developers/tree/master/newsletters).
 
-# Questions or comments?
+## Questions or comments?
 
 We're always happy to help with code or other questions you might have!
 Please create [GitHub issues or pull requests](https://github.com/vippsas)

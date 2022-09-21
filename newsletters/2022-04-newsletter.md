@@ -11,7 +11,7 @@ This newsletter was sent in April 2022.
 
 <!-- START_TOC -->
 
-## Table of Contents
+### Table of Contents
 
 * [Release of remainder after doing a partial capture](#release-of-remainder-after-doing-a-partial-capture)
 * [The Vipps QR API now works in the test environment](#the-vipps-qr-api-now-works-in-the-test-environment)
@@ -23,7 +23,7 @@ This newsletter was sent in April 2022.
 
 <!-- END_TOC -->
 
-# Release of remainder after doing a partial capture
+## Release of remainder after doing a partial capture
 
 The Vipps eCom API now supports both partial capture (as before) and
 release of the remainder of the reserved amount.
@@ -35,13 +35,13 @@ The payment must be `RESERVED` for this to take effect.
 See:
 [Cancelling a partially captured order](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#cancelling-a-partially-captured-order).
 
-# The Vipps QR API now works in the test environment
+## The Vipps QR API now works in the test environment
 
 [The Vipps QR API](https://github.com/vippsas/vipps-qr-api) now works in both in
 the production and
 [test environment](https://github.com/vippsas/vipps-developers/blob/master/vipps-test-environment.md).
 
-# Logo handling changes in PSP Signup API
+## Logo handling changes in PSP Signup API
 
 The response of the
 [`GET:/v1/merchants/{merchantSerialNumber}`](https://vippsas.github.io/vipps-developer-docs/api/psp-signup#tag/Merchant/operation/getMerchants)
@@ -59,7 +59,7 @@ Please switch to the new `logoUrl` field as soon as possible.
 
 This change only applies to the `GET` method, and does not affect the `POST` and `PATCH` methods.
 
-# Recurring charge changes
+## Recurring charge changes
 
  From **August 1st, 2022** some new rules for charge creation will be enforced:
 
@@ -76,9 +76,9 @@ This change only applies to the `GET` method, and does not affect the `POST` and
  See:
  [Create charge](https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api.md#create-charge).
 
-# Reminders
+## Reminders
 
-## Please check your eCom API calls
+### Please check your eCom API calls
 
 We are working on eliminating incorrect API use. Although we always respond to
 incorrect API calls with a sensible HTTP status (usually `HTTP 400 Bad Request`)
@@ -109,7 +109,7 @@ See:
 * "Common errors" in the
   [eCom API FAQ](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-faq.md)
 
-## Use the API Dashboard to find problems with your integration
+### Use the API Dashboard to find problems with your integration
 
 The API Dashboard is available to all merchants for both the production and test environments,
 and is an easy way to see if you are using the Vipps APIs correctly.
@@ -126,16 +126,16 @@ Here's an example for the Vipps eCom API's `/refund` endpoint:
 See:
 [API Dashboard](https://github.com/vippsas/vipps-developers#api-dashboard).
 
-## How to get help quickly
+### How to get help quickly
 
 Please see
 [this page](https://github.com/vippsas/vipps-developers/blob/master/contact.md).
 
-## Newsletter archive
+### Newsletter archive
 
 Please see: https://github.com/vippsas/vipps-developers/tree/master/newsletters
 
-# Questions or comments?
+## Questions or comments?
 
 We're always happy to help with code or other questions you might have!
 Please create [GitHub issues or pull requests](https://github.com/vippsas)

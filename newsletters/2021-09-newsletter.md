@@ -21,7 +21,7 @@ This newsletter was sent in September 2021.
 
 <!-- END_TOC -->
 
-# The Vipps QR API
+## The Vipps QR API
 
 An early version of the Vipps QR API is available on GitHub:
 https://github.com/vippsas/vipps-qr-api
@@ -34,7 +34,7 @@ The QR code, when scanned and opened, will redirect the user to the Vipps
 landing page, which on the phone will automatically trigger a switch to the
 Vipps app where they can pay the merchant.
 
-# The Vipps Order Management API
+## The Vipps Order Management API
 
 An early version of the Vipps Order Management API is available on GitHub:
 https://github.com/vippsas/vipps-order-management-api/
@@ -44,7 +44,7 @@ existing Vipps transaction. This information is shown to the customer in the
 app in their order history. This functionality is available for both recurring
 and direct payments, but not for passthrough payments.
 
-# The Vipps Merchant Management API
+## The Vipps Merchant Management API
 
 An early version of the Vipps Merchant Management API is available on GitHub:
 https://github.com/vippsas/vipps-merchant-management-api
@@ -53,23 +53,23 @@ The Vipps Merchant Management API will let partners, banks and large corporation
 manage their merchants and sale units. See the GitHub repository for
 background and priorities.
 
-# Vipps Login support for authentication/registration outside of browser/app (CIBA)
+## Vipps Login support for authentication/registration outside of browser/app (CIBA)
 
 The Vipps Login service has been extended with Client Initiated Backchannel Authentication
 (CIBA) flows to support use cases where authentication/registration does not start in a browser or an app.
 
 This could typically be physical contexts like point of sales (POS) solutions, on the
-phone in call center solutions, or devices/terminals like TV boxes. We currently support initiating logins based on the users phone number. We are also working on supporting the same flows with the user scanning the merchant's QR-code as a starting point. 
+phone in call center solutions, or devices/terminals like TV boxes. We currently support initiating logins based on the users phone number. We are also working on supporting the same flows with the user scanning the merchant's QR-code as a starting point.
 
 More information can be found in [our documentation](https://github.com/vippsas/vipps-login-api/blob/master/vipps-login-api.md#client-initiated-backchannel-authentication-flows-ciba---special-cases-where-login-does-not-start-in-browser-or-app).
 
-# The Vipps Recurring API now supports variable amounts
+## The Vipps Recurring API now supports variable amounts
 
 Recurring agreements with variable amount lets merchants charge users a different amount each for interval, based on the user's specified max amount.
 
 More information can be found in [our documentation](https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api.md#recurring-agreements-with-variable-amount).
 
-# API Dashboard for the test environment
+## API Dashboard for the test environment
 
 The API Dashboard is now available for both the production and test environments.
 See it on
@@ -79,7 +79,7 @@ Here's an example:
 
 ![API dashboard login data](images/2021-06-api-dashboard-login-example.png)
 
-# Removed HTTP 402 errors
+## Removed HTTP 402 errors
 
 The Vipps eCom API previously sent `HTTP 402 Payment Required` for some errors.
 That HTTP status is "reserved for future use", and our use was a bit .. creative.
@@ -89,12 +89,12 @@ We now send `HTTP 400 Bad Request` instead, with more details in the message bod
 Since this is _still_ an error that can and must be fixed by the merchant,
 we have concluded that the change does not require a new version of the API.
 
-# Newsletter archive
+## Newsletter archive
 
 All the previous newsletters are in the
 [newsletter archive](https://github.com/vippsas/vipps-developers/tree/master/newsletters).
 
-# Questions or comments?
+## Questions or comments?
 
 We're always happy to help with code or other questions you might have!
 Please create [GitHub issues or pull requests](https://github.com/vippsas)
