@@ -7,8 +7,6 @@ END_METADATA -->
 
 # Technical newsletter for developers 2022-09
 
-💥 DRAFT! 💥
-
 This newsletter was sent in September 2022.
 
 <!-- START_TOC -->
