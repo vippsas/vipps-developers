@@ -10,6 +10,7 @@ END_METADATA -->
 <!-- START_TOC -->
 
 ## Table of Contents
+
 * [Quick start guides](#quick-start-guides)
 * [Postman](#postman)
   * [Import collections and environments](#import-collections-and-environments)
@@ -19,18 +20,18 @@ END_METADATA -->
 
 <!-- END_TOC -->
 
-Document version: 4.1.0.
+Document version: 4.1.1.
 
-## Quick start guides
+## API quick start guides
 
 Ae have quick start guides for these APIs:
 
-* [eCom API Quick start](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-quick-start.md)
-* [Recurring API Postman Guide](https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-postman.md)
-* [Login API Postman Guide](https://github.com/vippsas/vipps-login-api/blob/master/vipps-login-api-quick-start.md)
-* [Partner API Postman Guide](https://github.com/vippsas/vipps-partner-api/blob/main/vipps-partner-api-quick-start.md)
-* [PSP API Postman Guide](https://github.com/vippsas/vipps-psp-api/blob/master/vipps-psp-api-quick-start.md)
-* [QR API Postman Guide](https://github.com/vippsas/vipps-qr-api/blob/main/vipps-qr-api-quick-start.md)
+* [eCom API](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-quick-start.md)
+* [Recurring API](https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api-quick-start.md)
+* [Login API](https://github.com/vippsas/vipps-login-api/blob/master/vipps-login-api-quick-start.md)
+* [Partner API](https://github.com/vippsas/vipps-partner-api/blob/main/vipps-partner-api-quick-start.md)
+* [PSP API](https://github.com/vippsas/vipps-psp-api/blob/master/vipps-psp-api-quick-start.md)
+* [QR API](https://github.com/vippsas/vipps-qr-api/blob/main/vipps-qr-api-quick-start.md)
 
 All of these are based on Postman, which we have some information about below.
 
@@ -62,9 +63,7 @@ the complete request and response.
 ### Insert values
 
 The Postman environments comes pre-filled with some values, but there are still
-some required values which have to be manually entered. For a complete overview
-over which values must be entered and where to find them, see
-[Postman variable overview](#postman-variables-overview).
+some required values which have to be manually entered.
 
 Click `Edit` and paste in values for each variable.
 
