@@ -68,7 +68,7 @@ without using the app.
 ## New developer pages on vipps.no
 
 We now offer nicely formatted and Vipps-branded developer pages at
-https://vipps.no/developer.
+>https://vipps.no/developer>.
 
 The pages are automatically generated from the GitHub repos, so the
 content is the same, and you can choose what to use.
@@ -93,13 +93,13 @@ is very welcome.
 
 We have made some more in-depth product information pages with screenshots:
 
-* eCom (Vipps på Nett): https://vipps.no/developers-documentation/ecom/how-it-works/
-* Recurring: https://vipps.no/developers-documentation/recurring/how-it-works/
+* [eCom (_Vipps på Nett_)](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-howitworks.md)
+* [Recurring (_Faste Betalinger_)](https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-login-recurring-howitworks.md)
 
 ## Plugin overview
 
 We now have plugins for WordPress/WooCommerce, Magento, Episerver, Shopify, Drupal:
-https://github.com/vippsas/vipps-developers#plugins
+[Vipps-plugins](https://github.com/vippsas/vipps-plugins)
 
 We have some more candidates too.
 
@@ -124,7 +124,7 @@ Please see
 
 ### Newsletter archive
 
-Please see: https://github.com/vippsas/vipps-developers/tree/master/newsletters
+Please see: [Newsletters](https://github.com/vippsas/vipps-developers/tree/master/newsletters)
 
 ## Questions or comments?
 
