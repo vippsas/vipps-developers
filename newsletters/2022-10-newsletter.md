@@ -5,9 +5,9 @@ title: 2022-09
 ---
 END_METADATA -->
 
-# Technical newsletter for developers 2022-09
+# Technical newsletter for developers 2022-10
 
-This newsletter was sent in September 2022.
+This newsletter was sent in October 2022.
 
 <!-- START_TOC -->
 
