@@ -9,11 +9,11 @@ END_METADATA -->
 
 The Vipps APIs provide access to the following types of transactions.
 
-## In-person and remote transactions
+In-person and remote transactions:
 
 - _Vipps Checkout (Vipps Checkout_) - A complete Checkout solution for both Vipps and card payments with auto-fill and shipping integrations.
 
-## In-person transactions
+In-person transactions:
 
 - _Vennebetaling (Person to Person payments_) - A person can transfer money to another person. They must both have configured their Vipps app with their respective bank account numbers. There is no API.
 
@@ -21,7 +21,7 @@ The Vipps APIs provide access to the following types of transactions.
 
 - _Vipps i kassa (Vipps In Store_) - A company can integrate its Point of Sale (POS) system with Vipps so that in-store customers can pay by using Vipps, and the sale will be automatically registered in their system.
 
-## Remote transactions
+Remote transactions:
 
 - _Vipps Logg Inn (Vipps Login_) - A website or app can allow the customer to log in by using their Vipps account.
 
@@ -32,7 +32,7 @@ The Vipps APIs provide access to the following types of transactions.
 - _Faste betalinger (Recurring payments_) - A business or organization can allow their customers to set up recurring payments (e.g., for subscriptions, membership, regular donations, etc.) through Vipps.
 
 
-Document version: 3.4.0.
+Document version: 3.4.1.
 
 <!-- START_TOC -->
 
