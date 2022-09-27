@@ -7,7 +7,7 @@ END_METADATA -->
 
 # Vipps API Lifecycle
 
-Document version: 1.0.4.
+Document version: 1.1.0.
 
 <!-- START_TOC -->
 
