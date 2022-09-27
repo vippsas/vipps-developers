@@ -190,7 +190,7 @@ Please see
 
 ### Newsletter archive
 
-Please see: [newsletters](https://github.com/vippsas/vipps-developers/tree/master/newsletters)
+Please see: [newsletters](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/newsletters/)
 
 ## Questions or comments?
 

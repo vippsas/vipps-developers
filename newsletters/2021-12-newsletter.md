@@ -165,7 +165,7 @@ More information can be found in [our documentation](https://github.com/vippsas/
 ## Newsletter archive
 
 All the previous newsletters are in the
-[newsletter archive](https://github.com/vippsas/vipps-developers/tree/master/newsletters).
+[newsletter archive](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/newsletters/).
 
 ## Questions or comments?
 
