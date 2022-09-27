@@ -30,7 +30,7 @@ The Merchant Test Environment (MT) is available for all Vipps customers.
 
 <!-- END_TOC -->
 
-Document version: 3.1.19.
+Document version: 3.1.20.
 
 ## About the test environment
 
@@ -39,13 +39,11 @@ All Vipps customers with access to
 [Vipps Faste Betalinger](https://www.vipps.no/produkter-og-tjenester/bedrift/faste-betalinger/faste-betalinger/)
 and
 [Vipps Logg Inn](https://www.vipps.no/produkter-og-tjenester/bedrift/logg-inn-med-vipps/logg-inn-med-vipps/)
-have access to the test environment. See
-[Getting started](https://github.com/vippsas/vipps-developers/blob/master/vipps-getting-started.md)
-for more information.
+have access to the test environment.
 
 **Important:** There is no SLA or uptime guarantee for the test environment.
 Vipps will not make any fixes, etc. outside of typical Norwegian office hours.
-See
+See the
 [Status page](https://vipps-test.statuspage.io)
 for automatically updated status information.
 
@@ -86,26 +84,24 @@ Other differences between Prod and MT:
 
 ## Test merchants
 
-Sale units in the test environment has access to these APIs:
+All Vipps customers can create sale units in the test environment.
+These sale units have access to all the [current API products](vipps-getting-started.md#api-products).
 
-- [Vipps Access Token API](https://github.com/vippsas/vipps-developers/blob/master/vipps-getting-started.md#get-an-access-token)
-- [Vipps eCom API](https://github.com/vippsas/vipps-ecom-api)
-- [Vipps Recurring API](https://github.com/vippsas/vipps-recurring-api)
-- [Vipps Login API](https://github.com/vippsas/vipps-login-api)
-- [Vipps QR API](https://github.com/vippsas/vipps-qr-api )
-- [Vipps Order Management API](https://github.com/vippsas/vipps-order-management-api)
+To create a test sale unit:
 
-See
-[API Products](https://github.com/vippsas/vipps-developers/blob/master/vipps-getting-started.md#api-products)
-for more details.
+1. Log in to [portal.vipps.no](https://portal.vipps.no) using BankID.
 
-All Vipps customers can create sale units in the test environment on
-[portal.vipps.no](https://portal.vipps.no)
-under the "Utvikler" tab: Choose "test keys" and then press
-"Add test sale unit".
+2. Select _Vipps På Nett_ > _Utvikler_.
 
-You can configure the sale unit with "direct capture" or "reserve capture",
-"skipLandingPage", etc.
+3. In the page that opens, select _Test_. This opens a list of all the test merchants.
+
+4. If you do not have one that you can use, create it by clicking _Add test sales unit_.
+
+5. In the panel that opens, enter a name and select the properties you would like. Then click _Create_.
+
+6. After some minutes, and browser refreshes, you should find the new merchant at the bottom of the list.
+
+7. Click the _Show keys_ button to see your test keys. Take note of these, but do not share them or store them in a publicly accessible place, including the online version of Postman.
 
 It is not possible to _change_ an existing sale unit in the test environment,
 but you can create as many as you need.
@@ -116,13 +112,13 @@ but you can create as many as you need.
 
 ## Test users
 
-The welcome email that is automatically sent to **all** new customers contains
-information about your test user for the test environment.
-Please search your mail, including the spam/junk folder if you do not find it.
+A welcome email is automatically sent to **all** new customers. This should contain
+information about your test user.
+Please search your mail, including the spam/junk folder, if you do not find it.
 
-You can use this test user in the [Vipps test apps](#vipps-test-apps).
+The provided test user can be used in the [Vipps test apps](#vipps-test-apps).
 
-You must log in with the test user in the test app before you can complete payments for that user.
+You must log in with the test user in the test app, before you can complete payments for that user.
 
 You may use the same test user on multiple devices.
 
@@ -151,7 +147,7 @@ If you need additional payment cards, you can add it in the Vipps app.
 
 ### Email address
 
-You can add a real email address on a test user from the `Profile` -> `Personal information` -> `Email` section in the app.
+You can add a real email address on a test user from the *Profile* -> *Personal information* -> *Email_ section in the app.
 
 **Please note:** In MT verification of emails can only be triggered in a
 Vipps Login flow (if the merchant requests email), or from clicking “send email”

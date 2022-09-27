@@ -7,66 +7,13 @@ END_METADATA -->
 
 # Getting Started
 
-This guide is for the following APIs:
+The Vipps APIs provide access to the following types of transactions.
 
-- [Vipps Checkout API](https://github.com/vippsas/vipps-checkout-api)
-- [Vipps eCom API](https://github.com/vippsas/vipps-ecom-api)
-- [Vipps Recurring API](https://github.com/vippsas/vipps-recurring-api)
-- [Vipps Login API](https://github.com/vippsas/vipps-login-api)
-- [Vipps QR API](https://github.com/vippsas/vipps-qr-api )
-- [Vipps Order Management API](https://github.com/vippsas/vipps-order-management-api)
-
-**Please note:** API keys are _not_ available for
-[Vippsnummer](https://www.vipps.no/produkter-og-tjenester/bedrift/ta-betalt-i-butikk/ta-betalt-med-vipps/),
-as there is no external API.
-
-If you are using Vipps through an e-commerce platform, integration partner or PSP, please see the respective resources:
-
-- [E-commerce platform](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-1)
-- [Partner](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-3)
-- [PSP](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-2)
-
-Document version: 3.3.7.
-
-<!-- START_TOC -->
-
-## Table of contents
-
-- [Product types](#product-types)
-  - [In-person transactions](#in-person-transactions)
-  - [Remote transactions](#remote-transactions)
-- [Requirements](#requirements)
-  - [Foreign companies](#foreign-companies)
-  - [Vipps users](#vipps-users)
-- [Get credentials](#get-credentials)
-  - [Getting the API keys](#getting-the-api-keys)
-  - [Permissions and users](#permissions-and-users)
-  - [Test and production environments](#test-and-production-environments)
-  - [List of sale units](#list-of-sale-units)
-  - [API keys for a sale unit](#api-keys-for-a-sale-unit)
-  - [API key details](#api-key-details)
-  - [API keys for different use](#api-keys-for-different-use)
-- [API products](#api-products)
-  - [Vipps-API](#vipps-api)
-  - [Legacy API products](#legacy-api-products)
-- [Quick overview of how to make an API call](#quick-overview-of-how-to-make-an-api-call)
-  - [Get an access token](#get-an-access-token)
-    - [Request](#request)
-    - [Response](#response)
-  - [Make an API call](#make-an-api-call)
-  - [HTTP response codes](#http-response-codes)
-  - [Checking for errors with the API Dashboard](#checking-for-errors-with-the-api-dashboard)
-- [Questions?](#questions)
-
-<!-- END_TOC -->
-
-## Product types
-
-### In-person and remote transactions
+## In-person and remote transactions
 
 - _Vipps Checkout (Vipps Checkout_) - A complete Checkout solution for both Vipps and card payments with auto-fill and shipping integrations.
 
-### In-person transactions
+## In-person transactions
 
 - _Vennebetaling (Person to Person payments_) - A person can transfer money to another person. They must both have configured their Vipps app with their respective bank account numbers. There is no API.
 
@@ -74,7 +21,7 @@ Document version: 3.3.7.
 
 - _Vipps i kassa (Vipps In Store_) - A company can integrate its Point of Sale (POS) system with Vipps so that in-store customers can pay by using Vipps, and the sale will be automatically registered in their system.
 
-### Remote transactions
+## Remote transactions
 
 - _Vipps Logg Inn (Vipps Login_) - A website or app can allow the customer to log in by using their Vipps account.
 
@@ -84,24 +31,84 @@ Document version: 3.3.7.
 
 - _Faste betalinger (Recurring payments_) - A business or organization can allow their customers to set up recurring payments (e.g., for subscriptions, membership, regular donations, etc.) through Vipps.
 
+
+Document version: 3.4.0.
+
+<!-- START_TOC -->
+
+## Table of contents
+
+- [API products](#api-products)
+- [Requirements](#requirements)
+  - [Non-Norwegian companies](#non-norwegian-companies)
+  - [Vipps users](#vipps-users)
+- [Get credentials](#get-credentials)
+  - [Getting the API keys](#getting-the-api-keys)
+  - [Permissions and users](#permissions-and-users)
+  - [Test and production environments](#test-and-production-environments)
+  - [List of sale units](#list-of-sale-units)
+  - [API keys for a sale unit](#api-keys-for-a-sale-unit)
+  - [API key details](#api-key-details)
+  - [API keys for different use](#api-keys-for-different-use)
+- [Quick overview of how to make an API call](#quick-overview-of-how-to-make-an-api-call)
+  - [Get an access token](#get-an-access-token)
+  - [Make an API call](#make-an-api-call)
+  - [HTTP response codes](#http-response-codes)
+  - [Checking for errors with the API Dashboard](#checking-for-errors-with-the-api-dashboard)
+- [Questions?](#questions)
+
+<!-- END_TOC -->
+
+## API products
+
+The `Vipps-API` product gives you access to all of the following APIs:
+
+- [Access Token API](#get-an-access-token)- Required to obtain a JWT
+- [Checkout API](https://github.com/vippsas/vipps-checkout-api) - Checkout API
+- [eCom API](https://github.com/vippsas/vipps-ecom-api) - eCommerce, including express checkout
+- [ePayment API](https://github.com/vippsas/vipps-epayment-api) - New version of eCom API
+- [Login API](https://github.com/vippsas/vipps-login-api) - Identification
+- [Order Management API](https://github.com/vippsas/vipps-order-management-api) - Add data to orders
+- [Partner API](https://github.com/vippsas/vipps-partner-api) - Get info about merchants/sale units.
+- [PSP API](https://github.com/vippsas/vipps-psp-api) - Initiate PSP payments. Update merchants.
+- [QR API](https://github.com/vippsas/vipps-qr-api) - QR codes
+- [Recurring API](https://github.com/vippsas/vipps-recurring-api) - Recurring API
+
+**Please note:** API keys are _not_ available for
+[Vippsnummer](https://www.vipps.no/produkter-og-tjenester/bedrift/ta-betalt-i-butikk/ta-betalt-med-vipps/),
+as there is no external API.
+
+For an overview of all products, in Norwegian, see [vipps.no](https://vipps.no/produkter-og-tjenester/bedrift/).
+
+### Note to existing users
+
+Vipps has previously had separate API keys for each API product, and a set of
+API keys were directly linked to one sale unit. This meant that customers
+needed to keep track of multiple API keys, and that access to a new API
+required a new sale unit. The API keys for Vipps eCom v1 and v2 APIs have been “upgraded” to include the same APIs as
+Vipps API.  The `Vipps-API` product also includes some _legacy_ APIs, such as _eCom API v1_ _Signup and Login_.
+
+If you are still using a legacy API, you should upgrade as soon as possible.
+See:
+[Vipps API Lifecycle](vipps-api-lifecycle.md) for more information.
+
 ## Requirements
 
-Merchants need a Norwegian organization number and Norwegian BankID to apply for Vipps services.
+To apply for Vipps services, you need to have a Norwegian organization number, Norwegian BankID.
 
-Before the merchant can order any Vipps services, they first need to apply for
-a Merchant Agreement. This is a legal agreement between the merchant and Vipps.
-When the Merchant Agreement has been sent, the merchant can order the Vipps
-product the merchant needs.
+In addition, before you can order any Vipps services, you must apply for
+a _Merchant Agreement_. This is a legal agreement between you and Vipps.
+Once the _Merchant Agreement_ has been submitted, you can order Vipps
+products.
 
-Everything is done by the merchant on [portal.vipps.no](https://portal.vipps.no).
-For an overview of all products, see [vipps.no](https://vipps.no/produkter-og-tjenester/bedrift/).
+You will do everything on [portal.vipps.no](https://portal.vipps.no).
 
-As soon as the Merchant Agreement has been approved, and a product order is sent,
-access to
-[The Vipps test environment (MT)](https://github.com/vippsas/vipps-developers#the-vipps-test-environment-mt)
-is provided, and details are sent on email to the user who made the product order.
+As soon as the _Merchant Agreement_ has been approved, and a product order is sent,
+access to the
+[Vipps test environment (MT)](https://github.com/vippsas/vipps-developers#the-vipps-test-environment-mt)
+will be provided. Details are sent on email to the user who made the product order.
 
-### Foreign companies
+### Non-Norwegian companies
 
 Non-Norwegian companies must have the following in order to use Vipps as a payment
 provider and to receive payments from Vipps users:
@@ -112,8 +119,8 @@ provider and to receive payments from Vipps users:
   identity number (i.e., "fødselsnummer" or "D-nummer", 11 digits).
 
 If the foreign company is registered in
-[Brønnøysundregistrene](https://breeg.no)
-it has a contact person with a fødselsnummer or D-nummer.
+[Brønnøysundregistrene](https://breeg.no),
+it has a contact person with a Norwegian identity number.
 
 If the foreign company has not yet been formally established, Vipps can
 manually send the agreement for digital signing with Danish NemID,
@@ -139,8 +146,8 @@ Read more on how to
 
 ## Get credentials
 
-When the application has been processed, Vipps will send an email to the merchant,
-and the API keys can be retrieved by logging in with BankID on
+When your application has been processed, Vipps will send an email
+informing you that the API keys can be retrieved by logging in with BankID on
 [portal.vipps.no](https://portal.vipps.no).
 
 If you have questions about your application, please check the status on
@@ -155,14 +162,15 @@ and have _them_ help you with developer access to their systems.
 
 ### Getting the API keys
 
-The API keys can be retrieved by logging in with BankID on
-[portal.vipps.no](https://portal.vipps.no),
-under the `Utvikler` menu item.
-Since this gives access to API keys for both the test and production environment,
-BankID is required.
+To get your API keys:
 
-You may have to click "Vipps På Nett" first, to open up the right menu.
-There is no "Utvikler" tab if you only have "Vippsnummer".
+1. Log in to [portal.vipps.no](https://portal.vipps.no) using BankID.
+
+2. Select _Vipps På Nett_ > _Utvikler_.
+
+   - Not available for _Vippsnummer_ ,as it has no API.
+
+3. In the page that opens, you will find your merchant sale unit listed under _Production_ and/or _Test_. Click the _Show keys_ button to see your keys.
 
 **Please note:**
 
@@ -178,7 +186,7 @@ There is no "Utvikler" tab if you only have "Vippsnummer".
 ### Permissions and users
 
 If you do not have BankID,
-or you have BankID but not access to the right merchant,
+or you have BankID but not access to the correct merchant,
 you will need the merchant's administrator to log in on
 [portal.vipps.no](https://portal.vipps.no)
 and provide the API keys to you in a secure way.
@@ -265,65 +273,6 @@ native apps for iOS and Android,
 point of sale integrations,
 [all the Vipps plugins](https://github.com/vippsas/vipps-plugins)
 and any other solution based on the Vipps eCom API.
-
-## API products
-
-An _API product_ is a "package" consisting of one or more APIs.
-
-Vipps has previously had separate API keys for each API product, and a set of
-API keys were directly linked to one sale unit. This meant that customers
-needed to keep track of multiple API keys, and that access to a new API
-required a new sale unit.
-This is no longer the case: New customers now get the `Vipps-API` API product.
-
-The Vipps-API API product give access to all current APIs, and the API keys for
-the Vipps eCom v1 and v2 APIs have been “upgraded” to include the same APIs as
-Vipps API.
-
-### Vipps-API
-
-This API product includes the following APIs:
-
-| API                  | Description                           | Documentation                                         |
-|----------------------|---------------------------------------|-------------------------------------------------------|
-| Access Token API     | Required to obtain a JWT              | See: [Get an access token](#get-an-access-token)      |
-| eCom API             | eCommerce, including express checkout | <https://github.com/vippsas/vipps-ecom-api>             |
-| Recurring API        | Recurring API                         | <https://github.com/vippsas/vipps-recurring-api>        |
-| Checkout API         | Checkout API                          | <https://github.com/vippsas/vipps-checkout-api>        |
-| Log In API           | Identification                        | <https://github.com/vippsas/vipps-login-api>            |
-| QR API               | QR codes                              | <https://github.com/vippsas/vipps-qr-api>               |
-| Order Management API | Add data to orders                    | <https://github.com/vippsas/vipps-order-management-api> |
-
-Vipps-API also includes some _legacy_ APIs:
-
-| API              | Description                                                      | Documentation                                    |
-|------------------|------------------------------------------------------------------|--------------------------------------------------|
-| eCom API v1      | eCommerce, legacy version, phased out on September 1 2020.       | <https://github.com/vippsas/vipps-ecom-api-v1>     |
-| Signup and Login | Legacy API (superseded by Vipps Log In), end of life Dec 31 2019 | <https://github.com/vippsas/vipps-signuplogin-api> |
-
-If you are still using a legacy API, you should upgrade as soon as possible.
-The best way to keep up to date of changes is to
-[star the API repository on GitHub](https://help.github.com/en/articles/about-stars).
-
-See:
-[Vipps API Lifecycle](vipps-api-lifecycle.md).
-
-### Legacy API products
-
-Old API products have the `ZZZ` prefix to make them easy to distinguish,
-and to always sort them at the bottom of lists.
-One example is `ZZZ eCommerce-Classic-Services-API`.
-
-The legacy API products prefixed with `ZZZ` have been updated to also include the
-current, corresponding APIs in Vipps-API.
-This means that a sale unit that could previously only use eCom v1,
-can now also use eCom v2, with the same API keys as before.
-
-The legacy `ZZZ` API products still work, and there is no need to "upgrade" to Vipps-API,
-unless there are technical problems.
-
-The current APIs offer substantial improvements over the legacy APIs, and
-we strongly recommend upgrading to the current version as soon as possible.
 
 ## Quick overview of how to make an API call
 
