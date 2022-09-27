@@ -23,14 +23,15 @@ The Merchant Test Environment (MT) is available for all Vipps customers.
   - [Other data](#other-data)
 - [Test amounts](#test-amounts)
 - [Vipps test apps](#vipps-test-apps)
+  - [Install Vipps MT on iOS](#install-vipps-mt-on-ios)
+  - [Install Vipps MT on Android](#install-vipps-mt-on-android)
+  - [Other versions](#other-versions)
   - [Limitations of the test apps](#limitations-of-the-test-apps)
-  - [iOS](#ios)
-  - [Android](#android)
 - [Questions?](#questions)
 
 <!-- END_TOC -->
 
-Document version: 3.1.20.
+Document version: 3.2.0.
 
 ## About the test environment
 
@@ -184,11 +185,12 @@ endpoint does not support this functionality.
 ## Vipps test apps
 
 The test apps for iOS and Android are identical to the production apps, but connect to
-[the Vipps test environment (MT)](#the-vipps-test-environment-mt)
+the Vipps test environment (MT)
 instead of the production environment.
 
 The test apps can be installed on the same device as the production apps without conflicts.
 The test apps use the `vippsMT://` URL scheme, and the production apps use `vipps://`.
+See installation instructions below.
 
 Only test users, with random "fake" phone numbers, are available in the test environments.
 Normal Vipps users are not available, so you cannot use your own phone number with the test apps.  
@@ -198,24 +200,8 @@ Normal Vipps users are not available, so you cannot use your own phone number wi
 - Do _not_ use the test phone number in the production environment,
   as the test number may be a real phone number for a real Vipps user.
 
-**Please note:**
 
-- It may sometimes be necessary to use specific app versions in MT.
-  This happens when the production apps and the production environment are not _quite_
-  in sync with the test environment. When this happens, we update the
-  [Status page for the test environment](https://vipps-test.statuspage.io)
-  with details.
-- If you use an emulator, and not the native apps installed on
-  a phone, you may experience problems - such as having to log in "from scratch"
-  every time you start Vipps in the emulator.
-
-### Limitations of the test apps
-
-- Push alerts may be unstable. To see payment requests: Open Vipps and manually
-  go to "Betalinger" (i.e., _Payments_) at the bottom of the main screen.
-  You may also need to pull down to refresh.
-
-### iOS
+### Install Vipps MT on iOS
 
 The iOS test app is available in Apple TestFlight.
 You do _not_ need an invitation or an activation code.
@@ -235,7 +221,7 @@ You do _not_ need an invitation or an activation code.
 
 You are now ready to use the iOS test app connected to the Vipps test environment.
 
-### Android
+### Install Vipps MT on Android
 
 The Android test app is available in App Center.
 You do _not_ need an invitation or an activation code.
@@ -256,6 +242,25 @@ You do _not_ need an invitation or an activation code.
 8. Accept push notifications.
 
 You are now ready to use the Android test app connected to the Vipps test environment.
+
+### Other versions
+
+It may sometimes be necessary to use specific app versions in MT.
+This happens when the production apps and the production environment are not _quite_
+in sync with the test environment. When this happens, we update the
+[Status page for the test environment](https://vipps-test.statuspage.io)
+with details.
+
+If you use an emulator, and not the native apps installed on
+a phone, you may experience problems - such as having to log in "from scratch"
+every time you start Vipps in the emulator.
+
+### Limitations of the test apps
+
+- Push alerts may be unstable. To see payment requests: Open Vipps and manually
+  go to "Betalinger" (i.e., _Payments_) at the bottom of the main screen.
+  You may also need to pull down to refresh.
+
 
 ## Questions?
 
