@@ -49,7 +49,8 @@ You need:
 
 ## Getting started with Postman
 
-[Postman](https://www.getpostman.com/) is a common tool for working with REST APIs.
+[Postman](https://learning.postman.com/docs/getting-started/introduction/)
+is a common tool for working with REST APIs.
 It allows you to make calls to the API endpoints and see the full
 request and response for each call, including headers.
 
