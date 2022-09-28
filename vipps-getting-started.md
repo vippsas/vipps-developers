@@ -119,7 +119,8 @@ provider and to receive payments from Vipps users:
   identity number (i.e., "fødselsnummer" or "D-nummer", 11 digits).
 
 If the foreign company is registered in
-[Brønnøysundregistrene](https://breeg.no),
+
+[Brønnøysundregistrene](https://www.brreg.no/)
 it has a contact person with a Norwegian identity number.
 
 If the foreign company has not yet been formally established, Vipps can

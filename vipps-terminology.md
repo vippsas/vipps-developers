@@ -15,7 +15,7 @@ Document version: 1.0.0.
 
 * BankID - Software that certifies the identity of a person.
 
-* [Brønnøysundregistrene](https://breeg.no/) - The official Norwegian register of companies.
+* [Brønnøysundregistrene](https://www.brreg.no/) - The official Norwegian register of companies.
 
 * `client_id` - The client ID (e.g., the "username") for the merchant. This is one of the API keys that is retrieved by logging in on [portal.vipps.no](https://portal.vipps.no).
 
