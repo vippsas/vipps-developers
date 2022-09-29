@@ -219,7 +219,7 @@
 		},
 		{
 			"key": "merchantAgreementUrl",
-			"value": "https://example.com/",
+			"value": "https://example.com/agreement-url",
 			"enabled": true
 		},
 		{
