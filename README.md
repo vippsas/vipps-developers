@@ -21,25 +21,26 @@ See the disclaimer: <https://vippsas.github.io/vipps-developer-docs/docs/example
 
 ## Table of contents
 
-- [Vipps demo store](#vipps-demo-store)
-- [API documentation](#api-documentation)
-- [Technical newsletter](#technical-newsletter)
-- [Partners](#partners)
-- [Plugins](#plugins)
-- [Status pages](#status-pages)
-- [The Vipps test environment (MT)](#the-vipps-test-environment-mt)
-- [Quick start guides](#quick-start-guides)
-- [API Dashboard](#api-dashboard)
-- [Vipps API servers](#vipps-api-servers)
-- [Vipps request servers](#vipps-request-servers)
-- [Vipps API Lifecycle](#vipps-api-lifecycle)
-- [Settlements](#settlements)
-- [Vipps design guidelines](#vipps-design-guidelines)
-- [Questions?](#questions)
+* [Vipps demo store](#vipps-demo-store)
+* [API documentation](#api-documentation)
+* [Technical newsletter](#technical-newsletter)
+* [Partners](#partners)
+* [Plugins](#plugins)
+* [Status pages](#status-pages)
+* [The Vipps test environment (MT)](#the-vipps-test-environment-mt)
+* [Quick start guides](#quick-start-guides)
+* [API Dashboard](#api-dashboard)
+* [Vipps servers](#vipps-servers)
+  * [Vipps API servers](#vipps-api-servers)
+  * [Vipps request servers](#vipps-request-servers)
+* [Vipps API Lifecycle](#vipps-api-lifecycle)
+* [Settlements](#settlements)
+* [Vipps design guidelines](#vipps-design-guidelines)
+* [Questions?](#questions)
 
 <!-- END_TOC -->
 
-Document version: 2.6.6.
+Document version: 2.3.0.
 
 ## Vipps demo store
 
@@ -66,11 +67,9 @@ The most commonly used APIs:
 - [Vipps Order Management API](https://github.com/vippsas/vipps-order-management-api)
 - [Vipps PSP API](https://github.com/vippsas/vipps-psp-api)
 
-All Vipps APIs are available (and searchable) on GitHub: <https://github.com/vippsas>
-
-The API documentation is frequently improved and increasingly extensive.
-Please use the search functionality in your browser and on GitHub to find
-what you are looking for.
+All the Vipps APIs, and all the documentation on this website,
+is available (and searchable) on GitHub: <https://github.com/vippsas>.
+If you have suggestions for improvement: Please submit an issue or PR.
 
 ## Technical newsletter
 
@@ -94,8 +93,6 @@ We have several status pages, and we strongly recommend to subscribe to them
 
 - Test environment: <https://vipps-test.statuspage.io>
 - Production environment: <https://vipps.statuspage.io>
-- BankID production: <https://www.bankid.no/status/>
-- BankID pre-production: <https://bankidpreprod.statuspage.io>
 
 You can use the Atom and RSS feeds on the status pages for integration with other systems.
 
@@ -105,8 +102,6 @@ See
 [The Vipps test environment (MT)](vipps-test-environment.md)
 for more information about general test functionality,
 the iOS and Android test apps, etc.
-
-MT is short for Merchant Test.
 
 ## Quick start guides
 
@@ -134,7 +129,8 @@ We strongly recommend that you also monitor your Vipps integration yourself.
 
 **Important:** Partners can ask their merchants to give them access to the
 sale unit(s) the partner is making payments for, so the partner can use the
-API Dashboard.
+API Dashboard. There is a guide here:
+[How to add a user on portal.vipps.no](https://github.com/vippsas/vipps-partner/blob/main/add-portal-user.md)
 
 **Please note:** The API dashboard is not real-time, and events might take up to
 10 minutes before they appear.
@@ -142,7 +138,21 @@ API Dashboard.
 Keep in mind that the "Utvikler" tab is only available to users with admin or
 developer roles.
 
-## Vipps API servers
+## Vipps servers
+
+Vipps has different servers for making API calls to Vipps, and for Vipps
+to make API calls to merchants (like callbacks).
+
+**Please note:** Vipps may change the IP addresses for the request servers. To ensure
+that you are whitelisting the correct IP addresses please use these hostnames
+and DNS, and automatically update your firewall rules if there are DNS changes.
+We cannot provide the IP addresses in any other way than DNS.
+
+The servers are the same for all APIs.
+
+The Vipps servers all use UTC time.
+
+### Vipps API servers
 
 The test and production environments are separate and require different API credentials:
 
@@ -153,16 +163,7 @@ The test and production environments are separate and require different API cred
 The servers are world accessible. Vipps only relies on the API keys, and
 no requests to our servers are blocked on our side by IP addresses or similar.
 
-The servers are the same for all APIs.
-
-The Vipps servers all use UTC time.
-
-**Please note:** Vipps may change the IP addresses for the API servers. To ensure
-that you are whitelisting the correct IP addresses please use these hostnames
-and DNS, and automatically update your firewall rules if there are DNS changes.
-We cannot provide the IP addresses in any other way than DNS.
-
-## Vipps request servers
+### Vipps request servers
 
 Requests made by Vipps are made from the servers specified below.
 Vipps normally only uses one server at a time, and change servers approximately
@@ -176,13 +177,6 @@ every three months.
 | callback-4.vipps.no | callback-dr-4.vipps.no |                        |
 
 The disaster recovery environment is as important as the production environment.
-
-The servers are the same for all APIs.
-
-**Please note:** Vipps may change the IP addresses for the request servers. To ensure
-that you are whitelisting the correct IP addresses please use these hostnames
-and DNS, and automatically update your firewall rules if there are DNS changes.
-We cannot provide the IP addresses in any other way than DNS.
 
 For API products where Vipps makes requests to your servers, please make sure
 that these request servers are allowed through firewalls, etc.
@@ -199,11 +193,11 @@ See:
 
 ## Vipps design guidelines
 
-Guidelines, logos, buttons, etc is here:
-[vipps-design-guidelines](https://github.com/vippsas/vipps-design-guidelines).
+The best source is:
+[brand.vipps.no](https://brand.vipps.no)
 
-And here:
-[brand.vipps.no](https://brand.vipps.no).
+There are also some guidelines, logos, buttons, etc. here:
+[vipps-design-guidelines](https://github.com/vippsas/vipps-design-guidelines).
 
 ## Questions?
 
