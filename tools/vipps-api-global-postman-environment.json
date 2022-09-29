@@ -305,7 +305,7 @@
 		},
 		{
 			"key": "description_charge",
-			"value": "Charged through Postman",
+			"value": "This payment was charged with Postman.",
 			"enabled": true
 		},
 		{
