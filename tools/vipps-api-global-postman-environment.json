@@ -315,7 +315,7 @@
 		},
 		{
 			"key": "productDescription",
-			"value": "Product created through Postman",
+			"value": "This payment was created with Postman",
 			"enabled": true
 		},
 		{
