@@ -54,7 +54,7 @@
 		},
 		{
 			"key": "consentRemovalPrefix",
-			"value": "https://example.com/",
+			"value": "https://example.com/vipps/consent-removal",
 			"enabled": true
 		},
 		{
