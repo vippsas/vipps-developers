@@ -30,7 +30,7 @@ END_METADATA -->
 
 <!-- END_TOC -->
 
-Document version 2.3.1.
+Document version 2.3.2.
 
 ## Settlement flow
 
@@ -190,6 +190,9 @@ Details: See the [sftp-report-service](sftp-report-service/) folder.
 
 There is no API for retrieving settlement data.
 [SFTP](#sftp) is the closest alternative.
+
+But:
+[We are in the early planning phase of developing an API]https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/newsletters/2022-10-newsletter#settlement-api-in-progress).
 
 ## Availability
 
