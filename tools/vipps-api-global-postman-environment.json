@@ -310,7 +310,7 @@
 		},
 		{
 			"key": "productDescription_updated",
-			"value": "Updated product created through Postman",
+			"value": "This product was updated with Postman",
 			"enabled": true
 		},
 		{
