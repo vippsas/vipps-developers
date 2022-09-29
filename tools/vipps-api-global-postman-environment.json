@@ -114,7 +114,7 @@
 		},
 		{
 			"key": "transactionTextRefund",
-			"value": "Transaction refunded through Postman",
+			"value": "This payment was refunded with Postman.",
 			"enabled": true
 		},
 		{
