@@ -320,7 +320,7 @@
 		},
 		{
 			"key": "description_refund",
-			"value": "Charge refunded through Postman",
+			"value": "This charge was refunded with Postman",
 			"enabled": true
 		},
 		{
