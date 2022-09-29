@@ -39,7 +39,7 @@
 		},
 		{
 			"key": "callbackPrefix",
-			"value": "https://example.com/",
+			"value": "https://example.com/vipps/callbacks-for-payment-update-from-vipps",
 			"enabled": true
 		},
 		{
