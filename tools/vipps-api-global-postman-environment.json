@@ -214,7 +214,7 @@
 		},
 		{
 			"key": "merchantRedirectUrl",
-			"value": "https://example.com/",
+			"value": "https://example.com/redirect-url",
 			"enabled": true
 		},
 		{
