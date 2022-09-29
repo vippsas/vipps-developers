@@ -104,7 +104,7 @@
 		},
 		{
 			"key": "transactionTextInitiate",
-			"value": "Transaction initiated through Postman",
+			"value": "This payment was initiated with Postman.",
 			"enabled": true
 		},
 		{
