@@ -109,7 +109,7 @@
 		},
 		{
 			"key": "transactionTextCapture",
-			"value": "Transaction captured through Postman",
+			"value": "This payment was captured with Postman.",
 			"enabled": true
 		},
 		{
