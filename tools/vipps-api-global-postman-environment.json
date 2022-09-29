@@ -130,7 +130,7 @@
 		{
 			"key": "well-known_uri",
 			"value": "\"Add url to well-known endpoint for used environment\"",
-			"description": "Url to well-known endpoint for th OIDC service",
+			"description": "URL to well-known endpoint for the OIDC service",
 			"enabled": true
 		},
 		{
