@@ -136,7 +136,7 @@
 		{
 			"key": "redirect_uri",
 			"value": "\"Add redirect uri\"",
-			"description": "Redirect uri to merchant",
+			"description": "Redirect URI to the merchant.",
 			"enabled": true
 		},
 		{
