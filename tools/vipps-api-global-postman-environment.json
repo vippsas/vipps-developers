@@ -49,7 +49,7 @@
 		},
 		{
 			"key": "shippingDetailsPrefix",
-			"value": "https://example.com/",
+			"value": "https://example.com/vipps/shipping",
 			"enabled": true
 		},
 		{
