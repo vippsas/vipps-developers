@@ -30,7 +30,7 @@ END_METADATA -->
 
 <!-- END_TOC -->
 
-Document version 2.3.0.
+Document version 2.3.1.
 
 ## Settlement flow
 
@@ -63,6 +63,7 @@ Please make sure your servers' clocks are correct, e.g. by using [NTP](https://e
 
 Settlement files are generated every day including bank days and weekends (one file every day).
 Payout for Friday, Saturday and Sunday arrives on Tuesday (three separate transactions).
+There is one settlement file per payout.
 
 **Please note:** There is only one payment per settlement period: Even if there
 have been thousands Vipps payments in one week, there will still only be one
