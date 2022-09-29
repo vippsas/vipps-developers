@@ -64,9 +64,13 @@ You will need to update some of the variables, so that the example works with yo
 
 Once you have installed Postman, you can import an environment from one our our APIs and then customize it for your own use.
 
-1. To import the collection or environment, save the file to your desktop. Then, click the *Import* button in the Postman interface.
+1. To import the collection and environment files, save them to your desktop. Then, click the *Import* button in the Postman interface.
 
 2. Select the file(s) and click *Open*.
+
+The following is a global environment file that can be used with all the APIs:
+
+* [Vipps API Global Postman environment](./tools/vipps-api-global-postman-environment.json)
 
 ### Update the environment values
 
