@@ -1,0 +1,364 @@
+{
+	"id": "c4c3427b-fd37-4431-b4fb-a175cfba74ff",
+	"name": "Vipps API Global Environment v1",
+	"values": [
+		{
+			"key": "client_id",
+			"value": "<Go To Vipps Portal->Select the Developer tab->Select Test or Production Keys->Select 'Show keys'->copy the Client Id here>",
+			"enabled": true
+		},
+		{
+			"key": "client_secret",
+			"value": "<Go To Vipps Portal->Select the Developer tab->Select Test or Production Keys->Select 'Show keys'->copy the Client secret here>",
+			"enabled": true
+		},
+		{
+			"key": "merchantSerialNumber",
+			"value": "<Go To Vipps Portal->Select the Developer tab->Select Test or Production Keys->Copy the Merchant Serial Number from the Sale Unit you copied the keys from>",
+			"enabled": true
+		},
+		{
+			"key": "Ocp-Apim-Subscription-Key",
+			"value": "<Go To Vipps Portal->Select the Developer tab->Select Test or Production Keys->Select 'Show keys'->copy the Vipps-Subscription-Key>",
+			"enabled": true
+		},
+		{
+			"key": "amount",
+			"value": "499",
+			"enabled": true
+		},
+		{
+			"key": "amount_capture",
+			"value": "0",
+			"enabled": true
+		},
+		{
+			"key": "mobileNumber",
+			"value": "<Input the mobile number for the test app profile you have received or registered>",
+			"enabled": true
+		},
+		{
+			"key": "callbackPrefix",
+			"value": "https://example.com/",
+			"enabled": true
+		},
+		{
+			"key": "fallBack",
+			"value": "https://example.com/",
+			"enabled": true
+		},
+		{
+			"key": "shippingDetailsPrefix",
+			"value": "https://example.com/",
+			"enabled": true
+		},
+		{
+			"key": "consentRemovalPrefix",
+			"value": "https://example.com/",
+			"enabled": true
+		},
+		{
+			"key": "base_url",
+			"value": "https://apitest.vipps.no",
+			"enabled": true
+		},
+		{
+			"key": "base_url_production",
+			"value": "<For Vipps-Partner-API. Use https://api.vipps.no>",
+			"enabled": true
+		},
+		{
+			"key": "access_token",
+			"value": "<This value will be overwritten when you call the Get Access Token API when having selected eCommerce v2 - MTE environment>",
+			"enabled": true
+		},
+		{
+			"key": "orderId",
+			"value": "<This value will be overwritten on each Initiate Payment call with MSN + timestamp + random int>",
+			"enabled": true
+		},
+		{
+			"key": "vippsLandingPageURL",
+			"value": "<This value will be overwritten on each Initiate Payment call. It will contain a url to the Vipps landing page, obtained from the eCom api.>",
+			"enabled": true
+		},
+		{
+			"key": "shippingCost1",
+			"value": "30",
+			"enabled": true
+		},
+		{
+			"key": "shippingCost2",
+			"value": "100",
+			"enabled": true
+		},
+		{
+			"key": "shippingMethod1",
+			"value": "Postman Method 1",
+			"enabled": true
+		},
+		{
+			"key": "shippingMethod2",
+			"value": "Postman Method 2",
+			"enabled": true
+		},
+		{
+			"key": "transactionTextInitiate",
+			"value": "Transaction initiated through Postman",
+			"enabled": true
+		},
+		{
+			"key": "transactionTextCapture",
+			"value": "Transaction captured through Postman",
+			"enabled": true
+		},
+		{
+			"key": "transactionTextRefund",
+			"value": "Transaction refunded through Postman",
+			"enabled": true
+		},
+		{
+			"key": "transactionTextCancel",
+			"value": "Transaction cancelled through Postman",
+			"enabled": true
+		},
+		{
+			"key": "orgno",
+			"value": "<For Vipps-Partner_API. Use the organization number which must be minimum 9 digits>",
+			"enabled": true
+		},
+		{
+			"key": "well-known_uri",
+			"value": "\"Add url to well-known endpoint for used environment\"",
+			"description": "Url to well-known endpoint for th OIDC service",
+			"enabled": true
+		},
+		{
+			"key": "redirect_uri",
+			"value": "\"Add redirect uri\"",
+			"description": "Redirect uri to merchant",
+			"enabled": true
+		},
+		{
+			"key": "response_type",
+			"value": "code",
+			"description": "",
+			"enabled": true
+		},
+		{
+			"key": "scope",
+			"value": "openid name phoneNumber address birthDate",
+			"description": "Requested scopes",
+			"enabled": true
+		},
+		{
+			"key": "code",
+			"value": "\"Add code from url\"",
+			"description": "Code used to fetch access token after finishing a Vipps login",
+			"enabled": true
+		},
+		{
+			"key": "Ocp-Apim-Subscription-Key-PSP",
+			"value": "<This is the PSP's key, and is the same for all the PSP's merchants. Keep it secret.>",
+			"enabled": true
+		},
+		{
+			"key": "makePaymentUrl",
+			"value": "<PSP URL used by Vipps to send the card data>",
+			"enabled": true
+		},
+		{
+			"key": "PSP-ID",
+			"value": "<Provided by Vipps>",
+			"enabled": true
+		},
+		{
+			"key": "pspTransactionId",
+			"value": "<Used as a globally unique transaction reference for the PSP systems>",
+			"enabled": true
+		},
+		{
+			"key": "pspRedirectUrl",
+			"value": "<Vipps will use this URL to redirect end user after payment confirmation>",
+			"enabled": true
+		},
+		{
+			"key": "status",
+			"value": "CAPTURED",
+			"enabled": true
+		},
+		{
+			"key": "paymentTextInit",
+			"value": "Transaction initiated through Postman",
+			"enabled": true
+		},
+		{
+			"key": "paymentTextUpdate",
+			"value": "Transaction updated through Postman",
+			"enabled": true
+		},
+		{
+			"key": "makePaymentToken",
+			"value": "<Authorization header for MakePayment call>",
+			"enabled": true
+		},
+		{
+			"key": "merchantOrderId",
+			"value": "<Uniquely identifies a payment order for a merchant>",
+			"enabled": true
+		},
+		{
+			"key": "idempotency_key",
+			"value": "<The request_id - a GUID value that is unique for each request. You can use {{$guid}} to generate a one each time.>",
+			"enabled": true
+		},
+		{
+			"key": "merchantRedirectUrl",
+			"value": "https://example.com/",
+			"enabled": true
+		},
+		{
+			"key": "merchantAgreementUrl",
+			"value": "https://example.com/",
+			"enabled": true
+		},
+		{
+			"key": "price",
+			"value": "1000",
+			"enabled": true
+		},
+		{
+			"key": "price_updated",
+			"value": "7000",
+			"enabled": true
+		},
+		{
+			"key": "amount_initial",
+			"value": "500",
+			"enabled": true
+		},
+		{
+			"key": "campaignPrice",
+			"value": "500",
+			"enabled": true
+		},
+		{
+			"key": "amount_charge",
+			"value": "1000",
+			"enabled": true
+		},
+		{
+			"key": "amount_refund",
+			"value": "200",
+			"enabled": true
+		},
+		{
+			"key": "interval",
+			"value": "WEEK",
+			"enabled": true
+		},
+		{
+			"key": "intervalCount",
+			"value": "2",
+			"enabled": true
+		},
+		{
+			"key": "retryDays",
+			"value": "0",
+			"enabled": true
+		},
+		{
+			"key": "status_agreements",
+			"value": "ACTIVE",
+			"enabled": true
+		},
+		{
+			"key": "status_charges",
+			"value": "DUE",
+			"enabled": true
+		},
+		{
+			"key": "status_updated",
+			"value": "ACTIVE",
+			"enabled": true
+		},
+		{
+			"key": "status_stopped",
+			"value": "STOPPED",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "transactionType",
+			"value": "DIRECT_CAPTURE",
+			"enabled": true
+		},
+		{
+			"key": "due",
+			"value": "2040-01-01",
+			"enabled": true
+		},
+		{
+			"key": "description_initial",
+			"value": "Transaction initiated through Postman",
+			"enabled": true
+		},
+		{
+			"key": "description_charge",
+			"value": "Charged through Postman",
+			"enabled": true
+		},
+		{
+			"key": "productDescription_updated",
+			"value": "Updated product created through Postman",
+			"enabled": true
+		},
+		{
+			"key": "productDescription",
+			"value": "Product created through Postman",
+			"enabled": true
+		},
+		{
+			"key": "description_refund",
+			"value": "Charge refunded through Postman",
+			"enabled": true
+		},
+		{
+			"key": "productName_updated",
+			"value": "Updated postman test product",
+			"enabled": true
+		},
+		{
+			"key": "productName",
+			"value": "Postman test product",
+			"enabled": true
+		},
+		{
+			"key": "vipps_system_name",
+			"value": "postman",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "vipps_system_version",
+			"value": "2.0",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "vipps_system_plugin_name",
+			"value": "vipps-postman",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "vipps_system_plugin_version",
+			"value": "2.0",
+			"type": "default",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2019-08-06T11:39:12.217Z",
+	"_postman_exported_using": "Postman/7.3.5"
+}
