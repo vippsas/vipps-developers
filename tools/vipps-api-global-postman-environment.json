@@ -4,22 +4,22 @@
 	"values": [
 		{
 			"key": "client_id",
-			"value": "<Go To Vipps Portal->Select the Developer tab->Select Test or Production Keys->Select 'Show keys'->copy the Client Id here>",
+			"value": "<Go to portal.vipps.no -> Select the Utvikler (Developer) tab -> Select Test or Production Keys -> Select 'Show keys' -> copy the Client Id here>",
 			"enabled": true
 		},
 		{
 			"key": "client_secret",
-			"value": "<Go To Vipps Portal->Select the Developer tab->Select Test or Production Keys->Select 'Show keys'->copy the Client secret here>",
+			"value": "<Go to portal.vipps.no -> Select the Utvikler (Developer) tab -> Select Test or Production Keys -> Select 'Show keys' -> copy the Client secret here>",
 			"enabled": true
 		},
 		{
 			"key": "merchantSerialNumber",
-			"value": "<Go To Vipps Portal->Select the Developer tab->Select Test or Production Keys->Copy the Merchant Serial Number from the Sale Unit you copied the keys from>",
+			"value": "<Go to portal.vipps.no -> Select the Utvikler (Developer) tab -> Select Test or Production Keys -> Copy the Merchant Serial Number from the Sale Unit you copied the keys from>",
 			"enabled": true
 		},
 		{
 			"key": "Ocp-Apim-Subscription-Key",
-			"value": "<Go To Vipps Portal->Select the Developer tab->Select Test or Production Keys->Select 'Show keys'->copy the Vipps-Subscription-Key>",
+			"value": "<Go to portal.vipps.no -> Select the Utvikler (Developer) tab ->Select Test or Production Keys -> Select 'Show keys' -> copy the Vipps-Subscription-Key>",
 			"enabled": true
 		},
 		{
@@ -29,7 +29,7 @@
 		},
 		{
 			"key": "amount",
-			"value": "499",
+			"value": "49900",
 			"enabled": true
 		},
 		{
@@ -54,7 +54,7 @@
 		},
 		{
 			"key": "fallBack",
-			"value": "https://example.com/",
+			"value": "https://example.com/vipps/fallback-result-page-for-both-success-and-failure/acme-shop-123-order123abc",
 			"enabled": true
 		},
 		{
