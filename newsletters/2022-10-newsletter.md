@@ -65,7 +65,7 @@ Campaign improvements.
 
 ## Recurring API: Rollback of new charge business rules
 
-Due to feedback from merchants we have decided not to enforce the stricter charge rules we enabled september 13. See the [vipps statuspage](https://vipps.statuspage.io/incidents/n5xlxwz1yvbr) for more information about when this happened.
+Due to feedback from merchants we have decided not to enforce the stricter charge rules we enabled September 13. See the [vipps statuspage](https://vipps.statuspage.io/incidents/n5xlxwz1yvbr) for more information about when this happened.
 
 Going forward we will look into how we can implement charge limits in a better way, that takes care of the merchants needs. This will be communicated well in advance before we enforce any new rules.
 
