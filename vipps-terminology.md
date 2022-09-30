@@ -101,8 +101,6 @@ Document version: 1.0.1.
   approves an initiated payment, it will be reserved until you capture it.
   When the order is reserved, the amount is marked as reserved by the bank,
   but not transferred.
-  See:
-  []().
 
 * Sale unit - A merchant can have one or more sale units. It may be different
   brands, different physical locations, different services, etc.
