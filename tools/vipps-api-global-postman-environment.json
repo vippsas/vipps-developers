@@ -23,6 +23,11 @@
 			"enabled": true
 		},
 		{
+			"key": "currency",
+			"value": "NOK",
+			"enabled": true
+		},
+		{
 			"key": "amount",
 			"value": "499",
 			"enabled": true
@@ -35,6 +40,11 @@
 		{
 			"key": "mobileNumber",
 			"value": "<Input the mobile number for the test app profile you have received or registered>",
+			"enabled": true
+		},
+		{
+			"key": "internationalMobileNumber",
+			"value": "<Input the mobile number for the test app profile you have received or registered, including the country code.>",
 			"enabled": true
 		},
 		{
@@ -55,6 +65,16 @@
 		{
 			"key": "consentRemovalPrefix",
 			"value": "https://example.com/vipps/consent-removal",
+			"enabled": true
+		},
+		{
+			"key": "termsAndConditionsUrl",
+			"value": "https://example.com/vipps/terms-and-conditions",
+			"enabled": true
+		},
+		{
+			"key": "dynamicOptionsCallbackUrl",
+			"value": "https://example.com/vipps/dynamic-logistics-option",
 			"enabled": true
 		},
 		{
@@ -331,6 +351,41 @@
 		{
 			"key": "productName",
 			"value": "Postman test product",
+			"enabled": true
+		},
+		{
+			"key": "firstName",
+			"value": "Ada",
+			"enabled": true
+		},
+		{
+			"key": "lastName",
+			"value": "Lovelace",
+			"enabled": true
+		},
+		{
+			"key": "streetAddress",
+			"value": "Robert Levins gate 5",
+			"enabled": true
+		},
+		{
+			"key": "city",
+			"value": "Oslo",
+			"enabled": true
+		},
+		{
+			"key": "postalCode",
+			"value": "0154",
+			"enabled": true
+		},
+		{
+			"key": "country",
+			"value": "NO",
+			"enabled": true
+		},
+		{
+			"key": "email",
+			"value": "user@example.com",
 			"enabled": true
 		},
 		{
