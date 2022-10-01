@@ -7,7 +7,7 @@ END_METADATA -->
 
 # How to contact Vipps Integration
 
-Document version: 2.4.12.
+Document version: 2.4.13.
 
 <!-- START_TOC -->
 
@@ -36,16 +36,15 @@ If you do not have a technical issue, the fastest way to get help is to start in
 
 | Topic | How to get help |
 |--------|----------------|
-| General questions (including the customer relationship, creating sale units, change of admins, etc) | See: [Contact info for companies on vipps.no](https://www.vipps.no/kontakt-oss/bedrift/) |
-| Applications for Vipps products | Check the status on [portal.vipps.no](https://portal.vipps.no). See: [Contact info for companies on vipps.no](https://www.vipps.no/kontakt-oss/bedrift/) |
-| Using Vipps through a partner (for merchants) | Please [contact your partner directly](https://www.vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-3) Vipps cannot help with your partners services. |
+| General questions (including the customer relationship, creating sale units, change of admins, etc) | See: [Contact info for companies on vipps.no](https://www.vipps.no/kontakt-oss/bedrift/). |
+| Applications for Vipps products (status, follow-ups, etc) | Check the status on [portal.vipps.no](https://portal.vipps.no). See: [Contact info for companies on vipps.no](https://www.vipps.no/kontakt-oss/bedrift/) |
+| Vipps through a partner (for merchants) | Please [contact your partner directly](https://www.vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-3) Vipps cannot help with your partner's services. |
 | Vipps through a PSP (Payment Service Provider) | Please contact your PSP. Vipps cannot help with your PSP's services. |
-| Partner assistance (for partners) | See: [Vipps Partners](https://github.com/vippsas/vipps-partner). |
+| Partner assistance (for partners) | See: [Vipps Partners](https://github.com/vippsas/vipps-partner) and the [Partner API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/partner-api). |
 | Vipps plugins (WooCommerce, Shopify, Wix, WordPress, Wix, Shopify, Magento, EPiServer, etc)         | See the support info for your plugin: [Plugin overview](https://github.com/vippsas/vipps-plugins) |
-| Vipps through a POS (Point of Sale) vendor | Please contact your vendor.  Vipps cannot help with your vendor's services. |
+| Vipps through a POS (Point of Sale) vendor | Please contact your POS vendor. Vipps cannot help with your vendor's services. |
 | Settlements, invoices or similar | See: [Settlements](https://github.com/vippsas/vipps-developers/tree/master/settlements) |
 | Suggestions for improvements to [Vipps products](https://www.vipps.no/produkter-og-tjenester/bedrift/)  | [Use this form](https://www.vipps.no/kontakt-oss/bedrift/) |
-| BankID | Please contact your BankID vendor. See: [BankID service portal](https://servicedesk.bankidnorge.no/jira/servicedesk/customer/user/login?destination=portals) |
 
 For _**technical**_ issues related to Vipps and development of services using our APIs: Please see below.
 
@@ -54,19 +53,19 @@ We also have a technical newsletter for developers:
 
 ## What to include in the email
 
-First of all: It's nice if you can check the FAQs and search to check if your problem is a common one:
+First of all: Please use the
+[search functionality on the developer documentation](https://vippsas.github.io/vipps-developer-docs/search).
 
+Then check the FAQs:
 - [eCom API FAQ](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-faq.md)
 - [Recurring API FAQ](https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api-faq.md)
 - [Login API FAQ](https://github.com/vippsas/vipps-login-api/blob/master/vipps-login-api-faq.md)
 
-Also: Please search the documentation. You can search both on GitHub and in the browser.
-
 If you cannot find the answer: Please send an email with all relevant information to the address below:
 
 1. **Please: Always include a _detailed_ description of the problem.**
-  * Include a detailed step-by-step description of what you do
-  * Some screenshots or a video is often helpful
+  - Include a detailed step-by-step description of what you do
+  - Some screenshots or a video is often helpful
 2. A concise, self-explanatory `Subject` line, such as "`POST:/something` gives `HTTP 400` response".
 3. Company details: Organization number (find yours at [Brønnøysundregistrene](https://brreg.no))
 4. Merchant Serial Number (MSN, see [Getting started](vipps-getting-started.md))
@@ -85,7 +84,7 @@ The Integration email address is: integration@vipps.no
 ## Can I call you?
 
 Nope. We do not have a phone number for Integration, and we do not have the capacity to
-help 1:1 on phone, sorry. Most cases involve information that needs to be in written form,
+help 1:1 on phone. Most cases involve information that needs to be in written form,
 such as ids, API requests/responses, etc. We do sometimes set up Slack channels for
 customers, so you can request that if you expect to be contacting us a lot.
 
@@ -124,7 +123,8 @@ of requests and the varying complexity of resolving them, we cannot guarantee re
 
 If you have a KAM (Key Account Manager), please contact her/him.
 If you do not, please reply to the issue, and add any relevant information.
-Please note that we understand that your problem is important to you, but that Vipps must sometimes prioritize differently.
+Please note that we understand that your problem is important to you,
+but that Vipps must sometimes prioritize differently.
 
 ## More than one problem, or a new one?
 
