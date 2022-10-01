@@ -38,7 +38,7 @@ If you do not have a technical issue, the fastest way to get help is to start in
 |--------|----------------|
 | General questions (including the customer relationship, creating sale units, change of admins, etc) | See: [Contact info for companies on vipps.no](https://www.vipps.no/kontakt-oss/bedrift/). |
 | Applications for Vipps products (status, follow-ups, etc) | Check the status on [portal.vipps.no](https://portal.vipps.no). See: [Contact info for companies on vipps.no](https://www.vipps.no/kontakt-oss/bedrift/) |
-| Vipps through a partner (for merchants) | Please [contact your partner directly](https://www.vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-3) Vipps cannot help with your partner's services. |
+| Vipps through a partner (for merchants) | Please contact your partner. Vipps cannot help with your partner's services. |
 | Vipps through a PSP (Payment Service Provider) | Please contact your PSP. Vipps cannot help with your PSP's services. |
 | Partner assistance (for partners) | See: [Vipps Partners](https://github.com/vippsas/vipps-partner) and the [Partner API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/partner-api). |
 | Vipps plugins (WooCommerce, Shopify, Wix, WordPress, Wix, Shopify, Magento, EPiServer, etc)         | See the support info for your plugin: [Plugin overview](https://github.com/vippsas/vipps-plugins) |
