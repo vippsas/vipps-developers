@@ -43,8 +43,8 @@ If you do not have a technical issue, the fastest way to get help is to start in
 | Vipps through a POS (Point of Sale) vendor | Please contact your POS vendor. Vipps cannot help with your vendor's services. |
 | Vipps through a PSP (Payment Service Provider) | Please contact your PSP. Vipps cannot help with your PSP's services. |
 | Partner assistance (for partners) | See: [Vipps Partners](https://github.com/vippsas/vipps-partner) and the [Partner API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/partner-api). |
-| Settlements, invoices or similar | See: [Settlements](https://github.com/vippsas/vipps-developers/tree/master/settlements) |
-| Suggestions for improvements to [Vipps products](https://www.vipps.no/produkter-og-tjenester/bedrift/)  | [Use this form](https://www.vipps.no/kontakt-oss/bedrift/) |
+| Settlements, invoices or similar | See: [Settlements](https://github.com/vippsas/vipps-developers/tree/master/settlements). |
+| Suggestions for improvements to [Vipps products](https://www.vipps.no/produkter-og-tjenester/bedrift/)  | Please use [this form](https://www.vipps.no/kontakt-oss/bedrift/). |
 
 For _**technical**_ issues related to Vipps and development of services using our APIs: Please see below.
 
@@ -53,13 +53,9 @@ We also have a technical newsletter for developers:
 
 ## What to include in the email
 
-First of all: Please use the
+**Important:** Almost all requests we get are already covered in the developer documentation.
+Please check the FAQ (Frequently Asked Questions) for the API you are using, and use the
 [search functionality on the developer documentation](https://vippsas.github.io/vipps-developer-docs/search).
-
-Then check the FAQs:
-- [eCom API FAQ](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-faq.md)
-- [Recurring API FAQ](https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api-faq.md)
-- [Login API FAQ](https://github.com/vippsas/vipps-login-api/blob/master/vipps-login-api-faq.md)
 
 If you cannot find the answer: Please send an email with all relevant information to the address below:
 
