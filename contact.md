@@ -53,8 +53,10 @@ We also have a technical newsletter for developers:
 
 ## What to include in the email
 
-**Important:** Almost all requests we get are already covered in the developer documentation.
-Please check the FAQ (Frequently Asked Questions) for the API you are using, and use the
+**Important:** Almost all requests we get are already covered in the technical documentation.
+Please check the FAQs (Frequently Asked Questions) for the
+[Vipps API](https://vippsas.github.io/vipps-developer-docs/docs/category/apis)
+you are using, and use the
 [search functionality for the technical documentation](https://vippsas.github.io/vipps-developer-docs/search).
 
 If you cannot find the answer: Please send an email with all relevant information to the address below:
