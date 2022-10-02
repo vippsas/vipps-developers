@@ -31,7 +31,7 @@ The Merchant Test Environment (MT) is available for all Vipps customers.
 
 <!-- END_TOC -->
 
-Document version: 3.2.0.
+Document version: 3.2.1.
 
 ## About the test environment
 
@@ -200,10 +200,9 @@ Normal Vipps users are not available, so you cannot use your own phone number wi
 - Do _not_ use the test phone number in the production environment,
   as the test number may be a real phone number for a real Vipps user.
 
-
 ### Install Vipps MT on iOS
 
-The iOS test app is available in Apple TestFlight.
+The iOS test app is available for everyone in Apple TestFlight.
 You do _not_ need an invitation or an activation code.
 
 1. Open the
@@ -212,8 +211,9 @@ You do _not_ need an invitation or an activation code.
 2. Install the "Vipps MT" app
 3. Open the "Vipps MT" app
 4. Enter the test phone number, that was sent in the welcome email to the email
-   address used in the registration. Your normal Vipps user is not available in
-   the test environment.
+   address used in the registration  (please double check before asking for
+   a new test phone number).
+   Your normal Vipps user is not available in the test environment.
 5. On the "Verify your number" screen: Use PIN  `1236`.
 6. On the "Enter your code" screen: Use PIN `1236`.
 7. Enable FaceID (or TouchID) and confirm with PIN  `1236`.
@@ -223,7 +223,7 @@ You are now ready to use the iOS test app connected to the Vipps test environmen
 
 ### Install Vipps MT on Android
 
-The Android test app is available in App Center.
+The Android test app is available for everyone in App Center.
 You do _not_ need an invitation or an activation code.
 
 1. Open the
@@ -234,8 +234,9 @@ You do _not_ need an invitation or an activation code.
 2. Install the "Vipps Android" app
 3. Open the "Vipps Android" app
 4. Enter the test phone number, that was sent in the welcome email to the email
-   address used in the registration. Your normal Vipps user is not available in
-   the test environment.
+   address used in the registration  (please double check before asking for
+   a new test phone number).
+   Your normal Vipps user is not available in the test environment.
 5. On the "Verify your number" screen: Use PIN  `1236`.
 6. On the "Enter your code" screen: Use PIN `1236`.
 7. Enable touch id and confirm with PIN  `1236`.
@@ -252,7 +253,7 @@ in sync with the test environment. When this happens, we update the
 with details.
 
 If you use an emulator, and not the native apps installed on
-a phone, you may experience problems - such as having to log in "from scratch"
+a phone, you may experience problems - including having to log in "from scratch"
 every time you start Vipps in the emulator.
 
 ### Limitations of the test apps
@@ -260,7 +261,6 @@ every time you start Vipps in the emulator.
 - Push alerts may be unstable. To see payment requests: Open Vipps and manually
   go to "Betalinger" (i.e., _Payments_) at the bottom of the main screen.
   You may also need to pull down to refresh.
-
 
 ## Questions?
 
