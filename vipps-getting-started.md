@@ -69,8 +69,8 @@ The `Vipps-API` product gives you access to all of the following APIs:
 - [ePayment API](https://github.com/vippsas/vipps-epayment-api) - New version of eCom API
 - [Login API](https://github.com/vippsas/vipps-login-api) - Identification
 - [Order Management API](https://github.com/vippsas/vipps-order-management-api) - Add data to orders
-- [Partner API](https://github.com/vippsas/vipps-partner-api) - Get info about merchants/sale units.
-- [PSP API](https://github.com/vippsas/vipps-psp-api) - Initiate PSP payments. Update merchants.
+- [Partner API](https://github.com/vippsas/vipps-partner-api) - Get info about merchants/sale units
+- [PSP API](https://github.com/vippsas/vipps-psp-api) - Initiate PSP payments. Update merchants
 - [QR API](https://github.com/vippsas/vipps-qr-api) - QR codes
 - [Recurring API](https://github.com/vippsas/vipps-recurring-api) - Recurring API
 
