@@ -105,7 +105,7 @@ You will do everything on [portal.vipps.no](https://portal.vipps.no).
 
 As soon as the _Merchant Agreement_ has been approved, and a product order is sent,
 access to the
-[Vipps test environment (MT)](https://github.com/vippsas/vipps-developers#the-vipps-test-environment-mt)
+[Vipps test environment (MT)](https://github.com/vippsas/vipps-developers/blob/master/vipps-test-environment.md)
 will be provided. Details are sent on email to the user who made the product order.
 
 ### Non-Norwegian companies
