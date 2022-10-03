@@ -2,7 +2,7 @@
 ---
 title: Introduction
 sidebar_position: 1
-draft: true
+hide_table_of_contents: true
 ---
 END_METADATA -->
 
