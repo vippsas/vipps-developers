@@ -414,13 +414,13 @@ This API returns the following HTTP statuses in the responses:
 | `500 Server Error` | An internal Vipps problem.                              |
 
 You can use the
-[API Dashboard](https://github.com/vippsas/vipps-developers#api-dashboard)
+[API Dashboard](https://github.com/vippsas/vipps-developers/blob/master/vipps-resources.md#api-dashboard)
 to check the responses to your API calls.
 
 ### Checking for errors with the API Dashboard
 
 All merchants have access to the
-[API Dashboard](https://github.com/vippsas/vipps-developers#api-dashboard).
+[API Dashboard](https://github.com/vippsas/vipps-developers/blob/master/vipps-resources.md#api-dashboard).
 We strongly recommend to use that for detecting errors in the API use,
 in addition to normal monitoring.
 

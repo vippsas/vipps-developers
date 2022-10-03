@@ -59,7 +59,7 @@ Functionality not available in MT (a non-exhaustive list):
 
 - Unscheduled maintenance _may_ occur.
   We will do our best to inform with
-  [Status page](https://github.com/vippsas/vipps-developers#status-pages),
+  [Status page](https://github.com/vippsas/vipps-developers/blob/master/vipps-resources.md#status-pages),
   but it may no always be possible.
   In practice this is extremely rare.
 - Push alerts may be unavailable or unstable. To see payment requests: Open Vipps and manually
