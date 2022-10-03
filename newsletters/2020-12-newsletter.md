@@ -106,7 +106,7 @@ Vipps development. Send an email to integration@vipps.no with a list of
 email addresses to invite, with the same people on CC. We fix the rest.
 
 This does, unfortunately, not apply to customers using one of our
-[plugins](https://github.com/vippsas/vipps-developers#plugins), or
+[plugins](https://github.com/vippsas/vipps-plugins), or
 customers using Vipps through a partner.
 
 ## Do you want a technical workshop? 🛠
@@ -116,7 +116,7 @@ Vipps development. Send an email to integration@vipps.no with a list of
 email addresses to invite, with the same people on CC. We fix the rest.
 
 This does, unfortunately, not apply to customers using one of our
-[plugins](https://github.com/vippsas/vipps-developers#plugins), or
+[plugins](https://github.com/vippsas/vipps-plugins), or
 customers using Vipps through a partner.
 
 ## Reminders

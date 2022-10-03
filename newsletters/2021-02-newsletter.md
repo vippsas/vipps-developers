@@ -135,7 +135,7 @@ This does require that you have already ordered a Vipps solution, and
 that you already have API access.
 
 This does, unfortunately, not apply to customers using one of our
-[plugins](https://github.com/vippsas/vipps-developers#plugins), or
+[plugins](https://github.com/vippsas/vipps-plugins), or
 customers using Vipps through a partner.
 
 ### Do you want a technical workshop? 🛠
@@ -148,7 +148,7 @@ This does require that you have already ordered a Vipps solution, and
 that you already have API access.
 
 This does, unfortunately, not apply to customers using one of our
-[plugins](https://github.com/vippsas/vipps-developers#plugins), or
+[plugins](https://github.com/vippsas/vipps-plugins), or
 customers using Vipps through a partner.
 
 ### API lifecycle

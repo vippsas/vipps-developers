@@ -45,8 +45,7 @@ the Covid-19 pandemic. See our information in Norwegian:
 There are now 12 Vipps plugins for various ecommerce platforms:
 WooCommerce, WordPress, Magento, Episerver, Drupal, Shopify, Craft and more.
 
-All plugins are open source. See the complete list
-[here](https://github.com/vippsas/vipps-developers#plugins).
+All [plugins](https://github.com/vippsas/vipps-plugins) are open source. See the complete list.
 
 ## PSP v3
 

@@ -9,7 +9,7 @@ END_METADATA -->
 
 Document version 2.0.0.
 
-The [Vipps Test environment (MT)](https://github.com/vippsas/vipps-developers#the-vipps-test-environment-mt) contains synthetic data useful for testing.
+The [Vipps Test environment (MT)](https://github.com/vippsas/vipps-developers/blob/master/vipps-test-environment.md) contains synthetic data useful for testing.
 
 ## Users
 
