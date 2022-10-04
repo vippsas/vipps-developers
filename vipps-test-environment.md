@@ -31,7 +31,7 @@ The Merchant Test Environment (MT) is available for all Vipps customers.
 
 <!-- END_TOC -->
 
-Document version: 3.2.1.
+Document version: 3.2.2.
 
 ## About the test environment
 
@@ -91,18 +91,13 @@ These sale units have access to all the [current API products](vipps-getting-sta
 To create a test sale unit:
 
 1. Log in to [portal.vipps.no](https://portal.vipps.no) using BankID.
-
 2. Select _Vipps På Nett_ > _Utvikler_.
-
 3. In the page that opens, select _Test_. This opens a list of all the test merchants.
-
 4. If you do not have one that you can use, create it by clicking _Add test sales unit_.
-
 5. In the panel that opens, enter a name and select the properties you would like. Then click _Create_.
-
 6. After some minutes, and browser refreshes, you should find the new merchant at the bottom of the list.
-
-7. Click the _Show keys_ button to see your test keys. Take note of these, but do not share them or store them in a publicly accessible place, including the online version of Postman.
+7. Click the _Show keys_ button to see your test keys. Take note of these, but
+   do not share them or store them in a publicly accessible place, including the online version of Postman.
 
 It is not possible to _change_ an existing sale unit in the test environment,
 but you can create as many as you need.
