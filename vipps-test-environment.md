@@ -7,7 +7,8 @@ END_METADATA -->
 
 # The Vipps Test Environment (MT)
 
-The Merchant Test Environment (MT) is available for all Vipps customers.
+The Merchant Test Environment (MT) is available for all Vipps customers
+with API access.
 
 <!-- START_TOC -->
 
@@ -31,7 +32,7 @@ The Merchant Test Environment (MT) is available for all Vipps customers.
 
 <!-- END_TOC -->
 
-Document version: 3.2.2.
+Document version: 3.2.3.
 
 ## About the test environment
 
@@ -81,17 +82,18 @@ Other differences between Prod and MT:
 - There is no equivalent to [portal.vipps.no](https://portal.vipps.no) for the test environment.
   Payments must be checked with the API, as there is no web interface.
 - We allow 10,000 incorrect PIN attempts before locking the Vipps user's account
-- There are no settlement reports or SFTP service.
+- There are no settlement reports and no SFTP service.
 
 ## Test merchants
 
 All Vipps customers can create sale units in the test environment.
-These sale units have access to all the [current API products](vipps-getting-started.md#api-products).
+These sale units have access to all the
+[current API products](vipps-getting-started.md#api-products).
 
 To create a test sale unit:
 
 1. Log in to [portal.vipps.no](https://portal.vipps.no) using BankID.
-2. Select _Vipps På Nett_ > _Utvikler_.
+2. Select _Vipps På Nett_ -> _Utvikler_.
 3. In the page that opens, select _Test_. This opens a list of all the test merchants.
 4. If you do not have one that you can use, create it by clicking _Add test sales unit_.
 5. In the panel that opens, enter a name and select the properties you would like. Then click _Create_.
@@ -108,8 +110,8 @@ but you can create as many as you need.
 
 ## Test users
 
-A welcome email is automatically sent to **all** new customers. This should contain
-information about your test user.
+A welcome email is automatically sent to **all** new customers. This email
+contains information about your test user.
 Please search your mail, including the spam/junk folder, if you do not find it.
 
 The provided test user can be used in the [Vipps test apps](#vipps-test-apps).
@@ -121,7 +123,10 @@ You may use the same test user on multiple devices.
 Test users can are not connected to any merchant, they can be used with any
 merchant and sale unit in the test environment.
 
-If you need more than one test user, please
+If you need more than one test user, please contact your
+Key Account Manager (if you have one),
+your partner contact (if you have one),
+or
 [contact us](https://github.com/vippsas/vipps-developers/blob/master/contact.md).
 
 There is no way to get a test user in the production environment.
@@ -137,13 +142,13 @@ as the test number may be a real phone number for a real Vipps user.
 
 ### Payment card
 
-The test mobile number is registered with a payment card.
+The test user is registered with one payment card.
 
 If you need additional payment cards, you can add it in the Vipps app.
 
 ### Email address
 
-You can add a real email address on a test user from the *Profile* -> *Personal information* -> *Email_ section in the app.
+You can add a real email address on a test user from the *Profile* -> *Personal information* -> *Email* section in the app.
 
 **Please note:** In MT verification of emails can only be triggered in a
 Vipps Login flow (if the merchant requests email), or from clicking “send email”
@@ -160,7 +165,8 @@ is created and cannot be changed.
 
 ## Test amounts
 
-Vipps supports using special amounts that are always rejected when approving the payment in the Vipps test app.  
+Vipps supports using special amounts in the Vipps test app.
+Use these amounts to always get the same result.
 
 | Amount | Error                     |
 |--------|---------------------------|
@@ -180,20 +186,17 @@ endpoint does not support this functionality.
 ## Vipps test apps
 
 The test apps for iOS and Android are identical to the production apps, but connect to
-the Vipps test environment (MT)
-instead of the production environment.
+the Vipps test environment (MT) instead of the production environment.
 
 The test apps can be installed on the same device as the production apps without conflicts.
 The test apps use the `vippsMT://` URL scheme, and the production apps use `vipps://`.
 See installation instructions below.
 
-Only test users, with random "fake" phone numbers, are available in the test environments.
+Only test users, with random "fake" phone numbers, are available in the test environment.
 Normal Vipps users are not available, so you cannot use your own phone number with the test apps.  
 
-**Important:**
-
-- Do _not_ use the test phone number in the production environment,
-  as the test number may be a real phone number for a real Vipps user.
+**Important:** Do _not_ use the test phone number in the production environment,
+as the test number may be a real phone number for a real Vipps user.
 
 ### Install Vipps MT on iOS
 
