@@ -16,8 +16,8 @@ with API access.
 
 - [About the test environment](#about-the-test-environment)
   - [Limitations of the test environment](#limitations-of-the-test-environment)
-- [Test merchants](#test-merchants)
 - [Test server](#test-server)
+- [Test merchants](#test-merchants)
 - [Test users](#test-users)
   - [Phone number](#phone-number)
   - [Payment card](#payment-card)
