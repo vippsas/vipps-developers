@@ -13,6 +13,9 @@ are provided by the bank, not Vipps.
 
 Documentation for the legacy invoice solution: [Vipps Faktura](./vipps-invoice-api-vipps-faktura.pdf).
 
+<!-- START_COMMENT -->
 Details:
 
 See the [Settlements](..) overview.
+
+<!-- END_COMMENT -->

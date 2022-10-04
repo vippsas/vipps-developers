@@ -9,18 +9,20 @@ END_METADATA -->
 
 Document version 2.0.0.
 
-The [Vipps Test environment (MT)](https://github.com/vippsas/vipps-developers/blob/master/vipps-test-environment.md) contains synthetic data useful for testing.
+The
+[Vipps Test environment (MT)](https://github.com/vippsas/vipps-developers/blob/master/vipps-test-environment.md)
+contains synthetic data useful for testing.
 
 ## Users
 
-All Vipps customers get a dedicated test user with a unique phone number to use in
-[the test environment](https://github.com/vippsas/vipps-developers/blob/master/vipps-test-environment.md).
+All Vipps customers get a dedicated test user with a unique phone number to use in the
+[test environment](https://github.com/vippsas/vipps-developers/blob/master/vipps-test-environment.md).
 Please use this test user for all development and testing.
 
 ## Merchants
 
-All Vipps customers get a dedicated test merchant to use in
-[the test environment](https://github.com/vippsas/vipps-developers/blob/master/vipps-test-environment.md).
+All Vipps customers get a dedicated test merchant to use in the
+[test environment](https://github.com/vippsas/vipps-developers/blob/master/vipps-test-environment.md).
 Please use this test merchant for all development and testing.
 
 The common merchants below may be used in situations where the dedicated test merchant,

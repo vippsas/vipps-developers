@@ -7,7 +7,9 @@ END_METADATA -->
 
 # Vipps settlements: CSV
 
-See the [Settlements](..) overview.
+The following is an example of a CSV settlement file:
+
+* [CSV settlement file](./settlement-report.csv)
 
 The CSV settlement file contains the following info:
 
@@ -30,3 +32,9 @@ The CSV settlement file contains the following info:
 | Fornavn  | First name  | Only applicable for Vipps number   |
 | Etternavn  | Last name  | Only applicable for Vipps number   |
 | Melding  | Message/Transaction text  |   |
+
+<!-- START_COMMENT -->
+
+See the [Settlements](..) overview.
+
+<!-- END_COMMENT -->
