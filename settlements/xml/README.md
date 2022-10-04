@@ -23,8 +23,8 @@ To make the numbers unambiguous we have introduced new fields
 for capture and refund, but kept gross and net fields as before.
 
 - Schema changes from v2.0 to v3.0:
-    - Old schema URL for v2.0 was [content no longer available]
-    - New schema URL is [http://vipps.no/xmlschema/SettlementReport-3.0.xsd](http://vipps.no/xmlschema/SettlementReport-3.0.xsd)
+    - Old schema URL for v2.0 was [SettlementReport-2.0.xsd](./SettlementReport-2.0.xsd)
+    - New schema URL is [SettlementReport-3.0.xsd](./SettlementReport-3.0.xsd)
     - New schema validates all amount fields with new types "money", "positiveMoney", and "negativeMoney"
     - Other changed organized by parent element below
 
