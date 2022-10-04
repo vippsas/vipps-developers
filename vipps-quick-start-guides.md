@@ -2,6 +2,8 @@
 ---
 title: Quick start guides
 sidebar_position: 15
+pagination_next: null
+pagination_prev: null
 ---
 END_METADATA -->
 

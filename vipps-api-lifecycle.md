@@ -2,6 +2,8 @@
 ---
 title: The API Lifecycle
 sidebar_position: 39
+pagination_next: null
+pagination_prev: null
 ---
 END_METADATA -->
 

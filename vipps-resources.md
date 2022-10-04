@@ -2,6 +2,8 @@
 ---
 title: Developer resources
 sidebar_position: 25
+pagination_next: null
+pagination_prev: null
 ---
 END_METADATA -->
 

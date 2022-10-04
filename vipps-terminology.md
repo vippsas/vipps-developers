@@ -2,6 +2,8 @@
 ---
 title: Terminology
 sidebar_position: 95
+pagination_next: null
+pagination_prev: null
 ---
 END_METADATA -->
 
@@ -110,7 +112,6 @@ Document version: 1.0.1.
   in on [portal.vipps.no](https://portal.vipps.no). Note that
   `Vipps-Subscription-Key` was previously called `Ocp-Apim-Subscription-Key`,
   but some APIs still use the previous name.
-
 
 ## Commonly used Norwegian words
 

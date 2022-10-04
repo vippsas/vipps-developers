@@ -2,6 +2,9 @@
 ---
 title: XML
 sidebar_position: 20
+hide_table_of_contents: true
+pagination_next: null
+pagination_prev: null
 ---
 END_METADATA -->
 
