@@ -122,7 +122,7 @@ More details:
 * XML: See the [xml](xml/) folder.
 * CSV: See the [csv](csv/) folder.
 * PDF: See the [pdf](pdf/) folder.
-
+* OCR: Not available.
 
 Payments made with
 [Vippsnummer](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-i-butikk/ta-betalt-med-vipps/)
