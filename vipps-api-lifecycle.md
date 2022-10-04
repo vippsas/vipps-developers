@@ -7,7 +7,7 @@ END_METADATA -->
 
 # Vipps API Lifecycle
 
-Document version: 1.1.0.
+Document version: 1.2.0.
 
 <!-- START_TOC -->
 
@@ -142,21 +142,6 @@ for more details.
 If you are still using a legacy API, you should upgrade as soon as possible.
 The best way to keep up to date of changes is to
 [star the API repository on GitHub](https://help.github.com/en/articles/about-stars).
-
-Old API products have the `ZZZ` prefix to make them easy to distinguish,
-and to always sort them at the bottom of lists.
-One example is `ZZZ eCommerce-Classic-Services-API`.
-
-The legacy API products prefixed with `ZZZ` have been updated to also include the
-current, corresponding APIs in Vipps-API.
-This means that a sale unit that could previously only use eCom v1,
-can now also use eCom v2, with the same API keys as before.
-
-The legacy `ZZZ` API products still work, and there is no need to "upgrade" to Vipps-API,
-unless there are technical problems.
-
-The current APIs offer substantial improvements over the legacy APIs, and
-we strongly recommend upgrading to the current version as soon as possible.
 
 ## Backwards compatibility
 
