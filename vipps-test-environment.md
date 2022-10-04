@@ -16,6 +16,7 @@ with API access.
 
 - [About the test environment](#about-the-test-environment)
   - [Limitations of the test environment](#limitations-of-the-test-environment)
+- [Test server](#test-server)
 - [Test merchants](#test-merchants)
 - [Test users](#test-users)
   - [Phone number](#phone-number)
@@ -32,7 +33,7 @@ with API access.
 
 <!-- END_TOC -->
 
-Document version: 3.2.3.
+Document version: 3.2.4.
 
 ## About the test environment
 
@@ -83,6 +84,19 @@ Other differences between Prod and MT:
   Payments must be checked with the API, as there is no web interface.
 - We allow 10,000 incorrect PIN attempts before locking the Vipps user's account
 - There are no settlement reports and no SFTP service.
+
+## Test server
+
+The test and production environments are separate and require different API credentials:
+
+| Production (Prod) | Test (MT)        |
+|-------------------|------------------|
+| api.vipps.no      | apitest.vipps.no |
+
+The servers are world-accessible. Vipps only relies on the API keys, and
+no requests to our servers are blocked on our side by IP addresses or similar.
+
+See [Vipps servers](vipps-resources.md#vipps-servers) for more information.
 
 ## Test merchants
 
