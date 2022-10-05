@@ -103,6 +103,11 @@
 			"enabled": true
 		},
 		{
+			"key": "useExplicitCheckoutFlow",
+			"value": "30",
+			"enabled": true
+		},
+		{
 			"key": "shippingCost1",
 			"value": "30",
 			"enabled": true
