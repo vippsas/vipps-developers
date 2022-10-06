@@ -9,6 +9,13 @@ END_METADATA -->
 
 # Quick start guides
 
+<!-- START_COMMENT -->
+
+ℹ️ Please use the new documentation:
+[Vipps Technical Documentation](https://vippsas.github.io/vipps-developer-docs/).
+
+<!-- END_COMMENT -->
+
 <!-- START_TOC -->
 
 ## Table of Contents

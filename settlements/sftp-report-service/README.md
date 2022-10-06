@@ -10,6 +10,13 @@ END_METADATA -->
 
 # Vipps SFTP Report Service
 
+<!-- START_COMMENT -->
+
+ℹ️ Please use the new documentation:
+[Vipps Technical Documentation](https://vippsas.github.io/vipps-developer-docs/).
+
+<!-- END_COMMENT -->
+
 This service allows for retrieval of settlement files with SFTP.
 
 SFTP is secure file transfer using SSH (Secure Shell), a cryptographic network

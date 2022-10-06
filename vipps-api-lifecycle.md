@@ -9,6 +9,13 @@ END_METADATA -->
 
 # Vipps API Lifecycle
 
+<!-- START_COMMENT -->
+
+ℹ️ Please use the new documentation:
+[Vipps Technical Documentation](https://vippsas.github.io/vipps-developer-docs/).
+
+<!-- END_COMMENT -->
+
 Document version: 1.2.0.
 
 <!-- START_TOC -->

@@ -9,6 +9,13 @@ END_METADATA -->
 
 # Vipps terminology
 
+<!-- START_COMMENT -->
+
+ℹ️ Please use the new documentation:
+[Vipps Technical Documentation](https://vippsas.github.io/vipps-developer-docs/).
+
+<!-- END_COMMENT -->
+
 Document version: 1.0.1.
 
 ## Common terms

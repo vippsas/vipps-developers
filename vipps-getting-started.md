@@ -9,6 +9,13 @@ END_METADATA -->
 
 # Getting Started
 
+<!-- START_COMMENT -->
+
+ℹ️ Please use the new documentation:
+[Vipps Technical Documentation](https://vippsas.github.io/vipps-developer-docs/).
+
+<!-- END_COMMENT -->
+
 The Vipps APIs provide access to the following types of transactions.
 
 In-person and remote transactions:

@@ -7,6 +7,13 @@ END_METADATA -->
 
 # How to contact Vipps Integration
 
+<!-- START_COMMENT -->
+
+ℹ️ Please use the new documentation:
+[Vipps Technical Documentation](https://vippsas.github.io/vipps-developer-docs/).
+
+<!-- END_COMMENT -->
+
 Document version: 2.4.13.
 
 <!-- START_TOC -->

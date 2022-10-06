@@ -9,6 +9,13 @@ END_METADATA -->
 
 # Developer resources
 
+<!-- START_COMMENT -->
+
+ℹ️ Please use the new documentation:
+[Vipps Technical Documentation](https://vippsas.github.io/vipps-developer-docs/).
+
+<!-- END_COMMENT -->
+
 This repository contains various resources for Vipps developers.
 We recommend starting with [Getting started](vipps-getting-started.md).
 

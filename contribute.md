@@ -9,6 +9,13 @@ END_METADATA -->
 
 # Contributing
 
+<!-- START_COMMENT -->
+
+ℹ️ Please use the new documentation:
+[Vipps Technical Documentation](https://vippsas.github.io/vipps-developer-docs/).
+
+<!-- END_COMMENT -->
+
 If you want to contribute: Great! No issue or pull request is too small! 👍
 
 ## Getting started

@@ -10,6 +10,13 @@ END_METADATA -->
 
 # Technical newsletter for developers
 
+<!-- START_COMMENT -->
+
+ℹ️ Please use the new documentation:
+[Vipps Technical Documentation](https://vippsas.github.io/vipps-developer-docs/).
+
+<!-- END_COMMENT -->
+
 A low volume newsletter with important information to developers about Vipps' APIs and products.
 
 Sign up here: https://cloud.melding.vipps.no/utv
