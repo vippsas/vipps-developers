@@ -93,6 +93,11 @@
 			"enabled": true
 		},
 		{
+			"key": "sessionId",
+			"value": "dummy-session-id",
+			"enabled": true
+		},
+		{
 			"key": "orderId",
 			"value": "<This value will be overwritten on each Initiate Payment call with MSN + timestamp + random int>",
 			"enabled": true
@@ -100,11 +105,6 @@
 		{
 			"key": "vippsLandingPageURL",
 			"value": "<This value will be overwritten on each Initiate Payment call. It will contain a url to the Vipps landing page, obtained from the eCom api.>",
-			"enabled": true
-		},
-		{
-			"key": "useExplicitCheckoutFlow",
-			"value": "30",
 			"enabled": true
 		},
 		{
