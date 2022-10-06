@@ -32,6 +32,8 @@ Document version: 4.1.0.
 
 <!-- START_TOC -->
 
+## Table of contents
+
 * [Reports](#reports)
   * [Availability](#availability)
 * [SFTP Service](#sftp-service)

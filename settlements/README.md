@@ -16,7 +16,8 @@ END_METADATA -->
 
 <!-- START_TOC -->
 
-* [Vipps Settlements](#vipps-settlements)
+## Table of contents
+
 * [Settlement flow](#settlement-flow)
   * [Reconciliation](#reconciliation)
 * [Frequency](#frequency)

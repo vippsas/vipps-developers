@@ -19,13 +19,6 @@ END_METADATA -->
 This repository contains various resources for Vipps developers.
 We recommend starting with [Getting started](vipps-getting-started.md).
 
-<!-- START_COMMENT -->
-
-💥 Preview the new documentation pages here: <https://vippsas.github.io/vipps-developer-docs/>.
-See the disclaimer: <https://vippsas.github.io/vipps-developer-docs/docs/examples/>.
-
-<!-- END_COMMENT -->
-
 <!-- START_TOC -->
 
 ## Table of contents

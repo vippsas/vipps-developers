@@ -10,6 +10,13 @@ END_METADATA -->
 
 # Vipps settlements: OCR
 
+<!-- START_COMMENT -->
+
+ℹ️ Please use the new documentation:
+[Vipps Technical Documentation](https://vippsas.github.io/vipps-developer-docs/).
+
+<!-- END_COMMENT -->
+
 OCR files are no longer provided by Vipps.
 Invoice payments are made directly from the user to the merchant, so settlement files
 are provided by the bank, not Vipps.

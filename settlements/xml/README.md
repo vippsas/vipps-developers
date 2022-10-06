@@ -10,6 +10,13 @@ END_METADATA -->
 
 # Vipps XML reports
 
+<!-- START_COMMENT -->
+
+ℹ️ Please use the new documentation:
+[Vipps Technical Documentation](https://vippsas.github.io/vipps-developer-docs/).
+
+<!-- END_COMMENT -->
+
 This repository contains schemas and example files for Vipps XML settlement reports.
 
 Both [the current settlement report schema v3.0](SettlementReport-3.0.xsd) and the [old v2.0 version](SettlementReport-2.0.xsd) are available.

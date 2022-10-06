@@ -17,13 +17,6 @@ END_METADATA -->
 
 <!-- END_COMMENT -->
 
-<!-- START_COMMENT -->
-
-💥 Preview the new documentation pages here: <https://vippsas.github.io/vipps-developer-docs/>.
-See the disclaimer: <https://vippsas.github.io/vipps-developer-docs/docs/examples/>.
-
-<!-- END_COMMENT -->
-
 Topics include:
 
 * [Getting started](vipps-getting-started.md)
