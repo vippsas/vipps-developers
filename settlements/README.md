@@ -200,7 +200,7 @@ There is no API for retrieving settlement data.
 [SFTP](#sftp) is the closest alternative.
 
 But:
-[We are in the early planning phase of developing an API]https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/newsletters/2022-10-newsletter#settlement-api-in-progress).
+[We are in the early planning phase of developing an API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/report-api).
 
 ## Availability
 
