@@ -57,7 +57,7 @@ For _**technical**_ issues related to Vipps and development of services using ou
 
 **Important:** Almost all requests we get are already covered in the technical documentation.
 Please check the FAQs (Frequently Asked Questions) for the
-[Vipps API](https://vippsas.github.io/vipps-developer-docs/docs/category/apis)
+[Vipps API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/)
 you are using, and use the
 [search functionality for the technical documentation](https://vippsas.github.io/vipps-developer-docs/search).
 
