@@ -47,8 +47,8 @@ If you do not have a technical issue, the fastest way to get help is to start in
 | Vipps through a partner (for merchants) | Please contact your partner. |
 | Vipps through a POS (Point of Sale) vendor | Please contact your POS vendor. |
 | Vipps through a PSP (Payment Service Provider) | Please contact your PSP. |
-| Partner assistance (for partners) | See: [Vipps Partners](https://github.com/vippsas/vipps-partner) and the [Partner API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/partner-api). |
-| Settlements, invoices or similar | See: [Settlements](https://github.com/vippsas/vipps-developers/tree/master/settlements). |
+| Partner assistance (for partners) | See: [Vipps Partners](https://vippsas.github.io/vipps-developer-docs/docs/vipps-partner/) and the [Partner API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/partner-api). |
+| Settlements, invoices or similar | See: [Settlements](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/settlements/). |
 | Suggestions for improvements to [Vipps products](https://www.vipps.no/produkter-og-tjenester/bedrift/)  | Please use [this form](https://www.vipps.no/kontakt-oss/bedrift/). |
 
 For _**technical**_ issues related to Vipps and development of services using our APIs: Please see below.
@@ -69,12 +69,12 @@ If you cannot find the answer: Please send an email with all relevant informatio
 2. A concise, self-explanatory `Subject` line, such as "`POST:/something` gives `HTTP 400` response".
 3. Company details: Organization number (find yours at [Brønnøysundregistrene](https://brreg.no))
 4. Merchant Serial Number (MSN, see [Getting started](vipps-getting-started.md))
-5. Which [Vipps product](https://www.vipps.no/produkter-og-tjenester/bedrift/) or [Vipps API](https://github.com/vippsas) this is about.
+5. Which [Vipps product](https://www.vipps.no/produkter-og-tjenester/bedrift/) or [Vipps API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/) this is about.
 6. Environment: Is it a problem in the Test (MT) or the Production environment?
 7. Include `orderId`, and preferably also `transactionId` and `contextId`, to make it possible to search in logs.
 8. Date: On which date did the problem occur?
 9. If you are a new Vipps customer, please include details about when and how you ordered Vipps.
-10. For API issues: Complete `request` and `response` details (plain HTTP from Postman, or [curl](https://curl.haxx.se) ensures the quickest response).
+10. For API issues: Complete `request` and `response` details (plain HTTP from Postman or [curl](https://curl.haxx.se) ensures the quickest response).
 11. Please provide screenshots, if possible.
 12. Please provide your contact information (if not in your email signature): Name and phone number
 13. Please include any other information that may be relevant or possibly helpful.
@@ -82,7 +82,8 @@ If you cannot find the answer: Please send an email with all relevant informatio
 The Integration email address is: integration@vipps.no
 
 We also have a technical newsletter for developers:
-[Sign up and access the archives here](https://github.com/vippsas/vipps-developers/tree/master/newsletters) (low volume, no marketing).
+[Sign up and access the archives here](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/newsletters/)
+(low volume, no marketing).
 
 ## Keep your colleagues up to date
 
@@ -136,4 +137,4 @@ Nope. See: [Can I call you?](#can-i-call-you)
 
 ## Newsletter
 
-Sign up for our [Technical newsletter for developers](https://github.com/vippsas/vipps-developers/tree/master/newsletters).
+Sign up for our [Technical newsletter for developers](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/newsletters/).
