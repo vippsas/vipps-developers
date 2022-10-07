@@ -26,6 +26,9 @@ updates about our APIs and services. See also:
 
 [Sign up Technical newsletter for developers here](https://cloud.melding.vipps.no/utv).
 
+See also:
+[Vipps news in Norwegian on vipps.no](https://www.vipps.no/om-oss/nyheter/).
+
 # Questions?
 
 We're always happy to help with code or other questions you might have!
