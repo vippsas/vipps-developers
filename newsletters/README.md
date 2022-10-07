@@ -17,9 +17,14 @@ END_METADATA -->
 
 <!-- END_COMMENT -->
 
-A low volume newsletter with important information to developers about Vipps' APIs and products.
+A low volume newsletter with important information to developers about Vipps'
+APIs and products.
 
-Sign up here: https://cloud.melding.vipps.no/utv
+All Vipps customers and partners should subscribe to the newsletter to get
+updates about our APIs and services. See also:
+[API Lifecycle](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/vipps-api-lifecycle).
+
+[Sign up Technical newsletter for developers here](https://cloud.melding.vipps.no/utv).
 
 # Questions?
 
