@@ -14,23 +14,21 @@ END_METADATA -->
 
 <!-- END_COMMENT -->
 
-Document version: 2.4.13.
-
-<!-- START_TOC -->
-
-- [We help with technical issues](#we-help-with-technical-issues)
-- [What to include in the email](#what-to-include-in-the-email)
-- [Can I call you?](#can-i-call-you)
-- [Can we have a meeting?](#can-we-have-a-meeting)
-- [Keep your colleagues up to date](#keep-your-colleagues-up-to-date)
-- [Automatic reply](#automatic-reply)
-- [Adding additional information](#adding-additional-information)
-- [Response time](#response-time)
-- [Escalation](#escalation)
-- [More than one problem, or a new one?](#more-than-one-problem-or-a-new-one)
-- [Newsletter](#newsletter)
+* [We help with technical issues](#we-help-with-technical-issues)
+* [What to include in the email](#what-to-include-in-the-email)
+* [Keep your colleagues up to date](#keep-your-colleagues-up-to-date)
+* [Automatic reply](#automatic-reply)
+* [Adding additional information](#adding-additional-information)
+* [Response time](#response-time)
+* [Escalation](#escalation)
+* [More than one problem, or a new one?](#more-than-one-problem-or-a-new-one)
+* [Can I call you?](#can-i-call-you)
+* [Can we have a meeting?](#can-we-have-a-meeting)
+* [Newsletter](#newsletter)
 
 <!-- END_TOC -->
+
+Document version: 2.4.14.
 
 ## We help with technical issues
 
@@ -54,9 +52,6 @@ If you do not have a technical issue, the fastest way to get help is to start in
 | Suggestions for improvements to [Vipps products](https://www.vipps.no/produkter-og-tjenester/bedrift/)  | Please use [this form](https://www.vipps.no/kontakt-oss/bedrift/). |
 
 For _**technical**_ issues related to Vipps and development of services using our APIs: Please see below.
-
-We also have a technical newsletter for developers:
-[Sign up and access the archives here](https://github.com/vippsas/vipps-developers/tree/master/newsletters) (low volume, no marketing).
 
 ## What to include in the email
 
@@ -86,16 +81,8 @@ If you cannot find the answer: Please send an email with all relevant informatio
 
 The Integration email address is: integration@vipps.no
 
-## Can I call you?
-
-Nope. We do not have a phone number for Integration, and we do not have the capacity to
-help 1:1 on phone. Most cases involve information that needs to be in written form,
-such as ids, API requests/responses, etc. We do sometimes set up Slack channels for
-customers, so you can request that if you expect to be contacting us a lot.
-
-## Can we have a meeting?
-
-Nope. See: [Can I call you?](#can-i-call-you)
+We also have a technical newsletter for developers:
+[Sign up and access the archives here](https://github.com/vippsas/vipps-developers/tree/master/newsletters) (low volume, no marketing).
 
 ## Keep your colleagues up to date
 
@@ -135,6 +122,17 @@ but that Vipps must sometimes prioritize differently.
 
 Please send separate emails for each problem. If you send an email about a
 new problem by replying to an old issue, it may delay our response.
+
+## Can I call you?
+
+Nope. We do not have a phone number for Integration, and we do not have the capacity to
+help 1:1 on phone. Most cases involve information that needs to be in written form,
+such as ids, API requests/responses, etc. We do sometimes set up Slack channels for
+customers, so you can request that if you expect to be contacting us a lot.
+
+## Can we have a meeting?
+
+Nope. See: [Can I call you?](#can-i-call-you)
 
 ## Newsletter
 

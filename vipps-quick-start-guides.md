@@ -30,7 +30,7 @@ END_METADATA -->
 
 <!-- END_TOC -->
 
-Document version: 4.3.0.
+Document version: 4.3.1.
 
 ## What you need for getting started with the API
 
