@@ -14,6 +14,8 @@ END_METADATA -->
 
 <!-- END_COMMENT -->
 
+<!-- START_TOC -->
+
 * [We help with technical issues](#we-help-with-technical-issues)
 * [What to include in the email](#what-to-include-in-the-email)
 * [Keep your colleagues up to date](#keep-your-colleagues-up-to-date)
@@ -28,7 +30,7 @@ END_METADATA -->
 
 <!-- END_TOC -->
 
-Document version: 2.4.14.
+Document version: 2.4.15.
 
 ## We help with technical issues
 
