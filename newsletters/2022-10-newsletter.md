@@ -41,6 +41,10 @@ Examples:
 * [API Reference](https://vippsas.github.io/vipps-developer-docs/api/ecom)
 * [FAQ](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api-faq)
 
+Please
+[tell us what you think](https://forms.office.com/r/8iZVibsM4m)
+in this short, 3-minute survey - thanks!
+
 ## Recurring API: New v3 API coming this fall
 
 The
