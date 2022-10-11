@@ -63,13 +63,10 @@ We are working on eliminating incorrect API use. Please:
 - Monitor the responses you get when making API calls
 - Log all errors
 - Fix errors as quickly as possible
-- Use the API Dashboard to find problems with your integration. The
+- Use the
   [API Dashboard](https://github.com/vippsas/vipps-developers/blob/master/vipps-resources.md#api-dashboard)
-  is available to all merchants for both the production and test environments,
-  and is an easy way to see if you are using the Vipps APIs correctly.
-  Think of it as a "health check", that you can use to see if there are any
-  problems you need to investigate.
-
+  to find problems with your integration.
+  
 ![API Dashboard example](images/2021-02-api-dashboard-example.png)
 
 ## Questions or comments?
