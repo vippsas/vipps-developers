@@ -32,7 +32,11 @@ We are working hard to improve the
 * All APIs now have a
   [Quick start](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/vipps-quick-start-guides)
   with Postman collection. We also have a global Postman environment to make it
-  easier to test all APIs.  
+  easier to test all APIs.
+
+Please
+[tell us what you think](https://forms.office.com/r/8iZVibsM4m)
+in this short, 3-minute survey - thanks!
 
 ## Check your phone number format
 
