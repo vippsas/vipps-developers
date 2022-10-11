@@ -18,7 +18,6 @@ This newsletter was sent in November 2022.
 * [Check your phone number format](#check-your-phone-number-format)
 * [Reminders](#reminders)
   * [Please check your API calls for errors](#please-check-your-api-calls-for-errors)
-  * [Use the API Dashboard to find problems with your integration](#use-the-api-dashboard-to-find-problems-with-your-integration)
 * [Questions or comments?](#questions-or-comments)
 
 <!-- END_TOC -->
@@ -64,10 +63,7 @@ We are working on eliminating incorrect API use. Please:
 - Monitor the responses you get when making API calls
 - Log all errors
 - Fix errors as quickly as possible
-- Use the API Dashboard
-- Contact us if there is anything we can help with
-
-### Use the API Dashboard to find problems with your integration
+- Use the API Dashboard to find problems with your integration
 
 The
 [API Dashboard](https://github.com/vippsas/vipps-developers/blob/master/vipps-resources.md#api-dashboard)
