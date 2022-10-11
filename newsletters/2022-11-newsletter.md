@@ -11,6 +11,18 @@ END_METADATA -->
 
 This newsletter was sent in November 2022.
 
+<!-- START_TOC -->
+
+* [Report API](#report-api)
+* [Documentation improvements](#documentation-improvements)
+* [Check your phone number format](#check-your-phone-number-format)
+* [Reminders](#reminders)
+  * [Please check your API calls for errors](#please-check-your-api-calls-for-errors)
+  * [Use the API Dashboard to find problems with your integration](#use-the-api-dashboard-to-find-problems-with-your-integration)
+* [Questions or comments?](#questions-or-comments)
+
+<!-- END_TOC -->
+
 ## Report API
 
 The

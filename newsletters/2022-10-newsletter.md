@@ -11,21 +11,20 @@ This newsletter was sent in October 2022.
 
 <!-- START_TOC -->
 
-- [Technical newsletter for developers 2022-10](#technical-newsletter-for-developers-2022-10)
-  - [New developer documentation](#new-developer-documentation)
-  - [Recurring API: New v3 API coming this fall](#recurring-api-new-v3-api-coming-this-fall)
-  - [Recurring API: Rollback of UI changes on Android](#recurring-api-rollback-of-ui-changes-on-android)
-  - [Recurring API: Rollback of new charge business rules](#recurring-api-rollback-of-new-charge-business-rules)
-  - [Inform customers that there are no fees when paying with Vipps](#inform-customers-that-there-are-no-fees-when-paying-with-vipps)
-  - [Vipps on-site messaging](#vipps-on-site-messaging)
-  - [Partner API: Pre-fill applications](#partner-api-pre-fill-applications)
-  - [Settlement API: In progress](#settlement-api-in-progress)
-  - [Reminders](#reminders)
-    - [Please check your API calls for errors](#please-check-your-api-calls-for-errors)
-    - [Use the API Dashboard to find problems with your integration](#use-the-api-dashboard-to-find-problems-with-your-integration)
-    - [How to get help quickly](#how-to-get-help-quickly)
-    - [Newsletter archive](#newsletter-archive)
-  - [Questions or comments?](#questions-or-comments)
+* [New developer documentation](#new-developer-documentation)
+* [Recurring API: New v3 API coming this fall](#recurring-api-new-v3-api-coming-this-fall)
+* [Recurring API: Rollback of UI changes on Android](#recurring-api-rollback-of-ui-changes-on-android)
+* [Recurring API: Rollback of new charge business rules](#recurring-api-rollback-of-new-charge-business-rules)
+* [Inform customers that there are no fees when paying with Vipps](#inform-customers-that-there-are-no-fees-when-paying-with-vipps)
+* [Vipps on-site messaging](#vipps-on-site-messaging)
+* [Partner API: Pre-fill applications](#partner-api-pre-fill-applications)
+* [Settlement API: In progress](#settlement-api-in-progress)
+* [Reminders](#reminders)
+  * [Please check your API calls for errors](#please-check-your-api-calls-for-errors)
+  * [Use the API Dashboard to find problems with your integration](#use-the-api-dashboard-to-find-problems-with-your-integration)
+  * [How to get help quickly](#how-to-get-help-quickly)
+  * [Newsletter archive](#newsletter-archive)
+* [Questions or comments?](#questions-or-comments)
 
 <!-- END_TOC -->
 
