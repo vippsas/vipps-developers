@@ -18,6 +18,22 @@ The
 gives you or a third-party acting on your behalf the ability to
 fetch information about payment events that have been processed by Vipps.
 
+## Documentation improvements
+
+We are working hard to improve the
+[Vipps Technical Documentation](https://vippsas.github.io/vipps-developer-docs/):
+
+* The documentation is
+  [searchable](https://vippsas.github.io/vipps-developer-docs/search/)
+* We hava new
+  [Solutions](https://vippsas.github.io/vipps-developer-docs/)
+  section to highlight combinations of Vipps APIs, such as
+  [Loyalty in physical stores](https://vippsas.github.io/vipps-developer-docs/).
+* All APIs now have a
+  [Quick start](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/vipps-quick-start-guides)
+  with Postman collection. We also have a global Postman environment to make it
+  easier to test all APIs.  
+
 ## Check your phone number format
 
 Far too many Vipps payments fail because of badly formatted phone numbers.
