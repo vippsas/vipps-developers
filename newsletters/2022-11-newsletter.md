@@ -25,7 +25,18 @@ This newsletter was sent in November 2022.
 
 ## Get ready for "black week"
 
-See: [Please check your API calls for errors](#please-check-your-api-calls-for-errors)
+Let your customers pay with
+[Vipps Hurtigkasse](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api#express-checkout-payments)
+with the new and improved user experience by specifying
+[`useExplicitCheckoutFlow": true`](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api#how-to-specify-the-old-or-new-express-checkout-flow)
+to reduce drop-off, left shopping carts, etc.
+
+Make sure your use of Vipps is as good as it can be, without errors.
+See: [Please check your API calls for errors](#please-check-your-api-calls-for-errors).
+
+The eCom FAQ entry
+[Why do payments fail?](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api-faq#why-do-payments-fail)
+may also be useful.
 
 ## Report API
 
