@@ -13,6 +13,7 @@ This newsletter was sent in November 2022.
 
 <!-- START_TOC -->
 
+* [Get ready for "black week"](#get-ready-for-black-week)
 * [Report API](#report-api)
 * [Documentation improvements](#documentation-improvements)
 * [Check your phone number format](#check-your-phone-number-format)
@@ -21,6 +22,10 @@ This newsletter was sent in November 2022.
 * [Questions or comments?](#questions-or-comments)
 
 <!-- END_TOC -->
+
+## Get ready for "black week"
+
+See: [Please check your API calls for errors](#please-check-your-api-calls-for-errors)
 
 ## Report API
 
