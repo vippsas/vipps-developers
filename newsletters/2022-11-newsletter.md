@@ -55,6 +55,8 @@ Far too many Vipps payments fail because of badly formatted phone numbers.
 We try to silently correct them, but please see the API specification:
 [`POST:/ecomm/v2/payments`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Vipps-eCom-API/operation/initiatePaymentV3UsingPOST)
 
+![API specification for phone number](images/2022-11-phone-number.png)
+
 ## Reminders
 
 ### Please check your API calls for errors
@@ -66,7 +68,7 @@ We are working on eliminating incorrect API use. Please:
 - Use the
   [API Dashboard](https://github.com/vippsas/vipps-developers/blob/master/vipps-resources.md#api-dashboard)
   to find problems with your integration.
-  
+
 ![API Dashboard example](images/2021-02-api-dashboard-example.png)
 
 ## Questions or comments?
