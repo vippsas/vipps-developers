@@ -52,7 +52,12 @@ in this short, 3-minute survey - thanks!
 ## Check your phone number format
 
 Far too many Vipps payments fail because of badly formatted phone numbers.
-We try to silently correct them, but please see the API specification:
+We try to silently correct them, but can not fix all errors.
+
+This is especially important when using
+[Skip landing page](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api#skip-landing-page).
+
+Please see the API specification:
 [`POST:/ecomm/v2/payments`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Vipps-eCom-API/operation/initiatePaymentV3UsingPOST)
 
 ![API specification for phone number](images/2022-11-phone-number.png)
