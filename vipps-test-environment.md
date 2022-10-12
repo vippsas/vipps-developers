@@ -201,6 +201,7 @@ Use these amounts to always get the same result.
 | 1.86   | Expired Card              |
 | 1.87   | Invalid card              |
 | 1.97   | 3D Secure denied          |
+| 2.01   | Unknown result for 1 hour |
 | 2.02   | SCA required              |
 
 **Please note:** The
