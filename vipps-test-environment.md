@@ -135,7 +135,7 @@ but you can create as many as you need.
 
 A welcome email is automatically sent to **all** new customers. This email
 contains information about your test user.
-The subject shouyld contin "Kom i gang med Vipps".
+The subject should contain "Kom i gang med Vipps".
 Please search your mail, including the spam/junk folder, if you do not find it.
 
 The provided test user can be used in the [Vipps test apps](#vipps-test-apps).
