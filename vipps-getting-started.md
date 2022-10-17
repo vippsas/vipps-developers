@@ -20,25 +20,25 @@ The Vipps APIs provide access to the following types of transactions.
 
 In-person and remote transactions:
 
-- _Vipps Checkout (Vipps Checkout_) - A complete Checkout solution for both Vipps and card payments with auto-fill and shipping integrations.
+- _Vipps Checkout (Vipps Checkout)_ - A complete Checkout solution for both Vipps and card payments with auto-fill and shipping integrations.
 
 In-person transactions:
 
-- _Vennebetaling (Person to Person payments_) - A person can transfer money to another person. They must both have configured their Vipps app with their respective bank account numbers. There is no API.
+- _Vennebetaling (Person to Person payments)_ - A person can transfer money to another person. They must both have configured their Vipps app with their respective bank account numbers. There is no API.
 
-- _Vippsnummer (Vipps number_) - An organization or company can receive an identification number from Vipps. Customers can then register their payments to this number. This gives people the possibility of paying or donating money without cash. There is no API.
+- _Vippsnummer (Vipps number)_ - An organization or company can receive an identification number from Vipps. Customers can then register their payments to this number. This gives people the possibility of paying or donating money without cash. There is no API.
 
-- _Vipps i kassa (Vipps In Store_) - A company can integrate its Point of Sale (POS) system with Vipps so that in-store customers can pay by using Vipps, and the sale will be automatically registered in their system.
+- _Vipps i kassa (Vipps In Store)_ - A company can integrate its Point of Sale (POS) system with Vipps so that in-store customers can pay by using Vipps, and the sale will be automatically registered in their system.
 
 Remote transactions:
 
-- _Vipps Logg Inn (Vipps Login_) - A website or app can allow the customer to log in by using their Vipps account.
+- _Vipps Logg Inn (Vipps Login)_ - A website or app can allow the customer to log in by using their Vipps account.
 
-- _Vipps på nett (Vipps Online_) - An online store or app can offer Vipps as a method of payment.
+- _Vipps på nett (Vipps Online)_ - An online store or app can offer Vipps as a method of payment.
 
-- _Vipps Hurtigkasse (Vipps Express Checkout_) - An online store can offer a quick checkout option where Vipps is the method of payment and the shipping options are specified directly from the Vipps app.
+- _Vipps Hurtigkasse (Vipps Express Checkout)_ - An online store can offer a quick checkout option where Vipps is the method of payment and the shipping options are specified directly from the Vipps app.
 
-- _Faste betalinger (Recurring payments_) - A business or organization can allow their customers to set up recurring payments (e.g., for subscriptions, membership, regular donations, etc.) through Vipps.
+- _Faste betalinger (Recurring payments)_ - A business or organization can allow their customers to set up recurring payments (e.g., for subscriptions, membership, regular donations, etc.) through Vipps.
 
 Document version: 3.5.0.
 
