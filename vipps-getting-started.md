@@ -264,7 +264,7 @@ required permissions.
 |--------------------------|--------|--------------------------------------|-------------------------------------------------|
 | `client_id`              | GUID   | fb492b5e-7907-4d83-bc20-c7fb60ca35de | Client ID for the merchant (the "username")     |
 | `client_secret`          | Base64 | Y8Kteew6GE3ZmeycEt6egg==             | Client Secret for the merchant (the "password") |
-| `Vipps-Subscription-Key` | Base64 | 0f14ebcab0eb4b29ae0cb90d91b4a84a     | Subscription key for the API product            |
+| `Vipps-Subscription-Key` (or `Ocp-Apim-Subscription-Key`) | Base64 | 0f14ebcab0eb4b29ae0cb90d91b4a84a     | Subscription key for the API product            |
 
 There are both a primary and secondary `Vipps-Subscription-Key`.
 The primary and secondary keys are interchangeable: You can use either one,
@@ -305,17 +305,19 @@ speed up any trouble-shooting of API problems quite a bit.
 **Important:** Please use self-explanatory, human readable and reasonably short
 values that uniquely identify the system (and plugin).
 
-For example, if the vendor's name is "Acme AS" and the vendor offers two different systems,
-one for point of sale (POS) integrations and one for web shops,
-the headers should be:
+#### Example headers
 
-| Header                        | Description                                  | Example value for POS | Example value for webshop | Example value for Vending machines |
-|:------------------------------|:---------------------------------------------|:----------------------|:--------------------------|:-|
-| `Merchant-Serial-Number`      | The MSN for the sale unit                    | `123456`              | `123456`                  | `123456` |
-| `Vipps-System-Name`           | The name of the ecommerce solution           | `acme`                | `acme`                    | `acme` |
-| `Vipps-System-Version`        | The version number of the ecommerce solution | `1.7`                 | `2.6`                     | `2.6` |
-| `Vipps-System-Plugin-Name`    | The name of the ecommerce plugin             | `acme-pos`            | `acme-webshop`            | `acme-vending` |
-| `Vipps-System-Plugin-Version` | The version number of the ecommerce plugin   | `3.2`                 | `4.3`                     | `4.3` |
+For example, if the merchant's name is "Acme AS" and they offers three different systems:
+point of sale (POS) integration, webshop, and vending machines,
+the headers could be:
+
+| Header| Description| Example value for POS | Example for webshop | Example for vending machine | Example for WooCommerce plugin |
+|-------------------------------|----------------------------------------------|-----------|----------------|--------|---------------|
+| `Vipps-System-Plugin-Name`    | The name of the ecommerce plugin             | `acme-pos`| `acme-webshop` | `acme-vending` | `vipps-woocommerce` |
+| `Vipps-System-Name`           | The name of the ecommerce solution           | `acme`    | `acme`         | `acme` | `woocommerce` |
+| `Vipps-System-Version`        | The version number of the ecommerce solution | `1.7`     | `2.6`          | `2.6` | `5.4` |
+| `Vipps-System-Plugin-Version` | The version number of the ecommerce plugin   | `3.2`     | `4.3`          | `4.3` | `1.4.1` |
+| `Merchant-Serial-Number`      | The MSN for the sale unit                    | `123456`  | `123456`       | `123456` | `123456` |
 
 #### Idempotency header
 
