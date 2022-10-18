@@ -20,28 +20,27 @@ The Vipps APIs provide access to the following types of transactions.
 
 In-person and remote transactions:
 
-- _Vipps Checkout (Vipps Checkout_) - A complete Checkout solution for both Vipps and card payments with auto-fill and shipping integrations.
+- _Vipps Checkout (Vipps Checkout)_ - A complete Checkout solution for both Vipps and card payments with auto-fill and shipping integrations.
 
 In-person transactions:
 
-- _Vennebetaling (Person to Person payments_) - A person can transfer money to another person. They must both have configured their Vipps app with their respective bank account numbers. There is no API.
+- _Vennebetaling (Person to Person payments)_ - A person can transfer money to another person. They must both have configured their Vipps app with their respective bank account numbers. There is no API.
 
-- _Vippsnummer (Vipps number_) - An organization or company can receive an identification number from Vipps. Customers can then register their payments to this number. This gives people the possibility of paying or donating money without cash. There is no API.
+- _Vippsnummer (Vipps number)_ - An organization or company can receive an identification number from Vipps. Customers can then register their payments to this number. This gives people the possibility of paying or donating money without cash. There is no API.
 
-- _Vipps i kassa (Vipps In Store_) - A company can integrate its Point of Sale (POS) system with Vipps so that in-store customers can pay by using Vipps, and the sale will be automatically registered in their system.
+- _Vipps i kassa (Vipps In Store)_ - A company can integrate its Point of Sale (POS) system with Vipps so that in-store customers can pay by using Vipps, and the sale will be automatically registered in their system.
 
 Remote transactions:
 
-- _Vipps Logg Inn (Vipps Login_) - A website or app can allow the customer to log in by using their Vipps account.
+- _Vipps Logg Inn (Vipps Login)_ - A website or app can allow the customer to log in by using their Vipps account.
 
-- _Vipps på nett (Vipps Online_) - An online store or app can offer Vipps as a method of payment.
+- _Vipps på nett (Vipps Online)_ - An online store or app can offer Vipps as a method of payment.
 
-- _Vipps Hurtigkasse (Vipps Express Checkout_) - An online store can offer a quick checkout option where Vipps is the method of payment and the shipping options are specified directly from the Vipps app.
+- _Vipps Hurtigkasse (Vipps Express Checkout)_ - An online store can offer a quick checkout option where Vipps is the method of payment and the shipping options are specified directly from the Vipps app.
 
-- _Faste betalinger (Recurring payments_) - A business or organization can allow their customers to set up recurring payments (e.g., for subscriptions, membership, regular donations, etc.) through Vipps.
+- _Faste betalinger (Recurring payments)_ - A business or organization can allow their customers to set up recurring payments (e.g., for subscriptions, membership, regular donations, etc.) through Vipps.
 
-
-Document version: 3.4.2.
+Document version: 3.5.0.
 
 <!-- START_TOC -->
 
@@ -60,6 +59,8 @@ Document version: 3.4.2.
   - [API key details](#api-key-details)
   - [API keys for different use](#api-keys-for-different-use)
 - [Quick overview of how to make an API call](#quick-overview-of-how-to-make-an-api-call)
+  - [Vipps HTTP headers](#vipps-http-headers)
+  - [Idempotency header](#idempotency-header)
   - [Get an access token](#get-an-access-token)
   - [Make an API call](#make-an-api-call)
   - [HTTP response codes](#http-response-codes)
@@ -263,7 +264,7 @@ required permissions.
 |--------------------------|--------|--------------------------------------|-------------------------------------------------|
 | `client_id`              | GUID   | fb492b5e-7907-4d83-bc20-c7fb60ca35de | Client ID for the merchant (the "username")     |
 | `client_secret`          | Base64 | Y8Kteew6GE3ZmeycEt6egg==             | Client Secret for the merchant (the "password") |
-| `Vipps-Subscription-Key` | Base64 | 0f14ebcab0eb4b29ae0cb90d91b4a84a     | Subscription key for the API product            |
+| `Vipps-Subscription-Key` (or `Ocp-Apim-Subscription-Key`) | Base64 | 0f14ebcab0eb4b29ae0cb90d91b4a84a     | Subscription key for the API product            |
 
 There are both a primary and secondary `Vipps-Subscription-Key`.
 The primary and secondary keys are interchangeable: You can use either one,
@@ -286,10 +287,67 @@ and any other solution based on the Vipps eCom API.
 
 ## Quick overview of how to make an API call
 
+### Vipps HTTP headers
+
+Please use the following Vipps HTTP headers for all requests to the
+Vipps APIs. These headers provide useful metadata about the merchant's system,
+which help Vipps improve our services, and also helps in investigating problems.
+
+These headers are **required for plugins and partners** and sent by the recent versions of
+[the official Vipps plugins](https://github.com/vippsas/vipps-plugins)
+and we recommend all customers with direct integration with the API to also do so.
+
+Partners must always send the `Merchant-Serial-Number` header, and we recommend
+that _everyone_ sends it, also when using the merchant's own API keys.
+The `Merchant-Serial-Number` header can be used with all API keys, and can
+speed up any trouble-shooting of API problems quite a bit.
+
+**Important:** Please use self-explanatory, human readable and reasonably short
+values that uniquely identify the system (and plugin).
+
+#### Example headers
+
+For example, if the merchant's name is "Acme AS" and they offers three different systems:
+point of sale (POS) integration, webshop, and vending machines,
+the headers could be:
+
+| Header| Description| Example value for POS | Example for webshop | Example for vending machine | Example for WooCommerce plugin |
+|-------------------------------|----------------------------------------------|-----------|----------------|--------|---------------|
+| `Vipps-System-Plugin-Name`    | The name of the ecommerce plugin             | `acme-pos`| `acme-webshop` | `acme-vending` | `vipps-woocommerce` |
+| `Vipps-System-Name`           | The name of the ecommerce solution           | `acme`    | `acme`         | `acme` | `woocommerce` |
+| `Vipps-System-Version`        | The version number of the ecommerce solution | `1.7`     | `2.6`          | `2.6` | `5.4` |
+| `Vipps-System-Plugin-Version` | The version number of the ecommerce plugin   | `3.2`     | `4.3`          | `4.3` | `1.4.1` |
+| `Merchant-Serial-Number`      | The MSN for the sale unit                    | `123456`  | `123456`       | `123456` | `123456` |
+
+#### Idempotency header
+
+Many API requests to Vipps APIs can be retried without any side effects
+by providing `Request-Id`(or `Idempotency-key`) in the header of the
+request. For example, in case the request fails because of network error, it can
+safely be retried with the same `Request-Id` key. The `Request-Id` key must be
+generated by the merchant.
+
+You can use any unique id for your idempotency header.
+
+For example:
+
+```json
+Request-Id: slvnwdcweofjwefweklfwelf
+```
+
 ### Get an access token
+
+All Vipps API calls are authenticated and authorized with an access token
+(JWT bearer token) and an API subscription key:
+
+| Header Name                 | Header Value                | Description      |
+|:----------------------------|:----------------------------|:-----------------|
+| `Authorization`             | `Bearer <JWT access token>` | Type: Authorization token. See [Get an access token](#get-an-access-token). |
+| `Ocp-Apim-Subscription-Key` | Base 64 encoded string      | The subscription key for this API. This is available on [portal.vipps.no](https://portal.vipps.no). |
 
 All Vipps API requests must include an `Authorization` header with
 a JSON Web Token (JWT), which we call the _access token_.
+
 The access token is obtained by calling
 [`POST:/accesstoken/get`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Authorization-Service/operation/fetchAuthorizationTokenUsingPost)
 and passing the `client_id`, `client_secret` and `Ocp-Apim-Subscription-Key`.
@@ -326,11 +384,6 @@ The `client_id`, `client_secret` and `Ocp-Apim-Subscription-Key` are unique per
 
 Please note: Partners should use
 [partner keys](https://github.com/vippsas/vipps-partner/blob/main/README.md#partner-keys).
-
-Partners must always send the `Merchant-Serial-Number` header, and we recommend
-that _everyone_ sends it, also when using the merchant's own API keys.
-The `Merchant-Serial-Number` header can be used with all API keys, and can
-speed up any troubleshooting of API problems quite a bit.
 
 **Please note:** You can have multiple access tokens being used at the same time.
 
