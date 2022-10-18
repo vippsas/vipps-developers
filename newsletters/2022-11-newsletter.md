@@ -34,6 +34,9 @@ to reduce drop-off, left shopping carts, etc.
 Make sure your use of Vipps is as good as it can be, without errors.
 See: [Please check your API calls for errors](#please-check-your-api-calls-for-errors).
 
+Monitor the Vipps Status Page:
+[vipps.statuspage.io]( https://vipps.statuspage.io/).
+
 The eCom FAQ entry
 [Why do payments fail?](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api-faq#why-do-payments-fail)
 may also be useful.
