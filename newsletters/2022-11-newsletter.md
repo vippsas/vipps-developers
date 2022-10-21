@@ -14,6 +14,7 @@ This newsletter was sent in November 2022.
 <!-- START_TOC -->
 
 * [Get ready for "black week"](#get-ready-for-black-week)
+* [eCom API: Don't rely 100 % on callbacks](#ecom-api-dont-rely-100-on-callbacks)
 * [Report API](#report-api)
 * [Documentation improvements](#documentation-improvements)
 * [Check your phone number format](#check-your-phone-number-format)
@@ -40,6 +41,17 @@ Monitor the Vipps Status Page:
 The eCom FAQ entry
 [Why do payments fail?](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api-faq#why-do-payments-fail)
 may also be useful.
+
+## eCom API: Don't rely 100 % on callbacks
+
+Callback offer a faster user experience than polling, but you
+cannot rely on callbacks alone. You must also poll
+[`GET:/ecomm/v2/payments/{orderId}/details`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Vipps-eCom-API/operation/getPaymentDetailsUsingGET)
+as described in the
+[Polling guidelines](#polling-guidelines).
+
+See:
+[Callbacks](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api#callbacks)
 
 ## Report API
 
