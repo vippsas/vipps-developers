@@ -11,7 +11,7 @@ Address:
     id:
       type: string
       format: uuid
-      description: 'Unique ID of the address, if relevant'
+      description: 'Unique ID of the address, if relevant '
       example: 123e4567-e89b-12d3-a456-426614174000
     lines:
       type: array
