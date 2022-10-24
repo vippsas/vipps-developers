@@ -1,12 +1,10 @@
-## <!-- START_METADATA
-
+<!-- START_METADATA
+---
 title: The API Lifecycle
 sidebar_position: 39
 pagination_next: null
 pagination_prev: null
-
 ---
-
 END_METADATA -->
 
 # Vipps API Lifecycle
@@ -218,7 +216,7 @@ Version 2.0.0:
   "postCode": "0154",
   "country": "Norway"
   }
-```
+```  
 
 Version 2.1.0:
 
@@ -230,7 +228,7 @@ Version 2.1.0:
   "country": "Norway",
   "type": "business"
   }
-```
+```  
 
 ### Adding a new enum value
 
@@ -282,7 +280,7 @@ Version 2.0.0:
   "postCode": "0154",
   "country": "Norway"
   }
-```
+```  
 
 Version 3.0.0:
 
@@ -293,7 +291,7 @@ Version 3.0.0:
   "postCode": "0154",
   "country": "NO",
   }
-```
+```  
 
 If the ISO 3166 country code was _added_ as `countryCode`, it would be a
 non-breaking change, and only a minor version:
@@ -308,7 +306,7 @@ Version 2.1.0:
   "country": "Norway"
   "countryCode": "NO",
   }
-```
+```  
 
 ### Adding a new required parameter
 
@@ -328,4 +326,3 @@ a [pull request](https://github.com/vippsas/vipps-developers/pulls),
 or [contact us](https://github.com/vippsas/vipps-developers/blob/master/contact.md).
 
 Sign up for our [Technical newsletter for developers](https://github.com/vippsas/vipps-developers/tree/master/newsletters).
-CI
