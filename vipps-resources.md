@@ -16,7 +16,7 @@ END_METADATA -->
 
 <!-- END_COMMENT -->
 
-This repository contains various resources for Vipps developers.
+This repository contains various resources for Vipps developers. 
 We recommend starting with [Getting started](vipps-getting-started.md).
 
 <!-- START_TOC -->
