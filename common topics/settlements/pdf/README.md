@@ -1,14 +1,13 @@
 <!-- START_METADATA
 ---
-title: OCR
-sidebar_position: 80
+title: PDF
 hide_table_of_contents: true
 pagination_next: null
 pagination_prev: null
 ---
 END_METADATA -->
 
-# Vipps settlements: OCR
+# Vipps settlements: PDF
 
 <!-- START_COMMENT -->
 
@@ -17,14 +16,11 @@ END_METADATA -->
 
 <!-- END_COMMENT -->
 
-OCR files are no longer provided by Vipps.
-Invoice payments are made directly from the user to the merchant, so settlement files
-are provided by the bank, not Vipps.
+The following is an example of a PDF settlement file:
 
-Documentation for the legacy invoice solution: [Vipps Faktura](./vipps-invoice-api-vipps-faktura.pdf).
+* [PDF settlement file](./Vipps-oppgj%C3%B8rsrapport-16655-2018-09-23.pdf)
 
 <!-- START_COMMENT -->
-Details:
 
 See the [Settlements](..) overview.
 
