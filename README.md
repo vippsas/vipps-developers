@@ -25,7 +25,7 @@ Topics include:
 * [The Vipps test environment (MT)](vipps-test-environment.md)
 * [Developer resources](vipps-resources.md)
 * [Technical newsletter for developers](newsletters/README.md)
-* [Vipps Terminology](vipps-terminology.md)
+
 
 For information about partners, see our [Partner section](https://github.com/vippsas/vipps-partner#vipps-partners).
 
