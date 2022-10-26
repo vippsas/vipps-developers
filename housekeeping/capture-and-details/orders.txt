@@ -1,3 +1,0 @@
-OrderID;CaptureAmount;IdempotencyKey
-Example-OrderId-1;500;KeyNoLongerThan30Characters
-Example-OrderId-2;;
