@@ -1,6 +1,7 @@
 <!-- START_METADATA
 ---
 title: Quick start guides
+sidebar_position: 15
 pagination_next: null
 pagination_prev: null
 ---
@@ -39,16 +40,16 @@ You need:
 
 1. A *test user*.
 
-    All customers automatically get test users. See [test users](./developer-resources/test-environment.md#test-users) for more information.
+    All customers automatically get test users. See [test users](vipps-test-environment#test-users) for more information.
 
 1. A *test sale unit*.
 
     You create this yourself by logging in to the Vipps portal at <https://portal.vipps.no>. This requires BankId.
-    See instructions for creating the [test sale unit](./developer-resources/test-environment.md#test-merchants).
+    See instructions for creating the [test sale unit](vipps-test-environment#test-merchants).
 
 1. A Vipps *test app* for your mobile phone.
 
-    See instructions for installing the [Vipps test app](./developer-resources/test-environment.md#vipps-test-apps), *Vipps MT*.
+    See instructions for installing the [Vipps test app](vipps-test-environment#vipps-test-apps), *Vipps MT*.
 
 1. A Postman application on your computer.
 
@@ -78,7 +79,7 @@ Once you have installed Postman, you can import an environment from one our our 
 
 The following is a global environment file that can be used with all the APIs:
 
-* [Vipps API Global Postman environment](../tools/vipps-api-global-postman-environment.json)
+* [Vipps API Global Postman environment](./tools/vipps-api-global-postman-environment.json)
 
 ### Update the environment values
 
@@ -100,7 +101,7 @@ You might want to make the same request from your own application. You can
 generate snippets of code in various languages that will help you do this.
 Click the Code link to open the "Generate code snippets" modal.
 
-![Vipps Developer Postman: Tabs](images/postman-tabs_sm.png)
+![Vipps Developer Postman: Tabs](./images/postman-tabs_sm.png)
 
 ## Try it out!
 
