@@ -1,6 +1,8 @@
 <!-- START_METADATA
 ---
-draft:true
+title: Quick start guides
+pagination_next: null
+pagination_prev: null
 ---
 END_METADATA -->
 
@@ -37,16 +39,16 @@ You need:
 
 1. A *test user*.
 
-    All customers automatically get test users. See [test users](./test-environment.md#test-users) for more information.
+    All customers automatically get test users. See [test users](./developer-resources/test-environment.md#test-users) for more information.
 
 1. A *test sale unit*.
 
     You create this yourself by logging in to the Vipps portal at <https://portal.vipps.no>. This requires BankId.
-    See instructions for creating the [test sale unit](test-environment.md#test-merchants).
+    See instructions for creating the [test sale unit](./developer-resources/test-environment.md#test-merchants).
 
 1. A Vipps *test app* for your mobile phone.
 
-    See instructions for installing the [Vipps test app](test-environment.md#vipps-test-apps), *Vipps MT*.
+    See instructions for installing the [Vipps test app](./developer-resources/test-environment.md#vipps-test-apps), *Vipps MT*.
 
 1. A Postman application on your computer.
 
