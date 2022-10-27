@@ -1,8 +1,6 @@
 <!-- START_METADATA
 ---
-title: Quick start guides
-pagination_next: null
-pagination_prev: null
+draft:true
 ---
 END_METADATA -->
 
