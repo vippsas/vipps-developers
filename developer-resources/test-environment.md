@@ -1,7 +1,6 @@
 <!-- START_METADATA
 ---
-title: The Vipps test environment
-sidebar_position: 10
+title: Test environment
 pagination_next: null
 pagination_prev: null
 ---
@@ -70,7 +69,7 @@ Functionality not available in MT (a non-exhaustive list):
 
 - Unscheduled maintenance _may_ occur.
   We will do our best to inform with
-  [Status page](https://github.com/vippsas/vipps-developers/blob/master/vipps-resources.md#status-pages),
+  [Status page](status-pages.md),
   but it may no always be possible.
   In practice this is extremely rare.
 - Push alerts may be unavailable or unstable. To see payment requests: Open Vipps and manually
@@ -105,13 +104,13 @@ The test and production environments are separate and require different API cred
 The servers are world-accessible. Vipps only relies on the API keys, and
 no requests to our servers are blocked on our side by IP addresses or similar.
 
-See [Vipps servers](vipps-resources.md#vipps-servers) for more information.
+See [Vipps servers](vipps-servers.md) for more information.
 
 ## Test merchants
 
 All Vipps customers can create sale units in the test environment.
 These sale units have access to all the
-[current API products](vipps-getting-started.md#api-products).
+[current API products](./../vipps-getting-started.md#api-products).
 
 To create a test sale unit:
 

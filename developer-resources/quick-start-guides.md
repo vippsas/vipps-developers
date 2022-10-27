@@ -1,7 +1,6 @@
 <!-- START_METADATA
 ---
 title: Quick start guides
-sidebar_position: 15
 pagination_next: null
 pagination_prev: null
 ---
@@ -79,7 +78,7 @@ Once you have installed Postman, you can import an environment from one our our 
 
 The following is a global environment file that can be used with all the APIs:
 
-* [Vipps API Global Postman environment](./tools/vipps-api-global-postman-environment.json)
+* [Vipps API Global Postman environment](../tools/vipps-api-global-postman-environment.json)
 
 ### Update the environment values
 
@@ -101,7 +100,7 @@ You might want to make the same request from your own application. You can
 generate snippets of code in various languages that will help you do this.
 Click the Code link to open the "Generate code snippets" modal.
 
-![Vipps Developer Postman: Tabs](./images/postman-tabs_sm.png)
+![Vipps Developer Postman: Tabs](images/postman-tabs_sm.png)
 
 ## Try it out!
 
