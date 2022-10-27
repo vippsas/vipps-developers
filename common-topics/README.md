@@ -1,16 +1,20 @@
 <!-- START_METADATA
 ---
-sidebar_label: Common topics
+sidebar_label: "Common API topics"
+sidebar_position: 50
 hide_table_of_contents: true
 pagination_next: null
 pagination_prev: null
 ---
 END_METADATA -->
 
-# Common Topics
+# Common API Topics
 
-[Settlements](settlements/README.md)
-[Timeouts](timeouts.md)
-[TransactionText](transactiontext.md)
-[User Info](userinfo.md)
-[Vipps terminology](vipps-terminology.md)
+These are topics that are applicable across many APIs:
+
+* [API lifecycle](api-lifecycle.md)
+* [Settlements](settlements/README.md)
+* [Timeouts](timeouts.md)
+* [TransactionText](transactiontext.md)
+* [User Info](userinfo.md)
+* [Vipps terminology](vipps-terminology.md)
