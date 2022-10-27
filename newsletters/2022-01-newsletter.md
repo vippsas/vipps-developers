@@ -133,7 +133,7 @@ Here's an example for the Vipps eCom API's `/refund` endpoint:
 ![API Dashboard example](images/2021-02-api-dashboard-example.png)
 
 See:
-[API Dashboard](https://github.com/vippsas/vipps-developers/blob/master/vipps-resources.md#api-dashboard).
+[API Dashboard](../developer-resources/api-dashboard.md).
 
 ### Use Statuspage to get information about incidents
 
@@ -146,9 +146,9 @@ One example:
 See:
 [Statuspage for the production environment](https://vipps.statuspage.io)
 and
-[the other status pages](https://github.com/vippsas/vipps-developers/blob/master/vipps-resources.md#status-pages).
+[the other status pages](../developer-resources/status-pages.md).
 
-### Omikron tips
+### Other tips
 
 These Vipps solutions are extra relevant (again):
 

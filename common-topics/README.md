@@ -17,4 +17,4 @@ These are topics that are applicable across many APIs:
 * [Timeouts](timeouts.md)
 * [TransactionText](transactiontext.md)
 * [User Info](userinfo.md)
-* [Vipps terminology](vipps-terminology.md)
+* [Vipps terminology](terminology.md)

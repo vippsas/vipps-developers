@@ -1,6 +1,6 @@
 <!-- START_METADATA
 ---
-sidebar_position: 77
+sidebar_position: 78
 title: 2019-11
 ---
 END_METADATA -->
@@ -32,12 +32,12 @@ This is no longer the case: The Vipps-API API product give access to all current
 and the API keys for the Vipps eCom v1 and v2 APIs have been “upgraded” to include the
 same APIs as Vipps API.
 
-See more details [here](https://github.com/vippsas/vipps-developers/blob/master/vipps-getting-started.md#api-products).
+See more details [in Getting Started](../vipps-getting-started.md).
 
 ## API lifecycle
 
 We are working on this, and the current version/draft is
-[available on GitHub](https://github.com/vippsas/vipps-developers/blob/master/vipps-api-lifecycle.md).
+[available on GitHub](../common-topics/api-lifecycle.md).
 
 ## vipps.no/developer
 

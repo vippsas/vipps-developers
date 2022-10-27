@@ -76,7 +76,7 @@ Vipps API.  The `Vipps-API` product also includes some _legacy_ APIs, such as _e
 
 If you are still using a legacy API, you should upgrade as soon as possible.
 See:
-[Vipps API Lifecycle](vipps-api-lifecycle.md) for more information.
+[Vipps API Lifecycle](./common-topics/api-lifecycle.md) for more information.
 
 ## Requirements
 
@@ -91,7 +91,7 @@ You will do everything on [portal.vipps.no](https://portal.vipps.no).
 
 As soon as the _Merchant Agreement_ has been approved, and a product order is sent,
 access to the
-[Vipps test environment (MT)](https://github.com/vippsas/vipps-developers/blob/master/vipps-test-environment.md)
+[Vipps test environment (MT)](./developer-resources/test-environment.md)
 will be provided. Details are sent on email to the user who made the product order.
 
 ### Non-Norwegian companies
@@ -204,7 +204,7 @@ See also:
 The test and production environments are completely separate and use different API keys.
 
 - API keys for the
-  [test environment](https://github.com/vippsas/vipps-developers/blob/master/vipps-test-environment.md):
+  [test environment](./developer-resources/test-environment.md):
   Normally available on
   [portal.vipps.no](https://portal.vipps.no)
   a few minutes after we receive the application.
@@ -456,13 +456,13 @@ This API returns the following HTTP statuses in the responses:
 | `500 Server Error` | An internal Vipps problem.                              |
 
 You can use the
-[API Dashboard](https://github.com/vippsas/vipps-developers/blob/master/vipps-resources.md#api-dashboard)
+[API Dashboard](./developer-resources/api-dashboard.md)
 to check the responses to your API calls.
 
 ### Checking for errors with the API Dashboard
 
 All merchants have access to the
-[API Dashboard](https://github.com/vippsas/vipps-developers/blob/master/vipps-resources.md#api-dashboard).
+[API Dashboard](./developer-resources/api-dashboard.md).
 We strongly recommend to use that for detecting errors in the API use,
 in addition to normal monitoring.
 

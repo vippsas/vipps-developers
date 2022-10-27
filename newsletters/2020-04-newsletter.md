@@ -110,7 +110,7 @@ We have mentioned some things before, and take this opportunity to remind you:
 ### API lifecycle
 
 Our API lifecycle policy is
-[available on GitHub](https://github.com/vippsas/vipps-developers/blob/master/vipps-api-lifecycle.md).
+[available on GitHub](../common-topics/api-lifecycle.md).
 
 ### Status pages for test and production environments
 

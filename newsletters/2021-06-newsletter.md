@@ -59,7 +59,7 @@ and order new products, which automatically creates a new sale unit:
   ([Login API](https://github.com/vippsas/vipps-login-api))
 
 You can create also new sale units in the
-[test environment](https://github.com/vippsas/vipps-developers/blob/master/vipps-test-environment.md)
+[test environment](../developer-resources/test-environment.md)
 on
 [portal.vipps.no](https://portal.vipps.no):
 On the page with the API keys for the test environment there is a button
@@ -81,8 +81,8 @@ Please see
 
 ### Newsletter archive
 
-All the previous newsletters are in the
-[newsletter archive](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/newsletters/).
+All the previous newsletters are in
+[newsletters](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/newsletters/).
 
 ## Questions or comments?
 

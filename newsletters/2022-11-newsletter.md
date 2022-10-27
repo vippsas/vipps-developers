@@ -98,11 +98,12 @@ Please see the API specification:
 ### Please check your API calls for errors
 
 We are working on eliminating incorrect API use. Please:
-- Monitor the responses you get when making API calls
-- Log all errors
-- Fix errors as quickly as possible
-- Use the
-  [API Dashboard](https://github.com/vippsas/vipps-developers/blob/master/vipps-resources.md#api-dashboard)
+
+* Monitor the responses you get when making API calls
+* Log all errors
+* Fix errors as quickly as possible
+* Use the
+  [API Dashboard](../developer-resources/api-dashboard.md)
   to find problems with your integration.
 
 ![API Dashboard example](images/2021-02-api-dashboard-example.png)

@@ -50,7 +50,7 @@ If you do not have a technical issue, the fastest way to get help is to start in
 | Vipps through a POS (Point of Sale) vendor | Please contact your POS vendor. |
 | Vipps through a PSP (Payment Service Provider) | Please contact your PSP. |
 | Partner assistance (for partners) | See: [Vipps Partners](https://vippsas.github.io/vipps-developer-docs/docs/vipps-partner/) and the [Partner API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/partner-api). |
-| Settlements, invoices or similar | See: [Settlements](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/settlements/). |
+| Settlements, invoices or similar | See: [Settlements](./common-topics/settlements/README.md). |
 | Suggestions for improvements to [Vipps products](https://www.vipps.no/produkter-og-tjenester/bedrift/)  | Please use [this form](https://www.vipps.no/kontakt-oss/bedrift/). |
 
 For _**technical**_ issues related to Vipps and development of services using our APIs: Please see below.
@@ -84,7 +84,7 @@ If you cannot find the answer: Please send an email with all relevant informatio
 The Integration email address is: integration@vipps.no
 
 We also have a technical newsletter for developers:
-[Sign up and access the archives here](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/newsletters/)
+[Sign up and access the archives here](./newsletters/README.md)
 (low volume, no marketing).
 
 ## Keep your colleagues up to date
@@ -139,4 +139,4 @@ Nope. See: [Can I call you?](#can-i-call-you)
 
 ## Newsletter
 
-Sign up for our [Technical newsletter for developers](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/newsletters/).
+Sign up for our [Technical newsletter for developers](./newsletters/README.md).

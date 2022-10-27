@@ -104,13 +104,13 @@ The test and production environments are separate and require different API cred
 The servers are world-accessible. Vipps only relies on the API keys, and
 no requests to our servers are blocked on our side by IP addresses or similar.
 
-See [Vipps servers](vipps-servers.md) for more information.
+See [Vipps servers](servers.md) for more information.
 
 ## Test merchants
 
 All Vipps customers can create sale units in the test environment.
 These sale units have access to all the
-[current API products](./../vipps-getting-started.md#api-products).
+[current API products](../vipps-getting-started.md#api-products).
 
 To create a test sale unit:
 
