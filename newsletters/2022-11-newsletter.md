@@ -48,7 +48,7 @@ Callback offer a faster user experience than polling, but you
 cannot rely on callbacks alone. You must also poll
 [`GET:/ecomm/v2/payments/{orderId}/details`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Vipps-eCom-API/operation/getPaymentDetailsUsingGET)
 as described in the
-[Polling guidelines](#polling-guidelines).
+[Polling guidelines](../common-topics/polling-guidelines.md).
 
 See:
 [Callbacks](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api#callbacks)
