@@ -42,7 +42,7 @@ The callback request body is different for the different payment types:
 See:
 
 * [Callback examples](#callback-examples).
-* [FAQ: Why do I not get callbacks from Vipps?](vipps-ecom-api-faq.md#why-do-i-not-get-callbacks-from-vipps)
+* [FAQ: Why do I not get callbacks from Vipps?](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-faq.md#why-do-i-not-get-callbacks-from-vipps)
 
 ## Callback URLs
 
@@ -65,7 +65,7 @@ Again:
 
 **Important:**
 
-* URLs must be [valid](url_validation.md).
+* URLs must be [valid](url-validation.md).
 * Vipps does *not* support sending requests to all ports, so to be safe use
   common port numbers such as: 80, 443, 8080.
 * Vipps does *not* support callback URLs that return `HTTP 301 Redirect`,
