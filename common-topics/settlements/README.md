@@ -246,4 +246,4 @@ For customer-specific questions about settlements, please contact operations@vip
 
 For general questions: Please create an [issue](https://github.com/vippsas/vipps-ecom-api/issues),
 a [pull request](https://github.com/vippsas/vipps-ecom-api/pulls),
-or [contact us](https://github.com/vippsas/vipps-developers/blob/master/contact.md).
+or [contact us](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/contact).
