@@ -168,7 +168,7 @@ for testing your callbacks.
    and you must correct it.
 
 We recommend checking callbacks on the
-[API Dashboard](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/vipps-resources#api-dashboard).
+[API Dashboard](../developer-resources/api-dashboard.md).
 
 ## Authorization for callbacks
 
@@ -185,7 +185,7 @@ API spec:
 ## Vipps callback servers
 
 The callbacks from Vipps are made from the servers described in
-[Vipps request servers](https://github.com/vippsas/vipps-developers/blob/master/vipps-resources.md#vipps-request-servers).
+[Vipps request servers](../developer-resources/servers.md#vipps-request-servers).
 
 Please make sure that requests from these servers are allowed through firewalls, etc.
 
