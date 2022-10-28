@@ -220,9 +220,9 @@ the relevant sale unit to display the API keys.
 
 Click the `i` to get additional information about that column, including
 information about how to
-[change between "direct capture" and "reserve capture"](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-faq.md#how-do-i-turn-direct-capture-on-or-off)
+[change between "direct capture" and "reserve capture"](frequently-asked-questions/README.md#how-do-i-turn-direct-capture-on-or-off)
 and
-[how to activate `skipLandingPage`](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-faq.md#is-it-possible-to-skip-the-landing-page).
+[how to activate `skipLandingPage`](frequently-asked-questions/README.md#is-it-possible-to-skip-the-landing-page).
 
 ![portal.vipps.no: The API products for a sales unit](images/portalvippsno-salesunit-products.png)
 
@@ -410,7 +410,7 @@ correct time please use `expires_in` or `expires_on`.
 The access token is a JWT (JSON Web Token), and uses UTC time.
 
 Problems? See:
-[Common errors](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-faq.md#common-errors).
+[Common errors](frequently-asked-questions/README.md#common-errors).
 
 ### Make an API call
 
@@ -441,7 +441,7 @@ For more details: See the OpenAPI specifications and Postman collections
 for the APIs.
 
 Problems? See:
-[Common errors](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-faq.md#common-errors).
+[Common errors](frequently-asked-questions/README.md#common-errors).
 
 ### HTTP response codes
 

@@ -70,7 +70,7 @@ or similar:
 ```
 
 More details:
-[Can I use Vipps with Klarna Checkout?](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-faq.md#can-i-use-vipps-with-klarna-checkout)
+[Can I use Vipps with Klarna Checkout?](../frequently-asked-questions/README.md#can-i-use-vipps-with-klarna-checkout)
 
 ## Vipps eCom API: HTTPS required for all URLs
 

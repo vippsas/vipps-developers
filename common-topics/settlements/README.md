@@ -156,7 +156,7 @@ Vipps needs the customer's consent before sharing personal information with the 
 The settlement reports do not contain personal information - except for payments made with Vippsnummer.
 
 See the eCom API FAQ:
-[Why are the customer names not shown on the transaction overview?](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-faq.md#why-are-the-customer-names-not-shown-on-the-transaction-overview).
+[Why are the customer names not shown on the transaction overview?](../../frequently-asked-questions/README.md#why-are-the-customer-names-not-shown-on-the-transaction-overview).
 
 ## How to get settlement files
 

@@ -101,4 +101,4 @@ correct time please use `expires_in` or `expires_on`.
 The access token is a JWT (JSON Web Token), and uses UTC time.
 
 Problems? See:
-[Common errors](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-faq.md#common-errors).
+[Common errors](../frequently-asked-questions/README.md#common-errors).

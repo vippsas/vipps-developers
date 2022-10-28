@@ -85,7 +85,7 @@ We recommend using this text where users select payment method:
 Roughly translated, this means, "Remember: Vipps is always free from fees when you pay to companies".
 
 If you use Klarna Checkout, here are our
-[tips](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-faq.md#can-i-use-vipps-with-klarna-checkout).
+[tips](../frequently-asked-questions/README.md#can-i-use-vipps-with-klarna-checkout).
 
 ## Vipps on-site messaging
 

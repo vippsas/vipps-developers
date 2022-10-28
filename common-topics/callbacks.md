@@ -42,7 +42,7 @@ The callback request body is different for the different payment types:
 See:
 
 * [Callback examples](#callback-examples).
-* [FAQ: Why do I not get callbacks from Vipps?](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-faq.md#why-do-i-not-get-callbacks-from-vipps)
+* [FAQ: Why do I not get callbacks from Vipps?](../frequently-asked-questions/README.md#why-do-i-not-get-callbacks-from-vipps)
 
 ## Callback URLs
 

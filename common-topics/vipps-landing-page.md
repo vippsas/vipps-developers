@@ -73,8 +73,8 @@ If the sale unit is not whitelisted, the request will fail and an error message 
 
 See FAQ:
 
-* [Is it possible to skip the landing page](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-faq.md#is-it-possible-to-skip-the-landing-page)
-* [How can I check if I have skipLandingPage activated?](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-faq.md#how-can-i-check-if-i-have-skiplandingpage-activated)
+* [Is it possible to skip the landing page](../frequently-asked-questions/README.md#is-it-possible-to-skip-the-landing-page)
+* [How can I check if I have skipLandingPage activated?](../frequently-asked-questions/README.md#how-can-i-check-if-i-have-skiplandingpage-activated)
 
 **Important:** When using `"skipLandingPage": true`:
 
