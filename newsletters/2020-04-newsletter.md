@@ -74,7 +74,7 @@ The pages are automatically generated from the GitHub repos, so the
 content is the same, and you can choose what to use.
 
 We are just getting started, and
-[feedback](https://github.com/vippsas/vipps-developers/blob/master/contact.md)
+[feedback](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/contact)
 is very welcome. We know there are some (minor?) issues, please bear with us.
 
 ## API documentation in HTML format with Slate
@@ -86,7 +86,7 @@ Examples for the eCom API:
 * ReDoc: content no longer available
 * Slate: content no longer available
 
-[Feedback](https://github.com/vippsas/vipps-developers/blob/master/contact.md)
+[Feedback](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/contact)
 is very welcome.
 
 ## How it works
@@ -120,7 +120,7 @@ Our API lifecycle policy is
 ### How to get help quickly
 
 Please see
-[this page](https://github.com/vippsas/vipps-developers/blob/master/contact.md).
+[this page](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/contact).
 
 ### Newsletter archive
 
@@ -131,4 +131,4 @@ Please see: [Newsletters](https://vippsas.github.io/vipps-developer-docs/docs/vi
 We're always happy to help with code or other questions you might have!
 Please create [GitHub issues or pull requests](https://github.com/vippsas)
 for the relevant API,
-or [contact us](https://github.com/vippsas/vipps-developers/blob/master/contact.md).
+or [contact us](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/contact).

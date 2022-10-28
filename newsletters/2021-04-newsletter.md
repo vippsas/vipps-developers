@@ -186,7 +186,7 @@ which help Vipps improve our services, and also help in investigating problems.
 ### How to get help quickly
 
 Please see
-[this page](https://github.com/vippsas/vipps-developers/blob/master/contact.md).
+[this page](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/contact).
 
 ### Newsletter archive
 
@@ -197,4 +197,4 @@ Please see: [newsletters](https://vippsas.github.io/vipps-developer-docs/docs/vi
 We're always happy to help with code or other questions you might have!
 Please create [GitHub issues or pull requests](https://github.com/vippsas)
 for the relevant API,
-or [contact us](https://github.com/vippsas/vipps-developers/blob/master/contact.md).
+or [contact us](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/contact).
