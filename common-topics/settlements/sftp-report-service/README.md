@@ -61,17 +61,17 @@ day (and there may be none).
 payments and a positive balance. In these cases, neither the settlement files
 nor the directories that should have contained settlement files will exist.
 Please see
-[Availability](https://github.com/vippsas/vipps-developers/tree/master/settlements#availability)
+[Availability](../README.md#availability)
 for details.
 
 ## Availability
 
 Settlements are created every day, but only as long as the balance is positive.
-See [Availability](https://github.com/vippsas/vipps-developers/tree/master/settlements#availability)
+See [Availability](../README.md#availability)
 for more details.
 
 The SFTP report service is used for downloading settlement reports in
-[several formats](https://github.com/vippsas/vipps-developers/tree/master/settlements#settlement-report-formats).
+[several formats](../README.md#settlement-report-formats).
 
 # SFTP Service
 
