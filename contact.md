@@ -30,7 +30,7 @@ END_METADATA -->
 
 <!-- END_TOC -->
 
-Document version: 2.4.15.
+Document version: 2.4.16.
 
 ## We help with technical issues
 
@@ -65,9 +65,7 @@ you are using, and use the
 
 If you cannot find the answer: Please send an email with all relevant information to the address below:
 
-1. **Please: Always include a _detailed_ description of the problem.**
-  - Include a detailed step-by-step description of what you do
-  - Some screenshots or a video is often helpful
+1. **Please: Always include a _detailed_ description of the problem with a step-by-step description of what you do and what happens.**
 2. A concise, self-explanatory `Subject` line, such as "`POST:/something` gives `HTTP 400` response".
 3. Company details: Organization number (find yours at [Brønnøysundregistrene](https://brreg.no))
 4. Merchant Serial Number (MSN, see [Getting started](vipps-getting-started.md))
@@ -75,11 +73,14 @@ If you cannot find the answer: Please send an email with all relevant informatio
 6. Environment: Is it a problem in the Test (MT) or the Production environment?
 7. Include `orderId`, and preferably also `transactionId` and `contextId`, to make it possible to search in logs.
 8. Date: On which date did the problem occur?
-9. If you are a new Vipps customer, please include details about when and how you ordered Vipps.
-10. For API issues: Complete `request` and `response` details (plain HTTP from Postman or [curl](https://curl.haxx.se) ensures the quickest response).
-11. Please provide screenshots, if possible.
-12. Please provide your contact information (if not in your email signature): Name and phone number
-13. Please include any other information that may be relevant or possibly helpful.
+9. For API issues: We need a complete `request` and `response`.
+   Plain HTTP from Postman ensures the quickest response.
+   No source code, please.
+   **Important:** Remove everything except the last four characters from
+   `client_secret`and `Ocp-Apim-Subscription-Key`.
+10. Please provide screenshots, if possible.
+11. Please provide your contact information (if not in your email signature): Name and phone number
+12. Please include any other information that may be relevant or possibly helpful.
 
 The Integration email address is: integration@vipps.no
 

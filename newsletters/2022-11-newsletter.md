@@ -67,12 +67,12 @@ We are working hard to improve the
 
 * The documentation is
   [searchable](https://vippsas.github.io/vipps-developer-docs/search/)
-* We hava new
-  [Solutions](https://vippsas.github.io/vipps-developer-docs/)
+* We have a new
+  [Solutions](https://vippsas.github.io/vipps-developer-docs/docs/vipps-solutions/)
   section to highlight combinations of Vipps APIs, such as
-  [Loyalty in physical stores](https://vippsas.github.io/vipps-developer-docs/).
+  [Loyalty in physical stores](https://vippsas.github.io/vipps-developer-docs/docs/vipps-solutions/loyalty-in-pos/).
 * All APIs now have a
-  [Quick start](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/vipps-quick-start-guides)
+  [Quick start](../developer-resources/quick-start-guides.md)
   with Postman collection. We also have a global Postman environment to make it
   easier to test all APIs.
 
