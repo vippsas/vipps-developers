@@ -136,7 +136,7 @@ Here's an example for the Vipps eCom API's `/refund` endpoint:
 ![API Dashboard example](images/2021-02-api-dashboard-example.png)
 
 See:
-[API Dashboard](https://github.com/vippsas/vipps-developers/blob/master/vipps-resources.md#api-dashboard).
+[API Dashboard](../developer-resources/api-dashboard.md).
 
 ### How to get help quickly
 
@@ -145,7 +145,7 @@ Please see
 
 ### Newsletter archive
 
-Please see: https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/newsletters/
+Please see: [newsletters](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/newsletters/)
 
 ## Questions or comments?
 

@@ -16,31 +16,7 @@ END_METADATA -->
 
 <!-- END_COMMENT -->
 
-The Vipps APIs provide access to the following types of transactions.
-
-In-person and remote transactions:
-
-- _Vipps Checkout (Vipps Checkout)_ - A complete Checkout solution for both Vipps and card payments with auto-fill and shipping integrations.
-
-In-person transactions:
-
-- _Vennebetaling (Person to Person payments)_ - A person can transfer money to another person. They must both have configured their Vipps app with their respective bank account numbers. There is no API.
-
-- _Vippsnummer (Vipps number)_ - An organization or company can receive an identification number from Vipps. Customers can then register their payments to this number. This gives people the possibility of paying or donating money without cash. There is no API.
-
-- _Vipps i kassa (Vipps In Store)_ - A company can integrate its Point of Sale (POS) system with Vipps so that in-store customers can pay by using Vipps, and the sale will be automatically registered in their system.
-
-Remote transactions:
-
-- _Vipps Logg Inn (Vipps Login)_ - A website or app can allow the customer to log in by using their Vipps account.
-
-- _Vipps på nett (Vipps Online)_ - An online store or app can offer Vipps as a method of payment.
-
-- _Vipps Hurtigkasse (Vipps Express Checkout)_ - An online store can offer a quick checkout option where Vipps is the method of payment and the shipping options are specified directly from the Vipps app.
-
-- _Faste betalinger (Recurring payments)_ - A business or organization can allow their customers to set up recurring payments (e.g., for subscriptions, membership, regular donations, etc.) through Vipps.
-
-Document version: 3.5.0.
+Document version: 3.5.1.
 
 <!-- START_TOC -->
 
@@ -71,7 +47,7 @@ Document version: 3.5.0.
 
 ## API products
 
-The `Vipps-API` product gives you access to all of the following APIs:
+The `Vipps-API` product gives you access to the majority of Vipps APIs, for example:
 
 - [Access Token API](#get-an-access-token)- Required to obtain a JWT
 - [Checkout API](https://github.com/vippsas/vipps-checkout-api) - Checkout API
@@ -100,7 +76,7 @@ Vipps API.  The `Vipps-API` product also includes some _legacy_ APIs, such as _e
 
 If you are still using a legacy API, you should upgrade as soon as possible.
 See:
-[Vipps API Lifecycle](vipps-api-lifecycle.md) for more information.
+[Vipps API Lifecycle](./common-topics/api-lifecycle.md) for more information.
 
 ## Requirements
 
@@ -115,7 +91,7 @@ You will do everything on [portal.vipps.no](https://portal.vipps.no).
 
 As soon as the _Merchant Agreement_ has been approved, and a product order is sent,
 access to the
-[Vipps test environment (MT)](https://github.com/vippsas/vipps-developers/blob/master/vipps-test-environment.md)
+[Vipps test environment (MT)](./developer-resources/test-environment.md)
 will be provided. Details are sent on email to the user who made the product order.
 
 ### Non-Norwegian companies
@@ -228,7 +204,7 @@ See also:
 The test and production environments are completely separate and use different API keys.
 
 - API keys for the
-  [test environment](https://github.com/vippsas/vipps-developers/blob/master/vipps-test-environment.md):
+  [test environment](./developer-resources/test-environment.md):
   Normally available on
   [portal.vipps.no](https://portal.vipps.no)
   a few minutes after we receive the application.
@@ -480,13 +456,13 @@ This API returns the following HTTP statuses in the responses:
 | `500 Server Error` | An internal Vipps problem.                              |
 
 You can use the
-[API Dashboard](https://github.com/vippsas/vipps-developers/blob/master/vipps-resources.md#api-dashboard)
+[API Dashboard](./developer-resources/api-dashboard.md)
 to check the responses to your API calls.
 
 ### Checking for errors with the API Dashboard
 
 All merchants have access to the
-[API Dashboard](https://github.com/vippsas/vipps-developers/blob/master/vipps-resources.md#api-dashboard).
+[API Dashboard](./developer-resources/api-dashboard.md).
 We strongly recommend to use that for detecting errors in the API use,
 in addition to normal monitoring.
 

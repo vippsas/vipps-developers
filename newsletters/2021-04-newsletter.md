@@ -115,7 +115,7 @@ and order new products, which automatically creates a new sale unit:
 ## Create new sale units in the test environment
 
 You can create new sale units in the
-[test environment](https://github.com/vippsas/vipps-developers/blob/master/vipps-test-environment.md)
+[test environment](../developer-resources/test-environment.md)
 on
 [portal.vipps.no](https://portal.vipps.no):
 

@@ -1,22 +1,15 @@
 <!-- START_METADATA
 ---
-title: Terminology
-sidebar_position: 95
+sidebar_label: Terminology
+hide_table_of_contents: true
 pagination_next: null
 pagination_prev: null
 ---
 END_METADATA -->
 
-# Vipps terminology
+# Terminology
 
-<!-- START_COMMENT -->
-
-ℹ️ Please use the new documentation:
-[Vipps Technical Documentation](https://vippsas.github.io/vipps-developer-docs/).
-
-<!-- END_COMMENT -->
-
-Document version: 1.0.1.
+Document version: 1.0.0.
 
 ## Common terms
 

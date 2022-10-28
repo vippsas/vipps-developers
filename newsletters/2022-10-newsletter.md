@@ -127,7 +127,7 @@ Please:
 ### Use the API Dashboard to find problems with your integration
 
 The
-[API Dashboard](https://github.com/vippsas/vipps-developers/blob/master/vipps-resources.md#api-dashboard)
+[API Dashboard](../developer-resources/api-dashboard.md)
 is available to all merchants for both the production and test environments,
 and is an easy way to see if you are using the Vipps APIs correctly.
 Think of it as a "health check", that you can use to see if there are any
@@ -144,7 +144,7 @@ Please see
 
 ### Newsletter archive
 
-Please see: https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/newsletters/
+Please see: [newsletters](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/newsletters/)
 
 ## Questions or comments?
 

@@ -103,7 +103,7 @@ and the
 | `Vipps-System-Plugin-Version` | The version number of the ecommerce plugin   | `1.4.1`              |
 
 These headers provide useful metadata about the merchant's system,
-which help Vipps improve our services, and also help in investigating problems.   
+which help Vipps improve our services, and also help in investigating problems.
 
 ### Suggest improvements, get a pair of Vipps socks 🧦
 
@@ -154,7 +154,7 @@ customers using Vipps through a partner.
 ### API lifecycle
 
 Our API lifecycle policy is
-[available on GitHub](https://github.com/vippsas/vipps-developers/blob/master/vipps-api-lifecycle.md).
+[available on GitHub](../common-topics/api-lifecycle.md).
 
 ### Status pages for test and production environments
 
@@ -168,7 +168,7 @@ Please see
 
 ### Newsletter archive
 
-Please see: https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/newsletters/
+Please see: [newsletters](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/newsletters/)
 
 ## Questions or comments?
 

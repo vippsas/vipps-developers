@@ -195,12 +195,12 @@ that these request servers are allowed through firewalls, etc.
 ## Vipps API Lifecycle
 
 See:
-[Vipps API Lifecycle](vipps-api-lifecycle.md).
+[Vipps API Lifecycle](./common-topics/api-lifecycle.md).
 
 ## Settlements
 
 See:
-[Settlements](settlements/README.md).
+[Settlements](./common-topics/settlements/README.md).
 <!-- END_COMMENT -->
 
 

@@ -1,7 +1,6 @@
 <!-- START_METADATA
 ---
-title: The API Lifecycle
-sidebar_position: 39
+title: API Lifecycle
 pagination_next: null
 pagination_prev: null
 ---

@@ -1,0 +1,23 @@
+@startuml
+Actor User
+Actor UserVippsApp
+Participant Merchant
+Participant Vipps
+User -> Merchant : Initiate transaction
+Merchant -> Vipps : Initiate transaction
+note right
+Example "scopes: "name address email"
+end note
+Vipps --> Merchant : Session link
+Merchant -> UserVippsApp : Trigger transaction session.
+UserVippsApp -> Vipps : Approve payment and detail sharing
+Vipps -> Vipps : Save Consent and generate sub
+Vipps -> Vipps : Perform Payment
+Vipps --> UserVippsApp : Response
+UserVippsApp -> Merchant : Response
+Merchant -> Vipps : Retrieve details
+Vipps --> Merchant : Return details, sub included
+Merchant -> Vipps : Get on userinfo/{sub}
+Vipps --> Merchant : Return userinfo
+Merchant -> Merchant : Handle session result
+@enduml

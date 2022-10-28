@@ -39,7 +39,7 @@ See:
 
 [The Vipps QR API](https://github.com/vippsas/vipps-qr-api) now works in both in
 the production and
-[test environment](https://github.com/vippsas/vipps-developers/blob/master/vipps-test-environment.md).
+[test environment](../developer-resources/test-environment.md).
 
 ## Logo handling changes in PSP Signup API
 
@@ -105,6 +105,7 @@ so we decided to accept the incorrect API calls even though they give a poor
 user experience.
 
 See:
+
 * [Use the API Dashboard to find problems with your integration](#use-the-api-dashboard-to-find-problems-with-your-integration)
 * "Common errors" in the
   [eCom API FAQ](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-faq.md)
@@ -124,7 +125,7 @@ Here's an example for the Vipps eCom API's `/refund` endpoint:
 ![API Dashboard example](images/2021-02-api-dashboard-example.png)
 
 See:
-[API Dashboard](https://github.com/vippsas/vipps-developers/blob/master/vipps-resources.md#api-dashboard).
+[API Dashboard](../developer-resources/api-dashboard.md).
 
 ### How to get help quickly
 
@@ -133,7 +134,8 @@ Please see
 
 ### Newsletter archive
 
-Please see: https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/newsletters/
+Please see: [newsletters](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/newsletters/)
+
 ## Questions or comments?
 
 We're always happy to help with code or other questions you might have!

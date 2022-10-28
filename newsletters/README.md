@@ -1,6 +1,6 @@
 <!-- START_METADATA
 ---
-sidebar_position: 30
+sidebar_position: 95
 title: Newsletters
 hide_table_of_contents: true
 pagination_next: null
@@ -22,7 +22,7 @@ APIs and products.
 
 All Vipps customers and partners should subscribe to the newsletter to get
 updates about our APIs and services. See also:
-[API Lifecycle](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/vipps-api-lifecycle).
+[API Lifecycle](../common-topics/api-lifecycle.md).
 
 [Sign up Technical newsletter for developers here](https://cloud.melding.vipps.no/utv).
 

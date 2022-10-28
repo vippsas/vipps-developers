@@ -95,7 +95,7 @@ We have mentioned some things before, and take this opportunity to remind you:
 ### API lifecycle
 
 Our API lifecycle policy is
-[available on GitHub](https://github.com/vippsas/vipps-developers/blob/master/vipps-api-lifecycle.md).
+[available on GitHub](../common-topics/api-lifecycle.md).
 
 ### Status pages for test and production environments
 
@@ -109,7 +109,7 @@ Please see
 
 ### Newsletter archive
 
-Please see: https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/newsletters/
+Please see: [newsletters](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/newsletters/)
 
 ## Questions or comments?
 
