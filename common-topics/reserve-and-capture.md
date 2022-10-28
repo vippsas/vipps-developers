@@ -8,13 +8,13 @@ END_METADATA -->
 
 # Reserve and capture
 
-When you initiate a payment it will be _reserved_ until you _capture_ it.
+When you initiate a payment, it will be _reserved_ until you _capture_ it.
 Reserved means the customer has approved the payment. The funds are still
 in the customer's account, but not available to spend on other things.
 Capture means the funds are moved from customer's account to merchant's account.
 Vipps supports both _reserve-capture_ and _direct capture_:
 
-* _Reserve capture_ is the default. When you initiate a payment it will be
+* _Reserve capture_ is the default. When you initiate a payment, it will be
   reserved until you capture it. The capture can be done a few seconds later,
   or several days later.
 * When _direct capture_ is activated, all payment reservations will instantly be
@@ -23,8 +23,8 @@ Vipps supports both _reserve-capture_ and _direct capture_:
   is not available or sold out, e.g. digital services.
   Direct capture requires additional compliance checks of the merchant.
 
-**Important:** It's completely fine to use "reserve capture" almost exactly like
-"direct capture": Just do the capture immediately after the reservation.
+**Important:** It's completely fine to use _reserve capture_ almost exactly like
+_direct capture_: Just do the capture immediately after the reservation.
 The user experience is exactly the same.
 
 Some things to consider:
@@ -50,7 +50,7 @@ For example:
 
 See the FAQ:
 
-* [For how long is a payment reserved?](#for-how-long-is-a-payment-reserved)
+* [For how long is a payment reserved?](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-faq.md#for-how-long-is-a-payment-reserved)
 
 ## Capture
 
@@ -71,27 +71,32 @@ Attempting to capture an older payment will result in a
 
 See the FAQ:
 
-* [When should I charge the customer](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-faq.md#when-should-i-charge-the-customer).
+* [When should I charge the customer?](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-faq.md#when-should-i-charge-the-customer)
 * [What is the difference between "Reserve Capture" and "Direct Capture"?](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-faq.md#what-is-the-difference-between-reserve-capture-and-direct-capture)
 * [When should I use "Direct Capture"?](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-faq.md#when-should-i-use-direct-capture)
 
 ### Reserve capture
 
-*Reserve capture* is the normal flow.
+As mentioned above, _Reserve capture_ is the normal flow.
 
 When the end user approves an initiated payment, it will be reserved until you
 capture it. When the order is reserved, the amount is marked as reserved by the
 bank, but not transferred.
 
-This has some benefits. See:
-[What is the difference between "Reserve Capture" and "Direct Capture"?](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-faq.md#what-is-the-difference-between-reserve-capture-and-direct-capture)
-
 ### Direct capture
 
-When *direct capture* is activated, all payment reservations will instantly be captured.
+When _direct capture_ is activated, all payment reservations will instantly be captured.
 
-With *direct capture*, Vipps is responsible for the customer receiving the purchased product.
-Because of this, *direct capture* requires additional compliance checks.
+With _direct capture_, Vipps is responsible for the customer receiving the purchased product.
+Because of this, _direct capture_ requires additional compliance checks.
+
+A sale unit can only have one capture type, and it must be configured by Vipps.
+You can't turn _direct capture_ on or off as a merchant.
+
+**Please note:** Vipps only offers "direct capture" for merchants that use
+Vipps through a partner, and for merchants that have a Key Account Manager.
+"Direct capture" must be requested by the partner from the partner manager,
+or by KAM merchants from the Key Account Manager.
 
 We strongly recommend using "reserve capture" in all situations.
 
@@ -167,137 +172,3 @@ Response:
 **Please note:** Once this operation has been performed, there will be zero
 funds remaining to capture. Do not call this endpoint until you are sure you
 have captured all you need.
-
-### For how long is a payment reserved?
-
-That depends. Vipps does not control the behaviour of the customer's card or account.
-
-The details may change, but the information below is the best Vipps can offer.
-
-* VISA reservations are valid for 7 days (but only 5 for Visa Electron).
-  The banks will release the reservation after 4-7 days, but if the capture is
-  done within the 7 days, VISA guarantees that the capture will succeed.
-  Vipps' PSP is Adyen, and they have some documentation for
-  [VISA reservations](https://docs.adyen.com/online-payments/adjust-authorisation#visa).
-
-* MasterCard reservations are valid for 30 days.
-  The banks may release the reservation before this, but if the capture is
-  done within the 30 days, MasterCard guarantees that the capture will succeed.
-  Vipps' PSP is Adyen, and they have some documentation for
- [Mastercard reservations](https://docs.adyen.com/online-payments/adjust-authorisation#mastercard).
-
-Vipps cannot and does not automatically change the status of a reservation.
-
-If a capture attempt is made more than 7 days (VISA) or 30 days (MasterCard)
-after the payment has been initiated _and_ the reservation has been released
-by the bank in the meantime, Vipps will make a new payment request to the bank.
-If the account has sufficient funds, the payment will be successful.
-
-If the user's account has insufficient funds at this time, the payment will
-either succeed and put the customer's card/account in the negative (as
-an overdraft), or fail because the customer's card/account cannot be put into
-the negative - for example youth accounts.
-Vipps cannot know in advance what will happen.
-
-It is also possible that the card expires, is blocked, etc somewhere between
-the time of reservation and the time of capture.
-Vipps cannot know in advance what will happen.
-
-In many cases the bank will have a register of expired reservations and they
-will force the capture through if the account allows this.
-This will put the account in the negative.
-
-Customers may, understandably, be dissatisfied if the capture puts their account
-in the negative, so please avoid this.
-
-Capture can be made up to 180 days after reservation.
-Attempting to capture an older payment will result in a
-`HTTP 400 Bad Request`.
-
-The
-[`POST:/ecomm/v2/payments/{orderId}/capture`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Vipps-eCom-API/operation/capturePaymentUsingPOST)
-and
-[`GET:/ecomm/v2/payments/{orderId}/details`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Vipps-eCom-API/operation/getPaymentDetailsUsingGET)
-API calls will always return the correct status.
-
-See:
-[How can I refund only a part of a payment?](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-faq.md#how-can-i-refund-only-a-part-of-a-payment).
-
-
-### What is the difference between "Reserve Capture" and "Direct Capture"?
-
-When you initiate a payment it will be _reserved_ until you _capture_ it.
-Reserved means the customer has approved the payment. The funds are still
-in the customer's account, but not available to spend on other things.
-Capture means the funds are moved from customer's account to merchant's account.
-Vipps supports both _reserve-capture_ and _direct capture_:
-
-* _Reserve capture_ is the default. When you initiate a payment it will be
-  reserved until you capture it. The capture can be done a few seconds later,
-  or several days later.
-* When _direct capture_ is activated, all payment reservations will instantly be
-  captured. This is intended for situations where the product or service is
-  immediately provided to the customer, and there is no chance that the service
-  is not available or sold out, e.g. digital services.
-  Direct capture requires additional compliance checks of the merchant.
-
-**Important:** It's completely fine to use "reserve capture" almost exactly like
-"direct capture": Just do the capture immediately after the reservation.
-The user experience is exactly the same.
-
-Some things to consider:
-
-* If a payment has been _reserved_ (as with "reserve capture"), the merchant can
-  make a `/cancel` call to immediately release the reservation and make available
-  in the customer's account.
-* If a payment has been _captured_ (as with "direct capture"), the merchant has to
-  make a `/refund` call, and it then takes several days before the amount is
-  available in the customer's account.
-* With "reserve capture" it is possible to reserve a higher amount and only
-  capture a part of it (useful for electric car charging stations, etc).
-  It is also possible to capture the full amount
-  with multiple captures ("partial capture").
-
-
-### When should I use "Direct Capture"?
-
-You can probably use "reserve capture", and just do the capture right after the
-reserve. This has some benefits, see the first link below.
-
-
-### How can I check if I have "reserve capture" or "direct capture"?
-
-Vipps can no longer manually check this for merchant or partners.
-
-All merchants can log in on
-[portal.vipps.no](https://portal.vipps.no)
-and check the capture type for all their sale units under the "Utvikler" menu item.
-
-You can also find information on how to change capture type there.
-We require BankID login for this, as "direct capture" requires additional
-compliance checks.
-
-If you are a partner and want to check a merchant, see the
-[Partner API](https://github.com/vippsas/vipps-partner-api).
-
-If you are a partner and do not yet use the Partner API, you can ask the
-merchant to create a user for you on
-[portal.vipps.no](https://portal.vipps.no)
-so you can check on behalf of the merchant as
-[described in detail with screenshots](https://github.com/vippsas/vipps-partner/blob/main/add-portal-user.md).
-
-If you are not able to log in on
-[portal.vipps.no](https://portal.vipps.no)
-you can make a small payment (2 kr), check the payment with
-[`GET:/ecomm/v2/payments/{orderId}/details`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Vipps-eCom-API/operation/getPaymentDetailsUsingGET),
-and cancel (if it was `RESERVE` and reserve capture) or refund (if it was `SALE` and direct capture).
-
-### How do I turn direct capture on or off?
-
-You can't turn _direct capture_ on or off as a merchant.
-A sale unit can only have one capture type, and it must be configured by Vipps.
-
-**Please note:** Vipps only offers "direct capture" for merchants that use
-Vipps through a partner, and for merchants that have a Key Account Manager.
-"Direct capture"" must be requested by the partner from the partner manager,
-or by KAM merchants from the Key Account Manager.
