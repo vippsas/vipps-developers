@@ -23,11 +23,9 @@ protocol for operating network services securely over an unsecured network.
 SFTP can be used manually (interactively), or automatically/programmatically
 by using SFTP as part of an integration.
 
-See
-[Settlements](https://github.com/vippsas/vipps-developers/tree/master/settlements)
-for more information about settlements.
+See the [Settlements](..) overview.
 
-Document version: 4.1.0.
+Document version: 4.1.1.
 
 <!-- START_TOC -->
 
