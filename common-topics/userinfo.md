@@ -75,7 +75,7 @@ a customer. Details about each step are described in the sections below.
 is made within (milli)seconds of the payment approval in the app, it may not be
 available. If that happens, simply make another `/details` request.
 See
-[Polling guidelines](#polling-guidelines)
+[Polling guidelines](polling-guidelines.md)
 for more recommendations.
 
 **Important note:** The API call to

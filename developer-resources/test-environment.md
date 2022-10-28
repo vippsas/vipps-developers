@@ -150,7 +150,7 @@ If you need more than one test user, please contact your
 Key Account Manager (if you have one),
 your partner contact (if you have one),
 or
-[contact us](https://github.com/vippsas/vipps-developers/blob/master/contact.md).
+[contact us](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/contact).
 
 There is no way to get a test user in the production environment.
 The production environment only contains real users and data.
@@ -289,6 +289,6 @@ every time you start Vipps in the emulator.
 We're always happy to help with code or other questions you might have!
 Please create an [issue](https://github.com/vippsas/vipps-developers/issues),
 a [pull request](https://github.com/vippsas/vipps-developers/pulls),
-or [contact us](https://github.com/vippsas/vipps-developers/blob/master/contact.md).
+or [contact us](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/contact).
 
-Sign up for our [Technical newsletter for developers](https://github.com/vippsas/vipps-developers/tree/master/newsletters).
+Sign up for our [Technical newsletter for developers](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/newsletters).
