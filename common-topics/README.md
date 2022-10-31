@@ -12,11 +12,12 @@ END_METADATA -->
 
 These are topics that are applicable across many APIs:
 
+* [API keys](api-keys.md)
 * [API lifecycle](api-lifecycle.md)
 * [Authentication](authentication.md)
 * [Callbacks](callbacks.md)
 * [Exception handling](exception-handling.md)
-* [HTTP keys and headers](http-keys-and-headers.md)
+* [HTTP headers](http-headers.md)
 * [HTTP response codes](http-response-codes.md)
 * [Idempotency](idempotency.md)
 * [isApp](isApp.md)

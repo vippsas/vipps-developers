@@ -8,12 +8,14 @@ END_METADATA -->
 
 # Authentication
 
+## Get an access token
+
 All Vipps API calls are authenticated and authorized with an access token
 (JWT bearer token) and an API subscription key:
 
 | Header Name                 | Header Value                | Description      |
 |:----------------------------|:----------------------------|:-----------------|
-| `Authorization`             | `Bearer <JWT access token>` | Type: Authorization token. See [Get an access token](#get-an-access-token). |
+| `Authorization`             | `Bearer <JWT access token>` | Type: Authorization token. |
 | `Ocp-Apim-Subscription-Key` | Base 64 encoded string      | The subscription key for this API. This is available on [portal.vipps.no](https://portal.vipps.no). |
 
 All Vipps API requests must include an `Authorization` header with
@@ -25,7 +27,7 @@ and passing the `client_id`, `client_secret` and `Ocp-Apim-Subscription-Key`.
 (We _are_ aware that this is a `POST`, without a body, to an endpoint with
 `get` in the URL, and hope to fix it in a later version of the API. Sorry for the inconvenience.)
 
-## Request
+### Request
 
 Request to
 [`POST:/accesstoken/get`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Authorization-Service/operation/fetchAuthorizationTokenUsingPost)
@@ -64,7 +66,7 @@ phase out the old name completely, but it is not trivial and will take some time
 You may encounter both in the developer documentation, and the actual header
 name to send is `Ocp-Apim-Subscription-Key`.
 
-## Response
+### Response
 
 The response from
 [`POST:/accesstoken/get`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Authorization-Service/operation/fetchAuthorizationTokenUsingPost)
