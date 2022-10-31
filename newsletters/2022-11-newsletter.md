@@ -7,8 +7,6 @@ END_METADATA -->
 
 # Technical newsletter for developers 2022-11
 
-💥 DRAFT! 💥
-
 This newsletter was sent in November 2022.
 
 <!-- START_TOC -->
@@ -70,7 +68,9 @@ We are working hard to improve the
 * We have a new
   [Solutions](https://vippsas.github.io/vipps-developer-docs/docs/vipps-solutions/)
   section to highlight combinations of Vipps APIs, such as
-  [Loyalty in physical stores](https://vippsas.github.io/vipps-developer-docs/docs/vipps-solutions/loyalty-in-pos/).
+  [Loyalty in physical stores](https://vippsas.github.io/vipps-developer-docs/docs/vipps-solutions/loyalty-in-pos/)
+  and
+  [Electric vehicle charging](https://vippsas.github.io/vipps-developer-docs/docs/vipps-solutions/ev-charging/).
 * All APIs now have a
   [Quick start](../developer-resources/quick-start-guides.md)
   with Postman collection. We also have a global Postman environment to make it
@@ -86,7 +86,8 @@ Far too many Vipps payments fail because of badly formatted phone numbers.
 We try to silently correct them, but can not fix all errors.
 
 This is especially important when using
-[Skip landing page](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api#skip-landing-page).
+[Skip landing page](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api#skip-landing-page),
+as it's impossible to send a push message to a user if the specified phone number is incorrect.
 
 Please see the API specification:
 [`POST:/ecomm/v2/payments`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Vipps-eCom-API/operation/initiatePaymentV3UsingPOST)
