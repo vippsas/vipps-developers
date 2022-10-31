@@ -10,7 +10,7 @@ END_METADATA -->
 
 # Developer resources
 
-There are many resources available to developers who want to integrate with Vipps. For example;
+There are many resources available to developers who want to integrate with Vipps. For example:
 
 * [API Dashboard](api-dashboard.md)
 * [Demo store](demo-store.md)
