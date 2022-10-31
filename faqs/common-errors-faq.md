@@ -47,13 +47,13 @@ Please make sure the URLs you provide to Vipps are reachable from outside your
 own environment.
 
 Have a look at the
-[Callback](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#callback-endpoints)
-section in the API guide, and see
-[How to test your own callbacks](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#how-to-test-your-own-callbacks).
+[Callback](../common-topics/callbacks.md)
+section, and see
+[How to test your own callbacks](../common-topics/callbacks.md#how-to-test-your-own-callbacks).
 
 If you do not receive a callback, it could be because your firewall is blocking
 our requests. See:
-[Vipps request servers](https://github.com/vippsas/vipps-developers/blob/master/developer-resources/servers.md#vipps-request-servers).
+[Vipps request servers](../developer-resources/servers.md#vipps-request-servers).
 
 Please check your own logs for any signs of problems. If your
 `orderId` is `acme-shop-123-order123abc`: Search your logs for `acme-shop-123-order123abc`.
@@ -95,7 +95,7 @@ Please follow these steps to make sure everything is correct:
 1. Check that you are using the correct API credentials for the MSN (Merchant Serial Number)
    you are using
    (See
-   [Getting started: Quick overview of how to make an API call](https://github.com/vippsas/vipps-developers/blob/master/vipps-getting-started.md#quick-overview-of-how-to-make-an-api-call) for more details):
+   [Getting started: Quick overview of how to make an API call](../vipps-getting-started.md#quick-overview-of-how-to-make-an-api-call) for more details):
    * `client_id`
    * `client_secret`
    * `Ocp-Apim-Subscription-Key` (the subscription key)
@@ -107,7 +107,7 @@ Please follow these steps to make sure everything is correct:
    They are case sensitive: `Authorization: Bearer <snip>` is not the same as `Authorization: bearer <snip>`.
 4. Make sure you are using the right environment and check that you are using
    the correct API keys for the right sale unit in that environment. The
-   [test environment](https://github.com/vippsas/vipps-developers/blob/master/developer-resources/test-environment.md)
+   [test environment](../developer-resources/test-environment.md)
    is completely separate from the production environment, and both the MSN and
    the API keys are different.
 5. Check both the HTTP response header and the response body from our API for errors.
@@ -118,25 +118,25 @@ Please follow these steps to make sure everything is correct:
    described here:
    [Partner keys](https://vippsas.github.io/vipps-developer-docs/docs/vipps-partner/partner-keys).
 7. Make sure that you are using a valid access token. See
-   [Getting started: Get an access token](https://github.com/vippsas/vipps-developers/blob/master/vipps-getting-started.md#get-an-access-token)
+   [Getting started: Get an access token](../vipps-getting-started.md#get-an-access-token)
    for details, how long it is valid, etc.
 
 You can log in to
 [portal.vipps.no](https://portal.vipps.no)
 to double check your API keys, sale units and API products.
 See:
-[Getting the API keys](https://github.com/vippsas/vipps-developers/blob/master/vipps-getting-started.md#getting-the-api-keys).
+[Getting the API keys](../vipps-getting-started.md#getting-the-api-keys).
 
 You can use
-[Postman](https://github.com/vippsas/vipps-developers/blob/master/developer-resources/quick-start-guides.md)
+[Postman](../developer-resources/quick-start-guides.md)
 to manually do API calls, Use the "inspect" functionality to see the complete requests and responses.
 
 You also need to make sure you have access to the right API.
 See:
-[API products](https://github.com/vippsas/vipps-developers/blob/master/vipps-getting-started.md#api-products).
+[API products](../vipps-getting-started.md#api-products).
 
 See:
-[Quick overview of how to make an API call](https://github.com/vippsas/vipps-developers/blob/master/vipps-getting-started.md#quick-overview-of-how-to-make-an-api-call).
+[Quick overview of how to make an API call](../vipps-getting-started.md#quick-overview-of-how-to-make-an-api-call).
 
 If you are absolutely, completely 100 % sure that you have done everything
 correctly, and it _still_ doesn't work, you can regenerate the API keys on
@@ -220,7 +220,7 @@ a `HTTP 500 Server Error`. Retry the call, and see if it helps.
 See:
 
 * [Errors](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#errors).
-* [Status page](https://github.com/vippsas/vipps-developers/blob/master/developer-resources/status-pages.md).
+* [Status page](../developer-resources/status-pages.md).
 
 ## Why do I get `errorCode 35 "Requested Order not found"`?
 
@@ -285,7 +285,7 @@ See:
 
 If you use the correct `scope` in the payment initiation, but don't get the
 `sub` in the response for `/details`: Check that you are following the
-[orderId recommendations](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#orderid-recommendations).
+[orderId recommendations](../common-topics/orderid.md).
 Very short orderIds don't work well with our database index, and may cause
 an internal timeout, and we "have to" send the response without the `sub`.
 We cannot enforce longer orderIds due to backwards compatibility.

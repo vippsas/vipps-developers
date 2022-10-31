@@ -24,6 +24,7 @@ There may also be responses with other HTTP statuses.
 See the API specification for each API for details _especially the FAQ_.
 
 In general:
+
 * 2XX responses: Everything is OK.
 * 4XX responses: Client error. You have a problem, and you must correct it.
 * 5XX responses: Server error. We have a problem, and we must correct it.

@@ -138,7 +138,7 @@ If all sale units have the same organization number, there are two alternatives:
    All sale units are in the same
    [settlement report](../common-topics/settlements/).
    You decide what the `orderId` contains, and it may be up to 50 characters. See:
-   [orderId recommendation](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#orderid-recommendations).
+   [orderId recommendation](../common-topics/orderid.md).
    You will use the same API keys for all stores.
    If you have a Vipps platform partner, the partner will use the
    [Partner keys](https://vippsas.github.io/vipps-developer-docs/docs/vipps-partner/partner-keys)

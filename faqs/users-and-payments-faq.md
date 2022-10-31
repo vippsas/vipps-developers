@@ -204,7 +204,7 @@ This is a requirement, see the
 [API checklist](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-checklist.md).
 
 In case the Vipps
-[callback](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#callbacks)
+[callback](../common-topics/callbacks.md)
 fails, you will not automatically receive notification of order status.
 The solution is to check with
 [`GET:/ecomm/v2/payments/{orderId}/details`](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#get-payment-details).
@@ -224,7 +224,7 @@ It's important that the merchant waits (at least) this long, otherwise the Vipps
 user may confirm in the Vipps app, and right after get an error from the merchant
 that the order has been cancelled.
 
-See: [Timeouts](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#timeouts).
+See: [Timeouts](../common-topics/timeouts.md).
 
 ## How long does it take until the money is in my account?
 
@@ -255,7 +255,7 @@ Please check the Vipps payment:
 5. Click the order.
 6. See the "History" details.
 
-This is of course also supported in the API, and it is a requirement to use
+This is of course also supported in the [eCom API](https://github.com/vippsas/vipps-ecom-api/), and it is a requirement to use
 this functionality when integrating with Vipps:
 [`GET:/ecomm/v2/payments/{orderId}/details`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Vipps-eCom-API/operation/getPaymentDetailsUsingGET)
 
