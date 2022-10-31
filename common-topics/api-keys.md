@@ -8,7 +8,7 @@ END_METADATA -->
 
 ## API keys
 
-All Vipps APIs uses the same API keys.
+All Vipps APIs use the same API keys.
 
 The API keys are retrieved as described here:
 [Get credentials](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/vipps-getting-started#get-credentials).
