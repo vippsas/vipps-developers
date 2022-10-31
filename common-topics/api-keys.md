@@ -6,7 +6,14 @@ pagination_prev: null
 ---
 END_METADATA -->
 
-## API keys
+# API keys
+
+<!-- START_COMMENT -->
+
+ℹ️ Please use the new documentation:
+[Vipps Technical Documentation](https://vippsas.github.io/vipps-developer-docs/).
+
+<!-- END_COMMENT -->
 
 All Vipps APIs use the same API keys.
 
