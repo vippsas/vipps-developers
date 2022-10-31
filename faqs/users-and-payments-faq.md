@@ -1,0 +1,313 @@
+<!-- START_METADATA
+---
+title: Users and payments
+sidebar_position: 50
+pagination_next: null
+pagination_prev: null
+---
+END_METADATA -->
+
+# FAQs: Users and payments
+
+<!-- START_COMMENT -->
+
+ℹ️ Please use the new documentation:
+[Vipps Technical Documentation](https://vippsas.github.io/vipps-developer-docs/).
+
+<!-- END_COMMENT -->
+
+Document version 0.0.1.
+
+<!-- START_TOC -->
+
+## Table of contents
+
+* [Is there an API for checking if a number belongs to a Vipps user?](#is-there-an-api-for-checking-if-a-number-belongs-to-a-vipps-user)
+* [Is there an API for retrieving information about a Vipps user?](#is-there-an-api-for-retrieving-information-about-a-vipps-user)
+* [Where can I find information about payment and settlements?](#where-can-i-find-information-about-payment-and-settlements)
+* [Can I split payments to charge a fee?](#can-i-split-payments-to-charge-a-fee)
+* [Can I create a marketplace with multiple merchants?](#can-i-create-a-marketplace-with-multiple-merchants)
+* [Can I create a service to match buyers and sellers?](#can-i-create-a-service-to-match-buyers-and-sellers)
+* [Can I use Vipps for crowdfunding?](#can-i-use-vipps-for-crowdfunding)
+* [Is it possible for a merchant to pay a Vipps user?](#is-it-possible-for-a-merchant-to-pay-a-vipps-user)
+* [I have initiated an order but I can't find it!](#i-have-initiated-an-order-but-i-cant-find-it)
+* [How long is an initiated order valid, if the user does not confirm in the Vipps app?](#how-long-is-an-initiated-order-valid-if-the-user-does-not-confirm-in-the-vipps-app)
+* [How long does it take until the money is in my account?](#how-long-does-it-take-until-the-money-is-in-my-account)
+* [Why has one of my customers been charged twice for the same payment?](#why-has-one-of-my-customers-been-charged-twice-for-the-same-payment)
+* [In which sequence are callbacks and fallbacks done?](#in-which-sequence-are-callbacks-and-fallbacks-done)
+* [Where can I find reports on transactions?](#where-can-i-find-reports-on-transactions)
+* [When do users get a "soft decline" and need to complete a 3-D Secure verification?](#when-do-users-get-a-soft-decline-and-need-to-complete-a-3-d-secure-verification)
+
+<!-- END_TOC -->
+
+## Is there an API for checking if a number belongs to a Vipps user?
+
+No. Vipps does not offer a lookup service for this, as we do not want to
+leak information about users. If a payment is initiated for a user that can
+not pay businesses, the response will be an error.
+
+Vipps does not distinguish between the following when initiating a payment with
+[`POST:/ecomm/v2/payments`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Vipps-eCom-API/operation/initiatePaymentV3UsingPOST)
+and the API call contains a phone number that can not be used to complete the payment:
+
+* Not a Vipps user
+* A Vipps user, but too young to pay businesses
+* A previous Vipps user that has deleted his/her account
+* A Vipps user that has his/her account temporarily or permanently blocked.
+
+## Is there an API for retrieving information about a Vipps user?
+
+Yes. Vipps offers the possibility for merchants to as part of the payment flow in the
+[Userinfo](../common-topics/userinfo.md).
+
+This is done by adding a `scope` parameter to the initiate calls:
+[`POST:/ecomm/v2/payments`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Vipps-eCom-API/operation/initiatePaymentV3UsingPOST) (eCom)
+and
+[`POST:/recurring/v2/agreements`](https://vippsas.github.io/vipps-recurring-api/#/Agreement%20Controller/draftAgreement) (Recurring):
+
+* address
+* birthDate
+* email
+* name
+* phoneNumber
+* nin (national identity number, "fødselsnummer")
+* accountNumbers
+
+**Please note:** Vipps users have not consented to Vipps providing any
+information to third parties, and Vipps does not allow it.
+The Vipps user must always give consent to sharing data with a merchant.
+There is no other API to look up a user's address, retrieve a user's purchases, etc.
+
+## Where can I find information about payment and settlements?
+
+[portal.vipps.no](https://portal.vipps.no)
+provides information about your transactions, sale units and settlement reports.
+You can also subscribe to daily or monthly transaction reports by email.
+
+See:
+
+* [Report API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/report-api).
+* [Settlements](../common-topics/settlements/)
+
+## Can I split payments to charge a fee?
+
+No. Vipps does not support splitting payments to charge a fee.
+
+If you want to charge a fee (like 3 %) of your payments, you can:
+
+1. Receive the full payment, take your 3 %, and then pay the remaining
+   97 % to your customer (merchant). In order to receive payments in this way,
+   you may need the regulatory approval as
+   [e-pengeforetak (i.e., *e-money institution*)](https://www.finanstilsynet.no/konsesjon/e-pengeforetak/)
+   from the Finanstilsynet.
+2. Have your customer (merchant) receive the full payment directly, then send an
+   invoice for your 3 % fee.
+
+Companies that receive payments through Vipps needs to be Vipps customers.
+See:
+[What are the requirements for Vipps merchants?](requirements-faq.md#what-are-the-requirements-for-vipps-merchants)
+
+## Can I create a marketplace with multiple merchants?
+
+We sometimes get questions whether Vipps can support a marketplace or a
+shopping center, with multiple merchants. The answer is: That depends.
+It may not be as straight-forward as expected, and some typical questions
+are covered elsewhere in this FAQ:
+
+* All payments with Vipps must be to a merchant that is a customer of Vipps. See
+  [What are the requirements for Vipps merchants?](requirements-faq.md#what-are-the-requirements-for-vipps-merchants)
+* Revenue share between the marketplace and the merchants: See:
+  [Can I split payments to charge a fee?](#can-i-split-payments-to-charge-a-fee)
+* Refunds can only be made from the merchant that received the payment. See:
+  [Is it possible for a merchant to pay a Vipps user?](#is-it-possible-for-a-merchant-to-pay-a-vipps-user)
+
+So, there are two alternatives:
+
+1. The shopping center is the only Vipps merchant, and all payments from Vipps
+   users is to this merchant. Vipps is not involved in the cooperation between
+   the shopping center and it's merchants, and it is completely up to them
+   to operate according to Norwegian laws and regulation.
+2. Each merchant in the shopping center is a Vipps merchant, and each payment
+   from a Vipps user is made directly to the merchant. This means that a
+   common shopping cart for all merchants cannot be paid in one operation,
+   since: All payments with Vipps must be to a merchant that is a customer of Vipps.
+
+## Can I create a service to match buyers and sellers?
+
+Companies that receive payments through Vipps must be Vipps customers,
+and this is defined in the regulatory approval for Vipps from Finanstilsynet.
+
+If the service receives payment from a buyer and then pays the seller,
+so that the service "holds" the money even for a short time, the service
+will need the regulatory approval as
+[e-pengeforetak (i.e., *e-money institution*)](https://www.finanstilsynet.no/konsesjon/e-pengeforetak/).
+
+If the service sells access, in the form of a subscription or per-use, the
+service is *most likely* a regular Vipps eCom customer, and can use
+the
+[Vipps eCom API](https://github.com/vippsas/vipps-ecom-api)
+or one of our
+[plugins](https://github.com/vippsas/vipps-plugins).
+
+Vipps cannot offer legal advice for this.
+
+## Can I use Vipps for crowdfunding?
+
+That depends, but probably: No.
+
+Vipps cannot keep money for merchants.
+All Vipps payments must be made to a company that is a customer of Vipps.
+
+See:
+
+* [What are the requirements for Vipps merchants?](requirements-faq.md#what-are-the-requirements-for-vipps-merchants)
+* [Can I create a marketplace with multiple merchants?](#can-i-create-a-marketplace-with-multiple-merchants)
+* [Can I create a service to match buyers and sellers?](#can-i-create-a-service-to-match-buyers-and-sellers)
+
+## Is it possible for a merchant to pay a Vipps user?
+
+No. Vipps has no functionality for a merchant to paying to a Vipps user,
+except for refunding (part of) a payment.
+
+Vipps only has APIs for paying from a person to a merchant.
+
+It is not possible to pay from one merchant to another merchant,
+or to pay from a merchant to a person.
+
+There are several reasons for this, including:
+
+* The Norwegian "Straksbetaling" (instant payments) system is not designed
+  for this, and not all banks support it.
+* There are other account-to-account payment methods, but all have their
+  idiosyncrasies, and none are a perfect fit.
+* Payouts to cards is different than accounts, and will depend on the PSPs,
+  which brings another set of challenges.
+* Some merchant accounts requires "four eyes" before making payments from them,
+  and Vipps does not have this functionality in the API.
+* The SCA (Secure Customer Authentication) required by PSD2 further complicates
+  payouts, both with an API and on [portal.vipps.no](https://portal.vipps.no).
+
+Vipps does have functionality for getting the user's bank accounts enrolled in
+Vipps, with the user's consent. Payments may then be made to the bank account.
+See:
+[Is there an API for retrieving information about a Vipps user?](#is-there-an-api-for-retrieving-information-about-a-vipps-user)
+
+## I have initiated an order but I can't find it!
+
+If you have multiple sale units: Make sure you use the correct API keys, and that
+you are not attempting to use one sale unit's API keys to retrieve an order made
+by a different sale unit.
+
+Have you, or the eCommerce solution you are using, successfully implemented
+[`GET:/ecomm/v2/payments/{orderId}/details`](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#get-payment-details)?
+This is a requirement, see the
+[API checklist](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-checklist.md).
+
+In case the Vipps
+[callback](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#callbacks)
+fails, you will not automatically receive notification of order status.
+The solution is to check with
+[`GET:/ecomm/v2/payments/{orderId}/details`](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#get-payment-details).
+
+You can use
+[Postman](https://github.com/vippsas/vipps-developers/blob/master/developer-resources/quick-start-guides.md)
+to manually do API calls, Use the "inspect" functionality to see the complete requests and responses.
+
+See:
+[API endpoints](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#api-endpoints).
+
+## How long is an initiated order valid, if the user does not confirm in the Vipps app?
+
+Vipps orders have a max timeout of 10 minutes: 5 minutes to log in and 5 minutes to confirm the payment.
+
+It's important that the merchant waits (at least) this long, otherwise the Vipps
+user may confirm in the Vipps app, and right after get an error from the merchant
+that the order has been cancelled.
+
+See: [Timeouts](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#timeouts).
+
+## How long does it take until the money is in my account?
+
+See: [Settlements](../common-topics/settlements/).
+
+## Why has one of my customers been charged twice for the same payment?
+
+Once in a while a customer claims they have "paid double", "paid twice" or similar.
+
+This does not happen, except in *extremely* rare cases where multiple services,
+both at Vipps, banks, PSPs, etc fail simultaneously. In reality: This never happens.
+
+The most common reason for misunderstanding is that customers do not understand
+the difference between a *reservation* and a *payment* and/or that some banks
+do not present this to their customers in a way that the customer understands.
+Some banks will display the reservation of a payment even *after* the payment has
+been captured. This may lead some customers into thinking that both the
+reservation and the capture are payments, and that they have paid twice.
+
+Most banks manage to do this properly, but apparently not all.
+
+Please check the Vipps payment:
+
+1. Find the Vipps `orderId` for the payment.
+2. Log in on [portal.vipps.no](https://portal.vipps.no).
+3. Click "Transaksjoner" (*Transactions*) and then "Søk på ID" (*Search for ID*)
+4. Search for the `orderId` from step 1.
+5. Click the order.
+6. See the "History" details.
+
+This is of course also supported in the API, and it is a requirement to use
+this functionality when integrating with Vipps:
+[`GET:/ecomm/v2/payments/{orderId}/details`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Vipps-eCom-API/operation/getPaymentDetailsUsingGET)
+
+The user can also check the payment in Vipps:
+
+1. Start Vipps and log in.
+2. Press "Payments" on the main screen.
+3. Scroll down and press "History"
+4. Check the payment and the "Transactions".
+5. Verify that the orderId and transaction id matches the ones in step 6 above.
+
+See:
+[For how long is a payment reserved?](reserve-and-capture-faq.md#for-how-long-is-a-payment-reserved)
+
+## In which sequence are callbacks and fallbacks done?
+
+Vipps cannot guarantee a particular sequence, as this depends on user
+actions, network connectivity/speed, etc. Because of this, it is not
+possible to base an integration on a specific sequence of events.
+
+See:
+[Initiate payment flow: Phone and browser](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#initiate-payment-flow-phone-and-browser)
+
+## Where can I find reports on transactions?
+
+[portal.vipps.no](https://portal.vipps.no) provides information about
+your transactions, sale units and settlement reports.
+You can also subscribe to daily or monthly transaction reports by email.
+
+See: [Settlements](../common-topics/settlements/).
+
+## When do users get a "soft decline" and need to complete a 3-D Secure verification?
+
+Vipps handles everything related to "soft declines" and 3-D Secure.
+Vipps also handles BankID verification, when that is required.
+There is nothing a merchant needs to to.
+
+Vipps uses delegated SCA (Secure Customer Authentication) from the banks, and
+significantly simplifies the user experience, as there is normally no need for
+BankID verification.
+
+The biometric login in Vipps is enough.
+
+Vipps uses tokenized cards, which eliminates the need for "soft decline".
+As long as the token is valid, the user never has to verify the card again.
+
+In order to prevent misuse and fraud Vipps require users to do a 3-D Secure
+verification if the user has paid more than 15 000 NOK during the last five days.
+
+In short: Users paying with Vipps has a much faster and simpler user experience
+than when using a card directly.
+
+Vipps also has an extremely low fraud rate, as it is impossible to pay
+with a card that has been invalidated in any way by the issuer, and all users
+has to log into Vipps with their BankID verified identity to use their card.

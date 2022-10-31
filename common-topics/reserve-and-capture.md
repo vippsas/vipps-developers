@@ -132,7 +132,7 @@ This is a useful and recommended feature, as it releases any reserved balance
 as soon as the card issuer and/or bank permits.
 
 See also the FAQ:
-[How long does it take from a refund is made until the money is in the customer's account?](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-faq.md#how-long-does-it-take-from-a-refund-is-made-until-the-money-is-in-the-customers-account)
+[How long does it take from a refund is made until the money is in the customer's account?](../faq/refunds-faq.md#how-long-does-it-take-from-a-refund-is-made-until-the-money-is-in-the-customers-account)
 
 Example Request:
 
