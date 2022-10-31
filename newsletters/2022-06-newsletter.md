@@ -11,7 +11,7 @@ This newsletter was sent in June 2022.
 
 <!-- START_TOC -->
 
-### Table of Contents
+## Table of Contents
 
 * [Vipps Order Management API](#vipps-order-management-api)
 * [Vipps Partner API](#vipps-partner-api)
@@ -57,7 +57,7 @@ Please make sure to include the text saying
 "Remember: Vipps is always without fees when paying businesses"
 or similar:
 
-```
+```json
 "external_payment_methods":[
    {
       "name": "Vipps",
@@ -70,7 +70,7 @@ or similar:
 ```
 
 More details:
-[Can I use Vipps with Klarna Checkout?](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-faq.md#can-i-use-vipps-with-klarna-checkout)
+[Can I use Vipps with Klarna Checkout?](../faqs/other-faq.md#can-i-use-vipps-with-klarna-checkout)
 
 ## Vipps eCom API: HTTPS required for all URLs
 
@@ -79,14 +79,15 @@ From October 1, 2022, URL links in the body of
 will no longer support HTTP, only HTTPS.
 
 This includes the following fields:
- - callbackPrefix
- - consentRemovalPrefix
- - fallBack
- - shippingDetailsPrefix
+
+* callbackPrefix
+* consentRemovalPrefix
+* fallBack
+* shippingDetailsPrefix
 
  This has been documented for a _long_ time already, but not strictly enforced.
  See:
- [URL validation](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#url-validation).
+ [URL validation](../common-topics/url-validation.md).
 
 ## Reminders
 
@@ -98,11 +99,12 @@ and an informative error message in the response body, we see that some merchant
 and partners keep making incorrect API calls.
 
 Please:
-- Monitor the responses you get when making API calls
-- Log all errors
-- Fix errors as quickly as possible
-- Use the API Dashboard
-- Contact us if there is anything we can help with
+
+* Monitor the responses you get when making API calls
+* Log all errors
+* Fix errors as quickly as possible
+* Use the API Dashboard
+* Contact us if there is anything we can help with
 
 One example: Far too many calls to
 [`POST:/ecomm/v2/payments`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Vipps-eCom-API/operation/initiatePaymentV3UsingPOST)
@@ -117,9 +119,9 @@ so we decided to accept the incorrect API calls even though they give a poor
 user experience.
 
 See:
+
 * [Use the API Dashboard to find problems with your integration](#use-the-api-dashboard-to-find-problems-with-your-integration)
-* "Common errors" in the
-  [eCom API FAQ](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-faq.md)
+* [Common errors](../faqs/common-errors-faq.md)
 
 ### Use the API Dashboard to find problems with your integration
 
@@ -145,7 +147,7 @@ Please see
 
 ### Newsletter archive
 
-Please see: [newsletters](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/newsletters/)
+Please see: [newsletters](README.md)
 
 ## Questions or comments?
 

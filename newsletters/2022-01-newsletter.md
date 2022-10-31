@@ -1,7 +1,10 @@
+<!-- START_METADATA
 ---
 sidebar_position: 73
 title: 2022-01
 ---
+END_METADATA -->
+
 # Technical newsletter for developers 2022-01
 
 This newsletter was sent in January 2022.
@@ -10,11 +13,11 @@ This newsletter was sent in January 2022.
 
 * [Please check your eCom API calls](#please-check-your-ecom-api-calls)
 * [Recurring API: The "PROCESSING" status](#recurring-api-the-processing-status)
-* [Vipps Login directly from phone number and QR code](#vipps-login-directly-from-phone-number-and-QR-code)
+* [Vipps Login directly from phone number and QR code](#vipps-login-directly-from-phone-number-and-qr-code)
 * [Deprecation of the Vipps Signup API](#deprecation-of-the-vipps-signup-api)
 * [Reminders](#reminders)
   * [Use the API Dashboard to find problems with your integration](#use-the-api-dashboard-to-find-problems-with-your-integration)
-  * [Use Statuspage to get information about incidents](#use-statuspage-to-get-information-about-incidents)
+  * [Use Status page to get information about incidents](#use-status-page-to-get-information-about-incidents)
   * [Omikron tips](#omikron-tips)
   * [Vipps Hurtigkasse: Use the explicit flow](#vipps-hurtigkasse-use-the-explicit-flow)
   * [Use Userinfo to register visitors when they pay](#use-userinfo-to-register-visitors-when-they-pay)
@@ -32,17 +35,19 @@ and an informative error message in the response body, we see that some merchant
 and partners keep making incorrect API calls.
 
 Please:
-- Monitor the responses you get when making API calls
-- Log all errors
-- Fix errors as quickly as possible
-- Use the API Dashboard
-- Contact us if there is anything we can help with
+
+* Monitor the responses you get when making API calls
+* Log all errors
+* Fix errors as quickly as possible
+* Use the API Dashboard
+* Contact us if there is anything we can help with
 
 One example: Far too many calls to
 [`POST:/ecomm/v2/payments`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Vipps-eCom-API/operation/initiatePaymentV3UsingPOST)
 use an incorrectly formatted phone number.
 The effect is that the user's phone number is not correctly pre-filled on
-the Vipps landing page.
+the [Vipps landing page](../common-topics/vipps-landing-page.md).
+
 Please make sure you send the `mobileNumber` in `91234567` format, not
 `+47 91 23 45 67` or something else.
 We have previously tried to respond with `HTTP 400 Bad Request` (as we should)
@@ -51,9 +56,9 @@ so we decided to accept the incorrect API calls even though they give a poor
 user experience.
 
 See:
+
 * [Use the API Dashboard to find problems with your integration](#use-the-api-dashboard-to-find-problems-with-your-integration)
-* "Common errors" in the
-  [eCom API FAQ](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-faq.md)
+* [FAQ: Common errors](../faqs/common-errors-faq.md)
 
 ## Recurring API: The "PROCESSING" status
 
@@ -81,7 +86,7 @@ See the
 for more details.
 
 We are also working on providing an event log for each `chargeId`, so merchants
-can get _some_ information, escpecially if a charge ends as `FAILED`.
+can get _some_ information, especially if a charge ends as `FAILED`.
 You can "star" the
 [Vipps Recurring API repo](https://github.com/vippsas/vipps-recurring-api)
 and subscribe to this newsletter to get updates.
@@ -104,6 +109,7 @@ user's phone number, and by users scanning a QR code.
   This can be used in marketing, from posters, screens etc.
 
 See:
+
 * [Vipps Login from phone number API: How It Works](https://github.com/vippsas/vipps-login-api/blob/master/vipps-login-from-phone-number-api-howitworks.md)
 * [Vipps Login from QR-code API: How It Works](https://github.com/vippsas/vipps-login-api/blob/master/vipps-login-from-QR-api-howitworks.md)
 * [Vipps Login API](https://github.com/vippsas/vipps-login-api)
@@ -135,31 +141,31 @@ Here's an example for the Vipps eCom API's `/refund` endpoint:
 See:
 [API Dashboard](../developer-resources/api-dashboard.md).
 
-### Use Statuspage to get information about incidents
+### Use Status page to get information about incidents
 
-Vipps uses Statuspage to inform about problems, planned maintenance, etc.
+Vipps uses Status page to inform about problems, planned maintenance, etc.
 You can subscribe to get all updates, and also subscribe to specific incidents.
 
 One example:
 [Apache Log4j vulnerability – No impact to Vipps](https://vipps.statuspage.io/incidents/yfbhp4lm9g4j).
 
 See:
-[Statuspage for the production environment](https://vipps.statuspage.io)
+[Status page for the production environment](https://vipps.statuspage.io)
 and
 [the other status pages](../developer-resources/status-pages.md).
 
-### Other tips
+### Omikron tips
 
 These Vipps solutions are extra relevant (again):
 
-- Use
+* Use
   [Vipps Logg inn](https://vipps.no/produkter-og-tjenester/privat/logg-inn-med-vipps/logg-inn-med-vipps/)
   and the
   [Vipps Login API](https://github.com/vippsas/vipps-login-api)
   to register visitors - it's free.
-- [Use Userinfo to register visitors when they pay](#use-userinfo-to-register-visitors-when-they-pay)
+* [Use Userinfo to register visitors when they pay](#use-userinfo-to-register-visitors-when-they-pay)
   as an easy-to-use step in a normal Vipps payment.
-- ["Click and collect" recommendations](#-click-and-collect--recommendations)
+* ["Click and collect" recommendations](#click-and-collect-recommendations)
   to speed up the user experience for your customers.
 
 ### Vipps Hurtigkasse: Use the explicit flow
@@ -205,7 +211,7 @@ This is done in the
 [`POST:​/ecomm​/v2​/payments`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Vipps-eCom-API/operation/initiatePaymentV3UsingPOST)
 call by including:
 
-```
+```json
 "staticShippingDetails": [
   {
     "isDefault": "Y",
@@ -216,7 +222,6 @@ call by including:
   }
 ]
 ```
-
 
 ## Newsletter archive
 

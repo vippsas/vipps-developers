@@ -36,6 +36,7 @@ We have a completely new, in-progress, website for all
 ![Vipps Developer Documentation](images/2022-09-vipps-developer-docs.png)
 
 Examples:
+
 * [API Guide](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api)
 * [API Reference](https://vippsas.github.io/vipps-developer-docs/api/ecom)
 * [FAQ](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api-faq)
@@ -85,7 +86,7 @@ We recommend using this text where users select payment method:
 Roughly translated, this means, "Remember: Vipps is always free from fees when you pay to companies".
 
 If you use Klarna Checkout, here are our
-[tips](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-faq.md#can-i-use-vipps-with-klarna-checkout).
+[tips](../faqs/other-faq.md#can-i-use-vipps-with-klarna-checkout).
 
 ## Vipps on-site messaging
 
@@ -118,11 +119,12 @@ and an informative error message in the response body, we see that some merchant
 and partners keep making incorrect API calls.
 
 Please:
-- Monitor the responses you get when making API calls
-- Log all errors
-- Fix errors as quickly as possible
-- Use the API Dashboard
-- Contact us if there is anything we can help with
+
+* Monitor the responses you get when making API calls
+* Log all errors
+* Fix errors as quickly as possible
+* Use the API Dashboard
+* Contact us if there is anything we can help with
 
 ### Use the API Dashboard to find problems with your integration
 

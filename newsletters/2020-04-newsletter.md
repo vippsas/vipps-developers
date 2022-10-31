@@ -26,7 +26,7 @@ Point Of Sale (POS) integrations are now possible with the eCom API.
 See
 [the product page](https://www.vipps.no/produkter-og-tjenester/bedrift/ta-betalt-i-butikk/vipps-i-kassa/)
 and the
-[Frequently Asked Questions for POS integrations](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-faq.md#frequently-asked-questions-for-pos-integrations).
+[Frequently Asked Questions for POS integrations](../faqs/pos-integrations-faq.md).
 
 ## eCom: skipLandingPage
 
