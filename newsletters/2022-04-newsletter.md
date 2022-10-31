@@ -107,8 +107,7 @@ user experience.
 See:
 
 * [Use the API Dashboard to find problems with your integration](#use-the-api-dashboard-to-find-problems-with-your-integration)
-* "Common errors" in the
-  [eCom API FAQ](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-faq.md)
+* [FAQ: Common errors](../faqs/common-errors-faq.md)
 
 ### Use the API Dashboard to find problems with your integration
 

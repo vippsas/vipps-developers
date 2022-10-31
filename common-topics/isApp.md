@@ -86,4 +86,4 @@ Attempts at using it after that will result in a timeout and an error.
 See:
 
 * [Timeouts](timeouts.md)
-* [Can I send a Vipps payment link in an SMS or email?](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-faq.md#can-i-send-a-vipps-payment-link-in-an-sms-or-email)
+* [Can I send a Vipps payment link in an SMS or email?](../faqs/reserve-and-capture-faq.md#can-i-send-a-vipps-payment-link-in-an-sms-qr-or-email)
