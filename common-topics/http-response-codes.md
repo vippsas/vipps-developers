@@ -27,3 +27,9 @@ In general:
 * 2XX responses: Everything is OK.
 * 4XX responses: Client error. You have a problem, and you must correct it.
 * 5XX responses: Server error. We have a problem, and we must correct it.
+
+The overview here is quite good:
+[HTTP Status Codes Glossary](https://www.webfx.com/web-development/glossary/http-status-codes/).
+
+The authoritative reference is:
+[RFC 9110: HTTP Semantics](https://www.rfc-editor.org/rfc/rfc9110.html#name-status-codes).
