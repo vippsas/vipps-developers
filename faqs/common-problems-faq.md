@@ -206,7 +206,7 @@ the `orderId` is shown instead of the customer name.
 You can click the little "i" in the header on the transaction overview and see the same info as above.
 
 The `orderId` is specified by the merchant. See the
-[orderId recommendations](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#orderid-recommendations).
+[orderId recommendations](../common-topics/orderid.md).
 
 Use
 [Userinfo](../common-topics/userinfo.md)

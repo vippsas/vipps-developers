@@ -8,6 +8,10 @@ END_METADATA -->
 
 # Authentication
 
+## Get credentials
+
+
+
 ## Get an access token
 
 All Vipps API calls are authenticated and authorized with an access token

@@ -8,6 +8,20 @@ END_METADATA -->
 
 # Callbacks
 
+<!-- START_TOC -->
+
+## Table of contents
+
+- [Callbacks](#callbacks)
+  - [Callback URLs](#callback-urls)
+  - [Callback examples](#callback-examples)
+  - [How to test your own callbacks](#how-to-test-your-own-callbacks)
+  - [Authorization for callbacks](#authorization-for-callbacks)
+  - [Vipps callback servers](#vipps-callback-servers)
+  - [Callback statuses](#callback-statuses)
+
+<!-- END_TOC -->
+
 Callbacks allow Vipps to send the merchant information about the payment.
 Callback are made for the following events:
 

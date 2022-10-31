@@ -16,7 +16,7 @@ END_METADATA -->
 
 <!-- END_COMMENT -->
 
-Document version: 3.5.1.
+Document version: 3.6.0.
 
 <!-- START_TOC -->
 
@@ -80,7 +80,8 @@ See:
 
 ## Requirements
 
-To apply for Vipps services, you need to have a Norwegian organization number, Norwegian BankID.
+To apply for Vipps services, you need to have a Norwegian organization number
+and applications must be signed with Norwegian BankID.
 
 In addition, before you can order any Vipps services, you must apply for
 a _Merchant Agreement_. This is a legal agreement between you and Vipps.
@@ -441,23 +442,9 @@ For more details: See the OpenAPI specifications and Postman collections
 for the APIs.
 
 Problems? See:
-[FAQ: Common errors](../faqs/common-errors-faq.md).
 
-### HTTP response codes
-
-This API returns the following HTTP statuses in the responses:
-
-| HTTP status        | Description                                             |
-|--------------------|---------------------------------------------------------|
-| `200 OK`           | Request successful.                                     |
-| `400 Bad Request`  | Invalid request, see the `error` for details.           |
-| `401 Unauthorized` | Invalid authorization.                                  |
-| `403 Forbidden`    | Authentication ok, but credentials lacks authorization. |
-| `500 Server Error` | An internal Vipps problem.                              |
-
-You can use the
-[API Dashboard](./developer-resources/api-dashboard.md)
-to check the responses to your API calls.
+* [FAQ: Common errors](./faqs/common-errors-faq.md)
+* [HTTP response codes](./common-topics/http-response-codes.md)
 
 ### Checking for errors with the API Dashboard
 

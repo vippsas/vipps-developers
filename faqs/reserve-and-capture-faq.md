@@ -245,7 +245,7 @@ The only ways to initiate Vipps payments from a QR code are:
   When the Vipps user scans the QR containing the deeplink URL (with either the camera app or with Vipps),
   Vipps will be opened, and the payment request will be displayed.
   The user then has a few minutes to complete the payment. See:
-  [Timeouts](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#timeouts).
+  [Timeouts](../common-topics/timeouts.md).
 * [Vippsnummer](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-i-butikk/),
   the solution for flea markets, etc – which does not have any external API.
   This solution uses a static QR code for the sale unit, available on
