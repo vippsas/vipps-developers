@@ -36,7 +36,8 @@ Document version 0.0.1.
 * [Why do I get `Payment failed`?](#why-do-i-get-payment-failed)
 * [Why do I get error 81 and `User not registered with Vipps`?](#why-do-i-get-error-81-and-user-not-registered-with-vipps)
 * [Why do I get an error about having Vipps installed and being 15 years old?](#why-do-i-get-an-error-about-having-vipps-installed-and-being-15-years-old)
-* [Why do I get `Invalid MSN: 654321`?](#why-do-i-get-invalid-msn-654321)
+ * [Why do I get `Why do I get Invalid MSN: 654321. Check your API keys on portal.vipps.no and see the eCom FAQ for tips.`?](#why-do-i-get-invalid-msn-654321-check-your-api-keys-on-portalvippsno-and-see-the-ecom-faq-for-tips)
+  * [Why do I get `Why do I get Invalid MSN: 654321. This MSN is not valid for the provided supermerchant id.`?](#why-do-i-get-invalid-msn-654321-this-msn-is-not-valid-for-the-provided-supermerchant-id)
 
 <!-- END_TOC -->
 
@@ -362,11 +363,7 @@ You are probably attempting to use a real Vipps user in the test environment.
 See:
 [The Vipps Test Environment (MT)](https://github.com/vippsas/vipps-developers/blob/master/developer-resources/test-environment.md).
 
-## Why do I get `Invalid MSN: 654321`?
-
-If you get the error
-`"Invalid MSN: 654321. Check your API keys on portal.vipps.no and see the eCom FAQ for tips."`
-it is because you are using API keys that are not valid for the specified MSN.
+## Why do I get `Invalid MSN: 654321. Check your API keys on portal.vipps.no and see the eCom FAQ for tips.`?
 
 This can happen when:
 
@@ -376,3 +373,16 @@ This can happen when:
 * API keys for the test environment is used in the production environment, or opposite.
 * [Partner keys](https://vippsas.github.io/vipps-developer-docs/docs/vipps-partner/partner-keys)
   are used, but the `Merchant-Serial-Number` HTTP header is not used correctly.
+
+## Why do I get `Invalid MSN: 654321. This MSN is not valid for the provided supermerchant id.`?
+
+This error can be caused by the partner making the API request:
+
+* Uses API keys for the test environment in the production environment, or opposite.
+* Uses a MSN for the test environment in the production environment, or opposite.
+* Uses
+  [partner keys](https://vippsas.github.io/vipps-developer-docs/docs/vipps-partner/partner-keys),
+  but does not send the required `Merchant-Serial-Number` header.
+
+Note that there _is no MSN_ in the error message in the example above.
+That means it's missing from the request.
