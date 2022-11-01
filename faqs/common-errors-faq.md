@@ -47,9 +47,9 @@ Please make sure the URLs you provide to Vipps are reachable from outside your
 own environment.
 
 Have a look at the
-[Callback](../common-topics/callbacks.md)
+[Callback](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#callbacks)
 section, and see
-[How to test your own callbacks](../common-topics/callbacks.md#how-to-test-your-own-callbacks).
+[How to test your own callbacks](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#callbacks#how-to-test-your-own-callbacks).
 
 If you do not receive a callback, it could be because your firewall is blocking
 our requests. See:

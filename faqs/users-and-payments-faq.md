@@ -204,7 +204,7 @@ This is a requirement, see the
 [API checklist](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-checklist.md).
 
 In case the Vipps
-[callback](../common-topics/callbacks.md)
+[callback](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#callbackscallbacks.md)
 fails, you will not automatically receive notification of order status.
 The solution is to check with
 [`GET:/ecomm/v2/payments/{orderId}/details`](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#get-payment-details).
