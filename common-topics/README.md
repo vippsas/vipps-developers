@@ -23,6 +23,7 @@ These are topics that are applicable across many APIs:
 * [isApp](isApp.md)
 * [orderId](orderid.md)
 * [Polling guidelines](polling-guidelines.md)
+* [Redirects](redirects.md)
 * [Reserve and capture](reserve-and-capture.md)
 * [Settlements](settlements/README.md)
 * [Terminology](terminology.md)
