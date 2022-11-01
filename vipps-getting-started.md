@@ -411,7 +411,7 @@ correct time please use `expires_in` or `expires_on`.
 The access token is a JWT (JSON Web Token), and uses UTC time.
 
 Problems? See:
-[FAQ: Common errors](../faqs/common-errors-faq.md).
+[FAQ: Common errors](faqs/common-errors-faq.md).
 
 ### Make an API call
 
