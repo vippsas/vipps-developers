@@ -54,7 +54,7 @@ See the FAQ:
 
 ## Capture
 
-We strongly recommend that you use an [idempotency key](idempotency.md) in the capture call. Then, if a capture
+We strongly recommend that you use an [idempotency key](http-headers.md#idempotency) in the capture call. Then, if a capture
 request fails for any reason, it can be retried with the same idempotency key.
 You can use any unique id for your idempotency key.
 

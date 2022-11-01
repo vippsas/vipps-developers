@@ -19,7 +19,6 @@ These are topics that are applicable across many APIs:
 * [Exception handling](exception-handling.md)
 * [HTTP headers](http-headers.md)
 * [HTTP response codes](http-response-codes.md)
-* [Idempotency](idempotency.md)
 * [isApp](isApp.md)
 * [orderId](orderid.md)
 * [Polling guidelines](polling-guidelines.md)

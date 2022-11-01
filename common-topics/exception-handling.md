@@ -46,7 +46,7 @@ See [eComAPI Errors](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps
 The merchant should then call
 [`GET:/ecomm/v2/payments/{orderId}/details`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Vipps-eCom-API/operation/getPaymentDetailsUsingGET)
 to check if the transaction request is processed before making a new call,
-using same idempotency key (see [Idempotency](idempotency.md)).
+using the same [idempotency key](http-headers.md#idempotency).
 
 ## Clean-up strategies
 
