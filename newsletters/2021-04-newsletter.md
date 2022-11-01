@@ -80,9 +80,7 @@ including the
 endpoints for both.
 
 See:
-[Partner keys for eCom](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#partner-keys)
-and
-[Partner keys for Recurring](https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api.md#partner-keys)
+[Partner keys](https://github.com/vippsas/vipps-partner/blob/main/partner-keys.md)
 
 ## PSP Signup API
 
