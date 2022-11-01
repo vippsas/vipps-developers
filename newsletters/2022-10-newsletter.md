@@ -39,7 +39,7 @@ Examples:
 
 * [API Guide](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api)
 * [API Reference](https://vippsas.github.io/vipps-developer-docs/api/ecom)
-* [FAQ](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api-faq)
+* [FAQ](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/faqs/)
 
 Please
 [tell us what you think](https://forms.office.com/r/8iZVibsM4m)

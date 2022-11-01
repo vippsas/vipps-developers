@@ -36,8 +36,8 @@ See: [Please check your API calls for errors](#please-check-your-api-calls-for-e
 Monitor the Vipps Status Page:
 [vipps.statuspage.io]( https://vipps.statuspage.io/).
 
-The eCom FAQ entry
-[Why do payments fail?](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api-faq#why-do-payments-fail)
+The FAQ entry
+[Why do payments fail?](../faqs/common-problems-faq.md#why-do-payments-fail)
 may also be useful.
 
 ## eCom API: Don't rely 100 % on callbacks
@@ -86,7 +86,7 @@ Far too many Vipps payments fail because of badly formatted phone numbers.
 We try to silently correct them, but can not fix all errors.
 
 This is especially important when using
-[Skip landing page](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api#skip-landing-page),
+[Skip landing page](../common-topics/vipps-landing-page.md#skip-landing-page),
 as it's impossible to send a push message to a user if the specified phone number is incorrect.
 
 Please see the API specification:
