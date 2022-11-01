@@ -28,6 +28,21 @@ Example of the userInfo flow:
 
 ![User info flow](images/userinfo-flow.png)
 
+<!-- START_TOC -->
+
+## Table of contents
+
+* [Scope](#scope)
+* [Userinfo call-by-call guide](#userinfo-call-by-call-guide)
+* [Get userinfo](#get-userinfo)
+* [Userinfo call](#userinfo-call)
+  * [Request](#request)
+* [Consent](#consent)
+
+
+<!-- END_TOC -->
+
+
 ## Scope
 
 Scope is the type of information you want access to. This can include any of the following values, separated by a space.
@@ -68,7 +83,6 @@ a customer. Details about each step are described in the sections below.
    [`GET:/vipps-userinfo-api/userinfo/{sub}`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Vipps-Userinfo-API/operation/getUserinfo)
    to retrieve the user's information.
    Do not include the ``Ocp-Apim-Subscription-Key`` header. See more information under [Userinfo call](#userinfo-call).
-
 
 **Please note:** The `sub` is added asynchronously, so if the `/details` request
 is made within (milli)seconds of the payment approval in the app, it may not be
@@ -125,7 +139,7 @@ with the `sub` that was retrieved earlier. See below on how to construct the cal
 |:--------------|:------------------------|
 | Authorization | "Bearer {Access Token}" |
 
-The access token is received on a successful request to the token endpoint described in [Authentication](#authentication).
+The access token is received on a successful request to the token endpoint described in [Authentication](./authentication.md).
 
 **Important note:** `OCP-APIM-Subscription-Key` used for the eCom API must *not* be included. This is because userinfo is part of
 Vipps Login and is therefore *not* under the same subscription, and will result in a `HTTP Unauthorized 401` error.

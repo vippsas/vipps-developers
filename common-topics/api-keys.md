@@ -8,12 +8,14 @@ END_METADATA -->
 
 # API keys
 
-<!-- START_COMMENT -->
+<!-- START_TOC -->
 
-ℹ️ Please use the new documentation:
-[Vipps Technical Documentation](https://vippsas.github.io/vipps-developer-docs/).
+## Table of contents
 
-<!-- END_COMMENT -->
+- [API key details](#api-key-details)
+- [API keys for different uses](#api-keys-for-different-uses)
+
+<!-- END_TOC -->
 
 All Vipps APIs use the same API keys.
 
@@ -41,7 +43,7 @@ If you don't understand what the second key is for, you can just ignore it.
 The legacy name `Ocp-Apim-Subscription-Key` _must still be used in requests and code_,
 but we are working to make `Vipps-Subscription-Key` work everywhere.
 
-## API keys for different use
+## API keys for different uses
 
 The same API keys are used for many types of integration:
 Direct integration, native apps for iOS and Android, point of sale integrations,

@@ -8,6 +8,17 @@ END_METADATA -->
 
 # Exceptions handling
 
+<!-- START_TOC -->
+
+## Table of contents
+
+- [Connection timeout](#connection-timeout)
+- [Callback aborted or interrupted](#callback-aborted-or-interrupted)
+- [PSP connection issues](#psp-connection-issues)
+- [Clean-up strategies](#clean-up-strategies)
+- [Recommendations for handling very high traffic](#recommendations-for-handling-very-high-traffic)
+
+<!-- END_TOC -->
 
 ## Connection timeout
 

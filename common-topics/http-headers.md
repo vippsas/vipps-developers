@@ -24,6 +24,15 @@ speed up any trouble-shooting of API problems quite a bit.
 **Important:** Please use self-explanatory, human readable and reasonably short
 values that uniquely identify the system (and plugin).
 
+<!-- START_TOC -->
+
+## Table of contents
+
+- [Example headers](#example-headers)
+- [Idempotency](#idempotency)
+
+<!-- END_TOC -->
+
 ## Example headers
 
 For example, if the merchant's name is "Acme AS" and they offers three different systems:

@@ -8,9 +8,15 @@ END_METADATA -->
 
 # Authentication
 
-## Get credentials
+<!-- START_TOC -->
 
+## Table of contents
 
+- [Get an access token](#get-an-access-token)
+  - [Request](#request)
+  - [Response](#response)
+
+<!-- END_TOC -->
 
 ## Get an access token
 

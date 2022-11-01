@@ -40,6 +40,18 @@ Some things to consider:
   It is also possible to capture the full amount
   with multiple captures ("partial capture").
 
+<!-- START_TOC -->
+
+## Table of contents
+
+* [Reserve](#reserve)
+* [Capture](#capture)
+  * [Reserve capture](#reserve-capture)
+  * [Direct capture](#direct-capture)
+  * [Partial capture](#partial-capture)
+
+<!-- END_TOC -->
+
 ## Reserve
 
 When the user confirms the purchase in Vipps, the payment status changes to `RESERVE`.
