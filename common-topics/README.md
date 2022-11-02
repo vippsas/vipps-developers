@@ -15,7 +15,6 @@ These are topics that are applicable across many APIs:
 * [API keys](api-keys.md)
 * [API lifecycle](api-lifecycle.md)
 * [Authentication](authentication.md)
-* [Exception handling](exception-handling.md)
 * [HTTP headers](http-headers.md)
 * [HTTP response codes](http-response-codes.md)
 * [isApp](isApp.md)
