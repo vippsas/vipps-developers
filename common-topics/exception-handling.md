@@ -8,6 +8,10 @@ END_METADATA -->
 
 # Exceptions handling
 
+The section below explains how Vipps handles different exception and errors.
+
+For eCom API specific errors, see [Errors](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#errors).
+
 <!-- START_TOC -->
 
 ## Table of contents
