@@ -6,7 +6,7 @@ pagination_prev: null
 ---
 END_METADATA -->
 
-# Exceptions handling
+# Exception handling
 
 <!-- START_TOC -->
 
