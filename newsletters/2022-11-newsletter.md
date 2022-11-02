@@ -86,7 +86,7 @@ Far too many Vipps payments fail because of badly formatted phone numbers.
 We try to silently correct them, but can not fix all errors.
 
 This is especially important when using
-[Skip landing page](../common-topics/vipps-landing-page.md#skip-landing-page),
+[Skip landing page](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#the-vipps-landing-page#skip-landing-page),
 as it's impossible to send a push message to a user if the specified phone number is incorrect.
 
 Please see the API specification:

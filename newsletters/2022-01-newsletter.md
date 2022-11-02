@@ -46,7 +46,7 @@ One example: Far too many calls to
 [`POST:/ecomm/v2/payments`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Vipps-eCom-API/operation/initiatePaymentV3UsingPOST)
 use an incorrectly formatted phone number.
 The effect is that the user's phone number is not correctly pre-filled on
-the [Vipps landing page](../common-topics/vipps-landing-page.md).
+the [Vipps landing page](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#the-vipps-landing-page).
 
 Please make sure you send the `mobileNumber` in `91234567` format, not
 `+47 91 23 45 67` or something else.

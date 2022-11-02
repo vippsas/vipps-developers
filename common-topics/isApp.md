@@ -52,7 +52,7 @@ The effect of the above is the same in all normal cases.
 
 * The merchant's native app must be sure that the user's phone can open the
   `vipps://` deeplink, as the
-  [Vipps landing page](vipps-landing-page.md)
+  [Vipps landing page](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#the-vipps-landing-page)
   will not be shown to the user, and it will therefore not be possible to
   enter a phone number and pay with Vipps on another device.
 * Vipps requires a minimum version of the phone's operating system. At the time

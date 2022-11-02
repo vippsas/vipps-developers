@@ -40,7 +40,7 @@ where there is no display available.
 The Vipps landing page is more than just a web page, it is an entire
 application and it plays an important role in the Vipps payment process.
 See
-[The Vipps landing page](../common-topics/vipps-landing-page.md)
+[The Vipps landing page](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#the-vipps-landing-page)
 for more information
 
 If you need to skip the landing page in a Point of Sale (POS) solution, see:
@@ -56,7 +56,7 @@ click the email link under the "i" information bubble.
 Include a detailed description of why it is not possible to display the landing page.
 
 See:
-[Skip landing page](../common-topics/vipps-landing-page.md#skip-landing-page).
+[Skip landing page](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#the-vipps-landing-page#skip-landing-page).
 
 ## How can I check if I have skipLandingPage activated?
 
@@ -86,7 +86,7 @@ If you do not get an error, it's active.
 If you get an error, it's not active.
 
 See:
-[Skip landing page](../common-topics/vipps-landing-page.md#skip-landing-page).
+[Skip landing page](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#the-vipps-landing-page#skip-landing-page).
 
 ## Can I show the landing page in an iframe?
 
@@ -96,4 +96,4 @@ and result in a lower success rate. In general: Any "optimization" of the paymen
 flow may break the Vipps payment flow - if not today, then later.
 
 See:
-[Skip landing page](../common-topics/vipps-landing-page.md#skip-landing-page).
+[Skip landing page](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#the-vipps-landing-page#skip-landing-page).
