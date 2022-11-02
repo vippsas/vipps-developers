@@ -10,17 +10,24 @@ END_METADATA -->
 
 The Vipps APIs return the following HTTP statuses in the responses:
 
-| HTTP status        | Description                                            |
-| ------------------ | ------------------------------------------------------ |
-| `200 OK`           | Request successful (see [200 OK](https://www.webfx.com/web-development/glossary/http-status-codes/what-is-a-200-status-code/))                                    |
-| `400 Bad Request`  | Invalid request, see the error in the response body for details. (see [400 Bad Request](https://www.webfx.com/web-development/glossary/http-status-codes/what-is-a-400-status-code/))             |
-| `401 Unauthorized` | Invalid API credentials (see [401 Unauthorized](https://www.webfx.com/web-development/glossary/http-status-codes/what-is-a-401-status-code/))                                   |
-| `403 Forbidden`    | Authentication OK, but the API keys do not provide the required authorization (see [403 Forbidden](https://www.webfx.com/web-development/glossary/http-status-codes/what-is-a-403-status-code/)) |
-| `404 Not Found`    | The resource was not found (see [404 Not Found](https://www.webfx.com/web-development/glossary/http-status-codes/what-is-a-404-status-code/))                            |
-| `429 Too Many Requests`    | You have reached the rate limit for this API (see [429 Too Many Requests](https://www.webfx.com/web-development/glossary/http-status-codes/what-is-a-429-status-code/))                           |
-| `500 Server Error` | An internal Vipps problem (see [500 Server Error](https://www.webfx.com/web-development/glossary/http-status-codes/what-is-a-500-status-code/))                             |
+| HTTP status             | Description                                            |
+|:------------------------|:-------------------------------------------------------|
+| `200 OK`                | Request successful                                     |
+| `201 Created`           | Request successful, resource created                   |
+| `204 No Content`        | Request successful, but empty result                   |
+| `400 Bad Request`       | Invalid request, see the error for details             |
+| `401 Unauthorized`      | Invalid credentials                                    |
+| `403 Forbidden`         | Authentication ok, but credentials lacks authorization |
+| `404 Not Found`         | The resource was not found                             |
+| `409 Conflict`          | Unsuccessful due to conflicting resource               |
+| `429 Too Many Requests` | Look at table below to view current rate limits        |
+| `500 Server Error`      | An internal Vipps problem.                             |
 
-There may also be responses with other HTTP statuses.
+HTTP responses with errors from the application gateway contain one error JSON object.
+Error responses produced from the application gateway include `401`, `403`, `422` and `429`.
+
+Note that the HTTP responses that contain errors from the Vipps backend will contain an *array* of JSON objects.
+
 See the API specification for each API for details _especially the FAQ_.
 
 In general:
