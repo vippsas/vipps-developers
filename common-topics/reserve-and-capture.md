@@ -30,10 +30,10 @@ The user experience is exactly the same.
 Some things to consider:
 
 * If a payment has been _reserved_ (as with "reserve capture"), the merchant can
-  make a `/cancel` call to immediately release the reservation and make available
+  make a call to immediately release the reservation and make available
   in the customer's account.
 * If a payment has been _captured_ (as with "direct capture"), the merchant has to
-  make a `/refund` call, and it then takes several days before the amount is
+  make a call, and it then takes several days before the amount is
   available in the customer's account.
 * With "reserve capture" it is possible to reserve a higher amount and only
   capture a part of it (useful for electric car charging stations, etc).
@@ -66,18 +66,24 @@ See the FAQ:
 
 ## Capture
 
-We strongly recommend that you use an [idempotency key](http-headers.md#idempotency) in the capture call. Then, if a capture
-request fails for any reason, it can be retried with the same idempotency key.
-You can use any unique id for your idempotency key.
+There are three types of capture:
 
-To perform a normal capture of the entire amount, `amount` can be
+* [Reserve capture](#reserve-capture)
+* [Direct capture](#direct-capture)
+* [Partial capture](#partial-capture)
+
+These are described in more detail below.
+
+Always use an [idempotency key](http-headers.md#idempotency) in the capture call.
+
+To perform a capture of the entire amount owed, the `amount` can be
 omitted from the API request (i.e., not sent at all), set to `null` or set to `0`.
-When doing a [partial capture](#partial-capture), you need to specify the `amount`.
+When doing a [partial capture](#partial-capture), you need to specify the amount.
 
-**Please note:** It is important to check the response of the `/capture`
+**Please note:** It is important to check the response of the capture
 call. The capture is only successful when the response is `HTTP 200 OK`.
 
-Capture can be made up to 180 days after reservation.
+Payment capture can be made up to 180 days after reservation.
 Attempting to capture an older payment will result in a
 `HTTP 400 Bad Request`.
 
@@ -89,7 +95,7 @@ See the FAQ:
 
 ### Reserve capture
 
-As mentioned above, _Reserve capture_ is the normal flow.
+_Reserve capture_ is the normal flow.
 
 When the end user approves an initiated payment, it will be reserved until you
 capture it. When the order is reserved, the amount is marked as reserved by the
@@ -125,62 +131,3 @@ there is a remaining reserved amount.
 If one or more partial captures have been made, any remaining reserved amount
 will be automatically released after a few days.
 
-It is also possible to explicitly release the remaining funds. See:
-[Cancelling a partially captured order](#cancelling-a-partially-captured-order).
-
-### Cancelling a partially captured order
-
-If you wish to cancel an order that you have partially captured, send a
-[`PUT:/ecomm/v2/payments/{orderId}/cancel`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Vipps-eCom-API/operation/cancelPaymentRequestUsingPUT)
-request with `shouldReleaseRemainingFunds: true` in the body.
-The payment must be `RESERVED` for this to take effect.
-
-If `shouldReleaseRemainingFunds` is not set, it will default to `false`.
-
-When `shouldReleaseRemainingFunds` is set to `false`,
-any request to cancel after a partial or full capture has been performed will be rejected.
-
-This is a useful and recommended feature, as it releases any reserved balance
-as soon as the card issuer and/or bank permits.
-
-See also the FAQ:
-[How long does it take from a refund is made until the money is in the customer's account?](../faqs/refunds-faq.md#how-long-does-it-take-from-a-refund-is-made-until-the-money-is-in-the-customers-account)
-
-Example Request:
-
-```json
-{
-  "merchantInfo": {
-    "merchantSerialNumber": "123456"
-  },
-  "transaction": {
-    "transactionText": "No socks for you!"
-  },
-  "shouldReleaseRemainingFunds": true
-}
-```
-
-Response:
-
-```json
-{
-  "orderId": "acme-shop-123-order123abc",
-  "transactionInfo": {
-    "amount": 20000,
-    "transactionText": "No socks for you!",
-    "status": "Cancelled",
-    "transactionId": "5001420063",
-    "timeStamp": "2018-11-14T15:31:10.004Z"
-  },
-  "transactionSummary": {
-    "capturedAmount": 10000,
-    "remainingAmountToCapture": 0,
-    "refundedAmount": 0,
-    "remainingAmountToRefund": 10000
-  }
-}
-```
-
-**Please note:** Once this operation has been performed, there will be zero
-funds remaining to capture. Do not call this endpoint until you are sure you
-have captured all you need.
