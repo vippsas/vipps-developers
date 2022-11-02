@@ -6,7 +6,7 @@ pagination_prev: null
 ---
 END_METADATA -->
 
-# Exceptions handling
+# Exception handling
 
 The section below explains how Vipps handles different exception and errors.
 
