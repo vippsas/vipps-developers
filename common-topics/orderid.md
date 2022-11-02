@@ -17,27 +17,27 @@ The `orderId` is case-sensitive.
 We *strongly* recommend to use a format like `acme-shop-123-order123abc`,
 instead of just `123456`.
 
-**Please note:** Very short orderIds (just a few digits() can cause internal
-processing in Vipps' systems to be slower than when using recommended
-`orderId`s, and this *can* cause problems, such as timeouts.
+**Please note:** Having very short orderIds, with just a few digits, can cause internal
+processing in the Vipps systems to be slower, and this *can* cause problems, such as timeouts.
+Use the recommended format to avoid problems.
 
 If you ever have a problem that requires us to search in our logs, we need an
 `orderId` that is "unique enough" to actually find. An `orderId` that
-is just a number may not be possible to find, and then we are not able to help.
+contains only digits may not be possible to find, and then we are not able to help.
 
 It is possible to use
 [UUID](https://en.wikipedia.org/wiki/Universally_unique_identifier),
-on the format `123e4567-e89b-12d3-a456-426614174000`, but remember
+of the format `123e4567-e89b-12d3-a456-426614174000`, but remember
 that `orderId` is shown to the user in Vipps.
-We recommend something more user friendly, like `acme-shop-123-order123abc`.
+We recommend a more user-friendly format, like `acme-shop-123-order123abc`.
 
 The maximum length of an `orderId` is 50 alphanumeric characters:
 `a-z`, `A-Z`, `0-9` and `-` (hyphen).
-Leading zeros should be avoided, as some applications (like Excel)
+Leading zeros should be avoided, as some applications (e.g., Excel)
 tend to remove them, and this may cause misunderstandings.
 
 If you have multiple sale units, prefixing the `orderId` with the MSN
-for each sale unit is recommended: If the MSN is `654321`, the
+for each sale unit is recommended. For example, if the MSN is `654321`, the
 `orderId` could be `654321-acme-shop-123-order123abc`.
 
 If you need to make multiple attempts at paying the "same" order, you can
@@ -49,8 +49,11 @@ For example, if your internal orderId is
 
 This is useful when a customer does the following:
 
-1. Adds a product to the cart
-2. Goes to the payment page and selects Vipps
-3. Gets the payment request in Vipps *but cancels* (or does nothing)
-4. Adds another product to the same cart (or order)
+1. Adds a product to the cart.
+2. Goes to the payment page and selects Vipps.
+3. Gets the payment request in Vipps *but cancels* (or does nothing).
+4. Adds another product to the same cart (or order).
 5. Repeats steps 2 and 3.
+
+If you use a suffix, you will still be able to search for the main part,
+without the suffix, and still get find the order.
