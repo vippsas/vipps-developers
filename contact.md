@@ -44,7 +44,7 @@ If you do not have a technical issue, the fastest way to get help is to start in
 | Topic | How to get help |
 |--------|----------------|
 | General questions (including the customer relationship, creating sale units, change of admins, etc) | See: [Contact info for companies on vipps.no](https://www.vipps.no/kontakt-oss/bedrift/). |
-| "Are there any problems?"  | See [Status pages](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/developer-resources/status-pages) |
+| "Are there any problems?"  | See: [Status pages](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/developer-resources/status-pages). |
 | Applications for Vipps products (status, follow-ups, etc) | Check the status on [portal.vipps.no](https://portal.vipps.no). |
 | Vipps plugins (WooCommerce, Shopify, Wix, WordPress, Wix, Shopify, Magento, EPiServer, etc)         | See the support info for your plugin: [Plugin overview](https://vippsas.github.io/vipps-developer-docs/docs/vipps-plugins/). |
 | Vipps through a partner (for merchants) | Please contact your partner. |
