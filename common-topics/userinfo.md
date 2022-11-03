@@ -13,8 +13,7 @@ This is done through Vipps Userinfo which follows
 the [OIDC Standard](https://openid.net/specs/openid-connect-core-1_0.html#UserInfo).
 
 To enable the possibility to fetch profile information for a user, the merchant can add a `scope`
-parameter to the initiate call:
-[`POST:/ecomm/v2/payments`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Vipps-eCom-API/operation/initiatePaymentV3UsingPOST).
+parameter to the initiate call.
 
 If the end user has not already consented to sharing information from Vipps to the
 merchant, they will be asked for any remaining consents before completing the payment flow.
@@ -39,7 +38,6 @@ Example of the userInfo flow:
   * [Request](#request)
 * [Consent](#consent)
 
-
 <!-- END_TOC -->
 
 
@@ -57,7 +55,6 @@ Scope is the type of information you want access to. This can include any of the
 | `nin`            | Norwegian national identity number. Verified with BankID. **NB:** Merchants need to apply for access to NIN. See: [Who can get access to NIN and how?](/docs/APIs/login-api/vipps-login-api-faq.md#who-can-get-access-to-nin-and-how)    | yes |
 | `accountNumbers` | User bank account numbers. **NB:** Merchants need to apply for access to accountNumbers. See: [Who can get access to account numbers and how?](/docs/APIs/login-api/vipps-login-api-faq.md#who-can-get-access-to-accountnumbers-and-how) | yes |
 
-See the API specification for the formats and other details for each scope.
 
 **Please note:** If the e-mail address that is delivered has the flag `email_verified : false`,
 this address should not be used to link the user to an existing account without
@@ -70,19 +67,18 @@ confirmation link sent to the email address.
 Scenario: You want to complete a payment and get the name and phone number of
 a customer. Details about each step are described in the sections below.
 
-1. Retrieve the access token:
-   [`POST:/accesstoken/get`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Authorization-Service/operation/fetchAuthorizationTokenUsingPost).
-2. Add scope to the transaction object and include the scope you wish to get
-   access to (valid scope) before calling
-   [`POST:/ecomm/v2/payments`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Vipps-eCom-API/operation/initiatePaymentV3UsingPOST)
+1. Retrieve the access token.
+2. Add scope to the transaction object.
    Include the scopes you need access to (e.g., "name address email phoneNumber birthDate"), separated by spaces.
+   before sending the request.
 3. The user consents to the information sharing and perform the payment in Vipps.
-4. Retrieve the `sub` by calling
-   [`GET:/ecomm/v2/payments/{orderId}/details`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Vipps-eCom-API/operation/getPaymentDetailsUsingGET)
-5. Using the sub from step 4, call
-   [`GET:/vipps-userinfo-api/userinfo/{sub}`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Vipps-Userinfo-API/operation/getUserinfo)
-   to retrieve the user's information.
-   Do not include the ``Ocp-Apim-Subscription-Key`` header. See more information under [Userinfo call](#userinfo-call).
+4. Retrieve the `sub` with API call.
+5. Retrieve the user's information.
+
+For specific examples, see:
+
+* [eCom API Guide: Userinfo call-by-call guide](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#userinfo-call-by-call-guide)
+* [Recurring API Guide: Userinfo call-by-call guide](https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api.md#userinfo-call-by-call-guide)
 
 **Please note:** The `sub` is added asynchronously, so if the `/details` request
 is made within (milli)seconds of the payment approval in the app, it may not be
@@ -91,16 +87,41 @@ See
 [Polling guidelines](polling-guidelines.md)
 for more recommendations.
 
-**Important note:** The API call to
-[`GET:/vipps-userinfo-api/userinfo/{sub}`](https://vippsas.github.io/vipps-recurring-api/#/Userinfo%20Endpoint/getUserinfo)
-must *not* include the subscription key (the `Ocp-Apim-Subscription-Key` header) used for the eCom API.
+**Important note:** The API call to `getUserinfo`
+must *not* include the subscription key (the `Ocp-Apim-Subscription-Key` header).
 This is because userinfo is part of Vipps Login and is therefore *not* under the same subscription,
 and will result in a `HTTP Unauthorized 401` error.
 
+### Example calls
+
+Example of request with scope:
+
+```json
+{
+  "currency": "NOK",
+  "customerPhoneNumber":"90000000",
+  "interval": "MONTH",
+  "intervalCount": 1,
+  "merchantRedirectUrl": "https://example.com/confirmation",
+  "merchantAgreementUrl": "https://example.com/my-customer-agreement",
+  "price": 49900,
+  "productDescription": "Access to all games of English top football",
+  "productName": "Premier League subscription",
+  "scope": "address name email birthDate phoneNumber"
+}
+```
+
+The user then consents and pays in Vipps.
+
+**Please note:** This operation has an all or nothing approach, a user must
+complete a valid agreement and consent to all values in order to complete the
+session. If a user chooses to reject the terms the agreement will not be
+processed. Unless the whole flow is completed, this will be handled as a regular failed agreement by the recurring APIs.
+
+
 ## Get userinfo
 
-Once the user completes the session, a unique identifier `sub` can be retrieved from the
-[`GET:/ecomm/v2/payments/{orderId}/details`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Vipps-eCom-API/operation/getPaymentDetailsUsingGET) endpoint.
+Once the user completes the session, a unique identifier `sub` can be retrieved.
 
 Example `sub` format:
 
@@ -109,8 +130,7 @@ Example `sub` format:
 ```
 
 This `sub` is a link between the merchant and the user and can be used to retrieve
-the user's details from Vipps userinfo:
-[`GET:/vipps-userinfo-api/userinfo/{sub}`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Vipps-Userinfo-API/operation/getUserinfo)
+the user's details from Vipps userinfo.
 
 The `sub` is based on the user's national identity number ("fødselsnummer"
 in Norway), and does not change (except in very special cases).
@@ -209,10 +229,9 @@ The user is presented with a consent card that must be accepted before
 approving the payment in Vipps. The following screenshots show examples
 of consent cards for Android(left) and iOS(right):
 
-![Consent card](images/share-user-info.png)
+![Consent card](images/share-user-info.png)`
 
-**Please note:** This operation has an "all or nothing" approach, so a user must
-complete a valid payment and consent to *all* values in order to complete the
-session. If a user chooses to reject the terms, the payment will not be
-processed. Unless the whole flow is completed, this will be handled as a
-failed payment by the eCom API.
+**Please note:** This operation has an all or nothing approach, a user must
+complete a valid agreement and consent to all values in order to complete the
+session. If a user chooses to reject the terms the agreement will not be
+processed. Unless the whole flow is completed, this will be handled as a regular failed agreement by the Vipps APIs.
