@@ -27,9 +27,7 @@ because the users get a familiar user experience and know the payment flow.
 In this way, Vipps takes responsibility for helping the user from the browser to the app,
 and to complete the payment in a familiar way.
 
-The user's phone number can be set in the payment initiation call.
-
-The user's phone number is remembered by the user's browser,
+The user's phone number can be set in the payment initiation call. It is remembered by the user's browser,
 eliminating the need for re-typing it on subsequent purchases.
 
 **Important:** Never show the Vipps landing page inside an iframe.
