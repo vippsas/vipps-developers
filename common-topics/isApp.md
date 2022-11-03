@@ -23,10 +23,21 @@ a `vipps://` URL by sending the optional `isApp` parameter in the initiate call:
 
 If the user does not have Vipps installed:
 
-* `"isApp":false` (or not sent at all): The [Vipps landing page](vipps-landing-page.md) will be shown,
-   and the user can enter a phone number and pay on a device with Vipps installed.
+* `"isApp":false` (or not sent at all): The
+   [Vipps landing page](vipps-landing-page.md)
+   will be shown, and the user can enter a phone number and pay on a device
+   with Vipps installed.
 * `"isApp": true`: The user will get an error message saying that the link can
-  not be opened.
+  not be opened. Or, depending on the native app, nothing will happen.
+
+**Important:** If your customers use a native app: Remember that some iOS users
+may install the app on an iPad where they don't have Vipps installed. If you
+initiate payments with `"isApp": true` the app will try to open `vipps://` on
+the iPad, but since Vipps installed "nothing will happen", and the user will
+not be able to pay. If you simply don't sent `isApp`, the built-in logic will
+fix things for you, and display
+[the Vipps landing page](vipps-landing-page.md)
+instead.
 
 Example: Response body for `"isApp":false` (or not sent at all):
 
