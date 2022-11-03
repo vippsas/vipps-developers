@@ -100,7 +100,7 @@ If you do want to use `isApp` the flow is as follows:
 6. The Vipps backend makes a call to the merchant's `callbackPrefix` with information about the payment.
 7. When the payment process is completed, Vipps redirects to the merchant using the `fallBack` URL.
 
-**Please note:** The user should be sent *directly* to the deeplink.
+**Please note:** The user must always be sent *directly* to the deeplink.
 Rewriting the deeplink URL in any way may break the payment process.
 If not today, it may break if Vipps changes some details later.
 
