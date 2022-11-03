@@ -130,4 +130,3 @@ there is a remaining reserved amount.
 
 If one or more partial captures have been made, any remaining reserved amount
 will be automatically released after a few days.
-
