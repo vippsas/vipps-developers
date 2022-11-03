@@ -6,6 +6,16 @@ pagination_prev: null
 ---
 END_METADATA -->
 
+<!-- START_TOC -->
+
+## Table of Contents
+
+* [Example responses](#example-responses)
+* [Important information when using isApp](#important-information-when-using-isapp)
+* [isApp flow](#isapp-flow)
+
+<!-- END_TOC -->
+
 # isApp
 
 If the payment is initiated in a native app, it is possible to explicitly force
@@ -30,14 +40,7 @@ If the user does not have Vipps installed:
 * `"isApp": true`: The user will get an error message saying that the link can
   not be opened. Or, depending on the native app, nothing will happen.
 
-**Important:** If your customers use a native app: Remember that some iOS users
-may install the app on an iPad where they don't have Vipps installed. If you
-initiate payments with `"isApp": true` the app will try to open `vipps://` on
-the iPad, but since Vipps installed "nothing will happen", and the user will
-not be able to pay. If you simply don't sent `isApp`, the built-in logic will
-fix things for you, and display
-[the Vipps landing page](vipps-landing-page.md)
-instead.
+## Example responses
 
 Example: Response body for `"isApp":false` (or not sent at all):
 
@@ -57,7 +60,7 @@ Example: Response body for `"isApp":true`, with a forced app-switch to Vipps:
 }
 ```
 
-The effect of the above is the same in all normal cases.
+## Important information when using isApp
 
 **Important:** Using `isApp` comes with some extra responsibility:
 
@@ -66,6 +69,14 @@ The effect of the above is the same in all normal cases.
   [Vipps landing page](vipps-landing-page.md)
   will not be shown to the user, and it will therefore not be possible to
   enter a phone number and pay with Vipps on another device.
+* If your customers use a native app: Remember that some iOS users
+  may install the app on an iPad where they don't have Vipps installed. If you
+  initiate payments with `"isApp": true` the app will try to open `vipps://` on
+  the iPad, but since Vipps installed "nothing will happen", and the user will
+  not be able to pay. If you simply don't sent `isApp`, the built-in logic will
+  fix things for you, and display
+  [the Vipps landing page](vipps-landing-page.md)
+  instead.
 * Vipps requires a minimum version of the phone's operating system. At the time
   of writing this is iOS 12 (from 2018) or Android 6 (from 2015). If the user
   has an older version of the operating system, Vipps cannot be used.
@@ -74,7 +85,9 @@ The effect of the above is the same in all normal cases.
 * If `"isApp":true` is used in an embedded web browser, such as
   Instagram or Facebook, the `vipps://` URL will not work, since the
   embedded browser does not know what to do with it.
-  The user will get an error from the embedded browser.
+  The user will get an error from the embedded browser, or "nothing will happen".
+
+## isApp flow
 
 If you do want to use `isApp` the flow is as follows:
 
