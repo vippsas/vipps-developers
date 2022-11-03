@@ -8,8 +8,7 @@ END_METADATA -->
 
 # The Vipps landing page
 
-When a user is directed to the `url` sent in the response to
-[`POST:/ecomm/v2/payments`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Vipps-eCom-API/operation/initiatePaymentV3UsingPOST),
+When a user is directed to the `url`,
 they will either be taken to Vipps or to the Vipps landing page:
 
 * In a mobile browser, the Vipps app will automatically be opened with app-switch.
@@ -28,8 +27,7 @@ because the users get a familiar user experience and know the payment flow.
 In this way, Vipps takes responsibility for helping the user from the browser to the app,
 and to complete the payment in a familiar way.
 
-The user's phone number can be set in the payment initiation call:
-[`POST:/ecomm/v2/payments`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Vipps-eCom-API/operation/initiatePaymentV3UsingPOST).
+The user's phone number can be set in the payment initiation call.
 
 The user's phone number is remembered by the user's browser,
 eliminating the need for re-typing it on subsequent purchases.
@@ -45,7 +43,6 @@ In general: Any "optimization" of the payment flow may break the Vipps payment f
 
 - [Generating a QR code to the Vipps landing page](#generating-a-qr-code-to-the-vipps-landing-page)
 - [Skip landing page](#skip-landing-page)
-- [Response](#response)
 
 <!-- END_TOC -->
 
@@ -75,9 +72,7 @@ machines where no display is available.
 This feature must be specially enabled by Vipps for an eligible sale unit and
 the sale unit must be whitelisted by Vipps.
 
-If the `skipLandingPage` property is set to `true` in the
-[`POST:/ecomm/v2/payments`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Vipps-eCom-API/operation/initiatePaymentV3UsingPOST)
-call, it will cause a push notification to be sent immediately to the given
+If the `skipLandingPage` property is set to `true`, it will cause a push notification to be sent immediately to the given
 phone number, without loading the landing page.
 If the sale unit is not whitelisted, the request will fail and an error message will be returned.
 
