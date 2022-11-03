@@ -39,6 +39,16 @@ That will make it impossible for the user to reliably be redirected back to the
 merchant's website, and result in a lower success rate.
 In general: Any "optimization" of the payment flow may break the Vipps payment flow - if not today, then later.
 
+<!-- START_TOC -->
+
+## Table of contents
+
+- [Generating a QR code to the Vipps landing page](#generating-a-qr-code-to-the-vipps-landing-page)
+- [Skip landing page](#skip-landing-page)
+- [Response](#response)
+
+<!-- END_TOC -->
+
 ## Generating a QR code to the Vipps landing page
 
 If you have user-facing display, you may want to generate a QR code based on the

@@ -5,7 +5,6 @@ pagination_prev: null
 ---
 END_METADATA -->
 
-
 # API Dashboard
 
 All merchants have access to an API Dashboard on
