@@ -11,6 +11,7 @@ This newsletter was sent in November 2022.
 
 <!-- START_TOC -->
 
+* [Specify amounts in øre without decimals](#specify-amounts-in-ore-without-decimals)
 * [Get ready for "black week"](#get-ready-for-black-week)
 * [eCom API: Don't rely 100 % on callbacks](#ecom-api-dont-rely-100--on-callbacks)
 * [Report API](#report-api)
@@ -21,6 +22,18 @@ This newsletter was sent in November 2022.
 * [Questions or comments?](#questions-or-comments)
 
 <!-- END_TOC -->
+
+## Specify amounts in øre without decimals
+
+The eCom API has always required amounts to be specified in øre, without
+decimals. Se see that some attempts at specifying payments with amounts that
+end in `.0000001`.
+
+API requests til incorrect amounts will fail: Both initiate, capture and refund.
+
+Please check for rounding errors, and of course: Always monitor the responses
+to your API requests:
+[Please check your API calls for errors](#please-check-your-api-calls-for-errors).
 
 ## Get ready for "black week"
 
