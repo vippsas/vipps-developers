@@ -11,7 +11,7 @@ This newsletter was sent in November 2022.
 
 <!-- START_TOC -->
 
-* [Specify amounts in øre without decimals](#specify-amounts-in-ore-without-decimals)
+* [Specify amounts in øre without decimals](#specify-amounts-in-øre-without-decimals)
 * [Get ready for "black week"](#get-ready-for-black-week)
 * [eCom API: Don't rely 100 % on callbacks](#ecom-api-dont-rely-100--on-callbacks)
 * [Report API](#report-api)
