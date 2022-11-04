@@ -26,7 +26,6 @@ This newsletter was sent in November 2022.
 ## Specify amounts in øre without decimals
 
 Vipps requires amounts to be specified in øre, without decimals:
-
 "Amounts are specified in minor units.
 For Norwegian kroner (NOK) that means 1 kr = 100 øre. Example: 499 kr = 49900 øre."
 
