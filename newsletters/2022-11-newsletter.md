@@ -79,8 +79,8 @@ fetch information about payment events that have been processed by Vipps.
 We are working hard to improve the
 [Vipps Technical Documentation](https://vippsas.github.io/vipps-developer-docs/):
 
-* The documentation is
-  [searchable](https://vippsas.github.io/vipps-developer-docs/search/)
+* The documentation is now
+  [searchable](https://vippsas.github.io/vipps-developer-docs/search/).
 * We have a new
   [Solutions](https://vippsas.github.io/vipps-developer-docs/docs/vipps-solutions/)
   section to highlight combinations of Vipps APIs, such as
@@ -90,7 +90,7 @@ We are working hard to improve the
 * All APIs now have a
   [Quick start](../developer-resources/quick-start-guides.md)
   with Postman collection. We also have a global Postman environment to make it
-  easier to test all APIs.
+  easier to test all APIs without doing any development.
 
 Please
 [tell us what you think](https://forms.office.com/r/8iZVibsM4m)
