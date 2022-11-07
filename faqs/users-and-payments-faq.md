@@ -16,7 +16,7 @@ END_METADATA -->
 
 <!-- END_COMMENT -->
 
-Document version 0.0.1.
+Document version 0.1.0.
 
 <!-- START_TOC -->
 
@@ -30,7 +30,6 @@ Document version 0.0.1.
 * [Can I create a service to match buyers and sellers?](#can-i-create-a-service-to-match-buyers-and-sellers)
 * [Can I use Vipps for crowdfunding?](#can-i-use-vipps-for-crowdfunding)
 * [Is it possible for a merchant to pay a Vipps user?](#is-it-possible-for-a-merchant-to-pay-a-vipps-user)
-* [I have initiated an order but I can't find it!](#i-have-initiated-an-order-but-i-cant-find-it)
 * [How long is an initiated order valid, if the user does not confirm in the Vipps app?](#how-long-is-an-initiated-order-valid-if-the-user-does-not-confirm-in-the-vipps-app)
 * [How long does it take until the money is in my account?](#how-long-does-it-take-until-the-money-is-in-my-account)
 * [Why has one of my customers been charged twice for the same payment?](#why-has-one-of-my-customers-been-charged-twice-for-the-same-payment)
@@ -194,27 +193,8 @@ See:
 
 ## I have initiated an order but I can't find it!
 
-If you have multiple sale units: Make sure you use the correct API keys, and that
-you are not attempting to use one sale unit's API keys to retrieve an order made
-by a different sale unit.
-
-Have you, or the eCommerce solution you are using, successfully implemented
-[`GET:/ecomm/v2/payments/{orderId}/details`](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#get-payment-details)?
-This is a requirement, see the
-[API checklist](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-checklist.md).
-
-In case the Vipps
-[callback](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#callbackscallbacks.md)
-fails, you will not automatically receive notification of order status.
-The solution is to check with
-[`GET:/ecomm/v2/payments/{orderId}/details`](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#get-payment-details).
-
-You can use
-[Postman](https://github.com/vippsas/vipps-developers/blob/master/developer-resources/quick-start-guides.md)
-to manually do API calls, Use the "inspect" functionality to see the complete requests and responses.
-
-See:
-[API endpoints](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#api-endpoints).
+For eCom API, see
+[I have initiated an order but I can't find it](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-faq.md#i-have-initiated-an-order-but-i-cant-find-it).
 
 ## How long is an initiated order valid, if the user does not confirm in the Vipps app?
 

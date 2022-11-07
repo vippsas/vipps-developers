@@ -16,14 +16,17 @@ END_METADATA -->
 
 <!-- END_COMMENT -->
 
-Document version 0.0.1.
+See also
+[Common problems](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-faq.md#common-problems)
+in the eCom API FAQs.
+
+Document version 0.1.0.
 
 <!-- START_TOC -->
 
 ## Table of contents
 
 * [Why do payments fail?](#why-do-payments-fail)
-* [Why does Vipps Hurtigkasse (express checkout) fail?](#why-does-vipps-hurtigkasse-express-checkout-fail)
 * [Why does capture fail?](#why-does-capture-fail)
 * [Why do I get a CORS error?](#why-do-i-get-a-cors-error)
 * [How can I open the fallback URL in a specific (embedded) browser?](#how-can-i-open-the-fallback-url-in-a-specific-embedded-browser)
@@ -93,25 +96,6 @@ the user in Vipps, all necessary information will be provided to the user in Vip
 
 See:
 [All errors](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#error-codes).
-
-## Why does Vipps Hurtigkasse (express checkout) fail?
-
-When using Vipps Hurtigkasse (express checkout), Vipps makes a callback to the
-merchant's server to retrieve the merchant's shipping methods for the user's
-address. Vipps sends the user's address (with the user's consent) to the
-merchant, and the merchant responds with the shipping methods and cost.
-
-If the merchant's server is slow, or has a slow internet connection,
-the delay may cause Vipps Hurtigkasse to fail due to a timeout.
-
-The solution to this is a faster server and internet connection, or to provide
-the shipping methods as part of the payment initiation. See:
-[Express checkout API endpoints required on the merchant side](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#express-checkout-api-endpoints-required-on-the-merchant-side).
-
-**Please note:** If you are not shipping any products you should use
-[Userinfo](../common-topics/userinfo.md)
-instead of Vipps Hurtigkasse, so you avoid asking the customer in a pub
-for the shipping method for the drinks, etc.
 
 ## Why does capture fail?
 

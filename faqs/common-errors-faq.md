@@ -16,13 +16,16 @@ END_METADATA -->
 
 <!-- END_COMMENT -->
 
-Document version 0.0.1.
+See also
+[Common errors](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-faq.md#common-errors)
+in the eCom API FAQs.
+
+Document version 0.2.0.
 
 <!-- START_TOC -->
 
 ## Table of contents
 
-* [Why do I not get callbacks from Vipps?](#why-do-i-not-get-callbacks-from-vipps)
 * [Why do I get `HTTP 401 Unauthorized`?](#why-do-i-get-http-401-unauthorized)
 * [Why do I get `HTTP 403 Forbidden`?](#why-do-i-get-http-403-forbidden)
 * [Why do I get `HTTP 429 Too Many Requests`?](#why-do-i-get-http-429-too-many-requests)
@@ -33,34 +36,12 @@ Document version 0.0.1.
 * [Why do I get "Merchant Not Allowed for Ecommerce Payment"?](#why-do-i-get-merchant-not-allowed-for-ecommerce-payment)
 * [Why do I not get the `sub` from `/details`?](#why-do-i-not-get-the-sub-from-details)
 * [Why do I get `unauthorized_client`?](#why-do-i-get-unauthorized_client)
-* [Why do I get `Payment failed`?](#why-do-i-get-payment-failed)
 * [Why do I get error 81 and `User not registered with Vipps`?](#why-do-i-get-error-81-and-user-not-registered-with-vipps)
 * [Why do I get an error about having Vipps installed and being 15 years old?](#why-do-i-get-an-error-about-having-vipps-installed-and-being-15-years-old)
 * [Why do I get `Why do I get Invalid MSN: 654321. Check your API keys on portal.vipps.no and see the eCom FAQ for tips.`?](#why-do-i-get-invalid-msn-654321-check-your-api-keys-on-portalvippsno-and-see-the-ecom-faq-for-tips)
 * [Why do I get `Why do I get Invalid MSN: 654321. This MSN is not valid for the provided supermerchant id.`?](#why-do-i-get-invalid-msn-654321-this-msn-is-not-valid-for-the-provided-supermerchant-id)
 
 <!-- END_TOC -->
-
-## Why do I not get callbacks from Vipps?
-
-Please make sure the URLs you provide to Vipps are reachable from outside your
-own environment.
-
-Have a look at the
-[Callback](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#callbacks)
-section, and see
-[How to test your own callbacks](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#callbacks#how-to-test-your-own-callbacks).
-
-If you do not receive a callback, it could be because your firewall is blocking
-our requests. See:
-[Vipps request servers](../developer-resources/servers.md#vipps-request-servers).
-
-Please check your own logs for any signs of problems. If your
-`orderId` is `acme-shop-123-order123abc`: Search your logs for `acme-shop-123-order123abc`.
-
-Check the API Dashboard on
-[portal.vipps.no](https://portal.vipps.no)
-for problems with the callbacks. The API Dashboard is under "Utvikler".
 
 ## Why do I get `HTTP 401 Unauthorized`?
 
@@ -330,17 +311,6 @@ If you get errors like below from Microsoft Azure, you are not using the right A
 To fix this, please check that you are using the right API keys, similar to:
 [Why do I get `HTTP 401 Unauthorized`?](#why-do-i-get-http-401-unauthorized).
 
-## Why do I get `Payment failed`?
-
-This error is shown in Vipps if you use Vipps Hurtigkasse (express checkout) and respond
-incorrectly to the request for
-[`[shippingDetailsPrefix]/v2/payments/{orderId}/shippingDetails`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Merchant-Endpoints/operation/fetchShippingCostUsingPOST).
-
-Please verify that your response is correct.
-
-Also consider using
-[static shipping methods](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#shipping-and-static-shipping-details),
-as it gives a faster payment process and a better user experience.
 
 ## Why do I get error 81 and `User not registered with Vipps`?
 
