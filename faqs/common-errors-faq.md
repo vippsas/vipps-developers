@@ -64,14 +64,14 @@ for problems with the callbacks. The API Dashboard is under "Utvikler".
 
 ## Why do I get `HTTP 401 Unauthorized`?
 
-This means you are using the wrong API keys.
+This means you are using the wrong API keys or Authorization header.
 
-The reason for the error is in the response body, such as:
+The reason for the error is often in the response body, such as:
 * Access denied due to invalid subscription key. Make sure to provide a valid key for an active subscription.
 * Access denied due to missing subscription key. Make sure to include subscription key when making requests to an API.
 * Subscription not found.
 
-We have never found any problems with API keys, except that the wrong ones are used.
+If you get `{"responseInfo":{"responseCode":401,"responseMessage":"Something went wrong, please try again later."},"result":{"message":"Something went wrong, please try again later."}}` it normally indicates that the provided Authorization token is invalid. Check that the token is in the correct format and that it has not expired.
 
 Please follow these steps to make sure everything is correct:
 
