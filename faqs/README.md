@@ -30,6 +30,17 @@ The following are Frequently Asked Questions (FAQs):
 * [Other questions](other-faq.md)
 * [POS integrations](pos-integrations-faq.md)
 
+In addition, each Vipps API has a specific set of FAQs. For example:
+
+* [Checkout API FAQ](https://github.com/vippsas/vipps-checkout-api/blob/main/vipps-checkout-api-faq.md)
+* [eCom API FAQ](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-faq.md)
+* [Login API FAQ](https://github.com/vippsas/vipps-login-api/blob/master/vipps-login-api-faq.md)
+* [Partner API FAQ](https://github.com/vippsas/vipps-partner-api/blob/main/vipps-partner-api-faq.md)
+* [PSP API FAQ](https://github.com/vippsas/vipps-psp-api/blob/master/vipps-psp-api-faq.md)
+* [QR API FAQ](https://github.com/vippsas/vipps-qr-api/blob/main/vipps-qr-api-faq.md)
+* [Recurring API FAQ](https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api-faq.md)
+* [Report API FAQ](https://github.com/vippsas/vipps-report-api/blob/main/vipps-report-api-faq.md)
+
 We're always happy to help with code or other questions you might have!
 Please create an [issue](https://github.com/vippsas/vipps-developers/issues),
 a [pull request](https://github.com/vippsas/vipps-developers/pulls),
