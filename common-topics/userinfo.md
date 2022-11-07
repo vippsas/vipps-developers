@@ -90,14 +90,6 @@ See
 [Polling guidelines](polling-guidelines.md)
 for more recommendations.
 
-**Important note:** The API call to
-[`GET:/vipps-userinfo-api/userinfo/{sub}`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Vipps-Userinfo-API/operation/getUserinfo)
-must *not* include the subscription key (the `Ocp-Apim-Subscription-Key` header).
-This is because Userinfo is part of the
-[Vipps Login API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/login-api)
-and is therefore *not* under the same subscription,
-and will result in a `HTTP Unauthorized 401` error.
-
 ### Example calls
 
 Example of request with scope:
