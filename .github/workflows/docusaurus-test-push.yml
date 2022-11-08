@@ -1,0 +1,17 @@
+name: Push to common docs repo
+
+on:
+  push:
+    branches:
+      - master
+jobs:
+  push:
+    name: Push to common docs repo
+    runs-on: ubuntu-latest
+    steps:
+      - run: git clone https://user:$GITHUB_TOKEN@github.com/owner/my-repo
+      - run: cd my-repo
+      - run: git checkout -b api-version-$COMMIT
+      - run: git add .
+      - run: commit -m "test commit message"
+      - run: git push --set-upstream origin api-version-$COMMIT
