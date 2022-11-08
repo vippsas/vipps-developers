@@ -16,12 +16,13 @@ END_METADATA -->
 
 <!-- END_COMMENT -->
 
-Document version 0.0.1.
+Document version 0.0.2.
 
 <!-- START_TOC -->
 
 ## Table of contents
 
+* [Where do I find the `client_id` and `client_secret`?](#where-do-i-find-the-client_id-and-client_secret)
 * [Can you send us logs so we can look for errors?](#can-you-send-us-logs-so-we-can-look-for-errors)
 * [How do I perform "testing in production"?](#how-do-i-perform-testing-in-production)
 * [How can I use Vipps for different types of payments?](#how-can-i-use-vipps-for-different-types-of-payments)
@@ -34,6 +35,13 @@ Document version 0.0.1.
 * [How can I change partner for my integration with Vipps?](#how-can-i-change-partner-for-my-integration-with-vipps)
 
 <!-- END_TOC -->
+
+## Where do I find the `client_id` and `client_secret`?
+
+See:
+[Get credentials](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/vipps-getting-started/#get-credentials).
+
+Be aware that you do not use the subscription key (`Ocp-Apim-Subscription-Key`) for Vipps Login API.
 
 ## Can you send us logs so we can look for errors?
 

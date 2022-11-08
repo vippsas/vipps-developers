@@ -31,7 +31,7 @@ Partners use
 |--------------------------|--------|--------------------------------------|-------------------------------------------------|
 | `client_id`              | GUID   | fb492b5e-7907-4d83-bc20-c7fb60ca35de | Client ID for the merchant (the "username")     |
 | `client_secret`          | Base64 | Y8Kteew6GE3ZmeycEt6egg==             | Client Secret for the merchant (the "password") |
-| `Vipps-Subscription-Key` (or `Ocp-Apim-Subscription-Key`) | Base64 | 0f14ebcab0eb4b29ae0cb90d91b4a84a | Subscription key for the API product |
+| `Vipps-Subscription-Key` (or `Ocp-Apim-Subscription-Key`) | Base64 | 0f14ebcab0eb4b29ae0cb90d91b4a84a | Subscription key for the API product (not used for Vipps Login API) |
 
 There are both a primary and secondary `Vipps-Subscription-Key`.
 The primary and secondary keys are interchangeable: You can use either one,
