@@ -8,7 +8,7 @@ pagination_prev: null
 ---
 END_METADATA -->
 
-# Vipps Developer Information
+# Vipps Developer Information 
 
 <!-- START_COMMENT -->
 
