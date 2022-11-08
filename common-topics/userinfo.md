@@ -64,33 +64,31 @@ confirmation link sent to the email address.
 
 ## Userinfo call-by-call guide
 
-Scenario: You want to complete a payment and get the name and phone number of
+Scenario: You want to complete a payment and get the name, address, email and phone number of
 a customer. Details about each step are described in the sections below.
 
-1. Retrieve the access token.
-2. Add scope to the transaction object.
-   Include the scopes you need access to (e.g., "name address email phoneNumber birthDate"), separated by spaces.
-   before sending the request.
-3. The user consents to the information sharing and perform the payment in Vipps.
-4. Retrieve the `sub` with API call.
-5. Retrieve the user's information.
+This is a high-level description, common for the APIs that support Userinfo:
+
+1. Retrieve the access token with `POST:/accesstoken/get`.
+2. Add the `scope` to the transaction object: Include the scope you need access
+   to (e.g., "name address email phoneNumber"), separated by spaces.
+3. Make the API call that initiates the Vipps payment.
+4. The user consents to the information sharing and completes the payment in Vipps.
+5. Make the API call to get the details of the payment, and get the `sub` which identifies the user.
+6. Retrieve the user's information based on the `sub`:
+   [`GET:/vipps-userinfo-api/userinfo/{sub}`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Vipps-Userinfo-API/operation/getUserinfo).
 
 For specific examples, see:
 
 * [eCom API Guide: Userinfo call-by-call guide](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#userinfo-call-by-call-guide)
 * [Recurring API Guide: Userinfo call-by-call guide](https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api.md#userinfo-call-by-call-guide)
 
-**Please note:** The `sub` is added asynchronously, so if the `/details` request
+**Please note:** The `sub` is added asynchronously, so if the API call in (5) above
 is made within (milli)seconds of the payment approval in the app, it may not be
-available. If that happens, simply make another `/details` request.
+available. If that happens, simply make another request.
 See
 [Polling guidelines](polling-guidelines.md)
 for more recommendations.
-
-**Important note:** The API call to `getUserinfo`
-must *not* include the subscription key (the `Ocp-Apim-Subscription-Key` header).
-This is because userinfo is part of Vipps Login and is therefore *not* under the same subscription,
-and will result in a `HTTP Unauthorized 401` error.
 
 ### Example calls
 

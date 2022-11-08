@@ -20,7 +20,8 @@ See also
 [Common errors](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-faq.md#common-errors)
 in the eCom API FAQs.
 
-Document version 0.2.0.
+Document version 0.1.0.
+
 
 <!-- START_TOC -->
 
@@ -45,62 +46,48 @@ Document version 0.2.0.
 
 ## Why do I get `HTTP 401 Unauthorized`?
 
-If you get a `HTTP 401 Unauthorized` response, the reason for the error is in the
-response body, such as:
+This means you are using the wrong API keys or Authorization header.
 
-```text
-Access denied due to invalid subscription key.
-Make sure to provide a valid key for an active subscription.
-```
+The reason for the error is often in the response body, such as:
+* Access denied due to invalid subscription key. Make sure to provide a valid key for an active subscription.
+* Access denied due to missing subscription key. Make sure to include subscription key when making requests to an API.
+* Subscription not found.
 
-or
+If you get `{"responseInfo":{"responseCode":401,"responseMessage":"Something went wrong, please try again later."},"result":{"message":"Something went wrong, please try again later."}}` it normally indicates that the provided Authorization token is invalid. Check that the token is in the correct format and that it has not expired.
 
-```text
-Access denied due to missing subscription key.
-Make sure to include subscription key when making requests to an API.
-```
-
-or
-
-```json
-{
-  "errorCode":"Unauthorized",
-  "errorMessage":"Subscription not found",
-  "contextId":"ff0b3ca8-eae5-4e95-9859-6600b2428315"
-}
-```
-
-You need to check that you are providing the correct API keys.
 Please follow these steps to make sure everything is correct:
 
-1. Check that you are using the correct API credentials for the MSN (Merchant Serial Number)
+1. Make sure that you are using a valid access token. See
+   [Getting started: Get an access token](../vipps-getting-started.md#get-an-access-token)
+   for details, how long it is valid, etc.
+2. Check that you are using the correct API credentials for the MSN (Merchant Serial Number)
    you are using
    (See
    [Getting started: Quick overview of how to make an API call](../vipps-getting-started.md#quick-overview-of-how-to-make-an-api-call) for more details):
    * `client_id`
    * `client_secret`
    * `Ocp-Apim-Subscription-Key` (the subscription key)
-2. Check that you are using the same subscription key for both the access token and the payment requests.
+3. Check that you are using the same subscription key for both the access token and the payment requests.
    If you have a valid access token, but for a different MSN, you will get an error.
+   If you are caching the access token: Check that too.
    See:
    [Why do I get `errorCode 35 "Requested Order not found"`?](#why-do-i-get-errorcode-35-requested-order-not-found)
-3. Check the swagger specification for the correct spelling of all the header parameters.
+4. Check the API specification for the correct spelling of all the header parameters.
    They are case sensitive: `Authorization: Bearer <snip>` is not the same as `Authorization: bearer <snip>`.
-4. Make sure you are using the right environment and check that you are using
+5. Make sure you are using the right environment and check that you are using
    the correct API keys for the right sale unit in that environment. The
    [test environment](../developer-resources/test-environment.md)
    is completely separate from the production environment, and both the MSN and
    the API keys are different.
-5. Check both the HTTP response header and the response body from our API for errors.
+6. Check both the HTTP response header and the response body from our API for errors.
    For most errors the body contains an explanation of what went wrong.
    See:
    [Errors](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#errors).
-6. If you are a partner and you are using partner keys: Double check everything
+7. If you are a partner and you are using partner keys: Double check everything
    described here:
    [Partner keys](https://vippsas.github.io/vipps-developer-docs/docs/vipps-partner/partner-keys).
-7. Make sure that you are using a valid access token. See
-   [Getting started: Get an access token](../vipps-getting-started.md#get-an-access-token)
-   for details, how long it is valid, etc.
+   A common mistake is to mix `Merchant-Serial-Number` (used in the HTTP header)
+   and `merchantSerialNumber` (used in the request body).
 
 You can log in to
 [portal.vipps.no](https://portal.vipps.no)
@@ -110,7 +97,8 @@ See:
 
 You can use
 [Postman](../developer-resources/quick-start-guides.md)
-to manually do API calls, Use the "inspect" functionality to see the complete requests and responses.
+to manually do API calls, Use the "inspect" functionality to see the complete
+requests and responses, and to check that the API keys.
 
 You also need to make sure you have access to the right API.
 See:
@@ -122,7 +110,7 @@ See:
 If you are absolutely, completely 100 % sure that you have done everything
 correctly, and it _still_ doesn't work, you can regenerate the API keys on
 [portal.vipps.no](https://portal.vipps.no).
-This should never be necessary, and we cannot think of any situations where
+This should never be necessary, and we do not know of any situations where
 this fixes any known problem, so it's our very last suggestion.
 The old API keys will of course stop working when they have been regenerated.
 
