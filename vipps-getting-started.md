@@ -7,7 +7,7 @@ pagination_prev: null
 ---
 END_METADATA -->
 
-# Getting Started
+# Getting started
 
 <!-- START_COMMENT -->
 
