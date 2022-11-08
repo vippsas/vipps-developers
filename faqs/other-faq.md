@@ -58,8 +58,9 @@ The API Dashboard on
 provides a high-level overview of errors in the use of the Vipps APIs,
 but it does in no way replace a proper handling of errors and error messages.
 
-Having said that, it _is_ possible to investigate specific API calls if you
-send us enough information. See the "Contact us" information at the bottom of this page.
+Having said that, it _is_ possible to investigate specific API calls in special
+cases if you send us enough information. Please do your own investigations before
+contacting us about this.
 
 ## How do I perform "testing in production"?
 
