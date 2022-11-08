@@ -1,10 +1,12 @@
-<!-- START_METADATA
----
+## <!-- START_METADATA
+
 title: Getting started
 sidebar_position: 2
 pagination_next: null
 pagination_prev: null
+
 ---
+
 END_METADATA -->
 
 # Getting started
@@ -70,7 +72,7 @@ Vipps has previously had separate API keys for each API product, and a set of
 API keys were directly linked to one sale unit. This meant that customers
 needed to keep track of multiple API keys, and that access to a new API
 required a new sale unit. The API keys for Vipps eCom v1 and v2 APIs have been “upgraded” to include the same APIs as
-Vipps API.  The `Vipps-API` product also includes some _legacy_ APIs, such as _eCom API v1_ _Signup and Login_.
+Vipps API. The `Vipps-API` product also includes some _legacy_ APIs, such as _eCom API v1_ _Signup and Login_.
 
 If you are still using a legacy API, you should upgrade as soon as possible.
 See:
@@ -235,10 +237,10 @@ required permissions.
 
 ### API key details
 
-| Name                     | Format | Example                              | Description                                     |
-|--------------------------|--------|--------------------------------------|-------------------------------------------------|
-| `client_id`              | GUID   | fb492b5e-7907-4d83-bc20-c7fb60ca35de | Client ID for the merchant (the "username")     |
-| `client_secret`          | Base64 | Y8Kteew6GE3ZmeycEt6egg==             | Client Secret for the merchant (the "password") |
+| Name                                                      | Format | Example                              | Description                                     |
+| --------------------------------------------------------- | ------ | ------------------------------------ | ----------------------------------------------- |
+| `client_id`                                               | GUID   | fb492b5e-7907-4d83-bc20-c7fb60ca35de | Client ID for the merchant (the "username")     |
+| `client_secret`                                           | Base64 | Y8Kteew6GE3ZmeycEt6egg==             | Client Secret for the merchant (the "password") |
 | `Vipps-Subscription-Key` (or `Ocp-Apim-Subscription-Key`) | Base64 | 0f14ebcab0eb4b29ae0cb90d91b4a84a     | Subscription key for the API product            |
 
 There are both a primary and secondary `Vipps-Subscription-Key`.
@@ -274,9 +276,9 @@ in the Getting started guide, for details.
 All Vipps API calls are authenticated and authorized with an access token
 (JWT bearer token) and an API subscription key:
 
-| Header Name                 | Header Value                | Description      |
-|:----------------------------|:----------------------------|:-----------------|
-| `Authorization`             | `Bearer <JWT access token>` | Type: Authorization token. See [Get an access token](#get-an-access-token). |
+| Header Name                 | Header Value                | Description                                                                                         |
+| :-------------------------- | :-------------------------- | :-------------------------------------------------------------------------------------------------- |
+| `Authorization`             | `Bearer <JWT access token>` | Type: Authorization token. See [Get an access token](#get-an-access-token).                         |
 | `Ocp-Apim-Subscription-Key` | Base 64 encoded string      | The subscription key for this API. This is available on [portal.vipps.no](https://portal.vipps.no). |
 
 All Vipps API requests must include an `Authorization` header with
@@ -306,7 +308,7 @@ Vipps-System-Plugin-Version 4.5.6
 ```
 
 | Header                        | Description                                  | Example value       |
-|-------------------------------|----------------------------------------------|---------------------|
+| ----------------------------- | -------------------------------------------- | ------------------- |
 | `Merchant-Serial-Number`      | The MSN for the sale unit                    | `123456`            |
 | `Vipps-System-Name`           | The name of the ecommerce solution           | `woocommerce`       |
 | `Vipps-System-Version`        | The version number of the ecommerce solution | `5.4`               |
@@ -349,7 +351,7 @@ The `access_token` is the most important part.
 An explanation of the contents of the access token (the JWT properties):
 
 | Name             | Description                                                                      |
-|------------------|----------------------------------------------------------------------------------|
+| ---------------- | -------------------------------------------------------------------------------- |
 | `Bearer`         | It’s a `Bearer` token. The word `Bearer` must be added before the token          |
 | `expires_in`     | Token expiry duration in seconds.                                                |
 | `ext_expires_in` | Extra expiry time. Not used.                                                     |
@@ -396,8 +398,8 @@ for the APIs.
 
 Problems? See:
 
-* [FAQ: Common errors](./faqs/common-errors-faq.md)
-* [HTTP response codes](./common-topics/http-response-codes.md)
+- [FAQ: Common errors](./faqs/common-errors-faq.md)
+- [HTTP response codes](./common-topics/http-response-codes.md)
 
 ### Checking for errors with the API Dashboard
 
