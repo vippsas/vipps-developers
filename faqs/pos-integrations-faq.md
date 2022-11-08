@@ -8,6 +8,7 @@ pagination_prev: null
 END_METADATA -->
 
 # FAQs: Point of Sale integration
+
 <!-- START_COMMENT -->
 
 ℹ️ Please use the new documentation:
