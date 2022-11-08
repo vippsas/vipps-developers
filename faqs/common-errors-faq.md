@@ -20,7 +20,7 @@ See also
 [Common errors](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-faq.md#common-errors)
 in the eCom API FAQs.
 
-Document version 0.1.0.
+Document version 0.1.1.
 
 
 <!-- START_TOC -->
@@ -53,7 +53,9 @@ The reason for the error is often in the response body, such as:
 * Access denied due to missing subscription key. Make sure to include subscription key when making requests to an API.
 * Subscription not found.
 
-If you get `{"responseInfo":{"responseCode":401,"responseMessage":"Something went wrong, please try again later."},"result":{"message":"Something went wrong, please try again later."}}` it normally indicates that the provided Authorization token is invalid. Check that the token is in the correct format and that it has not expired.
+If the error message is "Something went wrong, please try again later", it normally
+indicates that the provided `Authorization` header (the access token) is invalid.
+Check that the access token is in the correct format and that it has not expired.
 
 Please follow these steps to make sure everything is correct:
 
