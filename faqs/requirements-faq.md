@@ -16,7 +16,7 @@ END_METADATA -->
 
 <!-- END_COMMENT -->
 
-Document version 0.0.1.
+Document version 0.0.2.
 
 <!-- START_TOC -->
 
@@ -35,7 +35,11 @@ regulatory requirements for KYC (Know Your Customer), AML (Anti Money Laundering
 and other risk assessment procedures.
 
 See:
-[Getting Started: Requirements](https://github.com/vippsas/vipps-developers/blob/master/vipps-getting-started.md#requirements)
+[Getting Started: Requirements](https://github.com/vippsas/vipps-developers/blob/master/vipps-getting-started.md#requirements).
+
+It is also possible to use Vipps through a PSP.
+Vipps then relies on the PSP for KYC (Know Your Customer), AML (Anti Money Laundering)
+and other risk assessment procedures. Contact your PSP for details.
 
 ## Can I use my "Vippsnummer" in my webshop?
 
