@@ -41,8 +41,6 @@ Document version 0.0.2.
 See:
 [Get credentials](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/vipps-getting-started/#get-credentials).
 
-Be aware that you do not use the subscription key (`Ocp-Apim-Subscription-Key`) for Vipps Login API.
-
 ## Can you send us logs so we can look for errors?
 
 No. Vipps cannot extract logging info for one merchant or one MSN. There are
