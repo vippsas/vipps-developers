@@ -20,7 +20,7 @@ Document version: 3.6.1.
 
 <!-- START_TOC -->
 
-## Table of contents 
+## Table of contents
 
 - [API products](#api-products)
 - [Requirements](#requirements)
