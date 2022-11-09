@@ -16,7 +16,7 @@ END_METADATA -->
 
 <!-- END_COMMENT -->
 
-Document version 0.1.0.
+Document version 0.1.1.
 
 <!-- START_TOC -->
 
@@ -54,9 +54,14 @@ and the API call contains a phone number that can not be used to complete the pa
 * A previous Vipps user that has deleted his/her account
 * A Vipps user that has his/her account temporarily or permanently blocked.
 
+Vipps cannot give more details abouyt the reason.
+
 ## Is there an API for retrieving information about a Vipps user?
 
-Yes. Vipps offers the possibility for merchants to as part of the payment flow in the
+Yes, but only as part ofg a payment or login.
+
+Vipps offers the possibility for merchants to ask the user for information
+as part of the payment flow with
 [Userinfo](../common-topics/userinfo.md).
 
 This is done by adding a `scope` parameter to the initiate calls:
@@ -64,13 +69,13 @@ This is done by adding a `scope` parameter to the initiate calls:
 and
 [`POST:/recurring/v2/agreements`](https://vippsas.github.io/vipps-recurring-api/#/Agreement%20Controller/draftAgreement) (Recurring):
 
-* address
-* birthDate
-* email
-* name
-* phoneNumber
-* nin (national identity number, "fødselsnummer")
-* accountNumbers
+* `address`
+* `birthDate`
+* `email`
+* `name`
+* `phoneNumber`
+* `nin` (national identity number, "fødselsnummer" in Norway)
+* `accountNumbers`
 
 **Please note:** Vipps users have not consented to Vipps providing any
 information to third parties, and Vipps does not allow it.
@@ -193,7 +198,7 @@ See:
 
 ## I have initiated an order but I can't find it!
 
-For eCom API, see
+For the eCom API, see
 [I have initiated an order but I can't find it](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-faq.md#i-have-initiated-an-order-but-i-cant-find-it).
 
 ## How long is an initiated order valid, if the user does not confirm in the Vipps app?
@@ -220,6 +225,7 @@ both at Vipps, banks, PSPs, etc fail simultaneously. In reality: This never happ
 The most common reason for misunderstanding is that customers do not understand
 the difference between a *reservation* and a *payment* and/or that some banks
 do not present this to their customers in a way that the customer understands.
+
 Some banks will display the reservation of a payment even *after* the payment has
 been captured. This may lead some customers into thinking that both the
 reservation and the capture are payments, and that they have paid twice.

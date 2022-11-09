@@ -32,6 +32,7 @@ This depends on your eCommerce solution.
 For details on how to offer refunds, please refer to the documentation for your eCommerce solution.
 
 All integrations with the Vipps eCom API _must_  support refunds.
+
 It is also possible to do refunds on
 [portal.vipps.no](https://portal.vipps.no).
 

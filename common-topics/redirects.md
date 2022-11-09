@@ -21,10 +21,10 @@ Examples of some, but not all, factors outside of Vipps control:
 * Users closing Vipps immediately upon purchase.
 
 Because of this, Vipps recommends a stateless approach on the website that
-is supposed to be the end session. An example would a polling-based result
+is supposed to be the end of the session. An example would a polling-based result
 handling from a value in the redirect URL.
 
-An example with iOS of how redirects should be handled.
+An example with iOS of how redirects should be handled:
 
 1. The user starts is in web session in the Chrome or Firefox web browser on a phone (not the default Safari browser).
 2. A Vipps purchase is started, with a redirect URL specified by the merchant.

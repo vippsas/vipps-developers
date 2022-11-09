@@ -41,8 +41,6 @@ Document version 0.0.2.
 See:
 [Get credentials](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/vipps-getting-started/#get-credentials).
 
-Be aware that you do not use the subscription key (`Ocp-Apim-Subscription-Key`) for Vipps Login API.
-
 ## Can you send us logs so we can look for errors?
 
 No. Vipps cannot extract logging info for one merchant or one MSN. There are
@@ -60,8 +58,9 @@ The API Dashboard on
 provides a high-level overview of errors in the use of the Vipps APIs,
 but it does in no way replace a proper handling of errors and error messages.
 
-Having said that, it _is_ possible to investigate specific API calls if you
-send us enough information. See the "Contact us" information at the bottom of this page.
+Having said that, it _is_ possible to investigate specific API calls in special
+cases if you send us enough information. Please do your own investigations before
+contacting us about this.
 
 ## How do I perform "testing in production"?
 
