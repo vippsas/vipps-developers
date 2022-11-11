@@ -8,14 +8,6 @@ END_METADATA -->
 
 # orderId recommendations
 
-<!-- START_TOC -->
-* [Use user-friendly orderIds](#use-user-friendly-orderids)
-* [Multiple sale units](#multiple-sale-units)
-* [Multiple attempts](#multiple-attempts)
-<!-- END_TOC -->
-
-## Table of contents
-
 An `orderId` must be unique for the sale unit Merchant Serial Number (MSN) (i.e., the id of
 the sale unit). The `orderId` does not need to be globally unique, so several
 MSNs may use the same `orderId`, as long as it is unique for each sale unit.
@@ -28,6 +20,15 @@ instead of just `123456`.
 processing in the Vipps systems to be slower, and this *can* cause problems, such as timeouts.
 Use the recommended format to avoid problems.
 
+<!-- START_TOC -->
+
+## Table of contents
+
+* [Use user-friendly orderIds](#use-user-friendly-orderids)
+* [Multiple sale units](#multiple-sale-units)
+* [Multiple attempts](#multiple-attempts)
+
+<!-- END_TOC -->
 ## Use user-friendly orderIds
 
 If you ever have a problem that requires us to search in our logs, we need an
