@@ -8,7 +8,7 @@ END_METADATA -->
 
 # orderId recommendations
 
-An `orderId` must be unique for the sale unit Merchant Serial Number (MSN) (i.e., the id of
+An `orderId` (sometimes called `reference`) must be unique for the sale unit Merchant Serial Number (MSN) (i.e., the id of
 the sale unit). The `orderId` does not need to be globally unique, so several
 MSNs may use the same `orderId`, as long as it is unique for each sale unit.
 
