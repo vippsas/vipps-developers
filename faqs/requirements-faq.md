@@ -16,7 +16,7 @@ END_METADATA -->
 
 <!-- END_COMMENT -->
 
-Document version 0.0.2.
+Document version 0.0.3.
 
 <!-- START_TOC -->
 
@@ -29,17 +29,22 @@ Document version 0.0.2.
 
 ## What are the requirements for Vipps merchants?
 
-Vipps merchants (corporate customers) must have a Norwegian organization number
-and applications must be signed with Norwegian BankID. Vipps must follow the
-regulatory requirements for KYC (Know Your Customer), AML (Anti Money Laundering)
-and other risk assessment procedures.
+Vipps merchants (corporate customers) must have a:
+* A Norwegian organization number
+* A Norwegian bank account
+
+The merchant's Vipps application must be signed with Norwegian BankID.
+
+Vipps must follow the regulatory requirements for KYC (Know Your Customer),
+AML (Anti Money Laundering) and other risk assessment procedures.
 
 See:
 [Getting Started: Requirements](https://github.com/vippsas/vipps-developers/blob/master/vipps-getting-started.md#requirements).
 
-It is also possible to use Vipps through a PSP.
+It is also possible to use Vipps through a PSP (Payment Service Provider).
 Vipps then relies on the PSP for KYC (Know Your Customer), AML (Anti Money Laundering)
-and other risk assessment procedures. Contact your PSP for details.
+and other risk assessment procedures.
+To use Vipps through a PSP: Contact your PSP.
 
 ## Can I use my "Vippsnummer" in my webshop?
 
