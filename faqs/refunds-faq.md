@@ -28,10 +28,6 @@ Document version 0.1.1.
 
 <!-- END_TOC -->
 
-For more details, see
-[Refunds](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api-faq#refunds)
-in the eCom FAQs.
-
 ## Can I refund a payment?
 
 This depends on your eCommerce solution.
