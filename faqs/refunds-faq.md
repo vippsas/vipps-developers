@@ -68,7 +68,7 @@ partial capture through Vipps: Send a
 request with `shouldReleaseRemainingFunds: true` in the body.
 The payment must be `RESERVED` for this to take effect.
 See:
-[Cancelling a partially captured order](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api#cancelling-a-partially-captured-order).
+[Vipps eCom API: Cancelling a partially captured order](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api#cancelling-a-partially-captured-order).
 
 The partial capture (the 750 of the 1000 NOK in the example above)
 is normally confirmed in the bank after 3-10 days, but it sometimes takes even
