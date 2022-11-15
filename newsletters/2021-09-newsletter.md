@@ -23,8 +23,9 @@ This newsletter was sent in September 2021.
 
 ## The Vipps QR API
 
-An early version of the Vipps QR API is available on GitHub:
-https://github.com/vippsas/vipps-qr-api
+An early version of the
+[Vipps QR API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/qr-api/)
+is available.
 
 The Vipps QR API lets merchants generate Vipps QR codes that can be used to pay
 over the counter, without requiring the Vipps user to provide their telephone
@@ -36,8 +37,9 @@ Vipps app where they can pay the merchant.
 
 ## The Vipps Order Management API
 
-An early version of the Vipps Order Management API is available on GitHub:
-https://github.com/vippsas/vipps-order-management-api/
+An early version of the
+[Vipps Order Management API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/order-management-api/)
+is available.
 
 The Order Management API allows merchants to send rich receipt information to
 existing Vipps transaction. This information is shown to the customer in the
@@ -46,8 +48,9 @@ and direct payments, but not for pass-through payments.
 
 ## The Vipps Merchant Management API
 
-An early version of the Vipps Merchant Management API is available on GitHub:
-https://github.com/vippsas/vipps-merchant-management-api
+An early version of the
+[Vipps Merchant Management API](https://github.com/vippsas/vipps-merchant-management-api)
+is available on GitHub:
 
 The Vipps Merchant Management API will let partners, banks and large corporations
 manage their merchants and sale units. See the GitHub repository for
@@ -61,13 +64,15 @@ The Vipps Login service has been extended with Client Initiated Backchannel Auth
 This could typically be physical contexts like point of sales (POS) solutions, on the
 phone in call center solutions, or devices/terminals like TV boxes. We currently support initiating logins based on the users phone number. We are also working on supporting the same flows with the user scanning the merchant's QR-code as a starting point.
 
-More information can be found in [our documentation](https://github.com/vippsas/vipps-login-api/blob/master/vipps-login-api.md#client-initiated-backchannel-authentication-flows-ciba---special-cases-where-login-does-not-start-in-browser-or-app).
+More information can be found in the
+[Vipps Login API Guide](https://vippsas.github.io/vipps-developer-docs/docs/APIs/login-api/vipps-login-api#client-initiated-backchannel-authentication-flows-ciba---special-cases-where-login-does-not-start-in-browser-or-app).
 
 ## The Vipps Recurring API now supports variable amounts
 
 Recurring agreements with variable amount lets merchants charge users a different amount each for interval, based on the user's specified max amount.
 
-More information can be found in [our documentation](https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api.md#recurring-agreements-with-variable-amount).
+More information can be found in the
+[Vipps Recurring API Guide](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/vipps-recurring-api#recurring-agreements-with-variable-amount).
 
 ## API Dashboard for the test environment
 

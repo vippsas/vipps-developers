@@ -42,7 +42,7 @@ Remote transactions:
 - _Faste betalinger (Recurring payments)_ - A business or organization can allow their customers to set up recurring payments (e.g., for subscriptions, membership, regular donations, etc.) through Vipps.
 
 Vipps provides several open source plugins for various web solutions.
-See our [Plugins section](https://github.com/vippsas/vipps-plugins).
+See our [Plugins section](https://vippsas.github.io/vipps-developer-docs/docs/vipps-plugins/).
 
 To learn about integrating with Vipps, proceed to [Getting started](vipps-getting-started.md).
 

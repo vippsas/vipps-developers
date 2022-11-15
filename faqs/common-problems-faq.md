@@ -17,7 +17,7 @@ END_METADATA -->
 <!-- END_COMMENT -->
 
 See also
-[Common problems](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-faq.md#common-problems)
+[Common problems](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api-faq#common-problems)
 in the eCom API FAQs.
 
 Document version 0.1.0.
@@ -80,7 +80,7 @@ The most common reasons are:
 We strongly recommend to check the full history of every Vipps payment with
 the API: You can see if a payment has been actively rejected, if the user has
 not done anything, etc.
-See: [Get payment details](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#get-payment-details).
+See: [Get payment details](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api#get-payment-details).
 
 We are continuously improving the error messages in the Vipps app. Some of the
 above errors may only have a general error message when attempting to pay.
@@ -95,7 +95,7 @@ the user in Vipps, all necessary information will be provided to the user in Vip
 [demo.vipps.no](https://demo.vipps.no).
 
 See:
-[All errors](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#error-codes).
+[All errors](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api#error-codes).
 
 ## Why does capture fail?
 
@@ -129,7 +129,7 @@ to confirm the payment in Vipps first.
 
 See:
 
-* [Cancelling a pending order](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#cancelling-a-pending-order)
+* [Cancelling a pending order](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api#cancelling-a-pending-order)
 * [For how long is a payment reserved?](reserve-and-capture-faq.md#for-how-long-is-a-payment-reserved)
 
 ## Why do I get a CORS error?
@@ -163,7 +163,7 @@ This means that the merchant must be able to detect or recognize the user
 when the `fallback` URL is opened, without relying on session, cookies, etc.
 
 See:
-[Recommendations regarding handling redirects](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#recommendations-regarding-handling-redirects).
+[Recommendations regarding handling redirects](../common-topics/redirects.md).
 
 ## How can I measure Vipps sales with Google Analytics, Facebook pixel, etc?
 
@@ -173,7 +173,7 @@ their own website, and use a fallback URL (the "result page") to track any
 activity. This must be done by the merchant itself.
 
 See:
-[Initiate payment flow: Phone and browser](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#initiate-payment-flow-phone-and-browser).
+[Initiate payment flow: Phone and browser](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api#initiate-payment-flow-phone-and-browser).
 
 ## Why are the customer names not shown on the transaction overview?
 

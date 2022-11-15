@@ -12,9 +12,9 @@ This newsletter was sent in October 2020.
 ## Userinfo
 
 Vipps now offers the possibility for merchants to ask for user profile details as part of the payment flow in the
-[Vipps eCom API v2](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#userinfo)
+[Vipps eCom API v2](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api#userinfo)
 and
-[Vipps Recurring API](https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api.md#userinfo).
+[Vipps Recurring API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/vipps-recurring-api#userinfo).
 
 This is done by adding a `scope` parameter to the initiate calls:
 
@@ -27,11 +27,11 @@ This is done by adding a `scope` parameter to the initiate calls:
 - accountNumbers
 
 The userinfo endpoint is shared with
-[Vipps Login](https://github.com/vippsas/vipps-login-api)
+[Vipps Login](https://vippsas.github.io/vipps-developer-docs/docs/APIs/login-api/)
 and the merchant needs to have
 activated Vipps Login on their account to use this feature. Information on how
 to do this can be found
-[here](https://github.com/vippsas/vipps-login-api/blob/master/vipps-login-api-faq.md#how-can-i-activate-and-set-up-vipps-login).
+[here](https://vippsas.github.io/vipps-developer-docs/docs/APIs/login-api/vipps-login-api-faq#how-can-i-activate-and-set-up-vipps-login).
 Using the Vipps Login service itself is optional.
 
 ### Customer registration
@@ -45,12 +45,12 @@ the Covid-19 pandemic. See our information in Norwegian:
 There are now 12 Vipps plugins for various ecommerce platforms:
 WooCommerce, WordPress, Magento, Episerver, Drupal, Shopify, Craft and more.
 
-All [plugins](https://github.com/vippsas/vipps-plugins) are open source. See the complete list.
+All [plugins](https://vippsas.github.io/vipps-developer-docs/docs/vipps-plugins/) are open source. See the complete list.
 
 ## PSP v3
 
 Vipps is launching the
-[PSP API v3](https://github.com/vippsas/vipps-psp-api)
+[PSP API v3](https://vippsas.github.io/vipps-developer-docs/docs/APIs/psp-api/)
 to coincide with our migration of our users' cards from PAN to EMVco network
 tokens. This technological migration is Vipps' strategy for achieving delegated
 SCA once PSD2 comes into effect for card payments on January 1 2021.
@@ -60,7 +60,7 @@ additional payment source format. There are also minor changes to naming of
 properties to bring the API in line with Vipps' API standards.
 
 Encrypted cards will still be sent for our users cards that have not yet been
-migrated. Please see our [migration guide](https://github.com/vippsas/vipps-psp-api/blob/master/v2-deprecation.md).
+migrated. Please see our [migration guide](https://vippsas.github.io/vipps-developer-docs/docs/APIs/psp-api/v2-deprecation).
 
 ## Rate limiting
 
@@ -69,9 +69,9 @@ more robust and secure service. Most of these limits are only created to
 counteract unexpected and erratic behaviour and it's nothing you should notice
 under normal operation. More information about this is available in the
 documentation for
-[Vipps Recurring API](https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api.md#rate-limiting)
+[Vipps Recurring API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/vipps-recurring-api#rate-limiting)
 and
-[Vipps eCom API](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#rate-limiting)
+[Vipps eCom API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api#rate-limiting)
 
 ## Deprecations
 
@@ -80,7 +80,7 @@ and
 The `/details` endpoint in the Vipps eCom API v2 offers more than the old
 and long deprecated `/status` endpoint. We still see some customers using
 the old endpoint and strongly recommend to update to the
-[current one](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#get-payment-details).
+[current one](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api#get-payment-details).
 
 ### Deprecation of Vipps for Magento 1
 

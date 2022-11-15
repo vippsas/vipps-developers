@@ -71,7 +71,7 @@ The `client_id`, `client_secret` and `Ocp-Apim-Subscription-Key` are unique per
 `merchantSerialNumber` (MSN, i.e. the number of the sale unit).
 
 Please note: Partners should use
-[partner keys](https://github.com/vippsas/vipps-partner/blob/main/partner-keys.md).
+[partner keys](https://vippsas.github.io/vipps-developer-docs/docs/vipps-partner/partner-keys).
 
 **Please note:** You can have multiple access tokens being used at the same time.
 

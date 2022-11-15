@@ -32,14 +32,14 @@ The following are Frequently Asked Questions (FAQs):
 
 In addition, each Vipps API has a specific set of FAQs. For example:
 
-* [Checkout API FAQ](https://github.com/vippsas/vipps-checkout-api/blob/main/vipps-checkout-api-faq.md)
-* [eCom API FAQ](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-faq.md)
-* [Login API FAQ](https://github.com/vippsas/vipps-login-api/blob/master/vipps-login-api-faq.md)
-* [Partner API FAQ](https://github.com/vippsas/vipps-partner-api/blob/main/vipps-partner-api-faq.md)
-* [PSP API FAQ](https://github.com/vippsas/vipps-psp-api/blob/master/vipps-psp-api-faq.md)
-* [QR API FAQ](https://github.com/vippsas/vipps-qr-api/blob/main/vipps-qr-api-faq.md)
-* [Recurring API FAQ](https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api-faq.md)
-* [Report API FAQ](https://github.com/vippsas/vipps-report-api/blob/main/vipps-report-api-faq.md)
+* [Checkout API FAQ](https://vippsas.github.io/vipps-developer-docs/docs/APIs/checkout-api/vipps-checkout-api-faq)
+* [eCom API FAQ](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api-faq)
+* [Login API FAQ](https://vippsas.github.io/vipps-developer-docs/docs/APIs/login-api/vipps-login-api-faq)
+* [Partner API FAQ](https://vippsas.github.io/vipps-developer-docs/docs/APIs/partner-api/vipps-partner-api-faq)
+* [PSP API FAQ](https://vippsas.github.io/vipps-developer-docs/docs/APIs/psp-api/vipps-psp-api-faq)
+* [QR API FAQ](https://vippsas.github.io/vipps-developer-docs/docs/APIs/qr-api/vipps-qr-api-faq)
+* [Recurring API FAQ](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/vipps-recurring-api-faq)
+* [Report API FAQ](https://vippsas.github.io/vipps-developer-docs/docs/APIs/report-api/vipps-report-api-faq)
 
 We're always happy to help with code or other questions you might have!
 Please create an [issue](https://github.com/vippsas/vipps-developers/issues),

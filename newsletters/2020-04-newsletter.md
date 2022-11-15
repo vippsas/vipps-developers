@@ -44,7 +44,7 @@ reserved, meaning before the user has accepted/rejected in Vipps. This may be
 useful in face-to-face situations where a customer's phone runs out of battery.
 
 See
-[Cancelling a pending order](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#Cancelling-a-pending-order).
+[Cancelling a pending order](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api#Cancelling-a-pending-order).
 
 ## User details
 
@@ -54,14 +54,10 @@ and
 [Vipps Login](https://www.vipps.no/produkter-og-tjenester/bedrift/logg-inn-med-vipps/logg-inn-med-vipps/)
 will (very soon) use the same data formats.
 
-"Star" the eCom repo on GitHub to get updates on this (and other things):
-https://github.com/vippsas/vipps-ecom-api
-
-
 ## eCom: `/approve` endpoint for integration tests
 
 A new
-[`/approve`](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#testing)
+[`/approve`](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api#testing)
 endpoint makes it possible to approve payments through the API,
 without using the app.
 
@@ -82,7 +78,7 @@ is very welcome. We know there are some (minor?) issues, please bear with us.
 We now offer generated HTML documentation in three formats for most APIs.
 Examples for the eCom API:
 
-* Swagger UI: <https://vippsas.github.io/vipps-developer-docs/api/ecom>
+* OpenAPI: <https://vippsas.github.io/vipps-developer-docs/api/ecom>
 * ReDoc: content no longer available
 * Slate: content no longer available
 
@@ -93,13 +89,13 @@ is very welcome.
 
 We have made some more in-depth product information pages with screenshots:
 
-* [eCom (_Vipps på Nett_)](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-howitworks.md)
-* [Recurring (_Faste Betalinger_)](https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-login-recurring-howitworks.md)
+* [eCom (_Vipps på Nett_)](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api-howitworks)
+* [Recurring (_Faste Betalinger_)](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/vipps-login-recurring-howitworks)
 
 ## Plugin overview
 
 We now have plugins for WordPress/WooCommerce, Magento, Episerver, Shopify, Drupal:
-[Vipps-plugins](https://github.com/vippsas/vipps-plugins)
+[Vipps-plugins](https://vippsas.github.io/vipps-developer-docs/docs/vipps-plugins/)
 
 We have some more candidates too.
 

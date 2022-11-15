@@ -146,7 +146,7 @@ the settlement report shows the automatically generated `chargeID` in the `order
 If `orderID` is in use, that is also used in the settlement report.
 
 See the
-[Recurring API](https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api.md#create-a-charge)
+[Recurring API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/vipps-recurring-api#create-a-charge)
 for more details.
 
 ### GDPR
@@ -244,6 +244,6 @@ We're always happy to help with code or other questions you might have!
 
 For customer-specific questions about settlements, please contact operations@vipps.no.
 
-For general questions: Please create an [issue](https://github.com/vippsas/vipps-ecom-api/issues),
-a [pull request](https://github.com/vippsas/vipps-ecom-api/pulls),
-or [contact us](https://github.com/vippsas/vipps-developers/blob/master/contact.md).
+For general questions: Please create an [issue](https://github.com/vippsas/vipps-developers/issues),
+a [pull request](https://github.com/vippsas/vipps-developers/pulls),
+or [contact us](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/contact).

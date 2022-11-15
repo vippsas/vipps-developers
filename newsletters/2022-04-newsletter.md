@@ -33,11 +33,11 @@ If you wish to cancel an order which you have partially captured: Send a
 request with `shouldReleaseRemainingFunds: true` in the body.
 The payment must be `RESERVED` for this to take effect.
 See:
-[Cancelling a partially captured order](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#cancelling-a-partially-captured-order).
+[Cancelling a partially captured order](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api#cancelling-a-partially-captured-order).
 
 ## The Vipps QR API now works in the test environment
 
-[The Vipps QR API](https://github.com/vippsas/vipps-qr-api) now works in both in
+[The Vipps QR API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/qr-api/) now works in both in
 the production and
 [test environment](../developer-resources/test-environment.md).
 
@@ -46,7 +46,7 @@ the production and
 The response of the
 [`GET:/v1/merchants/{merchantSerialNumber}`](https://vippsas.github.io/vipps-developer-docs/api/psp-signup#tag/Merchant/operation/getMerchants)
 endpoint in the in the
-[Vipps PSP API](https://github.com/vippsas/vipps-psp-api)
+[Vipps PSP API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/psp-api/)
 contains a `logo` field, with the merchant's logo encoded in base64 format.
 
 We are changing this to a URL, with a new field `logoUrl` in the response,
@@ -74,7 +74,7 @@ This change only applies to the `GET` method, and does not affect the `POST` and
  created until the next interval for the campaign.
 
  See:
- [Create charge](https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api.md#create-charge).
+ [Create charge](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/vipps-recurring-api#create-charge).
 
 ## Reminders
 

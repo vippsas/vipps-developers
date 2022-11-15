@@ -111,13 +111,13 @@ This will lead you through a sequence of steps where you can experiment with eve
 
 By following the steps, you will make calls to all the endpoints and see the full `request` and `response` for each call.
 
-* [Checkout API](https://github.com/vippsas/vipps-checkout-api/blob/main/vipps-checkout-api-quick-start.md)
-* [eCom API](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-quick-start.md)
-* [Login API](https://github.com/vippsas/vipps-login-api/blob/master/vipps-login-api-quick-start.md)
-* [Partner API](https://github.com/vippsas/vipps-partner-api/blob/main/vipps-partner-api-quick-start.md)
-* [PSP API](https://github.com/vippsas/vipps-psp-api/blob/master/vipps-psp-api-quick-start.md)
-* [QR API](https://github.com/vippsas/vipps-qr-api/blob/main/vipps-qr-api-quick-start.md)
-* [Recurring API](https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api-quick-start.md)
+* [Checkout API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/checkout-api/vipps-checkout-api-quick-start)
+* [eCom API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api-quick-start)
+* [Login API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/login-api/vipps-login-api-faq)
+* [Partner API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/partner-api/vipps-partner-api-quick-start)
+* [PSP API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/psp-api/vipps-psp-api-quick-start)
+* [QR API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/qr-api/vipps-qr-api-quick-start)
+* [Recurring API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/vipps-recurring-api-quick-start)
 
 ## Questions?
 

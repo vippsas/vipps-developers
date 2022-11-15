@@ -12,7 +12,7 @@ This newsletter was sent in April 2021.
 ## "Click and collect" recommendations
 
 For "click and collect" we recommend to use
-[`staticShippingDetails`](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#shipping-and-static-shipping-details)
+[`staticShippingDetails`](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api#shipping-and-static-shipping-details)
 (to avoid the extra HTTP roundtrip where Vipps asks the merchant
 for the shipping options and prices) and also to set the default
 shipping method to "Click and collect".
@@ -38,7 +38,7 @@ call by including:
 ## Recurring payments and campaigns
 
 Tip: Use
-[Campaigns](https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api.md#campaigns)
+[Campaigns](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/vipps-recurring-api#campaigns)
 if the subscription is cheaper in the beginning, such as "One month for 10 kr" and then the normal price.
 
 If you use
@@ -47,15 +47,15 @@ looks like the full price period starts immediately. Initial charge should be us
 the customer pays for a phone and a phone subscription, and the first payment includes the phone.
 
 See more details and screenshots here:
-[When to use campaigns or initial charge](https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api.md#when-to-use-campaigns-or-initial-charge).
+[When to use campaigns or initial charge](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/vipps-recurring-api#when-to-use-campaigns-or-initial-charge).
 
 ## Easier to use Userinfo
 
 The authentication is now much easier, with no need for additional keys, both for
 the eCom and Recurring APIs. See the call by call guides:
 
-* [eCom API](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#userinfo-call-by-call-guide)
-* [Recurring API](https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api.md#userinfo-call-by-call-guide)
+* [eCom API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api#userinfo-call-by-call-guide)
+* [Recurring API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/vipps-recurring-api#userinfo-call-by-call-guide)
 
 ## New date limits for capture and cancel
 
@@ -72,15 +72,15 @@ the `Merchant-Serial-Number` header to identify which of your merchants you are
 acting on behalf of.
 
 The same set of partner keys can be used for both the
-[Vipps eCom API](https://github.com/vippsas/vipps-ecom-api)
+[Vipps eCom API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/)
 and the
-[Vipps Recurring API](https://github.com/vippsas/vipps-recurring-api),
+[Vipps Recurring API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/),
 including the
 [Userinfo](#use-userinfo)
 endpoints for both.
 
 See:
-[Partner keys](https://github.com/vippsas/vipps-partner/blob/main/partner-keys.md)
+[Partner keys](https://vippsas.github.io/vipps-developer-docs/docs/vipps-partner/partner-keys)
 
 ## PSP Signup API
 
@@ -91,7 +91,7 @@ Payment Service Providers can use their existing API keys with the PSP Signup AP
 * Update an existing merchant
 
 See:
-[PSP Signup API](https://github.com/vippsas/vipps-psp-api/blob/master/vipps-psp-signup-api.md).
+[PSP Signup API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/psp-api/vipps-psp-signup-api).
 
 ## Order new products and create new sale units on portal.vipps.no
 
@@ -100,15 +100,15 @@ All customers can now log in on
 and order new products, which automatically creates a new sale unit:
 
 * [Vipps på Nett](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/)
-  ([eCom API](https://github.com/vippsas/vipps-ecom-api),
+  ([eCom API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/),
   for both
   [webshops and apps](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/))
 * [Vipps rett i Kassa](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-i-butikk/vipps-i-kassa/)
-  ([eCom API](https://github.com/vippsas/vipps-ecom-api))
+  ([eCom API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/))
 * [Vipps Faste betalinger](https://vipps.no/produkter-og-tjenester/bedrift/faste-betalinger/faste-betalinger/)
-  ([Recurring API](https://github.com/vippsas/vipps-recurring-api))
+  ([Recurring API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/))
 * [Vipps Logg inn](https://vipps.no/produkter-og-tjenester/bedrift/logg-inn-med-vipps/logg-inn-med-vipps/)
-  ([Login API](https://github.com/vippsas/vipps-login-api))
+  ([Login API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/login-api/))
 
 ## Create new sale units in the test environment
 
@@ -132,7 +132,7 @@ We have mentioned some things before, and take this opportunity to remind you:
 Several of our plugins have been updated to use the newest versions of
 our APIs. Please make sure you have the newest version of the plugins
 you use, and keep them up to date. See the
-[the plugin overview](https://github.com/vippsas/vipps-plugins).
+[the plugin overview](https://vippsas.github.io/vipps-developer-docs/docs/vipps-plugins/).
 
 ### Use Userinfo
 
@@ -147,9 +147,9 @@ phone number, name, email address, postal address, birth date, national identity
 The user must of course consent to sharing the information.
 
 See
-[Userinfo for eCom](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#userinfo)
+[Userinfo for eCom](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api#userinfo)
 and
-[Userinfo for Recurring](https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api.md#userinfo).
+[Userinfo for Recurring](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/vipps-recurring-api#userinfo).
 
 ### API Dashboard 🚦
 
@@ -166,9 +166,9 @@ This is just the start. Please let us know what you think and suggest improvemen
 ### Vipps HTTP Headers ℹ️
 
 We recommend using the following _optional_ HTTP headers for all requests to the
-[Vipps eCom API](https://github.com/vippsas/vipps-ecom-api/)
+[Vipps eCom API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/)
 and the
-[Vipps Recurring API](https://github.com/vippsas/vipps-recurring-api/).
+[Vipps Recurring API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/).
 
 | Header                        | Description                                  | Example value        |
 | ----------------------------- | -------------------------------------------- | -------------------- |
