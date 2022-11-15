@@ -30,14 +30,14 @@ Document version 0.1.1.
 
 ## Can I refund a payment?
 
-This depends on your eCommerce solution.
+This depends on your eCommerce solution. The Vipps eCom API supports refunds with
+[`POST:/ecomm/v2/payments/{orderId}/refund`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Vipps-eCom-API/operation/refundPaymentUsingPOST).
 For details on how to offer refunds, please refer to the documentation for your eCommerce solution.
 
-All integrations with the Vipps eCom API _must_  support refunds.
+All integrations with the Vipps eCom API _must_ support refunds.
 
 It is also possible to do refunds on
 [portal.vipps.no](https://portal.vipps.no).
-
 
 Refunds can be made up to 365 days after payment or reservation.
 Very old payments have a higher risk of being problematic, because people
@@ -59,7 +59,7 @@ See:
 [For how long is a payment reserved?](reserve-and-capture-faq.md#for-how-long-is-a-payment-reserved).
 
 * The long version: It _is_ possible to cancel the remaining reservation after a
-partial capture through Vipps: Send a
+partial capture through the Vipps eCom API: Send a
 [`PUT:/ecomm/v2/payments/{orderId}/cancel`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Vipps-eCom-API/operation/cancelPaymentRequestUsingPUT)
 request with `shouldReleaseRemainingFunds: true` in the body.
 The payment must be `RESERVED` for this to take effect.
