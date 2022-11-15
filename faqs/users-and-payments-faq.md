@@ -54,7 +54,7 @@ and the API call contains a phone number that can not be used to complete the pa
 * A previous Vipps user that has deleted his/her account
 * A Vipps user that has his/her account temporarily or permanently blocked.
 
-Vipps cannot give more details abouyt the reason.
+Vipps cannot give more details about the reason.
 
 ## Is there an API for retrieving information about a Vipps user?
 

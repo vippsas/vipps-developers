@@ -11,7 +11,7 @@ END_METADATA -->
 When you initiate a payment, it will be _reserved_ until you _capture_ it:
 * When a payment is reserved it means the customer has approved the payment.
   The funds are still in the customer's account, but not available to spend on other things.
-* When a payment is capturet it means the funds are moved from customer's account to merchant's account.
+* When a payment is captured it means the funds are moved from customer's account to merchant's account.
 
 Vipps supports both _reserve capture_ and _direct capture_:
 
@@ -137,4 +137,4 @@ If one or more partial captures have been made, any remaining reserved amount
 will be automatically released after a few days.
 
 It is also possible to do a partial capture and send an optional parameter to
-explicity free the remaining amount immediately.
+explicitly free the remaining amount immediately.

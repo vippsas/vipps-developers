@@ -142,7 +142,7 @@ https://github.com/vippsas/vipps-order-management-api/
 The Order Management API allows merchants to send rich receipt information to
 existing Vipps transaction. This information is shown to the customer in the
 app in their order history. This functionality is available for both recurring
-and direct payments, but not for passthrough payments.
+and direct payments, but not for pass-through payments.
 
 ### The Vipps Recurring API now supports variable amounts
 
