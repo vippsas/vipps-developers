@@ -113,7 +113,7 @@ By following the steps, you will make calls to all the endpoints and see the ful
 
 * [Checkout API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/checkout-api/vipps-checkout-api-quick-start)
 * [eCom API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api-quick-start)
-* [Login API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/login-api/vipps-login-api-faq)
+* [Login API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/login-api/vipps-login-api-quick-start)
 * [Partner API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/partner-api/vipps-partner-api-quick-start)
 * [PSP API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/psp-api/vipps-psp-api-quick-start)
 * [QR API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/qr-api/vipps-qr-api-quick-start)
