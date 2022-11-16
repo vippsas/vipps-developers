@@ -53,11 +53,11 @@ the QR code will take the user directly to the payment in the Vipps app.
 ![Demo QR code](images/demo-qr.svg)
 
 This is done in cooperation with the Vipps QR API. See
-[One-time payment QR](https://github.com/vippsas/vipps-qr-api#one-time-payment-qr)
+[One-time payment QR](https://vippsas.github.io/vipps-developer-docs/docs/APIs/qr-api/vipps-qr-api#one-time-payment-qr-codes)
 in the Vipps QR API guide for more details about this and other QR services.
 
 See the
-[Quick start](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-quick-start.md)
+[Quick start](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api-quick-start)
 for step-by-step examples of generating QR codes and short links for one-time payments initiated from the eCom API.
 
 ## Skip landing page

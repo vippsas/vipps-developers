@@ -17,7 +17,7 @@ END_METADATA -->
 <!-- END_COMMENT -->
 
 See also
-[Common errors](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-faq.md#common-errors)
+[Common errors](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api-faq#common-errors)
 in the eCom API FAQs.
 
 Document version 0.1.1.
@@ -84,7 +84,7 @@ Please follow these steps to make sure everything is correct:
 6. Check both the HTTP response header and the response body from our API for errors.
    For most errors the body contains an explanation of what went wrong.
    See:
-   [Errors](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#errors).
+   [Errors](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api#errors).
 7. If you are a partner and you are using partner keys: Double check everything
    described here:
    [Partner keys](https://vippsas.github.io/vipps-developer-docs/docs/vipps-partner/partner-keys).
@@ -123,7 +123,7 @@ source code asking us to fix it for you.
 ## Why do I get `HTTP 403 Forbidden`?
 
 Merchants that only have access to the
-[Vipps Login API](https://github.com/vippsas/vipps-login-api)
+[Vipps Login API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/login-api/)
 and attempt to use the Vipps eCom API will get this error, with
 `Merchant Not Allowed for Ecommerce Payment` in the body.
 
@@ -143,7 +143,7 @@ We rate-limit some API endpoints to prevent incorrect usage.
 The rate-limiting has nothing to do with Vipps' total capacity, but is
 designed to stop obviously incorrect use.
 See:
-[Rate limiting](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#rate-limiting)
+[Rate limiting](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api#rate-limiting)
 for details.
 
 ## Why do I get `HTTP 404 Not Found`?
@@ -168,7 +168,7 @@ Some tips:
 * Please make sure the JSON payload in your API request validates.
   That is the most common source of this type of error.
 * We strongly recommend using
-  [Postman](https://github.com/vippsas/vipps-developers/blob/master/developer-resources/quick-start-guides.md)
+  [Postman](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/developer-resources/quick-start-guides)
   to manually do API calls, to see the correct request.
   Use Postman's
   [Inspect](https://blog.postman.com/debugging-postman-requests/)
@@ -190,7 +190,7 @@ a `HTTP 500 Server Error`. Retry the call, and see if it helps.
 
 See:
 
-* [Errors](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#errors).
+* [Errors](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api#errors).
 * [Status page](../developer-resources/status-pages.md).
 
 ## Why do I get `errorCode 35 "Requested Order not found"`?
@@ -205,7 +205,7 @@ The `orderId`s is not globally unique, they are only unique per MSN.
 See:
 
 * [Why do I get `HTTP 404 Not Found`?](#why-do-i-get-http-404-not-found)
-* [Error codes](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#error-codes).
+* [Error codes](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api#error-codes).
 
 ## Why do I get `errorCode 37 "Merchant not available or deactivated or blocked"`?
 
@@ -233,7 +233,7 @@ We no longer automatically deactivate test merchants.
 Merchants can also create new sale units in the test environment on
 [portal.vipps.no](https://portal.vipps.no).
 
-See: [Error codes](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#error-codes).
+See: [Error codes](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api#error-codes).
 
 ## Why do I get "Merchant Not Allowed for Ecommerce Payment"?
 
@@ -321,7 +321,7 @@ Vipps cannot give more details.
 
 You are probably attempting to use a real Vipps user in the test environment.
 See:
-[The Vipps Test Environment (MT)](https://github.com/vippsas/vipps-developers/blob/master/developer-resources/test-environment.md).
+[The Vipps Test Environment (MT)](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/developer-resources/test-environment).
 
 ## Why do I get `Invalid MSN: 654321. Check your API keys on portal.vipps.no and see the eCom FAQ for tips.`?
 

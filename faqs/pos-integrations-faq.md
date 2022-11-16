@@ -50,7 +50,7 @@ Basic flow:
 1. Initiate a Vipps eCom payment (`skipLandingPage` must be set to false)
 2. Receive the payment URL as response
 3. Post the payment URL to the
-   [Vipps QR API](https://github.com/vippsas/vipps-qr-api)
+   [Vipps QR API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/qr-api/)
 4. Receive a URL to a QR code in PNG (Portable Network Graphics) format
 5. Present the QR code on the customer-facing screen
 6. The user scans the QR code with Vipps or camera app
@@ -69,8 +69,8 @@ If it is not possible for the POS solution to handle a fallback URL you may use 
 
 See also:
 
-* [QR API](https://github.com/vippsas/vipps-qr-api/)
-* [Error codes](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#error-codes)
+* [QR API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/qr-api/)
+* [Error codes](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api#error-codes)
 * [Do we need to support callbacks?](#do-we-need-to-support-callbacks)
 
 ## How can we be whitelisted for `skipLandingPage`?
@@ -114,11 +114,16 @@ Store B must be able to request a `refund` from the central system based on the 
 
 **C:** Use same sale unit for all locations
 It is possible to use one sale unit (one MSN) for all stores, and use a prefix in the `orderId` to identify which orders belong to which sale units.
-This will result in having one settlement for all. You decide what the `orderId` contains, and it may be up to 50 characters. See: [orderId recommendation](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api#orderid-recommendations). You will use the same API keys for all stores.
+This will result in having one settlement for all. You decide what the `orderId` contains, and it may be up to 50 characters.
+See: [orderId recommendation](../common-topics/orderid.md).
+You will use the same API keys for all stores.
 
 ## Distance selling from a POS solution
 
-Due to compliance requirements in a payment situation where customer is not present we recommend implementing the [Order Management API](https://github.com/vippsas/vipps-order-management-api#vipps-order-management-api-v1). This allows the merchants to send rich receipt information to existing Vipps transactions. This information is visible for the customer in the app in their order history.
+Due to compliance requirements in a payment situation where customer is not present, we recommend implementing the
+[Order Management API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/order-management-api/vipps-order-management-api).
+This allows the merchants to send rich receipt information to existing Vipps transactions.
+This information is visible for the customer in the app in their order history.
 
 As an alternative an online sale log must be available for Vipps.
 
@@ -127,7 +132,7 @@ As an alternative an online sale log must be available for Vipps.
 1. The partner establishes a customer relationship with Vipps.
    [Apply here](https://www.vipps.no/produkter-og-tjenester/bedrift/ta-betalt-i-butikk/vipps-i-kassa/).
 2. The partner integrates the POS with Vipps and completes
-   [the integration checklist](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-checklist.md).
+   [the integration checklist](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api-checklist).
    The partner now has a working POS integration.
    This process normally takes 1-4 days.
 3. The partner's merchant establishes a customer relationship with Vipps.
@@ -142,7 +147,7 @@ As an alternative an online sale log must be available for Vipps.
 5. The POS vendor normally uses
    [Partner keys](https://vippsas.github.io/vipps-developer-docs/docs/vipps-partner/partner-keys).
    If not: The merchant
-   [retrieves the API keys](https://github.com/vippsas/vipps-developers/blob/master/vipps-getting-started.md#getting-the-api-keys)
+   [retrieves the API keys](../vipps-getting-started#getting-the-api-keys)
    and provides them in a secure way to the partner.
    See: [Which API keys should I use?](#which-api-keys-should-i-use)
 6. The partner configures the merchant's POS for Vipps.
@@ -164,7 +169,7 @@ provided in the callback. The API Dashboard will show errors if not.
 
 If it is not possible for your POS to support callbacks (no fixed hostname/IP, etc),
 you must actively check the payment status with
-[``GET:/ecomm/v2/payments/{orderId}/details``](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#get-payment-details).
+[``GET:/ecomm/v2/payments/{orderId}/details``](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api#get-payment-details).
 
 This is also required if you do support callbacks.
 
@@ -174,7 +179,7 @@ There is no separate API for this, but an attempt to
 [`POST:/ecomm/v2/payments`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Vipps-eCom-API/operation/initiatePaymentV3UsingPOST)
 with a phone number that is not registered with Vipps will fail with error 81,
 `User not registered with Vipps`.
-See: [Error codes](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#error-codes).
+See: [Error codes](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api#error-codes).
 
 Users that install Vipps accept the terms and conditions, including being
 "looked up" by the merchant if the payment is initiated with the phone number
@@ -204,8 +209,8 @@ complying with GDPR, etc.
 See:
 
 * [Is there an API for retrieving information about a Vipps user?](users-and-payments-faq.md#is-there-an-api-for-retrieving-information-about-a-vipps-user).
-* [The Vipps QR API](https://github.com/vippsas/vipps-qr-api)
+* [The Vipps QR API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/qr-api/)
 
 ## How can we mass sign up merchants?
 
-See: [Vipps Partners: How to sign up new merchants](https://github.com/vippsas/vipps-partner#how-to-sign-up-new-merchants).
+See: [Vipps Partners: How to sign up new merchants](https://vippsas.github.io/vipps-developer-docs/docs/vipps-partner/#how-to-sign-up-new-merchants).

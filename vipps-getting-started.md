@@ -48,15 +48,15 @@ Document version: 3.6.1.
 The `Vipps-API` product gives you access to the majority of Vipps APIs, for example:
 
 - [Access Token API](#get-an-access-token)- Required to obtain a JWT
-- [Checkout API](https://github.com/vippsas/vipps-checkout-api) - Checkout API
-- [eCom API](https://github.com/vippsas/vipps-ecom-api) - eCommerce, including express checkout
-- [ePayment API](https://github.com/vippsas/vipps-epayment-api) - New version of eCom API
-- [Login API](https://github.com/vippsas/vipps-login-api) - Identification
-- [Order Management API](https://github.com/vippsas/vipps-order-management-api) - Add data to orders
-- [Partner API](https://github.com/vippsas/vipps-partner-api) - Get info about merchants/sale units
-- [PSP API](https://github.com/vippsas/vipps-psp-api) - Initiate PSP payments. Update merchants
-- [QR API](https://github.com/vippsas/vipps-qr-api) - QR codes
-- [Recurring API](https://github.com/vippsas/vipps-recurring-api) - Recurring API
+- [Checkout API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/checkout-api/) - Checkout API
+- [eCom API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/) - eCommerce, including express checkout
+- [ePayment API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/epayment-api/) - New version of eCom API
+- [Login API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/login-api/) - Identification
+- [Order Management API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/order-management-api/) - Add data to orders
+- [Partner API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/partner-api/) - Get info about merchants/sale units
+- [PSP API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/psp-api/) - Initiate PSP payments. Update merchants
+- [QR API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/qr-api/) - QR codes
+- [Recurring API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/) - Recurring API
 
 **Please note:** API keys are _not_ available for
 [Vippsnummer](https://www.vipps.no/produkter-og-tjenester/bedrift/ta-betalt-i-butikk/ta-betalt-med-vipps/),
@@ -196,7 +196,7 @@ or provide the API keys to you in a secure way.
 The user permissions are described (in Norwegian)
 [here](https://vipps.no/hjelp/vipps/kundeforholdet-mitt/hvilke-tilganger-kan-vi-opprette-i-vippsportalen/).
 See also:
-[Vipps Partners](https://github.com/vippsas/vipps-partner).
+[Vipps Partners](https://vippsas.github.io/vipps-developer-docs/docs/vipps-partner/).
 
 ### Test and production environments
 
@@ -257,7 +257,7 @@ The same API keys are used for many types of integration:
 Direct integration,
 native apps for iOS and Android,
 point of sale integrations,
-[all the Vipps plugins](https://github.com/vippsas/vipps-plugins)
+[all the Vipps plugins](https://vippsas.github.io/vipps-developer-docs/docs/vipps-plugins/)
 and any other solution based on the Vipps eCom API.
 
 ## Quick overview of how to make an API call
@@ -317,7 +317,7 @@ The `client_id`, `client_secret` and `Ocp-Apim-Subscription-Key` are unique per
 `merchantSerialNumber` (MSN, i.e. the number of the sale unit).
 
 Please note: Partners should use
-[partner keys](https://github.com/vippsas/vipps-partner/blob/main/partner-keys.md).
+[partner keys](https://vippsas.github.io/vipps-developer-docs/docs/vipps-partner/partner-keys).
 
 **Please note:** You can have multiple access tokens being used at the same time.
 
@@ -374,7 +374,7 @@ to the Vipps API, with the `Bearer` keyword (it is case-sensitive).
 A typical example of an API endpoint:
 [`POST:/ecomm/v2/payments`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Vipps-eCom-API/operation/initiatePaymentV3UsingPOST)
 in the Vipps eCom API:
-[Initiate payment flow: API calls](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#initiate-payment-flow-api-calls).
+[Initiate payment flow: API calls](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api#initiate-payment-flow-api-calls).
 
 Here is an example with `Authorization` and `Ocp-Apim-Subscription-Key` (but
 without the `client_id` and `client_secret`, since they are only used for the

@@ -90,16 +90,16 @@ If you use Klarna Checkout, here are our
 
 ## Vipps on-site messaging
 
-[Vipps on-site-messaging](https://github.com/vippsas/vipps-checkout-api/blob/main/vipps-checkout-on-site-messaging.md)
+[Vipps on-site-messaging](https://vippsas.github.io/vipps-developer-docs/docs/APIs/checkout-api/vipps-checkout-on-site-messaging)
 contains a badges in different variants that can be used to let your customers
 know that Vipps payment is accepted.
 
 ## Partner API: Pre-fill applications
 
 Partners can now use the
-[Partner API](https://github.com/vippsas/vipps-partner-api)
+[Partner API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/partner-api/)
 to pre-fill applications and
-[submit a product order for a merchant](https://github.com/vippsas/vipps-partner-api/blob/main/vipps-partner-api.md#submit-a-product-order-for-a-merchant).
+[submit a product order for a merchant](https://vippsas.github.io/vipps-developer-docs/docs/APIs/partner-api/vipps-partner-api#submit-a-product-order-for-a-merchant).
 
 ## Settlement API: In progress
 

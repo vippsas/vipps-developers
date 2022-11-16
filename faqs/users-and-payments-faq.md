@@ -149,9 +149,9 @@ will need the regulatory approval as
 If the service sells access, in the form of a subscription or per-use, the
 service is *most likely* a regular Vipps eCom customer, and can use
 the
-[Vipps eCom API](https://github.com/vippsas/vipps-ecom-api)
+[Vipps eCom API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/)
 or one of our
-[plugins](https://github.com/vippsas/vipps-plugins).
+[plugins](https://vippsas.github.io/vipps-developer-docs/docs/vipps-plugins/).
 
 Vipps cannot offer legal advice for this.
 
@@ -199,7 +199,7 @@ See:
 ## I have initiated an order but I can't find it!
 
 For the eCom API, see
-[I have initiated an order but I can't find it](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-faq.md#i-have-initiated-an-order-but-i-cant-find-it).
+[I have initiated an order but I can't find it](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api-faq#i-have-initiated-an-order-but-i-cant-find-it).
 
 ## How long is an initiated order valid, if the user does not confirm in the Vipps app?
 
@@ -241,7 +241,7 @@ Please check the Vipps payment:
 5. Click the order.
 6. See the "History" details.
 
-This is of course also supported in the [eCom API](https://github.com/vippsas/vipps-ecom-api/), and it is a requirement to use
+This is of course also supported in the [eCom API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/), and it is a requirement to use
 this functionality when integrating with Vipps:
 [`GET:/ecomm/v2/payments/{orderId}/details`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Vipps-eCom-API/operation/getPaymentDetailsUsingGET)
 
@@ -263,7 +263,7 @@ actions, network connectivity/speed, etc. Because of this, it is not
 possible to base an integration on a specific sequence of events.
 
 See:
-[Initiate payment flow: Phone and browser](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#initiate-payment-flow-phone-and-browser)
+[Initiate payment flow: Phone and browser](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api#initiate-payment-flow-phone-and-browser)
 
 ## Where can I find reports on transactions?
 

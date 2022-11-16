@@ -188,8 +188,8 @@ is a requirement.
 
 See:
 
-* [Vipps eCom API checklist](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api-checklist.md)
-* [Vipps PSP API checklist](https://github.com/vippsas/vipps-psp-api/blob/master/vipps-psp-api-checklist.md)
+* [Vipps eCom API checklist](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api-checklist)
+* [Vipps PSP API checklist](https://vippsas.github.io/vipps-developer-docs/docs/APIs/psp-api/vipps-psp-api-checklist)
 
 ## Can I use Vipps with Klarna Checkout?
 
@@ -197,12 +197,12 @@ Yes. Klarna Checkout (KCO) supports Vipps as an External Payment Method if you h
 agreement with Klarna for this.
 
 **Please note:** It's technically possible to use
-[Vipps Hurtigkasse](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#express-checkout-payments)
+[Vipps Hurtigkasse](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api#express-checkout-payments)
 on product pages and in the shopping basket for fast and easy checkout, and to
 let users choose between Vipps and Klarna _before_ they get to Klarna Checkout.
 With
 [Vipps Logg inn](https://vipps.no/produkter-og-tjenester/bedrift/logg-inn-med-vipps/logg-inn-med-vipps/)
-(the [Vipps Login API](https://github.com/vippsas/vipps-login-api))
+(the [Vipps Login API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/login-api/))
 it's also possible to let users register and log in without usernames and passwords.
 [Vipps Checkout](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/vipps-checkout/)
 may also be interesting.
@@ -231,7 +231,7 @@ Note, the description translates to: _Remember: Vipps is always fee-free when yo
 | Field          | Description                                              |
 | -------------- | -------------------------------------------------------- |
 | `name`         | The name of the payment method. Use "Vipps".             |
-| `redirect_url` | Merchant hosted url redirecting to [the Vipps payment deeplink URL](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#the-vipps-deeplink-url)|
+| `redirect_url` | Merchant hosted url redirecting to [the Vipps payment deeplink URL](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api#the-vipps-deeplink-url)|
 | `image_url`    | The logo to be shown for this payment method. See: [Vipps design guidelines](https://github.com/vippsas/vipps-design-guidelines).  |
 | `fee`          | Should not be applicable because of PSD2 surcharge ban.  |
 | `description`  | The `description` field should state that there is no fee when paying with Vipps. The Norwegian text above says: "Vipps is without fees when paying businesses".  |
@@ -252,7 +252,7 @@ the settlements from Vipps will be separate from the settlements from Klarna.
 
 ## What functionality is included in the eCom API, but not the PSP API?
 
-The [Vipps PSP API](https://github.com/vippsas/vipps-psp-api) provides tokens
+The [Vipps PSP API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/psp-api/) provides tokens
 that a PSP can use to charge a Vipps user's card. To put it simply, it is a
 "card token lookup service". The payment is completed by the PSP, who sends an
 update to Vipps about the success or failure.
@@ -264,7 +264,7 @@ The Vipps eCom API has some functionality that is not available in the PSP API:
    This results in a higher success rater for payments.
    The PSP API does not have this functionality, as it is the PSP, not Vipps,
    that make the charge.
-2. [Express checkout (Vipps Hurtigkasse)](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#express-checkout-payments)
+2. [Express checkout (Vipps Hurtigkasse)](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api#express-checkout-payments)
    is only available in the Vipps eCom API.
 3. [Userinfo](../common-topics/userinfo.md):
    The Vipps eCom API offers the possibility for merchants to ask for the user's
@@ -292,6 +292,6 @@ to the requirements.
 ## How can I change partner for my integration with Vipps?
 
 See:
-[How to change partners for a merchant](https://github.com/vippsas/vipps-partner#how-to-change-partners-for-a-merchant).
+[How to change partners for a merchant](https://vippsas.github.io/vipps-developer-docs/docs/vipps-partner/#how-to-change-partners-for-a-merchant).
 
 **Please note:** The MSN (the number) does _not_ change when changing partners.

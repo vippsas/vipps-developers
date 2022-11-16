@@ -80,8 +80,8 @@ This is a high-level description, common for the APIs that support Userinfo:
 
 For specific examples, see:
 
-* [eCom API Guide: Userinfo call-by-call guide](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#userinfo-call-by-call-guide)
-* [Recurring API Guide: Userinfo call-by-call guide](https://github.com/vippsas/vipps-recurring-api/blob/master/vipps-recurring-api.md#userinfo-call-by-call-guide)
+* [eCom API Guide: Userinfo call-by-call guide](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api#userinfo-call-by-call-guide)
+* [Recurring API Guide: Userinfo call-by-call guide](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/vipps-recurring-api#userinfo-call-by-call-guide)
 
 **Please note:** The `sub` is added asynchronously, so if the API call in (5) above
 is made within (milli)seconds of the payment approval in the app, it may not be

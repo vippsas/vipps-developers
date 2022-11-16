@@ -36,7 +36,7 @@ merchant can choose whether the user should be automatically taken back to the
 browser after completing an authentication in the Vipps app.
 We have also added a specific flow for integrations with apps.
 More information, and screenshots of the new flows, can be found in the
-[documentation](https://github.com/vippsas/vipps-login-api/blob/master/vipps-login-api.md#mobile-flow---app-switch-based-flow).
+[documentation](https://vippsas.github.io/vipps-developer-docs/docs/APIs/login-api/vipps-login-api#mobile-flow---app-switch-based-flow).
 
 To have a unified way of providing user information across Vipps services
 we are standardising the data formats, both within Vipps and with the OIDC standard.
@@ -47,9 +47,9 @@ To do this we have been required to introduce a new version of our Vipps login A
 ## Vipps HTTP Headers ℹ️
 
 We recommend using the following _optional_ HTTP headers for all requests to the
-[Vipps eCom API](https://github.com/vippsas/vipps-ecom-api/)
+[Vipps eCom API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/)
 and the
-[Vipps Recurring API](https://github.com/vippsas/vipps-recurring-api/).
+[Vipps Recurring API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/).
 
 | Header                        | Description                                  | Example value        |
 | ----------------------------- | -------------------------------------------- | -------------------- |
@@ -75,7 +75,7 @@ to see trends and areas to investigate.
 Once the initial version is available, we are very interested in
 suggestions for improvement. You can even start suggesting features now:
 Please create one issue per suggestion/wish in the
-[vipps-developers](https://github.com/vippsas/vipps-developers)
+[vipps-developers](https://github.com/vippsas/vipps-developers/issues)
 repo on GitHUb.
 
 ## Suggest improvements, get a pair of Vipps socks 🧦
@@ -88,6 +88,7 @@ everyone that creates a (somewhat meaningful) issue or PR for our API
 documentation before January 31 2021.
 
 What do do:
+
 1. Create an issue or PR in the appropriate GitHub repo.
 2. Wait for our comment (it may not be immediate).
 3. If we think it's "OK", we will ask you to send an email to us with your address.
@@ -106,7 +107,7 @@ Vipps development. Send an email to integration@vipps.no with a list of
 email addresses to invite, with the same people on CC. We fix the rest.
 
 This does, unfortunately, not apply to customers using one of our
-[plugins](https://github.com/vippsas/vipps-plugins), or
+[plugins](https://vippsas.github.io/vipps-developer-docs/docs/vipps-plugins/), or
 customers using Vipps through a partner.
 
 ## Do you want a technical workshop? 🛠
@@ -116,7 +117,7 @@ Vipps development. Send an email to integration@vipps.no with a list of
 email addresses to invite, with the same people on CC. We fix the rest.
 
 This does, unfortunately, not apply to customers using one of our
-[plugins](https://github.com/vippsas/vipps-plugins), or
+[plugins](https://vippsas.github.io/vipps-developer-docs/docs/vipps-plugins/), or
 customers using Vipps through a partner.
 
 ## Reminders

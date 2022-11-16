@@ -49,4 +49,4 @@ browser in Instagram, instead of the default Safari browser), the `fallback` URL
 See:
 
 * [How can I open the fallback URL in a specific (embedded) browser?](common-problems-faq.md#how-can-i-open-the-fallback-url-in-a-specific-embedded-browser).
-* [Recommendations regarding handling redirects](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#recommendations-regarding-handling-redirects).
+* [Recommendations regarding handling redirects](../common-topics/redirects).

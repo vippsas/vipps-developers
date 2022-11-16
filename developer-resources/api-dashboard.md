@@ -26,7 +26,7 @@ We strongly recommend that you also monitor your Vipps integration yourself.
 **Important:** Partners can ask their merchants to give them access to the
 sale unit(s) the partner is making payments for, so the partner can use the
 API Dashboard. There is a guide here:
-[How to add a user on portal.vipps.no](https://github.com/vippsas/vipps-partner/blob/main/add-portal-user.md)
+[How to add a user on portal.vipps.no](https://vippsas.github.io/vipps-developer-docs/docs/vipps-partner/add-portal-user)
 
 **Please note:** The API dashboard is not real-time, and events might take up to
 10 minutes before they appear.

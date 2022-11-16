@@ -204,7 +204,7 @@ Use these amounts to always get the same result.
 | 2.02   | SCA required              |
 
 **Please note:** The
-[force approve](https://github.com/vippsas/vipps-ecom-api/blob/master/vipps-ecom-api.md#testing)
+[force approve](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api#testing)
 endpoint does not support this functionality.
 
 ## Vipps test apps
