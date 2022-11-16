@@ -30,6 +30,7 @@ Document version 0.0.3.
 ## What are the requirements for Vipps merchants?
 
 Vipps merchants (corporate customers) must have a:
+
 * A Norwegian organization number
 * A Norwegian bank account
 
@@ -39,7 +40,7 @@ Vipps must follow the regulatory requirements for KYC (Know Your Customer),
 AML (Anti Money Laundering) and other risk assessment procedures.
 
 See:
-[Getting Started: Requirements](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/vipps-getting-started#requirements).
+[Getting Started: Requirements](../vipps-getting-started.md#requirements).
 
 It is also possible to use Vipps through a PSP (Payment Service Provider).
 Vipps then relies on the PSP for KYC (Know Your Customer), AML (Anti Money Laundering)

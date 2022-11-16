@@ -48,7 +48,7 @@ Document version: 3.6.1.
 The `Vipps-API` product gives you access to the majority of Vipps APIs, for example:
 
 - [Access Token API](#get-an-access-token)- Required to obtain a JWT
-- [Checkout API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/checkout-api) - Checkout API
+- [Checkout API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/checkout-api/) - Checkout API
 - [eCom API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/) - eCommerce, including express checkout
 - [ePayment API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/epayment-api/) - New version of eCom API
 - [Login API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/login-api/) - Identification
