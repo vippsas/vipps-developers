@@ -41,7 +41,7 @@ with API access.
 
 <!-- END_TOC -->
 
-Document version: 3.2.5.
+Document version: 3.2.6.
 
 ## About the test environment
 
@@ -137,20 +137,19 @@ contains information about your test user.
 The subject should contain "Kom i gang med Vipps".
 Please search your mail, including the spam/junk folder, if you do not find it.
 
-The provided test user can be used in the [Vipps test apps](#vipps-test-apps).
-
-You must log in with the test user in the test app, before you can complete payments for that user.
-
-You may use the same test user on multiple devices.
-
-Test users can are not connected to any merchant, they can be used with any
-merchant and sale unit in the test environment.
+**Please note:**
+* The provided test user can be used in the [Vipps test apps](#vipps-test-apps).
+* You must log in with the test user in the test app, before you can complete
+  payments for that user.
+* You may use the same test user on multiple devices.
+* Test users can are not connected to any merchant, they can be used with any
+  merchant and sale unit in the test environment.
 
 If you need more than one test user, please contact your
 Key Account Manager (if you have one),
 your partner contact (if you have one),
-or
-[contact us](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/contact).
+or contact
+[customer service](https://vipps.no/kontakt-oss/).
 
 There is no way to get a test user in the production environment.
 The production environment only contains real users and data.
