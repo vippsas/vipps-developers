@@ -20,7 +20,7 @@ See also
 [Common errors](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api-faq#common-errors)
 in the eCom API FAQs.
 
-Document version 0.1.1.
+Document version 0.1.2.
 
 
 <!-- START_TOC -->
@@ -100,7 +100,7 @@ See:
 You can use
 [Postman](../developer-resources/quick-start-guides.md)
 to manually do API calls, Use the "inspect" functionality to see the complete
-requests and responses, and to check that the API keys.
+requests and responses, and to check that the API keys are correct.
 
 You also need to make sure you have access to the right API.
 See:
