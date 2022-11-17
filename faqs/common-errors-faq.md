@@ -20,13 +20,14 @@ See also
 [Common errors](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api-faq#common-errors)
 in the eCom API FAQs.
 
-Document version 0.1.2.
+Document version 0.2.0.
 
 
 <!-- START_TOC -->
 
 ## Table of contents
 
+* [Why do I get `HTTP 400 Bad Request`?](#why-do-i-get-http-400-bad-request)
 * [Why do I get `HTTP 401 Unauthorized`?](#why-do-i-get-http-401-unauthorized)
 * [Why do I get `HTTP 403 Forbidden`?](#why-do-i-get-http-403-forbidden)
 * [Why do I get `HTTP 429 Too Many Requests`?](#why-do-i-get-http-429-too-many-requests)
@@ -43,6 +44,37 @@ Document version 0.1.2.
 * [Why do I get `Why do I get Invalid MSN: 654321. This MSN is not valid for the provided supermerchant id.`?](#why-do-i-get-invalid-msn-654321-this-msn-is-not-valid-for-the-provided-supermerchant-id)
 
 <!-- END_TOC -->
+
+## Why do I get `HTTP 400 Bad Request`?
+
+It is because you are making an incorrect API request. The response body contains
+information about what you are doing wrong.
+
+Some common errors:
+* Invalid amount.
+* callbackUrl is invalid.
+* Captured amount exceeds the reserved amount. You can not capture a higher amount than the user has accepted.
+* Cannot refund more than captured amount.
+* User unknown. The phone number is either incorrectly formatted (see the API
+  specification), is not a Vipps user, or the user is under 15 years old and
+  cannot pay businesses. Vipps cannot give more details. This error also occurs
+  if using a non-Norwegian phone number.
+
+An example: For `POST:/accesstoken/get` the error may be like this if you send an invalid `client_id`:
+
+```
+{
+    "error": "unauthorized_client",
+    "error_description": "AADSTS700016: Application with identifier '4204662b (truncated)' was not found in the directory 'VIPPS-TEST'. This can happen if the application has not been installed by the administrator of the tenant or consented to by any user in the tenant. You may have sent your authentication request to the wrong tenant.\r\nTrace ID: 05d8ee66-30c4- (truncated)\r\nCorrelation ID: 7685939b-(truncated)\r\nTimestamp: 2022-11-17 11:37:08Z",
+    "error_codes": [
+        700016
+    ],
+    "timestamp": "2022-11-17 11:37:08Z",
+    "trace_id": "05d8ee66-30c4-4ec0-b099-be28c4f30f00",
+    "correlation_id": "7685939b-ae73-4041-8059-5a590140e73a",
+    "error_uri": "https://login.windows.net/error?code=700016"
+}
+```
 
 ## Why do I get `HTTP 401 Unauthorized`?
 
