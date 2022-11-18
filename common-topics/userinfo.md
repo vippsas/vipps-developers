@@ -53,8 +53,6 @@ Scope is the type of information you want access to. This can include any of the
 | `name`           | First, middle and given name. Verified with the National Population Register. | yes |
 | `phoneNumber`    | Phone number. Verified when creating the Vipps account. | yes |
 | `nin`            | Norwegian national identity number. Verified with BankID. **NB:** Merchants need to apply for access to NIN. See: [Who can get access to NIN and how?](/docs/APIs/login-api/vipps-login-api-faq.md#who-can-get-access-to-nin-and-how)    | yes |
-| `accountNumbers` | User bank account numbers. **NB:** Merchants need to apply for access to accountNumbers. See: [Who can get access to account numbers and how?](/docs/APIs/login-api/vipps-login-api-faq.md#who-can-get-access-to-accountnumbers-and-how) | yes |
-
 
 **Please note:** If the e-mail address that is delivered has the flag `email_verified : false`,
 this address should not be used to link the user to an existing account without
@@ -159,9 +157,6 @@ with the `sub` that was retrieved earlier. See below on how to construct the cal
 
 The access token is received on a successful request to the token endpoint described in [Authentication](./authentication.md).
 
-**Important note:** `OCP-APIM-Subscription-Key` used for the eCom API must *not* be included. This is because userinfo is part of
-Vipps Login and is therefore *not* under the same subscription, and will result in a `HTTP Unauthorized 401` error.
-
 **Example response from a successful call:**
 
 ```json
@@ -174,7 +169,7 @@ Vipps Login and is therefore *not* under the same subscription, and will result 
   "name": "Ada Lovelace",
   "given_name": "Ada",
   "family_name": "Lovelace",
-  "sid": "7d78a726-af92-499e-b857-de263ef9a969",
+  "sid": "f26d25af56909b55",
   "phone_number": "4712345678",
   "address": {
     "street_address": "Suburbia 23",
