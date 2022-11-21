@@ -116,13 +116,9 @@ See [Vipps servers](servers.md) for more information.
 
 ## Test merchants
 
-<<<<<<< HEAD
-All Vipps customers can create sale units in the test environment:
-=======
 All Vipps customers can create sale units in the test environment.
 
 To create a test sale unit:
->>>>>>> f5e99355411a6c507cf3bb84373e9f91b8c9807b
 
 1. Log in to [portal.vipps.no](https://portal.vipps.no) using BankID.
 2. Select _Vipps På Nett_ -> _Utvikler_.
