@@ -13,7 +13,7 @@ All merchants have access to an API Dashboard on
 The API Dashboard shows information about your API usage, an overview of errors, etc.
 Here's an example for one endpoint:
 
-![API Dashboard](images/2021-02-api-dashboard-example.png)
+![API Dashboard](../images/api-dashboard-example.png)
 
 The API Dashboard is available for both the production and test environments,
 and is an easy way to see if you are using the Vipps APIs correctly.
