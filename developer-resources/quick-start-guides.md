@@ -29,7 +29,7 @@ END_METADATA -->
 
 <!-- END_TOC -->
 
-Document version: 4.3.1.
+Document version: 4.3.2.
 
 ## What you need for getting started with the API
 
@@ -39,7 +39,7 @@ You need:
 
 1. A *test user*.
 
-    All customers automatically get test users. See [test users](./test-environment.md#test-users) for more information.
+    All merchants automatically get a test user. See [test users](./test-environment.md#test-users) for more information.
 
 1. A *test sale unit*.
 

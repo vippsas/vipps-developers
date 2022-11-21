@@ -15,7 +15,7 @@ END_METADATA -->
 
 <!-- END_COMMENT -->
 
-The Merchant Test Environment (MT) is available for all Vipps customers
+The Merchant Test Environment (MT) is available for all Vipps merchants
 with API access.
 
 <!-- START_TOC -->
@@ -41,7 +41,7 @@ with API access.
 
 <!-- END_TOC -->
 
-Document version: 3.2.6.
+Document version: 3.2.8.
 
 ## About the test environment
 
@@ -62,6 +62,14 @@ The test environment is suitable for testing _most_ of the Vipps functionality, 
 functionality in the production environment is not available in MT.
 In general, MT does not contain functionality that requires integration with
 third parties.
+
+The test and production environments are completely separate and use different
+[API keys](../common-topics/api-keys.md).
+
+**Please note:** For production, Vipps only offers
+[Direct capture](../common-topics/reserve-and-capture.md#direct-capture)
+for merchants that use Vipps through a partner.
+In the test environment, you can do this by creating a sale unit where direct capture is allowed.
 
 ### Limitations of the test environment
 
@@ -86,7 +94,7 @@ To test functionality that is not available in MT, you will have to use the
 production environment in a controlled manner. One example may be to test
 _Vipps Regninger_ with real invoices, but with small amounts. We recommend 2 NOK.
 
-Other differences between Prod and MT:
+Other differences between Production and MT:
 
 - There is no equivalent to [portal.vipps.no](https://portal.vipps.no) for the test environment.
   Payments must be checked with the API, as there is no web interface.
@@ -108,20 +116,25 @@ See [Vipps servers](servers.md) for more information.
 
 ## Test merchants
 
+<<<<<<< HEAD
+All Vipps customers can create sale units in the test environment:
+=======
 All Vipps customers can create sale units in the test environment.
-These sale units have access to all the
-[current API products](../README.md#api-products).
 
 To create a test sale unit:
+>>>>>>> f5e99355411a6c507cf3bb84373e9f91b8c9807b
 
 1. Log in to [portal.vipps.no](https://portal.vipps.no) using BankID.
 2. Select _Vipps På Nett_ -> _Utvikler_.
 3. In the page that opens, select _Test_. This opens a list of all the test merchants.
 4. If you do not have one that you can use, create it by clicking _Add test sales unit_.
 5. In the panel that opens, enter a name and select the properties you would like. Then click _Create_.
-6. After some minutes, and browser refreshes, you should find the new merchant at the bottom of the list.
+6. After a few seconds, and a browse refresh, you should find the new merchant at the bottom of the list.
 7. Click the _Show keys_ button to see your test keys. Take note of these, but
    do not share them or store them in a publicly accessible place, including the online version of Postman.
+
+Sale units in the test environment have access to all the
+[current API products](../vipps-getting-started.md#api-products).
 
 It is not possible to _change_ an existing sale unit in the test environment,
 but you can create as many as you need.
@@ -138,6 +151,7 @@ The subject should contain "Kom i gang med Vipps".
 Please search your mail, including the spam/junk folder, if you do not find it.
 
 **Please note:**
+
 * The provided test user can be used in the [Vipps test apps](#vipps-test-apps).
 * You must log in with the test user in the test app, before you can complete
   payments for that user.
