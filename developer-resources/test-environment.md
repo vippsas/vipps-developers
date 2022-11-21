@@ -41,7 +41,7 @@ with API access.
 
 <!-- END_TOC -->
 
-Document version: 3.2.7.
+Document version: 3.2.8.
 
 ## About the test environment
 
@@ -108,8 +108,7 @@ See [Vipps servers](servers.md) for more information.
 
 ## Test merchants
 
-All Vipps customers can create sale units in the test environment.
-To create a test sale unit:
+All Vipps customers can create sale units in the test environment:
 
 1. Log in to [portal.vipps.no](https://portal.vipps.no) using BankID.
 2. Select _Vipps På Nett_ -> _Utvikler_.
