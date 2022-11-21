@@ -66,8 +66,10 @@ third parties.
 The test and production environments are completely separate and use different
 [API keys](../common-topics/api-keys.md).
 
-**Please note:** Vipps only offers "direct capture" for merchants that use Vipps through a partner.
-See [Direct capture](../common-topics/reserve-and-capture.md#direct-capture) for details.
+**Please note:** For production, Vipps only offers
+[Direct capture](../common-topics/reserve-and-capture.md#direct-capture)
+for merchants that use Vipps through a partner.
+In the test environment, you can do this by creating a sale unit where direct capture is allowed.
 
 ### Limitations of the test environment
 
