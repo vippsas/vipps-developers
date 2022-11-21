@@ -110,7 +110,7 @@ See [Vipps servers](servers.md) for more information.
 
 All Vipps customers can create sale units in the test environment.
 These sale units have access to all the
-[current API products](../vipps-getting-started.md#api-products).
+[current API products](../README.md#api-products).
 
 To create a test sale unit:
 

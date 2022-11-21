@@ -16,7 +16,7 @@ The eCom v2 API has all the functionality of eCom v1, and there is no reason
 for not upgrading to eCom v2.
 
 See
-[more details about the various Vipps APIs](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/vipps-getting-started#api-products).
+[more details about the various Vipps APIs](../README.md#api-products).
 
 ## Vipps InApp API to be phased out December 31 2019
 

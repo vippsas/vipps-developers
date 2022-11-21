@@ -16,13 +16,12 @@ END_METADATA -->
 
 <!-- END_COMMENT -->
 
-Document version: 3.6.1.
+Document version: 3.7.0.
 
 <!-- START_TOC -->
 
 ## Table of contents
 
-- [API products](#api-products)
 - [Requirements](#requirements)
   - [Non-Norwegian companies](#non-norwegian-companies)
   - [Vipps users](#vipps-users)
@@ -42,27 +41,6 @@ Document version: 3.6.1.
 - [Questions?](#questions)
 
 <!-- END_TOC -->
-
-## API products
-
-The `Vipps-API` product gives you access to the majority of Vipps APIs, for example:
-
-- [Access Token API](#get-an-access-token)- Required to obtain a JWT
-- [Checkout API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/checkout-api/) - Checkout API
-- [eCom API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/) - eCommerce, including express checkout
-- [ePayment API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/epayment-api/) - New version of eCom API
-- [Login API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/login-api/) - Identification
-- [Order Management API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/order-management-api/) - Add data to orders
-- [Partner API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/partner-api/) - Get info about merchants/sale units
-- [PSP API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/psp-api/) - Initiate PSP payments. Update merchants
-- [QR API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/qr-api/) - QR codes
-- [Recurring API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/) - Recurring API
-
-**Please note:** API keys are _not_ available for
-[Vippsnummer](https://www.vipps.no/produkter-og-tjenester/bedrift/ta-betalt-i-butikk/ta-betalt-med-vipps/),
-as there is no external API.
-
-For an overview of all products, in Norwegian, see [vipps.no](https://vipps.no/produkter-og-tjenester/bedrift/).
 
 ### Note to existing users
 
