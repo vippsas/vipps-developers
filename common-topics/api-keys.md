@@ -97,4 +97,4 @@ Vipps API.  The `Vipps-API` product also includes some _legacy_ APIs, such as _e
 
 If you are still using a legacy API, you should upgrade as soon as possible.
 See:
-[Vipps API Lifecycle](./common-topics/api-lifecycle.md) for more information.
+[Vipps API Lifecycle](api-lifecycle.md) for more information.
