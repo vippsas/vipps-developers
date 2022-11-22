@@ -127,7 +127,7 @@ You can log in to
 [portal.vipps.no](https://portal.vipps.no)
 to double check your API keys, sale units and API products.
 See:
-[Getting the API keys](../vipps-getting-started.md#getting-the-api-keys).
+[Getting the API keys](../common-topics/api-keys.md#getting-the-api-keys).
 
 You can use
 [Postman](../developer-resources/quick-start-guides.md)
