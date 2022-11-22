@@ -80,7 +80,7 @@ Update your integrations so they will not stop working.
    * Name - Enter the name of your test sales unit.
    * Partner - Enter optional partner data (not usually needed).
    * Select optional properties:
-     * [Skip Landing Page]((./faqs/vipps-landing-page-faq.md#is-it-possible-to-skip-the-landing-page))
+     * [Skip Landing Page]((../faqs/vipps-landing-page-faq.md#is-it-possible-to-skip-the-landing-page))
      * [Recurring API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/)
      * [Direct Capture](../common-topics/reserve-and-capture.md#direct-capture)
 
