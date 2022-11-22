@@ -45,7 +45,7 @@ To get your API keys:
 
 1. Log in to [portal.vipps.no](https://portal.vipps.no) using BankID.
 
-   * See [Developer resources: Permissions and users](../developer-resources/portal.md#permissions-and-users), if necessary.
+    - See [Developer resources: Permissions and users](../developer-resources/portal.md#permissions-and-users), if necessary.
 
 2. Select _Vipps På Nett_ > _Utvikler_.
 
