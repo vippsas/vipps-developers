@@ -16,7 +16,7 @@ END_METADATA -->
 
 <!-- END_COMMENT -->
 
-Document version: 3.7.0.
+Document version: 3.7.1.
 
 <!-- START_TOC -->
 
@@ -32,6 +32,7 @@ Document version: 3.7.0.
   - [Get an access token](#get-an-access-token)
   - [Make an API call](#make-an-api-call)
   - [Checking for errors with the API Dashboard](#checking-for-errors-with-the-api-dashboard)
+- [Next step: Quick start guides](#next-step-quick-start-guides)
 - [Questions?](#questions)
 
 <!-- END_TOC -->
@@ -262,6 +263,16 @@ All merchants have access to the
 [API Dashboard](./developer-resources/api-dashboard.md).
 We strongly recommend to use that for detecting errors in the API use,
 in addition to normal monitoring.
+
+
+## Next step: Quick start guides
+
+If you are ready to try out some API request, head over to the
+[Quick start guides](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/developer-resources/quick-start-guides) page and read about creating your own test set up!
+
+See:
+
+* [Quick start guides: What you need for getting started with the API](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/developer-resources/quick-start-guides)
 
 ## Questions?
 
