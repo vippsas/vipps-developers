@@ -8,6 +8,13 @@ END_METADATA -->
 
 # The Vipps landing page
 
+This is applicable to:
+
+* [eCom API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/)
+* [Partner API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/partner-api/)
+* [PSP API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/psp-api/)
+* [Recurring API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/)
+
 When a user is directed to the `url`,
 they will either be taken to Vipps or to the Vipps landing page:
 
