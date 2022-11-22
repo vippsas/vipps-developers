@@ -6,17 +6,14 @@ pagination_prev: null
 ---
 END_METADATA -->
 
-<!-- START_TOC -->
-
-## Table of Contents
-
-* [Example responses](#example-responses)
-* [Important information when using isApp](#important-information-when-using-isapp)
-* [isApp flow](#isapp-flow)
-
-<!-- END_TOC -->
-
 # isApp
+
+This is applicable to:
+
+* [eCom API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/)
+* [PSP API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/psp-api/)
+* [Recurring API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/)
+* [Report API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/report-api)
 
 If the payment is initiated in a native app, it is possible to explicitly force
 a `vipps://` URL by sending the optional `isApp` parameter in the initiate call:
@@ -39,6 +36,17 @@ If the user does not have Vipps installed:
    with Vipps installed.
 * `"isApp": true`: The user will get an error message saying that the link can
   not be opened. Or, depending on the native app, nothing will happen.
+
+
+<!-- START_TOC -->
+
+## Table of Contents
+
+* [Example responses](#example-responses)
+* [Important information when using isApp](#important-information-when-using-isapp)
+* [isApp flow](#isapp-flow)
+
+<!-- END_TOC -->
 
 ## Example responses
 

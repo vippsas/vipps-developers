@@ -49,6 +49,7 @@ The `Vipps-API` product gives you access to the majority of Vipps APIs, for exam
 - [PSP API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/psp-api/) - Initiate PSP payments. Update merchants.
 - [QR API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/qr-api/) - Use QR codes to allow customers to connect to Vipps and purchase from your store.
 - [Recurring API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/) - A business or organization can allow their customers to set up recurring payments (e.g., for subscriptions, membership, regular donations, etc.) through Vipps. This is also known as _Vipps Faste Betalinger_.
+- [Report API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/report-api) - Fetch information about payment events that have been processed by Vipps.
 - [Access Token API](#get-an-access-token)- Required to obtain a JWT.
 
 **Please note:** API keys are _not_ available for
