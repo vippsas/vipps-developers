@@ -6,7 +6,7 @@ pagination_prev: null
 ---
 END_METADATA -->
 
-# The Vipps portal
+# The Developer tools in the Vipps portal
 
 <!-- START_COMMENT -->
 
@@ -15,11 +15,17 @@ END_METADATA -->
 
 <!-- END_COMMENT -->
 
+This page will guide you through the steps to finding API keys and creating test sales units
+on the [Vipps portal (portal.vipps.no)](https://portal.vipps.no).
+
+For more information about the portal, see the
+[help pages on vipps.no (in Norwegian)](https://vipps.no/hjelp/vipps/kundeforholdet-mitt/hva-får-jeg-tilgang-til-når-jeg-logger-meg-inn-på-vippsportalen/).
+
 ## How to find the API keys
 
 1. Log in to [portal.vipps.no](https://portal.vipps.no) using BankID.
 
-    * If necessary, see [Problems logging in to the Vipps Portal](#problems-logging-in-to-the-vipps-portal).
+    * If necessary, see [problems logging in to the Vipps Portal](#problems-logging-in-to-the-vipps-portal).
 
 1. Select _Vipps På Nett_ > _Utvikler_.
 
@@ -86,8 +92,7 @@ but you can create as many as you need.
 
 ## Problems logging in to the Vipps Portal
 
-If you do not have BankID,
-or you have BankID but not access to the correct merchant,
+If you don't have BankID, or you have BankID but not access to the correct merchant,
 you will need the merchant's administrator to log in on
 [portal.vipps.no](https://portal.vipps.no)
 and provide the API keys to you in a secure way.
@@ -99,16 +104,26 @@ If you don't know who the administrator is, you can check
 and see who has the right to sign for the company.
 
 If you can log in to [portal.vipps.no](https://portal.vipps.no), but cannot see
-the "Utvikler" (developer) selection in the menu, you need to have the
+the _Utvikler_ (developer) selection in the menu, you need to have the
 merchant's administrator grant you developer access for the sales unit you
 need access to.
 
-For integration partners: You will need the merchant's administrator to either
-log in on
-[portal.vipps.no](https://portal.vipps.no)
-and grant you developer access for the sales unit you need access to,
-or provide the API keys to you in a secure way.
-The user permissions are described (in Norwegian)
-[here](https://vipps.no/hjelp/vipps/kundeforholdet-mitt/hvilke-tilganger-kan-vi-opprette-i-vippsportalen/).
-See also:
-[Vipps Partners](https://vippsas.github.io/vipps-developer-docs/docs/vipps-partner/).
+For
+[integration partners](https://vippsas.github.io/vipps-developer-docs/docs/vipps-partner/):
+You will need the merchant's administrator to either:
+
+* Log in to
+    [portal.vipps.no](https://portal.vipps.no)
+    and grant you developer access for the necessary sales unit, or
+* Provide the API keys to you in a secure way
+
+For more information, see:
+
+* [Developer Information: Vipps Partners](https://vippsas.github.io/vipps-developer-docs/docs/vipps-partner/)
+* [User permissions on vipps.no (in Norwegian)](https://vipps.no/hjelp/vipps/kundeforholdet-mitt/hvilke-tilganger-kan-vi-opprette-i-vippsportalen/).
+
+## Questions
+
+For more information about the Vipps Portal, see the
+[help pages on vipps.no (in Norwegian)](https://vipps.no/hjelp/vipps/kundeforholdet-mitt/hva-får-jeg-tilgang-til-når-jeg-logger-meg-inn-på-vippsportalen/)
+or [contact us](https://vipps.no/kontakt-oss/).
