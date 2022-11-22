@@ -6,7 +6,7 @@ pagination_prev: null
 ---
 END_METADATA -->
 
-# The Developer tools in the Vipps portal
+# The Vipps portal
 
 <!-- START_COMMENT -->
 
@@ -25,7 +25,7 @@ For more information about the portal, see the
 
 1. Log in to [portal.vipps.no](https://portal.vipps.no) using BankID.
 
-    * If necessary, see [problems logging in to the Vipps Portal](#problems-logging-in-to-the-vipps-portal).
+    * If you have problems, see [Permissions and users](#permissions-and-users).
 
 1. Select _Vipps På Nett_ > _Utvikler_.
 
@@ -67,7 +67,7 @@ Update your integrations so they will not stop working.
 
 1. Log in to [portal.vipps.no](https://portal.vipps.no) using BankID.
 
-    * If necessary, see [Problems logging in to the Vipps Portal](#problems-logging-in-to-the-vipps-portal).
+    * If you have problems, see [Permissions and users](#permissions-and-users).
 
 1. Select _Vipps På Nett_ > _Utvikler_.
 
@@ -90,7 +90,12 @@ Then you can [get the API keys](#how-to-find-the-api-keys) and begin testing.
 **Please note:** It is not possible to _change_ an existing sale unit in the test environment,
 but you can create as many as you need.
 
-## Problems logging in to the Vipps Portal
+## How to create a user (partners only)
+
+This is only for Partners. See:
+[Vipps Partners: How to add a user on portal.vipps.no](https://vippsas.github.io/vipps-developer-docs/docs/vipps-partner/add-portal-user).
+
+## Permissions and users
 
 If you don't have BankID, or you have BankID but not access to the correct merchant,
 you will need the merchant's administrator to log in on

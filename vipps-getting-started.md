@@ -62,7 +62,7 @@ For an overview of all products, in Norwegian, see [vipps.no](https://vipps.no/p
 Apply for vipps services on [portal.vipps.no](https://portal.vipps.no).
 
 You need to have a Norwegian organization number, applications must be signed with Norwegian BankID,
-you must apply for a _Merchant Agreement_ and order a Vipps service. 
+you must apply for a _Merchant Agreement_ and order a Vipps service.
 See
 [Common topics: Requirements for applying for a Vipps service](./common-topics/requirements.md).
 
@@ -91,9 +91,9 @@ For details, see:
 
 ### Permissions and users
 
-For problems logging in to the Vipps portal, see:
+For problems logging in to the Vipps Portal, see:
 
-- [Developer resources: Problems logging in to the Vipps Portal](./developer-resources/portal.md#problems-logging-in-to-the-vipps-portal).
+- [Developer resources: Vipps Portal: Permissions and users](./developer-resources/portal.md#permissions-and-users).
 
 ### Getting the API keys
 
