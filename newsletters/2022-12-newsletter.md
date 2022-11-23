@@ -43,7 +43,7 @@ combining Vipps APIs for specific use cases, like:
 
 We have updated and improved all emails sent as part of becoming a Vipps
 merchant (the onboarding process). They all use the Vipps design, and
-contain infomration about:
+contain:
 * The merchant's organization number
 * The merchant's name
 * The sale unit's MSN
