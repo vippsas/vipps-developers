@@ -80,12 +80,12 @@ Update your integrations so they will not stop working.
    * Name - Enter the name of your test sales unit.
    * Partner - Enter optional partner data (not usually needed).
    * Select optional properties:
-     * [Skip Landing Page]((../faqs/vipps-landing-page-faq.md#is-it-possible-to-skip-the-landing-page))
+     * [Skip Landing Page](../faqs/vipps-landing-page-faq.md#is-it-possible-to-skip-the-landing-page)
      * [Recurring API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/)
      * [Direct Capture](../common-topics/reserve-and-capture.md#direct-capture)
 
 After a couple of minutes, your new test sales unit will appear in the bottom of the list (possibly after some browser refreshes).
-Then you can [get the API keys](#how-to-find-the-api-keys) and begin testing.
+Then, you can [get the API keys](#how-to-find-the-api-keys) and begin testing.
 
 **Please note:** It is not possible to _change_ an existing sale unit in the test environment,
 but you can create as many as you need.
