@@ -13,6 +13,7 @@ This newsletter was sent in December 2022.
 
 <!-- START_TOC -->
 
+* [Vipps Checkout Elements](#vipps-checkout-elements)
 * [Recurring API v3](#recurring-api-v3)
 * [Solutions](#solutions)
 * [Reminders](#reminders)
@@ -20,6 +21,10 @@ This newsletter was sent in December 2022.
 * [Questions or comments?](#questions-or-comments)
 
 <!-- END_TOC -->
+
+## Vipps Checkout Elements
+
+If you just want to implement Vipps and card payments to your website in a simple way, [Vipps Checkout Elements](https://www.vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/checkout/elements/) now lets you [control which part of Vipps Checkout will be visible](https://www.vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/checkout/elements/)
 
 ## Recurring API v3
 
