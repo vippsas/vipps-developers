@@ -34,7 +34,7 @@ The new
 [Solutions](https://vippsas.github.io/vipps-developer-docs/docs/vipps-solutions)
 section of our developer documentation describes best practice for
 combining Vipps APIs for specific use cases, like:
-* Loyalty at the point off sale (POS)
+* Loyalty at the point of sale (POS)
 * Electric vehicle charging
 * Parking
 
