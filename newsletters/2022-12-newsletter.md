@@ -13,7 +13,6 @@ This newsletter was sent in December 2022.
 
 <!-- START_TOC -->
 
-* [Vipps Checkout Elements](#vipps-checkout-elements)
 * [Recurring API v3](#recurring-api-v3)
 * [Solutions](#solutions)
 * [Reminders](#reminders)
@@ -21,10 +20,6 @@ This newsletter was sent in December 2022.
 * [Questions or comments?](#questions-or-comments)
 
 <!-- END_TOC -->
-
-## Vipps Checkout Elements
-
-If you just want to implement Vipps and card payments to your website in a simple way, [Vipps Checkout Elements](https://www.vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/checkout/elements/) now lets you [control which part of Vipps Checkout will be visible](https://www.vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/checkout/elements/)
 
 ## Recurring API v3
 
@@ -42,6 +37,16 @@ combining Vipps APIs for specific use cases, like:
 * Loyalty at the point of sale (POS)
 * Electric vehicle charging
 * Parking
+
+## Updated emails to new merchants (and partners)
+
+We have updated and improved all emails sent as part of becoming a Vipps
+merchant (the onboarding process). They all use the Vipps design, and
+contain infomration about:
+* The merchant's organization number
+* The merchant's name
+* The sale unit's MSN
+* The sale unit's name
 
 ## Reminders
 
