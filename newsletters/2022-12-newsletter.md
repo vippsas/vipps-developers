@@ -15,6 +15,7 @@ This newsletter was sent in December 2022.
 
 * [Recurring API v3](#recurring-api-v3)
 * [Solutions](#solutions)
+* [Updated emails to new merchants (and partners)](#updated-emails-to-new-merchants-and-partners)
 * [Reminders](#reminders)
   * [Please check your API calls for errors](#please-check-your-api-calls-for-errors)
 * [Questions or comments?](#questions-or-comments)
