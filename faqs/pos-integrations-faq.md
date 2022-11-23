@@ -147,7 +147,7 @@ As an alternative an online sale log must be available for Vipps.
 5. The POS vendor normally uses
    [Partner keys](https://vippsas.github.io/vipps-developer-docs/docs/vipps-partner/partner-keys).
    If not: The merchant
-   [retrieves the API keys](../vipps-getting-started#getting-the-api-keys)
+   [retrieves the API keys](../common-topics/api-keys.md#getting-the-api-keys)
    and provides them in a secure way to the partner.
    See: [Which API keys should I use?](#which-api-keys-should-i-use)
 6. The partner configures the merchant's POS for Vipps.

@@ -39,7 +39,8 @@ Document version 0.0.2.
 ## Where do I find the `client_id` and `client_secret`?
 
 See:
-[Get credentials](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/vipps-getting-started/#get-credentials).
+
+* [How to find the API keys](../developer-resources/portal.md#how-to-find-the-api-keys)
 
 ## Can you send us logs so we can look for errors?
 

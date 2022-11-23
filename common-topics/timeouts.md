@@ -9,6 +9,7 @@ END_METADATA -->
 # Timeouts
 
 In short: The user has 10 minutes to accept the payment.
+
 <!-- START_TOC -->
 
 ## Table of contents
