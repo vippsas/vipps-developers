@@ -14,7 +14,7 @@ This newsletter was sent in December 2022.
 <!-- START_TOC -->
 
 * [Recurring API v3](#recurring-api-v3)
-* [Something something](#something-something)
+* [Solutions](#solutions)
 * [Reminders](#reminders)
   * [Please check your API calls for errors](#please-check-your-api-calls-for-errors)
 * [Questions or comments?](#questions-or-comments)
@@ -28,9 +28,15 @@ The
 adds new functionality for three new types of
 campaigns (like "10 weeks for 10 kr"), and several other improvements.
 
-## Something something
+## Solutions
 
-But what?
+The new
+[Solutions](https://vippsas.github.io/vipps-developer-docs/docs/vipps-solutions)
+section of our developer documentation describes best practice for
+combining Vipps APIs for specific use cases, like:
+* Loyalty at the point off sale (POS)
+* Electric vehicle charging
+* Parking
 
 ## Reminders
 
