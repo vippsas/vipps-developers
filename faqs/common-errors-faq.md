@@ -78,7 +78,7 @@ An example: For `POST:/accesstoken/get` the error may be like this if you send a
 
 ## Why do I get `HTTP 401 Unauthorized`?
 
-This indicates that you are using the wrong API keys or Authorization header.
+This means that you are using the wrong API keys or Authorization header.
 
 The reason for the error is often in the response body, such as:
 
@@ -288,8 +288,6 @@ See:
 [Why do I get `HTTP 403 Forbidden`?](#why-do-i-get-http-403-forbidden)
 
 ## Why do I get `unauthorized_client`?
-
-This error occurs if you use an invalid `client_id` for the access token request.
 
 If you get errors like below, you are not using the right API keys:
 
