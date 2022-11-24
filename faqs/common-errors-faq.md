@@ -289,7 +289,7 @@ See:
 
 ## Why do I get `unauthorized_client`?
 
-If you get errors like below, you are not using the right API keys:
+If you get errors like below, you using the wrong `client_id` in the access token request:
 
 ```json
 {
