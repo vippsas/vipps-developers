@@ -50,6 +50,7 @@ information about what you are doing wrong.
 
 Some common errors:
 
+* Invalid API keys - See [Why do I get unauthorized_client](#why-do-i-get-unauthorized_client) for more details.
 * Invalid amount.
 * callbackUrl is invalid.
 * Captured amount exceeds the reserved amount. You can not capture a higher amount than the user has accepted.
@@ -57,11 +58,11 @@ Some common errors:
 * User unknown. The phone number is either incorrectly formatted (see the API
   specification), is not a Vipps user, or the user is under 15 years old and
   cannot pay businesses. Vipps cannot give more details. This error also occurs
-  if using a non-Norwegian phone number.
+  if using a non-Norwegian phone number. Look for related questions in this FAQ.
 
 An example: For `POST:/accesstoken/get` the error may be like this if you send an invalid `client_id`:
 
-```
+```json
 {
     "error": "unauthorized_client",
     "error_description": "AADSTS700016: Application with identifier '4204662b (truncated)' was not found in the directory 'VIPPS-TEST'. This can happen if the application has not been installed by the administrator of the tenant or consented to by any user in the tenant. You may have sent your authentication request to the wrong tenant.\r\nTrace ID: 05d8ee66-30c4- (truncated)\r\nCorrelation ID: 7685939b-(truncated)\r\nTimestamp: 2022-11-17 11:37:08Z",
@@ -77,7 +78,7 @@ An example: For `POST:/accesstoken/get` the error may be like this if you send a
 
 ## Why do I get `HTTP 401 Unauthorized`?
 
-This means you are using the wrong API keys or Authorization header.
+This indicates that you are using the wrong API keys or Authorization header.
 
 The reason for the error is often in the response body, such as:
 
@@ -288,7 +289,9 @@ See:
 
 ## Why do I get `unauthorized_client`?
 
-If you get errors like below from Microsoft Azure, you are not using the right API keys:
+This error occurs if you use an invalid `client_id` for the access token request.
+
+If you get errors like below, you are not using the right API keys:
 
 ```json
 {
@@ -323,9 +326,12 @@ If you get errors like below from Microsoft Azure, you are not using the right A
 }
 ```
 
-To fix this, please check that you are using the right API keys, similar to:
-[Why do I get `HTTP 401 Unauthorized`?](#why-do-i-get-http-401-unauthorized).
+To fix this, please check that you are using the right API keys.
 
+Related questions:
+
+* [Why do I get HTTP 400 Bad Request?](#why-do-i-get-http-400-bad-request)
+* [Why do I get `HTTP 401 Unauthorized`?](#why-do-i-get-http-401-unauthorized)
 
 ## Why do I get error 81 and `User not registered with Vipps`?
 
