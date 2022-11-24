@@ -20,7 +20,7 @@ See also
 [Common errors](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api-faq#common-errors)
 in the eCom API FAQs.
 
-Document version 0.2.1.
+Document version 0.2.2.
 
 <!-- START_TOC -->
 
@@ -35,7 +35,6 @@ Document version 0.2.1.
 * [Why do I get `errorCode 35 "Requested Order not found"`?](#why-do-i-get-errorcode-35-requested-order-not-found)
 * [Why do I get `errorCode 37 "Merchant not available or deactivated or blocked"`?](#why-do-i-get-errorcode-37-merchant-not-available-or-deactivated-or-blocked)
 * [Why do I get "Merchant Not Allowed for Ecommerce Payment"?](#why-do-i-get-merchant-not-allowed-for-ecommerce-payment)
-* [Why do I get `unauthorized_client`?](#why-do-i-get-unauthorized_client)
 * [Why do I get error 81 and `User not registered with Vipps`?](#why-do-i-get-error-81-and-user-not-registered-with-vipps)
 * [Why do I get an error about having Vipps installed and being 15 years old?](#why-do-i-get-an-error-about-having-vipps-installed-and-being-15-years-old)
 * [Why do I get `Why do I get Invalid MSN: 654321. Check your API keys on portal.vipps.no and see the eCom FAQ for tips.`?](#why-do-i-get-invalid-msn-654321-check-your-api-keys-on-portalvippsno-and-see-the-ecom-faq-for-tips)
@@ -50,6 +49,7 @@ information about what you are doing wrong.
 
 Some common errors:
 
+* Invalid API keys.
 * Invalid amount.
 * callbackUrl is invalid.
 * Captured amount exceeds the reserved amount. You can not capture a higher amount than the user has accepted.
@@ -57,11 +57,11 @@ Some common errors:
 * User unknown. The phone number is either incorrectly formatted (see the API
   specification), is not a Vipps user, or the user is under 15 years old and
   cannot pay businesses. Vipps cannot give more details. This error also occurs
-  if using a non-Norwegian phone number.
+  if using a non-Norwegian phone number. Look for related questions in this FAQ.
 
-An example: For `POST:/accesstoken/get` the error may be like this if you send an invalid `client_id`:
+An example: For `POST:/accesstoken/get`, the error may be like this if you send an invalid `client_id`:
 
-```
+```json
 {
     "error": "unauthorized_client",
     "error_description": "AADSTS700016: Application with identifier '4204662b (truncated)' was not found in the directory 'VIPPS-TEST'. This can happen if the application has not been installed by the administrator of the tenant or consented to by any user in the tenant. You may have sent your authentication request to the wrong tenant.\r\nTrace ID: 05d8ee66-30c4- (truncated)\r\nCorrelation ID: 7685939b-(truncated)\r\nTimestamp: 2022-11-17 11:37:08Z",
@@ -285,47 +285,6 @@ the Vipps Login API, but not the other way around.
 
 See:
 [Why do I get `HTTP 403 Forbidden`?](#why-do-i-get-http-403-forbidden)
-
-## Why do I get `unauthorized_client`?
-
-If you get errors like below from Microsoft Azure, you are not using the right API keys:
-
-```json
-{
-  "error": "unauthorized_client",
-  "error_description":
-    "AADSTS70001: Application with identifier 'e9b6c99d-2442-4a5d-84a2-\
-     c53a807fe0c4' was not found in the directory testapivipps.no\
-     Trace ID: 3bc2b2a0-d9bb-4c2e-8367- 5633866f1300\r\nCorrelation ID:\
-     bb2f4093-70af-446a-a26d-ed8becca1a1a\r\nTimestamp: 2017-05-19 09:21:28Z",
-  "error_codes": [ 70001 ],
-  "timestamp": "2017-05-19 09:21:28Z",
-  "trace_id": "3bc2b2a0-d9bb-4c2e-8367-5633866f1300",
-  "correlation_id": "bb2f4093-70af-446a-a26d-ed8becca1a1a"
-}
-```
-
-```json
-{
-  "error":"unauthorized_client",
-  "error_description":
-    "AADSTS700016: Application with identifier \'my_client_id\'
-     was not found in the directory \'tenant_directory\'.
-     This can happen if the application has not been installed
-     by the administrator of the tenant or consented to by any
-     user in the tenant. You may have sent your authentication
-     request to the wrong tenant.",
-  "error_codes":[700016],
-  "timestamp":"2021-03-23 06:46:31Z",
-  "trace_id":"<snip>",
-  "correlation_id":"<snip>",
-  "error_uri":"https://login.windows.net/error?code=700016"
-}
-```
-
-To fix this, please check that you are using the right API keys, similar to:
-[Why do I get `HTTP 401 Unauthorized`?](#why-do-i-get-http-401-unauthorized).
-
 
 ## Why do I get error 81 and `User not registered with Vipps`?
 
