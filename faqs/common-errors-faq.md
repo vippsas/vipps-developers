@@ -286,15 +286,6 @@ the Vipps Login API, but not the other way around.
 See:
 [Why do I get `HTTP 403 Forbidden`?](#why-do-i-get-http-403-forbidden)
 
-## Why do I not get the `sub` from `/details`?
-
-If you use the correct `scope` in the payment initiation, but don't get the
-`sub` in the response for `/details`: Check that you are following the
-[orderId recommendations](../common-topics/orderid.md).
-Very short orderIds don't work well with our database index, and may cause
-an internal timeout, and we "have to" send the response without the `sub`.
-We cannot enforce longer orderIds due to backwards compatibility.
-
 ## Why do I get `unauthorized_client`?
 
 If you get errors like below from Microsoft Azure, you are not using the right API keys:
