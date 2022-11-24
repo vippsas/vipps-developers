@@ -35,6 +35,7 @@ Document version 0.2.2.
 * [Why do I get `errorCode 35 "Requested Order not found"`?](#why-do-i-get-errorcode-35-requested-order-not-found)
 * [Why do I get `errorCode 37 "Merchant not available or deactivated or blocked"`?](#why-do-i-get-errorcode-37-merchant-not-available-or-deactivated-or-blocked)
 * [Why do I get "Merchant Not Allowed for Ecommerce Payment"?](#why-do-i-get-merchant-not-allowed-for-ecommerce-payment)
+* [Why do I get `unauthorized_client`?](#why-do-i-get-unauthorized_client)
 * [Why do I get error 81 and `User not registered with Vipps`?](#why-do-i-get-error-81-and-user-not-registered-with-vipps)
 * [Why do I get an error about having Vipps installed and being 15 years old?](#why-do-i-get-an-error-about-having-vipps-installed-and-being-15-years-old)
 * [Why do I get `Why do I get Invalid MSN: 654321. Check your API keys on portal.vipps.no and see the eCom FAQ for tips.`?](#why-do-i-get-invalid-msn-654321-check-your-api-keys-on-portalvippsno-and-see-the-ecom-faq-for-tips)
@@ -76,40 +77,7 @@ An example: For `POST:/accesstoken/get` the error may be like this if you send a
 
 ## Why do I get `HTTP 401 Unauthorized`?
 
-If you get errors like below from Microsoft Azure, this means you are using the wrong API keys or Authorization header:
-
-```json
-{
-  "error": "unauthorized_client",
-  "error_description":
-    "AADSTS70001: Application with identifier 'e9b6c99d-2442-4a5d-84a2-\
-     c53a807fe0c4' was not found in the directory testapivipps.no\
-     Trace ID: 3bc2b2a0-d9bb-4c2e-8367- 5633866f1300\r\nCorrelation ID:\
-     bb2f4093-70af-446a-a26d-ed8becca1a1a\r\nTimestamp: 2017-05-19 09:21:28Z",
-  "error_codes": [ 70001 ],
-  "timestamp": "2017-05-19 09:21:28Z",
-  "trace_id": "3bc2b2a0-d9bb-4c2e-8367-5633866f1300",
-  "correlation_id": "bb2f4093-70af-446a-a26d-ed8becca1a1a"
-}
-```
-
-```json
-{
-  "error":"unauthorized_client",
-  "error_description":
-    "AADSTS700016: Application with identifier \'my_client_id\'
-     was not found in the directory \'tenant_directory\'.
-     This can happen if the application has not been installed
-     by the administrator of the tenant or consented to by any
-     user in the tenant. You may have sent your authentication
-     request to the wrong tenant.",
-  "error_codes":[700016],
-  "timestamp":"2021-03-23 06:46:31Z",
-  "trace_id":"<snip>",
-  "correlation_id":"<snip>",
-  "error_uri":"https://login.windows.net/error?code=700016"
-}
-```
+This means you are using the wrong API keys or Authorization header.
 
 The reason for the error is often in the response body, such as:
 
@@ -317,6 +285,47 @@ the Vipps Login API, but not the other way around.
 
 See:
 [Why do I get `HTTP 403 Forbidden`?](#why-do-i-get-http-403-forbidden)
+
+## Why do I get `unauthorized_client`?
+
+If you get errors like below from Microsoft Azure, you are not using the right API keys:
+
+```json
+{
+  "error": "unauthorized_client",
+  "error_description":
+    "AADSTS70001: Application with identifier 'e9b6c99d-2442-4a5d-84a2-\
+     c53a807fe0c4' was not found in the directory testapivipps.no\
+     Trace ID: 3bc2b2a0-d9bb-4c2e-8367- 5633866f1300\r\nCorrelation ID:\
+     bb2f4093-70af-446a-a26d-ed8becca1a1a\r\nTimestamp: 2017-05-19 09:21:28Z",
+  "error_codes": [ 70001 ],
+  "timestamp": "2017-05-19 09:21:28Z",
+  "trace_id": "3bc2b2a0-d9bb-4c2e-8367-5633866f1300",
+  "correlation_id": "bb2f4093-70af-446a-a26d-ed8becca1a1a"
+}
+```
+
+```json
+{
+  "error":"unauthorized_client",
+  "error_description":
+    "AADSTS700016: Application with identifier \'my_client_id\'
+     was not found in the directory \'tenant_directory\'.
+     This can happen if the application has not been installed
+     by the administrator of the tenant or consented to by any
+     user in the tenant. You may have sent your authentication
+     request to the wrong tenant.",
+  "error_codes":[700016],
+  "timestamp":"2021-03-23 06:46:31Z",
+  "trace_id":"<snip>",
+  "correlation_id":"<snip>",
+  "error_uri":"https://login.windows.net/error?code=700016"
+}
+```
+
+To fix this, please check that you are using the right API keys, similar to:
+[Why do I get `HTTP 401 Unauthorized`?](#why-do-i-get-http-401-unauthorized).
+
 
 ## Why do I get error 81 and `User not registered with Vipps`?
 
