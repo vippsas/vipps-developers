@@ -77,14 +77,27 @@ machines where no display is available.
 This feature must be specially enabled by Vipps for an eligible sale unit and
 the sale unit must be whitelisted by Vipps.
 
-If the `skipLandingPage` property is set to `true`, it will cause a push notification to be sent immediately to the given
-phone number, without loading the landing page.
-If the sale unit is not whitelisted, the request will fail and an error message will be returned.
+If you need to skip the landing page: Contact your
+Key Account Manager. If you do not have a KAM: Please log in on
+[portal.vipps.no](https://portal.vipps.no),
+find the right sale unit and click the email link under the "i" information
+bubble. Include a detailed description of why it is not possible to display
+the landing page.
 
-See FAQ:
+**Please note:** When using `skipLandingPage`, the user is not sent to a URL
+after completion of the payment. The "result page" is just the confirmation in
+Vipps. The `fallback` URL sent in the API request can therefore be the
+merchant's main URL, like `https://example.com`, etc.
 
-* [Is it possible to skip the landing page](../faqs/vipps-landing-page-faq.md#is-it-possible-to-skip-the-landing-page)
-* [How can I check if I have skipLandingPage activated?](../faqs/vipps-landing-page-faq.md#how-can-i-check-if-i-have-skiplandingpage-activated)
+
+If the `skipLandingPage` property is set to `true`:
+* It will cause a push notification to be sent immediately to the given
+  phone number, without loading the landing page.
+* The user is not sent to a URL after completion of the payment.
+  The "result page" is just the confirmation in
+  Vipps.
+* If the sale unit is not whitelisted, the request will fail and an error
+  message will be returned.
 
 **Important:** When using `"skipLandingPage": true`:
 
@@ -94,4 +107,16 @@ See FAQ:
 * The user is not sent to a `fallback` URL after completion of the payment.
   The "result page" is just the confirmation in Vipps.
   The `fallback` URL sent in the API request can simply be the website URL.
-  
+
+If you want to check if a sale unit is allowed to use `skipLandingPage`, see
+the sale unit overview under the "Utvikler" (developer) menu. Or you can check
+by using the API:
+
+1. Specify `"skipLandingPage": true`.
+2. Check the response code and message.
+   The API will return an error if attempting to use `skipLandingPage` without being whitelisted.
+
+See FAQ:
+
+* [Is it possible to skip the landing page](../faqs/vipps-landing-page-faq.md#is-it-possible-to-skip-the-landing-page)
+* [How can I check if I have skipLandingPage activated?](../faqs/vipps-landing-page-faq.md#how-can-i-check-if-i-have-skiplandingpage-activated)
