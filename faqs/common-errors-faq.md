@@ -12,7 +12,7 @@ END_METADATA -->
 <!-- START_COMMENT -->
 
 ℹ️ Please use the new documentation:
-[Vipps Technical Documentation](https://vippsas.github.io/vipps-developer-docs/).
+[Vipps Technical Documentation](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/faqs/).
 
 <!-- END_COMMENT -->
 
@@ -20,8 +20,7 @@ See also
 [Common errors](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api-faq#common-errors)
 in the eCom API FAQs.
 
-Document version 0.2.0.
-
+Document version 0.2.1.
 
 <!-- START_TOC -->
 
@@ -36,7 +35,6 @@ Document version 0.2.0.
 * [Why do I get `errorCode 35 "Requested Order not found"`?](#why-do-i-get-errorcode-35-requested-order-not-found)
 * [Why do I get `errorCode 37 "Merchant not available or deactivated or blocked"`?](#why-do-i-get-errorcode-37-merchant-not-available-or-deactivated-or-blocked)
 * [Why do I get "Merchant Not Allowed for Ecommerce Payment"?](#why-do-i-get-merchant-not-allowed-for-ecommerce-payment)
-* [Why do I not get the `sub` from `/details`?](#why-do-i-not-get-the-sub-from-details)
 * [Why do I get `unauthorized_client`?](#why-do-i-get-unauthorized_client)
 * [Why do I get error 81 and `User not registered with Vipps`?](#why-do-i-get-error-81-and-user-not-registered-with-vipps)
 * [Why do I get an error about having Vipps installed and being 15 years old?](#why-do-i-get-an-error-about-having-vipps-installed-and-being-15-years-old)
@@ -51,6 +49,7 @@ It is because you are making an incorrect API request. The response body contain
 information about what you are doing wrong.
 
 Some common errors:
+
 * Invalid amount.
 * callbackUrl is invalid.
 * Captured amount exceeds the reserved amount. You can not capture a higher amount than the user has accepted.
@@ -81,6 +80,7 @@ An example: For `POST:/accesstoken/get` the error may be like this if you send a
 This means you are using the wrong API keys or Authorization header.
 
 The reason for the error is often in the response body, such as:
+
 * Access denied due to invalid subscription key. Make sure to provide a valid key for an active subscription.
 * Access denied due to missing subscription key. Make sure to include subscription key when making requests to an API.
 * Subscription not found.
@@ -174,9 +174,11 @@ but do not send the
 We rate-limit some API endpoints to prevent incorrect usage.
 The rate-limiting has nothing to do with Vipps' total capacity, but is
 designed to stop obviously incorrect use.
+
 See:
-[Rate limiting](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api#rate-limiting)
-for details.
+
+* [eCom API Rate limiting](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api#rate-limiting)
+* [Recurring API Rate limiting](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/vipps-recurring-api#rate-limiting)
 
 ## Why do I get `HTTP 404 Not Found`?
 
