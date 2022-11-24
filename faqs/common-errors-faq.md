@@ -78,7 +78,7 @@ An example: For `POST:/accesstoken/get` the error may be like this if you send a
 
 ## Why do I get `HTTP 401 Unauthorized`?
 
-This means that you are using the wrong API keys or Authorization header.
+This means you are using the wrong API keys or Authorization header.
 
 The reason for the error is often in the response body, such as:
 
