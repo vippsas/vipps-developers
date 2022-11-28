@@ -40,7 +40,7 @@ and the [quick start]( https://vippsas.github.io/vipps-developer-docs/docs/APIs/
 for more details.
 
 **Important:** The Recurring API v2 API will be phased out, and will not be
-available from June 1 2023**. The Recurring API v2 will continue to work,
+available from June 1 2023. The Recurring API v2 will continue to work,
 but will not support the new functionality.
 
 ## Solutions
