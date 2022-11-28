@@ -24,14 +24,24 @@ This newsletter was sent in December 2022.
 
 ## Recurring API v3
 
-The [Vipps Recurring API v3](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/) is available.
-This version includes new and improved functionality for campaigns (for example "10 weeks for 10 kr" or "1 kr until Christmas"), the possibility to reserve and capture (or partially capture) a charge (specially important for physical subscriptions) and several technical improvements. 
+The
+[Vipps Recurring API v3](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/)
+is available. This version includes new and improved functionality for campaigns
+(for example "10 weeks for 10 kr" or "1 kr until Christmas"),
+the possibility to reserve and capture (or partially capture) a charge
+(specially important for physical subscriptions) and several technical improvements.
 
-See the [migration guide]( https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/v2-to-v3-migration-guide) and the [quick start]( https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/vipps-recurring-api-quick-start) for more details.
 
-Upgrading to v3 requires some technical changes, but the overall flow and logic is the same as in v2. We have made it as easy as possible to upgrade. 
+Upgrading to v3 requires some technical changes, but the overall flow and logic
+is the same as in v2. We have made it as easy as possible to upgrade.
+See the
+[migration guide]( https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/v2-to-v3-migration-guide)
+and the [quick start]( https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/vipps-recurring-api-quick-start)
+for more details.
 
-**The Recurring API v2 API will be phased out, and will not be available from June 1 2023**. The Recurring API v2 will continue to work, but will not support the new functionality. 
+**Important:** The Recurring API v2 API will be phased out, and will not be
+available from June 1 2023**. The Recurring API v2 will continue to work,
+but will not support the new functionality.
 
 ## Solutions
 
