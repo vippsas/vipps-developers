@@ -20,7 +20,7 @@ Document version: 3.7.1.
 
 <!-- START_TOC -->
 
-## Table of contents
+## Table of  contents
 
 - [API products](#api-products)
 - [Apply for Vipps services](#apply-for-vipps-services)
