@@ -24,7 +24,7 @@ This newsletter was sent in December 2022.
 
 ## Recurring API v3
 
-The new version of Vipps Recurring API v3 is live! (https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/)
+The [Vipps Recurring API v3](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/) is available.
 This API includes new and improved functionality for campaignes (for example "10 weeks for 10 kr" or "1 kr until Christmas"), the possibility to reserve and capture/partally capture a charge (specially important for physical subscriptions) and several technical improvements. Go here for Migration guide ( https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/v2-to-v3-migration-guide) and here for our Quick start guide including Postman collection ( https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/vipps-recurring-api-quick-start)
 
 Upgrading to v3 requires some technical changes, but the overall flow and logic is the same as in v2. We have made it as easy as possible to upgrade. 
