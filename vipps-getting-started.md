@@ -20,7 +20,7 @@ Document version: 3.7.1.
 
 <!-- START_TOC -->
 
-## Table of  contents
+## Table of contents
 
 - [API products](#api-products)
 - [Apply for Vipps services](#apply-for-vipps-services)
@@ -39,7 +39,7 @@ Document version: 3.7.1.
 
 ## API products
 
-The `Vipps-API` product gives you access to the majority of Vipps APIs, for example:
+The `Vipps-API` product gives you access to the majority of Vipps APIs for example:
 
 - [Checkout API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/checkout-api/) - Provide a complete Checkout solution for both Vipps and card payments with auto-fill and shipping integrations.
 - [eCom API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/) - Offer Vipps as a method of payment. Offer a quick checkout option where Vipps is the method of payment and the shipping options are specified directly from the Vipps app. This is also known as Vipps Online (_Vipps På Nett_) and Vipps Express Checkout (_Vipps Hurtigkasse_).
