@@ -126,9 +126,9 @@ Settlement reports are provided in these formats:
 
 More details:
 
-* XML: See the [xml](xml/) folder.
-* CSV: See the [csv](csv/) folder.
-* PDF: See the [pdf](pdf/) folder.
+* XML: See the [xml](./xml/README.md) folder.
+* CSV: See the [csv](./csv/README.md) folder.
+* PDF: See the [pdf](./pdf/README.md) folder.
 * OCR: Not available.
 
 Payments made with
@@ -191,7 +191,7 @@ and directories are available.
 Reports with personal details of the customers cannot be sent with SFTP, see
 [GDPR](#gdpr).
 
-Details: See the [sftp-report-service](sftp-report-service/) folder.
+Details: See the [sftp-report-service](./sftp-report-service/README.md) folder.
 
 ### API
 
