@@ -249,7 +249,7 @@ You do _not_ need an invitation or an activation code.
 
 1. Open the
    [App Center](https://install.appcenter.ms/orgs/vipps/apps/vipps-android/distribution_groups/mt%20testers)
-   link on your Android phone (it will nok work on a PC/Mac). If you get a push
+   link on your Android phone (it will not work on a PC/Mac). If you get a push
    message prompting to whitelist the source, you should be able to do this via
    the "Settings" button.
 2. Install the "Vipps Android" app
