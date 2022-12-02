@@ -1,6 +1,6 @@
 <!-- START_METADATA
 ---
-title: User info
+title: Userinfo
 pagination_next: null
 pagination_prev: null
 ---
@@ -55,10 +55,10 @@ Scope is the type of information you want access to. This can include any of the
 | Scope            | Description | User consent required |
 |:-----------------|:------------|:----------------------|
 | `address`        | A list containing the user's addresses. The list always contains the home address from the National Population Register and can also include work address and other addresses added by the user in Vipps. | yes |
-| `birthDate`      | Birth date. Verified with BankID. | yes |
+| `birthDate`      | Birth date. Verified with BankID. ISO 8601 format (2022-12-31) | yes |
 | `email`          | Email address. The flag `email_verified : true` (or `false`) in the response indicates whether the email address is verified. | yes |
 | `name`           | First, middle and given name. Verified with the National Population Register. | yes |
-| `phoneNumber`    | Phone number. Verified when creating the Vipps account. | yes |
+| `phoneNumber`    | Phone number. Verified when creating the Vipps account. MSISDN format (4791234567).| yes |
 | `nin`            | Norwegian national identity number. Verified with BankID. **NB:** Merchants need to apply for access to NIN. See: [Who can get access to NIN and how?](/docs/APIs/login-api/vipps-login-api-faq.md#who-can-get-access-to-nin-and-how)    | yes |
 
 **Please note:** If the e-mail address that is delivered has the flag `email_verified : false`,
@@ -97,29 +97,23 @@ for more recommendations.
 
 ### Example calls
 
-Example of request with scope:
+Example of how `scope` is specified in the API request:
 
 ```json
 {
-  "currency": "NOK",
-  "customerPhoneNumber":"90000000",
-  "interval": "MONTH",
-  "intervalCount": 1,
-  "merchantRedirectUrl": "https://example.com/confirmation",
-  "merchantAgreementUrl": "https://example.com/my-customer-agreement",
-  "price": 49900,
-  "productDescription": "Access to all games of English top football",
-  "productName": "Premier League subscription",
+  [...]
   "scope": "address name email birthDate phoneNumber"
+  [...]
 }
 ```
 
-The user then consents and pays in Vipps.
+The user then consents (and pays) in Vipps.
 
-**Please note:** This operation has an all or nothing approach, a user must
+**Please note:** This operation has an all-or-nothing approach, a user must
 complete a valid agreement and consent to all values in order to complete the
 session. If a user chooses to reject the terms the agreement will not be
-processed. Unless the whole flow is completed, this will be handled as a regular failed agreement by the recurring APIs.
+processed. Unless the whole flow is completed, this will be handled as a
+regular failed agreement by the recurring APIs.
 
 
 ## Get userinfo
@@ -177,7 +171,7 @@ The access token is received on a successful request to the token endpoint descr
   "given_name": "Ada",
   "family_name": "Lovelace",
   "sid": "f26d25af56909b55",
-  "phone_number": "4712345678",
+  "phone_number": "4791234567",
   "address": {
     "street_address": "Suburbia 23",
     "postal_code": "2101",
