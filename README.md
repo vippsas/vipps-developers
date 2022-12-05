@@ -25,8 +25,6 @@ Quick links:
 
 Dive deeper with:
 
-* [Other developer resources]
-
 * [Developer resources](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/developer-resources/) - API dashboard, demo store, design guidelines, Vipps portal, status pages, etc.
 * [Common API topics](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/common-topics/) - API keys, API lifecycle, authentication, HTTP headers, polling guidelines, reserve and capture, userinfo, Vipps landing page, etc.
 * [Frequently asked questions](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/faqs/) - Requirements, common problems, refunds, users and payments, Vipps landing page, problems for end users, etc.
