@@ -1,7 +1,7 @@
 <!-- START_METADATA
 ---
 title: Requirements
-sidebar_position: 10
+sidebar_position: 60
 pagination_next: null
 pagination_prev: null
 ---

@@ -19,16 +19,16 @@ END_METADATA -->
 
 The following are Frequently Asked Questions (FAQs):
 
-* [Requirements](requirements-faq.md)
+* [Common errors](common-errors-faq.md)
 * [Common problems](common-problems-faq.md)
-* [Reservations and capture](reserve-and-capture-faq.md)
+* [POS integrations](pos-integrations-faq.md)
+* [Problems for end users](problems-for-end-users-faq.md)
 * [Refunds](refunds-faq.md)
+* [Requirements](requirements-faq.md)
+* [Reservations and capture](reserve-and-capture-faq.md)
 * [Users and payments](users-and-payments-faq.md)
 * [Vipps landing page](vipps-landing-page-faq.md)
-* [Problems for end users](problems-for-end-users-faq.md)
-* [Common errors](common-errors-faq.md)
 * [Other questions](other-faq.md)
-* [POS integrations](pos-integrations-faq.md)
 
 In addition, each Vipps API has a specific set of FAQs. For example:
 

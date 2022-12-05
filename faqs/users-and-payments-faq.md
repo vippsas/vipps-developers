@@ -1,7 +1,7 @@
 <!-- START_METADATA
 ---
 title: Users and payments
-sidebar_position: 50
+sidebar_position: 80
 pagination_next: null
 pagination_prev: null
 ---

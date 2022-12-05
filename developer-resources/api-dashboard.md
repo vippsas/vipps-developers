@@ -1,5 +1,7 @@
 <!-- START_METADATA
 ---
+title: API Dashboard
+sidebar_position: 10
 pagination_next: null
 pagination_prev: null
 ---

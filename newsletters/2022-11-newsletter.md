@@ -88,7 +88,7 @@ We are working hard to improve the
   and
   [Electric vehicle charging](https://vippsas.github.io/vipps-developer-docs/docs/vipps-solutions/ev-charging/).
 * All APIs now have a
-  [Quick start](../developer-resources/quick-start-guides.md)
+  [Quick start](../quick-start-guides.md)
   with Postman collection. We also have a global Postman environment to make it
   easier to test all APIs without doing any development.
 

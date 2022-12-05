@@ -19,15 +19,16 @@ END_METADATA -->
 
 Quick links:
 
-* [Getting started guide](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/vipps-getting-started)
-* [Vipps test environment](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/developer-resources/test-environment)
-* [Vipps portal](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/developer-resources/portal)
-* [Vipps servers](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/developer-resources/servers)
+* [Getting started guide](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/vipps-getting-started) - General information about developing with Vipps.
+* [Vipps test app](./test-environment.md#vipps-test-apps) - Install the test app.
+* [Vipps portal](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/developer-resources/portal) - Get your API keys and create test sale units.
 
-There are also groups of common information types:
+Dive deeper with:
 
-* [Developer resources](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/developer-resources/) - API dashboard, demo store, design guidelines, Vipps portal, quick start guides, status pages, etc.
-* [Common API topics](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/common-topics/) - API keys, API lifecycle, Authentication, HTTP headers, polling guidelines, reserve and capture, user info, Vipps landing page, etc.
+* [Other developer resources]
+
+* [Developer resources](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/developer-resources/) - API dashboard, demo store, design guidelines, Vipps portal, status pages, etc.
+* [Common API topics](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/common-topics/) - API keys, API lifecycle, authentication, HTTP headers, polling guidelines, reserve and capture, userinfo, Vipps landing page, etc.
 * [Frequently asked questions](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/faqs/) - Requirements, common problems, refunds, users and payments, Vipps landing page, problems for end users, etc.
 
 Vipps provides several open source plugins for various web solutions.

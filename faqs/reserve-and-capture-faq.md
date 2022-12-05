@@ -1,7 +1,7 @@
 <!-- START_METADATA
 ---
 title: Reservations and capture
-sidebar_position: 30
+sidebar_position: 70
 pagination_next: null
 pagination_prev: null
 ---
