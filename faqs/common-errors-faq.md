@@ -1,7 +1,7 @@
 <!-- START_METADATA
 ---
 title: Common errors
-sidebar_position: 80
+sidebar_position: 10
 pagination_next: null
 pagination_prev: null
 ---
@@ -110,7 +110,7 @@ Please follow these steps to make sure everything is correct:
    They are case sensitive: `Authorization: Bearer <snip>` is not the same as `Authorization: bearer <snip>`.
 5. Make sure you are using the right environment and check that you are using
    the correct API keys for the right sale unit in that environment. The
-   [test environment](../developer-resources/test-environment.md)
+   [test environment](../test-environment.md)
    is completely separate from the production environment, and both the MSN and
    the API keys are different.
 6. Check both the HTTP response header and the response body from our API for errors.
@@ -130,7 +130,7 @@ See:
 [Getting the API keys](../common-topics/api-keys.md#getting-the-api-keys).
 
 You can use
-[Postman](../developer-resources/quick-start-guides.md)
+[Postman](../quick-start-guides.md)
 to manually do API calls, Use the "inspect" functionality to see the complete
 requests and responses, and to check that the API keys are correct.
 
@@ -202,7 +202,7 @@ Some tips:
 * Please make sure the JSON payload in your API request validates.
   That is the most common source of this type of error.
 * We strongly recommend using
-  [Postman](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/developer-resources/quick-start-guides)
+  [Postman](../quick-start-guides.md)
   to manually do API calls, to see the correct request.
   Use Postman's
   [Inspect](https://blog.postman.com/debugging-postman-requests/)
@@ -305,7 +305,7 @@ Vipps cannot give more details.
 
 You are probably attempting to use a real Vipps user in the test environment.
 See:
-[The Vipps Test Environment (MT)](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/developer-resources/test-environment).
+[The Vipps Test Environment (MT)](../test-environment.md).
 
 ## Why do I get `Invalid MSN: 654321. Check your API keys on portal.vipps.no and see the eCom FAQ for tips.`?
 

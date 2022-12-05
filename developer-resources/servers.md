@@ -1,5 +1,7 @@
 <!-- START_METADATA
 ---
+title: Vipps servers
+sidebar_position: 60
 pagination_next: null
 pagination_prev: null
 ---

@@ -1,7 +1,7 @@
 <!-- START_METADATA
 ---
 title: Problems for end users
-sidebar_position: 70
+sidebar_position: 40
 pagination_next: null
 pagination_prev: null
 ---

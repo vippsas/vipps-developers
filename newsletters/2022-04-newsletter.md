@@ -39,7 +39,7 @@ See:
 
 [The Vipps QR API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/qr-api/) now works in both in
 the production and
-[test environment](../developer-resources/test-environment.md).
+[test environment](../test-environment.md).
 
 ## Logo handling changes in PSP Signup API
 

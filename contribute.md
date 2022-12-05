@@ -21,7 +21,7 @@ If you want to contribute: Great! No issue or pull request is too small! üëç
 ## Getting started
 
 1. Make sure you have a GitHub account
-1. See the GitHub help pages if you have questions: https://help.github.com
+1. See the GitHub help pages if you have questions: <https://help.github.com>
 
 ## Report an issue or suggest an improvement
 
@@ -30,7 +30,7 @@ have trouble following the documentation, or have a question about the project ‚
 
 Creating an issue in GitHub is easy, and whatever issue you're having, you're likely not the only one,
 so others will find your issue helpful too. For more information on how issues work,
-check out the official GitHub issues guide: https://guides.github.com/features/issues/
+check out the official GitHub issues guide: <https://guides.github.com/features/issues/>
 
 ## How to Contribute
 
@@ -54,7 +54,7 @@ The LICENSE file defines the license for the project. An open source project's l
 informs users what they can and can't do (e.g., use, modify, redistribute), and contributors,
 what they are allowing others to do.
 
-The Vipps API documentation is licensed under the MIT licence: https://choosealicense.com/licenses/mit/
+The Vipps API documentation is licensed under the MIT licence: <https://choosealicense.com/licenses/mit/>
 
 ## Questions?
 

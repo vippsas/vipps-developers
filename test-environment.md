@@ -1,37 +1,13 @@
 <!-- START_METADATA
 ---
 title: Test environment
+sidebar_position: 4
 pagination_next: null
 pagination_prev: null
 ---
 END_METADATA -->
 
 # The Vipps Test Environment (MT)
-
-
-
-
-
-
-
-
-
-
-This page had moved. Please see [The Vipps Test Environment (MT)](../test-environment.md).
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <!-- START_COMMENT -->
 
@@ -66,7 +42,12 @@ with API access.
 
 <!-- END_TOC -->
 
-Document version: 3.2.8.
+Document version: 3.3.0.
+
+
+Quick link:
+
+* [Vipps test apps](#vipps-test-apps)
 
 ## About the test environment
 
@@ -89,10 +70,10 @@ In general, MT does not contain functionality that requires integration with
 third parties.
 
 The test and production environments are completely separate and use different
-[API keys](../common-topics/api-keys.md).
+[API keys](common-topics/api-keys.md).
 
 **Please note:** For production, Vipps only offers
-[Direct capture](../common-topics/reserve-and-capture.md#direct-capture)
+[Direct capture](common-topics/reserve-and-capture.md#direct-capture)
 for merchants that use Vipps through a partner.
 In the test environment, you can do this by creating a sale unit where direct capture is allowed.
 
@@ -102,7 +83,7 @@ Functionality not available in MT (a non-exhaustive list):
 
 - Unscheduled maintenance _may_ occur.
   We will do our best to inform with
-  [Status page](status-pages.md),
+  [Status page](./developer-resources/status-pages.md),
   but it may no always be possible.
   In practice this is extremely rare.
 - Push alerts may be unavailable or unstable. To see payment requests: Open Vipps and manually
@@ -137,7 +118,7 @@ The test and production environments are separate and require different API cred
 The servers are world-accessible. Vipps only relies on the API keys, and
 no requests to our servers are blocked on our side by IP addresses or similar.
 
-See [Vipps servers](servers.md) for more information.
+See [Vipps servers](./developer-resources/servers.md) for more information.
 
 ## Test merchants
 
@@ -148,7 +129,7 @@ All Vipps customers can create sales units ("merchants") in the test environment
 
 See:
 
-- [Developer resources: Vipps portal: How to create a test sales unit](./portal.md#how-to-create-a-test-sales-unit).
+- [Developer resources: Vipps portal: How to create a test sales unit](./developer-resources/portal.md#how-to-create-a-test-sales-unit).
 
 **Please note:** Sale units in the _production_ environment must follow strict rules
 (regulatory and other), so you may not be able to get the same sale unit configuration

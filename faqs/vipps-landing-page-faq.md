@@ -1,7 +1,7 @@
 <!-- START_METADATA
 ---
 title: Vipps landing page
-sidebar_position: 60
+sidebar_position: 90
 pagination_next: null
 pagination_prev: null
 ---

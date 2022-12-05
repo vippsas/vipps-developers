@@ -1,6 +1,7 @@
 <!-- START_METADATA
 ---
-title: Vipps Portal
+title: Vipps portal
+sidebar_position: 40
 pagination_next: null
 pagination_prev: null
 ---
@@ -52,8 +53,8 @@ For more information about the portal, see the
 
 💥 **Use caution with storing and transferring API keys** 💥
 
-- Do _not_ send API keys unencrypted by email.
-- If you accidentally share your API keys, you must [generate new ones](#how-to-regenerate-api-keys).
+* Do _not_ send API keys unencrypted by email.
+* If you accidentally share your API keys, you must [generate new ones](#how-to-regenerate-api-keys).
 
 See [API keys](../common-topics/api-keys.md) for more details.
 

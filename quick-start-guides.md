@@ -1,35 +1,13 @@
 <!-- START_METADATA
 ---
 title: Quick start guides
+sidebar_position: 3
 pagination_next: null
 pagination_prev: null
 ---
 END_METADATA -->
 
 # Quick start guides
-
-
-
-
-
-
-This page had moved. Please see [Quick start guides](../quick-start-guides.md).
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <!-- START_COMMENT -->
 
@@ -52,7 +30,7 @@ This page had moved. Please see [Quick start guides](../quick-start-guides.md).
 
 <!-- END_TOC -->
 
-Document version: 4.3.2.
+Document version: 4.4.0.
 
 ## What you need for getting started with the API
 
@@ -62,7 +40,7 @@ You need:
 
 1. A *test user*.
 
-    All merchants automatically get a test user. See [test users](./test-environment.md#test-users) for more information.
+    All merchants automatically get a test user. See [test users](test-environment.md#test-users) for more information.
 
 1. A *test sale unit*.
 
@@ -101,7 +79,7 @@ Once you have installed Postman, you can import an environment from one our our 
 
 The following is a global environment file that can be used with all the APIs:
 
-* [Vipps API Global Postman environment](../tools/vipps-api-global-postman-environment.json)
+* [Vipps API Global Postman environment](tools/vipps-api-global-postman-environment.json)
 
 ### Update the environment values
 

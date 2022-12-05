@@ -1,7 +1,7 @@
 <!-- START_METADATA
 ---
 title: POS integrations
-sidebar_position: 100
+sidebar_position: 30
 pagination_next: null
 pagination_prev: null
 ---

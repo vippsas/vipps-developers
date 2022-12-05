@@ -70,7 +70,7 @@ See
 
 As soon as the _Merchant Agreement_ has been approved and a product order is sent,
 access to the
-[Vipps test environment (MT)](./developer-resources/test-environment.md)
+[Vipps test environment (MT)](test-environment.md)
 will be provided by email to the user associated with the product order.
 
 If you have questions about your application, please check the status on
@@ -113,13 +113,13 @@ The Merchant Test Environment (MT) is available for all Vipps merchants
 with API access.
 
 See
-[Developer resources: The Vipps Test Environment (MT)](./developer-resources/test-environment.md)
+[Developer resources: The Vipps Test Environment (MT)](test-environment.md)
 for details including:
 
-- [Test server](./developer-resources/test-environment.md#test-server)
-- [Test merchants](./developer-resources/test-environment.md#test-merchants)
-- [Test users](./developer-resources/test-environment.md#test-users)
-- [Vipps test apps](./developer-resources/test-environment.md#vipps-test-apps)
+- [Test server](test-environment.md#test-server)
+- [Test merchants](test-environment.md#test-merchants)
+- [Test users](test-environment.md#test-users)
+- [Vipps test apps](test-environment.md#vipps-test-apps)
 
 ## Quick overview of how to make an API call
 
@@ -268,11 +268,7 @@ in addition to normal monitoring.
 ## Next step: Quick start guides
 
 If you are ready to try out some API request, head over to the
-[Quick start guides](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/developer-resources/quick-start-guides) page and read about creating your own test set up!
-
-See:
-
-* [Quick start guides: What you need for getting started with the API](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/developer-resources/quick-start-guides)
+[Quick start guides](quick-start-guides.md) page and read about creating your own test set up!
 
 ## Questions?
 
