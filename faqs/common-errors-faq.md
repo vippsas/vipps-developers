@@ -20,7 +20,7 @@ See also
 [Common errors](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api-faq#common-errors)
 in the eCom API FAQs.
 
-Document version 0.2.2.
+Document version 1.0.2.
 
 <!-- START_TOC -->
 
@@ -94,6 +94,7 @@ Please follow these steps to make sure everything is correct:
 1. Make sure that you are using a valid access token. See
    [Getting started: Get an access token](../vipps-getting-started.md#get-an-access-token)
    for details, how long it is valid, etc.
+   Remember to use `Authorization: Bearer <access token goes here>`.
 2. Check that you are using the correct API credentials for the MSN (Merchant Serial Number)
    you are using
    (See
@@ -107,7 +108,8 @@ Please follow these steps to make sure everything is correct:
    See:
    [Why do I get `errorCode 35 "Requested Order not found"`?](#why-do-i-get-errorcode-35-requested-order-not-found)
 4. Check the API specification for the correct spelling of all the header parameters.
-   They are case sensitive: `Authorization: Bearer <snip>` is not the same as `Authorization: bearer <snip>`.
+   They are case sensitive: `Authorization: Bearer <access token goes here>`
+   is not the same as `Authorization: bearer <access token goes here>`.
 5. Make sure you are using the right environment and check that you are using
    the correct API keys for the right sale unit in that environment. The
    [test environment](../test-environment.md)
