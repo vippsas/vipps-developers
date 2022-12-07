@@ -14,6 +14,7 @@ This newsletter was sent in December 2022.
 <!-- START_TOC -->
 
 * [Recurring API v3](#recurring-api-v3)
+* [ePayment API](#epayment-api)
 * [Solutions](#solutions)
 * [Updated emails to new merchants (and partners)](#updated-emails-to-new-merchants-and-partners)
 * [Reminders](#reminders)
@@ -42,6 +43,17 @@ for more details.
 **Important:** The Recurring API v2 API will be phased out, and will not be
 available from June 1 2023. The Recurring API v2 will continue to work,
 but will not support the new functionality.
+
+## ePayment API
+
+The
+[API specification for the Vipps ePayment API](https://vippsas.github.io/vipps-developer-docs/api/epayment)
+is now available.
+
+**Please note:** While the API _functionality_ is implemented, the
+[API documentation](https://vippsas.github.io/vipps-developer-docs/docs/APIs/epayment-api)
+is still a work in progress - even the
+[API specification](https://vippsas.github.io/vipps-developer-docs/api/epayment).
 
 ## Solutions
 
