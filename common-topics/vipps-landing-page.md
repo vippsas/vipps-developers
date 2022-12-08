@@ -34,13 +34,22 @@ because the users get a familiar user experience and know the payment flow.
 In this way, Vipps takes responsibility for helping the user from the browser to the app,
 and to complete the payment in a familiar way.
 
-The user's phone number can be set in the payment initiation call. It is remembered by the user's browser,
-eliminating the need for re-typing it on subsequent purchases.
+The user's phone number can be set in the payment initiation call. It is
+remembered by the user's browser, eliminating the need for re-typing it on
+subsequent purchases.
+
+In some cases one Vipps user will start the payment process, but the actual payment
+will be made by another Vipps user. The Vipps landing page makes this possible, since
+the phone number can be changed.
+A typical example is one user that is below
+15 years old, and can therefore not pay businesses, will let another Vipps
+user complete the payment.
 
 **Important:** Never show the Vipps landing page inside an iframe.
 That will make it impossible for the user to reliably be redirected back to the
 merchant's website, and result in a lower success rate.
-In general: Any "optimization" of the payment flow may break the Vipps payment flow - if not today, then later.
+In general: Any "optimization" of the payment flow may break the Vipps payment
+flow - if not today, then later.
 
 <!-- START_TOC -->
 
@@ -88,7 +97,6 @@ the landing page.
 after completion of the payment. The "result page" is just the confirmation in
 Vipps. The `fallback` URL sent in the API request can therefore be the
 merchant's main URL, like `https://example.com`, etc.
-
 
 If the `skipLandingPage` property is set to `true`:
 * It will cause a push notification to be sent immediately to the given
