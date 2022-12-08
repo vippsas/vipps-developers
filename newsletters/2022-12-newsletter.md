@@ -1,11 +1,11 @@
 <!-- START_METADATA
 ---
 sidebar_position: 67
-title: 2022-11
+title: 2022-12
 ---
 END_METADATA -->
 
-# Technical newsletter for developers 2022-11
+# Technical newsletter for developers 2022-12
 
 💥 DRAFT! 💥
 
@@ -31,7 +31,6 @@ is available. This version includes new and improved functionality for campaigns
 (for example "10 weeks for 10 kr" or "1 kr until Christmas"),
 the possibility to reserve and capture (or partially capture) a charge
 (specially important for physical subscriptions) and several technical improvements.
-
 
 Upgrading to v3 requires some technical changes, but the overall flow and logic
 is the same as in v2. We have made it as easy as possible to upgrade.

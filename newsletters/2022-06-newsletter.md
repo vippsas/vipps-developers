@@ -11,8 +11,6 @@ This newsletter was sent in June 2022.
 
 <!-- START_TOC -->
 
-## Table of Contents
-
 * [Vipps Order Management API](#vipps-order-management-api)
 * [Vipps Partner API](#vipps-partner-api)
 * [All OpenAPI (Swagger) specifications and Postman collections/environments updated](#all-openapi-swagger-specifications-and-postman-collectionsenvironments-updated)

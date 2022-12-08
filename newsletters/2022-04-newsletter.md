@@ -11,8 +11,6 @@ This newsletter was sent in April 2022.
 
 <!-- START_TOC -->
 
-### Table of Contents
-
 * [Release of remainder after doing a partial capture](#release-of-remainder-after-doing-a-partial-capture)
 * [The Vipps QR API now works in the test environment](#the-vipps-qr-api-now-works-in-the-test-environment)
 * [Logo handling changes in PSP Signup API](#logo-handling-changes-in-psp-signup-api)
