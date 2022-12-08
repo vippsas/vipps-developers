@@ -42,7 +42,7 @@ with API access.
 
 <!-- END_TOC -->
 
-Document version: 3.3.0.
+Document version: 3.3.1.
 
 
 Quick link:
@@ -148,7 +148,7 @@ Please search your mail, including the spam/junk folder, if you do not find it.
 * You must log in with the test user in the test app, before you can complete
   payments for that user.
 * You may use the same test user on multiple devices.
-* Test users can are not connected to any merchant, they can be used with any
+* Test users are not connected to any merchant, they can be used with any
   merchant and sale unit in the test environment.
 
 If you need more than one test user, please contact your
