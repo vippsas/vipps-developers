@@ -37,11 +37,9 @@ is the same as in v2. We have made it as easy as possible to upgrade.
 See the
 [migration guide]( https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/v2-to-v3-migration-guide)
 and the [quick start]( https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/vipps-recurring-api-quick-start)
-for more details.
+for more details. The Recurring API v2 will continue to work, but will not support the new functionality.
 
-**Important:** The Recurring API v2 API will be phased out, and will not be
-available from June 1 2023. The Recurring API v2 will continue to work,
-but will not support the new functionality.
+**Important:** The Recurring API v2 API will be phased out, and will not be available from June 1 2023.
 
 ## ePayment API
 
