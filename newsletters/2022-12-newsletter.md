@@ -52,6 +52,12 @@ is now available.
 is still a work in progress - even the
 [API specification](https://vippsas.github.io/vipps-developer-docs/api/epayment).
 
+## Recurring: improvements in button text for agreements without initial charge
+When an agreement **is not having** initial charge the button text will be "Bekreft og start" (in English: "Confirm and start").
+
+FYI the button text for agreements **with** initial charge is "Betal og start" (in English: "Pay and start").
+
+
 ## Solutions
 
 The new
