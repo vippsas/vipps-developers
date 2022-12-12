@@ -38,7 +38,7 @@ and the [quick start]( https://vippsas.github.io/vipps-developer-docs/docs/APIs/
 for more details. The Recurring API v2 will continue to work, but will not support the new functionality.
 
 Improvements in button text for agreements without initial charge:
-* When an agreement **doe not have** an initial charge,
+* When an agreement **does not have** an initial charge,
   the button text will be "Bekreft og start" (in English: "Confirm and start").
 * The button text for agreements **with** initial charge is
   "Betal og start" (in English: "Pay and start").
