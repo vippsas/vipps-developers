@@ -11,6 +11,7 @@ This newsletter was sent in December 2022.
 
 <!-- START_TOC -->
 
+* [Checkout API v3](#checkout-api-v3)
 * [Recurring API v3](#recurring-api-v3)
 * [ePayment API](#epayment-api)
 * [Solutions](#solutions)
@@ -20,6 +21,12 @@ This newsletter was sent in December 2022.
 * [Questions or comments?](#questions-or-comments)
 
 <!-- END_TOC -->
+
+## Checkout API v3
+
+The [Vipps Checkout API v3](https://vippsas.github.io/vipps-developer-docs/docs/APIs/checkout-api) is available. Checkout v3 improves upon v2 through alignment of polling and callback responses, improvement of field names and expanding models related to logistics options to permit more advanced features.
+
+For more information, check out our [migration guide](https://vippsas.github.io/vipps-developer-docs/docs/APIs/checkout-api/vipps-checkout-api-migration-v3)
 
 ## Recurring API v3
 
