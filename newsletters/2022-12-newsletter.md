@@ -24,7 +24,7 @@ This newsletter was sent in December 2022.
 
 ## Checkout API v3
 
-The [Vipps Checkout API v3](https://vippsas.github.io/vipps-developer-docs/docs/APIs/checkout-api) is available. Checkout V3 improves upon V2 through alignment of polling and callback responses, improvement of field names and expanding models related to logistics options to permit more advanced features.
+The [Vipps Checkout API v3](https://vippsas.github.io/vipps-developer-docs/docs/APIs/checkout-api) is available. Checkout v3 improves upon v2 through alignment of polling and callback responses, improvement of field names and expanding models related to logistics options to permit more advanced features.
 
 For more information, check out our [migration guide](https://vippsas.github.io/vipps-developer-docs/docs/APIs/checkout-api/vipps-checkout-api-migration-v3)
 
