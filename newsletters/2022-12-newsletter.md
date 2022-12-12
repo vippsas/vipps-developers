@@ -39,7 +39,7 @@ See the
 and the [quick start]( https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/vipps-recurring-api-quick-start)
 for more details. The Recurring API v2 will continue to work, but will not support the new functionality.
 
-**Important:** The Recurring API v2 API will be phased out, and will not be available from June 1 2023.
+**Important:** The Recurring API v2 API will be phased out and will not be available from June 1, 2023.
 
 ## ePayment API
 
@@ -53,10 +53,10 @@ is still a work in progress.
 We aim to have the API guide, etc. ready in early January.
 
 ## Recurring: improvements in button text for agreements without initial charge
+
 When an agreement **is not having** initial charge the button text will be "Bekreft og start" (in English: "Confirm and start").
 
 FYI the button text for agreements **with** initial charge is "Betal og start" (in English: "Pay and start").
-
 
 ## Solutions
 
@@ -64,6 +64,7 @@ The new
 [Solutions](https://vippsas.github.io/vipps-developer-docs/docs/vipps-solutions)
 section of our developer documentation describes best practice for
 combining Vipps APIs for specific use cases, like:
+
 * Loyalty at the point of sale (POS)
 * Electric vehicle charging
 * Parking
@@ -73,6 +74,7 @@ combining Vipps APIs for specific use cases, like:
 We have updated and improved all emails sent as part of becoming a Vipps
 merchant (the onboarding process). They all use the Vipps design, and
 contain:
+
 * The merchant's organization number
 * The merchant's name
 * The sale unit's MSN
