@@ -91,7 +91,7 @@ You can also subscribe to daily or monthly transaction reports by email.
 See:
 
 * [Report API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/report-api).
-* [Settlements](../common-topics/settlements/)
+* [Settlements](../settlements/)
 
 ## Can I split payments to charge a fee?
 
@@ -213,7 +213,7 @@ See: [Timeouts](../common-topics/timeouts.md).
 
 ## How long does it take until the money is in my account?
 
-See: [Settlements](../common-topics/settlements/).
+See: [Settlements](../settlements/).
 
 ## Why has one of my customers been charged twice for the same payment?
 
@@ -271,7 +271,7 @@ See:
 your transactions, sale units and settlement reports.
 You can also subscribe to daily or monthly transaction reports by email.
 
-See: [Settlements](../common-topics/settlements/).
+See: [Settlements](../settlements/).
 
 ## When do users get a "soft decline" and need to complete a 3-D Secure verification?
 

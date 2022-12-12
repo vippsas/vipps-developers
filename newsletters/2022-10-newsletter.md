@@ -104,7 +104,7 @@ to pre-fill applications and
 ## Settlement API: In progress
 
 We are in the early planning phase of developing an API for
-[settlements](../common-topics/settlements/).
+[settlements](../settlements/).
 
 If you are interested in this and want to be kept up to date when we have
 something to share, please send an email to integraton@vipps.no.

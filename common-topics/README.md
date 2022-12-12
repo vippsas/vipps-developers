@@ -22,7 +22,6 @@ These are topics that are applicable across many APIs:
 * [Polling guidelines](polling-guidelines.md)
 * [Redirects](redirects.md)
 * [Reserve and capture](reserve-and-capture.md)
-* [Settlements](settlements/README.md)
 * [Timeouts](timeouts.md)
 * [TransactionText](transactiontext.md)
 * [URL validation](url-validation.md)

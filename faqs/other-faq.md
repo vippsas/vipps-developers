@@ -134,7 +134,7 @@ If all sale units have the same organization number, there are two alternatives:
 1: Recommended: Multiple sale units (multiple MSNs): One sale unit per store. Each sale unit will have its
    own MSN (Merchant Serial Number), and the `orderId` may be whatever you want.
    Each sale unit gets its own
-   [settlement files](../common-topics/settlements/).
+   [settlement files](../settlements/).
    You will need separate API keys for each sale unit (store).
    If you have a Vipps platform partner, the partner will use the
    [Partner keys](https://vippsas.github.io/vipps-developer-docs/docs/vipps-partner/partner-keys)
@@ -144,7 +144,7 @@ If all sale units have the same organization number, there are two alternatives:
 2: Use only one sale unit (one MSN) for all stores, and use the `orderId` to identify
    which orders belong to which sale units.
    All sale units are in the same
-   [settlement report](../common-topics/settlements/).
+   [settlement report](../settlements/).
    You decide what the `orderId` contains, and it may be up to 50 characters. See:
    [orderId recommendation](../common-topics/orderid.md).
    You will use the same API keys for all stores.

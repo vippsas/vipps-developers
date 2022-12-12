@@ -1,6 +1,9 @@
 <!-- START_METADATA
 ---
 title: Settlements
+sidebar_position: 85
+pagination_next: null
+pagination_prev: null
 ---
 END_METADATA -->
 
@@ -156,7 +159,7 @@ Vipps needs the customer's consent before sharing personal information with the 
 The settlement reports do not contain personal information - except for payments made with Vippsnummer.
 
 See the eCom API FAQ:
-[Why are the customer names not shown on the transaction overview?](../../faqs/common-problems-faq.md#why-are-the-customer-names-not-shown-on-the-transaction-overview).
+[Why are the customer names not shown on the transaction overview?](../faqs/common-problems-faq.md#why-are-the-customer-names-not-shown-on-the-transaction-overview).
 
 ## How to get settlement files
 
@@ -224,7 +227,7 @@ Vipps covers the negative balance for a (short) while, but if it persists,
 Vipps will send an invoice to the merchant to settle the balance.
 
 There are no settlement reports for the
-[test environment](../../test-environment.md).
+[test environment](../test-environment.md).
 
 ### Daily reports
 
