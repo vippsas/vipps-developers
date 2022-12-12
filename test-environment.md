@@ -45,10 +45,6 @@ with API access.
 Document version: 3.3.1.
 
 
-Quick link:
-
-* [Vipps test apps](#vipps-test-apps)
-
 ## About the test environment
 
 All Vipps customers with access to
