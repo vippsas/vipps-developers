@@ -17,11 +17,15 @@ END_METADATA -->
 
 <!-- END_COMMENT -->
 
+Start your journey in the [Getting Started](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/vipps-getting-started) page.
+This is where you learn about the API keys, test environments, and how to make calls.
+
+There are several types of Vipps APIs. These are found under [Vipps APIs](https://vippsas.github.io/vipps-developer-docs/docs/APIs) in the sidebar or header.
+
 Quick links:
 
 * [Getting started guide](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/vipps-getting-started) - General information about developing with Vipps.
-* [Vipps test app](./test-environment.md#vipps-test-apps) - Install the test app.
-* [Vipps portal](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/developer-resources/portal) - Get your API keys and create test sale units.
+* [Vipps test environment](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/test-environment) - Install the test app.
 
 Dive deeper with:
 
