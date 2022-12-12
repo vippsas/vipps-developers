@@ -19,6 +19,7 @@ END_METADATA -->
 The following are newsletters with important information about Vipps'
 APIs and products:
 
+* [2022-12](2022-11-newsletter.md)
 * [2022-11](2022-11-newsletter.md)
 * [2022-10](2022-10-newsletter.md)
 * [2022-06](2022-06-newsletter.md)
