@@ -1,6 +1,7 @@
 <!-- START_METADATA
 ---
 sidebar_label: Terminology
+sidebar_position: 90
 pagination_next: null
 pagination_prev: null
 ---
