@@ -1,5 +1,6 @@
 <!-- START_METADATA
 ---
+draft: true
 title: Contributing
 sidebar_position: 99
 pagination_next: null
