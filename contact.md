@@ -30,8 +30,6 @@ END_METADATA -->
 
 <!-- END_TOC -->
 
-Document version: 2.4.17.
-
 ## We help with technical issues
 
 There are a lot of self-service solutions on
@@ -78,7 +76,7 @@ If you cannot find the answer: Please send an email with all relevant informatio
    Plain HTTP from Postman ensures the quickest response.
    No source code, please.
    **Important:** Remove everything except the last four characters from
-   `client_secret`and `Ocp-Apim-Subscription-Key`.
+   `client_secret` and `Ocp-Apim-Subscription-Key`.
 10. Please provide screenshots, if possible.
 11. Please provide your contact information (if not in your email signature): Name and phone number
 12. Please include any other information that may be relevant or possibly helpful.
