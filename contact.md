@@ -30,8 +30,6 @@ END_METADATA -->
 
 <!-- END_TOC -->
 
-Document version: 2.4.17.
-
 ## We help with technical issues
 
 There are a lot of self-service solutions on

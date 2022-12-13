@@ -25,7 +25,6 @@ by using SFTP as part of an integration.
 
 See the [Settlements](..) overview.
 
-Document version: 4.1.1.
 
 <!-- START_TOC -->
 

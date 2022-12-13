@@ -20,7 +20,6 @@ See also
 [Common problems](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api-faq#common-problems)
 in the eCom API FAQs.
 
-Document version 0.1.0.
 
 <!-- START_TOC -->
 

@@ -16,7 +16,6 @@ END_METADATA -->
 
 <!-- END_COMMENT -->
 
-Document version 0.0.2.
 
 <!-- START_TOC -->
 

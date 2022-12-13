@@ -42,9 +42,6 @@ with API access.
 
 <!-- END_TOC -->
 
-Document version: 3.3.1.
-
-
 ## About the test environment
 
 All Vipps customers with access to

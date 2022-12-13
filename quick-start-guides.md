@@ -30,8 +30,6 @@ END_METADATA -->
 
 <!-- END_TOC -->
 
-Document version: 4.4.0.
-
 ## What you need for getting started with the API
 
 You will need to set up a few things before you can break loose in testing the API.

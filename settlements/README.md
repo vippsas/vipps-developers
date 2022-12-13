@@ -40,7 +40,6 @@ END_METADATA -->
 
 <!-- END_TOC -->
 
-Document version 2.3.2.
 
 ## Settlement flow
 

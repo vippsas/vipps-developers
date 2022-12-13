@@ -9,8 +9,6 @@ END_METADATA -->
 
 # Terminology
 
-Document version: 1.0.0.
-
 ## Common terms
 
 * API keys - Codes that give a merchant access to the API (e.g.,

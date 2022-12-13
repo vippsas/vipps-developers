@@ -16,8 +16,6 @@ END_METADATA -->
 
 <!-- END_COMMENT -->
 
-Document version: 3.7.1.
-
 <!-- START_TOC -->
 
 ## Table of contents
