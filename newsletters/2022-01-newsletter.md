@@ -111,7 +111,7 @@ user's phone number, and by users scanning a QR code.
 See:
 
 * [Vipps Login from phone number API: How It Works](https://vippsas.github.io/vipps-developer-docs/docs/APIs/login-api/vipps-login-from-phone-number-api-howitworks)
-* [Vipps Login from QR-code API: How It Works](https://vippsas.github.io/vipps-developer-docs/docs/APIs/login-api/vipps-login-from-QR-api-howitworks)
+* Vipps Login from QR-code API: How It Works (no longer available)
 * [Vipps Login API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/login-api/)
 
 ## Deprecation of the Vipps Signup API
