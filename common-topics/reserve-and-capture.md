@@ -123,12 +123,12 @@ Because of this, _direct capture_ requires additional compliance checks.
 A sale unit can only have one capture type, and it must be configured by Vipps.
 You can't turn _direct capture_ on or off as a merchant.
 
+We strongly recommend using "reserve capture" in all situations.
+
 **Please note:** Vipps only offers "direct capture" for merchants that use
 Vipps through a partner, and for merchants that have a Key Account Manager.
 "Direct capture" must be requested by the partner from the partner manager,
 or by KAM merchants from the Key Account Manager.
-
-We strongly recommend using "reserve capture" in all situations.
 
 See the FAQ:
 
