@@ -176,11 +176,22 @@ See:
 
 ## Why are the customer names not shown on the transaction overview?
 
+Vipps is anonymous be default: Users can pay with Vipps without sharing their
+personal data with the merchant. Merchants can use the built-in functionality to
+get the user's consent to share personal data -  such as phone number, name,
+e-mail address and address.
+See
+[Userinfo](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/common-topics/userinfo)
+and
+[Express checkout](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api#express-checkout-payments).
+
 The transaction overview on
 [portal.vipps.no](https://portal.vipps.no)
-shows the customer names for
+and the settlement reports available by e.mail and SFTP show the customer names for
 [Vippsnummer](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-i-butikk/ta-betalt-med-vipps/)
-payments. For other payments, such as
+payments. 
+
+For other payments, such as
 [Vipps på nett](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/)
 and
 [Vipps Faste betalinger (Recurring payments)](https://vipps.no/produkter-og-tjenester/bedrift/faste-betalinger/faste-betalinger/)
