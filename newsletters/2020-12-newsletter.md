@@ -39,7 +39,7 @@ More information, and screenshots of the new flows, can be found in the
 [documentation](https://vippsas.github.io/vipps-developer-docs/docs/APIs/login-api/vipps-login-api#mobile-flow---app-switch-based-flow).
 
 To have a unified way of providing user information across Vipps services
-we are standardising the data formats, both within Vipps and with the OIDC standard.
+we are standardizing the data formats, both within Vipps and with the OIDC standard.
 To do this we have been required to introduce a new version of our Vipps login API.
 **The previous version (Version 1) of the Vipps login API will have end of life on February 28th 2021**.
 

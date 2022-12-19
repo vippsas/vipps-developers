@@ -22,14 +22,14 @@ they will either be taken to Vipps or to the Vipps landing page:
   The result is the same for the `vipps://` and the `https://` URLs.
   This is done by the phone's operating system; It recognized that the `https://`
   URL for the landing page is a Vipps URL, and knows that it should be open the
-  Vipps app instead of the openeing it in a web browser.
+  Vipps app instead of the opening it in a web browser.
 * In a desktop browser, the landing page will prompt the user for the phone number
   (the number may also be pre-filled, see below).
   The user enters or confirms the phone number.
   If is also possible to enter another Vipps user's number, to have that
   person complete the payment.
   Vipps sends a push notification to the specified phone number,
-  the user gets a push notification, poens Vipps and confirms the payment.
+  the user gets a push notification, opens Vipps and confirms the payment.
 
 ![The Vipps landing page](images/vipps-flow-landing-page.png)
 

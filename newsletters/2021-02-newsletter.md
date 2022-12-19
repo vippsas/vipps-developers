@@ -41,7 +41,7 @@ endpoint has been available for a long time, and gives more data and details: Th
 ## Vipps Login API version 2
 
 To have a unified way of providing user information across Vipps services
-we are standardising the data formats, both within Vipps and with the OIDC standard.
+we are standardizing the data formats, both within Vipps and with the OIDC standard.
 To do this we have to introduce a new version of our Vipps login API.
 **The previous version (Version 1) of the Vipps login API will have end of life on February 28th 2021**.
 

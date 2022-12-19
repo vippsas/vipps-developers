@@ -55,7 +55,7 @@ The LICENSE file defines the license for the project. An open source project's l
 informs users what they can and can't do (e.g., use, modify, redistribute), and contributors,
 what they are allowing others to do.
 
-The Vipps API documentation is licensed under the MIT licence: <https://choosealicense.com/licenses/mit/>
+The Vipps API documentation is licensed under the MIT license: <https://choosealicense.com/licenses/mit/>
 
 ## Questions?
 

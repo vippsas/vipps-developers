@@ -186,7 +186,7 @@ See:
 
 It depends. You must check the body of the response.
 
-It could be that you are attempting to call a non-existant API endpoint, and
+It could be that you are attempting to call a non-existent API endpoint, and
 it could be that you are using the API keys for one MSN for an `orderId`
 that belongs to a different MSN.
 

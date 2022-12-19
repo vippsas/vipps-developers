@@ -66,7 +66,7 @@ migrated. Please see our [migration guide](https://vippsas.github.io/vipps-devel
 
 Vipps has implemented rate limiting on our external APIs in order to offer a
 more robust and secure service. Most of these limits are only created to
-counteract unexpected and erratic behaviour and it's nothing you should notice
+counteract unexpected and erratic behavior and it's nothing you should notice
 under normal operation. More information about this is available in the
 documentation for
 [Vipps Recurring API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/vipps-recurring-api#rate-limiting)

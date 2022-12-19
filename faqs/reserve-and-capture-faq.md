@@ -38,7 +38,7 @@ END_METADATA -->
 
 ## For how long is a payment reserved?
 
-That depends. Vipps does not control the behaviour of the customer's card or account.
+That depends. Vipps does not control the behavior of the customer's card or account.
 
 The details may change, but the information below is the best Vipps can offer.
 
