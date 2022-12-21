@@ -21,8 +21,8 @@ If you want to contribute: Great! No issue or pull request is too small! 👍
 
 ## Getting started
 
-1. Make sure you have a GitHub account
-1. See the GitHub help pages if you have questions: <https://help.github.com>
+1. Make sure you have a GitHub account.
+1. See the GitHub help pages if you have questions: <https://help.github.com>.
 
 ## Report an issue or suggest an improvement
 
