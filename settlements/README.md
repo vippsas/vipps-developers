@@ -84,7 +84,7 @@ Also: There is one payment per sale unit, with its corresponding settlement file
 
 A simple illustration showing where each id is set, and how it all fits together.
 
-![Settlement flow illustrated](img/sxettlement-process.png)
+![Settlement flow illustrated](img/settlement-process.png)
 
 ## Frequency
 
@@ -226,7 +226,7 @@ Vipps covers the negative balance for a (short) while, but if it persists,
 Vipps will send an invoice to the merchant to settle the balance.
 
 There are no settlement reports for the
-[test environment](../xtest-environment.md).
+[test environment](../test-environment.md).
 
 ### Daily reports
 
