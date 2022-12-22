@@ -226,7 +226,7 @@ Vipps covers the negative balance for a (short) while, but if it persists,
 Vipps will send an invoice to the merchant to settle the balance.
 
 There are no settlement reports for the
-[test environment](../X1test-environment.md).
+[test environment](../X2test-environment.md).
 
 ### Daily reports
 
