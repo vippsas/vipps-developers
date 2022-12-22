@@ -89,7 +89,7 @@
 		},
 		{
 			"key": "callbackUrl",
-			"value": "",
+			"value": "https://example.com/vipps/callbacks-for-checkout",
 			"enabled": true
 		},
 		{
