@@ -88,6 +88,11 @@
 			"enabled": true
 		},
 		{
+			"key": "callbackUrl",
+			"value": "https://example.com/vipps/callbacks-for-checkout",
+			"enabled": true
+		},
+		{
 			"key": "campaignPrice",
 			"value": "500",
 			"enabled": true
