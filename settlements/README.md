@@ -112,7 +112,7 @@ Vipps sends invoices as EHF. If not, the invoices are sent by email.
 To change invoice recipient, please
 [contact customer service](https://vipps.no/kontakt-oss/bedrift/vipps/).
 
-See [Availability](#Xavailability) for information about settlement files
+See [Availability](#availability) for information about settlement files
 when the balance is negative.
 
 ## Settlement report formats
@@ -226,7 +226,7 @@ Vipps covers the negative balance for a (short) while, but if it persists,
 Vipps will send an invoice to the merchant to settle the balance.
 
 There are no settlement reports for the
-[test environment](../test-environment.md).
+[test environment](../test-environmentX.md).
 
 ### Daily reports
 
