@@ -88,6 +88,11 @@
 			"enabled": true
 		},
 		{
+			"key": "callbackUrl",
+			"value": "",
+			"enabled": true
+		},
+		{
 			"key": "campaignPrice",
 			"value": "500",
 			"enabled": true
