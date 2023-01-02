@@ -84,7 +84,7 @@ Also: There is one payment per sale unit, with its corresponding settlement file
 
 A simple illustration showing where each id is set, and how it all fits together.
 
-![Settlement flow illustrated](img/TESTINGsettlement-process.png)
+![Settlement flow illustrated](img/settlement-process.png)
 
 ## Frequency
 
