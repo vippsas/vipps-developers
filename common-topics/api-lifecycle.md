@@ -149,7 +149,7 @@ for more details.
 
 If you are still using a legacy API, you should upgrade as soon as possible.
 The best way to keep up to date of changes is to
-[star the API repository on GitHub](https://help.github.com/en/articles/about-stars).
+[star the API repository on GitHub](https://docs.github.com/en/get-started/exploring-projects-on-github/saving-repositories-with-stars).
 
 ## Backwards compatibility
 

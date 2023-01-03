@@ -12,6 +12,7 @@ This newsletter was sent in June 2021.
 
 With Vipps you can always know who your customers are, and optionally connect
 them to your loyalty program:
+
 * Vipps Logg inn: The easiest way to register and/or log in. No usernames or passwords!
 * Userinfo: Ask the user to share details, such as:
   phone number, name, email address, postal address, birth date, national identity number and bank accounts.
@@ -19,7 +20,8 @@ them to your loyalty program:
 You can then automatically give your loyal customers benefits such as
 discounts, freebies, connect them to your own loyalty programme, etc.
 More information:
-* [Vipps Logg inn: Product information](https://www.vipps.no/produkter-og-tjenester/bedrift/innlogging-og-identifisering/logg-inn-med-vipps/)
+
+* [Vipps Logg inn: Product information](https://vipps.no/produkter-og-tjenester/bedrift/logg-inn-med-vipps/logg-inn-med-vipps/)
 * [Vipps Login API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/login-api/)
 * [Userinfo for the Vipps eCom API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api#userinfo)
 * [Userinfo for the Vipps Recurring API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/vipps-recurring-api#userinfo)

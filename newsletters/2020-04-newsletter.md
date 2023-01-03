@@ -64,7 +64,7 @@ without using the app.
 ## New developer pages on vipps.no
 
 We now offer nicely formatted and Vipps-branded developer pages at
->https://vipps.no/developer>.
+<https://vipps.no/developer>.
 
 The pages are automatically generated from the GitHub repos, so the
 content is the same, and you can choose what to use.

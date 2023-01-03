@@ -93,7 +93,7 @@ We are working hard to improve the
   easier to test all APIs without doing any development.
 
 Please
-[tell us what you think](https://forms.office.com/r/8iZVibsM4m)
+[tell us what you think](https://forms.office.com/pages/responsepage.aspx?id=XcJbgGSO1k6NJDiDyQaMWuRWudsvYRxEorAi1xx_iqJUQzg4QzExTVhHM1UzMDIwM1lINkpaNTdWUC4u)
 in this short, 3-minute survey - thanks!
 
 ## Check your phone number format

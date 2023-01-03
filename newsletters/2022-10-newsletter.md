@@ -42,7 +42,7 @@ Examples:
 * [FAQ](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/faqs/)
 
 Please
-[tell us what you think](https://forms.office.com/r/8iZVibsM4m)
+[tell us what you think](https://forms.office.com/pages/responsepage.aspx?id=XcJbgGSO1k6NJDiDyQaMWuRWudsvYRxEorAi1xx_iqJUQzg4QzExTVhHM1UzMDIwM1lINkpaNTdWUC4u)
 in this short, 3-minute survey - thanks!
 
 ## Recurring API: New v3 API coming this fall

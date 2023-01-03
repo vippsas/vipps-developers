@@ -43,14 +43,14 @@ We are working on this, and the current version/draft is
 
 New developer pages, in addition to
 [GitHub](https://github.com/vippsas),
-are available at https://vipps.no/developer
+are available at <https://vipps.no/developer>.
 
 ## Status page for test and production
 
 We will soon launch status pages:
 
-* Test: https://vipps-test.statuspage.io (possibly https://test.status.vipps.no)
-* Test: https://vipps.statuspage.io (possibly https://status.vipps.no)
+- Test environment: <https://vipps-test.statuspage.io>
+- Production environment: <https://vipps.statuspage.io>
 
 ## Further plans
 
