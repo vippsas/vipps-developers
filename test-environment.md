@@ -120,7 +120,7 @@ Partners can get access to the test environment by ordering
 "Vipps Logg inn" (the
 [Vipps Login API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/login-api))
 on
-[portal.vipps.no](https://portal.vipps.no)
+[portal.vipps.no](https://portal.vipps.no).
 and:
 1. Explain in the order form that it is only for access to the test environments
 2. Notify their partner manager that they only need test access.
