@@ -23,22 +23,25 @@ with API access.
 
 ## Table of contents
 
-- [About the test environment](#about-the-test-environment)
-  - [Limitations of the test environment](#limitations-of-the-test-environment)
-- [Test server](#test-server)
-- [Test merchants](#test-merchants)
-- [Test users](#test-users)
-  - [Phone number](#phone-number)
-  - [Payment card](#payment-card)
-  - [Email address](#email-address)
-  - [Other data](#other-data)
-- [Test amounts](#test-amounts)
-- [Vipps test apps](#vipps-test-apps)
-  - [Install Vipps MT on iOS](#install-vipps-mt-on-ios)
-  - [Install Vipps MT on Android](#install-vipps-mt-on-android)
-  - [Other versions](#other-versions)
-  - [Limitations of the test apps](#limitations-of-the-test-apps)
-- [Questions?](#questions)
+* [About the test environment](#about-the-test-environment)
+  * [Limitations of the test environment](#limitations-of-the-test-environment)
+* [Access to the test environment](#access-to-the-test-environment)
+  * [Merchants](#merchants)
+  * [Partners](#partners)
+* [Test server](#test-server)
+* [Test merchants](#test-merchants)
+* [Test users](#test-users)
+  * [Phone number](#phone-number)
+  * [Payment card](#payment-card)
+  * [Email address](#email-address)
+  * [Other data](#other-data)
+* [Test amounts](#test-amounts)
+* [Vipps test apps](#vipps-test-apps)
+  * [Install Vipps MT on iOS](#install-vipps-mt-on-ios)
+  * [Install Vipps MT on Android](#install-vipps-mt-on-android)
+  * [Other versions](#other-versions)
+  * [Limitations of the test apps](#limitations-of-the-test-apps)
+* [Questions?](#questions)
 
 <!-- END_TOC -->
 
@@ -99,6 +102,36 @@ Other differences between Production and MT:
   Payments must be checked with the API, as there is no web interface.
 - We allow 10,000 incorrect PIN attempts before locking the Vipps user's account
 - There are no settlement reports and no SFTP service.
+
+## Access to the test environment
+
+### Merchants
+
+All merchants with API access have access to the Vipps test environment.
+
+A test sale unit is automatically created when the merchant submits an order
+for a Vipps product, and the details can be found on the "Utvikler" (developer)
+section on
+[portal.vipps.no](https://portal.vipps.no).
+
+See:
+* [How to find the API keys](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/developer-resources/portal#how-to-find-the-api-keys)
+* [How to create a test sales unit](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/developer-resources/portal#how-to-create-a-test-sales-unit)
+
+### Partners
+
+Partners can get access to the test environment by ordering
+"Vipps Logg inn" (the
+[Vipps Login API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/login-api))
+on
+[portal.vipps.no](https://portal.vipps.no).
+
+The partner must also:
+1. Explain in the order form that it is only for access to the test environments
+2. Notify their partner manager that they only need test access.
+
+Since "Vipps Logg inn" does not require the same regulatory checks (KYC, AML, etc),
+this is a quick process.
 
 ## Test server
 
