@@ -2,6 +2,8 @@
 ---
 sidebar_position: 70
 title: 2022-06
+pagination_next: null
+pagination_prev: null
 ---
 END_METADATA -->
 

@@ -2,6 +2,8 @@
 ---
 sidebar_position: 74
 title: 2021-12
+pagination_next: null
+pagination_prev: null
 ---
 END_METADATA -->
 
@@ -16,14 +18,14 @@ This newsletter was sent in December 2021.
 - [Use the API Dashboard to find problems with your integration](#use-the-api-dashboard-to-find-problems-with-your-integration)
 - [Important information for partners](#important-information-for-partners)
 - [Reminders](#reminders)
-  * [Use Userinfo to register visitors](#use-userinfo-to-register-visitors)
-  * ["Click and collect" recommendations](#-click-and-collect--recommendations)
-  * [The Vipps QR API](#the-vipps-qr-api)
-  * [The Vipps Order Management API](#the-vipps-order-management-api)
-  * [The Vipps Recurring API now supports variable amounts](#the-vipps-recurring-api-now-supports-variable-amounts)
-  * [Vipps Login support for authentication/registration outside of browser/app (CIBA)](#vipps-login-support-for-authenticationregistration-outside-of-browserapp-ciba)
+  - [Use Userinfo to register visitors](#use-userinfo-to-register-visitors)
+  - ["Click and collect" recommendations](#click-and-collect-recommendations)
+  - [The Vipps QR API](#the-vipps-qr-api)
+  - [The Vipps Order Management API](#the-vipps-order-management-api)
+  - [The Vipps Recurring API now supports variable amounts](#the-vipps-recurring-api-now-supports-variable-amounts)
+  - [Vipps Login support for authentication/registration outside of browser/app (CIBA)](#vipps-login-support-for-authenticationregistration-outside-of-browserapp-ciba)
 - [Newsletter archive](#newsletter-archive)
-- [Questions or comments?](#questions-or-comments-)
+- [Questions or comments?](#questions-or-comments)
 
 <!-- END_TOC -->
 

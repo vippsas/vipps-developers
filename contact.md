@@ -2,6 +2,8 @@
 ---
 title: Contact us
 sidebar_position: 100
+pagination_next: null
+pagination_prev: null
 ---
 END_METADATA -->
 

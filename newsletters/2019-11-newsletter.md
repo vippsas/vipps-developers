@@ -2,6 +2,8 @@
 ---
 sidebar_position: 78
 title: 2019-11
+pagination_next: null
+pagination_prev: null
 ---
 END_METADATA -->
 
