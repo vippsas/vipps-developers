@@ -108,7 +108,11 @@ Other differences between Production and MT:
 ### Merchants
 
 All merchants with API access have access to the Vipps test environment.
-A test sale unit is automatically created.
+
+A test sale unit is automatically created when the merchant submits an order
+for a Vipps product, and the details can be found on the "Utvikler" (developer)
+section on
+[portal.vipps.no](https://portal.vipps.no).
 
 See:
 * [How to find the API keys](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/developer-resources/portal#how-to-find-the-api-keys)
@@ -120,8 +124,9 @@ Partners can get access to the test environment by ordering
 "Vipps Logg inn" (the
 [Vipps Login API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/login-api))
 on
-[portal.vipps.no](https://portal.vipps.no)
-and:
+[portal.vipps.no](https://portal.vipps.no).
+
+The partner must also:
 1. Explain in the order form that it is only for access to the test environments
 2. Notify their partner manager that they only need test access.
 
