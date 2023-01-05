@@ -25,7 +25,7 @@ END_METADATA -->
 * [How to find the API keys](#how-to-find-the-api-keys)
 * [How to regenerate API keys](#how-to-regenerate-api-keys)
 * [How to create a test sales unit](#how-to-create-a-test-sales-unit)
-* [How to create a user](#how-to-create-a-user)
+* [How to create additional users on portal.vipps.no](#how-to-create-additional-users-on-portalvippsno)
 * [Permissions and users](#permissions-and-users)
 * [Questions](#questions)
 
@@ -88,10 +88,11 @@ Then, you can [get the API keys](#how-to-find-the-api-keys) and begin testing.
 **Please note:** It is not possible to _change_ an existing sale unit in the test environment,
 but you can create as many as you need.
 
-## How to create a user
+## How to create additional users on portal.vipps.no
 
 Merchants may create additional users, both for their own colleagues,
 accountants, etc - and also for their partner's employees.
+Or anyone else they want to give access to their sale units.
 
 See:
 [How to add a user on portal.vipps.no](https://vippsas.github.io/vipps-developer-docs/docs/vipps-partner/add-portal-user).
