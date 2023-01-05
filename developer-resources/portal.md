@@ -55,17 +55,11 @@ Update your integrations so they will not stop working.
 ## How to create a test sales unit
 
 1. Log in to [portal.vipps.no](https://portal.vipps.no) using BankID.
-
-    * If you have problems, see [Permissions and users](#permissions-and-users).
-
+   * If you have problems, see [Permissions and users](#permissions-and-users).
 1. Select _Vipps På Nett_ > _Utvikler_.
-
 1. Select to show _test keys_.
-
 1. Click _Add test sales unit_.
-
 1. Enter the requested properties and click _Create_.
-
    * Name - Enter the name of your test sales unit.
    * Partner - Enter optional partner data (not usually needed).
    * Select optional properties:
