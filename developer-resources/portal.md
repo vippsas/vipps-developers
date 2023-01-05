@@ -14,7 +14,22 @@ END_METADATA -->
 ℹ️ Please use the new documentation:
 [Vipps Technical Documentation](https://vippsas.github.io/vipps-developer-docs/).
 
+
 <!-- END_COMMENT -->
+
+
+<!-- START_TOC -->
+
+## Table of contents
+
+* [How to find the API keys](#how-to-find-the-api-keys)
+* [How to regenerate API keys](#how-to-regenerate-api-keys)
+* [How to create a test sales unit](#how-to-create-a-test-sales-unit)
+* [How to create a user](#how-to-create-a-user)
+* [Permissions and users](#permissions-and-users)
+* [Questions](#questions)
+
+<!-- END_TOC -->
 
 This page will guide you through the steps to finding API keys and creating test sales units
 on the [Vipps portal (portal.vipps.no)](https://portal.vipps.no).
@@ -73,10 +88,13 @@ Then, you can [get the API keys](#how-to-find-the-api-keys) and begin testing.
 **Please note:** It is not possible to _change_ an existing sale unit in the test environment,
 but you can create as many as you need.
 
-## How to create a user (partners only)
+## How to create a user
 
-This is only for Partners. See:
-[Vipps Partners: How to add a user on portal.vipps.no](https://vippsas.github.io/vipps-developer-docs/docs/vipps-partner/add-portal-user).
+Merchants may create additional users, both for their own colleagues,
+accountants, etc - and also for their partner's employees.
+
+See:
+[How to add a user on portal.vipps.no](https://vippsas.github.io/vipps-developer-docs/docs/vipps-partner/add-portal-user).
 
 ## Permissions and users
 
