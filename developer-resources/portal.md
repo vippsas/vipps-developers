@@ -25,31 +25,19 @@ For more information about the portal, see the
 ## How to find the API keys
 
 1. Log in to [portal.vipps.no](https://portal.vipps.no) using BankID.
-
     * If you have problems, see [Permissions and users](#permissions-and-users).
-
 1. Select _Vipps På Nett_ > _Utvikler_.
-
    In the page that opens, you will see a table with many sales units listed.
-
-    ![portal.vipps.no: The API products for a sales unit](../images/portalvippsno-salesunit-products.png)
-
+   ![portal.vipps.no: The API products for a sales unit](../images/portalvippsno-salesunit-products.png)
    Hover over the `i` in the column heading for additional information.
-
 1. Select either _production keys_ and/or _test keys_, depending on the type of keys you need.
-
 1. Find your desired sales unit.
-
    * If you need to create your own test sales unit, click _Add test sales unit_ and fill out the form.
      See [create a new test sales unit](#how-to-create-a-test-sales-unit) for more details.
-
 1. Click the _Show keys_ button corresponding to your sales desired unit.
-
-    The API keys will be displayed.
-
-    **Please note:** You can only see API keys that you have access to. All others will be hidden.
-
-    ![portal.vipps.no: The API keys for a sales unit](../images/portalvippsno-salesunit-keys.png)
+   The API keys will be displayed.
+   **Please note:** You can only see API keys that you have access to. All others will be hidden.
+   ![portal.vipps.no: The API keys for a sales unit](../images/portalvippsno-salesunit-keys.png)
 
 💥 **Use caution with storing and transferring API keys** 💥
 
