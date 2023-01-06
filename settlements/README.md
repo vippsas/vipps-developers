@@ -82,7 +82,7 @@ Also: There is one payment per sale unit, with its corresponding settlement file
 
 ### Reconciliation
 
-A simple illustration showing where each id is set and how it all fits together.
+A simple illustration showing where each id is set, and how it all fits together.
 
 ![Settlement flow illustrated](img/settlement-process.png)
 
