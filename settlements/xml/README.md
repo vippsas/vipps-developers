@@ -79,3 +79,4 @@ for capture and refund, but kept gross and net fields as before.
 - Changes to VippsInfo:
     - Change type of WebSite from xs:NCName to xs:anyURI
     - Change type of Country from xs:NCName to xs:string
+  
