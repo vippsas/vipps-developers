@@ -14,18 +14,13 @@ END_METADATA -->
 ℹ️ Please use the new documentation:
 [Vipps Technical Documentation](https://vippsas.github.io/vipps-developer-docs/).
 
-<!-- END_COMMENT -->
-
-
-<!-- START_TOC -->
-
 ## Table of contents
 
 * [Can I refund a payment?](#can-i-refund-a-payment)
 * [How can I refund only a part of a payment?](#how-can-i-refund-only-a-part-of-a-payment)
 * [How long does it take from a refund is made until the money is in the customer's account?](#how-long-does-it-take-from-a-refund-is-made-until-the-money-is-in-the-customers-account)
 
-<!-- END_TOC -->
+<!-- END_COMMENT -->
 
 ## Can I refund a payment?
 

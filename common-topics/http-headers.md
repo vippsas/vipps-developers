@@ -21,14 +21,14 @@ that _everyone_ sends it, also when using the merchant's own API keys.
 The `Merchant-Serial-Number` header can be used with all API keys, and can
 speed up any trouble-shooting of API problems quite a bit.
 
-<!-- START_TOC -->
+<!-- START_COMMENT -->
 
 ## Table of contents
 
 - [Example headers](#example-headers)
 - [Idempotency](#idempotency)
 
-<!-- END_TOC -->
+<!-- END_COMMENT -->
 
 ## Example headers
 

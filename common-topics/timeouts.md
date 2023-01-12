@@ -10,14 +10,14 @@ END_METADATA -->
 
 In short: The user has 10 minutes to accept the payment.
 
-<!-- START_TOC -->
+<!-- START_COMMENT -->
 
 ## Table of contents
 
 - [Using a phone](#using-a-phone)
 - [Using a PC](#using-a-pc)
 
-<!-- END_TOC -->
+<!-- END_COMMENT -->
 
 ## Using a phone
 

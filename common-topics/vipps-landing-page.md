@@ -57,14 +57,14 @@ merchant's website, and result in a lower success rate.
 In general: Any "optimization" of the payment flow may break the Vipps payment
 flow - if not today, then later.
 
-<!-- START_TOC -->
+<!-- START_COMMENT -->
 
 ## Table of contents
 
 - [Generating a QR code to the Vipps landing page](#generating-a-qr-code-to-the-vipps-landing-page)
 - [Skip landing page](#skip-landing-page)
 
-<!-- END_TOC -->
+<!-- END_COMMENT -->
 
 ## Generating a QR code to the Vipps landing page
 

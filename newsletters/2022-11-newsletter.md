@@ -11,7 +11,9 @@ END_METADATA -->
 
 This newsletter was sent in November 2022.
 
-<!-- START_TOC -->
+<!-- START_COMMENT -->
+
+## Table of Contents
 
 * [Specify amounts in øre without decimals](#specify-amounts-in-øre-without-decimals)
 * [Get ready for "black week"](#get-ready-for-black-week)
@@ -23,7 +25,7 @@ This newsletter was sent in November 2022.
   * [Please check your API calls for errors](#please-check-your-api-calls-for-errors)
 * [Questions or comments?](#questions-or-comments)
 
-<!-- END_TOC -->
+<!-- END_COMMENT -->
 
 ## Specify amounts in øre without decimals
 
@@ -82,7 +84,7 @@ We are working hard to improve the
 [Vipps Technical Documentation](https://vippsas.github.io/vipps-developer-docs/):
 
 * The documentation is now
-  [searchable](https://vippsas.github.io/vipps-developer-docs/search/).
+  [searchable](https://vippsas.github.io/vipps-developer-docs/search).
 * We have a new
   [Solutions](https://vippsas.github.io/vipps-developer-docs/docs/vipps-solutions/)
   section to highlight combinations of Vipps APIs, such as

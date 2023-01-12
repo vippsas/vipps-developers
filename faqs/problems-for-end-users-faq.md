@@ -14,17 +14,12 @@ END_METADATA -->
 ℹ️ Please use the new documentation:
 [Vipps Technical Documentation](https://vippsas.github.io/vipps-developer-docs/).
 
-<!-- END_COMMENT -->
-
-
-<!-- START_TOC -->
-
 ## Table of contents
 
 * [Why don't I receive the payment notification?](#why-dont-i-receive-the-payment-notification)
 * [Why am I not sent back to where I came from when I have paid?](#why-am-i-not-sent-back-to-where-i-came-from-when-i-have-paid)
 
-<!-- END_TOC -->
+<!-- END_COMMENT -->
 
 ## Why don't I receive the payment notification?
 

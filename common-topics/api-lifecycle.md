@@ -13,12 +13,6 @@ END_METADATA -->
 ℹ️ Please use the new documentation:
 [Vipps Technical Documentation](https://vippsas.github.io/vipps-developer-docs/).
 
-<!-- END_COMMENT -->
-
-
-
-<!-- START_TOC -->
-
 ## Table of Contents
 
 - [Versioning](#versioning)
@@ -51,7 +45,7 @@ END_METADATA -->
   - [Changing an endpoints URL](#changing-an-endpoints-url)
 - [Questions?](#questions)
 
-<!-- END_TOC -->
+<!-- END_COMMENT -->
 
 ## Versioning
 

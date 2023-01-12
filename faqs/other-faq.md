@@ -14,11 +14,6 @@ END_METADATA -->
 ℹ️ Please use the new documentation:
 [Vipps Technical Documentation](https://vippsas.github.io/vipps-developer-docs/).
 
-<!-- END_COMMENT -->
-
-
-<!-- START_TOC -->
-
 ## Table of contents
 
 * [Where do I find the `client_id` and `client_secret`?](#where-do-i-find-the-client_id-and-client_secret)
@@ -33,7 +28,7 @@ END_METADATA -->
 * [What do we have to do with PSD2's SCA requirements?](#what-do-we-have-to-do-with-psd2s-sca-requirements)
 * [How can I change partner for my integration with Vipps?](#how-can-i-change-partner-for-my-integration-with-vipps)
 
-<!-- END_TOC -->
+<!-- END_COMMENT -->
 
 ## Where do I find the `client_id` and `client_secret`?
 

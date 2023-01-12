@@ -11,7 +11,9 @@ END_METADATA -->
 
 This newsletter was sent in June 2022.
 
-<!-- START_TOC -->
+<!-- START_COMMENT -->
+
+## Table of Contents
 
 * [Vipps Order Management API](#vipps-order-management-api)
 * [Vipps Partner API](#vipps-partner-api)
@@ -26,7 +28,7 @@ This newsletter was sent in June 2022.
   * [Newsletter archive](#newsletter-archive)
 * [Questions or comments?](#questions-or-comments)
 
-<!-- END_TOC -->
+<!-- END_COMMENT -->
 
 ## Vipps Order Management API
 

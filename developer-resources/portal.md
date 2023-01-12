@@ -14,12 +14,6 @@ END_METADATA -->
 ℹ️ Please use the new documentation:
 [Vipps Technical Documentation](https://vippsas.github.io/vipps-developer-docs/).
 
-
-<!-- END_COMMENT -->
-
-
-<!-- START_TOC -->
-
 ## Table of contents
 
 * [How to find the API keys](#how-to-find-the-api-keys)
@@ -29,7 +23,7 @@ END_METADATA -->
 * [Permissions and users](#permissions-and-users)
 * [Questions](#questions)
 
-<!-- END_TOC -->
+<!-- END_COMMENT -->
 
 This page will guide you through the steps to finding API keys and creating test sales units
 on the [Vipps portal (portal.vipps.no)](https://portal.vipps.no).

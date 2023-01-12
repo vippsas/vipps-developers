@@ -11,7 +11,9 @@ END_METADATA -->
 
 This newsletter was sent in October 2022.
 
-<!-- START_TOC -->
+<!-- START_COMMENT -->
+
+## Table of Contents
 
 * [New developer documentation](#new-developer-documentation)
 * [Recurring API: New v3 API coming this fall](#recurring-api-new-v3-api-coming-this-fall)
@@ -28,7 +30,7 @@ This newsletter was sent in October 2022.
   * [Newsletter archive](#newsletter-archive)
 * [Questions or comments?](#questions-or-comments)
 
-<!-- END_TOC -->
+<!-- END_COMMENT -->
 
 ## New developer documentation
 

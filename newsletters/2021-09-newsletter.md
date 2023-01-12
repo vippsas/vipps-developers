@@ -11,7 +11,9 @@ END_METADATA -->
 
 This newsletter was sent in September 2021.
 
-<!-- START_TOC -->
+<!-- START_COMMENT -->
+
+## Table of Contents
 
 - [The Vipps QR API](#the-vipps-qr-api)
 - [The Vipps Order Management API](#the-vipps-order-management-api)
@@ -21,7 +23,7 @@ This newsletter was sent in September 2021.
 - [API Dashboard for the test environment](#api-dashboard-for-the-test-environment)
 - [Removed HTTP 402 errors](#removed-http-402-errors)
 
-<!-- END_TOC -->
+<!-- END_COMMENT -->
 
 ## The Vipps QR API
 

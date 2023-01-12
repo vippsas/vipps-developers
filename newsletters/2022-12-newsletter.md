@@ -11,7 +11,9 @@ END_METADATA -->
 
 This newsletter was sent in December 2022.
 
-<!-- START_TOC -->
+<!-- START_COMMENT -->
+
+## Table of Contents
 
 * [Checkout API v3](#checkout-api-v3)
 * [Recurring API v3](#recurring-api-v3)
@@ -22,7 +24,7 @@ This newsletter was sent in December 2022.
   * [Please check your API calls for errors](#please-check-your-api-calls-for-errors)
 * [Questions or comments?](#questions-or-comments)
 
-<!-- END_TOC -->
+<!-- END_COMMENT -->
 
 ## Checkout API v3
 

@@ -14,17 +14,12 @@ END_METADATA -->
 ℹ️ Please use the new documentation:
 [Vipps Technical Documentation](https://vippsas.github.io/vipps-developer-docs/).
 
-<!-- END_COMMENT -->
-
-
-<!-- START_TOC -->
-
 ## Table of contents
 
 * [What are the requirements for Vipps merchants?](#what-are-the-requirements-for-vipps-merchants)
 * [Can I use my "Vippsnummer" in my webshop?](#can-i-use-my-vippsnummer-in-my-webshop)
 
-<!-- END_TOC -->
+<!-- END_COMMENT -->
 
 ## What are the requirements for Vipps merchants?
 

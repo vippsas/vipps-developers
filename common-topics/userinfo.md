@@ -34,7 +34,7 @@ Example of the userInfo flow:
 
 ![User info flow](images/userinfo-flow.png)
 
-<!-- START_TOC -->
+<!-- START_COMMENT -->
 
 ## Table of contents
 
@@ -45,7 +45,7 @@ Example of the userInfo flow:
   * [Request](#request)
 * [Consent](#consent)
 
-<!-- END_TOC -->
+<!-- END_COMMENT -->
 
 
 ## Scope

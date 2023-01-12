@@ -14,10 +14,6 @@ END_METADATA -->
 ℹ️ Please use the new documentation:
 [Vipps Technical Documentation](https://vippsas.github.io/vipps-developer-docs/).
 
-<!-- END_COMMENT -->
-
-<!-- START_TOC -->
-
 ## Table of contents
 
 * [Settlement flow](#settlement-flow)
@@ -38,8 +34,7 @@ END_METADATA -->
   * [Monthly reports](#monthly-reports)
 * [Questions?](#questions)
 
-<!-- END_TOC -->
-
+<!-- END_COMMENT -->
 
 ## Settlement flow
 

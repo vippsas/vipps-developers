@@ -52,7 +52,7 @@ Important things to consider:
   It is also possible to capture the full amount
   with multiple captures ("partial capture").
 
-<!-- START_TOC -->
+<!-- START_COMMENT -->
 
 ## Table of contents
 
@@ -62,7 +62,7 @@ Important things to consider:
   * [Direct capture](#direct-capture)
   * [Partial capture](#partial-capture)
 
-<!-- END_TOC -->
+<!-- END_COMMENT -->
 
 ## Reserve
 

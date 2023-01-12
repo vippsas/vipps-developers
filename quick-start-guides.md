@@ -14,9 +14,6 @@ END_METADATA -->
 ℹ️ Please use the new documentation:
 [Vipps Technical Documentation](https://vippsas.github.io/vipps-developer-docs/).
 
-<!-- END_COMMENT -->
-
-<!-- START_TOC -->
 
 ## Table of Contents
 
@@ -28,7 +25,7 @@ END_METADATA -->
 * [Try it Out!](#try-it-out)
 * [Questions?](#questions)
 
-<!-- END_TOC -->
+<!-- END_COMMENT -->
 
 ## What you need for getting started with the API
 

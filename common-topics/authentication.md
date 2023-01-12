@@ -8,7 +8,7 @@ END_METADATA -->
 
 # Authentication
 
-<!-- START_TOC -->
+<!-- START_COMMENT -->
 
 ## Table of contents
 
@@ -16,9 +16,10 @@ END_METADATA -->
   - [Request](#request)
   - [Response](#response)
 
-<!-- END_TOC -->
+<!-- END_COMMENT -->
 
 To make requests to the Vipps APIs you need to:
+
 1. First make a request to get an access token, which is a JWT (JSON Web Token)
 2. Use the access token in the HTTP header of the other API requests,
    together with the subscription key.

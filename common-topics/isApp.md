@@ -38,7 +38,7 @@ If the user does not have Vipps installed:
   not be opened. Or, depending on the native app, nothing will happen.
 
 
-<!-- START_TOC -->
+<!-- START_COMMENT -->
 
 ## Table of Contents
 
@@ -46,7 +46,7 @@ If the user does not have Vipps installed:
 * [Important information when using isApp](#important-information-when-using-isapp)
 * [isApp flow](#isapp-flow)
 
-<!-- END_TOC -->
+<!-- END_COMMENT -->
 
 ## Example responses
 
