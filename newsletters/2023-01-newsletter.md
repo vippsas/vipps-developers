@@ -14,14 +14,15 @@ END_METADATA -->
 
 This newsletter was sent in January 2023.
 
-<!-- START_TOC -->
+<!-- START_COMMENT -->
 
+## Table of Contents
 
 * [Reminders](#reminders)
   * [Please check your API calls for errors](#please-check-your-api-calls-for-errors)
 * [Questions or comments?](#questions-or-comments)
 
-<!-- END_TOC -->
+<!-- END_COMMENT -->
 
 ## Changes to the access token endpoint
 

@@ -30,7 +30,7 @@ instead of just `123456`.
 processing in the Vipps systems to be slower, and this *can* cause problems, such as timeouts.
 Use the recommended format to avoid problems.
 
-<!-- START_TOC -->
+<!-- START_COMMENT -->
 
 ## Table of contents
 
@@ -38,7 +38,7 @@ Use the recommended format to avoid problems.
 * [Multiple sale units](#multiple-sale-units)
 * [Multiple attempts](#multiple-attempts)
 
-<!-- END_TOC -->
+<!-- END_COMMENT -->
 ## Use user-friendly orderIds
 
 If you ever have a problem that requires us to search in our logs, we need an

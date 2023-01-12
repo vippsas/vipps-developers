@@ -14,11 +14,6 @@ END_METADATA -->
 ℹ️ Please use the new documentation:
 [Vipps Technical Documentation](https://vippsas.github.io/vipps-developer-docs/).
 
-<!-- END_COMMENT -->
-
-
-<!-- START_TOC -->
-
 ## Table of contents
 
 * [Is there an API for checking if a number belongs to a Vipps user?](#is-there-an-api-for-checking-if-a-number-belongs-to-a-vipps-user)
@@ -36,7 +31,7 @@ END_METADATA -->
 * [Where can I find reports on transactions?](#where-can-i-find-reports-on-transactions)
 * [When do users get a "soft decline" and need to complete a 3-D Secure verification?](#when-do-users-get-a-soft-decline-and-need-to-complete-a-3-d-secure-verification)
 
-<!-- END_TOC -->
+<!-- END_COMMENT -->
 
 ## Is there an API for checking if a number belongs to a Vipps user?
 

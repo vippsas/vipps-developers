@@ -14,9 +14,7 @@ END_METADATA -->
 ℹ️ Please use the new documentation:
 [Vipps Technical Documentation](https://vippsas.github.io/vipps-developer-docs/).
 
-<!-- END_COMMENT -->
-
-<!-- START_TOC -->
+## Table of Contents
 
 * [We help with technical issues](#we-help-with-technical-issues)
 * [What to include in the email](#what-to-include-in-the-email)
@@ -30,7 +28,7 @@ END_METADATA -->
 * [Can we have a meeting?](#can-we-have-a-meeting)
 * [Newsletter](#newsletter)
 
-<!-- END_TOC -->
+<!-- END_COMMENT -->
 
 ## We help with technical issues
 
@@ -46,7 +44,7 @@ If you do not have a technical issue, the fastest way to get help is to start in
 | General questions (including the customer relationship, creating sale units, change of admins, etc) | See: [Contact info for companies on vipps.no](https://www.vipps.no/kontakt-oss/bedrift/). |
 | "Are there any problems?"  | See: [Status pages](./developer-resources/status-pages). |
 | Applications for Vipps products (status, follow-ups, etc) | Check the status on [portal.vipps.no](https://portal.vipps.no). |
-| Vipps plugins (WooCommerce, Shopify, Wix, WordPress, Wix, Shopify, Magento, EPiServer, etc)         | See the support info for your plugin: [Plugin overview](https://vippsas.github.io/vipps-developer-docs/docs/vipps-plugins/). |
+| Vipps plugins (WooCommerce, Shopify, Wix, WordPress, Wix, Shopify, Magento, EPiServer, etc)         | See the support info for your plugin: [Plugin overview](https://vippsas.github.io/vipps-developer-docs/docs/vipps-plugins). |
 | Vipps through a partner (for merchants) | Please contact your partner. |
 | Vipps through a POS (Point of Sale) vendor | Please contact your POS vendor. |
 | Vipps through a PSP (Payment Service Provider) | Please contact your PSP. |
@@ -60,7 +58,7 @@ For _**technical**_ issues related to Vipps and development of services using ou
 
 **Important:** Almost all requests we get are already covered in the technical documentation.
 Please check the FAQs (Frequently Asked Questions) for the
-[Vipps API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/)
+[Vipps API](https://vippsas.github.io/vipps-developer-docs/docs/APIs)
 you are using, and use the
 [search functionality for the technical documentation](https://vippsas.github.io/vipps-developer-docs/search).
 
@@ -70,7 +68,7 @@ If you cannot find the answer: Please send an email with all relevant informatio
 2. A concise, self-explanatory `Subject` line, such as "`POST:/something` gives `HTTP 400` response".
 3. Company details: Organization number (find yours at [Brønnøysundregistrene](https://brreg.no))
 4. Merchant Serial Number (MSN, see [Getting started](vipps-getting-started.md))
-5. Which [Vipps product](https://www.vipps.no/produkter-og-tjenester/bedrift/) or [Vipps API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/) this is about.
+5. Which [Vipps product](https://www.vipps.no/produkter-og-tjenester/bedrift/) or [Vipps API](https://vippsas.github.io/vipps-developer-docs/docs/APIs) this is about.
 6. Environment: Is it a problem in the Test (MT) or the Production environment?
 7. Include `orderId`, and preferably also `transactionId` and `contextId`, to make it possible to search in logs.
 8. Date: On which date did the problem occur?

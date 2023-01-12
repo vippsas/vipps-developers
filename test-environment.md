@@ -9,17 +9,13 @@ END_METADATA -->
 
 # The Vipps Test Environment (MT)
 
+The Merchant Test Environment (MT) is available for all Vipps merchants
+with API access.
+
 <!-- START_COMMENT -->
 
 ℹ️ Please use the new documentation:
 [Vipps Technical Documentation](https://vippsas.github.io/vipps-developer-docs/).
-
-<!-- END_COMMENT -->
-
-The Merchant Test Environment (MT) is available for all Vipps merchants
-with API access.
-
-<!-- START_TOC -->
 
 ## Table of contents
 
@@ -43,7 +39,7 @@ with API access.
   * [Limitations of the test apps](#limitations-of-the-test-apps)
 * [Questions?](#questions)
 
-<!-- END_TOC -->
+<!-- END_COMMENT -->
 
 ## About the test environment
 

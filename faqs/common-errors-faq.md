@@ -9,20 +9,14 @@ END_METADATA -->
 
 # FAQs: Common errors
 
-<!-- START_COMMENT -->
-
-ℹ️ Please use the new documentation:
-[Vipps Technical Documentation](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/faqs/).
-
-<!-- END_COMMENT -->
-
 See also
 [Common errors](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api-faq#common-errors)
 in the eCom API FAQs.
 
+<!-- START_COMMENT -->
 
-
-<!-- START_TOC -->
+ℹ️ Please use the new documentation:
+[Vipps Technical Documentation](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/faqs/).
 
 ## Table of contents
 
@@ -40,7 +34,7 @@ in the eCom API FAQs.
 * [Why do I get `Why do I get Invalid MSN: 654321. Check your API keys on portal.vipps.no and see the eCom FAQ for tips.`?](#why-do-i-get-invalid-msn-654321-check-your-api-keys-on-portalvippsno-and-see-the-ecom-faq-for-tips)
 * [Why do I get `Why do I get Invalid MSN: 654321. This MSN is not valid for the provided supermerchant id.`?](#why-do-i-get-invalid-msn-654321-this-msn-is-not-valid-for-the-provided-supermerchant-id)
 
-<!-- END_TOC -->
+<!-- END_COMMENT -->
 
 ## Why do I get `HTTP 400 Bad Request`?
 

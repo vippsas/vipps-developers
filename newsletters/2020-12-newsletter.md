@@ -11,8 +11,10 @@ END_METADATA -->
 
 This newsletter was sent in December 2020.
 
-<!-- START_TOC -->
-Contents:
+<!-- START_COMMENT -->
+
+## Table of Contents
+
 - [The Vipps eCom API v1 is disabled](#the-vipps-ecom-api-v1-is-disabled)
 - [Vipps Login improvements](#vipps-login-improvements-)
 - [Vipps HTTP Headers](#vipps-http-headers-ℹ%EF%B8%8F)
@@ -22,7 +24,7 @@ Contents:
 - [Do you want a technical workshop?](#do-you-want-a-technical-workshop-)
 - [Reminders](#reminders)
 
-<!-- END_TOC -->
+<!-- END_COMMENT -->
 
 ## The Vipps eCom API v1 is disabled
 

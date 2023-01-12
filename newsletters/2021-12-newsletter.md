@@ -11,7 +11,9 @@ END_METADATA -->
 
 This newsletter was sent in December 2021.
 
-<!-- START_TOC -->
+<!-- START_COMMENT -->
+
+## Table of Contents
 
 - [Omikron tips](#omikron-tips)
 - [Vipps Hurtigkasse: Use the explicit flow](#vipps-hurtigkasse-use-the-explicit-flow)
@@ -27,7 +29,7 @@ This newsletter was sent in December 2021.
 - [Newsletter archive](#newsletter-archive)
 - [Questions or comments?](#questions-or-comments)
 
-<!-- END_TOC -->
+<!-- END_COMMENT -->
 
 ## Omikron tips
 

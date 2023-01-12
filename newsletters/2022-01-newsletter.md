@@ -11,7 +11,9 @@ END_METADATA -->
 
 This newsletter was sent in January 2022.
 
-<!-- START_TOC -->
+<!-- START_COMMENT -->
+
+## Table of Contents
 
 * [Please check your eCom API calls](#please-check-your-ecom-api-calls)
 * [Recurring API: The "PROCESSING" status](#recurring-api-the-processing-status)
@@ -27,7 +29,7 @@ This newsletter was sent in January 2022.
 * [Newsletter archive](#newsletter-archive)
 * [Questions or comments?](#questions-or-comments)
 
-<!-- END_TOC -->
+<!-- END_COMMENT -->
 
 ## Please check your eCom API calls
 

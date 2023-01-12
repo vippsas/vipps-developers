@@ -9,19 +9,14 @@ END_METADATA -->
 
 # FAQs: Common problems
 
-<!-- START_COMMENT -->
-
-ℹ️ Please use the new documentation:
-[Vipps Technical Documentation](https://vippsas.github.io/vipps-developer-docs/).
-
-<!-- END_COMMENT -->
-
 See also
 [Common problems](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api-faq#common-problems)
 in the eCom API FAQs.
 
+<!-- START_COMMENT -->
 
-<!-- START_TOC -->
+ℹ️ Please use the new documentation:
+[Vipps Technical Documentation](https://vippsas.github.io/vipps-developer-docs/).
 
 ## Table of contents
 
@@ -32,7 +27,7 @@ in the eCom API FAQs.
 * [How can I measure Vipps sales with Google Analytics, Facebook pixel, etc?](#how-can-i-measure-vipps-sales-with-google-analytics-facebook-pixel-etc)
 * [Why are the customer names not shown on the transaction overview?](#why-are-the-customer-names-not-shown-on-the-transaction-overview)
 
-<!-- END_TOC -->
+<!-- END_COMMENT -->
 
 ## Why do payments fail?
 

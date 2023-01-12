@@ -14,11 +14,6 @@ END_METADATA -->
 ℹ️ Please use the new documentation:
 [Vipps Technical Documentation](https://vippsas.github.io/vipps-developer-docs/).
 
-<!-- END_COMMENT -->
-
-
-<!-- START_TOC -->
-
 ## Table of contents
 
 * [For how long is a payment reserved?](#for-how-long-is-a-payment-reserved)
@@ -34,7 +29,7 @@ END_METADATA -->
 * [Can I whitelist my URL for a Vipps QR?](#can-i-whitelist-my-url-for-a-vipps-qr)
 * [Can I use a different currency than NOK?](#can-i-use-a-different-currency-than-nok)
 
-<!-- END_TOC -->
+<!-- END_COMMENT -->
 
 ## For how long is a payment reserved?
 

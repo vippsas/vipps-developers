@@ -14,18 +14,13 @@ END_METADATA -->
 ℹ️ Please use the new documentation:
 [Vipps Technical Documentation](https://vippsas.github.io/vipps-developer-docs/).
 
-<!-- END_COMMENT -->
-
-
-<!-- START_TOC -->
-
 ## Table of contents
 
 * [Is it possible to skip the landing page?](#is-it-possible-to-skip-the-landing-page)
 * [How can I check if I have skipLandingPage activated?](#how-can-i-check-if-i-have-skiplandingpage-activated)
 * [Can I show the landing page in an iframe?](#can-i-show-the-landing-page-in-an-iframe)
 
-<!-- END_TOC -->
+<!-- END_COMMENT -->
 
 ## Is it possible to skip the landing page?
 

@@ -14,11 +14,6 @@ END_METADATA -->
 ℹ️ Please use the new documentation:
 [Vipps Technical Documentation](https://vippsas.github.io/vipps-developer-docs/).
 
-<!-- END_COMMENT -->
-
-
-<!-- START_TOC -->
-
 ## Table of contents
 
 * [How do I use the one-time payment QR?](#how-do-i-use-the-one-time-payment-qr)
@@ -32,7 +27,7 @@ END_METADATA -->
 * [How can I save the customer's phone number?](#how-can-i-save-the-customers-phone-number)
 * [How can we mass sign up merchants?](#how-can-we-mass-sign-up-merchants)
 
-<!-- END_TOC -->
+<!-- END_COMMENT -->
 
 Point Of Sale (POS) is similar to a "cash register".
 

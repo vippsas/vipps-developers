@@ -11,7 +11,9 @@ END_METADATA -->
 
 This newsletter was sent in April 2022.
 
-<!-- START_TOC -->
+<!-- START_COMMENT -->
+
+## Table of Contents
 
 * [Release of remainder after doing a partial capture](#release-of-remainder-after-doing-a-partial-capture)
 * [The Vipps QR API now works in the test environment](#the-vipps-qr-api-now-works-in-the-test-environment)
@@ -21,7 +23,7 @@ This newsletter was sent in April 2022.
   * [Please check your eCom API calls](#please-check-your-ecom-api-calls)
   * [Use the API Dashboard to find problems with your integration](#use-the-api-dashboard-to-find-problems-with-your-integration)
 
-<!-- END_TOC -->
+<!-- END_COMMENT -->
 
 ## Release of remainder after doing a partial capture
 
