@@ -6,7 +6,7 @@ pagination_prev: null
 ---
 END_METADATA -->
 
-# orderId recommendations
+# orderId/reference recommendations
 
 This is applicable to:
 
@@ -18,7 +18,7 @@ This is applicable to:
 * [QR API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/qr-api/)
 * [Recurring API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/)
 
-An `orderId` (sometimes called `reference`) must be unique for the sale unit Merchant Serial Number (MSN) (i.e., the id of
+An `orderId` (also called `reference`) must be unique for the sale unit Merchant Serial Number (MSN) (i.e., the id of
 the sale unit). The `orderId` does not need to be globally unique, so several
 MSNs may use the same `orderId`, as long as it is unique for each sale unit.
 
