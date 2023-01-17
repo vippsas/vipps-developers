@@ -43,7 +43,6 @@ END_METADATA -->
   - [Changing the properties of an object](#changing-the-properties-of-an-object)
   - [Adding a new required parameter](#adding-a-new-required-parameter)
   - [Changing an endpoints URL](#changing-an-endpoints-url)
-- [Questions?](#questions)
 
 <!-- END_COMMENT -->
 
@@ -310,12 +309,3 @@ being valid, is considered a breaking change.
 
 It is considered a breaking change to change from `POST:/accesstoken/get` to
 `POST:/accesstokens`.
-
-## Questions?
-
-We're always happy to help with code or other questions you might have!
-Please create an [issue](https://github.com/vippsas/vipps-developers/issues),
-a [pull request](https://github.com/vippsas/vipps-developers/pulls),
-or [contact us](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/contact).
-
-Sign up for our [Technical newsletter for developers](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/newsletters).

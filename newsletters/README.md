@@ -41,11 +41,3 @@ for updates to stay aware of changes.
 
 See also:
 [Vipps news in Norwegian on vipps.no](https://www.vipps.no/om-oss/nyheter/).
-
-# Questions?
-
-We're always happy to help with code or other questions you might have!
-
-Please create an [issue](https://github.com/vippsas/vipps-developers/issues),
-a [pull request](https://github.com/vippsas/vipps-developers/pulls),
-or [contact us](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/contact).

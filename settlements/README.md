@@ -32,7 +32,6 @@ END_METADATA -->
   * [Daily reports](#daily-reports)
   * [Weekly reports](#weekly-reports)
   * [Monthly reports](#monthly-reports)
-* [Questions?](#questions)
 
 <!-- END_COMMENT -->
 
@@ -234,13 +233,3 @@ The settlement report is generated on Mondays, by 12:00 noon.
 ### Monthly reports
 
 The settlement report is generated on the 1st of the month, by 12:00 noon.
-
-## Questions?
-
-We're always happy to help with code or other questions you might have!
-
-For customer-specific questions about settlements, please contact operations@vipps.no.
-
-For general questions: Please create an [issue](https://github.com/vippsas/vipps-developers/issues),
-a [pull request](https://github.com/vippsas/vipps-developers/pulls),
-or [contact us](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/contact).

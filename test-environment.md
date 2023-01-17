@@ -37,7 +37,6 @@ with API access.
   * [Install Vipps MT on Android](#install-vipps-mt-on-android)
   * [Other versions](#other-versions)
   * [Limitations of the test apps](#limitations-of-the-test-apps)
-* [Questions?](#questions)
 
 <!-- END_COMMENT -->
 
@@ -311,15 +310,6 @@ every time you start Vipps in the emulator.
 
 ### Limitations of the test apps
 
-- Push alerts may be unstable. To see payment requests: Open Vipps and manually
-  go to "Betalinger" (i.e., _Payments_) at the bottom of the main screen.
-  You may also need to pull down to refresh.
-
-## Questions?
-
-We're always happy to help with code or other questions you might have!
-Please create an [issue](https://github.com/vippsas/vipps-developers/issues),
-a [pull request](https://github.com/vippsas/vipps-developers/pulls),
-or [contact us](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/contact).
-
-Sign up for our [Technical newsletter for developers](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/newsletters).
+Push alerts may be unstable. To see payment requests: Open Vipps and manually
+go to "Betalinger" (i.e., _Payments_) at the bottom of the main screen.
+You may also need to pull down to refresh.

@@ -38,7 +38,6 @@ See the [Settlements](../README.md) overview.
   * [Connecting to the SFTP server](#connecting-to-the-sftp-server)
   * [Directory structure](#directory-structure)
   * [Example SFTP session](#example-sftp-session)
-* [Questions?](#questions)
 
 <!-- END_COMMENT -->
 
@@ -312,10 +311,3 @@ sftp> quit
 
 All of the above is basic SFTP use, and should be straight-forward.
 If you use a SFTP client, please refer to its user documentation.
-
-# Questions?
-
-We're always happy to help with code or other questions you might have!
-Please create an [issue](https://github.com/vippsas/vipps-developers/issues),
-a [pull request](https://github.com/vippsas/vipps-developers/pulls),
-or [contact us](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/contact).
