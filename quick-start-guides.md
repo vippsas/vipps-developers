@@ -14,7 +14,6 @@ END_METADATA -->
 ℹ️ Please use the new documentation:
 [Vipps Technical Documentation](https://vippsas.github.io/vipps-developer-docs/).
 
-
 ## Table of Contents
 
 * [What you need for getting started with the API](#what-you-need-for-getting-started-with-the-api)
@@ -23,7 +22,6 @@ END_METADATA -->
   * [Update the environment values](#update-the-environment-values)
   * [Run API calls](#run-api-calls)
 * [Try it Out!](#try-it-out)
-* [Questions?](#questions)
 
 <!-- END_COMMENT -->
 
@@ -109,20 +107,11 @@ By following the steps, you will make calls to all the endpoints and see the ful
 
 * [Checkout API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/checkout-api/vipps-checkout-api-quick-start)
 * [eCom API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api-quick-start)
+* [ePayment API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/epayment-api/vipps-epayment-api-quick-start)
 * [Login API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/login-api/vipps-login-api-quick-start)
+* [Order Management API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/order-management-api/vipps-order-management-api-quick-start)
 * [Partner API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/partner-api/vipps-partner-api-quick-start)
 * [PSP API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/psp-api/vipps-psp-api-quick-start)
 * [QR API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/qr-api/vipps-qr-api-quick-start)
 * [Recurring API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/vipps-recurring-api-quick-start)
-
-## Questions?
-
-When contacting us about API issues, we are usually able to help faster if you send us
-the complete request and response.
-
-We're always happy to help with code or other questions you might have!
-Please create an [issue](https://github.com/vippsas/vipps-developers/issues),
-a [pull request](https://github.com/vippsas/vipps-developers/pulls),
-or [contact us](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/contact).
-
-Sign up for our [Technical newsletter for developers](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/newsletters).
+* [Report API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/report-api/vipps-report-api-quick-start)
