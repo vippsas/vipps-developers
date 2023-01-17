@@ -48,7 +48,7 @@ If you do not have a technical issue, the fastest way to get help is to start in
 | Vipps through a partner (for merchants) | Please contact your partner. |
 | Vipps through a POS (Point of Sale) vendor | Please contact your POS vendor. |
 | Vipps through a PSP (Payment Service Provider) | Please contact your PSP. |
-| Partner assistance (for partners) | See: [Vipps Partners](https://vippsas.github.io/vipps-developer-docs/docs/vipps-partner/) and the [Partner API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/partner-api). |
+| Partner assistance (for partners) | Please contact your partner manager or contact us by email: [partnerbestilling@vipps.no](mailto:partnerbestilling@vipps.no). Check out the [Partner API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/partner-api). |
 | Settlements, invoices or similar | See: [Settlements](./settlements/README.md). |
 | Suggestions for improvements to [Vipps products](https://www.vipps.no/produkter-og-tjenester/bedrift/)  | Please use [this form](https://www.vipps.no/kontakt-oss/bedrift/). |
 
