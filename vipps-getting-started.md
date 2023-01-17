@@ -27,7 +27,6 @@ END_METADATA -->
   - [Make an API call](#make-an-api-call)
   - [Checking for errors with the API Dashboard](#checking-for-errors-with-the-api-dashboard)
 - [Next step: Quick start guides](#next-step-quick-start-guides)
-- [Questions?](#questions)
 
 <!-- END_COMMENT -->
 
@@ -258,17 +257,7 @@ All merchants have access to the
 We strongly recommend to use that for detecting errors in the API use,
 in addition to normal monitoring.
 
-
 ## Next step: Quick start guides
 
 If you are ready to try out some API request, head over to the
 [Quick start guides](quick-start-guides.md) page and read about creating your own test set up!
-
-## Questions?
-
-We're always happy to help with code or other questions you might have!
-Please create an [issue](https://github.com/vippsas/vipps-developers/issues),
-a [pull request](https://github.com/vippsas/vipps-developers/pulls),
-or [contact us](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/contact).
-
-Sign up for our [Technical newsletter for developers](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/newsletters).
