@@ -44,7 +44,7 @@ Basic flow:
 1. Initiate a Vipps eCom payment (`skipLandingPage` must be set to false)
 2. Receive the payment URL as response
 3. Post the payment URL to the
-   [Vipps QR API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/qr-api/)
+   [Vipps QR API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/qr-api)
 4. Receive a URL to a QR code in PNG (Portable Network Graphics) format
 5. Present the QR code on the customer-facing screen
 6. The user scans the QR code with Vipps or camera app
@@ -63,7 +63,7 @@ If it is not possible for the POS solution to handle a fallback URL you may use 
 
 See also:
 
-* [QR API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/qr-api/)
+* [QR API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/qr-api)
 * [Error codes](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api#error-codes)
 * [Do we need to support callbacks?](#do-we-need-to-support-callbacks)
 
@@ -203,7 +203,7 @@ complying with GDPR, etc.
 See:
 
 * [Is there an API for retrieving information about a Vipps user?](users-and-payments-faq.md#is-there-an-api-for-retrieving-information-about-a-vipps-user).
-* [The Vipps QR API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/qr-api/)
+* [The Vipps QR API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/qr-api)
 
 ## How can we mass sign up merchants?
 

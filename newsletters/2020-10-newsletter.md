@@ -29,7 +29,7 @@ This is done by adding a `scope` parameter to the initiate calls:
 - accountNumbers
 
 The userinfo endpoint is shared with
-[Vipps Login](https://vippsas.github.io/vipps-developer-docs/docs/APIs/login-api/)
+[Vipps Login](https://vippsas.github.io/vipps-developer-docs/docs/APIs/login-api)
 and the merchant needs to have
 activated Vipps Login on their account to use this feature. Information on how
 to do this can be found
@@ -47,12 +47,12 @@ the Covid-19 pandemic. See our information in Norwegian:
 There are now 12 Vipps plugins for various ecommerce platforms:
 WooCommerce, WordPress, Magento, Episerver, Drupal, Shopify, Craft and more.
 
-All [plugins](https://vippsas.github.io/vipps-developer-docs/docs/vipps-plugins/) are open source. See the complete list.
+All [plugins](https://vippsas.github.io/vipps-developer-docs/docs/vipps-plugins) are open source. See the complete list.
 
 ## PSP v3
 
 Vipps is launching the
-[PSP API v3](https://vippsas.github.io/vipps-developer-docs/docs/APIs/psp-api/)
+[PSP API v3](https://vippsas.github.io/vipps-developer-docs/docs/APIs/psp-api)
 to coincide with our migration of our users' cards from PAN to EMVco network
 tokens. This technological migration is Vipps' strategy for achieving delegated
 SCA once PSD2 comes into effect for card payments on January 1 2021.
@@ -111,7 +111,7 @@ Please see
 
 ### Newsletter archive
 
-Please see: [newsletters](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/newsletters/)
+Please see: [newsletters](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/newsletters)
 
 ## Questions or comments?
 

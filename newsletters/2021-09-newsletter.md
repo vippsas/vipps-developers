@@ -28,7 +28,7 @@ This newsletter was sent in September 2021.
 ## The Vipps QR API
 
 An early version of the
-[Vipps QR API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/qr-api/)
+[Vipps QR API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/qr-api)
 is available.
 
 The Vipps QR API lets merchants generate Vipps QR codes that can be used to pay
@@ -42,7 +42,7 @@ Vipps app where they can pay the merchant.
 ## The Vipps Order Management API
 
 An early version of the
-[Vipps Order Management API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/order-management-api/)
+[Vipps Order Management API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/order-management-api)
 is available.
 
 The Order Management API allows merchants to send rich receipt information to
@@ -101,7 +101,7 @@ we have concluded that the change does not require a new version of the API.
 ## Newsletter archive
 
 All the previous newsletters are in the
-[newsletter archive](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/newsletters/).
+[newsletter archive](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/newsletters).
 
 ## Questions or comments?
 

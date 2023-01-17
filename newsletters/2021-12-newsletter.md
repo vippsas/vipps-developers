@@ -38,7 +38,7 @@ These Vipps solutions are extra relevant (again):
 - Use
   [Vipps Logg inn](https://vipps.no/produkter-og-tjenester/privat/logg-inn-med-vipps/logg-inn-med-vipps/)
   and the
-  [Vipps Login API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/login-api/)
+  [Vipps Login API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/login-api)
   to register visitors - it's free.
 - [Use Userinfo to register visitors](#use-userinfo-to-register-visitors)
   as an easy-to-use step in a normal Vipps payment.
@@ -81,7 +81,7 @@ Here's an example for the Vipps eCom API's `/refund` endpoint:
 
 There is quite a bit happening for Vipps partners.
 Please see
-[github.com/vippsas/vipps-partner](https://vippsas.github.io/vipps-developer-docs/docs/vipps-partner/)
+[github.com/vippsas/vipps-partner](https://vippsas.github.io/vipps-developer-docs/docs/vipps-partner)
 for (continuously) updated information.
 
 ## Reminders
@@ -127,7 +127,7 @@ call by including:
 
 Make window shopping great again!
 
-An [early version of the Vipps QR API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/qr-api/) is available.
+An [early version of the Vipps QR API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/qr-api) is available.
 
 The Vipps QR API lets merchants generate Vipps QR codes that can be used to pay
 over the counter, without requiring the Vipps user to provide their telephone
@@ -170,7 +170,7 @@ More information can be found in [our documentation](https://vippsas.github.io/v
 ## Newsletter archive
 
 All the previous newsletters are in the
-[newsletter archive](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/newsletters/).
+[newsletter archive](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/newsletters).
 
 ## Questions or comments?
 

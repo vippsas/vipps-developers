@@ -128,7 +128,7 @@ If all sale units have the same organization number, there are two alternatives:
 1: Recommended: Multiple sale units (multiple MSNs): One sale unit per store. Each sale unit will have its
    own MSN (Merchant Serial Number), and the `orderId` may be whatever you want.
    Each sale unit gets its own
-   [settlement files](../settlements/).
+   [settlement files](../settlements).
    You will need separate API keys for each sale unit (store).
    If you have a Vipps platform partner, the partner will use the
    [Partner keys](https://vippsas.github.io/vipps-developer-docs/docs/vipps-partner/partner-keys)
@@ -138,7 +138,7 @@ If all sale units have the same organization number, there are two alternatives:
 2: Use only one sale unit (one MSN) for all stores, and use the `orderId` to identify
    which orders belong to which sale units.
    All sale units are in the same
-   [settlement report](../settlements/).
+   [settlement report](../settlements/README.md).
    You decide what the `orderId` contains, and it may be up to 50 characters. See:
    [orderId recommendation](../common-topics/orderid.md).
    You will use the same API keys for all stores.
@@ -197,7 +197,7 @@ on product pages and in the shopping basket for fast and easy checkout, and to
 let users choose between Vipps and Klarna _before_ they get to Klarna Checkout.
 With
 [Vipps Logg inn](https://vipps.no/produkter-og-tjenester/bedrift/logg-inn-med-vipps/logg-inn-med-vipps/)
-(the [Vipps Login API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/login-api/))
+(the [Vipps Login API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/login-api))
 it's also possible to let users register and log in without usernames and passwords.
 [Vipps Checkout](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/vipps-checkout/)
 may also be interesting.
@@ -247,7 +247,7 @@ the settlements from Vipps will be separate from the settlements from Klarna.
 
 ## What functionality is included in the eCom API, but not the PSP API?
 
-The [Vipps PSP API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/psp-api/) provides tokens
+The [Vipps PSP API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/psp-api) provides tokens
 that a PSP can use to charge a Vipps user's card. To put it simply, it is a
 "card token lookup service". The payment is completed by the PSP, who sends an
 update to Vipps about the success or failure.

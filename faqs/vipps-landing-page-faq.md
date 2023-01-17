@@ -64,7 +64,7 @@ for all their sale units under the "Utvikler" menu item.
 You can also find information on how to activate `skipLandingPage` there.
 
 If you are a partner and want to check a merchant, see the
-[Partner API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/partner-api/).
+[Partner API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/partner-api).
 
 If you are a partner and do not yet use the Partner API, you can ask the
 merchant to create a user for you on

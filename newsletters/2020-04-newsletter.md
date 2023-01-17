@@ -97,7 +97,7 @@ We have made some more in-depth product information pages with screenshots:
 ## Plugin overview
 
 We now have plugins for WordPress/WooCommerce, Magento, Episerver, Shopify, Drupal:
-[Vipps-plugins](https://vippsas.github.io/vipps-developer-docs/docs/vipps-plugins/)
+[Vipps-plugins](https://vippsas.github.io/vipps-developer-docs/docs/vipps-plugins)
 
 We have some more candidates too.
 
@@ -122,7 +122,7 @@ Please see
 
 ### Newsletter archive
 
-Please see: [Newsletters](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/newsletters/)
+Please see: [Newsletters](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/newsletters)
 
 ## Questions or comments?
 

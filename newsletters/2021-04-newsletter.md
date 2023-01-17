@@ -74,9 +74,9 @@ the `Merchant-Serial-Number` header to identify which of your merchants you are
 acting on behalf of.
 
 The same set of partner keys can be used for both the
-[Vipps eCom API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/)
+[Vipps eCom API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api)
 and the
-[Vipps Recurring API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/),
+[Vipps Recurring API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api),
 including the
 [Userinfo](#use-userinfo)
 endpoints for both.
@@ -102,15 +102,15 @@ All customers can now log in on
 and order new products, which automatically creates a new sale unit:
 
 * [Vipps på Nett](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/)
-  ([eCom API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/),
+  ([eCom API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api),
   for both
   [webshops and apps](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/))
 * [Vipps rett i Kassa](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-i-butikk/vipps-i-kassa/)
-  ([eCom API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/))
+  ([eCom API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api))
 * [Vipps Faste betalinger](https://vipps.no/produkter-og-tjenester/bedrift/faste-betalinger/faste-betalinger/)
-  ([Recurring API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/))
+  ([Recurring API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api))
 * [Vipps Logg inn](https://vipps.no/produkter-og-tjenester/bedrift/logg-inn-med-vipps/logg-inn-med-vipps/)
-  ([Login API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/login-api/))
+  ([Login API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/login-api))
 
 ## Create new sale units in the test environment
 
@@ -134,7 +134,7 @@ We have mentioned some things before, and take this opportunity to remind you:
 Several of our plugins have been updated to use the newest versions of
 our APIs. Please make sure you have the newest version of the plugins
 you use, and keep them up to date. See the
-[the plugin overview](https://vippsas.github.io/vipps-developer-docs/docs/vipps-plugins/).
+[the plugin overview](https://vippsas.github.io/vipps-developer-docs/docs/vipps-plugins).
 
 ### Use Userinfo
 
@@ -168,9 +168,9 @@ This is just the start. Please let us know what you think and suggest improvemen
 ### Vipps HTTP Headers ℹ️
 
 We recommend using the following _optional_ HTTP headers for all requests to the
-[Vipps eCom API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/)
+[Vipps eCom API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api)
 and the
-[Vipps Recurring API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/).
+[Vipps Recurring API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api).
 
 | Header                        | Description                                  | Example value        |
 | ----------------------------- | -------------------------------------------- | -------------------- |
@@ -190,7 +190,7 @@ Please see
 
 ### Newsletter archive
 
-Please see: [newsletters](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/newsletters/)
+Please see: [newsletters](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/newsletters)
 
 ## Questions or comments?
 
