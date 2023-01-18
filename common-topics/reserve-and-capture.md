@@ -10,12 +10,12 @@ END_METADATA -->
 
 This is applicable to:
 
-* [Checkout API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/checkout-api/)
-* [eCom API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/)
-* [ePayment API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/epayment-api/)
-* [Partner API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/partner-api/)
-* [PSP API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/psp-api/)
-* [Recurring API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/)
+* [Checkout API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/checkout-api)
+* [eCom API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api)
+* [ePayment API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/epayment-api)
+* [Partner API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/partner-api)
+* [PSP API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/psp-api)
+* [Recurring API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api)
 
 When you initiate a payment, it will be _reserved_ until you _capture_ it:
 

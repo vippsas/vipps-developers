@@ -16,7 +16,7 @@ This newsletter was sent in February 2021.
 Several of our plugins have been updated to use the newest versions of
 our APIs. Please make sure you have the newest version of the plugins
 you use, and keep them up to date. See the
-[the plugin overview](https://vippsas.github.io/vipps-developer-docs/docs/vipps-plugins/).
+[the plugin overview](https://vippsas.github.io/vipps-developer-docs/docs/vipps-plugins).
 
 ## API Dashboard 🚦
 
@@ -51,7 +51,7 @@ To do this we have to introduce a new version of our Vipps login API.
 Our plugins are updated to support the latest version.
 Make sure that you use the latest version of the plugin.
 See
-[Plugins](https://vippsas.github.io/vipps-developer-docs/docs/vipps-plugins/)
+[Plugins](https://vippsas.github.io/vipps-developer-docs/docs/vipps-plugins)
 for details.
 
 ## Vipps Login improvements 🎉
@@ -92,9 +92,9 @@ We have mentioned some things before, and take this opportunity to remind you:
 ### Vipps HTTP Headers ℹ️
 
 We recommend using the following _optional_ HTTP headers for all requests to the
-[Vipps eCom API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/)
+[Vipps eCom API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api)
 and the
-[Vipps Recurring API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/).
+[Vipps Recurring API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api).
 
 | Header                        | Description                                  | Example value        |
 | ----------------------------- | -------------------------------------------- | -------------------- |
@@ -137,7 +137,7 @@ This does require that you have already ordered a Vipps solution, and
 that you already have API access.
 
 This does, unfortunately, not apply to customers using one of our
-[plugins](https://vippsas.github.io/vipps-developer-docs/docs/vipps-plugins/), or
+[plugins](https://vippsas.github.io/vipps-developer-docs/docs/vipps-plugins), or
 customers using Vipps through a partner.
 
 ### Do you want a technical workshop? 🛠
@@ -150,7 +150,7 @@ This does require that you have already ordered a Vipps solution, and
 that you already have API access.
 
 This does, unfortunately, not apply to customers using one of our
-[plugins](https://vippsas.github.io/vipps-developer-docs/docs/vipps-plugins/), or
+[plugins](https://vippsas.github.io/vipps-developer-docs/docs/vipps-plugins), or
 customers using Vipps through a partner.
 
 ### API lifecycle
@@ -170,7 +170,7 @@ Please see
 
 ### Newsletter archive
 
-Please see: [newsletters](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/newsletters/)
+Please see: [newsletters](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/newsletters)
 
 ## Questions or comments?
 

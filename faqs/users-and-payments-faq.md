@@ -85,7 +85,7 @@ You can also subscribe to daily or monthly transaction reports by email.
 See:
 
 * [Report API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/report-api).
-* [Settlements](../settlements/)
+* [Settlements](../settlements/README.md)
 
 ## Can I split payments to charge a fee?
 
@@ -143,9 +143,9 @@ will need the regulatory approval as
 If the service sells access, in the form of a subscription or per-use, the
 service is *most likely* a regular Vipps eCom customer, and can use
 the
-[Vipps eCom API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/)
+[Vipps eCom API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api)
 or one of our
-[plugins](https://vippsas.github.io/vipps-developer-docs/docs/vipps-plugins/).
+[plugins](https://vippsas.github.io/vipps-developer-docs/docs/vipps-plugins).
 
 Vipps cannot offer legal advice for this.
 
@@ -207,7 +207,7 @@ See: [Timeouts](../common-topics/timeouts.md).
 
 ## How long does it take until the money is in my account?
 
-See: [Settlements](../settlements/).
+See: [Settlements](../settlements/README.md).
 
 ## Why has one of my customers been charged twice for the same payment?
 
@@ -235,7 +235,7 @@ Please check the Vipps payment:
 5. Click the order.
 6. See the "History" details.
 
-This is of course also supported in the [eCom API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/), and it is a requirement to use
+This is of course also supported in the [eCom API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api), and it is a requirement to use
 this functionality when integrating with Vipps:
 [`GET:/ecomm/v2/payments/{orderId}/details`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Vipps-eCom-API/operation/getPaymentDetailsUsingGET)
 
@@ -265,7 +265,7 @@ See:
 your transactions, sale units and settlement reports.
 You can also subscribe to daily or monthly transaction reports by email.
 
-See: [Settlements](../settlements/).
+See: [Settlements](../settlements/README.md).
 
 ## When do users get a "soft decline" and need to complete a 3-D Secure verification?
 

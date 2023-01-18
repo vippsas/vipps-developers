@@ -27,7 +27,6 @@ END_METADATA -->
   - [Make an API call](#make-an-api-call)
   - [Checking for errors with the API Dashboard](#checking-for-errors-with-the-api-dashboard)
 - [Next step: Quick start guides](#next-step-quick-start-guides)
-- [Questions?](#questions)
 
 <!-- END_COMMENT -->
 
@@ -35,15 +34,15 @@ END_METADATA -->
 
 The `Vipps-API` product gives you access to the majority of Vipps APIs, for example:
 
-- [Checkout API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/checkout-api/) - Provide a complete Checkout solution for both Vipps and card payments with auto-fill and shipping integrations.
-- [eCom API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/) - Offer Vipps as a method of payment. Offer a quick checkout option where Vipps is the method of payment and the shipping options are specified directly from the Vipps app. This is also known as Vipps Online (_Vipps På Nett_) and Vipps Express Checkout (_Vipps Hurtigkasse_).
-- [ePayment API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/epayment-api/) - In combination with Checkout API, apply payments, -This is the new version of eCom API.
-- [Login API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/login-api/) - Allow the customer to log in by using their Vipps account.
-- [Order Management API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/order-management-api/) - Add data to orders.
-- [Partner API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/partner-api/) - Get info about merchants/sale units.
-- [PSP API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/psp-api/) - Initiate PSP payments. Update merchants.
-- [QR API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/qr-api/) - Use QR codes to allow customers to connect to Vipps and purchase from your store.
-- [Recurring API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/) - A business or organization can allow their customers to set up recurring payments (e.g., for subscriptions, membership, regular donations, etc.) through Vipps. This is also known as _Vipps Faste Betalinger_.
+- [Checkout API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/checkout-api) - Provide a complete Checkout solution for both Vipps and card payments with auto-fill and shipping integrations.
+- [eCom API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api) - Offer Vipps as a method of payment. Offer a quick checkout option where Vipps is the method of payment and the shipping options are specified directly from the Vipps app. This is also known as Vipps Online (_Vipps På Nett_) and Vipps Express Checkout (_Vipps Hurtigkasse_).
+- [ePayment API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/epayment-api) - In combination with Checkout API, apply payments, -This is the new version of eCom API.
+- [Login API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/login-api) - Allow the customer to log in by using their Vipps account.
+- [Order Management API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/order-management-api) - Add data to orders.
+- [Partner API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/partner-api) - Get info about merchants/sale units.
+- [PSP API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/psp-api) - Initiate PSP payments. Update merchants.
+- [QR API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/qr-api) - Use QR codes to allow customers to connect to Vipps and purchase from your store.
+- [Recurring API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api) - A business or organization can allow their customers to set up recurring payments (e.g., for subscriptions, membership, regular donations, etc.) through Vipps. This is also known as _Vipps Faste Betalinger_.
 - [Report API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/report-api) - Fetch information about payment events that have been processed by Vipps.
 - [Access Token API](#get-an-access-token)- Required to obtain a JWT.
 
@@ -258,17 +257,7 @@ All merchants have access to the
 We strongly recommend to use that for detecting errors in the API use,
 in addition to normal monitoring.
 
-
 ## Next step: Quick start guides
 
 If you are ready to try out some API request, head over to the
 [Quick start guides](quick-start-guides.md) page and read about creating your own test set up!
-
-## Questions?
-
-We're always happy to help with code or other questions you might have!
-Please create an [issue](https://github.com/vippsas/vipps-developers/issues),
-a [pull request](https://github.com/vippsas/vipps-developers/pulls),
-or [contact us](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/contact).
-
-Sign up for our [Technical newsletter for developers](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/newsletters).

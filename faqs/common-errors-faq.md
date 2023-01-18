@@ -16,7 +16,7 @@ in the eCom API FAQs.
 <!-- START_COMMENT -->
 
 ℹ️ Please use the new documentation:
-[Vipps Technical Documentation](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/faqs/).
+[Vipps Technical Documentation](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/faqs).
 
 ## Table of contents
 
@@ -151,7 +151,7 @@ source code asking us to fix it for you.
 ## Why do I get `HTTP 403 Forbidden`?
 
 Merchants that only have access to the
-[Vipps Login API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/login-api/)
+[Vipps Login API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/login-api)
 and attempt to use the Vipps eCom API will get this error, with
 `Merchant Not Allowed for Ecommerce Payment` in the body.
 

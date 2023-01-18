@@ -73,7 +73,7 @@ Update your integrations so they will not stop working.
    * Partner - Enter optional partner data (not usually needed).
    * Select optional properties:
      * [Skip Landing Page](../faqs/vipps-landing-page-faq.md#is-it-possible-to-skip-the-landing-page)
-     * [Recurring API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/)
+     * [Recurring API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api)
      * [Direct Capture](../common-topics/reserve-and-capture.md#direct-capture)
 
 After a couple of minutes, your new test sales unit will appear in the bottom of the list (possibly after some browser refreshes).
@@ -110,7 +110,7 @@ merchant's administrator grant you developer access for the sales unit you
 need access to.
 
 For
-[integration partners](https://vippsas.github.io/vipps-developer-docs/docs/vipps-partner/):
+[integration partners](https://vippsas.github.io/vipps-developer-docs/docs/vipps-partner):
 You will need the merchant's administrator to either:
 
 * Log in to
@@ -120,7 +120,7 @@ You will need the merchant's administrator to either:
 
 For more information, see:
 
-* [Developer Information: Vipps Partners](https://vippsas.github.io/vipps-developer-docs/docs/vipps-partner/)
+* [Developer Information: Vipps Partners](https://vippsas.github.io/vipps-developer-docs/docs/vipps-partner)
 * [User permissions on vipps.no (in Norwegian)](https://vipps.no/hjelp/vipps/kundeforholdet-mitt/hvilke-tilganger-kan-vi-opprette-i-vippsportalen/).
 
 ## Questions

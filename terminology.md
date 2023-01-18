@@ -82,7 +82,7 @@ END_METADATA -->
   providing a platform, helping set up custom integrations, or developing
   Vipps' official plugins.
   See:
-  [Vipps partners](https://vippsas.github.io/vipps-developer-docs/docs/vipps-partner/).
+  [Vipps partners](https://vippsas.github.io/vipps-developer-docs/docs/vipps-partner).
 
 * Partner keys - Unique identifiers that allow partners to use their own API
   credentials to make API calls on behalf of their merchants.

@@ -10,9 +10,9 @@ END_METADATA -->
 
 This is applicable to:
 
-* [Checkout API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/checkout-api/)
-* [eCom API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/)
-* [Login API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/login-api/)
+* [Checkout API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/checkout-api)
+* [eCom API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api)
+* [Login API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/login-api)
 
 Since Vipps is a native app, and not a website used in a web browser, the level
 of control Vipps has over the redirect back to the merchant after a completed

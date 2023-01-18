@@ -179,7 +179,7 @@ We require BankID login for this, as "direct capture" requires additional
 compliance checks.
 
 If you are a partner and want to check a merchant, see the
-[Partner API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/partner-api/).
+[Partner API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/partner-api).
 
 If you are a partner and do not yet use the Partner API, you can ask the
 merchant to create a user for you on
@@ -249,7 +249,7 @@ The only ways to initiate Vipps payments from a QR code are:
 * [Vipps i terminal](https://www.vipps.no/produkter-og-tjenester/privat/vipps-i-terminal/vipps-i-terminal/):
   Merchant-presented, dynamic QR shown on the display of a payment terminal.
 
-See: [The Vipps QR API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/qr-api/).
+See: [The Vipps QR API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/qr-api).
 
 ## Can I send a Vipps payment link in an SMS, QR or email?
 
@@ -291,7 +291,7 @@ In general we advice caution and point out that it is the responsibility of the
 merchant to assure that users accept terms and conditions for products and services.
 
 You can also use
-[Vipps Logg Inn](https://vippsas.github.io/vipps-developer-docs/docs/APIs/login-api/)
+[Vipps Logg Inn](https://vippsas.github.io/vipps-developer-docs/docs/APIs/login-api)
 for easy registration and login.
 
 See:
@@ -314,7 +314,7 @@ There is no need for whitelisting QR codes any longer. It was previously a tempo
 a Vipps-branded QR to be sent directly to the merchant's URL.
 
 The previous whitelisting functionality has been replaced by
-[the Vipps QR API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/qr-api/).
+[the Vipps QR API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/qr-api).
 
 The API supports static
 [merchant redirect](https://vippsas.github.io/vipps-developer-docs/docs/APIs/qr-api/vipps-qr-api#merchant-redirect-qr-codes)

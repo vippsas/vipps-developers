@@ -86,13 +86,13 @@ from the `due` date until the charge has succeeded, or until the
 `retryDays` have passed without a successful charge.
 The final status will be `CHARGED` or `FAILED`.
 See the
-[Recurring API documentation](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/)
+[Recurring API documentation](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api)
 for more details.
 
 We are also working on providing an event log for each `chargeId`, so merchants
 can get _some_ information, especially if a charge ends as `FAILED`.
 You can "star" the
-[Vipps Recurring API repo](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/)
+[Vipps Recurring API repo](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api)
 and subscribe to this newsletter to get updates.
 
 ## Vipps Login directly from phone number and QR code
@@ -116,7 +116,7 @@ See:
 
 * [Vipps Login from phone number API: How It Works](https://vippsas.github.io/vipps-developer-docs/docs/APIs/login-api/vipps-login-from-phone-number-api-howitworks)
 * Vipps Login from QR-code API: How It Works (no longer available)
-* [Vipps Login API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/login-api/)
+* [Vipps Login API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/login-api)
 
 ## Deprecation of the Vipps Signup API
 
@@ -124,7 +124,7 @@ The old API that a few partners still use to sign up new merchants will
 be phased out. See
 [Deprecation of the Vipps Signup API](https://github.com/vippsas/vipps-signup-api/blob/master/vipps-signup-api-deprecation.md)
 and
-[Vipps Partners](https://vippsas.github.io/vipps-developer-docs/docs/vipps-partner/).
+[Vipps Partners](https://vippsas.github.io/vipps-developer-docs/docs/vipps-partner).
 
 ## Reminders
 
@@ -165,7 +165,7 @@ These Vipps solutions are extra relevant (again):
 * Use
   [Vipps Logg inn](https://vipps.no/produkter-og-tjenester/privat/logg-inn-med-vipps/logg-inn-med-vipps/)
   and the
-  [Vipps Login API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/login-api/)
+  [Vipps Login API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/login-api)
   to register visitors - it's free.
 * [Use Userinfo to register visitors when they pay](#use-userinfo-to-register-visitors-when-they-pay)
   as an easy-to-use step in a normal Vipps payment.
@@ -230,7 +230,7 @@ call by including:
 ## Newsletter archive
 
 All the previous newsletters are in the
-[newsletter archive](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/newsletters/).
+[newsletter archive](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/newsletters).
 
 ## Questions or comments?
 

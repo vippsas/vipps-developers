@@ -10,10 +10,10 @@ END_METADATA -->
 
 This is applicable to:
 
-* [Checkout API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/checkout-api/)
-* [eCom API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/)
-* [Login API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/login-api/)
-* [Recurring API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/)
+* [Checkout API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/checkout-api)
+* [eCom API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api)
+* [Login API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/login-api)
+* [Recurring API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api)
 
 Vipps offers the possibility for merchants to ask for the user's profile information as part of the payment flow.
 This is done through Vipps Userinfo which follows

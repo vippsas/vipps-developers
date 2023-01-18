@@ -75,7 +75,7 @@ remaining amount. If no capture has been made, the entire reserved amount is
 cancelled. Banks "count the days" from when the reservation was made, so the
 merchant must make the capture, or all captures, before the reservation expires.
 
-See: [Settlements](../settlements/).
+See: [Settlements](../settlements/README.md).
 
 ### How long does it take from a refund is made until the money is in the customer's account?
 
@@ -84,4 +84,4 @@ It can take much longer, up to 10 days, and depends on the bank(s).
 
 Vipps does not have more information than what is available through our API.
 
-See: [Settlements](../settlements/).
+See: [Settlements](../settlements/README.md).

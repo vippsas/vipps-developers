@@ -10,9 +10,9 @@ END_METADATA -->
 
 This is applicable to:
 
-* [eCom API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/)
-* [PSP API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/psp-api/)
-* [Recurring API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/)
+* [eCom API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api)
+* [PSP API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/psp-api)
+* [Recurring API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api)
 * [Report API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/report-api)
 
 If the payment is initiated in a native app, it is possible to explicitly force

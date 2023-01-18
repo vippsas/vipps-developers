@@ -51,9 +51,9 @@ To do this we have been required to introduce a new version of our Vipps login A
 ## Vipps HTTP Headers ℹ️
 
 We recommend using the following _optional_ HTTP headers for all requests to the
-[Vipps eCom API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/)
+[Vipps eCom API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api)
 and the
-[Vipps Recurring API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/).
+[Vipps Recurring API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api).
 
 | Header                        | Description                                  | Example value        |
 | ----------------------------- | -------------------------------------------- | -------------------- |
@@ -111,7 +111,7 @@ Vipps development. Send an email to integration@vipps.no with a list of
 email addresses to invite, with the same people on CC. We fix the rest.
 
 This does, unfortunately, not apply to customers using one of our
-[plugins](https://vippsas.github.io/vipps-developer-docs/docs/vipps-plugins/), or
+[plugins](https://vippsas.github.io/vipps-developer-docs/docs/vipps-plugins), or
 customers using Vipps through a partner.
 
 ## Do you want a technical workshop? 🛠
@@ -121,7 +121,7 @@ Vipps development. Send an email to integration@vipps.no with a list of
 email addresses to invite, with the same people on CC. We fix the rest.
 
 This does, unfortunately, not apply to customers using one of our
-[plugins](https://vippsas.github.io/vipps-developer-docs/docs/vipps-plugins/), or
+[plugins](https://vippsas.github.io/vipps-developer-docs/docs/vipps-plugins), or
 customers using Vipps through a partner.
 
 ## Reminders
@@ -145,7 +145,7 @@ Please see
 
 ### Newsletter archive
 
-Please see: [newsletters](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/newsletters/)
+Please see: [newsletters](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/newsletters)
 
 ## Questions or comments?
 

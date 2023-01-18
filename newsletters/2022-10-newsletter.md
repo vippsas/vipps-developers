@@ -43,7 +43,7 @@ Examples:
 
 * [API Guide](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api)
 * [API Reference](https://vippsas.github.io/vipps-developer-docs/api/ecom)
-* [FAQ](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/faqs/)
+* [FAQ](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/faqs)
 
 Please
 [tell us what you think](https://forms.office.com/pages/responsepage.aspx?id=XcJbgGSO1k6NJDiDyQaMWuRWudsvYRxEorAi1xx_iqJUQzg4QzExTVhHM1UzMDIwM1lINkpaNTdWUC4u)
@@ -101,14 +101,14 @@ know that Vipps payment is accepted.
 ## Partner API: Pre-fill applications
 
 Partners can now use the
-[Partner API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/partner-api/)
+[Partner API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/partner-api)
 to pre-fill applications and
 [submit a product order for a merchant](https://vippsas.github.io/vipps-developer-docs/docs/APIs/partner-api/vipps-partner-api#submit-a-product-order-for-a-merchant).
 
 ## Settlement API: In progress
 
 We are in the early planning phase of developing an API for
-[settlements](../settlements/).
+[settlements](../settlements/README.md).
 
 If you are interested in this and want to be kept up to date when we have
 something to share, please send an email to integraton@vipps.no.
@@ -150,7 +150,7 @@ Please see
 
 ### Newsletter archive
 
-Please see: [newsletters](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/newsletters/)
+Please see: [newsletters](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/newsletters)
 
 ## Questions or comments?
 

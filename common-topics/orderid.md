@@ -10,13 +10,13 @@ END_METADATA -->
 
 This is applicable to:
 
-* [Checkout API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/checkout-api/)
-* [eCom API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/)
-* [ePayment API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/epayment-api/)
-* [Order Management API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/order-management-api/)
-* [PSP API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/psp-api/)
-* [QR API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/qr-api/)
-* [Recurring API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/)
+* [Checkout API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/checkout-api)
+* [eCom API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api)
+* [ePayment API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/epayment-api)
+* [Order Management API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/order-management-api)
+* [PSP API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/psp-api)
+* [QR API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/qr-api)
+* [Recurring API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api)
 
 An `orderId` (also called `reference`) must be unique for the sale unit Merchant Serial Number (MSN) (i.e., the id of
 the sale unit). The `orderId` does not need to be globally unique, so several

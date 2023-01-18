@@ -39,7 +39,7 @@ See:
 
 ## The Vipps QR API now works in the test environment
 
-[The Vipps QR API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/qr-api/) now works in both in
+[The Vipps QR API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/qr-api) now works in both in
 the production and
 [test environment](../test-environment.md).
 
@@ -48,7 +48,7 @@ the production and
 The response of the
 [`GET:/v1/merchants/{merchantSerialNumber}`](https://vippsas.github.io/vipps-developer-docs/api/psp-signup#tag/Merchant/operation/getMerchants)
 endpoint in the in the
-[Vipps PSP API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/psp-api/)
+[Vipps PSP API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/psp-api)
 contains a `logo` field, with the merchant's logo encoded in base64 format.
 
 We are changing this to a URL, with a new field `logoUrl` in the response,
@@ -135,7 +135,7 @@ Please see
 
 ### Newsletter archive
 
-Please see: [newsletters](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/newsletters/)
+Please see: [newsletters](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/newsletters)
 
 ## Questions or comments?
 

@@ -35,7 +35,7 @@ For more information, check out our [migration guide](https://vippsas.github.io/
 ## Recurring API v3
 
 The
-[Vipps Recurring API v3](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/)
+[Vipps Recurring API v3](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api)
 is available. This version includes new and improved functionality for campaigns
 (for example "10 weeks for 10 kr" or "1 kr until Christmas"),
 the possibility to reserve and capture (or partially capture) a charge
