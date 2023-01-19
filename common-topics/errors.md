@@ -8,7 +8,7 @@ END_METADATA -->
 
 # Errors
 
-The standard format for our APIS follows
+The standard response body format for our errors in our APIs follows
 [RFC 7807](https://tools.ietf.org/html/rfc7807).
 
 Here is an example of the error sent together with a
