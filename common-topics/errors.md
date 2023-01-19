@@ -23,7 +23,7 @@ Content-Language: en
    "title":"Your request parameters didn't validate.",
    "detail":"The request body contains one or more errors",
    "instance":"123e4567-e89b-12d3-a456-426655440000",
-   "invalidParams":[
+   "extraDetails":[
       {
          "name":"amount",
          "reason":"Must be a positive integer larger than 100"
@@ -35,6 +35,10 @@ Content-Language: en
    ]
 }
 ```
+
+**Important:** The `extraDetails` in the example above _may_ be different for
+some errors - for instance `invalidParams` - for some APIs, but new APIs
+will use `extraDetails`.
 
 **Please note:**
 * Most of the APIs use this error format, but legacy APIs may not.
