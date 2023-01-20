@@ -14,7 +14,7 @@ The standard response body format for our errors in our APIs follows
 Here is an example of the error sent together with a
 `HTTP 400 Bad Request`:
 
-```
+```http
 HTTP/1.1 400 Bad Request
 Content-Type: application/problem+json
 Content-Language: en
@@ -41,6 +41,7 @@ some errors - for instance `invalidParams` - for some APIs, but new APIs
 will use `extraDetails`.
 
 **Please note:**
+
 * Most of the APIs use this error format, but legacy APIs may not.
   For details: See each API's specification.
 * Some errors are sent from Microsoft Azure, and not the Vipps APIs.
