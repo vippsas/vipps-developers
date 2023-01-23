@@ -8,81 +8,60 @@ END_METADATA -->
 
 # Authentication
 
-<!-- START_COMMENT -->
+All Vipps API requests must include an `Authorization` header with
+a JSON Web Token (JWT), which we call the _access token_.
 
-## Table of contents
 
-- [Get an access token](#get-an-access-token)
-  - [Request](#request)
-  - [Response](#response)
-
-<!-- END_COMMENT -->
-
-To make requests to the Vipps APIs you need to:
-
-1. First make a request to get an access token, which is a JWT (JSON Web Token)
-2. Use the access token in the HTTP header of the other API requests,
-   together with the subscription key.
 
 ## Get an access token
 
 All Vipps API calls are authenticated and authorized with an access token
-(JWT bearer token) and an API subscription key:
+(JWT bearer token) and an API subscription key.
 
-| Header Name                 | Header Value                | Description      |
-|:----------------------------|:----------------------------|:-----------------|
-| `Authorization`             | `Bearer <JWT access token>` | Type: Authorization token. |
-| `Ocp-Apim-Subscription-Key` | Base 64 encoded string      | The subscription key for this API. This is available on [portal.vipps.no](https://portal.vipps.no). |
+To get an access token:
 
-All Vipps API requests must include an `Authorization` header with
-a JSON Web Token (JWT), which we call the _access token_.
+1. Get your API keys, as described in
+   [Common topics: API keys](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/common-topics/api-keys)
 
-The access token is obtained by calling
-[`POST:/accesstoken/get`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Authorization-Service/operation/fetchAuthorizationTokenUsingPost)
-and passing the `client_id`, `client_secret` and `Ocp-Apim-Subscription-Key`.
-(We _are_ aware that this is a `POST`, without a body, to an endpoint with
-`get` in the URL, and hope to fix it in a later version of the API. Sorry for the inconvenience.)
+   **Please note:** Partners should use
+   [Partner info: Partner keys](https://vippsas.github.io/vipps-developer-docs/docs/vipps-partner/partner-keys).
 
-### Request
+2. Get your access token by calling
+   [`POST:/accesstoken/get`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Authorization-Service/operation/fetchAuthorizationTokenUsingPost).
 
-Request to
-[`POST:/accesstoken/get`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Authorization-Service/operation/fetchAuthorizationTokenUsingPost)
-(including the Vipps HTTP headers):
+    Include your API keys in the header fields, `client_id`, `client_secret` and `Ocp-Apim-Subscription-Key`.
 
-```json
-client_id: fb492b5e-7907-4d83-ba20-c7fb60ca35de
-client_secret: Y8Kteew6GE2ZmeycEt6egg==
-Ocp-Apim-Subscription-Key: 0f14ebcab0ec4b29ae0cb90d91b4a84a
-Merchant-Serial-Number: 123456
-Vipps-System-Name: Acme Enterprises Ecommerce DeLuxe
-Vipps-System-Version: 3.1.2
-Vipps-System-Plugin-Name: Point Of Sale Excellence
-Vipps-System-Plugin-Version 4.5.6
-```
+    For example:
 
-| Header                        | Description                                  | Example value       |
-|-------------------------------|----------------------------------------------|---------------------|
-| `Merchant-Serial-Number`      | The MSN for the sale unit                    | `123456`            |
-| `Vipps-System-Name`           | The name of the ecommerce solution           | `woocommerce`       |
-| `Vipps-System-Version`        | The version number of the ecommerce solution | `5.4`               |
-| `Vipps-System-Plugin-Name`    | The name of the ecommerce plugin             | `vipps-woocommerce` |
-| `Vipps-System-Plugin-Version` | The version number of the ecommerce plugin   | `1.4.1`             |
+    ```json
+    client_id: fb492b5e-7907-4d83-ba20-c7fb60ca35de
+    client_secret: Y8Kteew6GE2ZmeycEt6egg==
+    Ocp-Apim-Subscription-Key: 0f14ebcab0ec4b29ae0cb90d91b4a84a
+    Merchant-Serial-Number: 123456
+    Vipps-System-Name: Acme Enterprises Ecommerce DeLuxe
+    Vipps-System-Version: 3.1.2
+    Vipps-System-Plugin-Name: Point Of Sale Excellence
+    Vipps-System-Plugin-Version 4.5.6
+    ```
 
-The `client_id`, `client_secret` and `Ocp-Apim-Subscription-Key` are unique per
-`merchantSerialNumber` (MSN, i.e. the number of the sale unit).
+    The `client_id`, `client_secret` and `Ocp-Apim-Subscription-Key` are unique per
+    `merchantSerialNumber`.
+    See [HTTP Headers](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/common-topics/http-headers)
+    for a description of the standard Vipps header fields.
 
-Please note: Partners should use
-[partner keys](https://vippsas.github.io/vipps-developer-docs/docs/vipps-partner/partner-keys).
 
-**Please note:** You can have multiple access tokens being used at the same time.
+    **Please note:** You can have multiple access tokens being used at the same time.
 
-**Please note:** We are in process of changing the name of the header
-`Ocp-Apim-Subscription-Key` to `Vipps-Subscription-Key`. We will at some point
-phase out the old name completely, but it is not trivial and will take some time.
-You may encounter both in the developer documentation, and the actual header
-name to send is `Ocp-Apim-Subscription-Key`.
+    **Please note:** We are in process of changing the name of the header
+    `Ocp-Apim-Subscription-Key` to `Vipps-Subscription-Key`. We will at some point
+    phase out the old name completely, but it is not trivial and will take some time.
+    You may encounter both in the developer documentation, and the actual header
+    name to send is `Ocp-Apim-Subscription-Key`.
 
-### Response
+    **Please note:** Unfortunately, there is legacy code that results in this being is a `POST`, without a body, to an endpoint with
+    `get` in the URL. Sorry for the inconvenience.
+
+
 
 The response from
 [`POST:/accesstoken/get`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Authorization-Service/operation/fetchAuthorizationTokenUsingPost)
