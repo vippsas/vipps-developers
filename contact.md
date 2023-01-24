@@ -16,7 +16,7 @@ END_METADATA -->
 
 ## Table of Contents
 
-* [We help with technical issues](#we-help-with-technical-issues)
+* [We help developers with technical issues](#we-help-developers-with-technical-issues)
 * [What to include in the email](#what-to-include-in-the-email)
 * [Keep your colleagues up to date](#keep-your-colleagues-up-to-date)
 * [Automatic reply](#automatic-reply)
@@ -30,14 +30,14 @@ END_METADATA -->
 
 <!-- END_COMMENT -->
 
-## We help with technical issues
+## We help developers with technical issues
 
 There are a lot of self-service solutions on
 [portal.vipps.no](https://portal.vipps.no),
 please check there first.
 
-Vipps Integration helps with _**technical**_ questions from developers, such as questions about using our APIs.
-If you do not have a technical issue, the fastest way to get help is to start in the right place:
+Vipps Integration helps developers with _**technical**_ questions, such as questions about using our APIs.
+If you do not have a technical question, you can avoid delays by starting in the right place:
 
 | Topic | How to get help |
 |--------|----------------|
@@ -83,14 +83,10 @@ If you cannot find the answer: Please send an email with all relevant informatio
 
 The Integration email address is: integration@vipps.no
 
-We also have a technical newsletter for developers:
-[Sign up and access the archives here](./newsletters/README.md)
-(low volume, no marketing).
-
 ## Keep your colleagues up to date
 
 If you want colleagues to be included in all communication regarding this issue,
-add them in the `To:` or `CC:` field of the email. Any updates to the issue will be
+add them in the `To:` or `CC:` field of the email. All updates to the issue will be
 sent to all email addresses in the original email.
 
 ## Automatic reply
