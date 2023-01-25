@@ -11,7 +11,7 @@ END_METADATA -->
 The standard response body format for our errors in our APIs follows
 [RFC 7807](https://tools.ietf.org/html/rfc7807).
 
-Here is an example of the error sent together with a
+Here is an example of an error sent together with a
 `HTTP 400 Bad Request`:
 
 ```
@@ -42,6 +42,9 @@ will use `extraDetails`.
 
 **Please note:**
 * Most of the APIs use this error format, but legacy APIs may not.
-  For details: See each API's specification.
+  For details: See each
+  [API](https://vippsas.github.io/vipps-developer-docs/docs/APIs)'s
+  specification.
 * Some errors are sent from Microsoft Azure, and not the Vipps APIs.
-  These errors may have a different format, as they are not configurable.  
+  These errors may have a different format, as they are not configurable.
+  This includes authentication errors.
