@@ -24,6 +24,12 @@ This newsletter was sent in January 2023.
 
 <!-- END_COMMENT -->
 
+## Report API
+
+The Vipps Report API is now available. It is a REST API providing data about
+payments in JSON format. See the
+[API documentation](https://vippsas.github.io/vipps-developer-docs/docs/APIs/report-api).
+
 ## Changes to the access token endpoint
 
 Due to
