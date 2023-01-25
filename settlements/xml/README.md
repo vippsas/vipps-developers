@@ -23,7 +23,7 @@ Both [the current settlement report schema v3.0](SettlementReport-3.0.xsd) and t
 Example files are available for:
 
 * [Gross settlements](Example-Gross.xml)
-* [Netsettlements](Example-Gross.xml)
+* [Net settlements](Example-Gross.xml)
 
 ## Changes to the Vipps settlement report XML schema from v2.0 to v3.0
 
