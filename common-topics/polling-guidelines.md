@@ -9,12 +9,20 @@ END_METADATA -->
 
 # Polling guidelines
 
-General guidelines for polling:
+Our general guidelines for polling are:
 
 1. Start after 5 seconds
 2. Check every 2 seconds
 
-These are reasonable values, but different merchants have different use cases,
-and values should be adapted to the specific case.
+**Please note:** These are reasonable values, but different merchants have
+different use cases, and values should be adapted to the specific case.
+
+Some APIs, like the
+[eCom API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api#rate-limiting)
+and
+[Recurring API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/vipps-recurring-api#rate-limiting),
+have rate-limiting to prevent obviously incorrect use.
+If you get a `HTTP 429 Too Many Requests` you are most likely using the API
+incorrectly.
 
 See [Timeouts](./timeouts.md) for details about timeouts.
