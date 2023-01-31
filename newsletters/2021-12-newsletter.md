@@ -81,7 +81,7 @@ Here's an example for the Vipps eCom API's `/refund` endpoint:
 
 There is quite a bit happening for Vipps partners.
 Please see
-[github.com/vippsas/vipps-partner](https://vippsas.github.io/vipps-developer-docs/docs/vipps-partner)
+[Vipps Partner pages](https://vippsas.github.io/vipps-developer-docs/docs/vipps-partner)
 for (continuously) updated information.
 
 ## Reminders
