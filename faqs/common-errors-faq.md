@@ -132,7 +132,7 @@ requests and responses, and to check that the API keys are correct.
 
 You also need to make sure you have access to the right API.
 See:
-[API products](../vipps-getting-started.md#api-products).
+[API products](../README.md#api-products).
 
 See:
 [Quick overview of how to make an API call](../vipps-getting-started.md#quick-overview-of-how-to-make-an-api-call).
