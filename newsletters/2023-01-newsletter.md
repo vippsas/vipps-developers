@@ -35,7 +35,7 @@ payments in JSON format. See the
 Due to
 [changes to the Microsoft Azure platform](https://learn.microsoft.com/en-us/answers/questions/768833/when-is-adal-and-azure-ad-graph-reaching-end-of-li.html)
 that Vipps depends on, we have to make some minor changes to the
-[`POST:/accesstoken/get`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Authorization-Service/operation/fetchAuthorizationTokenUsingPost)
+[`POST:/accesstoken/get`](https://vippsas.github.io/vipps-developer-docs/api/access-token#tag/Authorization-Service/operation/fetchAuthorizationTokenUsingPost)
 endpoint.
 
 We will not longer return the following fields in the response:

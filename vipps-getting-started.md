@@ -134,7 +134,7 @@ All Vipps API requests must include an `Authorization` header with
 a JSON Web Token (JWT), which we call the _access token_.
 
 The access token is obtained by calling
-[`POST:/accesstoken/get`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Authorization-Service/operation/fetchAuthorizationTokenUsingPost)
+[`POST:/accesstoken/get`](https://vippsas.github.io/vipps-developer-docs/api/access-token#tag/Authorization-Service/operation/fetchAuthorizationTokenUsingPost)
 and passing the `client_id`, `client_secret` and `Ocp-Apim-Subscription-Key`.
 (We _are_ aware that this is a `POST`, without a body, to an endpoint with
 `get` in the URL, and hope to fix it in a later version of the API. Sorry for the inconvenience.)
@@ -142,7 +142,7 @@ and passing the `client_id`, `client_secret` and `Ocp-Apim-Subscription-Key`.
 #### Request
 
 Request to
-[`POST:/accesstoken/get`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Authorization-Service/operation/fetchAuthorizationTokenUsingPost)
+[`POST:/accesstoken/get`](https://vippsas.github.io/vipps-developer-docs/api/access-token#tag/Authorization-Service/operation/fetchAuthorizationTokenUsingPost)
 (including the Vipps HTTP headers):
 
 ```json
@@ -181,7 +181,7 @@ name to send is `Ocp-Apim-Subscription-Key`.
 #### Response
 
 The response from
-[`POST:/accesstoken/get`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Authorization-Service/operation/fetchAuthorizationTokenUsingPost)
+[`POST:/accesstoken/get`](https://vippsas.github.io/vipps-developer-docs/api/access-token#tag/Authorization-Service/operation/fetchAuthorizationTokenUsingPost)
 is like this:
 
 ```json
@@ -229,7 +229,7 @@ in the Vipps eCom API:
 
 Here is an example with `Authorization` and `Ocp-Apim-Subscription-Key` (but
 without the `client_id` and `client_secret`, since they are only used for the
-[`POST:/accesstoken/get`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Authorization-Service/operation/fetchAuthorizationTokenUsingPost)
+[`POST:/accesstoken/get`](https://vippsas.github.io/vipps-developer-docs/api/access-token#tag/Authorization-Service/operation/fetchAuthorizationTokenUsingPost)
 call), including the Vipps HTTP headers:
 
 ```json
