@@ -14,37 +14,24 @@ END_METADATA -->
 ℹ️ Please use the new documentation:
 [Vipps Technical Documentation](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/vipps-getting-started).
 
-## Table of contents
-
-- [API products](#api-products)
-- [Apply for Vipps services](#apply-for-vipps-services)
-- [Get credentials](#get-credentials)
-  - [Permissions and users](#permissions-and-users)
-  - [Getting the API keys](#getting-the-api-keys)
-- [Test environment](#test-environment)
-- [Quick overview of how to make an API call](#quick-overview-of-how-to-make-an-api-call)
-  - [Get an access token](#get-an-access-token)
-  - [Make an API call](#make-an-api-call)
-  - [Checking for errors with the API Dashboard](#checking-for-errors-with-the-api-dashboard)
-- [Next step: Quick start guides](#next-step-quick-start-guides)
-
 <!-- END_COMMENT -->
 
 ## API products
 
 The `Vipps-API` product gives you access to the majority of Vipps APIs, for example:
 
+- [Access token API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/access-token-api)- Required to obtain a JWT.
+- [Check-in API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/check-in-api) - Communicate with users through their Vipps app from the Point of Sale (POS).
 - [Checkout API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/checkout-api) - Provide a complete Checkout solution for both Vipps and card payments with auto-fill and shipping integrations.
 - [eCom API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api) - Offer Vipps as a method of payment. Offer a quick checkout option where Vipps is the method of payment and the shipping options are specified directly from the Vipps app. This is also known as Vipps Online (_Vipps På Nett_) and Vipps Express Checkout (_Vipps Hurtigkasse_).
 - [ePayment API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/epayment-api) - In combination with Checkout API, apply payments, -This is the new version of eCom API.
 - [Login API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/login-api) - Allow the customer to log in by using their Vipps account.
-- [Order Management API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/order-management-api) - Add data to orders.
+- [Order management API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/order-management-api) - Add data to orders.
 - [Partner API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/partner-api) - Get info about merchants/sale units.
 - [PSP API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/psp-api) - Initiate PSP payments. Update merchants.
 - [QR API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/qr-api) - Use QR codes to allow customers to connect to Vipps and purchase from your store.
 - [Recurring API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api) - A business or organization can allow their customers to set up recurring payments (e.g., for subscriptions, membership, regular donations, etc.) through Vipps. This is also known as _Vipps Faste Betalinger_.
 - [Report API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/report-api) - Fetch information about payment events that have been processed by Vipps.
-- [Access Token API](#get-an-access-token)- Required to obtain a JWT.
 
 **Please note:** API keys are _not_ available for
 [Vippsnummer](https://www.vipps.no/produkter-og-tjenester/bedrift/ta-betalt-i-butikk/ta-betalt-med-vipps/),
@@ -74,7 +61,7 @@ If you have questions about your application, please check the status on
 order the appropriate Vipps solution from the PSP,
 and have _them_ help you with developer access to their systems.
 
-## Get credentials
+## Get your credentials
 
 When your application has been processed, Vipps will send an email
 informing you that the API keys can be retrieved by
@@ -100,7 +87,7 @@ for details including:
 - [Production versus test keys](./common-topics/api-keys.md#production-and-test-keys)
 - [How to use the keys with the API](./common-topics/api-keys.md#how-to-use-the-api-keys)
 
-## Test environment
+## Get set up in the test environment
 
 The Merchant Test Environment (MT) is available for all Vipps merchants
 with API access.
@@ -116,141 +103,79 @@ for details including:
 
 ## Quick overview of how to make an API call
 
-We recommend using the
-[standard Vipps HTTP headers](common-topics/http-headers.md)
-for all requests.
+1. Get an access token
 
-### Get an access token
+    All Vipps API calls are authenticated and authorized with an access token
+    (JWT bearer token) and an API subscription key.
 
-All Vipps API calls are authenticated and authorized with an access token
-(JWT bearer token) and an API subscription key:
+    The access token is obtained by calling
+    [`POST:/accesstoken/get`](https://vippsas.github.io/vipps-developer-docs/api/access-token#tag/Authorization-Service/operation/fetchAuthorizationTokenUsingPost)
+    and passing the `client_id`, `client_secret` and `Ocp-Apim-Subscription-Key`.
 
-| Header Name                 | Header Value                | Description      |
-|:----------------------------|:----------------------------|:-----------------|
-| `Authorization`             | `Bearer <JWT access token>` | Type: Authorization token. See [Get an access token](#get-an-access-token). |
-| `Ocp-Apim-Subscription-Key` | Base 64 encoded string      | The subscription key for this API. This is available on [portal.vipps.no](https://portal.vipps.no). |
+    ```http
+    curl https://apitest.vipps.no/accessToken/get \
+    -H "client_id: REPLACE-WITH-YOUR-CLIENT-ID" \
+    -H "client_secret: REPLACE-WITH-YOUR-CLIENT-SECRET" \
+    -H "Ocp-Apim-Subscription-Key: REPLACE-WITH-YOUR-SUBSCRIPTION-KEY" \
+    -X POST
+    ```
 
-All Vipps API requests must include an `Authorization` header with
-a JSON Web Token (JWT), which we call the _access token_.
+    This is described in detail in the [Access token API guide](https://vippsas.github.io/vipps-developer-docs/docs/APIs/access-token-api).
 
-The access token is obtained by calling
-[`POST:/accesstoken/get`](https://vippsas.github.io/vipps-developer-docs/api/access-token#tag/Authorization-Service/operation/fetchAuthorizationTokenUsingPost)
-and passing the `client_id`, `client_secret` and `Ocp-Apim-Subscription-Key`.
-(We _are_ aware that this is a `POST`, without a body, to an endpoint with
-`get` in the URL, and hope to fix it in a later version of the API. Sorry for the inconvenience.)
+   Your integration should include all the [standard Vipps HTTP headers](common-topics/http-headers.md), so that we can help you find debugging information in the logs.
 
-#### Request
+    ```http
+    -H "Merchant-Serial-Number: YOUR-MERCHANT-ACCOUNT-NUMBER" \
+    -H "Vipps-System-Name: Acme Enterprises Ecommerce DeLuxe" \
+    -H "Vipps-System-Version: 3.1.2" \
+    -H "Vipps-System-Plugin-Name: Point Of Sale Excellence" \
+    -H "Vipps-System-Plugin-Version 4.5.6" \
+    ```
 
-Request to
-[`POST:/accesstoken/get`](https://vippsas.github.io/vipps-developer-docs/api/access-token#tag/Authorization-Service/operation/fetchAuthorizationTokenUsingPost)
-(including the Vipps HTTP headers):
+2. Make an API request
 
-```json
-client_id: fb492b5e-7907-4d83-ba20-c7fb60ca35de
-client_secret: Y8Kteew6GE2ZmeycEt6egg==
-Ocp-Apim-Subscription-Key: 0f14ebcab0ec4b29ae0cb90d91b4a84a
-Merchant-Serial-Number: 123456
-Vipps-System-Name: Acme Enterprises Ecommerce DeLuxe
-Vipps-System-Version: 3.1.2
-Vipps-System-Plugin-Name: Point Of Sale Excellence
-Vipps-System-Plugin-Version 4.5.6
-```
+    Use the access token (JWT) from the previous step (including the case-sensitive `Bearer` keyword) to provide authentication in other API requests.
 
-| Header                        | Description                                  | Example value       |
-|-------------------------------|----------------------------------------------|---------------------|
-| `Merchant-Serial-Number`      | The MSN for the sale unit                    | `123456`            |
-| `Vipps-System-Name`           | The name of the ecommerce solution           | `woocommerce`       |
-| `Vipps-System-Version`        | The version number of the ecommerce solution | `5.4`               |
-| `Vipps-System-Plugin-Name`    | The name of the ecommerce plugin             | `vipps-woocommerce` |
-| `Vipps-System-Plugin-Version` | The version number of the ecommerce plugin   | `1.4.1`             |
+    For example,
+    [`POST:/ecomm/v2/payments`](https://vippsas.githubgithub.io/vipps-developer-docs/api/ecom#tag/Vipps-eCom-API/operation/initiatePaymentV3UsingPOST):
 
-The `client_id`, `client_secret` and `Ocp-Apim-Subscription-Key` are unique per
-`merchantSerialNumber` (MSN, i.e. the number of the sale unit).
+    ```http
+    curl https://apitest.vipps.no/ecomm/v2/payments \
+    -H "Authorization: Bearer <TOKEN>" \
+    -H "Ocp-Apim-Subscription-Key: YOUR-SUBSCRIPTION-KEY" \
+    -H "Content-Type: application/json" \
+    -H "Merchant-Serial-Number: YOUR-MERCHANT-ACCOUNT-NUMBER" \
+    -H "Vipps-System-Name: Acme Enterprises Ecommerce DeLuxe" \
+    -H "Vipps-System-Version: 3.1.2" \
+    -H "Vipps-System-Plugin-Name: Point Of Sale Excellence" \
+    -H "Vipps-System-Plugin-Version 4.5.6" \
+    -X POST \
+    -d '{
+        "merchantInfo": {
+          "callbackPrefix":"https://example.com/vipps/callbacks-for-payment-update-from-vipps",
+          "fallBack": "https://example.com/vipps/fallback-result-page-for-both-success-and-failure/acme-shop-123-order123abc",
+          "merchantSerialNumber": "YOUR-MERCHANT-ACCOUNT-NUMBER"
+        },
+        "customerInfo": {
+          "mobileNumber": "YOUR-PHONE-NUMBER"
+        },
+        "transaction": {
+          "amount": 49900,
+          "orderId": "2810171674485753715",
+          "transactionText": "Transaction text to be displayed in Vipps.",
+          "skipLandingPage": false
+    }'
+    ```
 
-Please note: Partners should use
-[partner keys](https://vippsas.github.io/vipps-developer-docs/docs/vipps-partner/partner-keys).
-
-**Please note:** You can have multiple access tokens being used at the same time.
-
-**Please note:** We are in process of changing the name of the header
-`Ocp-Apim-Subscription-Key` to `Vipps-Subscription-Key`. We will at some point
-phase out the old name completely, but it is not trivial and will take some time.
-You may encounter both in the developer documentation, and the actual header
-name to send is `Ocp-Apim-Subscription-Key`.
-
-#### Response
-
-The response from
-[`POST:/accesstoken/get`](https://vippsas.github.io/vipps-developer-docs/api/access-token#tag/Authorization-Service/operation/fetchAuthorizationTokenUsingPost)
-is like this:
-
-```json
-{
-  "token_type": "Bearer",
-  "expires_in": "86398",
-  "ext_expires_in": "0",
-  "expires_on": "1495271273",
-  "not_before": "1495184574",
-  "resource": "00000002-0000-0000-c000-000000000000",
-  "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1Ni <snip>"
-}
-```
-
-The `access_token` is the most important part.
-An explanation of the contents of the access token (the JWT properties):
-
-| Name             | Description                                                                      |
-|------------------|----------------------------------------------------------------------------------|
-| `Bearer`         | It’s a `Bearer` token. The word `Bearer` must be added before the token          |
-| `expires_in`     | Token expiry duration in seconds.                                                |
-| `ext_expires_in` | Extra expiry time. Not used.                                                     |
-| `expires_on`     | Token expiry time in epoch time format.                                          |
-| `not_before`     | Token creation time in epoch time format.                                        |
-| `resource`       | For the product for which token has been issued.                                 |
-| `access_token`   | The actual access token that needs to be used in `Authorization` request header. |
-
-**Please note:** The access token is valid for 1 hour in the test environment
-and 24 hours in the production environment. To be sure that you are using
-correct time please use `expires_in` or `expires_on`.
-The access token is a JWT (JSON Web Token), and uses UTC time.
-
-Problems? See:
-[FAQ: Common errors](faqs/common-errors-faq.md).
-
-### Make an API call
-
-After obtaining the access token (JWT), it is then used for the "real" calls
-to the Vipps API, with the `Bearer` keyword (it is case-sensitive).
-
-A typical example of an API endpoint:
-[`POST:/ecomm/v2/payments`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Vipps-eCom-API/operation/initiatePaymentV3UsingPOST)
-in the Vipps eCom API:
-[Initiate payment flow: API calls](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api#initiate-payment-flow-api-calls).
-
-Here is an example with `Authorization` and `Ocp-Apim-Subscription-Key` (but
-without the `client_id` and `client_secret`, since they are only used for the
-[`POST:/accesstoken/get`](https://vippsas.github.io/vipps-developer-docs/api/access-token#tag/Authorization-Service/operation/fetchAuthorizationTokenUsingPost)
-call), including the Vipps HTTP headers:
-
-```json
-Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1Ni <snip>
-Ocp-Apim-Subscription-Key: 0f14ebcab0ec4b29ae0cb90d91b4a84a
-Merchant-Serial-Number: 123456
-Vipps-System-Name: Acme Enterprises Ecommerce DeLuxe
-Vipps-System-Version: 3.1.2
-Vipps-System-Plugin-Name: Point Of Sale Excellence
-Vipps-System-Plugin-Version 4.5.6
-```
-
-For more details: See the OpenAPI specifications and Postman collections
-for the APIs.
+See the [eCom Quick start guide](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api-quick-start)
+to try this out in the Postman environment. It provides a step-by-step guide with examples that you can experiment with.
 
 Problems? See:
 
 * [FAQ: Common errors](./faqs/common-errors-faq.md)
 * [HTTP response codes](./common-topics/http-response-codes.md)
 
-### Checking for errors with the API Dashboard
+### Check for errors with the API Dashboard
 
 All merchants have access to the
 [API Dashboard](./developer-resources/api-dashboard.md).
