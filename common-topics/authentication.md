@@ -20,15 +20,11 @@ To get an access token:
    [Partner info: Partner keys](https://vippsas.github.io/vipps-developer-docs/docs/vipps-partner/partner-keys).
 
 2. Get your access token by calling
-   [`POST:/accesstoken/get`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Authorization-Service/operation/fetchAuthorizationTokenUsingPost).
-
-   <!-- Update to https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Authorization-Service -->
+   [`POST:/accesstoken/get`](https://vippsas.github.io/vipps-developer-docs/api/access-token#tag/Authorization-Service/operation/fetchAuthorizationTokenUsingPost).
 
     Include your API keys in the header fields, `client_id`, `client_secret` and `Ocp-Apim-Subscription-Key`.
 
-
-<!-- See the [Access Token API Guide](https://vippsas.github.io/vipps-developer-docs/docs/APIs/accesstoken-api) for details about the parameters and responses. -->
+See the [Access Token API Guide](https://vippsas.github.io/vipps-developer-docs/docs/APIs/access-token-api) for details about the parameters and responses.
 
 Problems? See:
 [FAQ: Common errors](../faqs/common-errors-faq.md)
-
