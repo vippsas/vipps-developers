@@ -36,6 +36,6 @@ curl https://apitest.vipps.no/accessToken/get \
 ```
 
 Many of these headers are optional during testing, but you should include them in your integration, so that error information can be found in the logs.
-Read more about the [standard Vipps HTTP headers](common-topics/http-headers.md).
+Read more about the [standard Vipps HTTP headers](http-headers.md).
 
 See the [Access Token API Guide](https://vippsas.github.io/vipps-developer-docs/docs/APIs/access-token-api) for more details about the parameters and responses.
