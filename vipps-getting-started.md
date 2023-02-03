@@ -115,7 +115,7 @@ for details including:
     Use the access token (JWT) from the previous step (including the case-sensitive `Bearer` keyword) to provide authentication in other API requests.
 
     For example,
-    [`POST:/ecomm/v2/payments`](https://vippsas.githubgithub.io/vipps-developer-docs/api/ecom#tag/Vipps-eCom-API/operation/initiatePaymentV3UsingPOST):
+    [`POST:/ecomm/v2/payments`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Vipps-eCom-API/operation/initiatePaymentV3UsingPOST):
 
     ```http
     curl https://apitest.vipps.no/ecomm/v2/payments \
