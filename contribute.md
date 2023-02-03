@@ -35,7 +35,7 @@ check out the official GitHub issues guide: <https://guides.github.com/features/
 
 ## How to Contribute
 
-Contributing is easy. The steps below is intended to be helpful - please help us improve it.
+Contributing is easy. The steps below are intended to be helpful - please help us improve it.
 
 1. Create a personal fork of the project on GitHub.
 1. Clone the fork on your local machine.
