@@ -70,7 +70,7 @@ Check that the access token is in the correct format and that it has not expired
 Please follow these steps to make sure everything is correct:
 
 1. Make sure that you are using a valid access token. See
-   [Getting started: Get an access token](../vipps-getting-started.md#get-an-access-token)
+   [Getting started: Get an access token](https://vippsas.github.io/vipps-developer-docs/docs/APIs/access-token-api)
    for details, how long it is valid, etc.
    Remember to use `Authorization: Bearer <access token goes here>`.
 2. Check that you are using the correct API credentials for the MSN (Merchant Serial Number)
