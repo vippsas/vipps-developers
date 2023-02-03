@@ -39,47 +39,33 @@ If you have questions about your application, please check the status on
 order the appropriate Vipps solution from the PSP,
 and have _them_ help you with developer access to their systems.
 
-## Get your credentials
+## Get your API keys
 
 When your application has been processed, Vipps will send an email
-informing you that the API keys can be retrieved by
-logging in with BankID on the [Vipps portal (portal.vipps.no)](https://portal.vipps.no).
+informing you that the API keys can be retrieved. This means that you are ready to start
+testing!
 
-For details, see:
+Read the
+[API keys](./common-topics/api-keys.md) page to make sure you understand what the API keys are
+and how to find them.
 
-- [Developer resources: Vipps portal](./developer-resources/portal.md).
-
-### Permissions and users
-
-For problems logging in to the Vipps Portal, see:
-
-- [Developer resources: Vipps Portal: Permissions and users](./developer-resources/portal.md#permissions-and-users).
-
-### Getting the API keys
-
-See
-[Common topics: API keys](./common-topics/api-keys.md)
-for details including:
-
-- [How to find API keys](./common-topics/api-keys.md#getting-the-api-keys)
-- [Production versus test keys](./common-topics/api-keys.md#production-and-test-keys)
-- [How to use the keys with the API](./common-topics/api-keys.md#how-to-use-the-api-keys)
 
 ## Get set up in the test environment
 
-The Merchant Test Environment (MT) is available for all Vipps merchants
-with API access.
+You will use the Merchant Test (MT) environment to create test sale units.
 
-See
-[Developer resources: The Vipps Test Environment (MT)](test-environment.md)
-for details including:
+Review the
+[The Vipps Test Environment (MT)](test-environment.md)
+page for details including:
 
 - [Test server](test-environment.md#test-server)
 - [Test merchants](test-environment.md#test-merchants)
 - [Test users](test-environment.md#test-users)
 - [Vipps test apps](test-environment.md#vipps-test-apps)
 
-## Quick overview of how to make an API call
+## Make an API call
+
+To make an API call, you first need an access token.
 
 1. Get an access token
 
@@ -90,29 +76,11 @@ for details including:
     [`POST:/accesstoken/get`](https://vippsas.github.io/vipps-developer-docs/api/access-token#tag/Authorization-Service/operation/fetchAuthorizationTokenUsingPost)
     and passing the `client_id`, `client_secret` and `Ocp-Apim-Subscription-Key`.
 
-    ```http
-    curl https://apitest.vipps.no/accessToken/get \
-    -H "client_id: REPLACE-WITH-YOUR-CLIENT-ID" \
-    -H "client_secret: REPLACE-WITH-YOUR-CLIENT-SECRET" \
-    -H "Ocp-Apim-Subscription-Key: REPLACE-WITH-YOUR-SUBSCRIPTION-KEY" \
-    -X POST
-    ```
+    See the [Access Token API Guide](https://vippsas.github.io/vipps-developer-docs/docs/APIs/access-token-api) for more details about the parameters and responses.
 
-    This is described in detail in the [Access token API guide](https://vippsas.github.io/vipps-developer-docs/docs/APIs/access-token-api).
+2. Send a request
 
-   Your integration should include all the [standard Vipps HTTP headers](common-topics/http-headers.md), so that we can help you find debugging information in the logs.
-
-    ```http
-    -H "Merchant-Serial-Number: YOUR-MERCHANT-ACCOUNT-NUMBER" \
-    -H "Vipps-System-Name: Acme Enterprises Ecommerce DeLuxe" \
-    -H "Vipps-System-Version: 3.1.2" \
-    -H "Vipps-System-Plugin-Name: Point Of Sale Excellence" \
-    -H "Vipps-System-Plugin-Version 4.5.6" \
-    ```
-
-2. Make an API request
-
-    Use the access token (JWT) from the previous step (including the case-sensitive `Bearer` keyword) to provide authentication in other API requests.
+    Use the access token from the previous step (including the case-sensitive `Bearer` keyword) to provide authentication in other API requests.
 
     For example,
     [`POST:/ecomm/v2/payments`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Vipps-eCom-API/operation/initiatePaymentV3UsingPOST):

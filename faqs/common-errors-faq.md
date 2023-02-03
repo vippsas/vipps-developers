@@ -76,7 +76,7 @@ Please follow these steps to make sure everything is correct:
 2. Check that you are using the correct API credentials for the MSN (Merchant Serial Number)
    you are using
    (See
-   [Getting started: Quick overview of how to make an API call](../vipps-getting-started.md#quick-overview-of-how-to-make-an-api-call) for more details):
+   [Common topics: How to use the API keys](../common-topics/api-keys.md#how-to-use-the-api-keys) for more details):
    * `client_id`
    * `client_secret`
    * `Ocp-Apim-Subscription-Key` (the subscription key)
@@ -114,12 +114,12 @@ You can use
 to manually do API calls, Use the "inspect" functionality to see the complete
 requests and responses, and to check that the API keys are correct.
 
-You also need to make sure you have access to the right API.
+You should also ensure you have access to the correct API.
 See:
 [API products](../README.md#api-products).
 
 See:
-[Quick overview of how to make an API call](../vipps-getting-started.md#quick-overview-of-how-to-make-an-api-call).
+[Getting started: Make an API call](../vipps-getting-started.md#make-an-api-call).
 
 If you are absolutely, completely 100 % sure that you have done everything
 correctly, and it _still_ doesn't work, you can regenerate the API keys on
