@@ -53,22 +53,6 @@ Some common errors:
   cannot pay businesses. Vipps cannot give more details. This error also occurs
   if using a non-Norwegian phone number. Look for related questions in this FAQ.
 
-An example: For `POST:/accesstoken/get`, the error may be like this if you send an invalid `client_id`:
-
-```json
-{
-    "error": "unauthorized_client",
-    "error_description": "AADSTS700016: Application with identifier '4204662b (truncated)' was not found in the directory 'VIPPS-TEST'. This can happen if the application has not been installed by the administrator of the tenant or consented to by any user in the tenant. You may have sent your authentication request to the wrong tenant.\r\nTrace ID: 05d8ee66-30c4- (truncated)\r\nCorrelation ID: 7685939b-(truncated)\r\nTimestamp: 2022-11-17 11:37:08Z",
-    "error_codes": [
-        700016
-    ],
-    "timestamp": "2022-11-17 11:37:08Z",
-    "trace_id": "05d8ee66-30c4-4ec0-b099-be28c4f30f00",
-    "correlation_id": "7685939b-ae73-4041-8059-5a590140e73a",
-    "error_uri": "https://login.windows.net/error?code=700016"
-}
-```
-
 ## Why do I get `HTTP 401 Unauthorized`?
 
 This means you are using the wrong API keys or Authorization header.
