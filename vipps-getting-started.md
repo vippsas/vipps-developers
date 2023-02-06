@@ -80,55 +80,18 @@ To make an API call, you first need an access token.
 
 2. Send a request
 
-    Use the access token from the previous step (including the case-sensitive `Bearer` keyword) to provide authentication in other API requests.
-
-    For example,
-    [`POST:/ecomm/v2/payments`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Vipps-eCom-API/operation/initiatePaymentV3UsingPOST):
-
-    ```http
-    curl https://apitest.vipps.no/ecomm/v2/payments \
-    -H "Authorization: Bearer <TOKEN>" \
-    -H "Ocp-Apim-Subscription-Key: YOUR-SUBSCRIPTION-KEY" \
-    -H "Content-Type: application/json" \
-    -H "Merchant-Serial-Number: YOUR-MERCHANT-ACCOUNT-NUMBER" \
-    -H "Vipps-System-Name: Acme Enterprises Ecommerce DeLuxe" \
-    -H "Vipps-System-Version: 3.1.2" \
-    -H "Vipps-System-Plugin-Name: Point Of Sale Excellence" \
-    -H "Vipps-System-Plugin-Version 4.5.6" \
-    -X POST \
-    -d '{
-        "merchantInfo": {
-          "callbackPrefix":"https://example.com/vipps/callbacks-for-payment-update-from-vipps",
-          "fallBack": "https://example.com/vipps/fallback-result-page-for-both-success-and-failure/acme-shop-123-order123abc",
-          "merchantSerialNumber": "YOUR-MERCHANT-ACCOUNT-NUMBER"
-        },
-        "customerInfo": {
-          "mobileNumber": "YOUR-PHONE-NUMBER"
-        },
-        "transaction": {
-          "amount": 49900,
-          "orderId": "2810171674485753715",
-          "transactionText": "Transaction text to be displayed in Vipps.",
-          "skipLandingPage": false
-    }'
-    ```
-
-See the [eCom Quick start guide](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api-quick-start)
+    See the [ePayment Getting started guide](https://vippsas.github.io/vipps-developer-docs/docs/APIs/epayment-api/getting-started)
 to try this out in the Postman environment. It provides a step-by-step guide with examples that you can experiment with.
 
-Problems? See:
 
-* [FAQ: Common errors](./faqs/common-errors-faq.md)
-* [HTTP response codes](./common-topics/http-response-codes.md)
-
-### Check for errors with the API Dashboard
+## Check the API Dashboard
 
 All merchants have access to the
 [API Dashboard](./developer-resources/api-dashboard.md).
 We strongly recommend to use that for detecting errors in the API use,
 in addition to normal monitoring.
 
-## Next step: Quick start guides
+## Experiment with the quick start guides
 
 If you are ready to try out some API request, head over to the
 [Quick start guides](quick-start-guides.md) page and read about creating your own test set up!

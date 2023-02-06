@@ -118,9 +118,6 @@ You should also ensure you have access to the correct API.
 See:
 [API products](../README.md#api-products).
 
-See:
-[Getting started: Make an API call](../vipps-getting-started.md#make-an-api-call).
-
 If you are absolutely, completely 100 % sure that you have done everything
 correctly, and it _still_ doesn't work, you can regenerate the API keys on
 [portal.vipps.no](https://portal.vipps.no).
