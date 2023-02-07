@@ -87,27 +87,33 @@ The user then visits Store B to return some goods. Store B wants to be able to r
 
 **Recommended solutions:**
 
-**A:** If
+**A:**
 [Partner keys](https://vippsas.github.io/vipps-developer-docs/docs/vipps-partner/partner-keys)
-are used for all stores
+are used for all stores:
+
 Stores must be able to search for `orderId` for payments made in other stores. The cashier can then search and select `orderId` from Store A and click `refund`.  
 **Technical:** Use
 [Partner keys](https://vippsas.github.io/vipps-developer-docs/docs/vipps-partner/partner-keys)
-to authenticate, add `Merchant-Serial-Number` from Store A to the request header and original `orderId` to the [refund](https://vippsas.github.io/vipps-ecom-api/#/Vipps%20eCom%20API/refundPaymentUsingPOST) request.
+to authenticate, add `Merchant-Serial-Number` from Store A to the request header and original `orderId` to the
+[refund](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Vipps-eCom-API/operation/refundPaymentUsingPOST) request.
 
 NB: With
-[Partner keys](https://vippsas.github.io/vipps-developer-docs/docs/vipps-partner/partner-keys)
-, do not let the cashier input `Merchant-Serial-Number` themselves. These must be locked and connected to the store selection to reduce risk of adding the wrong store.
+[Partner keys](https://vippsas.github.io/vipps-developer-docs/docs/vipps-partner/partner-keys),
+do not let the cashier input `Merchant-Serial-Number` themselves. These must be locked and connected to the store selection to reduce risk of adding the wrong store.
 
-**B:** If
+**B:**
 [Partner keys](https://vippsas.github.io/vipps-developer-docs/docs/vipps-partner/partner-keys)
-are not used
-In this case a centralized system needs to store credentials from all sale units within the enterprise.
-Store B must be able to request a `refund` from the central system based on the original `orderId` and location for the order origin (Store A).  
-**Technical:** Use Store A credentials to authenticate, add original `orderId` to the [refund](https://vippsas.github.io/vipps-ecom-api/#/Vipps%20eCom%20API/refundPaymentUsingPOST) request.
+are not used:
 
-**C:** Use same sale unit for all locations
-It is possible to use one sale unit (one MSN) for all stores, and use a prefix in the `orderId` to identify which orders belong to which sale units.
+In this case, a centralized system needs to store credentials from all sale units within the enterprise.
+Store B must be able to request a `refund` from the central system based on the original `orderId` and location for the order origin (Store A).
+**Technical:** Use Store A credentials to authenticate, add original `orderId` to the
+[refund](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Vipps-eCom-API/operation/refundPaymentUsingPOST)
+request.
+
+**C:** Same sale unit is used for all locations:
+
+It is possible to use one sale unit (one MSN) for all stores and use a prefix in the `orderId` to identify which orders belong to which sale units.
 This will result in having one settlement for all. You decide what the `orderId` contains, and it may be up to 50 characters.
 See: [orderId recommendation](../common-topics/orderid.md).
 You will use the same API keys for all stores.
@@ -115,7 +121,7 @@ You will use the same API keys for all stores.
 ## Distance selling from a POS solution
 
 Due to compliance requirements in a payment situation where customer is not present, we recommend implementing the
-[Order Management API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/order-management-api/vipps-order-management-api).
+[Order management API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/order-management-api/vipps-order-management-api).
 This allows the merchants to send rich receipt information to existing Vipps transactions.
 This information is visible for the customer in the app in their order history.
 
@@ -207,4 +213,4 @@ See:
 
 ## How can we mass sign up merchants?
 
-See: [Vipps Partners: How to sign up new merchants](https://vippsas.github.io/vipps-developer-docs/docs/vipps-partner/#how-to-sign-up-new-merchants).
+See: [Vipps Partners: How to sign up new merchants](https://vippsas.github.io/vipps-developer-docs/docs/vipps-partner#how-to-sign-up-new-merchants).
