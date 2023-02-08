@@ -84,10 +84,8 @@ Having two active keys enables you to
 regenerate one subscription key, while still using the other key, without downtime.
 If you want, you can just ignore the second key.
 
-**Please note:** The header which supplies this subscription key for the Vipps API either
-`Vipps-Subscription-Key` or `Ocp-Apim-Subscription-Key`, as specified in your API.
-The background for this is that `Vipps-Subscription-Key` was previously called `Ocp-Apim-Subscription-Key`.
-The legacy name `Ocp-Apim-Subscription-Key` _must still be used in most requests and code_.
+**Please note:** The header which supplies this subscription key for the Vipps API is
+`Ocp-Apim-Subscription-Key`.
 
 ## Historical note
 
