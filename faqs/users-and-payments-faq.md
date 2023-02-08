@@ -56,7 +56,7 @@ Yes, but only as part ofg a payment or login.
 
 Vipps offers the possibility for merchants to ask the user for information
 as part of the payment flow with
-[Userinfo](../common-topics/userinfo.md).
+[Userinfo](https://vippsas.github.io/vipps-developer-docs/docs/APIs/userinfo-api).
 
 This is done by adding a `scope` parameter to the initiate calls:
 [`POST:/ecomm/v2/payments`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Vipps-eCom-API/operation/initiatePaymentV3UsingPOST) (eCom)

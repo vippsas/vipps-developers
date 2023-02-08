@@ -25,5 +25,4 @@ These are topics that are applicable across many APIs:
 * [Timeouts](timeouts.md)
 * [TransactionText](transactiontext.md)
 * [URL validation](url-validation.md)
-* [User Info](userinfo.md)
 * [Vipps landing page](vipps-landing-page.md)
