@@ -176,7 +176,7 @@ personal data with the merchant. Merchants can use the built-in functionality to
 get the user's consent to share personal data -  such as phone number, name,
 e-mail address and address.
 See
-[Userinfo](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/common-topics/userinfo)
+[Userinfo](https://vippsas.github.io/vipps-developer-docs/docs/APIs/userinfo-api)
 and
 [Express checkout](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api#express-checkout-payments).
 
@@ -198,8 +198,8 @@ The `orderId` is specified by the merchant. See the
 [orderId recommendations](../common-topics/orderid.md).
 
 Use
-[Userinfo](../common-topics/userinfo.md)
-to get customer's consent to share name, email address, etc.
+[Userinfo](https://vippsas.github.io/vipps-developer-docs/docs/APIs/userinfo-api)
+to get the customer's consent to share name, email address, etc.
 
 **Please note:** Vippsnummer is not legal for payments where the customer is
 not physically present. It does also not comply with the Treasury Act, (_Kassaloven_).
