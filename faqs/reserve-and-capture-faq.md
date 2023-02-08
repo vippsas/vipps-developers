@@ -246,8 +246,6 @@ The only ways to initiate Vipps payments from a QR code are:
   [portal.vipps.no](https://portal.vipps.no).
   Vippsnummer cannot be used for online sales, etc, as it does not meet the
   legal requirements.
-* [Vipps i terminal](https://www.vipps.no/produkter-og-tjenester/privat/vipps-i-terminal/vipps-i-terminal/):
-  Merchant-presented, dynamic QR shown on the display of a payment terminal.
 
 See: [The Vipps QR API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/qr-api).
 
