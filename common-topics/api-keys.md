@@ -12,7 +12,7 @@ When you start using the Vipps API, you will need to provide API keys.
 These are like passcodes that confirm your identity and that your API request is valid.
 
 Your API keys are specific for your sale unit and you will use them to interact with all the
-[Vipps API products](../README.md#api-products).
+[Vipps API products](https://vippsas.github.io/vipps-developer-docs/docs/APIs).
 
 The same API keys are used for many types of integration:
 Direct integration, native apps for iOS and Android, point of sale integrations,

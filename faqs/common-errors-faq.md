@@ -116,7 +116,7 @@ requests and responses, and to check that the API keys are correct.
 
 You should also ensure you have access to the correct API.
 See:
-[API products](../README.md#api-products).
+[API products](https://vippsas.github.io/vipps-developer-docs/docs/APIs).
 
 If you are absolutely, completely 100 % sure that you have done everything
 correctly, and it _still_ doesn't work, you can regenerate the API keys on
