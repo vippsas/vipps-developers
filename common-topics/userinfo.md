@@ -6,7 +6,7 @@ pagination_prev: null
 ---
 END_METADATA -->
 
-# User information
+# Userinfo
 
 This is applicable to:
 
