@@ -8,13 +8,6 @@ END_METADATA -->
 
 # Userinfo
 
-This is applicable to:
-
-* [Checkout API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/checkout-api)
-* [eCom API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api)
-* [Login API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/login-api)
-* [Recurring API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api)
-
 Vipps offers the possibility for merchants to ask for the user's profile information as part of the payment flow.
 This is done through Vipps Userinfo which follows
 the [OIDC Standard](https://openid.net/specs/openid-connect-core-1_0.html#UserInfo).
@@ -34,19 +27,12 @@ Example of the userInfo flow:
 
 ![User info flow](images/userinfo-flow.png)
 
-<!-- START_COMMENT -->
+This is applicable to:
 
-## Table of contents
-
-* [Scope](#scope)
-* [Userinfo call-by-call guide](#userinfo-call-by-call-guide)
-* [Get userinfo](#get-userinfo)
-* [Userinfo call](#userinfo-call)
-  * [Request](#request)
-* [Consent](#consent)
-
-<!-- END_COMMENT -->
-
+* [Checkout API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/checkout-api)
+* [eCom API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api)
+* [Login API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/login-api)
+* [Recurring API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api)
 
 ## Scope
 

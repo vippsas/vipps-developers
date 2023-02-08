@@ -13,37 +13,6 @@ END_METADATA -->
 ℹ️ Please use the new documentation:
 [Vipps Technical Documentation](https://vippsas.github.io/vipps-developer-docs/).
 
-## Table of Contents
-
-- [Versioning](#versioning)
-  - [Version number in the endpoint URIs](#version-number-in-the-endpoint-uris)
-- [Lifecycle](#lifecycle)
-  - [Major version](#major-version)
-  - [Minor version](#minor-version)
-  - [Patch version](#patch-version)
-- [Notice of deprecation](#notice-of-deprecation)
-  - [How Vipps will inform](#how-vipps-will-inform)
-    - [Email](#email)
-    - [Mailing list](#mailing-list)
-    - [Key accounts](#key-accounts)
-    - [Make sure Vipps has the correct contact information](#make-sure-vipps-has-the-correct-contact-information)
-  - [Vipps APIs](#vipps-apis)
-  - [Vipps API documentation](#vipps-api-documentation)
-- [Backwards compatibility](#backwards-compatibility)
-  - [Adding an optional field to a request](#adding-an-optional-field-to-a-request)
-    - [Example](#example)
-  - [Adding an optional field to a response](#adding-an-optional-field-to-a-response)
-    - [Example](#example-of-option-field)
-  - [Adding a new enum value](#adding-a-new-enum-value)
-  - [Relaxing some of the constraints on an existing request parameter](#relaxing-some-of-the-constraints-on-an-existing-request-parameter)
-  - [Adding a new response parameter to the API response](#adding-a-new-response-parameter-to-the-api-response)
-  - [Changing the order in which parameters are returned in existing API responses](#changing-the-order-in-which-parameters-are-returned-in-existing-api-responses)
-  - [Correcting faulty functionality in edge cases](#correcting-faulty-functionality-in-edge-cases)
-- [Breaking changes](#breaking-changes)
-  - [Changing the properties of an object](#changing-the-properties-of-an-object)
-  - [Adding a new required parameter](#adding-a-new-required-parameter)
-  - [Changing an endpoints URL](#changing-an-endpoints-url)
-
 <!-- END_COMMENT -->
 
 ## Versioning

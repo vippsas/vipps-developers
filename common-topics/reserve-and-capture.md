@@ -8,15 +8,6 @@ END_METADATA -->
 
 # Reserve and capture
 
-This is applicable to:
-
-* [Checkout API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/checkout-api)
-* [eCom API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api)
-* [ePayment API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/epayment-api)
-* [Partner API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/partner-api)
-* [PSP API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/psp-api)
-* [Recurring API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api)
-
 When you initiate a payment, it will be _reserved_ until you _capture_ it:
 
 * When a payment is reserved it means the customer has approved the payment.
@@ -52,17 +43,14 @@ Important things to consider:
   It is also possible to capture the full amount
   with multiple captures ("partial capture").
 
-<!-- START_COMMENT -->
+This is applicable to:
 
-## Table of contents
-
-* [Reserve](#reserve)
-* [Capture](#capture)
-  * [Reserve capture](#reserve-capture)
-  * [Direct capture](#direct-capture)
-  * [Partial capture](#partial-capture)
-
-<!-- END_COMMENT -->
+* [Checkout API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/checkout-api)
+* [eCom API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api)
+* [ePayment API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/epayment-api)
+* [Partner API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/partner-api)
+* [PSP API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/psp-api)
+* [Recurring API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api)
 
 ## Reserve
 

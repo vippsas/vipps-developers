@@ -8,15 +8,6 @@ END_METADATA -->
 
 # Recommendations for orderId/reference
 
-This is applicable to:
-
-* [Checkout API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/checkout-api)
-* [eCom API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api)
-* [ePayment API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/epayment-api)
-* [Order Management API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/order-management-api)
-* [PSP API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/psp-api)
-* [QR API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/qr-api)
-* [Recurring API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api)
 
 An `orderId` (also called `reference`) must be unique for the sale unit Merchant Serial Number (MSN) (i.e., the id of
 the sale unit). The `orderId` does not need to be globally unique, so several
@@ -30,15 +21,17 @@ instead of just `123456`.
 processing in the Vipps systems to be slower, and this *can* cause problems, such as timeouts.
 Use the recommended format to avoid problems.
 
-<!-- START_COMMENT -->
 
-## Table of contents
+This is applicable to:
 
-* [Use user-friendly orderIds](#use-user-friendly-orderids)
-* [Multiple sale units](#multiple-sale-units)
-* [Multiple attempts](#multiple-attempts)
+* [Checkout API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/checkout-api)
+* [eCom API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api)
+* [ePayment API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/epayment-api)
+* [Order Management API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/order-management-api)
+* [PSP API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/psp-api)
+* [QR API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/qr-api)
+* [Recurring API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api)
 
-<!-- END_COMMENT -->
 ## Use user-friendly orderIds
 
 If you ever have a problem that requires us to search in our logs, we need an

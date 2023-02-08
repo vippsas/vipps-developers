@@ -8,13 +8,6 @@ END_METADATA -->
 
 # The Vipps landing page
 
-This is applicable to:
-
-* [eCom API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api)
-* [Partner API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/partner-api)
-* [PSP API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/psp-api)
-* [Recurring API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api)
-
 When a user is directed to the `url`,
 they will either be taken to Vipps or to the Vipps landing page:
 
@@ -57,14 +50,12 @@ merchant's website, and result in a lower success rate.
 In general: Any "optimization" of the payment flow may break the Vipps payment
 flow - if not today, then later.
 
-<!-- START_COMMENT -->
+This is applicable to:
 
-## Table of contents
-
-- [Generating a QR code to the Vipps landing page](#generating-a-qr-code-to-the-vipps-landing-page)
-- [Skip landing page](#skip-landing-page)
-
-<!-- END_COMMENT -->
+* [eCom API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api)
+* [Partner API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/partner-api)
+* [PSP API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/psp-api)
+* [Recurring API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api)
 
 ## Generating a QR code to the Vipps landing page
 

@@ -8,16 +8,7 @@ END_METADATA -->
 
 # Timeouts
 
-In short: The user has 10 minutes to accept the payment.
-
-<!-- START_COMMENT -->
-
-## Table of contents
-
-- [Using a phone](#using-a-phone)
-- [Using a PC](#using-a-pc)
-
-<!-- END_COMMENT -->
+The user has 10 minutes to accept the payment.
 
 ## Using a phone
 
