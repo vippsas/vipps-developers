@@ -9,86 +9,65 @@ END_METADATA -->
 
 # Getting started
 
-<!-- START_COMMENT -->
+Hello and welcome to Vipps!
 
-ℹ️ Please use the new documentation:
-[Vipps Technical Documentation](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/vipps-getting-started).
+The first step towards integrating your business with Vipps is to [apply for Vipps services](#apply-for-vipps-services).
 
-<!-- END_COMMENT -->
+The second step is to order the product that you want to use. Here are the most common API products:
+
+- [eCom API (_Vipps På Nett_)](/docs/APIs/ecom-api) - Allow your customer to pay with Vipps on your internet site or app.
+- [Recurring API (_Vipps Faste Betalinger_)](/docs/APIs/recurring-api) - Allow your customers to set up recurring payments (e.g., for subscriptions, membership, regular donations, etc.) through Vipps.
+- [Login API (_Vipps Logg Inn_)](/docs/APIs/login-api) - Allow your customer to log in to your site by using their Vipps account.
+
+See [Vipps APIs](/docs/APIs) for a complete list of API products.
+
+For a Norwegian overview of the products, see [vipps.no: Produkter og tjenester](https://vipps.no/produkter-og-tjenester/bedrift/).
 
 
 ## Apply for Vipps services
 
-Apply for vipps services on [portal.vipps.no](https://portal.vipps.no).
-
-You need to have a Norwegian organization number, applications must be signed with Norwegian BankID,
-you must apply for a _Merchant Agreement_ and order a Vipps service.
+You can apply for Vipps services on [portal.vipps.no](https://portal.vipps.no).
 See
 [Requirements for applying for a Vipps service](./common-topics/requirements.md).
 
-As soon as the _Merchant Agreement_ has been approved and a product order is sent,
-access to the
-[Vipps test environment (MT)](test-environment.md)
-will be provided by email to the user associated with the product order.
+**Please note:** If you plan to use Vipps through a PSP, you must
+order the Vipps solution from the PSP.
+They will also help you with developer access to their systems.
 
-If you have questions about your application, please check the status on
-[portal.vipps.no](https://portal.vipps.no) or
-[contact customer service](https://www.vipps.no/kontakt-oss/bedrift/).
+Vipps is required to perform a background check on all merchants who want to use Vipps services, so it might take a few days before you hear back from us.
+You can check the status of your application on [portal.vipps.no](https://portal.vipps.no) or
+by contacting [customer service](https://www.vipps.no/kontakt-oss/bedrift/).
 
-**Please note:** If you plan to use Vipps through a PSP, you will have to
-order the appropriate Vipps solution from the PSP,
-and have _them_ help you with developer access to their systems.
+When the _Merchant Agreement_ is approved and a product order is sent,
+you (or the user associated with the product order) will receive an email
+with the name and serial number for your test sale unit along with credentials for logging into the
+Vipps test app.
 
-## Get your API keys
+Then, you will have everything you need to start testing with the Vipps APIs.
 
-When your application has been processed, Vipps will send an email
-informing you that the API keys can be retrieved. This means that you are ready to start
-testing!
-
-Read the
-[API keys](./common-topics/api-keys.md) page to make sure you understand what the API keys are
-and how to find them.
+When your product order is approved, you will get an email stating that you can
+get your production [API keys](./common-topics/api-keys.md) on [portal.vipps.no](https://portal.vipps.no).
 
 ## Get set up in the test environment
 
-You will use the Merchant Test (MT) environment to test your integrations.
+Start by getting your test sale unit's [API keys](./developer-resources/portal.md#how-to-find-the-api-keys).
+You will need these for providing your authentication when running the Vipps API commands.
+See [API keys](./common-topics/api-keys.md) for more information.
 
-Review the [Test Environment (MT)](test-environment.md) page for details including:
+Download a [Vipps test app](./test-environment.md#vipps-test-apps).
+When you run API commands against the [test server](./test-environment.md#test-server),
+you will be able to interact by using your Vipps test app.
 
-- [Test server](test-environment.md#test-server)
-- [Test merchants](test-environment.md#test-merchants)
-- [Test users](test-environment.md#test-users)
-- [Vipps test apps](test-environment.md#vipps-test-apps)
+You will also need a place to run the API commands (e.g., create payment, cancel payment, refund payment). We recommend [Postman](https://learning.postman.com/docs/getting-started/introduction/) and we have several [Quick start guides](quick-start-guides.md) to help you get started.
 
-## Make an API call
-
-To make an API call, you first need an access token.
-
-1. Get an access token
-
-    All Vipps API calls are authenticated and authorized with an access token
-    (JWT bearer token) and an API subscription key.
-
-    The access token is obtained by calling
-    [`POST:/accesstoken/get`](https://vippsas.github.io/vipps-developer-docs/api/access-token#tag/Authorization-Service/operation/fetchAuthorizationTokenUsingPost)
-    and passing the `client_id`, `client_secret` and `Ocp-Apim-Subscription-Key`.
-
-    See the [Access Token API Guide](https://vippsas.github.io/vipps-developer-docs/docs/APIs/access-token-api) for more details about the parameters and responses.
-
-2. Send a request
-
-    See the [ePayment getting started guide](https://vippsas.github.io/vipps-developer-docs/docs/APIs/epayment-api/getting-started)
-    for a step-by-step guide with examples that you can experiment with.
+Learn all about the test environment on the [Vipps test environment (MT)](test-environment.md) page.
 
 
-## Check the API Dashboard
+## Best practices
 
-All merchants have access to the
-[API Dashboard](./developer-resources/api-dashboard.md).
-We strongly recommend to use that for detecting errors in the API use,
+It is very important that you check the return response of each API call.
+You will get information about potential problems that could cause the customers problems or might cause you to lose money.
+
+We strongly recommend to use the [API Dashboard](./developer-resources/api-dashboard.md) for detecting errors in the API use,
 in addition to normal monitoring.
 
-## Experiment with the quick start guides
-
-If you are ready to try out some API request, head over to the
-[Quick start guides](quick-start-guides.md) page and read about creating your own test set up!
