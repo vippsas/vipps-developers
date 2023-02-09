@@ -24,7 +24,7 @@ Apply for vipps services on [portal.vipps.no](https://portal.vipps.no).
 You need to have a Norwegian organization number, applications must be signed with Norwegian BankID,
 you must apply for a _Merchant Agreement_ and order a Vipps service.
 See
-[Common topics: Requirements for applying for a Vipps service](./common-topics/requirements.md).
+[Requirements for applying for a Vipps service](./common-topics/requirements.md).
 
 As soon as the _Merchant Agreement_ has been approved and a product order is sent,
 access to the
@@ -49,14 +49,11 @@ Read the
 [API keys](./common-topics/api-keys.md) page to make sure you understand what the API keys are
 and how to find them.
 
-
 ## Get set up in the test environment
 
-You will use the Merchant Test (MT) environment to create test sale units.
+You will use the Merchant Test (MT) environment to test your integrations.
 
-Review the
-[The Vipps Test Environment (MT)](test-environment.md)
-page for details including:
+Review the [Test Environment (MT)](test-environment.md) page for details including:
 
 - [Test server](test-environment.md#test-server)
 - [Test merchants](test-environment.md#test-merchants)
@@ -80,8 +77,8 @@ To make an API call, you first need an access token.
 
 2. Send a request
 
-    See the [ePayment Getting started guide](https://vippsas.github.io/vipps-developer-docs/docs/APIs/epayment-api/getting-started)
-to try this out in the Postman environment. It provides a step-by-step guide with examples that you can experiment with.
+    See the [ePayment getting started guide](https://vippsas.github.io/vipps-developer-docs/docs/APIs/epayment-api/getting-started)
+    for a step-by-step guide with examples that you can experiment with.
 
 
 ## Check the API Dashboard
