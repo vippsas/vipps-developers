@@ -225,6 +225,8 @@ Or: `Merchant not available or active`.
 Please check that the merchant's organization number is still active in
 [Brønnøysundregistrene](https://www.brreg.no). Vipps automatically deactivates
 merchants (companies) when they are deleted from Brønnøysundregistrene.
+This can also happen if a merchant changes organization type, for instance
+from ENK to AS.
 
 Merchants can log in on
 [portal.vipps.no](https://portal.vipps.no)
@@ -235,12 +237,17 @@ the merchant can reactivate it again.
 **Please note:** We require BankID for deactivation and reactivation,
 and cannot help with this based on email requests.
 
-Deactivation can also happen if the test merchant is not being used for a _very long_ time.
-Please
+Deactivation can also happen if the test merchant is not being used for a
+_very long_ time. Please
 [contact customer service](https://vipps.no/kontakt-oss/bedrift/vipps/),
 and we will reactivate the merchant.
 
-We no longer automatically deactivate test merchants.
+Partners that use
+[partner keys](https://vippsas.github.io/vipps-developer-docs/docs/vipps-partner/partner-keys)
+can also get this error if the partner itself is deactivated, even though
+the sale unit (that it is acting on behalf of) is active.
+
+**Please note:** We no longer automatically deactivate test merchants.
 Merchants can also create new sale units in the test environment on
 [portal.vipps.no](https://portal.vipps.no).
 
