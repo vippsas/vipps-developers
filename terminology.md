@@ -67,7 +67,8 @@ END_METADATA -->
 * National identity number: An 11 digit number that uniquely identifies
   each Norwegian citizen.
 
-* `Ocp-Apim-Subscription-Key` - See `Vipps-Subscription-Key`.
+* `Ocp-Apim-Subscription-Key` - The header which supplies the subscription key,
+  `Vipps-Subscription-Key`, for the Vipps API.
 
 * `orderId` - The API parameter that supplies a unique identifier for the
   payment. This is the same as `reference`. Newer APIs will use `reference`
@@ -105,11 +106,10 @@ END_METADATA -->
 * Sale unit - A merchant can have one or more sale units. It may be different
   brands, different physical locations, different services, etc.
 
-* `Vipps-Subscription-Key` - The header which supplies the subscription key
-  for the Vipps API. This is one of the API keys that is retrieved by logging
-  in on [portal.vipps.no](https://portal.vipps.no). Note that
-  `Vipps-Subscription-Key` was previously called `Ocp-Apim-Subscription-Key`,
-  but some APIs still use the previous name.
+* `Vipps-Subscription-Key` - This subscription key is retrieved by logging
+  in on [portal.vipps.no](https://portal.vipps.no).
+  The header which supplies the subscription key to the Vipps API is
+  `Ocp-Apim-Subscription-Key`.
 
 ## Commonly used Norwegian words
 
