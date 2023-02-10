@@ -23,6 +23,7 @@ Content-Language: en
    "title":"Your request parameters didn't validate.",
    "detail":"The request body contains one or more errors",
    "instance":"123e4567-e89b-12d3-a456-426655440000",
+   "status":"400",
    "extraDetails":[
       {
          "name":"amount",
