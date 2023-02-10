@@ -17,22 +17,24 @@ END_METADATA -->
 
 <!-- END_COMMENT -->
 
-## API products
+Start your journey in the [Getting started](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/vipps-getting-started) guide.
+This leads you through applying for Vipps services and getting the test environment.
 
-Here are the most common API products:
+Quick links:
 
-- [Checkout API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/checkout-api) - Provide a complete Checkout solution for both Vipps and card payments with auto-fill and shipping integrations.
-- [eCom API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api) - Offer Vipps as a method of payment. Offer a quick checkout option where Vipps is the method of payment and the shipping options are specified directly from the Vipps app. This is also known as Vipps Online (_Vipps På Nett_) and Vipps Express Checkout (_Vipps Hurtigkasse_).
-- [ePayment API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/epayment-api) - In combination with Checkout API, apply payments, -This is the new version of eCom API.
-- [Login API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/login-api) - Allow the customer to log in by using their Vipps account.
-- [QR API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/qr-api) - Use QR codes to allow customers to connect to Vipps and purchase from your store.
-- [Recurring API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api) - A business or organization can allow their customers to set up recurring payments (e.g., for subscriptions, membership, regular donations, etc.) through Vipps. This is also known as _Vipps Faste Betalinger_.
+* [Vipps test environment](./test-environment.md) - Find the test app.
+* [API keys](./common-topics/api-keys.md) - Find your api keys.
 
-You can learn about all the products in the [Vipps APIs](https://vippsas.github.io/vipps-developer-docs/docs/APIs) section.
+Dive deeper with:
+
+* [Developer resources](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/developer-resources) - API dashboard, demo store, design guidelines, Vipps portal, status pages, etc.
+* [Common API topics](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/common-topics) - API keys, API lifecycle, authentication, HTTP headers, polling guidelines, reserve and capture, userinfo, Vipps landing page, etc.
+* [Frequently asked questions](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/faqs) - Requirements, common problems, refunds, users and payments, Vipps landing page, problems for end users, etc.
 
 
 
-For an overview of all products, in Norwegian, see [vipps.no](https://vipps.no/produkter-og-tjenester/bedrift/).
+Related topics:
 
-Start your journey in the [Getting Started](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/vipps-getting-started) page.
-This is where you learn about the API keys, test environments, and how to make calls.
+* [Partner information](https://github.com/vippsas/vipps-partner) - Technical information for Vipps partners.
+* [Vipps Plugins](https://vippsas.github.io/vipps-developer-docs/docs/vipps-plugins) - Information about using plugins for your Vipps integration.
+* [Vipps Solutions](https://vippsas.github.io/vipps-developer-docs/docs/vipps-solutions) - Examples that combine several API solutions.
