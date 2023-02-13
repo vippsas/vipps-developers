@@ -79,6 +79,7 @@ Functionality not available in MT (a non-exhaustive list):
   In practice this is extremely rare.
 - Push alerts may be unavailable or unstable. To see payment requests: Open Vipps and manually
   go to the "Betalinger" (i.e., *Payments*) at the bottom of the main screen.
+  You may have to "pull to refresh" on that screen.
   The background for this: The app id for the test and production apps are the same, and we
   are not able to distinguish between the apps when sending push messages.
 - Payment of invoices, both for _Vipps Regninger_ and _Vipps Faktura_
@@ -88,15 +89,17 @@ Functionality not available in MT (a non-exhaustive list):
 - Some quirks around email verification, see [Email address](#email-address).  
 
 To test functionality that is not available in MT, you will have to use the
-production environment in a controlled manner. One example may be to test
-_Vipps Regninger_ with real invoices, but with small amounts. We recommend 2 NOK.
+production environment in a controlled manner.
 
 Other differences between Production and MT:
 
-- There is no equivalent to [portal.vipps.no](https://portal.vipps.no) for the test environment.
-  Payments must be checked with the API, as there is no web interface.
+- There is no equivalent to [portal.vipps.no](https://portal.vipps.no) for the
+  test environment. Payments must be checked with the API.
+- There are no settlements in the test environment, and therefore
+  no settlement reports, not SFTP service and no Report API.
 - We allow 10,000 incorrect PIN attempts before locking the Vipps user's account
-- There are no settlement reports and no SFTP service.
+- The user's email address can not be verified in the normal way.
+  See: [Email address](#email-address).
 
 ## Access to the test environment
 
@@ -122,7 +125,7 @@ on
 [portal.vipps.no](https://portal.vipps.no).
 
 The partner must also:
-1. Explain in the order form that it is only for access to the test environments
+1. Explain in the order form that it is only for access to the test environment.
 2. Notify their partner manager that they only need test access.
 
 Since "Vipps Logg inn" does not require the same regulatory checks (KYC, AML, etc),
@@ -149,7 +152,6 @@ You will, therefore, need to use a different set of API keys for the test enviro
 All Vipps customers can create sales units ("merchants") in the test environment.
 
 See:
-
 - [Developer resources: Vipps portal: How to create a test sales unit](./developer-resources/portal.md#how-to-create-a-test-sales-unit).
 
 **Please note:** Sale units in the _production_ environment must follow strict rules
@@ -197,7 +199,9 @@ If you need additional payment cards, you can add it in the Vipps app.
 
 ### Email address
 
-You can add a real email address on a test user from the *Profile* -> *Personal information* -> *Email* section in the app.
+You can add a real email address on a test user from the
+*Profile* -> *Personal information* -> *Email*
+section in the app.
 
 **Please note:** In MT verification of emails can only be triggered in a
 Vipps Login flow (if the merchant requests email), or from clicking “send email”
@@ -253,7 +257,7 @@ as the test number may be a real phone number for a real Vipps user.
 The iOS test app is available for everyone in Apple TestFlight.
 You do _not_ need an invitation or an activation code.
 
-**Please note:** You only need to log in with your test user, not register.
+**Please note:** You only need to _log in_ with your test user, not register.
 
 1. Open the
    [TestFlight](https://testflight.apple.com/join/hTAYrwea)
@@ -276,7 +280,7 @@ You are now ready to use the iOS test app connected to the Vipps test environmen
 The Android test app is available for everyone in App Center.
 You do _not_ need an invitation or an activation code.
 
-**Please note:** You only need to log in with your test user, not register.
+**Please note:** You only need to _log in_ with your test user, not register.
 
 1. Open the
    [App Center](https://install.appcenter.ms/orgs/vipps/apps/vipps-android/distribution_groups/mt%20testers)
@@ -307,9 +311,3 @@ with details.
 If you use an emulator, and not the native apps installed on
 a phone, you may experience problems - including having to log in "from scratch"
 every time you start Vipps in the emulator.
-
-### Limitations of the test apps
-
-Push alerts may be unstable. To see payment requests: Open Vipps and manually
-go to "Betalinger" (i.e., _Payments_) at the bottom of the main screen.
-You may also need to pull down to refresh.
