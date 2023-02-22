@@ -8,8 +8,8 @@ END_METADATA -->
 
 # The Vipps landing page
 
-When a user is directed to the `url`,
-they will either be taken to Vipps or to the Vipps landing page:
+When a payment is initiated the user is directed to the `url`.
+The user will either be taken to Vipps or to the Vipps landing page:
 
 * In a mobile browser, the Vipps app will automatically be opened with app-switch.
   The result is the same for the `vipps://` and the `https://` URLs.
