@@ -110,8 +110,8 @@ initiates the payment:
   businesses) can not have someone else pay for them.
 * The user is not sent to a `fallback` URL (the result page) after completion
   of the payment.
-  The "result page" is just the confirmation in the Vipps app.
-  The `fallback` URL sent in the API request can simply be the website URL.
+  Instead of the he "result page", the user will just get a confirmation in
+  the Vipps app.
 * If the sale unit is not whitelisted, the request will fail and an error
   message will be returned.
 
