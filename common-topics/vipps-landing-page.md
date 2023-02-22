@@ -75,14 +75,17 @@ for step-by-step examples of generating QR codes and short links for one-time pa
 
 ## Skip landing page
 
-*This functionality is only available for special cases.*
+**Please note:** This functionality is only available for special cases.
 
-Skipping the landing page is reserved for physical points of sale and vending
-machines where no display is available.
+Skipping the landing page is reserved for physical points of sale (POS)
+solutions, vending machines, etc. where the payment is not initiated by the
+user on the user's phone, and when there is no customer-facing display is
+available.
 
-This feature must be specially enabled by Vipps for an eligible sale unit and
-the sale unit must be whitelisted by Vipps.
+Skipping the landing page in other situations
 
+This `skipLandingpage` functionality must be specially enabled by Vipps for each
+sale unit that needs to use it.
 If you need to skip the landing page: Contact your
 Key Account Manager. If you do not have a KAM: Please log in on
 [portal.vipps.no](https://portal.vipps.no),
@@ -95,33 +98,52 @@ after completion of the payment. The "result page" is just the confirmation in
 Vipps. The `fallback` URL sent in the API request can therefore be the
 merchant's main URL, like `https://example.com`, etc.
 
-If the `skipLandingPage` property is set to `true`:
-* It will cause a push notification to be sent immediately to the given
-  phone number, without loading the landing page.
-* The user is not sent to a URL after completion of the payment.
-  The "result page" is just the confirmation in
-  Vipps.
+**Important:** When using `"skipLandingPage": true` in the API request that
+initiates the payment:
+* Vipps will send a push notification immediately to the Vipps app
+  for the user with the specified phone number, without showing the landing page.
+* It is crucial to use the correct format for the user's phone number.
+  If not, the payment will fail.
+* The user is not able to provide a different phone number for completing the
+  payment. This means that a "Vipps for those under 15" (that can not pay
+  businesses) can not have someone else pay for them.
+* The user is not sent to a `fallback` URL (the result page) after completion
+  of the payment.
+  The "result page" is just the confirmation in the Vipps app.
+  The `fallback` URL sent in the API request can simply be the website URL.
 * If the sale unit is not whitelisted, the request will fail and an error
   message will be returned.
 
-**Important:** When using `"skipLandingPage": true`:
+## Sequence diagram
 
-* The user is not able to provide a different phone number for completing the payment.
-* It is crucial to use the correct format for the user's phone number.
-  If not, the payment will fail.
-* The user is not sent to a `fallback` URL after completion of the payment.
-  The "result page" is just the confirmation in Vipps.
-  The `fallback` URL sent in the API request can simply be the website URL.
+This sequence diagram shows the difference between the normal flow and
+the flow with `"skipLandingPage": true`:
 
-If you want to check if a sale unit is allowed to use `skipLandingPage`, see
-the sale unit overview under the "Utvikler" (developer) menu. Or you can check
-by using the API:
+```mermaid
+sequenceDiagram
+    participant M as Merchant
+    participant API as Vipps API
+    participant LP as Landing page
+    participant App as Vipps app
+    actor U as User
+    M-->>API: Initiate payment<br/>with or without skipLandingPage
+    alt Normal flow: skipLandingPage not specified
+        API-->>LP: Show the landing page
+        U-->>LP: Confirm/enter/change phone number
+        LP-->>API: Phone number
+    end
+    API-->>App: Push message: "Payment request"
+    U-->>App: Confirms payment
+    App-->>API: Payment confirmed
+    API-->>M: Payment confirmed
+    alt Normal flow: skipLandingPage not specified
+        API-->>U: Show the merchant's result page
+    else skipLandingpage: true
+        App-->>U: Payment confirmation in app only
+    end
+```    
 
-1. Specify `"skipLandingPage": true`.
-2. Check the response code and message.
-   The API will return an error if attempting to use `skipLandingPage` without being whitelisted.
-
-See FAQ:
+See:
 
 * [Is it possible to skip the landing page](../faqs/vipps-landing-page-faq.md#is-it-possible-to-skip-the-landing-page)
 * [How can I check if I have skipLandingPage activated?](../faqs/vipps-landing-page-faq.md#how-can-i-check-if-i-have-skiplandingpage-activated)
