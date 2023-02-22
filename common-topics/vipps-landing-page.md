@@ -63,7 +63,7 @@ If you have user-facing display, you may want to generate a QR code based on the
 landing page URL, instead of asking the user for their phone number. Scanning
 the QR code will take the user directly to the payment in the Vipps app.
 
-![Demo QR code](images/demo-qr.svg)
+![Demo QR code](images/demo-qr.png)
 
 This is done in cooperation with the Vipps QR API. See
 [One-time payment QR](https://vippsas.github.io/vipps-developer-docs/docs/APIs/qr-api/vipps-qr-api#one-time-payment-qr-codes)
