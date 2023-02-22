@@ -107,7 +107,7 @@ initiates the payment:
   If not, the payment will fail.
 * The user is not able to provide a different phone number for completing the
   payment. This means that a "Vipps for those under 15" (that cannot pay
-  businesses) can not have someone else pay for them.
+  businesses) cannot have someone else pay for them.
 * The user is not sent to a `fallback` URL (the result page) after completion
   of the payment.
   The "result page" is just the confirmation in the Vipps app.
