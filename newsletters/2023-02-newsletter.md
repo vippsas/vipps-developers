@@ -1,7 +1,7 @@
 <!-- START_METADATA
 ---
 sidebar_position: 66
-title: 2022-12
+title: 2023-02
 pagination_next: null
 pagination_prev: null
 draft: true
@@ -12,17 +12,32 @@ END_METADATA -->
 
 💥 DRAFT! 💥
 
-This newsletter was sent in January 2023.
+This newsletter was sent in February 2023.
 
 <!-- START_COMMENT -->
 
 ## Table of Contents
 
+* [Is this is the first time you receive this newsletter?](#is-this-is-the-first-time-you-receive-this-newsletter)
+* [Report API](#report-api)
+* [Changes to the access token endpoint](#changes-to-the-access-token-endpoint)
 * [Reminders](#reminders)
   * [Please check your API calls for errors](#please-check-your-api-calls-for-errors)
 * [Questions or comments?](#questions-or-comments)
 
 <!-- END_COMMENT -->
+
+## Is this is the first time you receive this newsletter?
+
+Hello! All Vipps customers that have API access now receive this technical
+newsletter.
+
+The newsletter is sent 5-10 times a year and contains important updates and
+information about our APIs: https://vippsas.github.io/vipps-developer-docs/docs/APIs
+
+Newsletter archive: https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/newsletters
+
+(You can unsubscribe if you want - see the link at the bottom)
 
 ## Report API
 
