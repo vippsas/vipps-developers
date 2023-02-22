@@ -76,15 +76,14 @@ for step-by-step examples of generating QR codes and short links for one-time pa
 ## Skip landing page
 
 **Please note:** This functionality is only available for special cases.
+Skipping the landing page is only allowed when it is not possible to show it.
 
 Skipping the landing page is reserved for when the payment is initiated on a
 device that the user does not own or control:
 * Not on the user's phone
-* Not on the user's computer.
-* On a device that has no user-facing display where the landing page can be shown
-
-This is typically physical points of sale (POS)
-solutions, vending machines, etc. 
+* Not on the user's computer
+* On a device that has no user-facing display where the landing page can be
+  shown, such as physical points of sale (POS) solutions, vending machines, etc.
 
 This `skipLandingpage` functionality must be specially enabled by Vipps for each
 sale unit that needs to use it.
