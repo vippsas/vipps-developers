@@ -127,7 +127,7 @@ sequenceDiagram
     participant App as Vipps app
     actor U as User
     M-->>API: Initiate payment<br/>with or without skipLandingPage
-    alt Normal flow: skipLandingPage not specified
+    alt Normal flow
         API-->>LP: Show the landing page
         U-->>LP: Confirm/enter/change phone number
         LP-->>API: Phone number
@@ -136,7 +136,7 @@ sequenceDiagram
     U-->>App: Confirms payment
     App-->>API: Payment confirmed
     API-->>M: Payment confirmed
-    alt Normal flow: skipLandingPage not specified
+    alt Normal flow
         API-->>U: Show the merchant's result page
     else skipLandingpage: true
         App-->>U: Payment confirmation in app only
