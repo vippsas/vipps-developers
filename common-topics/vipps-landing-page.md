@@ -110,7 +110,7 @@ initiates the payment:
   businesses) cannot have someone else pay for them.
 * The user is not sent to a `fallback` URL (the result page) after completion
   of the payment.
-  Instead of the he "result page", the user will just get a confirmation in
+  Instead of the "result page", the user will just get a confirmation in
   the Vipps app.
 * If the sale unit is not whitelisted, the request will fail and an error
   message will be returned.
