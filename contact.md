@@ -58,11 +58,15 @@ information to the address below:
 1. **Please: Always include a _detailed_ description of the problem with a step-by-step description of what you do and what happens.**
 2. A concise, self-explanatory `Subject` line, such as "`POST:/something` gives `HTTP 400` response".
 3. Company details: Organization number (find yours at [Brønnøysundregistrene](https://brreg.no))
-4. Merchant Serial Number (MSN, see [Getting started](vipps-getting-started.md))
-5. Which [Vipps product](https://www.vipps.no/produkter-og-tjenester/bedrift/) or [Vipps API](https://vippsas.github.io/vipps-developer-docs/docs/APIs) this is about.
+4. Merchant Serial Number (MSN), found on [portal.vipps.no](https://portal.vipps.no).
+5. Which
+   [Vipps product](https://www.vipps.no/produkter-og-tjenester/bedrift/)
+   or
+   [Vipps API](https://vippsas.github.io/vipps-developer-docs/docs/APIs)
+   is this about?
 6. Environment: Is it a problem in the Test (MT) or the Production environment?
 7. Include `orderId`, and preferably also `transactionId` and `contextId`, to make it possible to search in logs.
-8. Date: On which date did the problem occur?
+8. Date: On which date(s) did the problem occur?
 9. For API issues: We need a complete `request` and `response`.
    Plain HTTP from Postman ensures the quickest response.
    No source code, please.

@@ -18,22 +18,6 @@ in the eCom API FAQs.
 ℹ️ Please use the new documentation:
 [Vipps Technical Documentation](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/faqs).
 
-## Table of contents
-
-* [Why do I get `HTTP 400 Bad Request`?](#why-do-i-get-http-400-bad-request)
-* [Why do I get `HTTP 401 Unauthorized`?](#why-do-i-get-http-401-unauthorized)
-* [Why do I get `HTTP 403 Forbidden`?](#why-do-i-get-http-403-forbidden)
-* [Why do I get `HTTP 429 Too Many Requests`?](#why-do-i-get-http-429-too-many-requests)
-* [Why do I get `HTTP 404 Not Found`?](#why-do-i-get-http-404-not-found)
-* [Why do I get `HTTP 500 Internal Server Error`?](#why-do-i-get-http-500-internal-server-error)
-* [Why do I get `errorCode 35 "Requested Order not found"`?](#why-do-i-get-errorcode-35-requested-order-not-found)
-* [Why do I get `errorCode 37 "Merchant not available or deactivated or blocked"`?](#why-do-i-get-errorcode-37-merchant-not-available-or-deactivated-or-blocked)
-* [Why do I get "Merchant Not Allowed for Ecommerce Payment"?](#why-do-i-get-merchant-not-allowed-for-ecommerce-payment)
-* [Why do I get error 81 and `User not registered with Vipps`?](#why-do-i-get-error-81-and-user-not-registered-with-vipps)
-* [Why do I get an error about having Vipps installed and being 15 years old?](#why-do-i-get-an-error-about-having-vipps-installed-and-being-15-years-old)
-* [Why do I get `Why do I get Invalid MSN: 654321. Check your API keys on portal.vipps.no and see the eCom FAQ for tips.`?](#why-do-i-get-invalid-msn-654321-check-your-api-keys-on-portalvippsno-and-see-the-ecom-faq-for-tips)
-* [Why do I get `Why do I get Invalid MSN: 654321. This MSN is not valid for the provided supermerchant id.`?](#why-do-i-get-invalid-msn-654321-this-msn-is-not-valid-for-the-provided-supermerchant-id)
-
 <!-- END_COMMENT -->
 
 ## Why do I get `HTTP 400 Bad Request`?
@@ -283,11 +267,17 @@ The most common reasons are:
 * The user is under 15 years old and cannot pay businesses.
 * The phone number is not for a Vipps user.
 
-Vipps cannot give more details.
+Vipps cannot give more details, as we cannot "leak" information about a user's
+age, whether a user has been blocked, whether a user has reached its spending
+limit, etc.
 
 ## Why do I get an error about having Vipps installed and being 15 years old?
 
-You are probably attempting to use a real Vipps user in the test environment.
+This can happen when:
+* You attempt to use a real Vipps user in the test environment.
+* You have a brand new test user and have not logged into the test app before
+  trying to make payments, etc.
+
 See:
 [The Vipps Test Environment (MT)](../test-environment.md).
 
@@ -304,7 +294,7 @@ This can happen when:
 
 ## Why do I get `Invalid MSN: 654321. This MSN is not valid for the provided supermerchant id.`?
 
-This error can be caused by the partner making the API request:
+This can happen when the partner making the API request:
 
 * Uses API keys for the test environment in the production environment, or opposite.
 * Uses a MSN for the test environment in the production environment, or opposite.
@@ -312,5 +302,5 @@ This error can be caused by the partner making the API request:
   [partner keys](https://vippsas.github.io/vipps-developer-docs/docs/vipps-partner/partner-keys),
   but does not send the required `Merchant-Serial-Number` header.
 
-Note that there _is no MSN_ in the error message in the example above.
-That means it's missing from the request.
+If the error message is `Invalid MSN: . This MSN is not valid for the provided supermerchant id.`,
+with no MSN specified, it means that the `Merchant-Serial-Number` is missing in the request header.
