@@ -59,6 +59,8 @@ information to the address below:
 2. A concise, self-explanatory `Subject` line, such as "`POST:/something` gives `HTTP 400` response".
 3. Company details: Organization number (find yours at [Brønnøysundregistrene](https://brreg.no))
 4. Merchant Serial Number (MSN), found on [portal.vipps.no](https://portal.vipps.no).
+   See
+   [The Vipps portal](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/developer-resources/portal).
 5. Which
    [Vipps product](https://www.vipps.no/produkter-og-tjenester/bedrift/)
    or
