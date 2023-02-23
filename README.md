@@ -18,11 +18,12 @@ END_METADATA -->
 <!-- END_COMMENT -->
 
 Start your journey in the [Getting started](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/vipps-getting-started) guide.
-This leads you through applying for Vipps services and getting the test environment.
+This leads you through applying for Vipps services and getting set up in the test environment.
 
 Quick links:
 
-* [Vipps test environment](./test-environment.md) - Find the test app.
+* [Getting started](./vipps-getting-started.md) - 
+* [Vipps Merchant Test (MT)](./test-environment.md) - Install the Vipps test app.
 * [API keys](./common-topics/api-keys.md) - Find your api keys.
 
 Dive deeper with:

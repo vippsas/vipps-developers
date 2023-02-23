@@ -1,16 +1,15 @@
 <!-- START_METADATA
 ---
-title: Test environment
-sidebar_position: 4
+title: Vipps Merchant Test (MT)
+sidebar_position: 3
 pagination_next: null
 pagination_prev: null
 ---
 END_METADATA -->
 
-# The Vipps Test Environment (MT)
+# The Vipps Merchant Test (MT)
 
-The Merchant Test Environment (MT) is available for all Vipps merchants
-with API access.
+The Vipps MT is available for all Vipps merchants who have API access.
 
 <!-- START_COMMENT -->
 
@@ -36,7 +35,7 @@ with API access.
   * [Install Vipps MT on iOS](#install-vipps-mt-on-ios)
   * [Install Vipps MT on Android](#install-vipps-mt-on-android)
   * [Other versions](#other-versions)
-  * [Limitations of the test apps](#limitations-of-the-test-apps)
+  * [Limitations of the test apps](#limitations-of-the-test-environment)
 
 <!-- END_COMMENT -->
 
