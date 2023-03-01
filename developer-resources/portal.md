@@ -79,13 +79,13 @@ Update your integrations so they will not stop working.
 After a couple of minutes, your new test sales unit will appear in the bottom of the list (possibly after some browser refreshes).
 Then, you can [get the API keys](#how-to-find-the-api-keys) and begin testing.
 
-**Please note:** It is not possible to _change_ an existing sale unit in the test environment,
+**Please note:** It is not possible to _change_ an existing sales unit in the test environment,
 but you can create as many as you need.
 
 ## How to setup login on your sales unit
 
 1. Find your desired sales unit.
-   * Under _Vipps På Nett_ > _Utvikler_, select _Environment_ > _test_, then search for your test sale unit in the list. To create a new test sales unit, see
+   * Under _Vipps På Nett_ > _Utvikler_, select _Environment_ > _test_, then search for your test sales unit in the list. To create a new test sales unit, see
      [create a new test sales unit](#how-to-create-a-test-sales-unit).
 1. Click the _Setup login_ button corresponding to your sales unit.
 1. If the first time, click _Activate Vipps Login_ and fill out fields that follow:
@@ -99,7 +99,7 @@ but you can create as many as you need.
 
 Merchants may create additional users, both for their own colleagues,
 accountants, etc - and also for their partner's employees.
-Or anyone else they want to give access to their sale units.
+Or anyone else they want to give access to their sales units.
 
 See:
 [How to add a user on portal.vipps.no](/docs/vipps-partner/add-portal-user).
