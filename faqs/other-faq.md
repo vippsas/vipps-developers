@@ -20,7 +20,7 @@ END_METADATA -->
 * [Can you send us logs so we can look for errors?](#can-you-send-us-logs-so-we-can-look-for-errors)
 * [How do I perform "testing in production"?](#how-do-i-perform-testing-in-production)
 * [How can I use Vipps for different types of payments?](#how-can-i-use-vipps-for-different-types-of-payments)
-* [How do I set up multiple sales units?](#how-do-i-set-up-multiple-sale-units)
+* [How do I set up multiple sales units?](#how-do-i-set-up-multiple-sales-units)
 * [How can I change my organization number?](#how-can-i-change-my-organization-number)
 * [What about webhooks?](#what-about-webhooks)
 * [Can I use Vipps with Klarna Checkout?](#can-i-use-vipps-with-klarna-checkout)
