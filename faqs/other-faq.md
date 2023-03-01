@@ -20,7 +20,7 @@ END_METADATA -->
 * [Can you send us logs so we can look for errors?](#can-you-send-us-logs-so-we-can-look-for-errors)
 * [How do I perform "testing in production"?](#how-do-i-perform-testing-in-production)
 * [How can I use Vipps for different types of payments?](#how-can-i-use-vipps-for-different-types-of-payments)
-* [How do I set up multiple sale units?](#how-do-i-set-up-multiple-sale-units)
+* [How do I set up multiple sales units?](#how-do-i-set-up-multiple-sale-units)
 * [How can I change my organization number?](#how-can-i-change-my-organization-number)
 * [What about webhooks?](#what-about-webhooks)
 * [Can I use Vipps with Klarna Checkout?](#can-i-use-vipps-with-klarna-checkout)
@@ -88,63 +88,63 @@ One major difference is if the cardholder is physically present and
 "can look the seller in the eye" while making the payment.
 
 Vipps needs to do more thorough "Know Your Customer" (KYC) and compliance checks
-for some of the examples above. This must be done per sale unit.
+for some of the examples above. This must be done per sales unit.
 Vipps is also required to have the correct MCC
 ([Merchant Category Code](https://en.wikipedia.org/wiki/Merchant_category_code))
-for each sale unit.
+for each sales unit.
 
-Because of this, merchants must use separate sale units for separate types
+Because of this, merchants must use separate sales units for separate types
 of purchases. This also has some benefits:
 
-* Each sale unit has its own name presented to the user in Vipps
-* Each sale unit has separate transaction logs
-* Each sale unit can have its own settlement account. Sharing a single account across multiple sale units is available on request.
+* Each sales unit has its own name presented to the user in Vipps
+* Each sales unit has separate transaction logs
+* Each sales unit can have its own settlement account. Sharing a single account across multiple sales units is available on request.
 
-## How do I set up multiple sale units?
+## How do I set up multiple sales units?
 
 This is typically needed for organization numbers with multiple stores,
 or offers different ways to pay with Vipps.
 See:
 [How can I use Vipps for different types of payments?](#how-can-i-use-vipps-for-different-types-of-payments)
 
-The bank account number for a sale unit must belong to the organization number
+The bank account number for a sales unit must belong to the organization number
 of the company that has the customer relationship with Vipps.
 
-A legal entity, the "merchant", may have one or more sale units.
-It is possible for one merchant to have multiple sale units with a separate
+A legal entity, the "merchant", may have one or more sales units.
+It is possible for one merchant to have multiple sales units with a separate
 bank account number for each one, as long as the bank accounts belong to the
-organization number that the sale unit belongs to.
+organization number that the sales unit belongs to.
 
 If the organization has the required financial regulatory approval to "split"
-payments between sale units, it is possible to have only one sale unit and
+payments between sales units, it is possible to have only one sales unit and
 identify the payments of a store using the `orderId` - for instance by prefixing the
 `orderId` with the store's id, name or number.
 
 Alternatively each store, if they each have their own organization number,
-are set up with their own merchant and sale units.
+are set up with their own merchant and sales units.
 
-If all sale units have the same organization number, there are two alternatives:
+If all sales units have the same organization number, there are two alternatives:
 
-1: Recommended: Multiple sale units (multiple MSNs): One sale unit per store. Each sale unit will have its
+1: Recommended: Multiple sales units (multiple MSNs): One sales unit per store. Each sales unit will have its
    own MSN (Merchant Serial Number), and the `orderId` may be whatever you want.
-   Each sale unit gets its own
+   Each sales unit gets its own
    [settlement files](../settlements).
-   You will need separate API keys for each sale unit (store).
+   You will need separate API keys for each sales unit (store).
    If you have a Vipps platform partner, the partner will use the
    [Partner keys](https://vippsas.github.io/vipps-developer-docs/docs/vipps-partner/partner-keys)
-   for all the sale units.
+   for all the sales units.
    See: [How can I use Vipps for different types of payments?](#how-can-i-use-vipps-for-different-types-of-payments).
 
-2: Use only one sale unit (one MSN) for all stores, and use the `orderId` to identify
-   which orders belong to which sale units.
-   All sale units are in the same
+2: Use only one sales unit (one MSN) for all stores, and use the `orderId` to identify
+   which orders belong to which sales units.
+   All sales units are in the same
    [settlement report](../settlements/README.md).
    You decide what the `orderId` contains, and it may be up to 50 characters. See:
    [orderId recommendation](../common-topics/orderid.md).
    You will use the same API keys for all stores.
    If you have a Vipps platform partner, the partner will use the
    [Partner keys](https://vippsas.github.io/vipps-developer-docs/docs/vipps-partner/partner-keys)
-   for all the sale units.
+   for all the sales units.
 
 ## How can I change my organization number?
 

@@ -73,7 +73,7 @@ Please follow these steps to make sure everything is correct:
    They are case sensitive: `Authorization: Bearer <access token goes here>`
    is not the same as `Authorization: bearer <access token goes here>`.
 5. Make sure you are using the right environment and check that you are using
-   the correct API keys for the right sale unit in that environment. The
+   the correct API keys for the right sales unit in that environment. The
    [test environment](../test-environment.md)
    is completely separate from the production environment, and both the MSN and
    the API keys are different.
@@ -89,7 +89,7 @@ Please follow these steps to make sure everything is correct:
 
 You can log in to
 [portal.vipps.no](https://portal.vipps.no)
-to double check your API keys, sale units and API products.
+to double check your API keys, sales units and API products.
 See:
 [Getting the API keys](../common-topics/api-keys.md#getting-the-api-keys).
 
@@ -192,8 +192,8 @@ See:
 
 This is either because you are specifying an incorrect `orderId`, or because
 the payment with this `orderId` was initiated using the API keys for
-one sale unit (MSN), and you are attempting to get the details with
-the API keys for a different sale unit (MSN).
+one sales unit (MSN), and you are attempting to get the details with
+the API keys for a different sales unit (MSN).
 
 The `orderId`s is not globally unique, they are only unique per MSN.
 
@@ -214,8 +214,8 @@ from ENK to AS.
 
 Merchants can log in on
 [portal.vipps.no](https://portal.vipps.no)
-and deactivate their sale units. This is sometimes done "by accident", without being
-aware of the consequences. If a sale unit has been incorrectly deactivated,
+and deactivate their sales units. This is sometimes done "by accident", without being
+aware of the consequences. If a sales unit has been incorrectly deactivated,
 the merchant can reactivate it again.
 
 **Please note:** We require BankID for deactivation and reactivation,
@@ -229,26 +229,26 @@ and we will reactivate the merchant.
 Partners that use
 [partner keys](https://vippsas.github.io/vipps-developer-docs/docs/vipps-partner/partner-keys)
 can also get this error if the partner itself is deactivated, even though
-the sale unit (that it is acting on behalf of) is active.
+the sales unit (that it is acting on behalf of) is active.
 
 **Please note:** We no longer automatically deactivate test merchants.
-Merchants can also create new sale units in the test environment on
+Merchants can also create new sales units in the test environment on
 [portal.vipps.no](https://portal.vipps.no).
 
 See: [Error codes](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api#error-codes).
 
 ## Why do I get "Merchant Not Allowed for Ecommerce Payment"?
 
-This error occurs if you attempt to use the Vipps eCom API with a sale unit (MSN)
+This error occurs if you attempt to use the Vipps eCom API with a sales unit (MSN)
 that is only approved for the Vipps Login API.
 
-Vipps does not do the same checks for sale units that do not make payments,
+Vipps does not do the same checks for sales units that do not make payments,
 so to use the eCom API you need to order "Vipps på nett" on
 [portal.vipps.no](https://portal.vipps.no)
 to go through the regulatory and legally required checks and get
 access to the Vipps eCom API.
 
-All sale units that have been approved for the Vipps eCom API can also use
+All sales units that have been approved for the Vipps eCom API can also use
 the Vipps Login API, but not the other way around.
 
 See:
@@ -287,7 +287,7 @@ This can happen when:
 
 * A partner tries to use
   [Partner keys](https://vippsas.github.io/vipps-developer-docs/docs/vipps-partner/partner-keys)
-  for a sale unit that is not registered with them as partner.
+  for a sales unit that is not registered with them as partner.
 * API keys for the test environment is used in the production environment, or opposite.
 * [Partner keys](https://vippsas.github.io/vipps-developer-docs/docs/vipps-partner/partner-keys)
   are used, but the `Merchant-Serial-Number` HTTP header is not used correctly.

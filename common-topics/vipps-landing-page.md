@@ -86,11 +86,11 @@ device that the user does not own or control:
   shown, such as physical points of sale (POS) solutions, vending machines, etc.
 
 This `skipLandingpage` functionality must be specially enabled by Vipps for each
-sale unit that needs to use it.
+sales unit that needs to use it.
 If you need to skip the landing page: Contact your
 Key Account Manager. If you do not have a KAM: Please log in on
 [portal.vipps.no](https://portal.vipps.no),
-find the right sale unit and click the email link under the "i" information
+find the right sales unit and click the email link under the "i" information
 bubble. Include a detailed description of why it is not possible to display
 the landing page.
 
@@ -112,7 +112,7 @@ initiates the payment:
   of the payment.
   Instead of the "result page", the user will just get a confirmation in
   the Vipps app.
-* If the sale unit is not whitelisted, the request will fail and an error
+* If the sales unit is not whitelisted, the request will fail and an error
   message will be returned.
 
 ## Sequence diagram

@@ -57,7 +57,7 @@ An early version of the
 is available on GitHub:
 
 The Vipps Merchant Management API will let partners, banks and large corporations
-manage their merchants and sale units. See the GitHub repository for
+manage their merchants and sales units. See the GitHub repository for
 background and priorities.
 
 ## Vipps Login support for authentication/registration outside of browser/app (CIBA)

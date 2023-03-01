@@ -95,11 +95,11 @@ Payment Service Providers can use their existing API keys with the PSP Signup AP
 See:
 [PSP Signup API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/psp-api/vipps-psp-signup-api).
 
-## Order new products and create new sale units on portal.vipps.no
+## Order new products and create new sales units on portal.vipps.no
 
 All customers can now log in on
 [portal.vipps.no](https://portal.vipps.no)
-and order new products, which automatically creates a new sale unit:
+and order new products, which automatically creates a new sales unit:
 
 * [Vipps på Nett](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/)
   ([eCom API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api),
@@ -112,15 +112,15 @@ and order new products, which automatically creates a new sale unit:
 * [Vipps Logg inn](https://vipps.no/produkter-og-tjenester/bedrift/logg-inn-med-vipps/logg-inn-med-vipps/)
   ([Login API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/login-api))
 
-## Create new sale units in the test environment
+## Create new sales units in the test environment
 
-You can create new sale units in the
+You can create new sales units in the
 [test environment](../test-environment.md)
 on
 [portal.vipps.no](https://portal.vipps.no):
 
 On the page with the API keys for the test environment there is a button
-for creating additional sale units, and you can then select
+for creating additional sales units, and you can then select
 "direct capture" or "reserve capture", and also `skipLandingPage`.
 
 This is available for all customers, also those that do not yet have any API access.

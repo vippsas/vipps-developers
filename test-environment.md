@@ -65,7 +65,7 @@ The test and production environments are completely separate and use different
 **Please note:** For production, Vipps only offers
 [Direct capture](common-topics/reserve-and-capture.md#direct-capture)
 for merchants that use Vipps through a partner.
-In the test environment, you can do this by creating a sale unit where direct capture is allowed.
+In the test environment, you can do this by creating a sales unit where direct capture is allowed.
 
 ### Limitations of the test environment
 
@@ -106,7 +106,7 @@ Other differences between Production and MT:
 
 All merchants with API access have access to the Vipps test environment.
 
-A test sale unit is automatically created when the merchant submits an order
+A test sales unit is automatically created when the merchant submits an order
 for a Vipps product (that has an API), and the details can be found on the
 "Utvikler" (developer) section on
 [portal.vipps.no](https://portal.vipps.no).
@@ -154,7 +154,7 @@ See:
 - [Developer resources: Vipps portal: How to create a test sales unit](./developer-resources/portal.md#how-to-create-a-test-sales-unit).
 
 **Please note:** Sale units in the _production_ environment must follow strict rules
-(regulatory and other), so you may not be able to get the same sale unit configuration
+(regulatory and other), so you may not be able to get the same sales unit configuration
 (like "direct capture") there, even though you have it in the test environment.
 
 ## Test users
@@ -171,7 +171,7 @@ Please search your mail, including the spam/junk folder, if you do not find it.
   payments for that user.
 * You may use the same test user on multiple devices.
 * Test users are not connected to any merchant, they can be used with any
-  merchant and sale unit in the test environment.
+  merchant and sales unit in the test environment.
 
 If you need more than one test user, please contact your
 Key Account Manager (if you have one),

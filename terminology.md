@@ -55,8 +55,8 @@ END_METADATA -->
 * Merchant - A juridical unit, typically called a business or company,
   identified with organization number (`orgno`).
 
-* Merchant Serial Number (MSN) - The unique id of a sale unit.
-  MSN is short for "Merchant Serial Number", but identifies a sale unit, not
+* Merchant Serial Number (MSN) - The unique id of a sales unit.
+  MSN is short for "Merchant Serial Number", but identifies a sales unit, not
   a merchant. A payment is uniquely identified by the combination of
   `merchantSerialNumber` and `orderId` (e.g., `acme-shop-123-order123abc`).
   Partners must always send the `Merchant-Serial-Number` header, and we
@@ -103,7 +103,7 @@ END_METADATA -->
   When the order is reserved, the amount is marked as reserved by the bank,
   but not transferred.
 
-* Sale unit - A merchant can have one or more sale units. It may be different
+* Sale unit - A merchant can have one or more sales units. It may be different
   brands, different physical locations, different services, etc.
 
 * `Vipps-Subscription-Key` - This subscription key is retrieved by logging

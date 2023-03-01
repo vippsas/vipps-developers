@@ -9,9 +9,9 @@ END_METADATA -->
 # Recommendations for orderId/reference
 
 
-An `orderId` (also called `reference`) must be unique for the sale unit Merchant Serial Number (MSN) (i.e., the id of
-the sale unit). The `orderId` does not need to be globally unique, so several
-MSNs may use the same `orderId`, as long as it is unique for each sale unit.
+An `orderId` (also called `reference`) must be unique for the sales unit Merchant Serial Number (MSN) (i.e., the id of
+the sales unit). The `orderId` does not need to be globally unique, so several
+MSNs may use the same `orderId`, as long as it is unique for each sales unit.
 
 The `orderId` is case-sensitive.
 We *strongly* recommend to use a format like `acme-shop-123-order123abc`,
@@ -49,10 +49,10 @@ The maximum length of an `orderId` is 50 alphanumeric characters:
 Leading zeros should be avoided, as some applications (e.g., Excel)
 tend to remove them, and this may cause misunderstandings.
 
-## Multiple sale units
+## Multiple sales units
 
-If you have multiple sale units, prefixing the `orderId` with the MSN
-for each sale unit is recommended. For example, if the MSN is `654321`, the
+If you have multiple sales units, prefixing the `orderId` with the MSN
+for each sales unit is recommended. For example, if the MSN is `654321`, the
 `orderId` could be `654321-acme-shop-123-order123abc`.
 
 ## Multiple attempts
