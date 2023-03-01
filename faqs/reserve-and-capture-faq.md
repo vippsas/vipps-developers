@@ -212,7 +212,7 @@ See:
 
 Yes, but only if you are not legally allowed to accept credit card payments.
 
-Sale units can be configured to only accept payments from debit cards, so
+Sales units can be configured to only accept payments from debit cards, so
 customers cannot pay with credit cards. This is not configurable by the
 merchant. Please contact your KAM or
 [Vipps Customer Center](https://vipps.no/kontakt-oss/bedrift/vipps/)

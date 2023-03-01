@@ -25,7 +25,7 @@ The CSV settlement file contains the following info:
 | Column title  | Description | Comment  |
 | ------------- | ------------- | ------------- |
 | Salgsdato  | Date of sale  |    |
-| Salgssted  | Sale unit name   |   |
+| Salgssted  | Sales unit name   |   |
 | Vippsnummer  | Merchant serial number   |   |
 | Produkt  | Vipps product name  | E.G. "Vipps Netthandel"  |
 | Transaksjons-ID  | Transaction ID  | Differs for Reserved, Captured and Refunded transaction  |

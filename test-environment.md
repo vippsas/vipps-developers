@@ -153,7 +153,7 @@ All Vipps customers can create sales units ("merchants") in the test environment
 See:
 - [Developer resources: Vipps portal: How to create a test sales unit](./developer-resources/portal.md#how-to-create-a-test-sales-unit).
 
-**Please note:** Sale units in the _production_ environment must follow strict rules
+**Please note:** Sales units in the _production_ environment must follow strict rules
 (regulatory and other), so you may not be able to get the same sales unit configuration
 (like "direct capture") there, even though you have it in the test environment.
 

@@ -103,7 +103,7 @@ END_METADATA -->
   When the order is reserved, the amount is marked as reserved by the bank,
   but not transferred.
 
-* Sale unit - A merchant can have one or more sales units. It may be different
+* Sales unit - A merchant can have one or more sales units. It may be different
   brands, different physical locations, different services, etc.
 
 * `Vipps-Subscription-Key` - This subscription key is retrieved by logging

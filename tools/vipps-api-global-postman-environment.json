@@ -24,7 +24,7 @@
 		},
 		{
 			"key": "merchantSerialNumber",
-			"value": "<Go to portal.vipps.no -> Select the Utvikler (Developer) tab -> Select Test or Production Keys -> Copy the Merchant Serial Number from the Sale Unit you copied the keys from>",
+			"value": "<Go to portal.vipps.no -> Select the Utvikler (Developer) tab -> Select Test or Production Keys -> Copy the Merchant Serial Number from the Sales unit you copied the keys from>",
 			"enabled": true
 		},
 		{
