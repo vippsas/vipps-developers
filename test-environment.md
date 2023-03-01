@@ -192,9 +192,7 @@ as the test number may be a real phone number for a real Vipps user.
 
 ### Payment card
 
-The test user is registered with one payment card.
-
-If you need additional payment cards, you can add it in the Vipps app.
+The test user is registered with a payment card, and it is not possible to add new cards in the Vipps test app. 
 
 ### Email address
 
