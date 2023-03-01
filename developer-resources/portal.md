@@ -19,6 +19,7 @@ END_METADATA -->
 * [How to find the API keys](#how-to-find-the-api-keys)
 * [How to regenerate API keys](#how-to-regenerate-api-keys)
 * [How to create a test sales unit](#how-to-create-a-test-sales-unit)
+* [How to setup login on your sales unit](#how-to-setup-login-on-your-sales-unit)
 * [How to create additional users on portal.vipps.no](#how-to-create-additional-users-on-portalvippsno)
 * [Permissions and users](#permissions-and-users)
 * [Questions](#questions)
@@ -31,9 +32,10 @@ on the [Vipps portal (portal.vipps.no)](https://portal.vipps.no).
 For more information about the portal, see the
 [help pages on vipps.no (in Norwegian)](https://vipps.no/hjelp/vipps/kundeforholdet-mitt/hva-får-jeg-tilgang-til-når-jeg-logger-meg-inn-på-vippsportalen/).
 
+
 ## How to find the API keys
 
-1. Log in to [portal.vipps.no](https://portal.vipps.no) using BankID.
+1. Log-in to [portal.vipps.no](https://portal.vipps.no) using BankID.
     * If you have problems, see [Permissions and users](#permissions-and-users).
 1. Select _Vipps På Nett_ > _Utvikler_.
    In the page that opens, you will see a table with many sales units listed.
@@ -44,7 +46,7 @@ For more information about the portal, see the
    * If you need to create your own test sales unit,
      select _Test_ and then click _Add test sales unit_ and fill out the form.
      See [create a new test sales unit](#how-to-create-a-test-sales-unit) for more details.
-1. Click the _Show keys_ button corresponding to your sales desired unit.
+1. Click the _Show keys_ button corresponding to your sales unit.
    The API keys will be displayed.
    **Please note:** You can only see API keys that you have access to. All others will be hidden.
    ![portal.vipps.no: The API keys for a sales unit](../images/portalvippsno-salesunit-keys.png)
@@ -64,17 +66,14 @@ Update your integrations so they will not stop working.
 
 ## How to create a test sales unit
 
-1. Log in to [portal.vipps.no](https://portal.vipps.no) using BankID.
-   * If you have problems, see [Permissions and users](#permissions-and-users).
-1. Select _Vipps På Nett_ > _Utvikler_.
-1. Select to show _test keys_.
+1. Under _Vipps På Nett_ > _Utvikler_, select _Environment_ > _test_.
 1. Click _Add test sales unit_.
 1. Enter the requested properties and click _Create_.
    * Name - Enter the name of your test sales unit.
    * Partner - Enter optional partner data (not usually needed).
    * Select optional properties:
      * [Skip Landing Page](../faqs/vipps-landing-page-faq.md#is-it-possible-to-skip-the-landing-page)
-     * [Recurring API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api)
+     * [Recurring API](/docs/APIs/recurring-api)
      * [Direct Capture](../common-topics/reserve-and-capture.md#direct-capture)
 
 After a couple of minutes, your new test sales unit will appear in the bottom of the list (possibly after some browser refreshes).
@@ -83,6 +82,19 @@ Then, you can [get the API keys](#how-to-find-the-api-keys) and begin testing.
 **Please note:** It is not possible to _change_ an existing sale unit in the test environment,
 but you can create as many as you need.
 
+## How to setup login on your sales unit
+
+1. Find your desired sales unit.
+   * Under _Vipps På Nett_ > _Utvikler_, select _Environment_ > _test_, then search for your test sale unit in the list. To create a new test sales unit, see
+     [create a new test sales unit](#how-to-create-a-test-sales-unit).
+1. Click the _Setup login_ button corresponding to your sales unit.
+1. If the first time, click _Activate Vipps Login_ and fill out fields that follow:
+    * Redirect URIs - This creates a list containing URIs which the end user can be redirected to after a Vipps Logg Inn authentication. For testing, you could, for example, use <http://localhost>.
+    * Webhook - See [Revoke Consent Webhook](https://vippsas.github.io/vipps-developer-docs/docs/APIs/login-api/vipps-login-api#revoke-consent-webhook) for details.
+    * Token endpoint authentication method - See
+    [Token endpoint authentication method](https://vippsas.github.io/vipps-developer-docs/docs/APIs/login-api/vipps-login-api#token-endpoint-authentication-method).
+
+
 ## How to create additional users on portal.vipps.no
 
 Merchants may create additional users, both for their own colleagues,
@@ -90,11 +102,11 @@ accountants, etc - and also for their partner's employees.
 Or anyone else they want to give access to their sale units.
 
 See:
-[How to add a user on portal.vipps.no](https://vippsas.github.io/vipps-developer-docs/docs/vipps-partner/add-portal-user).
+[How to add a user on portal.vipps.no](/docs/vipps-partner/add-portal-user).
 
 ## Permissions and users
 
-[portal.vipps.no](https://portal.vipps.no) requires Norwegian BankID.
+Logging into [portal.vipps.no](https://portal.vipps.no) requires Norwegian BankID.
 
 If you don't have BankID, or you have BankID but not access to the correct merchant,
 you will need the merchant's administrator to log in on
@@ -113,7 +125,7 @@ merchant's administrator grant you developer access for the sales unit you
 need access to.
 
 For
-[reseller partners](https://vippsas.github.io/vipps-developer-docs/docs/vipps-partner):
+[reseller partners](/docs/vipps-partner):
 You will need the merchant's administrator to either:
 
 * Log in to
@@ -123,7 +135,7 @@ You will need the merchant's administrator to either:
 
 For more information, see:
 
-* [Developer Information: Vipps Partners](https://vippsas.github.io/vipps-developer-docs/docs/vipps-partner)
+* [Developer Information: Vipps Partners](/docs/vipps-partner)
 * [User permissions on vipps.no (in Norwegian)](https://vipps.no/hjelp/vipps/kundeforholdet-mitt/hvilke-tilganger-kan-vi-opprette-i-vippsportalen/).
 
 ## Questions
