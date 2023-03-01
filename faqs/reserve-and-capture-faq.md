@@ -172,7 +172,7 @@ Vipps can no longer manually check this for merchant or partners.
 
 All merchants can log in on
 [portal.vipps.no](https://portal.vipps.no)
-and check the capture type for all their sale units under the "Utvikler" menu item.
+and check the capture type for all their sales units under the "Utvikler" menu item.
 
 You can also find information on how to change capture type there.
 We require BankID login for this, as "direct capture" requires additional
@@ -196,7 +196,7 @@ and cancel (if it was `RESERVE` and reserve capture) or refund (if it was `SALE`
 ## How do I turn direct capture on or off?
 
 You can't turn _direct capture_ on or off as a merchant.
-A sale unit can only have one capture type, and it must be configured by Vipps.
+A sales unit can only have one capture type, and it must be configured by Vipps.
 
 **Please note:** Vipps only offers "direct capture" for merchants that use
 Vipps through a partner, and for merchants that have a Key Account Manager.
@@ -242,7 +242,7 @@ The only ways to initiate Vipps payments from a QR code are:
   [Timeouts](../common-topics/timeouts.md).
 * [Vippsnummer](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-i-butikk/),
   the solution for flea markets, etc – which does not have any external API.
-  This solution uses a static QR code for the sale unit, available on
+  This solution uses a static QR code for the sales unit, available on
   [portal.vipps.no](https://portal.vipps.no).
   Vippsnummer cannot be used for online sales, etc, as it does not meet the
   legal requirements.

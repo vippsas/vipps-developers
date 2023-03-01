@@ -43,9 +43,9 @@ See the [Settlements](../README.md) overview.
 
 # Reports
 
-Each MSN (Merchant Serial Number, the unique id of a sale unit) merchant has
+Each MSN (Merchant Serial Number, the unique id of a sales unit) merchant has
 its own settlement reports.
-It is not possible to aggregate reports from multiple sale units into one report.
+It is not possible to aggregate reports from multiple sales units into one report.
 
 There will never be more than one new file per sales unit each
 day (and there may be none).
@@ -86,7 +86,7 @@ All merchants can set up SFTP on [portal.vipps.no](https://portal.vipps.no).
 A public SSH key must be provided.
 
 SFTP users are created, associated with a public SSH key, and given access to
-the reports of all the merchant's sale units (MSNs).
+the reports of all the merchant's sales units (MSNs).
 
 It possible to use the same public SSH key for multiple merchants,
 and for multiple MSNs.
@@ -221,7 +221,7 @@ This is the directory structure (where `[alternative1|alternative2]` indicates t
 
 The `orgno.` is the company's organization number, nine digits.
 The `merchant serial number` (also called MSN) is the unique five or six digit
-id for the sale unit.
+id for the sales unit.
 
 In the examples on this page, the `orgno.` is 998724341, and the `merchant serial number` is 16655.
 

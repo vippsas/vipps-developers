@@ -108,7 +108,7 @@ When _direct capture_ is activated, all payment reservations will instantly be c
 With _direct capture_, Vipps is responsible for the customer receiving the purchased product.
 Because of this, _direct capture_ requires additional compliance checks.
 
-A sale unit can only have one capture type, and it must be configured by Vipps.
+A sales unit can only have one capture type, and it must be configured by Vipps.
 You can't turn _direct capture_ on or off as a merchant.
 
 We strongly recommend using "reserve capture" in all situations.

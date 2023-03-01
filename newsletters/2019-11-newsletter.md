@@ -25,8 +25,8 @@ This was communicated July, but we mention it again, just in case.
 ## API products: Vipps API
 
 Vipps has previously had separate API keys for each API product, and a set of API keys were
-directly linked to one sale unit. This meant that customers needed to keep track of
-multiple API keys, and that access to a new API required a new sale unit.
+directly linked to one sales unit. This meant that customers needed to keep track of
+multiple API keys, and that access to a new API required a new sales unit.
 
 This is no longer the case: The Vipps-API API product give access to all current APIs,
 and the API keys for the Vipps eCom v1 and v2 APIs have been “upgraded” to include the

@@ -83,7 +83,7 @@ Stores must be able to search for `orderId` from other stores or request it from
 **User story:** A user buys a product from Store A.
 The user then visits Store B to return some goods. Store B wants to be able to refund on behalf of Store A.
 
-**Problem:** Refunds can only be performed by the sale unit where the payment originated from: Store A.
+**Problem:** Refunds can only be performed by the sales unit where the payment originated from: Store A.
 
 **Recommended solutions:**
 
@@ -105,15 +105,15 @@ do not let the cashier input `Merchant-Serial-Number` themselves. These must be 
 [Partner keys](https://vippsas.github.io/vipps-developer-docs/docs/vipps-partner/partner-keys)
 are not used:
 
-In this case, a centralized system needs to store credentials from all sale units within the enterprise.
+In this case, a centralized system needs to store credentials from all sales units within the enterprise.
 Store B must be able to request a `refund` from the central system based on the original `orderId` and location for the order origin (Store A).
 **Technical:** Use Store A credentials to authenticate, add original `orderId` to the
 [refund](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Vipps-eCom-API/operation/refundPaymentUsingPOST)
 request.
 
-**C:** Same sale unit is used for all locations:
+**C:** Same sales unit is used for all locations:
 
-It is possible to use one sale unit (one MSN) for all stores and use a prefix in the `orderId` to identify which orders belong to which sale units.
+It is possible to use one sales unit (one MSN) for all stores and use a prefix in the `orderId` to identify which orders belong to which sales units.
 This will result in having one settlement for all. You decide what the `orderId` contains, and it may be up to 50 characters.
 See: [orderId recommendation](../common-topics/orderid.md).
 You will use the same API keys for all stores.

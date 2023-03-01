@@ -33,7 +33,7 @@ the headers could be:
 | `Vipps-System-Name`           | The name of the solution           | `acme`    | `acme`         | `acme` | `woocommerce` |
 | `Vipps-System-Version`        | The version number of the solution | `1.7`     | `2.6`          | `2.6` | `5.4` |
 | `Vipps-System-Plugin-Version` | The version number of the plugin   | `3.2`     | `4.3`          | `4.3` | `1.4.1` |
-| `Merchant-Serial-Number`      | The MSN for the sale unit                    | `123456`  | `123456`       | `123456` | `123456` |
+| `Merchant-Serial-Number`      | The MSN for the sales unit                    | `123456`  | `123456`       | `123456` | `123456` |
 
 **Important:** Please use self-explanatory, human readable and reasonably short
 values that uniquely identify the system (and plugin).

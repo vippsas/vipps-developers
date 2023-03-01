@@ -11,7 +11,7 @@ END_METADATA -->
 When you start using the Vipps API, you will need to provide API keys.
 These are like passcodes that confirm your identity and that your API request is valid.
 
-Your API keys are specific for your sale unit and you will use them to interact with all the
+Your API keys are specific for your sales unit and you will use them to interact with all the
 [Vipps API products](https://vippsas.github.io/vipps-developer-docs/docs/APIs).
 
 The same API keys are used for many types of integration:
@@ -46,7 +46,7 @@ To get your API keys:
 1. Log in to [portal.vipps.no](https://portal.vipps.no) using BankID.
    See [Developer resources: Permissions and users](../developer-resources/portal.md#permissions-and-users), if necessary.
 2. Select _Vipps På Nett_ > _Utvikler_.
-3. In the page that opens, you will find your merchant sale unit listed under _Production_ and/or _Test_.
+3. In the page that opens, you will find your merchant sales unit listed under _Production_ and/or _Test_.
    Click the _Show keys_ button to see your keys.
 
 See [Developer resources: Vipps Portal](../developer-resources/portal.md#how-to-find-the-api-keys) for more details.
@@ -68,7 +68,7 @@ The Vipps API Keys are:
 
 | API Key Name             | Description                                                         | Format | Example                              |
 |--------------------------|---------------------------------------------------------------------|--------|--------------------------------------|
-| `client_id`              | Client id for the sale unit (the "username")                        | GUID   | fb492b5e-7907-4d83-bc20-c7fb60ca35de |
+| `client_id`              | Client id for the sales unit (the "username")                        | GUID   | fb492b5e-7907-4d83-bc20-c7fb60ca35de |
 | `client_secret`          | Client secret for the merchant (the "password")                     | Base64 | Y8Kteew6GE3ZmeycEt6egg==             |
 | `Vipps-Subscription-Key` (primary)   | Subscription key for the API product                    | Base64 | 0f14ebcab0eb4b29ae0cb90d91b4a84a     |
 | `Vipps-Subscription-Key` (secondary) | Subscription key for the API product                    | Base64 | 0f14ebcab0eb4b29ae0cb90d91b4a84a     |
@@ -90,9 +90,9 @@ If you want, you can just ignore the second key.
 ## Historical note
 
 Vipps has previously had separate API keys for each API product, and a set of
-API keys were directly linked to one sale unit. This meant that customers
+API keys were directly linked to one sales unit. This meant that customers
 needed to keep track of multiple API keys, and that access to a new API
-required a new sale unit. The API keys for Vipps eCom v1 and v2 APIs have been “upgraded” to include the same APIs as
+required a new sales unit. The API keys for Vipps eCom v1 and v2 APIs have been “upgraded” to include the same APIs as
 Vipps API.  The `Vipps-API` product also includes some _legacy_ APIs, such as _eCom API v1_ _Signup and Login_.
 
 If you are still using a legacy API, you should upgrade as soon as possible.

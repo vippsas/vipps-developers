@@ -35,10 +35,10 @@ You need:
 
     All merchants automatically get a test user. See [test users](test-environment.md#test-users) for more information.
 
-1. A *test sale unit*.
+1. A *test sales unit*.
 
     You create this yourself by logging in to the Vipps portal at <https://portal.vipps.no>. This requires BankId.
-    See instructions for creating the [test sale unit](test-environment.md#test-merchants).
+    See instructions for creating the [test sales unit](test-environment.md#test-merchants).
 
 1. A Vipps *test app* for your mobile phone.
 
@@ -62,7 +62,7 @@ We provide a Postman collections and environments to make development easier.
 Our Postman collections contain example API calls that you can run in the test environment.
 
 Our Postman environments include all the variables needed to run the examples in the collection.
-You will need to update some of the variables, so that the example works with your test user and test sale unit.
+You will need to update some of the variables, so that the example works with your test user and test sales unit.
 
 Once you have installed Postman, you can import an environment from one our our APIs and then customize it for your own use.
 

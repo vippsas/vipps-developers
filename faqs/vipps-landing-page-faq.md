@@ -26,8 +26,8 @@ END_METADATA -->
 
 Only in special cases, where displaying it is not possible.
 
-This feature has to be specially enabled by Vipps for eligible sale units:
-The sale units must be whitelisted by Vipps.
+This feature has to be specially enabled by Vipps for eligible sales units:
+The sales units must be whitelisted by Vipps.
 Skipping the landing page is typically used at physical points of sale
 where there is no display available.
 
@@ -45,7 +45,7 @@ Contact your Key Account Manager. If you do not have a KAM:
 Please log in on
 [portal.vipps.no](https://portal.vipps.no),
 open the "Utvikler" (Developer) tab,
-find the right sale unit and
+find the right sales unit and
 click the email link under the "i" information bubble.
 Include a detailed description of why it is not possible to display the landing page.
 
@@ -58,8 +58,8 @@ Vipps can no longer manually check this for merchant or partners.
 
 All merchants can log in on
 [portal.vipps.no](https://portal.vipps.no)
-and check if a sale unit has `skipLandingPage` enabled
-for all their sale units under the "Utvikler" menu item.
+and check if a sales unit has `skipLandingPage` enabled
+for all their sales units under the "Utvikler" menu item.
 
 You can also find information on how to activate `skipLandingPage` there.
 

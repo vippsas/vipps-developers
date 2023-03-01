@@ -41,7 +41,7 @@ For a Norwegian overview of the products, see [vipps.no: Produkter og tjenester]
 
 When the _Merchant Agreement_ is approved and your product order is sent,
 you (or the user associated with the order) will receive an email
-with the name and serial number of your test sale unit, along with credentials for logging into the
+with the name and serial number of your test sales unit, along with credentials for logging into the
 Vipps Merchant Test (MT) app. Now, you can start testing with the Vipps APIs.
 
 When your product order is approved, you will get an email stating that you can
@@ -50,7 +50,7 @@ These will allow you to start running API commands against the production server
 
 ## Start testing
 
-Start by [getting your test sale unit's API keys](./developer-resources/portal.md#how-to-find-the-api-keys).
+Start by [getting your API keys](./developer-resources/portal.md#how-to-find-the-api-keys).
 You will need these for providing authentication when sending Vipps API requests.
 For more information about the keys, see the [API keys](./common-topics/api-keys.md) page.
 

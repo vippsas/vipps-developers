@@ -79,7 +79,7 @@ There is no other API to look up a user's address, retrieve a user's purchases, 
 ## Where can I find information about payment and settlements?
 
 [portal.vipps.no](https://portal.vipps.no)
-provides information about your transactions, sale units and settlement reports.
+provides information about your transactions, sales units and settlement reports.
 You can also subscribe to daily or monthly transaction reports by email.
 
 See:
@@ -262,7 +262,7 @@ See:
 ## Where can I find reports on transactions?
 
 [portal.vipps.no](https://portal.vipps.no) provides information about
-your transactions, sale units and settlement reports.
+your transactions, sales units and settlement reports.
 You can also subscribe to daily or monthly transaction reports by email.
 
 See: [Settlements](../settlements/README.md).

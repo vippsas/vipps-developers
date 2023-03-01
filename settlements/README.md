@@ -72,7 +72,7 @@ There is one settlement file per payout.
 have been thousands Vipps payments in one week, there will still only be one
 payment from Vipps to the merchant. A "lump sum", if you want.
 The settlement reports have all the details for each of the thousands of payments.
-Also: There is one payment per sale unit, with its corresponding settlement file.
+Also: There is one payment per sales unit, with its corresponding settlement file.
 
 ### Reconciliation
 

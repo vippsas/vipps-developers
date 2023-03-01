@@ -86,8 +86,8 @@ contain:
 
 * The merchant's organization number
 * The merchant's name
-* The sale unit's MSN
-* The sale unit's name
+* The sales unit's MSN
+* The sales unit's name
 
 ## Reminders
 
