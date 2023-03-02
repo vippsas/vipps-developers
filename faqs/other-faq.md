@@ -233,7 +233,7 @@ Note, the description translates to: _Remember: Vipps is always fee-free when yo
 
 Follow Klarna's process to get the External Payment Method activated for
 your account, described in the
-[Klarna documentation](https://developers.klarna.com/documentation/klarna-checkout/in-depth/external-payment-methods/).
+[Klarna documentation](https://docs.klarna.com/klarna-checkout/in-depth-knowledge/external-payment-methods/).
 Using this method will add Vipps as an payment alternative inside KCO.
 
 See:
