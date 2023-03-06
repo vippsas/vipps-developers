@@ -40,6 +40,21 @@ Newsletter archive: https://vippsas.github.io/vipps-developer-docs/docs/vipps-de
 
 (You can unsubscribe if you want - see the link at the bottom)
 
+## Improved shipping options in Vipps Checkout
+
+To increase conversion in your webshop and create a great online customer experience, giving your customers an easy way of choosing their preferred shipping method is essential. We've done the heavy lifting, together with the shipping providers, so you can focus on other things.
+
+Vipps Checkout supports all major shipping providers in the Norwegian market, including:
+* Bring/Posten
+* Postnord
+* Porterbuddy
+* Helthjem
+* Instabox
+
+To see how this works, visit our [demo store](https://demo.vipps.no/vipps-checkout-1/full).
+
+For a more detailed description, visit our [documentation page](https://vippsas.github.io/vipps-developer-docs/docs/APIs/checkout-api/vipps-checkout-how-it-works-shipping).
+
 ## ePayment API
 
 We recommend that all new integrations uise the ePayment API, not the eCom API.
