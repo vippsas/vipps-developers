@@ -165,7 +165,7 @@ The Vipps Login service has been extended with Client Initiated Backchannel Auth
 This could typically be physical contexts like point of sales (POS) solutions, on the
 phone in call center solutions, or devices/terminals like TV boxes. We currently support initiating logins based on the users phone number. We are also working on supporting the same flows with the user scanning the merchant's QR-code as a starting point.
 
-More information can be found in [our documentation](https://vippsas.github.io/vipps-developer-docs/docs/APIs/login-api/vipps-login-api#client-initiated-backchannel-authentication-flows-ciba---special-cases-where-login-does-not-start-in-browser-or-app).
+More information can be found in [our documentation](https://vippsas.github.io/vipps-developer-docs/docs/APIs/login-api).
 
 ## Newsletter archive
 

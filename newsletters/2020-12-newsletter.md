@@ -39,8 +39,6 @@ Vipps Login now lets merchants to control the login experience on phones: The
 merchant can choose whether the user should be automatically taken back to the
 browser after completing an authentication in the Vipps app.
 We have also added a specific flow for integrations with apps.
-More information, and screenshots of the new flows, can be found in the
-[documentation](https://vippsas.github.io/vipps-developer-docs/docs/APIs/login-api/vipps-login-api#mobile-flow---app-switch-based-flow).
 
 To have a unified way of providing user information across Vipps services
 we are standardizing the data formats, both within Vipps and with the OIDC standard.
