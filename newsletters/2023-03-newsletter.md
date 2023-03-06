@@ -20,6 +20,7 @@ This newsletter was sent in March 2023.
 
 * [Is this is the first time you receive this newsletter?](#is-this-is-the-first-time-you-receive-this-newsletter)
 * [ePayment API](#epayment-api)
+* [ecom API](#ecom-api)
 * [More Solutions](#more-solutions)
 * [Report API](#report-api)
 * [Reminders](#reminders)
@@ -42,7 +43,7 @@ Newsletter archive: https://vippsas.github.io/vipps-developer-docs/docs/vipps-de
 
 ## ePayment API
 
-We recommend that all new integrations uise the ePayment API, not the eCom API.
+We recommend that all new integrations use the ePayment API, not the eCom API.
 
 The
 [ePayment API specification](https://vippsas.github.io/vipps-developer-docs/api/epayment)
@@ -51,9 +52,20 @@ we have also updated the API guide, FAQ, etc.
 
 See: [ePayment API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/epayment-api).
 
+## ecom API
+
+The new express checkout flow ("useExplicitCheckoutFlow": true) will be the default flow for the users 
+when they pay a express checkout payment in Vipps.
+Even if a merchant created an express checkout payment with "useExplicitCheckoutFlow": false, 
+the user will forced to explicitly choose a delivery address and shipping method. 
+This flow ensures that the user gets the item delivered to the right place in the right way.
+We recommend that you make the necessary changes to your integration.
+
+See: [Old and new express checkout flow](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api#old-and-new-express-checkout-flow).
+
 ## More Solutions
 
-You can now see hoiw Vipps APIs can be used and combined to give the best
+You can now see how Vipps APIs can be used and combined to give the best
 user experience for vending machinbes, taxis, QR codes, and more.
 
 See: [Solutions](https://vippsas.github.io/vipps-developer-docs/docs/vipps-solutions).
