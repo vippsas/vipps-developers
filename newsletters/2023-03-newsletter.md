@@ -67,16 +67,17 @@ we have also updated the API guide, FAQ, etc.
 
 See: [ePayment API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/epayment-api).
 
-## ecom API
+## eCom API and Express Checkout
 
-The new express checkout flow ("useExplicitCheckoutFlow": true) will be the default flow for the users 
-when they pay a express checkout payment in Vipps.
-Even if a merchant created an express checkout payment with "useExplicitCheckoutFlow": false, 
-the user will forced to explicitly choose a delivery address and shipping method. 
+The new express checkout flow (`"useExplicitCheckoutFlow": true`) will be the default
+flow. Even if a merchant specify `"useExplicitCheckoutFlow": false`,
+the user will be prompted to explicitly choose a delivery address and shipping method.
+
 This flow ensures that the user gets the item delivered to the right place in the right way.
 We recommend that you make the necessary changes to your integration.
 
-See: [Old and new express checkout flow](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api#old-and-new-express-checkout-flow).
+See the FAQ:
+[Express checkout: Old and new flow](https://github.com/vippsas/vipps-ecom-api/blob/express-fix/vipps-ecom-api-faq.md#express-checkout-old-and-new-flow).
 
 ## More Solutions
 
