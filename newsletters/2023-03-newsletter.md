@@ -42,7 +42,7 @@ Newsletter archive: https://vippsas.github.io/vipps-developer-docs/docs/vipps-de
 
 ## ePayment API
 
-We recommend that all new integrations uise the ePayment API, not the eCom API.
+We recommend that all new integrations use the ePayment API, not the eCom API.
 
 The
 [ePayment API specification](https://vippsas.github.io/vipps-developer-docs/api/epayment)
@@ -53,8 +53,8 @@ See: [ePayment API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/epa
 
 ## More Solutions
 
-You can now see hoiw Vipps APIs can be used and combined to give the best
-user experience for vending machinbes, taxis, QR codes, and more.
+You can now see how Vipps APIs can be used and combined to give the best
+user experience for vending machines, taxis, QR codes, and more.
 
 See: [Solutions](https://vippsas.github.io/vipps-developer-docs/docs/vipps-solutions).
 
