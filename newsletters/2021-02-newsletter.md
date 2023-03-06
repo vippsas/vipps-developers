@@ -59,8 +59,7 @@ for details.
 The merchant can now choose whether the user should be automatically returned
 to the browser after completing the authentication Vipps.
 We have also added a specific flow for integrations with native apps.
-More information, and screenshots of the new flows, can be found in the
-[documentation](https://vippsas.github.io/vipps-developer-docs/docs/APIs/login-api/vipps-login-api#mobile-flow---app-switch-based-flow).
+
 
 ## Use Userinfo
 

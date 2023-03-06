@@ -90,9 +90,9 @@ but you can create as many as you need.
 1. Click the _Setup login_ button corresponding to your sales unit.
 1. If the first time, click _Activate Vipps Login_ and fill out fields that follow:
     * Redirect URIs - This creates a list containing URIs which the end user can be redirected to after a Vipps Logg Inn authentication. For testing, you could, for example, use <http://localhost>.
-    * Webhook - See [Revoke Consent Webhook](https://vippsas.github.io/vipps-developer-docs/docs/APIs/login-api/vipps-login-api#revoke-consent-webhook) for details.
+    * Webhook - See [Revoke Consent Webhook](https://vippsas.github.io/vipps-developer-docs/docs/APIs/login-api/api-guide/important-information#revoke-consent-webhook) for details.
     * Token endpoint authentication method - See
-    [Token endpoint authentication method](https://vippsas.github.io/vipps-developer-docs/docs/APIs/login-api/vipps-login-api#token-endpoint-authentication-method).
+    [Token endpoint authentication method](https://vippsas.github.io/vipps-developer-docs/docs/APIs/login-api/api-guide/core-concepts#token-endpoint-authentication-method).
 
 
 ## How to create additional users on portal.vipps.no

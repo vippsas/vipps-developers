@@ -69,7 +69,7 @@ This could typically be physical contexts like point of sales (POS) solutions, o
 phone in call center solutions, or devices/terminals like TV boxes. We currently support initiating logins based on the users phone number. We are also working on supporting the same flows with the user scanning the merchant's QR-code as a starting point.
 
 More information can be found in the
-[Vipps Login API Guide](https://vippsas.github.io/vipps-developer-docs/docs/APIs/login-api/vipps-login-api#client-initiated-backchannel-authentication-flows-ciba---special-cases-where-login-does-not-start-in-browser-or-app).
+[Vipps Login API Guide](https://vippsas.github.io/vipps-developer-docs/docs/APIs/login-api).
 
 ## The Vipps Recurring API now supports variable amounts
 
