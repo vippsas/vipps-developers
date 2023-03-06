@@ -66,7 +66,7 @@ See: [Old and new express checkout flow](https://vippsas.github.io/vipps-develop
 ## More Solutions
 
 You can now see how Vipps APIs can be used and combined to give the best
-user experience for vending machinbes, taxis, QR codes, and more.
+user experience for vending machines, taxis, QR codes, and more.
 
 See: [Solutions](https://vippsas.github.io/vipps-developer-docs/docs/vipps-solutions).
 
