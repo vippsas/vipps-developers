@@ -19,8 +19,9 @@ This newsletter was sent in March 2023.
 ## Table of Contents
 
 * [Is this is the first time you receive this newsletter?](#is-this-is-the-first-time-you-receive-this-newsletter)
+* [Improved shipping options in Vipps Checkout](#improved-shipping-options-in-vipps-checkout)
 * [ePayment API](#epayment-api)
-* [ecom API](#ecom-api)
+* [eCom API and Express Checkout](#ecom-api-and-express-checkout)
 * [More Solutions](#more-solutions)
 * [Report API](#report-api)
 * [Reminders](#reminders)
