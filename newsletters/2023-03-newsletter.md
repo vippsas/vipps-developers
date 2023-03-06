@@ -8,19 +8,20 @@ draft: true
 ---
 END_METADATA -->
 
-# Technical newsletter for developers 2023-01
+# Technical newsletter for developers 2023-03
 
 💥 DRAFT! 💥
 
-This newsletter was sent in February 2023.
+This newsletter was sent in March 2023.
 
 <!-- START_COMMENT -->
 
 ## Table of Contents
 
 * [Is this is the first time you receive this newsletter?](#is-this-is-the-first-time-you-receive-this-newsletter)
+* [ePayment API](#epayment-api)
+* [More Solutions](#more-solutions)
 * [Report API](#report-api)
-* [Changes to the access token endpoint](#changes-to-the-access-token-endpoint)
 * [Reminders](#reminders)
   * [Please check your API calls for errors](#please-check-your-api-calls-for-errors)
 * [Questions or comments?](#questions-or-comments)
@@ -39,28 +40,29 @@ Newsletter archive: https://vippsas.github.io/vipps-developer-docs/docs/vipps-de
 
 (You can unsubscribe if you want - see the link at the bottom)
 
+## ePayment API
+
+We recommend that all new integrations uise the ePayment API, not the eCom API.
+
+The
+[ePayment API specification](https://vippsas.github.io/vipps-developer-docs/api/epayment)
+has been ready for some time, and now
+we have also updated the API guide, FAQ, etc.
+
+See: [ePayment API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/epayment-api).
+
+## More Solutions
+
+You can now see hoiw Vipps APIs can be used and combined to give the best
+user experience for vending machinbes, taxis, QR codes, and more.
+
+See: [Solutions](https://vippsas.github.io/vipps-developer-docs/docs/vipps-solutions).
+
 ## Report API
 
 The Vipps Report API is now available. It is a REST API providing data about
 payments in JSON format. See the
 [API documentation](https://vippsas.github.io/vipps-developer-docs/docs/APIs/report-api).
-
-## Changes to the access token endpoint
-
-Due to
-[changes to the Microsoft Azure platform](https://learn.microsoft.com/en-us/answers/questions/768833/when-is-adal-and-azure-ad-graph-reaching-end-of-li.html)
-that Vipps depends on, we have to make some minor changes to the
-[`POST:/accesstoken/get`](https://vippsas.github.io/vipps-developer-docs/api/access-token#tag/Authorization-Service/operation/fetchAuthorizationTokenUsingPost)
-endpoint.
-
-We will not longer return the following fields in the response:
-```
-"ext_expires_in": "0",
-"expires_on": "1495271273",
-"not_before": "1495184574",
-```
-
-See the API specification (link above) for details.
 
 ## Reminders
 
