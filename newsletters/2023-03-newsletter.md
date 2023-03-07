@@ -36,30 +36,33 @@ Hello! All Vipps customers that have API access now receive this technical
 newsletter.
 
 The newsletter is sent 5-10 times a year and contains important updates and
-information about our APIs: https://vippsas.github.io/vipps-developer-docs/docs/APIs
+information about our [APIs](https://vippsas.github.io/vipps-developer-docs/docs/APIs).
 
-Newsletter archive: https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/newsletters
+See: [Newsletter archive](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/newsletters).
 
 (You can unsubscribe if you want - see the link at the bottom)
 
 ## Improved shipping options in Vipps Checkout
 
-To increase conversion in your webshop and create a great online customer experience, giving your customers an easy way of choosing their preferred shipping method is essential. We've done the heavy lifting, together with the shipping providers, so you can focus on other things.
+To increase conversion in your webshop and create a great online customer experience, it is essential that you provide your customers with an easy way of choosing their preferred shipping method. We've done the heavy lifting, together with the shipping providers, so you can focus on other things.
 
-Vipps Checkout supports all major shipping providers in the Norwegian market, including:
+[Vipps Checkout](https://vippsas.github.io/vipps-developer-docs/docs/APIs/checkout-api) supports all major shipping providers in the Norwegian market, including:
+
 * Bring/Posten
 * Postnord
 * Porterbuddy
 * Helthjem
 * Instabox
 
-To see how this works, visit our [demo store](https://demo.vipps.no/vipps-checkout-1/full).
+To see how this works, visit the [demo store](https://demo.vipps.no/vipps-checkout-1/full).
 
-For a more detailed description, visit our [documentation page](https://vippsas.github.io/vipps-developer-docs/docs/APIs/checkout-api/vipps-checkout-how-it-works-shipping).
+For a more detailed description, visit the [documentation page](https://vippsas.github.io/vipps-developer-docs/docs/APIs/checkout-api/vipps-checkout-how-it-works-shipping).
 
 ## ePayment API
 
-We recommend that all new integrations use the ePayment API, not the eCom API.
+We recommend that all new integrations use the
+[ePayment API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/epayment-api), not the
+[eCom API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api).
 
 The
 [ePayment API specification](https://vippsas.github.io/vipps-developer-docs/api/epayment)
@@ -71,7 +74,7 @@ See: [ePayment API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/epa
 ## eCom API and Express Checkout
 
 The new express checkout flow (`"useExplicitCheckoutFlow": true`) will be the default
-flow. Even if a merchant specify `"useExplicitCheckoutFlow": false`,
+flow. Even if a merchant specifies `"useExplicitCheckoutFlow": false`,
 the user will be prompted to explicitly choose a delivery address and shipping method.
 
 This flow ensures that the user gets the item delivered to the right place in the right way.
