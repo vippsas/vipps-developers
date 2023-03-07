@@ -44,7 +44,7 @@ See: [Newsletter archive](https://vippsas.github.io/vipps-developer-docs/docs/vi
 
 ## Improved shipping options in Vipps Checkout
 
-To increase conversion in your webshop and create a great online customer experience, it is essential that you provide your customers with an easy way of choosing their preferred shipping method. We've done the heavy lifting, together with the shipping providers, so you can focus on other things.
+To increase conversion in your webshop and create a great online customer experience, it is essential that you provide your customers with an easy way of choosing their preferred shipping method.
 
 [Vipps Checkout](https://vippsas.github.io/vipps-developer-docs/docs/APIs/checkout-api) supports all major shipping providers in the Norwegian market, including:
 
