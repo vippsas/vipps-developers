@@ -55,7 +55,7 @@ See the FAQ:
 
 ## Improved shipping options in Vipps Checkout
 
-To increase conversion, it is essential that you provide your customers their preferred shipping method.
+It is essential that you provide your customers their preferred shipping method.
 [Vipps Checkout](https://vippsas.github.io/vipps-developer-docs/docs/APIs/checkout-api)
 now supports all major shipping providers in the Norwegian market, including:
 
