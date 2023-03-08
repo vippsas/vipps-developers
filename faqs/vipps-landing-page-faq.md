@@ -1,6 +1,6 @@
 <!-- START_METADATA
 ---
-title: FAQ: Vipps landing page
+title: "FAQ: Vipps landing page"
 sidebar_label: Vipps landing page
 sidebar_position: 90
 pagination_next: null

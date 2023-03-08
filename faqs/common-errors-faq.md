@@ -1,6 +1,6 @@
 <!-- START_METADATA
 ---
-title: FAQ: Common errors
+title: "FAQ: Common errors"
 sidebar_label: Common errors
 sidebar_position: 10
 pagination_next: null

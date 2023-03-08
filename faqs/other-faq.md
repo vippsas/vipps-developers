@@ -1,6 +1,6 @@
 <!-- START_METADATA
 ---
-title: FAQ: Other questions
+title: "FAQ: Other questions"
 sidebar_label: Other questions
 sidebar_position: 200
 pagination_next: null

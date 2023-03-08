@@ -1,6 +1,6 @@
 <!-- START_METADATA
 ---
-title: FAQ: Requirements
+title: "FAQ: Requirements"
 sidebar_label: Requirements
 sidebar_position: 60
 pagination_next: null

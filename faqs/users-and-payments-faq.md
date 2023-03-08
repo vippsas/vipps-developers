@@ -1,6 +1,6 @@
 <!-- START_METADATA
 ---
-title: FAQ: Users and payments
+title: "FAQ: Users and payments"
 sidebar_label: Users and payments
 sidebar_position: 80
 pagination_next: null

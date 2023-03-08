@@ -1,6 +1,6 @@
 <!-- START_METADATA
 ---
-title: FAQ: Point of Sale integration
+title: "FAQ: Point of Sale integration"
 sidebar_label: POS integrations
 sidebar_position: 30
 pagination_next: null
