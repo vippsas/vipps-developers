@@ -19,9 +19,9 @@ This newsletter was sent in March 2023.
 ## Table of Contents
 
 * [Is this is the first time you receive this newsletter?](#is-this-is-the-first-time-you-receive-this-newsletter)
+* [eCom API and Express Checkout](#ecom-api-and-express-checkout)
 * [Improved shipping options in Vipps Checkout](#improved-shipping-options-in-vipps-checkout)
 * [ePayment API](#epayment-api)
-* [eCom API and Express Checkout](#ecom-api-and-express-checkout)
 * [More Solutions](#more-solutions)
 * [Report API](#report-api)
 * [Reminders](#reminders)
@@ -41,6 +41,18 @@ information about our [APIs](https://vippsas.github.io/vipps-developer-docs/docs
 See: [Newsletter archive](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/newsletters).
 
 (You can unsubscribe if you want - see the link at the bottom)
+
+## eCom API and Express Checkout
+
+The new express checkout flow (`"useExplicitCheckoutFlow": true`) is now the default
+flow. Even if a merchant specifies `"useExplicitCheckoutFlow": false`,
+the user will be prompted to explicitly choose a delivery address and shipping method.
+
+This flow ensures that the user gets the item delivered to the right place in the right way.
+We recommend that you make the necessary changes to your integration.
+
+See the FAQ:
+[Express checkout: Old and new flow](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api-faq#express-checkout-old-and-new-flow).
 
 ## Improved shipping options in Vipps Checkout
 
@@ -70,18 +82,6 @@ has been ready for some time, and now
 we have also updated the API guide, FAQ, etc.
 
 See: [ePayment API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/epayment-api).
-
-## eCom API and Express Checkout
-
-The new express checkout flow (`"useExplicitCheckoutFlow": true`) will be the default
-flow. Even if a merchant specifies `"useExplicitCheckoutFlow": false`,
-the user will be prompted to explicitly choose a delivery address and shipping method.
-
-This flow ensures that the user gets the item delivered to the right place in the right way.
-We recommend that you make the necessary changes to your integration.
-
-See the FAQ:
-[Express checkout: Old and new flow](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api-faq#express-checkout-old-and-new-flow).
 
 ## More Solutions
 
