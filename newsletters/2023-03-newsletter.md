@@ -81,7 +81,7 @@ This flow ensures that the user gets the item delivered to the right place in th
 We recommend that you make the necessary changes to your integration.
 
 See the FAQ:
-[Express checkout: Old and new flow](https://github.com/vippsas/vipps-ecom-api/blob/express-fix/vipps-ecom-api-faq.md#express-checkout-old-and-new-flow).
+[Express checkout: Old and new flow](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api-faq#express-checkout-old-and-new-flow).
 
 ## More Solutions
 
