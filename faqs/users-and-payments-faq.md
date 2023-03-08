@@ -1,13 +1,14 @@
 <!-- START_METADATA
 ---
-title: Users and payments
+title: FAQ: Users and payments
+sidebar_label: Users and payments
 sidebar_position: 80
 pagination_next: null
 pagination_prev: null
 ---
 END_METADATA -->
 
-# FAQs: Users and payments
+# FAQ: Users and payments
 
 <!-- START_COMMENT -->
 

@@ -1,7 +1,8 @@
 <!-- START_METADATA
 ---
+title: Technical newsletter for developers 2020-12
+sidebar_label: 2020-12
 sidebar_position: 76
-title: 2020-12
 pagination_next: null
 pagination_prev: null
 ---

@@ -1,13 +1,14 @@
 <!-- START_METADATA
 ---
-title: Reservations and capture
+title: FAQ: Reservations and capture
+sidebar_label: Reservations and capture
 sidebar_position: 70
 pagination_next: null
 pagination_prev: null
 ---
 END_METADATA -->
 
-# FAQs: Reservations and capture
+# FAQ: Reservations and capture
 
 <!-- START_COMMENT -->
 

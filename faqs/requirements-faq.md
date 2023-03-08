@@ -1,13 +1,14 @@
 <!-- START_METADATA
 ---
-title: Requirements
+title: FAQ: Requirements
+sidebar_label: Requirements
 sidebar_position: 60
 pagination_next: null
 pagination_prev: null
 ---
 END_METADATA -->
 
-# FAQs: Requirements
+# FAQ: Requirements
 
 <!-- START_COMMENT -->
 

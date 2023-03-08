@@ -1,13 +1,14 @@
 <!-- START_METADATA
 ---
-title: Other questions
+title: FAQ: Other questions
+sidebar_label: Other questions
 sidebar_position: 200
 pagination_next: null
 pagination_prev: null
 ---
 END_METADATA -->
 
-# FAQs: Other questions
+# FAQ: Other questions
 
 <!-- START_COMMENT -->
 

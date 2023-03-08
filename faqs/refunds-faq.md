@@ -1,13 +1,14 @@
 <!-- START_METADATA
 ---
-title: Refunds
+title: FAQ: Refunds
+sidebar_label: Refunds
 sidebar_position: 50
 pagination_next: null
 pagination_prev: null
 ---
 END_METADATA -->
 
-# FAQs: Refunds
+# FAQ: Refunds
 
 <!-- START_COMMENT -->
 

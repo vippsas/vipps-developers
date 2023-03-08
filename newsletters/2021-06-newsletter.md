@@ -1,6 +1,8 @@
-<!-- START_METADATA---
+<!-- START_METADATA
+---
+title: Technical newsletter for developers 2021-06
+sidebar_label: 2021-06
 sidebar_position: 75
-title: 2021-06
 pagination_next: null
 pagination_prev: null
 ---

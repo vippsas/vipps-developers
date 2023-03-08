@@ -1,13 +1,14 @@
 <!-- START_METADATA
 ---
-title: POS integrations
+title: FAQ: Point of Sale integration
+sidebar_label: POS integrations
 sidebar_position: 30
 pagination_next: null
 pagination_prev: null
 ---
 END_METADATA -->
 
-# FAQs: Point of Sale integration
+# FAQ: Point of Sale integration
 
 <!-- START_COMMENT -->
 

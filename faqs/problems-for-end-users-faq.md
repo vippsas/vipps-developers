@@ -1,13 +1,14 @@
 <!-- START_METADATA
 ---
-title: Problems for end users
+title: FAQ: Problems for end users
+sidebar_label: Problems for end users
 sidebar_position: 40
 pagination_next: null
 pagination_prev: null
 ---
 END_METADATA -->
 
-# FAQs: Problems for end users
+# FAQ: Problems for end users
 
 <!-- START_COMMENT -->
 

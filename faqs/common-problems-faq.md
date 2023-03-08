@@ -1,13 +1,14 @@
 <!-- START_METADATA
 ---
-title: Common problems
+title: FAQ: Common problems
+sidebar_label: Common problems
 sidebar_position: 20
 pagination_next: null
 pagination_prev: null
 ---
 END_METADATA -->
 
-# FAQs: Common problems
+# FAQ: Common problems
 
 See also
 [Common problems](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api-faq#common-problems)

@@ -1,13 +1,14 @@
 <!-- START_METADATA
 ---
-title: Vipps landing page
+title: FAQ: Vipps landing page
+sidebar_label: Vipps landing page
 sidebar_position: 90
 pagination_next: null
 pagination_prev: null
 ---
 END_METADATA -->
 
-# FAQs: Vipps landing page
+# FAQ: Vipps landing page
 
 <!-- START_COMMENT -->
 
