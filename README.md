@@ -1,6 +1,7 @@
 <!-- START_METADATA
 ---
-title: Introduction
+title: Vipps developer information
+sidebar_label: Introduction
 sidebar_position: 1
 hide_table_of_contents: true
 pagination_next: null

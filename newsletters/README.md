@@ -1,7 +1,8 @@
 <!-- START_METADATA
 ---
+title: Technical newsletter for developers
+sidebar_label: Newsletters
 sidebar_position: 95
-title: Newsletters
 hide_table_of_contents: true
 pagination_next: null
 pagination_prev: null

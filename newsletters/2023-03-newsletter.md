@@ -1,7 +1,8 @@
 <!-- START_METADATA
 ---
-sidebar_position: 66
 title: 2023-02
+sidebar_label: Technical newsletter for developers 2023-03
+sidebar_position: 66
 pagination_next: null
 pagination_prev: null
 draft: true

@@ -1,6 +1,7 @@
 <!-- START_METADATA
 ---
 title: Frequently asked questions
+sidebar_label: Frequently asked questions
 sidebar_position: 60
 hide_table_of_contents: true
 pagination_next: null
