@@ -56,9 +56,9 @@ See the FAQ:
 
 ## Improved shipping options in Vipps Checkout
 
-To increase conversion in your webshop and create a great online customer experience, it is essential that you provide your customers with an easy way of choosing their preferred shipping method.
-
-[Vipps Checkout](https://vippsas.github.io/vipps-developer-docs/docs/APIs/checkout-api) supports all major shipping providers in the Norwegian market, including:
+To increase conversion, it is essential that you provide your customers their preferred shipping method.
+[Vipps Checkout](https://vippsas.github.io/vipps-developer-docs/docs/APIs/checkout-api)
+now supports all major shipping providers in the Norwegian market, including:
 
 * Bring/Posten
 * Postnord
@@ -66,9 +66,10 @@ To increase conversion in your webshop and create a great online customer experi
 * Helthjem
 * Instabox
 
-To see how this works, visit the [demo store](https://demo.vipps.no/vipps-checkout-1/full).
-
-For a more detailed description, visit the [documentation page](https://vippsas.github.io/vipps-developer-docs/docs/APIs/checkout-api/vipps-checkout-how-it-works-shipping).
+See
+[How it works for shipping](https://vippsas.github.io/vipps-developer-docs/docs/APIs/checkout-api/vipps-checkout-how-it-works-shipping)
+for more details, and try for yourself in our
+[demo store](https://demo.vipps.no/vipps-checkout-1/full).
 
 ## ePayment API
 
@@ -79,9 +80,8 @@ We recommend that all new integrations use the
 The
 [ePayment API specification](https://vippsas.github.io/vipps-developer-docs/api/epayment)
 has been ready for some time, and now
-we have also updated the API guide, FAQ, etc.
-
-See: [ePayment API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/epayment-api).
+we have also updated the
+[API guide, FAQ, etc](https://vippsas.github.io/vipps-developer-docs/docs/APIs/epayment-api).
 
 ## More Solutions
 
