@@ -27,9 +27,7 @@ The newsletter is sent 5-10 times a year. See the
 ## eCom API and Express Checkout
 
 The new express checkout flow (`"useExplicitCheckoutFlow": true`) is now the only possible
-flow. Even if a merchant specifies `"useExplicitCheckoutFlow": false`,
-the user will be prompted to explicitly choose a delivery address and shipping method.
-
+flow.
 This ensures that the user gets the item delivered to the right place in the right way.
 
 See the FAQ:
