@@ -14,22 +14,6 @@ END_METADATA -->
 
 This newsletter was sent in March 2023.
 
-<!-- START_COMMENT -->
-
-## Table of Contents
-
-* [Is this is the first time you receive this newsletter?](#is-this-is-the-first-time-you-receive-this-newsletter)
-* [eCom API and Express Checkout](#ecom-api-and-express-checkout)
-* [Improved shipping options in Vipps Checkout](#improved-shipping-options-in-vipps-checkout)
-* [ePayment API](#epayment-api)
-* [More Solutions](#more-solutions)
-* [Report API](#report-api)
-* [Reminders](#reminders)
-  * [Please check your API calls for errors](#please-check-your-api-calls-for-errors)
-* [Questions or comments?](#questions-or-comments)
-
-<!-- END_COMMENT -->
-
 ## Is this is the first time you receive this newsletter?
 
 Hello! All Vipps customers that have API access now receive this technical
@@ -72,9 +56,11 @@ for more details, and try for yourself in our
 
 ## ePayment API
 
-We recommend that all new integrations use the
+We strongly recommend that all new integrations use the
 [ePayment API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/epayment-api), not the
 [eCom API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api).
+The ePayment API is redesigned from scrstch, based on everything we have learned through the
+eCom API over several years.
 
 The
 [ePayment API specification](https://vippsas.github.io/vipps-developer-docs/api/epayment)
@@ -82,7 +68,10 @@ has been ready for some time, and now
 we have also updated the
 [API guide, FAQ, etc](https://vippsas.github.io/vipps-developer-docs/docs/APIs/epayment-api).
 
-## More Solutions
+**Please note:** The eCom API will still be available for a long time, but new development will
+be for the ePayment API.
+
+## More Solutions and best practices
 
 You can now see how Vipps APIs can be used and combined to give the best
 user experience for vending machines, taxis, QR codes, and more.
