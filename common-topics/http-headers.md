@@ -38,9 +38,9 @@ the headers could be:
 **Important:** Please use self-explanatory, human readable and reasonably short
 values that uniquely identify the system (and plugin).
 
-If it the `Vipps-System-Plugin-*` headers do not make sense to you,
+If the `Vipps-System-Plugin-*` headers do not make sense to you,
 you can simply sent the same as for `Vipps-System-*`.
-The important thing is that you send as much useful infomration as possible,
+The important thing is that you send as much useful information as possible,
 so it is as easy as possible to solve problems with your API requests if there are any.
 
 ## Idempotency
