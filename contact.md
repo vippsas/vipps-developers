@@ -7,7 +7,7 @@ pagination_prev: null
 ---
 END_METADATA -->
 
-# How to contact Vipps Integration
+# How to contact Integration Services
 
 <!-- START_COMMENT -->
 
@@ -22,7 +22,10 @@ There are a lot of self-service solutions on
 [portal.vipps.no](https://portal.vipps.no),
 please check there first.
 
-Vipps Integration helps developers with _**technical**_ questions, such as questions about using our APIs.
+**Important:** Almost all requests we get are already covered in the
+[searchable technical documentation](https://vippsas.github.io/vipps-developer-docs/search).
+
+Integration Services helps developers with _**technical**_ questions, such as questions about using our APIs.
 If you do not have a technical question, you can avoid delays by starting in the right place:
 
 | Topic | How to get help |
@@ -41,8 +44,6 @@ If you do not have a technical question, you can avoid delays by starting in the
 For _**technical**_ issues related to Vipps and development of services using our APIs: Please see below.
 
 ## Almost all questions are answered in the documentation
-
-**Important:** Almost all requests we get are already covered in the technical documentation.
 
 Please check the
 [FAQs (Frequently Asked Questions)](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/faqs).
@@ -81,7 +82,7 @@ information to the address below:
 **Important:** If you do not provide enough information, our first reply will
 be a request for more details, which will of course cause delays.
 
-The Integration email address is: integration@vipps.no
+The Integration Services email address is: integration@vipps.no
 
 ## Keep your colleagues up to date
 
