@@ -12,9 +12,9 @@ Please use the following Vipps HTTP headers for all requests to the
 Vipps APIs. These headers provide useful metadata about the merchant's system,
 which help Vipps improve our services, and also helps in investigating problems.
 
-These headers are **required for plugins and partners** and sent by the recent versions of
-[the official Vipps plugins](https://vippsas.github.io/vipps-developer-docs/docs/vipps-plugins)
-and we recommend all customers with direct integration with the API to also do so.
+These headers are **required for plugins and partners** and sent by the
+[the official Vipps plugins](https://vippsas.github.io/vipps-developer-docs/docs/vipps-plugins).
+We strongly recommend that all customers with direct integration with the API to also do so.
 
 Partners must always send the `Merchant-Serial-Number` header, and we recommend
 that _everyone_ sends it, also when using the merchant's own API keys.
@@ -29,14 +29,19 @@ the headers could be:
 
 | Header| Description| Example value for POS | Example for webshop | Example for vending machine | Example for WooCommerce plugin |
 |-------------------------------|----------------------------------------------|-----------|----------------|--------|---------------|
-| `Vipps-System-Plugin-Name`    | The name of the plugin             | `acme-pos`| `acme-webshop` | `acme-vending` | `vipps-woocommerce` |
 | `Vipps-System-Name`           | The name of the solution           | `acme`    | `acme`         | `acme` | `woocommerce` |
 | `Vipps-System-Version`        | The version number of the solution | `1.7`     | `2.6`          | `2.6` | `5.4` |
+| `Vipps-System-Plugin-Name`    | The name of the plugin             | `acme-pos`| `acme-webshop` | `acme-vending` | `vipps-woocommerce` |
 | `Vipps-System-Plugin-Version` | The version number of the plugin   | `3.2`     | `4.3`          | `4.3` | `1.4.1` |
 | `Merchant-Serial-Number`      | The MSN for the sales unit                    | `123456`  | `123456`       | `123456` | `123456` |
 
 **Important:** Please use self-explanatory, human readable and reasonably short
 values that uniquely identify the system (and plugin).
+
+If it the `Vipps-System-Plugin-*` headers do not make sense to you,
+you can simply sent the same as for `Vipps-System-*`.
+The important thing is that you send as much useful infomration as possible,
+so it is as easy as possible to solve problems with your API requests if there are any.
 
 ## Idempotency
 
