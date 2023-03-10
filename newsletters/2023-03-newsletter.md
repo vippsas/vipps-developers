@@ -55,7 +55,7 @@ for more details, and try for yourself in our
 We strongly recommend that all new integrations use the
 [ePayment API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/epayment-api), not the
 [eCom API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api).
-The ePayment API is redesigned from scrstch, based on everything we have learned through the
+The ePayment API is redesigned from scratch, based on everything we have learned through the
 eCom API over several years.
 
 The
