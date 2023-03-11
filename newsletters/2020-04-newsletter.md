@@ -92,8 +92,8 @@ is very welcome.
 
 We have made some more in-depth product information pages with screenshots:
 
-* [eCom (_Vipps på Nett_)](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/how-it-works/vipps-ecom-api-howitworks)
-* [Recurring (_Faste Betalinger_)](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/how-it-works/vipps-login-recurring-howitworks)
+* [eCom (_Vipps på Nett_)](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/how-it-works)
+* [Recurring (_Faste Betalinger_)](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/how-it-works)
 
 ## Plugin overview
 
