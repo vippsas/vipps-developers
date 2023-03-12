@@ -26,20 +26,19 @@ This leads you through applying for Vipps services and getting set up in the tes
 
 Quick links:
 
-* [Getting started](./vipps-getting-started.md) - Apply for Vipps services.
-* [Vipps Merchant Test (MT)](./test-environment.md) - Install the Vipps test app.
+* [Getting started](./vipps-getting-started.md) - Apply for services, products, test users, etc..
+* [Merchant Test (MT)](./test-environment.md) - Install the test app.
 * [API keys](./common-topics/api-keys.md) - Find your api keys.
 
 Dive deeper with:
 
-* [Developer resources](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/developer-resources) - API dashboard, demo store, design guidelines, Vipps portal, status pages, etc.
-* [Common API topics](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/common-topics) - API keys, API lifecycle, authentication, HTTP headers, polling guidelines, reserve and capture, userinfo, Vipps landing page, etc.
-* [Frequently asked questions](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/faqs) - Requirements, common problems, refunds, users and payments, Vipps landing page, problems for end users, etc.
-
+* [Developer resources](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/developer-resources) - API dashboard, demo store, design guidelines, portal, status pages, etc.
+* [Common API topics](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/common-topics) - API keys, API lifecycle, authentication, HTTP headers, polling guidelines, reserve and capture, userinfo, landing page, etc.
+* [Frequently asked questions](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/faqs) - Requirements, common problems, refunds, users and payments, landing page, problems for end users, etc.
 
 
 Related topics:
 
-* [Partner information](https://github.com/vippsas/vipps-partner) - Technical information for Vipps partners.
-* [Vipps Plugins](https://vippsas.github.io/vipps-developer-docs/docs/vipps-plugins) - Information about using plugins for your Vipps integration.
-* [Vipps Solutions](https://vippsas.github.io/vipps-developer-docs/docs/vipps-solutions) - Examples that combine several API solutions.
+* [Partner information](https://github.com/vippsas/vipps-partner) - Technical information for partners.
+* [Plugins](https://vippsas.github.io/vipps-developer-docs/docs/vipps-plugins) - Information about using plugins for your integration.
+* [Solutions](https://vippsas.github.io/vipps-developer-docs/docs/vipps-solutions) - Examples that combine several API solutions.

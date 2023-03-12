@@ -3,6 +3,7 @@
 title: Quick start guides
 sidebar_label: Quick start guides
 sidebar_position: 4
+description: A guide for using Postman to test the Vipps MobilePay APIs.
 pagination_next: null
 pagination_prev: null
 ---
@@ -15,16 +16,9 @@ END_METADATA -->
 ℹ️ Please use the website:
 [Vipps MobilePay Technical Documentation](https://vippsas.github.io/vipps-developer-docs/).
 
-## Table of Contents
-
-* [What you need for getting started with the API](#what-you-need-for-getting-started-with-the-api)
-* [Getting started with Postman](#getting-started-with-postman)
-  * [Import collections and environments](#import-collections-and-environments)
-  * [Update the environment values](#update-the-environment-values)
-  * [Run API calls](#run-api-calls)
-* [Try it Out!](#try-it-out)
-
 <!-- END_COMMENT -->
+
+This is a guide for using Postman to test the Vipps MobilePay APIs.
 
 ## What you need for getting started with the API
 
@@ -73,7 +67,7 @@ Once you have installed Postman, you can import an environment from one our our 
 
 The following is a global environment file that can be used with all the APIs:
 
-* [Vipps API Global Postman environment](tools/vipps-api-global-postman-environment.json)
+* [Global Postman environment](tools/vipps-api-global-postman-environment.json)
 
 ### Update the environment values
 
@@ -95,7 +89,7 @@ You might want to make the same request from your own application. You can
 generate snippets of code in various languages that will help you do this.
 Click the Code link to open the "Generate code snippets" modal.
 
-![Vipps Developer Postman: Tabs](images/postman-tabs_sm.png)
+![Developer Postman: Tabs](images/postman-tabs_sm.png)
 
 ## Try it out!
 

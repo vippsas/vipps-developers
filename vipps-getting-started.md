@@ -1,7 +1,9 @@
 <!-- START_METADATA
 ---
-title: Getting started
+title: Getting started with Vipps MobilePay
+sidebar_label: Getting started
 sidebar_position: 2
+description: Getting started with Vipps MobilePay
 pagination_next: null
 pagination_prev: null
 ---
@@ -9,16 +11,14 @@ END_METADATA -->
 
 # Getting started
 
-Hello and welcome to Vipps!
-
-Get started integrating your business with Vipps by [applying for Vipps services](#apply-for-vipps-services).
+Get started integrating your business with Vipps MobilePay by [applying for services](#apply-for-vipps-services).
 After that, you can [start testing](#start-testing) and [implementing best practices](#implement-best-practices).
 
 ## Apply for Vipps services
 
-You can apply for Vipps services on [portal.vipps.no](https://portal.vipps.no).
+You can apply for services on [portal.vipps.no](https://portal.vipps.no).
 See
-[Requirements for applying for a Vipps service](./common-topics/requirements.md).
+[Requirements for applying for a service](./common-topics/requirements.md).
 
 **Please note:** If you plan to use Vipps through a PSP, you must
 order the Vipps solution from the PSP.
