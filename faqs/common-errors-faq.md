@@ -16,8 +16,8 @@ in the eCom API FAQs.
 
 <!-- START_COMMENT -->
 
-ℹ️ Please use the new documentation:
-[Vipps Technical Documentation](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/faqs).
+ℹ️ Please use the website:
+[Vipps MobilePay Technical Documentation](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/faqs).
 
 <!-- END_COMMENT -->
 

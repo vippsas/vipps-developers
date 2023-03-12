@@ -13,8 +13,8 @@ The Vipps MT is available for all Vipps merchants who have API access.
 
 <!-- START_COMMENT -->
 
-ℹ️ Please use the new documentation:
-[Vipps Technical Documentation](https://vippsas.github.io/vipps-developer-docs/).
+ℹ️ Please use the website:
+[Vipps MobilePay Technical Documentation](https://vippsas.github.io/vipps-developer-docs/).
 
 ## Table of contents
 
