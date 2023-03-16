@@ -22,7 +22,7 @@ END_METADATA -->
 Vipps and MobilePay have recently merged so the information is still under development and will be updated soon.
 
 You can find MobilePay testing information under the _Development Guide > Testing_ section for each API in the
-[MobilePay developers website](https://developer.mobilepay.dk/).
+[MobilePay developer website](https://developer.mobilepay.dk/).
 For example, see
 [_App Payments > Development Guide > Testing_](https://developer.mobilepay.dk/docs/app-payments/development-guide/test).
 
