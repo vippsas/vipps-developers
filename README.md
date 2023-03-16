@@ -19,7 +19,7 @@ END_METADATA -->
 
 <!-- END_COMMENT -->
 
-Vipps and MobilePay have recently merged, so the information is still under development.
+Vipps and MobilePay have recently merged, so the information and developer documentation on this website is still under development. We are constantly making improvements.
 Most MobilePay information is still on the
 [MobilePay developers website](https://developer.mobilepay.dk/), but will be updated here soon.
 
