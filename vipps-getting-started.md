@@ -1,9 +1,9 @@
 <!-- START_METADATA
 ---
-title: Getting started with Vipps MobilePay
+title: Getting started with Vipps and MobilePay
 sidebar_label: Getting started
 sidebar_position: 2
-description: Getting started with Vipps MobilePay
+description: Getting started with Vipps and MobilePay
 pagination_next: null
 pagination_prev: null
 ---
@@ -11,10 +11,18 @@ END_METADATA -->
 
 # Getting started
 
-Get started integrating your business with Vipps MobilePay by [applying for services](#apply-for-vipps-services).
+Vipps and MobilePay have recently merged so the information is still under development.
+Most MobilePay information is still on the
+[MobilePay developers website](https://developer.mobilepay.dk/), but will be updated here soon.
+
+For information about getting started with MobilePay, see: [MobilePay developers website](https://developer.mobilepay.dk/).
+
+## Get started with Vipps
+
+Get started with Vipps by [applying for services](#apply-for-vipps-services).
 After that, you can [start testing](#start-testing) and [implementing best practices](#implement-best-practices).
 
-## Apply for Vipps services
+### Apply for Vipps services
 
 You can apply for services on [portal.vipps.no](https://portal.vipps.no).
 See
@@ -37,7 +45,7 @@ Here are the most common API products:
 
 See [Vipps APIs](/docs/APIs) for a complete list of API products.
 
-For a Norwegian overview of the products, see [vipps.no: Produkter og tjenester](https://vipps.no/produkter-og-tjenester/bedrift/).
+For a Norwegian overview of the products, see [vipps.no: Produkter og tjenester (_Products and services_)](https://vipps.no/produkter-og-tjenester/bedrift/).
 
 When the _Merchant Agreement_ is approved and your product order is sent,
 you (or the user associated with the order) will receive an email
@@ -48,7 +56,7 @@ When your product order is approved, you will get an email stating that you can
 get your production [API keys](./common-topics/api-keys.md) on [portal.vipps.no](https://portal.vipps.no).
 These will allow you to start running API commands against the production server (e.g., create a payment request that goes to a real user's Vipps app).
 
-## Start testing
+### Start testing
 
 Start by [getting your API keys](./developer-resources/portal.md#how-to-find-the-api-keys).
 You will need these for providing authentication when sending Vipps API requests.
@@ -60,7 +68,7 @@ and respond by using the Vipps Merchant Test (MT) app. Learn more about the Vipp
 
 To experiment with sending requests (e.g., create payment, cancel payment, refund payment), [Postman](https://learning.postman.com/docs/getting-started/introduction/) is a good alternative. We have several API-specific [quick start guides using Postman](quick-start-guides.md) to help you get started.
 
-## Implement best practices
+### Implement best practices
 
 It is very important that you check the return response of each API call.
 You will get information about potential problems that could cause the customers problems or might cause you to lose money.

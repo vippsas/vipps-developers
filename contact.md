@@ -1,22 +1,31 @@
 <!-- START_METADATA
 ---
 title: Contact us
-sidebar_position: 100
+sidebar_label: Contact us
+sidebar_position: 110
 pagination_next: null
 pagination_prev: null
 ---
 END_METADATA -->
 
-# How to contact Integration Services
+# Contact us
 
 <!-- START_COMMENT -->
 
 ℹ️ Please use the website:
-[Vipps MobilePay Technical Documentation](https://vippsas.github.io/vipps-developer-docs/).
+[Vipps MobilePay Technical Documentation](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/contact).
 
 <!-- END_COMMENT -->
 
-## We help developers with technical issues
+## MobilePay support
+
+Vipps and MobilePay have recently merged so the information is still under development and will be updated soon.
+
+If you need help with MobilePay, see [MobilePay Developer Support](https://developer.mobilepay.dk/docs/support).
+
+## Vipps support
+
+### We help developers with technical issues
 
 There are a lot of self-service solutions on
 [portal.vipps.no](https://portal.vipps.no),
@@ -43,7 +52,7 @@ If you do not have a technical question, you can avoid delays by starting in the
 
 For _**technical**_ issues related to Vipps and development of services using our APIs: Please see below.
 
-## Almost all questions are answered in the documentation
+### Almost all questions are answered in the documentation
 
 Please check the
 [FAQs (Frequently Asked Questions)](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/faqs).
@@ -51,7 +60,7 @@ Please check the
 Please use the
 [search functionality for the technical documentation](https://vippsas.github.io/vipps-developer-docs/search).
 
-## What to include in the email
+### What to include in the email
 
 If you cannot find the answer: Please send an email with all relevant
 information to the address below:
@@ -84,7 +93,7 @@ be a request for more details, which will of course cause delays.
 
 The Integration Services email address is: integration@vipps.no
 
-## Keep your colleagues up to date
+### Keep your colleagues up to date
 
 If you want colleagues to be included in all communication regarding this issue,
 add them in the `To:` or `CC:` field of the email.
@@ -94,7 +103,7 @@ to the email you are sending.
 
 All updates to the issue will be sent to every recipient of the previous email.
 
-## Automatic reply
+### Automatic reply
 
 You will get an auto-reply from us with an issue number like `VSD-123456` in
 the `Subject` line. This is the unique number for this specific issue, and is
@@ -102,7 +111,7 @@ used to connect all communication about this issue in our systems.
 
 The auto-reply is sent from a real e-mail address, which you can reply to.
 
-## Adding additional information
+### Adding additional information
 
 If you want to send additional information about the same issue,
 please reply to the email, without changing the `Subject` line.
@@ -110,7 +119,7 @@ please reply to the email, without changing the `Subject` line.
 Please remove previous communication when replying to an email, do _not_ quote
 all the previous messages - we already have them.
 
-## Response time
+### Response time
 
 We will help as quickly as possible, usually in a few hours during normal
 working hours.
@@ -118,7 +127,7 @@ working hours.
 But: Due to large variations in the number of requests and the
 varying complexity of resolving them, we cannot guarantee response times.
 
-## Escalation
+### Escalation
 
 If you have a KAM (Key Account Manager), please contact her/him.
 If you do not, please reply to the issue, and add any relevant information.
@@ -131,19 +140,19 @@ Please send separate emails for each problem. If you send an email about a
 new problem by replying to an old issue, it may delay our response.
 If you reply to an old issue that has been closes, we will not see the reply.
 
-## Can I call you?
+### Can I call you?
 
-Nope. We do not have a phone number, and we do not have the capacity to
+We do not have a phone number, and we do not have the capacity to
 help 1:1 on phone. Most cases involve information that needs to be in written form,
 such as ids, API requests/responses, etc.
 
 We do sometimes set up Slack channels for customers, so you can request that if
 you expect to be contacting us a lot.
 
-## Can we have a meeting?
+### Can we have a meeting?
 
-Nope. See: [Can I call you?](#can-i-call-you)
+See: [Can I call you?](#can-i-call-you)
 
-## Newsletter
+### Newsletter
 
 Sign up for our [Technical newsletter for developers](./newsletters/README.md).

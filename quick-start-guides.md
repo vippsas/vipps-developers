@@ -18,7 +18,7 @@ END_METADATA -->
 
 <!-- END_COMMENT -->
 
-This is a guide for using Postman to test the Vipps MobilePay APIs.
+This is a guide for using Postman to test the Vipps MobilePay APIs with the Vipps app.
 
 ## What you need for getting started with the API
 

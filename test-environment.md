@@ -1,60 +1,35 @@
 <!-- START_METADATA
 ---
-title: Vipps Merchant Test (MT)
+title: The Vipps and MobilePay test environment
+sidebar_label: Test environment
 sidebar_position: 3
 pagination_next: null
 pagination_prev: null
 ---
 END_METADATA -->
 
-# The Vipps Merchant Test (MT)
-
-The Vipps MT is available for all Vipps merchants who have API access.
+# Test environment
 
 <!-- START_COMMENT -->
 
 ℹ️ Please use the website:
-[Vipps MobilePay Technical Documentation](https://vippsas.github.io/vipps-developer-docs/).
-
-## Table of contents
-
-* [About the test environment](#about-the-test-environment)
-  * [Limitations of the test environment](#limitations-of-the-test-environment)
-* [Access to the test environment](#access-to-the-test-environment)
-  * [Merchants](#merchants)
-  * [Partners](#partners)
-* [Test server](#test-server)
-* [Test merchants](#test-merchants)
-* [Test users](#test-users)
-  * [Phone number](#phone-number)
-  * [Payment card](#payment-card)
-  * [Email address](#email-address)
-  * [Other data](#other-data)
-* [Test amounts](#test-amounts)
-* [Vipps test apps](#vipps-test-apps)
-  * [Install Vipps MT on iOS](#install-vipps-mt-on-ios)
-  * [Install Vipps MT on Android](#install-vipps-mt-on-android)
-  * [Other versions](#other-versions)
-  * [Limitations of the test apps](#limitations-of-the-test-environment)
+[Vipps MobilePay Technical Documentation](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/test-environment).
 
 <!-- END_COMMENT -->
 
+The Merchant Test (MT) environment is available for all merchants who have access to the Vipps MobilePay APIs.
+
 ## About the test environment
 
-All Vipps customers with access to
-[Vipps På Nett](https://www.vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/),
-[Vipps Faste Betalinger](https://www.vipps.no/produkter-og-tjenester/bedrift/faste-betalinger/faste-betalinger/)
-and
-[Vipps Logg Inn](https://www.vipps.no/produkter-og-tjenester/bedrift/logg-inn-med-vipps/logg-inn-med-vipps/)
-have access to the test environment.
+All customers with access to the APIs have access to the test environment.
 
 **Important:** There is no SLA or uptime guarantee for the test environment.
-Vipps will not make any fixes, etc. outside of typical Norwegian office hours.
+We will not make any fixes, etc. outside of typical Norwegian office hours.
 See the
 [Status page](https://vipps-test.statuspage.io)
 for automatically updated status information.
 
-The test environment is suitable for testing _most_ of the Vipps functionality, but some
+The test environment is suitable for testing _most_ of the API functionality, but some
 functionality in the production environment is not available in MT.
 In general, MT does not contain functionality that requires integration with
 third parties.
@@ -62,9 +37,9 @@ third parties.
 The test and production environments are completely separate and use different
 [API keys](common-topics/api-keys.md).
 
-**Please note:** For production, Vipps only offers
+**Please note:** For production, we only offer
 [Direct capture](common-topics/reserve-and-capture.md#direct-capture)
-for merchants that use Vipps through a partner.
+for merchants that use our APIs through a partner.
 In the test environment, you can do this by creating a sales unit where direct capture is allowed.
 
 ### Limitations of the test environment
@@ -77,7 +52,7 @@ Functionality not available in MT (a non-exhaustive list):
   but it may no always be possible.
   In practice this is extremely rare.
 - Push alerts may be unavailable or unstable. To see payment requests: Open Vipps and manually
-  go to the "Betalinger" (i.e., *Payments*) at the bottom of the main screen.
+  go to the "Betalinger" (i.e., _Payments_) at the bottom of the main screen.
   You may have to "pull to refresh" on that screen.
   The background for this: The app id for the test and production apps are the same, and we
   are not able to distinguish between the apps when sending push messages.
@@ -112,8 +87,9 @@ for a Vipps product (that has an API), and the details can be found on the
 [portal.vipps.no](https://portal.vipps.no).
 
 See:
-* [How to find the API keys](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/developer-resources/portal#how-to-find-the-api-keys)
-* [How to create a test sales unit](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/developer-resources/portal#how-to-create-a-test-sales-unit)
+
+- [How to find the API keys](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/developer-resources/portal#how-to-find-the-api-keys)
+- [How to create a test sales unit](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/developer-resources/portal#how-to-create-a-test-sales-unit)
 
 ### Partners
 
@@ -124,6 +100,7 @@ on
 [portal.vipps.no](https://portal.vipps.no).
 
 The partner must also:
+
 1. Explain in the order form that it is only for access to the test environment.
 2. Notify their partner manager that they only need test access.
 
@@ -151,6 +128,7 @@ You will, therefore, need to use a different set of API keys for the test enviro
 All Vipps customers can create sales units ("merchants") in the test environment.
 
 See:
+
 - [Developer resources: Vipps portal: How to create a test sales unit](./developer-resources/portal.md#how-to-create-a-test-sales-unit).
 
 **Please note:** Sales units in the _production_ environment must follow strict rules
@@ -192,7 +170,7 @@ as the test number may be a real phone number for a real Vipps user.
 
 ### Payment card
 
-The test user is registered with a payment card, and it is not possible to add new cards in the Vipps test app. 
+The test user is registered with a payment card, and it is not possible to add new cards in the Vipps test app.
 
 ### Email address
 
