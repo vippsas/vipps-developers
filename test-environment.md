@@ -1,14 +1,14 @@
 <!-- START_METADATA
 ---
-title: The Vipps and MobilePay testing environment
-sidebar_label: Testing environment
+title: The Vipps and MobilePay test environment
+sidebar_label: Test environment
 sidebar_position: 3
 pagination_next: null
 pagination_prev: null
 ---
 END_METADATA -->
 
-# The testing environment
+# Test environment
 
 <!-- START_COMMENT -->
 
@@ -17,20 +17,9 @@ END_METADATA -->
 
 <!-- END_COMMENT -->
 
-## Testing with MobilePay
+The Merchant Test (MT) environment is available for all merchants who have access to the Vipps MobilePay APIs.
 
-Vipps and MobilePay have recently merged so the information is still under development and will be updated soon.
-
-You can find MobilePay testing information under the _Development Guide > Testing_ section for each API in the
-[MobilePay developer website](https://developer.mobilepay.dk/).
-For example, see
-[_App Payments > Development Guide > Testing_](https://developer.mobilepay.dk/docs/app-payments/development-guide/test).
-
-## Testing with Vipps
-
-The Vipps Merchant Test (MT) environment is available for all Vipps merchants who have API access.
-
-### About the test environment
+## About the test environment
 
 All customers with access to the APIs have access to the test environment.
 
@@ -53,7 +42,7 @@ The test and production environments are completely separate and use different
 for merchants that use our APIs through a partner.
 In the test environment, you can do this by creating a sales unit where direct capture is allowed.
 
-#### Limitations of the test environment
+### Limitations of the test environment
 
 Functionality not available in MT (a non-exhaustive list):
 
@@ -86,9 +75,9 @@ Other differences between Production and MT:
 - The user's email address can not be verified in the normal way.
   See: [Email address](#email-address).
 
-### Access to the test environment
+## Access to the test environment
 
-#### Merchants
+### Merchants
 
 All merchants with API access have access to the Vipps test environment.
 
@@ -102,7 +91,7 @@ See:
 - [How to find the API keys](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/developer-resources/portal#how-to-find-the-api-keys)
 - [How to create a test sales unit](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/developer-resources/portal#how-to-create-a-test-sales-unit)
 
-#### Partners
+### Partners
 
 Partners can get access to the test environment by ordering
 "Vipps Logg inn" (the
@@ -118,7 +107,7 @@ The partner must also:
 Since "Vipps Logg inn" does not require the same regulatory checks (KYC, AML, etc),
 this is a quick process.
 
-### Test server
+## Test server
 
 The test and production environments are separate and require different API credentials:
 
@@ -131,7 +120,7 @@ no requests to our servers are blocked on our side by IP addresses or similar.
 
 See [Vipps servers](./developer-resources/servers.md) for more information.
 
-### Test merchants
+## Test merchants
 
 The test environment and production environments are completely separate.
 You will, therefore, need to use a different set of API keys for the test environment.
@@ -146,7 +135,7 @@ See:
 (regulatory and other), so you may not be able to get the same sales unit configuration
 (like "direct capture") there, even though you have it in the test environment.
 
-### Test users
+## Test users
 
 A welcome email is automatically sent to **all** new customers. This email
 contains information about your test user.
@@ -171,7 +160,7 @@ or contact
 There is no way to get a test user in the production environment.
 The production environment only contains real users and data.
 
-#### Phone number
+### Phone number
 
 The test user has everything required to complete a payment.
 The test user's mobile number works on all phones and on all networks.
@@ -179,11 +168,11 @@ The test user's mobile number works on all phones and on all networks.
 **Important:** Do _not_ use the test phone number in the production environment,
 as the test number may be a real phone number for a real Vipps user.
 
-#### Payment card
+### Payment card
 
 The test user is registered with a payment card, and it is not possible to add new cards in the Vipps test app.
 
-#### Email address
+### Email address
 
 You can add a real email address on a test user from the
 *Profile* -> *Personal information* -> *Email*
@@ -197,12 +186,12 @@ available). Just updating the email and storing it will _not_ trigger an email
 to be sent for verification. The indication on the profile page that the email
 is not verified can be ignored.
 
-#### Other data
+### Other data
 
 The test user's name, birth date, etc. are randomly generated when the test user
 is created and cannot be changed.
 
-### Test amounts
+## Test amounts
 
 Vipps supports using special amounts in the Vipps test app.
 Use these amounts to always get the same result.
@@ -223,7 +212,7 @@ Use these amounts to always get the same result.
 [force approve](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api#testing)
 endpoint does not support this functionality.
 
-### Vipps test apps
+## Vipps test apps
 
 The test apps for iOS and Android are identical to the production apps, but connect to
 the Vipps test environment (MT) instead of the production environment.
@@ -238,7 +227,7 @@ Normal Vipps users are not available, so you cannot use your own phone number wi
 **Important:** Do _not_ use the test phone number in the production environment,
 as the test number may be a real phone number for a real Vipps user.
 
-#### Install Vipps MT on iOS
+### Install Vipps MT on iOS
 
 The iOS test app is available for everyone in Apple TestFlight.
 You do _not_ need an invitation or an activation code.
@@ -261,7 +250,7 @@ You do _not_ need an invitation or an activation code.
 
 You are now ready to use the iOS test app connected to the Vipps test environment.
 
-#### Install Vipps MT on Android
+### Install Vipps MT on Android
 
 The Android test app is available for everyone in App Center.
 You do _not_ need an invitation or an activation code.
@@ -286,7 +275,7 @@ You do _not_ need an invitation or an activation code.
 
 You are now ready to use the Android test app connected to the Vipps test environment.
 
-#### Other versions
+### Other versions
 
 It may sometimes be necessary to use specific app versions in MT.
 This happens when the production apps and the production environment are not _quite_
