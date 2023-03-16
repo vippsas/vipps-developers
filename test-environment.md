@@ -50,7 +50,7 @@ The test and production environments are completely separate and use different
 
 **Please note:** For production, we only offer
 [Direct capture](common-topics/reserve-and-capture.md#direct-capture)
-for merchants that use Vipps MobilePay through a partner.
+for merchants that use our APIs through a partner.
 In the test environment, you can do this by creating a sales unit where direct capture is allowed.
 
 #### Limitations of the test environment
