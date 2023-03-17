@@ -21,5 +21,3 @@ To learn about the merger, see [Vipps MobilePay er nå en realitet](https://vipp
 For more information about Vipps MobilePay, see [vippsmobilepay.com](https://vippsmobilepay.com/#about).
 
 The *Getting Started* page is moved to: [Getting started with Vipps MobilePay](getting-started.md).
-
-![Vipps MobilePay logo](./images/graphic_elements.png)
