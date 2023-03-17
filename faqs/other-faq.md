@@ -266,8 +266,15 @@ The Vipps eCom API has some functionality that is not available in the PSP API:
    The Vipps API offers the possibility for merchants to ask for the user's
    profile information as part of the payment flow: name, address, email, phone number, birthdate, etc.
 4. When using the Vipps eCom API, Vipps handles soft-declines, 3-D Secure, BankID, etc.
-   There is nothing a merchant needs to do.
+   Users will not be prompted for BankID, or the various payment confirmations
+   by MasterCard and VISA.
+   Vipps handles this automatically in the app, and there is nothing a merchant needs to do.
    This give a consistent user experience and a very high completion rate.
+   Because of this, direct integrations with the
+   [eCom API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api)
+   and the
+   [ePayment API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/epayment-api)
+   have a _very_ high completion rate - and equally low drop-off rate.
 
 ## What do we have to do with PSD2's SCA requirements?
 
