@@ -1,15 +1,15 @@
 <!-- START_METADATA
 ---
-title: Getting started with Vipps and MobilePay
+title: Getting started with Vipps MobilePay
 sidebar_label: Getting started
 sidebar_position: 2
-description: Getting started with Vipps and MobilePay
+description: Getting started with Vipps MobilePay
 pagination_next: null
 pagination_prev: null
 ---
 END_METADATA -->
 
-# Getting started
+# Getting started with Vipps MobilePay
 
 Vipps and MobilePay have recently merged so the information is still under development.
 Most MobilePay information is still on the
