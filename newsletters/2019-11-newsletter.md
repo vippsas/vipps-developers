@@ -33,7 +33,7 @@ This is no longer the case: The Vipps-API API product give access to all current
 and the API keys for the Vipps eCom v1 and v2 APIs have been “upgraded” to include the
 same APIs as Vipps API.
 
-See more details [in Getting Started](../vipps-getting-started.md).
+See more details [in Getting Started](../getting-started.md).
 
 ## API lifecycle
 
