@@ -107,7 +107,7 @@ The partner must also:
 Since "Vipps Logg inn" does not require the same regulatory checks (KYC, AML, etc),
 this is a quick process.
 
-Partner need to have a website with an Norwegian organization number, and an admin user with signature rights and Norwegian BankID. This user will be granted access to the portal.
+Partners need to have a website with a Norwegian organization number, and an admin user with signature rights and Norwegian BankID. This user will be granted access to the portal.
 
 ## Test server
 
