@@ -103,6 +103,12 @@ If the Vipps landing page is displayed inside an iframe, the logic above does
 not work, the user gets a bad user experience, and the success rate for
 completing the payment drops.
 
+Also: The `fallBack` URL is opened in the default browser, since it's opened
+by the phone's operating system. It can not be opened inside an embedded
+browser, or in an iframe. Any session cookies or similar will be gone, so it
+is crucial that the `fallBack` URL is able to correctly show the correct state
+for the payment.
+
 **Important:** In general: Any "optimization" of the normal payment
 flow may break the Vipps payment flow - if not today, then later.
 The default behaviour and our recommendations are based on years of experience
