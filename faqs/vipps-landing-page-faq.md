@@ -85,10 +85,34 @@ See:
 
 ## Can I show the landing page in an iframe?
 
-No. Never show the Vipps landing page inside an iframe. That will make it
-impossible for the user to reliably be redirected back to the merchant's website,
-and result in a lower success rate. In general: Any "optimization" of the payment
+No. Never show the Vipps landing page inside an iframe.
+Vipps users should never see the Vipps landing page on a device where Vipps
+is installed.
+
+Displaying the Vipps landing page inside an iframe makes it impossible for the
+user to reliably be redirected back to the merchant's website, and result in a
+lower success rate.
+
+When the phone's operating system is instructed to open the `fallBack` URL (the
+result page for the payment) and the Vipps app is installed, the
+`https://vipps.no?token... [truncated]` URL is recognized
+by the phone's operating system as "owned" by Vipps. Then, instead of opening a browser,
+the Vipps app is automatically opened. This is called an *app-switch*.
+
+However, if the Vipps landing page is displayed inside an iframe, the logic above does
+not work. This results in the user gets a bad user experience, and the success rate for
+completing the payment drops.
+
+Also: The `fallBack` URL is opened in the default browser, since it's opened
+by the phone's operating system. It cannot be opened inside an embedded
+browser, or in an iframe. Any session cookies or similar will be gone, so it
+is crucial that the `fallBack` URL is able to correctly show the correct state
+for the payment.
+
+**Important:** In general: Any *optimization* of the normal payment
 flow may break the Vipps payment flow - if not today, then later.
+The default behaviour and our recommendations are based on years of experience
+and data, and we continuously monitor and improve it.
 
 See:
 [Skip landing page](../common-topics/vipps-landing-page.md#skip-landing-page).
