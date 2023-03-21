@@ -44,11 +44,8 @@ A typical example is one user that is below
 15 years old, and can therefore not pay businesses, will let another Vipps
 user complete the payment.
 
-**Important:** Never show the Vipps landing page inside an iframe.
-That will make it impossible for the user to reliably be redirected back to the
-merchant's website, and result in a lower success rate.
-In general: Any "optimization" of the payment flow may break the Vipps payment
-flow - if not today, then later.
+**Important:** Never show the Vipps landing page inside an iframe. See:
+[Can I show the landing page in an iframe?​](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/faqs/vipps-landing-page-faq#can-i-show-the-landing-page-in-an-iframe).
 
 This is applicable to:
 
@@ -114,6 +111,9 @@ initiates the payment:
   the Vipps app.
 * If the sales unit is not whitelisted, the request will fail and an error
   message will be returned.
+
+See:
+[Is it possible to skip the landing page?](../faqs/vipps-landing-page-faq#is-it-possible-to-skip-the-landing-page.)
 
 ## Sequence diagram
 
