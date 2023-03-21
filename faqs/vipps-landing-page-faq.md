@@ -111,7 +111,7 @@ for the payment.
 
 **Important:** In general: Any *optimization* of the normal payment
 flow may break the Vipps payment flow - if not today, then later.
-The default behaviour and our recommendations are based on years of experience
+The default behavior and our recommendations are based on years of experience
 and data, and we continuously monitor and improve it.
 
 See:
