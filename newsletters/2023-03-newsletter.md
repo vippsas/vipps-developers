@@ -36,11 +36,13 @@ This newsletter was sent in March 2023.
 
 All Vipps customers that have API access receive this technical newsletter,
 with important information about the
-[Vipps APIs](https://vippsas.github.io/vipps-developer-docs/docs/APIs)
-that you have access to.
+[Vipps APIs](https://vippsas.github.io/vipps-developer-docs/docs/APIs).
 
-The newsletter is sent 5-10 times a year. See the
-[Newsletter archive](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/newsletters).
+The newsletter is sent to everyone with admin privileges for a merchant on
+[portal.vipps.no](https://portal.vipps.no).
+
+See:
+[Newsletter information](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/newsletters).
 
 ## ePayment API
 

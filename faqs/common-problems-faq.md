@@ -32,7 +32,17 @@ in the eCom API FAQs.
 
 ## Why do payments fail?
 
-The most common reasons are:
+**Please note:** We have extremely low drop-off rates: Almost every user that
+selects to pay with Vipps completes the payment. The success rate is much
+higher than when using a payment card directly. When comparing drop-off rates:
+Remember to compare drop-off data for when the user _selects_ payment method,
+do not compare Vipps to numbers for when the user has selected card payment and
+already has manually entered the card number, etc:
+* Drop-off data for Vipps: Measure the success rate after the user has selected Vipps.
+* Drop-off rate for cards: Measure the success rate after the user has selected card,
+  but from _before_ the user has to enter the card details.
+
+The most common reasons why payments are not completed are:
 
 1. The debit/credit card has expired.
    Vipps notifies users in good time before a card expires, but users must
@@ -185,7 +195,7 @@ The transaction overview on
 [portal.vipps.no](https://portal.vipps.no)
 and the settlement reports available by e.mail and SFTP show the customer names for
 [Vippsnummer](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-i-butikk/ta-betalt-med-vipps/)
-payments. 
+payments.
 
 For other payments, such as
 [Vipps på nett](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/)

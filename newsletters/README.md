@@ -18,9 +18,11 @@ END_METADATA -->
 
 <!-- END_COMMENT -->
 
-All Vipps customers that have API access receive this technical newsletter,
-with important information about the
-[Vipps APIs](https://vippsas.github.io/vipps-developer-docs/docs/APIs).
+All Vipps customers that have
+[API](https://vippsas.github.io/vipps-developer-docs/docs/APIs)
+access receive this technical newsletter,
+with important information about the APIs.
+
 Anyone can [subscribe to the newsletter](https://cloud.melding.vipps.no/utv).
 
 The newsletter is sent 5-10 times a year, and this is the newsletter archive:
