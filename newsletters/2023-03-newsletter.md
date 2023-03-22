@@ -43,8 +43,10 @@ The newsletter is sent 5-10 times a year. See the
 
 ## ePayment API
 
-The ePayment API is the successor of the eCom API. The main benefits are:
-* Designed based on years of experience with the eCom API
+The ePayment API is redesigned from scratch, based on everything we have learned through the
+eCom API over several years.
+
+The main benefits are:
 * Supports different flows, like direct push and pay by QR code, out-of-the-box without the "hacks" required in the eCom API
 * Supports long-lived payments (payment requests from merchants) that are valid up to 28 days
 * Supports free-standing card payments: Pay with VISA and MasterCard without the Vipps app
@@ -53,8 +55,6 @@ The ePayment API is the successor of the eCom API. The main benefits are:
 We strongly recommend that all new integrations use the
 [ePayment API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/epayment-api), not the
 [eCom API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api).
-The ePayment API is redesigned from scratch, based on everything we have learned through the
-eCom API over several years.
 
 The
 [ePayment API specification](https://vippsas.github.io/vipps-developer-docs/api/epayment)
