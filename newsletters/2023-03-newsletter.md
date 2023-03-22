@@ -24,7 +24,6 @@ This newsletter was sent in March 2023.
 * [Webhooks API](#webhooks-api)
 * [eCom API and Express Checkout](#ecom-api-and-express-checkout)
 * [Improved shipping options in Vipps Checkout](#improved-shipping-options-in-vipps-checkout)
-* [ePayment API](#epayment-api)
 * [More Solutions and best practices](#more-solutions-and-best-practices)
 * [Report API](#report-api)
 * [Reminders](#reminders)
@@ -51,7 +50,20 @@ The ePayment API is the successor of the eCom API. The main benefits are:
 * Supports free-standing card payments: Pay with VISA and MasterCard without the Vipps app
 * Uses the Webhooks API to send information back to the merchant/partner
 
-See: [ePayment API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/epayment-api).
+We strongly recommend that all new integrations use the
+[ePayment API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/epayment-api), not the
+[eCom API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api).
+The ePayment API is redesigned from scratch, based on everything we have learned through the
+eCom API over several years.
+
+The
+[ePayment API specification](https://vippsas.github.io/vipps-developer-docs/api/epayment)
+has been ready for some time, and now
+we have also updated the
+[API guide, FAQ, etc](https://vippsas.github.io/vipps-developer-docs/docs/APIs/epayment-api).
+
+**Please note:** The eCom API will still be available for a long time, but new development will
+be for the ePayment API.
 
 ## Webhooks API
 
@@ -84,23 +96,6 @@ See
 [How it works for shipping](https://vippsas.github.io/vipps-developer-docs/docs/APIs/checkout-api/vipps-checkout-how-it-works-shipping)
 for more details, and try for yourself in our
 [demo store](https://demo.vipps.no/vipps-checkout-1/full).
-
-## ePayment API
-
-We strongly recommend that all new integrations use the
-[ePayment API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/epayment-api), not the
-[eCom API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api).
-The ePayment API is redesigned from scratch, based on everything we have learned through the
-eCom API over several years.
-
-The
-[ePayment API specification](https://vippsas.github.io/vipps-developer-docs/api/epayment)
-has been ready for some time, and now
-we have also updated the
-[API guide, FAQ, etc](https://vippsas.github.io/vipps-developer-docs/docs/APIs/epayment-api).
-
-**Please note:** The eCom API will still be available for a long time, but new development will
-be for the ePayment API.
 
 ## More Solutions and best practices
 
