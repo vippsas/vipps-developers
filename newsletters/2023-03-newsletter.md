@@ -15,6 +15,24 @@ END_METADATA -->
 
 This newsletter was sent in March 2023.
 
+<!-- START_COMMENT -->
+
+## Table of Contents
+
+* [Is this is the first time you receive this newsletter?](#is-this-is-the-first-time-you-receive-this-newsletter)
+* [ePayment API](#epayment-api)
+* [Webhooks API](#webhooks-api)
+* [eCom API and Express Checkout](#ecom-api-and-express-checkout)
+* [Improved shipping options in Vipps Checkout](#improved-shipping-options-in-vipps-checkout)
+* [ePayment API](#epayment-api)
+* [More Solutions and best practices](#more-solutions-and-best-practices)
+* [Report API](#report-api)
+* [Reminders](#reminders)
+  * [Please check your API calls for errors](#please-check-your-api-calls-for-errors)
+* [Questions or comments?](#questions-or-comments)
+
+<!-- END_COMMENT -->
+
 ## Is this is the first time you receive this newsletter?
 
 All Vipps customers that have API access now receive this technical newsletter,
@@ -23,6 +41,23 @@ with important information about the
 you have access to.
 The newsletter is sent 5-10 times a year. See the
 [Newsletter archive](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/newsletters).
+
+## ePayment API
+
+The ePayment API is the successor of the eCom API. The main benefits are:
+* Designed based on years of experience with the eCom API
+* Supports different flows, like direct push and pay by QR code, out-of-the-box without the "hacks" required in the eCom API
+* Supports long-lived payments (payment requests from merchants) that are valid up to 28 days
+* Supports free-standing card payments: Pay with VISA and MasterCard without the Vipps app
+* Uses the Webhooks API to send information back to the merchant/partner
+
+See: [ePayment API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/epayment-api).
+
+## Webhooks API
+
+This API lets merchant receive information from Vipps about payment updates, etc.
+
+See: [Webhooks API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/webhooks-api).
 
 ## eCom API and Express Checkout
 
