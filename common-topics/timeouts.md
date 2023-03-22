@@ -8,7 +8,10 @@ END_METADATA -->
 
 # Timeouts
 
-The user has 10 minutes to accept the payment.
+For most APIs, the user has 10 minutes to accept the payment.
+The
+[ePayment API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/epayment-api/features/long-living-payments)
+allows you extend the expiration time.
 
 ## Using a phone
 
