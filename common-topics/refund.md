@@ -1,12 +1,13 @@
 <!-- START_METADATA
 ---
-title: Refund
+title: Refunds
+sidebar_label: Refunds
 pagination_next: null
 pagination_prev: null
 ---
 END_METADATA -->
 
-# Refund
+# Refunds
 
 The merchant can initiate a refund of the captured amount.
 The refund can be a partial or full.

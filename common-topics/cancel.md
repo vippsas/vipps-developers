@@ -1,12 +1,12 @@
 <!-- START_METADATA
 ---
-title: Cancel
+title: Cancellations
 pagination_next: null
 pagination_prev: null
 ---
 END_METADATA -->
 
-# Cancel
+# Cancellations
 
 The `Cancel` request allows the merchant to cancel a reserved or initiated transaction.
 
