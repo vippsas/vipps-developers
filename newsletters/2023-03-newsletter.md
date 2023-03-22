@@ -34,10 +34,11 @@ This newsletter was sent in March 2023.
 
 ## Is this is the first time you receive this newsletter?
 
-All Vipps customers that have API access now receive this technical newsletter,
+All Vipps customers that have API access receive this technical newsletter,
 with important information about the
 [Vipps APIs](https://vippsas.github.io/vipps-developer-docs/docs/APIs)
-you have access to.
+that you have access to.
+
 The newsletter is sent 5-10 times a year. See the
 [Newsletter archive](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/newsletters).
 
