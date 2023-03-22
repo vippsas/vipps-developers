@@ -18,8 +18,12 @@ END_METADATA -->
 
 <!-- END_COMMENT -->
 
-The following are newsletters with important information about Vipps'
-APIs and products:
+All Vipps customers that have API access receive this technical newsletter,
+with important information about the
+[Vipps APIs](https://vippsas.github.io/vipps-developer-docs/docs/APIs).
+Anyone can [Subscribe to the newsletter](https://cloud.melding.vipps.no/utv)
+
+The newsletter is sent 5-10 times a year, and this is the newsletter archive:
 
 * [2022-12](2022-12-newsletter.md)
 * [2022-11](2022-11-newsletter.md)
@@ -36,9 +40,6 @@ APIs and products:
 * [2020-10](2020-10-newsletter.md)
 * [2020-04](2020-04-newsletter.md)
 * [2019-11](2019-11-newsletter.md)
-
-[Subscribe to the newsletter](https://cloud.melding.vipps.no/utv)
-for updates to stay aware of changes.
 
 See also:
 [Vipps news in Norwegian on vipps.no](https://www.vipps.no/om-oss/nyheter/).
