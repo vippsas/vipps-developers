@@ -88,7 +88,7 @@ for a Vipps product (that has an API), and the details can be found on the
 
 See:
 
-- [How to find the API keys](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/developer-resources/portal#how-to-find-the-api-keys)
+- [Common topics: Getting the API keys](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/common-topics/api-keys#getting-the-api-keys)
 - [How to create a test sales unit](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/developer-resources/portal#how-to-create-a-test-sales-unit)
 
 ### Partners

@@ -14,16 +14,6 @@ END_METADATA -->
 ℹ️ Please use the website:
 [Vipps MobilePay Technical Documentation](https://vippsas.github.io/vipps-developer-docs/).
 
-## Table of contents
-
-* [How to find the API keys](#how-to-find-the-api-keys)
-* [How to regenerate API keys](#how-to-regenerate-api-keys)
-* [How to create a test sales unit](#how-to-create-a-test-sales-unit)
-* [How to setup login on your sales unit](#how-to-setup-login-on-your-sales-unit)
-* [How to create additional users on portal.vipps.no](#how-to-create-additional-users-on-portalvippsno)
-* [Permissions and users](#permissions-and-users)
-* [Questions](#questions)
-
 <!-- END_COMMENT -->
 
 This page will guide you through the steps to finding API keys and creating test sales units
@@ -35,34 +25,8 @@ For more information about the portal, see the
 
 ## How to find the API keys
 
-1. Log-in to [portal.vipps.no](https://portal.vipps.no) using BankID.
-    * If you have problems, see [Permissions and users](#permissions-and-users).
-1. Select _Vipps På Nett_ > _Utvikler_.
-   In the page that opens, you will see a table with many sales units listed.
-   Hover over the `i` in the column heading for additional information.
-   ![portal.vipps.no: The API products for a sales unit](../images/portalvippsno-salesunit-products.png)
-1. Select either _Production_ or _Test_, depending on the type of keys you need.
-1. Find your desired sales unit.
-   * If you need to create your own test sales unit,
-     select _Test_ and then click _Add test sales unit_ and fill out the form.
-     See [create a new test sales unit](#how-to-create-a-test-sales-unit) for more details.
-1. Click the _Show keys_ button corresponding to your sales unit.
-   The API keys will be displayed.
-   **Please note:** You can only see API keys that you have access to. All others will be hidden.
-   ![portal.vipps.no: The API keys for a sales unit](../images/portalvippsno-salesunit-keys.png)
+See [Common topics: Getting the API keys](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/common-topics/api-keys#getting-the-api-keys).
 
-💥 **Use caution with storing and transferring API keys** 💥
-
-* Never send API keys unencrypted by email.
-* If you accidentally share your API keys, you must [generate new ones](#how-to-regenerate-api-keys).
-
-See [API keys](../common-topics/api-keys.md) for more details.
-
-## How to regenerate API keys
-
-Follow the steps from [Finding the API keys](#how-to-find-the-api-keys).
-In the window where your keys are shown, click the _regenerate_ button for each key that you need to regenerate.
-Update your integrations so they will not stop working.
 
 ## How to create a test sales unit
 
