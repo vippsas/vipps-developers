@@ -58,6 +58,8 @@ The most common reasons why payments are not completed are:
 3. Insufficient funds on the debit/credit card.
    There is not enough money in the debit card's bank account,
    or not enough credit left on the credit card.
+   With a direct integration the user can retry the same payment with a
+   different card, and because of this "second chance" the success rate is high.
 4. The debit/credit card has been rejected by the issuer.
    There are many possible reasons for this, and Vipps may not be allowed to
    give the details to the merchant.
@@ -72,6 +74,8 @@ The most common reasons why payments are not completed are:
    (5 minutes to log into Vipps, then 5 minutes to confirm the payment),
    typically if the user has deactivated push notifications and does not open
    Vipps manually.
+   See:
+   [Timeouts](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/common-topics/timeouts).
 7. Attempt to capture an amount that exceeds the reserved amount.
    It's not possible to capture a higher amount than the user has confirmed in Vipps.
    Some merchants experience this because of rounding errors on their side.
@@ -81,6 +85,8 @@ The most common reasons why payments are not completed are:
    merchant to capture it.
    The payment must have status "reserved" for capture to be possible.
    See: [Why does capture fail?](#why-does-capture-fail)
+9. The user has reached the limit for payments within a time period.
+   See: [Payment limist, in Norwegian](https://vipps.no/hjelp/vipps/sende-og-motta-penger/har-vipps-belopsgrenser/).
 
 We strongly recommend to check the full history of every Vipps payment with
 the API: You can see if a payment has been actively rejected, if the user has
