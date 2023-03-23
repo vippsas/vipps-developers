@@ -32,7 +32,17 @@ in the eCom API FAQs.
 
 ## Why do payments fail?
 
-The most common reasons are:
+**Please note:** We have extremely low drop-off rates: Almost every user that
+selects to pay with Vipps completes the payment. The success rate is much
+higher than when using a payment card directly. When comparing drop-off rates:
+Remember to compare drop-off data for when the user _selects_ payment method,
+do not compare Vipps to numbers for when the user has selected card payment and
+already has manually entered the card number, etc:
+* Drop-off data for Vipps: Measure the success rate after the user has selected Vipps.
+* Drop-off rate for cards: Measure the success rate after the user has selected card,
+  but from _before_ the user has to enter the card details.
+
+The most common reasons why payments are not completed are:
 
 1. The debit/credit card has expired.
    Vipps notifies users in good time before a card expires, but users must
@@ -48,6 +58,8 @@ The most common reasons are:
 3. Insufficient funds on the debit/credit card.
    There is not enough money in the debit card's bank account,
    or not enough credit left on the credit card.
+   With a direct integration, the user can retry the same payment with a
+   different card, and because of this "second chance" the success rate is high.
 4. The debit/credit card has been rejected by the issuer.
    There are many possible reasons for this, and Vipps may not be allowed to
    give the details to the merchant.
@@ -62,6 +74,8 @@ The most common reasons are:
    (5 minutes to log into Vipps, then 5 minutes to confirm the payment),
    typically if the user has deactivated push notifications and does not open
    Vipps manually.
+   See:
+   [Timeouts](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/common-topics/timeouts).
 7. Attempt to capture an amount that exceeds the reserved amount.
    It's not possible to capture a higher amount than the user has confirmed in Vipps.
    Some merchants experience this because of rounding errors on their side.
@@ -71,6 +85,8 @@ The most common reasons are:
    merchant to capture it.
    The payment must have status "reserved" for capture to be possible.
    See: [Why does capture fail?](#why-does-capture-fail)
+9. The user has reached the limit for payments within a time period.
+   See: [Payment limits, in Norwegian](https://vipps.no/hjelp/vipps/sende-og-motta-penger/har-vipps-belopsgrenser/).
 
 We strongly recommend to check the full history of every Vipps payment with
 the API: You can see if a payment has been actively rejected, if the user has
@@ -185,7 +201,7 @@ The transaction overview on
 [portal.vipps.no](https://portal.vipps.no)
 and the settlement reports available by e.mail and SFTP show the customer names for
 [Vippsnummer](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-i-butikk/ta-betalt-med-vipps/)
-payments. 
+payments.
 
 For other payments, such as
 [Vipps på nett](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/)
