@@ -58,7 +58,7 @@ The most common reasons why payments are not completed are:
 3. Insufficient funds on the debit/credit card.
    There is not enough money in the debit card's bank account,
    or not enough credit left on the credit card.
-   With a direct integration the user can retry the same payment with a
+   With a direct integration, the user can retry the same payment with a
    different card, and because of this "second chance" the success rate is high.
 4. The debit/credit card has been rejected by the issuer.
    There are many possible reasons for this, and Vipps may not be allowed to
