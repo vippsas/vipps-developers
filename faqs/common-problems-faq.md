@@ -86,7 +86,7 @@ The most common reasons why payments are not completed are:
    The payment must have status "reserved" for capture to be possible.
    See: [Why does capture fail?](#why-does-capture-fail)
 9. The user has reached the limit for payments within a time period.
-   See: [Payment limist, in Norwegian](https://vipps.no/hjelp/vipps/sende-og-motta-penger/har-vipps-belopsgrenser/).
+   See: [Payment limits, in Norwegian](https://vipps.no/hjelp/vipps/sende-og-motta-penger/har-vipps-belopsgrenser/).
 
 We strongly recommend to check the full history of every Vipps payment with
 the API: You can see if a payment has been actively rejected, if the user has
