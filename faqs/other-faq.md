@@ -246,35 +246,9 @@ help with all the details.
 **Important:** When using Vipps as an external payment method in Klarna Checkout
 the settlements from Vipps will be separate from the settlements from Klarna.
 
-## What functionality is included in the eCom API, but not the PSP API?
+## What functionality is included in the Vipps MobilePay API, but not the PSP API?
 
-The [Vipps PSP API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/psp-api) provides tokens
-that a PSP can use to charge a Vipps user's card. To put it simply, it is a
-"card token lookup service". The payment is completed by the PSP, who sends an
-update to Vipps about the success or failure.
-
-The Vipps eCom API has some functionality that is not available in the PSP API:
-
-1. Retry functionality: If the user attempts to pay with a card that is declined,
-   the user can retry with a different card, while still in the same payment process.
-   This results in a higher success rater for payments.
-   The PSP API does not have this functionality, as it is the PSP, not Vipps,
-   that make the charge.
-2. [Express checkout (Vipps Hurtigkasse)](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api#express-checkout-payments)
-   is only available in the Vipps eCom API.
-3. [Userinfo](https://vippsas.github.io/vipps-developer-docs/docs/APIs/userinfo-api):
-   The Vipps API offers the possibility for merchants to ask for the user's
-   profile information as part of the payment flow: name, address, email, phone number, birthdate, etc.
-4. When using the Vipps eCom API, Vipps handles soft-declines, 3-D Secure, BankID, etc.
-   Users will not be prompted for BankID, or the various payment confirmations
-   by MasterCard and VISA.
-   Vipps handles this automatically in the app, and there is nothing a merchant needs to do.
-   This give a consistent user experience and a very high completion rate.
-   Because of this, direct integrations with the
-   [eCom API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api)
-   and the
-   [ePayment API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/epayment-api)
-   have a _very_ high completion rate - and equally low drop-off rate.
+See [Common topics: Benefits of direct integration](../common-topics/direct-vs-psp.md#benefits-of-direct-integration).
 
 ## What do we have to do with PSD2's SCA requirements?
 
