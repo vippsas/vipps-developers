@@ -35,6 +35,6 @@ Dive deeper with:
 
 Related topics:
 
-* [Partner information](https://github.com/vippsas/vipps-partner) - Technical information for partners.
+* [Partner information](https://developer.vippsmobilepay.com/docs/vipps-partner) - Technical information for partners.
 * [Plugins](https://developer.vippsmobilepay.com/docs/vipps-plugins) - Information about using plugins for your Vipps integration.
 * [Solutions](https://developer.vippsmobilepay.com/docs/vipps-solutions) - Examples that combine several API solutions.

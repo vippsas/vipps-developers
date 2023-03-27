@@ -142,8 +142,8 @@ Vipps app where they can pay the merchant.
 
 ### The Vipps Order Management API
 
-An early version of the Vipps Order Management API is available on GitHub:
-https://github.com/vippsas/vipps-order-management-api/
+An early version of the Vipps Order Management API is available:
+<https://developer.vippsmobilepay.com/docs/APIs/order-management-api>.
 
 The Order Management API allows merchants to send rich receipt information to
 existing Vipps transaction. This information is shown to the customer in the
