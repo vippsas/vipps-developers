@@ -36,10 +36,14 @@ There are two ways to use Vipps Mobilepay:
 
 The
 [PSP API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/psp-api)
-provides _tokens_ that a PSP can use to charge a Vipps user's card.
+provides _tokens_ for payment cards, and the PSP use the token to charge a
+Vipps user's payment card.
 
-To put it simply, it is a "card token lookup service". The payment is completed
-by the PSP, who sends an update to us about the success or failure.
+To put it simply, it is a "card token lookup service": 
+1. The PSP initiates a payment with the PSP API
+2. The PSP receives a token
+3. The PSP uses the token to processes the payment
+4. The PSP sends an update to us about the success or failure of the payment
 
 ## Benefits of direct integration
 
@@ -69,15 +73,15 @@ APIs have some functionality that is not available in the PSP API:
 
 We have extremely low drop-off rates for direct integration:
 Almost every user that selects to pay with Vipps completes the payment. The
-success rate is much higher than when using a payment card directly.
+success rate is significantly higher than when using a payment card directly.
 
-When comparing drop-off rates, remember to compare drop-off data for when the
-user _selects_ payment method. Do not compare Vipps to numbers for when the
-user has selected card payment and already has manually entered the card number:
+When comparing drop-off rates, it is important to compare drop-off data for when the
+user _selects_ payment method. Do not compare Vipps to when the
+user has selected card payment, but not yet manually entered the card number:
 
 * Drop-off data for Vipps: Measure the success rate after the user has selected Vipps.
 * Drop-off rate for cards: Measure the success rate after the user has selected card,
-  but from _before_ the user must enter the card details.
+  but _before_ the user must enter the card details.
 
 See:
 [Why do payments fail?](../faqs/common-problems-faq#why-do-payments-fail)
