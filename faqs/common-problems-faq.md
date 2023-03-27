@@ -32,12 +32,12 @@ in the eCom API FAQs.
 
 ## Why do payments fail?
 
-**Please note:** We have extremely low drop-off rates: Almost every user that
-selects to pay with Vipps completes the payment. The success rate is much
-higher than when using a payment card directly. When comparing drop-off rates:
-Remember to compare drop-off data for when the user _selects_ payment method,
-do not compare Vipps to numbers for when the user has selected card payment and
-already has manually entered the card number, etc:
+**Please note:** We have extremely low drop-off rates for direct integration:
+Almost every user that selects to pay with Vipps completes the payment. The
+success rate is much higher than when using a payment card directly.
+When comparing drop-off rates: Remember to compare drop-off data for when the
+user _selects_ payment method, do not compare Vipps to numbers for when the
+user has selected card payment and already has manually entered the card number, etc:
 * Drop-off data for Vipps: Measure the success rate after the user has selected Vipps.
 * Drop-off rate for cards: Measure the success rate after the user has selected card,
   but from _before_ the user has to enter the card details.
