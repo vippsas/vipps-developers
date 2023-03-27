@@ -40,10 +40,9 @@ provides _tokens_ for payment cards, and the PSP use the token to charge a
 Vipps user's payment card.
 
 To put it simply, it is a "card token lookup service": 
-1. The PSP initiates a payment with the PSP API
-2. The PSP receives a token
-3. The PSP uses the token to processes the payment
-4. The PSP sends an update to us about the success or failure of the payment
+The PSP initiates a payment with the PSP API, receives a card token,
+use the token to process the payment, and then sends an update to us about
+the success or failure of the payment.
 
 ## Benefits of direct integration
 
