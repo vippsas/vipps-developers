@@ -19,9 +19,7 @@ END_METADATA -->
 
 <!-- END_COMMENT -->
 
-Vipps and MobilePay have recently merged, so the information and developer documentation on this website is still under development. We are constantly making improvements.
-Most MobilePay information is still on the
-[MobilePay developers website](https://developer.mobilepay.dk/), but will be updated here soon.
+Vipps MobilePay offers APIs to facilitate your log-in and online payment solutions for Point of Sale, apps, subscriptions, QR codes, checkout sessions, and invoices.  Explore our technical documentation to learn about these solutions.
 
 Quick links:
 
