@@ -13,7 +13,7 @@ Vipps APIs. These headers provide useful metadata about the merchant's system,
 which help Vipps improve our services, and also helps in investigating problems.
 
 These headers are **required for plugins and partners** and sent by the
-[the official Vipps plugins](https://vippsas.github.io/vipps-developer-docs/docs/vipps-plugins).
+[the official Vipps plugins](https://developer.vippsmobilepay.com/docs/vipps-plugins).
 We strongly recommend that all customers with direct integration with the API to also do so.
 
 Partners must always send the `Merchant-Serial-Number` header, and we recommend

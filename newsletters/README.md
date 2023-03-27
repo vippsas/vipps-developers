@@ -14,12 +14,12 @@ END_METADATA -->
 <!-- START_COMMENT -->
 
 ℹ️ Please use the website:
-[Vipps MobilePay Technical Documentation](https://vippsas.github.io/vipps-developer-docs/).
+[Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/).
 
 <!-- END_COMMENT -->
 
 All Vipps customers that have
-[API](https://vippsas.github.io/vipps-developer-docs/docs/APIs)
+[API](https://developer.vippsmobilepay.com/docs/APIs)
 access receive this technical newsletter,
 with important information about the APIs.
 

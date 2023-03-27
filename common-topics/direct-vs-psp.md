@@ -35,7 +35,7 @@ There are two ways to use Vipps Mobilepay:
 ## How the PSP API works
 
 The
-[PSP API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/psp-api)
+[PSP API](https://developer.vippsmobilepay.com/docs/APIs/psp-api)
 provides _tokens_ for payment cards, and the PSP use the token to charge a
 Vipps user's payment card.
 

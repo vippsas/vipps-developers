@@ -10,8 +10,8 @@ END_METADATA -->
 
 This is applicable to:
 
-* [eCom API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api)
-* [PSP API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/psp-api)
+* [eCom API](https://developer.vippsmobilepay.com/docs/APIs/ecom-api)
+* [PSP API](https://developer.vippsmobilepay.com/docs/APIs/psp-api)
 
 All URLs in the Vipps eCommerce API are validated with the
 [Apache Commons UrlValidator](https://commons.apache.org/proper/commons-validator/apidocs/org/apache/commons/validator/routines/UrlValidator.html).

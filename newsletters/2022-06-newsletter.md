@@ -33,13 +33,13 @@ This newsletter was sent in June 2022.
 
 ## Vipps Order Management API
 
-[The Vipps Order Management API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/order-management-api)
+[The Vipps Order Management API](https://developer.vippsmobilepay.com/docs/APIs/order-management-api)
 allows merchants to send rich receipt information to existing Vipps transactions,
 including links to tracking information, tickets, etc.
 
 ## Vipps Partner API
 
-[The Vipps Partner API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/partner-api)
+[The Vipps Partner API](https://developer.vippsmobilepay.com/docs/APIs/partner-api)
 is now available for all partners using partner keys.
 We are very interested in feedback!
 
@@ -78,7 +78,7 @@ More details:
 ## Vipps eCom API: HTTPS required for all URLs
 
 From October 1, 2022, URL links in the body of
-[`POST:/payments`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Vipps-eCom-API/operation/initiatePaymentV3UsingPOST)
+[`POST:/payments`](https://developer.vippsmobilepay.com/api/ecom#tag/Vipps-eCom-API/operation/initiatePaymentV3UsingPOST)
 will no longer support HTTP, only HTTPS.
 
 This includes the following fields:
@@ -110,7 +110,7 @@ Please:
 * Contact us if there is anything we can help with
 
 One example: Far too many calls to
-[`POST:/ecomm/v2/payments`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Vipps-eCom-API/operation/initiatePaymentV3UsingPOST)
+[`POST:/ecomm/v2/payments`](https://developer.vippsmobilepay.com/api/ecom#tag/Vipps-eCom-API/operation/initiatePaymentV3UsingPOST)
 use an incorrectly formatted phone number.
 The effect is that the user's phone number is not correctly pre-filled on
 the Vipps landing page.
@@ -146,7 +146,7 @@ See:
 ### How to get help quickly
 
 Please see
-[this page](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/contact).
+[this page](https://developer.vippsmobilepay.com/docs/vipps-developers/contact).
 
 ### Newsletter archive
 
@@ -157,4 +157,4 @@ Please see: [newsletters](README.md)
 We're always happy to help with code or other questions you might have!
 Please create [GitHub issues or pull requests](https://github.com/vippsas)
 for the relevant API,
-or [contact us](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/contact).
+or [contact us](https://developer.vippsmobilepay.com/docs/vipps-developers/contact).

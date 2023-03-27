@@ -32,24 +32,24 @@ The Vipps eCom API now supports both partial capture (as before) and
 release of the remainder of the reserved amount.
 
 If you wish to cancel an order which you have partially captured: Send a
-[`PUT:/ecomm/v2/payments/{orderId}/cancel`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Vipps-eCom-API/operation/cancelPaymentRequestUsingPUT)
+[`PUT:/ecomm/v2/payments/{orderId}/cancel`](https://developer.vippsmobilepay.com/api/ecom#tag/Vipps-eCom-API/operation/cancelPaymentRequestUsingPUT)
 request with `shouldReleaseRemainingFunds: true` in the body.
 The payment must be `RESERVED` for this to take effect.
 See:
-[Cancelling a partially captured order](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api#cancelling-a-partially-captured-order).
+[Cancelling a partially captured order](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#cancelling-a-partially-captured-order).
 
 ## The Vipps QR API now works in the test environment
 
-[The Vipps QR API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/qr-api) now works in both in
+[The Vipps QR API](https://developer.vippsmobilepay.com/docs/APIs/qr-api) now works in both in
 the production and
 [test environment](../test-environment.md).
 
 ## Logo handling changes in PSP Signup API
 
 The response of the
-[`GET:/v1/merchants/{merchantSerialNumber}`](https://vippsas.github.io/vipps-developer-docs/api/psp-signup#tag/Merchant/operation/getMerchants)
+[`GET:/v1/merchants/{merchantSerialNumber}`](https://developer.vippsmobilepay.com/api/psp-signup#tag/Merchant/operation/getMerchants)
 endpoint in the in the
-[Vipps PSP API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/psp-api)
+[Vipps PSP API](https://developer.vippsmobilepay.com/docs/APIs/psp-api)
 contains a `logo` field, with the merchant's logo encoded in base64 format.
 
 We are changing this to a URL, with a new field `logoUrl` in the response,
@@ -77,7 +77,7 @@ This change only applies to the `GET` method, and does not affect the `POST` and
  created until the next interval for the campaign.
 
  See:
- [Create charge](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/vipps-recurring-api#create-charge).
+ [Create charge](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/vipps-recurring-api#create-charge).
 
 ## Reminders
 
@@ -96,7 +96,7 @@ Please:
 - Contact us if there is anything we can help with
 
 One example: Far too many calls to
-[`POST:/ecomm/v2/payments`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Vipps-eCom-API/operation/initiatePaymentV3UsingPOST)
+[`POST:/ecomm/v2/payments`](https://developer.vippsmobilepay.com/api/ecom#tag/Vipps-eCom-API/operation/initiatePaymentV3UsingPOST)
 use an incorrectly formatted phone number.
 The effect is that the user's phone number is not correctly pre-filled on
 the Vipps landing page.
@@ -132,15 +132,15 @@ See:
 ### How to get help quickly
 
 Please see
-[this page](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/contact).
+[this page](https://developer.vippsmobilepay.com/docs/vipps-developers/contact).
 
 ### Newsletter archive
 
-Please see: [newsletters](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/newsletters)
+Please see: [newsletters](https://developer.vippsmobilepay.com/docs/vipps-developers/newsletters)
 
 ## Questions or comments?
 
 We're always happy to help with code or other questions you might have!
 Please create [GitHub issues or pull requests](https://github.com/vippsas)
 for the relevant API,
-or [contact us](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/contact).
+or [contact us](https://developer.vippsmobilepay.com/docs/vipps-developers/contact).

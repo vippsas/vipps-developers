@@ -12,12 +12,12 @@ All Vipps API requests must include an `Authorization` header with
 a JSON Web Token (JWT), which we call the _access token_.
 
 To get an access token, first you need to have API keys. Get your API keys, as described in
-[API keys](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/common-topics/api-keys).
+[API keys](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics/api-keys).
 Partners should use
-[Partner keys](https://vippsas.github.io/vipps-developer-docs/docs/vipps-partner/partner-keys).
+[Partner keys](https://developer.vippsmobilepay.com/docs/vipps-partner/partner-keys).
 
 Get your access token by calling
-[`POST:/accesstoken/get`](https://vippsas.github.io/vipps-developer-docs/api/access-token#tag/Authorization-Service/operation/fetchAuthorizationTokenUsingPost)
+[`POST:/accesstoken/get`](https://developer.vippsmobilepay.com/api/access-token#tag/Authorization-Service/operation/fetchAuthorizationTokenUsingPost)
 and including the `client_id`, `client_secret` and `Ocp-Apim-Subscription-Key` headers.
 
 For example:
@@ -38,4 +38,4 @@ curl https://apitest.vipps.no/accessToken/get \
 Many of these headers are optional during testing, but you should include them in your integration, so that error information can be found in the logs.
 Read more about the [standard Vipps HTTP headers](http-headers.md).
 
-See the [Access Token API Guide](https://vippsas.github.io/vipps-developer-docs/docs/APIs/access-token-api) for more details about the parameters and responses.
+See the [Access Token API Guide](https://developer.vippsmobilepay.com/docs/APIs/access-token-api) for more details about the parameters and responses.

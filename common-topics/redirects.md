@@ -42,6 +42,6 @@ Apple has some information about
 
 This is applicable to:
 
-* [Checkout API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/checkout-api)
-* [eCom API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api)
-* [Login API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/login-api)
+* [Checkout API](https://developer.vippsmobilepay.com/docs/APIs/checkout-api)
+* [eCom API](https://developer.vippsmobilepay.com/docs/APIs/ecom-api)
+* [Login API](https://developer.vippsmobilepay.com/docs/APIs/login-api)

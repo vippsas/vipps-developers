@@ -64,4 +64,4 @@ welcome input in the form of issues on https://github.com/vippsas/vipps-develope
 We're always happy to help with code or other questions you might have!
 Please create [GitHub issues or pull requests](https://github.com/vippsas)
 for the relevant API,
-or [contact us](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/contact).
+or [contact us](https://developer.vippsmobilepay.com/docs/vipps-developers/contact).

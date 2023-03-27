@@ -14,7 +14,7 @@ END_METADATA -->
 <!-- START_COMMENT -->
 
 ℹ️ Please use the website:
-[Vipps MobilePay Technical Documentation](https://vippsas.github.io/vipps-developer-docs/).
+[Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/).
 
 <!-- END_COMMENT -->
 
@@ -100,12 +100,12 @@ This will lead you through a sequence of steps where you can experiment with eve
 
 By following the steps, you will make calls to all the endpoints and see the full `request` and `response` for each call.
 
-* [Checkout API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/checkout-api/vipps-checkout-api-quick-start)
-* [eCom API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api-quick-start)
-* [Login API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/login-api/vipps-login-api-quick-start)
-* [Order Management API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/order-management-api/vipps-order-management-api-quick-start)
-* [Partner API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/partner-api/vipps-partner-api-quick-start)
-* [PSP API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/psp-api/vipps-psp-api-quick-start)
-* [QR API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/qr-api/vipps-qr-api-quick-start)
-* [Recurring API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/vipps-recurring-api-quick-start)
-* [Report API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/report-api/vipps-report-api-quick-start)
+* [Checkout API](https://developer.vippsmobilepay.com/docs/APIs/checkout-api/vipps-checkout-api-quick-start)
+* [eCom API](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api-quick-start)
+* [Login API](https://developer.vippsmobilepay.com/docs/APIs/login-api/vipps-login-api-quick-start)
+* [Order Management API](https://developer.vippsmobilepay.com/docs/APIs/order-management-api/vipps-order-management-api-quick-start)
+* [Partner API](https://developer.vippsmobilepay.com/docs/APIs/partner-api/vipps-partner-api-quick-start)
+* [PSP API](https://developer.vippsmobilepay.com/docs/APIs/psp-api/vipps-psp-api-quick-start)
+* [QR API](https://developer.vippsmobilepay.com/docs/APIs/qr-api/vipps-qr-api-quick-start)
+* [Recurring API](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/vipps-recurring-api-quick-start)
+* [Report API](https://developer.vippsmobilepay.com/docs/APIs/report-api/vipps-report-api-quick-start)

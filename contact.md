@@ -13,7 +13,7 @@ END_METADATA -->
 <!-- START_COMMENT -->
 
 ℹ️ Please use the website:
-[Vipps MobilePay Technical Documentation](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/contact).
+[Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/docs/vipps-developers/contact).
 
 <!-- END_COMMENT -->
 
@@ -32,7 +32,7 @@ There are a lot of self-service solutions on
 please check there first.
 
 **Important:** Almost all requests we get are already covered in the
-[searchable technical documentation](https://vippsas.github.io/vipps-developer-docs/search).
+[searchable technical documentation](https://developer.vippsmobilepay.com/search).
 
 Integration Services helps developers with _**technical**_ questions, such as questions about using our APIs.
 If you do not have a technical question, you can avoid delays by starting in the right place:
@@ -42,11 +42,11 @@ If you do not have a technical question, you can avoid delays by starting in the
 | General questions (including the customer relationship, creating sales units, change of admins, etc) | See: [Contact info for companies on vipps.no](https://www.vipps.no/kontakt-oss/bedrift/). |
 | "Are there any problems?"  | See: [Status pages](./developer-resources/status-pages). |
 | Applications for Vipps products (status, follow-ups, etc) | Check the status on [portal.vipps.no](https://portal.vipps.no). |
-| Vipps plugins (WooCommerce, Shopify, Wix, WordPress, Wix, Shopify, Magento, EPiServer, etc)         | See the support info for your plugin: [Plugin overview](https://vippsas.github.io/vipps-developer-docs/docs/vipps-plugins). |
+| Vipps plugins (WooCommerce, Shopify, Wix, WordPress, Wix, Shopify, Magento, EPiServer, etc)         | See the support info for your plugin: [Plugin overview](https://developer.vippsmobilepay.com/docs/vipps-plugins). |
 | Vipps through a partner (for merchants) | Please contact your partner. |
 | Vipps through a POS (Point of Sale) vendor | Please contact your POS vendor. |
 | Vipps through a PSP (Payment Service Provider) | Please contact your PSP. |
-| Partner assistance (for partners) | See: [Vipps Partners](https://vippsas.github.io/vipps-developer-docs/docs/vipps-partner) and the [Partner API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/partner-api). |
+| Partner assistance (for partners) | See: [Vipps Partners](https://developer.vippsmobilepay.com/docs/vipps-partner) and the [Partner API](https://developer.vippsmobilepay.com/docs/APIs/partner-api). |
 | Settlements, invoices or similar | See: [Settlements](./settlements/README.md). |
 | Suggestions for improvements to [Vipps products](https://www.vipps.no/produkter-og-tjenester/bedrift/)  | Please use [this form](https://www.vipps.no/kontakt-oss/bedrift/). |
 
@@ -55,10 +55,10 @@ For _**technical**_ issues related to Vipps and development of services using ou
 ### Almost all questions are answered in the documentation
 
 Please check the
-[FAQs (Frequently Asked Questions)](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/faqs).
+[FAQs (Frequently Asked Questions)](https://developer.vippsmobilepay.com/docs/vipps-developers/faqs).
 
 Please use the
-[search functionality for the technical documentation](https://vippsas.github.io/vipps-developer-docs/search).
+[search functionality for the technical documentation](https://developer.vippsmobilepay.com/search).
 
 ### What to include in the email
 
@@ -70,11 +70,11 @@ information to the address below:
 3. Company details: Organization number (find yours at [Brønnøysundregistrene](https://brreg.no))
 4. Merchant Serial Number (MSN), found on [portal.vipps.no](https://portal.vipps.no).
    See
-   [The Vipps portal](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/developer-resources/portal).
+   [The Vipps portal](https://developer.vippsmobilepay.com/docs/vipps-developers/developer-resources/portal).
 5. Which
    [Vipps product](https://www.vipps.no/produkter-og-tjenester/bedrift/)
    or
-   [Vipps API](https://vippsas.github.io/vipps-developer-docs/docs/APIs)
+   [Vipps API](https://developer.vippsmobilepay.com/docs/APIs)
    is this about?
 6. Environment: Is it a problem in the Test (MT) or the Production environment?
 7. Include `orderId`, and preferably also `transactionId` and `contextId`, to make it possible to search in logs.

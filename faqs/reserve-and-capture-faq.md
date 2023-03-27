@@ -13,7 +13,7 @@ END_METADATA -->
 <!-- START_COMMENT -->
 
 ℹ️ Please use the website:
-[Vipps MobilePay Technical Documentation](https://vippsas.github.io/vipps-developer-docs/).
+[Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/).
 
 ## Table of contents
 
@@ -79,9 +79,9 @@ Attempting to capture an older payment will result in a
 `HTTP 400 Bad Request`.
 
 The
-[`POST:/ecomm/v2/payments/{orderId}/capture`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Vipps-eCom-API/operation/capturePaymentUsingPOST)
+[`POST:/ecomm/v2/payments/{orderId}/capture`](https://developer.vippsmobilepay.com/api/ecom#tag/Vipps-eCom-API/operation/capturePaymentUsingPOST)
 and
-[`GET:/ecomm/v2/payments/{orderId}/details`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Vipps-eCom-API/operation/getPaymentDetailsUsingGET)
+[`GET:/ecomm/v2/payments/{orderId}/details`](https://developer.vippsmobilepay.com/api/ecom#tag/Vipps-eCom-API/operation/getPaymentDetailsUsingGET)
 API calls will always return the correct status.
 
 See:
@@ -165,7 +165,7 @@ reserve. This has some benefits, see the first link below.
 See:
 
 * [What is the difference between "Reserve Capture" and "Direct Capture"?](#what-is-the-difference-between-reserve-capture-and-direct-capture)
-* [Regular eCommerce payments](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api#regular-ecommerce-payments) for more details.
+* [Regular eCommerce payments](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#regular-ecommerce-payments) for more details.
 
 ## How can I check if I have "reserve capture" or "direct capture"?
 
@@ -180,18 +180,18 @@ We require BankID login for this, as "direct capture" requires additional
 compliance checks.
 
 If you are a partner and want to check a merchant, see the
-[Partner API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/partner-api).
+[Partner API](https://developer.vippsmobilepay.com/docs/APIs/partner-api).
 
 If you are a partner and do not yet use the Partner API, you can ask the
 merchant to create a user for you on
 [portal.vipps.no](https://portal.vipps.no)
 so you can check on behalf of the merchant as
-[described in detail with screenshots](https://vippsas.github.io/vipps-developer-docs/docs/vipps-partner/add-portal-user).
+[described in detail with screenshots](https://developer.vippsmobilepay.com/docs/vipps-partner/add-portal-user).
 
 If you are not able to log in on
 [portal.vipps.no](https://portal.vipps.no)
 you can make a small payment (2 kr), check the payment with
-[`GET:/ecomm/v2/payments/{orderId}/details`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Vipps-eCom-API/operation/getPaymentDetailsUsingGET),
+[`GET:/ecomm/v2/payments/{orderId}/details`](https://developer.vippsmobilepay.com/api/ecom#tag/Vipps-eCom-API/operation/getPaymentDetailsUsingGET),
 and cancel (if it was `RESERVE` and reserve capture) or refund (if it was `SALE` and direct capture).
 
 ## How do I turn direct capture on or off?
@@ -224,7 +224,7 @@ if you need this.
 It is not possible to use a _static_ QR code to initiate payments with the eCom API.
 
 With the eCom API all payments are initiated by calling
-[`POST:/ecomm/v2/payments`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Vipps-eCom-API/operation/initiatePaymentV3UsingPOST),
+[`POST:/ecomm/v2/payments`](https://developer.vippsmobilepay.com/api/ecom#tag/Vipps-eCom-API/operation/initiatePaymentV3UsingPOST),
 with a unique `orderId` for each payment.
 
 This is not possible with a static QR code on a sticker, etc, but
@@ -236,7 +236,7 @@ The only ways to initiate Vipps payments from a QR code are:
 * Use a dynamic QR code for Vipps eCom. The QR code must identical to the
   Vipps deeplink URL provided in normal eCom payments, which will open
   Vipps. See:
-  [Initiate payment flow: API calls](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api#initiate-payment-flow-api-calls).
+  [Initiate payment flow: API calls](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#initiate-payment-flow-api-calls).
   When the Vipps user scans the QR containing the deeplink URL (with either the camera app or with Vipps),
   Vipps will be opened, and the payment request will be displayed.
   The user then has a few minutes to complete the payment. See:
@@ -248,7 +248,7 @@ The only ways to initiate Vipps payments from a QR code are:
   Vippsnummer cannot be used for online sales, etc, as it does not meet the
   legal requirements.
 
-See: [The Vipps QR API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/qr-api).
+See: [The Vipps QR API](https://developer.vippsmobilepay.com/docs/APIs/qr-api).
 
 ## Can I send a Vipps payment link in an SMS, QR or email?
 
@@ -290,11 +290,11 @@ In general we advice caution and point out that it is the responsibility of the
 merchant to assure that users accept terms and conditions for products and services.
 
 You can also use
-[Vipps Logg Inn](https://vippsas.github.io/vipps-developer-docs/docs/APIs/login-api)
+[Vipps Logg Inn](https://developer.vippsmobilepay.com/docs/APIs/login-api)
 for easy registration and login.
 
 See:
-[The Vipps deeplink URL](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api#the-vipps-deeplink-url).
+[The Vipps deeplink URL](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#the-vipps-deeplink-url).
 
 ## Can I sell products on social media?
 
@@ -313,14 +313,14 @@ There is no need for whitelisting QR codes any longer. It was previously a tempo
 a Vipps-branded QR to be sent directly to the merchant's URL.
 
 The previous whitelisting functionality has been replaced by
-[the Vipps QR API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/qr-api).
+[the Vipps QR API](https://developer.vippsmobilepay.com/docs/APIs/qr-api).
 
 The API supports static
-[merchant redirect](https://vippsas.github.io/vipps-developer-docs/docs/APIs/qr-api/vipps-qr-api#merchant-redirect-qr-codes)
+[merchant redirect](https://developer.vippsmobilepay.com/docs/APIs/qr-api/vipps-qr-api#merchant-redirect-qr-codes)
 with possibility to update the target URL for stickers, billboards, TV-commercials, magazine ads, etc.
 
 The API also support a
-[one-time payment QR code](https://vippsas.github.io/vipps-developer-docs/docs/APIs/qr-api/vipps-qr-api#one-time-payment-qr-codes)
+[one-time payment QR code](https://developer.vippsmobilepay.com/docs/APIs/qr-api/vipps-qr-api#one-time-payment-qr-codes)
 for customer facing screens in POS situations.
 
 ## Can I use a different currency than NOK?
@@ -331,4 +331,4 @@ You will have to make any currency conversion _before_ initiating the Vipps
 payment, as the amount specified in the payment initiation is always in NOK,
 and in øre (1 NOK = 100 øre).
 
-See: [Regular eCom Payments](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api#regular-ecommerce-payments).
+See: [Regular eCom Payments](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#regular-ecommerce-payments).

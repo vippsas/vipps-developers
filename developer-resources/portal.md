@@ -12,7 +12,7 @@ END_METADATA -->
 <!-- START_COMMENT -->
 
 ℹ️ Please use the website:
-[Vipps MobilePay Technical Documentation](https://vippsas.github.io/vipps-developer-docs/).
+[Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/).
 
 <!-- END_COMMENT -->
 
@@ -25,7 +25,7 @@ For more information about the portal, see the
 
 ## How to find the API keys
 
-See [Common topics: Getting the API keys](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/common-topics/api-keys#getting-the-api-keys).
+See [Common topics: Getting the API keys](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics/api-keys#getting-the-api-keys).
 
 
 ## How to create a test sales unit
@@ -53,12 +53,12 @@ but you can create as many as you need.
      [create a new test sales unit](#how-to-create-a-test-sales-unit).
 1. Click the _Setup login_ button corresponding to your sales unit.
 1. If the first time, click _Activate Vipps Login_ and fill out fields that follow:
-    * Webhook - See [Revoke Consent Webhook](https://vippsas.github.io/vipps-developer-docs/docs/APIs/login-api/api-guide/important-information#revoke-consent-webhook) for details.
+    * Webhook - See [Revoke Consent Webhook](https://developer.vippsmobilepay.com/docs/APIs/login-api/api-guide/important-information#revoke-consent-webhook) for details.
     * Token endpoint authentication method - See
-    [Token endpoint authentication method](https://vippsas.github.io/vipps-developer-docs/docs/APIs/login-api/api-guide/core-concepts#token-endpoint-authentication-method).
+    [Token endpoint authentication method](https://developer.vippsmobilepay.com/docs/APIs/login-api/api-guide/core-concepts#token-endpoint-authentication-method).
     * Redirect URIs - This creates a list containing URIs which the end user can be redirected to after a Vipps Login authentication.
       For testing, you could, for example, use <http://localhost>.
-      See [Login API FAQ: What are the requirements for redirect URIs?](https://vippsas.github.io/vipps-developer-docs/docs/APIs/login-api/vipps-login-api-faq#what-are-the-requirements-for-redirect-uris) for details.
+      See [Login API FAQ: What are the requirements for redirect URIs?](https://developer.vippsmobilepay.com/docs/APIs/login-api/vipps-login-api-faq#what-are-the-requirements-for-redirect-uris) for details.
       1. Enter the URI. It must be _exactly_ the same URI that you use when making API requests.
         Be careful to note if the actual URI is specified with `redirect_uri` with a trailing slash `/` or not.
       2. Click _Add URI_ for the one or more URIs you are adding.

@@ -21,8 +21,8 @@ Attempting to refund an older payment will result in a
 
 This is applicable to:
 
-* [eCom API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api)
-* [ePayment API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/epayment-api)
-* [Recurring API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api)
+* [eCom API](https://developer.vippsmobilepay.com/docs/APIs/ecom-api)
+* [ePayment API](https://developer.vippsmobilepay.com/docs/APIs/epayment-api)
+* [Recurring API](https://developer.vippsmobilepay.com/docs/APIs/recurring-api)
 
 See [FAQ: Refunds](../faqs/reserve-and-capture-faq.md) for common questions.

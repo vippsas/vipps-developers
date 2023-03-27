@@ -11,7 +11,7 @@ END_METADATA -->
 <!-- START_COMMENT -->
 
 ℹ️ Please use the website:
-[Vipps MobilePay Technical Documentation](https://vippsas.github.io/vipps-developer-docs/).
+[Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/).
 
 <!-- END_COMMENT -->
 
@@ -74,7 +74,7 @@ Vipps will inform the main contact.
 #### Mailing list
 
 Vipps will send information to
-[the technical newsletter for developers](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/newsletters)
+[the technical newsletter for developers](https://developer.vippsmobilepay.com/docs/vipps-developers/newsletters)
 as soon as there is a decision to deprecate an API.
 
 #### Key accounts

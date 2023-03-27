@@ -12,7 +12,7 @@ END_METADATA -->
 <!-- START_COMMENT -->
 
 ℹ️ Please use the website:
-[Vipps MobilePay Technical Documentation](https://vippsas.github.io/vipps-developer-docs/).
+[Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/).
 
 ## Table of contents
 
@@ -142,7 +142,7 @@ the settlement report shows the automatically generated `chargeID` in the `order
 If `orderID` is in use, that is also used in the settlement report.
 
 See the
-[Recurring API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/vipps-recurring-api#create-a-charge)
+[Recurring API](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/vipps-recurring-api#create-a-charge)
 for more details.
 
 ### GDPR
@@ -195,7 +195,7 @@ There is no API for retrieving settlement data.
 [SFTP](#sftp) is the closest alternative.
 
 But:
-[We are in the early planning phase of developing an API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/report-api).
+[We are in the early planning phase of developing an API](https://developer.vippsmobilepay.com/docs/APIs/report-api).
 
 ## Availability
 

@@ -33,10 +33,10 @@ If the user does not have Vipps installed:
 
 This is applicable to:
 
-* [eCom API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api)
-* [PSP API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/psp-api)
-* [Recurring API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api)
-* [Report API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/report-api)
+* [eCom API](https://developer.vippsmobilepay.com/docs/APIs/ecom-api)
+* [PSP API](https://developer.vippsmobilepay.com/docs/APIs/psp-api)
+* [Recurring API](https://developer.vippsmobilepay.com/docs/APIs/recurring-api)
+* [Report API](https://developer.vippsmobilepay.com/docs/APIs/report-api)
 
 
 ## Example responses
@@ -91,7 +91,7 @@ Example: Response body for `"isApp":true`, with a forced app-switch to Vipps:
 If you do want to use `isApp` the flow is as follows:
 
 1. Merchant initiates the payment with `isApp: true` parameter:
-   [`POST:/ecomm/v2/payments`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Vipps-eCom-API/operation/initiatePaymentV3UsingPOST).
+   [`POST:/ecomm/v2/payments`](https://developer.vippsmobilepay.com/api/ecom#tag/Vipps-eCom-API/operation/initiatePaymentV3UsingPOST).
 2. Vipps returns a `deeplink` URL on the `vipps://` format as response to initiate payment.
 3. The merchant uses the `vipps://` URL to invoke Vipps (never change the URL, use it *exactly* as sent from Vipps)
 4. Vipps is automatically opened, without the user having to click "OK" or accept.

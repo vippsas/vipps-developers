@@ -22,9 +22,9 @@ The payment flow can be aborted under certain circumstances:
 After cancellation, the order gets a new status.
 See the individual API guides for more API specifics:
 
-* [eCom API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api)
-* [ePayment API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/epayment-api)
-* [Recurring API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api)
+* [eCom API](https://developer.vippsmobilepay.com/docs/APIs/ecom-api)
+* [ePayment API](https://developer.vippsmobilepay.com/docs/APIs/epayment-api)
+* [Recurring API](https://developer.vippsmobilepay.com/docs/APIs/recurring-api)
 
 ## Cancel a pending order
 

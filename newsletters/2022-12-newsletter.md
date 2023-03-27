@@ -29,14 +29,14 @@ This newsletter was sent in December 2022.
 
 ## Checkout API v3
 
-The [Vipps Checkout API v3](https://vippsas.github.io/vipps-developer-docs/docs/APIs/checkout-api) is available. Checkout v3 improves upon v2 through alignment of polling and callback responses, improvement of field names and expanding models related to logistics options to permit more advanced features.
+The [Vipps Checkout API v3](https://developer.vippsmobilepay.com/docs/APIs/checkout-api) is available. Checkout v3 improves upon v2 through alignment of polling and callback responses, improvement of field names and expanding models related to logistics options to permit more advanced features.
 
-For more information, check out our [migration guide](https://vippsas.github.io/vipps-developer-docs/docs/APIs/checkout-api/vipps-checkout-api-migration-v3)
+For more information, check out our [migration guide](https://developer.vippsmobilepay.com/docs/APIs/checkout-api/vipps-checkout-api-migration-v3)
 
 ## Recurring API v3
 
 The
-[Vipps Recurring API v3](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api)
+[Vipps Recurring API v3](https://developer.vippsmobilepay.com/docs/APIs/recurring-api)
 is available. This version includes new and improved functionality for campaigns
 (for example "10 weeks for 10 kr" or "1 kr until Christmas"),
 the possibility to reserve and capture (or partially capture) a charge
@@ -45,8 +45,8 @@ the possibility to reserve and capture (or partially capture) a charge
 Upgrading to v3 requires some technical changes, but the overall flow and logic
 is the same as in v2. We have made it as easy as possible to upgrade.
 See the
-[migration guide]( https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/v2-to-v3-migration-guide)
-and the [quick start]( https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/vipps-recurring-api-quick-start)
+[migration guide]( https://developer.vippsmobilepay.com/docs/APIs/recurring-api/v2-to-v3-migration-guide)
+and the [quick start]( https://developer.vippsmobilepay.com/docs/APIs/recurring-api/vipps-recurring-api-quick-start)
 for more details. The Recurring API v2 will continue to work, but will not support the new functionality.
 
 Improvements in button text for agreements without initial charge:
@@ -60,18 +60,18 @@ Improvements in button text for agreements without initial charge:
 ## ePayment API
 
 The
-[API specification for the Vipps ePayment API](https://vippsas.github.io/vipps-developer-docs/api/epayment)
+[API specification for the Vipps ePayment API](https://developer.vippsmobilepay.com/api/epayment)
 is now available.
 
 **Please note:** While the API _functionality_ is implemented, the
-[API documentation](https://vippsas.github.io/vipps-developer-docs/docs/APIs/epayment-api)
+[API documentation](https://developer.vippsmobilepay.com/docs/APIs/epayment-api)
 is still a work in progress.
 We aim to have the API guide, etc. ready in early January.
 
 ## Solutions
 
 The new
-[Solutions](https://vippsas.github.io/vipps-developer-docs/docs/vipps-solutions)
+[Solutions](https://developer.vippsmobilepay.com/docs/vipps-solutions)
 section of our developer documentation describes best practice for
 combining Vipps APIs for specific use cases, like:
 
@@ -110,4 +110,4 @@ We are working on eliminating incorrect API use. Please:
 We're always happy to help with code or other questions you might have!
 Please create [GitHub issues or pull requests](https://github.com/vippsas)
 for the relevant API,
-or [contact us](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/contact).
+or [contact us](https://developer.vippsmobilepay.com/docs/vipps-developers/contact).

@@ -17,7 +17,7 @@ This newsletter was sent in February 2021.
 Several of our plugins have been updated to use the newest versions of
 our APIs. Please make sure you have the newest version of the plugins
 you use, and keep them up to date. See the
-[the plugin overview](https://vippsas.github.io/vipps-developer-docs/docs/vipps-plugins).
+[the plugin overview](https://developer.vippsmobilepay.com/docs/vipps-plugins).
 
 ## API Dashboard 🚦
 
@@ -34,11 +34,11 @@ This is just the start. Please let us know what you think and suggest improvemen
 ## The deprecated eCom API `/status` endpoint will be removed
 
 The
-[`/status`](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api#get-payment-status)
+[`/status`](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#get-payment-status)
 endpoint has been deprecated for a long time, and we will remove it on March 1.
 
 The
-[`/details`](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api#get-payment-details)
+[`/details`](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#get-payment-details)
 endpoint has been available for a long time, and gives more data and details: The full payment history of the orderId.
 
 ## Vipps Login API version 2
@@ -52,7 +52,7 @@ To do this we have to introduce a new version of our Vipps login API.
 Our plugins are updated to support the latest version.
 Make sure that you use the latest version of the plugin.
 See
-[Plugins](https://vippsas.github.io/vipps-developer-docs/docs/vipps-plugins)
+[Plugins](https://developer.vippsmobilepay.com/docs/vipps-plugins)
 for details.
 
 ## Vipps Login improvements 🎉
@@ -75,15 +75,15 @@ phone number, name, email address, postal address, birth date, national identity
 The user must of course consent to sharing the information.
 
 See
-[Userinfo for eCom](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api#userinfo)
+[Userinfo for eCom](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#userinfo)
 and
-[Userinfo for Recurring](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/vipps-recurring-api#userinfo).
+[Userinfo for Recurring](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/vipps-recurring-api#userinfo).
 
 ## Recurring: Info about failures
 
 You can now se _why_ a charge fails, not just that it fails: Insufficient funds, invalid card, etc.
 See:
-[Charge failure reasons](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/vipps-recurring-api#charge-failure-reasons).
+[Charge failure reasons](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/vipps-recurring-api#charge-failure-reasons).
 
 ## Reminders
 
@@ -92,9 +92,9 @@ We have mentioned some things before, and take this opportunity to remind you:
 ### Vipps HTTP Headers ℹ️
 
 We recommend using the following _optional_ HTTP headers for all requests to the
-[Vipps eCom API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api)
+[Vipps eCom API](https://developer.vippsmobilepay.com/docs/APIs/ecom-api)
 and the
-[Vipps Recurring API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api).
+[Vipps Recurring API](https://developer.vippsmobilepay.com/docs/APIs/recurring-api).
 
 | Header                        | Description                                  | Example value        |
 | ----------------------------- | -------------------------------------------- | -------------------- |
@@ -137,7 +137,7 @@ This does require that you have already ordered a Vipps solution, and
 that you already have API access.
 
 This does, unfortunately, not apply to customers using one of our
-[plugins](https://vippsas.github.io/vipps-developer-docs/docs/vipps-plugins), or
+[plugins](https://developer.vippsmobilepay.com/docs/vipps-plugins), or
 customers using Vipps through a partner.
 
 ### Do you want a technical workshop? 🛠
@@ -150,7 +150,7 @@ This does require that you have already ordered a Vipps solution, and
 that you already have API access.
 
 This does, unfortunately, not apply to customers using one of our
-[plugins](https://vippsas.github.io/vipps-developer-docs/docs/vipps-plugins), or
+[plugins](https://developer.vippsmobilepay.com/docs/vipps-plugins), or
 customers using Vipps through a partner.
 
 ### API lifecycle
@@ -166,15 +166,15 @@ Our API lifecycle policy is
 ### How to get help quickly
 
 Please see
-[this page](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/contact).
+[this page](https://developer.vippsmobilepay.com/docs/vipps-developers/contact).
 
 ### Newsletter archive
 
-Please see: [newsletters](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/newsletters)
+Please see: [newsletters](https://developer.vippsmobilepay.com/docs/vipps-developers/newsletters)
 
 ## Questions or comments?
 
 We're always happy to help with code or other questions you might have!
 Please create [GitHub issues or pull requests](https://github.com/vippsas)
 for the relevant API,
-or [contact us](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/contact).
+or [contact us](https://developer.vippsmobilepay.com/docs/vipps-developers/contact).

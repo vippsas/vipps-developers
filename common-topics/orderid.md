@@ -24,13 +24,13 @@ Use the recommended format to avoid problems.
 
 This is applicable to:
 
-* [Checkout API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/checkout-api)
-* [eCom API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api)
-* [ePayment API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/epayment-api)
-* [Order Management API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/order-management-api)
-* [PSP API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/psp-api)
-* [QR API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/qr-api)
-* [Recurring API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api)
+* [Checkout API](https://developer.vippsmobilepay.com/docs/APIs/checkout-api)
+* [eCom API](https://developer.vippsmobilepay.com/docs/APIs/ecom-api)
+* [ePayment API](https://developer.vippsmobilepay.com/docs/APIs/epayment-api)
+* [Order Management API](https://developer.vippsmobilepay.com/docs/APIs/order-management-api)
+* [PSP API](https://developer.vippsmobilepay.com/docs/APIs/psp-api)
+* [QR API](https://developer.vippsmobilepay.com/docs/APIs/qr-api)
+* [Recurring API](https://developer.vippsmobilepay.com/docs/APIs/recurring-api)
 
 ## Use user-friendly orderIds
 

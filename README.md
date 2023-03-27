@@ -15,7 +15,7 @@ END_METADATA -->
 <!-- START_COMMENT -->
 
 ℹ️ Please use the website:
-[Vipps MobilePay Technical Documentation](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers).
+[Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/docs/vipps-developers).
 
 <!-- END_COMMENT -->
 
@@ -29,12 +29,12 @@ Quick links:
 
 Dive deeper with:
 
-* [Developer resources](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/developer-resources) - API dashboard, demo store, design guidelines, portal, status pages, etc.
-* [Common API topics](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/common-topics) - API keys, API lifecycle, authentication, HTTP headers, polling guidelines, reserve and capture, userinfo, landing page, etc.
-* [Frequently asked questions](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/faqs) - Requirements, common problems, refunds, users and payments, landing page, problems for end users, etc.
+* [Developer resources](https://developer.vippsmobilepay.com/docs/vipps-developers/developer-resources) - API dashboard, demo store, design guidelines, portal, status pages, etc.
+* [Common API topics](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics) - API keys, API lifecycle, authentication, HTTP headers, polling guidelines, reserve and capture, userinfo, landing page, etc.
+* [Frequently asked questions](https://developer.vippsmobilepay.com/docs/vipps-developers/faqs) - Requirements, common problems, refunds, users and payments, landing page, problems for end users, etc.
 
 Related topics:
 
 * [Partner information](https://github.com/vippsas/vipps-partner) - Technical information for partners.
-* [Plugins](https://vippsas.github.io/vipps-developer-docs/docs/vipps-plugins) - Information about using plugins for your Vipps integration.
-* [Solutions](https://vippsas.github.io/vipps-developer-docs/docs/vipps-solutions) - Examples that combine several API solutions.
+* [Plugins](https://developer.vippsmobilepay.com/docs/vipps-plugins) - Information about using plugins for your Vipps integration.
+* [Solutions](https://developer.vippsmobilepay.com/docs/vipps-solutions) - Examples that combine several API solutions.

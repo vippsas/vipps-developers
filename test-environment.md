@@ -13,7 +13,7 @@ END_METADATA -->
 <!-- START_COMMENT -->
 
 ℹ️ Please use the website:
-[Vipps MobilePay Technical Documentation](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/test-environment).
+[Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/docs/vipps-developers/test-environment).
 
 <!-- END_COMMENT -->
 
@@ -88,14 +88,14 @@ for a Vipps product (that has an API), and the details can be found on the
 
 See:
 
-- [Common topics: Getting the API keys](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/common-topics/api-keys#getting-the-api-keys)
-- [How to create a test sales unit](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/developer-resources/portal#how-to-create-a-test-sales-unit)
+- [Common topics: Getting the API keys](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics/api-keys#getting-the-api-keys)
+- [How to create a test sales unit](https://developer.vippsmobilepay.com/docs/vipps-developers/developer-resources/portal#how-to-create-a-test-sales-unit)
 
 ### Partners
 
 Partners can get access to the test environment by ordering
 "Vipps Logg inn" (the
-[Vipps Login API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/login-api))
+[Vipps Login API](https://developer.vippsmobilepay.com/docs/APIs/login-api))
 on
 [portal.vipps.no](https://portal.vipps.no).
 
@@ -211,7 +211,7 @@ Use these amounts to always get the same result.
 | 2.02   | SCA required              |
 
 **Please note:** The
-[force approve](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api#testing)
+[force approve](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#testing)
 endpoint does not support this functionality.
 
 ## Vipps test apps
