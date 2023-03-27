@@ -26,6 +26,7 @@ This newsletter was sent in March 2023.
 * [Improved shipping options in Vipps Checkout](#improved-shipping-options-in-vipps-checkout)
 * [More Solutions and best practices](#more-solutions-and-best-practices)
 * [Report API](#report-api)
+* [Change of IP addresses](#change-of-ip-addresses)
 * [Reminders](#reminders)
   * [Please check your API calls for errors](#please-check-your-api-calls-for-errors)
 * [Questions or comments?](#questions-or-comments)
@@ -111,6 +112,12 @@ See: [Solutions](https://vippsas.github.io/vipps-developer-docs/docs/vipps-solut
 The Vipps Report API is now available. It is a REST API providing data about
 payments in JSON format. See the
 [API documentation](https://vippsas.github.io/vipps-developer-docs/docs/APIs/report-api).
+
+## Change of IP addresses
+
+We will soon change the IP-addresses for the publicly available servers.
+Make sure you follow the documentation for DNS, etc.
+See: [Vipps servers](https://developer.vippsmobilepay.com/docs/vipps-developers/developer-resources/servers).
 
 ## Reminders
 
