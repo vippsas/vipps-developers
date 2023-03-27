@@ -11,8 +11,8 @@ END_METADATA -->
 
 This is applicable to:
 
-* [eCom API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api)
-* [QR API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/qr-api)
+* [eCom API](https://developer.vippsmobilepay.com/docs/APIs/ecom-api)
+* [QR API](https://developer.vippsmobilepay.com/docs/APIs/qr-api)
 
 All Vipps payments are initiated with a text that appears in Vipps, using the
 `transactionText` parameter. There are separate texts for the different actions:

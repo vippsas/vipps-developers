@@ -12,11 +12,11 @@ When you start using the Vipps API, you will need to provide API keys.
 These are like passcodes that confirm your identity and that your API request is valid.
 
 Your API keys are specific for your sales unit and you will use them to interact with all the
-[Vipps API products](https://vippsas.github.io/vipps-developer-docs/docs/APIs).
+[Vipps API products](https://developer.vippsmobilepay.com/docs/APIs).
 
 The same API keys are used for many types of integration:
 Direct integration, native apps for iOS and Android, point of sale integrations,
-[all the Vipps plugins](https://vippsas.github.io/vipps-developer-docs/docs/vipps-plugins)
+[all the Vipps plugins](https://developer.vippsmobilepay.com/docs/vipps-plugins)
 and any other solution based on the Vipps APIs.
 
 **Please note:** There are no API keys for
@@ -25,7 +25,7 @@ as there is no external API.
 
 **Please note**: This page describes the keys that are provided to you, as a merchant.
 Partners use special keys that will work for all their merchants. These are known as
-[*Partner keys*](https://vippsas.github.io/vipps-developer-docs/docs/vipps-partner/partner-keys).
+[*Partner keys*](https://developer.vippsmobilepay.com/docs/vipps-partner/partner-keys).
 
 ## Production and Test Keys
 
@@ -88,7 +88,7 @@ The Vipps API Keys are:
 | `Vipps-Subscription-Key` (secondary) | Subscription key for the API product                    | Base64 | 0f14ebcab0eb4b29ae0cb90d91b4a84a     |
 
 The `client_id` and `client_secret` are used with the
-[Access token API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/access-token-api)
+[Access token API](https://developer.vippsmobilepay.com/docs/APIs/access-token-api)
 to get an access token to use for all subsequent API requests.
 
 There are both a primary and secondary `Vipps-Subscription-Key`.

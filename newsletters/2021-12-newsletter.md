@@ -39,7 +39,7 @@ These Vipps solutions are extra relevant (again):
 - Use
   [Vipps Logg inn](https://vipps.no/produkter-og-tjenester/privat/logg-inn-med-vipps/logg-inn-med-vipps/)
   and the
-  [Vipps Login API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/login-api)
+  [Vipps Login API](https://developer.vippsmobilepay.com/docs/APIs/login-api)
   to register visitors - it's free.
 - [Use Userinfo to register visitors](#use-userinfo-to-register-visitors)
   as an easy-to-use step in a normal Vipps payment.
@@ -58,10 +58,10 @@ do not notice that they select an incorrect/old/outdated address.
 Using the explicit flow is simple: Just specify
 `"useExplicitCheckoutFlow": true`
 in
-[`POST:/ecomm/v2/payments`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Vipps-eCom-API/operation/initiatePaymentV3UsingPOST).
+[`POST:/ecomm/v2/payments`](https://developer.vippsmobilepay.com/api/ecom#tag/Vipps-eCom-API/operation/initiatePaymentV3UsingPOST).
 
 See
-[Old and new express checkout flow](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api#old-and-new-express-checkout-flow)
+[Old and new express checkout flow](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#old-and-new-express-checkout-flow)
 for more details.
 
 ## Use the API Dashboard to find problems with your integration
@@ -82,7 +82,7 @@ Here's an example for the Vipps eCom API's `/refund` endpoint:
 
 There is quite a bit happening for Vipps partners.
 Please see
-[Vipps Partner pages](https://vippsas.github.io/vipps-developer-docs/docs/vipps-partner)
+[Vipps Partner pages](https://developer.vippsmobilepay.com/docs/vipps-partner)
 for (continuously) updated information.
 
 ## Reminders
@@ -94,14 +94,14 @@ phone number, name, email address, postal address, birth date, national identity
 The user must of course consent to sharing the information.
 
 See
-[Userinfo for eCom](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api#userinfo)
+[Userinfo for eCom](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#userinfo)
 and
-[Userinfo for Recurring](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/vipps-recurring-api#userinfo).
+[Userinfo for Recurring](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/vipps-recurring-api#userinfo).
 
 ### "Click and collect" recommendations
 
 For "click and collect" we recommend to use
-[`staticShippingDetails`](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api#shipping-and-static-shipping-details)
+[`staticShippingDetails`](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#shipping-and-static-shipping-details)
 (to avoid the extra HTTP roundtrip where Vipps asks the merchant
 for the shipping options and prices) and also to set the default
 shipping method to "Click and collect".
@@ -109,7 +109,7 @@ shipping method to "Click and collect".
 This will significantly speed up the payment process for customers.
 
 This is done in the
-[`POST:​/ecomm​/v2​/payments`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Vipps-eCom-API/operation/initiatePaymentV3UsingPOST)
+[`POST:​/ecomm​/v2​/payments`](https://developer.vippsmobilepay.com/api/ecom#tag/Vipps-eCom-API/operation/initiatePaymentV3UsingPOST)
 call by including:
 
 ```json
@@ -128,12 +128,12 @@ call by including:
 
 Make window shopping great again!
 
-An [early version of the Vipps QR API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/qr-api) is available.
+An [early version of the Vipps QR API](https://developer.vippsmobilepay.com/docs/APIs/qr-api) is available.
 
 The Vipps QR API lets merchants generate Vipps QR codes that can be used to pay
 over the counter, without requiring the Vipps user to provide their telephone
 number to the merchant. Or you can create your own QR with a
-[short URL](https://vippsas.github.io/vipps-developer-docs/docs/APIs/qr-api/vipps-qr-api#qr-formats)
+[short URL](https://developer.vippsmobilepay.com/docs/APIs/qr-api/vipps-qr-api#qr-formats)
 that we provide.
 
 The QR code, when scanned and opened, will redirect the user to the Vipps
@@ -156,7 +156,7 @@ Recurring agreements with variable amount lets merchants charge users a differen
 amount each for interval, based on the user's specified max amount.
 
 More information can be found in
-[our documentation](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/vipps-recurring-api#recurring-agreements-with-variable-amount).
+[our documentation](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/vipps-recurring-api#recurring-agreements-with-variable-amount).
 
 ### Vipps Login support for authentication/registration outside of browser/app (CIBA)
 
@@ -166,16 +166,16 @@ The Vipps Login service has been extended with Client Initiated Backchannel Auth
 This could typically be physical contexts like point of sales (POS) solutions, on the
 phone in call center solutions, or devices/terminals like TV boxes. We currently support initiating logins based on the users phone number. We are also working on supporting the same flows with the user scanning the merchant's QR-code as a starting point.
 
-More information can be found in [our documentation](https://vippsas.github.io/vipps-developer-docs/docs/APIs/login-api).
+More information can be found in [our documentation](https://developer.vippsmobilepay.com/docs/APIs/login-api).
 
 ## Newsletter archive
 
 All the previous newsletters are in the
-[newsletter archive](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/newsletters).
+[newsletter archive](https://developer.vippsmobilepay.com/docs/vipps-developers/newsletters).
 
 ## Questions or comments?
 
 We're always happy to help with code or other questions you might have!
 Please create [GitHub issues or pull requests](https://github.com/vippsas)
 for the relevant API,
-or [contact us](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/contact).
+or [contact us](https://developer.vippsmobilepay.com/docs/vipps-developers/contact).

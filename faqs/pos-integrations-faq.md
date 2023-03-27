@@ -13,7 +13,7 @@ END_METADATA -->
 <!-- START_COMMENT -->
 
 ℹ️ Please use the website:
-[Vipps MobilePay Technical Documentation](https://vippsas.github.io/vipps-developer-docs/).
+[Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/).
 
 ## Table of contents
 
@@ -45,7 +45,7 @@ Basic flow:
 1. Initiate a Vipps eCom payment (`skipLandingPage` must be set to false)
 2. Receive the payment URL as response
 3. Post the payment URL to the
-   [Vipps QR API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/qr-api)
+   [Vipps QR API](https://developer.vippsmobilepay.com/docs/APIs/qr-api)
 4. Receive a URL to a QR code in PNG (Portable Network Graphics) format
 5. Present the QR code on the customer-facing screen
 6. The user scans the QR code with Vipps or camera app
@@ -64,8 +64,8 @@ If it is not possible for the POS solution to handle a fallback URL you may use 
 
 See also:
 
-* [QR API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/qr-api)
-* [Error codes](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api#error-codes)
+* [QR API](https://developer.vippsmobilepay.com/docs/APIs/qr-api)
+* [Error codes](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#error-codes)
 * [Do we need to support callbacks?](#do-we-need-to-support-callbacks)
 
 ## How can we be whitelisted for `skipLandingPage`?
@@ -78,7 +78,7 @@ It may be relevant for enterprise setup, omnichannel, multiple physical stores w
 
 **Prerequisites:**
 Stores or a centralized system (e.g. from a headquarter) must have access to all store credentials, or use
-[Partner keys](https://vippsas.github.io/vipps-developer-docs/docs/vipps-partner/partner-keys).
+[Partner keys](https://developer.vippsmobilepay.com/docs/vipps-partner/partner-keys).
 Stores must be able to search for `orderId` from other stores or request it from the centralized system.
 
 **User story:** A user buys a product from Store A.
@@ -89,27 +89,27 @@ The user then visits Store B to return some goods. Store B wants to be able to r
 **Recommended solutions:**
 
 **A:**
-[Partner keys](https://vippsas.github.io/vipps-developer-docs/docs/vipps-partner/partner-keys)
+[Partner keys](https://developer.vippsmobilepay.com/docs/vipps-partner/partner-keys)
 are used for all stores:
 
 Stores must be able to search for `orderId` for payments made in other stores. The cashier can then search and select `orderId` from Store A and click `refund`.  
 **Technical:** Use
-[Partner keys](https://vippsas.github.io/vipps-developer-docs/docs/vipps-partner/partner-keys)
+[Partner keys](https://developer.vippsmobilepay.com/docs/vipps-partner/partner-keys)
 to authenticate, add `Merchant-Serial-Number` from Store A to the request header and original `orderId` to the
-[refund](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Vipps-eCom-API/operation/refundPaymentUsingPOST) request.
+[refund](https://developer.vippsmobilepay.com/api/ecom#tag/Vipps-eCom-API/operation/refundPaymentUsingPOST) request.
 
 NB: With
-[Partner keys](https://vippsas.github.io/vipps-developer-docs/docs/vipps-partner/partner-keys),
+[Partner keys](https://developer.vippsmobilepay.com/docs/vipps-partner/partner-keys),
 do not let the cashier input `Merchant-Serial-Number` themselves. These must be locked and connected to the store selection to reduce risk of adding the wrong store.
 
 **B:**
-[Partner keys](https://vippsas.github.io/vipps-developer-docs/docs/vipps-partner/partner-keys)
+[Partner keys](https://developer.vippsmobilepay.com/docs/vipps-partner/partner-keys)
 are not used:
 
 In this case, a centralized system needs to store credentials from all sales units within the enterprise.
 Store B must be able to request a `refund` from the central system based on the original `orderId` and location for the order origin (Store A).
 **Technical:** Use Store A credentials to authenticate, add original `orderId` to the
-[refund](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Vipps-eCom-API/operation/refundPaymentUsingPOST)
+[refund](https://developer.vippsmobilepay.com/api/ecom#tag/Vipps-eCom-API/operation/refundPaymentUsingPOST)
 request.
 
 **C:** Same sales unit is used for all locations:
@@ -122,7 +122,7 @@ You will use the same API keys for all stores.
 ## Distance selling from a POS solution
 
 Due to compliance requirements in a payment situation where customer is not present, we recommend implementing the
-[Order management API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/order-management-api/vipps-order-management-api).
+[Order management API](https://developer.vippsmobilepay.com/docs/APIs/order-management-api/vipps-order-management-api).
 This allows the merchants to send rich receipt information to existing Vipps transactions.
 This information is visible for the customer in the app in their order history.
 
@@ -133,7 +133,7 @@ As an alternative an online sale log must be available for Vipps.
 1. The partner establishes a customer relationship with Vipps.
    [Apply here](https://www.vipps.no/produkter-og-tjenester/bedrift/ta-betalt-i-butikk/vipps-i-kassa/).
 2. The partner integrates the POS with Vipps and completes
-   [the integration checklist](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api-checklist).
+   [the integration checklist](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api-checklist).
    The partner now has a working POS integration.
    This process normally takes 1-4 days.
 3. The partner's merchant establishes a customer relationship with Vipps.
@@ -146,7 +146,7 @@ As an alternative an online sale log must be available for Vipps.
    can help with this.
    See: [Vipps landing page FAQ](vipps-landing-page-faq.md#is-it-possible-to-skip-the-landing-page).
 5. The POS vendor normally uses
-   [Partner keys](https://vippsas.github.io/vipps-developer-docs/docs/vipps-partner/partner-keys).
+   [Partner keys](https://developer.vippsmobilepay.com/docs/vipps-partner/partner-keys).
    If not: The merchant
    [retrieves the API keys](../common-topics/api-keys.md#getting-the-api-keys)
    and provides them in a secure way to the partner.
@@ -157,11 +157,11 @@ As an alternative an online sale log must be available for Vipps.
 ## Which API keys should I use?
 
 You should probably use
-[Partner keys](https://vippsas.github.io/vipps-developer-docs/docs/vipps-partner/partner-keys)
+[Partner keys](https://developer.vippsmobilepay.com/docs/vipps-partner/partner-keys)
 ,and not separate API keys for each of
 your merchants. But it depends.
 
-See: [Partner keys](https://vippsas.github.io/vipps-developer-docs/docs/vipps-partner/partner-keys).
+See: [Partner keys](https://developer.vippsmobilepay.com/docs/vipps-partner/partner-keys).
 
 ## Do we need to support callbacks?
 
@@ -170,24 +170,24 @@ provided in the callback. The API Dashboard will show errors if not.
 
 If it is not possible for your POS to support callbacks (no fixed hostname/IP, etc),
 you must actively check the payment status with
-[``GET:/ecomm/v2/payments/{orderId}/details``](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api#get-payment-details).
+[``GET:/ecomm/v2/payments/{orderId}/details``](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#get-payment-details).
 
 This is also required if you do support callbacks.
 
 ## How can I check if a person has Vipps?
 
 There is no separate API for this, but an attempt to
-[`POST:/ecomm/v2/payments`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Vipps-eCom-API/operation/initiatePaymentV3UsingPOST)
+[`POST:/ecomm/v2/payments`](https://developer.vippsmobilepay.com/api/ecom#tag/Vipps-eCom-API/operation/initiatePaymentV3UsingPOST)
 with a phone number that is not registered with Vipps will fail with error 81,
 `User not registered with Vipps`.
-See: [Error codes](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api#error-codes).
+See: [Error codes](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#error-codes).
 
 Users that install Vipps accept the terms and conditions, including being
 "looked up" by the merchant if the payment is initiated with the phone number
 is specified.  It is of course possible to pay with Vipps without sharing the
 phone number with the merchant.
 See
-[`POST:/ecomm/v2/payments`](https://vippsas.github.io/vipps-developer-docs/api/ecom#tag/Vipps-eCom-API/operation/initiatePaymentV3UsingPOST)
+[`POST:/ecomm/v2/payments`](https://developer.vippsmobilepay.com/api/ecom#tag/Vipps-eCom-API/operation/initiatePaymentV3UsingPOST)
 for the details of initiating payments with and without phone number.
 See also
 [privacy and terms](https://vipps.no/vilkar/)
@@ -210,8 +210,8 @@ complying with GDPR, etc.
 See:
 
 * [Is there an API for retrieving information about a Vipps user?](users-and-payments-faq.md#is-there-an-api-for-retrieving-information-about-a-vipps-user).
-* [The Vipps QR API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/qr-api)
+* [The Vipps QR API](https://developer.vippsmobilepay.com/docs/APIs/qr-api)
 
 ## How can we mass sign up merchants?
 
-See: [Vipps Partners: How to sign up new merchants](https://vippsas.github.io/vipps-developer-docs/docs/vipps-partner#how-to-sign-up-new-merchants).
+See: [Vipps Partners: How to sign up new merchants](https://developer.vippsmobilepay.com/docs/vipps-partner#how-to-sign-up-new-merchants).

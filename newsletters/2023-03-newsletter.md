@@ -37,13 +37,13 @@ This newsletter was sent in March 2023.
 
 All Vipps customers that have API access receive this technical newsletter,
 with important information about the
-[Vipps APIs](https://vippsas.github.io/vipps-developer-docs/docs/APIs).
+[Vipps APIs](https://developer.vippsmobilepay.com/docs/APIs).
 
 The newsletter is sent to everyone with admin privileges for a merchant on
 [portal.vipps.no](https://portal.vipps.no).
 
 See:
-[Newsletter information](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/newsletters).
+[Newsletter information](https://developer.vippsmobilepay.com/docs/vipps-developers/newsletters).
 
 ## ePayment API
 
@@ -56,14 +56,14 @@ eCom API over several years. The main benefits are:
 * Uses the Webhooks API to always reliably send information back to the merchant/partner
 
 We strongly recommend that all new integrations use the
-[ePayment API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/epayment-api), not the
-[eCom API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api).
+[ePayment API](https://developer.vippsmobilepay.com/docs/APIs/epayment-api), not the
+[eCom API](https://developer.vippsmobilepay.com/docs/APIs/ecom-api).
 
 The
-[ePayment API specification](https://vippsas.github.io/vipps-developer-docs/api/epayment)
+[ePayment API specification](https://developer.vippsmobilepay.com/api/epayment)
 has been ready for some time, and now
 we have also updated the
-[API guide, FAQ, etc](https://vippsas.github.io/vipps-developer-docs/docs/APIs/epayment-api).
+[API guide, FAQ, etc](https://developer.vippsmobilepay.com/docs/APIs/epayment-api).
 
 **Please note:** The eCom API will still be available for a long time, but new development will
 be for the ePayment API.
@@ -72,7 +72,7 @@ be for the ePayment API.
 
 This API lets merchant receive information from Vipps about payment updates, etc.
 
-See: [Webhooks API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/webhooks-api).
+See: [Webhooks API](https://developer.vippsmobilepay.com/docs/APIs/webhooks-api).
 
 ## eCom API and Express Checkout
 
@@ -81,12 +81,12 @@ flow.
 This ensures that the user gets the item delivered to the right place in the right way.
 
 See the FAQ:
-[Express checkout: Old and new flow](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api-faq#express-checkout-old-and-new-flow).
+[Express checkout: Old and new flow](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api-faq#express-checkout-old-and-new-flow).
 
 ## Improved shipping options in Vipps Checkout
 
 It is essential that you provide your customers their preferred shipping method.
-[Vipps Checkout](https://vippsas.github.io/vipps-developer-docs/docs/APIs/checkout-api)
+[Vipps Checkout](https://developer.vippsmobilepay.com/docs/APIs/checkout-api)
 now supports all major shipping providers in the Norwegian market, including:
 
 * Bring/Posten
@@ -96,7 +96,7 @@ now supports all major shipping providers in the Norwegian market, including:
 * Instabox
 
 See
-[How it works for shipping](https://vippsas.github.io/vipps-developer-docs/docs/APIs/checkout-api/vipps-checkout-how-it-works-shipping)
+[How it works for shipping](https://developer.vippsmobilepay.com/docs/APIs/checkout-api/vipps-checkout-how-it-works-shipping)
 for more details, and try for yourself in our
 [demo store](https://demo.vipps.no/vipps-checkout-1/full).
 
@@ -105,13 +105,13 @@ for more details, and try for yourself in our
 You can now see how Vipps APIs can be used and combined to give the best
 user experience for vending machines, taxis, QR codes, and more.
 
-See: [Solutions](https://vippsas.github.io/vipps-developer-docs/docs/vipps-solutions).
+See: [Solutions](https://developer.vippsmobilepay.com/docs/vipps-solutions).
 
 ## Report API
 
 The Vipps Report API is now available. It is a REST API providing data about
 payments in JSON format. See the
-[API documentation](https://vippsas.github.io/vipps-developer-docs/docs/APIs/report-api).
+[API documentation](https://developer.vippsmobilepay.com/docs/APIs/report-api).
 
 ## Change of IP addresses
 
@@ -139,4 +139,4 @@ We are working on eliminating incorrect API use. Please:
 We're always happy to help with code or other questions you might have!
 Please create [GitHub issues or pull requests](https://github.com/vippsas)
 for the relevant API,
-or [contact us](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/contact).
+or [contact us](https://developer.vippsmobilepay.com/docs/vipps-developers/contact).

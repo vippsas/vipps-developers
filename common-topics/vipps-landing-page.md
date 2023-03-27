@@ -45,14 +45,14 @@ A typical example is one user that is below
 user complete the payment.
 
 **Important:** Never show the Vipps landing page inside an iframe. See:
-[Can I show the landing page in an iframe?​](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/faqs/vipps-landing-page-faq#can-i-show-the-landing-page-in-an-iframe).
+[Can I show the landing page in an iframe?​](https://developer.vippsmobilepay.com/docs/vipps-developers/faqs/vipps-landing-page-faq#can-i-show-the-landing-page-in-an-iframe).
 
 This is applicable to:
 
-* [eCom API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api)
-* [Partner API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/partner-api)
-* [PSP API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/psp-api)
-* [Recurring API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api)
+* [eCom API](https://developer.vippsmobilepay.com/docs/APIs/ecom-api)
+* [Partner API](https://developer.vippsmobilepay.com/docs/APIs/partner-api)
+* [PSP API](https://developer.vippsmobilepay.com/docs/APIs/psp-api)
+* [Recurring API](https://developer.vippsmobilepay.com/docs/APIs/recurring-api)
 
 ## Generating a QR code to the Vipps landing page
 
@@ -63,11 +63,11 @@ the QR code will take the user directly to the payment in the Vipps app.
 ![Demo QR code](images/demo-qr.png)
 
 This is done in cooperation with the Vipps QR API. See
-[One-time payment QR](https://vippsas.github.io/vipps-developer-docs/docs/APIs/qr-api/vipps-qr-api#one-time-payment-qr-codes)
+[One-time payment QR](https://developer.vippsmobilepay.com/docs/APIs/qr-api/vipps-qr-api#one-time-payment-qr-codes)
 in the Vipps QR API guide for more details about this and other QR services.
 
 See the
-[Quick start](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api-quick-start)
+[Quick start](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api-quick-start)
 for step-by-step examples of generating QR codes and short links for one-time payments initiated from the eCom API.
 
 ## Skip landing page

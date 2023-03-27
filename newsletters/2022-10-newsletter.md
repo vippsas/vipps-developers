@@ -36,15 +36,15 @@ This newsletter was sent in October 2022.
 ## New developer documentation
 
 We have a completely new, in-progress, website for all
-[developer documentation](https://vippsas.github.io/vipps-developer-docs/):
+[developer documentation](https://developer.vippsmobilepay.com/):
 
 ![Vipps Developer Documentation](images/2022-09-vipps-developer-docs.png)
 
 Examples:
 
-* [API Guide](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api)
-* [API Reference](https://vippsas.github.io/vipps-developer-docs/api/ecom)
-* [FAQ](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/faqs)
+* [API Guide](https://developer.vippsmobilepay.com/docs/APIs/ecom-api)
+* [API Reference](https://developer.vippsmobilepay.com/api/ecom)
+* [FAQ](https://developer.vippsmobilepay.com/docs/vipps-developers/faqs)
 
 Please
 [tell us what you think](https://forms.office.com/pages/responsepage.aspx?id=XcJbgGSO1k6NJDiDyQaMWuRWudsvYRxEorAi1xx_iqJUQzg4QzExTVhHM1UzMDIwM1lINkpaNTdWUC4u)
@@ -53,7 +53,7 @@ in this short, 3-minute survey - thanks!
 ## Recurring API: New v3 API coming this fall
 
 The
-[Recurring API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api)
+[Recurring API](https://developer.vippsmobilepay.com/docs/APIs/recurring-api)
 v3 will include new and much improved Campaign functionality,
 the opportunity to use "reserve capture" (first reserve the payment, then capture it),
 partial capture recurring charges, and more.
@@ -95,16 +95,16 @@ If you use Klarna Checkout, here are our
 
 ## Vipps on-site messaging
 
-[Vipps on-site-messaging](https://vippsas.github.io/vipps-developer-docs/docs/APIs/checkout-api/vipps-checkout-on-site-messaging)
+[Vipps on-site-messaging](https://developer.vippsmobilepay.com/docs/APIs/checkout-api/vipps-checkout-on-site-messaging)
 contains a badges in different variants that can be used to let your customers
 know that Vipps payment is accepted.
 
 ## Partner API: Pre-fill applications
 
 Partners can now use the
-[Partner API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/partner-api)
+[Partner API](https://developer.vippsmobilepay.com/docs/APIs/partner-api)
 to pre-fill applications and
-[submit a product order for a merchant](https://vippsas.github.io/vipps-developer-docs/docs/APIs/partner-api/vipps-partner-api#submit-a-product-order-for-a-merchant).
+[submit a product order for a merchant](https://developer.vippsmobilepay.com/docs/APIs/partner-api/vipps-partner-api#submit-a-product-order-for-a-merchant).
 
 ## Settlement API: In progress
 
@@ -147,15 +147,15 @@ Here's an example for the Vipps eCom API's `/refund` endpoint:
 ### How to get help quickly
 
 Please see
-[this page](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/contact).
+[this page](https://developer.vippsmobilepay.com/docs/vipps-developers/contact).
 
 ### Newsletter archive
 
-Please see: [newsletters](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/newsletters)
+Please see: [newsletters](https://developer.vippsmobilepay.com/docs/vipps-developers/newsletters)
 
 ## Questions or comments?
 
 We're always happy to help with code or other questions you might have!
 Please create [GitHub issues or pull requests](https://github.com/vippsas)
 for the relevant API,
-or [contact us](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/contact).
+or [contact us](https://developer.vippsmobilepay.com/docs/vipps-developers/contact).

@@ -47,7 +47,7 @@ reserved, meaning before the user has accepted/rejected in Vipps. This may be
 useful in face-to-face situations where a customer's phone runs out of battery.
 
 See
-[Cancelling a pending order](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api#Cancelling-a-pending-order).
+[Cancelling a pending order](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#Cancelling-a-pending-order).
 
 ## User details
 
@@ -60,7 +60,7 @@ will (very soon) use the same data formats.
 ## eCom: `/approve` endpoint for integration tests
 
 A new
-[`/approve`](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api#testing)
+[`/approve`](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#testing)
 endpoint makes it possible to approve payments through the API,
 without using the app.
 
@@ -73,7 +73,7 @@ The pages are automatically generated from the GitHub repos, so the
 content is the same, and you can choose what to use.
 
 We are just getting started, and
-[feedback](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/contact)
+[feedback](https://developer.vippsmobilepay.com/docs/vipps-developers/contact)
 is very welcome. We know there are some (minor?) issues, please bear with us.
 
 ## API documentation in HTML format with Slate
@@ -81,24 +81,24 @@ is very welcome. We know there are some (minor?) issues, please bear with us.
 We now offer generated HTML documentation in three formats for most APIs.
 Examples for the eCom API:
 
-* OpenAPI: <https://vippsas.github.io/vipps-developer-docs/api/ecom>
+* OpenAPI: <https://developer.vippsmobilepay.com/api/ecom>
 * ReDoc: content no longer available
 * Slate: content no longer available
 
-[Feedback](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/contact)
+[Feedback](https://developer.vippsmobilepay.com/docs/vipps-developers/contact)
 is very welcome.
 
 ## How it works
 
 We have made some more in-depth product information pages with screenshots:
 
-* [eCom (_Vipps på Nett_)](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/how-it-works)
-* [Recurring (_Faste Betalinger_)](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/how-it-works)
+* [eCom (_Vipps på Nett_)](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/how-it-works)
+* [Recurring (_Faste Betalinger_)](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/how-it-works)
 
 ## Plugin overview
 
 We now have plugins for WordPress/WooCommerce, Magento, Episerver, Shopify, Drupal:
-[Vipps-plugins](https://vippsas.github.io/vipps-developer-docs/docs/vipps-plugins)
+[Vipps-plugins](https://developer.vippsmobilepay.com/docs/vipps-plugins)
 
 We have some more candidates too.
 
@@ -119,15 +119,15 @@ Our API lifecycle policy is
 ### How to get help quickly
 
 Please see
-[this page](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/contact).
+[this page](https://developer.vippsmobilepay.com/docs/vipps-developers/contact).
 
 ### Newsletter archive
 
-Please see: [Newsletters](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/newsletters)
+Please see: [Newsletters](https://developer.vippsmobilepay.com/docs/vipps-developers/newsletters)
 
 ## Questions or comments?
 
 We're always happy to help with code or other questions you might have!
 Please create [GitHub issues or pull requests](https://github.com/vippsas)
 for the relevant API,
-or [contact us](https://vippsas.github.io/vipps-developer-docs/docs/vipps-developers/contact).
+or [contact us](https://developer.vippsmobilepay.com/docs/vipps-developers/contact).

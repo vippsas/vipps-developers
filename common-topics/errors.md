@@ -45,7 +45,7 @@ will use `extraDetails`.
 
 * Most of the APIs use this error format, but legacy APIs may not.
   For details: See each
-  [API](https://vippsas.github.io/vipps-developer-docs/docs/APIs)'s
+  [API](https://developer.vippsmobilepay.com/docs/APIs)'s
   specification.
 * Some errors are sent from Microsoft Azure, and not the Vipps APIs.
   These errors may have a different format, as they are not configurable.

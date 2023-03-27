@@ -45,12 +45,12 @@ Important things to consider:
 
 This is applicable to:
 
-* [Checkout API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/checkout-api)
-* [eCom API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api)
-* [ePayment API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/epayment-api)
-* [Partner API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/partner-api)
-* [PSP API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/psp-api)
-* [Recurring API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api)
+* [Checkout API](https://developer.vippsmobilepay.com/docs/APIs/checkout-api)
+* [eCom API](https://developer.vippsmobilepay.com/docs/APIs/ecom-api)
+* [ePayment API](https://developer.vippsmobilepay.com/docs/APIs/epayment-api)
+* [Partner API](https://developer.vippsmobilepay.com/docs/APIs/partner-api)
+* [PSP API](https://developer.vippsmobilepay.com/docs/APIs/psp-api)
+* [Recurring API](https://developer.vippsmobilepay.com/docs/APIs/recurring-api)
 
 ## Reserve
 

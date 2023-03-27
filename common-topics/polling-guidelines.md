@@ -18,9 +18,9 @@ Our general guidelines for polling are:
 different use cases, and values should be adapted to the specific case.
 
 Some APIs, like the
-[eCom API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/ecom-api/vipps-ecom-api#rate-limiting)
+[eCom API](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#rate-limiting)
 and
-[Recurring API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/vipps-recurring-api#rate-limiting),
+[Recurring API](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/vipps-recurring-api#rate-limiting),
 have rate-limiting to prevent obviously incorrect use.
 If you get a `HTTP 429 Too Many Requests` error you are most likely using the API
 incorrectly.

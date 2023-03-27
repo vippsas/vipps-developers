@@ -83,12 +83,12 @@ END_METADATA -->
   providing a platform, helping set up custom integrations, or developing
   Vipps' official plugins.
   See:
-  [Vipps partners](https://vippsas.github.io/vipps-developer-docs/docs/vipps-partner).
+  [Vipps partners](https://developer.vippsmobilepay.com/docs/vipps-partner).
 
 * Partner keys - Unique identifiers that allow partners to use their own API
   credentials to make API calls on behalf of their merchants.
   See:
-  [Partner keys](https://vippsas.github.io/vipps-developer-docs/docs/vipps-partner/partner-keys).
+  [Partner keys](https://developer.vippsmobilepay.com/docs/vipps-partner/partner-keys).
 
 * Payment Service Provider (PSP) - A third-party company that performs online
   payments on behalf of Vipps. Vipps does not handle the settlements for PSP
