@@ -16,6 +16,7 @@ These are topics that are applicable across many APIs:
 * [API lifecycle](api-lifecycle.md)
 * [Authentication](authentication.md)
 * [Cancellations](cancel.md)
+* [Direct integration and PSP integration](direct-vs-psp.md)
 * [Errors](errors.md)
 * [HTTP headers](http-headers.md)
 * [HTTP response codes](http-response-codes.md)
