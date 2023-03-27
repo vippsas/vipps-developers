@@ -41,7 +41,7 @@ Vipps user's payment card.
 
 To put it simply, it is a "card token lookup service": 
 The PSP initiates a payment with the PSP API, receives a card token,
-use the token to process the payment, and then sends an update to us about
+uses the token to process the payment, and then sends an update to us about
 the success or failure of the payment.
 
 ## Benefits of direct integration
