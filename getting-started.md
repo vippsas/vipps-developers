@@ -28,9 +28,7 @@ You can apply for services on [portal.vipps.no](https://portal.vipps.no).
 See
 [Requirements for applying for a service](./common-topics/requirements.md).
 
-**Please note:** If you plan to use Vipps through a PSP, you must
-order the Vipps solution from the PSP.
-They will also help you with developer access to their systems.
+**Please note:** If you plan to use Vipps through a PSP, please see [Direct integration and PSP integration](./common-topics/direct-vs-psp.md).
 
 Vipps is required to perform a background check on all merchants who want to use Vipps services, so it might take a few days before you hear back from us.
 You can check the status of your application on [portal.vipps.no](https://portal.vipps.no) or
