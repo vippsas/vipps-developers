@@ -74,6 +74,11 @@ This API lets merchant receive information from Vipps about payment updates, etc
 
 See: [Webhooks API](https://developer.vippsmobilepay.com/docs/APIs/webhooks-api).
 
+## Recurring API: Look up agreements by charge
+
+A new endpoint makes it possible to retrieve an agreement specified by `chargeId`:
+[`GET:/charges/{chargeId}`](https://developer.vippsmobilepay.com/api/recurring).
+
 ## eCom API and Express Checkout
 
 The new express checkout flow (`"useExplicitCheckoutFlow": true`) is now the only possible

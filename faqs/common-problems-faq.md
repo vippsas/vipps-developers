@@ -19,28 +19,30 @@ in the eCom API FAQs.
 ℹ️ Please use the website:
 [Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/).
 
-## Table of contents
-
-* [Why do payments fail?](#why-do-payments-fail)
-* [Why does capture fail?](#why-does-capture-fail)
-* [Why do I get a CORS error?](#why-do-i-get-a-cors-error)
-* [How can I open the fallback URL in a specific (embedded) browser?](#how-can-i-open-the-fallback-url-in-a-specific-embedded-browser)
-* [How can I measure Vipps sales with Google Analytics, Facebook pixel, etc?](#how-can-i-measure-vipps-sales-with-google-analytics-facebook-pixel-etc)
-* [Why are the customer names not shown on the transaction overview?](#why-are-the-customer-names-not-shown-on-the-transaction-overview)
-
 <!-- END_COMMENT -->
 
 ## Why do payments fail?
 
-**Please note:** We have extremely low drop-off rates for direct integration:
+### High success rate for direct integrations
+
+**Please note:** We have extremely high success rate (low drop-off) for direct integration:
 Almost every user that selects to pay with Vipps completes the payment. The
 success rate is much higher than when using a payment card directly.
+
 When comparing drop-off rates: Remember to compare drop-off data for when the
 user _selects_ payment method, do not compare Vipps to numbers for when the
 user has selected card payment and already has manually entered the card number, etc:
 * Drop-off data for Vipps: Measure the success rate after the user has selected Vipps.
 * Drop-off rate for cards: Measure the success rate after the user has selected card,
   but from _before_ the user has to enter the card details.
+
+The success rate for PSP integrations is not quite as high.
+See:
+[Direct integration and PSP integration](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics/direct-vs-psp)
+and
+[Benefits of direct integration](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics/direct-vs-psp#benefits-of-direct-integration).
+
+### Common reasons why payments are not completed
 
 The most common reasons why payments are not completed are:
 
@@ -87,6 +89,8 @@ The most common reasons why payments are not completed are:
    See: [Why does capture fail?](#why-does-capture-fail)
 9. The user has reached the limit for payments within a time period.
    See: [Payment limits, in Norwegian](https://vipps.no/hjelp/vipps/sende-og-motta-penger/har-vipps-belopsgrenser/).
+
+### Investigating problems
 
 We strongly recommend to check the full history of every Vipps payment with
 the API: You can see if a payment has been actively rejected, if the user has
