@@ -56,7 +56,7 @@ These will allow you to start running API commands against the production server
 
 ### Start testing
 
-Start by [getting your API keys](./developer-resources/portal.md#how-to-find-the-api-keys).
+Start by [getting your API keys](./common-topics/api-keys#getting-the-api-keys).
 You will need these for providing authentication when sending Vipps API requests.
 For more information about the keys, see the [API keys](./common-topics/api-keys.md) page.
 

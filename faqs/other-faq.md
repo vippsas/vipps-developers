@@ -15,27 +15,13 @@ END_METADATA -->
 ℹ️ Please use the website:
 [Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/).
 
-## Table of contents
-
-* [Where do I find the `client_id` and `client_secret`?](#where-do-i-find-the-client_id-and-client_secret)
-* [Can you send us logs so we can look for errors?](#can-you-send-us-logs-so-we-can-look-for-errors)
-* [How do I perform "testing in production"?](#how-do-i-perform-testing-in-production)
-* [How can I use Vipps for different types of payments?](#how-can-i-use-vipps-for-different-types-of-payments)
-* [How do I set up multiple sales units?](#how-do-i-set-up-multiple-sales-units)
-* [How can I change my organization number?](#how-can-i-change-my-organization-number)
-* [What about webhooks?](#what-about-webhooks)
-* [Can I use Vipps with Klarna Checkout?](#can-i-use-vipps-with-klarna-checkout)
-* [What functionality is included in the eCom API, but not the PSP API?](#what-functionality-is-included-in-the-ecom-api-but-not-the-psp-api)
-* [What do we have to do with PSD2's SCA requirements?](#what-do-we-have-to-do-with-psd2s-sca-requirements)
-* [How can I change partner for my integration with Vipps?](#how-can-i-change-partner-for-my-integration-with-vipps)
-
 <!-- END_COMMENT -->
 
 ## Where do I find the `client_id` and `client_secret`?
 
 See:
 
-* [How to find the API keys](../developer-resources/portal.md#how-to-find-the-api-keys)
+* [How to find the API keys](../common-topics/api-keys#getting-the-api-keys)
 
 ## Can you send us logs so we can look for errors?
 
