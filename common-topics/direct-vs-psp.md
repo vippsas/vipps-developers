@@ -53,29 +53,32 @@ and
 [eCom](https://developer.vippsmobilepay.com/docs/APIs/ecom-api)
 APIs have some functionality that is not available in the PSP API:
 
-1. Higher success rate.
+1. Direct integration allows you to have more control over the payment process
+   and to customize it to your specific needs. This can lead to a better user
+  experience for your customers and can help to increase conversions.
+2. Higher success rate.
    With a direct integration, you have full control over the user flow,
    and use the Vipps MobilePay APIs directly without any additional steps or
    middleware.
    See:
    [High success rate for direct integrations](../faqs/common-problems-faq#high-success-rate-for-direct-integrations).
-1. Retry functionality: If the user attempts to pay with a card that is declined,
+3. Retry functionality: If the user attempts to pay with a card that is declined,
    the user can retry with a different card, while still in the same payment process.
    This results in a higher success rater for payments.
    The PSP API does not have this functionality, as it is the PSP, not Vipps,
    that make the charge.
-2. [Express checkout (Vipps Hurtigkasse)](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#express-checkout-payments)
+4. [Express checkout (Vipps Hurtigkasse)](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#express-checkout-payments)
    is only available in the Vipps eCom API.
-3. [Userinfo](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#userinfo):
+5. [Userinfo](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#userinfo):
    The Vipps eCom API offers the possibility for merchants to ask for the user's
    profile information as part of the payment flow: name, address, email, phone number, birthdate, etc.
-4. When using the
-   [ePayment API]()
+6. When using the
+   [ePayment API](https://developer.vippsmobilepay.com/docs/APIs/epayment-api)
    and
-   [eCom API]()
-   , Vipps handles soft-declines, 3-D Secure, BankID, etc.
+   [eCom API](https://developer.vippsmobilepay.com/docs/APIs/ecom-api),
+   Vipps handles soft-declines, 3-D Secure, BankID, etc.
    We have taken care of the regulatory required "secure customer authentication" (SCA),
-   and we have regulatory approved _delegated SCA_.
+   as we have regulatory approved _delegated SCA_ from the card issuers.
    This means that Vipps MobilePay takes care of the SCA requirements when the
    user logs into the app, and the need for additional SCA is eliminated.
    The user gets a simpler and faster user experience
