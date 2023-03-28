@@ -2,7 +2,7 @@
 ---
 title: Quick start guides
 sidebar_label: Quick start guides
-sidebar_position: 4
+sidebar_position: 30
 description: A guide for using Postman to test the Vipps MobilePay APIs.
 pagination_next: null
 pagination_prev: null
