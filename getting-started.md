@@ -37,6 +37,7 @@ by contacting [customer service](https://www.vipps.no/kontakt-oss/bedrift/).
 You can start getting familiar with the products and preparing for placing an order.
 Here are the most common API products:
 
+- [Checkout API (_Vipps Checkout_)](/docs/APIs/checkout-api) - Allow your customer to identify themselves, select shipping options and pay with Vipps, VISA or MasterCard on your website or app.
 - [eCom API (_Vipps På Nett_)](/docs/APIs/ecom-api) - Allow your customer to pay with Vipps on your website or app.
 - [Recurring API (_Vipps Faste Betalinger_)](/docs/APIs/recurring-api) - Allow your customers to set up recurring payments (e.g., for subscriptions, membership dues, parking fees, etc.) through Vipps.
 - [Login API (_Vipps Logg Inn_)](/docs/APIs/login-api) - Allow your customer to log in to your site by using their Vipps account.
