@@ -38,7 +38,7 @@ There are two ways to use Vipps MobilePay:
 ## How the PSP API works
 
 The
-[PSP API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/psp-api)
+[PSP API](https://developer.vippsmobilepay.com/docs/APIs/psp-api)
 provides _tokens_ that a PSP can use to charge a Vipps user's card.
 
 To put it simply, it is a "card token lookup service". The payment is completed
@@ -63,9 +63,9 @@ APIs have some functionality that is not available in the PSP API:
    This results in a higher success rater for payments.
    The PSP API does not have this functionality, as it is the PSP, not Vipps,
    that make the charge.
-2. [Express checkout (Vipps Hurtigkasse)](vipps-ecom-api.md#express-checkout-payments)
+2. [Express checkout (Vipps Hurtigkasse)](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#express-checkout-payments)
    is only available in the Vipps eCom API.
-3. [Userinfo](vipps-ecom-api.md#userinfo):
+3. [Userinfo](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#userinfo):
    The Vipps eCom API offers the possibility for merchants to ask for the user's
    profile information as part of the payment flow: name, address, email, phone number, birthdate, etc.
 4. When using the
