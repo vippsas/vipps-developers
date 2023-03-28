@@ -1,5 +1,8 @@
 <!-- START_METADATA
 ---
+title: Direct integration and PSP integration
+sidebar_label: Direct integration and PSP integration
+description: Direct integration and PSP integration
 title: Vipps landing page
 pagination_next: null
 pagination_prev: null
@@ -8,10 +11,11 @@ END_METADATA -->
 
 # Direct integration and PSP integration
 
-There are two ways to use Vipps Mobilepay:
+There are two ways to use Vipps MobilePay:
 * Direct integration: The merchant or partner uses the
   [APIs](https://developer.vippsmobilepay.com/docs/APIs)
-  directly:
+  directly
+  (e.g.,
   [ePayment](https://developer.vippsmobilepay.com/docs/APIs/epayment-api),
   [eCom](https://developer.vippsmobilepay.com/docs/APIs/ecom-api),
   [Checkout](https://developer.vippsmobilepay.com/docs/APIs/checkout-api),
@@ -19,15 +23,15 @@ There are two ways to use Vipps Mobilepay:
   [Login](https://developer.vippsmobilepay.com/docs/APIs/login-api)
   [Userinfo](https://developer.vippsmobilepay.com/docs/APIs/userinfo-api)
   [Order Management](https://developer.vippsmobilepay.com/docs/APIs/order-management-api),
-  [QR](https://developer.vippsmobilepay.com/docs/APIs/qr-api),
+  [QR](https://developer.vippsmobilepay.com/docs/APIs/qr-api)),
   etc.
-  All the functionality of the APIs can be used, and also combined as dewscribed
+  All the functionality of the APIs can be used, and also combined as described
   in
   [Solutions](https://developer.vippsmobilepay.com/docs/vipps-solutions).
-* PSP integration: The merchants or partner uses the PSPs APIs, which is
+* PSP integration: The merchant or partner uses the PSP's API, which is
   based on our
   [PSP API](https://developer.vippsmobilepay.com/docs/APIs/psp-api).
-  The merchants or partner does not have a direct communication with
+  The merchant or partner does not have a direct communication with
   Vipps MobilePay, and uses none of our services directly.
   It is not possible to use all functionality provided with direct integration.
 
@@ -64,11 +68,17 @@ APIs have some functionality that is not available in the PSP API:
 3. [Userinfo](vipps-ecom-api.md#userinfo):
    The Vipps eCom API offers the possibility for merchants to ask for the user's
    profile information as part of the payment flow: name, address, email, phone number, birthdate, etc.
-4. When using the Vipps eCom API, Vipps handles soft-declines, 3-D Secure, BankID, etc.
+4. When using the
+   [ePayment API]()
+   and
+   [eCom API]()
+   , Vipps handles soft-declines, 3-D Secure, BankID, etc.
    We have taken care of the regulatory required "secure customer authentication" (SCA),
-   so the user gets a simpler and faster user experience.
-   This give a consistent user experience and a very high completion rate.
-   There is nothing a merchant needs to do.
+   and we have regulatory approved _delegated SCA_.
+   This means that Vipps MobilePay takes care of the SCA requirements when the
+   user logs into the app, and the need for additional SCA is eliminated.
+   The user gets a simpler and faster user experience
+   and a _very_ high completion rate.
 
 ## Extremely high success rate of direct integrations
 
