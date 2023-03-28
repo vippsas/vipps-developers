@@ -82,7 +82,9 @@ APIs have some functionality that is not available in the PSP API:
    This means that Vipps MobilePay takes care of the SCA requirements when the
    user logs into the app, and the need for additional SCA is eliminated.
    The user gets a simpler and faster user experience
-   and a _very_ high completion rate.
+   and a extremely high completion rate.
+   See:
+   [When do users get a "soft decline" and need to complete a 3-D Secure verification?](https://developer.vippsmobilepay.com/docs/vipps-developers/faqs/users-and-payments-faq#when-do-users-get-a-soft-decline-and-need-to-complete-a-3-d-secure-verification)
 
 ## Extremely high success rate of direct integrations
 
