@@ -19,6 +19,10 @@ Refunds can be made up to 365 days after reservation.
 Attempting to refund an older payment will result in a
 `HTTP 400 Bad Request`.
 
+Refunded funds will be deducted from the merchants settlement account after two business days. See 
+[Settlement Information](../settlements/README.md) for more details.
+
+
 This is applicable to:
 
 * [eCom API](https://developer.vippsmobilepay.com/docs/APIs/ecom-api)

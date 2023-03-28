@@ -13,6 +13,9 @@ When you initiate a payment, it will be _reserved_ until you _capture_ it:
 * When a payment is reserved it means the customer has approved the payment.
   The funds are still in the customer's account, but not available to spend on other things.
 * When a payment is captured it means the funds are moved from customer's account to merchant's account.
+  * Captured funds will be settled to the merchants settlement account after two business days. See 
+  [Settlement Information](../settlements/README.md) for more details.
+
 
 Vipps supports both _reserve capture_ and _direct capture_:
 
