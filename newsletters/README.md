@@ -30,6 +30,7 @@ Anyone can [subscribe to the newsletter](https://cloud.melding.vipps.no/utv).
 
 This is the newsletter archive:
 
+* [2023-03](2023-03-newsletter.md)
 * [2022-12](2022-12-newsletter.md)
 * [2022-11](2022-11-newsletter.md)
 * [2022-10](2022-10-newsletter.md)
