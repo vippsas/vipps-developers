@@ -19,7 +19,7 @@ This newsletter was sent in March 2023.
 
 ## Table of Contents
 
-* [About this newsletter](#about-this-newsletter)
+* [New to the technical newsletter?](#new-to-the-technical-newsletter)
 * [ePayment API](#epayment-api)
 * [Webhooks API](#webhooks-api)
 * [Recurring API: Look up agreements by charge](#recurring-api-look-up-agreements-by-charge)
