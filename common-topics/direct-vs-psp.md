@@ -3,7 +3,6 @@
 title: Direct integration and PSP integration
 sidebar_label: Direct integration and PSP integration
 description: Direct integration and PSP integration
-title: Vipps landing page
 pagination_next: null
 pagination_prev: null
 ---
