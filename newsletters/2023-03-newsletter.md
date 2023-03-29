@@ -90,8 +90,8 @@ See: [Webhooks API](https://developer.vippsmobilepay.com/docs/APIs/webhooks-api)
 
 The new endpoint
 [`GET:/charges/{chargeId}`](https://developer.vippsmobilepay.com/api/recurring)
-makes it possible to retrieve an agreement specified by `chargeId`,
-without knowing the `agreementId`.
+makes it possible to find a charge specified by `chargeId`,
+without knowing the `agreementId`. The resulting charge now contains the `agreementId`.
 Its purpose is to simplify investigations when the merchant lost track of which
 charge belongs to which agreement.
 
