@@ -34,20 +34,31 @@ This newsletter was sent in March 2023.
 
 <!-- END_COMMENT -->
 
-## About this newsletter
+## New to the technical newsletter?
 
-All Vipps customers that have API access receive this technical newsletter,
-with important information about the
+You’re receiving this newsletter because you have admin privileges on
+[portal.vipps.no](https://portal.vipps.no)
+for a merchant with access to
 [Vipps APIs](https://developer.vippsmobilepay.com/docs/APIs).
 
-This newsletter contains important information about the APIs you have
-access to. It is not considered marketing.
+We strongly advise all technical resources to subscribe to the newsletter. If you
+don’t subscribe, you will not receive this newsletter again.
+[Subscribe to the newsletter here](https://cloud.melding.vipps.no/utv).
 
-This newsletter is sent to everyone with admin privileges for a merchant on
-[portal.vipps.no](https://portal.vipps.no).
+In this newsletter we share information about changes and updates to APIs,
+new functionality, and other important info to ensure your Vipps solutions run
+smoothly.
+
+The newsletter is sent at irregular intervals, when there is important
+information to share. In 2022 we sent six newsletters.
+
+Like all our
+[developer documentation](https://developer.vippsmobilepay.com),
+the newsletter is in English. This makes
+it easier to forward to all developers and technical resources.
 
 See:
-[Newsletter information](https://developer.vippsmobilepay.com/docs/vipps-developers/newsletters).
+[Newsletter information and archive](https://developer.vippsmobilepay.com/docs/vipps-developers/newsletters).
 
 ## ePayment API
 
