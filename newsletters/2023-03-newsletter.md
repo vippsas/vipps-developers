@@ -1,11 +1,10 @@
 <!-- START_METADATA
 ---
-title: Technical newsletter for developers 2023-02
+title: Technical newsletter for developers 2023-03
 sidebar_label: 2023-03
 sidebar_position: 66
 pagination_next: null
 pagination_prev: null
-draft: true
 ---
 END_METADATA -->
 
