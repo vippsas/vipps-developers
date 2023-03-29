@@ -41,7 +41,7 @@ for a merchant with access to
 We strongly advise all technical resources to subscribe to the newsletter. If you
 don’t subscribe, you will not receive this newsletter again.
 
-**[Subscribe to the newsletter here](https://cloud.melding.vipps.no/utv).**
+👉 **[Subscribe to the newsletter here](https://cloud.melding.vipps.no/utv).** 👈
 
 In this newsletter we share information about changes and updates to APIs,
 new functionality, and other important info to ensure your Vipps solutions run
