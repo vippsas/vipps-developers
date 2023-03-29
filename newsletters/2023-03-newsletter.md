@@ -62,7 +62,7 @@ See:
 The ePayment API is redesigned from scratch, based on everything we have learned through the
 eCom API over several years. The main benefits are:
 
-* Supports different flows, like direct push and pay by QR code, out-of-the-box without the "hacks" required in the eCom API
+* Supports different flows, like pay by QR code, out-of-the-box without the "hacks" required in the eCom API
 * Supports long-lived payments (payment requests from merchants) that are valid up to 28 days
 * Supports free-standing card payments: Pay with VISA and MasterCard without the Vipps app
 * Uses the Webhooks API to always reliably send information back to the merchant/partner
