@@ -59,9 +59,9 @@ APIs have some functionality that is not available in the PSP API:
    This results in a higher success rater for payments.
    The PSP API does not have this functionality, as it is the PSP, not Vipps,
    that make the charge.
-2. [Express checkout (Vipps Hurtigkasse)](vipps-ecom-api.md#express-checkout-payments)
+2. [Express checkout (Vipps Hurtigkasse)](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#express-checkout-payments)
    is only available in the Vipps eCom API.
-3. [Userinfo](vipps-ecom-api.md#userinfo):
+3. [Userinfo](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#userinfo):
    The Vipps eCom API offers the possibility for merchants to ask for the user's
    profile information as part of the payment flow: name, address, email, phone number, birthdate, etc.
 4. When using the Vipps eCom API, Vipps handles soft-declines, 3-D Secure, BankID, etc.
