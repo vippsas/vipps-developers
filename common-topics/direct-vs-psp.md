@@ -3,7 +3,6 @@
 title: Direct integration and PSP integration
 sidebar_label: Direct integration and PSP integration
 description: Direct integration and PSP integration
-title: Vipps landing page
 pagination_next: null
 pagination_prev: null
 ---
@@ -11,7 +10,8 @@ END_METADATA -->
 
 # Direct integration and PSP integration
 
-There are two ways to use Vipps MobilePay:
+There are two ways to use Vipps Mobilepay:
+
 * Direct integration: The merchant or partner uses the
   [APIs](https://developer.vippsmobilepay.com/docs/APIs)
   directly
@@ -28,6 +28,7 @@ There are two ways to use Vipps MobilePay:
   All the functionality of the APIs can be used, and also combined as described
   in
   [Solutions](https://developer.vippsmobilepay.com/docs/vipps-solutions).
+
 * PSP integration: The merchant or partner uses the PSP's API, which is
   based on our
   [PSP API](https://developer.vippsmobilepay.com/docs/APIs/psp-api).
@@ -95,6 +96,7 @@ success rate is much higher than when using a payment card directly.
 When comparing drop-off rates: Remember to compare drop-off data for when the
 user _selects_ payment method, do not compare Vipps to numbers for when the
 user has selected card payment and already has manually entered the card number, etc:
+
 * Drop-off data for Vipps: Measure the success rate after the user has selected Vipps.
 * Drop-off rate for cards: Measure the success rate after the user has selected card,
   but from _before_ the user has to enter the card details.
