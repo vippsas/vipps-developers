@@ -11,8 +11,6 @@ END_METADATA -->
 
 # Technical newsletter for developers 2023-03
 
-💥 DRAFT! 💥
-
 This newsletter was sent in March 2023.
 
 <!-- START_COMMENT -->
