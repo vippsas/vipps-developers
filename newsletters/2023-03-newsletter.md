@@ -50,7 +50,7 @@ The newsletter is sent at irregular intervals, when there is important
 information to share. In 2022 we sent six newsletters.
 
 Like all our
-[developer documentation](https://developer.vippsmobilepay.com),
+[developer documentation](https://developer.vippsmobilepay.com/),
 the newsletter is in English. This makes
 it easier to forward to all developers and technical resources.
 
