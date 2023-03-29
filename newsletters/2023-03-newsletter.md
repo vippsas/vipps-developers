@@ -19,9 +19,10 @@ This newsletter was sent in March 2023.
 
 ## Table of Contents
 
-* [Is this is the first time you receive this newsletter?](#is-this-is-the-first-time-you-receive-this-newsletter)
+* [About this newsletter](#about-this-newsletter)
 * [ePayment API](#epayment-api)
 * [Webhooks API](#webhooks-api)
+* [Recurring API: Look up agreements by charge](#recurring-api-look-up-agreements-by-charge)
 * [eCom API and Express Checkout](#ecom-api-and-express-checkout)
 * [Improved shipping options in Vipps Checkout](#improved-shipping-options-in-vipps-checkout)
 * [More Solutions and best practices](#more-solutions-and-best-practices)
@@ -33,13 +34,16 @@ This newsletter was sent in March 2023.
 
 <!-- END_COMMENT -->
 
-## Is this is the first time you receive this newsletter?
+## About this newsletter
 
 All Vipps customers that have API access receive this technical newsletter,
 with important information about the
 [Vipps APIs](https://developer.vippsmobilepay.com/docs/APIs).
 
-The newsletter is sent to everyone with admin privileges for a merchant on
+This newsletter contains important information about the APIs you have
+access to. It is not considered marketing.
+
+This newsletter is sent to everyone with admin privileges for a merchant on
 [portal.vipps.no](https://portal.vipps.no).
 
 See:
@@ -76,17 +80,24 @@ See: [Webhooks API](https://developer.vippsmobilepay.com/docs/APIs/webhooks-api)
 
 ## Recurring API: Look up agreements by charge
 
-A new endpoint makes it possible to retrieve an agreement specified by `chargeId`:
-[`GET:/charges/{chargeId}`](https://developer.vippsmobilepay.com/api/recurring).
+The new endpoint
+[`GET:/charges/{chargeId}`](https://developer.vippsmobilepay.com/api/recurring)
+makes it possible to retrieve an agreement specified by `chargeId`,
+without knowing the `agreementId`.
+Its purpose is to simplify investigations when the merchant lost track of which
+charge belongs to which agreement.
+
+See: [Retrieve a charge](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/vipps-recurring-api#retrieve-a-charge).
 
 ## eCom API and Express Checkout
 
-The new express checkout flow (`"useExplicitCheckoutFlow": true`) is now the only possible
-flow.
+The new express checkout flow (`"useExplicitCheckoutFlow": true`) is now the only possible flow.
 This ensures that the user gets the item delivered to the right place in the right way.
 
+The `useExplicitCheckoutFlow` parameter no longer has any effect.
+
 See the FAQ:
-[Express checkout: Old and new flow](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api-faq#express-checkout-old-and-new-flow).
+[Express checkout](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api-faq#express-checkout).
 
 ## Improved shipping options in Vipps Checkout
 
@@ -121,14 +132,15 @@ payments in JSON format. See the
 ## Change of IP addresses
 
 We will soon change the IP-addresses for the publicly available servers.
-Make sure you follow the documentation for DNS, etc.
-See: [Vipps servers](https://developer.vippsmobilepay.com/docs/vipps-developers/developer-resources/servers).
+Make sure you follow the documentation for DNS, etc:
+[Vipps servers](https://developer.vippsmobilepay.com/docs/vipps-developers/developer-resources/servers).
 
 ## Reminders
 
 ### Please check your API calls for errors
 
-We are working on eliminating incorrect API use. Please:
+We are working on eliminating incorrect API use to ensure the best possible user
+experience for all Vipps users and merchants. Please:
 
 * Monitor the responses you get when making API calls
 * Log all errors
