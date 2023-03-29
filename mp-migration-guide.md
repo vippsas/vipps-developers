@@ -5,7 +5,7 @@ sidebar_label: Migration guide
 sidebar_position: 10
 pagination_next: null
 pagination_prev: null
-draft: true
+draft: false
 ---
 END_METADATA -->
 
@@ -60,7 +60,7 @@ A quick summary of key facts and shortcuts for our APIs​.
 | `links["rel", "href"]`               | `vippsConfirmationUrl`                                                                         |
 | `one_off_payment_id`                 | `chargeId`                                                                                     |
 
-## INVOICE vs. EPAYMENT
+## Invoice vs. ePayment
 
 | MOBILEPAY INVOICE​                    | VIPPS MOBILEPAY EPAYMENT​                                                                        |
 |--------------------------------------|-------------------------------------------------------------------------------------------------|
@@ -92,13 +92,16 @@ A quick summary of key facts and shortcuts for our APIs​.
 | ?​                                    | `customerInteraction` (`Customer_present`, `Customer_not_present`)​                              |
 | ?​                                    | `industryData` (Additional compliance data related to the transaction)​                          |
 
-## Point of Sale vs. EPAYMENT
+
+<!-- START_COMMENT -->
+
+## Point of Sale vs. ePayment
 
 | Point of Sale                                          ​ | EPAYMENT                     |
 |---------------------------------------------------------|------------------------------|
 | **InitiatePayment**                                     |                              |
-| `Authorization` <br/>*(Header parameter used in all requests)* | `Ocp-Apim-Subscription-Key`  |
-| `X-MobilePay-Client-System-Version`<br/>*(Header parameter used in all requests)* |          |
+| `Authorization` *(Header parameter used in all requests)* | `Ocp-Apim-Subscription-Key`  |
+| `X-MobilePay-Client-System-Version` *(Header parameter used in all requests)* |          |
 | `X-MobilePay-Idempotency-Key`                           |                              |
 | `X-MobilePay-Merchant-VAT-Number`                       |                              |
 | `Amount`                                                |                              |
@@ -132,3 +135,5 @@ A quick summary of key facts and shortcuts for our APIs​.
 | `Authorization`                                         |                              |
 | `X-MobilePay-Client-System-Version`                     |                              |
 | `X-MobilePay-Merchant-VAT-Number`                       |                              |
+
+<!-- END_COMMENT -->
