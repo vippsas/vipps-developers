@@ -1,14 +1,15 @@
 <!-- START_METADATA
 ---
-title: Vipps landing page
-pagination_next: null
-pagination_prev: null
+title: Direct integration and PSP integration
+sidebar_label: Direct integration and PSP integration
+description: Direct integration and PSP integration
 ---
 END_METADATA -->
 
 # Direct integration and PSP integration
 
 There are two ways to use Vipps Mobilepay:
+
 * Direct integration: The merchant or partner uses the
   [APIs](https://developer.vippsmobilepay.com/docs/APIs)
   directly:
@@ -21,13 +22,13 @@ There are two ways to use Vipps Mobilepay:
   [Order Management](https://developer.vippsmobilepay.com/docs/APIs/order-management-api),
   [QR](https://developer.vippsmobilepay.com/docs/APIs/qr-api),
   etc.
-  All the functionality of the APIs can be used, and also combined as dewscribed
+  All the functionality of the APIs can be used, and also combined as described
   in
   [Solutions](https://developer.vippsmobilepay.com/docs/vipps-solutions).
-* PSP integration: The merchants or partner uses the PSPs APIs, which is
+* PSP integration: The merchant or partner uses the PSPs APIs, which are
   based on our
   [PSP API](https://developer.vippsmobilepay.com/docs/APIs/psp-api).
-  The merchants or partner does not have a direct communication with
+  The merchant or partner does not have a direct communication with
   Vipps MobilePay, and uses none of our services directly.
   It is not possible to use all functionality provided with direct integration.
 
@@ -59,12 +60,12 @@ APIs have some functionality that is not available in the PSP API:
    This results in a higher success rater for payments.
    The PSP API does not have this functionality, as it is the PSP, not Vipps,
    that make the charge.
-2. [Express checkout (Vipps Hurtigkasse)](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#express-checkout-payments)
+1. [Express checkout (Vipps Hurtigkasse)](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#express-checkout-payments)
    is only available in the Vipps eCom API.
-3. [Userinfo](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#userinfo):
+1. [Userinfo](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#userinfo):
    The Vipps eCom API offers the possibility for merchants to ask for the user's
    profile information as part of the payment flow: name, address, email, phone number, birthdate, etc.
-4. When using the Vipps eCom API, Vipps handles soft-declines, 3-D Secure, BankID, etc.
+1. When using the Vipps eCom API, Vipps handles soft-declines, 3-D Secure, BankID, etc.
    We have taken care of the regulatory required "secure customer authentication" (SCA),
    so the user gets a simpler and faster user experience.
    This give a consistent user experience and a very high completion rate.
@@ -79,6 +80,7 @@ success rate is much higher than when using a payment card directly.
 When comparing drop-off rates: Remember to compare drop-off data for when the
 user _selects_ payment method, do not compare Vipps to numbers for when the
 user has selected card payment and already has manually entered the card number, etc:
+
 * Drop-off data for Vipps: Measure the success rate after the user has selected Vipps.
 * Drop-off rate for cards: Measure the success rate after the user has selected card,
   but from _before_ the user has to enter the card details.
