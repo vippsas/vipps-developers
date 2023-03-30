@@ -24,7 +24,14 @@ A quick summary of key facts and shortcuts for our APIs​.
 
 ## Subscriptions vs. Recurring
 
+API documentation:
+* [Vipps Recurring API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api)
+* [MobilePay Subscriptions API](https://developer.mobilepay.dk/api/subscriptions)
+
 ### Agreement
+
+See:
+[Agreements](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/vipps-recurring-api#agreements).
 
 | MOBILEPAY AGREEMENT               ​ | VIPPS MOBILEPAY AGREEMENT​                                                                              |
 |------------------------------------|--------------------------------------------------------------------------------------------------------|
@@ -46,6 +53,9 @@ A quick summary of key facts and shortcuts for our APIs​.
 | ?​                                  | `skipLandingPage` (`True` = skip landing page by sending notification directly to user)​                |
 
 ### Charges
+
+See:
+[Charges](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/vipps-recurring-api#charges).
 
 | MOBILEPAY ONE-OFF​                    | VIPPS MOBILEPAY INITIAL CHARGE​                                                                 |
 |--------------------------------------|------------------------------------------------------------------------------------------------|
@@ -84,7 +94,6 @@ A quick summary of key facts and shortcuts for our APIs​.
 | `BuyerOrderNumber​`                   | ?​ |
 | `InvoiceUrl`+ `InvoiceArticles []`​   | See [Order Management API](https://developer.vippsmobilepay.com/docs/APIs/order-management-api) |
 | ?                                   ​ | `paymentDescription​`                                                                            |
-| ?                                   ​ | `directCapture` (sales unit must be configured by Vipps)​                                        |
 | ?​                                    | `profile` (scope)​                                                                               |
 | ?                                   ​ | `paymentMethod` (`WALLET` or `CARD`. `CARD` => WEB_REDIRECT)​                                    |
 | ?​                                    | `userFlow` (`Push_message`, `Native_redirect`, `Web_redirect`, `QR`)                           ​ |
@@ -96,6 +105,9 @@ A quick summary of key facts and shortcuts for our APIs​.
 <!-- START_COMMENT -->
 
 ## Point of Sale vs. ePayment
+
+See:
+[ePayment API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/epayment-api).
 
 | Point of Sale                                          ​ | EPAYMENT                     |
 |---------------------------------------------------------|------------------------------|
