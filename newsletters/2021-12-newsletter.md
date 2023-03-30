@@ -43,7 +43,7 @@ These Vipps solutions are extra relevant (again):
   to register visitors - it's free.
 - [Use Userinfo to register visitors](#use-userinfo-to-register-visitors)
   as an easy-to-use step in a normal Vipps payment.
-- ["Click and collect" recommendations](#-click-and-collect--recommendations)
+- ["Click and collect" recommendations](#click-and-collect-recommendations)
   to speed up the user experience for your customers.
 
 ## Vipps Hurtigkasse: Use the explicit flow
@@ -140,10 +140,10 @@ The QR code, when scanned and opened, will redirect the user to the Vipps
 landing page, which on the phone will automatically trigger a switch to the
 Vipps app where they can pay the merchant.
 
-### The Vipps Order Management API
+### The Order Management API
 
-An early version of the Vipps Order Management API is available:
-<https://developer.vippsmobilepay.com/docs/APIs/order-management-api>.
+An early version of the
+[Order Management API](https://developer.vippsmobilepay.com/docs/APIs/order-management-api) is available.
 
 The Order Management API allows merchants to send rich receipt information to
 existing Vipps transaction. This information is shown to the customer in the
@@ -155,8 +155,8 @@ and direct payments, but not for pass-through payments.
 Recurring agreements with variable amount lets merchants charge users a different
 amount each for interval, based on the user's specified max amount.
 
-More information can be found in
-[our documentation](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/vipps-recurring-api#recurring-agreements-with-variable-amount).
+More information can be found in the
+[Recurring guide](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/vipps-recurring-api#recurring-agreements-with-variable-amount).
 
 ### Vipps Login support for authentication/registration outside of browser/app (CIBA)
 
