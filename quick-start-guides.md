@@ -32,7 +32,7 @@ You need:
 
 1. A *test sales unit*.
 
-    You create this yourself by logging in to the Vipps portal at <https://portal.vipps.no>. This requires BankId.
+    You create this yourself by logging in to the Vipps Portal at [https://portal.vipps.no](https://portal.vipps.no). This requires BankId.
     See instructions for creating the [test sales unit](test-environment.md#test-merchants).
 
 1. A Vipps *test app* for your mobile phone.
@@ -41,7 +41,7 @@ You need:
 
 1. A Postman application on your computer.
 
-    Download Postman from <https://www.postman.com/downloads/> and install it.
+    Download [Postman](https://www.postman.com/downloads/) and install it.
     Don't use the web version, because we should never save our keys on the web.
 
 ## Getting started with Postman

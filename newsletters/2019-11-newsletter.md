@@ -42,8 +42,7 @@ We are working on this, and the current version/draft is
 
 ## vipps.no/developer
 
-New developer pages, in addition to
-[GitHub](https://github.com/vippsas),
+New developer pages, in addition to [GitHub](https://github.com/vippsas),
 are available at <https://vipps.no/developer>.
 
 ## Status page for test and production

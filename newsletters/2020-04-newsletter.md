@@ -67,7 +67,7 @@ without using the app.
 ## New developer pages on vipps.no
 
 We now offer nicely formatted and Vipps-branded developer pages at
-<https://vipps.no/developer>.
+[https://vipps.no/developer](https://vipps.no/developer).
 
 The pages are automatically generated from the GitHub repos, so the
 content is the same, and you can choose what to use.
@@ -81,7 +81,7 @@ is very welcome. We know there are some (minor?) issues, please bear with us.
 We now offer generated HTML documentation in three formats for most APIs.
 Examples for the eCom API:
 
-* OpenAPI: <https://developer.vippsmobilepay.com/api/ecom>
+* OpenAPI: [ecom](https://developer.vippsmobilepay.com/api/ecom)
 * ReDoc: content no longer available
 * Slate: content no longer available
 
