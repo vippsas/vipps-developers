@@ -24,7 +24,16 @@ A quick summary of key facts and shortcuts for our APIs​.
 
 ## Subscriptions vs. Recurring
 
+API documentation:
+* [Access token API](https://developer.vippsmobilepay.com/docs/APIs/access-token-api)
+* [ePayment API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/epayment-api)
+* [Recurring API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api)
+* [MobilePay Subscriptions API](https://developer.mobilepay.dk/api/subscriptions)
+
 ### Agreement
+
+See:
+[Agreements](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/vipps-recurring-api#agreements).
 
 | MOBILEPAY AGREEMENT               ​ | VIPPS MOBILEPAY AGREEMENT​                                                                              |
 |------------------------------------|--------------------------------------------------------------------------------------------------------|
@@ -47,6 +56,9 @@ A quick summary of key facts and shortcuts for our APIs​.
 
 ### Charges
 
+See:
+[Charges](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/vipps-recurring-api#charges).
+
 | MOBILEPAY ONE-OFF​                    | VIPPS MOBILEPAY INITIAL CHARGE​                                                                 |
 |--------------------------------------|------------------------------------------------------------------------------------------------|
 | `Amount` (kroner.øre)               ​ | `Amount` (øre)​                                                                                 |
@@ -61,6 +73,10 @@ A quick summary of key facts and shortcuts for our APIs​.
 | `one_off_payment_id`                 | `chargeId`                                                                                     |
 
 ## Invoice vs. ePayment
+
+See:
+* [ePayment API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/epayment-api)
+* [Extend payment time-outs](https://developer.vippsmobilepay.com/docs/vipps-solutions/long-expiry-time-for-payments-to-merchants)
 
 | MOBILEPAY INVOICE​                    | VIPPS MOBILEPAY EPAYMENT​                                                                        |
 |--------------------------------------|-------------------------------------------------------------------------------------------------|
@@ -84,7 +100,6 @@ A quick summary of key facts and shortcuts for our APIs​.
 | `BuyerOrderNumber​`                   | ?​ |
 | `InvoiceUrl`+ `InvoiceArticles []`​   | See [Order Management API](https://developer.vippsmobilepay.com/docs/APIs/order-management-api) |
 | ?                                   ​ | `paymentDescription​`                                                                            |
-| ?                                   ​ | `directCapture` (sales unit must be configured by Vipps)​                                        |
 | ?​                                    | `profile` (scope)​                                                                               |
 | ?                                   ​ | `paymentMethod` (`WALLET` or `CARD`. `CARD` => WEB_REDIRECT)​                                    |
 | ?​                                    | `userFlow` (`Push_message`, `Native_redirect`, `Web_redirect`, `QR`)                           ​ |
@@ -96,6 +111,9 @@ A quick summary of key facts and shortcuts for our APIs​.
 <!-- START_COMMENT -->
 
 ## Point of Sale vs. ePayment
+
+See:
+[ePayment API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/epayment-api).
 
 | Point of Sale                                          ​ | EPAYMENT                     |
 |---------------------------------------------------------|------------------------------|
