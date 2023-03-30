@@ -73,7 +73,8 @@ See:
 ## Invoice vs. ePayment
 
 See:
-[ePayment API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/epayment-api).
+* [ePayment API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/epayment-api)
+* [Extend payment time-outs](https://developer.vippsmobilepay.com/docs/vipps-solutions/long-expiry-time-for-payments-to-merchants)
 
 | MOBILEPAY INVOICE​                    | VIPPS MOBILEPAY EPAYMENT​                                                                        |
 |--------------------------------------|-------------------------------------------------------------------------------------------------|
