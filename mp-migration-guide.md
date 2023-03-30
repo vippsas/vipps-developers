@@ -72,6 +72,9 @@ See:
 
 ## Invoice vs. ePayment
 
+See:
+[ePayment API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/epayment-api).
+
 | MOBILEPAY INVOICE​                    | VIPPS MOBILEPAY EPAYMENT​                                                                        |
 |--------------------------------------|-------------------------------------------------------------------------------------------------|
 | `InvoiceIssuer​`                      | `Merchant-Serial-Number` (Header in request)                                                   ​ |
