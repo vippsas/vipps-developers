@@ -40,7 +40,8 @@ for a merchant with access to
 
 We strongly advise all technical resources to subscribe to the newsletter. If you
 don’t subscribe, you will not receive this newsletter again.
-[Subscribe to the newsletter here](https://cloud.melding.vipps.no/utv).
+
+👉 **[Subscribe to the newsletter here](https://cloud.melding.vipps.no/utv).** 👈
 
 In this newsletter we share information about changes and updates to APIs,
 new functionality, and other important info to ensure your Vipps solutions run
@@ -59,13 +60,13 @@ See:
 
 ## ePayment API
 
-The ePayment API is redesigned from scratch, based on everything we have learned through the
-eCom API over several years. The main benefits are:
+The new ePayment API is designed from scratch, based on everything we have
+learned through the eCom API over several years. The main benefits are:
 
-* Supports different flows, like pay by QR code, out-of-the-box without the "hacks" required in the eCom API
-* Supports long-lived payments (payment requests from merchants) that are valid up to 28 days
-* Supports free-standing card payments: Pay with VISA and MasterCard without the Vipps app
-* Uses the Webhooks API to always reliably send information back to the merchant/partner
+* Support for different flows, like pay by QR code, out-of-the-box without the "hacks" required in the eCom API
+* Support for long-lived payments (payment requests from merchants) that are valid up to 28 days
+* Support for free-standing card payments: Pay with VISA and MasterCard without the Vipps app
+* Uses the Webhooks API to always reliably send information back to the merchant or partner
 
 We strongly recommend that all new integrations use the
 [ePayment API](https://developer.vippsmobilepay.com/docs/APIs/epayment-api), not the
@@ -73,16 +74,19 @@ We strongly recommend that all new integrations use the
 
 The
 [ePayment API specification](https://developer.vippsmobilepay.com/api/epayment)
-has been ready for some time, and now
-we have also updated the
+has been ready for some time, and now we have also updated the
 [API guide, FAQ, etc](https://developer.vippsmobilepay.com/docs/APIs/epayment-api).
 
-**Please note:** The eCom API will still be available for a long time, but new development will
-be for the ePayment API.
+**Please note:** The eCom API will still be available for a long time, but new
+development will be for the ePayment API.
 
 ## Webhooks API
 
-This API lets merchant receive information from Vipps about payment updates, etc.
+This API lets merchant receive information from Vipps about when a payment has
+been authorized, cancelled, expired, etc.
+
+Merchants register one API endpoint, and specify which events it wants to receive.
+If an event is not delivered successfully, it will be retried multiple times.
 
 See: [Webhooks API](https://developer.vippsmobilepay.com/docs/APIs/webhooks-api).
 
@@ -95,12 +99,14 @@ without knowing the `agreementId`.
 Its purpose is to simplify investigations when the merchant lost track of which
 charge belongs to which agreement.
 
-See: [Retrieve a charge](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/vipps-recurring-api#retrieve-a-charge).
+See:
+[Retrieve a charge](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/vipps-recurring-api#retrieve-a-charge).
 
 ## eCom API and Express Checkout
 
-The new express checkout flow (`"useExplicitCheckoutFlow": true`) is now the only possible flow.
-This ensures that the user gets the item delivered to the right place in the right way.
+The improved express checkout flow (`"useExplicitCheckoutFlow": true`) is now
+the only possible flow. This ensures that the user gets the item delivered to
+the right place in the right way.
 
 The `useExplicitCheckoutFlow` parameter no longer has any effect.
 
@@ -126,15 +132,24 @@ for more details, and try for yourself in our
 
 ## More Solutions and best practices
 
-You can now see how Vipps APIs can be used and combined to give the best
-user experience for vending machines, taxis, QR codes, and more.
+You can now see how Vipps APIs can be combined to give the best user experience for:
+* Electric vehicle charging
+* Loyalty at Point of Sale (POS)
+* Static QR codes at POS
+* Parking and "pay as you go"
+* Taxi companies
+* Vending machines
+* .. and more.
 
 See: [Solutions](https://developer.vippsmobilepay.com/docs/vipps-solutions).
 
 ## Report API
 
-The Vipps Report API is now available. It is a REST API providing data about
-payments in JSON format. See the
+The Report API gives you, or a third-party acting on your behalf, the ability to
+fetch information about payment events that have been processed by Vipps.
+It is a REST API providing data in JSON format.
+
+See the
 [API documentation](https://developer.vippsmobilepay.com/docs/APIs/report-api).
 
 ## Change of IP addresses
@@ -162,6 +177,6 @@ experience for all Vipps users and merchants. Please:
 ## Questions or comments?
 
 We're always happy to help with code or other questions you might have!
-Please create [GitHub issues or pull requests](https://github.com/vippsas)
+Please create [GitHub issues or pull requests](https://developer.vippsmobilepay.com/docs/github)
 for the relevant API,
 or [contact us](https://developer.vippsmobilepay.com/docs/vipps-developers/contact).
