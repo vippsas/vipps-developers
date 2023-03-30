@@ -58,7 +58,7 @@ Please follow these steps to make sure everything is correct:
    [Get an access token](https://developer.vippsmobilepay.com/docs/APIs/access-token-api#get-an-access-token)
    for details, how long it is valid, etc.
    Remember to use `Authorization: Bearer <access token goes here>`.
-   If you do not include `Bearer` you may get a `HTTP 401 Unauthorized` error.
+   If you do not include `Bearer`, you may get a `HTTP 401 Unauthorized` error.
 2. Check that you are using the correct API credentials for the MSN (Merchant Serial Number)
    you are using
    (See
