@@ -32,5 +32,5 @@ Most MobilePay developer information is still found on the
 [MobilePay developers website](https://developer.mobilepay.dk/),
 but will be moved to this website soon.
 
-If you need help using the Vipps MobilePay APIs or other technical developer help:
+If you need help using the Vipps MobilePay APIs or other technical development:
 [Contact us](contact.md).
