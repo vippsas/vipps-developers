@@ -34,7 +34,7 @@ A quick summary of key facts and shortcuts for our APIs​.
 | `Links`: [`user-redirect`, `success-callback`, `cancel-callback`, `cancel-redirect`]  | `merchantRedirectUrl` + `merchantAgreementUrl​`      |
 | `Plan​`                             | `productName​`                                                                                          |
 | `mobile_phone_number​`              | `phoneNumber​`                                                                                          |
-| `external_id​`                      | ?​ |
+| `external_id​`                      | `externalId​` |
 | `currency​`                         | ?​ |
 | `country_code​`                     | ?​ |
 | `expiration_timeout_minutes​`       | ?​ |
