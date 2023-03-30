@@ -25,7 +25,8 @@ A quick summary of key facts and shortcuts for our APIs​.
 ## Subscriptions vs. Recurring
 
 API documentation:
-* [Vipps Recurring API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api)
+* [ePayment API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/epayment-api)
+* [Recurring API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api)
 * [MobilePay Subscriptions API](https://developer.mobilepay.dk/api/subscriptions)
 
 ### Agreement
