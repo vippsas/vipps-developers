@@ -33,10 +33,9 @@ After several extensions to the original June 1 deadline, the Vipps eCom API v1
 was shut down on December 4. The Vipps eCom API v2 has been available for
 about three years, and offers more functionality than the old version.
 
-
 ## Vipps Login improvements 🎉
 
-Vipps Login now lets merchants to control the login experience on phones: The
+Vipps Login now lets merchants control the login experience on phones: The
 merchant can choose whether the user should be automatically taken back to the
 browser after completing an authentication in the Vipps app.
 We have also added a specific flow for integrations with apps.
@@ -45,7 +44,6 @@ To have a unified way of providing user information across Vipps services
 we are standardizing the data formats, both within Vipps and with the OIDC standard.
 To do this we have been required to introduce a new version of our Vipps login API.
 **The previous version (Version 1) of the Vipps login API will have end of life on February 28th 2021**.
-
 
 ## Vipps HTTP Headers ℹ️
 
@@ -63,7 +61,7 @@ and the
 | `Vipps-System-Plugin-Version` | The version number of the ecommerce plugin   | `1.4.1`              |
 
 These headers provide useful metadata about the merchant's system,
-which help Vipps improve our services, and also help in investigating problems.   
+which help Vipps improve our services, and also help in investigating problems.
 
 ## API Dashboard 🚦
 
@@ -79,7 +77,7 @@ Once the initial version is available, we are very interested in
 suggestions for improvement. You can even start suggesting features now:
 Please create one issue per suggestion/wish in the
 [vipps-developers](https://github.com/vippsas/vipps-developers/issues)
-repo on GitHUb.
+repo on GitHub.
 
 ## Suggest improvements, get a pair of Vipps socks 🧦
 
@@ -88,13 +86,13 @@ repo on GitHUb.
 We appreciate all suggestions for improvement to our development platform,
 including complaints! To encourage this, we will send two (2) Vipps socks to
 everyone that creates a (somewhat meaningful) issue or PR for our API
-documentation before January 31 2021.
+documentation before January 31, 2021.
 
-What do do:
+What to do:
 
 1. Create an issue or PR in the appropriate GitHub repo.
 2. Wait for our comment (it may not be immediate).
-3. If we think it's "OK", we will ask you to send an email to us with your address.
+3. If we think it's "OK", we will ask you to email us with your address.
 
 While we are keen to fix even the tiniest typos, we hope to get as many
 "real" improvements as possible and not drown in microscopic issues, so:
@@ -106,7 +104,7 @@ we will do a scientifically randomized drawing.
 ## Do you want a Slack channel? 📢
 
 We can set up a dedicated, temporary Slack channel to help fast-track your
-Vipps development. Send an email to integration@vipps.no with a list of
+Vipps development. Email integration@vipps.no with a list of
 email addresses to invite, with the same people on CC. We fix the rest.
 
 This does, unfortunately, not apply to customers using one of our
@@ -116,7 +114,7 @@ customers using Vipps through a partner.
 ## Do you want a technical workshop? 🛠
 
 We can set up a dedicated video workshop to help fast-track your
-Vipps development. Send an email to integration@vipps.no with a list of
+Vipps development. Email integration@vipps.no with a list of
 email addresses to invite, with the same people on CC. We fix the rest.
 
 This does, unfortunately, not apply to customers using one of our
@@ -134,7 +132,8 @@ Our API lifecycle policy is
 
 ### Status pages for test and production environments
 
-* Test: https://vipps-test.statuspage.io
+- Test: https://vipps-test.statuspage.io
+
 * Production: https://vipps.statuspage.io
 
 ### How to get help quickly

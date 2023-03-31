@@ -9,7 +9,7 @@ END_METADATA -->
 
 # Status pages
 
-We have several status pages. We strongly recommend to subscribe to them.
+We have several status pages. We strongly recommend subscribing to them.
 Note that you can also subscribe to updates for specific incidents:
 
 - Test environment: <https://vipps-test.statuspage.io>

@@ -33,7 +33,7 @@ Skipping the landing page is typically used at physical points of sale
 where there is no display available.
 
 The Vipps landing page is more than just a web page, it is an entire
-application and it plays an important role in the Vipps payment process.
+application, and it plays an important role in the Vipps payment process.
 See
 [The Vipps landing page](../common-topics/vipps-landing-page.md)
 for more information
@@ -69,13 +69,12 @@ If you are a partner and want to check a merchant, see the
 
 If you are a partner and do not yet use the Partner API, you can ask the
 merchant to create a user for you on
-[portal.vipps.no](https://portal.vipps.no)
-so you can check on behalf of the merchant as
+[portal.vipps.no](https://portal.vipps.no), so you can check on behalf of the merchant as
 [described in detail with screenshots](https://developer.vippsmobilepay.com/docs/vipps-partner/add-portal-user).
 
 If you are not able to log in on
 [portal.vipps.no](https://portal.vipps.no)
-you can make a small payment (2 kr)
+you can make a small payment (2 NOK)
 with `skipLandingPage`.
 If you do not get an error, it's active.
 If you get an error, it's not active.
@@ -108,6 +107,7 @@ is crucial that the `fallBack` URL is able to correctly show the correct state
 for the payment.
 
 **Important:**
+
 * Vipps users should never see the Vipps landing page on a device where Vipps
   is installed.
 * Any *optimization* of the normal payment flow may break the Vipps payment

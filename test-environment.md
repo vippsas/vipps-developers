@@ -190,7 +190,7 @@ is not verified can be ignored.
 
 ### Other data
 
-The test user's name, birth date, etc. are randomly generated when the test user
+The test user's name, birthdate, etc. are randomly generated when the test user
 is created and cannot be changed.
 
 ## Test amounts

@@ -46,7 +46,7 @@ Then, you can [get the API keys](../common-topics/api-keys#getting-the-api-keys)
 **Please note:** It is not possible to _change_ an existing sales unit in the test environment,
 but you can create as many as you need.
 
-## How to setup login on your sales unit
+## How to set up login on your sales unit
 
 1. Find your desired sales unit.
    * Under _Vipps På Nett_ > _Utvikler_, select _Environment_ > _test_, then search for your test sales unit in the list. To create a new test sales unit, see
@@ -73,7 +73,7 @@ but you can create as many as you need.
 ## How to create additional users on portal.vipps.no
 
 Merchants may create additional users, both for their own colleagues,
-accountants, etc - and also for their partner's employees.
+accountants, etc. - and also for their partner's employees.
 Or anyone else they want to give access to their sales units.
 
 See:
@@ -91,7 +91,7 @@ Logging into [portal.vipps.no](https://portal.vipps.no) requires Norwegian BankI
 If you don't have BankID, or you have BankID but not access to the correct merchant,
 you will need the merchant's administrator to log in on
 [portal.vipps.no](https://portal.vipps.no)
-and provide the API keys to you in a secure way.
+and provide the API keys to you securely.
 
 The merchant's administrator can also create additional users on
 [portal.vipps.no](https://portal.vipps.no).
@@ -100,9 +100,8 @@ If you don't know who the administrator is, you can check
 and see who has the right to sign for the company.
 
 If you can log in to [portal.vipps.no](https://portal.vipps.no), but cannot see
-the _Utvikler_ (developer) selection in the menu, you need to have the
-merchant's administrator grant you developer access for the sales unit you
-need access to.
+the _Utvikler_ (developer) option in the menu, you need to have the
+merchant's administrator grant you with developer access for the sales unit.
 
 For
 [reseller partners](/docs/vipps-partner):
@@ -111,7 +110,7 @@ You will need the merchant's administrator to either:
 * Log in to
   [portal.vipps.no](https://portal.vipps.no)
   and grant you developer access for the necessary sales unit, or
-* Provide the API keys to you in a secure way
+* Provide the API keys to you securely
 
 For more information, see:
 

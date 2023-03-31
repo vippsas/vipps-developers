@@ -1,0 +1,4 @@
+{"rule":"EN_A_VS_AN","sentence":"^\\QIt could be that you are attempting to call a non-existent API endpoint, and it could be that you are using the API keys for one MSN for an \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q that belongs to a different MSN.\\E$"}
+{"rule":"COMMA_COMPOUND_SENTENCE","sentence":"^\\QSomething might be wrong on our side and we are working to fix it!\\E$"}
+{"rule":"SOME_OF_THE","sentence":"^\\QVipps needs to do more thorough \"Know Your Customer\" (KYC) and compliance checks for some of the examples above.\\E$"}
+{"rule":"A_NNS","sentence":"^\\QTechnical: Use Store A credentials to authenticate, add original \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q to the refund request.\\E$"}

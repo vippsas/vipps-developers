@@ -57,9 +57,9 @@ We provide a Postman collections and environments to make development easier.
 Our Postman collections contain example API calls that you can run in the test environment.
 
 Our Postman environments include all the variables needed to run the examples in the collection.
-You will need to update some of the variables, so that the example works with your test user and test sales unit.
+You will need to update some variables, so that the example works with your test user and test sales unit.
 
-Once you have installed Postman, you can import an environment from one our our APIs and then customize it for your own use.
+Once you have installed Postman, you can import an environment from one our APIs and then customize it for your own use.
 
 1. To import the collection and environment files, save them to your desktop. Then, click the *Import* button in the Postman interface.
 

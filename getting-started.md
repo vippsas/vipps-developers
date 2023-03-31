@@ -11,7 +11,7 @@ END_METADATA -->
 
 # Getting started
 
-Vipps and MobilePay have recently merged so the information is still under development.
+Vipps and MobilePay have recently merged, so the information is still under development.
 Most MobilePay information is still on the
 [MobilePay developers website](https://developer.mobilepay.dk/), but will be updated here soon.
 
@@ -72,5 +72,5 @@ To experiment with sending requests (e.g., create payment, cancel payment, refun
 It is very important that you check the return response of each API call.
 You will get information about potential problems that could cause the customers problems or might cause you to lose money.
 
-We strongly recommend to use the [API Dashboard](./developer-resources/api-dashboard.md) for detecting errors in the API use,
+We strongly recommend using the [API Dashboard](./developer-resources/api-dashboard.md) for detecting errors in the API use,
 in addition to normal monitoring.

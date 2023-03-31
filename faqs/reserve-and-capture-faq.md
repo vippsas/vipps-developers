@@ -15,21 +15,6 @@ END_METADATA -->
 ℹ️ Please use the website:
 [Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/).
 
-## Table of contents
-
-* [For how long is a payment reserved?](#for-how-long-is-a-payment-reserved)
-* [When should I charge the customer?](#when-should-i-charge-the-customer)
-* [What is the difference between "Reserve Capture" and "Direct Capture"?](#what-is-the-difference-between-reserve-capture-and-direct-capture)
-* [When should I use "Direct Capture"?](#when-should-i-use-direct-capture)
-* [How can I check if I have "reserve capture" or "direct capture"?](#how-can-i-check-if-i-have-reserve-capture-or-direct-capture)
-* [How do I turn direct capture on or off?](#how-do-i-turn-direct-capture-on-or-off)
-* [Can I prevent people from paying with credit cards?](#can-i-prevent-people-from-paying-with-credit-cards)
-* [Can I initiate a Vipps payment with a QR code?](#can-i-initiate-a-vipps-payment-with-a-qr-code)
-* [Can I send a Vipps payment link in an SMS, QR or email?](#can-i-send-a-vipps-payment-link-in-an-sms-qr-or-email)
-* [Can I sell products on social media?](#can-i-sell-products-on-social-media)
-* [Can I whitelist my URL for a Vipps QR?](#can-i-whitelist-my-url-for-a-vipps-qr)
-* [Can I use a different currency than NOK?](#can-i-use-a-different-currency-than-nok)
-
 <!-- END_COMMENT -->
 
 ## For how long is a payment reserved?
@@ -53,7 +38,7 @@ The details may change, but the information below is the best Vipps can offer.
 Vipps cannot and does not automatically change the status of a reservation.
 
 If a capture attempt is made more than 7 days (VISA) or 30 days (MasterCard)
-after the payment has been initiated _and_ the reservation has been released
+after the payment has been initiated, and_ the reservation has been released
 by the bank in the meantime, Vipps will make a new payment request to the bank.
 If the account has sufficient funds, the payment will be successful.
 
@@ -63,11 +48,11 @@ an overdraft), or fail because the customer's card/account cannot be put into
 the negative - for example youth accounts.
 Vipps cannot know in advance what will happen.
 
-It is also possible that the card expires, is blocked, etc somewhere between
+It is also possible that the card expires, is blocked, etc. somewhere between
 the time of reservation and the time of capture.
 Vipps cannot know in advance what will happen.
 
-In many cases the bank will have a register of expired reservations and they
+In many cases the bank will have a register of expired reservations, and they
 will force the capture through if the account allows this.
 This will put the account in the negative.
 
@@ -147,7 +132,7 @@ Some things to consider:
   make a `/refund` call, and it then takes several days before the amount is
   available in the customer's account.
 * With "reserve capture" it is possible to reserve a higher amount and only
-  capture a part of it (useful for electric car charging stations, etc).
+  capture a part of it (useful for electric car charging stations, etc.).
   It is also possible to capture the full amount
   with multiple captures ("partial capture").
 
@@ -184,13 +169,12 @@ If you are a partner and want to check a merchant, see the
 
 If you are a partner and do not yet use the Partner API, you can ask the
 merchant to create a user for you on
-[portal.vipps.no](https://portal.vipps.no)
-so you can check on behalf of the merchant as
+[portal.vipps.no](https://portal.vipps.no), so you can check on behalf of the merchant as
 [described in detail with screenshots](https://developer.vippsmobilepay.com/docs/vipps-partner/add-portal-user).
 
 If you are not able to log in on
 [portal.vipps.no](https://portal.vipps.no)
-you can make a small payment (2 kr), check the payment with
+you can make a small payment (2 NOK), check the payment with
 [`GET:/ecomm/v2/payments/{orderId}/details`](https://developer.vippsmobilepay.com/api/ecom#tag/Vipps-eCom-API/operation/getPaymentDetailsUsingGET),
 and cancel (if it was `RESERVE` and reserve capture) or refund (if it was `SALE` and direct capture).
 
@@ -201,7 +185,7 @@ A sales unit can only have one capture type, and it must be configured by Vipps.
 
 **Please note:** Vipps only offers "direct capture" for merchants that use
 Vipps through a partner, and for merchants that have a Key Account Manager.
-"Direct capture"" must be requested by the partner from the partner manager,
+"Direct capture" must be requested by the partner from the partner manager,
 or by KAM merchants from the Key Account Manager.
 
 See:
@@ -227,7 +211,7 @@ With the eCom API all payments are initiated by calling
 [`POST:/ecomm/v2/payments`](https://developer.vippsmobilepay.com/api/ecom#tag/Vipps-eCom-API/operation/initiatePaymentV3UsingPOST),
 with a unique `orderId` for each payment.
 
-This is not possible with a static QR code on a sticker, etc, but
+This is not possible with a static QR code on a sticker, etc., but
 _is_ possible if a dynamic (unique per payment) QR can be displayed on a screen
 for the Vipps user to scan.
 
@@ -242,10 +226,10 @@ The only ways to initiate Vipps payments from a QR code are:
   The user then has a few minutes to complete the payment. See:
   [Timeouts](../common-topics/timeouts.md).
 * [Vippsnummer](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-i-butikk/),
-  the solution for flea markets, etc – which does not have any external API.
+  the solution for flea markets, etc. – which does not have any external API.
   This solution uses a static QR code for the sales unit, available on
   [portal.vipps.no](https://portal.vipps.no).
-  Vippsnummer cannot be used for online sales, etc, as it does not meet the
+  Vippsnummer cannot be used for online sales, etc., as it does not meet the
   legal requirements.
 
 See: [The Vipps QR API](https://developer.vippsmobilepay.com/docs/APIs/qr-api).
@@ -286,11 +270,11 @@ trigger the Vipps payment when the user enters your website. This requires that 
 payment process is user initiated, and that there are no relevant terms and conditions
 or that the user has accepted any terms and conditions at an earlier stage.
 
-In general we advice caution and point out that it is the responsibility of the
+In general, we advise caution and point out that it is the responsibility of the
 merchant to assure that users accept terms and conditions for products and services.
 
 You can also use
-[Vipps Logg Inn](https://developer.vippsmobilepay.com/docs/APIs/login-api)
+[Vipps Login](https://developer.vippsmobilepay.com/docs/APIs/login-api)
 for easy registration and login.
 
 See:

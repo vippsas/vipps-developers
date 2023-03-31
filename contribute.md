@@ -26,7 +26,7 @@ If you want to contribute: Great! No issue or pull request is too small! 👍
 
 ## Report an issue or suggest an improvement
 
-If you find a bug (and you don't know how to fix it), have a suggestions for improvement,
+If you find a bug (and you don't know how to fix it), have a suggestion for improvement,
 have trouble following the documentation, or have a question about the project – create an issue! ✨
 
 Creating an issue in GitHub is easy, and whatever issue you're having, you're likely not the only one,

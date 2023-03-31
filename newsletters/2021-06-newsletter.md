@@ -19,7 +19,7 @@ them to your loyalty program:
 
 * Vipps Logg inn: The easiest way to register and/or log in. No usernames or passwords!
 * Userinfo: Ask the user to share details, such as:
-  phone number, name, email address, postal address, birth date, national identity number and bank accounts.
+  phone number, name, email address, postal address, birthdate, national identity number and bank accounts.
 
 You can then automatically give your loyal customers benefits such as
 discounts, freebies, connect them to your own loyalty programme, etc.

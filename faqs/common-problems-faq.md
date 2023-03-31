@@ -31,7 +31,8 @@ success rate is much higher than when using a payment card directly.
 
 When comparing drop-off rates: Remember to compare drop-off data for when the
 user _selects_ payment method, do not compare Vipps to numbers for when the
-user has selected card payment and already has manually entered the card number, etc:
+user has selected card payment and already has manually entered the card number, etc.:
+
 * Drop-off data for Vipps: Measure the success rate after the user has selected Vipps.
 * Drop-off rate for cards: Measure the success rate after the user has selected card,
   but from _before_ the user has to enter the card details.
@@ -92,7 +93,7 @@ The most common reasons why payments are not completed are:
 
 ### Investigating problems
 
-We strongly recommend to check the full history of every Vipps payment with
+We strongly recommend checking the full history of every Vipps payment with
 the API: You can see if a payment has been actively rejected, if the user has
 not done anything, etc.
 See: [Get payment details](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#get-payment-details).
@@ -129,7 +130,7 @@ The reserved amount must at least as high as the amount that is captured.
 
 Example: If the value of the shopping cart is 1000 NOK, and the reserved amount is 1200 NOK,
 the shipping cost can be maximum 200 NOK to be within the reserved amount of 1200 NOK.
-If the shipping cost is 300 kr, a capture of 1000 + 3000 kr = 1300 NOK will fail.
+If the shipping cost is 300 NOK, a capture of 1000 + 3000 NOK = 1300 NOK will fail.
 
 It is not possible to capture more than the reserved amount, as that would
 make this sequence possible:
@@ -170,7 +171,7 @@ The phone's operating system always opens URLs in the default browser.
 
 This means that the `fallback` URL (the "result page") will be opened in
 the default browser. Vipps has no way to open the `fallback` URL in the
-embedded browser in Facebook, Instagram, etc. Similarly there is no way
+embedded browser on Facebook, Instagram, etc. Similarly, there is no way
 for Vipps to open the `fallback` URL in the same tab that the user came from
 before the app-switch.
 
@@ -180,9 +181,9 @@ when the `fallback` URL is opened, without relying on session, cookies, etc.
 See:
 [Recommendations regarding handling redirects](../common-topics/redirects.md).
 
-## How can I measure Vipps sales with Google Analytics, Facebook pixel, etc?
+## How can I measure Vipps sales with Google Analytics, Facebook pixel, etc.?
 
-Vipps does not have any functionality for measuring sales with with Google
+Vipps does not have any functionality for measuring sales with Google
 Analytics, Facebook pixel, etc. Merchants may of course use any service on
 their own website, and use a fallback URL (the "result page") to track any
 activity. This must be done by the merchant itself.
@@ -192,9 +193,9 @@ See:
 
 ## Why are the customer names not shown on the transaction overview?
 
-Vipps is anonymous be default: Users can pay with Vipps without sharing their
+Vipps is anonymous, by default: Users can pay with Vipps without sharing their
 personal data with the merchant. Merchants can use the built-in functionality to
-get the user's consent to share personal data -  such as phone number, name,
+get the user's consent to share personal data - such as phone number, name,
 e-mail address and address.
 See
 [Userinfo](https://developer.vippsmobilepay.com/docs/APIs/userinfo-api)

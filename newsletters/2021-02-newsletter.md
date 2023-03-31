@@ -71,7 +71,7 @@ you should not ask the customer for address and shipping method.
 You should avoid asking the customer in a pub for the shipping method for the drinks, etc.
 
 Instead: Use _Userinfo_ to ask for the user's details, such as:
-phone number, name, email address, postal address, birth date, national identity number and bank accounts.
+phone number, name, email address, postal address, birthdate, national identity number and bank accounts.
 The user must of course consent to sharing the information.
 
 See

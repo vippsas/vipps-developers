@@ -56,7 +56,7 @@ Vipps is launching the
 [PSP API v3](https://developer.vippsmobilepay.com/docs/APIs/psp-api)
 to coincide with our migration of our users' cards from PAN to EMVco network
 tokens. This technological migration is Vipps' strategy for achieving delegated
-SCA once PSD2 comes into effect for card payments on January 1 2021.
+SCA once PSD2 comes into effect for card payments on January 1, 2021.
 
 The PSP API v3 is functionally identical to PSP API v2 apart from the
 additional payment source format. There are also minor changes to naming of
@@ -69,7 +69,7 @@ migrated. Please see our [migration guide](https://developer.vippsmobilepay.com/
 
 Vipps has implemented rate limiting on our external APIs in order to offer a
 more robust and secure service. Most of these limits are only created to
-counteract unexpected and erratic behavior and it's nothing you should notice
+counteract unexpected and erratic behavior, and it's nothing you should notice
 under normal operation. More information about this is available in the
 documentation for
 [Vipps Recurring API](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/vipps-recurring-api#rate-limiting)
@@ -82,7 +82,7 @@ and
 
 The `/details` endpoint in the Vipps eCom API v2 offers more than the old
 and long deprecated `/status` endpoint. We still see some customers using
-the old endpoint and strongly recommend to update to the
+the old endpoint and strongly recommend updating to the
 [current one](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#get-payment-details).
 
 ### Deprecation of Vipps for Magento 1
@@ -102,8 +102,9 @@ Our API lifecycle policy is
 
 ### Status pages for test and production environments
 
-* Test: https://vipps-test.statuspage.io
-* Production: https://vipps.statuspage.io
+- Test: <https://vipps-test.statuspage.io>
+
+- Production: <https://vipps.statuspage.io>
 
 ### How to get help quickly
 
