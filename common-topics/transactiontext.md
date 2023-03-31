@@ -22,7 +22,7 @@ The text should be as user-friendly and informative as possible.
 
 The `transactionText` can be up to 100 characters.
 
-We recommend the following, using the example "Vipps webshop":
+We recommend the following, using the example "Vipps web shop":
 
 | Operation | Recommended `transactionText` | Not recommended |
 |:----------|:------------------------------|-----------------|

@@ -72,7 +72,7 @@ APIs have some functionality that is not available in the PSP API:
    is only available with direct integration.
 5. [Userinfo](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#userinfo)
    is only available with direct integration.
-   The Userinfo API lets merchants to ask for the user's profile information as
+   The Userinfo API lets merchants ask for the user's profile information as
    part of the payment flow: name, address, email, phone number, birthdate, etc.
 6. When using the
    [ePayment API](https://developer.vippsmobilepay.com/docs/APIs/epayment-api)
@@ -95,9 +95,9 @@ We have extremely high success rate (low drop-off) for direct integration:
 Almost every user that selects to pay with Vipps completes the payment. The
 success rate is significantly higher than when using a payment card directly.
 
-When comparing success rate rates: Remember to compare data for when the
+When comparing success rates: Remember to compare data for when the
 user _selects_ payment method, do not compare Vipps to numbers for when the
-user has selected card payment and already has manually entered the card number, etc:
+user has selected card payment and already has manually entered the card number, etc.:
 
 * Drop-off data for Vipps: Measure the success rate after the user has selected Vipps.
 * Drop-off rate for cards: Measure the success rate after the user has selected card,

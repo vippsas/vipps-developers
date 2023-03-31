@@ -11,7 +11,7 @@ END_METADATA -->
 When you start using the Vipps API, you will need to provide API keys.
 These are like passcodes that confirm your identity and that your API request is valid.
 
-Your API keys are specific for your sales unit and you will use them to interact with all the
+Your API keys are specific for your sales unit, and you will use them to interact with all the
 [Vipps API products](https://developer.vippsmobilepay.com/docs/APIs).
 
 The same API keys are used for many types of integration:
@@ -51,7 +51,7 @@ You will, therefore, need to use a different set of API keys for the test enviro
   email or over the phone, as the API keys give access to transferring money.
 - Vipps will never ask for your API keys, and you must keep them secret.
 - If your developers do not have Norwegian BankID, you will need to retrieve
-  the API keys for them, and send them to the developers in a secure way.
+  the API keys for them, and send them to the developers securely.
 - Do *not* send API keys unencrypted by email.
 - If you accidentally share your API keys, you must generate new ones on
   [portal.vipps.no](https://portal.vipps.no).
@@ -82,7 +82,7 @@ The Vipps API Keys are:
 
 | API Key Name             | Description                                                         | Format | Example                              |
 |--------------------------|---------------------------------------------------------------------|--------|--------------------------------------|
-| `client_id`              | Client id for the sales unit (the "username")                        | GUID   | fb492b5e-7907-4d83-bc20-c7fb60ca35de |
+| `client_id`              | Client ID for the sales unit (the "username")                        | GUID   | fb492b5e-7907-4d83-bc20-c7fb60ca35de |
 | `client_secret`          | Client secret for the merchant (the "password")                     | Base64 | Y8Kteew6GE3ZmeycEt6egg==             |
 | `Vipps-Subscription-Key` (primary)   | Subscription key for the API product                    | Base64 | 0f14ebcab0eb4b29ae0cb90d91b4a84a     |
 | `Vipps-Subscription-Key` (secondary) | Subscription key for the API product                    | Base64 | 0f14ebcab0eb4b29ae0cb90d91b4a84a     |

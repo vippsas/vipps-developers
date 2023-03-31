@@ -14,7 +14,7 @@ purchase is limited. The merchant *must not* assume that Vipps will redirect to
 the exact same session or for example rely entirely on cookies in order to
 handle the redirect event. The redirect may send the user to a different web browser.
 
-Examples of some, but not all, factors outside of Vipps control:
+Examples of some, but not all, factors outside Vipps control:
 
 * Configurations set by the OS itself, for example the default browser.
 * User configurations of browsers.
@@ -26,7 +26,7 @@ handling from a value in the redirect URL.
 
 An example with iOS of how redirects should be handled:
 
-1. The user starts is in web session in the Chrome or Firefox web browser on a phone (not the default Safari browser).
+1. The user starts in web session in the Chrome or Firefox web browser on a phone (not the default Safari browser).
 2. A Vipps purchase is started, with a redirect URL specified by the merchant.
 3. The user completes the purchase in Vipps.
 4. Vipps (the app) redirects the user by asking the phone's operating system to open the URL specified in step 2.

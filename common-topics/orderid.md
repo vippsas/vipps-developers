@@ -8,19 +8,17 @@ END_METADATA -->
 
 # Recommendations for orderId/reference
 
-
-An `orderId` (also called `reference`) must be unique for the sales unit Merchant Serial Number (MSN) (i.e., the id of
+The `orderId` (also called `reference`) must be unique for the sales unit Merchant Serial Number (MSN) (i.e., the ID of
 the sales unit). The `orderId` does not need to be globally unique, so several
 MSNs may use the same `orderId`, as long as it is unique for each sales unit.
 
 The `orderId` is case-sensitive.
-We *strongly* recommend to use a format like `acme-shop-123-order123abc`,
+We *strongly* recommend using a format like `acme-shop-123-order123abc`,
 instead of just `123456`.
 
 **Please note:** Having very short orderIds, with just a few digits, can cause internal
 processing in the Vipps systems to be slower, and this *can* cause problems, such as timeouts.
 Use the recommended format to avoid problems.
-
 
 This is applicable to:
 
@@ -71,7 +69,7 @@ This is useful when a customer does the following:
 2. Goes to the payment page and selects Vipps.
 3. Gets the payment request in Vipps *but cancels* (or does nothing).
 4. Adds another product to the same cart (or order).
-5. Repeats steps 2 and 3.
+5. Repeat steps 2 and 3.
 
 If you use a suffix, you will still be able to search for the main part of
 the orderId on
