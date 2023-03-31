@@ -17,7 +17,7 @@ This newsletter was sent in February 2021.
 Several of our plugins have been updated to use the newest versions of
 our APIs. Please make sure you have the newest version of the plugins
 you use, and keep them up to date. See the
-[the plugin overview](https://developer.vippsmobilepay.com/docs/vipps-plugins).
+[plugin overview](https://developer.vippsmobilepay.com/docs/vipps-plugins).
 
 ## API Dashboard 🚦
 
@@ -48,7 +48,6 @@ we are standardizing the data formats, both within Vipps and with the OIDC stand
 To do this we have to introduce a new version of our Vipps login API.
 **The previous version (Version 1) of the Vipps login API will have end of life on February 28th 2021**.
 
-
 Our plugins are updated to support the latest version.
 Make sure that you use the latest version of the plugin.
 See
@@ -60,7 +59,6 @@ for details.
 The merchant can now choose whether the user should be automatically returned
 to the browser after completing the authentication Vipps.
 We have also added a specific flow for integrations with native apps.
-
 
 ## Use Userinfo
 
@@ -81,7 +79,7 @@ and
 
 ## Recurring: Info about failures
 
-You can now se _why_ a charge fails, not just that it fails: Insufficient funds, invalid card, etc.
+You can now see _why_ a charge fails, not just that it fails: Insufficient funds, invalid card, etc.
 See:
 [Charge failure reasons](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/vipps-recurring-api#charge-failure-reasons).
 
@@ -114,11 +112,11 @@ which help Vipps improve our services, and also help in investigating problems.
 We appreciate all suggestions for improvement to our development platform,
 including complaints! To encourage this, we will send two (2) Vipps socks to
 everyone that creates a (somewhat meaningful) issue or PR for our API
-documentation before February 28 2021:
+documentation before February 28, 2021:
 
 1. Create an issue or PR in the appropriate GitHub repo.
 2. Wait for our comment (it may not be immediate).
-3. If we think it's "OK", we will ask you to send an email to us with your address.
+3. If we think it's "OK", we will ask you to email us with your address.
 
 While we are keen to fix even the tiniest typos, we hope to get as many
 "real" improvements as possible and not drown in microscopic issues, so:
@@ -130,7 +128,7 @@ we will do a scientifically randomized drawing.
 ### Do you want a Slack channel? 📢
 
 We can set up a dedicated, temporary Slack channel to help fast-track your
-Vipps development. Send an email to integration@vipps.no with a list of
+Vipps development. Email integration@vipps.no with a list of
 email addresses to invite, with the same people on CC. We'll fix the rest.
 
 This does require that you have already ordered a Vipps solution, and
@@ -143,7 +141,7 @@ customers using Vipps through a partner.
 ### Do you want a technical workshop? 🛠
 
 We can set up a dedicated video workshop to help fast-track your
-Vipps integration. Send an email to integration@vipps.no with a list of
+Vipps integration. Email integration@vipps.no with a list of
 email addresses to invite, with the same people on CC. We fix the rest.
 
 This does require that you have already ordered a Vipps solution, and

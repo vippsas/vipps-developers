@@ -27,7 +27,7 @@ Get started with Vipps MobilePay:
 
 * [Getting started](./getting-started.md) - Apply for services, products, test users, etc.
 * [Vipps Merchant Test (MT)](./test-environment.md) - Install the test app.
-* [Vipps API keys](./common-topics/api-keys.md) - Find your api keys.
+* [Vipps API keys](./common-topics/api-keys.md) - Find your API keys.
 
 Migrate from MobilePay:
 

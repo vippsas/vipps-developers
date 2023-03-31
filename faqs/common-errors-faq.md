@@ -295,7 +295,7 @@ This can happen when:
 * [Partner keys](https://developer.vippsmobilepay.com/docs/vipps-partner/partner-keys)
   are used, but the `Merchant-Serial-Number` HTTP header is not used correctly.
 
-## Why do I get `Invalid MSN: 654321. This MSN is not valid for the provided supermerchant id.`?
+## Why do I get `Invalid MSN: 654321. This MSN is not valid for the provided supermerchant ID.`?
 
 This can happen when the partner making the API request is using:
 
@@ -304,5 +304,5 @@ This can happen when the partner making the API request is using:
 * [Partner keys](https://developer.vippsmobilepay.com/docs/vipps-partner/partner-keys)
   without including the required `Merchant-Serial-Number` header
 
-If the error message is `Invalid MSN: This MSN is not valid for the provided supermerchant id.`,
+If the error message is `Invalid MSN: This MSN is not valid for the provided supermerchant ID.`,
 with no MSN specified, it means that the `Merchant-Serial-Number` is missing in the request header.

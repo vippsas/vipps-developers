@@ -48,7 +48,7 @@ the production and
 
 The response of the
 [`GET:/v1/merchants/{merchantSerialNumber}`](https://developer.vippsmobilepay.com/api/psp-signup#tag/Merchant/operation/getMerchants)
-endpoint in the in the
+endpoint in the
 [Vipps PSP API](https://developer.vippsmobilepay.com/docs/APIs/psp-api)
 contains a `logo` field, with the merchant's logo encoded in base64 format.
 

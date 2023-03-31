@@ -38,7 +38,7 @@ For more information, check out our [migration guide](https://developer.vippsmob
 The
 [Vipps Recurring API v3](https://developer.vippsmobilepay.com/docs/APIs/recurring-api)
 is available. This version includes new and improved functionality for campaigns
-(for example "10 weeks for 10 kr" or "1 kr until Christmas"),
+(for example "10 weeks for 10 NOK" or "1 NOK until Christmas"),
 the possibility to reserve and capture (or partially capture) a charge
 (specially important for physical subscriptions) and several technical improvements.
 

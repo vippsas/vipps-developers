@@ -11,7 +11,7 @@ END_METADATA -->
 
 ## Common terms
 
-* API keys - Codes that give a merchant access to the API (e.g.,
+* API keys - Codes that provide a merchant with access to the API (e.g.,
   `client_id`, `client_secret`, `Vipps-Subscription-Key`).
   Also called API credentials. Think of them as "username and password".
   The API keys are found in on [portal.vipps.no](https://portal.vipps.no/)
@@ -55,7 +55,7 @@ END_METADATA -->
 * Merchant - A juridical unit, typically called a business or company,
   identified with organization number (`orgno`).
 
-* Merchant Serial Number (MSN) - The unique id of a sales unit.
+* Merchant Serial Number (MSN) - The unique ID of a sales unit.
   MSN is short for "Merchant Serial Number", but identifies a sales unit, not
   a merchant. A payment is uniquely identified by the combination of
   `merchantSerialNumber` and `orderId` (e.g., `acme-shop-123-order123abc`).
@@ -64,7 +64,7 @@ END_METADATA -->
   The `Merchant-Serial-Number` header can be used with all API keys and can
   speed up any troubleshooting of API problems quite a bit.
 
-* National identity number: An 11 digit number that uniquely identifies
+* National identity number: An 11-digit number that uniquely identifies
   each Norwegian citizen.
 
 * `Ocp-Apim-Subscription-Key` - The header which supplies the subscription key,
@@ -73,7 +73,7 @@ END_METADATA -->
 * `orderId` - The API parameter that supplies a unique identifier for the
   payment. This is the same as `reference`. Newer APIs will use `reference`
   instead of `orderId`. See the API specification for the requirements for
-  this id.
+  this ID.
 
 * `orgno` - The organization number for a merchant. Nine digits.
   Can be used to retrieve information at

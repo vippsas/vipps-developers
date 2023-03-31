@@ -11,6 +11,6 @@ END_METADATA -->
 
 # Vipps MobilePay
 
-Vipps and MobilePay have recently merged and the documentation is currently being updated.
+Vipps and MobilePay have recently merged, and the documentation is currently being updated.
 
 The former *Getting Started* page is moved to: [Getting started](getting-started.md).

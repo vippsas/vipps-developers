@@ -42,7 +42,7 @@ call by including:
 
 Tip: Use
 [Campaigns](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/vipps-recurring-api#campaigns)
-if the subscription is cheaper in the beginning, such as "One month for 10 kr" and then the normal price.
+if the subscription is cheaper in the beginning, such as "One month for 10 NOK" and then the normal price.
 
 If you use
 `initialcharge`, users will be confused by how it appears in Vipps, as it
@@ -135,7 +135,7 @@ We have mentioned some things before, and take this opportunity to remind you:
 Several of our plugins have been updated to use the newest versions of
 our APIs. Please make sure you have the newest version of the plugins
 you use, and keep them up to date. See the
-[the plugin overview](https://developer.vippsmobilepay.com/docs/vipps-plugins).
+[plugin overview](https://developer.vippsmobilepay.com/docs/vipps-plugins).
 
 ### Use Userinfo
 

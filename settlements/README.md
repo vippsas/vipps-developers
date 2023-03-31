@@ -46,8 +46,8 @@ The settlement flow is as follows:
    Since a merchant should not capture the amount, i.e. charge the customer,
    until the purchased product is shipped, the "day 1" is normally the day that
    the product is shipped and the customer's account is charged.
-2. Day 2: Settlement files are available (
-   [email](#email),
+2. Day 2: Settlement files are available
+   ([email](#email),
    [portal.vipps.no](#portalvippsno),
    [SFTP](#sftp)).
 3. Day 3: Payments are made from Vipps' bank account to the merchant's bank
@@ -76,7 +76,7 @@ Also: There is one payment per sales unit, with its corresponding settlement fil
 
 ### Reconciliation
 
-A simple illustration showing where each id is set, and how it all fits together.
+A simple illustration showing where each ID is set, and how it all fits together.
 
 ![Settlement flow illustrated](img/settlement-process.png)
 
@@ -158,7 +158,7 @@ See the eCom API FAQ:
 
 ### portal.vipps.no
 
-Customers can log in to [portal.vipps.no](https://portal.vipps.no), choose "Rapporter" (i.e., *Reports*) and download reports
+Customers can log in to [portal.vipps.no](https://portal.vipps.no), choose _Rapporter_ (i.e., _Reports_) and download reports
 in the formats mentioned above.
 
 Reports with personal details of the customers are also available, see

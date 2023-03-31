@@ -24,7 +24,7 @@ The Merchant Test (MT) environment is available for all merchants who have acces
 All customers with access to the APIs have access to the test environment.
 
 **Important:** There is no SLA or uptime guarantee for the test environment.
-We will not make any fixes, etc. outside of typical Norwegian office hours.
+We will not make any fixes, etc. outside typical Norwegian office hours.
 See the
 [Status page](https://vipps-test.statuspage.io)
 for automatically updated status information.
@@ -49,17 +49,17 @@ Functionality not available in MT (a non-exhaustive list):
 - Unscheduled maintenance _may_ occur.
   We will do our best to inform with
   [Status page](./developer-resources/status-pages.md),
-  but it may no always be possible.
+  but it may not always be possible.
   In practice this is extremely rare.
 - Push alerts may be unavailable or unstable. To see payment requests: Open Vipps and manually
   go to the "Betalinger" (i.e., _Payments_) at the bottom of the main screen.
   You may have to "pull to refresh" on that screen.
-  The background for this: The app id for the test and production apps are the same, and we
+  The background for this: The app ID for the test and production apps are the same, and we
   are not able to distinguish between the apps when sending push messages.
 - Payment of invoices, both for _Vipps Regninger_ and _Vipps Faktura_
 - Limited support for testing card statuses that require connections our PSP
 - Limited support for looking up customer information in
-  [KAR](https://www.bits.no/en/bank/konto-og-adresseringsregister-kar/), etc
+  [KAR](https://www.bits.no/en/bank/konto-og-adresseringsregister-kar/), etc.
 - Some quirks around email verification, see [Email address](#email-address).  
 
 To test functionality that is not available in MT, you will have to use the
@@ -104,7 +104,7 @@ The partner must also:
 1. Explain in the order form that it is only for access to the test environment.
 2. Notify their partner manager that they only need test access.
 
-Since "Vipps Logg inn" does not require the same regulatory checks (KYC, AML, etc),
+Since "Vipps Logg inn" does not require the same regulatory checks (KYC, AML, etc.),
 this is a quick process.
 
 Partners need to have a website with a Norwegian organization number, and an admin user with signature rights and Norwegian BankID. This user will be granted access to the portal.
@@ -141,16 +141,16 @@ See:
 
 A welcome email is automatically sent to **all** new customers. This email
 contains information about your test user.
-The subject should contain "Kom i gang med Vipps".
+The subject should contain "_Kom i gang med Vipps_.
 Please search your mail, including the spam/junk folder, if you do not find it.
 
 **Please note:**
 
-* The provided test user can be used in the [Vipps test apps](#vipps-test-apps).
-* You must log in with the test user in the test app, before you can complete
+- The provided test user can be used in the [Vipps test apps](#vipps-test-apps).
+- You must log in with the test user in the test app, before you can complete
   payments for that user.
-* You may use the same test user on multiple devices.
-* Test users are not connected to any merchant, they can be used with any
+- You may use the same test user on multiple devices.
+- Test users are not connected to any merchant, they can be used with any
   merchant and sales unit in the test environment.
 
 If you need more than one test user, please contact your
@@ -177,7 +177,7 @@ The test user is registered with a payment card, and it is not possible to add n
 ### Email address
 
 You can add a real email address on a test user from the
-*Profile* -> *Personal information* -> *Email*
+_Profile_ -> _Personal information_ -> _Email_
 section in the app.
 
 **Please note:** In MT verification of emails can only be triggered in a
@@ -242,7 +242,7 @@ You do _not_ need an invitation or an activation code.
 2. Install the "Vipps MT" app
 3. Open the "Vipps MT" app
 4. Enter the test phone number, that was sent in the welcome email to the email
-   address used in the registration  (please double check before asking for
+   address used in the registration  (please double-check before asking for
    a new test phone number).
    Your normal Vipps user is not available in the test environment.
 5. On the "Verify your number" screen: Use PIN  `1236`.
@@ -267,12 +267,12 @@ You do _not_ need an invitation or an activation code.
 2. Install the "Vipps Android" app
 3. Open the "Vipps Android" app
 4. Enter the test phone number, that was sent in the welcome email to the email
-   address used in the registration  (please double check before asking for
+   address used in the registration  (please double-check before asking for
    a new test phone number).
    Your normal Vipps user is not available in the test environment.
 5. On the "Verify your number" screen: Use PIN  `1236`.
 6. On the "Enter your code" screen: Use PIN `1236`.
-7. Enable touch id and confirm with PIN  `1236`.
+7. Enable touch ID and confirm with PIN  `1236`.
 8. Accept push notifications.
 
 You are now ready to use the Android test app connected to the Vipps test environment.

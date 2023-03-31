@@ -2,3 +2,6 @@
 {"rule":"COMMA_COMPOUND_SENTENCE","sentence":"^\\QSomething might be wrong on our side and we are working to fix it!\\E$"}
 {"rule":"SOME_OF_THE","sentence":"^\\QVipps needs to do more thorough \"Know Your Customer\" (KYC) and compliance checks for some of the examples above.\\E$"}
 {"rule":"A_NNS","sentence":"^\\QTechnical: Use Store A credentials to authenticate, add original \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q to the refund request.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QSee Userinfo for eCom and Userinfo for Recurring.\\E$"}
+{"rule":"ENGLISH_WORD_REPEAT_RULE","sentence":"^\\QNew developer documentation\nRecurring API: New v3 API coming this fall\nRecurring API: Rollback of UI changes on Android\nRecurring API: Rollback of new charge business rules\nInform customers that there are no fees when paying with Vipps\nVipps on-site messaging\nPartner API: Pre-fill applications\nSettlement API: In progress\nReminders\nPlease check your API calls for errors\nUse the API Dashboard to find problems with your integration\nHow to get help quickly\nNewsletter archive\nQuestions or comments?\\E$"}
+{"rule":"POSSESSIVE_APOSTROPHE","sentence":"^\\QWe have a new Solutions section to highlight combinations of Vipps APIs, such as Loyalty in physical stores and Electric vehicle charging.\\E$"}
