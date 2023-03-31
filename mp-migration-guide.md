@@ -11,20 +11,21 @@ END_METADATA -->
 
 # Migration guide
 
-<!-- START_COMMENT -->
-
-ℹ️ Please use the website:
-[Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/).
-
-<!-- END_COMMENT -->
 
 💥 Work in progress 💥
 
-A quick summary of key facts and shortcuts for our APIs​.
+Are you currently using MobilePay APIs for your payment integration needs?
+
+In that case, we’re excited to introduce you to Vipps MobilePay APIs, a reliable and versatile payment solution that can make the migration hassle-free and even dazzle you with its ease of use and features.
+To ensure a smooth transition, we recommend using our comprehensive migration guide, which will provide step-by-step instructions and best practices for integrating with Vipps MobilePay APIs.
+
+This document is still under development.
+Here is a quick summary of key facts and shortcuts for our APIs​.
 
 ## Subscriptions vs. Recurring
 
 API documentation:
+
 * [Access token API](https://developer.vippsmobilepay.com/docs/APIs/access-token-api)
 * [ePayment API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/epayment-api)
 * [Recurring API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api)
