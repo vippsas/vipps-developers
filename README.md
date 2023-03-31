@@ -19,7 +19,8 @@ END_METADATA -->
 
 <!-- END_COMMENT -->
 
-Vipps and MobilePay have recently merged, so the developer documentation is still under development.
+Vipps and MobilePay have recently merged, and the developer documentation is still under development.
+
 
 Vipps MobilePay offers APIs to facilitate your log-in and online payment solutions for Point of Sale, apps, subscriptions, QR codes, checkout sessions, and invoices.  Explore our technical documentation to learn about these solutions.
 
@@ -31,7 +32,7 @@ Get started with Vipps MobilePay:
 
 Migrate from MobilePay:
 
-* [Vipps MobilePay Migration guide](mp-migration-guide.md) - Compare MobilePay and Vipps APIs.
+* [Vipps MobilePay Migration guide](mp-migration-guide.md) - If you are currently using MobilePay APIs for your payment integration needs, we recommend using our comprehensive [migration guide](mp-migration-guide.md), which provides step-by-step instructions and best practices for integrating with Vipps MobilePay APIs.
 
 Dive deeper with:
 
