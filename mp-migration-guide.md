@@ -124,13 +124,13 @@ See:
 | PoS management            | `POST/GET/DELETE /v10/pointofsales`      | N/A                                         |
 | Initiate Payment          | `POST /v10/payments`                     | `POST /v1/payments`                         |
 | Initiate Prepared payment | `POST /v10/payments/prepare`             | N/A (For loyalty check [solutions](https://developer.vippsmobilepay.com/docs/vipps-solutions/loyalty-in-pos))     |
-| Query Payment             | `GET /v10/payments/<paymentid>`          | `GET /v1/payments/<paymentid>`              |
+| Query Payment             | `GET /v10/payments/{paymentid}`          | `GET /v1/payments/{reference}`              |
 | Query Active Payments     | `GET /v10/payments`                      | N/A                                         |
 | Query payment log         | N/A                                      | `GET /v1/payments/{reference}/events`       |
-| Capture Payment           | `POST /v10/payments/<paymentid>/capture` | `POST /v1/payments/<paymentid>/capture`     |
-| Cancel Payment            | `POST /v10/payments/<paymentid>/cancel`  | `POST /v1/payments/<paymentid>/cancel`      |
+| Capture Payment           | `POST /v10/payments/{paymentid}/capture` | `POST /v1/payments/{reference}/capture`     |
+| Cancel Payment            | `POST /v10/payments/{paymentid}/cancel`  | `POST /v1/payments/{reference}/cancel`      |
 | Refund Payment            | `POST/v10/refunds`                       | `POST /v1/payments/{reference}/refund`      |
-| Lookup a refund           | `GET /v10/refunds/{refundid}`            | `GET /v1/payments/<paymentid>`              |
+| Lookup a refund           | `GET /v10/refunds/{refundid}`            | `GET /v1/payments/{reference}`              |
 
 ### PoS Authentication and headers
 
