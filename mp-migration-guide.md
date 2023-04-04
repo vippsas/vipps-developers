@@ -27,7 +27,7 @@ Here is a quick summary of key facts and shortcuts for our APIs​.
 API documentation:
 
 * [Access token API](https://developer.vippsmobilepay.com/docs/APIs/access-token-api)
-* [ePayment API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/epayment-api)
+* [ePayment API](https://developer.vippsmobilepay.com/docs/APIs/epayment-api)
 * [Recurring API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api)
 * [MobilePay Subscriptions API](https://developer.mobilepay.dk/api/subscriptions)
 
@@ -76,7 +76,7 @@ See:
 ## Invoice vs. ePayment
 
 See:
-* [ePayment API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/epayment-api)
+* [ePayment API](https://developer.vippsmobilepay.com/docs/APIs/epayment-api)
 * [Extend payment time-outs](https://developer.vippsmobilepay.com/docs/vipps-solutions/long-expiry-time-for-payments-to-merchants)
 
 | MOBILEPAY INVOICE​                    | VIPPS MOBILEPAY EPAYMENT​                                                                        |
@@ -109,50 +109,92 @@ See:
 | ?​                                    | `industryData` (Additional compliance data related to the transaction)​                          |
 
 
-<!-- START_COMMENT -->
-
 ## Point of Sale vs. ePayment
 
 See:
-[ePayment API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/epayment-api).
+* [ePayment API](https://developer.vippsmobilepay.com/docs/APIs/epayment-api)
+* [ePayment in store](https://developer.vippsmobilepay.com/docs/APIs/epayment-api/how-it-works/vipps-epayment-api-how-it-works-in-store)
+* [Login](https://developer.vippsmobilepay.com/docs/APIs/login-api) - Can be used for [loyalty](https://developer.vippsmobilepay.com/docs/vipps-solutions/loyalty-in-pos)
+* [Order management](https://developer.vippsmobilepay.com/docs/APIs/order-management-api) - Can be used for [receipts](https://developer.vippsmobilepay.com/docs/APIs/order-management-api/vipps-order-management-api#receipts)
 
-| Point of Sale                                          ​ | EPAYMENT                     |
-|---------------------------------------------------------|------------------------------|
-| **InitiatePayment**                                     |                              |
-| `Authorization` *(Header parameter used in all requests)* | `Ocp-Apim-Subscription-Key`  |
-| `X-MobilePay-Client-System-Version` *(Header parameter used in all requests)* |          |
-| `X-MobilePay-Idempotency-Key`                           |                              |
-| `X-MobilePay-Merchant-VAT-Number`                       |                              |
-| `Amount`                                                |                              |
-| `currencyCode`                                          |                              |
-| `orderId`                                               |                              |
-| `plannedCaptureDelay`                                   |                              |
-| `posId`                                                 |                              |
-| `restrictions`                                          |                              |
-| `merchantPaymentLabel`                                  |                              |
-|                                                         |                              |
-| **InitiatePayment Response**                            |                              |
-| `PaymentId`                                             |                              |
-|                                                         |                              |
-| **QueryPayment**                                        |                              |
-| `paymentid`                                             |                              |
-| `Authorization`                                         |                              |
-| `X-MobilePay-Client-System-Version`                     |                              |
-| `X-MobilePay-Merchant-VAT-Number`                       |                              |
-| `QueryPayment Response`                                 |                              |
-|                                                         |                              |
-| **QueryPaymentIds**                                     |                              |
-| `posId`                                                 | `Ocp-Apim-Subscription-Key`  |
-| `orderId`                                               |                              |
-| `state`                                                 |                              |
-|                                                         |                              |
-| **QueryPaymentIds Response**                            |                              |
-| `PaymentIds: [ ]`                                       |                              |
-|                                                         |                              |
-| **QueryPayment**                                        |                              |
-| `paymentid`                                             |                              |
-| `Authorization`                                         |                              |
-| `X-MobilePay-Client-System-Version`                     |                              |
-| `X-MobilePay-Merchant-VAT-Number`                       |                              |
+### PoS and ePayment endpoints
 
-<!-- END_COMMENT -->
+| Operation                 | MobilePay PoS                            | ePayment                                    |
+|---------------------------|------------------------------------------|---------------------------------------------|
+| PoS management            | `POST/GET/DELETE /v10/pointofsales`      | N/A                                         |
+| Initiate Payment          | `POST /v10/payments`                     | `POST /v1/payments`                         |
+| Initiate Prepared payment | `POST /v10/payments/prepare`             | N/A (For loyalty check [solutions](https://developer.vippsmobilepay.com/docs/vipps-solutions/loyalty-in-pos))     |
+| Query Payment             | `GET /v10/payments/<paymentid>`          | `GET /v1/payments/<paymentid>`              |
+| Query Active Payments     | `GET /v10/payments`                      | N/A                                         |
+| Query payment log         | N/A                                      | `GET /v1/payments/{reference}/events`       |
+| Capture Payment           | `POST /v10/payments/<paymentid>/capture` | `POST /v1/payments/<paymentid>/capture`     |
+| Cancel Payment            | `POST /v10/payments/<paymentid>/cancel`  | `POST /v1/payments/<paymentid>/cancel`      |
+| Refund Payment            | `POST/v10/refunds`                       | `POST /v1/payments/{reference}/refund`      |
+| Lookup a refund           | `GET /v10/refunds/{refundid}`            | `GET /v1/payments/<paymentid>`              |
+
+### PoS Authentication and headers
+
+| MobilePay PoS                           | ePayment                                        |
+|-----------------------------------------|-------------------------------------------------|
+| `Authorization` (`POST /connect/token`) | `Authorization` (`POST /accesstoken/get`)       |
+| `X-MobilePay-Client-System-Version`     | `Vipps-System-Version`                          |
+| N/A                                     | `Vipps-System-Name`                             |
+| N/A                                     | `Vipps-System-Plugin-Name` (if applicable)      |
+| N/A                                     | `Vipps-System-Plugin-Version` (if applicable)   |
+| `X-MobilePay-Merchant-VAT-Number`       | N/A                                             |
+| `X-MobilePay-Idempotency-Key`           | `Idempotency-Key`                               |
+| N/A                                     | `Ocp-Apim-Subscription-Key`                     |
+| N/A                                     | `Merchant-Serial-Number`                        |
+  
+### PoS Initiate Payment
+
+| MobilePay PoS                                                  | ePayment                                       |
+|----------------------------------------------------------------|------------------------------------------------|
+| `amount`                                                       | `amount` (`currency`, `value`)                 |
+| `currencyCode`                                                 | *Applied in `amount`*                          |
+| `orderId`                                                      | `paymentDescription`                           |
+| `plannedCaptureDelay`                                          | N/A                                            |
+| `posId`                                                        | N/A                                            |
+| `restrictions` (`debitCardDisallowed`, `creditCardDisallowed`) | N/A                                            |
+| `merchantPaymentLabel`                                         | N/A                                            |
+| N/A                                                            | `customer` (`phoneNumber`)                     |
+| N/A                                                            | `customerInteraction` (`"CUSTOMER_PRESENT"`)   |
+| N/A                                                            | `paymentMethod` (`type` `"WALLET"`)            |
+| N/A                                                            | `reference`                                    |
+| N/A                                                            | `userFlow` (`"PUSH_MESSAGE"` `"QR"`)           |
+| N/A                                                            | `qrFormat` (`format`, `size`)                  | 
+|                                                                |                                                |
+| **Response**                                                   |                                                |
+| `paymentId`                                                    | `reference` (set in paymentInitiation)         |
+  
+### PoS Query Payment
+
+| MobilePay PoS   | ePayment                                                                                |
+|-----------------|-----------------------------------------------------------------------------------------|
+| `paymentId`     | `reference`                                                                             |
+|                 |                                                                                         |
+| **Response**    |                                                                                         |
+| `orderId`       | `reference`                                                                             |
+| `amount`        | `amount` `(currency`, `value`)                                                          |
+| `currencyCode`  | *Applied in `amount`*                                                                   |
+| `status`        | `state`                                                                                  |
+| N/A             | `aggregate` (`authorizedAmount`, `cancelledAmount`, `capturedAmount`, `refundedAmount`) |
+| N/A             | `paymentMethod` (`type`)                                                                |
+| `loyaltyIds`    | `profile` (`sub`)                                                                       |
+| N/A             | `pspReference`                                                                          |
+  
+*N/A: `posId`, `restrictions` (`debitCardDisallowed`, `creditCardDisallowed`), `merchantPaymentLabel`, `plannedCaptureDelay`, `customerToken`, `customerReceiptToken`, `paymentExpiresAt`, `partialCapturePossible`, `pollDelayInMs`)*
+  
+### PoS Capture, Cancel and Refund Payment
+
+| MobilePay PoS                           | ePayment                                                                                |
+|-----------------------------------------|-----------------------------------------------------------------------------------------|
+| `paymentId`                             | `reference`                                                                             |
+| `amount`                                | `modificationAmount` (`currency`, `value`) *not applicable for cancel*                  |
+|                                         |                                                                                         |
+| **Response**                            |                                                                                         |
+| N/A                                     | `amount` (`currency`, `value`)                                                          |
+| N/A                                     | `state`                                                                                 |
+| N/A                                     | `aggregate` (`authorizedAmount`, `cancelledAmount`, `capturedAmount`, `refundedAmount`) |
+| `refundId` *only applicable for refund* | `pspReference`                                                                          |
+| N/A                                     | `reference`                                                                             |
