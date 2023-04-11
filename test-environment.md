@@ -60,7 +60,13 @@ Functionality not available in MT (a non-exhaustive list):
 - Limited support for testing card statuses that require connections our PSP
 - Limited support for looking up customer information in
   [KAR](https://www.bits.no/en/bank/konto-og-adresseringsregister-kar/), etc.
-- Some quirks around email verification, see [Email address](#email-address).  
+- Some quirks around email verification, see [Email address](#email-address).
+- Partner functionality, like the relationship between a MSN and a partner,
+  and the use of
+  [partner keys](https://developer.vippsmobilepay.com/docs/vipps-partner/partner-keys),
+  does not work as in the production environment. In general, partner
+  functionality is not available. See
+  [Partners](https://developer.vippsmobilepay.com/docs/vipps-partner).
 
 To test functionality that is not available in MT, you will have to use the
 production environment in a controlled manner.
