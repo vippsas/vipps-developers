@@ -266,7 +266,7 @@ You do _not_ need an invitation or an activation code.
 **Please note:** You only need to _log in_ with your test user, not register.
 
 1. Open the
-   [App Center](https://install.appcenter.ms/orgs/vipps/apps/vipps-android/distribution_groups/mt%20testers)
+   [App Center](https://install.appcenter.ms/orgs/vipps/apps/vipps-android/distribution_groups/mt-testers)
    link on your Android phone (it will not work on a PC/Mac). If you get a push
    message prompting to whitelist the source, you should be able to do this via
    the "Settings" button.
