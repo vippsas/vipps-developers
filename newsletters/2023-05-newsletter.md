@@ -24,6 +24,10 @@ This newsletter was sent in May 2023.
 - Product: https://www.vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/checkout/
 - API: https://developer.vippsmobilepay.com/docs/APIs/checkout-api
 
+## Migration guide for integrations using the MobilePay APIs
+
+- https://developer.vippsmobilepay.com/docs/vipps-developers/mp-migration-guide
+
 ## Reminders
 
 ### Please check your API calls for errors
