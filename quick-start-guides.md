@@ -27,22 +27,15 @@ You will need to set up a few things before you can break loose in testing the A
 You need:
 
 1. A *test user*.
-
-    All merchants automatically get a test user. See [test users](test-environment.md#test-users) for more information.
-
-1. A *test sales unit*.
-
-    You create this yourself by logging in to the Vipps Portal at [https://portal.vipps.no](https://portal.vipps.no). This requires BankId.
-    See instructions for creating the [test sales unit](test-environment.md#test-merchants).
-
-1. A Vipps *test app* for your mobile phone.
-
-    See instructions for installing the [Vipps test app](test-environment.md#vipps-test-apps), *Vipps MT*.
-
-1. A Postman application on your computer.
-
-    Download [Postman](https://www.postman.com/downloads/) and install it.
-    Don't use the web version, because we should never save our keys on the web.
+   All merchants automatically get a test user. See [test users](test-environment.md#test-users) for more information.
+2. A *test sales unit*.
+   You create this yourself by logging in to the Vipps Portal at [https://portal.vipps.no](https://portal.vipps.no). This requires BankId.
+   See instructions for creating the [test sales unit](test-environment.md#test-merchants).
+3. A Vipps *test app* for your mobile phone.
+   See instructions for installing the [Vipps test app](test-environment.md#vipps-test-apps), *Vipps MT*.
+4. A Postman application on your computer.
+   Download [Postman](https://www.postman.com/downloads/) and install it.
+   Don't use the web version, because you should never save your API keys on the web.
 
 ## Getting started with Postman
 
@@ -62,19 +55,19 @@ You will need to update some variables, so that the example works with your test
 Once you have installed Postman, you can import an environment from one our APIs and then customize it for your own use.
 
 1. To import the collection and environment files, save them to your desktop. Then, click the *Import* button in the Postman interface.
-
 2. Select the file(s) and click *Open*.
 
-The following is a global environment file that can be used with all the APIs:
-
-* [Global Postman environment](tools/vipps-api-global-postman-environment.json)
+Use the
+[Global Postman environment](tools/vipps-api-global-postman-environment.json)
+with all the APIs.
 
 ### Update the environment values
 
 The Postman environments comes pre-filled with some values, but there are still
 some required values which have to be manually entered. These are described in the quick start guide for each API.
 
-You must normally update the variables to use your API keys: `client_id`, `client_secret`, `Ocp-Apim-Subscription-Key`, and `merchantSerialNumber`.
+You must normally update the variables to use your API keys: `client_id`,
+`client_secret`, `Ocp-Apim-Subscription-Key`, and `merchantSerialNumber`.
 
 ### Run API calls
 
