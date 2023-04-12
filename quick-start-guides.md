@@ -35,7 +35,7 @@ You need:
    See instructions for installing the [Vipps test app](test-environment.md#vipps-test-apps), *Vipps MT*.
 4. A Postman application on your computer.
    Download [Postman](https://www.postman.com/downloads/) and install it.
-   Don't use the web version, because we should never save our keys on the web.
+   Don't use the web version, because you should never save your API keys on the web.
 
 ## Getting started with Postman
 
