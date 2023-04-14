@@ -22,7 +22,7 @@ END_METADATA -->
 Vipps and MobilePay have recently merged, and the developer documentation is still under development.
 
 
-Vipps MobilePay offers APIs to facilitate your log-in and online payment solutions for Point of Sale, apps, subscriptions, QR codes, checkout sessions, and invoices.  Explore our technical documentation to learn about these solutions.
+Our APIs can be used for payments and logins for Point of Sale, apps, subscriptions, QR codes, checkout sessions, and invoices.  Explore our technical documentation to learn about these solutions.
 
 Get started with Vipps MobilePay:
 
