@@ -114,29 +114,29 @@ See:
 See:
 * [ePayment API](https://developer.vippsmobilepay.com/docs/APIs/epayment-api)
 * [ePayment in store](https://developer.vippsmobilepay.com/docs/APIs/epayment-api/how-it-works/vipps-epayment-api-how-it-works-in-store)
-* [Login](https://developer.vippsmobilepay.com/docs/APIs/login-api) - Can be used for [loyalty](https://developer.vippsmobilepay.com/docs/vipps-solutions/loyalty-in-pos)
-* [Order management](https://developer.vippsmobilepay.com/docs/APIs/order-management-api) - Can be used for [receipts](https://developer.vippsmobilepay.com/docs/APIs/order-management-api/vipps-order-management-api#receipts)
+* [Login](https://developer.vippsmobilepay.com/docs/APIs/login-api) - can be used for [loyalty](https://developer.vippsmobilepay.com/docs/vipps-solutions/loyalty-in-pos)
+* [Order management](https://developer.vippsmobilepay.com/docs/APIs/order-management-api) - can be used for [receipts](https://developer.vippsmobilepay.com/docs/APIs/order-management-api/vipps-order-management-api#receipts)
 
 ### PoS and ePayment endpoints
 
 | Operation                 | MobilePay PoS                            | ePayment                                    |
 |---------------------------|------------------------------------------|---------------------------------------------|
 | PoS management            | `POST/GET/DELETE /v10/pointofsales`      | N/A                                         |
-| Initiate Payment          | `POST /v10/payments`                     | [`POST /v1/payments`](https://developer.vippsmobilepay.com/api/epayment#tag/CreatePayments/operation/createPayment)                         |
-| Initiate Prepared payment | `POST /v10/payments/prepare`             | N/A (For loyalty check [solutions](https://developer.vippsmobilepay.com/docs/vipps-solutions/loyalty-in-pos))     |
-| Query Payment             | `GET /v10/payments/{paymentid}`          | [`GET /v1/payments/{reference}`](https://developer.vippsmobilepay.com/api/epayment#tag/QueryPayments/operation/getPayment)              |
+| Initiate Payment          | `POST:/v10/payments`                     | [`POST:/v1/payments`](https://developer.vippsmobilepay.com/api/epayment#tag/CreatePayments/operation/createPayment)                         |
+| Initiate Prepared payment | `POST:/v10/payments/prepare`             | N/A (For loyalty check [solutions](https://developer.vippsmobilepay.com/docs/vipps-solutions/loyalty-in-pos))     |
+| Query Payment             | `GET:/v10/payments/{paymentid}`          | [`GET:/v1/payments/{reference}`](https://developer.vippsmobilepay.com/api/epayment#tag/QueryPayments/operation/getPayment)              |
 | Query Active Payments     | `GET /v10/payments`                      | N/A                                         |
-| Query payment log         | N/A                                      | [`GET /v1/payments/{reference}/events`](https://developer.vippsmobilepay.com/api/epayment#tag/QueryPayments/operation/getPaymentEventLog)       |
-| Capture Payment           | `POST /v10/payments/{paymentid}/capture` | [`POST /v1/payments/{reference}/capture`](https://developer.vippsmobilepay.com/api/epayment#tag/AdjustPayments/operation/capturePayment)     |
-| Cancel Payment            | `POST /v10/payments/{paymentid}/cancel`  | [`POST /v1/payments/{reference}/cancel`](https://developer.vippsmobilepay.com/api/epayment#tag/AdjustPayments/operation/cancelPayment)      |
-| Refund Payment            | `POST/v10/refunds`                       | [`POST /v1/payments/{reference}/refund`](https://developer.vippsmobilepay.com/api/epayment#tag/AdjustPayments/operation/refundPayment)      |
-| Lookup a refund           | `GET /v10/refunds/{refundid}`            | [`GET /v1/payments/{reference}`](https://developer.vippsmobilepay.com/api/epayment#tag/QueryPayments/operation/getPayment)              |
+| Query payment log         | N/A                                      | [`GET:/v1/payments/{reference}/events`](https://developer.vippsmobilepay.com/api/epayment#tag/QueryPayments/operation/getPaymentEventLog)       |
+| Capture Payment           | `POST:/v10/payments/{paymentid}/capture` | [`POST:/v1/payments/{reference}/capture`](https://developer.vippsmobilepay.com/api/epayment#tag/AdjustPayments/operation/capturePayment)     |
+| Cancel Payment            | `POST:/v10/payments/{paymentid}/cancel`  | [`POST:/v1/payments/{reference}/cancel`](https://developer.vippsmobilepay.com/api/epayment#tag/AdjustPayments/operation/cancelPayment)      |
+| Refund Payment            | `POST:/v10/refunds`                       | [`POST:/v1/payments/{reference}/refund`](https://developer.vippsmobilepay.com/api/epayment#tag/AdjustPayments/operation/refundPayment)      |
+| Lookup a refund           | `GET:/v10/refunds/{refundid}`            | [`GET:/v1/payments/{reference}`](https://developer.vippsmobilepay.com/api/epayment#tag/QueryPayments/operation/getPayment)              |
 
 ### PoS Authentication and headers
 
 | MobilePay PoS                           | ePayment                                        |
 |-----------------------------------------|-------------------------------------------------|
-| `Authorization` (`POST /connect/token`) | `Authorization` ([`POST /accesstoken/get`](https://developer.vippsmobilepay.com/api/access-token#tag/Authorization-Service/operation/fetchAuthorizationTokenUsingPost))       |
+| `Authorization` (`POST:/connect/token`) | `Authorization` ([`POST:/accesstoken/get`](https://developer.vippsmobilepay.com/api/access-token#tag/Authorization-Service/operation/fetchAuthorizationTokenUsingPost))       |
 | `X-MobilePay-Client-System-Version`     | `Vipps-System-Version`                          |
 | N/A                                     | `Vipps-System-Name`                             |
 | N/A                                     | `Vipps-System-Plugin-Name` (if applicable)      |
