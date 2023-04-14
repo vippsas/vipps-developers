@@ -91,7 +91,8 @@ information to the address below:
 **Important:** If you do not provide enough information, our first reply will
 be a request for more details, which will of course cause delays.
 
-The Integration Services email address is: developer@vippsmobilepay.com
+The Integration Services email address is: developer@vippsmobilepay.com.
+If you add your colleagues on CC they will get all updates too.
 
 ### Keep your colleagues up to date
 
