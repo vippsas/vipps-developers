@@ -37,7 +37,7 @@ See more details [in Getting Started](../getting-started.md).
 ## API lifecycle
 
 We are working on this, and the current version/draft is
-[available on GitHub](../common-topics/api-lifecycle.md).
+[available on GitHub](../common-topics/api-lifecycle2.md).
 
 ## vipps.no/developer
 
