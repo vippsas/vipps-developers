@@ -41,7 +41,7 @@ See [Common topics: Getting the API keys](https://developer.vippsmobilepay.com/d
      * [Direct Capture](../common-topics/reserve-and-capture.md#direct-capture)
 
 After a couple of minutes, your new test sales unit will appear in the bottom of the list (possibly after some browser refreshes).
-Then, you can [get the API keys](../common-topics/api-keys#getting-the-api-keys) and begin testing.
+Then, you can [get the API keys](../common-topics/api-keys.md#getting-the-api-keys) and begin testing.
 
 **Please note:** It is not possible to _change_ an existing sales unit in the test environment,
 but you can create as many as you need.

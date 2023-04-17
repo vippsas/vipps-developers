@@ -115,7 +115,7 @@ initiates the payment:
   message will be returned.
 
 See:
-[Is it possible to skip the landing page?](../faqs/vipps-landing-page-faq#is-it-possible-to-skip-the-landing-page.)
+[Is it possible to skip the landing page?](../faqs/vipps-landing-page-faq.md#is-it-possible-to-skip-the-landing-page.)
 
 ## Sequence diagram
 

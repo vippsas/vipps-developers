@@ -62,7 +62,7 @@ APIs have some functionality that is not available in the PSP API:
    and use the Vipps MobilePay APIs directly without any additional steps or
    middleware.
    See:
-   [High success rate for direct integrations](../faqs/common-problems-faq#high-success-rate-for-direct-integrations).
+   [High success rate for direct integrations](../faqs/common-problems-faq.md#high-success-rate-for-direct-integrations).
 3. Retry functionality: If the user attempts to pay with a card that is declined,
    the user can retry with a different card, while still in the same payment process.
    This results in a higher success rater for payments.
@@ -107,4 +107,4 @@ Users that select Vipps will simply have to use biometric log-in to the app and
 confirm the payment. Very, very simple.
 
 See:
-[Why do payments fail?](../faqs/common-problems-faq#why-do-payments-fail)
+[Why do payments fail?](../faqs/common-problems-faq.md#why-do-payments-fail)
