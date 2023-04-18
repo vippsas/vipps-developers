@@ -121,3 +121,25 @@ For more information, see:
 
 For more information about the Vipps Portal, see the
 [help pages on vipps.no (in Norwegian)](https://vipps.no/hjelp/vipps/kundeforholdet-mitt/hva-får-jeg-tilgang-til-når-jeg-logger-meg-inn-på-vippsportalen/).
+
+## How can I change my name and logo?
+
+The sales unit's name and logo is shgown to users in several places, both in
+the app and elsewhere.
+
+You can administer the name, logo, etc on
+[portal.vipps.no](https://portal.vipps.no).
+
+To change your display name you go to sales units ("salgssteder") in the
+left menu and select the correct unit. 
+
+You go to the sales unit ("salgssted") and click the correct unit. From this
+page you can see the key information for this sales unit
+![See sales unit info](images/Sales_unit_see_info.png)
+
+By clicking "Rediger" next to the "Visning i appen" heading you will come to a
+screen where you both can update your name and ad your logo:
+
+![By clicking "Rediger" next to the "Visning i appen" heading you will come to a screen where you both can update your name and ad you logo:](images/Sales_unit_change_name_and_logo.png)
+
+**Please note:** You cannot change the name used for the test environment.
