@@ -86,7 +86,7 @@ be contacted personally by the KAM.
 
 It is the customer's responsibility to make sure Vipps has the correct
 contact information. See the
-[Vipps contact information](https://www.vipps.no/kontakt-oss/bedrift/).
+[Vipps contact information](https://www.vipps.no/kontakt-oss/).
 
 ### Vipps APIs
 

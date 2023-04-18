@@ -32,7 +32,7 @@ See
 
 Vipps is required to perform a background check on all merchants who want to use Vipps services, so it might take a few days before you hear back from us.
 You can check the status of your application on [portal.vipps.no](https://portal.vipps.no) or
-by contacting [customer service](https://www.vipps.no/kontakt-oss/bedrift/).
+by contacting [customer service](https://www.vipps.no/kontakt-oss/).
 
 You can start getting familiar with the products and preparing for placing an order.
 Here are the most common API products:
