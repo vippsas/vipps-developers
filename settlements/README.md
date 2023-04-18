@@ -104,7 +104,7 @@ _including_ the Vipps fees, and are then invoiced for the Vipps fees.
 For gross settlements: If the merchant's organization number is registered as an EHF recipient,
 Vipps sends invoices as EHF. If not, the invoices are sent by email.
 To change invoice recipient, please
-[contact customer service](https://vipps.no/kontakt-oss/bedrift/vipps/).
+[contact customer service](https://vipps.no/kontakt-oss/).
 
 See [Availability](#availability) for information about settlement files
 when the balance is negative.

@@ -200,7 +200,7 @@ Yes, but only if you are not legally allowed to accept credit card payments.
 Sales units can be configured to only accept payments from debit cards, so
 customers cannot pay with credit cards. This is not configurable by the
 merchant. Please contact your KAM or
-[Vipps Customer Center](https://vipps.no/kontakt-oss/bedrift/vipps/)
+[Vipps Customer Center](https://vipps.no/kontakt-oss/)
 if you need this.
 
 ## Can I initiate a Vipps payment with a QR code?

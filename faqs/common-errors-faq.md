@@ -225,7 +225,7 @@ and cannot help with this based on email requests.
 
 Deactivation can also happen if the test merchant is not being used for a
 _very long_ time. Please
-[contact customer service](https://vipps.no/kontakt-oss/bedrift/vipps/),
+[contact customer service](https://vipps.no/kontakt-oss/),
 and we will reactivate the merchant.
 
 Partners that use
