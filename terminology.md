@@ -25,8 +25,8 @@ END_METADATA -->
   This is one of the API keys that is retrieved by logging in on
   [portal.vipps.no](https://portal.vipps.no).
 
-* Deeplink - The Vipps "deeplink" opens the payment page in Vipps where the user
-  accepts a payment. This is an integrated part of the Vipps payment process,
+* Deeplink - The "deeplink" opens the payment page in the app, where the user
+  accepts a payment. This is an integrated part of the payment process,
   and the link should never be sent in an SMS or email.
 
 * Direct capture - **Direct capture** causes all payment reservations to be instantly captured.
