@@ -21,7 +21,7 @@ END_METADATA -->
 
 See:
 
-* [How to find the API keys](../common-topics/api-keys#getting-the-api-keys)
+* [How to find the API keys](../common-topics/api-keys.md#getting-the-api-keys)
 
 ## Can you send us logs, so we can look for errors?
 
@@ -115,7 +115,7 @@ If all sales units have the same organization number, there are two alternatives
 1: Recommended: Multiple sales units (multiple MSNs): One sales unit per store. Each sales unit will have its
    own MSN (Merchant Serial Number), and the `orderId` may be whatever you want.
    Each sales unit gets its own
-   [settlement files](../settlements).
+   [settlement files](../settlements/README.md).
    You will need separate API keys for each sales unit (store).
    If you have a Vipps platform partner, the partner will use the
    [Partner keys](https://developer.vippsmobilepay.com/docs/vipps-partner/partner-keys)

@@ -46,7 +46,7 @@ Example: A customer has placed an order of two items for a total of 1000 NOK.
 The merchant has initiated a payment of 1000 NOK, but the customer has changed
 her mind and only bought one of the items, with a price of 750 NOK. The merchant
 has therefore made a
-[partial capture](../common-topics/reserve-and-capture#partial-capture)
+[partial capture](../common-topics/reserve-and-capture.md#partial-capture)
 of 750 NOK, and need to refund the remaining 250 NOK.
 
 * The short version: This is done automatically by the bank after a few days.

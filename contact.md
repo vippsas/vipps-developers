@@ -40,7 +40,7 @@ If you do not have a technical question, you can avoid delays by starting in the
 | Topic | How to get help |
 |--------|----------------|
 | General questions (including the customer relationship, creating sales units, change of admins, etc.) | See: [Contact info for companies on vipps.no](https://www.vipps.no/kontakt-oss/bedrift/). |
-| "Are there any problems?"  | See: [Status pages](./developer-resources/status-pages). |
+| "Are there any problems?"  | See: [Status pages](./developer-resources/status-pages.md). |
 | Applications for Vipps products (status, follow-ups, etc.) | Check the status on [portal.vipps.no](https://portal.vipps.no). |
 | Vipps plugins (WooCommerce, Shopify, Wix, WordPress, Wix, Shopify, Magento, EPiServer, etc.)         | See the support info for your plugin: [Plugin overview](https://developer.vippsmobilepay.com/docs/vipps-plugins). |
 | Vipps through a partner (for merchants) | Please contact your partner. |
