@@ -120,7 +120,7 @@ For more information about the Vipps Portal, see the
 
 ## How can I change my name and logo?
 
-The sales unit's name and logo is shgown to users in several places, both in
+The sales unit's name and logo is shown to users in several places, both in
 the app and elsewhere.
 
 You can administer the name, logo, etc on
