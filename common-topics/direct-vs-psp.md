@@ -54,7 +54,7 @@ and
 [eCom](https://developer.vippsmobilepay.com/docs/APIs/ecom-api)
 APIs have some functionality that is not available in the PSP API:
 
-1. Direct integration allows you to have more control over the payment process
+1. Direct integration allows you to have more control over the integration - and the user experience
    and to customize it to your specific needs. This can lead to a better user
   experience for your customers and can help to increase conversions.
 2. Higher success rate.
