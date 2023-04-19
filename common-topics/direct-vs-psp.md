@@ -86,6 +86,8 @@ APIs have some functionality that is not available in the PSP API:
    and a extremely high completion rate.
    See:
    [When do users get a "soft decline" and need to complete a 3-D Secure verification?](https://developer.vippsmobilepay.com/docs/vipps-developers/faqs/users-and-payments-faq#when-do-users-get-a-soft-decline-and-need-to-complete-a-3-d-secure-verification)
+7. With direct integration it is Vipps MobilePay that takes the risk for fraud.
+   Merchants are guaranteed to get the money.
 
 ## Extremely high success rate of direct integrations
 
