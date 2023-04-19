@@ -54,9 +54,9 @@ and
 [eCom](https://developer.vippsmobilepay.com/docs/APIs/ecom-api)
 APIs have some functionality that is not available in the PSP API:
 
-1. Direct integration allows you to have more control over the integration - and the user experience
+1. Direct integration allows you to have more control over the integration - and the user experience - 
    and to customize it to your specific needs. This can lead to a better user
-  experience for your customers and can help to increase conversions.
+   experience for your customers and also increase conversions.
 2. Higher success rate.
    With a direct integration, you have full control over the user flow,
    and use the Vipps MobilePay APIs directly without any additional steps or
@@ -85,7 +85,8 @@ APIs have some functionality that is not available in the PSP API:
    This means that Vipps MobilePay complies with the SCA requirements when the
    user logs into the app, and the need for additional SCA is eliminated.
    The user gets a simpler and faster user experience
-   and an extremely high completion rate.
+   and an
+   [extremely high completion rate](../faqs/common-problems-faq.md#high-success-rate-for-direct-integrations).
    See:
    [When do users get a "soft decline" and need to complete a 3-D Secure verification?](https://developer.vippsmobilepay.com/docs/vipps-developers/faqs/users-and-payments-faq#when-do-users-get-a-soft-decline-and-need-to-complete-a-3-d-secure-verification)
  7. With direct integrations the merchant is guaranteed top get the money,
