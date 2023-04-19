@@ -48,7 +48,7 @@ END_METADATA -->
   speed up any troubleshooting of API problems.
 
 * `Ocp-Apim-Subscription-Key` - The header which supplies the subscription key,
-  `Vipps-Subscription-Key`, for the Vipps API.
+  `Vipps-Subscription-Key`, for the API.
 
 * `orderId` - The API parameter that supplies a unique identifier for the
   payment. This is the same as `reference`. Newer APIs will use `reference`
@@ -59,9 +59,9 @@ END_METADATA -->
   For Norwegians, this can be used to retrieve information at
   [Brønnøysundregistrene](https://www.brreg.no).
 
-* Partner - A Vipps partner is a company that represents several merchants by
+* Partner - A partner is a company that represents several merchants by
   providing a platform, helping set up custom integrations, or developing
-  Vipps' official plugins.
+  our official plugins.
   See:
   [Vipps partners](https://developer.vippsmobilepay.com/docs/vipps-partner).
 
@@ -71,7 +71,7 @@ END_METADATA -->
   [Partner keys](https://developer.vippsmobilepay.com/docs/vipps-partner/partner-keys).
 
 * Payment Service Provider (PSP) - A third party company that performs online
-  payments on behalf of Vipps. Settlements for PSP integrations are handled by the PSP.
+  payments on behalf of Vipps MobilePay. Settlements for PSP integrations are handled by the PSP.
 
 * `reference` - The API parameter that supplies a unique identifier for the
   payment. This is the same as `orderId`. Newer APIs will use the name `reference`
@@ -86,7 +86,7 @@ END_METADATA -->
 
 * `Vipps-Subscription-Key` - This subscription key is retrieved by logging
   in on [portal.vipps.no](https://portal.vipps.no).
-  The header which supplies the subscription key to the Vipps API is
+  The header which supplies the subscription key to the API is
   `Ocp-Apim-Subscription-Key`.
 
 ## Norwegian terms
