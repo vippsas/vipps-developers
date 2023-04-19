@@ -3,6 +3,7 @@
 title: MobilePay migration guide
 sidebar_label: Migration guide
 sidebar_position: 10
+description: Looking for a hassle-free way to migrate to Vipps MobilePay? Our comprehensive migration guide has got you covered. With easy-to-follow instructions and dedicated support, migrating should be hassle-free. Embrace the future of payments with Vipps MobilePay.
 pagination_next: null
 pagination_prev: null
 ---
@@ -10,20 +11,30 @@ END_METADATA -->
 
 # Migration guide
 
-<!-- START_COMMENT -->
-
-ℹ️ Please use the website:
-[Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/).
-
-<!-- END_COMMENT -->
 
 💥 Work in progress 💥
 
-A quick summary of key facts and shortcuts for our APIs​.
+Are you currently using MobilePay APIs for your payment integration needs?
+
+In that case, we’re excited to introduce you to Vipps MobilePay APIs, a reliable and versatile payment solution that can make the migration hassle-free and even dazzle you with its ease of use and features.
+To ensure a smooth transition, we recommend using our comprehensive migration guide, which will provide step-by-step instructions and best practices for integrating with Vipps MobilePay APIs.
+
+This document is still under development.
+Here is a quick summary of key facts and shortcuts for our APIs​.
 
 ## Subscriptions vs. Recurring
 
+API documentation:
+
+* [Access token API](https://developer.vippsmobilepay.com/docs/APIs/access-token-api)
+* [ePayment API](https://developer.vippsmobilepay.com/docs/APIs/epayment-api)
+* [Recurring API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api)
+* [MobilePay Subscriptions API](https://developer.mobilepay.dk/api/subscriptions)
+
 ### Agreement
+
+See:
+[Agreements](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/vipps-recurring-api#agreements).
 
 | MOBILEPAY AGREEMENT               ​ | VIPPS MOBILEPAY AGREEMENT​                                                                              |
 |------------------------------------|--------------------------------------------------------------------------------------------------------|
@@ -33,101 +44,157 @@ A quick summary of key facts and shortcuts for our APIs​.
 | `Links`: [`user-redirect`, `success-callback`, `cancel-callback`, `cancel-redirect`]  | `merchantRedirectUrl` + `merchantAgreementUrl​`      |
 | `Plan​`                             | `productName​`                                                                                          |
 | `mobile_phone_number​`              | `phoneNumber​`                                                                                          |
-| `external_id​`                      | ?​ |
-| `currency​`                         | ?​ |
-| `country_code​`                     | ?​ |
-| `expiration_timeout_minutes​`       | ?​ |
-| `retention_period_hours​`           | ?​ |
-| `disable_notification_management​`  | ?​ |
-| `notifications_on​`                 | ?​ |
-| ?​                                  | `scope` (Space separated list of the user profile-data scope to require for the agreement)​             |
-| ?​                                  | `isApp` (If merchant is redirecting user from an app or a mobile device)​                               |
-| ?​                                  | `skipLandingPage` (`True` = skip landing page by sending notification directly to user)​                |
+| `external_id​`                      | `externalId​` |
+| `currency​`                         | N/A |
+| `country_code​`                     | N/A |
+| `expiration_timeout_minutes​`       | N/A |
+| `retention_period_hours​`           | N/A |
+| `disable_notification_management​`  | N/A |
+| `notifications_on​`                 | N/A |
+| N/A                                  | `scope` (Space separated list of the user profile-data scope to require for the agreement)​             |
+| N/A                                  | [`isApp`](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics/isApp) (If merchant is redirecting user from an app or a mobile device)​                               |
+| N/A                                  | [`skipLandingPage`](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics/vipps-landing-page#skip-landing-page) (`true` = skip landing page by sending notification directly to user)​                |
 
 ### Charges
 
-| MOBILEPAY ONE-OFF​                    | VIPPS MOBILEPAY INITIAL CHARGE​                                                                 |
+See:
+[Charges](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/vipps-recurring-api#charges).
+
+| MobilePay one-off​                   | Vipps MobilePay initial charge                                                                |
 |--------------------------------------|------------------------------------------------------------------------------------------------|
 | `Amount` (kroner.øre)               ​ | `Amount` (øre)​                                                                                 |
-| `External_id​`                        | `OrderId` (if NULL => autogenerated)​                                                           |
+| `External_id​`                        | `OrderId` (if NULL → autogenerated)​                                                           |
 | `Description​`                        | `Description​`                                                                                  |
-| `Expiration_timeout_minutes​`         | ?​                                                                                              |
-| ?​                                    | `transactionType` (`RESERVE_CAPTURE`, `DIRECT_CAPTURE`)​                                        |
+| `Expiration_timeout_minutes​`         | N/A                                                                                              |
+| N/A                                    | `transactionType` (`RESERVE_CAPTURE`, `DIRECT_CAPTURE`)​                                        |
 |                                      |  |
 | MOBILEPAY RESPONSE FROM AGREEMENT    | VIPPS MOBILEPAY RESPONSE FROM AGREEMENT                                                        |
 | `Id`                                 | `agreementId`                                                                                  |
 | `links["rel", "href"]`               | `vippsConfirmationUrl`                                                                         |
 | `one_off_payment_id`                 | `chargeId`                                                                                     |
 
-## INVOICE vs. EPAYMENT
+## Invoice vs. ePayment
 
-| MOBILEPAY INVOICE​                    | VIPPS MOBILEPAY EPAYMENT​                                                                        |
+See:
+* [ePayment API](https://developer.vippsmobilepay.com/docs/APIs/epayment-api)
+* [Extend payment time-outs](https://developer.vippsmobilepay.com/docs/vipps-solutions/long-expiry-time-for-payments-to-merchants)
+
+| MobilePay invoice                    | Vipps Mobilepay ePayment                                                                      |
 |--------------------------------------|-------------------------------------------------------------------------------------------------|
 | `InvoiceIssuer​`                      | `Merchant-Serial-Number` (Header in request)                                                   ​ |
 | `ConsumerAlias {Alias, AliasType}`  ​ | `Customer {Alias} (Example: 4512345678)`                                                        |
 | `TotalAmount​`                        | `Amount {currency, value(øre)}​`                                                                 |
-| `InvoiceNumber` / `PaymentReference​` | `reference` / `paymentDescription`                                                             ​ |
-| `DueDate​`                            | `expiresAt` (10min -> 28 days. Example: 2023-02-26T17:32:28)​                                    |
+| `InvoiceNumber` / `PaymentReference​` | [`reference`](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics/orderid) / `paymentDescription`                                                             ​ |
+| `DueDate​`                            | `expiresAt` (10min → 28 days. Example: 2023-02-26T17:32:28)​                                    |
 | (`InvoiceLink`) `RedirectUrl`       ​ | `returnUrl` (The URL the user is redirected to after the payment session).​                      |
-| `Comment​`                            | ?​ |
-| `ConsumerAddressLines []`            | ?​ |
-| `DeliveryAddressLines []`            | ?​ |
-| `ConsumerName​`                       | ?​ |
-| `TotalVATAmount​`                     | ?​ |
-| `IssueDate`                          | ?​ |
-| `OrderDate`                          | ?​ |
-| `OrderDate`                          | ?​ |
-| `DeliveryDate​`                       | ?​ |
-| `MerchantContactName`                | ?​ |
-| `MerchantOrderNumber`                | ?​ |
-| `BuyerOrderNumber​`                   | ?​ |
+| `Comment​`                            | N/A |
+| `ConsumerAddressLines []`            | N/A |
+| `DeliveryAddressLines []`            | N/A |
+| `ConsumerName​`                       | N/A |
+| `TotalVATAmount​`                     | N/A |
+| `IssueDate`                          | N/A |
+| `OrderDate`                          | N/A |
+| `OrderDate`                          | N/A |
+| `DeliveryDate​`                       | N/A |
+| `MerchantContactName`                | N/A |
+| `MerchantOrderNumber`                | N/A |
+| `BuyerOrderNumber​`                   | N/A |
 | `InvoiceUrl`+ `InvoiceArticles []`​   | See [Order Management API](https://developer.vippsmobilepay.com/docs/APIs/order-management-api) |
-| ?                                   ​ | `paymentDescription​`                                                                            |
-| ?                                   ​ | `directCapture` (sales unit must be configured by Vipps)​                                        |
-| ?​                                    | `profile` (scope)​                                                                               |
-| ?                                   ​ | `paymentMethod` (`WALLET` or `CARD`. `CARD` => WEB_REDIRECT)​                                    |
-| ?​                                    | `userFlow` (`Push_message`, `Native_redirect`, `Web_redirect`, `QR`)                           ​ |
-| ?​                                    | `qrFormat {format, size}` (only applicable when userFlow is set to QR)                         ​ |
-| ?​                                    | `customerInteraction` (`Customer_present`, `Customer_not_present`)​                              |
-| ?​                                    | `industryData` (Additional compliance data related to the transaction)​                          |
+| N/A                                  ​ | `paymentDescription​`                                                                            |
+| N/A                                    | `profile` (scope)​                                                                               |
+| N/A                                  ​ | `paymentMethod` (`WALLET` or `CARD`. `CARD` → WEB_REDIRECT)​                                    |
+| N/A                                    | `userFlow` (`Push_message`, `Native_redirect`, `Web_redirect`, `QR`)                           ​ |
+| N/A                                    | `qrFormat {format, size}` (only applicable when `userFlow` is set to `QR`)                         ​ |
+| N/A                                    | `customerInteraction` (`Customer_present`, `Customer_not_present`)​                              |
+| N/A                                    | `industryData` (Additional compliance data related to the transaction)​                          |
 
-## Point of Sale vs. EPAYMENT
 
-| Point of Sale                                          ​ | EPAYMENT                     |
-|---------------------------------------------------------|------------------------------|
-| **InitiatePayment**                                     |                              |
-| `Authorization` <br/>*(Header parameter used in all requests)* | `Ocp-Apim-Subscription-Key`  |
-| `X-MobilePay-Client-System-Version`<br/>*(Header parameter used in all requests)* |          |
-| `X-MobilePay-Idempotency-Key`                           |                              |
-| `X-MobilePay-Merchant-VAT-Number`                       |                              |
-| `Amount`                                                |                              |
-| `currencyCode`                                          |                              |
-| `orderId`                                               |                              |
-| `plannedCaptureDelay`                                   |                              |
-| `posId`                                                 |                              |
-| `restrictions`                                          |                              |
-| `merchantPaymentLabel`                                  |                              |
-|                                                         |                              |
-| **InitiatePayment Response**                            |                              |
-| `PaymentId`                                             |                              |
-|                                                         |                              |
-| **QueryPayment**                                        |                              |
-| `paymentid`                                             |                              |
-| `Authorization`                                         |                              |
-| `X-MobilePay-Client-System-Version`                     |                              |
-| `X-MobilePay-Merchant-VAT-Number`                       |                              |
-| `QueryPayment Response`                                 |                              |
-|                                                         |                              |
-| **QueryPaymentIds**                                     |                              |
-| `posId`                                                 | `Ocp-Apim-Subscription-Key`  |
-| `orderId`                                               |                              |
-| `state`                                                 |                              |
-|                                                         |                              |
-| **QueryPaymentIds Response**                            |                              |
-| `PaymentIds: [ ]`                                       |                              |
-|                                                         |                              |
-| **QueryPayment**                                        |                              |
-| `paymentid`                                             |                              |
-| `Authorization`                                         |                              |
-| `X-MobilePay-Client-System-Version`                     |                              |
-| `X-MobilePay-Merchant-VAT-Number`                       |                              |
+## Point of Sale vs. ePayment
+
+See:
+* [ePayment API](https://developer.vippsmobilepay.com/docs/APIs/epayment-api)
+* [ePayment in store](https://developer.vippsmobilepay.com/docs/APIs/epayment-api/how-it-works/vipps-epayment-api-how-it-works-in-store)
+* [Login](https://developer.vippsmobilepay.com/docs/APIs/login-api) - can be used for [loyalty](https://developer.vippsmobilepay.com/docs/vipps-solutions/loyalty-in-pos)
+* [Order management](https://developer.vippsmobilepay.com/docs/APIs/order-management-api) - can be used for [receipts](https://developer.vippsmobilepay.com/docs/APIs/order-management-api/vipps-order-management-api#receipts)
+
+### PoS and ePayment endpoints
+
+| Operation                 | MobilePay PoS                            | ePayment                                    |
+|---------------------------|------------------------------------------|---------------------------------------------|
+| PoS management            | `POST/GET/DELETE /v10/pointofsales`      | N/A                                         |
+| Initiate Payment          | `POST:/v10/payments`                     | [`POST:/v1/payments`](https://developer.vippsmobilepay.com/api/epayment#tag/CreatePayments/operation/createPayment)                         |
+| Initiate Prepared payment | `POST:/v10/payments/prepare`             | N/A (For loyalty check [solutions](https://developer.vippsmobilepay.com/docs/vipps-solutions/loyalty-in-pos))     |
+| Query Payment             | `GET:/v10/payments/{paymentid}`          | [`GET:/v1/payments/{reference}`](https://developer.vippsmobilepay.com/api/epayment#tag/QueryPayments/operation/getPayment)              |
+| Query Active Payments     | `GET /v10/payments`                      | N/A                                         |
+| Query payment log         | N/A                                      | [`GET:/v1/payments/{reference}/events`](https://developer.vippsmobilepay.com/api/epayment#tag/QueryPayments/operation/getPaymentEventLog)       |
+| Capture Payment           | `POST:/v10/payments/{paymentid}/capture` | [`POST:/v1/payments/{reference}/capture`](https://developer.vippsmobilepay.com/api/epayment#tag/AdjustPayments/operation/capturePayment)     |
+| Cancel Payment            | `POST:/v10/payments/{paymentid}/cancel`  | [`POST:/v1/payments/{reference}/cancel`](https://developer.vippsmobilepay.com/api/epayment#tag/AdjustPayments/operation/cancelPayment)      |
+| Refund Payment            | `POST:/v10/refunds`                       | [`POST:/v1/payments/{reference}/refund`](https://developer.vippsmobilepay.com/api/epayment#tag/AdjustPayments/operation/refundPayment)      |
+| Lookup a refund           | `GET:/v10/refunds/{refundid}`            | [`GET:/v1/payments/{reference}`](https://developer.vippsmobilepay.com/api/epayment#tag/QueryPayments/operation/getPayment)              |
+
+### PoS Authentication and headers
+
+| MobilePay PoS                           | ePayment                                        |
+|-----------------------------------------|-------------------------------------------------|
+| `Authorization` (`POST:/connect/token`) | `Authorization` ([`POST:/accesstoken/get`](https://developer.vippsmobilepay.com/api/access-token#tag/Authorization-Service/operation/fetchAuthorizationTokenUsingPost))       |
+| `X-MobilePay-Client-System-Version`     | `Vipps-System-Version`                          |
+| N/A                                     | `Vipps-System-Name`                             |
+| N/A                                     | `Vipps-System-Plugin-Name` (if applicable)      |
+| N/A                                     | `Vipps-System-Plugin-Version` (if applicable)   |
+| `X-MobilePay-Merchant-VAT-Number`       | N/A                                             |
+| `X-MobilePay-Idempotency-Key`           | `Idempotency-Key`                               |
+| N/A                                     | `Ocp-Apim-Subscription-Key`                     |
+| N/A                                     | `Merchant-Serial-Number`                        |
+
+### PoS Initiate Payment
+
+| MobilePay PoS                                                  | ePayment                                       |
+|----------------------------------------------------------------|------------------------------------------------|
+| `amount`                                                       | `amount` (`currency`, `value`)                 |
+| `currencyCode`                                                 | *Applied in `amount`*                          |
+| `orderId`                                                      | `paymentDescription`                           |
+| `plannedCaptureDelay`                                          | N/A                                            |
+| `posId`                                                        | N/A                                            |
+| `restrictions` (`debitCardDisallowed`, `creditCardDisallowed`) | N/A                                            |
+| `merchantPaymentLabel`                                         | N/A                                            |
+| N/A                                                            | `customer` (`phoneNumber`)                     |
+| N/A                                                            | `customerInteraction` (`"CUSTOMER_PRESENT"`)   |
+| N/A                                                            | `paymentMethod` (`type` `"WALLET"`)            |
+| N/A                                                            | [`reference`](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics/orderid)                                    |
+| N/A                                                            | `userFlow` (`"PUSH_MESSAGE"` `"QR"`)           |
+| N/A                                                            | `qrFormat` (`format`, `size`)                  |
+|                                                                |                                                |
+| **Response**                                                   |                                                |
+| `paymentId`                                                    | [`reference`](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics/orderid) (set in paymentInitiation)         |
+
+### PoS Query Payment
+
+| MobilePay PoS   | ePayment                                                                                |
+|-----------------|-----------------------------------------------------------------------------------------|
+| `paymentId`     | [`reference`](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics/orderid)                                                                             |
+|                 |                                                                                         |
+| **Response**    |                                                                                         |
+| `orderId`       | [`reference`](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics/orderid)                                                                             |
+| `amount`        | `amount` `(currency`, `value`)                                                          |
+| `currencyCode`  | *Applied in `amount`*                                                                   |
+| `status`        | `state`                                                                                  |
+| N/A             | `aggregate` (`authorizedAmount`, `cancelledAmount`, `capturedAmount`, `refundedAmount`) |
+| N/A             | `paymentMethod` (`type`)                                                                |
+| `loyaltyIds`    | `profile` (`sub`)                                                                       |
+| N/A             | `pspReference`                                                                          |
+
+*N/A: `posId`, `restrictions` (`debitCardDisallowed`, `creditCardDisallowed`), `merchantPaymentLabel`, `plannedCaptureDelay`, `customerToken`, `customerReceiptToken`, `paymentExpiresAt`, `partialCapturePossible`, `pollDelayInMs`)*
+
+### PoS Capture, Cancel and Refund Payment
+
+| MobilePay PoS                           | ePayment                                                                                |
+|-----------------------------------------|-----------------------------------------------------------------------------------------|
+| `paymentId`                             | [`reference`](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics/orderid)                                                                             |
+| `amount`                                | `modificationAmount` (`currency`, `value`) *not applicable for cancel*                  |
+|                                         |                                                                                         |
+| **Response**                            |                                                                                         |
+| N/A                                     | `amount` (`currency`, `value`)                                                          |
+| N/A                                     | `state`                                                                                 |
+| N/A                                     | `aggregate` (`authorizedAmount`, `cancelledAmount`, `capturedAmount`, `refundedAmount`) |
+| `refundId` *only applicable for refund* | `pspReference`                                                                          |
+| N/A                                     | [`reference`](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics/orderid)                                                                             |

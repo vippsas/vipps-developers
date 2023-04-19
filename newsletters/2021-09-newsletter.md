@@ -92,7 +92,7 @@ Here's an example:
 ## Removed HTTP 402 errors
 
 The Vipps eCom API previously sent `HTTP 402 Payment Required` for some errors.
-That HTTP status is "reserved for future use", and our use was a bit .. creative.
+That HTTP status is "reserved for future use", and our use was a bit *creative*.
 
 We now send `HTTP 400 Bad Request` instead, with more details in the message body.
 

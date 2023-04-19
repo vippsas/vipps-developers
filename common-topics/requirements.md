@@ -32,7 +32,7 @@ it has a contact person with a Norwegian identity number.
 
 If the foreign company has not yet been formally established, Vipps can
 manually send the agreement for digital signing with Danish NemID,
-Swedish BankID, etc. If this is required, please contact
+Swedish BankID, etc. When this is required, please contact
 [customer service](https://vipps.no/kontakt-oss/)
 or, for partners, please contact your partner manager.
 

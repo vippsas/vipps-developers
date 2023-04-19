@@ -15,17 +15,24 @@ END_METADATA -->
 <!-- START_COMMENT -->
 
 ℹ️ Please use the website:
-[Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/docs/vipps-developers).
+[Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/).
 
 <!-- END_COMMENT -->
 
-Vipps MobilePay offers APIs to facilitate your log-in and online payment solutions for Point of Sale, apps, subscriptions, QR codes, checkout sessions, and invoices.  Explore our technical documentation to learn about these solutions.
+Vipps and MobilePay have recently merged, and the developer documentation is still under development.
 
-Quick links:
+
+Our APIs can be used for payments and logins for Point of Sale, apps, subscriptions, QR codes, checkout sessions, and invoices.  Explore our technical documentation to learn about these solutions.
+
+Get started with Vipps MobilePay:
 
 * [Getting started](./getting-started.md) - Apply for services, products, test users, etc.
 * [Vipps Merchant Test (MT)](./test-environment.md) - Install the test app.
-* [Vipps API keys](./common-topics/api-keys.md) - Find your api keys.
+* [Vipps API keys](./common-topics/api-keys.md) - Find your API keys.
+
+Migrate from MobilePay:
+
+* [Vipps MobilePay Migration guide](mp-migration-guide.md) - If you are currently using MobilePay APIs for your payment integration needs, we recommend using our comprehensive [migration guide](mp-migration-guide.md), which provides step-by-step instructions and best practices for integrating with Vipps MobilePay APIs.
 
 Dive deeper with:
 

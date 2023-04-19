@@ -22,11 +22,15 @@ All Vipps customers that have
 [API](https://developer.vippsmobilepay.com/docs/APIs)
 access receive this technical newsletter,
 with important information about the APIs.
+It is not considered marketing.
+
+The newsletter is sent when needed, typically 5-10 times a year.
 
 Anyone can [subscribe to the newsletter](https://cloud.melding.vipps.no/utv).
 
-The newsletter is sent 5-10 times a year, and this is the newsletter archive:
+This is the newsletter archive:
 
+* [2023-03](2023-03-newsletter.md)
 * [2022-12](2022-12-newsletter.md)
 * [2022-11](2022-11-newsletter.md)
 * [2022-10](2022-10-newsletter.md)

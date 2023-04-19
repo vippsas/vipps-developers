@@ -15,25 +15,9 @@ END_METADATA -->
 ℹ️ Please use the website:
 [Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/).
 
-## Table of contents
-
-* [How do I use the one-time payment QR?](#how-do-i-use-the-one-time-payment-qr)
-* [How can we be whitelisted for `skipLandingPage`?](#how-can-we-be-whitelisted-for-skiplandingpage)
-* [Handling refunds on behalf of other stores](#handling-refunds-on-behalf-of-other-stores)
-* [Distance selling from a POS solution](#distance-selling-from-a-pos-solution)
-* [What is the process to go live in production?](#what-is-the-process-to-go-live-in-production)
-* [Which API keys should I use?](#which-api-keys-should-i-use)
-* [Do we need to support callbacks?](#do-we-need-to-support-callbacks)
-* [How can I check if a person has Vipps?](#how-can-i-check-if-a-person-has-vipps)
-* [How can I save the customer's phone number?](#how-can-i-save-the-customers-phone-number)
-* [How can we mass sign up merchants?](#how-can-we-mass-sign-up-merchants)
-
 <!-- END_COMMENT -->
 
 Point Of Sale (POS) is similar to a "cash register".
-
-We will improve this section as we learn more. Please suggest improvements
-in [Questions](#questions) below.
 
 ## How do I use the one-time payment QR?
 
@@ -59,7 +43,7 @@ also that an error messages if something went wrong.
 
 If it is not possible for the POS solution to handle a fallback URL you may use one of the following options:
 
-1. Set fallbackURL to be the merchants website
+1. Set fallbackURL to be the merchant's website
 2. Set fallbackURL to be this Vipps hosted static page: [www.vipps.no/thankyoupage/](https://www.vipps.no/thankyoupage/)
 
 See also:
@@ -77,7 +61,7 @@ See: [Is it possible to skip the landing page?](vipps-landing-page-faq.md#is-it-
 It may be relevant for enterprise setup, omnichannel, multiple physical stores within the same chain to refund orders on behalf of other stores.
 
 **Prerequisites:**
-Stores or a centralized system (e.g. from a headquarter) must have access to all store credentials, or use
+Stores or a centralized system (e.g. from a headquarters) must have access to all store credentials, or use
 [Partner keys](https://developer.vippsmobilepay.com/docs/vipps-partner/partner-keys).
 Stores must be able to search for `orderId` from other stores or request it from the centralized system.
 
@@ -149,7 +133,7 @@ As an alternative an online sale log must be available for Vipps.
    [Partner keys](https://developer.vippsmobilepay.com/docs/vipps-partner/partner-keys).
    If not: The merchant
    [retrieves the API keys](../common-topics/api-keys.md#getting-the-api-keys)
-   and provides them in a secure way to the partner.
+   and provides them securely to the partner.
    See: [Which API keys should I use?](#which-api-keys-should-i-use)
 6. The partner configures the merchant's POS for Vipps.
 7. The merchant can now accept Vipps payments in the POS.
@@ -157,9 +141,8 @@ As an alternative an online sale log must be available for Vipps.
 ## Which API keys should I use?
 
 You should probably use
-[Partner keys](https://developer.vippsmobilepay.com/docs/vipps-partner/partner-keys)
-,and not separate API keys for each of
-your merchants. But it depends.
+[Partner keys](https://developer.vippsmobilepay.com/docs/vipps-partner/partner-keys),
+and not separate API keys for each of your merchants. But it depends.
 
 See: [Partner keys](https://developer.vippsmobilepay.com/docs/vipps-partner/partner-keys).
 
@@ -168,7 +151,7 @@ See: [Partner keys](https://developer.vippsmobilepay.com/docs/vipps-partner/part
 Please try to implement the API required, even if you do not use the data
 provided in the callback. The API Dashboard will show errors if not.
 
-If it is not possible for your POS to support callbacks (no fixed hostname/IP, etc),
+If it is not possible for your POS to support callbacks (no fixed hostname/IP, etc.),
 you must actively check the payment status with
 [``GET:/ecomm/v2/payments/{orderId}/details``](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#get-payment-details).
 

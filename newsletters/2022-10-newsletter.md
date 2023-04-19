@@ -83,7 +83,7 @@ Going forward we will look into how we can implement charge limits in a better w
 It can help your conversion if you remind your users that:
 
 * There are no Vipps fees when paying a business
-* Users get all the benefits of the card when using the card in Vipps (bonus points, etc)
+* Users get all the benefits of the card when using the card in Vipps (bonus points, etc.)
 
 We recommend using this text where users select payment method:
 "Husk: Vipps er alltid gebyrfritt når du betaler til bedrifter."
@@ -96,7 +96,7 @@ If you use Klarna Checkout, here are our
 ## Vipps on-site messaging
 
 [Vipps on-site-messaging](https://developer.vippsmobilepay.com/docs/APIs/checkout-api/vipps-checkout-on-site-messaging)
-contains a badges in different variants that can be used to let your customers
+contains badges in different variants that can be used to let your customers
 know that Vipps payment is accepted.
 
 ## Partner API: Pre-fill applications
@@ -112,7 +112,7 @@ We are in the early planning phase of developing an API for
 [settlements](../settlements/README.md).
 
 If you are interested in this and want to be kept up to date when we have
-something to share, please send an email to integraton@vipps.no.
+something to share, please email integraton@vipps.no.
 
 ## Reminders
 

@@ -32,7 +32,7 @@ This newsletter was sent in November 2022.
 
 Vipps requires amounts to be specified in øre, without decimals:
 "Amounts are specified in minor units.
-For Norwegian kroner (NOK) that means 1 kr = 100 øre. Example: 499 kr = 49900 øre."
+For Norwegian kroner (NOK) that means 1 NOK = 100 øre. Example: 499 NOK = 49900 øre."
 
 We still see that some attempts at specifying payments with amounts that
 end in `.0000001`.
@@ -63,7 +63,7 @@ may also be useful.
 
 ## eCom API: Don't rely 100 % on callbacks
 
-Callback offer a faster user experience than polling, but you
+Callback offers a faster user experience than polling, but you
 cannot rely on callbacks alone. You must also poll
 [`GET:/ecomm/v2/payments/{orderId}/details`](https://developer.vippsmobilepay.com/api/ecom#tag/Vipps-eCom-API/operation/getPaymentDetailsUsingGET)
 as described in the

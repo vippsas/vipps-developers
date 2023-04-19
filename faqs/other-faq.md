@@ -21,9 +21,9 @@ END_METADATA -->
 
 See:
 
-* [How to find the API keys](../common-topics/api-keys#getting-the-api-keys)
+* [How to find the API keys](../common-topics/api-keys.md#getting-the-api-keys)
 
-## Can you send us logs so we can look for errors?
+## Can you send us logs, so we can look for errors?
 
 No. Vipps cannot extract logging info for one merchant or one MSN. There are
 terabytes of data, and it's not trivial to provide data for just one merchant
@@ -55,9 +55,9 @@ We recommend testing with 2 NOK, even though 1 NOK is the smallest possible amou
 
 ## How can I use Vipps for different types of payments?
 
-It's possible to use the Vipps eCom API for several different types of payments.
+It's possible to use the Vipps eCom API for several types of payments.
 
-Let's say you run a book store. You can then use Vipps eCom API in several different ways, such as:
+Let's say you run a book store. You can then use Vipps eCom API in several ways, such as:
 
 1. A webshop that sells physical books:
    Vipps eCom API with "reserve capture", since you cannot capture the payment before the book is shipped.
@@ -105,7 +105,7 @@ organization number that the sales unit belongs to.
 If the organization has the required financial regulatory approval to "split"
 payments between sales units, it is possible to have only one sales unit and
 identify the payments of a store using the `orderId` - for instance by prefixing the
-`orderId` with the store's id, name or number.
+`orderId` with the store's ID, name or number.
 
 Alternatively each store, if they each have their own organization number,
 are set up with their own merchant and sales units.
@@ -115,7 +115,7 @@ If all sales units have the same organization number, there are two alternatives
 1: Recommended: Multiple sales units (multiple MSNs): One sales unit per store. Each sales unit will have its
    own MSN (Merchant Serial Number), and the `orderId` may be whatever you want.
    Each sales unit gets its own
-   [settlement files](../settlements).
+   [settlement files](../settlements/README.md).
    You will need separate API keys for each sales unit (store).
    If you have a Vipps platform partner, the partner will use the
    [Partner keys](https://developer.vippsmobilepay.com/docs/vipps-partner/partner-keys)
@@ -183,7 +183,7 @@ agreement with Klarna for this.
 on product pages and in the shopping basket for fast and easy checkout, and to
 let users choose between Vipps and Klarna _before_ they get to Klarna Checkout.
 With
-[Vipps Logg inn](https://vipps.no/produkter-og-tjenester/bedrift/logg-inn-med-vipps/logg-inn-med-vipps/)
+[Vipps Login](https://vipps.no/produkter-og-tjenester/bedrift/logg-inn-med-vipps/logg-inn-med-vipps/)
 (the [Vipps Login API](https://developer.vippsmobilepay.com/docs/APIs/login-api))
 it's also possible to let users register and log in without usernames and passwords.
 [Vipps Checkout](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/vipps-checkout/)
@@ -193,7 +193,7 @@ may also be interesting.
 with the Vipps eCom API, as Klarna merely redirects the user to Vipps for payment, as
 the example below shows.
 
-All information about price, shipping, etc must be done in Klarna Checkout, before
+All information about price, shipping, etc. must be done in Klarna Checkout, before
 the user is sent to Vipps to pay the total amount.
 
 ```json
@@ -213,7 +213,7 @@ Note, the description translates to: _Remember: Vipps is always fee-free when yo
 | Field          | Description                                              |
 | -------------- | -------------------------------------------------------- |
 | `name`         | The name of the payment method. Use "Vipps".             |
-| `redirect_url` | Merchant hosted url redirecting to [the Vipps payment deeplink URL](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#the-vipps-deeplink-url)|
+| `redirect_url` | Merchant hosted URL redirecting to [the Vipps payment deeplink URL](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#the-vipps-deeplink-url)|
 | `image_url`    | The logo to be shown for this payment method. See: [Vipps design guidelines](https://developer.vippsmobilepay.com/docs/vipps-design-guidelines).  |
 | `fee`          | Should not be applicable because of PSD2 surcharge ban.  |
 | `description`  | The `description` field should state that there is no fee when paying with Vipps. The Norwegian text above says: "Vipps is without fees when paying businesses".  |
@@ -221,7 +221,7 @@ Note, the description translates to: _Remember: Vipps is always fee-free when yo
 Follow Klarna's process to get the External Payment Method activated for
 your account, described in the
 [Klarna documentation](https://docs.klarna.com/klarna-checkout/in-depth-knowledge/external-payment-methods/).
-Using this method will add Vipps as an payment alternative inside KCO.
+Using this method will add Vipps as a payment alternative inside KCO.
 
 See:
 [External payment methods & external checkouts](https://docs.klarna.com/klarna-checkout/in-depth-knowledge/external-payment-methods/).
@@ -247,9 +247,9 @@ Vipps uses delegated SCA, which makes it easier to users to pay with Vipps
 than with stand-alone card payments. The result is a higher completion rate.
 
 Delegated SCA is Vipps' primary way of solving the SCA requirements. For
-this solution Vipps has developed a SCA compliant solution that consists of a
+this solution Vipps has developed an SCA compliant solution that consists of a
 two-factor authentication featuring either PIN or biometrics in addition to
-device possession. In addition Vipps has implemented a Dynamic Linking according
+device possession. In addition, Vipps has implemented a Dynamic Linking according
 to the requirements.
 
 ## How can I change partner for my integration with Vipps?

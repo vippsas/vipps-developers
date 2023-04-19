@@ -8,7 +8,7 @@ END_METADATA -->
 
 # Authentication
 
-All Vipps API requests must include an `Authorization` header with
+All Vipps API requests must include the `Authorization` header with
 a JSON Web Token (JWT), which we call the _access token_.
 
 To get an access token, first you need to have API keys. Get your API keys, as described in

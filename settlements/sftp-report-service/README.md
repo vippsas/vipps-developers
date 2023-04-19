@@ -43,7 +43,7 @@ See the [Settlements](../README.md) overview.
 
 # Reports
 
-Each MSN (Merchant Serial Number, the unique id of a sales unit) merchant has
+Each MSN (Merchant Serial Number, the unique ID of a sales unit) merchant has
 its own settlement reports.
 It is not possible to aggregate reports from multiple sales units into one report.
 
@@ -88,7 +88,7 @@ A public SSH key must be provided.
 SFTP users are created, associated with a public SSH key, and given access to
 the reports of all the merchant's sales units (MSNs).
 
-It possible to use the same public SSH key for multiple merchants,
+It is possible to use the same public SSH key for multiple merchants,
 and for multiple MSNs.
 
 ### Generate a public SSH key
@@ -111,7 +111,7 @@ access to the reports, you may need an SSH key from your partner. See:
 [Partner access](#partner-access).
 
 A public SSH key is normally stored in the user's home directory:
-`~/.ssh/id_ed25519.pub`):
+`~/.ssh/id_ed25519.pub`:
 
 Example:
 
@@ -201,7 +201,7 @@ It works like a normal SFTP service.
 
 This is a standard SFTP service, and the address of the SFTP server is `sftp.vipps.no`.
 
-When connecting to the SFTP server you need to supply the username you created.
+When connecting to the SFTP server, you must supply the username you created.
 In the picture above, this is "hakon".
 
 Vipps cannot help with SFTP basics, but recommend this for an overview:
@@ -220,8 +220,8 @@ This is the directory structure (where `[alternative1|alternative2]` indicates t
 ```
 
 The `orgno.` is the company's organization number, nine digits.
-The `merchant serial number` (also called MSN) is the unique five or six digit
-id for the sales unit.
+The `merchant serial number` (also called MSN) is the unique five or six-digit
+ID for the sales unit.
 
 In the examples on this page, the `orgno.` is 998724341, and the `merchant serial number` is 16655.
 
@@ -309,5 +309,5 @@ sftp> !ls -1
 sftp> quit
 ```
 
-All of the above is basic SFTP use, and should be straight-forward.
+All the above is basic SFTP use, and should be straight-forward.
 If you use a SFTP client, please refer to its user documentation.
