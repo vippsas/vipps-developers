@@ -53,21 +53,17 @@ but you can create as many as you need.
      [create a new test sales unit](#how-to-create-a-test-sales-unit).
 1. Click the _Setup login_ button corresponding to your sales unit.
 1. If the first time, click _Activate Vipps Login_ and fill out fields that follow:
-    * Webhook - See [Revoke Consent Webhook](https://developer.vippsmobilepay.com/docs/APIs/login-api/api-guide/important-information#revoke-consent-webhook) for details.
-    * Token endpoint authentication method - See
-    [Token endpoint authentication method](https://developer.vippsmobilepay.com/docs/APIs/login-api/api-guide/core-concepts#token-endpoint-authentication-method).
-    * Redirect URIs - This creates a list containing URIs which the end user can be redirected to after a Vipps Login authentication.
-      For testing, you could, for example, use <http://localhost>.
+    * Redirect URIs - Specify the URI that will be used with
+      the query parameter, `redirect_uri`, on the initial request to the `authentication`
+      endpoint. You can register as many URIs as you want. 
+      This creates a list of accepted URIs.
+       
       See [Login API FAQ: What are the requirements for redirect URIs?](https://developer.vippsmobilepay.com/docs/APIs/login-api/vipps-login-api-faq#what-are-the-requirements-for-redirect-uris) for details.
       1. Enter the URI. It must be _exactly_ the same URI that you use when making API requests.
-        Be careful to note if the actual URI is specified with `redirect_uri` with a trailing slash `/` or not.
-      2. Click _Add URI_ for the one or more URIs you are adding.
-      3. Click _Save_ to save all the URIs.
-
-      You can register as many URIs as you want. Specify the URI that will be used with
-      the query parameter, `redirect_uri`, on the initial request to the `authentication`
-      endpoint.
-
+        Take care to notice if the actual URI is specified with a trailing slash `/` or not.
+        For testing, you can use `http://localhost`.
+      2. Click _Add URI_ for each URI you add.
+      3. Click _Save_.
 
 
 ## How to create additional users on portal.vipps.no
