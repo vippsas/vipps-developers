@@ -39,8 +39,8 @@ There are two ways to use Vipps MobilePay:
 
 The
 [PSP API](https://developer.vippsmobilepay.com/docs/APIs/psp-api)
-provides _tokens_ for the users' payment cards. The PSPs uses a token
-charge a Vipps user's card.
+provides _tokens_ for the users' payment cards.
+The PSPs uses the token charge a Vipps user's card.
 
 To put it simply, The PSP API is a "card token lookup service". The PSP uses the
 token to process the payment, and then send us an update to us about the success
@@ -54,7 +54,7 @@ and
 [eCom](https://developer.vippsmobilepay.com/docs/APIs/ecom-api)
 APIs have some functionality that is not available in the PSP API:
 
-1. Direct integration allows you to have more control over the payment process
+1. Direct integration allows you to have more control over the integration - and the user experience
    and to customize it to your specific needs. This can lead to a better user
   experience for your customers and can help to increase conversions.
 2. Higher success rate.
@@ -88,6 +88,8 @@ APIs have some functionality that is not available in the PSP API:
    and an extremely high completion rate.
    See:
    [When do users get a "soft decline" and need to complete a 3-D Secure verification?](https://developer.vippsmobilepay.com/docs/vipps-developers/faqs/users-and-payments-faq#when-do-users-get-a-soft-decline-and-need-to-complete-a-3-d-secure-verification)
+ 7. With direct integrations the merchant is guaranteed top get the money,
+   as Vipps Mobilepay takes the risk in case of fraud.  
 
 ## Extremely high success rate of direct integrations
 
