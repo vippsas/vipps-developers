@@ -41,39 +41,35 @@ See [Common topics: Getting the API keys](https://developer.vippsmobilepay.com/d
      * [Direct Capture](../common-topics/reserve-and-capture.md#direct-capture)
 
 After a couple of minutes, your new test sales unit will appear in the bottom of the list (possibly after some browser refreshes).
-Then, you can [get the API keys](../common-topics/api-keys#getting-the-api-keys) and begin testing.
+Then, you can [get the API keys](../common-topics/api-keys.md#getting-the-api-keys) and begin testing.
 
 **Please note:** It is not possible to _change_ an existing sales unit in the test environment,
 but you can create as many as you need.
 
-## How to setup login on your sales unit
+## How to set up login on your sales unit
 
 1. Find your desired sales unit.
    * Under _Vipps På Nett_ > _Utvikler_, select _Environment_ > _test_, then search for your test sales unit in the list. To create a new test sales unit, see
      [create a new test sales unit](#how-to-create-a-test-sales-unit).
 1. Click the _Setup login_ button corresponding to your sales unit.
 1. If the first time, click _Activate Vipps Login_ and fill out fields that follow:
-    * Webhook - See [Revoke Consent Webhook](https://developer.vippsmobilepay.com/docs/APIs/login-api/api-guide/important-information#revoke-consent-webhook) for details.
-    * Token endpoint authentication method - See
-    [Token endpoint authentication method](https://developer.vippsmobilepay.com/docs/APIs/login-api/api-guide/core-concepts#token-endpoint-authentication-method).
-    * Redirect URIs - This creates a list containing URIs which the end user can be redirected to after a Vipps Login authentication.
-      For testing, you could, for example, use <http://localhost>.
+    * Redirect URIs - Specify the URI that will be used with
+      the query parameter, `redirect_uri`, on the initial request to the `authentication`
+      endpoint. You can register as many URIs as you want. 
+      This creates a list of accepted URIs.
+       
       See [Login API FAQ: What are the requirements for redirect URIs?](https://developer.vippsmobilepay.com/docs/APIs/login-api/vipps-login-api-faq#what-are-the-requirements-for-redirect-uris) for details.
       1. Enter the URI. It must be _exactly_ the same URI that you use when making API requests.
-        Be careful to note if the actual URI is specified with `redirect_uri` with a trailing slash `/` or not.
-      2. Click _Add URI_ for the one or more URIs you are adding.
-      3. Click _Save_ to save all the URIs.
-
-      You can register as many URIs as you want. Specify the URI that will be used with
-      the query parameter, `redirect_uri`, on the initial request to the `authentication`
-      endpoint.
-
+        Take care to notice if the actual URI is specified with a trailing slash `/` or not.
+        For testing, you can use `http://localhost`.
+      2. Click _Add URI_ for each URI you add.
+      3. Click _Save_.
 
 
 ## How to create additional users on portal.vipps.no
 
 Merchants may create additional users, both for their own colleagues,
-accountants, etc - and also for their partner's employees.
+accountants, etc. - and also for their partner's employees.
 Or anyone else they want to give access to their sales units.
 
 See:
@@ -91,7 +87,7 @@ Logging into [portal.vipps.no](https://portal.vipps.no) requires Norwegian BankI
 If you don't have BankID, or you have BankID but not access to the correct merchant,
 you will need the merchant's administrator to log in on
 [portal.vipps.no](https://portal.vipps.no)
-and provide the API keys to you in a secure way.
+and provide the API keys to you securely.
 
 The merchant's administrator can also create additional users on
 [portal.vipps.no](https://portal.vipps.no).
@@ -100,9 +96,8 @@ If you don't know who the administrator is, you can check
 and see who has the right to sign for the company.
 
 If you can log in to [portal.vipps.no](https://portal.vipps.no), but cannot see
-the _Utvikler_ (developer) selection in the menu, you need to have the
-merchant's administrator grant you developer access for the sales unit you
-need access to.
+the _Utvikler_ (developer) option in the menu, you need to have the
+merchant's administrator grant you with developer access for the sales unit.
 
 For
 [reseller partners](/docs/vipps-partner):
@@ -111,7 +106,7 @@ You will need the merchant's administrator to either:
 * Log in to
   [portal.vipps.no](https://portal.vipps.no)
   and grant you developer access for the necessary sales unit, or
-* Provide the API keys to you in a secure way
+* Provide the API keys to you securely
 
 For more information, see:
 
@@ -122,3 +117,25 @@ For more information, see:
 
 For more information about the Vipps Portal, see the
 [help pages on vipps.no (in Norwegian)](https://vipps.no/hjelp/vipps/kundeforholdet-mitt/hva-får-jeg-tilgang-til-når-jeg-logger-meg-inn-på-vippsportalen/).
+
+## How can I change my name and logo?
+
+The sales unit's name and logo is shown to users in several places, both in
+the app and elsewhere.
+
+You can administer the name, logo, etc on
+[portal.vipps.no](https://portal.vipps.no).
+
+To change your display name you go to sales units ("salgssteder") in the
+left menu and select the correct unit. 
+
+You go to the sales unit ("salgssted") and click the correct unit. From this
+page you can see the key information for this sales unit
+![See sales unit info](images/Sales_unit_see_info.png)
+
+By clicking "Rediger" next to the "Visning i appen" heading you will come to a
+screen where you both can update your name and ad your logo:
+
+![By clicking "Rediger" next to the "Visning i appen" heading you will come to a screen where you both can update your name and ad you logo:](images/Sales_unit_change_name_and_logo.png)
+
+**Please note:** You cannot change the name used for the test environment.

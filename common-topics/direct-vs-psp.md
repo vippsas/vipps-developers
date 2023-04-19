@@ -62,7 +62,7 @@ APIs have some functionality that is not available in the PSP API:
    and use the Vipps MobilePay APIs directly without any additional steps or
    middleware.
    See:
-   [High success rate for direct integrations](../faqs/common-problems-faq#high-success-rate-for-direct-integrations).
+   [High success rate for direct integrations](../faqs/common-problems-faq.md#high-success-rate-for-direct-integrations).
 3. Retry functionality: If the user attempts to pay with a card that is declined,
    the user can retry with a different card, while still in the same payment process.
    This results in a higher success rater for payments.
@@ -72,7 +72,7 @@ APIs have some functionality that is not available in the PSP API:
    is only available with direct integration.
 5. [Userinfo](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#userinfo)
    is only available with direct integration.
-   The Userinfo API lets merchants to ask for the user's profile information as
+   The Userinfo API lets merchants ask for the user's profile information as
    part of the payment flow: name, address, email, phone number, birthdate, etc.
 6. When using the
    [ePayment API](https://developer.vippsmobilepay.com/docs/APIs/epayment-api)
@@ -95,9 +95,9 @@ We have extremely high success rate (low drop-off) for direct integration:
 Almost every user that selects to pay with Vipps completes the payment. The
 success rate is significantly higher than when using a payment card directly.
 
-When comparing success rate rates: Remember to compare data for when the
+When comparing success rates: Remember to compare data for when the
 user _selects_ payment method, do not compare Vipps to numbers for when the
-user has selected card payment and already has manually entered the card number, etc:
+user has selected card payment and already has manually entered the card number, etc.:
 
 * Drop-off data for Vipps: Measure the success rate after the user has selected Vipps.
 * Drop-off rate for cards: Measure the success rate after the user has selected card,
@@ -107,4 +107,4 @@ Users that select Vipps will simply have to use biometric log-in to the app and
 confirm the payment. Very, very simple.
 
 See:
-[Why do payments fail?](../faqs/common-problems-faq#why-do-payments-fail)
+[Why do payments fail?](../faqs/common-problems-faq.md#why-do-payments-fail)

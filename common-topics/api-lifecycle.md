@@ -53,7 +53,7 @@ has been superseded.
 ### Patch version
 
 A patch version fixes one or more small problems, such as correcting a
-small bug so the API works as intended and documented in the first place.
+small bug, so the API works as intended and documented in the first place.
 
 ## Notice of deprecation
 
@@ -86,7 +86,7 @@ be contacted personally by the KAM.
 
 It is the customer's responsibility to make sure Vipps has the correct
 contact information. See the
-[Vipps contact information](https://www.vipps.no/kontakt-oss/bedrift/).
+[Vipps contact information](https://www.vipps.no/kontakt-oss/).
 
 ### Vipps APIs
 
@@ -166,7 +166,7 @@ but we want to explicitly mention this.
 
 #### Example of option field
 
-Vipps may add an `type` field to the `address` object:
+Vipps may add a `type` field to the `address` object:
 
 Version 2.0.0:
 
@@ -198,7 +198,7 @@ The value may be added either in the request or in the response.
 Response parsing must be robust: Ignore any unknown fields or enum values
 received as part of API responses.
 
-### Relaxing some of the constraints on an existing request parameter
+### Relaxing some constraints on an existing request parameter
 
 For example, making it optional.
 

@@ -13,9 +13,8 @@ When you initiate a payment, it will be _reserved_ until you _capture_ it:
 * When a payment is reserved it means the customer has approved the payment.
   The funds are still in the customer's account, but not available to spend on other things.
 * When a payment is captured it means the funds are moved from customer's account to merchant's account.
-  * Captured funds will be settled to the merchants settlement account after two business days. See 
+  * Captured funds will be settled to the merchant's settlement account after two business days. See
   [Settlement Information](../settlements/README.md) for more details.
-
 
 Vipps supports both _reserve capture_ and _direct capture_:
 
@@ -42,7 +41,7 @@ Important things to consider:
   make an API request, and it then takes several days before the amount is
   available in the customer's account.
 * With "reserve capture" it is possible to reserve a higher amount and only
-  capture a part of it (useful for electric car charging stations, etc).
+  capture a part of it (useful for electric car charging stations, etc.).
   It is also possible to capture the full amount
   with multiple captures ("partial capture").
 
@@ -124,7 +123,7 @@ or by KAM merchants from the Key Account Manager.
 See the FAQ:
 
 * [When should I use "Direct Capture"?](../faqs/reserve-and-capture-faq.md#when-should-i-use-direct-capture)
-* [How can I check if I have "reserve capture" or "direct capture"?](../faqs/reserve-and-capture-faq#how-can-i-check-if-i-have-reserve-capture-or-direct-capture)
+* [How can I check if I have "reserve capture" or "direct capture"?](../faqs/reserve-and-capture-faq.md#how-can-i-check-if-i-have-reserve-capture-or-direct-capture)
 
 ### Partial capture
 
@@ -132,7 +131,7 @@ Partial capture may be used in cases where a partial order is shipped or for oth
 reasons.
 
 Partial capture may be called as many times as required while
-there is a remaining reserved amount that has not yet been captured.
+there is a remaining amount that is reserved and has not yet been captured.
 
 If one or more partial captures have been made, any remaining reserved amount
 will be automatically released after a few days.

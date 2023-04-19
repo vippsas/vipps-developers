@@ -14,7 +14,7 @@ This is applicable to:
 * [PSP API](https://developer.vippsmobilepay.com/docs/APIs/psp-api)
 
 All URLs in the Vipps eCommerce API are validated with the
-[Apache Commons UrlValidator](https://commons.apache.org/proper/commons-validator/apidocs/org/apache/commons/validator/routines/UrlValidator.html).
+[Apache Commons URL Validator](https://commons.apache.org/proper/commons-validator/apidocs/org/apache/commons/validator/routines/UrlValidator.html).
 
 **Please note:**
 
@@ -27,9 +27,9 @@ URLs that start with `http://localhost` will be rejected. If you want to use
 localhost as fallback, please use `http://127.0.0.1`.
 It is, naturally, not possible to use `http://localhost` or
 `http://127.0.0.1` for the callback, as the Vipps backend would then call itself.
-Ngrok may also be an option: <https://ngrok.com>
+[Ngrok](https://ngrok.com) may also be an option.
 
-If `isApp` is true, the `fallBack` URL is not validated with Apache Commons UrlValidator,
+If `isApp` is true, the `fallBack` URL is not validated with Apache Commons URL Validator,
 as the app-switch URL may be something like `vipps://`, which is not a valid URL.
 
 Here is a simple Java class suitable for testing URLs,

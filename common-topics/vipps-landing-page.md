@@ -19,7 +19,7 @@ The user will either be taken to Vipps or to the Vipps landing page:
 * In a desktop browser, the landing page will prompt the user for the phone number
   (the number may also be pre-filled, see below).
   The user enters or confirms the phone number.
-  If is also possible to enter another Vipps user's number, to have that
+  It is also possible to enter another Vipps user's number, to have that
   person complete the payment.
   Vipps sends a push notification to the specified phone number,
   the user gets a push notification, opens Vipps and confirms the payment.
@@ -77,6 +77,7 @@ Skipping the landing page is only allowed when it is not possible to show it.
 
 Skipping the landing page is reserved for when the payment is initiated on a
 device that the user does not own or control:
+
 * Not on the user's phone
 * Not on the user's computer
 * On a device that has no user-facing display where the landing page can be
@@ -98,6 +99,7 @@ merchant's main URL, like `https://example.com`, etc.
 
 **Important:** When using `"skipLandingPage": true` in the API request that
 initiates the payment:
+
 * Vipps will send a push notification immediately to the Vipps app
   for the user with the specified phone number, without showing the landing page.
 * It is crucial to use the correct format for the user's phone number.
@@ -113,7 +115,7 @@ initiates the payment:
   message will be returned.
 
 See:
-[Is it possible to skip the landing page?](../faqs/vipps-landing-page-faq#is-it-possible-to-skip-the-landing-page.)
+[Is it possible to skip the landing page?](../faqs/vipps-landing-page-faq.md#is-it-possible-to-skip-the-landing-page.)
 
 ## Sequence diagram
 
@@ -142,7 +144,7 @@ sequenceDiagram
     else skipLandingpage: true
         App-->>U: Payment confirmation in app only
     end
-```    
+```
 
 See:
 

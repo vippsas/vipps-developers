@@ -58,6 +58,7 @@ Please follow these steps to make sure everything is correct:
    [Get an access token](https://developer.vippsmobilepay.com/docs/APIs/access-token-api#get-an-access-token)
    for details, how long it is valid, etc.
    Remember to use `Authorization: Bearer <access token goes here>`.
+   If you do not include `Bearer`, you may get a `HTTP 401 Unauthorized` error.
 2. Check that you are using the correct API credentials for the MSN (Merchant Serial Number)
    you are using
    (See
@@ -71,7 +72,7 @@ Please follow these steps to make sure everything is correct:
    See:
    [Why do I get `errorCode 35 "Requested Order not found"`?](#why-do-i-get-errorcode-35-requested-order-not-found)
 4. Check the API specification for the correct spelling of all the header parameters.
-   They are case sensitive: `Authorization: Bearer <access token goes here>`
+   They are case-sensitive: `Authorization: Bearer <access token goes here>`
    is not the same as `Authorization: bearer <access token goes here>`.
 5. Make sure you are using the right environment and check that you are using
    the correct API keys for the right sales unit in that environment. The
@@ -82,7 +83,7 @@ Please follow these steps to make sure everything is correct:
    For most errors the body contains an explanation of what went wrong.
    See:
    [Errors](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#errors).
-7. If you are a partner and you are using partner keys: Double check everything
+7. If you are a partner, and you are using partner keys: Double check everything
    described here:
    [Partner keys](https://developer.vippsmobilepay.com/docs/vipps-partner/partner-keys).
    A common mistake is to mix `Merchant-Serial-Number` (used in the HTTP header)
@@ -90,7 +91,7 @@ Please follow these steps to make sure everything is correct:
 
 You can log in to
 [portal.vipps.no](https://portal.vipps.no)
-to double check your API keys, sales units and API products.
+to double-check your API keys, sales units and API products.
 See:
 [Getting the API keys](../common-topics/api-keys.md#getting-the-api-keys).
 
@@ -123,7 +124,7 @@ and attempt to use the Vipps eCom API will get this error, with
 
 This is because the compliance checks required for Vipps eCom API are not
 done for merchants that only need the Vipps Login API.
-If you need access to the Vipps eCom API, you can apply for it on
+If you need access to the Vipps eCom API, you can apply for this on
 [portal.vipps.no](https://portal.vipps.no).
 
 Partners can get this error if they use
@@ -211,7 +212,7 @@ Please check that the merchant's organization number is still active in
 [Brønnøysundregistrene](https://www.brreg.no). Vipps automatically deactivates
 merchants (companies) when they are deleted from Brønnøysundregistrene.
 This can also happen if a merchant changes organization type, for instance
-from ENK to AS.
+from _ENK_ to _AS_.
 
 Merchants can log in on
 [portal.vipps.no](https://portal.vipps.no)
@@ -224,7 +225,7 @@ and cannot help with this based on email requests.
 
 Deactivation can also happen if the test merchant is not being used for a
 _very long_ time. Please
-[contact customer service](https://vipps.no/kontakt-oss/bedrift/vipps/),
+[contact customer service](https://vipps.no/kontakt-oss/),
 and we will reactivate the merchant.
 
 Partners that use
@@ -275,6 +276,7 @@ limit, etc.
 ## Why do I get an error about having Vipps installed and being 15 years old?
 
 This can happen when:
+
 * You attempt to use a real Vipps user in the test environment.
 * You have a brand new test user and have not logged into the test app before
   trying to make payments, etc.
@@ -293,15 +295,14 @@ This can happen when:
 * [Partner keys](https://developer.vippsmobilepay.com/docs/vipps-partner/partner-keys)
   are used, but the `Merchant-Serial-Number` HTTP header is not used correctly.
 
-## Why do I get `Invalid MSN: 654321. This MSN is not valid for the provided supermerchant id.`?
+## Why do I get `Invalid MSN: 654321. This MSN is not valid for the provided supermerchant ID.`?
 
-This can happen when the partner making the API request:
+This can happen when the partner making the API request is using:
 
-* Uses API keys for the test environment in the production environment, or opposite.
-* Uses a MSN for the test environment in the production environment, or opposite.
-* Uses
-  [partner keys](https://developer.vippsmobilepay.com/docs/vipps-partner/partner-keys),
-  but does not send the required `Merchant-Serial-Number` header.
+* API keys for the test environment in the production environment, or opposite
+* An MSN for the test environment in the production environment, or opposite
+* [Partner keys](https://developer.vippsmobilepay.com/docs/vipps-partner/partner-keys)
+  without including the required `Merchant-Serial-Number` header
 
-If the error message is `Invalid MSN: . This MSN is not valid for the provided supermerchant id.`,
+If the error message is `Invalid MSN: This MSN is not valid for the provided supermerchant ID.`,
 with no MSN specified, it means that the `Merchant-Serial-Number` is missing in the request header.

@@ -8,7 +8,6 @@ END_METADATA -->
 
 # isApp
 
-
 If the payment is initiated in a native app, it is possible to explicitly force
 a `vipps://` URL by sending the optional `isApp` parameter in the initiate call:
 
@@ -37,7 +36,6 @@ This is applicable to:
 * [PSP API](https://developer.vippsmobilepay.com/docs/APIs/psp-api)
 * [Recurring API](https://developer.vippsmobilepay.com/docs/APIs/recurring-api)
 * [Report API](https://developer.vippsmobilepay.com/docs/APIs/report-api)
-
 
 ## Example responses
 
@@ -72,7 +70,7 @@ Example: Response body for `"isApp":true`, with a forced app-switch to Vipps:
   may install the app on an iPad where they don't have Vipps installed. If you
   initiate payments with `"isApp": true` the app will try to open `vipps://` on
   the iPad, but since Vipps installed "nothing will happen", and the user will
-  not be able to pay. If you simply don't sent `isApp`, the built-in logic will
+  not be able to pay. When you don't send `isApp`, the built-in logic will
   fix things for you, and display
   [the Vipps landing page](vipps-landing-page.md)
   instead.

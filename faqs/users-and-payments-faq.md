@@ -15,23 +15,6 @@ END_METADATA -->
 ℹ️ Please use the website:
 [Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/).
 
-## Table of contents
-
-* [Is there an API for checking if a number belongs to a Vipps user?](#is-there-an-api-for-checking-if-a-number-belongs-to-a-vipps-user)
-* [Is there an API for retrieving information about a Vipps user?](#is-there-an-api-for-retrieving-information-about-a-vipps-user)
-* [Where can I find information about payment and settlements?](#where-can-i-find-information-about-payment-and-settlements)
-* [Can I split payments to charge a fee?](#can-i-split-payments-to-charge-a-fee)
-* [Can I create a marketplace with multiple merchants?](#can-i-create-a-marketplace-with-multiple-merchants)
-* [Can I create a service to match buyers and sellers?](#can-i-create-a-service-to-match-buyers-and-sellers)
-* [Can I use Vipps for crowdfunding?](#can-i-use-vipps-for-crowdfunding)
-* [Is it possible for a merchant to pay a Vipps user?](#is-it-possible-for-a-merchant-to-pay-a-vipps-user)
-* [How long is an initiated order valid, if the user does not confirm in the Vipps app?](#how-long-is-an-initiated-order-valid-if-the-user-does-not-confirm-in-the-vipps-app)
-* [How long does it take until the money is in my account?](#how-long-does-it-take-until-the-money-is-in-my-account)
-* [Why has one of my customers been charged twice for the same payment?](#why-has-one-of-my-customers-been-charged-twice-for-the-same-payment)
-* [In which sequence are callbacks and fallbacks done?](#in-which-sequence-are-callbacks-and-fallbacks-done)
-* [Where can I find reports on transactions?](#where-can-i-find-reports-on-transactions)
-* [When do users get a "soft decline" and need to complete a 3-D Secure verification?](#when-do-users-get-a-soft-decline-and-need-to-complete-a-3-d-secure-verification)
-
 <!-- END_COMMENT -->
 
 ## Is there an API for checking if a number belongs to a Vipps user?
@@ -53,7 +36,7 @@ Vipps cannot give more details about the reason.
 
 ## Is there an API for retrieving information about a Vipps user?
 
-Yes, but only as part ofg a payment or login.
+Yes, but only as part of a payment or login.
 
 Vipps offers the possibility for merchants to ask the user for information
 as part of the payment flow with
@@ -179,9 +162,9 @@ There are several reasons for this, including:
   for this, and not all banks support it.
 * There are other account-to-account payment methods, but all have their
   idiosyncrasies, and none are a perfect fit.
-* Payouts to cards is different than accounts, and will depend on the PSPs,
+* Payouts to cards is different from accounts, and will depend on the PSPs,
   which brings another set of challenges.
-* Some merchant accounts requires "four eyes" before making payments from them,
+* Some merchant accounts require "four eyes" before making payments from them,
   and Vipps does not have this functionality in the API.
 * The SCA (Secure Customer Authentication) required by PSD2 further complicates
   payouts, both with an API and on [portal.vipps.no](https://portal.vipps.no).
@@ -191,10 +174,10 @@ Vipps, with the user's consent. Payments may then be made to the bank account.
 See:
 [Is there an API for retrieving information about a Vipps user?](#is-there-an-api-for-retrieving-information-about-a-vipps-user)
 
-## I have initiated an order but I can't find it!
+## I have initiated an order, but I can't find it
 
 For the eCom API, see
-[I have initiated an order but I can't find it](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api-faq#i-have-initiated-an-order-but-i-cant-find-it).
+[I have initiated an order, but I can't find it](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api-faq#i-have-initiated-an-order-but-i-cant-find-it).
 
 ## How long is an initiated order valid, if the user does not confirm in the Vipps app?
 
@@ -215,7 +198,7 @@ See: [Settlements](../settlements/README.md).
 Once in a while a customer claims they have "paid double", "paid twice" or similar.
 
 This does not happen, except in *extremely* rare cases where multiple services,
-both at Vipps, banks, PSPs, etc fail simultaneously. In reality: This never happens.
+both at Vipps, banks, PSPs, etc. fail simultaneously. In reality: This never happens.
 
 The most common reason for misunderstanding is that customers do not understand
 the difference between a *reservation* and a *payment* and/or that some banks
@@ -246,7 +229,7 @@ The user can also check the payment in Vipps:
 2. Press "Payments" on the main screen.
 3. Scroll down and press "History"
 4. Check the payment and the "Transactions".
-5. Verify that the orderId and transaction id matches the ones in step 6 above.
+5. Verify that the orderId and transaction ID matches the ones in step 6 above.
 
 See:
 [For how long is a payment reserved?](reserve-and-capture-faq.md#for-how-long-is-a-payment-reserved)
@@ -272,7 +255,7 @@ See: [Settlements](../settlements/README.md).
 
 Vipps handles everything related to "soft declines" and 3-D Secure.
 Vipps also handles BankID verification, when that is required.
-There is nothing a merchant needs to to.
+There is nothing a merchant needs to.
 
 Vipps uses delegated SCA (Secure Customer Authentication) from the banks, and
 significantly simplifies the user experience, as there is normally no need for
