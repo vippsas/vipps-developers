@@ -131,7 +131,7 @@ END_METADATA -->
 
 * Finnish Trust Network (FTN) - Software that certifies the identity of a person.
 
-* [Yritys- ja yhteisötietojärjestelmä](https://ytj.fi/en/index.html) - The official Finnish
+* [Yritys- ja yhteisötietojärjestelmä (YJT)](https://ytj.fi/en/index.html) - The official Finnish
   register of companies. 
 
 * `orgno` - The business ID for a merchant. Also called Y-tunnus (Yritys- ja yhteisötunnus) or VAT-number. 8 digits.
