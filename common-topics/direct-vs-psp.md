@@ -59,9 +59,8 @@ APIs have some functionality that is not available in the PSP API:
 2. Higher success rate.
    With a direct integration, you have full control over the user flow,
    and use the Vipps MobilePay APIs directly without any additional steps or
-   middleware.
-   See:
-   [High success rate for direct integrations](../faqs/common-problems-faq.md#high-success-rate-for-direct-integrations).
+   middleware. Direct integrations have an
+   [extremely high success rate](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics/direct-vs-psp/#extremely-high-success-rate-of-direct-integrations).
 3. Retry functionality: If the user attempts to pay with a card that is declined,
    the user can retry with a different card, while still in the same payment process.
    This results in a higher success rater for payments.
