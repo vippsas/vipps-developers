@@ -6,7 +6,6 @@ pagination_next: null
 pagination_prev: null
 ---
 
-
 # Common API Topics
 
 These are topics that are applicable across many APIs:
@@ -22,7 +21,6 @@ These are topics that are applicable across many APIs:
 * [isApp](isApp.md)
 * [orderid](orderid.md)
 * [Polling guidelines](polling-guidelines.md)
-* [Recommendations for orderId/reference](orderid.md)
 * [Redirects](redirects.md)
 * [Refunds](refund.md)
 * [Reserve and capture](reserve-and-capture.md)
