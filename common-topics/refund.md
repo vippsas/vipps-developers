@@ -1,11 +1,10 @@
-<!-- START_METADATA
 ---
 title: Refunds
 sidebar_label: Refunds
 pagination_next: null
 pagination_prev: null
 ---
-END_METADATA -->
+
 
 # Refunds
 

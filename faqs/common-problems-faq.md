@@ -1,4 +1,3 @@
-<!-- START_METADATA
 ---
 title: "FAQ: Common problems"
 sidebar_label: Common problems
@@ -6,7 +5,7 @@ sidebar_position: 20
 pagination_next: null
 pagination_prev: null
 ---
-END_METADATA -->
+
 
 # FAQ: Common problems
 
@@ -14,12 +13,7 @@ See also
 [Common problems](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api-faq#common-problems)
 in the eCom API FAQs.
 
-<!-- START_COMMENT -->
 
-ℹ️ Please use the website:
-[Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/).
-
-<!-- END_COMMENT -->
 
 ## Why do payments fail?
 

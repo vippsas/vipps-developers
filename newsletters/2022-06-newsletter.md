@@ -1,4 +1,3 @@
-<!-- START_METADATA
 ---
 title: Technical newsletter for developers 2022-06
 sidebar_label: 2022-06
@@ -6,30 +5,13 @@ sidebar_position: 70
 pagination_next: null
 pagination_prev: null
 ---
-END_METADATA -->
+
 
 # Technical newsletter for developers 2022-06
 
 This newsletter was sent in June 2022.
 
-<!-- START_COMMENT -->
 
-## Table of Contents
-
-* [Vipps Order Management API](#vipps-order-management-api)
-* [Vipps Partner API](#vipps-partner-api)
-* [All OpenAPI (Swagger) specifications and Postman collections/environments updated](#all-openapi-swagger-specifications-and-postman-collectionsenvironments-updated)
-* [Remember: Vipps is always without fees when paying to businesses](#remember-vipps-is-always-without-fees-when-paying-to-businesses)
-  * [Klarna Checkout recommendations](#klarna-checkout-recommendations)
-* [Vipps eCom API: HTTPS required for all URLs](#vipps-ecom-api-https-required-for-all-urls)
-* [Reminders](#reminders)
-  * [Please check your eCom API calls for errors](#please-check-your-ecom-api-calls-for-errors)
-  * [Use the API Dashboard to find problems with your integration](#use-the-api-dashboard-to-find-problems-with-your-integration)
-  * [How to get help quickly](#how-to-get-help-quickly)
-  * [Newsletter archive](#newsletter-archive)
-* [Questions or comments?](#questions-or-comments)
-
-<!-- END_COMMENT -->
 
 ## Vipps Order Management API
 

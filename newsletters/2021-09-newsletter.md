@@ -1,4 +1,3 @@
-<!-- START_METADATA
 ---
 title: Technical newsletter for developers 2021-09
 sidebar_label: 2021-09
@@ -6,25 +5,13 @@ sidebar_position: 75
 pagination_next: null
 pagination_prev: null
 ---
-END_METADATA -->
+
 
 # Technical newsletter for developers 2021-09
 
 This newsletter was sent in September 2021.
 
-<!-- START_COMMENT -->
 
-## Table of Contents
-
-- [The Vipps QR API](#the-vipps-qr-api)
-- [The Vipps Order Management API](#the-vipps-order-management-api)
-- [The Vipps Merchant Management API](#the-vipps-merchant-management-api)
-- [Vipps Login support for authentication/registration outside of browser/app (CIBA)](#vipps-login-support-for-authenticationregistration-outside-of-browserapp-ciba)
-- [The Vipps Recurring API now supports variable amounts](#the-vipps-recurring-api-now-supports-variable-amounts)
-- [API Dashboard for the test environment](#api-dashboard-for-the-test-environment)
-- [Removed HTTP 402 errors](#removed-http-402-errors)
-
-<!-- END_COMMENT -->
 
 ## The Vipps QR API
 

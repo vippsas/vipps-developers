@@ -1,19 +1,13 @@
-<!-- START_METADATA
 ---
 sidebar_position: 210
 pagination_next: null
 pagination_prev: null
 ---
-END_METADATA -->
+
 
 # Contact us
 
-<!-- START_COMMENT -->
 
-ℹ️ Please use the website:
-[Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/docs/vipps-developers/contact).
-
-<!-- END_COMMENT -->
 
 ## MobilePay support
 

@@ -1,4 +1,3 @@
-<!-- START_METADATA
 ---
 title: "FAQ: Common errors"
 sidebar_label: Common errors
@@ -6,7 +5,7 @@ sidebar_position: 10
 pagination_next: null
 pagination_prev: null
 ---
-END_METADATA -->
+
 
 # FAQ: Common errors
 
@@ -14,12 +13,7 @@ See also
 [Common errors](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api-faq#common-errors)
 in the eCom API FAQs.
 
-<!-- START_COMMENT -->
 
-ℹ️ Please use the website:
-[Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/docs/vipps-developers/faqs).
-
-<!-- END_COMMENT -->
 
 ## Why do I get `HTTP 400 Bad Request`?
 

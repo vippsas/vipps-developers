@@ -1,4 +1,3 @@
-<!-- START_METADATA
 ---
 title: "FAQ: Problems for end users"
 sidebar_label: Problems for end users
@@ -6,21 +5,11 @@ sidebar_position: 40
 pagination_next: null
 pagination_prev: null
 ---
-END_METADATA -->
+
 
 # FAQ: Problems for end users
 
-<!-- START_COMMENT -->
 
-ℹ️ Please use the website:
-[Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/).
-
-## Table of contents
-
-* [Why don't I receive the payment notification?](#why-dont-i-receive-the-payment-notification)
-* [Why am I not sent back to where I came from when I have paid?](#why-am-i-not-sent-back-to-where-i-came-from-when-i-have-paid)
-
-<!-- END_COMMENT -->
 
 ## Why don't I receive the payment notification?
 

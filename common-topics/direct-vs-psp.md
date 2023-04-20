@@ -1,4 +1,3 @@
-<!-- START_METADATA
 ---
 title: Direct integration and PSP integration
 sidebar_label: Direct integration and PSP integration
@@ -6,7 +5,7 @@ description: Direct integration and PSP integration
 pagination_next: null
 pagination_prev: null
 ---
-END_METADATA -->
+
 
 # Direct integration and PSP integration
 

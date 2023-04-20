@@ -1,4 +1,3 @@
-<!-- START_METADATA
 ---
 title: Technical newsletter for developers 2022-11
 sidebar_label: 2022-11
@@ -6,27 +5,13 @@ sidebar_position: 68
 pagination_next: null
 pagination_prev: null
 ---
-END_METADATA -->
+
 
 # Technical newsletter for developers 2022-11
 
 This newsletter was sent in November 2022.
 
-<!-- START_COMMENT -->
 
-## Table of Contents
-
-* [Specify amounts in øre without decimals](#specify-amounts-in-øre-without-decimals)
-* [Get ready for "black week"](#get-ready-for-black-week)
-* [eCom API: Don't rely 100 % on callbacks](#ecom-api-dont-rely-100--on-callbacks)
-* [Report API](#report-api)
-* [Documentation improvements](#documentation-improvements)
-* [Check your phone number format](#check-your-phone-number-format)
-* [Reminders](#reminders)
-  * [Please check your API calls for errors](#please-check-your-api-calls-for-errors)
-* [Questions or comments?](#questions-or-comments)
-
-<!-- END_COMMENT -->
 
 ## Specify amounts in øre without decimals
 

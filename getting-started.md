@@ -1,4 +1,3 @@
-<!-- START_METADATA
 ---
 title: Getting started
 sidebar_label: Getting started
@@ -7,7 +6,7 @@ description: Getting started
 pagination_next: null
 pagination_prev: null
 ---
-END_METADATA -->
+
 
 # Getting started
 

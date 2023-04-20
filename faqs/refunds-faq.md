@@ -1,4 +1,3 @@
-<!-- START_METADATA
 ---
 title: "FAQ: Refunds"
 sidebar_label: Refunds
@@ -6,22 +5,11 @@ sidebar_position: 50
 pagination_next: null
 pagination_prev: null
 ---
-END_METADATA -->
+
 
 # FAQ: Refunds
 
-<!-- START_COMMENT -->
 
-ℹ️ Please use the website:
-[Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/).
-
-## Table of contents
-
-* [Can I refund a payment?](#can-i-refund-a-payment)
-* [How can I refund only a part of a payment?](#how-can-i-refund-only-a-part-of-a-payment)
-* [How long does it take from a refund is made until the money is in the customer's account?](#how-long-does-it-take-from-a-refund-is-made-until-the-money-is-in-the-customers-account)
-
-<!-- END_COMMENT -->
 
 ## Can I refund a payment?
 

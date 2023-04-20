@@ -1,4 +1,3 @@
-<!-- START_METADATA
 ---
 title: "FAQ: Vipps landing page"
 sidebar_label: Vipps landing page
@@ -6,22 +5,11 @@ sidebar_position: 90
 pagination_next: null
 pagination_prev: null
 ---
-END_METADATA -->
+
 
 # FAQ: Vipps landing page
 
-<!-- START_COMMENT -->
 
-ℹ️ Please use the website:
-[Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/).
-
-## Table of contents
-
-* [Is it possible to skip the landing page?](#is-it-possible-to-skip-the-landing-page)
-* [How can I check if I have skipLandingPage activated?](#how-can-i-check-if-i-have-skiplandingpage-activated)
-* [Can I show the landing page in an iframe?](#can-i-show-the-landing-page-in-an-iframe)
-
-<!-- END_COMMENT -->
 
 ## Is it possible to skip the landing page?
 

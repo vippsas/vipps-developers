@@ -1,11 +1,10 @@
-<!-- START_METADATA
 ---
 title: Status pages
 sidebar_position: 70
 pagination_next: null
 pagination_prev: null
 ---
-END_METADATA -->
+
 
 # Status pages
 

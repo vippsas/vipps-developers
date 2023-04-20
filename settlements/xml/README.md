@@ -1,20 +1,14 @@
-<!-- START_METADATA
 ---
 title: XML
 hide_table_of_contents: true
 pagination_next: null
 pagination_prev: null
 ---
-END_METADATA -->
+
 
 # Vipps XML reports
 
-<!-- START_COMMENT -->
 
-ℹ️ Please use the website:
-[Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/).
-
-<!-- END_COMMENT -->
 
 This repository contains schemas and example files for Vipps XML settlement reports.
 

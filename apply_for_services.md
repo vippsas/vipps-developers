@@ -1,11 +1,10 @@
-<!-- START_METADATA
 ---
 title: Apply for a Vipps service
 sidebar_position: 2
 pagination_next: null
 pagination_prev: null
 ---
-END_METADATA -->
+
 
 # Apply for Vipps services
 

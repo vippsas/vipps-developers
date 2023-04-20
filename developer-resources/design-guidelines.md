@@ -1,11 +1,10 @@
-<!-- START_METADATA
 ---
 title: Design guidelines
 sidebar_position: 30
 pagination_next: null
 pagination_prev: null
 ---
-END_METADATA -->
+
 
 # Design guidelines
 

@@ -1,4 +1,3 @@
-<!-- START_METADATA
 ---
 title: "FAQ: Requirements"
 sidebar_label: Requirements
@@ -6,21 +5,11 @@ sidebar_position: 60
 pagination_next: null
 pagination_prev: null
 ---
-END_METADATA -->
+
 
 # FAQ: Requirements
 
-<!-- START_COMMENT -->
 
-ℹ️ Please use the website:
-[Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/).
-
-## Table of contents
-
-* [What are the requirements for Vipps merchants?](#what-are-the-requirements-for-vipps-merchants)
-* [Can I use my "Vippsnummer" in my webshop?](#can-i-use-my-vippsnummer-in-my-webshop)
-
-<!-- END_COMMENT -->
 
 ## What are the requirements for Vipps merchants?
 

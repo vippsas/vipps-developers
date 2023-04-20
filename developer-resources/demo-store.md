@@ -1,11 +1,10 @@
-<!-- START_METADATA
 ---
 title: Demo store
 sidebar_position: 20
 pagination_next: null
 pagination_prev: null
 ---
-END_METADATA -->
+
 
 # Demo store
 

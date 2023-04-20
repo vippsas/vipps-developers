@@ -1,10 +1,9 @@
-<!-- START_METADATA
 ---
 title: Cancellations
 pagination_next: null
 pagination_prev: null
 ---
-END_METADATA -->
+
 
 # Cancellations
 

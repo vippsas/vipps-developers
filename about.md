@@ -1,4 +1,3 @@
-<!-- START_METADATA
 ---
 title: About Vipps MobilePay
 sidebar_label: About us
@@ -6,16 +5,11 @@ sidebar_position: 200
 pagination_next: null
 pagination_prev: null
 ---
-END_METADATA -->
+
 
 # About us
 
-<!-- START_COMMENT -->
 
-ℹ️ Please use the website:
-[Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/).
-
-<!-- END_COMMENT -->
 
 Vipps and MobilePay merged in November 2022 and our documentation is being updated.
 

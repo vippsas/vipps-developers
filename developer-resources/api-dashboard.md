@@ -1,11 +1,10 @@
-<!-- START_METADATA
 ---
 title: API dashboard
 sidebar_position: 10
 pagination_next: null
 pagination_prev: null
 ---
-END_METADATA -->
+
 
 # API dashboard
 

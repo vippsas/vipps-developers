@@ -1,4 +1,3 @@
-<!-- START_METADATA
 ---
 title: Technical newsletter for developers 2022-12
 sidebar_label: 2022-12
@@ -6,26 +5,13 @@ sidebar_position: 67
 pagination_next: null
 pagination_prev: null
 ---
-END_METADATA -->
+
 
 # Technical newsletter for developers 2022-12
 
 This newsletter was sent in December 2022.
 
-<!-- START_COMMENT -->
 
-## Table of Contents
-
-* [Checkout API v3](#checkout-api-v3)
-* [Recurring API v3](#recurring-api-v3)
-* [ePayment API](#epayment-api)
-* [Solutions](#solutions)
-* [Updated emails to new merchants (and partners)](#updated-emails-to-new-merchants-and-partners)
-* [Reminders](#reminders)
-  * [Please check your API calls for errors](#please-check-your-api-calls-for-errors)
-* [Questions or comments?](#questions-or-comments)
-
-<!-- END_COMMENT -->
 
 ## Checkout API v3
 

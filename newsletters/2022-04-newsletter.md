@@ -1,4 +1,3 @@
-<!-- START_METADATA
 ---
 title: Technical newsletter for developers 2022-04
 sidebar_label: 2022-04
@@ -6,25 +5,13 @@ sidebar_position: 71
 pagination_next: null
 pagination_prev: null
 ---
-END_METADATA -->
+
 
 # Technical newsletter for developers 2022-04
 
 This newsletter was sent in April 2022.
 
-<!-- START_COMMENT -->
 
-## Table of Contents
-
-* [Release of remainder after doing a partial capture](#release-of-remainder-after-doing-a-partial-capture)
-* [The Vipps QR API now works in the test environment](#the-vipps-qr-api-now-works-in-the-test-environment)
-* [Logo handling changes in PSP Signup API](#logo-handling-changes-in-psp-signup-api)
-* [Recurring charge changes](#recurring-charge-changes)
-* [Reminders](#reminders)
-  * [Please check your eCom API calls](#please-check-your-ecom-api-calls)
-  * [Use the API Dashboard to find problems with your integration](#use-the-api-dashboard-to-find-problems-with-your-integration)
-
-<!-- END_COMMENT -->
 
 ## Release of remainder after doing a partial capture
 

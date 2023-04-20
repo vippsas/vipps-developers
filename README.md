@@ -1,4 +1,3 @@
-<!-- START_METADATA
 ---
 title: Vipps MobilePay developer information
 sidebar_label: Introduction
@@ -8,16 +7,11 @@ description: Find information related to integrating with the Vipps MobilePay AP
 pagination_next: null
 pagination_prev: null
 ---
-END_METADATA -->
+
 
 # Vipps MobilePay developer information
 
-<!-- START_COMMENT -->
 
-ℹ️ Please use the website:
-[Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/).
-
-<!-- END_COMMENT -->
 
 Vipps and MobilePay have recently merged, and the developer documentation is still under development.
 
