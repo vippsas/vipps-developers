@@ -9,6 +9,7 @@ pagination_prev: null
 # Vipps Settlements
 
 
+
 ## Settlement flow
 
 Settlements are done as quickly as possible, and depend on banks.

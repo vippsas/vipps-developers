@@ -10,13 +10,6 @@ pagination_prev: null
 
 # Getting started
 
-<!-- START_COMMENT -->
-
-ℹ️ Please use the website:
-[Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/).
-
-<!-- END_COMMENT -->
-
 When the [_Merchant Agreement_ is approved and your product order is sent](./apply_for_services.md),
 you will receive an email with credentials for accessing the
 [test environment](test-environment.md):

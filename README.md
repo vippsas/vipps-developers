@@ -11,12 +11,7 @@ pagination_prev: null
 
 # Vipps MobilePay developer information
 
-<!-- START_COMMENT -->
 
-ℹ️ Please use the website:
-[Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/).
-
-<!-- END_COMMENT -->
 
 Vipps and MobilePay have recently merged, and the developer documentation is still under development.
 
