@@ -2,7 +2,7 @@
 ---
 title: Technical newsletter for developers 2023-05
 sidebar_label: 2023-05
-sidebar_position: 65
+sidebar_position: 265
 pagination_next: null
 pagination_prev: null
 ---
