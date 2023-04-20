@@ -7,10 +7,7 @@ pagination_next: null
 pagination_prev: null
 ---
 
-
 # Frequently asked questions
-
-
 
 The following are Frequently Asked Questions (FAQs):
 
@@ -25,7 +22,7 @@ The following are Frequently Asked Questions (FAQs):
 * [Vipps landing page](vipps-landing-page-faq.md)
 * [Other questions](other-faq.md)
 
-In addition, each Vipps API has a specific set of FAQs. For example:
+In addition, most APIs have a specific set of FAQs. For example:
 
 * [Checkout API FAQ](https://developer.vippsmobilepay.com/docs/APIs/checkout-api/vipps-checkout-api-faq)
 * [eCom API FAQ](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api-faq)
@@ -35,10 +32,3 @@ In addition, each Vipps API has a specific set of FAQs. For example:
 * [QR API FAQ](https://developer.vippsmobilepay.com/docs/APIs/qr-api/vipps-qr-api-faq)
 * [Recurring API FAQ](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/vipps-recurring-api-faq)
 * [Report API FAQ](https://developer.vippsmobilepay.com/docs/APIs/report-api/vipps-report-api-faq)
-
-We're always happy to help with code or other questions you might have!
-Please create an [issue](https://github.com/vippsas/vipps-developers/issues),
-a [pull request](https://github.com/vippsas/vipps-developers/pulls),
-or [contact us](https://developer.vippsmobilepay.com/docs/vipps-developers/contact).
-
-Sign up for our [Technical newsletter for developers](https://developer.vippsmobilepay.com/docs/vipps-developers/newsletters).
