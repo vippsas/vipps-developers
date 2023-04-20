@@ -139,7 +139,7 @@ This can be used to retrieve information at
   
 * [Finanssivalvonta](https://www.finanssivalvonta.fi/en/) - Financial Supervisory Authority.
    
-* Henkilötunnus - Social Security Number (SSN). A 10-digit number that uniquely identifies
+* Henkilötunnus - Personal Identity Code. A 10-digit number that uniquely identifies
   each Finnish citizen.
  
 
