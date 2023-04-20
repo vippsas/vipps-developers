@@ -1,6 +1,6 @@
 ---
 title: Vipps portal
-sidebar_position: 40
+sidebar_position: 140
 pagination_next: null
 pagination_prev: null
 ---

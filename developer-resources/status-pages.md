@@ -1,6 +1,6 @@
 ---
 title: Status pages
-sidebar_position: 70
+sidebar_position: 130
 pagination_next: null
 pagination_prev: null
 ---

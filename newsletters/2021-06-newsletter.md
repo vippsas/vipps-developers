@@ -1,7 +1,7 @@
 ---
 title: Technical newsletter for developers 2021-06
 sidebar_label: 2021-06
-sidebar_position: 75
+sidebar_position: 275
 pagination_next: null
 pagination_prev: null
 ---
@@ -25,9 +25,9 @@ discounts, freebies, connect them to your own loyalty programme, etc.
 More information:
 
 * [Vipps Logg inn: Product information](https://vipps.no/produkter-og-tjenester/bedrift/logg-inn-med-vipps/logg-inn-med-vipps/)
-* [Vipps Login API](https://developer.vippsmobilepay.com/docs/APIs/login-api)
-* [Userinfo for the Vipps eCom API](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#userinfo)
-* [Userinfo for the Vipps Recurring API](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/vipps-recurring-api#userinfo)
+* [Vipps Login API](/docs/APIs/login-api)
+* [Userinfo for the Vipps eCom API](/docs/APIs/ecom-api/vipps-ecom-api#userinfo)
+* [Userinfo for the Vipps Recurring API](/docs/APIs/recurring-api/vipps-recurring-api#userinfo)
 
 **Please note:** When a user pays with a debit or credit card using Vipps,
 all the benefits apply, just as when the payment card is used outside of Vipps.
@@ -53,15 +53,15 @@ All customers can now log in on
 and order new products, which automatically creates a new sales unit:
 
 - [Vipps på Nett](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/)
-  ([eCom API](https://developer.vippsmobilepay.com/docs/APIs/ecom-api),
+  ([eCom API](/docs/APIs/ecom-api),
   for both
   [webshops and apps](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/))
 - [Vipps rett i Kassa](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-i-butikk/vipps-i-kassa/)
-  ([eCom API](https://developer.vippsmobilepay.com/docs/APIs/ecom-api))
+  ([eCom API](/docs/APIs/ecom-api))
 - [Vipps Faste betalinger](https://vipps.no/produkter-og-tjenester/bedrift/faste-betalinger/faste-betalinger/)
-  ([Recurring API](https://developer.vippsmobilepay.com/docs/APIs/recurring-api))
+  ([Recurring API](/docs/APIs/recurring-api))
 - [Vipps Logg inn](https://vipps.no/produkter-og-tjenester/bedrift/logg-inn-med-vipps/logg-inn-med-vipps/)
-  ([Login API](https://developer.vippsmobilepay.com/docs/APIs/login-api))
+  ([Login API](/docs/APIs/login-api))
 
 You can create also new sales units in the
 [test environment](../test-environment.md)
@@ -77,21 +77,21 @@ This is available for all customers, also those that do not yet have any API acc
 Several of our plugins have been updated to use the newest versions of
 our APIs. Please make sure you have the newest version of the plugins
 you use, and keep them up to date. See the
-[the plugin overview](https://developer.vippsmobilepay.com/docs/vipps-plugins).
+[the plugin overview](/docs/vipps-plugins).
 
 ### How to get help quickly
 
 Please see
-[this page](https://developer.vippsmobilepay.com/docs/vipps-developers/contact).
+[this page](/docs/vipps-developers/contact).
 
 ### Newsletter archive
 
 All the previous newsletters are in
-[newsletters](https://developer.vippsmobilepay.com/docs/vipps-developers/newsletters).
+[newsletters](/docs/vipps-developers/newsletters).
 
 ## Questions or comments?
 
 We're always happy to help with code or other questions you might have!
 Please create [GitHub issues or pull requests](https://github.com/vippsas)
 for the relevant API,
-or [contact us](https://developer.vippsmobilepay.com/docs/vipps-developers/contact).
+or [contact us](/docs/vipps-developers/contact).

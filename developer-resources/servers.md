@@ -1,6 +1,6 @@
 ---
 title: Vipps servers
-sidebar_position: 60
+sidebar_position: 160
 pagination_next: null
 pagination_prev: null
 ---

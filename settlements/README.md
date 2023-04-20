@@ -1,14 +1,12 @@
 ---
-title: Settlements
+sidebar_label: Overview
 sidebar_position: 85
 pagination_next: null
 pagination_prev: null
 ---
 
 
-# Vipps Settlements
-
-
+# Settlements
 
 ## Settlement flow
 
@@ -117,7 +115,7 @@ the settlement report shows the automatically generated `chargeID` in the `order
 If `orderID` is in use, that is also used in the settlement report.
 
 See the
-[Recurring API](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/vipps-recurring-api#create-a-charge)
+[Recurring API](/docs/APIs/recurring-api/vipps-recurring-api#create-a-charge)
 for more details.
 
 ### GDPR
@@ -170,7 +168,7 @@ There is no API for retrieving settlement data.
 [SFTP](#sftp) is the closest alternative.
 
 But:
-[We are in the early planning phase of developing an API](https://developer.vippsmobilepay.com/docs/APIs/report-api).
+[We are in the early planning phase of developing an API](/docs/APIs/report-api).
 
 ## Availability
 

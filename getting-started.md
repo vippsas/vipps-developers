@@ -2,7 +2,7 @@
 title: Getting started
 sidebar_label: Getting started
 sidebar_position: 2
-description: Getting started testing with Vipps.
+description: Getting started
 pagination_next: null
 pagination_prev: null
 ---
