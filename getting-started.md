@@ -1,14 +1,14 @@
 ---
-title: Get started
-sidebar_label: Get started
+title: Getting started
+sidebar_label: Getting started
 sidebar_position: 2
-description: Get started testing with Vipps.
+description: Getting started testing with Vipps.
 pagination_next: null
 pagination_prev: null
 ---
 
 
-# Get started
+# Getting started
 
 When the [_Merchant Agreement_ is approved and your product order is sent](./apply_for_services.md),
 you will receive an email with credentials for accessing the
