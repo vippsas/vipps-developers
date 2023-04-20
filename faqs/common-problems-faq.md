@@ -19,23 +19,12 @@ in the eCom API FAQs.
 
 ### High success rate for direct integrations
 
-**Please note:** We have extremely high success rate (low drop-off) for direct integration:
-Almost every user that selects to pay with Vipps completes the payment. The
-success rate is much higher than when using a payment card directly.
+**Please note:** We have extremely high success rate (low drop-off) for direct integration
+success rate is much higher than when using a payment card directly. 
 
-When comparing drop-off rates: Remember to compare drop-off data for when the
-user _selects_ payment method, do not compare Vipps to numbers for when the
-user has selected card payment and already has manually entered the card number, etc.:
-
-* Drop-off data for Vipps: Measure the success rate after the user has selected Vipps.
-* Drop-off rate for cards: Measure the success rate after the user has selected card,
-  but from _before_ the user has to enter the card details.
-
-The success rate for PSP integrations is not quite as high.
 See:
-[Direct integration and PSP integration](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics/direct-vs-psp)
-and
-[Benefits of direct integration](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics/direct-vs-psp#benefits-of-direct-integration).
+* [Extremely high success rate of direct integrations](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics/direct-vs-psp/#extremely-high-success-rate-of-direct-integrations).
+* [Benefits of direct integration](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics/direct-vs-psp#benefits-of-direct-integration).
 
 ### Common reasons why payments are not completed
 
