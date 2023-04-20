@@ -13,7 +13,6 @@ There are many resources available to developers who want to integrate with Vipp
 
 * [API Dashboard](api-dashboard.md)
 * [Demo store](demo-store.md)
-* [Design guidelines](design-guidelines.md)
+* [Status pages](status-pages.md)
 * [Vipps portal](portal.md)
 * [Vipps servers](servers.md)
-* [Status pages](status-pages.md)
