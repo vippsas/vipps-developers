@@ -1,8 +1,6 @@
 <!-- START_METADATA
 ---
-title: Contact us
-sidebar_label: Contact us
-sidebar_position: 110
+sidebar_position: 210
 pagination_next: null
 pagination_prev: null
 ---

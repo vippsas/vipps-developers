@@ -2,7 +2,7 @@
 ---
 draft: true
 title: Contributing
-sidebar_position: 99
+sidebar_position: 199
 pagination_next: null
 pagination_prev: null
 ---
