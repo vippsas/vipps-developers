@@ -1,7 +1,7 @@
 ---
 title: Technical newsletter for developers 2020-12
 sidebar_label: 2020-12
-sidebar_position: 76
+sidebar_position: 276
 pagination_next: null
 pagination_prev: null
 ---
@@ -34,9 +34,9 @@ To do this we have been required to introduce a new version of our Vipps login A
 ## Vipps HTTP Headers ℹ️
 
 We recommend using the following _optional_ HTTP headers for all requests to the
-[Vipps eCom API](https://developer.vippsmobilepay.com/docs/APIs/ecom-api)
+[Vipps eCom API](/docs/APIs/ecom-api)
 and the
-[Vipps Recurring API](https://developer.vippsmobilepay.com/docs/APIs/recurring-api).
+[Vipps Recurring API](/docs/APIs/recurring-api).
 
 | Header                        | Description                                  | Example value        |
 | ----------------------------- | -------------------------------------------- | -------------------- |
@@ -94,7 +94,7 @@ Vipps development. Email integration@vipps.no with a list of
 email addresses to invite, with the same people on CC. We fix the rest.
 
 This does, unfortunately, not apply to customers using one of our
-[plugins](https://developer.vippsmobilepay.com/docs/vipps-plugins), or
+[plugins](/docs/vipps-plugins), or
 customers using Vipps through a partner.
 
 ## Do you want a technical workshop? 🛠
@@ -104,7 +104,7 @@ Vipps development. Email integration@vipps.no with a list of
 email addresses to invite, with the same people on CC. We fix the rest.
 
 This does, unfortunately, not apply to customers using one of our
-[plugins](https://developer.vippsmobilepay.com/docs/vipps-plugins), or
+[plugins](/docs/vipps-plugins), or
 customers using Vipps through a partner.
 
 ## Reminders
@@ -125,15 +125,15 @@ Our API lifecycle policy is
 ### How to get help quickly
 
 Please see
-[this page](https://developer.vippsmobilepay.com/docs/vipps-developers/contact).
+[this page](/docs/vipps-developers/contact).
 
 ### Newsletter archive
 
-Please see: [newsletters](https://developer.vippsmobilepay.com/docs/vipps-developers/newsletters)
+Please see: [newsletters](/docs/vipps-developers/newsletters)
 
 ## Questions or comments?
 
 We're always happy to help with code or other questions you might have!
 Please create [GitHub issues or pull requests](https://github.com/vippsas)
 for the relevant API,
-or [contact us](https://developer.vippsmobilepay.com/docs/vipps-developers/contact).
+or [contact us](/docs/vipps-developers/contact).

@@ -1,7 +1,7 @@
 ---
 title: Technical newsletter for developers 2022-01
 sidebar_label: 2022-01
-sidebar_position: 73
+sidebar_position: 273
 pagination_next: null
 pagination_prev: null
 ---
@@ -29,7 +29,7 @@ Please:
 * Contact us if there is anything we can help with
 
 One example: Far too many calls to
-[`POST:/ecomm/v2/payments`](https://developer.vippsmobilepay.com/api/ecom#tag/Vipps-eCom-API/operation/initiatePaymentV3UsingPOST)
+[`POST:/ecomm/v2/payments`](/api/ecom#tag/Vipps-eCom-API/operation/initiatePaymentV3UsingPOST)
 use an incorrectly formatted phone number.
 The effect is that the user's phone number is not correctly pre-filled on
 the [Vipps landing page](../common-topics/vipps-landing-page.md).
@@ -68,13 +68,13 @@ from the `due` date until the charge has succeeded, or until the
 `retryDays` have passed without a successful charge.
 The final status will be `CHARGED` or `FAILED`.
 See the
-[Recurring API documentation](https://developer.vippsmobilepay.com/docs/APIs/recurring-api)
+[Recurring API documentation](/docs/APIs/recurring-api)
 for more details.
 
 We are also working on providing an event log for each `chargeId`, so merchants
 can get _some_ information, especially if a charge ends as `FAILED`.
 You can "star" the
-[Vipps Recurring API repo](https://developer.vippsmobilepay.com/docs/APIs/recurring-api)
+[Vipps Recurring API repo](/docs/APIs/recurring-api)
 and subscribe to this newsletter to get updates.
 
 ## Vipps Login directly from phone number and QR code
@@ -96,9 +96,9 @@ user's phone number, and by users scanning a QR code.
 
 See:
 
-* [Vipps Login from phone number API: How It Works](https://developer.vippsmobilepay.com/docs/APIs/login-api/how-it-works/vipps-login-from-phone-number-api-howitworks)
+* [Vipps Login from phone number API: How It Works](/docs/APIs/login-api/how-it-works/vipps-login-from-phone-number-api-howitworks)
 * Vipps Login from QR-code API: How It Works (no longer available)
-* [Vipps Login API](https://developer.vippsmobilepay.com/docs/APIs/login-api)
+* [Vipps Login API](/docs/APIs/login-api)
 
 ## Deprecation of the Vipps Signup API
 
@@ -106,7 +106,7 @@ The old API that a few partners still use to sign up new merchants will
 be phased out. See
 [Deprecation of the Vipps Signup API](https://github.com/vippsas/vipps-signup-api/blob/master/vipps-signup-api-deprecation.md)
 and
-[Vipps Partners](https://developer.vippsmobilepay.com/docs/vipps-partner).
+[Vipps Partners](/docs/vipps-partner).
 
 ## Reminders
 
@@ -147,7 +147,7 @@ These Vipps solutions are extra relevant (again):
 * Use
   [Vipps Logg inn](https://vipps.no/produkter-og-tjenester/privat/logg-inn-med-vipps/logg-inn-med-vipps/)
   and the
-  [Vipps Login API](https://developer.vippsmobilepay.com/docs/APIs/login-api)
+  [Vipps Login API](/docs/APIs/login-api)
   to register visitors - it's free.
 * [Use Userinfo to register visitors when they pay](#use-userinfo-to-register-visitors-when-they-pay)
   as an easy-to-use step in a normal Vipps payment.
@@ -166,10 +166,10 @@ do not notice that they select an incorrect/old/outdated address.
 Using the explicit flow is simple: Just specify
 `"useExplicitCheckoutFlow": true`
 in
-[`POST:/ecomm/v2/payments`](https://developer.vippsmobilepay.com/api/ecom#tag/Vipps-eCom-API/operation/initiatePaymentV3UsingPOST).
+[`POST:/ecomm/v2/payments`](/api/ecom#tag/Vipps-eCom-API/operation/initiatePaymentV3UsingPOST).
 
 See
-[Old and new express checkout flow](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#old-and-new-express-checkout-flow)
+[Old and new express checkout flow](/docs/APIs/ecom-api/vipps-ecom-api#old-and-new-express-checkout-flow)
 for more details.
 
 ### Use Userinfo to register visitors when they pay
@@ -179,14 +179,14 @@ phone number, name, email address, postal address, birthdate, national identity 
 The user must of course consent to sharing the information.
 
 See
-[Userinfo for eCom](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#userinfo)
+[Userinfo for eCom](/docs/APIs/ecom-api/vipps-ecom-api#userinfo)
 and
-[Userinfo for Recurring](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/vipps-recurring-api#userinfo).
+[Userinfo for Recurring](/docs/APIs/recurring-api/vipps-recurring-api#userinfo).
 
 ### "Click and collect" recommendations
 
 For "click and collect" we recommend to use
-[`staticShippingDetails`](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#shipping-and-static-shipping-details)
+[`staticShippingDetails`](/docs/APIs/ecom-api/vipps-ecom-api#shipping-and-static-shipping-details)
 (to avoid the extra HTTP roundtrip where Vipps asks the merchant
 for the shipping options and prices) and also to set the default
 shipping method to "Click and collect".
@@ -194,7 +194,7 @@ shipping method to "Click and collect".
 This will significantly speed up the payment process for customers.
 
 This is done in the
-[`POST:​/ecomm​/v2​/payments`](https://developer.vippsmobilepay.com/api/ecom#tag/Vipps-eCom-API/operation/initiatePaymentV3UsingPOST)
+[`POST:​/ecomm​/v2​/payments`](/api/ecom#tag/Vipps-eCom-API/operation/initiatePaymentV3UsingPOST)
 call by including:
 
 ```json
@@ -212,11 +212,11 @@ call by including:
 ## Newsletter archive
 
 All the previous newsletters are in the
-[newsletter archive](https://developer.vippsmobilepay.com/docs/vipps-developers/newsletters).
+[newsletter archive](/docs/vipps-developers/newsletters).
 
 ## Questions or comments?
 
 We're always happy to help with code or other questions you might have!
 Please create [GitHub issues or pull requests](https://github.com/vippsas)
 for the relevant API,
-or [contact us](https://developer.vippsmobilepay.com/docs/vipps-developers/contact).
+or [contact us](/docs/vipps-developers/contact).

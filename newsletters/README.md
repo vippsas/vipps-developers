@@ -1,6 +1,5 @@
 ---
-title: Technical newsletter for developers
-sidebar_label: Newsletters
+sidebar_label: Overview
 sidebar_position: 195
 hide_table_of_contents: true
 pagination_next: null
@@ -13,7 +12,7 @@ pagination_prev: null
 
 
 All Vipps customers that have
-[API](https://developer.vippsmobilepay.com/docs/APIs)
+[API](/docs/APIs)
 access receive this technical newsletter,
 with important information about the APIs.
 It is not considered marketing.

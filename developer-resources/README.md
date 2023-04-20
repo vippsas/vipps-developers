@@ -1,6 +1,6 @@
 ---
 sidebar_position: 40
-sidebar_title: "Developer resources"
+sidebar_label: Overview
 hide_table_of_contents: true
 pagination_next: null
 pagination_prev: null

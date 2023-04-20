@@ -53,10 +53,10 @@ Functionality not available in MT (a non-exhaustive list):
 - Some quirks around email verification, see [Email address](#email-address).
 - Partner functionality, like the relationship between a MSN and a partner,
   and the use of
-  [partner keys](https://developer.vippsmobilepay.com/docs/vipps-partner/partner-keys),
+  [partner keys](/docs/vipps-partner/partner-keys),
   does not work as in the production environment. In general, partner
   functionality is not available. See
-  [Partners](https://developer.vippsmobilepay.com/docs/vipps-partner).
+  [Partners](/docs/vipps-partner).
 
 To test functionality that is not available in MT, you will have to use the
 production environment in a controlled manner.
@@ -84,17 +84,17 @@ for a Vipps product (that has an API), and the details can be found on the
 
 See:
 
-- [Common topics: Getting the API keys](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics/api-keys#getting-the-api-keys)
-- [How to create a test sales unit](https://developer.vippsmobilepay.com/docs/vipps-developers/developer-resources/portal#how-to-create-a-test-sales-unit)
+- [Common topics: Getting the API keys](/docs/vipps-developers/common-topics/api-keys#getting-the-api-keys)
+- [How to create a test sales unit](/docs/vipps-developers/developer-resources/portal#how-to-create-a-test-sales-unit)
 
 ### Partners
 
 Partners can get access to the test environment by ordering
 "Vipps Logg inn" (the
-[Vipps Login API](https://developer.vippsmobilepay.com/docs/APIs/login-api)).
+[Vipps Login API](/docs/APIs/login-api)).
 
 See:
-[How to get access to portal.vipps.no](https://developer.vippsmobilepay.com/docs/vipps-partner#how-to-get-access-to-portalvippsno).
+[How to get access to portal.vipps.no](/docs/vipps-partner#how-to-get-access-to-portalvippsno).
 
 ## Test server
 
@@ -169,7 +169,7 @@ _Profile_ -> _Personal information_ -> _Email_
 section in the app.
 
 **Please note:** In the test environment verification of emails can only be triggered in a
-[Vipps Login](https://developer.vippsmobilepay.com/docs/APIs/login-api)
+[Vipps Login](/docs/APIs/login-api)
 flow (if the merchant requests the `email` scope), or from clicking “send email”
 from the email address section under profile page (after updating the email
 address you will need to close and reopen the app for this option to be
@@ -200,7 +200,7 @@ Use these amounts to always get the same result.
 | 2.02   | SCA required              |
 
 **Please note:** The
-[force approve](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#testing)
+[force approve](/docs/APIs/ecom-api/vipps-ecom-api#testing)
 endpoint does not support this functionality.
 
 ## Vipps test apps

@@ -1,7 +1,7 @@
 ---
 title: "FAQ: Common errors"
 sidebar_label: Common errors
-sidebar_position: 10
+sidebar_position: 110
 pagination_next: null
 pagination_prev: null
 ---
@@ -10,7 +10,7 @@ pagination_prev: null
 # FAQ: Common errors
 
 See also
-[Common errors](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api-faq#common-errors)
+[Common errors](/docs/APIs/ecom-api/vipps-ecom-api-faq#common-errors)
 in the eCom API FAQs.
 
 
@@ -49,7 +49,7 @@ Check that the access token is in the correct format and that it has not expired
 Please follow these steps to make sure everything is correct:
 
 1. Make sure that you are using a valid access token. See
-   [Get an access token](https://developer.vippsmobilepay.com/docs/APIs/access-token-api#get-an-access-token)
+   [Get an access token](/docs/APIs/access-token-api#get-an-access-token)
    for details, how long it is valid, etc.
    Remember to use `Authorization: Bearer <access token goes here>`.
    If you do not include `Bearer`, you may get a `HTTP 401 Unauthorized` error.
@@ -76,10 +76,10 @@ Please follow these steps to make sure everything is correct:
 6. Check both the HTTP response header and the response body from our API for errors.
    For most errors the body contains an explanation of what went wrong.
    See:
-   [Errors](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#errors).
+   [Errors](/docs/APIs/ecom-api/vipps-ecom-api#errors).
 7. If you are a partner, and you are using partner keys: Double check everything
    described here:
-   [Partner keys](https://developer.vippsmobilepay.com/docs/vipps-partner/partner-keys).
+   [Partner keys](/docs/vipps-partner/partner-keys).
    A common mistake is to mix `Merchant-Serial-Number` (used in the HTTP header)
    and `merchantSerialNumber` (used in the request body).
 
@@ -96,7 +96,7 @@ requests and responses, and to check that the API keys are correct.
 
 You should also ensure you have access to the correct API.
 See:
-[API products](https://developer.vippsmobilepay.com/docs/APIs).
+[API products](/docs/APIs).
 
 If you are absolutely, completely 100 % sure that you have done everything
 correctly, and it _still_ doesn't work, you can regenerate the API keys on
@@ -112,7 +112,7 @@ source code asking us to fix it for you.
 ## Why do I get `HTTP 403 Forbidden`?
 
 Merchants that only have access to the
-[Vipps Login API](https://developer.vippsmobilepay.com/docs/APIs/login-api)
+[Vipps Login API](/docs/APIs/login-api)
 and attempt to use the Vipps eCom API will get this error, with
 `Merchant Not Allowed for Ecommerce Payment` in the body.
 
@@ -122,7 +122,7 @@ If you need access to the Vipps eCom API, you can apply for this on
 [portal.vipps.no](https://portal.vipps.no).
 
 Partners can get this error if they use
-[Partner keys](https://developer.vippsmobilepay.com/docs/vipps-partner/partner-keys),
+[Partner keys](/docs/vipps-partner/partner-keys),
 but do not send the
 `Merchant-Serial-Number` header.
 
@@ -134,8 +134,8 @@ designed to stop obviously incorrect use.
 
 See:
 
-* [eCom API Rate limiting](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#rate-limiting)
-* [Recurring API Rate limiting](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/vipps-recurring-api#rate-limiting)
+* [eCom API Rate limiting](/docs/APIs/ecom-api/vipps-ecom-api#rate-limiting)
+* [Recurring API Rate limiting](/docs/APIs/recurring-api/vipps-recurring-api#rate-limiting)
 
 ## Why do I get `HTTP 404 Not Found`?
 
@@ -181,7 +181,7 @@ a `HTTP 500 Server Error`. Retry the call, and see if it helps.
 
 See:
 
-* [Errors](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#errors).
+* [Errors](/docs/APIs/ecom-api/vipps-ecom-api#errors).
 * [Status page](../developer-resources/status-pages.md).
 
 ## Why do I get `errorCode 35 "Requested Order not found"`?
@@ -196,7 +196,7 @@ The `orderId`s is not globally unique, they are only unique per MSN.
 See:
 
 * [Why do I get `HTTP 404 Not Found`?](#why-do-i-get-http-404-not-found)
-* [Error codes](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#error-codes).
+* [Error codes](/docs/APIs/ecom-api/vipps-ecom-api#error-codes).
 
 ## Why do I get `errorCode 37 "Merchant not available or deactivated or blocked"`?
 
@@ -223,7 +223,7 @@ _very long_ time. Please
 and we will reactivate the merchant.
 
 Partners that use
-[partner keys](https://developer.vippsmobilepay.com/docs/vipps-partner/partner-keys)
+[partner keys](/docs/vipps-partner/partner-keys)
 can also get this error if the partner itself is deactivated, even though
 the sales unit (that it is acting on behalf of) is active.
 
@@ -231,7 +231,7 @@ the sales unit (that it is acting on behalf of) is active.
 Merchants can also create new sales units in the test environment on
 [portal.vipps.no](https://portal.vipps.no).
 
-See: [Error codes](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#error-codes).
+See: [Error codes](/docs/APIs/ecom-api/vipps-ecom-api#error-codes).
 
 ## Why do I get "Merchant Not Allowed for Ecommerce Payment"?
 
@@ -259,7 +259,7 @@ The most common reasons are:
   instead of responding with `HTTP 400 Bad Request`.
   In cases where the phone number still fails, the error will be `errorCode: 81`.
   See the API specification:
-  [`POST:/ecomm/v2/payments`](https://developer.vippsmobilepay.com/api/ecom#tag/Vipps-eCom-API/operation/initiatePaymentV3UsingPOST).
+  [`POST:/ecomm/v2/payments`](/api/ecom#tag/Vipps-eCom-API/operation/initiatePaymentV3UsingPOST).
 * The user is under 15 years old and cannot pay businesses.
 * The phone number is not for a Vipps user.
 
@@ -283,10 +283,10 @@ See:
 This can happen when:
 
 * A partner tries to use
-  [Partner keys](https://developer.vippsmobilepay.com/docs/vipps-partner/partner-keys)
+  [Partner keys](/docs/vipps-partner/partner-keys)
   for a sales unit that is not registered with them as partner.
 * API keys for the test environment is used in the production environment, or opposite.
-* [Partner keys](https://developer.vippsmobilepay.com/docs/vipps-partner/partner-keys)
+* [Partner keys](/docs/vipps-partner/partner-keys)
   are used, but the `Merchant-Serial-Number` HTTP header is not used correctly.
 
 ## Why do I get `Invalid MSN: 654321. This MSN is not valid for the provided supermerchant ID.`?
@@ -295,7 +295,7 @@ This can happen when the partner making the API request is using:
 
 * API keys for the test environment in the production environment, or opposite
 * An MSN for the test environment in the production environment, or opposite
-* [Partner keys](https://developer.vippsmobilepay.com/docs/vipps-partner/partner-keys)
+* [Partner keys](/docs/vipps-partner/partner-keys)
   without including the required `Merchant-Serial-Number` header
 
 If the error message is `Invalid MSN: This MSN is not valid for the provided supermerchant ID.`,

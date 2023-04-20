@@ -1,7 +1,7 @@
 ---
 title: Technical newsletter for developers 2020-10
 sidebar_label: 2020-10
-sidebar_position: 77
+sidebar_position: 277
 pagination_next: null
 pagination_prev: null
 ---
@@ -14,9 +14,9 @@ This newsletter was sent in October 2020.
 ## Userinfo
 
 Vipps now offers the possibility for merchants to ask for user profile details as part of the payment flow in the
-[Vipps eCom API v2](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#userinfo)
+[Vipps eCom API v2](/docs/APIs/ecom-api/vipps-ecom-api#userinfo)
 and
-[Vipps Recurring API](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/vipps-recurring-api#userinfo).
+[Vipps Recurring API](/docs/APIs/recurring-api/vipps-recurring-api#userinfo).
 
 This is done by adding a `scope` parameter to the initiate calls:
 
@@ -29,11 +29,11 @@ This is done by adding a `scope` parameter to the initiate calls:
 - accountNumbers
 
 The userinfo endpoint is shared with
-[Vipps Login](https://developer.vippsmobilepay.com/docs/APIs/login-api)
+[Vipps Login](/docs/APIs/login-api)
 and the merchant needs to have
 activated Vipps Login on their account to use this feature. Information on how
 to do this can be found
-[here](https://developer.vippsmobilepay.com/docs/APIs/login-api/vipps-login-api-faq#how-can-i-activate-and-set-up-vipps-login).
+[here](/docs/APIs/login-api/vipps-login-api-faq#how-can-i-activate-and-set-up-vipps-login).
 Using the Vipps Login service itself is optional.
 
 ### Customer registration
@@ -47,12 +47,12 @@ the Covid-19 pandemic. See our information in Norwegian:
 There are now 12 Vipps plugins for various ecommerce platforms:
 WooCommerce, WordPress, Magento, Episerver, Drupal, Shopify, Craft and more.
 
-All [plugins](https://developer.vippsmobilepay.com/docs/vipps-plugins) are open source. See the complete list.
+All [plugins](/docs/vipps-plugins) are open source. See the complete list.
 
 ## PSP v3
 
 Vipps is launching the
-[PSP API v3](https://developer.vippsmobilepay.com/docs/APIs/psp-api)
+[PSP API v3](/docs/APIs/psp-api)
 to coincide with our migration of our users' cards from PAN to EMVco network
 tokens. This technological migration is Vipps' strategy for achieving delegated
 SCA once PSD2 comes into effect for card payments on January 1, 2021.
@@ -62,7 +62,7 @@ additional payment source format. There are also minor changes to naming of
 properties to bring the API in line with Vipps' API standards.
 
 Encrypted cards will still be sent for our users cards that have not yet been
-migrated. Please see our [migration guide](https://developer.vippsmobilepay.com/docs/APIs/psp-api/v2-deprecation).
+migrated. Please see our [migration guide](/docs/APIs/psp-api/v2-deprecation).
 
 ## Rate limiting
 
@@ -71,9 +71,9 @@ more robust and secure service. Most of these limits are only created to
 counteract unexpected and erratic behavior, and it's nothing you should notice
 under normal operation. More information about this is available in the
 documentation for
-[Vipps Recurring API](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/vipps-recurring-api#rate-limiting)
+[Vipps Recurring API](/docs/APIs/recurring-api/vipps-recurring-api#rate-limiting)
 and
-[Vipps eCom API](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#rate-limiting)
+[Vipps eCom API](/docs/APIs/ecom-api/vipps-ecom-api#rate-limiting)
 
 ## Deprecations
 
@@ -82,7 +82,7 @@ and
 The `/details` endpoint in the Vipps eCom API v2 offers more than the old
 and long deprecated `/status` endpoint. We still see some customers using
 the old endpoint and strongly recommend updating to the
-[current one](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#get-payment-details).
+[current one](/docs/APIs/ecom-api/vipps-ecom-api#get-payment-details).
 
 ### Deprecation of Vipps for Magento 1
 
@@ -108,15 +108,15 @@ Our API lifecycle policy is
 ### How to get help quickly
 
 Please see
-[this page](https://developer.vippsmobilepay.com/docs/vipps-developers/contact).
+[this page](/docs/vipps-developers/contact).
 
 ### Newsletter archive
 
-Please see: [newsletters](https://developer.vippsmobilepay.com/docs/vipps-developers/newsletters)
+Please see: [newsletters](/docs/vipps-developers/newsletters)
 
 ## Questions or comments?
 
 We're always happy to help with code or other questions you might have!
 Please create [GitHub issues or pull requests](https://github.com/vippsas)
 for the relevant API,
-or [contact us](https://developer.vippsmobilepay.com/docs/vipps-developers/contact).
+or [contact us](/docs/vipps-developers/contact).
