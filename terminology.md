@@ -55,10 +55,6 @@ END_METADATA -->
   instead of `orderId`. See the API specification for the requirements for
   this ID.
 
-* `orgno` - The organization number for a merchant. Nine digits.
-  For Norwegians, this can be used to retrieve information at
-  [Brønnøysundregistrene](https://www.brreg.no).
-
 * Partner - A partner is a company that represents several merchants by
   providing a platform, helping set up custom integrations, or developing
   our official plugins.
@@ -109,3 +105,42 @@ END_METADATA -->
 * `orgno` - The organization number for a merchant. Nine digits.
   For Norwegians, this can be used to retrieve information at
   [Brønnøysundregistrene](https://www.brreg.no).
+  
+## Danish terms
+
+* MitID - Software that certifies the identity of a person.
+
+* [Det Centrale Virksomhedsregister](https://datacvr.virk.dk/) - The official Danish
+  register of companies.
+
+* `orgno` - The organization number for a merchant. Also called CVR or VAT-number. 8 digits.
+  This can be used to retrieve information at
+  [Det Centrale Virksomhedsregister](https://datacvr.virk.dk/).
+  
+* [Finanstilsynet](https://www.finanstilsynet.dk/) - The Danish Financial Supervisory Authority that
+  supervises Danish financial companies.
+  
+* CPR nummer - Social Security Number (SSN). A 10-digit number that uniquely identifies
+  each Danish citizen. This is also called.
+  
+* Administrative CPR-number - A Danish identification number given to foreign persons who
+  do not have a Danish social security number (SSN), but have a need for
+  identification for the Danish authorities.
+  
+## Finnish terms
+
+* Finnish Trust Network (FTN) - Software that certifies the identity of a person.
+
+* [Yritys- ja yhteisötietojärjestelmä](https://ytj.fi/en/index.html) - The official Finnish
+  register of companies. 
+
+* `orgno` - The business ID for a merchant. Also called Y-tunnus (Yritys- ja yhteisötunnus) or VAT-number. 8 digits.
+  This can be used to retrieve information at
+  [YTJ](https://www.ytj.fi/en/index/businessid.html). 
+  
+* [Finanssivalvonta](https://www.finanssivalvonta.fi/en/) - Financial Supervisory Authority.
+   
+* Henkilötunnus - Social Security Number (SSN). A 10-digit number that uniquely identifies
+  each Finnish citizen.
+ 
+
