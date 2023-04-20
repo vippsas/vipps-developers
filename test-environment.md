@@ -240,9 +240,9 @@ You do _not_ need an invitation or an activation code.
    address used in the registration  (please double-check before asking for
    a new test phone number).
    Your normal Vipps user is not available in the test environment.
-5. On the "Verify your number" screen: Use PIN  `1234`.
-6. On the "Enter your code" screen: Use PIN `1234`.
-7. Enable FaceID (or TouchID) and confirm with PIN  `1234`.
+5. On the "Verify your number" screen: Use PIN  `1236`.
+6. On the "Enter your code" screen: Use PIN `1236`.
+7. Enable FaceID (or TouchID) and confirm with PIN  `1236`.
 8. Accept push notifications.
 
 You are now ready to use the iOS test app connected to the Vipps test environment.
@@ -265,9 +265,9 @@ You do _not_ need an invitation or an activation code.
    address used in the registration  (please double-check before asking for
    a new test phone number).
    Your normal Vipps user is not available in the test environment.
-5. On the "Verify your number" screen: Use PIN  `1234`.
-6. On the "Enter your code" screen: Use PIN `1234`.
-7. Enable touch ID and confirm with PIN  `1234`.
+5. On the "Verify your number" screen: Use PIN  `1236`.
+6. On the "Enter your code" screen: Use PIN `1236`.
+7. Enable touch ID and confirm with PIN  `1236`.
 8. Accept push notifications.
 
 You are now ready to use the Android test app connected to the Vipps test environment.
