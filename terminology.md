@@ -103,7 +103,7 @@ END_METADATA -->
   each Norwegian citizen. This is also called "Fødselsnummer".
 
 * `orgno` - The organization number for a merchant. Nine digits.
-  For Norwegians, this can be used to retrieve information at
+This can be used to retrieve information at
   [Brønnøysundregistrene](https://www.brreg.no).
   
 ## Danish terms
