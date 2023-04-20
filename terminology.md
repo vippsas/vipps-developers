@@ -108,7 +108,7 @@ END_METADATA -->
   
 ## Danish terms
 
-* MitID - Software that certifies the identity of a person.
+* [MitID](https://www.mitid.dk/en-gb/) - Software that certifies the identity of a person.
 
 * [Det Centrale Virksomhedsregister](https://datacvr.virk.dk/) - The official Danish
   register of companies.
