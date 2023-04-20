@@ -2,7 +2,7 @@
 ---
 title: Technical newsletter for developers
 sidebar_label: Newsletters
-sidebar_position: 95
+sidebar_position: 195
 hide_table_of_contents: true
 pagination_next: null
 pagination_prev: null

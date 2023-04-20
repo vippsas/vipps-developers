@@ -2,7 +2,7 @@
 ---
 title: About Vipps MobilePay
 sidebar_label: About us
-sidebar_position: 100
+sidebar_position: 200
 pagination_next: null
 pagination_prev: null
 ---
