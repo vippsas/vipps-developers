@@ -19,7 +19,7 @@ you will receive an email with credentials for accessing the
 * Merchant serial number
 * Credentials for logging into the Vipps test app
 
-To start testing in the test environment:
+## Start testing in the test environment
 
 1. Get your test keys.
 
@@ -40,18 +40,18 @@ To start testing in the test environment:
     We have several API-specific
     [quick start guides using Postman](quick-start-guides.md) to help you get started.
 
-To operate in the production environment:
+## Use the production environment
 
-1. When your product order is approved, you will get an email stating that you can
+When your product order is approved, you will get an email stating that you can
 get access to the API in the production environment.
 
-    Log in to
-    [portal.vipps.no](https://portal.vipps.no)
-    to get your production
-    [API keys](./common-topics/api-keys.md).
+Log in to
+[portal.vipps.no](https://portal.vipps.no)
+to get your production
+[API keys](./common-topics/api-keys.md).
 
-    Now, you can start making API requests to the production server
-    (e.g., create a payment request that goes to a real user's Vipps app).
+Now, you can start making API requests to the production server
+(e.g., create a payment request that goes to a real user's Vipps app).
 
 ## Implement best practices
 

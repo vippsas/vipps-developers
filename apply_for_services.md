@@ -1,13 +1,13 @@
 <!-- START_METADATA
 ---
-title: Applying for a Vipps service
+title: Apply for a Vipps service
 sidebar_position: 2
 pagination_next: null
 pagination_prev: null
 ---
 END_METADATA -->
 
-# Applying for Vipps services
+# Apply for Vipps services
 
 To apply for Vipps services, you need to have a Norwegian organization number
 and applications must be signed with Norwegian BankID.
