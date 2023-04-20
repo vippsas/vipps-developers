@@ -1,20 +1,14 @@
-<!-- START_METADATA
 ---
 title: Vipps portal
 sidebar_position: 40
 pagination_next: null
 pagination_prev: null
 ---
-END_METADATA -->
+
 
 # The Vipps portal
 
-<!-- START_COMMENT -->
 
-ℹ️ Please use the website:
-[Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/).
-
-<!-- END_COMMENT -->
 
 This page will guide you through the steps to finding API keys and creating test sales units
 on the [Vipps portal (portal.vipps.no)](https://portal.vipps.no).

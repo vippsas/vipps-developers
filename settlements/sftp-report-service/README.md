@@ -1,11 +1,10 @@
-<!-- START_METADATA
 ---
 title: SFTP Report Service
 hide_table_of_contents: true
 pagination_next: null
 pagination_prev: null
 ---
-END_METADATA -->
+
 
 # Vipps SFTP Report Service
 
@@ -18,28 +17,7 @@ by using SFTP as part of an integration.
 
 See the [Settlements](../README.md) overview.
 
-<!-- START_COMMENT -->
 
-ℹ️ Please use the website:
-[Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/).
-
-## Table of contents
-
-* [Reports](#reports)
-  * [Availability](#availability)
-* [SFTP Service](#sftp-service)
-  * [Security](#security)
-  * [SFTP users](#sftp-users)
-    * [Generate a public SSH key](#generate-a-public-ssh-key)
-    * [Add the SSH key on portal.vipps.no](#add-the-ssh-key-on-portalvippsno)
-  * [Partner access](#partner-access)
-* [How to use it](#how-to-use-it)
-  * [Important information](#important-information)
-  * [Connecting to the SFTP server](#connecting-to-the-sftp-server)
-  * [Directory structure](#directory-structure)
-  * [Example SFTP session](#example-sftp-session)
-
-<!-- END_COMMENT -->
 
 # Reports
 

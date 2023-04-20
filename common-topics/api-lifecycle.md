@@ -1,19 +1,13 @@
-<!-- START_METADATA
 ---
 title: API Lifecycle
 pagination_next: null
 pagination_prev: null
 ---
-END_METADATA -->
+
 
 # Vipps API Lifecycle
 
-<!-- START_COMMENT -->
 
-ℹ️ Please use the website:
-[Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/).
-
-<!-- END_COMMENT -->
 
 ## Versioning
 

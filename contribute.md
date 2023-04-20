@@ -1,4 +1,3 @@
-<!-- START_METADATA
 ---
 draft: true
 title: Contributing
@@ -6,16 +5,11 @@ sidebar_position: 199
 pagination_next: null
 pagination_prev: null
 ---
-END_METADATA -->
+
 
 # Contributing
 
-<!-- START_COMMENT -->
 
-ℹ️ Please use the website:
-[Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/).
-
-<!-- END_COMMENT -->
 
 If you want to contribute: Great! No issue or pull request is too small! 👍
 

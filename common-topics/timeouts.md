@@ -1,10 +1,9 @@
-<!-- START_METADATA
 ---
 sidebar_label: Timeouts
 pagination_next: null
 pagination_prev: null
 ---
-END_METADATA -->
+
 
 # Timeouts
 

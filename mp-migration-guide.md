@@ -1,4 +1,3 @@
-<!-- START_METADATA
 ---
 title: MobilePay migration guide
 sidebar_label: Migration guide
@@ -7,7 +6,7 @@ description: Looking for a hassle-free way to migrate to Vipps MobilePay? Our co
 pagination_next: null
 pagination_prev: null
 ---
-END_METADATA -->
+
 
 # Migration guide
 

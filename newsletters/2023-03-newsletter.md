@@ -1,4 +1,3 @@
-<!-- START_METADATA
 ---
 title: Technical newsletter for developers 2023-03
 sidebar_label: 2023-03
@@ -6,30 +5,12 @@ sidebar_position: 66
 pagination_next: null
 pagination_prev: null
 ---
-END_METADATA -->
+
 
 # Technical newsletter for developers 2023-03
 
 This newsletter was sent in March 2023.
 
-<!-- START_COMMENT -->
-
-## Table of Contents
-
-* [New to the technical newsletter?](#new-to-the-technical-newsletter)
-* [ePayment API](#epayment-api)
-* [Webhooks API](#webhooks-api)
-* [Recurring API: Look up agreements by charge](#recurring-api-look-up-agreements-by-charge)
-* [eCom API and Express Checkout](#ecom-api-and-express-checkout)
-* [Improved shipping options in Vipps Checkout](#improved-shipping-options-in-vipps-checkout)
-* [More Solutions and best practices](#more-solutions-and-best-practices)
-* [Report API](#report-api)
-* [Change of IP addresses](#change-of-ip-addresses)
-* [Reminders](#reminders)
-  * [Please check your API calls for errors](#please-check-your-api-calls-for-errors)
-* [Questions or comments?](#questions-or-comments)
-
-<!-- END_COMMENT -->
 
 ## New to the technical newsletter?
 

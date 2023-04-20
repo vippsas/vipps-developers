@@ -1,39 +1,13 @@
-<!-- START_METADATA
 ---
 title: Settlements
 sidebar_position: 85
 pagination_next: null
 pagination_prev: null
 ---
-END_METADATA -->
+
 
 # Vipps Settlements
 
-<!-- START_COMMENT -->
-
-ℹ️ Please use the website:
-[Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/).
-
-## Table of contents
-
-* [Settlement flow](#settlement-flow)
-  * [Reconciliation](#reconciliation)
-* [Frequency](#frequency)
-* [Net and gross settlements](#net-and-gross-settlements)
-* [Settlement report formats](#settlement-report-formats)
-  * [Additional info for recurring payments](#additional-info-for-recurring-payments)
-  * [GDPR](#gdpr)
-* [How to get settlement files](#how-to-get-settlement-files)
-  * [portal.vipps.no](#portalvippsno)
-  * [Email](#email)
-  * [SFTP](#sftp)
-  * [API](#api)
-* [Availability](#availability)
-  * [Daily reports](#daily-reports)
-  * [Weekly reports](#weekly-reports)
-  * [Monthly reports](#monthly-reports)
-
-<!-- END_COMMENT -->
 
 ## Settlement flow
 

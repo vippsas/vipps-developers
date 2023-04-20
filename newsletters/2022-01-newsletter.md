@@ -1,4 +1,3 @@
-<!-- START_METADATA
 ---
 title: Technical newsletter for developers 2022-01
 sidebar_label: 2022-01
@@ -6,31 +5,13 @@ sidebar_position: 73
 pagination_next: null
 pagination_prev: null
 ---
-END_METADATA -->
+
 
 # Technical newsletter for developers 2022-01
 
 This newsletter was sent in January 2022.
 
-<!-- START_COMMENT -->
 
-## Table of Contents
-
-* [Please check your eCom API calls](#please-check-your-ecom-api-calls)
-* [Recurring API: The "PROCESSING" status](#recurring-api-the-processing-status)
-* [Vipps Login directly from phone number and QR code](#vipps-login-directly-from-phone-number-and-qr-code)
-* [Deprecation of the Vipps Signup API](#deprecation-of-the-vipps-signup-api)
-* [Reminders](#reminders)
-  * [Use the API Dashboard to find problems with your integration](#use-the-api-dashboard-to-find-problems-with-your-integration)
-  * [Use Status page to get information about incidents](#use-status-page-to-get-information-about-incidents)
-  * [Omikron tips](#omikron-tips)
-  * [Vipps Hurtigkasse: Use the explicit flow](#vipps-hurtigkasse-use-the-explicit-flow)
-  * [Use Userinfo to register visitors when they pay](#use-userinfo-to-register-visitors-when-they-pay)
-  * ["Click and collect" recommendations](#click-and-collect-recommendations)
-* [Newsletter archive](#newsletter-archive)
-* [Questions or comments?](#questions-or-comments)
-
-<!-- END_COMMENT -->
 
 ## Please check your eCom API calls
 

@@ -1,4 +1,3 @@
-<!-- START_METADATA
 ---
 title: Getting started
 sidebar_label: Getting started
@@ -7,9 +6,16 @@ description: Getting started
 pagination_next: null
 pagination_prev: null
 ---
-END_METADATA -->
+
 
 # Getting started
+
+<!-- START_COMMENT -->
+
+ℹ️ Please use the website:
+[Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/).
+
+<!-- END_COMMENT -->
 
 When the [_Merchant Agreement_ is approved and your product order is sent](./apply_for_services.md),
 you will receive an email with credentials for accessing the

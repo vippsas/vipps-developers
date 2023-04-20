@@ -1,4 +1,3 @@
-<!-- START_METADATA
 ---
 title: "FAQ: Other questions"
 sidebar_label: Other questions
@@ -6,16 +5,11 @@ sidebar_position: 200
 pagination_next: null
 pagination_prev: null
 ---
-END_METADATA -->
+
 
 # FAQ: Other questions
 
-<!-- START_COMMENT -->
 
-ℹ️ Please use the website:
-[Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/).
-
-<!-- END_COMMENT -->
 
 ## Where do I find the `client_id` and `client_secret`?
 

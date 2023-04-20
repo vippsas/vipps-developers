@@ -1,10 +1,9 @@
-<!-- START_METADATA
 ---
 title: API keys
 pagination_next: null
 pagination_prev: null
 ---
-END_METADATA -->
+
 
 # API keys
 

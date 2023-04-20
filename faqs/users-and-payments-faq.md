@@ -1,4 +1,3 @@
-<!-- START_METADATA
 ---
 title: "FAQ: Users and payments"
 sidebar_label: Users and payments
@@ -6,16 +5,11 @@ sidebar_position: 80
 pagination_next: null
 pagination_prev: null
 ---
-END_METADATA -->
+
 
 # FAQ: Users and payments
 
-<!-- START_COMMENT -->
 
-ℹ️ Please use the website:
-[Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/).
-
-<!-- END_COMMENT -->
 
 ## Is there an API for checking if a number belongs to a Vipps user?
 

@@ -1,4 +1,3 @@
-<!-- START_METADATA
 ---
 title: "FAQ: Point of Sale integration"
 sidebar_label: POS integrations
@@ -6,16 +5,11 @@ sidebar_position: 30
 pagination_next: null
 pagination_prev: null
 ---
-END_METADATA -->
+
 
 # FAQ: Point of Sale integration
 
-<!-- START_COMMENT -->
 
-ℹ️ Please use the website:
-[Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/).
-
-<!-- END_COMMENT -->
 
 Point Of Sale (POS) is similar to a "cash register".
 

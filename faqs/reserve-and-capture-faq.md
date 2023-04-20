@@ -1,4 +1,3 @@
-<!-- START_METADATA
 ---
 title: "FAQ: Reservations and capture"
 sidebar_label: Reservations and capture
@@ -6,16 +5,11 @@ sidebar_position: 70
 pagination_next: null
 pagination_prev: null
 ---
-END_METADATA -->
+
 
 # FAQ: Reservations and capture
 
-<!-- START_COMMENT -->
 
-ℹ️ Please use the website:
-[Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/).
-
-<!-- END_COMMENT -->
 
 ## For how long is a payment reserved?
 
