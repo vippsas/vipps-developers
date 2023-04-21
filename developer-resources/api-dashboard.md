@@ -28,9 +28,10 @@ and is an easy way to see if you are using the Vipps APIs correctly.
 It only gives a high-level overview, so you must check the actual API
 responses for more details about the errors.
 
-For every error shown on the API dashboard you have already received a
-detailed error message, as described on
-[Errors](/docs/vipps-developers/common-topics/errors).
+**Important:** For every API request that has failed, and for every error shown on the API dashboard,
+you have already received a detailed error message, as described on
+[Errors](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics/errors).
+We do not have the capacity to manually check our logs and re-send the same error details.
 
 From the
 [eCom API checklist](/docs/APIs/ecom-api/vipps-ecom-api-checklist):
@@ -38,8 +39,7 @@ From the
 > Make sure to log and handle all errors. All integrations should to display
 > errors in a way that the user can see and understand them.
 
-It is your responsibility to check that you are using the Vipps APIs correctly,
-and we do not have the capacity to manually check our logs for errors on your behalf.
+It is your responsibility to check that you are using the Vipps APIs correctly.
 
 **Please note:**
 
