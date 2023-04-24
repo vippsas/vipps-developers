@@ -52,7 +52,7 @@ Once you have installed Postman, you can import an environment from one our APIs
 2. Select the file(s) and click *Open*.
 
 Use the
-[Global Postman environment](tools/vipps-api-global-postman-environment.json)
+[Global Postman environment](/tools/vipps-api-global-postman-environment.json)
 with all the APIs.
 
 ### Update the environment values

@@ -88,10 +88,10 @@ Settlement reports are provided in these formats:
 
 | Format | Example            | Specification      |
 | ------ | ------------------ | ------------------ |
-| XML    | [Example-Gross.xml](xml/Example-Gross.xml), [Example-Net.xml](xml/Example-Net.xml) | [SettlementReport-3.0.xsd](xml/SettlementReport-3.0.xsd) |
-| CSV    | [settlement-report.csv](csv/settlement-report.csv) | - |
-| PDF    | [PDF](pdf/Vipps-oppgjørsrapport-16655-2018-09-23.pdf) | - |
-| XLSX   | [XLSX](xlsx/vipps-settlement-example.xlsx) | - |
+| XML    | [Example-Gross.xml](/downloads/settlements/xml/Example-Gross.xml), [Example-Net.xml](/downloads/settlements/xml/Example-Net.xml) | [SettlementReport-3.0.xsd](/downloads/settlements/xml/SettlementReport-3.0.xsd) |
+| CSV    | [settlement-report.csv](/downloads/settlements/csv/settlement-report.csv) | - |
+| PDF    | [PDF](/downloads/settlements/pdf/Vipps-oppgjørsrapport-16655-2018-09-23.pdf) | - |
+| XLSX   | [XLSX](/downloads/settlements/xlsx/vipps-settlement-example.xlsx) | - |
 
 More details:
 

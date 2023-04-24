@@ -12,7 +12,7 @@ pagination_prev: null
 
 The following is an example of a CSV settlement file:
 
-* [CSV settlement file](./settlement-report.csv)
+* [CSV settlement file](/downloads/settlements/csv/settlement-report.csv)
 
 The CSV settlement file contains the following info:
 

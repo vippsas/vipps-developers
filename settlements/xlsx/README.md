@@ -12,6 +12,6 @@ pagination_prev: null
 
 The following is an example of a CSV settlement file:
 
-* [XLSX settlement file](./vipps-settlement-example.xlsx)
+* [XLSX settlement file](/downloads/settlements/xlsx/vipps-settlement-example.xlsx)
 
 

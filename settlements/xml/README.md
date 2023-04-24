@@ -12,12 +12,12 @@ pagination_prev: null
 
 This repository contains schemas and example files for Vipps XML settlement reports.
 
-Both [the current settlement report schema v3.0](SettlementReport-3.0.xsd) and the [old v2.0 version](SettlementReport-2.0.xsd) are available.
+Both [the current settlement report schema v3.0](/downloads/settlements/xml/SettlementReport-3.0.xsd) and the [old v2.0 version](/downloads/settlements/xml/SettlementReport-2.0.xsd) are available.
 
 Example files are available for:
 
-* [Gross settlements](Example-Gross.xml)
-* [Net settlements](Example-Gross.xml)
+* [Gross settlements](/downloads/settlements/xml/Example-Gross.xml)
+* [Net settlements](/downloads/settlements/xml/Example-Gross.xml)
 
 ## Changes to the Vipps settlement report XML schema from v2.0 to v3.0
 
@@ -26,8 +26,8 @@ To make the numbers unambiguous we have introduced new fields
 for capture and refund, but kept gross and net fields as before.
 
 - Schema changes from v2.0 to v3.0:
-    - Old schema URL for v2.0 was [SettlementReport-2.0.xsd](./SettlementReport-2.0.xsd)
-    - New schema URL is [SettlementReport-3.0.xsd](./SettlementReport-3.0.xsd)
+    - Old schema URL for v2.0 was [SettlementReport-2.0.xsd](/downloads/settlements/xml/SettlementReport-2.0.xsd)
+    - New schema URL is [SettlementReport-3.0.xsd](/downloads/settlements/xml/SettlementReport-3.0.xsd)
     - New schema validates all amount fields with new types "money", "positiveMoney", and "negativeMoney"
     - Other changed organized by parent element below
 
