@@ -27,18 +27,18 @@ The following are Frequently Asked Questions (FAQs):
 
 In addition, each Vipps API has a specific set of FAQs. For example:
 
-* [Checkout API FAQ](/docs/APIs/checkout-api/vipps-checkout-api-faq)
-* [eCom API FAQ](/docs/APIs/ecom-api/vipps-ecom-api-faq)
-* [Login API FAQ](/docs/APIs/login-api/vipps-login-api-faq)
-* [Partner API FAQ](/docs/APIs/partner-api/vipps-partner-api-faq)
-* [PSP API FAQ](/docs/APIs/psp-api/vipps-psp-api-faq)
-* [QR API FAQ](/docs/APIs/qr-api/vipps-qr-api-faq)
-* [Recurring API FAQ](/docs/APIs/recurring-api/vipps-recurring-api-faq)
-* [Report API FAQ](/docs/APIs/report-api/vipps-report-api-faq)
+* [Checkout API FAQ](https://developer.vippsmobilepay.com/docs/APIs/checkout-api/vipps-checkout-api-faq)
+* [eCom API FAQ](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api-faq)
+* [Login API FAQ](https://developer.vippsmobilepay.com/docs/APIs/login-api/vipps-login-api-faq)
+* [Partner API FAQ](https://developer.vippsmobilepay.com/docs/APIs/partner-api/vipps-partner-api-faq)
+* [PSP API FAQ](https://developer.vippsmobilepay.com/docs/APIs/psp-api/vipps-psp-api-faq)
+* [QR API FAQ](https://developer.vippsmobilepay.com/docs/APIs/qr-api/vipps-qr-api-faq)
+* [Recurring API FAQ](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/vipps-recurring-api-faq)
+* [Report API FAQ](https://developer.vippsmobilepay.com/docs/APIs/report-api/vipps-report-api-faq)
 
 We're always happy to help with code or other questions you might have!
 Please create an [issue](https://github.com/vippsas/vipps-developers/issues),
 a [pull request](https://github.com/vippsas/vipps-developers/pulls),
-or [contact us](/docs/vipps-developers/contact).
+or [contact us](https://developer.vippsmobilepay.com/docs/vipps-developers/contact).
 
-Sign up for our [Technical newsletter for developers](/docs/vipps-developers/newsletters).
+Sign up for our [Technical newsletter for developers](https://developer.vippsmobilepay.com/docs/vipps-developers/newsletters).

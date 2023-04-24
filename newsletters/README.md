@@ -12,7 +12,7 @@ pagination_prev: null
 
 
 All Vipps customers that have
-[API](/docs/APIs)
+[API](https://developer.vippsmobilepay.com/docs/APIs)
 access receive this technical newsletter,
 with important information about the APIs.
 It is not considered marketing.

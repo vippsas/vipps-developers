@@ -16,7 +16,7 @@ This newsletter was sent in September 2021.
 ## The Vipps QR API
 
 An early version of the
-[Vipps QR API](/docs/APIs/qr-api)
+[Vipps QR API](https://developer.vippsmobilepay.com/docs/APIs/qr-api)
 is available.
 
 The Vipps QR API lets merchants generate Vipps QR codes that can be used to pay
@@ -30,7 +30,7 @@ Vipps app where they can pay the merchant.
 ## The Vipps Order Management API
 
 An early version of the
-[Vipps Order Management API](/docs/APIs/order-management-api)
+[Vipps Order Management API](https://developer.vippsmobilepay.com/docs/APIs/order-management-api)
 is available.
 
 The Order Management API allows merchants to send rich receipt information to
@@ -57,14 +57,14 @@ This could typically be physical contexts like point of sales (POS) solutions, o
 phone in call center solutions, or devices/terminals like TV boxes. We currently support initiating logins based on the users phone number. We are also working on supporting the same flows with the user scanning the merchant's QR-code as a starting point.
 
 More information can be found in the
-[Vipps Login API Guide](/docs/APIs/login-api).
+[Vipps Login API Guide](https://developer.vippsmobilepay.com/docs/APIs/login-api).
 
 ## The Vipps Recurring API now supports variable amounts
 
 Recurring agreements with variable amount lets merchants charge users a different amount each for interval, based on the user's specified max amount.
 
 More information can be found in the
-[Vipps Recurring API Guide](/docs/APIs/recurring-api/vipps-recurring-api#recurring-agreements-with-variable-amount).
+[Vipps Recurring API Guide](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/vipps-recurring-api#recurring-agreements-with-variable-amount).
 
 ## API Dashboard for the test environment
 
@@ -89,11 +89,11 @@ we have concluded that the change does not require a new version of the API.
 ## Newsletter archive
 
 All the previous newsletters are in the
-[newsletter archive](/docs/vipps-developers/newsletters).
+[newsletter archive](https://developer.vippsmobilepay.com/docs/vipps-developers/newsletters).
 
 ## Questions or comments?
 
 We're always happy to help with code or other questions you might have!
 Please create [GitHub issues or pull requests](https://github.com/vippsas)
 for the relevant API,
-or [contact us](/docs/vipps-developers/contact).
+or [contact us](https://developer.vippsmobilepay.com/docs/vipps-developers/contact).

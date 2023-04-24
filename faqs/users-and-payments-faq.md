@@ -18,7 +18,7 @@ leak information about users. If a payment is initiated for a user that can
 not pay businesses, the response will be an error.
 
 Vipps does not distinguish between the following when initiating a payment with
-[`POST:/ecomm/v2/payments`](/api/ecom#tag/Vipps-eCom-API/operation/initiatePaymentV3UsingPOST)
+[`POST:/ecomm/v2/payments`](https://developer.vippsmobilepay.com/api/ecom#tag/Vipps-eCom-API/operation/initiatePaymentV3UsingPOST)
 and the API call contains a phone number that can not be used to complete the payment:
 
 * Not a Vipps user
@@ -34,12 +34,12 @@ Yes, but only as part of a payment or login.
 
 Vipps offers the possibility for merchants to ask the user for information
 as part of the payment flow with
-[Userinfo](/docs/APIs/userinfo-api).
+[Userinfo](https://developer.vippsmobilepay.com/docs/APIs/userinfo-api).
 
 This is done by adding a `scope` parameter to the initiate calls:
-[`POST:/ecomm/v2/payments`](/api/ecom#tag/Vipps-eCom-API/operation/initiatePaymentV3UsingPOST) (eCom)
+[`POST:/ecomm/v2/payments`](https://developer.vippsmobilepay.com/api/ecom#tag/Vipps-eCom-API/operation/initiatePaymentV3UsingPOST) (eCom)
 and
-[`POST:/recurring/v2/agreements`](/api/recurring#tag/Agreement-v2-endpoints/operation/DraftAgreement) (Recurring):
+[`POST:/recurring/v2/agreements`](https://developer.vippsmobilepay.com/api/recurring#tag/Agreement-v2-endpoints/operation/DraftAgreement) (Recurring):
 
 * `address`
 * `birthDate`
@@ -62,7 +62,7 @@ You can also subscribe to daily or monthly transaction reports by email.
 
 See:
 
-* [Report API](/docs/APIs/report-api).
+* [Report API](https://developer.vippsmobilepay.com/docs/APIs/report-api).
 * [Settlements](../settlements/README.md)
 
 ## Can I split payments to charge a fee?
@@ -121,9 +121,9 @@ will need the regulatory approval as
 If the service sells access, in the form of a subscription or per-use, the
 service is *most likely* a regular Vipps eCom customer, and can use
 the
-[Vipps eCom API](/docs/APIs/ecom-api)
+[Vipps eCom API](https://developer.vippsmobilepay.com/docs/APIs/ecom-api)
 or one of our
-[plugins](/docs/vipps-plugins).
+[plugins](https://developer.vippsmobilepay.com/docs/vipps-plugins).
 
 Vipps cannot offer legal advice for this.
 
@@ -171,7 +171,7 @@ See:
 ## I have initiated an order, but I can't find it
 
 For the eCom API, see
-[I have initiated an order, but I can't find it](/docs/APIs/ecom-api/vipps-ecom-api-faq#i-have-initiated-an-order-but-i-cant-find-it).
+[I have initiated an order, but I can't find it](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api-faq#i-have-initiated-an-order-but-i-cant-find-it).
 
 ## How long is an initiated order valid, if the user does not confirm in the Vipps app?
 
@@ -213,9 +213,9 @@ Please check the Vipps payment:
 5. Click the order.
 6. See the "History" details.
 
-This is of course also supported in the [eCom API](/docs/APIs/ecom-api), and it is a requirement to use
+This is of course also supported in the [eCom API](https://developer.vippsmobilepay.com/docs/APIs/ecom-api), and it is a requirement to use
 this functionality when integrating with Vipps:
-[`GET:/ecomm/v2/payments/{orderId}/details`](/api/ecom#tag/Vipps-eCom-API/operation/getPaymentDetailsUsingGET)
+[`GET:/ecomm/v2/payments/{orderId}/details`](https://developer.vippsmobilepay.com/api/ecom#tag/Vipps-eCom-API/operation/getPaymentDetailsUsingGET)
 
 The user can also check the payment in Vipps:
 
@@ -235,7 +235,7 @@ actions, network connectivity/speed, etc. Because of this, it is not
 possible to base an integration on a specific sequence of events.
 
 See:
-[Initiate payment flow: Phone and browser](/docs/APIs/ecom-api/vipps-ecom-api#initiate-payment-flow-phone-and-browser)
+[Initiate payment flow: Phone and browser](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#initiate-payment-flow-phone-and-browser)
 
 ## Where can I find reports on transactions?
 
