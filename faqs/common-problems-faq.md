@@ -10,7 +10,7 @@ pagination_prev: null
 # FAQ: Common problems
 
 See also
-[Common problems](/docs/APIs/ecom-api/vipps-ecom-api-faq#common-problems)
+[Common problems](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api-faq#common-problems)
 in the eCom API FAQs.
 
 
@@ -33,9 +33,9 @@ user has selected card payment and already has manually entered the card number,
 
 The success rate for PSP integrations is not quite as high.
 See:
-[Direct integration and PSP integration](/docs/vipps-developers/common-topics/direct-vs-psp)
+[Direct integration and PSP integration](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics/direct-vs-psp)
 and
-[Benefits of direct integration](/docs/vipps-developers/common-topics/direct-vs-psp#benefits-of-direct-integration).
+[Benefits of direct integration](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics/direct-vs-psp#benefits-of-direct-integration).
 
 ### Common reasons why payments are not completed
 
@@ -72,7 +72,7 @@ The most common reasons why payments are not completed are:
    typically if the user has deactivated push notifications and does not open
    Vipps manually.
    See:
-   [Timeouts](/docs/vipps-developers/common-topics/timeouts).
+   [Timeouts](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics/timeouts).
 7. Attempt to capture an amount that exceeds the reserved amount.
    It's not possible to capture a higher amount than the user has confirmed in Vipps.
    Some merchants experience this because of rounding errors on their side.
@@ -90,7 +90,7 @@ The most common reasons why payments are not completed are:
 We strongly recommend checking the full history of every Vipps payment with
 the API: You can see if a payment has been actively rejected, if the user has
 not done anything, etc.
-See: [Get payment details](/docs/APIs/ecom-api/vipps-ecom-api#get-payment-details).
+See: [Get payment details](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#get-payment-details).
 
 We are continuously improving the error messages in the Vipps app. Some of the
 above errors may only have a general error message when attempting to pay.
@@ -105,7 +105,7 @@ the user in Vipps, all necessary information will be provided to the user in Vip
 [demo.vipps.no](https://demo.vipps.no).
 
 See:
-[All errors](/docs/APIs/ecom-api/vipps-ecom-api#error-codes).
+[All errors](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#error-codes).
 
 ## Why does capture fail?
 
@@ -139,7 +139,7 @@ to confirm the payment in Vipps first.
 
 See:
 
-* [Cancelling a pending order](/docs/APIs/ecom-api/vipps-ecom-api#cancelling-a-pending-order)
+* [Cancelling a pending order](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#cancelling-a-pending-order)
 * [For how long is a payment reserved?](reserve-and-capture-faq.md#for-how-long-is-a-payment-reserved)
 
 ## Why do I get a CORS error?
@@ -183,7 +183,7 @@ their own website, and use a fallback URL (the "result page") to track any
 activity. This must be done by the merchant itself.
 
 See:
-[Initiate payment flow: Phone and browser](/docs/APIs/ecom-api/vipps-ecom-api#initiate-payment-flow-phone-and-browser).
+[Initiate payment flow: Phone and browser](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#initiate-payment-flow-phone-and-browser).
 
 ## Why are the customer names not shown on the transaction overview?
 
@@ -192,9 +192,9 @@ personal data with the merchant. Merchants can use the built-in functionality to
 get the user's consent to share personal data - such as phone number, name,
 e-mail address and address.
 See
-[Userinfo](/docs/APIs/userinfo-api)
+[Userinfo](https://developer.vippsmobilepay.com/docs/APIs/userinfo-api)
 and
-[Express checkout](/docs/APIs/ecom-api/vipps-ecom-api#express-checkout-payments).
+[Express checkout](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#express-checkout-payments).
 
 The transaction overview on
 [portal.vipps.no](https://portal.vipps.no)
@@ -214,7 +214,7 @@ The `orderId` is specified by the merchant. See the
 [orderId recommendations](../common-topics/orderid.md).
 
 Use
-[Userinfo](/docs/APIs/userinfo-api)
+[Userinfo](https://developer.vippsmobilepay.com/docs/APIs/userinfo-api)
 to get the customer's consent to share name, email address, etc.
 
 **Please note:** Vippsnummer is not legal for payments where the customer is

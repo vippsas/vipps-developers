@@ -17,13 +17,13 @@ are any problems you need to investigate.
 
 Here's an example for one endpoint, showing that 2.95 % of the API requests
 for
-[`POST:/ecomm/v2/payments/{orderId}/refund`](/api/ecom#tag/Vipps-eCom-API/operation/refundPaymentUsingPOST)
+[`POST:/ecomm/v2/payments/{orderId}/refund`](https://developer.vippsmobilepay.com/api/ecom#tag/Vipps-eCom-API/operation/refundPaymentUsingPOST)
 fail:
 
 ![API dashboard](../images/api-dashboard-example.png)
 
 The API dashboard is available for both the production and
-[test environment](/docs/vipps-developers/test-environment),
+[test environment](https://developer.vippsmobilepay.com/docs/vipps-developers/test-environment),
 and is an easy way to see if you are using the Vipps APIs correctly.
 It only gives a high-level overview, so you must check the actual API
 responses for more details about the errors.
@@ -34,7 +34,7 @@ you have already received a detailed error message, as described on
 We do not have the capacity to manually check our logs and re-send the same error details.
 
 From the
-[eCom API checklist](/docs/APIs/ecom-api/vipps-ecom-api-checklist):
+[eCom API checklist](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api-checklist):
 
 > Make sure to log and handle all errors. All integrations should to display
 > errors in a way that the user can see and understand them.
@@ -47,5 +47,5 @@ It is your responsibility to check that you are using the Vipps APIs correctly.
 * Partners can ask their merchants to provide access to the
   sales unit(s) for whom they are making payments; therefore, the partner can use the
   API dashboard. There is a guide here:
-  [How to add a user on portal.vipps.no](/docs/vipps-partner/add-portal-user)  
+  [How to add a user on portal.vipps.no](https://developer.vippsmobilepay.com/docs/vipps-partner/add-portal-user)  
 * Keep in mind that the *Utvikler* tab is only available to users with *admin* or *developer* roles.

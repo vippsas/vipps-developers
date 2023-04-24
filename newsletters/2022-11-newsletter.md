@@ -31,9 +31,9 @@ to your API requests:
 ## Get ready for "black week"
 
 Let your customers pay with
-[Vipps Hurtigkasse](/docs/APIs/ecom-api/vipps-ecom-api#express-checkout-payments)
+[Vipps Hurtigkasse](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#express-checkout-payments)
 with the new and improved user experience by specifying
-[`useExplicitCheckoutFlow": true`](/docs/APIs/ecom-api/vipps-ecom-api#how-to-specify-the-old-or-new-express-checkout-flow)
+[`useExplicitCheckoutFlow": true`](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#how-to-specify-the-old-or-new-express-checkout-flow)
 to reduce drop-off, left shopping carts, etc.
 
 Make sure your use of Vipps is as good as it can be, without errors.
@@ -50,33 +50,33 @@ may also be useful.
 
 Callback offers a faster user experience than polling, but you
 cannot rely on callbacks alone. You must also poll
-[`GET:/ecomm/v2/payments/{orderId}/details`](/api/ecom#tag/Vipps-eCom-API/operation/getPaymentDetailsUsingGET)
+[`GET:/ecomm/v2/payments/{orderId}/details`](https://developer.vippsmobilepay.com/api/ecom#tag/Vipps-eCom-API/operation/getPaymentDetailsUsingGET)
 as described in the
 [Polling guidelines](../common-topics/polling-guidelines.md).
 
 See:
-[Callbacks](/docs/APIs/ecom-api/vipps-ecom-api#callbacks)
+[Callbacks](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#callbacks)
 
 ## Report API
 
 The
-[Report API](/docs/APIs/report-api)
+[Report API](https://developer.vippsmobilepay.com/docs/APIs/report-api)
 gives you or a third-party acting on your behalf the ability to
 fetch information about payment events that have been processed by Vipps.
 
 ## Documentation improvements
 
 We are working hard to improve the
-[Vipps Technical Documentation](/):
+[Vipps Technical Documentation](https://developer.vippsmobilepay.com/):
 
 * The documentation is now
-  [searchable](/search).
+  [searchable](https://developer.vippsmobilepay.com/search).
 * We have a new
-  [Solutions](/docs/vipps-solutions)
+  [Solutions](https://developer.vippsmobilepay.com/docs/vipps-solutions)
   section to highlight combinations of Vipps APIs, such as
-  [Loyalty in physical stores](/docs/vipps-solutions/loyalty-in-pos)
+  [Loyalty in physical stores](https://developer.vippsmobilepay.com/docs/vipps-solutions/loyalty-in-pos)
   and
-  [Electric vehicle charging](/docs/vipps-solutions/ev-charging).
+  [Electric vehicle charging](https://developer.vippsmobilepay.com/docs/vipps-solutions/ev-charging).
 * All APIs now have a
   [Quick start](../quick-start-guides.md)
   with Postman collection. We also have a global Postman environment to make it
@@ -96,7 +96,7 @@ This is especially important when using
 as it's impossible to send a push message to a user if the specified phone number is incorrect.
 
 Please see the API specification:
-[`POST:/ecomm/v2/payments`](/api/ecom#tag/Vipps-eCom-API/operation/initiatePaymentV3UsingPOST)
+[`POST:/ecomm/v2/payments`](https://developer.vippsmobilepay.com/api/ecom#tag/Vipps-eCom-API/operation/initiatePaymentV3UsingPOST)
 
 ![API specification for phone number](images/2022-11-phone-number.png)
 
@@ -120,4 +120,4 @@ We are working on eliminating incorrect API use. Please:
 We're always happy to help with code or other questions you might have!
 Please create [GitHub issues or pull requests](https://github.com/vippsas)
 for the relevant API,
-or [contact us](/docs/vipps-developers/contact).
+or [contact us](https://developer.vippsmobilepay.com/docs/vipps-developers/contact).

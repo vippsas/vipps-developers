@@ -14,7 +14,7 @@ pagination_prev: null
 ## Can I refund a payment?
 
 This depends on your eCommerce solution. The Vipps eCom API supports refunds with
-[`POST:/ecomm/v2/payments/{orderId}/refund`](/api/ecom#tag/Vipps-eCom-API/operation/refundPaymentUsingPOST).
+[`POST:/ecomm/v2/payments/{orderId}/refund`](https://developer.vippsmobilepay.com/api/ecom#tag/Vipps-eCom-API/operation/refundPaymentUsingPOST).
 For details on how to offer refunds, please refer to the documentation for your eCommerce solution.
 
 All integrations with the Vipps eCom API _must_ support refunds.
@@ -43,11 +43,11 @@ See:
 
 * The long version: It _is_ possible to cancel the remaining reservation after a
 partial capture through the Vipps eCom API: Send a
-[`PUT:/ecomm/v2/payments/{orderId}/cancel`](/api/ecom#tag/Vipps-eCom-API/operation/cancelPaymentRequestUsingPUT)
+[`PUT:/ecomm/v2/payments/{orderId}/cancel`](https://developer.vippsmobilepay.com/api/ecom#tag/Vipps-eCom-API/operation/cancelPaymentRequestUsingPUT)
 request with `shouldReleaseRemainingFunds: true` in the body.
 The payment must be `RESERVED` for this to take effect.
 See:
-[Vipps eCom API: Cancelling a partially captured order](/docs/APIs/ecom-api/vipps-ecom-api#cancelling-a-partially-captured-order).
+[Vipps eCom API: Cancelling a partially captured order](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#cancelling-a-partially-captured-order).
 
 The partial capture (the 750 of the 1000 NOK in the example above)
 is normally confirmed in the bank after 3-10 days, but it sometimes takes even

@@ -31,7 +31,7 @@ See [Common topics: Getting the API keys](https://developer.vippsmobilepay.com/d
    * Partner - Enter optional partner data (not usually needed).
    * Select optional properties:
      * [Skip Landing Page](../faqs/vipps-landing-page-faq.md#is-it-possible-to-skip-the-landing-page)
-     * [Recurring API](/docs/APIs/recurring-api)
+     * [Recurring API](https://developer.vippsmobilepay.com/docs/APIs/recurring-api)
      * [Direct Capture](../common-topics/reserve-and-capture.md#direct-capture)
 
 After a couple of minutes, your new test sales unit will appear in the bottom of the list (possibly after some browser refreshes).
@@ -67,7 +67,7 @@ accountants, etc. - and also for their partner's employees.
 Or anyone else they want to give access to their sales units.
 
 See:
-[How to add a user on portal.vipps.no](/docs/vipps-partner/add-portal-user).
+[How to add a user on portal.vipps.no](https://developer.vippsmobilepay.com/docs/vipps-partner/add-portal-user).
 
 
 ## How to use the API dashboard
@@ -94,7 +94,7 @@ the _Utvikler_ (developer) option in the menu, you need to have the
 merchant's administrator grant you with developer access for the sales unit.
 
 For
-[reseller partners](/docs/vipps-partner):
+[reseller partners](https://developer.vippsmobilepay.com/docs/vipps-partner):
 You will need the merchant's administrator to either:
 
 * Log in to
@@ -104,7 +104,7 @@ You will need the merchant's administrator to either:
 
 For more information, see:
 
-* [Developer Information: Vipps Partners](/docs/vipps-partner)
+* [Developer Information: Vipps Partners](https://developer.vippsmobilepay.com/docs/vipps-partner)
 * [User permissions on vipps.no (in Norwegian)](https://vipps.no/hjelp/vipps/kundeforholdet-mitt/hvilke-tilganger-kan-vi-opprette-i-vippsportalen/).
 
 ## Questions
