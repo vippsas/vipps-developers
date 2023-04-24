@@ -12,19 +12,18 @@ END_METADATA -->
 
 This newsletter was sent in May 2023.
 
-<!-- START_COMMENT -->
+## SDKs for Vipps Checkout and the ePayment API
 
-## Table of Contents
+There are now SDKs availablew for .NET and Node.
 
-
-<!-- END_COMMENT -->
-
-## SDK for Vipps Checkout
-
-- Product: https://www.vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/checkout/
-- API: https://developer.vippsmobilepay.com/docs/APIs/checkout-api
+- SDKs: https://developer.vippsmobilepay.com/docs/SDKs/
+- Vipps Checkout: Product information (Norwegian): https://www.vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/checkout/
+- Vipps Checkout API: https://developer.vippsmobilepay.com/docs/APIs/checkout-api
 
 ## Migration guide for integrations using the MobilePay APIs
+
+We have collected information for how to migrate from the Mobilepay APIs to the new
+common Vipps MobilePay APIs, which will be the common "one platform" for all markets:
 
 - https://developer.vippsmobilepay.com/docs/vipps-developers/mp-migration-guide
 
@@ -33,7 +32,10 @@ This newsletter was sent in May 2023.
 ### Please check your API calls for errors
 
 We are working on eliminating incorrect API use to ensure the best possible user
-experience for all Vipps users and merchants. Please:
+experience for all Vipps users and merchants. 
+
+API typically result in your customers thinking that "Vipps doesn't work",
+and may mean that you lose money. Please make sure you use our APIs in the best way:
 
 * Monitor the responses you get when making API calls
 * Log all errors
