@@ -12,6 +12,6 @@ pagination_prev: null
 
 The following is an example of a PDF settlement file:
 
-* [PDF settlement file](./Vipps-oppgj%C3%B8rsrapport-16655-2018-09-23.pdf)
+* [PDF settlement file](/downloads/settlements/pdf/Vipps-oppgj%C3%B8rsrapport-16655-2018-09-23.pdf)
 
 
