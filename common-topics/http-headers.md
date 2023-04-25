@@ -33,7 +33,8 @@ the headers could be:
 | `Vipps-System-Plugin-Version` | The version number of the plugin   | `3.2`     | `4.3`          | `4.3` | `1.4.1` |
 | `Merchant-Serial-Number`      | The MSN for the sales unit         | `123456`  | `123456`       | `123456` | `123456` |
 
-**Important:** 
+**Important:**
+
 * Please use self-explanatory, human-readable and reasonably short
   values that uniquely identify the system (and plugin).
 * The max length of each header is 30 characters. See the API
@@ -61,7 +62,7 @@ specification.
 Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1Ni <truncated>
 Ocp-Apim-Subscription-Key: 0f14ebcab0ec4b29ae0cb90d91b4a84a
 Merchant-Serial-Number: 123456
-Vipps-System-Name: Acme
+Vipps-System-Name: acme
 Vipps-System-Version: 3.1.2
 Vipps-System-Plugin-Name: acme-webshop
 Vipps-System-Plugin-Version: 4.5.6
