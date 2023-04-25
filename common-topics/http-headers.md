@@ -26,12 +26,12 @@ point of sale (POS) integration, web shop, and vending machines,
 the headers could be:
 
 | Header| Description| Example value for POS | Example for web shop | Example for vending machine | Example for WooCommerce plugin |
-|-------------------------------|----------------------------------------------|-----------|----------------|--------|---------------|
+|-------------------------------|------------------------------------|-----------|----------------|--------|---------------|
 | `Vipps-System-Name`           | The name of the solution           | `acme`    | `acme`         | `acme` | `woocommerce` |
 | `Vipps-System-Version`        | The version number of the solution | `1.7`     | `2.6`          | `2.6` | `5.4` |
 | `Vipps-System-Plugin-Name`    | The name of the plugin             | `acme-pos`| `acme-webshop` | `acme-vending` | `vipps-woocommerce` |
 | `Vipps-System-Plugin-Version` | The version number of the plugin   | `3.2`     | `4.3`          | `4.3` | `1.4.1` |
-| `Merchant-Serial-Number`      | The MSN for the sales unit                    | `123456`  | `123456`       | `123456` | `123456` |
+| `Merchant-Serial-Number`      | The MSN for the sales unit         | `123456`  | `123456`       | `123456` | `123456` |
 
 **Important:** 
 * Please use self-explanatory, human-readable and reasonably short
@@ -61,7 +61,7 @@ specification.
 Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1Ni <truncated>
 Ocp-Apim-Subscription-Key: 0f14ebcab0ec4b29ae0cb90d91b4a84a
 Merchant-Serial-Number: 123456
-Vipps-System-Name: Acme Enterprises Ecommerce DeLuxe
+Vipps-System-Name: Acme
 Vipps-System-Version: 3.1.2
 Vipps-System-Plugin-Name: acme-webshop
 Vipps-System-Plugin-Version: 4.5.6
