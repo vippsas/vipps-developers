@@ -17,8 +17,7 @@ We strongly recommend that all customers with direct integration with the API to
 
 Partners must always send the `Merchant-Serial-Number` header, and we recommend
 that _everyone_ sends it, also when using the merchant's own API keys.
-The `Merchant-Serial-Number` header can be used with all API keys, and can
-speed up any troubleshooting of API problems quite a bit.
+It can speed up any troubleshooting of API problems quite a bit.
 
 ## Example headers
 
@@ -34,8 +33,11 @@ the headers could be:
 | `Vipps-System-Plugin-Version` | The version number of the plugin   | `3.2`     | `4.3`          | `4.3` | `1.4.1` |
 | `Merchant-Serial-Number`      | The MSN for the sales unit                    | `123456`  | `123456`       | `123456` | `123456` |
 
-**Important:** Please use self-explanatory, human-readable and reasonably short
-values that uniquely identify the system (and plugin).
+**Important:** 
+* Please use self-explanatory, human-readable and reasonably short
+  values that uniquely identify the system (and plugin).
+* The max length of each header is 30 characters. See the API
+  specification for details.
 
 If the `Vipps-System-Plugin-*` headers do not make sense to you,
 you can simply send the same as for `Vipps-System-*`.
@@ -45,8 +47,8 @@ so it is as easy as possible to solve problems with your API requests if there a
 ## Idempotency
 
 Many API requests to Vipps APIs can be retried without any side effects
-by providing `Idempotency-Key`(in older APIs, this may be called, `Request-Id`) in the header of the
-request.
+by providing `Idempotency-Key`(in older APIs, this may be called, `Request-Id`)
+in the header of the request.
 
 For example, in case the request fails because of network error, it can
 safely be retried with the same `Idempotency-Key` key without causing a duplicate.
