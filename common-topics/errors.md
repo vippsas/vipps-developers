@@ -49,7 +49,6 @@ will use `extraDetails`.
 * Some errors are sent from Microsoft Azure, and not the Vipps APIs.
   These include `401`, `403`, `422` and `429`.
   These errors may have a different format, as they are not configurable.
-  This includes authentication errors.
 * It is the integrator's responsibility to monitor and handle all errors.  
 
 See also:
