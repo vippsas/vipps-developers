@@ -25,13 +25,13 @@ For example, if the merchant's name is "Acme AS" and they offer three different 
 point of sale (POS) integration, web shop, and vending machines,
 the headers could be:
 
-| Header| Description| Example value for POS | Example for web shop | Example for vending machine | Example for WooCommerce plugin |
-|-------------------------------|------------------------------------|-----------|----------------|----------------|---------------|
-| `Vipps-System-Name`           | The name of the solution           | `acme`    | `acme`         | `acme`         | `woocommerce` |
-| `Vipps-System-Version`        | The version number of the solution | `1.7`     | `2.6`          | `2.6`          | `5.4`         |
-| `Vipps-System-Plugin-Name`    | The name of the plugin             | `acme-pos`| `acme-webshop` | `acme-vending` | `woocommerce-webshop` |
-| `Vipps-System-Plugin-Version` | The version number of the plugin   | `3.2`     | `4.3`          | `4.3`          | `1.4.1`       |
-| `Merchant-Serial-Number`      | The MSN for the sales unit         | `123456`  | `123456`       | `123456`       | `123456`      |
+| Header| Description| Example value for POS | Example for web shop | Example for vending machine | Example for WooCommerce plugin | Example for Checkout plugin |
+|-------------------------------|------------------------------------|-----------|----------------|----------------|---------------|-----------------------------|
+| `Vipps-System-Name`           | The name of the solution           | `acme`    | `acme`         | `acme`         | `woocommerce` | `woocommerce` |
+| `Vipps-System-Version`        | The version number of the solution | `1.7`     | `2.6`          | `2.6`          | `5.4`         | `5.4`         |
+| `Vipps-System-Plugin-Name`    | The name of the plugin             | `acme-pos`| `acme-webshop` | `acme-vending` | `woocommerce-payment` | `woocommerce-checkout` |
+| `Vipps-System-Plugin-Version` | The version number of the plugin   | `3.2`     | `4.3`          | `4.3`          | `1.4.1`       | `1.4.1`       |
+| `Merchant-Serial-Number`      | The MSN for the sales unit         | `123456`  | `123456`       | `123456`       | `123456`      | `123456`      |
 
 **Important:**
 

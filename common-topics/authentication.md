@@ -27,10 +27,10 @@ curl https://apitest.vipps.no/accessToken/get \
 -H "client_secret: REPLACE-WITH-YOUR-CLIENT-SECRET" \
 -H "Ocp-Apim-Subscription-Key: REPLACE-WITH-YOUR-SUBSCRIPTION-KEY" \
 -H "Merchant-Serial-Number: REPLACE-WITH-YOUR-MERCHANT-ACCOUNT-NUMBER" \
--H "Vipps-System-Name: REPLACE-WITH-YOUR-SYSTEM-NAME" \
--H "Vipps-System-Version: REPLACE-WITH-YOUR-VERSION" \
--H "Vipps-System-Plugin-Name: REPLACE-WITH-YOUR-PLUGIN" \
--H "Vipps-System-Plugin-Version REPLACE-WITH-PLUGIN-VERSION" \
+-H "Vipps-System-Name: acme" \
+-H "Vipps-System-Version: 1.7" \
+-H "Vipps-System-Plugin-Name: acme-webshop" \
+-H "Vipps-System-Plugin-Version 4.3" \
 -X POST
 ```
 
