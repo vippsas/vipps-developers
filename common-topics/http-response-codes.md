@@ -28,16 +28,12 @@ In general:
 * 4XX responses: Client error. You have a problem, and you must correct it.
 * 5XX responses: Server error. We have a problem, and we must correct it.
 
-**Please note:** 
-* The HTTP responses that contain errors from the Vipps backend will contain an *array* of JSON objects.
-  See:
-  [Error](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics/errors/).
-* HTTP responses with errors from the application gateway contain one or more `error` JSON object.
-  Error responses from the application gateway include `401`, `403`, `422` and `429`.
-
 See the API specification for each API for details _especially the FAQ_.
 
-The overview here is quite good:
+See:
+[Error](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics/errors/).
+
+The HTTP status overview here is quite good:
 [HTTP Status Codes Glossary](https://www.webfx.com/web-development/glossary/http-status-codes/).
 
 The authoritative reference is:
