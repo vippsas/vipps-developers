@@ -175,9 +175,9 @@ and the
 | Header                        | Description                                  | Example value        |
 | ----------------------------- | -------------------------------------------- | -------------------- |
 | `Merchant-Serial-Number`      | The merchant serial number                   | `123456`             |
-| `Vipps-System-Name`           | The name of the ecommerce solution           | `woocommerce`        |
+| `Vipps-System-Name`           | The name of the ecommerce solution           | `WooCommerce`        |
 | `Vipps-System-Version`        | The version number of the ecommerce solution | `5.4`                |
-| `Vipps-System-Plugin-Name`    | The name of the ecommerce plugin             | `vipps-woocommerce`  |
+| `Vipps-System-Plugin-Name`    | The name of the ecommerce plugin             | `woocommerce-payment`  |
 | `Vipps-System-Plugin-Version` | The version number of the ecommerce plugin   | `1.4.1`              |
 
 These headers provide useful metadata about the merchant's system,
