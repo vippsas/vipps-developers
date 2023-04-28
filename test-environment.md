@@ -157,6 +157,10 @@ The test user's mobile number works on all phones and on all networks.
 **Important:** Do _not_ use the test phone number in the production environment,
 as the test number may be a real phone number for a real Vipps user.
 
+You will get your test phone number in the welcome email. If you did not receive this,
+contact your partner contact (if you have one) or
+[customer service](https://vipps.no/kontakt-oss/).
+
 ### Payment card
 
 The test user is registered with a payment card, and it is not possible to add
