@@ -34,7 +34,6 @@ This is applicable to:
 * [eCom API](https://developer.vippsmobilepay.com/docs/APIs/ecom-api)
 * [PSP API](https://developer.vippsmobilepay.com/docs/APIs/psp-api)
 * [Recurring API](https://developer.vippsmobilepay.com/docs/APIs/recurring-api)
-* [Report API](https://developer.vippsmobilepay.com/docs/APIs/report-api)
 
 ## Example responses
 
@@ -85,9 +84,18 @@ Example: Response body for `"isApp":true`, with a forced app-switch to Vipps:
 
 ## isApp flow
 
-If you do want to use `isApp` the flow is as follows:
+The infoermation below is valid for the
+[eCom API](https://developer.vippsmobilepay.com/docs/APIs/ecom-api)
+and
+[Recurring API](https://developer.vippsmobilepay.com/docs/APIs/recurring-api).
+The
+[PSP API](https://developer.vippsmobilepay.com/docs/APIs/psp-api)
+works differently, please see the API's documentation.
 
-1. Merchant initiates the payment with `isApp: true` parameter:
+If you do want to use `isApp`, instead of benefitting from the automatic handling,
+the flow is as follows:
+
+1. The merchant initiates the payment with `isApp: true` parameter:
    [`POST:/ecomm/v2/payments`](https://developer.vippsmobilepay.com/api/ecom#tag/Vipps-eCom-API/operation/initiatePaymentV3UsingPOST).
 2. Vipps returns a `deeplink` URL on the `vipps://` format as response to initiate payment.
 3. The merchant uses the `vipps://` URL to invoke Vipps (never change the URL, use it *exactly* as sent from Vipps)
