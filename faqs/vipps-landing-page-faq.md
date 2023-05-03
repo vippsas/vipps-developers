@@ -6,10 +6,7 @@ pagination_next: null
 pagination_prev: null
 ---
 
-
 # FAQ: Vipps landing page
-
-
 
 ## Is it possible to skip the landing page?
 
@@ -93,6 +90,19 @@ by the phone's operating system. It cannot be opened inside an embedded
 browser, or in an iframe. Any session cookies or similar will be gone, so it
 is crucial that the `fallBack` URL is able to correctly show the correct state
 for the payment.
+
+## Is it possible to prevent the user from editing the phone number?
+
+In special cases, it may be a requirement to always specify the user's
+phone number and to make the phone number impossible to edit on the landing page.
+
+This will of course make it impossible for a user to start the payment process,
+but have another user (a parent, for instance) complete the payment.
+
+If you need to make the user's phone number impossible to edit on the landing page: 
+Contact your Key Account Manager. If you do not have a KAM:
+[contact us](https://developer.vippsmobilepay.com/docs/vipps-developers/contact/)
+and include a detailed description of why this is needed.
 
 **Important:**
 

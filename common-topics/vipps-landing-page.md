@@ -4,10 +4,20 @@ pagination_next: null
 pagination_prev: null
 ---
 
-
 # The Vipps landing page
 
-When a payment is initiated the user is directed to the `url`.
+The Vipps landing page is mandatory for payments initiated on a different device than the user's phone.
+It provides a consistent and recognizable user experience
+that helps guide the user through the payment flow.
+
+Our data shows that the landing page gives a higher success rate and lower drop-off,
+because the users get a familiar user experience and know the payment flow.
+In this way, Vipps takes responsibility for helping the user from the browser to the app,
+and to complete the payment in a familiar way.
+
+## User flow
+
+When a payment is initiated the user is directed to a `url`.
 The user will either be taken to Vipps or to the Vipps landing page:
 
 * In a mobile browser, the Vipps app will automatically be opened with app-switch.
@@ -25,12 +35,7 @@ The user will either be taken to Vipps or to the Vipps landing page:
 
 ![The Vipps landing page](images/vipps-flow-landing-page.png)
 
-The Vipps landing page is mandatory and provides a consistent and recognizable user experience
-that helps guide the user through the payment flow.
-Our data shows that the landing page gives a higher success rate and lower drop-off,
-because the users get a familiar user experience and know the payment flow.
-In this way, Vipps takes responsibility for helping the user from the browser to the app,
-and to complete the payment in a familiar way.
+## The user's phone number
 
 The user's phone number can be set in the payment initiation call. It is
 remembered by the user's browser, eliminating the need for re-typing it on
@@ -42,6 +47,11 @@ the phone number can be changed.
 A typical example is one user that is below
 15 years old, and can therefore not pay businesses, will let another Vipps
 user complete the payment.
+
+See: 
+[Is it possible to prevent the user from editing the phone number?​](https://developer.vippsmobilepay.com/docs/vipps-developers/faqs/vipps-landing-page-faq#is-it-possible-to-prevent-the-user-from-editing-the-phone-number).
+
+## Never display the landing page in an iframe
 
 **Important:** Never show the Vipps landing page inside an iframe. See:
 [Can I show the landing page in an iframe?​](https://developer.vippsmobilepay.com/docs/vipps-developers/faqs/vipps-landing-page-faq#can-i-show-the-landing-page-in-an-iframe).
