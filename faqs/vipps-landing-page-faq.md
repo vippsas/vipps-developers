@@ -93,7 +93,7 @@ for the payment.
 
 ## Is it possible to prevent the user from editing the phone number?
 
-In special cases it may be a requirement to always specify the user's
+In special cases, it may be a requirement to always specify the user's
 phone number and to make the phone number impossible to edit on the landing page.
 
 This will of course make it impossible for a user to start the payment process,
