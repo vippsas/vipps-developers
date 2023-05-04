@@ -36,4 +36,6 @@ This is applicable to:
 * [ePayment API](https://developer.vippsmobilepay.com/docs/APIs/epayment-api)
 * [Recurring API](https://developer.vippsmobilepay.com/docs/APIs/recurring-api)
 
-See [Reserve and capture](../faqs/reserve-and-capture-faq.md) for common questions.
+See
+[Refund](https://developer.vippsmobilepay.com/docs/vipps-developers/faqs/refunds-faq/)
+for common questions.
