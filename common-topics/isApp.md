@@ -84,7 +84,7 @@ Example: Response body for `"isApp":true`, with a forced app-switch to Vipps:
 
 ## isApp flow
 
-The infoermation below is valid for the
+The information below is valid for the
 [eCom API](https://developer.vippsmobilepay.com/docs/APIs/ecom-api)
 and
 [Recurring API](https://developer.vippsmobilepay.com/docs/APIs/recurring-api).
