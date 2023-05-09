@@ -78,6 +78,12 @@ See:
 * [ePayment API](https://developer.vippsmobilepay.com/docs/APIs/epayment-api)
 * [Extend payment time-outs](https://developer.vippsmobilepay.com/docs/vipps-solutions/long-expiry-time-for-payments-to-merchants)
 
+Please note that "ePayments" encompasses various use case scenarios. Therefore, if you are seeking use cases that target existing MobilePay merchants and can be utilized for migration purposes, some examples include:
+
+* [MobilePay InvoiceDirect](https://developer.mobilepay.dk/docs/invoice/api-endpoint-reference#invoicedirect)  1-1 to ePayments with userFlow = `PUSH_MESSAGE`
+* [MobilePay InvoiceLinks](https://developer.mobilepay.dk/docs/invoice/api-endpoint-reference#invoicelink) 1-1 to ePayments with userFlow = `WEB_REDIRECT`
+* “QR” The use of PDF => OrderManagement.
+
 | MobilePay invoice                    | Vipps Mobilepay ePayment                                                                      |
 |--------------------------------------|-------------------------------------------------------------------------------------------------|
 | `InvoiceIssuer​`                      | `Merchant-Serial-Number` (Header in request)                                                   ​ |
