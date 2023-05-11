@@ -4,10 +4,7 @@ pagination_next: null
 pagination_prev: null
 ---
 
-
-# Vipps API Lifecycle
-
-
+# API Lifecycle
 
 ## Versioning
 
