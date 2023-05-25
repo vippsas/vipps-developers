@@ -18,8 +18,8 @@ There are two ways to use Vipps MobilePay:
   [eCom](https://developer.vippsmobilepay.com/docs/APIs/ecom-api),
   [Checkout](https://developer.vippsmobilepay.com/docs/APIs/checkout-api),
   [Recurring](https://developer.vippsmobilepay.com/docs/APIs/recurring-api),
-  [Login](https://developer.vippsmobilepay.com/docs/APIs/login-api)
-  [Userinfo](https://developer.vippsmobilepay.com/docs/APIs/userinfo-api)
+  [Login](https://developer.vippsmobilepay.com/docs/APIs/login-api),
+  [Userinfo](https://developer.vippsmobilepay.com/docs/APIs/userinfo-api),
   [Order Management](https://developer.vippsmobilepay.com/docs/APIs/order-management-api),
   [QR](https://developer.vippsmobilepay.com/docs/APIs/qr-api)),
   etc.
