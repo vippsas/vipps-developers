@@ -30,3 +30,6 @@ We recommend the following, using the example "Vipps web shop":
 | Initiate, reservation of maximum amount (for EV charging, parking, etc.) | `Midlertidig reservasjon av maksbeløp. Du bli kun belastet for faktisk bruk.` English: `Temporary reservation of maximum amount. You will only be charged for the actual use.` | Not making it clear that it is a temporary reservation of the maximum amount (otherwise: same as above) |
 | Capture (the `transactionText` is shown on the receipt) | `Order acme-shop-123-order123abc. Thank you for shopping at Vipps webshop!` | (same as above) |
 | Refund | `Refund for order acme-shop-123-order123abc` | `Refund`, `Orderid acme-shop-123-order123abc` |
+
+See also:
+[Recommendations for orderId/reference](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics/orderid/)
