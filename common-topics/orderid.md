@@ -46,6 +46,9 @@ The maximum length of an `orderId` is 50 alphanumeric characters:
 Leading zeros should be avoided, as some applications (e.g., Excel)
 tend to remove them, and this may cause misunderstandings.
 
+See also:
+[TransactionText recommendations](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics/transactiontext/).
+
 ## Multiple sales units
 
 If you have multiple sales units, prefixing the `orderId` with the MSN

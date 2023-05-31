@@ -295,5 +295,7 @@ Cards issued in the following countries are accepted:
 * New Zealand.
 
 **Please note**: Just to avoid confusion: Payments with the app are also done using
-the users' cards that they have added there. The user gets all the benefits of the card,
+the users' cards that they have been added there. The user gets all the benefits of the card,
 and since the app has delegated SCA, the user gets a faster and simpler user experience.
+See also:
+[Direct integration and PSP integration](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics/direct-vs-psp/).
