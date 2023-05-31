@@ -281,7 +281,7 @@ Users can enter their card details and pay with the card without using the app.
 This means that payments are possible also for users in countries where
 VippsMobilePay is not yet available.
 
-Both Visa and Mastercard is supported.
+Both Visa and Mastercard are supported.
 This includes any cards that are co-branded with VISA and Mastercard.
 
 Visa Electron is supported if card is enabled for online purchases.
@@ -292,8 +292,8 @@ Cards issued in the following countries are accepted:
 * Canada
 * USA
 * Australia
-* New Zealand.
+* New Zealand
 
-**Please note**: Just to avoid confusion: Payments with the app are also done using
-the users' cards that they have added there. The user gets all the benefits of the card,
+**Please note**: Just to avoid confusion, payments with the app can also be done using
+the user's cards that they have added there. The user gets all the benefits of the card,
 and since the app has delegated SCA, the user gets a faster and simpler user experience.
