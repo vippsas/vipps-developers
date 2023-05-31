@@ -269,3 +269,31 @@ than when using a card directly.
 Vipps also has an extremely low fraud rate, as it is impossible to pay
 with a card that has been invalidated in any way by the issuer, and all users
 has to log into Vipps with their BankID verified identity to use their card.
+
+## Card payments
+
+The
+[ePayment API](https://developer.vippsmobilepay.com/docs/APIs/epayment-api/)
+and the
+[Checkout API](https://developer.vippsmobilepay.com/docs/APIs/checkout-api/)
+support free-standing card payments:
+Users can enter their card details and pay with the card without using the app.
+This means that payments are possible also for users in countries where
+VippsMobilePay is not yet available.
+
+Both Visa and Mastercard are supported.
+This includes any cards that are co-branded with VISA and Mastercard.
+
+Visa Electron is supported if card is enabled for online purchases.
+
+Cards issued in the following countries are accepted:
+* EEA/EØS (European Economic Area)
+* UK
+* Canada
+* USA
+* Australia
+* New Zealand
+
+**Please note**: Just to avoid confusion, payments with the app can also be done using
+the user's cards that they have added there. The user gets all the benefits of the card,
+and since the app has delegated SCA, the user gets a faster and simpler user experience.
