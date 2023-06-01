@@ -286,7 +286,7 @@ This includes any cards that are co-branded with VISA and Mastercard.
 
 Visa Electron is supported if card is enabled for online purchases.
 
-**Important:** To reduce risk we do a 3D Secure setp-up for _all_ cards
+**Important:** To reduce risk we do a 3D Secure step-up for _all_ cards
 used for free-standing payments. We do, of course, not have the delegated SCA
 used in the app when users are making free-standing payments,
 so this additional security is required.
