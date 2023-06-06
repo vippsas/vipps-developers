@@ -66,6 +66,9 @@ See [the FAQ](https://www.vipps.no/sporsmal#bedriftspm) for more details.
 
 ## Net and gross settlements
 
+As a rule, Vipps only offers net settlments. Gross settlements are only
+available in special cases.
+
 Merchants with a "net settlement" contract receive the users' payments
 excluding the Vipps fees. On other words: The Vipps fees are deducted
 from the settlement amount.
@@ -74,8 +77,15 @@ Merchants with a "gross settlement" contract receive the _full amount_
 of the users' payments
 _including_ the Vipps fees, and are then invoiced for the Vipps fees.
 
-For gross settlements: If the merchant's organization number is registered as an EHF recipient,
-Vipps sends invoices as EHF. If not, the invoices are sent by email.
+In both cases the
+[Report API](https://developer.vippsmobilepay.com/docs/APIs/report-api/)
+provides all the details of each payment, including fees.
+
+**Please note:** Merchants with a gross settlement will be invoiced a fee, due to
+the additional work in invoicing, increased cost and settlement risk.
+
+For gross settlements: If the merchant's organization number is registered as an
+EHF recipient, Vipps sends invoices as EHF. If not, the invoices are sent by email.
 To change invoice recipient, please
 [contact customer service](https://vipps.no/kontakt-oss/).
 
@@ -164,11 +174,8 @@ Details: See the [sftp-report-service](./sftp-report-service/README.md) folder.
 
 ### API
 
-There is no API for retrieving settlement data.
-[SFTP](#sftp) is the closest alternative.
-
-But:
-[We are in the early planning phase of developing an API](https://developer.vippsmobilepay.com/docs/APIs/report-api).
+See:
+[Report API](https://developer.vippsmobilepay.com/docs/APIs/report-api/).
 
 ## Availability
 
