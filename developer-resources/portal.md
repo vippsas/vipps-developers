@@ -8,14 +8,18 @@ pagination_prev: null
 
 # The Vipps portal
 
+All merchants with an agreement with Vipps MobilePay has access to
+[portal.vipps.no](https://portal.vipps.no).
+See (in Norwegian):
+[Who can access portal.vipps.no](https://vipps.no/hjelp/vipps/kundeforholdet-mitt/hvem-kan-logge-inn-i-vippsportalen/),
+and more information about how to use the portal.
+Contact
+[customer service](https://vipps.no/kontakt-oss/)
+if you have questions about the portal.
 
-
-This page will guide you through the steps to finding API keys and creating test sales units
-on the [Vipps portal (portal.vipps.no)](https://portal.vipps.no).
-
-For more information about the portal, see the
-[help pages on vipps.no (in Norwegian)](https://vipps.no/hjelp/vipps/kundeforholdet-mitt/hva-får-jeg-tilgang-til-når-jeg-logger-meg-inn-på-vippsportalen/).
-
+This page will guide you through the steps to finding API keys and creating
+test sales units on
+[portal.vipps.no](https://portal.vipps.no).
 
 ## How to find the API keys
 
