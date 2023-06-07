@@ -276,23 +276,24 @@ The
 [ePayment API](https://developer.vippsmobilepay.com/docs/APIs/epayment-api/)
 and the
 [Checkout API](https://developer.vippsmobilepay.com/docs/APIs/checkout-api/)
-support free-standing card payments:
+support freestanding card payments:
 Users can enter their card details and pay with the card without using the app.
 This means that payments are possible also for users in countries where
-VippsMobilePay is not yet available.
+Vipps and MobilePay are not yet available.
 
 Both Visa and Mastercard are supported.
 This includes any cards that are co-branded with VISA and Mastercard.
 
 Visa Electron is supported if card is enabled for online purchases.
 
-**Important:** To reduce risk we do a 3D Secure step-up for _all_ cards
-used for free-standing payments. We do, of course, not have the delegated SCA
-used in the app when users are making free-standing payments,
-so this additional security is required.
-If the issuer does not handle 3D Secure correctly, the payment will fail. 
+**Important:** To reduce risk, we do a 3D Secure step-up for *all* cards
+used for freestanding payments. We do not have the delegated SCA
+used in the app, when users are making freestanding payments.
+Therefore, this additional security is required.
+If the issuer does not handle 3D Secure correctly, the payment will fail.
 
 Cards issued in the following countries are accepted:
+
 * EEA/EØS (European Economic Area)
 * UK
 * Canada
@@ -305,4 +306,3 @@ the users' cards that they have been added there. The user gets all the benefits
 and since the app has delegated SCA, the user gets a faster and simpler user experience.
 See also:
 [Direct integration and PSP integration](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics/direct-vs-psp/).
-
