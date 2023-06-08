@@ -300,3 +300,17 @@ This can happen when the partner making the API request is using:
 
 If the error message is `Invalid MSN: This MSN is not valid for the provided supermerchant ID.`,
 with no MSN specified, it means that the `Merchant-Serial-Number` is missing in the request header.
+
+## Why do I get `Invalid MSN: 654321. This MSN is not valid for the provided PSP id.`?
+
+The full error message text is:
+
+"Invalid MSN: 654321. This MSN is not valid for the provided PSP id. Check that you are
+using the correct credentials for the right environment."
+
+In addition to what the error message says, this error can occur if a PSP attempts to initiate
+payments for a MSN that was created by a different PSP.
+PSP's can only initiate payments for MSNs that are connected to them.
+
+The solution is to create a new MSN with the
+[PSP Signup API](https://developer.vippsmobilepay.com/docs/APIs/psp-api/vipps-psp-signup-api/).
