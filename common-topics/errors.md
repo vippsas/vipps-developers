@@ -18,10 +18,10 @@ HTTP/1.1 400 Bad Request
 Content-Type: application/problem+json
 Content-Language: en
 {
-   "type":"https://example.com/validation-error",
+   "type":"https://developer.vippsmobilepay.com/api-name/v1/validation-error",
    "title":"Your request parameters didn't validate.",
-   "detail":"The request body contains one or more errors",
-   "instance":"123e4567-e89b-12d3-a456-426655440000",
+   "detail":"The request body contains one or more validation errors.",
+   "instance":"urn:uuid:123e4567-e89b-12d3-a456-426655440000",
    "status":"400",
    "extraDetails":[
       {
