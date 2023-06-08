@@ -149,5 +149,5 @@ If one or more partial captures have been made, any remaining reserved amount
 will be automatically released after a few days if using the eCom API,
 and (by default) released immediately with the ePayment API.
 
-For the eCom API it is also possible to do a partial capture and send an optional parameter to
+For the eCom API, it is also possible to do a partial capture and send an optional parameter to
 explicitly free the remaining amount immediately.
