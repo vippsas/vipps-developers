@@ -151,21 +151,8 @@ customer relationship for the new company is straight-forward on
 
 ## What about webhooks?
 
-Vipps has, so far (and this _may_ change), used `GET` methods for retrieving information.
-We have varying success when depending on systems on the merchant side, especially
-during peak traffic periods. With webhooks, and also callbacks, Vipps
-takes the responsibility of providing information to the merchant, while being
-dependent on systems on the merchant side, network stability, etc.
-
-In our experience, `GET` methods is the safest way for merchants to get
-information from Vipps. We also provide callbacks, but merchants _must not_
-rely on this alone - being able to actively retrieving information with `GET` methods
-is a requirement.
-
 See:
-
-* [Vipps eCom API checklist](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api-checklist)
-* [Vipps PSP API checklist](https://developer.vippsmobilepay.com/docs/APIs/psp-api/vipps-psp-api-checklist)
+[Webhooks API](https://developer.vippsmobilepay.com/docs/APIs/webhooks-api/).
 
 ## Can I use Vipps with Klarna Checkout?
 
