@@ -138,12 +138,12 @@ Please search your mail, including the spam/junk folder, if you do not find it.
 **Please note:**
 
 - The provided test user must only be used in the [Vipps test apps](#vipps-test-apps).
-- You must log in (not register) with the test user in the test app, before you
-  can complete payments for that user.
+- You must log in (not register) as the test user in the test app, before you
+  can complete payments or logins for that user.
 - You may use the same test user on multiple devices.
 - Test users are not connected to any merchant, they can be used with any
   merchant and sales unit in the test environment.
-- We can not add specific phone numbers to our test environment.  
+- We can not create test users with specific attributes (phone number, name, numbers, age, etc).
 
 If you need more than one test user, please contact your
 Key Account Manager (if you have one),
