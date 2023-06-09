@@ -1,3 +1,4 @@
+<!-- START_METADATA
 ---
 title: Frequently asked questions
 sidebar_label: Overview
@@ -6,10 +7,14 @@ hide_table_of_contents: true
 pagination_next: null
 pagination_prev: null
 ---
-
+END_METADATA -->
 
 # Frequently asked questions
 
+<!-- START_COMMENT -->
+ℹ️ Please use the website:
+[Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/docs/vipps-developers/faqs/).
+<!-- END_COMMENT -->
 
 
 The following are Frequently Asked Questions (FAQs):

@@ -1,12 +1,18 @@
+<!-- START_METADATA
 ---
 title: API dashboard
 sidebar_position: 110
 pagination_next: null
 pagination_prev: null
 ---
-
+END_METADATA -->
 
 # API dashboard
+
+<!-- START_COMMENT -->
+ℹ️ Please use the website:
+[Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/docs/vipps-developers/).
+<!-- END_COMMENT -->
 
 All merchants have access to an API dashboard on
 [portal.vipps.no](https://portal.vipps.no) under the *Utvikler* tab.

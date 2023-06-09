@@ -1,12 +1,18 @@
+<!-- START_METADATA
 ---
 sidebar_label: Overview
 sidebar_position: 85
 pagination_next: null
 pagination_prev: null
 ---
-
+END_METADATA -->
 
 # Settlements
+
+<!-- START_COMMENT -->
+ℹ️ Please use the website:
+[Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/docs/vipps-developers/settlements/).
+<!-- END_COMMENT -->
 
 ## Settlement flow
 

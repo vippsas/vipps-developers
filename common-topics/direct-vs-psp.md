@@ -1,3 +1,4 @@
+<!-- START_METADATA
 ---
 title: Direct integration and PSP integration
 sidebar_label: Direct integration and PSP integration
@@ -5,11 +6,17 @@ description: Direct integration and PSP integration
 pagination_next: null
 pagination_prev: null
 ---
-
+END_METADATA -->
 
 # Direct integration and PSP integration
 
+<!-- START_COMMENT -->
+ℹ️ Please use the website:
+[Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/docs/vipps-developers/).
+<!-- END_COMMENT -->
+
 There are two ways to use Vipps MobilePay:
+
 * Direct integration: The merchant or partner uses the
   [APIs](https://developer.vippsmobilepay.com/docs/APIs)
   directly

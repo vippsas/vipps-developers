@@ -1,12 +1,18 @@
+<!-- START_METADATA
 ---
 title: Apply for a Vipps service
 sidebar_position: 2
 pagination_next: null
 pagination_prev: null
 ---
-
+END_METADATA -->
 
 # Apply for Vipps services
+
+<!-- START_COMMENT -->
+ℹ️ Please use the website:
+[Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/docs/vipps-developers/apply_for_services/).
+<!-- END_COMMENT -->
 
 To apply for Vipps services, you need to have a Norwegian organization number
 and applications must be signed with Norwegian BankID.

@@ -1,3 +1,4 @@
+<!-- START_METADATA
 ---
 title: The Vipps and MobilePay test environment
 sidebar_label: Test environment
@@ -5,11 +6,15 @@ sidebar_position: 20
 pagination_next: null
 pagination_prev: null
 ---
+END_METADATA -->
 
 
 # Test environment
 
-
+<!-- START_COMMENT -->
+ℹ️ Please use the website:
+[Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/docs/vipps-developers/test-environment/).
+<!-- END_COMMENT -->
 
 The Merchant Test (MT) environment is available for all merchants who have
 access to the Vipps MobilePay APIs.

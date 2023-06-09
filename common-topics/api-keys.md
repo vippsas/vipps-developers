@@ -1,11 +1,17 @@
+<!-- START_METADATA
 ---
 title: API keys
 pagination_next: null
 pagination_prev: null
 ---
-
+END_METADATA -->
 
 # API keys
+
+<!-- START_COMMENT -->
+ℹ️ Please use the website:
+[Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics/api-keys/).
+<!-- END_COMMENT -->
 
 When you start using the Vipps API, you will need to provide API keys.
 These are like passcodes that confirm your identity and that your API request is valid.

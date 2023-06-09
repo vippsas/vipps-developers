@@ -1,11 +1,17 @@
+<!-- START_METADATA
 ---
 title: Authentication
 pagination_next: null
 pagination_prev: null
 ---
-
+END_METADATA -->
 
 # Authentication
+
+<!-- START_COMMENT -->
+ℹ️ Please use the website:
+[Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/docs/vipps-developers/).
+<!-- END_COMMENT -->
 
 All Vipps API requests must include the `Authorization` header with
 a JSON Web Token (JWT), which we call the _access token_.
