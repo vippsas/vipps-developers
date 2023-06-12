@@ -26,7 +26,7 @@ and more information about how to use the portal.
 
 **Please note:** Merchants using a PSP will not have access to
 [portal.vipps.no](https://portal.vipps.no), unless they also have
-a direct custoemr relationship with Vipps MobilePay
+a direct customer relationship with Vipps MobilePay
 (or has had it previously, and not cancelled the agreemement).
 
 Contact
