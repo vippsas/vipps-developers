@@ -152,7 +152,7 @@ customer relationship for the new company is straight-forward on
 ## What about webhooks?
 
 See:
-[Webhooks API](https://developer.vippsmobilepay.com/docs/APIs/webhooks-api/).
+[Webhooks API](https://developer.vippsmobilepay.com/docs/APIs/webhooks-api/)
 
 ## Can I use Vipps with Klarna Checkout?
 
