@@ -18,16 +18,17 @@ The information about
 [portal.vipps.no](https://portal.vipps.no)
 on this page is for _developers_. 
 
-All merchants with an signed agreement with Vipps MobilePay has access to
+All merchants with a signed agreement with Vipps MobilePay have access to
 [portal.vipps.no](https://portal.vipps.no).
 See (in Norwegian):
 [Who can access portal.vipps.no](https://vipps.no/hjelp/vipps/kundeforholdet-mitt/hvem-kan-logge-inn-i-vippsportalen/),
 and more information about how to use the portal.
 
 **Please note:** Merchants using a PSP will not have access to
-[portal.vipps.no](https://portal.vipps.no), unless they also have
-a direct customer relationship with Vipps MobilePay
-(or has had it previously, and not cancelled the agreement).
+[portal.vipps.no](https://portal.vipps.no)
+(unless they also have
+a direct customer relationship with Vipps MobilePay,
+or has had it previously, and not cancelled the agreement).
 
 Contact
 [customer service](https://vipps.no/kontakt-oss/)
