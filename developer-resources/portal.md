@@ -14,14 +14,24 @@ END_METADATA -->
 [Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/docs/vipps-developers/).
 <!-- END_COMMENT -->
 
-All merchants with an agreement with Vipps MobilePay has access to
+The information about
+[portal.vipps.no](https://portal.vipps.no)
+on this page is for _developers_. 
+
+All merchants with an signed agreement with Vipps MobilePay has access to
 [portal.vipps.no](https://portal.vipps.no).
 See (in Norwegian):
 [Who can access portal.vipps.no](https://vipps.no/hjelp/vipps/kundeforholdet-mitt/hvem-kan-logge-inn-i-vippsportalen/),
 and more information about how to use the portal.
+
+**Please note:** Merchants using a PSP will not have access to
+[portal.vipps.no](https://portal.vipps.no), unless they also have
+a direct custoemr relationship with Vipps MobilePay
+(or has had it previously, and not cancelled the agreemement).
+
 Contact
 [customer service](https://vipps.no/kontakt-oss/)
-if you have questions about the portal.
+if you have general questions about the portal.
 
 This page will guide you through the steps to finding API keys and creating
 test sales units on
@@ -30,7 +40,6 @@ test sales units on
 ## How to find the API keys
 
 See [Common topics: Getting the API keys](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics/api-keys#getting-the-api-keys).
-
 
 ## How to create a test sales unit
 
@@ -50,7 +59,7 @@ Then, you can [get the API keys](../common-topics/api-keys.md#getting-the-api-ke
 **Please note:** It is not possible to _change_ an existing sales unit in the test environment,
 but you can create as many as you need.
 
-## How to set up login on your sales unit
+## How to setup the Vipps Login API for your sales unit
 
 1. Find your desired sales unit.
    * Under _Vipps På Nett_ > _Utvikler_, select _Environment_ > _test_, then search for your test sales unit in the list. To create a new test sales unit, see
@@ -79,7 +88,6 @@ Or anyone else they want to give access to their sales units.
 See:
 [How to add a user on portal.vipps.no](https://developer.vippsmobilepay.com/docs/vipps-partner/add-portal-user).
 
-
 ## How to use the API dashboard
 
 See [API dashboard](api-dashboard.md).
@@ -93,11 +101,12 @@ you will need the merchant's administrator to log in on
 [portal.vipps.no](https://portal.vipps.no)
 and provide the API keys to you securely.
 
-The merchant's administrator can also create additional users on
-[portal.vipps.no](https://portal.vipps.no).
 If you don't know who the administrator is, you can check
 [Brønnøysundregistrene](https://www.brreg.no)
 and see who has the right to sign for the company.
+
+The merchant's administrator can also create additional users on
+[portal.vipps.no](https://portal.vipps.no).
 
 If you can log in to [portal.vipps.no](https://portal.vipps.no), but cannot see
 the _Utvikler_ (developer) option in the menu, you need to have the
@@ -116,11 +125,6 @@ For more information, see:
 
 * [Developer Information: Vipps Partners](https://developer.vippsmobilepay.com/docs/vipps-partner)
 * [User permissions on vipps.no (in Norwegian)](https://vipps.no/hjelp/vipps/kundeforholdet-mitt/hvilke-tilganger-kan-vi-opprette-i-vippsportalen/).
-
-## Questions
-
-For more information about the Vipps Portal, see the
-[help pages on vipps.no (in Norwegian)](https://vipps.no/hjelp/vipps/kundeforholdet-mitt/hva-får-jeg-tilgang-til-når-jeg-logger-meg-inn-på-vippsportalen/).
 
 ## How can I change my name and logo?
 
@@ -142,4 +146,10 @@ screen where you both can update your name and ad your logo:
 
 ![By clicking "Rediger" next to the "Visning i appen" heading you will come to a screen where you both can update your name and ad you logo:](images/Sales_unit_change_name_and_logo.png)
 
-**Please note:** You cannot change the name used for the test environment.
+**Please note:** You cannot change the name used for the
+[test environment](https://developer.vippsmobilepay.com/docs/vipps-developers/test-environment/).
+
+## Questions
+
+For more information about the Vipps Portal, see the
+[help pages on vipps.no (in Norwegian)](https://vipps.no/hjelp/vipps/kundeforholdet-mitt/hva-får-jeg-tilgang-til-når-jeg-logger-meg-inn-på-vippsportalen/).
