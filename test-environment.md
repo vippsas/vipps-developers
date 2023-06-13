@@ -40,22 +40,22 @@ The test and production environments are completely separate and use different
 
 Functionality not available in MT (a non-exhaustive list):
 
-- Unscheduled maintenance *may* occur.
+* Unscheduled maintenance *may* occur.
   We will do our best to inform with
   [Status page](./developer-resources/status-pages.md),
   but it may not always be possible.
   In practice this is extremely rare.
-- Push alerts may be unavailable or unstable. To see payment requests: Open Vipps and manually
+* Push alerts may be unavailable or unstable. To see payment requests: Open Vipps and manually
   go to the "Betalinger" (i.e., *Payments_) at the bottom of the main screen.
   You may have to "pull to refresh" on that screen.
   The background for this: The app ID for the test and production apps are the same, and we
   are not able to distinguish between the apps when sending push messages.
-- Payment of invoices.
-- Limited support for testing card statuses that require connections our PSP.
-- Limited support for looking up customer information in
+* Payment of invoices.
+* Limited support for testing card statuses that require connections our PSP.
+* Limited support for looking up customer information in
   [KAR](https://www.bits.no/en/bank/konto-og-adresseringsregister-kar/), etc.
-- Some quirks around email verification, see [Email address](#email-address).
-- Partner functionality, like the relationship between an MSN and a partner,
+* Some quirks around email verification, see [Email address](#email-address).
+* Partner functionality, like the relationship between an MSN and a partner,
   and the use of
   [partner keys](https://developer.vippsmobilepay.com/docs/vipps-partner/partner-keys),
   does not work as in the production environment. In general, partner
@@ -67,12 +67,12 @@ production environment in a controlled manner.
 
 Other differences between Production and MT:
 
-- There is no equivalent to [portal.vipps.no](https://portal.vipps.no) for the
+* There is no equivalent to [portal.vipps.no](https://portal.vipps.no) for the
   test environment. Payments must be checked with the API.
-- There are no settlements in the test environment, and therefore
+* There are no settlements in the test environment, and therefore
   no settlement reports, not SFTP service and no Report API.
-- We allow 10,000 incorrect PIN attempts before locking the Vipps user's account
-- The user's email address can not be verified in the normal way.
+* We allow 10,000 incorrect PIN attempts before locking the Vipps user's account
+* The user's email address can not be verified in the normal way.
   See: [Email address](#email-address).
 
 ## Access to the test environment
@@ -88,8 +88,8 @@ for a Vipps product (that has an API), and the details can be found on the
 
 See:
 
-- [Common topics: Getting the API keys](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics/api-keys#getting-the-api-keys)
-- [How to create a test sales unit](https://developer.vippsmobilepay.com/docs/vipps-developers/developer-resources/portal#how-to-create-a-test-sales-unit)
+* [Common topics: Getting the API keys](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics/api-keys#getting-the-api-keys)
+* [How to create a test sales unit](https://developer.vippsmobilepay.com/docs/vipps-developers/developer-resources/portal#how-to-create-a-test-sales-unit)
 
 ### Partners
 
@@ -136,13 +136,13 @@ Please search your mail, including the spam/junk folder, if you do not find it.
 
 **Please note:**
 
-- The provided test user must only be used in the [Vipps test apps](#vipps-test-apps).
-- You must log in (not register) as the test user in the test app, before you
+* The provided test user must only be used in the [Vipps test apps](#vipps-test-apps).
+* You must log in (not register) as the test user in the test app, before you
   can complete payments or logins for that user.
-- You may use the same test user on multiple devices.
-- Test users are not connected to any merchant, they can be used with any
+* You may use the same test user on multiple devices.
+* Test users are not connected to any merchant, they can be used with any
   merchant and sales unit in the test environment.
-- We can not create test users with specific attributes (phone number, name, numbers, age, etc.).
+* We can not create test users with specific attributes (phone number, name, numbers, age, etc.).
 
 If you need more than one test user, please contact your
 Key Account Manager (if you have one),

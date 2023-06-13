@@ -96,10 +96,10 @@ Only the major version is specified.
 The Vipps API documentation is updated frequently, and we use the versioning
 like this:
 
-- Major version: A major change to the documentation, such as adding "recurring"
+* Major version: A major change to the documentation, such as adding "recurring"
   functionality to the Vipps eCom API.
-- Minor version: A new section, new flowcharts, or another significant change.
-- Patch version: Text changes, typos, small fixes.
+* Minor version: A new section, new flowcharts, or another significant change.
+* Patch version: Text changes, typos, small fixes.
 
 See
 [Versioning](#versioning)

@@ -22,13 +22,13 @@ and
 
 This is done by adding a `scope` parameter to the initiate calls:
 
-- address
-- birthDate
-- email
-- name
-- phoneNumber
-- nin (fødselsnummer)
-- accountNumbers
+* address
+* birthDate
+* email
+* name
+* phoneNumber
+* nin (fødselsnummer)
+* accountNumbers
 
 The userinfo endpoint is shared with
 [Vipps Login](https://developer.vippsmobilepay.com/docs/APIs/login-api)
@@ -103,9 +103,9 @@ Our API lifecycle policy is
 
 ### Status pages for test and production environments
 
-- Test: <https://vipps-test.statuspage.io>
+* Test: <https://vipps-test.statuspage.io>
 
-- Production: <https://vipps.statuspage.io>
+* Production: <https://vipps.statuspage.io>
 
 ### How to get help quickly
 

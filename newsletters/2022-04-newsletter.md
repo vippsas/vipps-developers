@@ -52,9 +52,9 @@ This change only applies to the `GET` method, and does not affect the `POST` and
 
  From **August 1st, 2022** some new rules for charge creation will be enforced:
 
-- The `amount` of a charge is flexible but cannot be higher than the
+* The `amount` of a charge is flexible but cannot be higher than the
    `agreement price`.
-- For an agreement with a `campaign`, the `amount` of a charge is flexible but
+* For an agreement with a `campaign`, the `amount` of a charge is flexible but
    cannot be higher than the campaign price. After the campaign expires the
   `amount` of a charge cannot be higher than the `agreement price`.
 
@@ -76,11 +76,11 @@ and partners keep making incorrect API calls.
 
 Please:
 
-- Monitor the responses you get when making API calls
-- Log all errors
-- Fix errors as quickly as possible
-- Use the API Dashboard
-- Contact us if there is anything we can help with
+* Monitor the responses you get when making API calls
+* Log all errors
+* Fix errors as quickly as possible
+* Use the API Dashboard
+* Contact us if there is anything we can help with
 
 One example: Far too many calls to
 [`POST:/ecomm/v2/payments`](https://developer.vippsmobilepay.com/api/ecom#tag/Vipps-eCom-API/operation/initiatePaymentV3UsingPOST)
@@ -96,8 +96,8 @@ user experience.
 
 See:
 
-- [Use the API Dashboard to find problems with your integration](#use-the-api-dashboard-to-find-problems-with-your-integration)
-- [FAQ: Common errors](../faqs/common-errors-faq.md)
+* [Use the API Dashboard to find problems with your integration](#use-the-api-dashboard-to-find-problems-with-your-integration)
+* [FAQ: Common errors](../faqs/common-errors-faq.md)
 
 ### Use the API Dashboard to find problems with your integration
 

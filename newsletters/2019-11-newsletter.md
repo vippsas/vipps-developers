@@ -48,8 +48,8 @@ are available at <https://vipps.no/developer>.
 
 We will soon launch status pages:
 
-- Test environment: <https://vipps-test.statuspage.io>
-- Production environment: <https://vipps.statuspage.io>
+* Test environment: <https://vipps-test.statuspage.io>
+* Production environment: <https://vipps.statuspage.io>
 
 ## Further plans
 

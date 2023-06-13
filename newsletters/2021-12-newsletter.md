@@ -16,14 +16,14 @@ This newsletter was sent in December 2021.
 
 These Vipps solutions are extra relevant (again):
 
-- Use
+* Use
   [Vipps Logg inn](https://vipps.no/produkter-og-tjenester/privat/logg-inn-med-vipps/logg-inn-med-vipps/)
   and the
   [Vipps Login API](https://developer.vippsmobilepay.com/docs/APIs/login-api)
   to register visitors - it's free.
-- [Use Userinfo to register visitors](#use-userinfo-to-register-visitors)
+* [Use Userinfo to register visitors](#use-userinfo-to-register-visitors)
   as an easy-to-use step in a normal Vipps payment.
-- ["Click and collect" recommendations](#click-and-collect-recommendations)
+* ["Click and collect" recommendations](#click-and-collect-recommendations)
   to speed up the user experience for your customers.
 
 ## Vipps Hurtigkasse: Use the explicit flow

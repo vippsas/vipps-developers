@@ -120,7 +120,7 @@ Our API lifecycle policy is
 
 ### Status pages for test and production environments
 
-- Test: https://vipps-test.statuspage.io
+* Test: https://vipps-test.statuspage.io
 
 * Production: https://vipps.statuspage.io
 

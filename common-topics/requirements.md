@@ -21,9 +21,9 @@ products.
 Non-Norwegian companies must have the following in order to use Vipps as a payment
 provider and to receive payments from Vipps users:
 
-- A Norwegian organization number
-- A Norwegian bank account
-- An appointed contact person with a Norwegian phone number and Norwegian
+* A Norwegian organization number
+* A Norwegian bank account
+* An appointed contact person with a Norwegian phone number and Norwegian
   identity number (i.e., "fødselsnummer" or "D-nummer", 11 digits).
 
 If the foreign company is registered in
