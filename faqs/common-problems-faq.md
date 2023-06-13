@@ -41,7 +41,7 @@ and
 The most common reasons why payments are not completed are:
 
 1. The debit/credit card has expired.
-   Vipps notifies users in good time before a card expires, but users must
+   Vipps notifies users in the app in good time before a card expires, but users must
    update the card(s) themselves.
    Vipps verifies cards for *every* payment (resulting in an extremely low fraud rate).
    **Please note:** Vennebetaling (P2P) uses bank accounts directly, not the card.
@@ -51,37 +51,45 @@ The most common reasons why payments are not completed are:
    This can happen when a user has received a new card, but the previous card's
    expiry date has not yet been reached.
    See 1. above.
-3. Insufficient funds on the debit/credit card.
+3. For freestanding card payments with the
+   [ePayment API](https://developer.vippsmobilepay.com/docs/APIs/epayment-api/): If the card issuer does
+   not correctly handle the "3D Secure step up", meaning the required secure
+   customer identification, the payment will fail. See
+   [Card payments](https://developer.vippsmobilepay.com/docs/vipps-developers/faqs/users-and-payments-faq/#card-payments).
+   Payments also fail if the user is attempting to pay with a card
+   from a country that is not allowed.
+4. Insufficient funds on the debit/credit card.
    There is not enough money in the debit card's bank account,
    or not enough credit left on the credit card.
    With a direct integration, the user can retry the same payment with a
    different card, and because of this "second chance" the success rate is high.
-4. The debit/credit card has been rejected by the issuer.
+   See
+   [Direct integration and PSP integration](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics/direct-vs-psp/).
+5. The debit/credit card has been rejected by the issuer.
    There are many possible reasons for this, and Vipps may not be allowed to
    give the details to the merchant.
    See 1. above.
-5. Payment limit reached.
-   There are some amount limits to prevent misuse and fraud.
-   The user sometimes (not often) needs to authenticate with BankID in Vipps.
-   Some users *still* do not use the BankID app or "BankID på mobil" and need their
-   BankID "kodebrikkke" (*code card*), which they may not have available.
-6. The payment has timed out.
+6. Payment limit reached, BankID required.
+   There are some amount limits to prevent misuse and fraud, and when a limit is reached
+   the user sometimes (not often) needs to authenticate with BankID, even in Vipps.
+   Some users *still* need their physical BankID "kodebrikkke" (*code card*), which they may not have available.
+7. The payment has timed out.
    This happens if the user does not confirm in Vipps within 10 minutes
    (5 minutes to log into Vipps, then 5 minutes to confirm the payment),
    typically if the user has deactivated push notifications and does not open
    Vipps manually.
    See:
    [Timeouts](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics/timeouts).
-7. Attempt to capture an amount that exceeds the reserved amount.
+8. Attempt to capture an amount that exceeds the reserved amount.
    It's not possible to capture a higher amount than the user has confirmed in Vipps.
    Some merchants experience this because of rounding errors on their side.
    See: [Why does capture fail?](#why-does-capture-fail)
-8. Attempt to capture an amount that has not been reserved.
+9. Attempt to capture an amount that has not been reserved.
    If the user does not confirm the payment in Vipps, it's impossible for the
    merchant to capture it.
    The payment must have status "reserved" for capture to be possible.
    See: [Why does capture fail?](#why-does-capture-fail)
-9. The user has reached the limit for payments within a time period.
+10. The user has reached the limit for payments within a time period.
    See: [Payment limits, in Norwegian](https://vipps.no/hjelp/vipps/sende-og-motta-penger/har-vipps-belopsgrenser/).
 
 ### Investigating problems
