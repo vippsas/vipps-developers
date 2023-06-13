@@ -1,3 +1,4 @@
+<!-- START_METADATA
 ---
 title: "FAQ: Requirements"
 sidebar_label: Requirements
@@ -5,11 +6,9 @@ sidebar_position: 160
 pagination_next: null
 pagination_prev: null
 ---
-
+END_METADATA -->
 
 # FAQ: Requirements
-
-
 
 ## What are the requirements for Vipps merchants?
 

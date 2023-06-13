@@ -1,17 +1,16 @@
+<!-- START_METADATA
 ---
 title: Vipps servers
 sidebar_position: 160
 pagination_next: null
 pagination_prev: null
 ---
-
+END_METADATA -->
 
 # Vipps servers
 
 Vipps has different servers for making API calls to Vipps, and for Vipps
 to make API calls to merchants (like callbacks).
-
-
 
 **Please note:** Vipps may change the IP addresses for the request servers. To ensure
 that you are whitelisting the correct IP addresses please use these hostnames

@@ -1,3 +1,4 @@
+<!-- START_METADATA
 ---
 title: "FAQ: Users and payments"
 sidebar_label: Users and payments
@@ -5,11 +6,9 @@ sidebar_position: 180
 pagination_next: null
 pagination_prev: null
 ---
-
+END_METADATA -->
 
 # FAQ: Users and payments
-
-
 
 ## Is there an API for checking if a number belongs to a Vipps user?
 

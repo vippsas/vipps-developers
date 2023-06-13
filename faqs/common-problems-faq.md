@@ -1,3 +1,4 @@
+<!-- START_METADATA
 ---
 title: "FAQ: Common problems"
 sidebar_label: Common problems
@@ -5,15 +6,13 @@ sidebar_position: 120
 pagination_next: null
 pagination_prev: null
 ---
-
+END_METADATA -->
 
 # FAQ: Common problems
 
 See also
 [Common problems](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api-faq#common-problems)
 in the eCom API FAQs.
-
-
 
 ## Why do payments fail?
 

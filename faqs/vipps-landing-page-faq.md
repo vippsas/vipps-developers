@@ -1,3 +1,4 @@
+<!-- START_METADATA
 ---
 title: "FAQ: Vipps landing page"
 sidebar_label: Vipps landing page
@@ -5,6 +6,7 @@ sidebar_position: 190
 pagination_next: null
 pagination_prev: null
 ---
+END_METADATA -->
 
 # FAQ: Vipps landing page
 
@@ -99,7 +101,7 @@ phone number and to make the phone number impossible to edit on the landing page
 This will of course make it impossible for a user to start the payment process,
 but have another user (a parent, for instance) complete the payment.
 
-If you need to make the user's phone number impossible to edit on the landing page: 
+If you need to make the user's phone number impossible to edit on the landing page:
 Contact your Key Account Manager. If you do not have a KAM:
 [contact us](https://developer.vippsmobilepay.com/docs/vipps-developers/contact/)
 and include a detailed description of why this is needed.

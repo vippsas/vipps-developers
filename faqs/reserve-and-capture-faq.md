@@ -1,3 +1,4 @@
+<!-- START_METADATA
 ---
 title: "FAQ: Reservations and capture"
 sidebar_label: Reservations and capture
@@ -5,11 +6,9 @@ sidebar_position: 170
 pagination_next: null
 pagination_prev: null
 ---
-
+END_METADATA -->
 
 # FAQ: Reservations and capture
-
-
 
 ## For how long is a payment reserved?
 
@@ -84,7 +83,7 @@ This roughly translates to:
 
 >If the payment time does not follow the agreement, the consumer must pay when the seller demands it.
 >If nothing else has been agreed, the consumer has no obligation to pay the purchase price without the item being handed over or placed at his or her disposal in accordance with the agreement and the law.
->The consumer is not bound by a prior agreement on the obligation to pay at a specific time regardless of whether the seller fulfils on time.
+>The consumer is not bound by a prior agreement on the obligation to pay at a specific time regardless of whether the seller fulfills on time.
 
 For more information, please see the Consumer Authority's
 [Guidelines for the standard sales conditions for consumer purchases of goods over the internet](https://www.forbrukertilsynet.no/english/guidelines/guidelines-the-standard-sales-conditions-consumer-purchases-of-goods-the-internet).

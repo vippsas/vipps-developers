@@ -1,3 +1,4 @@
+<!-- START_METADATA
 ---
 title: "FAQ: Common errors"
 sidebar_label: Common errors
@@ -5,15 +6,13 @@ sidebar_position: 110
 pagination_next: null
 pagination_prev: null
 ---
-
+END_METADATA -->
 
 # FAQ: Common errors
 
 See also
 [Common errors](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api-faq#common-errors)
 in the eCom API FAQs.
-
-
 
 ## Why do I get `HTTP 400 Bad Request`?
 
@@ -305,11 +304,11 @@ with no MSN specified, it means that the `Merchant-Serial-Number` is missing in 
 
 The full error message text is:
 
-"Invalid MSN: 654321. This MSN is not valid for the provided PSP id. Check that you are
+"Invalid MSN: 654321. This MSN is not valid for the provided PSP ID. Check that you are
 using the correct credentials for the right environment."
 
 In addition to what the error message says, this error can occur if a PSP attempts to initiate
-payments for a MSN that was created by a different PSP.
+payments for an MSN that was created by a different PSP.
 PSP's can only initiate payments for MSNs that are connected to them.
 
 The solution is to create a new MSN with the

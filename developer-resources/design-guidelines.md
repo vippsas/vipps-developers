@@ -1,10 +1,11 @@
+<!-- START_METADATA
 ---
 title: Design guidelines
 pagination_next: null
 pagination_prev: null
 draft: true
 ---
-
+END_METADATA -->
 
 # Design guidelines
 
