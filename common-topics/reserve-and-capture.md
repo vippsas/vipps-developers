@@ -119,7 +119,7 @@ Vipps through a partner, and for merchants that have a Key Account Manager.
 "Direct capture" must be requested by the partner from the partner manager,
 or by KAM merchants from the Key Account Manager.
 
-**Please note:** Vipps Checkout **does not** support "direct capture".
+**Please note:** Vipps Checkout does *not* support "direct capture".
 
 See the FAQ:
 
