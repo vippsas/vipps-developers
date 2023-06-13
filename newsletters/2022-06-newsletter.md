@@ -8,12 +8,9 @@ pagination_prev: null
 ---
 END_METADATA -->
 
-
 # Technical newsletter for developers 2022-06
 
 This newsletter was sent in June 2022.
-
-
 
 ## Vipps Order Management API
 
@@ -72,7 +69,7 @@ This includes the following fields:
 * fallBack
 * shippingDetailsPrefix
 
- This has been documented for a _long_ time already, but not strictly enforced.
+ This has been documented for a *long* time already, but not strictly enforced.
  See:
  [URL validation](../common-topics/url-validation.md).
 
@@ -101,7 +98,7 @@ the Vipps landing page.
 Please make sure you send the `mobileNumber` in `91234567` format, not
 `+47 91 23 45 67` or something else.
 We have previously tried to respond with `HTTP 400 Bad Request` (as we should)
-for incorrectly formatted phone numbers, but that broke _a lot_  of integrations,
+for incorrectly formatted phone numbers, but that broke *a lot*  of integrations,
 so we decided to accept the incorrect API calls even though they give a poor
 user experience.
 

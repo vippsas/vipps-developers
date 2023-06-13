@@ -8,12 +8,9 @@ pagination_prev: null
 ---
 END_METADATA -->
 
-
 # Technical newsletter for developers 2021-12
 
 This newsletter was sent in December 2021.
-
-
 
 ## Omikron tips
 
@@ -32,7 +29,7 @@ These Vipps solutions are extra relevant (again):
 ## Vipps Hurtigkasse: Use the explicit flow
 
 When users are prompted to select shipping address and shipping address, the
-explicit flow is _strongly_ recommended. The user then has to actively
+explicit flow is *strongly* recommended. The user then has to actively
 select shipping address and shipping method.
 
 The "old" flow does not prompt the user in the same way, and some users
@@ -72,7 +69,7 @@ for (continuously) updated information.
 
 ### Use Userinfo to register visitors
 
-For guest registration/tracking: Use _Userinfo_ to ask for the user's details, such as:
+For guest registration/tracking: Use *Userinfo* to ask for the user's details, such as:
 phone number, name, email address, postal address, birthdate, national identity number and bank accounts.
 The user must of course consent to sharing the information.
 

@@ -45,7 +45,7 @@ There are two ways to use Vipps MobilePay:
 
 The
 [PSP API](https://developer.vippsmobilepay.com/docs/APIs/psp-api)
-provides _tokens_ for the users' payment cards.
+provides *tokens* for the users' payment cards.
 The PSPs uses the token charge a Vipps user's card.
 
 To put it simply, The PSP API is a "card token lookup service". The PSP uses the
@@ -60,7 +60,7 @@ and
 [eCom](https://developer.vippsmobilepay.com/docs/APIs/ecom-api)
 APIs have some functionality that is not available in the PSP API:
 
-1. Direct integration allows you to have more control over the integration - and the user experience - 
+1. Direct integration allows you to have more control over the integration - and the user experience -
    and to customize it to your specific needs. This can lead to a better user
    experience for your customers and also increase conversions.
 2. Higher success rate.
@@ -86,7 +86,7 @@ APIs have some functionality that is not available in the PSP API:
    Vipps handles soft-declines, 3-D Secure, BankID, etc.
    We have taken care of the regulatory required "strong customer authentication"
    ([SCA, required by the Payment Services Directive 2, PSD2](https://en.wikipedia.org/wiki/Strong_customer_authentication)),
-   as we have regulatory approved _delegated SCA_ from the card issuers.
+   as we have regulatory approved *delegated SCA* from the card issuers.
    This means that Vipps MobilePay complies with the SCA requirements when the
    user logs into the app, and the need for additional SCA is eliminated.
    The user gets a simpler and faster user experience
@@ -94,7 +94,7 @@ APIs have some functionality that is not available in the PSP API:
    [extremely high completion rate](../faqs/common-problems-faq.md#high-success-rate-for-direct-integrations).
    See:
    [When do users get a "soft decline" and need to complete a 3-D Secure verification?](https://developer.vippsmobilepay.com/docs/vipps-developers/faqs/users-and-payments-faq#when-do-users-get-a-soft-decline-and-need-to-complete-a-3-d-secure-verification)
- 7. With direct integrations the merchant is guaranteed top get the money,
+7. With direct integrations the merchant is guaranteed top get the money,
    as Vipps Mobilepay takes the risk in case of fraud.  
 
 ## Extremely high success rate of direct integrations
@@ -104,12 +104,12 @@ Almost every user that selects to pay with Vipps completes the payment. The
 success rate is significantly higher than when using a payment card directly.
 
 When comparing success rates: Remember to compare data for when the
-user _selects_ payment method, do not compare Vipps to numbers for when the
+user *selects* payment method, do not compare Vipps to numbers for when the
 user has selected card payment and already has manually entered the card number, etc.:
 
 * Drop-off data for Vipps: Measure the success rate after the user has selected Vipps.
 * Drop-off rate for cards: Measure the success rate after the user has selected card,
-  but from _before_ the user has to enter the card details.
+  but from *before* the user has to enter the card details.
 
 Users that select Vipps will simply have to use biometric log-in to the app and
 confirm the payment. Very, very simple.

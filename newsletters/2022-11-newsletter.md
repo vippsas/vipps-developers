@@ -8,12 +8,9 @@ pagination_prev: null
 ---
 END_METADATA -->
 
-
 # Technical newsletter for developers 2022-11
 
 This newsletter was sent in November 2022.
-
-
 
 ## Specify amounts in øre without decimals
 

@@ -8,12 +8,9 @@ pagination_prev: null
 ---
 END_METADATA -->
 
-
 # Technical newsletter for developers 2022-01
 
 This newsletter was sent in January 2022.
-
-
 
 ## Please check your eCom API calls
 
@@ -39,7 +36,7 @@ the [Vipps landing page](../common-topics/vipps-landing-page.md).
 Please make sure you send the `mobileNumber` in `91234567` format, not
 `+47 91 23 45 67` or something else.
 We have previously tried to respond with `HTTP 400 Bad Request` (as we should)
-for incorrectly formatted phone numbers, but that broke _a lot_  of integrations,
+for incorrectly formatted phone numbers, but that broke *a lot*  of integrations,
 so we decided to accept the incorrect API calls even though they give a poor
 user experience.
 
@@ -51,7 +48,7 @@ See:
 ## Recurring API: The "PROCESSING" status
 
 We would like to emphasize: With the Vipps Recurring API merchants ask Vipps
-to make the charges, and Vipps handles _everything_ for the merchant.
+to make the charges, and Vipps handles *everything* for the merchant.
 
 Vipps does not "leak" the customers' information about insufficient funds,
 blocked cards, etc. Users are informed about all such problems in Vipps, which
@@ -63,7 +60,7 @@ about the status of the charge, with `failureReason` and `failureDescription`,
 but this causes more confusion than clarity: Even if one charge attempt fails,
 the charge itself has not failed until all the attempts are completed.
 We will therefore continue to use `PROCESSING`, as we have done, but until
-_all_ charge attempts have been made.
+_all* charge attempts have been made.
 
 The status of a charge will be `PROCESSING` while Vipps is taking care of business,
 from the `due` date until the charge has succeeded, or until the
@@ -74,7 +71,7 @@ See the
 for more details.
 
 We are also working on providing an event log for each `chargeId`, so merchants
-can get _some_ information, especially if a charge ends as `FAILED`.
+can get *some* information, especially if a charge ends as `FAILED`.
 You can "star" the
 [Vipps Recurring API repo](https://developer.vippsmobilepay.com/docs/APIs/recurring-api)
 and subscribe to this newsletter to get updates.
@@ -159,7 +156,7 @@ These Vipps solutions are extra relevant (again):
 ### Vipps Hurtigkasse: Use the explicit flow
 
 When users are prompted to select shipping address and shipping address, the
-explicit flow is _strongly_ recommended. The user then has to actively
+explicit flow is *strongly* recommended. The user then has to actively
 select shipping address and shipping method.
 
 The "old" flow does not prompt the user in the same way, and some users
@@ -176,7 +173,7 @@ for more details.
 
 ### Use Userinfo to register visitors when they pay
 
-For guest registration/tracking: Use _Userinfo_ to ask for the user's details, such as:
+For guest registration/tracking: Use *Userinfo* to ask for the user's details, such as:
 phone number, name, email address, postal address, birthdate, national identity number and bank accounts.
 The user must of course consent to sharing the information.
 

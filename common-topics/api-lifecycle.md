@@ -252,7 +252,7 @@ Version 3.0.0:
   }
 ```  
 
-If the ISO 3166 country code was _added_ as `countryCode`, it would be a
+If the ISO 3166 country code was *added* as `countryCode`, it would be a
 non-breaking change, and only a minor version:
 
 Version 2.1.0:

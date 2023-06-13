@@ -35,7 +35,7 @@ To do this we have been required to introduce a new version of our Vipps login A
 
 ## Vipps HTTP Headers ℹ️
 
-We recommend using the following _optional_ HTTP headers for all requests to the
+We recommend using the following *optional* HTTP headers for all requests to the
 [Vipps eCom API](https://developer.vippsmobilepay.com/docs/APIs/ecom-api)
 and the
 [Vipps Recurring API](https://developer.vippsmobilepay.com/docs/APIs/recurring-api).

@@ -31,7 +31,7 @@ The details may change, but the information below is the best Vipps can offer.
 Vipps cannot and does not automatically change the status of a reservation.
 
 If a capture attempt is made more than 7 days (VISA) or 30 days (MasterCard)
-after the payment has been initiated, and_ the reservation has been released
+after the payment has been initiated, and* the reservation has been released
 by the bank in the meantime, Vipps will make a new payment request to the bank.
 If the account has sufficient funds, the payment will be successful.
 
@@ -70,7 +70,7 @@ See:
 You should charge the customer when the product or service is delivered.
 That is usually when the product is shipped.
 
-According to Norwegian regulations you must _not_ capture a payment until the
+According to Norwegian regulations you must *not* capture a payment until the
 product or service is provided to the customer. See:
 [Forbrukerkjøpsloven §38](https://lovdata.no/lov/1988-05-13-27/§49)
 (in Norwegian):
@@ -97,16 +97,16 @@ See more details below:
 
 ## What is the difference between "Reserve Capture" and "Direct Capture"?
 
-When you initiate a payment it will be _reserved_ until you _capture_ it.
+When you initiate a payment it will be *reserved* until you *capture* it.
 Reserved means the customer has approved the payment. The funds are still
 in the customer's account, but not available to spend on other things.
 Capture means the funds are moved from customer's account to merchant's account.
-Vipps supports both _reserve-capture_ and _direct capture_:
+Vipps supports both *reserve-capture* and *direct capture*:
 
-* _Reserve capture_ is the default. When you initiate a payment it will be
+* *Reserve capture* is the default. When you initiate a payment it will be
   reserved until you capture it. The capture can be done a few seconds later,
   or several days later.
-* When _direct capture_ is activated, all payment reservations will instantly be
+* When *direct capture* is activated, all payment reservations will instantly be
   captured. This is intended for situations where the product or service is
   immediately provided to the customer, and there is no chance that the service
   is not available or sold out, e.g. digital services.
@@ -118,10 +118,10 @@ The user experience is exactly the same.
 
 Some things to consider:
 
-* If a payment has been _reserved_ (as with "reserve capture"), the merchant can
+* If a payment has been *reserved* (as with "reserve capture"), the merchant can
   make a `/cancel` call to immediately release the reservation and make available
   in the customer's account.
-* If a payment has been _captured_ (as with "direct capture"), the merchant has to
+* If a payment has been *captured* (as with "direct capture"), the merchant has to
   make a `/refund` call, and it then takes several days before the amount is
   available in the customer's account.
 * With "reserve capture" it is possible to reserve a higher amount and only
@@ -173,7 +173,7 @@ and cancel (if it was `RESERVE` and reserve capture) or refund (if it was `SALE`
 
 ## How do I turn direct capture on or off?
 
-You can't turn _direct capture_ on or off as a merchant.
+You can't turn *direct capture* on or off as a merchant.
 A sales unit can only have one capture type, and it must be configured by Vipps.
 
 **Please note:** Vipps only offers "direct capture" for merchants that use
@@ -198,14 +198,14 @@ if you need this.
 
 ## Can I initiate a Vipps payment with a QR code?
 
-It is not possible to use a _static_ QR code to initiate payments with the eCom API.
+It is not possible to use a *static* QR code to initiate payments with the eCom API.
 
 With the eCom API all payments are initiated by calling
 [`POST:/ecomm/v2/payments`](https://developer.vippsmobilepay.com/api/ecom#tag/Vipps-eCom-API/operation/initiatePaymentV3UsingPOST),
 with a unique `orderId` for each payment.
 
 This is not possible with a static QR code on a sticker, etc., but
-_is_ possible if a dynamic (unique per payment) QR can be displayed on a screen
+_is* possible if a dynamic (unique per payment) QR can be displayed on a screen
 for the Vipps user to scan.
 
 The only ways to initiate Vipps payments from a QR code are:
@@ -304,7 +304,7 @@ for customer facing screens in POS situations.
 
 Nope. All Vipps payments must be in NOK. Vipps does not do currency conversion.
 
-You will have to make any currency conversion _before_ initiating the Vipps
+You will have to make any currency conversion *before* initiating the Vipps
 payment, as the amount specified in the payment initiation is always in NOK,
 and in øre (1 NOK = 100 øre).
 

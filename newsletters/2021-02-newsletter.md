@@ -69,7 +69,7 @@ you should not ask the customer for address and shipping method.
 
 You should avoid asking the customer in a pub for the shipping method for the drinks, etc.
 
-Instead: Use _Userinfo_ to ask for the user's details, such as:
+Instead: Use *Userinfo* to ask for the user's details, such as:
 phone number, name, email address, postal address, birthdate, national identity number and bank accounts.
 The user must of course consent to sharing the information.
 
@@ -80,7 +80,7 @@ and
 
 ## Recurring: Info about failures
 
-You can now see _why_ a charge fails, not just that it fails: Insufficient funds, invalid card, etc.
+You can now see *why* a charge fails, not just that it fails: Insufficient funds, invalid card, etc.
 See:
 [Charge failure reasons](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/vipps-recurring-api#charge-failure-reasons).
 
@@ -90,7 +90,7 @@ We have mentioned some things before, and take this opportunity to remind you:
 
 ### Vipps HTTP Headers ℹ️
 
-We recommend using the following _optional_ HTTP headers for all requests to the
+We recommend using the following *optional* HTTP headers for all requests to the
 [Vipps eCom API](https://developer.vippsmobilepay.com/docs/APIs/ecom-api)
 and the
 [Vipps Recurring API](https://developer.vippsmobilepay.com/docs/APIs/recurring-api).

@@ -1,9 +1,10 @@
+<!-- START_METADATA
 ---
 sidebar_label: Redirects
 pagination_next: null
 pagination_prev: null
 ---
-
+END_METADATA -->
 
 # Recommendations regarding handling redirects
 

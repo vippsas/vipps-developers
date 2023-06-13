@@ -1,3 +1,4 @@
+<!-- START_METADATA
 ---
 title: MobilePay migration guide
 sidebar_label: Migration guide
@@ -6,10 +7,9 @@ description: Looking for a hassle-free way to migrate to Vipps MobilePay? Our co
 pagination_next: null
 pagination_prev: null
 ---
-
+END_METADATA -->
 
 # Migration guide
-
 
 💥 Work in progress 💥
 
@@ -75,14 +75,15 @@ See:
 ## Invoice vs. ePayment
 
 See:
+
 * [ePayment API](https://developer.vippsmobilepay.com/docs/APIs/epayment-api)
 * [Extend payment time-outs](https://developer.vippsmobilepay.com/docs/vipps-solutions/long-expiry-time-for-payments-to-merchants)
 
-Please note that "ePayments" encompasses various use case scenarios. Therefore, if you are seeking use cases that target existing MobilePay merchants and can be utilized for migration purposes, some examples include:
+Please note that ePayment encompasses various use case scenarios. Therefore, if you are seeking use cases that target existing MobilePay merchants and can be utilized for migration purposes, some examples include:
 
-* [MobilePay InvoiceDirect](https://developer.mobilepay.dk/docs/invoice/api-endpoint-reference#invoicedirect)  1-1 to ePayments with userFlow = `PUSH_MESSAGE`
-* [MobilePay InvoiceLinks](https://developer.mobilepay.dk/docs/invoice/api-endpoint-reference#invoicelink) 1-1 to ePayments with userFlow = `WEB_REDIRECT`
-* “QR” The use of PDF => OrderManagement.
+* [MobilePay InvoiceDirect](https://developer.mobilepay.dk/docs/invoice/api-endpoint-reference#invoicedirect)  1-1 to ePayment with userFlow = `PUSH_MESSAGE`
+* [MobilePay InvoiceLinks](https://developer.mobilepay.dk/docs/invoice/api-endpoint-reference#invoicelink) 1-1 to ePayment with userFlow = `WEB_REDIRECT`
+* “QR” The use of PDF => Order Management.
 
 | MobilePay invoice                    | Vipps Mobilepay ePayment                                                                      |
 |--------------------------------------|-------------------------------------------------------------------------------------------------|
@@ -113,10 +114,10 @@ Please note that "ePayments" encompasses various use case scenarios. Therefore, 
 | N/A                                    | `customerInteraction` (`Customer_present`, `Customer_not_present`)​                              |
 | N/A                                    | `industryData` (Additional compliance data related to the transaction)​                          |
 
-
 ## Point of Sale vs. ePayment
 
 See:
+
 * [ePayment API](https://developer.vippsmobilepay.com/docs/APIs/epayment-api)
 * [ePayment in store](https://developer.vippsmobilepay.com/docs/APIs/epayment-api/how-it-works/vipps-epayment-api-how-it-works-in-store)
 * [Login](https://developer.vippsmobilepay.com/docs/APIs/login-api) - can be used for [loyalty](https://developer.vippsmobilepay.com/docs/vipps-solutions/loyalty-in-pos)
@@ -127,7 +128,7 @@ See:
 | Operation                 | MobilePay PoS                            | ePayment                                    |
 |---------------------------|------------------------------------------|---------------------------------------------|
 | PoS management            | `POST/GET/DELETE /v10/pointofsales`      | N/A                                         |
-| Initiate Payment          | `POST:/v10/payments`                     | [`POST:/v1/payments`](https://developer.vippsmobilepay.com/api/epayment#tag/CreatePayments/operation/createPayment)                         |
+| Initiate Payment          | `POST:/v10/payments`                     | [`POST:/v1/payments`](https://developer.vippsmobilepay.com/api/epayment#tag/CreatePayment/operation/createPayment)                         |
 | Initiate Prepared payment | `POST:/v10/payments/prepare`             | N/A (For loyalty check [solutions](https://developer.vippsmobilepay.com/docs/vipps-solutions/loyalty-in-pos))     |
 | Query Payment             | `GET:/v10/payments/{paymentid}`          | [`GET:/v1/payments/{reference}`](https://developer.vippsmobilepay.com/api/epayment#tag/QueryPayments/operation/getPayment)              |
 | Query Active Payments     | `GET /v10/payments`                      | N/A                                         |
@@ -180,7 +181,7 @@ See:
 |                 |                                                                                         |
 | **Response**    |                                                                                         |
 | `orderId`       | [`reference`](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics/orderid)                                                                             |
-| `amount`        | `amount` `(currency`, `value`)                                                          |
+| `amount`        | `amount` (`currency`, `value`)                                                          |
 | `currencyCode`  | *Applied in `amount`*                                                                   |
 | `status`        | `state`                                                                                  |
 | N/A             | `aggregate` (`authorizedAmount`, `cancelledAmount`, `capturedAmount`, `refundedAmount`) |
@@ -188,7 +189,7 @@ See:
 | `loyaltyIds`    | `profile` (`sub`)                                                                       |
 | N/A             | `pspReference`                                                                          |
 
-*N/A: `posId`, `restrictions` (`debitCardDisallowed`, `creditCardDisallowed`), `merchantPaymentLabel`, `plannedCaptureDelay`, `customerToken`, `customerReceiptToken`, `paymentExpiresAt`, `partialCapturePossible`, `pollDelayInMs`)*
+*N/A: `posId`, `restrictions` (`debitCardDisallowed`, `creditCardDisallowed`), `merchantPaymentLabel`, `plannedCaptureDelay`, `customerToken`, `customerReceiptToken`, `paymentExpiresAt`, `partialCapturePossible`, `pollDelayInMs`*
 
 ### PoS Capture, Cancel and Refund Payment
 

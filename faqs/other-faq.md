@@ -33,7 +33,7 @@ The API Dashboard on
 provides a high-level overview of errors in the use of the Vipps APIs,
 but it does in no way replace a proper handling of errors and error messages.
 
-Having said that, it _is_ possible to investigate specific API calls in special
+Having said that, it *is* possible to investigate specific API calls in special
 cases if you send us enough information. Please do your own investigations before
 contacting us about this.
 
@@ -161,7 +161,7 @@ agreement with Klarna for this.
 **Please note:** It's technically possible to use
 [Vipps Hurtigkasse](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#express-checkout-payments)
 on product pages and in the shopping basket for fast and easy checkout, and to
-let users choose between Vipps and Klarna _before_ they get to Klarna Checkout.
+let users choose between Vipps and Klarna *before* they get to Klarna Checkout.
 With
 [Vipps Login](https://vipps.no/produkter-og-tjenester/bedrift/logg-inn-med-vipps/logg-inn-med-vipps/)
 (the [Vipps Login API](https://developer.vippsmobilepay.com/docs/APIs/login-api))
@@ -188,7 +188,7 @@ the user is sent to Vipps to pay the total amount.
 ]
 ```
 
-Note, the description translates to: _Remember: Vipps is always fee-free when you pay to companies_.
+Note, the description translates to: *Remember: Vipps is always fee-free when you pay to companies*.
 
 | Field          | Description                                              |
 | -------------- | -------------------------------------------------------- |
@@ -237,4 +237,4 @@ to the requirements.
 See:
 [How to change partners for a merchant](https://developer.vippsmobilepay.com/docs/vipps-partner#how-to-change-partners-for-a-merchant).
 
-**Please note:** The MSN (the number) does _not_ change when changing partners.
+**Please note:** The MSN (the number) does *not* change when changing partners.

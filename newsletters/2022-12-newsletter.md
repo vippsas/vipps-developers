@@ -8,12 +8,9 @@ pagination_prev: null
 ---
 END_METADATA -->
 
-
 # Technical newsletter for developers 2022-12
 
 This newsletter was sent in December 2022.
-
-
 
 ## Checkout API v3
 
@@ -38,10 +35,11 @@ and the [quick start](https://developer.vippsmobilepay.com/docs/APIs/recurring-a
 for more details. For now the Recurring API v2 will continue to work, but will not support the new functionality.
 
 Improvements in button text for agreements without initial charge:
+
 * When an agreement **does not have** an initial charge,
-  the button text will be "Bekreft og start" (in English: "Confirm and start").
+  the button text will be *Bekreft og start* ("Confirm and start").
 * The button text for agreements **with** initial charge is
-  "Betal og start" (in English: "Pay and start").
+  *Betal og start* ("Pay and start").
 
 **Important:** The Recurring API v2 API will be phased out and will not be available from June 1, 2023.
 
@@ -51,7 +49,7 @@ The
 [API specification for the Vipps ePayment API](https://developer.vippsmobilepay.com/api/epayment)
 is now available.
 
-**Please note:** While the API _functionality_ is implemented, the
+**Please note:** While the API *functionality* is implemented, the
 [API documentation](https://developer.vippsmobilepay.com/docs/APIs/epayment-api)
 is still a work in progress.
 We aim to have the API guide, etc. ready in early January.

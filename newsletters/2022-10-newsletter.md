@@ -8,12 +8,9 @@ pagination_prev: null
 ---
 END_METADATA -->
 
-
 # Technical newsletter for developers 2022-10
 
 This newsletter was sent in October 2022.
-
-
 
 ## New developer documentation
 
@@ -94,7 +91,7 @@ We are in the early planning phase of developing an API for
 [settlements](../settlements/README.md).
 
 If you are interested in this and want to be kept up to date when we have
-something to share, please email integraton@vipps.no.
+something to share, please email [developer@vippsmobilepay.com](mailto:developer@vippsmobilepay.com).
 
 ## Reminders
 

@@ -1,9 +1,10 @@
+<!-- START_METADATA
 ---
 title: Requirements
 pagination_next: null
 pagination_prev: null
 ---
-
+END_METADATA -->
 
 # Requirements for applying for a Vipps service
 
@@ -11,8 +12,8 @@ To apply for Vipps services, you need to have a Norwegian organization number
 and applications must be signed with Norwegian BankID.
 
 In addition, before you can order any Vipps services, you must apply for
-a _Merchant Agreement_. This is a legal agreement between you and Vipps.
-Once the _Merchant Agreement_ has been submitted, you can order Vipps
+a *Merchant Agreement*. This is a legal agreement between you and Vipps.
+Once the *Merchant Agreement* has been submitted, you can order Vipps
 products.
 
 ## Non-Norwegian companies

@@ -1,13 +1,14 @@
+<!-- START_METADATA
 ---
 title: Reserve and capture
 pagination_next: null
 pagination_prev: null
 ---
-
+END_METADATA -->
 
 # Reserve and capture
 
-When you initiate a payment, it will be _reserved_ until you _capture_ it:
+When you initiate a payment, it will be *reserved* until you *capture* it:
 
 * When a payment is reserved it means the customer has approved the payment.
   The funds are still in the customer's account, but not available to spend on other things.
@@ -15,38 +16,38 @@ When you initiate a payment, it will be _reserved_ until you _capture_ it:
   * Captured funds will be settled to the merchant's settlement account after two business days. See
   [Settlement Information](../settlements/README.md) for more details.
 
-Vipps supports both _reserve capture_ and _direct capture_:
+Vipps supports both *reserve capture* and *direct capture*:
 
-* _Reserve capture_ is the default, and works for all types if payments.
+* *Reserve capture* is the default, and works for all types if payments.
   When you initiate a payment, it will be reserved until you capture it.
   The capture can be done a few seconds later, or several days later.
-* _Direct capture_ is available in the
+* *Direct capture* is available in the
   [eCom API](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/)
   for historical reasons, but not available in the newer
   [ePayment API](https://developer.vippsmobilepay.com/docs/APIs/epayment-api/).
-  When _direct capture_ is configured for a sales unit, all payment reservations
+  When *direct capture* is configured for a sales unit, all payment reservations
   will instantly be captured, without the need for a separate capture request.
   This is provided for legacy reasons and was intended for situations
   where the product or service is immediately provided to the customer, and
   there is absolutely no chance that the service is not available or sold out,
   e.g. digital services.
   We have since moved away from this, and strongly recommend that all integrations
-  use the ePayment API and _reserve capture_.
+  use the ePayment API and *reserve capture*.
   Direct capture requires additional compliance checks of the merchant.
 
-**Important:** It's completely fine to use _reserve capture_ almost exactly like
-_direct capture_: Just do the capture immediately after the reservation.
+**Important:** It's completely fine to use *reserve capture* almost exactly like
+_direct capture*: Just do the capture immediately after the reservation.
 The user experience is exactly the same.
 
 Important things to consider for cancellations and refunds:
 
-* If a payment has been _reserved_ (as with "reserve capture"), the merchant can
+* If a payment has been *reserved* (as with "reserve capture"), the merchant can
   make a "cancel" API request to immediately release the reservation and make available
   in the customer's account.
   This may be useful even in situations where it's "impossible" that the goods/service
   is sold out.
-* If a payment has been _captured_ (as with "direct capture"), the merchant has to
-  make an "refund" API request, and it then takes several days before the amount is
+* If a payment has been *captured* (as with "direct capture"), the merchant has to
+  make a "refund" API request, and it then takes several days before the amount is
   available in the customer's account.
 * With "reserve capture" it is possible to reserve a higher amount and only
   capture a part of it (useful for electric car charging stations, etc.).
@@ -104,7 +105,7 @@ See the FAQ:
 
 ### Reserve capture
 
-_Reserve capture_ is the normal flow.
+_Reserve capture* is the normal flow.
 
 When the end user approves an initiated payment, it will be reserved until you
 capture it. When the order is reserved, the amount is marked as reserved by the
@@ -112,18 +113,18 @@ bank, but not transferred.
 
 ### Direct capture
 
-**Important:** _Direct capture_ is available in the
+**Important:** *Direct capture* is available in the
 [eCom API](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/)
 for historical reasons,  but not available in the newer
 [ePayment API](https://developer.vippsmobilepay.com/docs/APIs/epayment-api/).
 
-When _direct capture_ is activated, all payment reservations will instantly be captured.
+When *direct capture* is activated, all payment reservations will instantly be captured.
 
-With _direct capture_, Vipps is responsible for the customer receiving the purchased product.
-Because of this, _direct capture_ requires additional compliance checks.
+With *direct capture*, Vipps is responsible for the customer receiving the purchased product.
+Because of this, *direct capture* requires additional compliance checks.
 
 A sales unit can only have one capture type, and it must be configured by Vipps.
-You can't turn _direct capture_ on or off as a merchant.
+You can't turn *direct capture* on or off as a merchant.
 
 We strongly recommend using "reserve capture" in all situations.
 

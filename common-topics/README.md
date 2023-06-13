@@ -1,3 +1,4 @@
+<!-- START_METADATA
 ---
 sidebar_label: Overview
 sidebar_position: 50
@@ -5,6 +6,7 @@ hide_table_of_contents: true
 pagination_next: null
 pagination_prev: null
 ---
+END_METADATA -->
 
 # Common API Topics
 

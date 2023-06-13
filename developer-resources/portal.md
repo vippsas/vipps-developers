@@ -16,7 +16,7 @@ END_METADATA -->
 
 The information about
 [portal.vipps.no](https://portal.vipps.no)
-on this page is for _developers_.
+on this page is for *developers*.
 
 All merchants with a signed agreement with Vipps MobilePay have access to
 [portal.vipps.no](https://portal.vipps.no).
@@ -44,9 +44,9 @@ See [Common topics: Getting the API keys](https://developer.vippsmobilepay.com/d
 
 ## How to create a test sales unit
 
-1. Under _Vipps På Nett_ > _Utvikler_, select _Environment_ > _test_.
-1. Click _Add test sales unit_.
-1. Enter the requested properties and click _Create_.
+1. Under *Vipps På Nett* > *Utvikler*, select *Environment* > *test*.
+1. Click *Add test sales unit*.
+1. Enter the requested properties and click *Create*.
    * Name - Enter the name of your test sales unit.
    * Partner - Enter optional partner data (not usually needed).
    * Select optional properties:
@@ -57,27 +57,27 @@ See [Common topics: Getting the API keys](https://developer.vippsmobilepay.com/d
 After a couple of minutes, your new test sales unit will appear in the bottom of the list (possibly after some browser refreshes).
 Then, you can [get the API keys](../common-topics/api-keys.md#getting-the-api-keys) and begin testing.
 
-**Please note:** It is not possible to _change_ an existing sales unit in the test environment,
+**Please note:** It is not possible to *change* an existing sales unit in the test environment,
 but you can create as many as you need.
 
 ## How to set up the Vipps Login API for your sales unit
 
 1. Find your desired sales unit.
-   * Under _Vipps På Nett_ > _Utvikler_, select _Environment_ > _test_, then search for your test sales unit in the list. To create a new test sales unit, see
+   * Under *Vipps På Nett* > *Utvikler*, select *Environment* > *test*, then search for your test sales unit in the list. To create a new test sales unit, see
      [create a new test sales unit](#how-to-create-a-test-sales-unit).
-1. Click the _Setup login_ button corresponding to your sales unit.
-1. If the first time, click _Activate Vipps Login_ and fill out fields that follow:
+1. Click the *Setup login* button corresponding to your sales unit.
+1. If the first time, click *Activate Vipps Login* and fill out fields that follow:
     * Redirect URIs - Specify the URI that will be used with
       the query parameter, `redirect_uri`, on the initial request to the `authentication`
       endpoint. You can register as many URIs as you want.
       This creates a list of accepted URIs.
 
       See [Login API FAQ: What are the requirements for redirect URIs?](https://developer.vippsmobilepay.com/docs/APIs/login-api/vipps-login-api-faq#what-are-the-requirements-for-redirect-uris) for details.
-      1. Enter the URI. It must be _exactly_ the same URI that you use when making API requests.
+      1. Enter the URI. It must be *exactly* the same URI that you use when making API requests.
         Take care to notice if the actual URI is specified with a trailing slash `/` or not.
         For testing, you can use `http://localhost`.
-      2. Click _Add URI_ for each URI you add.
-      3. Click _Save_.
+      2. Click *Add URI* for each URI you add.
+      3. Click *Save*.
 
 ## How to create additional users on portal.vipps.no
 
@@ -109,7 +109,7 @@ The merchant's administrator can also create additional users on
 [portal.vipps.no](https://portal.vipps.no).
 
 If you can log in to [portal.vipps.no](https://portal.vipps.no), but cannot see
-the _Utvikler_ (developer) option in the menu, you need to have the
+the *Utvikler* (developer) option in the menu, you need to have the
 merchant's administrator grant you with developer access for the sales unit.
 
 For
@@ -134,14 +134,14 @@ the app and elsewhere.
 You can administer the name and logo on
 [portal.vipps.no](https://portal.vipps.no).
 
-To change your display name you go to _salgssteder_ ("sales units") in the
+To change your display name you go to *salgssteder* ("sales units") in the
 left menu and select the correct unit.
 
-Select the sales unit under _salgssted_.
+Select the sales unit under *salgssted*.
 From the page that opens, you can see the key information for this sales unit
 ![See sales unit info](images/Sales_unit_see_info.png)
 
-By clicking _Rediger_ ("Edit") next to the _Visning i appen_ ("View in the app") heading, you will come to a
+By clicking *Rediger* ("Edit") next to the *Visning i appen* ("View in the app") heading, you will come to a
 screen where you both can update your name and ad your logo:
 
 ![Update your name and you logo](images/Sales_unit_change_name_and_logo.png)

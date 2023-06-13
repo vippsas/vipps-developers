@@ -8,7 +8,6 @@ pagination_prev: null
 ---
 END_METADATA -->
 
-
 # About us
 
 <!-- START_COMMENT -->

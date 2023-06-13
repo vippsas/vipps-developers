@@ -1,10 +1,11 @@
+<!-- START_METADATA
 ---
 title: SFTP Report Service
 hide_table_of_contents: true
 pagination_next: null
 pagination_prev: null
 ---
-
+END_METADATA -->
 
 # Vipps SFTP Report Service
 
@@ -16,8 +17,6 @@ SFTP can be used manually (interactively), or automatically/programmatically
 by using SFTP as part of an integration.
 
 See the [Settlements](../README.md) overview.
-
-
 
 # Reports
 

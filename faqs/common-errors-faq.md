@@ -98,7 +98,7 @@ See:
 [API products](https://developer.vippsmobilepay.com/docs/APIs).
 
 If you are absolutely, completely 100 % sure that you have done everything
-correctly, and it _still_ doesn't work, you can regenerate the API keys on
+correctly, and it *still* doesn't work, you can regenerate the API keys on
 [portal.vipps.no](https://portal.vipps.no).
 This should never be necessary, and we do not know of any situations where
 this fixes any known problem, so it's our very last suggestion.
@@ -148,7 +148,7 @@ See: [Why do I get `errorCode 35 "Requested Order not found"`?](#why-do-i-get-er
 
 ## Why do I get `HTTP 500 Internal Server Error`?
 
-Something _might_ be wrong on our side and we are working to fix it!
+Something *might* be wrong on our side and we are working to fix it!
 
 But: It's usually a problem with your request, and that our validation does not catch it.
 In other words: We should have returned `HTTP 400 Bad Request`.
@@ -205,7 +205,7 @@ Please check that the merchant's organization number is still active in
 [Brønnøysundregistrene](https://www.brreg.no). Vipps automatically deactivates
 merchants (companies) when they are deleted from Brønnøysundregistrene.
 This can also happen if a merchant changes organization type, for instance
-from _ENK_ to _AS_.
+from *ENK* to *AS*.
 
 Merchants can log in on
 [portal.vipps.no](https://portal.vipps.no)
@@ -217,7 +217,7 @@ the merchant can reactivate it again.
 and cannot help with this based on email requests.
 
 Deactivation can also happen if the test merchant is not being used for a
-_very long_ time. Please
+_very long* time. Please
 [contact customer service](https://vipps.no/kontakt-oss/),
 and we will reactivate the merchant.
 

@@ -1,9 +1,10 @@
+<!-- START_METADATA
 ---
 title: Errors
 pagination_next: null
 pagination_prev: null
 ---
-
+END_METADATA -->
 
 # Errors
 
@@ -36,7 +37,7 @@ Content-Language: en
 }
 ```
 
-**Important:** The `extraDetails` in the example above _may_ be different for
+**Important:** The `extraDetails` in the example above *may* be different for
 some errors - for instance `invalidParams` - for some APIs, but new APIs
 will use `extraDetails`.
 

@@ -8,7 +8,6 @@ pagination_prev: null
 ---
 END_METADATA -->
 
-
 # Technical newsletter for developers 2021-04
 
 This newsletter was sent in April 2021.
@@ -146,7 +145,7 @@ you should not ask the customer for address and shipping method.
 
 You should avoid asking the customer in a pub for the shipping method for the drinks, etc.
 
-Instead: Use _Userinfo_ to ask for the user's details, such as:
+Instead: Use *Userinfo* to ask for the user's details, such as:
 phone number, name, email address, postal address, birthdate, national identity number and bank accounts.
 The user must of course consent to sharing the information.
 
@@ -169,7 +168,7 @@ This is just the start. Please let us know what you think and suggest improvemen
 
 ### Vipps HTTP Headers ℹ️
 
-We recommend using the following _optional_ HTTP headers for all requests to the
+We recommend using the following *optional* HTTP headers for all requests to the
 [Vipps eCom API](https://developer.vippsmobilepay.com/docs/APIs/ecom-api)
 and the
 [Vipps Recurring API](https://developer.vippsmobilepay.com/docs/APIs/recurring-api).

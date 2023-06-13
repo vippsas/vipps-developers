@@ -8,7 +8,6 @@ pagination_prev: null
 ---
 END_METADATA -->
 
-
 # Technical newsletter for developers 2020-04
 
 This newsletter was sent in April 2020.
@@ -21,7 +20,7 @@ There is no longer a need to first log in and then confirm the payment.
 This reduces the time it takes to pay with Vipps.
 
 And: Since the "login" is connected to the payment, we have better logging and
-more data, so _if_ something goes wrong, we can fix it faster.
+more data, so *if* something goes wrong, we can fix it faster.
 
 ## POS integration
 
@@ -43,7 +42,7 @@ for details.
 
 ## eCom: Cancel pending payments
 
-The `/cancel` endpoint may now also be called _before_ the payment has been
+The `/cancel` endpoint may now also be called *before* the payment has been
 reserved, meaning before the user has accepted/rejected in Vipps. This may be
 useful in face-to-face situations where a customer's phone runs out of battery.
 
@@ -75,11 +74,11 @@ content is the same, and you can choose what to use.
 
 We are just getting started, and
 [feedback](https://developer.vippsmobilepay.com/docs/vipps-developers/contact)
-is very welcome. We know there are some (minor?) issues, please bear with us.
+is very welcome. We know there are some minor issues, please bear with us.
 
 ## API documentation in HTML format with Slate
 
-We now offer generated HTML documentation in three formats for most APIs.
+We offer generated HTML documentation in three formats for most APIs.
 Examples for the eCom API:
 
 * OpenAPI: [ecom](https://developer.vippsmobilepay.com/api/ecom)
@@ -93,8 +92,8 @@ is very welcome.
 
 We have made some more in-depth product information pages with screenshots:
 
-* [eCom (_Vipps på Nett_)](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/how-it-works)
-* [Recurring (_Faste Betalinger_)](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/how-it-works)
+* [eCom (*Vipps på Nett*)](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/how-it-works)
+* [Recurring (*Faste Betalinger*)](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/how-it-works)
 
 ## Plugin overview
 
@@ -114,8 +113,8 @@ Our API lifecycle policy is
 
 ### Status pages for test and production environments
 
-* Test: https://vipps-test.statuspage.io
-* Production: https://vipps.statuspage.io
+* Test: <https://vipps-test.statuspage.io>
+* Production: <https://vipps.statuspage.io>
 
 ### How to get help quickly
 

@@ -1,8 +1,10 @@
+<!-- START_METADATA
 ---
 title: Vipps landing page
 pagination_next: null
 pagination_prev: null
 ---
+END_METADATA -->
 
 # The Vipps landing page
 

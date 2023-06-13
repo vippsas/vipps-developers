@@ -23,12 +23,12 @@ Almost every user that selects to pay with Vipps completes the payment. The
 success rate is much higher than when using a payment card directly.
 
 When comparing drop-off rates: Remember to compare drop-off data for when the
-user _selects_ payment method, do not compare Vipps to numbers for when the
+user *selects* payment method, do not compare Vipps to numbers for when the
 user has selected card payment and already has manually entered the card number, etc.:
 
 * Drop-off data for Vipps: Measure the success rate after the user has selected Vipps.
 * Drop-off rate for cards: Measure the success rate after the user has selected card,
-  but from _before_ the user has to enter the card details.
+  but from *before* the user has to enter the card details.
 
 The success rate for PSP integrations is not quite as high.
 See:
@@ -43,7 +43,7 @@ The most common reasons why payments are not completed are:
 1. The debit/credit card has expired.
    Vipps notifies users in good time before a card expires, but users must
    update the card(s) themselves.
-   Vipps verifies cards for _every_ payment (resulting in an extremely low fraud rate).
+   Vipps verifies cards for *every* payment (resulting in an extremely low fraud rate).
    **Please note:** Vennebetaling (P2P) uses bank accounts directly, not the card.
    It's therefore possible for a user to pay another person (using the bank account),
    but not be able to pay a merchant (since the card is expired).
@@ -63,8 +63,8 @@ The most common reasons why payments are not completed are:
 5. Payment limit reached.
    There are some amount limits to prevent misuse and fraud.
    The user sometimes (not often) needs to authenticate with BankID in Vipps.
-   Some users _still_ do not use the BankID app or "BankID på mobil" and need their
-   BankID "kodebrikkke" (_code card_), which they may not have available.
+   Some users *still* do not use the BankID app or "BankID på mobil" and need their
+   BankID "kodebrikkke" (*code card*), which they may not have available.
 6. The payment has timed out.
    This happens if the user does not confirm in Vipps within 10 minutes
    (5 minutes to log into Vipps, then 5 minutes to confirm the payment),
@@ -217,4 +217,4 @@ Use
 to get the customer's consent to share name, email address, etc.
 
 **Please note:** Vippsnummer is not legal for payments where the customer is
-not physically present. It does also not comply with the Treasury Act, (_Kassaloven_).
+not physically present. It does also not comply with the Treasury Act, (*Kassaloven*).

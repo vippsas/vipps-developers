@@ -30,7 +30,7 @@ please check there first.
 **Important:** Almost all requests we get are already covered in the
 [searchable technical documentation](https://developer.vippsmobilepay.com/search).
 
-Integration Services helps developers with _**technical**_ questions, such as questions about using our APIs.
+Integration Services helps developers with *technical* questions, such as questions about using our APIs.
 If you do not have a technical question, you can avoid delays by starting in the right place:
 
 | Topic | How to get help |
@@ -46,7 +46,7 @@ If you do not have a technical question, you can avoid delays by starting in the
 | Settlements, invoices or similar | See: [Settlements](./settlements/README.md). |
 | Suggestions for improvements to [Vipps products](https://www.vipps.no/produkter-og-tjenester/bedrift/)  | Please use [this form](https://www.vipps.no/kontakt-oss/). |
 
-For _**technical**_ issues related to Vipps and development of services using our APIs: Please see below.
+For *technical* issues related to Vipps and development of services using our APIs: Please see below.
 
 ### Almost all questions are answered in the documentation
 
@@ -61,7 +61,7 @@ Please use the
 If you cannot find the answer: Please send an email with all relevant
 information to the address below:
 
-1. **Please: Always include a _detailed_ description of the problem with a step-by-step description of what you do and what happens.**
+1. **Please: Always include a *detailed* description of the problem with a step-by-step description of what you do and what happens.**
 2. A concise, self-explanatory `Subject` line, such as "`POST:/something` gives `HTTP 400` response".
 3. Company details: Organization number (find yours at [Brønnøysundregistrene](https://brreg.no))
 4. Merchant Serial Number (MSN), found on [portal.vipps.no](https://portal.vipps.no).
@@ -87,7 +87,7 @@ information to the address below:
 **Important:** If you do not provide enough information, our first reply will
 be a request for more details, which will of course cause delays.
 
-The Integration Services email address is: developer@vippsmobilepay.com.
+The Integration Services email address is: [developer@vippsmobilepay.com](mailto:developer@vippsmobilepay.com).
 If you add your colleagues on CC they will get all updates too.
 
 ### Keep your colleagues up to date
@@ -113,7 +113,7 @@ The auto-reply is sent from a real e-mail address, which you can reply to.
 If you want to send additional information about the same issue,
 please reply to the email, without changing the `Subject` line.
 
-Please remove previous communication when replying to an email, do _not_ quote
+Please remove previous communication when replying to an email, do *not* quote
 all the previous messages - we already have them.
 
 ### Response time

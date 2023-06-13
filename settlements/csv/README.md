@@ -1,14 +1,13 @@
+<!-- START_METADATA
 ---
 title: CSV
 hide_table_of_contents: true
 pagination_next: null
 pagination_prev: null
 ---
-
+END_METADATA -->
 
 # Vipps settlements: CSV
-
-
 
 The following is an example of a CSV settlement file:
 
@@ -35,5 +34,3 @@ The CSV settlement file contains the following info:
 | Fornavn  | First name  | Only applicable for Vipps number   |
 | Etternavn  | Last name  | Only applicable for Vipps number   |
 | Melding  | Message/Transaction text  |   |
-
-

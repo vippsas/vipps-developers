@@ -18,8 +18,8 @@ To apply for Vipps services, you need to have a Norwegian organization number
 and applications must be signed with Norwegian BankID.
 
 In addition, before you can order any Vipps services, you must apply for
-a _Merchant Agreement_. This is a legal agreement between you and Vipps.
-Once the _Merchant Agreement_ has been submitted, you can order Vipps
+a *Merchant Agreement*. This is a legal agreement between you and Vipps.
+Once the *Merchant Agreement* has been submitted, you can order Vipps
 products.
 
 ## How to apply
@@ -37,12 +37,12 @@ You can check the status of your application on
 or
 by contacting [customer service](https://www.vipps.no/kontakt-oss/).
 
-When the _Merchant Agreement_ is approved and your product order is sent,
+When the *Merchant Agreement* is approved and your product order is sent,
 you (or the user associated with the order) will receive an email
 with the name and serial number of your test sales unit, along with the
 [test user](https://developer.vippsmobilepay.com/docs/vipps-developers/test-environment/#test-users)
 for logging into the
-[Vipps Merchant Test (MT) app](https://developer.vippsmobilepay.com/docs/vipps-developers/test-environment/#vipps-test-apps). 
+[Vipps Merchant Test (MT) app](https://developer.vippsmobilepay.com/docs/vipps-developers/test-environment/#vipps-test-apps).
 Now, you can start testing with the Vipps APIs.
 
 When your product order is approved, you will get an email stating that you can

@@ -14,7 +14,7 @@ END_METADATA -->
 [Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/docs/vipps-developers/).
 <!-- END_COMMENT -->
 
-You can test Vipps with a _production_ version of the Vipps app
+You can test Vipps with a *production* version of the Vipps app
 (the normal one in Apple Store and Google Play) here:
 [demo.vipps.no](https://demo.vipps.no).
 

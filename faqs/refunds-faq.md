@@ -16,7 +16,7 @@ This depends on your eCommerce solution. The Vipps eCom API supports refunds wit
 [`POST:/ecomm/v2/payments/{orderId}/refund`](https://developer.vippsmobilepay.com/api/ecom#tag/Vipps-eCom-API/operation/refundPaymentUsingPOST).
 For details on how to offer refunds, please refer to the documentation for your eCommerce solution.
 
-All integrations with the Vipps eCom API _must_ support refunds.
+All integrations with the Vipps eCom API *must* support refunds.
 
 It is also possible to do refunds on
 [portal.vipps.no](https://portal.vipps.no).
@@ -40,7 +40,7 @@ of 750 NOK, and need to refund the remaining 250 NOK.
 See:
 [For how long is a payment reserved?](reserve-and-capture-faq.md#for-how-long-is-a-payment-reserved).
 
-* The long version: It _is_ possible to cancel the remaining reservation after a
+* The long version: It *is* possible to cancel the remaining reservation after a
 partial capture through the Vipps eCom API: Send a
 [`PUT:/ecomm/v2/payments/{orderId}/cancel`](https://developer.vippsmobilepay.com/api/ecom#tag/Vipps-eCom-API/operation/cancelPaymentRequestUsingPUT)
 request with `shouldReleaseRemainingFunds: true` in the body.
@@ -67,7 +67,7 @@ See: [Settlements](../settlements/README.md).
 
 ### How long does it take from a refund is made until the money is in the customer's account?
 
-Normally 2-3 _bank days_, depending on the bank(s).
+Normally 2-3 *bank days*, depending on the bank(s).
 It can take much longer, up to 10 days, and depends on the bank(s).
 
 Vipps does not have more information than what is available through our API.

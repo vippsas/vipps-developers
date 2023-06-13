@@ -8,12 +8,9 @@ pagination_prev: null
 ---
 END_METADATA -->
 
-
 # Technical newsletter for developers 2023-03
 
 This newsletter was sent in March 2023.
-
-
 
 ## New to the technical newsletter?
 
@@ -51,7 +48,7 @@ over several years. The main benefits are:
 
 * Support for different flows, like paying by QR code, out-of-the-box without the "hacks" required in the eCom API
 * Support for long-lived payments (payment requests from merchants) that are valid up to 28 days
-* Support for free-standing card payments where you can pay with VISA and MasterCard without the Vipps app
+* Support for freestanding card payments where you can pay with VISA and MasterCard without the Vipps app
 * Webhooks to always reliably send information back to the merchant or partner
 
 We strongly recommend that all new integrations use the

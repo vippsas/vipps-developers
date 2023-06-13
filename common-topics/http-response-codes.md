@@ -1,9 +1,10 @@
+<!-- START_METADATA
 ---
 title: HTTP response codes
 pagination_next: null
 pagination_prev: null
 ---
-
+END_METADATA -->
 
 # HTTP response codes
 
@@ -28,7 +29,7 @@ In general:
 * 4XX responses: Client error. You have a problem, and you must correct it.
 * 5XX responses: Server error. We have a problem, and we must correct it.
 
-See the API specification for each API for details _especially the API's FAQ_.
+See the API specification for each API for details *especially the API's FAQ*.
 
 See:
 [Error](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics/errors/).

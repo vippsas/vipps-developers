@@ -8,12 +8,9 @@ pagination_prev: null
 ---
 END_METADATA -->
 
-
 # Technical newsletter for developers 2022-04
 
 This newsletter was sent in April 2022.
-
-
 
 ## Release of remainder after doing a partial capture
 
@@ -55,9 +52,9 @@ This change only applies to the `GET` method, and does not affect the `POST` and
 
  From **August 1st, 2022** some new rules for charge creation will be enforced:
 
- - The `amount` of a charge is flexible but cannot be higher than the
+- The `amount` of a charge is flexible but cannot be higher than the
    `agreement price`.
- - For an agreement with a `campaign`, the `amount` of a charge is flexible but
+- For an agreement with a `campaign`, the `amount` of a charge is flexible but
    cannot be higher than the campaign price. After the campaign expires the
   `amount` of a charge cannot be higher than the `agreement price`.
 
@@ -78,6 +75,7 @@ and an informative error message in the response body, we see that some merchant
 and partners keep making incorrect API calls.
 
 Please:
+
 - Monitor the responses you get when making API calls
 - Log all errors
 - Fix errors as quickly as possible
@@ -92,14 +90,14 @@ the Vipps landing page.
 Please make sure you send the `mobileNumber` in `91234567` format, not
 `+47 91 23 45 67` or something else.
 We have previously tried to respond with `HTTP 400 Bad Request` (as we should)
-for incorrectly formatted phone numbers, but that broke _a lot_  of integrations,
+for incorrectly formatted phone numbers, but that broke *a lot*  of integrations,
 so we decided to accept the incorrect API calls even though they give a poor
 user experience.
 
 See:
 
-* [Use the API Dashboard to find problems with your integration](#use-the-api-dashboard-to-find-problems-with-your-integration)
-* [FAQ: Common errors](../faqs/common-errors-faq.md)
+- [Use the API Dashboard to find problems with your integration](#use-the-api-dashboard-to-find-problems-with-your-integration)
+- [FAQ: Common errors](../faqs/common-errors-faq.md)
 
 ### Use the API Dashboard to find problems with your integration
 

@@ -46,8 +46,8 @@ You will, therefore, need to use a different set of API keys for the test enviro
 
 💥 **Use caution with storing and transferring API keys** 💥
 
-* Never send API keys unencrypted by email.
-* If you accidentally share your API keys, you must generate new ones by clicking the *regenerate* button.
+- Never send API keys unencrypted by email.
+- If you accidentally share your API keys, you must generate new ones by clicking the *regenerate* button.
   Update your integrations so they will not stop working.
 
 **Please note:**
@@ -78,8 +78,6 @@ You will, therefore, need to use a different set of API keys for the test enviro
    The API keys will be displayed.
    **Please note:** You can only see API keys that you have access to. All others will be hidden.
    ![portal.vipps.no: The API keys for a sales unit](../images/portalvippsno-salesunit-keys.png)
-
-
 
 ## How to use the API keys
 
@@ -112,7 +110,7 @@ Vipps has previously had separate API keys for each API product, and a set of
 API keys were directly linked to one sales unit. This meant that customers
 needed to keep track of multiple API keys, and that access to a new API
 required a new sales unit. The API keys for Vipps eCom v1 and v2 APIs have been “upgraded” to include the same APIs as
-Vipps API.  The `Vipps-API` product also includes some _legacy_ APIs, such as _eCom API v1_ _Signup and Login_.
+Vipps API.  The `Vipps-API` product also includes some *legacy* APIs, such as *eCom API v1* *Signup and Login*.
 
 If you are still using a legacy API, you should upgrade as soon as possible.
 See:

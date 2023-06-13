@@ -30,11 +30,11 @@ The settlement flow is as follows:
    [portal.vipps.no](#portalvippsno),
    [SFTP](#sftp)).
 3. Day 3: Payments are made from Vipps' bank account to the merchant's bank
-   account. Money is _normally_ available in the account before noon.
+   account. Money is *normally* available in the account before noon.
 
 Settlement process will always adhere to
 [Vipps' terms and conditions](https://vipps.no/vilkar/vilkar-bedrift/),
-section 5, "OPPGJØR OG FORHOLD TIL VIPPS INNLØSER" (i.e., _SETTLEMENT AND RELATIONSHIP WITH VIPPS REDEEMER_).
+section 5, "OPPGJØR OG FORHOLD TIL VIPPS INNLØSER" (i.e., *SETTLEMENT AND RELATIONSHIP WITH VIPPS REDEEMER_).
 
 Days are bank days, Monday - Friday, excluding banking holidays. In other words,
 a capture made on Monday will be on merchant's account on Wednesday, while a
@@ -76,9 +76,9 @@ Merchants with a "net settlement" contract receive the users' payments
 excluding the Vipps fees. On other words: The Vipps fees are deducted
 from the settlement amount.
 
-Merchants with a "gross settlement" contract receive the _full amount_
+Merchants with a "gross settlement" contract receive the *full amount_
 of the users' payments
-_including_ the Vipps fees, and are then invoiced for the Vipps fees.
+_including* the Vipps fees, and are then invoiced for the Vipps fees.
 
 For gross settlements: If the merchant's organization number is registered as an EHF recipient,
 Vipps sends invoices as EHF. If not, the invoices are sent by email.
@@ -137,7 +137,7 @@ See the eCom API FAQ:
 
 ### portal.vipps.no
 
-Customers can log in to [portal.vipps.no](https://portal.vipps.no), choose _Rapporter_ (i.e., _Reports_) and download reports
+Customers can log in to [portal.vipps.no](https://portal.vipps.no), choose *Rapporter* (i.e., *Reports_) and download reports
 in the formats mentioned above.
 
 Reports with personal details of the customers are also available, see

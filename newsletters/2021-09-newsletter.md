@@ -8,12 +8,9 @@ pagination_prev: null
 ---
 END_METADATA -->
 
-
 # Technical newsletter for developers 2021-09
 
 This newsletter was sent in September 2021.
-
-
 
 ## The Vipps QR API
 
@@ -85,7 +82,7 @@ That HTTP status is "reserved for future use", and our use was a bit *creative*.
 
 We now send `HTTP 400 Bad Request` instead, with more details in the message body.
 
-Since this is _still_ an error that can and must be fixed by the merchant,
+Since this is *still* an error that can and must be fixed by the merchant,
 we have concluded that the change does not require a new version of the API.
 
 ## Newsletter archive

@@ -1,9 +1,10 @@
+<!-- START_METADATA
 ---
 title: HTTP headers
 pagination_next: null
 pagination_prev: null
 ---
-
+END_METADATA -->
 
 # HTTP headers
 
@@ -16,7 +17,7 @@ These headers are **required for plugins and partners** and sent by the
 We strongly recommend that all customers with direct integration with the API to also do so.
 
 Partners must always send the `Merchant-Serial-Number` header, and we recommend
-that _everyone_ sends it, also when using the merchant's own API keys.
+that *everyone* sends it, also when using the merchant's own API keys.
 It can speed up any troubleshooting of API problems quite a bit.
 
 ## Example headers
