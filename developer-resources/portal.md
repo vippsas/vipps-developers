@@ -16,7 +16,7 @@ END_METADATA -->
 
 The information about
 [portal.vipps.no](https://portal.vipps.no)
-on this page is for _developers_. 
+on this page is for _developers_.
 
 All merchants with a signed agreement with Vipps MobilePay have access to
 [portal.vipps.no](https://portal.vipps.no).
@@ -60,7 +60,7 @@ Then, you can [get the API keys](../common-topics/api-keys.md#getting-the-api-ke
 **Please note:** It is not possible to _change_ an existing sales unit in the test environment,
 but you can create as many as you need.
 
-## How to setup the Vipps Login API for your sales unit
+## How to set up the Vipps Login API for your sales unit
 
 1. Find your desired sales unit.
    * Under _Vipps På Nett_ > _Utvikler_, select _Environment_ > _test_, then search for your test sales unit in the list. To create a new test sales unit, see
@@ -69,16 +69,15 @@ but you can create as many as you need.
 1. If the first time, click _Activate Vipps Login_ and fill out fields that follow:
     * Redirect URIs - Specify the URI that will be used with
       the query parameter, `redirect_uri`, on the initial request to the `authentication`
-      endpoint. You can register as many URIs as you want. 
+      endpoint. You can register as many URIs as you want.
       This creates a list of accepted URIs.
-       
+
       See [Login API FAQ: What are the requirements for redirect URIs?](https://developer.vippsmobilepay.com/docs/APIs/login-api/vipps-login-api-faq#what-are-the-requirements-for-redirect-uris) for details.
       1. Enter the URI. It must be _exactly_ the same URI that you use when making API requests.
         Take care to notice if the actual URI is specified with a trailing slash `/` or not.
         For testing, you can use `http://localhost`.
       2. Click _Add URI_ for each URI you add.
       3. Click _Save_.
-
 
 ## How to create additional users on portal.vipps.no
 
@@ -132,20 +131,20 @@ For more information, see:
 The sales unit's name and logo is shown to users in several places, both in
 the app and elsewhere.
 
-You can administer the name, logo, etc on
+You can administer the name and logo on
 [portal.vipps.no](https://portal.vipps.no).
 
-To change your display name you go to sales units ("salgssteder") in the
-left menu and select the correct unit. 
+To change your display name you go to _salgssteder_ ("sales units") in the
+left menu and select the correct unit.
 
-You go to the sales unit ("salgssted") and click the correct unit. From this
-page you can see the key information for this sales unit
+Select the sales unit under _salgssted_.
+From the page that opens, you can see the key information for this sales unit
 ![See sales unit info](images/Sales_unit_see_info.png)
 
-By clicking "Rediger" next to the "Visning i appen" heading you will come to a
+By clicking _Rediger_ ("Edit") next to the _Visning i appen_ ("View in the app") heading, you will come to a
 screen where you both can update your name and ad your logo:
 
-![By clicking "Rediger" next to the "Visning i appen" heading you will come to a screen where you both can update your name and ad you logo:](images/Sales_unit_change_name_and_logo.png)
+![Update your name and you logo](images/Sales_unit_change_name_and_logo.png)
 
 **Please note:** You cannot change the name used for the
 [test environment](https://developer.vippsmobilepay.com/docs/vipps-developers/test-environment/).
@@ -153,4 +152,4 @@ screen where you both can update your name and ad your logo:
 ## Questions
 
 For more information about the Vipps Portal, see the
-[help pages on vipps.no (in Norwegian)](https://vipps.no/hjelp/vipps/kundeforholdet-mitt/hva-får-jeg-tilgang-til-når-jeg-logger-meg-inn-på-vippsportalen/).
+[help pages on vipps.no](https://vipps.no/hjelp/vipps/kundeforholdet-mitt/hva-får-jeg-tilgang-til-når-jeg-logger-meg-inn-på-vippsportalen/).
