@@ -80,9 +80,9 @@ Merchants with a "gross settlement" contract receive the *full amount_
 of the users' payments
 _including* the Vipps fees, and are then invoiced for the Vipps fees.
 
-Net settlement is the default, and in practice the only settlement method.
+Net settlement is the default, and in practice the only settlement method offered.
 Gross settlements are only offerend in very rare cases.
-With gross settlements, Vipps MobilePay in practice offer a loan to the merchant, and
+With gross settlements, Vipps MobilePay in practice provides a loan to the merchant, and
 this involves both additional cost and risk , and also requires additional checks.
 
 For gross settlements: If the merchant's organization number is registered as an EHF recipient,
