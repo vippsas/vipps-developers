@@ -73,7 +73,7 @@ We are working hard to improve the
 * We have a new
   [Solutions](https://developer.vippsmobilepay.com/docs/vipps-solutions)
   section to highlight combinations of Vipps APIs, such as
-  [Loyalty in physical stores](https://developer.vippsmobilepay.com/docs/vipps-solutions/loyalty-in-pos)
+  [In-store using merchant scan](https://developer.vippsmobilepay.com/docs/vipps-solutions/loyalty-in-pos)
   and
   [Electric vehicle charging](https://developer.vippsmobilepay.com/docs/vipps-solutions/ev-charging).
 * All APIs now have a

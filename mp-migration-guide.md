@@ -77,7 +77,7 @@ See:
 See:
 
 * [ePayment API](https://developer.vippsmobilepay.com/docs/APIs/epayment-api)
-* [Extend payment time-outs](https://developer.vippsmobilepay.com/docs/vipps-solutions/long-expiry-time-for-payments-to-merchants)
+* [Long-living payments](https://developer.vippsmobilepay.com/docs/vipps-solutions/long-expiry-time-for-payments-to-merchants)
 
 Please note that ePayment encompasses various use case scenarios. Therefore, if you are seeking use cases that target existing MobilePay merchants and can be utilized for migration purposes, some examples include:
 
@@ -120,7 +120,8 @@ See:
 
 * [ePayment API](https://developer.vippsmobilepay.com/docs/APIs/epayment-api)
 * [ePayment in store](https://developer.vippsmobilepay.com/docs/APIs/epayment-api/how-it-works/vipps-epayment-api-how-it-works-in-store)
-* [Login](https://developer.vippsmobilepay.com/docs/APIs/login-api) - can be used for [loyalty](https://developer.vippsmobilepay.com/docs/vipps-solutions/loyalty-in-pos)
+* [Login](https://developer.vippsmobilepay.com/docs/APIs/login-api) - can be used for loyalty, as described in
+  [In-store using merchant scan](https://developer.vippsmobilepay.com/docs/vipps-solutions/loyalty-in-pos)
 * [Order management](https://developer.vippsmobilepay.com/docs/APIs/order-management-api) - can be used for [receipts](https://developer.vippsmobilepay.com/docs/APIs/order-management-api/vipps-order-management-api#receipts)
 
 ### PoS and ePayment endpoints
@@ -129,7 +130,7 @@ See:
 |---------------------------|------------------------------------------|---------------------------------------------|
 | PoS management            | `POST/GET/DELETE /v10/pointofsales`      | N/A                                         |
 | Initiate Payment          | `POST:/v10/payments`                     | [`POST:/v1/payments`](https://developer.vippsmobilepay.com/api/epayment#tag/CreatePayment/operation/createPayment)                         |
-| Initiate Prepared payment | `POST:/v10/payments/prepare`             | N/A (For loyalty check [solutions](https://developer.vippsmobilepay.com/docs/vipps-solutions/loyalty-in-pos))     |
+| Initiate Prepared payment | `POST:/v10/payments/prepare`             | N/A (For loyalty, see [solutions](https://developer.vippsmobilepay.com/docs/vipps-solutions/loyalty-in-pos))     |
 | Query Payment             | `GET:/v10/payments/{paymentid}`          | [`GET:/v1/payments/{reference}`](https://developer.vippsmobilepay.com/api/epayment#tag/QueryPayments/operation/getPayment)              |
 | Query Active Payments     | `GET /v10/payments`                      | N/A                                         |
 | Query payment log         | N/A                                      | [`GET:/v1/payments/{reference}/events`](https://developer.vippsmobilepay.com/api/epayment#tag/QueryPayments/operation/getPaymentEventLog)       |
