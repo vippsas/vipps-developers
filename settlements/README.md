@@ -81,9 +81,9 @@ of the users' payments
 _including* the Vipps fees, and are then invoiced for the Vipps fees.
 
 Net settlement is the default, and in practice the only settlement method offered.
-Gross settlements are only offerend in very rare cases.
+Gross settlements are only offered in very rare cases.
 With gross settlements, Vipps MobilePay in practice provides a loan to the merchant, and
-this involves both additional cost and risk , and also requires additional checks.
+this involves both additional cost and risk, and also requires additional checks.
 
 For gross settlements: If the merchant's organization number is registered as an EHF recipient,
 Vipps sends invoices as EHF. If not, the invoices are sent by email.
@@ -114,7 +114,7 @@ More details:
 Payments made with
 [Vippsnummer](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-i-butikk/ta-betalt-med-vipps/)
 do not have an `orderId`.
-If you need an `orderId` to identify a payment, you need to use
+If you need to use `orderId` to identify a payment, you need to use
 [Vipps på nett](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/).
 See also the Vipps eCom API.
 
