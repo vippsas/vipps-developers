@@ -43,7 +43,6 @@ Functionality that is not available in the test environment, a non-exhaustive li
 1. Unscheduled maintenance *may* occur.
    We will do our best to inform with
    [Status page](./developer-resources/status-pages.md),
-   but it may not always be possible. In practice this is extremely rare.
 2. The test app has the orange Vipps color scheme, not the blue MobilePay color cheme (this will be fixed, but there is not ETA). 
 3. Only Norwegian phone numbers are supported (this will be fixed, but there is not ETA).
 4. All test merchants appear as Norwegian merchants in the app (this will be fixed, but there is not ETA).
@@ -61,6 +60,7 @@ Functionality that is not available in the test environment, a non-exhaustive li
    test environment. Payments must be checked with the API.
 10. There are no settlements in the test environment, and therefore
    no settlement reports, not SFTP service and no Report API.
+   The only way to test the complete settlement flow is in the productionn environment.
 11. The user's email address can not be verified in the normal way.
    See: [Email address](#email-address).
 12. [Freestanding card payments](https://developer.vippsmobilepay.com/docs/APIs/epayment-api/features/free-standing-card-payments/)
