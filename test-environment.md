@@ -45,6 +45,9 @@ Functionality not available in MT (a non-exhaustive list):
   [Status page](./developer-resources/status-pages.md),
   but it may not always be possible.
   In practice this is extremely rare.
+* Only Norwegian phone numbers are supported (this will be fixed, but there is not ETA).
+* Test merchants appear as Norwegian merchants in the app (this will be fixed, but there is not ETA).
+* The test app has the orange Vipps color scheme, not the blue MobilePay color cheme (this will be fixed, but there is not ETA). 
 * Push alerts may be unavailable or unstable. To see payment requests: Open Vipps and manually
   go to the "Betalinger" (i.e., *Payments_) at the bottom of the main screen.
   You may have to "pull to refresh" on that screen.
@@ -61,7 +64,7 @@ Functionality not available in MT (a non-exhaustive list):
   does not work as in the production environment. In general, partner
   functionality is not available. See
   [Partners](https://developer.vippsmobilepay.com/docs/vipps-partner).
-* Only Norwegian phone numbers are supported.
+
 * [Freestanding card payments](https://developer.vippsmobilepay.com/docs/APIs/epayment-api/features/free-standing-card-payments/) are not available
 
 To test functionality that is not available in MT, you will have to use the
