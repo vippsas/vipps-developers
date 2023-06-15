@@ -61,6 +61,8 @@ Functionality not available in MT (a non-exhaustive list):
   does not work as in the production environment. In general, partner
   functionality is not available. See
   [Partners](https://developer.vippsmobilepay.com/docs/vipps-partner).
+* Only Norwegian phone numbers are supported.
+* [Freestanding card payments](https://developer.vippsmobilepay.com/docs/APIs/epayment-api/features/free-standing-card-payments/) are not available
 
 To test functionality that is not available in MT, you will have to use the
 production environment in a controlled manner.
