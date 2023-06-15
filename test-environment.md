@@ -40,32 +40,33 @@ The test and production environments are completely separate and use different
 
 Functionality that is not available in the test environment, a non-exhaustive list:
 
-* Unscheduled maintenance *may* occur.
-  We will do our best to inform with
-  [Status page](./developer-resources/status-pages.md),
-  but it may not always be possible. In practice this is extremely rare.
-* The test app has the orange Vipps color scheme, not the blue MobilePay color cheme (this will be fixed, but there is not ETA). 
-* Only Norwegian phone numbers are supported (this will be fixed, but there is not ETA).
-* All test merchants appear as Norwegian merchants in the app (this will be fixed, but there is not ETA).
-* Currency: Limited support, please test with NOK (this will be fixed, but there is not ETA).
-* Push alerts may be unavailable or unstable. To see payment requests:
-  Click the "Payments" button at the bottom, and then "pull to refresh" on the Payments screen.
-* Email verification has some quirks, see [Email address](#email-address).
-* Partner functionality, like the relationship between an MSN and a partner,
-  and the use of
-  [partner keys](https://developer.vippsmobilepay.com/docs/vipps-partner/partner-keys),
-  does not work as in the production environment. In general, partner
-  functionality is not available. See
-  [Partners](https://developer.vippsmobilepay.com/docs/vipps-partner).
-* There is no equivalent to [portal.vipps.no](https://portal.vipps.no) for the
-  test environment. Payments must be checked with the API.
-* There are no settlements in the test environment, and therefore
-  no settlement reports, not SFTP service and no Report API.
-* The user's email address can not be verified in the normal way.
-  See: [Email address](#email-address).
-* [Freestanding card payments](https://developer.vippsmobilepay.com/docs/APIs/epayment-api/features/free-standing-card-payments/) are not available
-* Payment of invoices is unavailable.
-* We allow 10,000 incorrect PIN attempts before locking the Vipps user's account.
+1. Unscheduled maintenance *may* occur.
+   We will do our best to inform with
+   [Status page](./developer-resources/status-pages.md),
+   but it may not always be possible. In practice this is extremely rare.
+2. The test app has the orange Vipps color scheme, not the blue MobilePay color cheme (this will be fixed, but there is not ETA). 
+3. Only Norwegian phone numbers are supported (this will be fixed, but there is not ETA).
+4. All test merchants appear as Norwegian merchants in the app (this will be fixed, but there is not ETA).
+5. Currency: Limited support, please test with NOK (this will be fixed, but there is not ETA).
+6. Push alerts may be unavailable or unstable. To see payment requests:
+   Click the "Payments" button at the bottom, and then "pull to refresh" on the Payments screen.
+7. Email verification has some quirks, see [Email address](#email-address).
+8. Partner functionality, like the relationship between an MSN and a partner,
+   and the use of
+   [partner keys](https://developer.vippsmobilepay.com/docs/vipps-partner/partner-keys),
+   does not work as in the production environment. In general, partner
+   functionality is not available. See
+   [Partners](https://developer.vippsmobilepay.com/docs/vipps-partner).
+9. There is no equivalent to [portal.vipps.no](https://portal.vipps.no) for the
+   test environment. Payments must be checked with the API.
+10. There are no settlements in the test environment, and therefore
+   no settlement reports, not SFTP service and no Report API.
+11. The user's email address can not be verified in the normal way.
+   See: [Email address](#email-address).
+12. [Freestanding card payments](https://developer.vippsmobilepay.com/docs/APIs/epayment-api/features/free-standing-card-payments/)
+   are not available.
+13. Payment of invoices is unavailable.
+14. We allow 10,000 incorrect PIN attempts before locking the Vipps user's account.
 
 To test functionality that is not available in MT, you will have to use the
 production environment in a controlled manner, using a real user and a real merchant.
