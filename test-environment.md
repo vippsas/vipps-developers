@@ -114,6 +114,9 @@ See [Vipps servers](./developer-resources/servers.md) for more information.
 The test environment and production environments are completely separate.
 You will, therefore, need to use a different set of API keys for the test environment.
 
+Test merchants have access to all the common APIs on the
+[Vipps MobilePay API platform](https://developer.vippsmobilepay.com/docs/APIs).
+
 All Vipps customers can create as many sales units ("merchants") as they need
 in the test environment. Sale units in the test environment can not be changed.
 
