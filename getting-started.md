@@ -16,7 +16,7 @@ END_METADATA -->
 [Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/docs/vipps-developers/getting-started/).
 <!-- END_COMMENT -->
 
-When the [_Merchant Agreement* is approved and your product order is sent](./apply_for_services.md),
+When the [*Merchant Agreement* is approved and your product order is sent](./apply_for_services.md),
 you will receive an email with credentials for accessing the
 [test environment](test-environment.md):
 
