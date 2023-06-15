@@ -72,13 +72,12 @@ See [the FAQ](https://www.vipps.no/sporsmal#bedriftspm) for more details.
 
 ## Net and gross settlements
 
-Merchants with a "net settlement" contract receive the users' payments
-excluding the Vipps fees. On other words: The Vipps fees are deducted
-from the settlement amount.
+There are two types of settlements:
 
-Merchants with a "gross settlement" contract receive the *full amount_
-of the users' payments
-_including* the Vipps fees, and are then invoiced for the Vipps fees.
+* Net settlement: Merchants with receive the users' payments excluding the Vipps fees.
+  In other words: The Vipps fees are deducted from the settlement amount.
+* Gross settlement: Merchants receive the full amount of the users' payments
+  _including_ the Vipps fees. The merchant is then invoiced for the fees.
 
 Net settlement is the default, and in practice the only settlement method offered.
 Gross settlements are only offered in very rare cases.
