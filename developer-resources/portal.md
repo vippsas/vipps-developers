@@ -65,7 +65,7 @@ but you can create as many as you need.
 1. Find your desired sales unit.
    * Under *Vipps På Nett* > *Utvikler*, select *Environment* > *test*, then search for your test sales unit in the list. To create a new test sales unit, see
      [create a new test sales unit](#how-to-create-a-test-sales-unit).
-1. Click the *Setup login* button corresponding to your sales unit.
+1. Click the *Set up login* button corresponding to your sales unit.
 1. If the first time, click *Activate Vipps Login* and fill out fields that follow:
     * Redirect URIs - Specify the URI that will be used with
       the query parameter, `redirect_uri`, on the initial request to the `authentication`
