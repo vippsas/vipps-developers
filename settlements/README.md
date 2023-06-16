@@ -77,7 +77,7 @@ There are two types of settlements:
 * Net settlement: Merchants with receive the users' payments excluding the Vipps fees.
   In other words: The Vipps fees are deducted from the settlement amount.
 * Gross settlement: Merchants receive the full amount of the users' payments
-  _including_ the Vipps fees. The merchant is then invoiced for the fees.
+  *including* the Vipps fees. The merchant is then invoiced for the fees.
 
 Net settlement is the default, and in practice the only settlement method offered.
 Gross settlements are only offered in very rare cases.

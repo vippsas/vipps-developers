@@ -43,30 +43,31 @@ Functionality that is not available in the test environment, a non-exhaustive li
 1. Unscheduled maintenance *may* occur.
    We will do our best to inform with
    [Status page](./developer-resources/status-pages.md),
-2. The test app has the orange Vipps color scheme, not the blue MobilePay color scheme (this will be fixed, but there is not ETA).
-3. Only Norwegian phone numbers are supported (this will be fixed, but there is not ETA).
-4. All test merchants appear as Norwegian merchants in the app (this will be fixed, but there is not ETA).
-5. Currency: Limited support, please test with NOK (this will be fixed, but there is not ETA).
-6. Push alerts may be unavailable or unstable. To see payment requests:
+1. For now, the test app has the orange Vipps color scheme, and not the blue MobilePay color scheme.
+   This will be fixed, but there is no estimated time of arrival (ETA).
+1. Only Norwegian phone numbers are supported (this will be fixed, but there is no ETA).
+1. All test merchants appear as Norwegian merchants in the app (this will be fixed, but there is no ETA).
+1. Currency: Limited support, please test with NOK (this will be fixed, but there is no ETA).
+1. Push alerts may be unavailable or unstable. To see payment requests:
    Click the "Payments" button at the bottom, and then "pull to refresh" on the Payments screen.
-7. Email verification has some quirks, see [Email address](#email-address).
-8. Partner functionality, like the relationship between an MSN and a partner,
+1. Email verification has some quirks, see [Email address](#email-address).
+1. Partner functionality, like the relationship between an MSN and a partner,
    and the use of
    [partner keys](https://developer.vippsmobilepay.com/docs/vipps-partner/partner-keys),
    does not work as in the production environment. In general, partner
    functionality is not available. See
    [Partners](https://developer.vippsmobilepay.com/docs/vipps-partner).
-9. There is no equivalent to [portal.vipps.no](https://portal.vipps.no) for the
+1. There is no equivalent to [portal.vipps.no](https://portal.vipps.no) for the
    test environment. Payments must be checked with the API.
-10. There are no settlements in the test environment, and therefore
+1. There are no settlements in the test environment, and therefore
    no settlement reports, not SFTP service and no Report API.
    The only way to test the complete settlement flow is in the production environment.
-11. The user's email address can not be verified in the normal way.
+1. The user's email address can not be verified in the normal way.
    See: [Email address](#email-address).
-12. [Freestanding card payments](https://developer.vippsmobilepay.com/docs/APIs/epayment-api/features/free-standing-card-payments/)
+1. [Freestanding card payments](https://developer.vippsmobilepay.com/docs/APIs/epayment-api/features/free-standing-card-payments/)
    are not available.
-13. Payment of invoices is unavailable.
-14. We allow 10,000 incorrect PIN attempts before locking the Vipps user's account.
+1. Payment of invoices is unavailable.
+1. We allow 10,000 incorrect PIN attempts before locking the Vipps user's account.
 
 To test functionality that is not available in MT, you will have to use the
 production environment in a controlled manner, using a real user and a real merchant.

@@ -131,15 +131,13 @@ This can be used to retrieve information at
 * Finnish Trust Network (FTN) - Software that certifies the identity of a person.
 
 * [Yritys- ja yhteisötietojärjestelmä (YJT)](https://ytj.fi/en/index.html) - The official Finnish
-  register of companies. 
+  register of companies.
 
 * `orgno` - The business ID for a merchant. Also called Y-tunnus (Yritys- ja yhteisötunnus) or VAT-number. 8 digits.
   This can be used to retrieve information at
-  [YTJ](https://www.ytj.fi/en/index/businessid.html). 
+  [YTJ](https://www.ytj.fi/en/index/businessid.html).
   
 * [Finanssivalvonta](https://www.finanssivalvonta.fi/en/) - Financial Supervisory Authority.
-   
+
 * Henkilötunnus - Personal Identity Code. A 10-digit number that uniquely identifies
   each Finnish citizen.
- 
-
