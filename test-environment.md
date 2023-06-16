@@ -43,7 +43,7 @@ Functionality that is not available in the test environment, a non-exhaustive li
 1. Unscheduled maintenance *may* occur.
    We will do our best to inform with
    [Status page](./developer-resources/status-pages.md),
-2. The test app has the orange Vipps color scheme, not the blue MobilePay color cheme (this will be fixed, but there is not ETA). 
+2. The test app has the orange Vipps color scheme, not the blue MobilePay color scheme (this will be fixed, but there is not ETA).
 3. Only Norwegian phone numbers are supported (this will be fixed, but there is not ETA).
 4. All test merchants appear as Norwegian merchants in the app (this will be fixed, but there is not ETA).
 5. Currency: Limited support, please test with NOK (this will be fixed, but there is not ETA).
@@ -60,7 +60,7 @@ Functionality that is not available in the test environment, a non-exhaustive li
    test environment. Payments must be checked with the API.
 10. There are no settlements in the test environment, and therefore
    no settlement reports, not SFTP service and no Report API.
-   The only way to test the complete settlement flow is in the productionn environment.
+   The only way to test the complete settlement flow is in the production environment.
 11. The user's email address can not be verified in the normal way.
    See: [Email address](#email-address).
 12. [Freestanding card payments](https://developer.vippsmobilepay.com/docs/APIs/epayment-api/features/free-standing-card-payments/)
@@ -104,7 +104,7 @@ The test and production environments are separate and require different API cred
 |-------------------|------------------|
 | api.vipps.no      | apitest.vipps.no |
 
-The servers are worldaccessible. Vipps only relies on the API keys, and
+The servers are accessible around the world. Vipps only relies on the API keys, and
 no requests to our servers are blocked on our side by IP addresses or similar.
 
 See [Vipps servers](./developer-resources/servers.md) for more information.
