@@ -10,21 +10,20 @@ pagination_prev: null
 ---
 END_METADATA -->
 
-# Vipps MobilePay developer information
+# Introduction
 
 <!-- START_COMMENT -->
 ℹ️ Please use the website:
 [Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/docs/vipps-developers/).
 <!-- END_COMMENT -->
 
-The Vipps MobilePay APIs can be used for payments and logins for Point of Sale, apps, subscriptions, QR codes, checkout sessions, and invoices.
+The Vipps MobilePay API platform can be used for payments and logins for Point of Sale, apps, subscriptions, QR codes, checkout sessions, and invoices.
 
 Starting points:
 
-* [Getting started](./getting-started.md) - Learn about testing in the environment.
-* [Merchant Test (MT)](./test-environment.md) - Learn about the test environment and how to install the test app.
-* [API keys](./common-topics/api-keys.md) - Learn where to get your API keys.
-* [Introduction to the API platform](https://developer.vippsmobilepay.com/docs/APIs/) - Get an overview of the API tools.
+* [Recommended payment flows](https://developer.vippsmobilepay.com/docs/vipps-solutions/) - See the recommended and alternate payment flows. These include examples combining several API solutions.
+* [Getting started](./getting-started.md) - Find your [API keys](./common-topics/api-keys.md) and start using the [test environment](./test-environment.md).
+* [API platform](https://developer.vippsmobilepay.com/docs/APIs/) - Learn how to use the API products.
 
 Migrate from MobilePay:
 
@@ -40,4 +39,3 @@ Related topics:
 
 * [Partner information](https://developer.vippsmobilepay.com/docs/vipps-partner) - Technical information for partners.
 * [Plugins](https://developer.vippsmobilepay.com/docs/vipps-plugins) - Information about using plugins for your integration.
-* [Solutions](https://developer.vippsmobilepay.com/docs/vipps-solutions) - Examples that combine several API solutions.
