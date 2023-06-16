@@ -28,6 +28,7 @@ The following are Frequently Asked Questions (FAQs):
 * [Reservations and capture](reserve-and-capture-faq.md)
 * [Users and payments](users-and-payments-faq.md)
 * [Vipps landing page](vipps-landing-page-faq.md)
+* [Applying for services](services.md)
 * [Other questions](other-faq.md)
 
 In addition, each Vipps API has a specific set of FAQs. For example:

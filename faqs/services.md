@@ -1,25 +1,21 @@
 <!-- START_METADATA
 ---
-title: Apply for a Vipps service
-sidebar_position: 2
+title: "FAQ: Applying for services"
+sidebar_label: Applying for services
+sidebar_position: 400
 pagination_next: null
 pagination_prev: null
 ---
 END_METADATA -->
 
-# Apply for Vipps services
+# FAQ: Applying for services
 
-<!-- START_COMMENT -->
-ℹ️ Please use the website:
-[Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/docs/vipps-developers/apply_for_services/).
-<!-- END_COMMENT -->
-
-To apply for Vipps services, you need to have a Norwegian organization number
+To apply for services, you need to have a Norwegian organization number
 and applications must be signed with Norwegian BankID.
 
-In addition, before you can order any Vipps services, you must apply for
-a *Merchant Agreement*. This is a legal agreement between you and Vipps.
-Once the *Merchant Agreement* has been submitted, you can order Vipps
+In addition, before you can order any services, you must apply for
+a *Merchant Agreement*. This is a legal agreement between you and Vipps MobilePay.
+Once the *Merchant Agreement* has been submitted, you can order
 products.
 
 ## How to apply
@@ -90,3 +86,4 @@ A D-number is given to foreign persons who do not have a Norwegian national iden
 but have a need for identification for the Norwegian authorities.
 Read more on how to
 [apply for a D-number](https://www.skatteetaten.no/en/person/foreign/norwegian-identification-number/).
+

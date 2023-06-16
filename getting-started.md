@@ -16,13 +16,16 @@ END_METADATA -->
 [Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/docs/vipps-developers/getting-started/).
 <!-- END_COMMENT -->
 
-When the [*Merchant Agreement* is approved and your product order is sent](./apply_for_services.md),
-you will receive an email with credentials for accessing the
+When the *Merchant Agreement* is approved and your product order is sent,
+the person who applied will receive an email with credentials for accessing the
 [test environment](test-environment.md):
 
 * Sales unit name
 * Merchant serial number
 * Credentials for logging into the Vipps test app
+
+For information about applying for services, see the
+[Applying for services FAQ](./faqs/services.md).
 
 ## Start testing in the test environment
 

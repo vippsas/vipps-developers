@@ -21,14 +21,14 @@ The Vipps MobilePay APIs can be used for payments and logins for Point of Sale, 
 
 Starting points:
 
-* [Getting started](./getting-started.md) - Learn about applying for services, products, test users, etc.
-* [Vipps Merchant Test (MT)](./test-environment.md) - Learn about the test environment and how to install the test app.
-* [Vipps API keys](./common-topics/api-keys.md) - Learn where to get your API keys.
-* [Introduction to the Vipps MobilePay APIs](https://developer.vippsmobilepay.com/docs/APIs/) - Get an overview of all the APIs.
+* [Getting started](./getting-started.md) - Learn about testing in the environment.
+* [Merchant Test (MT)](./test-environment.md) - Learn about the test environment and how to install the test app.
+* [API keys](./common-topics/api-keys.md) - Learn where to get your API keys.
+* [Introduction to the API platform](https://developer.vippsmobilepay.com/docs/APIs/) - Get an overview of the API tools.
 
 Migrate from MobilePay:
 
-* [Vipps MobilePay Migration guide](mp-migration-guide.md) - If you are currently using MobilePay APIs for your payment integration needs, we recommend using our comprehensive [migration guide](mp-migration-guide.md), which provides step-by-step instructions and best practices for integrating with Vipps MobilePay APIs.
+* [Vipps MobilePay Migration guide](mp-migration-guide.md) - If you are currently using MobilePay APIs for your payment integration needs, we recommend using our comprehensive [migration guide](mp-migration-guide.md), which provides step-by-step instructions and best practices for integrating with the API platform.
 
 Dive deeper with:
 
