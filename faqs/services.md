@@ -24,7 +24,7 @@ Apply for services on
 [portal.vipps.no](https://portal.vipps.no).
 
 **Please note:** If you plan to use Vipps through a PSP, please see
-[Direct integration and PSP integration](./common-topics/direct-vs-psp.md).
+[Direct integration and PSP integration](../common-topics/direct-vs-psp.md).
 
 Vipps is required to perform a background check on all merchants who want to use Vipps
 services, so it might take a few days before you hear back from us.
@@ -43,7 +43,7 @@ Now, you can start testing with the Vipps APIs.
 
 When your product order is approved, you will get an email stating that you can
 get access to the production environment using your production
-[API keys](./common-topics/api-keys.md)
+[API keys](../common-topics/api-keys.md)
 on
 [portal.vipps.no](https://portal.vipps.no).
 These API keys will allow you to start making API requests to the production server
@@ -86,4 +86,3 @@ A D-number is given to foreign persons who do not have a Norwegian national iden
 but have a need for identification for the Norwegian authorities.
 Read more on how to
 [apply for a D-number](https://www.skatteetaten.no/en/person/foreign/norwegian-identification-number/).
-
