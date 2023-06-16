@@ -23,7 +23,7 @@ Vipps must follow the regulatory requirements for KYC (Know Your Customer),
 AML (Anti Money Laundering) and other risk assessment procedures.
 
 See:
-[Requirements](../apply_for_services.md#requirements).
+[Requirements](./services.md#requirements).
 
 It is also possible to use Vipps through a PSP (Payment Service Provider).
 Vipps then relies on the PSP for KYC (Know Your Customer), AML (Anti Money Laundering)
