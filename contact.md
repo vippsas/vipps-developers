@@ -13,9 +13,9 @@ END_METADATA -->
 [Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/docs/vipps-developers/contact/).
 <!-- END_COMMENT -->
 
-Vipps and MobilePay have merged to create one of the largest mobile wallet services in Europe. While we work to bring together the best features of both platforms, some information is still under development and will be updated soon. Thank you for your patience and stay tuned for more updates on our progress!
-
 ## MobilePay support
+
+While we work to bring together the best features of both Vipps and MobilePay platforms, some information is still under development and will be updated soon.
 
 For those in need of assistance with MobilePay, we recommend checking out the [MobilePay Developer Support page](https://developer.mobilepay.dk/docs/support). Here, users can find a wealth of information and resources to help navigate the platform and troubleshoot any issues that may arise.
 
