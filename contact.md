@@ -15,28 +15,24 @@ END_METADATA -->
 
 ## MobilePay support
 
-Vipps and MobilePay have recently merged, so the information is still under development and will be updated soon.
+While we work to bring together the best features of both Vipps and MobilePay platforms, some information is still under development and will be updated soon.
 
-If you need help with MobilePay, see [MobilePay Developer Support](https://developer.mobilepay.dk/docs/support).
+For those in need of assistance with MobilePay, we recommend checking out the [MobilePay Developer Support page](https://developer.mobilepay.dk/docs/support). Here, users can find a wealth of information and resources to help navigate the platform and troubleshoot any issues that may arise.
 
 ## Vipps support
 
 ### We help developers with technical issues
 
-There are a lot of self-service solutions on
-[portal.vipps.no](https://portal.vipps.no),
-please check there first.
+We offer a wide range of self-service solutions on our portal at [portal.vipps.no](https://portal.vipps.no). We encourage you to check there first to see if your question or issue has already been addressed.
 
-**Important:** Almost all requests we get are already covered in the
-[searchable technical documentation](https://developer.vippsmobilepay.com/search).
+For technical questions and inquiries related to API usage, our Integration Services team is available to assist. Please note that almost all requests we receive are already covered in our searchable technical documentation, which can be found at [searchable technical documentation](https://developer.vippsmobilepay.com/search).
 
-Integration Services helps developers with *technical* questions, such as questions about using our APIs.
-If you do not have a technical question, you can avoid delays by starting in the right place:
+To avoid any delays in receiving support, we recommend that users with non-technical questions or inquiries start in the appropriate place:
 
 | Topic | How to get help |
 |--------|----------------|
 | General questions (including the customer relationship, creating sales units, change of admins, etc.) | See: [Contact info on vipps.no](https://www.vipps.no/kontakt-oss/). |
-| "Are there any problems?"  | See: [Status pages](./developer-resources/status-pages.md). |
+| Problems with Vipps services  | See: [Status pages](./developer-resources/status-pages.md). |
 | Applications for Vipps products (status, follow-ups, etc.) | Check the status on [portal.vipps.no](https://portal.vipps.no). |
 | Vipps plugins (WooCommerce, Shopify, Wix, WordPress, Wix, Shopify, Magento, EPiServer, etc.)         | See the support info for your plugin: [Plugin overview](https://developer.vippsmobilepay.com/docs/vipps-plugins). |
 | Vipps through a partner (for merchants) | Please contact your partner. |
@@ -46,12 +42,12 @@ If you do not have a technical question, you can avoid delays by starting in the
 | Settlements, invoices or similar | See: [Settlements](./settlements/README.md). |
 | Suggestions for improvements to [Vipps products](https://www.vipps.no/produkter-og-tjenester/bedrift/)  | Please use [this form](https://www.vipps.no/kontakt-oss/). |
 
-For *technical* issues related to Vipps and development of services using our APIs: Please see below.
+For *technical* issues related to Vipps and development of services using our APIs, please see the sections below.
 
 ### Almost all questions are answered in the documentation
 
 Please check the
-[FAQs (Frequently Asked Questions)](https://developer.vippsmobilepay.com/docs/vipps-developers/faqs).
+[Frequently Asked Questions (FAQ)](https://developer.vippsmobilepay.com/docs/vipps-developers/faqs).
 
 Please use the
 [search functionality for the technical documentation](https://developer.vippsmobilepay.com/search).
@@ -65,8 +61,8 @@ information to the address below:
 2. A concise, self-explanatory `Subject` line, such as "`POST:/something` gives `HTTP 400` response".
 3. Company details: Organization number (find yours at [Brønnøysundregistrene](https://brreg.no))
 4. Merchant Serial Number (MSN), found on [portal.vipps.no](https://portal.vipps.no).
-   See
-   [The Vipps portal](https://developer.vippsmobilepay.com/docs/vipps-developers/developer-resources/portal).
+   See the
+   [Vipps portal](https://developer.vippsmobilepay.com/docs/vipps-developers/developer-resources/portal).
 5. Which
    [Vipps product](https://www.vipps.no/produkter-og-tjenester/bedrift/)
    or
