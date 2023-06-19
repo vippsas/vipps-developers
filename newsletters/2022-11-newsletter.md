@@ -71,7 +71,7 @@ We are working hard to improve the
 * The documentation is now
   [searchable](https://developer.vippsmobilepay.com/search).
 * We have a new
-  [Solutions](https://developer.vippsmobilepay.com/docs/vipps-solutions)
+  [Recommended flows](https://developer.vippsmobilepay.com/docs/vipps-solutions)
   section to highlight combinations of Vipps APIs, such as
   [In-store using merchant scan](https://developer.vippsmobilepay.com/docs/vipps-solutions/loyalty-in-pos)
   and
