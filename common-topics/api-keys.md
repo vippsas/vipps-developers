@@ -46,20 +46,16 @@ You will, therefore, need to use a different set of API keys for the test enviro
 
 💥 **Use caution with storing and transferring API keys** 💥
 
-* Never send API keys unencrypted by email.
-* If you accidentally share your API keys, you must generate new ones by clicking the *regenerate* button.
-  Update your integrations so they will not stop working.
+* Vipps MobilePay will never ask for your API keys, and you must keep them secret.
+* Do *not* send API keys unencrypted by email.
+* If you accidentally share your API keys, you must generate new ones by clicking the *regenerate* button on your [portal.vipps.no](https://portal.vipps.no) page. Please remember to update your integrations so they will continue working.
 
 **Please note:**
 
-* Vipps cannot provide API keys in any other way, such as by
+* Vipps MobilePay cannot provide API keys in any other way, such as by
   email or over the phone, as the API keys give access to transferring money.
-* Vipps will never ask for your API keys, and you must keep them secret.
 * If your developers do not have Norwegian BankID, you will need to retrieve
   the API keys for them, and send them to the developers securely.
-* Do *not* send API keys unencrypted by email.
-* If you accidentally share your API keys, you must generate new ones on
-  [portal.vipps.no](https://portal.vipps.no).
 
 ### Getting the API keys
 
@@ -81,7 +77,7 @@ You will, therefore, need to use a different set of API keys for the test enviro
 
 ## How to use the API keys
 
-The Vipps API Keys are:
+The API Keys are:
 
 | API Key Name             | Description                                                         | Format | Example                              |
 |--------------------------|---------------------------------------------------------------------|--------|--------------------------------------|
