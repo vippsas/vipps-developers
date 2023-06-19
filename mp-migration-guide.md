@@ -11,8 +11,6 @@ END_METADATA -->
 
 # Migration guide
 
-💥 Work in progress 💥
-
 Are you currently using MobilePay APIs for your payment integration needs?
 
 In that case, we’re excited to introduce you to Vipps MobilePay APIs, a reliable and versatile payment solution that can make the migration hassle-free and even dazzle you with its ease of use and features.
