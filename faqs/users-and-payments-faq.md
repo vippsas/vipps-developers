@@ -269,6 +269,10 @@ Vipps also has an extremely low fraud rate, as it is impossible to pay
 with a card that has been invalidated in any way by the issuer, and all users
 has to log into Vipps with their BankID verified identity to use their card.
 
+See:
+* [Benefits of direct integration](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics/direct-vs-psp/#benefits-of-direct-integration)
+* [Extremely high success rate of direct integrations](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics/direct-vs-psp/#extremely-high-success-rate-of-direct-integrations)
+
 ## Card payments
 
 The
