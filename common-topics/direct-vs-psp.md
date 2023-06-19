@@ -55,47 +55,38 @@ or failure.
 ## Benefits of direct integration
 
 The
-[ePayment](https://developer.vippsmobilepay.com/docs/APIs/epayment-api)
-and
-[eCom](https://developer.vippsmobilepay.com/docs/APIs/ecom-api)
-APIs have some functionality that is not available in the PSP API:
+[ePayment API](https://developer.vippsmobilepay.com/docs/APIs/epayment-api)
+(and
+[eCom API](https://developer.vippsmobilepay.com/docs/APIs/ecom-api))
+provides important functionality that is not available in the PSP API:
 
-1. Direct integration allows you to have more control over the integration - and the user experience -
-   and to customize it to your specific needs. This can lead to a better user
-   experience for your customers and also increase conversions.
-2. Higher success rate.
-   With a direct integration, you have full control over the user flow,
-   and use the Vipps MobilePay APIs directly without any additional steps or
-   middleware. Direct integrations have an
-   [extremely high success rate](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics/direct-vs-psp/#extremely-high-success-rate-of-direct-integrations).
+1. Direct integration gives you more control over the integration - and the user experience -
+   and lets you customize it to your specific needs. This leads to a better user
+   experience for your customers and also increased conversion.
+2. [Extremely high completion rate](../faqs/common-problems-faq.md#high-success-rate-for-direct-integrations).
+   With a direct integration, you use the Vipps MobilePay APIs directly without
+   any additional steps or middleware.
 3. Retry functionality: If the user attempts to pay with a card that is declined,
    the user can retry with a different card, while still in the same payment process.
    This results in a higher success rater for payments.
    The PSP API does not have this functionality, as it is the PSP, not Vipps,
    that (attempts or) makes the charge.
-4. [Express checkout (Vipps Hurtigkasse)](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#express-checkout-payments)
-   is only available with direct integration.
-5. [Userinfo](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#userinfo)
-   is only available with direct integration.
-   The Userinfo API lets merchants ask for the user's profile information as
-   part of the payment flow: name, address, email, phone number, birthdate, etc.
-6. When using the
-   [ePayment API](https://developer.vippsmobilepay.com/docs/APIs/epayment-api)
-   and
-   [eCom API](https://developer.vippsmobilepay.com/docs/APIs/ecom-api),
-   Vipps handles soft-declines, 3-D Secure, BankID, etc.
+4. With direct integration there need for the user to confirm with 3D Secure, BankID, etc.,
+   as this additional security provided when logging into the Vipps MobilePay app.
    We have taken care of the regulatory required "strong customer authentication"
    ([SCA, required by the Payment Services Directive 2, PSD2](https://en.wikipedia.org/wiki/Strong_customer_authentication)),
    as we have regulatory approved *delegated SCA* from the card issuers.
-   This means that Vipps MobilePay complies with the SCA requirements when the
-   user logs into the app, and the need for additional SCA is eliminated.
-   The user gets a simpler and faster user experience
-   and an
-   [extremely high completion rate](../faqs/common-problems-faq.md#high-success-rate-for-direct-integrations).
-   See:
+   Details:
    [When do users get a "soft decline" and need to complete a 3-D Secure verification?](https://developer.vippsmobilepay.com/docs/vipps-developers/faqs/users-and-payments-faq#when-do-users-get-a-soft-decline-and-need-to-complete-a-3-d-secure-verification)
-7. With direct integrations the merchant is guaranteed top get the money,
-   as Vipps Mobilepay takes the risk in case of fraud.  
+5. [Express checkout](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#express-checkout-payments),
+   where the user selects shipping address and shipping method in the Vipps MobilePay app,
+   is only available with direct integration.
+6. [Userinfo](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#userinfo),
+   which lets merchants ask for the user's profile information
+   (name, address, email, phone number, birthdate, etc.)
+   as part of the payment flow, is only available with direct integration.
+7. With direct integrations the merchant is guaranteed to get the money,
+   as Vipps Mobilepay takes the risk in case of fraud.
 
 ## Extremely high success rate of direct integrations
 
