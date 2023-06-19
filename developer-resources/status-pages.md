@@ -9,10 +9,12 @@ END_METADATA -->
 
 # Status pages
 
-We have several status pages. We strongly recommend subscribing to them.
-Note that you can also subscribe to updates for specific incidents:
+Find information about service interruptions on the following status pages:
 
 * Test environment: <https://vipps-test.statuspage.io>
 * Production environment: <https://vipps.statuspage.io>
 
-You can use the Atom and RSS feeds on the status pages for integration with other systems.
+We strongly recommend that you subscribe to get notifications from these pages.
+
+You can also use the Atom and RSS feeds on the status pages for integration with other systems.
+
