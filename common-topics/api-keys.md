@@ -47,7 +47,7 @@ You will, therefore, need to use a different set of API keys for the test enviro
 💥 **Use caution with storing and transferring API keys** 💥
 
 * Vipps MobilePay will never ask for your API keys, and you must keep them secret.
-* Do *not* send API keys unencrypted by email.
+* *Always* send API keys by encrypted email.
 * If you accidentally share your API keys, you must generate new ones by clicking the *regenerate* button on your [portal.vipps.no](https://portal.vipps.no) page. Please remember to update your integrations so they will continue working.
 
 **Please note:**
