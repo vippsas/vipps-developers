@@ -1,10 +1,8 @@
-<!-- START_METADATA
 ---
 title: Reserve and capture
 pagination_next: null
 pagination_prev: null
 ---
-END_METADATA -->
 
 # Reserve and capture
 

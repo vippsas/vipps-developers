@@ -1,10 +1,8 @@
-<!-- START_METADATA
 ---
 title: HTTP response codes
 pagination_next: null
 pagination_prev: null
 ---
-END_METADATA -->
 
 # HTTP response codes
 

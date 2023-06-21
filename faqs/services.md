@@ -1,4 +1,3 @@
-<!-- START_METADATA
 ---
 title: "FAQ: Applying for services"
 sidebar_label: Applying for services
@@ -6,7 +5,6 @@ sidebar_position: 400
 pagination_next: null
 pagination_prev: null
 ---
-END_METADATA -->
 
 # FAQ: Applying for services
 

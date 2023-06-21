@@ -1,4 +1,3 @@
-<!-- START_METADATA
 ---
 title: Quick start guides
 sidebar_label: Quick start guides
@@ -7,7 +6,6 @@ description: A guide for using Postman to test the Vipps MobilePay APIs.
 pagination_next: null
 pagination_prev: null
 ---
-END_METADATA -->
 
 # Quick start guides
 

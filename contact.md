@@ -1,10 +1,8 @@
-<!-- START_METADATA
 ---
 sidebar_position: 210
 pagination_next: null
 pagination_prev: null
 ---
-END_METADATA -->
 
 # Contact us
 

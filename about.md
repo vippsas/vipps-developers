@@ -1,4 +1,3 @@
-<!-- START_METADATA
 ---
 title: About Vipps MobilePay
 sidebar_label: About us
@@ -6,7 +5,6 @@ sidebar_position: 200
 pagination_next: null
 pagination_prev: null
 ---
-END_METADATA -->
 
 # About us
 

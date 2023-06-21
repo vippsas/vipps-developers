@@ -1,4 +1,3 @@
-<!-- START_METADATA
 ---
 title: "FAQ: Refunds"
 sidebar_label: Refunds
@@ -6,7 +5,6 @@ sidebar_position: 150
 pagination_next: null
 pagination_prev: null
 ---
-END_METADATA -->
 
 # FAQ: Refunds
 

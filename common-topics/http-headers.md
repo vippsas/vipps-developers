@@ -1,10 +1,8 @@
-<!-- START_METADATA
 ---
 title: HTTP headers
 pagination_next: null
 pagination_prev: null
 ---
-END_METADATA -->
 
 # HTTP headers
 

@@ -1,4 +1,3 @@
-<!-- START_METADATA
 ---
 title: "FAQ: Reservations and capture"
 sidebar_label: Reservations and capture
@@ -6,7 +5,6 @@ sidebar_position: 170
 pagination_next: null
 pagination_prev: null
 ---
-END_METADATA -->
 
 # FAQ: Reservations and capture
 

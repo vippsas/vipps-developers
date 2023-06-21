@@ -1,4 +1,3 @@
-<!-- START_METADATA
 ---
 title: Technical newsletter for developers 2019-11
 sidebar_label: 2019-11
@@ -6,7 +5,6 @@ sidebar_position: 278
 pagination_next: null
 pagination_prev: null
 ---
-END_METADATA -->
 
 # Technical newsletter for developers 2019-11
 

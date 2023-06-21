@@ -1,11 +1,9 @@
-<!-- START_METADATA
 ---
 title: Vipps portal
 sidebar_position: 140
 pagination_next: null
 pagination_prev: null
 ---
-END_METADATA -->
 
 # The Vipps portal
 

@@ -1,11 +1,9 @@
-<!-- START_METADATA
 ---
 title: XML
 hide_table_of_contents: true
 pagination_next: null
 pagination_prev: null
 ---
-END_METADATA -->
 
 # Vipps XML reports
 

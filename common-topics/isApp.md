@@ -1,10 +1,8 @@
-<!-- START_METADATA
 ---
 title: isApp
 pagination_next: null
 pagination_prev: null
 ---
-END_METADATA -->
 
 # isApp
 

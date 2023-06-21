@@ -1,4 +1,3 @@
-<!-- START_METADATA
 ---
 title: Vipps MobilePay developer information
 sidebar_label: Introduction
@@ -8,7 +7,6 @@ description: Find information related to integrating with the Vipps MobilePay AP
 pagination_next: null
 pagination_prev: null
 ---
-END_METADATA -->
 
 # Introduction
 

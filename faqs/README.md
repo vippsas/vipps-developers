@@ -1,4 +1,3 @@
-<!-- START_METADATA
 ---
 title: Frequently asked questions
 sidebar_label: Overview
@@ -7,7 +6,6 @@ hide_table_of_contents: true
 pagination_next: null
 pagination_prev: null
 ---
-END_METADATA -->
 
 # Frequently asked questions
 

@@ -1,10 +1,8 @@
-<!-- START_METADATA
 ---
 title: Requirements
 pagination_next: null
 pagination_prev: null
 ---
-END_METADATA -->
 
 # Requirements for applying for a Vipps service
 

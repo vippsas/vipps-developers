@@ -1,10 +1,8 @@
-<!-- START_METADATA
 ---
 title: Authentication
 pagination_next: null
 pagination_prev: null
 ---
-END_METADATA -->
 
 # Authentication
 

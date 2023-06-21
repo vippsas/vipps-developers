@@ -1,10 +1,8 @@
-<!-- START_METADATA
 ---
 title: Errors
 pagination_next: null
 pagination_prev: null
 ---
-END_METADATA -->
 
 # Errors
 

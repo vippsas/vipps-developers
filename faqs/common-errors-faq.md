@@ -1,4 +1,3 @@
-<!-- START_METADATA
 ---
 title: "FAQ: Common errors"
 sidebar_label: Common errors
@@ -6,7 +5,6 @@ sidebar_position: 110
 pagination_next: null
 pagination_prev: null
 ---
-END_METADATA -->
 
 # FAQ: Common errors
 

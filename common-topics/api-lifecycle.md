@@ -1,10 +1,8 @@
-<!-- START_METADATA
 ---
 title: API Lifecycle
 pagination_next: null
 pagination_prev: null
 ---
-END_METADATA -->
 
 # API Lifecycle
 
