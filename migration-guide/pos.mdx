@@ -6,16 +6,13 @@ pagination_next: null
 pagination_prev: null
 ---
 
-import MT from '/docs/vipps-developers/shared-pages/_mt.mdx'
+import MT from '/docs/vipps-developers/migration-guide/_mt.mdx'
 
 # Point of Sale to ePayment
 
-Reed more about the transition to one platform [here](https://developer.mobilepay.dk/docs/pos/transition-to-one-platform). Below you can find comparison between the existing MobilePay PoS API and the new [ePayment API](/docs/APIs/epayment-api) replacing MobilePay PoS. 
+Read more about the transition to one platform [here](https://developer.mobilepay.dk/docs/pos/transition-to-one-platform). Below you can find comparison between the existing MobilePay PoS API and the new [ePayment API](/docs/APIs/epayment-api) replacing MobilePay PoS. 
 
 Visit our solutions section to see the recommended flow for in-store payment [merchant scan](/docs/vipps-solutions/in-store/).
-
-## Test environment
-<MT />
 
 ## PoS and ePayment endpoints
 
@@ -32,7 +29,7 @@ Visit our solutions section to see the recommended flow for in-store payment [me
 | Refund Payment            | `POST:/v10/refunds`                       | [`POST:/v1/payments/{reference}/refund`](https://developer.vippsmobilepay.com/api/epayment#tag/AdjustPayments/operation/refundPayment)      |
 | Lookup a refund           | `GET:/v10/refunds/{refundid}`            | [`GET:/v1/payments/{reference}`](https://developer.vippsmobilepay.com/api/epayment#tag/QueryPayments/operation/getPayment)              |
 
-## PoS Authentication and headers
+## Authentication and headers
 
 | MobilePay PoS                           | ePayment                                        |
 |-----------------------------------------|-------------------------------------------------|
@@ -46,7 +43,7 @@ Visit our solutions section to see the recommended flow for in-store payment [me
 | N/A                                     | `Ocp-Apim-Subscription-Key`                     |
 | N/A                                     | `Merchant-Serial-Number`                        |
 
-## PoS Initiate Payment
+## Initiate Payment
 
 | MobilePay PoS                                                  | ePayment                                       |
 |----------------------------------------------------------------|------------------------------------------------|
@@ -67,7 +64,7 @@ Visit our solutions section to see the recommended flow for in-store payment [me
 | **Response**                                                   |                                                |
 | `paymentId`                                                    | [`reference`](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics/orderid) (set in paymentInitiation)         |
 
-## PoS Query Payment
+## Query Payment
 
 | MobilePay PoS   | ePayment                                                                                |
 |-----------------|-----------------------------------------------------------------------------------------|
@@ -85,7 +82,7 @@ Visit our solutions section to see the recommended flow for in-store payment [me
 
 *N/A: `posId`, `restrictions` (`debitCardDisallowed`, `creditCardDisallowed`), `merchantPaymentLabel`, `plannedCaptureDelay`, `customerToken`, `customerReceiptToken`, `paymentExpiresAt`, `partialCapturePossible`, `pollDelayInMs`*
 
-## PoS Capture, Cancel and Refund Payment
+## Capture, Cancel and Refund Payment
 
 | MobilePay PoS                           | ePayment                                                                                |
 |-----------------------------------------|-----------------------------------------------------------------------------------------|
@@ -98,3 +95,6 @@ Visit our solutions section to see the recommended flow for in-store payment [me
 | N/A                                     | `aggregate` (`authorizedAmount`, `cancelledAmount`, `capturedAmount`, `refundedAmount`) |
 | `refundId` *only applicable for refund* | `pspReference`                                                                          |
 | N/A                                     | [`reference`](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics/orderid)                                                                             |
+
+## Test environment
+<MT />

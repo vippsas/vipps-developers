@@ -1,5 +1,5 @@
 ---
-title: "Subscriptions vs. Recurring"
+title: "Subscriptions to Recurring"
 sidebar_label: Subscriptions to Recurring
 sidebar_position: 130
 pagination_next: null
