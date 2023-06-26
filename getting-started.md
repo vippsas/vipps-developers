@@ -37,9 +37,7 @@ For information about applying for services, see the
     Download and install the Vipps Merchant Test (MT) app as described in the
     [Vipps test apps](./test-environment.md#vipps-test-apps) section.
 
-1. Send Vipps API requests to the test server.
-
-    The test server address is found [here](./test-environment.md#test-server)
+1. Send Vipps API requests to the [test server](./test-environment.md#test-server).
 
     To experiment with sending requests (e.g., create payment, cancel payment, refund payment),
     [Postman](https://learning.postman.com/docs/getting-started/introduction/) is a good alternative.
