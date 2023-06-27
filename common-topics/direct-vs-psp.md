@@ -69,7 +69,7 @@ provides important functionality that is not available in the PSP API:
    This results in a higher success rater for payments.
    The PSP API does not have this functionality, as it is the PSP, not Vipps,
    that (attempts or) makes the charge.
-4. With direct integration there need for the user to confirm with 3D Secure, BankID, etc.,
+4. With direct integration there is no need for the user to confirm with 3D Secure, BankID, etc.,
    as this additional security provided when logging into the Vipps MobilePay app.
    We have taken care of the regulatory required "strong customer authentication"
    ([SCA, required by the Payment Services Directive 2, PSD2](https://en.wikipedia.org/wiki/Strong_customer_authentication)),
