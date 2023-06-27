@@ -26,7 +26,7 @@ We will have to replace the current MobilePay Point of Sale API with new ePaymen
 
 ## MobilePay Subscriptions
 
-There is *no need to reintegrate* into the new solution. Your existing Subscriptions Payments integration will continue to work, but some functionality will be changing or closed starting from the moment we transition to One Platform. Please visit the [developer documentation](https://developer.mobilepay.dk/docs/subscriptions/transition-to-one-platform) for details. After we have switched to One platform you can transition to Vipps MobilePay Recurring API using this [migration guide](subscriptions.mdx).
+There is *no need to reintegrate* into the new solution. Your existing Subscriptions Payments integration will continue to work, but some functionality will be changing or closed starting from the moment we transition to One Platform. Please visit the [developer documentation](https://developer.mobilepay.dk/docs/subscriptions/transition-to-one-platform) for details. After we have switched to One platform you can transition to Vipps MobilePay Recurring API using this [migration guide](subscriptions.md).
 
 ## MobilePay App Payments
 
