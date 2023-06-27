@@ -1,7 +1,7 @@
 ---
 title: MobilePay migration guides
 sidebar_label: Introduction
-sidebar_position: 100
+sidebar_position: 35
 description: Looking for a hassle-free way to migrate to Vipps MobilePay? Our comprehensive migration guide has got you covered. With easy-to-follow instructions and dedicated support, migrating should be hassle-free. Embrace the future of payments with Vipps MobilePay.
 pagination_next: null
 pagination_prev: null

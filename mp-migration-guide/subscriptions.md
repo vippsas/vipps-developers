@@ -1,7 +1,7 @@
 ---
 title: "Subscriptions to Recurring"
 sidebar_label: Subscriptions to Recurring
-sidebar_position: 130
+sidebar_position: 38
 pagination_next: null
 pagination_prev: null
 ---
