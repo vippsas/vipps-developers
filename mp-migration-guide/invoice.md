@@ -26,9 +26,9 @@ Please note that ePayment encompasses various use case scenarios. Therefore, if 
 |--------------------------------------|-------------------------------------------------------------------------------------------------|
 | `InvoiceIssuer​`                      | `Merchant-Serial-Number` (see [HTTP headers](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics/http-headers/))                                                   ​ |
 | `ConsumerAlias {Alias, AliasType}`  ​ | `Customer {Alias} (Example: 4512345678)`                                                        |
-| `TotalAmount​`                        | `Amount {currency, value(øre)}​`                                                                 |
+| `TotalAmount​`                        | `amount {currency, value (øre)}​`                                                                 |
 | `InvoiceNumber` / `PaymentReference​` | [`reference`](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics/orderid) / `paymentDescription`                                                             ​ |
-| `DueDate​`                            | `expiresAt` (10min → 28 days. Example: 2023-02-26T17:32:28)​                                    |
+| `DueDate​`                            | `expiresAt` (Must be between 10 minutes and 28 days. Example: `2023-02-26T17:32:28`)​                                    |
 | (`InvoiceLink`) `RedirectUrl`       ​ | `returnUrl` (The URL the user is redirected to after the payment session).​                      |
 | `Comment​`                            | N/A |
 | `ConsumerAddressLines []`            | N/A |
@@ -42,14 +42,14 @@ Please note that ePayment encompasses various use case scenarios. Therefore, if 
 | `MerchantContactName`                | N/A |
 | `MerchantOrderNumber`                | N/A |
 | `BuyerOrderNumber​`                   | N/A |
-| `InvoiceUrl`+ `InvoiceArticles []`​   | See [Order Management API](https://developer.vippsmobilepay.com/docs/APIs/order-management-api) |
+| `InvoiceUrl`+ `InvoiceArticles []`​   | See: [Order Management API](https://developer.vippsmobilepay.com/docs/APIs/order-management-api) |
 | N/A                                  ​ | [`paymentDescription​`](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics/transactiontext/)                                                                             |
-| N/A                                    | `profile` (scope)​                                                                               |
+| N/A                                    | `profile` ([`scope`](https://developer.vippsmobilepay.com/docs/APIs/userinfo-api/#scope))​                                                                               |
 | N/A                                  ​ | `paymentMethod` (`WALLET` or `CARD`. `CARD` → WEB_REDIRECT)​                                    |
-| N/A                                    | `userFlow` (`Push_message`, `Native_redirect`, `Web_redirect`, `QR`)                           ​ |
+| N/A                                    | `userFlow` (`PUSH_MESSAGE`, `NATIVE_REDIRECT`, `WEB_REDIRECT`, `QR`)                           ​ |
 | N/A                                    | `qrFormat {format, size}` (only applicable when `userFlow` is set to `QR`)                         ​ |
-| N/A                                    | `customerInteraction` (`Customer_present`, `Customer_not_present`)​                              |
-| N/A                                    | `industryData` (Additional compliance data related to the transaction)​                          |
+| N/A                                    | `customerInteraction` (`CUSTOMER_PRESENT`, `CUSTOMER_NOT_PRESENT`)​                              |
+| N/A                                    | `industryData` (In special cases only: Additional compliance data related to the transaction)​                          |
 
 ## Test environment
 
