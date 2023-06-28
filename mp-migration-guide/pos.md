@@ -13,15 +13,15 @@ import MT from './_mt.md'
 Read more about the [transition to one platform](https://developer.mobilepay.dk/docs/pos/transition-to-one-platform).
 Below you can find comparison between the existing MobilePay PoS API and the new [ePayment API](/docs/APIs/epayment-api) replacing MobilePay PoS. 
 
-Visit our solutions section to see the recommended flow for in-store payment [merchant scan](/docs/vipps-solutions/in-store/).
+Visit our [Recommended flows](https://developer.vippsmobilepay.com/docs/vipps-solutions/) to see the recommended flow for in-store payment [merchant scan](/docs/vipps-solutions/in-store/).
 
 ## PoS and ePayment endpoints
 
 | Operation                 | MobilePay PoS                            | ePayment                                    |
 |---------------------------|------------------------------------------|---------------------------------------------|
 | PoS management            | `POST/GET/DELETE /v10/pointofsales`      | N/A                                         |
-| Initiate Payment          | `POST:/v10/payments`                     | [`POST:/v1/payments`](https://developer.vippsmobilepay.com/api/epayment#tag/CreatePayment/operation/createPayment)                         |
-| Initiate Prepared payment | `POST:/v10/payments/prepare`             | N/A (For loyalty, see [solutions](https://developer.vippsmobilepay.com/docs/vipps-solutions/loyalty-in-pos))     |
+| Initiate Payment          | `POST:/v10/payments`                     | [`POST:/epayments/v1/payments`](https://developer.vippsmobilepay.com/api/epayment#tag/CreatePayment/operation/createPayment)                         |
+| Initiate Prepared payment | `POST:/v10/payments/prepare`             | N/A (For loyalty, see [Loyalty at POS](https://developer.vippsmobilepay.com/docs/vipps-solutions/loyalty-in-pos))     |
 | Query Payment             | `GET:/v10/payments/{paymentid}`          | [`GET:/epayments/v1/payments/{reference}`](https://developer.vippsmobilepay.com/api/epayment#tag/QueryPayments/operation/getPayment)              |
 | Query Active Payments     | `GET /v10/payments`                      | N/A                                         |
 | Query payment log         | N/A                                      | [`GET:/epayments/v1/payments/{reference}/events`](https://developer.vippsmobilepay.com/api/epayment#tag/QueryPayments/operation/getPaymentEventLog)       |
@@ -56,7 +56,7 @@ See:
 |----------------------------------------------------------------|------------------------------------------------|
 | `amount`                                                       | `amount` (`currency`, `value`)                 |
 | `currencyCode`                                                 | *Applied in `amount`*                          |
-| `orderId`                                                      | `paymentDescription`                           |
+| `orderId`                                                      | [`paymentDescription​`](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics/transactiontext/)                            |
 | `plannedCaptureDelay`                                          | N/A                                            |
 | `posId`                                                        | N/A                                            |
 | `restrictions` (`debitCardDisallowed`, `creditCardDisallowed`) | N/A                                            |
@@ -113,4 +113,5 @@ See:
 | N/A                                     | [`reference`](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics/orderid)                                                                             |
 
 ## Test environment
+
 <MT />
