@@ -18,11 +18,11 @@ To ensure a smooth transition, we recommend using our migration guide, which wil
 
 ## MobilePay Invoice
 
-We will have to replace the current MobilePay Point of Sale API with new ePayment API on the joint platform by early 2024. This will *require a new integration*. Use the [Invoice to ePayment migration guide](invoice.mdx) to ease the transition.
+We will have to replace the current MobilePay Point of Sale API with new ePayment API on the joint platform by early 2024. This will *require a new integration*. Use the [Invoice to ePayment migration guide](invoice.md) to ease the transition.
 
 ## MobilePay Point of Sale
 
-We will have to replace the current MobilePay Point of Sale API with new ePayment API on the joint platform by early 2024. This will *require a new integration*. Use the [Point of Sale to ePayment migration guide](pos.mdx) to ease the transition.
+We will have to replace the current MobilePay Point of Sale API with new ePayment API on the joint platform by early 2024. This will *require a new integration*. Use the [Point of Sale to ePayment migration guide](pos.md) to ease the transition.
 
 ## MobilePay Subscriptions
 

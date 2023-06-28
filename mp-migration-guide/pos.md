@@ -6,11 +6,12 @@ pagination_next: null
 pagination_prev: null
 ---
 
-import MT from './_mt.mdx'
+import MT from './_mt.md'
 
 # Point of Sale to ePayment
 
-Read more about the transition to one platform [here](https://developer.mobilepay.dk/docs/pos/transition-to-one-platform). Below you can find comparison between the existing MobilePay PoS API and the new [ePayment API](/docs/APIs/epayment-api) replacing MobilePay PoS. 
+Read more about the [transition to one platform](https://developer.mobilepay.dk/docs/pos/transition-to-one-platform).
+Below you can find comparison between the existing MobilePay PoS API and the new [ePayment API](/docs/APIs/epayment-api) replacing MobilePay PoS. 
 
 Visit our solutions section to see the recommended flow for in-store payment [merchant scan](/docs/vipps-solutions/in-store/).
 
