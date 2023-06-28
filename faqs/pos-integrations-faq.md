@@ -89,9 +89,10 @@ request.
 
 **C:** Same sales unit is used for all locations:
 
-It is possible to use one sales unit (one MSN) for all stores and use a prefix in the `orderId` to identify which orders belong to which sales units.
-This will result in having one settlement for all. You decide what the `orderId` contains, and it may be up to 50 characters.
-See: [orderId recommendation](../common-topics/orderid.md).
+It is possible to use one sales unit (one MSN) for all stores and use a prefix in the `reference` (called `orderId` in the older eCom API)
+to identify which orders belong to which sales units.
+This will result in having one settlement for all. You decide what the `reference` contains, and it may be up to 50 characters.
+See: [Recommendations for `reference` and `orderId`](../common-topics/orderid.md).
 You will use the same API keys for all stores.
 
 ## Distance selling from a POS solution

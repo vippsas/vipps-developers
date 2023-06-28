@@ -1,16 +1,17 @@
 ---
-title: reference
+title: Recommendations for `reference` and `orderId`
+sidebar_label: reference
 pagination_next: null
 pagination_prev: null
 ---
 
 # Recommendations for `reference` and `orderId`
 
-The `orderId` (also called `reference`) must be unique for the sales unit Merchant Serial Number (MSN) (i.e., the ID of
-the sales unit). The `orderId` does not need to be globally unique, so several
-MSNs may use the same `orderId`, as long as it is unique for each sales unit.
+The `reference` (also called `orderId`) must be unique for the sales unit Merchant Serial Number (MSN) (i.e., the ID of
+the sales unit). The `reference` does not need to be globally unique, so several
+MSNs may use the same `reference`, as long as it is unique for each sales unit.
 
-The `orderId` is case-sensitive.
+The `reference` is case-sensitive.
 We *strongly* recommend using a format like `acme-shop-123-order123abc`,
 instead of just `123456`.
 
@@ -30,29 +31,29 @@ This is applicable to:
 
 ## Use user-friendly orderIds
 
-If you ever have a problem that requires us to search in our logs, we need an
-`orderId` that is "unique enough" to actually find. An `orderId` that
+If you ever have a problem that requires us to search in our logs, we need a
+`reference` that is *unique enough* to actually find. A `reference` that
 contains only digits may not be possible to find, and then we are not able to help.
 
 It is possible to use
 [UUID](https://en.wikipedia.org/wiki/Universally_unique_identifier),
 of the format `123e4567-e89b-12d3-a456-426614174000`, but remember
-that `orderId` is shown to the user in Vipps.
+that `reference` is shown to the user in Vipps.
 We recommend a more user-friendly format, like `acme-shop-123-order123abc`.
 
-The maximum length of an `orderId` is 50 alphanumeric characters:
+The maximum length of a `reference` is 50 alphanumeric characters:
 `a-z`, `A-Z`, `0-9` and `-` (hyphen).
 Leading zeros should be avoided, as some applications (e.g., Excel)
 tend to remove them, and this may cause misunderstandings.
 
 See also:
-[TransactionText recommendations](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics/transactiontext/).
+[Recommendations for `paymentDescription` and `transactionText`](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics/transactiontext/).
 
 ## Multiple sales units
 
-If you have multiple sales units, prefixing the `orderId` with the MSN
+If you have multiple sales units, prefixing the `reference` with the MSN
 for each sales unit is recommended. For example, if the MSN is `654321`, the
-`orderId` could be `654321-acme-shop-123-order123abc`.
+`reference` could be `654321-acme-shop-123-order123abc`.
 
 ## Multiple attempts
 

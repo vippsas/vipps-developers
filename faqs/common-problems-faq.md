@@ -215,8 +215,8 @@ the `orderId` is shown instead of the customer name.
 
 You can click the little "i" in the header on the transaction overview and see the same info as above.
 
-The `orderId` is specified by the merchant. See the
-[orderId recommendations](../common-topics/orderid.md).
+The `reference` (called `orderId` in the older eCom API) is specified by the merchant. See the
+[recommendations for `reference` and `orderId`](../common-topics/orderid.md).
 
 Use
 [Userinfo](https://developer.vippsmobilepay.com/docs/APIs/userinfo-api)

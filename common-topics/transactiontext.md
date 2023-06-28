@@ -1,5 +1,6 @@
 ---
-title: paymentDescription
+title: Recommendations for `paymentDescription` and `transactionText`
+sidebar_label: paymentDescription
 hide_table_of_contents: true
 pagination_next: null
 pagination_prev: null
@@ -28,8 +29,8 @@ We recommend the following, using the example "Vipps web shop":
 | Initiate, one item (the `paymentDescription` is shown in the push message and on the payment screen) | `One pair of Vipps socks`, `Orderid acme-shop-123-order123abc in Vipps webshop` | `Payment`, `Vipps webshop`, `Shop number 12345`, `Vipps` |
 | Initiate, multiple items or a shopping basket | `One pair of Vipps socks, one XL hoodie, ...` (truncated to ~100 characters) or `Payment for order acme-shop-123-order123abc in Vipps webshop` | (same as above) |
 | Initiate, reservation of maximum amount (for EV charging, parking, etc.) | `Midlertidig reservasjon av maksbeløp. Du bli kun belastet for faktisk bruk.` English: `Temporary reservation of maximum amount. You will only be charged for the actual use.` | Not making it clear that it is a temporary reservation of the maximum amount (otherwise: same as above) |
-| Capture (the `transactionText` is shown on the receipt) | `Order acme-shop-123-order123abc. Thank you for shopping at Vipps webshop!` | (same as above) |
-| Refund | `Refund for order acme-shop-123-order123abc` | `Refund`, `Orderid acme-shop-123-order123abc` |
+| Capture (the `paymentDescription` is shown on the receipt) | `Order acme-shop-123-order123abc. Thank you for shopping at Vipps webshop!` | (same as above) |
+| Refund | `Refund for order acme-shop-123-order123abc` | `Refund`, `reference acme-shop-123-order123abc` |
 
 See also:
-[Recommendations for `reference` and `orderId`](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics/orderid/)
+[Recommendations for `reference` and `orderId`](orderid.md)

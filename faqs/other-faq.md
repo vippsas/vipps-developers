@@ -117,8 +117,9 @@ If all sales units have the same organization number, there are two alternatives
    which orders belong to which sales units.
    All sales units are in the same
    [settlement report](../settlements/README.md).
-   You decide what the `orderId` contains, and it may be up to 50 characters. See:
-   [orderId recommendation](../common-topics/orderid.md).
+   You decide what the `reference` (called `orderId` in the older eCom API) contains,
+   and it may be up to 50 characters. See:
+   [Recommendations for `reference` and `orderId`](../common-topics/orderid.md).
    You will use the same API keys for all stores.
    If you have a Vipps platform partner, the partner will use the
    [Partner keys](https://developer.vippsmobilepay.com/docs/vipps-partner/partner-keys)
