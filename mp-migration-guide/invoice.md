@@ -24,7 +24,7 @@ Please note that ePayment encompasses various use case scenarios. Therefore, if 
 
 | MobilePay invoice                    | Vipps Mobilepay ePayment                                                                      |
 |--------------------------------------|-------------------------------------------------------------------------------------------------|
-| `InvoiceIssuer​`                      | `Merchant-Serial-Number` (Header in request)                                                   ​ |
+| `InvoiceIssuer​`                      | `Merchant-Serial-Number` (see [HTTP headers](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics/http-headers/))                                                   ​ |
 | `ConsumerAlias {Alias, AliasType}`  ​ | `Customer {Alias} (Example: 4512345678)`                                                        |
 | `TotalAmount​`                        | `Amount {currency, value(øre)}​`                                                                 |
 | `InvoiceNumber` / `PaymentReference​` | [`reference`](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics/orderid) / `paymentDescription`                                                             ​ |
