@@ -1,10 +1,10 @@
 ---
-title: orderId
+title: reference
 pagination_next: null
 pagination_prev: null
 ---
 
-# Recommendations for orderId/reference
+# Recommendations for `reference` and `orderId`
 
 The `orderId` (also called `reference`) must be unique for the sales unit Merchant Serial Number (MSN) (i.e., the ID of
 the sales unit). The `orderId` does not need to be globally unique, so several
