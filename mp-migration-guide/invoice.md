@@ -6,7 +6,7 @@ pagination_next: null
 pagination_prev: null
 ---
 
-import MT from './_mt.mdx'
+import MT from './_mt.md'
 
 # Invoice to ePayment
 
