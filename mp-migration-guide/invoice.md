@@ -10,7 +10,8 @@ import MT from './_mt.md'
 
 # Invoice to ePayment
 
-Read more about the transition to one platform [here](https://developer.mobilepay.dk/docs/invoice/transition-to-one-platform). Below you can find comparison between the existing MobilePay Invoice API and the new [ePayment API](/docs/APIs/epayment-api) replacing MobilePay Invoice. 
+Read more about the transition to one platform on the [MobilePay site](https://developer.mobilepay.dk/docs/invoice/transition-to-one-platform).
+Below, you can find comparison between the existing MobilePay Invoice API and the new [ePayment API](/docs/APIs/epayment-api) replacing MobilePay Invoice.
 
 Visit our [Recommended flows](https://developer.vippsmobilepay.com/docs/vipps-solutions/) section to see the recommended flow for [invoice](/docs/vipps-solutions/invoice-through-epayments/).
 
@@ -18,7 +19,7 @@ Please note that ePayment encompasses various use case scenarios. Therefore, if 
 
 * [MobilePay InvoiceDirect](https://developer.mobilepay.dk/docs/invoice/api-endpoint-reference#invoicedirect)  1-1 to ePayment with userFlow = `PUSH_MESSAGE`
 * [MobilePay InvoiceLinks](https://developer.mobilepay.dk/docs/invoice/api-endpoint-reference#invoicelink) 1-1 to ePayment with userFlow = `WEB_REDIRECT`
-* “QR” The use of PDF => [Order Management API](https://developer.vippsmobilepay.com/docs/APIs/order-management-api/).
+* "QR" The use of PDF => [Order Management API](https://developer.vippsmobilepay.com/docs/APIs/order-management-api/)
 
 ## Input formats
 

@@ -17,10 +17,10 @@ API documentation:
 * [Recurring API](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api)
 * [MobilePay Subscriptions API](https://developer.mobilepay.dk/api/subscriptions)
 
-### Agreement
+## Agreement
 
 See:
-[Agreements](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/vipps-recurring-api#agreements).
+[Agreements](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/vipps-recurring-api#agreements)
 
 | MOBILEPAY AGREEMENT               ​ | VIPPS MOBILEPAY AGREEMENT​                                                                              |
 |------------------------------------|--------------------------------------------------------------------------------------------------------|
@@ -41,10 +41,10 @@ See:
 | N/A                                  | [`isApp`](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics/isApp) (If merchant is redirecting user from an app or a mobile device)​                               |
 | N/A                                  | [`skipLandingPage`](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics/vipps-landing-page#skip-landing-page) (`true` = skip landing page by sending a push notification directly to the user)​                |
 
-### Charges
+## Charges
 
 See:
-[Charges](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/vipps-recurring-api#charges).
+[Charges](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/vipps-recurring-api#charges)
 
 | MobilePay one-off​                    | Vipps MobilePay initial charge                                                                 |
 |--------------------------------------|------------------------------------------------------------------------------------------------|

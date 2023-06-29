@@ -11,7 +11,7 @@ import MT from './_mt.md'
 # Point of Sale to ePayment
 
 Read more about the [transition to one platform](https://developer.mobilepay.dk/docs/pos/transition-to-one-platform).
-Below you can find comparison between the existing MobilePay PoS API and the new [ePayment API](/docs/APIs/epayment-api) replacing MobilePay PoS. 
+Below you can find comparison between the existing MobilePay PoS API and the new [ePayment API](/docs/APIs/epayment-api) replacing MobilePay PoS.
 
 Visit our [Recommended flows](https://developer.vippsmobilepay.com/docs/vipps-solutions/) to see the recommended flow for in-store payment [merchant scan](/docs/vipps-solutions/in-store/).
 
@@ -33,6 +33,7 @@ Visit our [Recommended flows](https://developer.vippsmobilepay.com/docs/vipps-so
 ## Authentication and headers
 
 See:
+
 * [Access token API](https://developer.vippsmobilepay.com/docs/APIs/access-token-api/)
 
 | MobilePay PoS                           | ePayment                                        |
@@ -50,6 +51,7 @@ See:
 ## Initiate Payment
 
 See:
+
 * [Create](https://developer.vippsmobilepay.com/docs/APIs/epayment-api/operations/create/)
 
 | MobilePay PoS                                                  | ePayment                                       |
@@ -74,6 +76,7 @@ See:
 ## Query Payment
 
 See:
+
 * [Get payment](https://developer.vippsmobilepay.com/docs/APIs/epayment-api/operations/get_info/)
 * [Get payment event log](https://developer.vippsmobilepay.com/docs/APIs/epayment-api/operations/get_event_log/)
 
@@ -96,6 +99,7 @@ See:
 ## Capture, Cancel and Refund Payment
 
 See:
+
 * [Capture](https://developer.vippsmobilepay.com/docs/APIs/epayment-api/operations/capture/)
 * [Cancel](https://developer.vippsmobilepay.com/docs/APIs/epayment-api/operations/cancel/)
 * [Refund](https://developer.vippsmobilepay.com/docs/APIs/epayment-api/operations/refund/)

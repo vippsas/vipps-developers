@@ -13,7 +13,8 @@ On November 1st 2022 the merger between MobilePay and Norwegian Vipps was approv
 
 Are you currently using the MobilePay APIs for your payment integration needs?
 
-In that case, we’re excited to introduce you to the [Vipps MobilePay API platform](https://developer.vippsmobilepay.com/docs/APIs/), a reliable and versatile payment solution that can make the migration hassle-free and even dazzle you with its ease of use and features.
+In that case, we’re excited to introduce you to the [Vipps MobilePay API platform](https://developer.vippsmobilepay.com/docs/APIs/),
+a reliable and versatile payment solution that can make the migration hassle-free and even dazzle you with its ease of use and features.
 To ensure a smooth transition, we recommend using our migration guides, which will provide step-by-step instructions and best practices for integrating with the Vipps MobilePay APIs.
 
 ## MobilePay Invoice
@@ -26,12 +27,17 @@ We will have to replace the current MobilePay Point of Sale API with new ePaymen
 
 ## MobilePay Subscriptions
 
-There is *no need to reintegrate* into the new solution. Your existing Subscriptions Payments integration will continue to work, but some functionality will be changing or closed starting from the moment we transition to One Platform. Please visit the [MobilePay developer documentation](https://developer.mobilepay.dk/docs/subscriptions/transition-to-one-platform) for details. After we have switched to one platform, you can transition to Vipps MobilePay Recurring API using the [Subscriptions to Recurring migration guide](subscriptions.md).
+There is *no need to reintegrate* into the new solution. Your existing Subscriptions Payments integration will continue to work, but some functionality will be changing or closed starting from the moment we transition to One Platform.
+Please visit the [MobilePay developer documentation](https://developer.mobilepay.dk/docs/subscriptions/transition-to-one-platform) for details.
+After we have switched to one platform, you can transition to Vipps MobilePay Recurring API using the
+[Subscriptions to Recurring migration guide](subscriptions.md).
 
 ## MobilePay App Payments
 
-There is *no need to reintegrate* into the new solution. Your existing App Payments integration will continue to work, but some functionality will be changing or closed starting from the moment we transition to One Platform. Please visit the [MobilePay developer documentation](https://developer.mobilepay.dk/docs/app-payments/transition-to-one-platform) for details.
+There is *no need to reintegrate* into the new solution. Your existing App Payments integration will continue to work, but some functionality will be changing or closed starting from the moment we transition to One Platform.
+Please visit the [MobilePay developer documentation](https://developer.mobilepay.dk/docs/app-payments/transition-to-one-platform) for details.
 
 ## MobilePay Online
 
-There is *no need to reintegrate* into the new solution. Your existing Online integration will continue to work, but some functionality will be changing or closed starting from the moment we transition to One Platform. Please visit the [MobilePay developer documentation](https://developer.mobilepay.dk/docs/online/transition-to-one-platform) for details.
+There is *no need to reintegrate* into the new solution. Your existing Online integration will continue to work, but some functionality will be changing or closed starting from the moment we transition to One Platform.
+Please visit the [MobilePay developer documentation](https://developer.mobilepay.dk/docs/online/transition-to-one-platform) for details.
