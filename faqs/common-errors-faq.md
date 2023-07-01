@@ -110,18 +110,23 @@ source code asking us to fix it for you.
 
 Merchants that only have access to the
 [Vipps Login API](https://developer.vippsmobilepay.com/docs/APIs/login-api)
-and attempt to use the Vipps eCom API will get this error, with
-`Merchant Not Allowed for Ecommerce Payment` in the body.
+and attempt to use the Vipps ePayment API (or eCom API) will get this error, with
+`Merchant Not Allowed for Ecommerce Payment` in the response body.
 
-This is because the compliance checks required for Vipps eCom API are not
+This is because the compliance checks required for making payments are not
 done for merchants that only need the Vipps Login API.
-If you need access to the Vipps eCom API, you can apply for this on
+If you need access to the Vipps ePayment API (or eCom API), you can apply for this on
 [portal.vipps.no](https://portal.vipps.no).
 
 Partners can get this error if they use
 [Partner keys](https://developer.vippsmobilepay.com/docs/vipps-partner/partner-keys),
-but do not send the
-`Merchant-Serial-Number` header.
+but:
+* Do not send the `Merchant-Serial-Number` header.
+* Send a `Merchant-Serial-Number` header for a sales unit (MSN) that is not connected
+  to them as a partner. The partner keys can only be used for sales units that are
+  connected to them as a partner.
+
+See: [HTTP headers](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics/http-headers/).
 
 ## Why do I get `HTTP 429 Too Many Requests`?
 
