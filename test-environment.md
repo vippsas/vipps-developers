@@ -46,6 +46,9 @@ Functionality that is not available in the test environment, a non-exhaustive li
 1. Only Norwegian phone numbers are supported (this will be fixed, but there is no ETA).
 1. All test merchants appear as Norwegian merchants in the app (this will be fixed, but there is no ETA).
 1. Currency: Limited support, please test with NOK (this will be fixed, but there is no ETA).
+1. [Freestanding card payments](https://developer.vippsmobilepay.com/docs/APIs/epayment-api/features/free-standing-card-payments/)
+   (in the [ePayment API](https://developer.vippsmobilepay.com/docs/APIs/epayment-api/))
+   do not work in the test environment.
 1. Push alerts may be unavailable or unstable. To see payment requests:
    Click the "Payments" button at the bottom, and then "pull to refresh" on the Payments screen.
 1. Email verification has some quirks, see [Email address](#email-address).
