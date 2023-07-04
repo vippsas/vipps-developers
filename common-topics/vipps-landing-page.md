@@ -1,10 +1,11 @@
 ---
-title: Vipps landing page
+title: Vipps MobilePay landing page
+sidebar_label: Vipps MobilePay landing page
 pagination_next: null
 pagination_prev: null
 ---
 
-# The Vipps landing page
+# Vipps MobilePay landing page
 
 The landing page is mandatory for payments initiated on a different device than the user's phone.
 It provides a consistent and recognizable user experience
@@ -17,8 +18,8 @@ and to complete the payment in a familiar way.
 
 ## User flow
 
-When a payment is initiated, the user is directed to a `url`.
-The user will either be taken to Vipps or to the Vipps landing page:
+When a payment is initiated, the user is directed to a `url` which will either open.
+the Vipps app or the landing page:
 
 * In a mobile browser, the Vipps app will automatically be opened with app-switch.
   The result is the same for the `vipps://` and the `https://` URLs.
@@ -91,8 +92,8 @@ device that the user does not own or control:
 * On a device that has no user-facing display where the landing page can be
   shown, such as physical points of sale (POS) solutions, vending machines, etc.
 
-This `skipLandingpage` functionality must be specially enabled by Vipps for each
-sales unit that needs to use it.
+This `skipLandingpage` functionality must be specially enabled by Vipps MobilePay for each
+sales unit that needs it.
 If you need to skip the landing page, contact your
 Key Account Manager. If you do not have a KAM, please log in on
 [portal.vipps.no](https://portal.vipps.no),
@@ -102,8 +103,8 @@ the landing page.
 
 **Please note:** When using `skipLandingPage`, the user is not sent to a URL
 after completion of the payment. The "result page" is just the confirmation in
-Vipps. The `fallback` URL sent in the API request can therefore be the
-merchant's main URL, like `https://example.com`, etc.
+the Vipps app. The required parameter `returnUrl` (called `fallback` for the eCom API)
+is not used, so you can provide any URL as that value.
 
 **Important:** When using `"skipLandingPage": true` in the API request that
 initiates the payment:
@@ -115,7 +116,7 @@ initiates the payment:
 * The user is not able to provide a different phone number for completing the
   payment. This means that a "Vipps for those under 15" (that cannot pay
   businesses) cannot have someone else pay for them.
-* The user is not sent to a `fallback` URL (the result page) after completion
+* The user is not sent to a return URL (the result page) after completion
   of the payment.
   Instead of the "result page", the user will just get a confirmation in
   the Vipps app.
@@ -133,7 +134,7 @@ the flow with `"skipLandingPage": true`:
 ```mermaid
 sequenceDiagram
     participant M as Merchant
-    participant API as Vipps API
+    participant API as Vipps MobilePay API
     participant LP as Landing page
     participant App as Vipps app
     actor U as User
