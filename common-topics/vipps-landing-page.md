@@ -18,8 +18,8 @@ and to complete the payment in a familiar way.
 
 ## User flow
 
-When a payment is initiated, the user is directed to a `url`.
-The user will either be taken to Vipps or to the Vipps landing page:
+When a payment is initiated, the user is directed to a `url` which will either open.
+the Vipps app or the landing page:
 
 * In a mobile browser, the Vipps app will automatically be opened with app-switch.
   The result is the same for the `vipps://` and the `https://` URLs.
@@ -103,8 +103,8 @@ the landing page.
 
 **Please note:** When using `skipLandingPage`, the user is not sent to a URL
 after completion of the payment. The "result page" is just the confirmation in
-the Vipps app. The `fallback` URL sent in the API request can therefore be the
-merchant's main URL, like `https://example.com`, etc.
+the Vipps app. The required parameter `returnUrl` (called `fallback` for the eCom API)
+is not used, so you can provide any URL as that value.
 
 **Important:** When using `"skipLandingPage": true` in the API request that
 initiates the payment:
@@ -116,7 +116,7 @@ initiates the payment:
 * The user is not able to provide a different phone number for completing the
   payment. This means that a "Vipps for those under 15" (that cannot pay
   businesses) cannot have someone else pay for them.
-* The user is not sent to a `fallback` URL (the result page) after completion
+* The user is not sent to a return URL (the result page) after completion
   of the payment.
   Instead of the "result page", the user will just get a confirmation in
   the Vipps app.
