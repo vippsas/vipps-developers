@@ -6,7 +6,7 @@ pagination_prev: null
 
 # The Vipps landing page
 
-The Vipps landing page is mandatory for payments initiated on a different device than the user's phone.
+The landing page is mandatory for payments initiated on a different device than the user's phone.
 It provides a consistent and recognizable user experience
 that helps guide the user through the payment flow.
 
@@ -17,23 +17,22 @@ and to complete the payment in a familiar way.
 
 ## User flow
 
-When a payment is initiated the user is directed to a `url`.
+When a payment is initiated, the user is directed to a `url`.
 The user will either be taken to Vipps or to the Vipps landing page:
 
 * In a mobile browser, the Vipps app will automatically be opened with app-switch.
   The result is the same for the `vipps://` and the `https://` URLs.
-  This is done by the phone's operating system; It recognized that the `https://`
-  URL for the landing page is a Vipps URL, and knows that it should be open the
+  This is done by the phone's operating system. It recognizes that the `https://`
+  URL for the landing page is a Vipps URL, and knows that it should open the
   Vipps app instead of the opening it in a web browser.
 * In a desktop browser, the landing page will prompt the user for the phone number
-  (the number may also be pre-filled, see below).
+  (the number may also be pre-filled, as described in
+  [the user's phone number](#the-users-phone-number) section).
   The user enters or confirms the phone number.
   It is also possible to enter another Vipps user's number, to have that
   person complete the payment.
-  Vipps sends a push notification to the specified phone number,
-  the user gets a push notification, opens Vipps and confirms the payment.
 
-![The Vipps landing page](images/vipps-flow-landing-page.png)
+![The landing page](images/vipps-flow-landing-page.png)
 
 ## The user's phone number
 
@@ -41,14 +40,14 @@ The user's phone number can be set in the payment initiation call. It is
 remembered by the user's browser, eliminating the need for re-typing it on
 subsequent purchases.
 
-In some cases one Vipps user will start the payment process, but the actual payment
-will be made by another Vipps user. The Vipps landing page makes this possible, since
+In some cases, one user will start the payment process, but the actual payment
+will be made by another user. The landing page makes this possible, since
 the phone number can be changed.
 A typical example is one user that is below
-15 years old, and can therefore not pay businesses, will let another Vipps
+15 years old, and therefore cannot pay to businesses, will let another Vipps
 user complete the payment.
 
-See: 
+See:
 [Is it possible to prevent the user from editing the phone number?​](https://developer.vippsmobilepay.com/docs/vipps-developers/faqs/vipps-landing-page-faq#is-it-possible-to-prevent-the-user-from-editing-the-phone-number).
 
 ## Never display the landing page in an iframe
@@ -71,13 +70,13 @@ the QR code will take the user directly to the payment in the Vipps app.
 
 ![Demo QR code](images/demo-qr.png)
 
-This is done in cooperation with the Vipps QR API. See
+This is done in cooperation with the QR API. See
 [One-time payment QR](https://developer.vippsmobilepay.com/docs/APIs/qr-api/vipps-qr-api#one-time-payment-qr-codes)
-in the Vipps QR API guide for more details about this and other QR services.
+for more details about this and other QR services.
 
 See the
-[Quick start](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api-quick-start)
-for step-by-step examples of generating QR codes and short links for one-time payments initiated from the eCom API.
+[Quick start](https://developer.vippsmobilepay.com/docs/APIs/epayment-api/quick-start/)
+for step-by-step examples of generating QR codes and short links for one-time payments initiated from the ePayment API.
 
 ## Skip landing page
 
@@ -94,8 +93,8 @@ device that the user does not own or control:
 
 This `skipLandingpage` functionality must be specially enabled by Vipps for each
 sales unit that needs to use it.
-If you need to skip the landing page: Contact your
-Key Account Manager. If you do not have a KAM: Please log in on
+If you need to skip the landing page, contact your
+Key Account Manager. If you do not have a KAM, please log in on
 [portal.vipps.no](https://portal.vipps.no),
 find the right sales unit and click the email link under the "i" information
 bubble. Include a detailed description of why it is not possible to display
