@@ -1,10 +1,11 @@
 ---
-title: Vipps landing page
+title: Vipps MobilePay landing page
+sidebar_label: Vipps MobilePay landing page
 pagination_next: null
 pagination_prev: null
 ---
 
-# The Vipps landing page
+# Vipps MobilePay landing page
 
 The landing page is mandatory for payments initiated on a different device than the user's phone.
 It provides a consistent and recognizable user experience
@@ -91,8 +92,8 @@ device that the user does not own or control:
 * On a device that has no user-facing display where the landing page can be
   shown, such as physical points of sale (POS) solutions, vending machines, etc.
 
-This `skipLandingpage` functionality must be specially enabled by Vipps for each
-sales unit that needs to use it.
+This `skipLandingpage` functionality must be specially enabled by Vipps MobilePay for each
+sales unit that needs it.
 If you need to skip the landing page, contact your
 Key Account Manager. If you do not have a KAM, please log in on
 [portal.vipps.no](https://portal.vipps.no),
@@ -102,7 +103,7 @@ the landing page.
 
 **Please note:** When using `skipLandingPage`, the user is not sent to a URL
 after completion of the payment. The "result page" is just the confirmation in
-Vipps. The `fallback` URL sent in the API request can therefore be the
+the Vipps app. The `fallback` URL sent in the API request can therefore be the
 merchant's main URL, like `https://example.com`, etc.
 
 **Important:** When using `"skipLandingPage": true` in the API request that
@@ -133,7 +134,7 @@ the flow with `"skipLandingPage": true`:
 ```mermaid
 sequenceDiagram
     participant M as Merchant
-    participant API as Vipps API
+    participant API as Vipps MobilePay API
     participant LP as Landing page
     participant App as Vipps app
     actor U as User
