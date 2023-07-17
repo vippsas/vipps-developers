@@ -65,8 +65,6 @@ Functionality that is not available in the test environment, a non-exhaustive li
    The only way to test the complete settlement flow is in the production environment.
 1. The user's email address can not be verified in the normal way.
    See: [Email address](#email-address).
-1. [Freestanding card payments](https://developer.vippsmobilepay.com/docs/APIs/epayment-api/features/free-standing-card-payments/)
-   are not available.
 1. Payment of invoices is unavailable.
 1. We allow 10,000 incorrect PIN attempts before locking the Vipps user's account.
 
