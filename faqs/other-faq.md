@@ -234,6 +234,6 @@ to the requirements.
 ## How can I change partner for my integration with Vipps?
 
 See:
-[How to change partners for a merchant](https://developer.vippsmobilepay.com/docs/vipps-partner#how-to-change-partners-for-a-merchant).
+[How to change partners for a merchant](https://developer.vippsmobilepay.com/docs/vipps-partner/how-to-change-partners/).
 
 **Please note:** The MSN (the number) does *not* change when changing partners.
