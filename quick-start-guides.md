@@ -46,7 +46,7 @@ Our Postman collections contain example API calls that you can run in the test e
 Our Postman environments include all the variables needed to run the examples in the collection.
 You will need to update some variables, so that the example works with your test user and test sales unit.
 
-Once you have installed Postman, you can import an environment from one our APIs and then customize it for your own use.
+Once you have installed Postman, you can import an environment from one of our APIs and then customize it for your own use.
 
 1. To import the collection and environment files, save them to your desktop. Then, click the *Import* button in the Postman interface.
 2. Select the file(s) and click *Open*.
@@ -57,8 +57,8 @@ with all the APIs.
 
 ### Update the environment values
 
-The Postman environments comes pre-filled with some values, but there are still
-some required values which have to be manually entered. These are described in the quick start guide for each API.
+The Postman environments come pre-filled with some values, but there are still
+some required values that have to be manually entered. These are described in the quick start guide for each API.
 
 You must normally update the variables to use your API keys: `client_id`,
 `client_secret`, `Ocp-Apim-Subscription-Key`, and `merchantSerialNumber`.
