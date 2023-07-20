@@ -39,9 +39,9 @@ The test and production environments are completely separate and use different
 Functionality that is not available in the test environment, a non-exhaustive list:
 
 1. Unscheduled maintenance *may* occur.
-   We will do our best to inform with
+   We will do our best to inform you with
    [Status page](./developer-resources/status-pages.md),
-1. For now, the test app has the orange Vipps color scheme, and not the blue MobilePay color scheme.
+1. For now, the test app has the orange Vipps color scheme and not the blue MobilePay color scheme.
    This will be fixed, but there is no estimated time of arrival (ETA).
 1. Only Norwegian phone numbers are supported (this will be fixed, but there is no ETA).
 1. All test merchants appear as Norwegian merchants in the app (this will be fixed, but there is no ETA).
@@ -61,7 +61,7 @@ Functionality that is not available in the test environment, a non-exhaustive li
 1. There is no equivalent to [portal.vipps.no](https://portal.vipps.no) for the
    test environment. Payments must be checked with the API.
 1. There are no settlements in the test environment, and therefore
-   no settlement reports, not SFTP service and no Report API.
+   no settlement reports, no SFTP service, and no Report API.
    The only way to test the complete settlement flow is in the production environment.
 1. The user's email address can not be verified in the normal way.
    See: [Email address](#email-address).
@@ -69,7 +69,7 @@ Functionality that is not available in the test environment, a non-exhaustive li
 1. We allow 10,000 incorrect PIN attempts before locking the Vipps user's account.
 
 To test functionality that is not available in MT, you will have to use the
-production environment in a controlled manner, using a real user and a real merchant.
+the production environment in a controlled manner, using a real user and a real merchant.
 
 ## Access to the test environment
 
@@ -178,7 +178,7 @@ section in the app.
 **Please note:** In the test environment verification of emails can only be triggered in a
 [Vipps Login](https://developer.vippsmobilepay.com/docs/APIs/login-api)
 flow (if the merchant requests the `email` scope), or from clicking “send email”
-from the email address section under profile page. After updating the email
+from the email address section under the profile page. After updating the email
 address you will need to close and reopen the app for this option to be
 available. 
 
