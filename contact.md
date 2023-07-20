@@ -40,7 +40,7 @@ To avoid any delays in receiving support, we recommend that users with non-techn
 | Settlements, invoices or similar | See: [Settlements](./settlements/README.md). |
 | Suggestions for improvements to [Vipps products](https://www.vipps.no/produkter-og-tjenester/bedrift/)  | Please use [this form](https://www.vipps.no/kontakt-oss/). |
 
-For *technical* issues related to Vipps and development of services using our APIs, please see the sections below.
+For *technical* issues related to Vipps and the development of services using our APIs, please see the sections below.
 
 ### Almost all questions are answered in the documentation
 
@@ -81,7 +81,7 @@ information to the address below:
 **Important:** If you do not provide enough information, our first reply will
 be a request for more details, which will of course cause delays.
 
-The Integration Services email address is: [developer@vippsmobilepay.com](mailto:developer@vippsmobilepay.com).
+The Integration Services email address is [developer@vippsmobilepay.com](mailto:developer@vippsmobilepay.com).
 If you add your colleagues on CC they will get all updates too.
 
 ### Keep your colleagues up to date
@@ -90,14 +90,14 @@ If you want colleagues to be included in all communication regarding this issue,
 add them in the `To:` or `CC:` field of the email.
 
 You can add more recipients to an existing issue by adding them as recipients
-to the email you are sending.
+to the email, you are sending.
 
 All updates to the issue will be sent to every recipient of the previous email.
 
 ### Automatic reply
 
 You will get an auto-reply from us with an issue number like `VSD-123456` in
-the `Subject` line. This is the unique number for this specific issue, and is
+the `Subject` line. This is the unique number for this specific issue and is
 used to connect all communication about this issue in our systems.
 
 The auto-reply is sent from a real e-mail address, which you can reply to.
@@ -123,26 +123,21 @@ varying complexity of resolving them, we cannot guarantee response times.
 If you have a KAM (Key Account Manager), please contact her/him.
 If you do not, please reply to the issue, and add any relevant information.
 Please note that we understand that your problem is important to you,
-but that Vipps must sometimes prioritize differently.
+but that we must sometimes prioritize differently.
 
 ## More than one problem, or a new one?
 
 Please send separate emails for each problem. If you send an email about a
 new problem by replying to an old issue, it may delay our response.
-If you reply to an old issue that has been closes, we will not see the reply.
+If you reply to an old issue that has been closed, we will not see the reply.
 
 ### Can I call you?
 
 We do not have a phone number, and we do not have the capacity to
-help 1:1 on phone. Most cases involve information that needs to be in written form,
+help 1:1 on the phone. Most cases involve information that needs to be in written form,
 such as IDs, API requests/responses, etc.
 
-We do sometimes set up Slack channels for customers, so you can request that if
-you expect to be contacting us a lot.
-
-### Can we have a meeting?
-
-See: [Can I call you?](#can-i-call-you)
+We do sometimes set up Slack channels for customers, depending on the [Partner level](https://developer.vippsmobilepay.com/docs/vipps-partner/partner-level-up/).
 
 ### Newsletter
 
