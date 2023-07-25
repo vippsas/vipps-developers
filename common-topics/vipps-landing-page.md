@@ -16,7 +16,14 @@ because the users get a familiar user experience and know the payment flow.
 In this way, Vipps takes responsibility for helping the user from the browser to the app,
 and to complete the payment in a familiar way.
 
-## User flow
+## MobilePay landing page
+
+A MobilePay landing page will be provided in the future, but we don't know the details yet.
+We'll get back to this soon.
+
+## Vipps landing page
+
+### User flow
 
 When a payment is initiated, the user is directed to a `url` which will either open.
 the Vipps app or the landing page:
@@ -35,7 +42,7 @@ the Vipps app or the landing page:
 
 ![The landing page](images/vipps-flow-landing-page.png)
 
-## The user's phone number
+### The user's phone number
 
 The user's phone number can be set in the payment initiation call. It is
 remembered by the user's browser, eliminating the need for re-typing it on
@@ -51,7 +58,7 @@ user complete the payment.
 See:
 [Is it possible to prevent the user from editing the phone number?​](https://developer.vippsmobilepay.com/docs/vipps-developers/faqs/vipps-landing-page-faq#is-it-possible-to-prevent-the-user-from-editing-the-phone-number).
 
-## Never display the landing page in an iframe
+### Never display the landing page in an iframe
 
 **Important:** Never show the Vipps landing page inside an iframe. See:
 [Can I show the landing page in an iframe?​](https://developer.vippsmobilepay.com/docs/vipps-developers/faqs/vipps-landing-page-faq#can-i-show-the-landing-page-in-an-iframe).
@@ -63,7 +70,7 @@ This is applicable to:
 * [PSP API](https://developer.vippsmobilepay.com/docs/APIs/psp-api)
 * [Recurring API](https://developer.vippsmobilepay.com/docs/APIs/recurring-api)
 
-## Generating a QR code to the Vipps landing page
+### Generating a QR code to the Vipps landing page
 
 If you have user-facing display, you may want to generate a QR code based on the
 landing page URL, instead of asking the user for their phone number. Scanning
@@ -79,7 +86,7 @@ See the
 [Quick start](https://developer.vippsmobilepay.com/docs/APIs/epayment-api/quick-start/)
 for step-by-step examples of generating QR codes and short links for one-time payments initiated from the ePayment API.
 
-## Skip landing page
+### Skip landing page
 
 **Please note:** This functionality is only available for special cases.
 Skipping the landing page is only allowed when it is not possible to show it.
@@ -126,7 +133,7 @@ initiates the payment:
 See:
 [Is it possible to skip the landing page?](../faqs/vipps-landing-page-faq.md#is-it-possible-to-skip-the-landing-page.)
 
-## Sequence diagram
+### Sequence diagram
 
 This sequence diagram shows the difference between the normal flow and
 the flow with `"skipLandingPage": true`:
