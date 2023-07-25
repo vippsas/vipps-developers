@@ -127,7 +127,7 @@ we will do a scientifically randomized drawing.
 ### Do you want a Slack channel? 📢
 
 We can set up a dedicated, temporary Slack channel to help fast-track your
-Vipps development. Email integration@vipps.no with a list of
+Vipps development. Email [developer@vippsmobilepay.com](mailto:developer@vippsmobilepay.com) with a list of
 email addresses to invite, with the same people on CC. We'll fix the rest.
 
 This does require that you have already ordered a Vipps solution, and
@@ -140,7 +140,7 @@ customers using Vipps through a partner.
 ### Do you want a technical workshop? 🛠
 
 We can set up a dedicated video workshop to help fast-track your
-Vipps integration. Email integration@vipps.no with a list of
+Vipps integration. Email [developer@vippsmobilepay.com](mailto:developer@vippsmobilepay.com) with a list of
 email addresses to invite, with the same people on CC. We fix the rest.
 
 This does require that you have already ordered a Vipps solution, and
@@ -157,8 +157,8 @@ Our API lifecycle policy is
 
 ### Status pages for test and production environments
 
-* Test: https://vipps-test.statuspage.io
-* Production: https://vipps.statuspage.io
+* Test: <https://vipps-test.statuspage.io>
+* Production: <https://vipps.statuspage.io>
 
 ### How to get help quickly
 
