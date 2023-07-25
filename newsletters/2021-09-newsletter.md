@@ -35,13 +35,13 @@ existing Vipps transaction. This information is shown to the customer in the
 app in their order history. This functionality is available for both recurring
 and direct payments, but not for pass-through payments.
 
-## The Vipps Merchant Management API
+## The Vipps Partner API
 
 An early version of the
-[Vipps Merchant Management API](https://github.com/vippsas/vipps-merchant-management-api)
+[Vipps Partner API](https://github.com/vippsas/vipps-partner-api)
 is available on GitHub:
 
-The Vipps Merchant Management API will let partners, banks and large corporations
+The Vipps Partner API will let partners, banks and large corporations
 manage their merchants and sales units. See the GitHub repository for
 background and priorities.
 
