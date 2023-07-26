@@ -14,20 +14,15 @@ pagination_prev: null
 [Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/docs/vipps-developers/quick-start-guides/).
 <!-- END_COMMENT -->
 
-This is a guide for using Postman to test the Vipps MobilePay APIs with the Vipps app.
-
-## What you need for getting started with the API
-
-You will need to set up a few things before you can break loose in testing the API:
+## What you need for testing the API with Postman
 
 1. A *test user*.
-   All merchants automatically get a test user. See [test users](test-environment.md#test-users) for more information.
+   All merchants automatically get a test user. See [test users](test-environment.md#test-users).
 2. A *test sales unit*.
-   You create this yourself by logging in to the Vipps Portal at [https://portal.vipps.no](https://portal.vipps.no). This requires BankId.
-   See instructions for creating the [test sales unit](test-environment.md#test-merchants).
-3. A Vipps *test app* for your mobile phone.
-   See instructions for installing the [Vipps test app](test-environment.md#vipps-test-apps), *Vipps MT*.
-4. A Postman application on your computer.
+   You can create as described in [How to create a test sales unit](./developer-resources/portal.md#how-to-create-a-test-sales-unit).
+3. A Vipps test app, *Vipps MT*, for your phone.
+   See [Vipps test app](test-environment.md#vipps-test-apps).
+4. The Postman application on your computer.
    Download [Postman](https://www.postman.com/downloads/) and install it.
    Don't use the web version, because you should never save your API keys on the web.
 
@@ -40,16 +35,11 @@ request and response for each call, including headers.
 
 ### Import collections and environments
 
-We provide a Postman collections and environments to make development easier.
 Our Postman collections contain example API calls that you can run in the test environment.
 
-Our Postman environments include all the variables needed to run the examples in the collection.
-You will need to update some variables, so that the example works with your test user and test sales unit.
-
-Once you have installed Postman, you can import an environment from one of our APIs and then customize it for your own use.
-
-1. To import the collection and environment files, save them to your desktop. Then, click the *Import* button in the Postman interface.
-2. Select the file(s) and click *Open*.
+1. In Postman, click *Import* in the upper-left corner.
+1. In the dialog that opens, with *File* selected, click *Upload Files*.
+1. Select the two files you have just downloaded and click *Import*.
 
 Use the
 [Global Postman environment](/tools/vipps-api-global-postman-environment.json)
@@ -67,7 +57,7 @@ You must normally update the variables to use your API keys: `client_id`,
 
 After you have imported and updated the collections and environments, you can begin to run the calls.
 
-In general, there is a sequence to running these, so check in the applicable quick start guide for that API to see what to run first.
+There is a sequence to running these, so check in the applicable API quick start guide to see what to run first.
 
 Some methods require a `body` with information that is sent with the request.
 Vipps provides pre-populated test data, but this can be modified.
@@ -78,14 +68,10 @@ Click the Code link to open the "Generate code snippets" modal.
 
 ![Developer Postman: Tabs](images/postman-tabs_sm.png)
 
-## Try it out!
-
-Your next step is to test out the examples!
+## Try it out
 
 Choose one of the API quick start guides listed below.
 This will lead you through a sequence of steps where you can experiment with every endpoint in the API.
-
-By following the steps, you will make calls to all the endpoints and see the full `request` and `response` for each call.
 
 * [Checkout API](https://developer.vippsmobilepay.com/docs/APIs/checkout-api/vipps-checkout-api-quick-start)
 * [eCom API](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api-quick-start)
