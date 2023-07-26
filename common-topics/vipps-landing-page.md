@@ -56,12 +56,12 @@ A typical example is one user that is below
 user complete the payment.
 
 See:
-[Is it possible to prevent the user from editing the phone number?​](https://developer.vippsmobilepay.com/docs/vipps-developers/faqs/landing-page-faq#is-it-possible-to-prevent-the-user-from-editing-the-phone-number).
+[Is it possible to prevent the user from editing the phone number?​](../faqs/landing-page-faq.md#is-it-possible-to-prevent-the-user-from-editing-the-phone-number).
 
 ### Never display the landing page in an iframe
 
 **Important:** Never show the landing page inside an iframe. See:
-[Can I show the landing page in an iframe?​](https://developer.vippsmobilepay.com/docs/vipps-developers/faqs/landing-page-faq#can-i-show-the-landing-page-in-an-iframe).
+[Can I show the landing page in an iframe?​](../faqs/landing-page-faq.md#can-i-show-the-landing-page-in-an-iframe).
 
 This is applicable to:
 
