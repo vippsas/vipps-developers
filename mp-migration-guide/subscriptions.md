@@ -39,7 +39,7 @@ See:
 | `notifications_on​`                 | N/A |
 | N/A                                  | [`scope`](https://developer.vippsmobilepay.com/docs/APIs/userinfo-api/#scope) (Space-separated list of the user profile-data scope to require for the agreement)​             |
 | N/A                                  | [`isApp`](../common-topics/isApp.md) (If merchant is redirecting user from an app or a mobile device)​                               |
-| N/A                                  | [`skipLandingPage`](../common-topics/vipps-landing-page.md#skip-landing-page) (`true` = skip landing page by sending a push notification directly to the user)​                |
+| N/A                                  | [`skipLandingPage`](../common-topics/landing-page.md#skip-landing-page) (`true` = skip landing page by sending a push notification directly to the user)​                |
 
 ## Charges
 

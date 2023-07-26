@@ -22,7 +22,7 @@ a `vipps://` URL by sending the optional `isApp` parameter in the initiate call:
 If the user does not have Vipps installed:
 
 * `"isApp":false` (or not sent at all): The
-   [Vipps landing page](vipps-landing-page.md)
+   [landing page](landing-page.md)
    will be shown, and the user can enter a phone number and pay on a device
    with Vipps installed.
 * `"isApp": true`: The user will get an error message saying that the link can
@@ -60,7 +60,7 @@ Example: Response body for `"isApp":true`, with a forced app-switch to Vipps:
 
 * The merchant's native app must be sure that the user's phone can open the
   `vipps://` deeplink, as the
-  [Vipps landing page](vipps-landing-page.md)
+  [landing page](landing-page.md)
   will not be shown to the user, and it will therefore not be possible to
   enter a phone number and pay with Vipps on another device.
 * If your customers use a native app: Remember that some iOS users
@@ -68,8 +68,8 @@ Example: Response body for `"isApp":true`, with a forced app-switch to Vipps:
   initiate payments with `"isApp": true` the app will try to open `vipps://` on
   the iPad, but since Vipps installed "nothing will happen", and the user will
   not be able to pay. When you don't send `isApp`, the built-in logic will
-  fix things for you, and display
-  [the Vipps landing page](vipps-landing-page.md)
+  fix things for you, and display the
+  [landing page](landing-page.md)
   instead.
 * Vipps requires a minimum version of the phone's operating system. At the time
   of writing this is iOS 12 (from 2018) or Android 6 (from 2015). If the user

@@ -1,11 +1,11 @@
 ---
-title: Vipps MobilePay landing page
-sidebar_label: Vipps MobilePay landing page
+title: Landing page
+sidebar_label: Landing page
 pagination_next: null
 pagination_prev: null
 ---
 
-# Vipps MobilePay landing page
+# Landing page
 
 The landing page is mandatory for payments initiated on a different device than the user's phone.
 It provides a consistent and recognizable user experience
@@ -56,12 +56,12 @@ A typical example is one user that is below
 user complete the payment.
 
 See:
-[Is it possible to prevent the user from editing the phone number?​](https://developer.vippsmobilepay.com/docs/vipps-developers/faqs/vipps-landing-page-faq#is-it-possible-to-prevent-the-user-from-editing-the-phone-number).
+[Is it possible to prevent the user from editing the phone number?​](https://developer.vippsmobilepay.com/docs/vipps-developers/faqs/landing-page-faq#is-it-possible-to-prevent-the-user-from-editing-the-phone-number).
 
 ### Never display the landing page in an iframe
 
-**Important:** Never show the Vipps landing page inside an iframe. See:
-[Can I show the landing page in an iframe?​](https://developer.vippsmobilepay.com/docs/vipps-developers/faqs/vipps-landing-page-faq#can-i-show-the-landing-page-in-an-iframe).
+**Important:** Never show the landing page inside an iframe. See:
+[Can I show the landing page in an iframe?​](https://developer.vippsmobilepay.com/docs/vipps-developers/faqs/landing-page-faq#can-i-show-the-landing-page-in-an-iframe).
 
 This is applicable to:
 
@@ -70,7 +70,7 @@ This is applicable to:
 * [PSP API](https://developer.vippsmobilepay.com/docs/APIs/psp-api)
 * [Recurring API](https://developer.vippsmobilepay.com/docs/APIs/recurring-api)
 
-### Generating a QR code to the Vipps landing page
+### Generating a QR code to the landing page
 
 If you have user-facing display, you may want to generate a QR code based on the
 landing page URL, instead of asking the user for their phone number. Scanning
@@ -131,7 +131,7 @@ initiates the payment:
   message will be returned.
 
 See:
-[Is it possible to skip the landing page?](../faqs/vipps-landing-page-faq.md#is-it-possible-to-skip-the-landing-page.)
+[Is it possible to skip the landing page?](../faqs/landing-page-faq.md#is-it-possible-to-skip-the-landing-page.)
 
 ### Sequence diagram
 
@@ -164,5 +164,5 @@ sequenceDiagram
 
 See:
 
-* [Is it possible to skip the landing page](../faqs/vipps-landing-page-faq.md#is-it-possible-to-skip-the-landing-page)
-* [How can I check if I have skipLandingPage activated?](../faqs/vipps-landing-page-faq.md#how-can-i-check-if-i-have-skiplandingpage-activated)
+* [Is it possible to skip the landing page](../faqs/landing-page-faq.md#is-it-possible-to-skip-the-landing-page)
+* [How can I check if I have skipLandingPage activated?](../faqs/landing-page-faq.md#how-can-i-check-if-i-have-skiplandingpage-activated)

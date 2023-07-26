@@ -19,6 +19,7 @@ These are topics that are applicable across many APIs:
 * [HTTP headers](http-headers.md)
 * [HTTP response codes](http-response-codes.md)
 * [isApp](isApp.md)
+* [Landing page](landing-page.md)
 * [orderid](orderid.md)
 * [Polling guidelines](polling-guidelines.md)
 * [Redirects](redirects.md)
@@ -27,4 +28,3 @@ These are topics that are applicable across many APIs:
 * [Timeouts](timeouts.md)
 * [TransactionText](transactiontext.md)
 * [URL validation](url-validation.md)
-* [Vipps landing page](vipps-landing-page.md)

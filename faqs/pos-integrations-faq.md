@@ -45,7 +45,7 @@ See also:
 
 ## How can we be whitelisted for `skipLandingPage`?
 
-See: [Is it possible to skip the landing page?](vipps-landing-page-faq.md#is-it-possible-to-skip-the-landing-page)
+See: [Is it possible to skip the landing page?](landing-page-faq.md#is-it-possible-to-skip-the-landing-page)
 
 ## Handling refunds on behalf of other stores
 
@@ -120,7 +120,7 @@ As an alternative an online sale log must be available for Vipps.
    The
    [Vipps customer center](https://vipps.no/hjelp/vipps/)
    can help with this.
-   See: [Vipps landing page FAQ](vipps-landing-page-faq.md#is-it-possible-to-skip-the-landing-page).
+   See: [landing page FAQ](landing-page-faq.md#is-it-possible-to-skip-the-landing-page).
 5. The POS vendor normally uses
    [Partner keys](https://developer.vippsmobilepay.com/docs/vipps-partner/partner-keys).
    If not: The merchant
@@ -175,7 +175,7 @@ not shared with anyone without their explicit consent.
 ## How can I save the customer's phone number?
 
 Vipps does not send the customer's phone number to the merchant. When a customer
-enters the phone number on the Vipps landing page, that is only used by Vipps
+enters the phone number on the landing page, that is only used by Vipps
 to send a push alert in Vipps. The number is not passed on to the merchant.
 
 If the POS integration is implemented so that the customer's phone number

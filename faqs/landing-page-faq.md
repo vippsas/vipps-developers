@@ -101,7 +101,7 @@ but have another user (a parent, for instance) complete the payment.
 
 If you need to make the user's phone number impossible to edit on the landing page:
 Contact your Key Account Manager. If you do not have a KAM:
-[contact us](https://developer.vippsmobilepay.com/docs/vipps-developers/contact/)
+[contact us](../contact.md)
 and include a detailed description of why this is needed.
 
 **Important:**

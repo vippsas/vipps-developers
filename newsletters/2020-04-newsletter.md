@@ -35,7 +35,7 @@ If there is no way to show the Vipps landing page, it can be skipped.
 
 This may be useful for POS integration, vending machines, etc.
 See
-[Skip landing page](../common-topics/vipps-landing-page.md#skip-landing-page)
+[Skip landing page](../common-topics/landing-page.md#skip-landing-page)
 for details.
 
 ## eCom: Cancel pending payments
