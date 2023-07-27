@@ -1,11 +1,18 @@
 ---
-title: Landing page
 sidebar_label: Landing page
 pagination_next: null
 pagination_prev: null
 ---
 
 # Landing page
+
+The landing page enables you to log in or authorize a payment from your desktop computer.
+It's a webpage that opens when you select to pay or log in with Vipps or MobilePay.
+From the landing page, enter your phone number and then go to your Vipps or MobilePay app
+to authorize the operation.
+If you initiated this operation from another website, you should see the status updated there.
+
+![The landing page](images/vipps-flow-landing-page.png)
 
 The landing page is mandatory for payments initiated on a different device than the user's phone.
 It provides a consistent and recognizable user experience
@@ -40,7 +47,6 @@ the Vipps app or the landing page:
   It is also possible to enter another Vipps user's number, to have that
   person complete the payment.
 
-![The landing page](images/vipps-flow-landing-page.png)
 
 ### The user's phone number
 
@@ -61,7 +67,7 @@ See:
 ### Never display the landing page in an iframe
 
 **Important:** Never show the Vipps landing page inside an iframe. See:
-[Can I show the landing page in an iframe?​](../faqs/landing-page-faq.md#can-i-show-the-landing-page-in-an-iframe).
+[Can I show the landing page in an iframe?​](../faqs/landing-page-faq.md#can-i-show-the-landing-page-in-an-iframe)
 
 This is applicable to:
 

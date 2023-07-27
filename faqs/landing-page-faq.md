@@ -36,7 +36,7 @@ click the email link under the "i" information bubble.
 Include a detailed description of why it is not possible to display the landing page.
 
 See:
-[Skip landing page](../common-topics/landing-page.md#skip-landing-page).
+[Skip landing page](../common-topics/landing-page.md#skip-landing-page)
 
 ## How can I check if I have skipLandingPage activated?
 
@@ -65,7 +65,7 @@ If you do not get an error, it's active.
 If you get an error, it's not active.
 
 See:
-[Skip landing page](../common-topics/landing-page.md#skip-landing-page).
+[Skip landing page](../common-topics/landing-page.md#skip-landing-page)
 
 ## Can I show the landing page in an iframe?
 
@@ -114,4 +114,4 @@ and include a detailed description of why this is needed.
   are based on years of experience and data, and we continuously monitor and improve it.
 
 See:
-[Skip landing page](../common-topics/landing-page.md#skip-landing-page).
+[Skip landing page](../common-topics/landing-page.md#skip-landing-page)
