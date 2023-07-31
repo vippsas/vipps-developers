@@ -29,16 +29,17 @@ The following are Frequently Asked Questions (FAQs):
 * [Applying for services](services.md)
 * [Other questions](other-faq.md)
 
-In addition, each Vipps API has a specific set of FAQs. For example:
+In addition, each API has a specific set of FAQs. For example:
 
 * [Checkout API FAQ](https://developer.vippsmobilepay.com/docs/APIs/checkout-api/vipps-checkout-api-faq)
 * [eCom API FAQ](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api-faq)
+* [ePayment API FAQ](https://developer.vippsmobilepay.com/docs/APIs/epayment-api/faq/)
 * [Login API FAQ](https://developer.vippsmobilepay.com/docs/APIs/login-api/vipps-login-api-faq)
-* [Partner API FAQ](https://developer.vippsmobilepay.com/docs/APIs/partner-api/vipps-partner-api-faq)
-* [PSP API FAQ](https://developer.vippsmobilepay.com/docs/APIs/psp-api/vipps-psp-api-faq)
 * [QR API FAQ](https://developer.vippsmobilepay.com/docs/APIs/qr-api/vipps-qr-api-faq)
 * [Recurring API FAQ](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/vipps-recurring-api-faq)
 * [Report API FAQ](https://developer.vippsmobilepay.com/docs/APIs/report-api/vipps-report-api-faq)
+* [Userinfo API FAQ](https://developer.vippsmobilepay.com/docs/APIs/userinfo-api/userinfo-api-faq/)
+* [Webhooks API FAQ](https://developer.vippsmobilepay.com/docs/APIs/webhooks-api/faq/)
 
 We're always happy to help with code or other questions you might have!
 Please create an [issue](https://github.com/vippsas/vipps-developers/issues),
