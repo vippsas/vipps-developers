@@ -38,8 +38,8 @@ and direct payments, but not for pass-through payments.
 ## The Vipps Partner API
 
 An early version of the
-[Vipps Partner API](https://github.com/vippsas/vipps-partner-api)
-is available on GitHub:
+[Vipps Partner API](https://developer.vippsmobilepay.com/docs/APIs/partner-api/)
+is available.
 
 The Vipps Partner API will let partners, banks and large corporations
 manage their merchants and sales units. See the GitHub repository for
