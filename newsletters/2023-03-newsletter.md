@@ -140,7 +140,7 @@ See the
 
 We will soon change the IP addresses for the publicly available servers.
 Make sure you follow the documentation for DNS, etc.:
-[Vipps servers](../developer-resources/servers.md).
+[Vipps servers](https://developer.vippsmobilepay.com/docs/vipps-developers/developer-resources/servers/).
 
 ## Reminders
 
@@ -153,7 +153,7 @@ experience for all Vipps users and merchants. Please:
 * Log all errors
 * Fix errors as quickly as possible
 * Use the
-  [API Dashboard](../developer-resources/api-dashboard.md)
+  [API Dashboard](https://developer.vippsmobilepay.com/docs/vipps-developers/developer-resources/api-dashboard/)
   to find problems with your integration.
 
 ![API Dashboard example](images/2021-02-api-dashboard-example.png)
@@ -161,6 +161,6 @@ experience for all Vipps users and merchants. Please:
 ## Questions or comments?
 
 We're always happy to help with code or other questions you might have!
-Please create [GitHub issues or pull requests](../github.md)
+Please create [GitHub issues or pull requests](https://developer.vippsmobilepay.com/docs/vipps-developers/github)
 for the relevant API,
 or [contact us](https://developer.vippsmobilepay.com/docs/vipps-developers/contact).
