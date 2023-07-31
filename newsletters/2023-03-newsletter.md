@@ -140,7 +140,7 @@ See the
 
 We will soon change the IP addresses for the publicly available servers.
 Make sure you follow the documentation for DNS, etc.:
-[Vipps servers](https://developer.vippsmobilepay.com/docs/vipps-developers/developer-resources/servers).
+[Vipps servers](../developer-resources/servers.md).
 
 ## Reminders
 
