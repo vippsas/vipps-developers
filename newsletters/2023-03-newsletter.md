@@ -161,6 +161,6 @@ experience for all Vipps users and merchants. Please:
 ## Questions or comments?
 
 We're always happy to help with code or other questions you might have!
-Please create [GitHub issues or pull requests](https://developer.vippsmobilepay.com/docs/github)
+Please create [GitHub issues or pull requests](../github.md)
 for the relevant API,
 or [contact us](https://developer.vippsmobilepay.com/docs/vipps-developers/contact).
