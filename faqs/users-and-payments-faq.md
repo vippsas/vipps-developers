@@ -268,8 +268,8 @@ with a card that has been invalidated in any way by the issuer, and all users
 has to log into Vipps with their BankID verified identity to use their card.
 
 See:
-* [Benefits of direct integration](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics/direct-vs-psp/#benefits-of-direct-integration)
-* [Extremely high success rate of direct integrations](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics/direct-vs-psp/#extremely-high-success-rate-of-direct-integrations)
+* [Benefits of direct integration](https://developer.vippsmobilepay.com/docs/common-topics/direct-vs-psp/#benefits-of-direct-integration)
+* [Extremely high success rate of direct integrations](https://developer.vippsmobilepay.com/docs/common-topics/direct-vs-psp/#extremely-high-success-rate-of-direct-integrations)
 
 ## Card payments
 
@@ -306,4 +306,4 @@ Cards issued in the following countries are accepted:
 the users' cards that they have been added there. The user gets all the benefits of the card,
 and since the app has delegated SCA, the user gets a faster and simpler user experience.
 See also:
-[Direct integration and PSP integration](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics/direct-vs-psp/).
+[Direct integration and PSP integration](https://developer.vippsmobilepay.com/docs/common-topics/direct-vs-psp/).

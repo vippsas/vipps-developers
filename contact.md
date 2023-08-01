@@ -8,7 +8,7 @@ pagination_prev: null
 
 <!-- START_COMMENT -->
 ℹ️ Please use the website:
-[Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/docs/vipps-developers/contact/).
+[Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/docs/contact/).
 <!-- END_COMMENT -->
 
 ## MobilePay support
@@ -45,7 +45,7 @@ For *technical* issues related to Vipps and the development of services using ou
 ### Almost all questions are answered in the documentation
 
 Please check the
-[Frequently Asked Questions (FAQ)](https://developer.vippsmobilepay.com/docs/vipps-developers/faqs).
+[Frequently Asked Questions (FAQ)](https://developer.vippsmobilepay.com/docs/faqs).
 
 Please use the
 [search functionality for the technical documentation](https://developer.vippsmobilepay.com/search).
@@ -60,7 +60,7 @@ information to the address below:
 3. Company details: Organization number (find yours at [Brønnøysundregistrene](https://brreg.no))
 4. Merchant Serial Number (MSN), found on [portal.vipps.no](https://portal.vipps.no).
    See the
-   [Vipps portal](https://developer.vippsmobilepay.com/docs/vipps-developers/developer-resources/portal).
+   [Vipps portal](https://developer.vippsmobilepay.com/docs/developer-resources/portal).
 5. Which
    [Vipps product](https://www.vipps.no/produkter-og-tjenester/bedrift/)
    or

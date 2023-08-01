@@ -126,7 +126,7 @@ but:
   to them as a partner. The partner keys can only be used for sales units that are
   connected to them as a partner.
 
-See: [HTTP headers](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics/http-headers/).
+See: [HTTP headers](https://developer.vippsmobilepay.com/docs/common-topics/http-headers/).
 
 ## Why do I get `HTTP 429 Too Many Requests`?
 

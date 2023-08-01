@@ -9,7 +9,7 @@ pagination_prev: null
 
 <!-- START_COMMENT -->
 ℹ️ Please use the website:
-[Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/docs/vipps-developers/).
+[Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/docs/).
 <!-- END_COMMENT -->
 
 The information about
@@ -38,7 +38,7 @@ test sales units on
 
 ## How to find the API keys
 
-See [Common topics: Getting the API keys](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics/api-keys#getting-the-api-keys).
+See [Common topics: Getting the API keys](https://developer.vippsmobilepay.com/docs/common-topics/api-keys#getting-the-api-keys).
 
 ## How to create a test sales unit
 
@@ -145,7 +145,7 @@ screen where you both can update your name and ad your logo:
 ![Update your name and you logo](images/Sales_unit_change_name_and_logo.png)
 
 **Please note:** You cannot change the name used for the
-[test environment](https://developer.vippsmobilepay.com/docs/vipps-developers/test-environment/).
+[test environment](https://developer.vippsmobilepay.com/docs/test-environment/).
 
 ## Questions
 

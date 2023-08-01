@@ -30,9 +30,9 @@ user has selected card payment and already has manually entered the card number,
 
 The success rate for PSP integrations is not quite as high.
 See:
-[Direct integration and PSP integration](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics/direct-vs-psp)
+[Direct integration and PSP integration](https://developer.vippsmobilepay.com/docs/common-topics/direct-vs-psp)
 and
-[Benefits of direct integration](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics/direct-vs-psp#benefits-of-direct-integration).
+[Benefits of direct integration](https://developer.vippsmobilepay.com/docs/common-topics/direct-vs-psp#benefits-of-direct-integration).
 
 ### Common reasons why payments are not completed
 
@@ -53,7 +53,7 @@ The most common reasons why payments are not completed are:
    [ePayment API](https://developer.vippsmobilepay.com/docs/APIs/epayment-api/): If the card issuer does
    not correctly handle the "3D Secure step up", meaning the required secure
    customer identification, the payment will fail. See
-   [Card payments](https://developer.vippsmobilepay.com/docs/vipps-developers/faqs/users-and-payments-faq/#card-payments).
+   [Card payments](https://developer.vippsmobilepay.com/docs/faqs/users-and-payments-faq/#card-payments).
    Payments also fail if the user is attempting to pay with a card
    from a country that is not allowed.
 4. Insufficient funds on the debit/credit card.
@@ -62,7 +62,7 @@ The most common reasons why payments are not completed are:
    With a direct integration, the user can retry the same payment with a
    different card, and because of this "second chance" the success rate is high.
    See
-   [Direct integration and PSP integration](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics/direct-vs-psp/).
+   [Direct integration and PSP integration](https://developer.vippsmobilepay.com/docs/common-topics/direct-vs-psp/).
 5. The debit/credit card has been rejected by the issuer.
    There are many possible reasons for this, and Vipps may not be allowed to
    give the details to the merchant.
@@ -77,7 +77,7 @@ The most common reasons why payments are not completed are:
    typically if the user has deactivated push notifications and does not open
    Vipps manually.
    See:
-   [Timeouts](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics/timeouts).
+   [Timeouts](https://developer.vippsmobilepay.com/docs/common-topics/timeouts).
 8. Attempt to capture an amount that exceeds the reserved amount.
    It's not possible to capture a higher amount than the user has confirmed in Vipps.
    Some merchants experience this because of rounding errors on their side.

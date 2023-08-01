@@ -30,7 +30,7 @@ In general:
 See the API specification for each API for details *especially the API's FAQ*.
 
 See:
-[Error](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics/errors/).
+[Error](https://developer.vippsmobilepay.com/docs/common-topics/errors/).
 
 The HTTP status overview here is quite good:
 [HTTP Status Codes Glossary](https://www.webfx.com/web-development/glossary/http-status-codes/).

@@ -11,7 +11,7 @@ pagination_prev: null
 
 <!-- START_COMMENT -->
 ℹ️ Please use the website:
-[Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/docs/vipps-developers/quick-start-guides/).
+[Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/docs/quick-start-guides/).
 <!-- END_COMMENT -->
 
 ## What you need for testing the API with Postman

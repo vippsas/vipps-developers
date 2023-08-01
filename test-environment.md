@@ -10,7 +10,7 @@ pagination_prev: null
 
 <!-- START_COMMENT -->
 ℹ️ Please use the website:
-[Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/docs/vipps-developers/test-environment/).
+[Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/docs/test-environment/).
 <!-- END_COMMENT -->
 
 The Merchant Test (MT) environment is available for all merchants who have
@@ -84,8 +84,8 @@ for a Vipps product (that has an API), and the details can be found on the
 
 See:
 
-* [Common topics: Getting the API keys](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics/api-keys#getting-the-api-keys)
-* [How to create a test sales unit](https://developer.vippsmobilepay.com/docs/vipps-developers/developer-resources/portal#how-to-create-a-test-sales-unit)
+* [Common topics: Getting the API keys](https://developer.vippsmobilepay.com/docs/common-topics/api-keys#getting-the-api-keys)
+* [How to create a test sales unit](https://developer.vippsmobilepay.com/docs/developer-resources/portal#how-to-create-a-test-sales-unit)
 
 ### Partners
 

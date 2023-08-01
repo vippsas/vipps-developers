@@ -11,7 +11,7 @@ pagination_prev: null
 
 <!-- START_COMMENT -->
 ℹ️ Please use the website:
-[Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/docs/vipps-developers/faqs/).
+[Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/docs/faqs/).
 <!-- END_COMMENT -->
 
 
@@ -44,6 +44,6 @@ In addition, each API has a specific set of FAQs. For example:
 We're always happy to help with code or other questions you might have!
 Please create an [issue](https://github.com/vippsas/vipps-developers/issues),
 a [pull request](https://github.com/vippsas/vipps-developers/pulls),
-or [contact us](https://developer.vippsmobilepay.com/docs/vipps-developers/contact).
+or [contact us](https://developer.vippsmobilepay.com/docs/contact).
 
-Sign up for our [Technical newsletter for developers](https://developer.vippsmobilepay.com/docs/vipps-developers/newsletters).
+Sign up for our [Technical newsletter for developers](https://developer.vippsmobilepay.com/docs/newsletters).

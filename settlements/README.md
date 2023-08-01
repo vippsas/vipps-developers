@@ -9,7 +9,7 @@ pagination_prev: null
 
 <!-- START_COMMENT -->
 ℹ️ Please use the website:
-[Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/docs/vipps-developers/settlements/).
+[Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/docs/settlements/).
 <!-- END_COMMENT -->
 
 ## Settlement flow

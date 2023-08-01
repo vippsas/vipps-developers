@@ -68,7 +68,7 @@ provides important functionality that is not available in the PSP API:
    ([SCA, required by the Payment Services Directive 2, PSD2](https://en.wikipedia.org/wiki/Strong_customer_authentication)),
    as we have regulatory approved *delegated SCA* from the card issuers.
    Details:
-   [When do users get a "soft decline" and need to complete a 3-D Secure verification?](https://developer.vippsmobilepay.com/docs/vipps-developers/faqs/users-and-payments-faq#when-do-users-get-a-soft-decline-and-need-to-complete-a-3-d-secure-verification)
+   [When do users get a "soft decline" and need to complete a 3-D Secure verification?](https://developer.vippsmobilepay.com/docs/faqs/users-and-payments-faq#when-do-users-get-a-soft-decline-and-need-to-complete-a-3-d-secure-verification)
 5. [Express checkout](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#express-checkout-payments),
    where the user selects shipping address and shipping method in the Vipps MobilePay app,
    is only available with direct integration.

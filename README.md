@@ -12,7 +12,7 @@ pagination_prev: null
 
 <!-- START_COMMENT -->
 ℹ️ Please use the website:
-[Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/docs/vipps-developers/).
+[Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/docs/).
 <!-- END_COMMENT -->
 
 The Vipps MobilePay API platform can be used for payments and logins for Point of Sale, apps, subscriptions, QR codes, checkout sessions, and invoices.
@@ -29,9 +29,9 @@ Migrate from MobilePay:
 
 Dive deeper with:
 
-* [Developer resources](https://developer.vippsmobilepay.com/docs/vipps-developers/developer-resources) - Learn about the API dashboard, demo store, design guidelines, portal, status pages, etc.
-* [Common API topics](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics) - -Get details about API keys, API lifecycle, authentication, HTTP headers, polling guidelines, reserve and capture, userinfo, landing page, etc.
-* [Frequently asked questions](https://developer.vippsmobilepay.com/docs/vipps-developers/faqs) - Learn about common problems and FAQs relating to refunds, users and payments, landing page.
+* [Developer resources](https://developer.vippsmobilepay.com/docs/developer-resources) - Learn about the API dashboard, demo store, design guidelines, portal, status pages, etc.
+* [Common API topics](https://developer.vippsmobilepay.com/docs/common-topics) - -Get details about API keys, API lifecycle, authentication, HTTP headers, polling guidelines, reserve and capture, userinfo, landing page, etc.
+* [Frequently asked questions](https://developer.vippsmobilepay.com/docs/faqs) - Learn about common problems and FAQs relating to refunds, users and payments, landing page.
 
 Related topics:
 
