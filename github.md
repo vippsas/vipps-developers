@@ -59,4 +59,4 @@ The public GitHub repositories used in this website are as follows:
     * Login: (*Vipps Login for WordPress and WooCommerce*) <https://github.com/vippsas/vipps-login-wordpress>
 * Partners: <https://github.com/vippsas/vipps-partner>
 * Solutions: <https://github.com/vippsas/vipps-solutions>
-* Design guidelines: <https://github.com/vippsas/vipps-design-guidelines>
+* Design guidelines: <https://github.com/vippsas/design-guidelines>
