@@ -94,7 +94,7 @@ Vipps development. Email [developer@vippsmobilepay.com](mailto:developer@vippsmo
 email addresses to invite, with the same people on CC. We fix the rest.
 
 This does, unfortunately, not apply to customers using one of our
-[plugins](https://developer.vippsmobilepay.com/docs/vipps-plugins), or
+[plugins](https://developer.vippsmobilepay.com/docs/plugins), or
 customers using Vipps through a partner.
 
 ## Do you want a technical workshop? 🛠
@@ -104,7 +104,7 @@ Vipps development. Email [developer@vippsmobilepay.com](mailto:developer@vippsmo
 email addresses to invite, with the same people on CC. We fix the rest.
 
 This does, unfortunately, not apply to customers using one of our
-[plugins](https://developer.vippsmobilepay.com/docs/vipps-plugins), or
+[plugins](https://developer.vippsmobilepay.com/docs/plugins), or
 customers using Vipps through a partner.
 
 ## Reminders

@@ -96,7 +96,7 @@ We have made some more in-depth product information pages with screenshots:
 ## Plugin overview
 
 We now have plugins for WordPress/WooCommerce, Magento, Episerver, Shopify, Drupal:
-[Vipps-plugins](https://developer.vippsmobilepay.com/docs/vipps-plugins)
+[Vipps-plugins](https://developer.vippsmobilepay.com/docs/plugins)
 
 We have some more candidates too.
 

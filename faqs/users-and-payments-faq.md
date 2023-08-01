@@ -120,7 +120,7 @@ service is *most likely* a regular Vipps eCom customer, and can use
 the
 [Vipps eCom API](https://developer.vippsmobilepay.com/docs/APIs/ecom-api)
 or one of our
-[plugins](https://developer.vippsmobilepay.com/docs/vipps-plugins).
+[plugins](https://developer.vippsmobilepay.com/docs/plugins).
 
 Vipps cannot offer legal advice for this.
 

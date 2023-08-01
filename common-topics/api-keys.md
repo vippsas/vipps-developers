@@ -19,7 +19,7 @@ Your API keys are specific for your sales unit, and you will use them to interac
 
 The same API keys are used for many types of integration:
 Direct integration, native apps for iOS and Android, point of sale integrations,
-[all the Vipps plugins](https://developer.vippsmobilepay.com/docs/vipps-plugins)
+[all the Vipps plugins](https://developer.vippsmobilepay.com/docs/plugins)
 and any other solution based on the Vipps APIs.
 
 **Please note:** There are no API keys for

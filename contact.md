@@ -32,7 +32,7 @@ To avoid any delays in receiving support, we recommend that users with non-techn
 | General questions (including the customer relationship, creating sales units, change of admins, etc.) | See: [Contact info on vipps.no](https://www.vipps.no/kontakt-oss/). |
 | Problems with Vipps services  | See: [Status pages](./developer-resources/status-pages.md). |
 | Applications for Vipps products (status, follow-ups, etc.) | Check the status on [portal.vipps.no](https://portal.vipps.no). |
-| Vipps plugins (WooCommerce, Shopify, Wix, WordPress, Wix, Shopify, Magento, EPiServer, etc.)         | See the support info for your plugin: [Plugin overview](https://developer.vippsmobilepay.com/docs/vipps-plugins). |
+| Vipps plugins (WooCommerce, Shopify, Wix, WordPress, Wix, Shopify, Magento, EPiServer, etc.)         | See the support info for your plugin: [Plugin overview](https://developer.vippsmobilepay.com/docs/plugins). |
 | Vipps through a partner (for merchants) | Please contact your partner. |
 | Vipps through a POS (Point of Sale) vendor | Please contact your POS vendor. |
 | Vipps through a PSP (Payment Service Provider) | Please contact your PSP. |

@@ -32,7 +32,7 @@ The public GitHub repositories used in this website are as follows:
   * .NET: <https://github.com/vippsas/dotnet-sdk>
   * Java: <https://github.com/vippsas/java-sdk>
   * Node: <https://github.com/vippsas/node-sdk>
-* Plugins: <https://github.com/vippsas/vipps-plugins>
+* Plugins: <https://github.com/vippsas/plugins>
   * Craft Commerce:
     * Login (*Vipps Login for Craft CMS*): <https://github.com/vippsas/vipps-craft-login>
   * Drupal:
