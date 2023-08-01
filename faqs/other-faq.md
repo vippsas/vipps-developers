@@ -109,7 +109,7 @@ If all sales units have the same organization number, there are two alternatives
    [settlement files](../settlements/README.md).
    You will need separate API keys for each sales unit (store).
    If you have a Vipps platform partner, the partner will use the
-   [Partner keys](https://developer.vippsmobilepay.com/docs/vipps-partner/partner-keys)
+   [Partner keys](https://developer.vippsmobilepay.com/docs/partner/partner-keys)
    for all the sales units.
    See: [How can I use Vipps for different types of payments?](#how-can-i-use-vipps-for-different-types-of-payments).
 
@@ -122,7 +122,7 @@ If all sales units have the same organization number, there are two alternatives
    [Recommendations for `reference` and `orderId`](../common-topics/orderid.md).
    You will use the same API keys for all stores.
    If you have a Vipps platform partner, the partner will use the
-   [Partner keys](https://developer.vippsmobilepay.com/docs/vipps-partner/partner-keys)
+   [Partner keys](https://developer.vippsmobilepay.com/docs/partner/partner-keys)
    for all the sales units.
 
 ## How can I change my organization number?
@@ -234,6 +234,6 @@ to the requirements.
 ## How can I change partner for my integration with Vipps?
 
 See:
-[How to change partners for a merchant](https://developer.vippsmobilepay.com/docs/vipps-partner/how-to-change-partners/).
+[How to change partners for a merchant](https://developer.vippsmobilepay.com/docs/partner/how-to-change-partners/).
 
 **Please note:** The MSN (the number) does *not* change when changing partners.

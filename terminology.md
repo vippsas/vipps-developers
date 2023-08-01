@@ -58,12 +58,12 @@ pagination_prev: null
   providing a platform, helping set up custom integrations, or developing
   our official plugins.
   See:
-  [Vipps partners](https://developer.vippsmobilepay.com/docs/vipps-partner).
+  [Vipps partners](https://developer.vippsmobilepay.com/docs/partner).
 
 * Partner keys - Unique identifiers that allow partners to use their own API
   credentials to make API calls on behalf of their merchants.
   See:
-  [Partner keys](https://developer.vippsmobilepay.com/docs/vipps-partner/partner-keys).
+  [Partner keys](https://developer.vippsmobilepay.com/docs/partner/partner-keys).
 
 * Payment Service Provider (PSP) - A third party company that performs online
   payments on behalf of Vipps MobilePay. Settlements for PSP integrations are handled by the PSP.

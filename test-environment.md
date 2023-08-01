@@ -54,10 +54,10 @@ Functionality that is not available in the test environment, a non-exhaustive li
 1. Email verification has some quirks, see [Email address](#email-address).
 1. Partner functionality, like the relationship between an MSN and a partner,
    and the use of
-   [partner keys](https://developer.vippsmobilepay.com/docs/vipps-partner/partner-keys),
+   [partner keys](https://developer.vippsmobilepay.com/docs/partner/partner-keys),
    does not work as in the production environment. In general, partner
    functionality is not available. See
-   [Partners](https://developer.vippsmobilepay.com/docs/vipps-partner).
+   [Partners](https://developer.vippsmobilepay.com/docs/partner).
 1. There is no equivalent to [portal.vipps.no](https://portal.vipps.no) for the
    test environment. Payments must be checked with the API.
 1. There are no settlements in the test environment, and therefore
@@ -94,7 +94,7 @@ Partners can get access to the test environment by ordering
 [Vipps Login API](https://developer.vippsmobilepay.com/docs/APIs/login-api)).
 
 See:
-[How to get access to portal.vipps.no](https://developer.vippsmobilepay.com/docs/vipps-partner#how-to-get-access-to-portalvippsno).
+[How to get access to portal.vipps.no](https://developer.vippsmobilepay.com/docs/partner#how-to-get-access-to-portalvippsno).
 
 ## Test server
 

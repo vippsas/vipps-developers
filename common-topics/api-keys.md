@@ -28,7 +28,7 @@ as there is no external API.
 
 **Please note**: This page describes the keys that are provided to you, as a merchant.
 Partners use special keys that will work for all their merchants. These are known as
-[*Partner keys*](https://developer.vippsmobilepay.com/docs/vipps-partner/partner-keys).
+[*Partner keys*](https://developer.vippsmobilepay.com/docs/partner/partner-keys).
 
 ## Production and Test Keys
 

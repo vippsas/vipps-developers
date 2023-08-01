@@ -51,5 +51,5 @@ It is your responsibility to check that you are using the Vipps APIs correctly.
 * Partners can ask their merchants to provide access to the
   sales unit(s) for whom they are making payments; therefore, the partner can use the
   API dashboard. There is a guide here:
-  [How to add a user on portal.vipps.no](https://developer.vippsmobilepay.com/docs/vipps-partner/add-portal-user)  
+  [How to add a user on portal.vipps.no](https://developer.vippsmobilepay.com/docs/partner/add-portal-user)  
 * Keep in mind that the *Utvikler* tab is only available to users with *admin* or *developer* roles.

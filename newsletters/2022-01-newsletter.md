@@ -103,7 +103,7 @@ The old API that a few partners still use to sign up new merchants will
 be phased out. See
 [Deprecation of the Vipps Signup API](https://github.com/vippsas/vipps-signup-api/blob/master/vipps-signup-api-deprecation.md)
 and
-[Vipps Partners](https://developer.vippsmobilepay.com/docs/vipps-partner).
+[Vipps Partners](https://developer.vippsmobilepay.com/docs/partner).
 
 ## Reminders
 

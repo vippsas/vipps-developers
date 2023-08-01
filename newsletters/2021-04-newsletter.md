@@ -81,7 +81,7 @@ including the
 endpoints for both.
 
 See:
-[Partner keys](https://developer.vippsmobilepay.com/docs/vipps-partner/partner-keys)
+[Partner keys](https://developer.vippsmobilepay.com/docs/partner/partner-keys)
 
 ## PSP Signup API
 

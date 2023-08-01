@@ -17,7 +17,7 @@ a JSON Web Token (JWT), which we call the *access token*.
 To get an access token, first you need to have API keys. Get your API keys, as described in
 [API keys](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics/api-keys).
 Partners should use
-[Partner keys](https://developer.vippsmobilepay.com/docs/vipps-partner/partner-keys).
+[Partner keys](https://developer.vippsmobilepay.com/docs/partner/partner-keys).
 
 Get your access token by calling
 [`POST:/accesstoken/get`](https://developer.vippsmobilepay.com/api/access-token#tag/Authorization-Service/operation/fetchAuthorizationTokenUsingPost)

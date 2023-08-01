@@ -60,7 +60,7 @@ Here's an example for the Vipps eCom API's `/refund` endpoint:
 
 There is quite a bit happening for Vipps partners.
 Please see
-[Vipps Partner pages](https://developer.vippsmobilepay.com/docs/vipps-partner)
+[Vipps Partner pages](https://developer.vippsmobilepay.com/docs/partner)
 for (continuously) updated information.
 
 ## Reminders

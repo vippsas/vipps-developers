@@ -84,7 +84,7 @@ accountants, etc. - and also for their partner's employees.
 Or anyone else they want to give access to their sales units.
 
 See:
-[How to add a user on portal.vipps.no](https://developer.vippsmobilepay.com/docs/vipps-partner/add-portal-user).
+[How to add a user on portal.vipps.no](https://developer.vippsmobilepay.com/docs/partner/add-portal-user).
 
 ## How to use the API dashboard
 
@@ -111,7 +111,7 @@ the *Utvikler* (developer) option in the menu, you need to have the
 merchant's administrator grant you with developer access for the sales unit.
 
 For
-[reseller partners](https://developer.vippsmobilepay.com/docs/vipps-partner):
+[reseller partners](https://developer.vippsmobilepay.com/docs/partner):
 You will need the merchant's administrator to either:
 
 * Log in to
@@ -121,7 +121,7 @@ You will need the merchant's administrator to either:
 
 For more information, see:
 
-* [Developer Information: Vipps Partners](https://developer.vippsmobilepay.com/docs/vipps-partner)
+* [Developer Information: Vipps Partners](https://developer.vippsmobilepay.com/docs/partner)
 * [User permissions on vipps.no (in Norwegian)](https://vipps.no/hjelp/vipps/kundeforholdet-mitt/hvilke-tilganger-kan-vi-opprette-i-vippsportalen/).
 
 ## How can I change my name and logo?

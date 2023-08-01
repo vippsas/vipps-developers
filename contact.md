@@ -36,7 +36,7 @@ To avoid any delays in receiving support, we recommend that users with non-techn
 | Vipps through a partner (for merchants) | Please contact your partner. |
 | Vipps through a POS (Point of Sale) vendor | Please contact your POS vendor. |
 | Vipps through a PSP (Payment Service Provider) | Please contact your PSP. |
-| Partner assistance (for partners) | See: [Vipps Partners](https://developer.vippsmobilepay.com/docs/vipps-partner) and the [Partner API](https://developer.vippsmobilepay.com/docs/APIs/partner-api). |
+| Partner assistance (for partners) | See: [Vipps Partners](https://developer.vippsmobilepay.com/docs/partner) and the [Partner API](https://developer.vippsmobilepay.com/docs/APIs/partner-api). |
 | Settlements, invoices or similar | See: [Settlements](./settlements/README.md). |
 | Suggestions for improvements to [Vipps products](https://www.vipps.no/produkter-og-tjenester/bedrift/)  | Please use [this form](https://www.vipps.no/kontakt-oss/). |
 
@@ -137,7 +137,7 @@ We do not have a phone number, and we do not have the capacity to
 help 1:1 on the phone. Most cases involve information that needs to be in written form,
 such as IDs, API requests/responses, etc.
 
-We do sometimes set up Slack channels for customers, depending on the [Partner level](https://developer.vippsmobilepay.com/docs/vipps-partner/partner-level-up/).
+We do sometimes set up Slack channels for customers, depending on the [Partner level](https://developer.vippsmobilepay.com/docs/partner/partner-level-up/).
 
 ### Newsletter
 

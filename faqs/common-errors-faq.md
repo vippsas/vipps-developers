@@ -76,7 +76,7 @@ Please follow these steps to make sure everything is correct:
    [Errors](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#errors).
 7. If you are a partner, and you are using partner keys: Double check everything
    described here:
-   [Partner keys](https://developer.vippsmobilepay.com/docs/vipps-partner/partner-keys).
+   [Partner keys](https://developer.vippsmobilepay.com/docs/partner/partner-keys).
    A common mistake is to mix `Merchant-Serial-Number` (used in the HTTP header)
    and `merchantSerialNumber` (used in the request body).
 
@@ -119,7 +119,7 @@ If you need access to the Vipps ePayment API (or eCom API), you can apply for th
 [portal.vipps.no](https://portal.vipps.no).
 
 Partners can get this error if they use
-[Partner keys](https://developer.vippsmobilepay.com/docs/vipps-partner/partner-keys),
+[Partner keys](https://developer.vippsmobilepay.com/docs/partner/partner-keys),
 but:
 * Do not send the `Merchant-Serial-Number` header.
 * Send a `Merchant-Serial-Number` header for a sales unit (MSN) that is not connected
@@ -225,7 +225,7 @@ _very long* time. Please
 and we will reactivate the merchant.
 
 Partners that use
-[partner keys](https://developer.vippsmobilepay.com/docs/vipps-partner/partner-keys)
+[partner keys](https://developer.vippsmobilepay.com/docs/partner/partner-keys)
 can also get this error if the partner itself is deactivated, even though
 the sales unit (that it is acting on behalf of) is active.
 
@@ -285,10 +285,10 @@ See:
 This can happen when:
 
 * A partner tries to use
-  [Partner keys](https://developer.vippsmobilepay.com/docs/vipps-partner/partner-keys)
+  [Partner keys](https://developer.vippsmobilepay.com/docs/partner/partner-keys)
   for a sales unit that is not registered with them as partner.
 * API keys for the test environment is used in the production environment, or opposite.
-* [Partner keys](https://developer.vippsmobilepay.com/docs/vipps-partner/partner-keys)
+* [Partner keys](https://developer.vippsmobilepay.com/docs/partner/partner-keys)
   are used, but the `Merchant-Serial-Number` HTTP header is not used correctly.
 
 ## Why do I get `Invalid MSN: 654321. This MSN is not valid for the provided supermerchant ID.`?
@@ -297,7 +297,7 @@ This can happen when the partner making the API request is using:
 
 * API keys for the test environment in the production environment, or opposite
 * An MSN for the test environment in the production environment, or opposite
-* [Partner keys](https://developer.vippsmobilepay.com/docs/vipps-partner/partner-keys)
+* [Partner keys](https://developer.vippsmobilepay.com/docs/partner/partner-keys)
   without including the required `Merchant-Serial-Number` header
 
 If the error message is `Invalid MSN: This MSN is not valid for the provided supermerchant ID.`,
