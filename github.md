@@ -58,5 +58,5 @@ The public GitHub repositories used in this website are as follows:
     * Recurring: (*Vipps Recurring Payments for WooCommerce*) <https://github.com/vippsas/vipps-recurring-woocommerce>
     * Login: (*Vipps Login for WordPress and WooCommerce*) <https://github.com/vippsas/vipps-login-wordpress>
 * Partners: <https://github.com/vippsas/vipps-partner>
-* Solutions: <https://github.com/vippsas/vipps-solutions>
+* Solutions: <https://github.com/vippsas/solutions>
 * Design guidelines: <https://github.com/vippsas/design-guidelines>

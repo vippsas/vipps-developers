@@ -114,7 +114,7 @@ for more details, and try for yourself in our
 
 ## More Solutions and best practices
 
-In the [Solutions](https://developer.vippsmobilepay.com/docs/vipps-solutions) section of the documentation,
+In the [Solutions](https://developer.vippsmobilepay.com/docs/solutions) section of the documentation,
 you can now see how Vipps APIs can be combined to give the best user experience for several use cases, such as:
 
 * Electric vehicle charging
@@ -124,7 +124,7 @@ you can now see how Vipps APIs can be combined to give the best user experience 
 * Taxi companies
 * Vending machines
 
-See: [Solutions](https://developer.vippsmobilepay.com/docs/vipps-solutions).
+See: [Solutions](https://developer.vippsmobilepay.com/docs/solutions).
 
 ## Report API
 

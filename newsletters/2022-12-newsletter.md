@@ -55,7 +55,7 @@ We aim to have the API guide, etc. ready in early January.
 ## Solutions
 
 The new
-[Solutions](https://developer.vippsmobilepay.com/docs/vipps-solutions)
+[Solutions](https://developer.vippsmobilepay.com/docs/solutions)
 section of our developer documentation describes best practice for
 combining Vipps APIs for specific use cases, like:
 

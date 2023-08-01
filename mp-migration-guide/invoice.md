@@ -13,7 +13,7 @@ import MT from './_mt.md'
 Read more about the transition to one platform on the [MobilePay site](https://developer.mobilepay.dk/docs/invoice/transition-to-one-platform).
 Below, you can find comparison between the existing MobilePay Invoice API and the new [ePayment API](/docs/APIs/epayment-api) replacing MobilePay Invoice.
 
-Visit our [Recommended flows](https://developer.vippsmobilepay.com/docs/vipps-solutions/) section to see the recommended flow for [invoice](/docs/vipps-solutions/invoice-through-epayments/).
+Visit our [Recommended flows](https://developer.vippsmobilepay.com/docs/solutions/) section to see the recommended flow for [invoice](/docs/solutions/invoice-through-epayments/).
 
 Please note that ePayment encompasses various use case scenarios. Therefore, if you are seeking use cases that target existing MobilePay merchants and can be utilized for migration purposes, some examples include:
 

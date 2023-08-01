@@ -23,7 +23,7 @@ There are two ways to use Vipps MobilePay:
   etc.
   All the functionality of the APIs can be used, and also combined as described
   in
-  [Solutions](https://developer.vippsmobilepay.com/docs/vipps-solutions).
+  [Solutions](https://developer.vippsmobilepay.com/docs/solutions).
 * PSP integration: The merchant or partner uses the PSP's API, which is
   based on our
   [PSP API](https://developer.vippsmobilepay.com/docs/APIs/psp-api).

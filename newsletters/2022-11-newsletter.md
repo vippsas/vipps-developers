@@ -69,11 +69,11 @@ We are working hard to improve the
 * The documentation is now
   [searchable](https://developer.vippsmobilepay.com/search).
 * We have a new
-  [Recommended flows](https://developer.vippsmobilepay.com/docs/vipps-solutions)
+  [Recommended flows](https://developer.vippsmobilepay.com/docs/solutions)
   section to highlight combinations of Vipps APIs, such as
-  [In-store using merchant scan](https://developer.vippsmobilepay.com/docs/vipps-solutions/loyalty-in-pos)
+  [In-store using merchant scan](https://developer.vippsmobilepay.com/docs/solutions/loyalty-in-pos)
   and
-  [Electric vehicle charging](https://developer.vippsmobilepay.com/docs/vipps-solutions/ev-charging).
+  [Electric vehicle charging](https://developer.vippsmobilepay.com/docs/solutions/ev-charging).
 * All APIs now have a
   [Quick start](../quick-start-guides.md)
   with Postman collection. We also have a global Postman environment to make it
