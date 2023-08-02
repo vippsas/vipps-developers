@@ -10,7 +10,7 @@ pagination_prev: null
 
 <!-- START_COMMENT -->
 ℹ️ Please use the website:
-[Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/docs/vipps-developers/newsletters/).
+[Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/docs/newsletters/).
 <!-- END_COMMENT -->
 
 All Vipps customers that have

@@ -53,7 +53,7 @@ It may be relevant for enterprise setup, omnichannel, multiple physical stores w
 
 **Prerequisites:**
 Stores or a centralized system (e.g. from a headquarters) must have access to all store credentials, or use
-[Partner keys](https://developer.vippsmobilepay.com/docs/vipps-partner/partner-keys).
+[Partner keys](https://developer.vippsmobilepay.com/docs/partner/partner-keys).
 Stores must be able to search for `orderId` from other stores or request it from the centralized system.
 
 **User story:** A user buys a product from Store A.
@@ -64,21 +64,21 @@ The user then visits Store B to return some goods. Store B wants to be able to r
 **Recommended solutions:**
 
 **A:**
-[Partner keys](https://developer.vippsmobilepay.com/docs/vipps-partner/partner-keys)
+[Partner keys](https://developer.vippsmobilepay.com/docs/partner/partner-keys)
 are used for all stores:
 
 Stores must be able to search for `orderId` for payments made in other stores. The cashier can then search and select `orderId` from Store A and click `refund`.  
 **Technical:** Use
-[Partner keys](https://developer.vippsmobilepay.com/docs/vipps-partner/partner-keys)
+[Partner keys](https://developer.vippsmobilepay.com/docs/partner/partner-keys)
 to authenticate, add `Merchant-Serial-Number` from Store A to the request header and original `orderId` to the
 [refund](https://developer.vippsmobilepay.com/api/ecom#tag/Vipps-eCom-API/operation/refundPaymentUsingPOST) request.
 
 NB: With
-[Partner keys](https://developer.vippsmobilepay.com/docs/vipps-partner/partner-keys),
+[Partner keys](https://developer.vippsmobilepay.com/docs/partner/partner-keys),
 do not let the cashier input `Merchant-Serial-Number` themselves. These must be locked and connected to the store selection to reduce risk of adding the wrong store.
 
 **B:**
-[Partner keys](https://developer.vippsmobilepay.com/docs/vipps-partner/partner-keys)
+[Partner keys](https://developer.vippsmobilepay.com/docs/partner/partner-keys)
 are not used:
 
 In this case, a centralized system needs to store credentials from all sales units within the enterprise.
@@ -122,7 +122,7 @@ As an alternative an online sale log must be available for Vipps.
    can help with this.
    See: [landing page FAQ](landing-page-faq.md#is-it-possible-to-skip-the-landing-page).
 5. The POS vendor normally uses
-   [Partner keys](https://developer.vippsmobilepay.com/docs/vipps-partner/partner-keys).
+   [Partner keys](https://developer.vippsmobilepay.com/docs/partner/partner-keys).
    If not: The merchant
    [retrieves the API keys](../common-topics/api-keys.md#getting-the-api-keys)
    and provides them securely to the partner.
@@ -133,10 +133,10 @@ As an alternative an online sale log must be available for Vipps.
 ## Which API keys should I use?
 
 You should probably use
-[Partner keys](https://developer.vippsmobilepay.com/docs/vipps-partner/partner-keys),
+[Partner keys](https://developer.vippsmobilepay.com/docs/partner/partner-keys),
 and not separate API keys for each of your merchants. But it depends.
 
-See: [Partner keys](https://developer.vippsmobilepay.com/docs/vipps-partner/partner-keys).
+See: [Partner keys](https://developer.vippsmobilepay.com/docs/partner/partner-keys).
 
 ## Do we need to support callbacks?
 
@@ -189,4 +189,4 @@ See:
 
 ## How can we mass sign up merchants?
 
-See: [Vipps Partners: How to sign up new merchants](https://developer.vippsmobilepay.com/docs/vipps-partner#how-to-sign-up-new-merchants).
+See: [Vipps Partners: How to sign up new merchants](https://developer.vippsmobilepay.com/docs/partner#how-to-sign-up-new-merchants).

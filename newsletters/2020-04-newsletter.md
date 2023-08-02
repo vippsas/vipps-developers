@@ -71,7 +71,7 @@ The pages are automatically generated from the GitHub repos, so the
 content is the same, and you can choose what to use.
 
 We are just getting started, and
-[feedback](https://developer.vippsmobilepay.com/docs/vipps-developers/contact)
+[feedback](https://developer.vippsmobilepay.com/docs/contact)
 is very welcome. We know there are some minor issues, please bear with us.
 
 ## API documentation in HTML format with Slate
@@ -83,7 +83,7 @@ Examples for the eCom API:
 * ReDoc: content no longer available
 * Slate: content no longer available
 
-[Feedback](https://developer.vippsmobilepay.com/docs/vipps-developers/contact)
+[Feedback](https://developer.vippsmobilepay.com/docs/contact)
 is very welcome.
 
 ## How it works
@@ -96,7 +96,7 @@ We have made some more in-depth product information pages with screenshots:
 ## Plugin overview
 
 We now have plugins for WordPress/WooCommerce, Magento, Episerver, Shopify, Drupal:
-[Vipps-plugins](https://developer.vippsmobilepay.com/docs/vipps-plugins)
+[Vipps-plugins](https://developer.vippsmobilepay.com/docs/plugins)
 
 We have some more candidates too.
 
@@ -117,15 +117,15 @@ Our API lifecycle policy is
 ### How to get help quickly
 
 Please see
-[this page](https://developer.vippsmobilepay.com/docs/vipps-developers/contact).
+[this page](https://developer.vippsmobilepay.com/docs/contact).
 
 ### Newsletter archive
 
-Please see: [Newsletters](https://developer.vippsmobilepay.com/docs/vipps-developers/newsletters)
+Please see: [Newsletters](https://developer.vippsmobilepay.com/docs/newsletters)
 
 ## Questions or comments?
 
 We're always happy to help with code or other questions you might have!
 Please create [GitHub issues or pull requests](https://github.com/vippsas)
 for the relevant API,
-or [contact us](https://developer.vippsmobilepay.com/docs/vipps-developers/contact).
+or [contact us](https://developer.vippsmobilepay.com/docs/contact).

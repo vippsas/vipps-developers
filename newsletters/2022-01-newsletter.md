@@ -103,7 +103,7 @@ The old API that a few partners still use to sign up new merchants will
 be phased out. See
 [Deprecation of the Vipps Signup API](https://github.com/vippsas/vipps-signup-api/blob/master/vipps-signup-api-deprecation.md)
 and
-[Vipps Partners](https://developer.vippsmobilepay.com/docs/vipps-partner).
+[Vipps Partners](https://developer.vippsmobilepay.com/docs/partner).
 
 ## Reminders
 
@@ -209,11 +209,11 @@ call by including:
 ## Newsletter archive
 
 All the previous newsletters are in the
-[newsletter archive](https://developer.vippsmobilepay.com/docs/vipps-developers/newsletters).
+[newsletter archive](https://developer.vippsmobilepay.com/docs/newsletters).
 
 ## Questions or comments?
 
 We're always happy to help with code or other questions you might have!
 Please create [GitHub issues or pull requests](https://github.com/vippsas)
 for the relevant API,
-or [contact us](https://developer.vippsmobilepay.com/docs/vipps-developers/contact).
+or [contact us](https://developer.vippsmobilepay.com/docs/contact).

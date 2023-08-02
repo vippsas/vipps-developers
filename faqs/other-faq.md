@@ -109,7 +109,7 @@ If all sales units have the same organization number, there are two alternatives
    [settlement files](../settlements/README.md).
    You will need separate API keys for each sales unit (store).
    If you have a Vipps platform partner, the partner will use the
-   [Partner keys](https://developer.vippsmobilepay.com/docs/vipps-partner/partner-keys)
+   [Partner keys](https://developer.vippsmobilepay.com/docs/partner/partner-keys)
    for all the sales units.
    See: [How can I use Vipps for different types of payments?](#how-can-i-use-vipps-for-different-types-of-payments).
 
@@ -122,7 +122,7 @@ If all sales units have the same organization number, there are two alternatives
    [Recommendations for `reference` and `orderId`](../common-topics/orderid.md).
    You will use the same API keys for all stores.
    If you have a Vipps platform partner, the partner will use the
-   [Partner keys](https://developer.vippsmobilepay.com/docs/vipps-partner/partner-keys)
+   [Partner keys](https://developer.vippsmobilepay.com/docs/partner/partner-keys)
    for all the sales units.
 
 ## How can I change my organization number?
@@ -193,7 +193,7 @@ Note, the description translates to: *Remember: Vipps is always fee-free when yo
 | -------------- | -------------------------------------------------------- |
 | `name`         | The name of the payment method. Use "Vipps".             |
 | `redirect_url` | Merchant hosted URL redirecting to [the Vipps payment deeplink URL](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#the-vipps-deeplink-url)|
-| `image_url`    | The logo to be shown for this payment method. See: [Vipps design guidelines](https://developer.vippsmobilepay.com/docs/vipps-design-guidelines).  |
+| `image_url`    | The logo to be shown for this payment method. See: [Vipps design guidelines](https://developer.vippsmobilepay.com/docs/design-guidelines).  |
 | `fee`          | Should not be applicable because of PSD2 surcharge ban.  |
 | `description`  | The `description` field should state that there is no fee when paying with Vipps. The Norwegian text above says: "Vipps is without fees when paying businesses".  |
 
@@ -234,6 +234,6 @@ to the requirements.
 ## How can I change partner for my integration with Vipps?
 
 See:
-[How to change partners for a merchant](https://developer.vippsmobilepay.com/docs/vipps-partner/how-to-change-partners/).
+[How to change partners for a merchant](https://developer.vippsmobilepay.com/docs/partner/how-to-change-partners/).
 
 **Please note:** The MSN (the number) does *not* change when changing partners.

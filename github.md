@@ -32,7 +32,7 @@ The public GitHub repositories used in this website are as follows:
   * .NET: <https://github.com/vippsas/dotnet-sdk>
   * Java: <https://github.com/vippsas/java-sdk>
   * Node: <https://github.com/vippsas/node-sdk>
-* Plugins: <https://github.com/vippsas/vipps-plugins>
+* Plugins: <https://github.com/vippsas/plugins>
   * Craft Commerce:
     * Login (*Vipps Login for Craft CMS*): <https://github.com/vippsas/vipps-craft-login>
   * Drupal:
@@ -58,5 +58,5 @@ The public GitHub repositories used in this website are as follows:
     * Recurring: (*Vipps Recurring Payments for WooCommerce*) <https://github.com/vippsas/vipps-recurring-woocommerce>
     * Login: (*Vipps Login for WordPress and WooCommerce*) <https://github.com/vippsas/vipps-login-wordpress>
 * Partners: <https://github.com/vippsas/vipps-partner>
-* Solutions: <https://github.com/vippsas/vipps-solutions>
-* Design guidelines: <https://github.com/vippsas/vipps-design-guidelines>
+* Solutions: <https://github.com/vippsas/solutions>
+* Design guidelines: <https://github.com/vippsas/design-guidelines>

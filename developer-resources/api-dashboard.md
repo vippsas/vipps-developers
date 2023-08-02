@@ -9,7 +9,7 @@ pagination_prev: null
 
 <!-- START_COMMENT -->
 ℹ️ Please use the website:
-[Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/docs/vipps-developers/).
+[Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/docs/).
 <!-- END_COMMENT -->
 
 All merchants have access to an API dashboard on
@@ -27,14 +27,14 @@ fail:
 ![API dashboard](../images/api-dashboard-example.png)
 
 The API dashboard is available for both the production and
-[test environment](https://developer.vippsmobilepay.com/docs/vipps-developers/test-environment),
+[test environment](https://developer.vippsmobilepay.com/docs/test-environment),
 and is an easy way to see if you are using the Vipps APIs correctly.
 It only gives a high-level overview, so you must check the actual API
 responses for more details about the errors.
 
 **Important:** For every API request that has failed, and for every error shown on the API dashboard,
 you have already received a detailed error message, as described on
-[Errors](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics/errors).
+[Errors](https://developer.vippsmobilepay.com/docs/common-topics/errors).
 We do not have the capacity to manually check our logs and re-send the same error details.
 
 From the
@@ -51,5 +51,5 @@ It is your responsibility to check that you are using the Vipps APIs correctly.
 * Partners can ask their merchants to provide access to the
   sales unit(s) for whom they are making payments; therefore, the partner can use the
   API dashboard. There is a guide here:
-  [How to add a user on portal.vipps.no](https://developer.vippsmobilepay.com/docs/vipps-partner/add-portal-user)  
+  [How to add a user on portal.vipps.no](https://developer.vippsmobilepay.com/docs/partner/add-portal-user)  
 * Keep in mind that the *Utvikler* tab is only available to users with *admin* or *developer* roles.

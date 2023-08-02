@@ -34,9 +34,9 @@ by contacting [customer service](https://www.vipps.no/kontakt-oss/).
 When the *Merchant Agreement* is approved and your product order is sent,
 you (or the user associated with the order) will receive an email
 with the name and serial number of your test sales unit, along with the
-[test user](https://developer.vippsmobilepay.com/docs/vipps-developers/test-environment/#test-users)
+[test user](https://developer.vippsmobilepay.com/docs/test-environment/#test-users)
 for logging into the
-[Vipps Merchant Test (MT) app](https://developer.vippsmobilepay.com/docs/vipps-developers/test-environment/#vipps-test-apps).
+[Vipps Merchant Test (MT) app](https://developer.vippsmobilepay.com/docs/test-environment/#vipps-test-apps).
 Now, you can start testing with the Vipps APIs.
 
 When your product order is approved, you will get an email stating that you can

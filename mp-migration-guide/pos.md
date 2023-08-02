@@ -13,7 +13,7 @@ import MT from './_mt.md'
 Read more about the [transition to one platform](https://developer.mobilepay.dk/docs/pos/transition-to-one-platform).
 Below you can find comparison between the existing MobilePay PoS API and the new [ePayment API](/docs/APIs/epayment-api) replacing MobilePay PoS.
 
-Visit our [Recommended flows](https://developer.vippsmobilepay.com/docs/vipps-solutions/) to see the recommended flow for in-store payment [merchant scan](/docs/vipps-solutions/in-store/).
+Visit our [Recommended flows](https://developer.vippsmobilepay.com/docs/solutions/) to see the recommended flow for in-store payment [merchant scan](/docs/solutions/in-store/).
 
 ## PoS and ePayment endpoints
 
@@ -21,7 +21,7 @@ Visit our [Recommended flows](https://developer.vippsmobilepay.com/docs/vipps-so
 |---------------------------|------------------------------------------|---------------------------------------------|
 | PoS management            | `POST/GET/DELETE /v10/pointofsales`      | N/A                                         |
 | Initiate Payment          | `POST:/v10/payments`                     | [`POST:/epayments/v1/payments`](https://developer.vippsmobilepay.com/api/epayment#tag/CreatePayment/operation/createPayment)                         |
-| Initiate Prepared payment | `POST:/v10/payments/prepare`             | N/A (For loyalty, see [Loyalty at POS](https://developer.vippsmobilepay.com/docs/vipps-solutions/loyalty-in-pos))     |
+| Initiate Prepared payment | `POST:/v10/payments/prepare`             | N/A (For loyalty, see [Loyalty at POS](https://developer.vippsmobilepay.com/docs/solutions/loyalty-in-pos))     |
 | Query Payment             | `GET:/v10/payments/{paymentid}`          | [`GET:/epayments/v1/payments/{reference}`](https://developer.vippsmobilepay.com/api/epayment#tag/QueryPayments/operation/getPayment)              |
 | Query Active Payments     | `GET /v10/payments`                      | N/A                                         |
 | Query payment log         | N/A                                      | [`GET:/epayments/v1/payments/{reference}/events`](https://developer.vippsmobilepay.com/api/epayment#tag/QueryPayments/operation/getPaymentEventLog)       |
@@ -39,12 +39,12 @@ See:
 | MobilePay PoS                           | ePayment                                        |
 |-----------------------------------------|-------------------------------------------------|
 | `Authorization` (`POST:/connect/token`) | `Authorization` ([`POST:/accesstoken/get`](https://developer.vippsmobilepay.com/api/access-token#tag/Authorization-Service/operation/fetchAuthorizationTokenUsingPost))       |
-| `X-MobilePay-Client-System-Version`     | `Vipps-System-Version` (see [HTTP headers](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics/http-headers/))                          |
-| N/A                                     | `Vipps-System-Name` (see [HTTP headers](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics/http-headers/))                             |
-| N/A                                     | `Vipps-System-Plugin-Name` (see [HTTP headers](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics/http-headers/))       |
-| N/A                                     | `Vipps-System-Plugin-Version` (see [HTTP headers](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics/http-headers/))    |
+| `X-MobilePay-Client-System-Version`     | `Vipps-System-Version` (see [HTTP headers](https://developer.vippsmobilepay.com/docs/common-topics/http-headers/))                          |
+| N/A                                     | `Vipps-System-Name` (see [HTTP headers](https://developer.vippsmobilepay.com/docs/common-topics/http-headers/))                             |
+| N/A                                     | `Vipps-System-Plugin-Name` (see [HTTP headers](https://developer.vippsmobilepay.com/docs/common-topics/http-headers/))       |
+| N/A                                     | `Vipps-System-Plugin-Version` (see [HTTP headers](https://developer.vippsmobilepay.com/docs/common-topics/http-headers/))    |
 | `X-MobilePay-Merchant-VAT-Number`       | N/A                                             |
-| `X-MobilePay-Idempotency-Key`           | `Idempotency-Key` (see [Idempotency](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics/http-headers/#idempotency))                               |
+| `X-MobilePay-Idempotency-Key`           | `Idempotency-Key` (see [Idempotency](https://developer.vippsmobilepay.com/docs/common-topics/http-headers/#idempotency))                               |
 | N/A                                     | `Ocp-Apim-Subscription-Key`                     |
 | N/A                                     | `Merchant-Serial-Number`                        |
 
@@ -58,7 +58,7 @@ See:
 |----------------------------------------------------------------|------------------------------------------------|
 | `amount`                                                       | `amount` (`currency`, `value`)                 |
 | `currencyCode`                                                 | *Applied in `amount`*                          |
-| `orderId`                                                      | [`paymentDescription​`](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics/transactiontext/)                            |
+| `orderId`                                                      | [`paymentDescription​`](https://developer.vippsmobilepay.com/docs/common-topics/transactiontext/)                            |
 | `plannedCaptureDelay`                                          | N/A                                            |
 | `posId`                                                        | N/A                                            |
 | `restrictions` (`debitCardDisallowed`, `creditCardDisallowed`) | N/A                                            |
@@ -66,12 +66,12 @@ See:
 | N/A                                                            | `customer` (`phoneNumber`)                     |
 | N/A                                                            | `customerInteraction` (`"CUSTOMER_PRESENT"`)   |
 | N/A                                                            | `paymentMethod` (`type` `"WALLET"`)            |
-| N/A                                                            | [`reference`](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics/orderid)                                    |
+| N/A                                                            | [`reference`](https://developer.vippsmobilepay.com/docs/common-topics/orderid)                                    |
 | N/A                                                            | `userFlow` (`"PUSH_MESSAGE"` `"QR"`)           |
 | N/A                                                            | `qrFormat` (`format`, `size`)                  |
 |                                                                |                                                |
 | **Response**                                                   |                                                |
-| `paymentId`                                                    | [`reference`](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics/orderid) (set in paymentInitiation)         |
+| `paymentId`                                                    | [`reference`](https://developer.vippsmobilepay.com/docs/common-topics/orderid) (set in paymentInitiation)         |
 
 ## Query Payment
 
@@ -82,10 +82,10 @@ See:
 
 | MobilePay PoS   | ePayment                                                                                |
 |-----------------|-----------------------------------------------------------------------------------------|
-| `paymentId`     | [`reference`](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics/orderid)                                                                             |
+| `paymentId`     | [`reference`](https://developer.vippsmobilepay.com/docs/common-topics/orderid)                                                                             |
 |                 |                                                                                         |
 | **Response**    |                                                                                         |
-| `orderId`       | [`reference`](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics/orderid)                                                                             |
+| `orderId`       | [`reference`](https://developer.vippsmobilepay.com/docs/common-topics/orderid)                                                                             |
 | `amount`        | `amount` (`currency`, `value`)                                                          |
 | `currencyCode`  | *Applied in `amount`*                                                                   |
 | `status`        | `state`                                                                                  |
@@ -106,7 +106,7 @@ See:
 
 | MobilePay PoS                           | ePayment                                                                                |
 |-----------------------------------------|-----------------------------------------------------------------------------------------|
-| `paymentId`                             | [`reference`](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics/orderid)                                                                             |
+| `paymentId`                             | [`reference`](https://developer.vippsmobilepay.com/docs/common-topics/orderid)                                                                             |
 | `amount`                                | `modificationAmount` (`currency`, `value`) *not applicable for cancel*                  |
 |                                         |                                                                                         |
 | **Response**                            |                                                                                         |
@@ -114,7 +114,7 @@ See:
 | N/A                                     | `state`                                                                                 |
 | N/A                                     | `aggregate` (`authorizedAmount`, `cancelledAmount`, `capturedAmount`, `refundedAmount`) |
 | `refundId` *only applicable for refund* | `pspReference`                                                                          |
-| N/A                                     | [`reference`](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics/orderid)                                                                             |
+| N/A                                     | [`reference`](https://developer.vippsmobilepay.com/docs/common-topics/orderid)                                                                             |
 
 ## Test environment
 

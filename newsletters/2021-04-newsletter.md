@@ -81,7 +81,7 @@ including the
 endpoints for both.
 
 See:
-[Partner keys](https://developer.vippsmobilepay.com/docs/vipps-partner/partner-keys)
+[Partner keys](https://developer.vippsmobilepay.com/docs/partner/partner-keys)
 
 ## PSP Signup API
 
@@ -133,7 +133,7 @@ We have mentioned some things before, and take this opportunity to remind you:
 Several of our plugins have been updated to use the newest versions of
 our APIs. Please make sure you have the newest version of the plugins
 you use, and keep them up to date. See the
-[plugin overview](https://developer.vippsmobilepay.com/docs/vipps-plugins).
+[plugin overview](https://developer.vippsmobilepay.com/docs/plugins).
 
 ### Use Userinfo
 
@@ -185,15 +185,15 @@ which help Vipps improve our services, and also help in investigating problems.
 ### How to get help quickly
 
 Please see
-[this page](https://developer.vippsmobilepay.com/docs/vipps-developers/contact).
+[this page](https://developer.vippsmobilepay.com/docs/contact).
 
 ### Newsletter archive
 
-Please see: [newsletters](https://developer.vippsmobilepay.com/docs/vipps-developers/newsletters)
+Please see: [newsletters](https://developer.vippsmobilepay.com/docs/newsletters)
 
 ## Questions or comments?
 
 We're always happy to help with code or other questions you might have!
 Please create [GitHub issues or pull requests](https://github.com/vippsas)
 for the relevant API,
-or [contact us](https://developer.vippsmobilepay.com/docs/vipps-developers/contact).
+or [contact us](https://developer.vippsmobilepay.com/docs/contact).

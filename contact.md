@@ -8,7 +8,7 @@ pagination_prev: null
 
 <!-- START_COMMENT -->
 ℹ️ Please use the website:
-[Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/docs/vipps-developers/contact/).
+[Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/docs/contact/).
 <!-- END_COMMENT -->
 
 ## MobilePay support
@@ -32,11 +32,11 @@ To avoid any delays in receiving support, we recommend that users with non-techn
 | General questions (including the customer relationship, creating sales units, change of admins, etc.) | See: [Contact info on vipps.no](https://www.vipps.no/kontakt-oss/). |
 | Problems with Vipps services  | See: [Status pages](./developer-resources/status-pages.md). |
 | Applications for Vipps products (status, follow-ups, etc.) | Check the status on [portal.vipps.no](https://portal.vipps.no). |
-| Vipps plugins (WooCommerce, Shopify, Wix, WordPress, Wix, Shopify, Magento, EPiServer, etc.)         | See the support info for your plugin: [Plugin overview](https://developer.vippsmobilepay.com/docs/vipps-plugins). |
+| Vipps plugins (WooCommerce, Shopify, Wix, WordPress, Wix, Shopify, Magento, EPiServer, etc.)         | See the support info for your plugin: [Plugin overview](https://developer.vippsmobilepay.com/docs/plugins). |
 | Vipps through a partner (for merchants) | Please contact your partner. |
 | Vipps through a POS (Point of Sale) vendor | Please contact your POS vendor. |
 | Vipps through a PSP (Payment Service Provider) | Please contact your PSP. |
-| Partner assistance (for partners) | See: [Vipps Partners](https://developer.vippsmobilepay.com/docs/vipps-partner) and the [Partner API](https://developer.vippsmobilepay.com/docs/APIs/partner-api). |
+| Partner assistance (for partners) | See: [Vipps Partners](https://developer.vippsmobilepay.com/docs/partner) and the [Partner API](https://developer.vippsmobilepay.com/docs/APIs/partner-api). |
 | Settlements, invoices or similar | See: [Settlements](./settlements/README.md). |
 | Suggestions for improvements to [Vipps products](https://www.vipps.no/produkter-og-tjenester/bedrift/)  | Please use [this form](https://www.vipps.no/kontakt-oss/). |
 
@@ -45,7 +45,7 @@ For *technical* issues related to Vipps and the development of services using ou
 ### Almost all questions are answered in the documentation
 
 Please check the
-[Frequently Asked Questions (FAQ)](https://developer.vippsmobilepay.com/docs/vipps-developers/faqs).
+[Frequently Asked Questions (FAQ)](https://developer.vippsmobilepay.com/docs/faqs).
 
 Please use the
 [search functionality for the technical documentation](https://developer.vippsmobilepay.com/search).
@@ -60,7 +60,7 @@ information to the address below:
 3. Company details: Organization number (find yours at [Brønnøysundregistrene](https://brreg.no))
 4. Merchant Serial Number (MSN), found on [portal.vipps.no](https://portal.vipps.no).
    See the
-   [Vipps portal](https://developer.vippsmobilepay.com/docs/vipps-developers/developer-resources/portal).
+   [Vipps portal](https://developer.vippsmobilepay.com/docs/developer-resources/portal).
 5. Which
    [Vipps product](https://www.vipps.no/produkter-og-tjenester/bedrift/)
    or
@@ -137,7 +137,7 @@ We do not have a phone number, and we do not have the capacity to
 help 1:1 on the phone. Most cases involve information that needs to be in written form,
 such as IDs, API requests/responses, etc.
 
-We do sometimes set up Slack channels for customers, depending on the [Partner level](https://developer.vippsmobilepay.com/docs/vipps-partner/partner-level-up/).
+We do sometimes set up Slack channels for customers, depending on the [Partner level](https://developer.vippsmobilepay.com/docs/partner/partner-level-up/).
 
 ### Newsletter
 

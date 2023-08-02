@@ -55,7 +55,7 @@ We aim to have the API guide, etc. ready in early January.
 ## Solutions
 
 The new
-[Solutions](https://developer.vippsmobilepay.com/docs/vipps-solutions)
+[Solutions](https://developer.vippsmobilepay.com/docs/solutions)
 section of our developer documentation describes best practice for
 combining Vipps APIs for specific use cases, like:
 
@@ -94,4 +94,4 @@ We are working on eliminating incorrect API use. Please:
 We're always happy to help with code or other questions you might have!
 Please create [GitHub issues or pull requests](https://github.com/vippsas)
 for the relevant API,
-or [contact us](https://developer.vippsmobilepay.com/docs/vipps-developers/contact).
+or [contact us](https://developer.vippsmobilepay.com/docs/contact).

@@ -161,7 +161,7 @@ If you are a partner and want to check a merchant, see the
 If you are a partner and do not yet use the Partner API, you can ask the
 merchant to create a user for you on
 [portal.vipps.no](https://portal.vipps.no), so you can check on behalf of the merchant as
-[described in detail with screenshots](https://developer.vippsmobilepay.com/docs/vipps-partner/add-portal-user).
+[described in detail with screenshots](https://developer.vippsmobilepay.com/docs/partner/add-portal-user).
 
 If you are not able to log in on
 [portal.vipps.no](https://portal.vipps.no)

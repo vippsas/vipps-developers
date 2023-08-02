@@ -36,5 +36,5 @@ This is applicable to:
 * [Recurring API](https://developer.vippsmobilepay.com/docs/APIs/recurring-api)
 
 See
-[Refund](https://developer.vippsmobilepay.com/docs/vipps-developers/faqs/refunds-faq/)
+[Refund](https://developer.vippsmobilepay.com/docs/faqs/refunds-faq/)
 for common questions.

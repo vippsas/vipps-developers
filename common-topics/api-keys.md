@@ -8,7 +8,7 @@ pagination_prev: null
 
 <!-- START_COMMENT -->
 ℹ️ Please use the website:
-[Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/docs/vipps-developers/common-topics/api-keys/).
+[Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/docs/common-topics/api-keys/).
 <!-- END_COMMENT -->
 
 When you start using the Vipps API, you will need to provide API keys.
@@ -19,7 +19,7 @@ Your API keys are specific for your sales unit, and you will use them to interac
 
 The same API keys are used for many types of integration:
 Direct integration, native apps for iOS and Android, point of sale integrations,
-[all the Vipps plugins](https://developer.vippsmobilepay.com/docs/vipps-plugins)
+[all the Vipps plugins](https://developer.vippsmobilepay.com/docs/plugins)
 and any other solution based on the Vipps APIs.
 
 **Please note:** There are no API keys for
@@ -28,7 +28,7 @@ as there is no external API.
 
 **Please note**: This page describes the keys that are provided to you, as a merchant.
 Partners use special keys that will work for all their merchants. These are known as
-[*Partner keys*](https://developer.vippsmobilepay.com/docs/vipps-partner/partner-keys).
+[*Partner keys*](https://developer.vippsmobilepay.com/docs/partner/partner-keys).
 
 ## Production and Test Keys
 

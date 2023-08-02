@@ -76,21 +76,21 @@ This is available for all customers, also those that do not yet have any API acc
 Several of our plugins have been updated to use the newest versions of
 our APIs. Please make sure you have the newest version of the plugins
 you use, and keep them up to date. See the
-[plugin overview](https://developer.vippsmobilepay.com/docs/vipps-plugins).
+[plugin overview](https://developer.vippsmobilepay.com/docs/plugins).
 
 ### How to get help quickly
 
 Please see
-[this page](https://developer.vippsmobilepay.com/docs/vipps-developers/contact).
+[this page](https://developer.vippsmobilepay.com/docs/contact).
 
 ### Newsletter archive
 
 All the previous newsletters are in
-[newsletters](https://developer.vippsmobilepay.com/docs/vipps-developers/newsletters).
+[newsletters](https://developer.vippsmobilepay.com/docs/newsletters).
 
 ## Questions or comments?
 
 We're always happy to help with code or other questions you might have!
 Please create [GitHub issues or pull requests](https://github.com/vippsas)
 for the relevant API,
-or [contact us](https://developer.vippsmobilepay.com/docs/vipps-developers/contact).
+or [contact us](https://developer.vippsmobilepay.com/docs/contact).

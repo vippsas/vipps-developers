@@ -10,7 +10,7 @@ pagination_prev: null
 
 <!-- START_COMMENT -->
 ℹ️ Please use the website:
-[Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/docs/vipps-developers/about/).
+[Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/docs/about/).
 <!-- END_COMMENT -->
 
 As Vipps MobilePay, we are dedicated to providing our users with an inclusive and empowering cross-border mobile wallet solution.

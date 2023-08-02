@@ -60,7 +60,7 @@ Here's an example for the Vipps eCom API's `/refund` endpoint:
 
 There is quite a bit happening for Vipps partners.
 Please see
-[Vipps Partner pages](https://developer.vippsmobilepay.com/docs/vipps-partner)
+[Vipps Partner pages](https://developer.vippsmobilepay.com/docs/partner)
 for (continuously) updated information.
 
 ## Reminders
@@ -149,11 +149,11 @@ More information can be found in [our documentation](https://developer.vippsmobi
 ## Newsletter archive
 
 All the previous newsletters are in the
-[newsletter archive](https://developer.vippsmobilepay.com/docs/vipps-developers/newsletters).
+[newsletter archive](https://developer.vippsmobilepay.com/docs/newsletters).
 
 ## Questions or comments?
 
 We're always happy to help with code or other questions you might have!
 Please create [GitHub issues or pull requests](https://github.com/vippsas)
 for the relevant API,
-or [contact us](https://developer.vippsmobilepay.com/docs/vipps-developers/contact).
+or [contact us](https://developer.vippsmobilepay.com/docs/contact).

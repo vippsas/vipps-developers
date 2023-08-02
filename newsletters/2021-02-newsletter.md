@@ -16,7 +16,7 @@ This newsletter was sent in February 2021.
 Several of our plugins have been updated to use the newest versions of
 our APIs. Please make sure you have the newest version of the plugins
 you use, and keep them up to date. See the
-[plugin overview](https://developer.vippsmobilepay.com/docs/vipps-plugins).
+[plugin overview](https://developer.vippsmobilepay.com/docs/plugins).
 
 ## API Dashboard 🚦
 
@@ -50,7 +50,7 @@ To do this we have to introduce a new version of our Vipps login API.
 Our plugins are updated to support the latest version.
 Make sure that you use the latest version of the plugin.
 See
-[Plugins](https://developer.vippsmobilepay.com/docs/vipps-plugins)
+[Plugins](https://developer.vippsmobilepay.com/docs/plugins)
 for details.
 
 ## Vipps Login improvements 🎉
@@ -134,7 +134,7 @@ This does require that you have already ordered a Vipps solution, and
 that you already have API access.
 
 This does, unfortunately, not apply to customers using one of our
-[plugins](https://developer.vippsmobilepay.com/docs/vipps-plugins), or
+[plugins](https://developer.vippsmobilepay.com/docs/plugins), or
 customers using Vipps through a partner.
 
 ### Do you want a technical workshop? 🛠
@@ -147,7 +147,7 @@ This does require that you have already ordered a Vipps solution, and
 that you already have API access.
 
 This does, unfortunately, not apply to customers using one of our
-[plugins](https://developer.vippsmobilepay.com/docs/vipps-plugins), or
+[plugins](https://developer.vippsmobilepay.com/docs/plugins), or
 customers using Vipps through a partner.
 
 ### API lifecycle
@@ -163,15 +163,15 @@ Our API lifecycle policy is
 ### How to get help quickly
 
 Please see
-[this page](https://developer.vippsmobilepay.com/docs/vipps-developers/contact).
+[this page](https://developer.vippsmobilepay.com/docs/contact).
 
 ### Newsletter archive
 
-Please see: [newsletters](https://developer.vippsmobilepay.com/docs/vipps-developers/newsletters)
+Please see: [newsletters](https://developer.vippsmobilepay.com/docs/newsletters)
 
 ## Questions or comments?
 
 We're always happy to help with code or other questions you might have!
 Please create [GitHub issues or pull requests](https://github.com/vippsas)
 for the relevant API,
-or [contact us](https://developer.vippsmobilepay.com/docs/vipps-developers/contact).
+or [contact us](https://developer.vippsmobilepay.com/docs/contact).

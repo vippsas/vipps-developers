@@ -35,7 +35,7 @@ the newsletter is in English. This makes
 it easier to forward to all developers and technical resources.
 
 See:
-[Newsletter information and archive](https://developer.vippsmobilepay.com/docs/vipps-developers/newsletters).
+[Newsletter information and archive](https://developer.vippsmobilepay.com/docs/newsletters).
 
 ## ePayment API
 
@@ -114,7 +114,7 @@ for more details, and try for yourself in our
 
 ## More Solutions and best practices
 
-In the [Solutions](https://developer.vippsmobilepay.com/docs/vipps-solutions) section of the documentation,
+In the [Solutions](https://developer.vippsmobilepay.com/docs/solutions) section of the documentation,
 you can now see how Vipps APIs can be combined to give the best user experience for several use cases, such as:
 
 * Electric vehicle charging
@@ -124,7 +124,7 @@ you can now see how Vipps APIs can be combined to give the best user experience 
 * Taxi companies
 * Vending machines
 
-See: [Solutions](https://developer.vippsmobilepay.com/docs/vipps-solutions).
+See: [Solutions](https://developer.vippsmobilepay.com/docs/solutions).
 
 ## Report API
 
@@ -140,7 +140,7 @@ See the
 
 We will soon change the IP addresses for the publicly available servers.
 Make sure you follow the documentation for DNS, etc.:
-[Vipps servers](https://developer.vippsmobilepay.com/docs/vipps-developers/developer-resources/servers/).
+[Vipps servers](https://developer.vippsmobilepay.com/docs/developer-resources/servers/).
 
 ## Reminders
 
@@ -153,7 +153,7 @@ experience for all Vipps users and merchants. Please:
 * Log all errors
 * Fix errors as quickly as possible
 * Use the
-  [API Dashboard](https://developer.vippsmobilepay.com/docs/vipps-developers/developer-resources/api-dashboard/)
+  [API Dashboard](https://developer.vippsmobilepay.com/docs/developer-resources/api-dashboard/)
   to find problems with your integration.
 
 ![API Dashboard example](images/2021-02-api-dashboard-example.png)
@@ -161,6 +161,6 @@ experience for all Vipps users and merchants. Please:
 ## Questions or comments?
 
 We're always happy to help with code or other questions you might have!
-Please create [GitHub issues or pull requests](https://developer.vippsmobilepay.com/docs/vipps-developers/github)
+Please create [GitHub issues or pull requests](https://developer.vippsmobilepay.com/docs/github)
 for the relevant API,
-or [contact us](https://developer.vippsmobilepay.com/docs/vipps-developers/contact).
+or [contact us](https://developer.vippsmobilepay.com/docs/contact).
