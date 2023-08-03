@@ -1,5 +1,5 @@
 ---
-title: The Vipps and MobilePay test environment
+title: The Vipps MobilePay test environment
 sidebar_label: Test environment
 sidebar_position: 20
 pagination_next: null
