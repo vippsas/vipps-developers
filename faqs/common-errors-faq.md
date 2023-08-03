@@ -86,13 +86,6 @@ to double-check your API keys, sales units and API products.
 See:
 [Getting the API keys](../common-topics/api-keys.md#getting-the-api-keys).
 
-<!--
-You can use
-Postman
-to manually do API calls, Use the "inspect" functionality to see the complete
-requests and responses, and to check that the API keys are correct.
--->
-
 You should also ensure you have access to the correct API.
 See:
 [API products](https://developer.vippsmobilepay.com/docs/APIs).
@@ -162,14 +155,6 @@ Some tips:
 
 * Please make sure the JSON payload in your API request validates.
   That is the most common source of this type of error.
-<!--
-* You can use
-  Postman
-  to manually do API calls, to see the correct request.
-  Use Postman's
-  [Inspect](https://blog.postman.com/debugging-postman-requests/)
-  functionality to see the complete request.
--->
 * You will get a 500 error if the MSN is sent as an integer:
   `merchantSerialNumber":654321` instead of a string: `merchantSerialNumber":"654321"`.
 * The same will happen if the `amount` is not an integer.
