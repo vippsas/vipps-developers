@@ -86,10 +86,12 @@ to double-check your API keys, sales units and API products.
 See:
 [Getting the API keys](../common-topics/api-keys.md#getting-the-api-keys).
 
+<!--
 You can use
-[Postman](../quick-start-guides.md)
+Postman
 to manually do API calls, Use the "inspect" functionality to see the complete
 requests and responses, and to check that the API keys are correct.
+-->
 
 You should also ensure you have access to the correct API.
 See:
@@ -151,7 +153,7 @@ See: [Why do I get `errorCode 35 "Requested Order not found"`?](#why-do-i-get-er
 
 ## Why do I get `HTTP 500 Internal Server Error`?
 
-Something *might* be wrong on our side and we are working to fix it!
+Something *might* be wrong on our side, and we are working to fix it,
 
 But: It's usually a problem with your request, and that our validation does not catch it.
 In other words: We should have returned `HTTP 400 Bad Request`.
@@ -160,12 +162,14 @@ Some tips:
 
 * Please make sure the JSON payload in your API request validates.
   That is the most common source of this type of error.
-* We strongly recommend using
-  [Postman](../quick-start-guides.md)
+<!--
+* You can use
+  Postman
   to manually do API calls, to see the correct request.
   Use Postman's
   [Inspect](https://blog.postman.com/debugging-postman-requests/)
   functionality to see the complete request.
+-->
 * You will get a 500 error if the MSN is sent as an integer:
   `merchantSerialNumber":654321` instead of a string: `merchantSerialNumber":"654321"`.
 * The same will happen if the `amount` is not an integer.

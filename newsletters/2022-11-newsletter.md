@@ -74,8 +74,7 @@ We are working hard to improve the
   [In-store using merchant scan](https://developer.vippsmobilepay.com/docs/solutions/loyalty-in-pos)
   and
   [Electric vehicle charging](https://developer.vippsmobilepay.com/docs/solutions/ev-charging).
-* All APIs now have a
-  [Quick start](../quick-start-guides.md)
+* All APIs now have a quick start
   with Postman collection. We also have a global Postman environment to make it
   easier to test all APIs without doing any development.
 
