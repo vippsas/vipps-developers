@@ -171,11 +171,8 @@ Details: See the [sftp-report-service](./sftp-report-service/README.md) folder.
 
 ### API
 
-There is no API for retrieving settlement data.
-[SFTP](#sftp) is the closest alternative.
-
-But:
-[We are in the early planning phase of developing an API](https://developer.vippsmobilepay.com/docs/APIs/report-api).
+Report API is available in BETA VERSION 💥: The API is publicly available, but may still have minor changes.
+See [ReportAPI](https://developer.vippsmobilepay.com/docs/APIs/report-api).
 
 ## Availability
 
