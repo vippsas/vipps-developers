@@ -73,6 +73,7 @@ This is applicable to:
 
 * [eCom API](https://developer.vippsmobilepay.com/docs/APIs/ecom-api)
 * [Partner API](https://developer.vippsmobilepay.com/docs/APIs/partner-api)
+* [Management API](https://developer.vippsmobilepay.com/docs/APIs/management-api/)
 * [PSP API](https://developer.vippsmobilepay.com/docs/APIs/psp-api)
 * [Recurring API](https://developer.vippsmobilepay.com/docs/APIs/recurring-api)
 

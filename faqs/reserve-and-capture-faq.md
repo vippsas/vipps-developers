@@ -156,9 +156,9 @@ We require BankID login for this, as "direct capture" requires additional
 compliance checks.
 
 If you are a partner and want to check a merchant, see the
-[Partner API](https://developer.vippsmobilepay.com/docs/APIs/partner-api).
+[Management API](https://developer.vippsmobilepay.com/docs/APIs/management-api/).
 
-If you are a partner and do not yet use the Partner API, you can ask the
+If you are a partner and do not yet use the Management API, you can ask the
 merchant to create a user for you on
 [portal.vipps.no](https://portal.vipps.no), so you can check on behalf of the merchant as
 [described in detail with screenshots](https://developer.vippsmobilepay.com/docs/partner/add-portal-user).

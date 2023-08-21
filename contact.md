@@ -36,7 +36,7 @@ To avoid any delays in receiving support, we recommend that users with non-techn
 | Vipps through a partner (for merchants) | Please contact your partner. |
 | Vipps through a POS (Point of Sale) vendor | Please contact your POS vendor. |
 | Vipps through a PSP (Payment Service Provider) | Please contact your PSP. |
-| Partner assistance (for partners) | See: [Vipps Partners](https://developer.vippsmobilepay.com/docs/partner) and the [Partner API](https://developer.vippsmobilepay.com/docs/APIs/partner-api). |
+| Partner assistance (for partners) | See: [Partners](https://developer.vippsmobilepay.com/docs/partner) and the [Management API](https://developer.vippsmobilepay.com/docs/APIs/management-api/). |
 | Settlements, invoices or similar | See: [Settlements](./settlements/README.md). |
 | Suggestions for improvements to [Vipps products](https://www.vipps.no/produkter-og-tjenester/bedrift/)  | Please use [this form](https://www.vipps.no/kontakt-oss/). |
 
