@@ -22,7 +22,7 @@ API documentation:
 See:
 [Agreements](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/vipps-recurring-api#agreements)
 
-| MOBILEPAY AGREEMENT               ​ | VIPPS MOBILEPAY AGREEMENT​                                                                              |
+| MobilePay Agreement               ​ | Vipps MobilePay Agreement                                                                              |
 |------------------------------------|--------------------------------------------------------------------------------------------------------|
 | `Description ​`                     | `productDescription​`                                                                                   |
 | `Amount​`                           | `pricing: { "type"("LEGACY" => amount ,"VARIABLE" => suggestedMaxAmount), "currency"("NOK") }`        ​ |
