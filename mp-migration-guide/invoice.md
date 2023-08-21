@@ -23,7 +23,7 @@ Please note that ePayment encompasses various use case scenarios. Therefore, if 
 
 ## Input formats
 
-| MobilePay invoice                    | Vipps Mobilepay ePayment                                                                      |
+| MobilePay invoice                    | Vipps MobilePay ePayment                                                                      |
 |--------------------------------------|-------------------------------------------------------------------------------------------------|
 | `InvoiceIssuer​`                      | `Merchant-Serial-Number` (see [HTTP headers](https://developer.vippsmobilepay.com/docs/common-topics/http-headers/))                                                   ​ |
 | `ConsumerAlias {Alias, AliasType}`  ​ | `Customer {Alias} (Example: 4512345678)`                                                        |
