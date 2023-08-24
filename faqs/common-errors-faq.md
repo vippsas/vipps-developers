@@ -8,9 +8,8 @@ pagination_prev: null
 
 # FAQ: Common errors
 
-See also
-[Common errors](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api-faq#common-errors)
-in the eCom API FAQs.
+See also Common errors
+in the [ePayment API FAQs](https://developer.vippsmobilepay.com/docs/APIs/epayment-api/faq/#what-do-all-the-errors-mean) and in the [eCom API FAQs](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api-faq#common-errors) 
 
 ## Why do I get `HTTP 400 Bad Request`?
 
