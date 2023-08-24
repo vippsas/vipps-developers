@@ -58,13 +58,13 @@ Then, you can [get the API keys](../common-topics/api-keys.md#getting-the-api-ke
 **Please note:** It is not possible to *change* an existing sales unit in the test environment,
 but you can create as many as you need.
 
-## How to set up the Vipps Login API for your sales unit
+## How to set up the Login API for your sales unit
 
 1. Find your desired sales unit.
    * Under *Vipps På Nett* > *Utvikler*, select *Environment* > *test*, then search for your test sales unit in the list. To create a new test sales unit, see
      [create a new test sales unit](#how-to-create-a-test-sales-unit).
 1. Click the *Set up login* button corresponding to your sales unit.
-1. If the first time, click *Activate Vipps Login* and fill out fields that follow:
+1. If this is the first time, click *Activate Vipps Login* and fill out the fields:
     * Redirect URIs - Specify the URI that will be used with
       the query parameter, `redirect_uri`, on the initial request to the `authentication`
       endpoint. You can register as many URIs as you want.
