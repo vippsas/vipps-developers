@@ -134,7 +134,7 @@ contains information about your test user.
 Please search your mail, including the spam/junk folder, if you do not find it.
 
 You can also find the same test users by logging in to [portal.vipps.no](https://portal.vipps.no/),
-and going to the developer section and selecting the `test users` tab.
+going to the *Utvikler* (*Developer*) section, and selecting the *Test users* tab.
 
 **Please note:**
 
