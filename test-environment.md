@@ -133,7 +133,7 @@ A welcome email is automatically sent to **all** new customers. This email
 contains information about your test user.  
 Please search your mail, including the spam/junk folder, if you do not find it.
 
-You can also find the same test users by logging in to [portal.vipps.no](https://portal.vipps.no/)  
+You can also find the same test users by logging in to [portal.vipps.no](https://portal.vipps.no/),
 and going to the developer section and selecting the `test users` tab.
 
 **Please note:**
