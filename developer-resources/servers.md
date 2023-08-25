@@ -47,3 +47,22 @@ The disaster recovery environment is as important as the production environment.
 
 For API products where Vipps makes requests to your servers, please make sure
 that these request servers are allowed through firewalls, etc.
+
+## DNS lookup commands
+
+Here are some quick commands to look up the IP addresses of all servers:
+
+Production
+```
+$ for i in {1..4}; do dig +short callback-$i.vipps.no; done | sort -u
+```
+
+Disater recovery:
+```
+$ for i in {1..4}; do dig +short callback-dr-$i.vipps.no; done | sort -u
+```
+
+Test:
+```
+$ for i in {1..2}; do dig +short callback-mt-$i.vipps.no; done | sort -u
+```
