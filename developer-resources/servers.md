@@ -58,7 +58,7 @@ Production
 $ for i in {1..4}; do dig +short callback-$i.vipps.no; done | sort -u
 104.45.17.199
 104.45.28.230
-[...]]
+[...]
 ```
 
 Disater recovery:
@@ -66,7 +66,7 @@ Disater recovery:
 $ for i in {1..4}; do dig +short callback-dr-$i.vipps.no; done | sort -u
 13.79.229.87
 13.79.231.118
-[...]]
+[...]
 ```
 
 Test:
@@ -74,5 +74,5 @@ Test:
 $ for i in {1..2}; do dig +short callback-mt-$i.vipps.no; done | sort -u
 104.40.249.200
 104.40.250.173
-[...]]
+[...]
 ```
