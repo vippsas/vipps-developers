@@ -61,7 +61,7 @@ $ for i in {1..4}; do dig +short callback-$i.vipps.no; done | sort -u
 [...]
 ```
 
-Disater recovery:
+Disaster recovery:
 ```
 $ for i in {1..4}; do dig +short callback-dr-$i.vipps.no; done | sort -u
 13.79.229.87
