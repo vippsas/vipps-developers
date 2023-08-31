@@ -19,14 +19,14 @@ Please note that ePayment encompasses various use case scenarios. Therefore, if 
 
 | Operation                | MobilePay App Payments                   | ePayment                                                                                                        |
 | ------------------------ | ---------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| Initiate Payment         | `POST:/v1/payments`                     | [`POST:/epayments/v1/payments`](/api/epayment#tag/CreatePayment/operation/createPayment)                        |
-| Fetch Single Payment     | `GET:/v1/payments/{paymentid}`          | [`GET:/epayments/v1/payments/{reference}`](/api/epayment#tag/QueryPayments/operation/getPayment)                |
-| Fetch a list of payments | `GET /v1/payments`                      | N/A                                                                                                             |
+| Initiate Payment         | `POST:/v1/payments`                      | [`POST:/epayments/v1/payments`](/api/epayment#tag/CreatePayment/operation/createPayment)                        |
+| Fetch Single Payment     | `GET:/v1/payments/{paymentid}`           | [`GET:/epayments/v1/payments/{reference}`](/api/epayment#tag/QueryPayments/operation/getPayment)                |
+| Fetch a list of payments | `GET /v1/payments`                       | N/A                                                                                                             |
 | Query payment log        | N/A                                      | [`GET:/epayments/v1/payments/{reference}/events`](/api/epayment#tag/QueryPayments/operation/getPaymentEventLog) |
-| Capture Payment          | `POST:/v1/payments/{paymentid}/capture` | [`POST:/epayments/v1/payments/{reference}/capture`](/api/epayment#tag/AdjustPayments/operation/capturePayment)  |
-| Cancel Payment           | `POST:/v1/payments/{paymentid}/cancel`  | [`POST:/epayments/v1/payments/{reference}/cancel`](/api/epayment#tag/AdjustPayments/operation/cancelPayment)    |
+| Capture Payment          | `POST:/v1/payments/{paymentid}/capture`  | [`POST:/epayments/v1/payments/{reference}/capture`](/api/epayment#tag/AdjustPayments/operation/capturePayment)  |
+| Cancel Payment           | `POST:/v1/payments/{paymentid}/cancel`   | [`POST:/epayments/v1/payments/{reference}/cancel`](/api/epayment#tag/AdjustPayments/operation/cancelPayment)    |
 | Issue new refund         | `POST:/v1/refunds`                       | [`POST:/epayments/v1/payments/{reference}/refund`](/api/epayment#tag/AdjustPayments/operation/refundPayment)    |
-| fetch a list of refunds  | `GET:/v1/refunds`                        | [`GET:/epayments/v1/payments/{reference}`](/api/epayment#tag/QueryPayments/operation/getPayment)                |
+| fetch a list of refunds  | `GET:/v1/refunds`                        | N/A                                                                                                             |
 | fetch single refund      | `GET:/v1/refunds/{refundid}`             | [`GET:/epayments/v1/payments/{reference}`](/api/epayment#tag/QueryPayments/operation/getPayment)                |
 
 ## Authentication and headers
@@ -37,7 +37,7 @@ See:
 
 | MobilePay App Payments        | ePayment                                                                                                                            |
 | ----------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| `apiKey or openId`           | `Authorization` ([`POST:/accesstoken/get`](/api/access-token#tag/Authorization-Service/operation/fetchAuthorizationTokenUsingPost)) |
+| `apiKey or openId`            | `Authorization` ([`POST:/accesstoken/get`](/api/access-token#tag/Authorization-Service/operation/fetchAuthorizationTokenUsingPost)) |
 | N/A                           | `Vipps-System-Version` (see [HTTP headers](/docs/common-topics/http-headers/))                                                      |
 | N/A                           | `Vipps-System-Name` (see [HTTP headers](/docs/common-topics/http-headers/))                                                         |
 | N/A                           | `Vipps-System-Plugin-Name` (see [HTTP headers](/docs/common-topics/http-headers/))                                                  |
@@ -58,15 +58,13 @@ See:
 | `idempotencyKey`                                          | `Idempotency-Key`                                                     |
 | `reference`                                               | [`paymentDescription`](/docs/common-topics/transactiontext/)          |
 | `paymentPointId`                                          | `Merchant-Serial-Number`                                              |
-| `redirectUri`                                             | N/A                                                                   |
-| `description`                                            | `paymentDescription`                                                  |
-| `customerPhoneNumber` (Used for dual device flows on web) | `customer`                                                            |
-| N/A                                                       | `customer` (`phoneNumber`)                                            |
-| N/A                                                       | `customerInteraction` (`"CUSTOMER_PRESENT"`)                          |
+| `redirectUri`                                             | `returnUrl`                                                           |
+| `description`                                             | `paymentDescription`                                                  |
+| `customerPhoneNumber` (Used for dual device flows on web) | `customer`  (`phoneNumber`)                                           |
+| N/A                                                       | `customerInteraction` (`"CUSTOMER_NOT_PRESENT"`)                      |
 | N/A                                                       | `paymentMethod` (`type` `"WALLET"`)                                   |
 | N/A                                                       | [`reference`](/docs/common-topics/orderid)                            |
-| N/A                                                       | `userFlow` (`"PUSH_MESSAGE"` `"QR"`)                                  |
-| N/A                                                       | `qrFormat` (`format`, `size`)                                         |
+| N/A                                                       | `userFlow` (`"NATIVE_REDIRECT"` `"WEB_REDIRECT"`)                     |
 |                                                           |                                                                       |
 | **Response**                                              |                                                                       |
 | `paymentId`                                               | [`reference`](/docs/common-topics/orderid) (set in paymentInitiation) |
@@ -91,8 +89,6 @@ See:
 | N/A                    | `paymentMethod` (`type`)                                                                                |
 | N/A                    | `profile` (`sub`) (see [What is the `sub`?](/docs/APIs/userinfo-api/userinfo-api-faq/#what-is-the-sub)) |
 | N/A                    | `pspReference`                                                                                          |
-
-_N/A: `posId`, `restrictions` (`debitCardDisallowed`, `creditCardDisallowed`), `merchantPaymentLabel`, `plannedCaptureDelay`, `customerToken`, `customerReceiptToken`, `paymentExpiresAt`, `partialCapturePossible`, `pollDelayInMs`_
 
 ## Capture, Cancel and Refund Payment
 
