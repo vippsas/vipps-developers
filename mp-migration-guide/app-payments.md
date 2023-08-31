@@ -19,12 +19,12 @@ Please note that ePayment encompasses various use case scenarios. Therefore, if 
 
 | Operation                | MobilePay App Payments                   | ePayment                                                                                                        |
 | ------------------------ | ---------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| Initiate Payment         | `POST:/v10/payments`                     | [`POST:/epayments/v1/payments`](/api/epayment#tag/CreatePayment/operation/createPayment)                        |
-| Fetch Single Payment     | `GET:/v10/payments/{paymentid}`          | [`GET:/epayments/v1/payments/{reference}`](/api/epayment#tag/QueryPayments/operation/getPayment)                |
-| Fetch a list of payments | `GET /v10/payments`                      | N/A                                                                                                             |
+| Initiate Payment         | `POST:/v1/payments`                     | [`POST:/epayments/v1/payments`](/api/epayment#tag/CreatePayment/operation/createPayment)                        |
+| Fetch Single Payment     | `GET:/v1/payments/{paymentid}`          | [`GET:/epayments/v1/payments/{reference}`](/api/epayment#tag/QueryPayments/operation/getPayment)                |
+| Fetch a list of payments | `GET /v1/payments`                      | N/A                                                                                                             |
 | Query payment log        | N/A                                      | [`GET:/epayments/v1/payments/{reference}/events`](/api/epayment#tag/QueryPayments/operation/getPaymentEventLog) |
-| Capture Payment          | `POST:/ v1/payments/{paymentid}/capture` | [`POST:/epayments/v1/payments/{reference}/capture`](/api/epayment#tag/AdjustPayments/operation/capturePayment)  |
-| Cancel Payment           | `POST:/ v1/payments/{paymentid}/cancel`  | [`POST:/epayments/v1/payments/{reference}/cancel`](/api/epayment#tag/AdjustPayments/operation/cancelPayment)    |
+| Capture Payment          | `POST:/v1/payments/{paymentid}/capture` | [`POST:/epayments/v1/payments/{reference}/capture`](/api/epayment#tag/AdjustPayments/operation/capturePayment)  |
+| Cancel Payment           | `POST:/v1/payments/{paymentid}/cancel`  | [`POST:/epayments/v1/payments/{reference}/cancel`](/api/epayment#tag/AdjustPayments/operation/cancelPayment)    |
 | Issue new refund         | `POST:/v1/refunds`                       | [`POST:/epayments/v1/payments/{reference}/refund`](/api/epayment#tag/AdjustPayments/operation/refundPayment)    |
 | fetch a list of refunds  | `GET:/v1/refunds`                        | [`GET:/epayments/v1/payments/{reference}`](/api/epayment#tag/QueryPayments/operation/getPayment)                |
 | fetch single refund      | `GET:/v1/refunds/{refundid}`             | [`GET:/epayments/v1/payments/{reference}`](/api/epayment#tag/QueryPayments/operation/getPayment)                |
