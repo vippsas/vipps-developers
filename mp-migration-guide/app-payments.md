@@ -107,8 +107,7 @@ See:
 | N/A                                     | `aggregate` (`authorizedAmount`, `cancelledAmount`, `capturedAmount`, `refundedAmount`) |
 | `refundId` _only applicable for refund_ | N/A                                                                                     |
 | N/A                                     | `pspReference`                                                                          |
-
-| N/A | [`reference`](/docs/common-topics/orderid) |
+| N/A                                     | [`reference`](/docs/common-topics/orderid)                                              |
 
 ## Test environment
 
