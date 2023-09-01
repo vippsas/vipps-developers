@@ -11,9 +11,7 @@ import MT from './\_mt.md'
 # App Payments to ePayment
 
 Read more about the transition to one platform on the [MobilePay site](https://developer.mobilepay.dk/docs/invoice/transition-to-one-platform).
-Below, you can find comparison between the existing MobilePay App Payments API and the new [ePayment API](/docs/APIs/epayment-api) replacing MobilePay Invoice.
-
-Please note that ePayment encompasses various use case scenarios. Therefore, if you are seeking use cases that target existing MobilePay merchants and can be utilized for migration purposes, some examples include:
+Below, you can find comparison between the existing MobilePay App Payments API and the new [ePayment API](/docs/APIs/epayment-api) replacing MobilePay App Payments.
 
 ## App Payments and ePayment endpoints
 
