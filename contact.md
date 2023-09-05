@@ -94,13 +94,11 @@ to the email, you are sending.
 
 All updates to the issue will be sent to every recipient of the previous email.
 
-### Automatic reply
+### Case number
 
-You will get an auto-reply from us with an issue number like `VSD-123456` in
-the `Subject` line. This is the unique number for this specific issue and is
+When you send us an email we will create a case and assign a case number. For instance `Case 123456` in
+the `Subject` line. This is the unique number for the specific case and is
 used to connect all communication about this issue in our systems.
-
-The auto-reply is sent from a real e-mail address, which you can reply to.
 
 ### Adding additional information
 
