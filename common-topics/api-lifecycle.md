@@ -13,7 +13,7 @@ pagination_prev: null
 
 ## Versioning
 
-Our APIs uses [Semantic Versioning](https://semver.org), which states:
+Our APIs use [Semantic Versioning](https://semver.org), which states:
 
 > Given a version number MAJOR.MINOR.PATCH, increment the:
 >
@@ -27,7 +27,7 @@ We version API endpoints in the URIs:
 `GET:/someapi/v1/some/more/path` and `GET:/someapi/v2/some/more/path`.
 
 There are other ways to manage versions, and many (strong) opinions about them,
-and we has chosen the above.
+and we have chosen the above.
 
 ## Lifecycle
 
