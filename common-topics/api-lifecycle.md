@@ -68,10 +68,10 @@ We will send information to
 as soon as there is a decision to deprecate an API.
 We strongly recommend subscribing to the newsletter.
 
-#### Key accounts
+#### Partners and key accounts
 
-Customers with a key account manager (KAM) will, in addition to the above,
-be contacted personally by the KAM.
+Partners and customers with a key account manager (KAM) will, in addition to the above,
+be contacted personally by the partner manager or KAM.
 
 #### Email
 
