@@ -238,8 +238,8 @@ Version 3.0.0:
   }
 ```  
 
-If the ISO 3166 country code was *added* as `countryCode`, it would be a
-non-breaking change, and only a minor version:
+If the ISO 3166 country code was *added* as `countryCode` in addition to the existing `country`,
+it would be a non-breaking change, and only a minor version:
 
 Version 2.1.0:
 
