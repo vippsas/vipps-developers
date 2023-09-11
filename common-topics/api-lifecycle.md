@@ -13,7 +13,7 @@ pagination_prev: null
 
 ## Versioning
 
-Vipps APIs uses [Semantic Versioning](https://semver.org), which states:
+Our APIs uses [Semantic Versioning](https://semver.org), which states:
 
 > Given a version number MAJOR.MINOR.PATCH, increment the:
 >
@@ -23,11 +23,11 @@ Vipps APIs uses [Semantic Versioning](https://semver.org), which states:
 
 ### Version number in the endpoint URIs
 
-Vipps versions API endpoints in the URIs:
+We version API endpoints in the URIs:
 `GET:/someapi/v1/some/more/path` and `GET:/someapi/v2/some/more/path`.
 
 There are other ways to manage versions, and many (strong) opinions about them,
-and Vipps has chosen the above.
+and we has chosen the above.
 
 ## Lifecycle
 
@@ -53,67 +53,55 @@ small bug, so the API works as intended and documented in the first place.
 
 ## Notice of deprecation
 
-Vipps will inform about upcoming deprecation of an API as early as possible.
+We will inform about upcoming deprecation of an API as early as possible.
 
-The minimum time from Vipps informs about an API's deprecation until the actual
-deprecation is specified in the contract. This is usually four (4) months, and
-we will soon change this to six (6) months as standard, in new contracts.
+The minimum time from we inform about an API's deprecation until the actual
+deprecation is specified in the contract. This is usually four (4) months.
+See your contract for more details.
 
-### How Vipps will inform
-
-#### Email
-
-Vipps will email the technical contact registered for each customer.
-If the customer does not have a registered technical contact,
-Vipps will inform the main contact.
+### How we will inform
 
 #### Mailing list
 
-Vipps will send information to
+We will send information to
 [the technical newsletter for developers](https://developer.vippsmobilepay.com/docs/newsletters)
 as soon as there is a decision to deprecate an API.
+We strongly recommend subscribing to the newsletter.
 
 #### Key accounts
 
 Customers with a key account manager (KAM) will, in addition to the above,
 be contacted personally by the KAM.
 
-#### Make sure Vipps has the correct contact information
+#### Email
 
-It is the customer's responsibility to make sure Vipps has the correct
-contact information. See the
-[Vipps contact information](https://www.vipps.no/kontakt-oss/).
+We will _attempt_ to send email to the technical contact registered for each customer.
+If the customer does not have a registered technical contact, we will inform the main contact.
 
-### Vipps APIs
+#### Make sure we have the correct contact information
 
-The Vipps API version is included in the path: `v1`, `v2`, etc.
+It is the customer's responsibility to make sure we have the correct
+contact information. See:
+[Contact us](https://developer.vippsmobilepay.com/docs/contact/).
+
+### APIs
+
+The API version is included in the path: `v1`, `v2`, etc.
 Only the major version is specified.
 
-### Vipps API documentation
+### API documentation
 
-The Vipps API documentation is updated frequently, and we use the versioning
-like this:
-
-* Major version: A major change to the documentation, such as adding "recurring"
-  functionality to the Vipps eCom API.
-* Minor version: A new section, new flowcharts, or another significant change.
-* Patch version: Text changes, typos, small fixes.
+The API documentation is updated frequently, and we only version it according to
 
 See
 [Versioning](#versioning)
 for more details.
 
-### Legacy API products
-
-If you are still using a legacy API, you should upgrade as soon as possible.
-The best way to keep up to date of changes is to
-[star the API repository on GitHub](https://docs.github.com/en/get-started/exploring-projects-on-github/saving-repositories-with-stars).
-
 ## Backwards compatibility
 
-Vipps strives to improve existing APIs while also maintaining backwards compatibility.
+We strive to improve existing APIs while also maintaining backwards compatibility.
 
-Vipps considers the following changes to be backwards compatible:
+We consider the following changes to be backwards compatible:
 
 ### Adding an optional field to a request
 
@@ -130,7 +118,7 @@ the API will never offer less than before the optional parameter was added.
 
 #### Example
 
-Vipps may add a `msisdn` field to support international phone numbers,
+We may add a `msisdn` field to support international phone numbers,
 in addition to Norwegian-only phone numbers:
 
 Version 2.0.0:
@@ -145,7 +133,7 @@ Version 2.1.0:
 
 ```json
   "customerInfo": {
-    "mobileNumber": 91234567
+    "mobileNumber": 91234567,
     "msisdn": 4791234567
   }
 ```
@@ -162,7 +150,7 @@ but we want to explicitly mention this.
 
 #### Example of option field
 
-Vipps may add a `type` field to the `address` object:
+We may add a `type` field to the `address` object:
 
 Version 2.0.0:
 
