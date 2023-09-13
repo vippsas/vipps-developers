@@ -21,6 +21,7 @@ These are topics that are applicable across many APIs:
 * [isApp](isApp.md)
 * [Landing page](landing-page.md)
 * [orderid](orderid.md)
+* [Payment screen](payment-screen.md)
 * [Polling guidelines](polling-guidelines.md)
 * [Redirects](redirects.md)
 * [Refunds](refund.md)
