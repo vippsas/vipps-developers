@@ -32,7 +32,7 @@ We'll get back to this soon.
 
 ### User flow
 
-When a payment is initiated, the user is directed to a `url` which will either open.
+When a payment is initiated, the user is directed to a `url` which will either open
 the Vipps app or the landing page:
 
 * In a mobile browser, the Vipps app will automatically be opened with app-switch.
