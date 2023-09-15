@@ -20,7 +20,7 @@ No matter what, it is required to implement the new ePayments API for doing paym
 
 The next sections will contain the recommended approaches based on what capabilities the merchant has available at their checkouts.
 
-<b>Note: The developer documentation in Vipps MobilePay describes using webhooks instead of polling for payment statuses in the ePayments API. Polling however, is still possible and a valid way to follow the payment status just as it is today in MobilePay PoS. However it will not be possible to detect user checkins using polling.</b>
+<b>Note: The developer documentation in Vipps MobilePay describes using webhooks instead of polling for payment statuses in the ePayments API. Polling however, is still possible and a valid way to follow the payment status just as it is today in MobilePay PoS. However, it will not be possible to detect user check-in with polling.</b>
 
 ### Checkout has QR scanning capabilities
 This is our recommended flow. If the merchant has the possibility to scan a QR code at their checkouts, they can use the 'Merchant Scan' approach. Before the payment is initiated the merchant scans a QR on the customer phone which will contain the customer info needed to initiate the payment. The payment is then initiated with the ``userFlow`` parameter set to "PUSH_MESSAGE" together with the ``personalQr`` parameter set to the full content of the QR scanned. This solution removes the need for merchant QR codes as MobilePay PoS solutions uses today. More information on this payment flow can be found [here](https://developer.vippsmobilepay.com/docs/solutions/in-store/). 
@@ -34,7 +34,7 @@ In these scenarios the PoS merchants will have to use static QR codes as sticker
 The first option is where the QR code contains a link to a merchant website where the merchant will then ask for the customer info needed. This QR is referred to as a MerchantRedirect QR and you can read more about it by pressing [here](https://developer.vippsmobilepay.com/docs/solutions/vending-machines/qr-to-merchant-site-payment-only/).
 
 The second option is called MerchantCallback QRs and it resembles the way of using QRs in MobilePay PoS solutions today. When the QR is scanned by a customer, Vipps MobilePay will send a callback to an endpoint that is hosted by the merchant. The callback will contain a ``customerToken`` that is used to initiate the payment towards the customer. This is identical to the notification service solution offered for vending machines and similar unmanned checkouts in MobilePay PoS today.
-Polling for user checkins will not be an option as in MobilePay PoS today, and hence it is required to support callbacks.
+Polling for user check in will not be an option as in MobilePay PoS today, and hence it is required to support callbacks.
 You can find the documentation for this solution [here](https://developer.vippsmobilepay.com/docs/solutions/static-qr-at-pos/)
 
 <b>Note: It will be possible to migrate all the existing QRs to the new solution such that the merchants do not have to replace the QRs they already have. </b>
