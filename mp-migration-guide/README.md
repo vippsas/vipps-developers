@@ -9,7 +9,13 @@ pagination_prev: null
 
 # MobilePay migration guides
 
-On November 1st 2022 the merger between MobilePay and Norwegian Vipps was approved. We have now set full speed on the transition towards having one joint platform to become the best and most used payment wallet in the Nordics for you as customers and partners and for our users. In early 2024, the ambition is to have one app, branded locally as MobilePay in Denmark and Finland, and Vipps in Norway, and one platform with more than 11 million users and more than 400,000 merchants across the Nordics.
+On November 1st 2022, MobilePay and Norwegian Vipps became one company, *Vipps MobilePay*.
+
+We are working at full speed to transition towards one joint Vipps MobilePay platform.
+Our ambition is to become the best and most-used payment wallet in the Nordics for you, our customers, our partners, and our users!
+
+In early 2024, we will provide a joint platform with more than 11 million users and more than 400,000 merchants across the Nordics.
+We will provide one app, branded locally as *MobilePay* in Denmark and Finland, and as *Vipps* in Norway.
 
 Are you currently using the MobilePay APIs for your payment integration needs?
 
@@ -19,25 +25,25 @@ To ensure a smooth transition, we recommend using our migration guides, which wi
 
 ## MobilePay Invoice
 
-We will have to replace the current MobilePay Point of Sale API with new ePayment API on the joint platform by early 2024. This will *require a new integration*. Use the [Invoice to ePayment migration guide](invoice.md) to ease the transition.
+We must replace the current MobilePay Point of Sale API with new ePayment API on the joint platform by early 2024. This will *require a new integration*. Use the [Invoice to ePayment migration guide](invoice.md) to ease the transition.
 
 ## MobilePay Point of Sale
 
-We will have to replace the current MobilePay Point of Sale API with new ePayment API on the joint platform by early 2024. This will *require a new integration*. Use the [Point of Sale to ePayment migration guide](pos.md) to ease the transition.
+We must replace the current MobilePay Point of Sale API with new ePayment API on the joint platform by early 2024. This will *require a new integration*. Use the [Point of Sale to ePayment migration guide](pos.md) to ease the transition.
 
 ## MobilePay Subscriptions
 
-There is *no need to reintegrate* into the new solution. Your existing Subscriptions Payments integration will continue to work, but some functionality will be changing or closed starting from the moment we transition to One Platform.
+There is *no need to reintegrate* into the new solution. Your existing *Subscriptions Payments* integration will continue to work, but some functionality will be changing or closed starting from the moment we launch the joint platform.
 Please visit the [MobilePay developer documentation](https://developer.mobilepay.dk/docs/subscriptions/transition-to-one-platform) for details.
-After we have switched to one platform, you can transition to Vipps MobilePay Recurring API using the
+After we have switched to joint platform, you can transition to Vipps MobilePay Recurring API using the
 [Subscriptions to Recurring migration guide](subscriptions.md).
 
 ## MobilePay App Payments
 
-There is *no need to reintegrate* into the new solution. Your existing App Payments integration will continue to work, but some functionality will be changing or closed starting from the moment we transition to One Platform.
+There is *no need to reintegrate* into the new solution. Your existing *App Payments* integration will continue to work, but some functionality will be changing or closed starting from the moment we transition to the joint platform.
 Please visit the [MobilePay developer documentation](https://developer.mobilepay.dk/docs/app-payments/transition-to-one-platform) for details.
 
 ## MobilePay Online
 
-There is *no need to reintegrate* into the new solution. Your existing Online integration will continue to work, but some functionality will be changing or closed starting from the moment we transition to One Platform.
+There is *no need to reintegrate* into the new solution. Your existing *Online* integration will continue to work, but some functionality will be changing or closed starting from the moment we transition to the joint platform.
 Please visit the [MobilePay developer documentation](https://developer.mobilepay.dk/docs/online/transition-to-one-platform) for details.
