@@ -17,9 +17,9 @@ Our APIs use [Semantic Versioning](https://semver.org), which states:
 
 > Given a version number MAJOR.MINOR.PATCH, increment the:
 >
-> - MAJOR version when you make incompatible API changes
-> - MINOR version when you add functionality in a backwards compatible manner
-> - PATCH version when you make backwards compatible bug fixes
+> * MAJOR version when you make incompatible API changes
+> * MINOR version when you add functionality in a backwards compatible manner
+> * PATCH version when you make backwards compatible bug fixes
 
 ### Version number in the endpoint URIs
 
@@ -53,9 +53,9 @@ small bug, so the API works as intended and documented in the first place.
 
 ## Notice of deprecation
 
-We will inform about upcoming deprecation of an API as early as possible.
+We will inform about the upcoming deprecation of an API as early as possible.
 
-The minimum time from we inform about an API's deprecation until the actual
+The minimum time from when we inform about an API's deprecation until the actual
 deprecation is specified in the contract. This is usually four (4) months.
 See your contract for more details.
 
@@ -63,26 +63,27 @@ See your contract for more details.
 
 #### Mailing list
 
-We will send information to
-[the technical newsletter for developers](https://developer.vippsmobilepay.com/docs/newsletters)
+We will send information in the
+[technical newsletter for developers](https://developer.vippsmobilepay.com/docs/newsletters)
 as soon as there is a decision to deprecate an API.
 We strongly recommend subscribing to the newsletter.
 
 #### Partners and key accounts
 
-Partners and customers with a key account manager (KAM) will, in addition to the above,
+Partners and customers with a Key Account Manager (KAM) will, in addition to the above,
 be contacted personally by the partner manager or KAM.
 
 #### Email
 
-We will _attempt_ to send email to the technical contact registered for each customer.
-If the customer does not have a registered technical contact, we will inform the main contact.
+We will *attempt* to send email to the technical contact registered for each customer.
+If the customer doesn't have a registered technical contact, we'll inform the main contact.
 
 #### Make sure we have the correct contact information
 
-It is the customer's responsibility to make sure we have the correct
-contact information. See:
-[Contact us](https://developer.vippsmobilepay.com/docs/contact/).
+It's your responsibility to make sure we have the correct
+contact information. See the
+[contact](https://developer.vippsmobilepay.com/docs/contact/) page
+for details about how to contact us.
 
 ### APIs
 
@@ -92,16 +93,21 @@ Only the major version is specified.
 ### API documentation
 
 The API documentation is updated frequently, and we only version it according to
-
-See
-[Versioning](#versioning)
-for more details.
+the mentioned [versioning standards](#versioning).
 
 ## Backwards compatibility
 
 We strive to improve existing APIs while also maintaining backwards compatibility.
 
 We consider the following changes to be backwards compatible:
+
+* [Adding an optional field to a request](#adding-an-optional-field-to-a-request)
+* [Adding an optional field to a response](#adding-an-optional-field-to-a-response)
+* [Adding a new enum value](#adding-a-new-enum-value)
+* [Relaxing some constraints on an existing request parameter](#relaxing-some-constraints-on-an-existing-request-parameter)
+* [Adding a new response parameter to the API response](#adding-a-new-response-parameter-to-the-api-response)
+* [Changing the order in which parameters are returned in existing API responses](#changing-the-order-in-which-parameters-are-returned-in-existing-api-responses)
+* [Correcting faulty functionality in edge cases](#correcting-faulty-functionality-in-edge-cases)
 
 ### Adding an optional field to a request
 
@@ -207,8 +213,14 @@ backwards compatible change to correct it.
 Changes that are incompatible with previous versions of an API requires
 a new major version. This means a bump from `2.3.4` to `3.0.0`.
 
-The API endpoints will also get a new version parameter in the path:
+The API endpoints will also get a new version parameter in the path, for example:
 from `v2` to `v3`.
+
+Breaking changes include:
+
+* [Changing the properties of an object](#changing-the-properties-of-an-object)
+* [Adding a new required parameter](#adding-a-new-required-parameter)
+* [Changing an endpoints URL](#changing-an-endpoints-url)
 
 ### Changing the properties of an object
 
