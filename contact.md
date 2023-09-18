@@ -44,7 +44,7 @@ For *technical* issues related to using our APIs, please see the sections below.
 
 ## Technical questions
 
-Most information can be found in our searchable [technical documentation](https://developer.vippsmobilepay.com/search).
+Most information can be found in the searchable [technical documentation](https://developer.vippsmobilepay.com/search).
 
 You can also check the
 [Frequently Asked Questions (FAQ)](https://developer.vippsmobilepay.com/docs/faqs).
@@ -58,30 +58,29 @@ and include all the following information:
 
 1. **A *detailed* description of the problem with a step-by-step description of what you do and what happens.**
 2. A concise, self-explanatory `Subject` line, such as "`POST:/something` gives `HTTP 400` response".
-3. Company details: Organization number (find yours at [Brønnøysundregistrene](https://brreg.no))
+3. Company details: Organization number (find yours at [Brønnøysundregistrene](https://brreg.no)).
 4. Merchant Serial Number (MSN), found on [portal.vipps.no](https://portal.vipps.no).
    See the
-   [Vipps portal](https://developer.vippsmobilepay.com/docs/developer-resources/portal).
-5. Which
-   [Vipps product](https://www.vipps.no/produkter-og-tjenester/bedrift/)
+   [portal](https://developer.vippsmobilepay.com/docs/developer-resources/portal) documentation for a description of how to find your MSN and your other API keys.
+5. The name of the Vipps MobilePay
+   [product](https://www.vipps.no/produkter-og-tjenester/bedrift/)
    or
-   [Vipps API](https://developer.vippsmobilepay.com/docs/APIs)
-   is this about?
+   [API](https://developer.vippsmobilepay.com/docs/APIs) that you're having a problem with.
 6. Environment: Is it a problem in the Test (MT) or the Production environment?
-7. Include `orderId`, and preferably also `transactionId` and `contextId`, to make it possible to search in logs.
+7. Include `orderId`, and preferably also `transactionId` and `contextId`. This makes it possible to find your API request in our logs.
 8. Date: On which date(s) did the problem occur?
-9. For API issues: We need a complete `request` and `response`.
+9. For API issues, include a complete `request` and `response`.
    Plain HTTP from Postman ensures the quickest response.
    No source code, please.
    **Important:** Remove everything except the last four characters from
    `client_secret` and `Ocp-Apim-Subscription-Key`.
-10. Please provide screenshots, if possible.
-11. Please provide your contact information (if not in your email signature): Name and phone number
-12. Please include any other information that may be relevant or possibly helpful.
+10. Screenshots, if possible.
+11. Contact information, including name and phone number.
+12. Other relevant or helpful information.
 
-**Important:** To ensure a faster response, be sure to provide all the above information.
+**Important:** For the fastest resolution, provide *all* the above information.
 
-### Keep your colleagues up to date
+### Keeping your colleagues up to date
 
 To include your colleagues in all the communication for this issue,
 add them in the `To:` or `CC:` field of the email.
@@ -102,8 +101,11 @@ used to connect all communication about this issue in our systems.
 If you want to send additional information about the same issue,
 please reply to the email, without changing the `Subject` line.
 
-Please remove previous communication when replying to an email, do *not* quote
-all the previous messages - we already have them.
+Please remove previous communication when replying to an email.
+It is also not necessary to quote the previous messages,
+because we can see them in the case.
+
+For a new problem, please send a separate email.
 
 ### Response time
 
@@ -116,25 +118,25 @@ varying complexity of resolving them, we cannot guarantee response times.
 ### Escalation
 
 If you have a Key Account Manager (KAM), please contact them.
-If you do not, please reply to the issue and add all relevant information.
+If you do not have a KAM, please reply to the issue and add all relevant information.
 
-### More than one problem, or a new one?
+### Reporting multiple problems
 
 For the fastest response, please send separate emails for each problem.
 
-Including details about new problems into old cases may result in delays.
+It may result in a delay to add details about new problems into an old case.
 If you reply to an old issue that has been closed, we will not see the message.
 
-## Can I call you?
+### Contact by phone or slack?
 
-We do not have the capacity to help individually by phone.
-We require that all the above information is provided in written form.
+Unfortunately, we don't have the capacity to answer by phone.
+Please send all the above information by email,
+and we will respond as quickly as we can.
 
 For partners at [Partner Plus](https://developer.vippsmobilepay.com/docs/partner/partner-level-up/)
-level or above,
-we may set up a Slack channel to assist with communication.
+level or above, it may be possible to set up a Slack channel to assist with communication.
 
-## Newsletter
+### Technical newsletter
 
 Sign up for our [Technical newsletter for developers](./newsletters/README.md) for occasional updates relating to the API platform
 or other technical tools.
