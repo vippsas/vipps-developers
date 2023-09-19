@@ -5,9 +5,9 @@ pagination_next: null
 pagination_prev: null
 ---
 
-# Vipps XML reports
+# XML reports
 
-This repository contains schemas and example files for Vipps XML settlement reports.
+Here are schemas and example files for XML settlement reports.
 
 Both [the current settlement report schema v3.0](/downloads/settlements/xml/SettlementReport-3.0.xsd) and the [old v2.0 version](/downloads/settlements/xml/SettlementReport-2.0.xsd) are available.
 
@@ -16,7 +16,7 @@ Example files are available for:
 * [Gross settlements](/downloads/settlements/xml/Example-Gross.xml)
 * [Net settlements](/downloads/settlements/xml/Example-Gross.xml)
 
-## Changes to the Vipps settlement report XML schema from v2.0 to v3.0
+## Changes to the settlement report XML schema from v2.0 to v3.0
 
 **NB!** New settlements will contain a mix of captures and refunds.
 To make the numbers unambiguous we have introduced new fields

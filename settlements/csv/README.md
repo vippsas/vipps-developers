@@ -5,7 +5,7 @@ pagination_next: null
 pagination_prev: null
 ---
 
-# Vipps settlements: CSV
+# Settlements: CSV
 
 The following is an example of a CSV settlement file:
 

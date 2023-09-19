@@ -5,10 +5,10 @@ pagination_next: null
 pagination_prev: null
 ---
 
-# Vipps settlements: OCR
+# Settlements: OCR
 
-OCR files are no longer provided by Vipps.
+OCR files are no longer provided.
 Invoice payments are made directly from the user to the merchant, so settlement files
-are provided by the bank, not Vipps.
+are provided by the bank, not Vipps MobilePay.
 
-Documentation for the legacy invoice solution: [Vipps Faktura](/downloads/settlements/ocr/vipps-invoice-api-vipps-faktura.pdf).
+Documentation for the legacy invoice solution: [Faktura](/downloads/settlements/ocr/vipps-invoice-api-vipps-faktura.pdf).
