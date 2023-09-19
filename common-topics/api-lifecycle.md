@@ -31,6 +31,8 @@ and we have chosen the above.
 
 ## Lifecycle
 
+The API can change over time. Please keep your applications updated with the latest versions for the optimal behavior.
+
 ### Major version
 
 A major version is officially supported until the date when is becomes deprecated.
@@ -42,29 +44,28 @@ deprecation process.
 A minor version is automatically superseded by a newer minor version.
 If a customer uses version `2.1.0`, that version is automatically
 superseded when version `2.2.0` is available.
-
 There will be no bug fixes or other improvements to a minor version that
 has been superseded.
+
+We expect you to update to the latest minor version within 30 days.
 
 ### Patch version
 
 A patch version fixes one or more small problems, such as correcting a
 small bug, so the API works as intended and documented in the first place.
 
+We expect you to update to the latest patch within 30 days.
+
 ## Notice of deprecation
 
-We will inform about the upcoming deprecation of an API as early as possible.
-
-The minimum time from when we inform about an API's deprecation until the actual
-deprecation is specified in the contract. This is usually four (4) months.
-See your contract for more details.
+Vipps MobilePay will inform of deprecation with a minimum of four (4) months.
 
 ### How we will inform
 
 #### Mailing list
 
 We will send information in the
-[technical newsletter for developers](https://developer.vippsmobilepay.com/docs/newsletters)
+[technical newsletter](https://developer.vippsmobilepay.com/docs/newsletters)
 as soon as there is a decision to deprecate an API.
 We strongly recommend subscribing to the newsletter.
 
