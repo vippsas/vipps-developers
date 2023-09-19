@@ -46,13 +46,13 @@ More information about SFTP and the underlying technology:
 
 ### Security
 
-For the Vipps MobilePay SFTP service, the public SSH key must be added by logging in with BankID on the
-[Merchant portal](https://portal.vipps.no).
+For the Vipps MobilePay SFTP service, the public SSH key must be added by logging in with BankID on
+[portal.vipps.no](https://portal.vipps.no).
 We don't sign the reports in any way.
 
 ### SFTP users
 
-All merchants can set up SFTP on the [Merchant portal](https://portal.vipps.no).
+All merchants can set up SFTP on [portal.vipps.no](https://portal.vipps.no).
 A public SSH key must be provided.
 
 SFTP users are created, associated with a public SSH key, and given access to
@@ -91,8 +91,8 @@ ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOu1WvDcTWwZumZZwTvfqUKMA4ouG3mniNsvpNWorm5m
 
 ### Add the SSH key on the Merchant portal
 
-1. Log in with BankID to the
-   [Merchant portal](https://portal.vipps.no)
+1. Log in with BankID to
+   [portal.vipps.no](https://portal.vipps.no)
    and select the *Utvikler* menu item.
    If you only have *Vippsnummer*, you will find a link to SFTP setup under
    *Rapporter og tall* (i.e., *Reports and numbers*).
@@ -100,7 +100,7 @@ ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOu1WvDcTWwZumZZwTvfqUKMA4ouG3mniNsvpNWorm5m
 3. Add the public key(s) for the user(s) to give access.
    After this, you should see the newly created user.
 
-This is what it looks like on the [Merchant portal](https://portal.vipps.no):
+This is what it looks like on [portal.vipps.no](https://portal.vipps.no):
 
 ![User setup](images/02_bruker_opprettet.png "User setup")
 
@@ -132,7 +132,7 @@ one or more of them independently.
 This is the recommended way:
 
 1. The partner provides a public SSH key to the merchant.
-2. The merchant adds the SSH key on the [Merchant portal](https://portal.vipps.no)
+2. The merchant adds the SSH key on [portal.vipps.no](https://portal.vipps.no)
 3. The partner retrieves the settlement reports with SFTP
 
 **Please note:** This public SSH key does not have to be secret.

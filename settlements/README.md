@@ -7,11 +7,6 @@ pagination_prev: null
 
 # Settlements
 
-<!-- START_COMMENT -->
-ℹ️ Please use the website:
-[Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/docs/settlements/).
-<!-- END_COMMENT -->
-
 ## Settlement flow
 
 Settlements are done as quickly as possible and are dependent on banks.
@@ -23,10 +18,7 @@ The settlement flow is as follows:
    Then, the merchant captures the money and the customer's account is charged.
 
    Note: *Day 1* is normally the day that the product is shipped and the customer's account is charged.
-2. Day 2: Settlement files are available
-   ([email](#email),
-   [Merchant portal](#merchant-portal),
-   [SFTP](#sftp)).
+2. Day 2: Settlement files are available (see [How to get settlement files](#how-to-get-settlement-files)).
 3. Day 3: Payments are made from the Vipps MobilePay bank account to the merchant's bank
    account. Money is *normally* available in the account before noon.
 
@@ -137,15 +129,17 @@ See the FAQ:
 
 ### Merchant portal
 
-Customers can log in to the [Merchant portal](https://portal.vipps.no), choose *Rapporter* (i.e., *Reports*), and download reports in the formats mentioned above.
+Customers can log in to
+[portal.vipps.no](https://portal.vipps.no),
+choose *Rapporter* (i.e., *Reports*), and download reports in the formats mentioned above.
 
 Reports with personal details of the customers are also available.
 See [GDPR](#gdpr).
 
 ### Email
 
-Merchants can log in to the
-[Merchant portal](https://portal.vipps.no)
+Merchants can log in to
+[portal.vipps.no](https://portal.vipps.no)
 and specify email addresses that we will send settlement reports to.
 
 Reports with personal details of the customers cannot be sent by email.
