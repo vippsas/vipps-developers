@@ -7,8 +7,8 @@ pagination_prev: null
 # Landing page
 
 The landing page enables you to log in or authorize a payment from your desktop computer.
-It's a webpage that opens when you select to pay or log in with Vipps or MobilePay.
-From the landing page, enter your phone number and then go to your Vipps or MobilePay app
+It's a webpage that opens when you select to pay or log in with Vipps MobilePay.
+From the landing page, enter your phone number and then go to your Vipps MobilePay app
 to authorize the operation.
 If you initiated this operation from another website, you should see the status updated there.
 
