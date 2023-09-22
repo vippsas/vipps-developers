@@ -268,8 +268,9 @@ with a card that has been invalidated in any way by the issuer, and all users
 has to log into Vipps with their BankID verified identity to use their card.
 
 See:
-* [Benefits of direct integration](https://developer.vippsmobilepay.com/docs/common-topics/direct-vs-psp/#benefits-of-direct-integration)
-* [Extremely high success rate of direct integrations](https://developer.vippsmobilepay.com/docs/common-topics/direct-vs-psp/#extremely-high-success-rate-of-direct-integrations)
+
+* [Benefits of direct integration](../common-topics/direct-vs-psp/#benefits-of-direct-integration)
+* [Extremely high success rate of direct integrations](../common-topics/direct-vs-psp/#extremely-high-success-rate-of-direct-integrations)
 
 ## Card payments
 
@@ -280,7 +281,7 @@ and the
 support freestanding card payments:
 Users can enter their card details and pay with the card without using the app.
 This means that payments are possible also for users in countries where
-Vipps and MobilePay are not yet available.
+Vipps MobilePay is not yet available.
 
 Both Visa and Mastercard are supported.
 This includes any cards that are co-branded with VISA and Mastercard.
