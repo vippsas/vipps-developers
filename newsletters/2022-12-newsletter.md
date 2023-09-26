@@ -12,14 +12,14 @@ This newsletter was sent in December 2022.
 
 ## Checkout API v3
 
-The [Vipps Checkout API v3](https://developer.vippsmobilepay.com/docs/APIs/checkout-api) is available. Checkout v3 improves upon v2 through alignment of polling and callback responses, improvement of field names and expanding models related to logistics options to permit more advanced features.
+The [Checkout API v3](https://developer.vippsmobilepay.com/docs/APIs/checkout-api) is available. Checkout v3 improves upon v2 through alignment of polling and callback responses, improvement of field names and expanding models related to logistics options to permit more advanced features.
 
 For more information, check out our [migration guide](https://developer.vippsmobilepay.com/docs/APIs/checkout-api/vipps-checkout-api-migration-v3)
 
 ## Recurring API v3
 
 The
-[Vipps Recurring API v3](https://developer.vippsmobilepay.com/docs/APIs/recurring-api)
+[Recurring API v3](https://developer.vippsmobilepay.com/docs/APIs/recurring-api)
 is available. This version includes new and improved functionality for campaigns
 (for example "10 weeks for 10 NOK" or "1 NOK until Christmas"),
 the possibility to reserve and capture (or partially capture) a charge
@@ -57,7 +57,7 @@ We aim to have the API guide, etc. ready in early January.
 The new
 [Solutions](https://developer.vippsmobilepay.com/docs/solutions)
 section of our developer documentation describes best practice for
-combining Vipps APIs for specific use cases, like:
+combining APIs for specific use cases, like:
 
 * Loyalty at the point of sale (POS)
 * Electric vehicle charging

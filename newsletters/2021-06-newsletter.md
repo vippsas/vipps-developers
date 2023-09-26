@@ -24,14 +24,14 @@ discounts, freebies, connect them to your own loyalty program.
 More information:
 
 * [Vipps Logg inn: Product information](https://vipps.no/produkter-og-tjenester/bedrift/logg-inn-med-vipps/logg-inn-med-vipps/)
-* [Vipps Login API](https://developer.vippsmobilepay.com/docs/APIs/login-api)
-* [Userinfo for the Vipps eCom API](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#userinfo)
-* [Userinfo for the Vipps Recurring API](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/vipps-recurring-api#userinfo)
+* [Login API](https://developer.vippsmobilepay.com/docs/APIs/login-api)
+* [Userinfo for the eCom API](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#userinfo)
+* [Userinfo for the Recurring API](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/vipps-recurring-api#userinfo)
 
 **Please note:** When a user pays with a debit or credit card using Vipps,
 all the benefits apply, just as when the payment card is used outside Vipps.
 
-## API Dashboard for Vipps Login API
+## API Dashboard for Login API
 
 The API Dashboard now also shows data for the Login API.
 See it on

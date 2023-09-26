@@ -11,7 +11,7 @@ import TabItem from '@theme/TabItem';
 
 # Payment screen
 
-The following is the payment screen in the Vipps MobilePay app.
+The following is the payment screen in the Vipps or MobilePay app.
 
 <Tabs
 defaultValue="vipps"
@@ -22,7 +22,7 @@ values={[
 ]}>
 <TabItem value="vipps">
 
-![Vipps payment Screen](./images/vipps-payment.png)
+![Payment Screen](./images/vipps-payment.png)
 
 * *Sales unit name* - The name of the sales unit.
   A company or organization can have multiple sales units to represent different physical shops, vending machines, collection points, services, and similar.
@@ -50,7 +50,7 @@ values={[
 ]}>
 <TabItem value="vipps">
 
-![Vipps receipt](./images/vipps-receipt.png)
+![Receipt](./images/vipps-receipt.png)
 
 * *Organization number* - The ID for the organization that owns the sales unit.
 * *Transaction ID* - The internal Vipps MobilePay ID for the transaction.

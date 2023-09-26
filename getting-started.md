@@ -20,7 +20,7 @@ will receive an email with credentials for accessing the
 
 * Sales unit name
 * Merchant serial number
-* Credentials for logging into the Vipps test app
+* Credentials for logging into the test app
 
 For information about applying for services, see the
 [Applying for services FAQ](./faqs/services.md).
@@ -67,7 +67,7 @@ to get your production
 [API keys](./common-topics/api-keys.md).
 
 Now, you can start making API requests to the production server
-(e.g., create a payment request that goes to a real user's Vipps app).
+(e.g., create a payment request that goes to a real user's Vipps or MobilePay app).
 
 ## Best practices
 

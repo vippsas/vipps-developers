@@ -16,7 +16,7 @@ in the eCom API FAQs.
 
 ### High success rate for direct integrations
 
-**Please note:** We have extremely high success rate (low drop-off) for direct integration:
+**Please note:** We have extremely high success rate (low drop-off) for direct integration.
 Almost every user that selects to pay with Vipps completes the payment. The
 success rate is much higher than when using a payment card directly.
 
@@ -24,7 +24,7 @@ When comparing drop-off rates: Remember to compare drop-off data for when the
 user *selects* payment method, do not compare Vipps to numbers for when the
 user has selected card payment and already has manually entered the card number, etc.:
 
-* Drop-off data for Vipps: Measure the success rate after the user has selected Vipps.
+* Drop-off data for Vipps: Measure the success rate after the user has selected Vipps MobilePay.
 * Drop-off rate for cards: Measure the success rate after the user has selected card,
   but from *before* the user has to enter the card details.
 
@@ -39,16 +39,16 @@ and
 The most common reasons why payments are not completed are:
 
 1. The debit/credit card has expired.
-   Vipps notifies users in the app in good time before a card expires, but users must
+   We notify users in the app in good time before a card expires, but users must
    update the card(s) themselves.
-   Vipps verifies cards for *every* payment (resulting in an extremely low fraud rate).
-   **Please note:** Vennebetaling (P2P) uses bank accounts directly, not the card.
+   We verify cards for *every* payment (resulting in an extremely low fraud rate).
+   **Please note:** *Vennebetaling* (Person-to-person) uses bank accounts directly, not the card.
    It's therefore possible for a user to pay another person (using the bank account),
    but not be able to pay a merchant (since the card is expired).
 2. The debit/credit is no longer valid.
    This can happen when a user has received a new card, but the previous card's
    expiry date has not yet been reached.
-   See 1. above.
+   See point 1 above.
 3. For freestanding card payments with the
    [ePayment API](https://developer.vippsmobilepay.com/docs/APIs/epayment-api/): If the card issuer does
    not correctly handle the "3D Secure step up", meaning the required secure
@@ -64,26 +64,26 @@ The most common reasons why payments are not completed are:
    See
    [Direct integration and PSP integration](https://developer.vippsmobilepay.com/docs/common-topics/direct-vs-psp/).
 5. The debit/credit card has been rejected by the issuer.
-   There are many possible reasons for this, and Vipps may not be allowed to
+   There are many possible reasons for this, and we may not be allowed to
    give the details to the merchant.
-   See 1. above.
+   See 1 above.
 6. Payment limit reached, BankID required.
    There are some amount limits to prevent misuse and fraud, and when a limit is reached
-   the user sometimes (not often) needs to authenticate with BankID, even in Vipps.
-   Some users *still* need their physical BankID "kodebrikkke" (*code card*), which they may not have available.
+   the user sometimes (not often) needs to authenticate with BankID, even in Vipps MobilePay.
+   Some users *still* need their physical BankID *kodebrikkke* (*code card*), which they may not have available.
 7. The payment has timed out.
-   This happens if the user does not confirm in Vipps within 10 minutes
-   (5 minutes to log into Vipps, then 5 minutes to confirm the payment),
+   This happens if the user does not confirm in the app within 10 minutes
+   (5 minutes to log in, then 5 minutes to confirm the payment),
    typically if the user has deactivated push notifications and does not open
    Vipps manually.
    See:
    [Timeouts](https://developer.vippsmobilepay.com/docs/common-topics/timeouts).
 8. Attempt to capture an amount that exceeds the reserved amount.
-   It's not possible to capture a higher amount than the user has confirmed in Vipps.
+   It's not possible to capture a higher amount than the user has confirmed in Vipps MobilePay.
    Some merchants experience this because of rounding errors on their side.
    See: [Why does capture fail?](#why-does-capture-fail)
 9. Attempt to capture an amount that has not been reserved.
-   If the user does not confirm the payment in Vipps, it's impossible for the
+   If the user does not confirm the payment in the app, it's impossible for the
    merchant to capture it.
    The payment must have status "reserved" for capture to be possible.
    See: [Why does capture fail?](#why-does-capture-fail)
@@ -92,21 +92,21 @@ The most common reasons why payments are not completed are:
 
 ### Investigating problems
 
-We strongly recommend checking the full history of every Vipps payment with
-the API: You can see if a payment has been actively rejected, if the user has
+We strongly recommend checking the full history of every payment with
+the API. You can see if a payment has been actively rejected, if the user has
 not done anything, etc.
 See: [Get payment details](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#get-payment-details).
 
-We are continuously improving the error messages in the Vipps app. Some of the
+We are continuously improving the error messages in the app. Some of the
 above errors may only have a general error message when attempting to pay.
 
-**Please note:** Vipps is not allowed to give detailed information about all errors to the
-merchant, as some information should only be provided to the Vipps user.
-Vipps also generally wants to be on the user's side and not "leak" more details
+**Please note:** We are not allowed to give detailed information about all errors to the
+merchant, as some information should only be provided to the user.
+We will not "leak" more user details
 than we have to. The general rule is that if the problem must be corrected by
-the user in Vipps, all necessary information will be provided to the user in Vipps.
+the user in the Vipps or MobilePay app, all necessary information will be provided to the user there.
 
-**Tip:** Everyone can test their Vipps credit and debit cards in our demo store:
+**Tip:** Everyone can test their Vipps or MobilePay app with credit and debit cards in our demo store:
 [demo.vipps.no](https://demo.vipps.no).
 
 See:
@@ -117,9 +117,9 @@ See:
 The most common reasons are:
 
 1. Attempt at capturing a higher amount than the one that has been reserved:
-   The user has approved a payment in Vipps, but you attempt to charge more.
+   The user has approved a payment in the app, but you attempt to charge more.
 2. Attempt at capturing a payment that is not reserved:
-   The user has not approved the payment in Vipps.
+   The user has not approved the payment.
 
 All failed capture attempts get an error response from our API.
 The response contains the details of why the capture failed.
@@ -135,12 +135,12 @@ It is not possible to capture more than the reserved amount, as that would
 make this sequence possible:
 
 1. The merchant initiates a payment of 1000 NOK
-2. The user confirms the 1000 NOK payment in Vipps
+2. The user confirms the 1000 NOK payment in the app
 3. The merchant captures 50 000 NOK from the user
 
 Similarly: It is not possible to capture an amount that is not reserved, as
 that would make it possible to charge a user's card without requiring the user
-to confirm the payment in Vipps first.
+to confirm the payment first.
 
 See:
 
@@ -150,14 +150,14 @@ See:
 ## Why do I get a CORS error?
 
 If you get a CORS (Cross-Origin Resource Sharing) error, it is from your side,
-not an error from Vipps. You are most likely attempting to call the Vipps API
+not an error from Vipps MobilePay. You are most likely attempting to call an API
 from a website, and your web server's configuration prevents it.
 
 CORS is a protocol that enables scripts running on a browser client to interact
 with resources from a different origin. Sometimes servers are configured to
 prevent this, and that results in a CORS error.
 
-Vipps only receives the API requests over HTTPS, and has no way of detecting
+We only receive the API requests over HTTPS, and we have no way of detecting
 how the request was made on the caller side - it all looks the same.
 We cannot fix the CORS error for you.
 
@@ -169,9 +169,9 @@ You can read more about CORS here:
 The phone's operating system always opens URLs in the default browser.
 
 This means that the `fallback` URL (the "result page") will be opened in
-the default browser. Vipps has no way to open the `fallback` URL in the
+the default browser. We have no way to open the `fallback` URL in the
 embedded browser on Facebook, Instagram, etc. Similarly, there is no way
-for Vipps to open the `fallback` URL in the same tab that the user came from
+for us to open the `fallback` URL in the same tab that the user came from
 before the app-switch.
 
 This means that the merchant must be able to detect or recognize the user
@@ -182,7 +182,7 @@ See:
 
 ## How can I measure Vipps sales with Google Analytics, Facebook pixel, etc.?
 
-Vipps does not have any functionality for measuring sales with Google
+We don't have any functionality for measuring sales with Google
 Analytics, Facebook pixel, etc. Merchants may of course use any service on
 their own website, and use a fallback URL (the "result page") to track any
 activity. This must be done by the merchant itself.
@@ -192,7 +192,7 @@ See:
 
 ## Why are the customer names not shown on the transaction overview?
 
-Vipps is anonymous, by default: Users can pay with Vipps without sharing their
+Vipps MobilePay is anonymous, by default. Users can pay through Vipps MobilePay without sharing their
 personal data with the merchant. Merchants can use the built-in functionality to
 get the user's consent to share personal data - such as phone number, name,
 e-mail address and address.
@@ -208,9 +208,9 @@ and the settlement reports available by e.mail and SFTP show the customer names 
 payments.
 
 For other payments, such as
-[Vipps på nett](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/)
+[*Vipps på nett*](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/)
 and
-[Vipps Faste betalinger (Recurring payments)](https://vipps.no/produkter-og-tjenester/bedrift/faste-betalinger/faste-betalinger/)
+[*Faste betalinger* (Recurring payments)](https://vipps.no/produkter-og-tjenester/bedrift/faste-betalinger/faste-betalinger/)
 the `orderId` is shown instead of the customer name.
 
 You can click the little "i" in the header on the transaction overview and see the same info as above.
@@ -222,5 +222,5 @@ Use
 [Userinfo](https://developer.vippsmobilepay.com/docs/APIs/userinfo-api)
 to get the customer's consent to share name, email address, etc.
 
-**Please note:** Vippsnummer is not legal for payments where the customer is
+**Please note:** *Vippsnummer* is not legal for payments where the customer is
 not physically present. It does also not comply with the Treasury Act, (*Kassaloven*).

@@ -12,7 +12,7 @@ This newsletter was sent in November 2022.
 
 ## Specify amounts in øre without decimals
 
-Vipps requires amounts to be specified in øre, without decimals:
+Vipps MobilePay requires amounts to be specified in øre, without decimals:
 "Amounts are specified in minor units.
 For Norwegian kroner (NOK) that means 1 NOK = 100 øre. Example: 499 NOK = 49900 øre."
 
@@ -33,7 +33,7 @@ with the new and improved user experience by specifying
 [`useExplicitCheckoutFlow": true`](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#how-to-specify-the-old-or-new-express-checkout-flow)
 to reduce drop-off, left shopping carts, etc.
 
-Make sure your use of Vipps is as good as it can be, without errors.
+Make sure your use of Vipps MobilePay is as good as it can be, without errors.
 See: [Please check your API calls for errors](#please-check-your-api-calls-for-errors).
 
 Monitor the Vipps Status Page:
@@ -70,7 +70,7 @@ We are working hard to improve the
   [searchable](https://developer.vippsmobilepay.com/search).
 * We have a new
   [Recommended flows](https://developer.vippsmobilepay.com/docs/solutions)
-  section to highlight combinations of Vipps APIs, such as
+  section to highlight combinations of APIs, such as
   [In-store using merchant scan](https://developer.vippsmobilepay.com/docs/solutions/loyalty-in-pos)
   and
   [Electric vehicle charging](https://developer.vippsmobilepay.com/docs/solutions/ev-charging).

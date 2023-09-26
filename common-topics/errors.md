@@ -45,7 +45,7 @@ will use `extraDetails`.
   For details: See each
   [API](https://developer.vippsmobilepay.com/docs/APIs)'s
   specification.
-* Some errors are sent from Microsoft Azure, and not the Vipps APIs.
+* Some errors are sent from Microsoft Azure, and not the APIs.
   These include `401`, `403`, `422` and `429`.
   These errors may have a different format, as they are not configurable.
 * It is the integrator's responsibility to monitor and handle all errors.  

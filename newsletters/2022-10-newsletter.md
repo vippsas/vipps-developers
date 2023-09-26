@@ -65,7 +65,7 @@ It can help your conversion if you remind your users that:
 We recommend using this text where users select payment method:
 "Husk: Vipps er alltid gebyrfritt når du betaler til bedrifter."
 
-Roughly translated, this means, "Remember: Vipps is always free from fees when you pay to companies".
+Roughly translated, this means, "Remember: Vipps MobilePay is always free from fees when you pay to companies".
 
 If you use Klarna Checkout, here are our
 [tips](../faqs/other-faq.md#can-i-use-vipps-with-klarna-checkout).
@@ -113,11 +113,11 @@ Please:
 The
 [API Dashboard](../developer-resources/api-dashboard.md)
 is available to all merchants for both the production and test environments,
-and is an easy way to see if you are using the Vipps APIs correctly.
+and is an easy way to see if you are using the APIs correctly.
 Think of it as a "health check", that you can use to see if there are any
 problems you need to investigate.
 
-Here's an example for the Vipps eCom API's `/refund` endpoint:
+Here's an example for the eCom API's `/refund` endpoint:
 
 ![API Dashboard example](images/2021-02-api-dashboard-example.png)
 

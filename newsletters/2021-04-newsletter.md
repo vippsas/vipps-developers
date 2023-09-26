@@ -73,9 +73,9 @@ the `Merchant-Serial-Number` header to identify which of your merchants you are
 acting on behalf of.
 
 The same set of partner keys can be used for both the
-[Vipps eCom API](https://developer.vippsmobilepay.com/docs/APIs/ecom-api)
+[eCom API](https://developer.vippsmobilepay.com/docs/APIs/ecom-api)
 and the
-[Vipps Recurring API](https://developer.vippsmobilepay.com/docs/APIs/recurring-api),
+[Recurring API](https://developer.vippsmobilepay.com/docs/APIs/recurring-api),
 including the
 [Userinfo](#use-userinfo)
 endpoints for both.
@@ -157,7 +157,7 @@ and
 The API Dashboard is now available on
 [portal.vipps.no](https://portal.vipps.no)
 under the "Utvikler" ("Developer") tab.
-It lets you see if there are problems with your use of Vipps APIs.
+It lets you see if there are problems with your use of APIs.
 Here's an example:
 
 ![API Dashboard example](images/2021-02-api-dashboard-example.png)
@@ -167,9 +167,9 @@ This is just the start. Please let us know what you think and suggest improvemen
 ### Vipps HTTP Headers ℹ️
 
 We recommend using the following *optional* HTTP headers for all requests to the
-[Vipps eCom API](https://developer.vippsmobilepay.com/docs/APIs/ecom-api)
+[eCom API](https://developer.vippsmobilepay.com/docs/APIs/ecom-api)
 and the
-[Vipps Recurring API](https://developer.vippsmobilepay.com/docs/APIs/recurring-api).
+[Recurring API](https://developer.vippsmobilepay.com/docs/APIs/recurring-api).
 
 | Header                        | Description                                  | Example value        |
 | ----------------------------- | -------------------------------------------- | -------------------- |

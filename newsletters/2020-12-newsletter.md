@@ -13,10 +13,10 @@ This newsletter was sent in December 2020.
 
 
 
-## The Vipps eCom API v1 is disabled
+## The eCom API v1 is disabled
 
-After several extensions to the original June 1 deadline, the Vipps eCom API v1
-was shut down on December 4. The Vipps eCom API v2 has been available for
+After several extensions to the original June 1 deadline, the eCom API v1
+was shut down on December 4. The eCom API v2 has been available for
 about three years, and offers more functionality than the old version.
 
 ## Vipps Login improvements 🎉
@@ -28,15 +28,15 @@ We have also added a specific flow for integrations with apps.
 
 To have a unified way of providing user information across Vipps services
 we are standardizing the data formats, both within Vipps and with the OIDC standard.
-To do this we have been required to introduce a new version of our Vipps login API.
-**The previous version (Version 1) of the Vipps login API will have end of life on February 28th 2021**.
+To do this we have been required to introduce a new version of our Login API.
+**The previous version (Version 1) of the Login API will have end of life on February 28th 2021**.
 
 ## Vipps HTTP Headers ℹ️
 
 We recommend using the following *optional* HTTP headers for all requests to the
-[Vipps eCom API](https://developer.vippsmobilepay.com/docs/APIs/ecom-api)
+[eCom API](https://developer.vippsmobilepay.com/docs/APIs/ecom-api)
 and the
-[Vipps Recurring API](https://developer.vippsmobilepay.com/docs/APIs/recurring-api).
+[Recurring API](https://developer.vippsmobilepay.com/docs/APIs/recurring-api).
 
 | Header                        | Description                                  | Example value        |
 | ----------------------------- | -------------------------------------------- | -------------------- |
@@ -54,7 +54,7 @@ which help Vipps improve our services, and also help in investigating problems.
 We are working on an API Dashboard that will be available under "Utvikler" on
 [portal.vipps.no](https://portal.vipps.no).
 The API Dashboard will make it easier for integrators to find errors and
-possible improvements in the use of the Vipps APIs.
+possible improvements in the use of the APIs.
 
 The MVP will show the statuses for the most recent API calls, making it possible
 to see trends and areas to investigate.

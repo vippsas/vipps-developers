@@ -1,25 +1,25 @@
 ---
-title: Vipps servers
-sidebar_position: 160
+title: Vipps MobilePay servers
+sidebar_position: 140
 pagination_next: null
 pagination_prev: null
 ---
 
-# Vipps servers
+# Servers
 
-Vipps has different servers for making API calls to Vipps, and for Vipps
+Vipps MobilePay has different servers for making API calls, and for us
 to make API calls to merchants (like callbacks).
 
-**Please note:** Vipps may change the IP addresses for the request servers. To ensure
+**Please note:** We may change the IP addresses for the request servers. To ensure
 that you are whitelisting the correct IP addresses please use these hostnames
 and DNS, and automatically update your firewall rules if there are DNS changes.
 We cannot provide the IP addresses in any other way than DNS.
 
 The servers are the same for all APIs.
 
-The Vipps servers all use UTC time.
+The Vipps MobilePay servers all use UTC time.
 
-## Vipps API servers
+## API servers
 
 The test and production environments are separate and require different API credentials:
 
@@ -27,13 +27,13 @@ The test and production environments are separate and require different API cred
 |-------------------|------------------|
 | api.vipps.no      | apitest.vipps.no |
 
-The servers are world accessible. Vipps only relies on the API keys, and
+The servers are world accessible. Vipps MobilePay only relies on the API keys, and
 no requests to our servers are blocked on our side by IP addresses or similar.
 
-## Vipps request servers
+## Request servers
 
-Requests made by Vipps are made from the servers specified below.
-Vipps normally only uses one server at a time, and change servers approximately
+Requests made by us are made from the servers specified below.
+We normally only uses one server at a time, and change servers approximately
 every three months.
 
 | Production (Prod)   | Disaster recovery (DR) | Test (MT)              |
@@ -45,7 +45,7 @@ every three months.
 
 The disaster recovery environment is as important as the production environment.
 
-For API products where Vipps makes requests to your servers, please make sure
+For API products where we makes requests to your servers, please make sure
 that these request servers are allowed through firewalls, etc.
 
 ## DNS lookup commands

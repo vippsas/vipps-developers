@@ -23,7 +23,7 @@ you use, and keep them up to date. See the
 The API Dashboard is now available on
 [portal.vipps.no](https://portal.vipps.no)
 under the "Utvikler" ("Developer") tab.
-It lets you see if there are problems with your use of Vipps APIs.
+It lets you see if there are problems with your use of APIs.
 Here's an example:
 
 ![API Dashboard example](images/2021-02-api-dashboard-example.png)
@@ -40,12 +40,12 @@ The
 [`/details`](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#get-payment-details)
 endpoint has been available for a long time, and gives more data and details: The full payment history of the orderId.
 
-## Vipps Login API version 2
+## Login API version 2
 
 To have a unified way of providing user information across Vipps services
 we are standardizing the data formats, both within Vipps and with the OIDC standard.
-To do this we have to introduce a new version of our Vipps login API.
-**The previous version (Version 1) of the Vipps login API will have end of life on February 28th 2021**.
+To do this we have to introduce a new version of our Login API.
+**The previous version (Version 1) of the Login API will have end of life on February 28th 2021**.
 
 Our plugins are updated to support the latest version.
 Make sure that you use the latest version of the plugin.
@@ -89,9 +89,9 @@ We have mentioned some things before, and take this opportunity to remind you:
 ### Vipps HTTP Headers ℹ️
 
 We recommend using the following *optional* HTTP headers for all requests to the
-[Vipps eCom API](https://developer.vippsmobilepay.com/docs/APIs/ecom-api)
+[eCom API](https://developer.vippsmobilepay.com/docs/APIs/ecom-api)
 and the
-[Vipps Recurring API](https://developer.vippsmobilepay.com/docs/APIs/recurring-api).
+[Recurring API](https://developer.vippsmobilepay.com/docs/APIs/recurring-api).
 
 | Header                        | Description                                  | Example value        |
 | ----------------------------- | -------------------------------------------- | -------------------- |

@@ -10,15 +10,14 @@ pagination_prev: null
 
 ## Why don't I receive the payment notification?
 
-Push notifications must be active for Vipps to send payment notifications.
+Push notifications must be active.
 
-Push notifications are "best effort", and Vipps cannot guarantee that all
-push notifications arrive. It depends on services, networks, etc. that Vipps
-cannot control.
+Push notifications are "best effort", and we can't guarantee that all
+push notifications arrive. It depends on services, networks, and other things outside our control.
 
-If Vipps is already open and active when the push notification is received,
-the user must press the "Send" button and move to the payments screen to see
-the payment notification. Vipps is not able to poll or discover the
+If the Vipps or MobilePay app is already open and active when the push notification is received,
+the user must press the *Send* button and move to the payments screen to see
+the payment notification. The app isn't able to poll or discover the
 payment notification automatically.
 
 ## Why am I not sent back to where I came from when I have paid?

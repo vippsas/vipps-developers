@@ -13,7 +13,7 @@ Attempting to cancel an older payment will result in a `HTTP 400 Bad Request`.
 
 The payment flow can be aborted under certain circumstances:
 
-* When the user cancels (rejects) the initiated payment in Vipps.
+* When the user cancels (rejects) the initiated payment in Vipps MobilePay.
 * When the merchant cancels.
 * Timeouts: If the user does not confirm, etc.
 

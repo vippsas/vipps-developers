@@ -6,7 +6,7 @@ pagination_prev: null
 
 # Redirecting the user to a website or app
 
-You can redirect the user to a website or app once they have used the Vipps MobilePay app to log in to your site, complete a payment, accept an agreement, or similar.
+You can redirect the user to a website or app once they have used the Vipps or MobilePay app to log in to your site, complete a payment, accept an agreement, or similar.
 
 Most of the APIs provide the redirect functionality in different flows. For example:
 

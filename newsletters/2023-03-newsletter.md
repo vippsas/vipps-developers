@@ -15,7 +15,7 @@ This newsletter was sent in March 2023.
 You’re receiving this newsletter because you have admin privileges on
 [portal.vipps.no](https://portal.vipps.no)
 for a merchant with access to
-[Vipps APIs](https://developer.vippsmobilepay.com/docs/APIs).
+[APIs](https://developer.vippsmobilepay.com/docs/APIs).
 
 We strongly advise all technical resources to subscribe to the newsletter. If you
 don’t subscribe, you will not receive this newsletter again.
@@ -115,7 +115,7 @@ for more details, and try for yourself in our
 ## More Solutions and best practices
 
 In the [Solutions](https://developer.vippsmobilepay.com/docs/solutions) section of the documentation,
-you can now see how Vipps APIs can be combined to give the best user experience for several use cases, such as:
+you can now see how APIs can be combined to give the best user experience for several use cases, such as:
 
 * Electric vehicle charging
 * Loyalty at Point of Sale (POS)

@@ -10,38 +10,38 @@ pagination_prev: null
 
 ## For how long is a payment reserved?
 
-That depends. Vipps does not control the behavior of the customer's card or account.
+That depends. We don't control the behavior of the customer's card or account.
 
-The details may change, but the information below is the best Vipps can offer.
+The details may change, but the information below is the best we can offer.
 
 * VISA reservations are valid for 7 days (but only 5 for Visa Electron).
   The banks will release the reservation after 4-7 days, but if the capture is
   done within the 7 days, VISA guarantees that the capture will succeed.
-  Vipps' PSP is Adyen, and they have some documentation for
+  Our PSP is Adyen, and they have some documentation for
   [VISA reservations](https://docs.adyen.com/online-payments/adjust-authorisation#visa).
 
 * MasterCard reservations are valid for 30 days.
   The banks may release the reservation before this, but if the capture is
   done within the 30 days, MasterCard guarantees that the capture will succeed.
-  Vipps' PSP is Adyen, and they have some documentation for
+  Our PSP is Adyen, and they have some documentation for
  [Mastercard reservations](https://docs.adyen.com/online-payments/adjust-authorisation#mastercard).
 
-Vipps cannot and does not automatically change the status of a reservation.
+We can't and don't automatically change the status of a reservation.
 
 If a capture attempt is made more than 7 days (VISA) or 30 days (MasterCard)
 after the payment has been initiated, and* the reservation has been released
-by the bank in the meantime, Vipps will make a new payment request to the bank.
+by the bank in the meantime, we will make a new payment request to the bank.
 If the account has sufficient funds, the payment will be successful.
 
 If the user's account has insufficient funds at this time, the payment will
 either succeed and put the customer's card/account in the negative (as
 an overdraft), or fail because the customer's card/account cannot be put into
 the negative - for example youth accounts.
-Vipps cannot know in advance what will happen.
+We can't know in advance what will happen.
 
 It is also possible that the card expires, is blocked, etc. somewhere between
 the time of reservation and the time of capture.
-Vipps cannot know in advance what will happen.
+We can't know in advance what will happen.
 
 In many cases the bank will have a register of expired reservations, and they
 will force the capture through if the account allows this.
@@ -86,7 +86,7 @@ This roughly translates to:
 For more information, please see the Consumer Authority's
 [Guidelines for the standard sales conditions for consumer purchases of goods over the internet](https://www.forbrukertilsynet.no/english/guidelines/guidelines-the-standard-sales-conditions-consumer-purchases-of-goods-the-internet).
 
-Vipps cannot offer legal advice for this.
+We can't offer legal advice for this.
 
 See more details below:
 
@@ -99,7 +99,7 @@ When you initiate a payment it will be *reserved* until you *capture* it.
 Reserved means the customer has approved the payment. The funds are still
 in the customer's account, but not available to spend on other things.
 Capture means the funds are moved from customer's account to merchant's account.
-Vipps supports both *reserve-capture* and *direct capture*:
+We support both *reserve-capture* and *direct capture*:
 
 * *Reserve capture* is the default. When you initiate a payment it will be
   reserved until you capture it. The capture can be done a few seconds later,
@@ -145,7 +145,7 @@ See:
 
 ## How can I check if I have "reserve capture" or "direct capture"?
 
-Vipps can no longer manually check this for merchant or partners.
+We can no longer manually check this for merchant or partners.
 
 All merchants can log in on
 [portal.vipps.no](https://portal.vipps.no)
@@ -172,10 +172,10 @@ and cancel (if it was `RESERVE` and reserve capture) or refund (if it was `SALE`
 ## How do I turn direct capture on or off?
 
 You can't turn *direct capture* on or off as a merchant.
-A sales unit can only have one capture type, and it must be configured by Vipps.
+A sales unit can only have one capture type, and we must be configured that.
 
-**Please note:** Vipps only offers "direct capture" for merchants that use
-Vipps through a partner, and for merchants that have a Key Account Manager.
+**Please note:** We only offer "direct capture" to merchants that use
+Vipps MobilePay through a partner, and for merchants that have a Key Account Manager.
 "Direct capture" must be requested by the partner from the partner manager,
 or by KAM merchants from the Key Account Manager.
 
@@ -190,47 +190,19 @@ Yes, but only if you are not legally allowed to accept credit card payments.
 
 Sales units can be configured to only accept payments from debit cards, so
 customers cannot pay with credit cards. This is not configurable by the
-merchant. Please contact your KAM or
-[Vipps Customer Center](https://vipps.no/kontakt-oss/)
-if you need this.
+merchant. Please [contact us](https://developer.vippsmobilepay.com/docs/contact/) if you need this.
 
-## Can I initiate a Vipps payment with a QR code?
+## Can I initiate a payment with a QR code?
 
-It is not possible to use a *static* QR code to initiate payments with the eCom API.
+Yes, you can do this with the new ePayment API.
+See the QR flow under [ePayment API: Create payment](https://developer.vippsmobilepay.com/docs/APIs/epayment-api/operations/create/).
 
-With the eCom API all payments are initiated by calling
-[`POST:/ecomm/v2/payments`](https://developer.vippsmobilepay.com/api/ecom#tag/Vipps-eCom-API/operation/initiatePaymentV3UsingPOST),
-with a unique `orderId` for each payment.
-
-This is not possible with a static QR code on a sticker, etc., but
-_is* possible if a dynamic (unique per payment) QR can be displayed on a screen
-for the Vipps user to scan.
-
-The only ways to initiate Vipps payments from a QR code are:
-
-* Use a dynamic QR code for Vipps eCom. The QR code must identical to the
-  Vipps deeplink URL provided in normal eCom payments, which will open
-  Vipps. See:
-  [Initiate payment flow: API calls](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#initiate-payment-flow-api-calls).
-  When the Vipps user scans the QR containing the deeplink URL (with either the camera app or with Vipps),
-  Vipps will be opened, and the payment request will be displayed.
-  The user then has a few minutes to complete the payment. See:
-  [Timeouts](../common-topics/timeouts.md).
-* [Vippsnummer](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-i-butikk/),
-  the solution for flea markets, etc. – which does not have any external API.
-  This solution uses a static QR code for the sales unit, available on
-  [portal.vipps.no](https://portal.vipps.no).
-  Vippsnummer cannot be used for online sales, etc., as it does not meet the
-  legal requirements.
-
-See: [The Vipps QR API](https://developer.vippsmobilepay.com/docs/APIs/qr-api).
-
-## Can I send a Vipps payment link in an SMS, QR or email?
+## Can I send a payment link in an SMS, QR or email?
 
 No.
 
-The Vipps "deeplink" opens the payment page in Vipps where the user
-accepts a payment. This is an integrated part of the Vipps payment process,
+The "deeplink" opens the payment page in the Vipps or MobilePay app where the user
+accepts a payment. This is an integrated part of the payment process,
 and the link should never be sent in an SMS or email.
 
 According to Norwegian regulations the customer needs to actively accept the
@@ -243,13 +215,13 @@ For more information, please see the Consumer Authority's
 There are different regulatory requirements for payments that are initiated
 by a user and by a merchant.
 
-The Vipps deeplink is only valid for 5 minutes, so users that do not act quickly will
+The deeplink is only valid for 5 minutes, so users that do not act quickly will
 not be able to pay. There is no way to "retry" a deeplink after the timeout.
 See:
 [For how long is a payment reserved?](#for-how-long-is-a-payment-reserved)
 
-Instead of sending a Vipps deeplink: Send a link to your website, and let
-the user start the Vipps payment there. It can be a very simple page with a link
+Instead of sending a deeplink: Send a link to your website, and let
+the user start the Vipps or MobilePay payment there. It can be a very simple page with a link
 or a button. You then have the opportunity to give the user additional
 information, and also a proper confirmation page after the payment has been completed.
 
@@ -257,7 +229,7 @@ You can also send the customer a link to a pre-filled shopping cart, so the cust
 can add more items, and pay with Vipps Hurtigkasse.
 
 In some cases, such as for donations and gifts, it may be acceptable to automatically
-trigger the Vipps payment when the user enters your website. This requires that the
+trigger the payment when the user enters your website. This requires that the
 payment process is user initiated, and that there are no relevant terms and conditions
 or that the user has accepted any terms and conditions at an earlier stage.
 
@@ -265,30 +237,30 @@ In general, we advise caution and point out that it is the responsibility of the
 merchant to assure that users accept terms and conditions for products and services.
 
 You can also use
-[Vipps Login](https://developer.vippsmobilepay.com/docs/APIs/login-api)
+[Login](https://developer.vippsmobilepay.com/docs/APIs/login-api)
 for easy registration and login.
 
 See:
-[The Vipps deeplink URL](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#the-vipps-deeplink-url).
+[eCom deeplink URL](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#the-vipps-deeplink-url).
 
 ## Can I sell products on social media?
 
 Yes, but you also need a website.
-Vipps is required to check your website and that it meets the
+Vipps MobilePay is required to check your website and that it meets the
 requirements set by Norwegian law and regulation.
 
 See:
 
-* [Can I initiate a Vipps payment with a QR code?](#can-i-initiate-a-vipps-payment-with-a-qr-code)
-* [Can I send a Vipps payment link in an SMS, QR or email?](#can-i-send-a-vipps-payment-link-in-an-sms-qr-or-email)
+* [Can I initiate a payment with a QR code?](#can-i-initiate-a-payment-with-a-qr-code)
+* [Can I send a payment link in an SMS, QR or email?](#can-i-send-a-payment-link-in-an-sms-qr-or-email)
 
-## Can I whitelist my URL for a Vipps QR?
+## Can I whitelist my URL for a QR?
 
 There is no need for whitelisting QR codes any longer. It was previously a temporary solution a merchant to whitelist a URL to support users scanning
-a Vipps-branded QR to be sent directly to the merchant's URL.
+a Vipps branded QR to be sent directly to the merchant's URL.
 
-The previous whitelisting functionality has been replaced by
-[the Vipps QR API](https://developer.vippsmobilepay.com/docs/APIs/qr-api).
+The previous whitelisting functionality has been replaced by the
+[QR API](https://developer.vippsmobilepay.com/docs/APIs/qr-api).
 
 The API supports static
 [merchant redirect](https://developer.vippsmobilepay.com/docs/APIs/qr-api/vipps-qr-api#merchant-redirect-qr-codes)
@@ -298,12 +270,3 @@ The API also support a
 [one-time payment QR code](https://developer.vippsmobilepay.com/docs/APIs/qr-api/vipps-qr-api#one-time-payment-qr-codes)
 for customer facing screens in POS situations.
 
-## Can I use a different currency than NOK?
-
-Nope. All Vipps payments must be in NOK. Vipps does not do currency conversion.
-
-You will have to make any currency conversion *before* initiating the Vipps
-payment, as the amount specified in the payment initiation is always in NOK,
-and in øre (1 NOK = 100 øre).
-
-See: [Regular eCom Payments](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#regular-ecommerce-payments).

@@ -14,7 +14,7 @@ This is applicable to:
   (supersedes the [eCom API](https://developer.vippsmobilepay.com/docs/APIs/ecom-api))
 * [QR API](https://developer.vippsmobilepay.com/docs/APIs/qr-api)
 
-All payments are initiated with a text that appears in Vipps, using the
+All payments are initiated with a text that appears in the Vipps or MobilePay app, using the
 `paymentDescription` (or `transactionText` for the older eCom API) parameter.
 There are separate texts for the different actions: Initiate, capture, cancel, refund.
 

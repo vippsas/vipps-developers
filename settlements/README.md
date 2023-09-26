@@ -118,7 +118,7 @@ for more details.
 
 ### GDPR
 
-Vipps needs the customer's consent before sharing personal information with the merchant.
+Vipps MobilePay needs the customer's consent before sharing personal information with the merchant.
 
 The settlement reports do not contain personal information - except for payments made with *Vippsnummer*.
 

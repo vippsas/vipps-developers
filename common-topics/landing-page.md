@@ -8,7 +8,7 @@ pagination_prev: null
 
 The landing page enables you to log in or authorize a payment from your desktop computer.
 It's a webpage that opens when you select to pay or log in with Vipps MobilePay.
-From the landing page, enter your phone number and then go to your Vipps MobilePay app
+From the landing page, enter your phone number and then go to your Vipps or MobilePay app
 to authorize the operation.
 If you initiated this operation from another website, you should see the status updated there.
 
@@ -20,35 +20,28 @@ that helps guide the user through the payment flow.
 
 Our data shows that the landing page gives a higher success rate and lower drop-off,
 because the users get a familiar user experience and know the payment flow.
-In this way, Vipps takes responsibility for helping the user from the browser to the app,
+In this way, we take responsibility for helping the user from the browser to the app,
 and to complete the payment in a familiar way.
 
-## MobilePay landing page
-
-A MobilePay landing page will be provided in the future, but we don't know the details yet.
-We'll get back to this soon.
-
-## Vipps landing page
-
-### User flow
+## User flow
 
 When a payment is initiated, the user is directed to a `url` which will either open
-the Vipps app or the landing page:
+the Vipps or MobilePay app, MobilePay app, or the landing page:
 
-* In a mobile browser, the Vipps app will automatically be opened with app-switch.
+* In a mobile browser, the app will automatically be opened with app-switch.
   The result is the same for the `vipps://` and the `https://` URLs.
   This is done by the phone's operating system. It recognizes that the `https://`
   URL for the landing page is a Vipps URL, and knows that it should open the
-  Vipps app instead of the opening it in a web browser.
+  Vipps or MobilePay app instead of the opening it in a web browser.
 * In a desktop browser, the landing page will prompt the user for the phone number
   (the number may also be pre-filled, as described in
   [the user's phone number](#the-users-phone-number) section).
   The user enters or confirms the phone number.
-  It is also possible to enter another Vipps user's number, to have that
+  It is also possible to enter another user's number, to have that
   person complete the payment.
 
 
-### The user's phone number
+## The user's phone number
 
 The user's phone number can be set in the payment initiation call. It is
 remembered by the user's browser, eliminating the need for re-typing it on
@@ -58,15 +51,15 @@ In some cases, one user will start the payment process, but the actual payment
 will be made by another user. The landing page makes this possible, since
 the phone number can be changed.
 A typical example is one user that is below
-15 years old, and therefore cannot pay to businesses, will let another Vipps
+15 years old, and therefore cannot pay to businesses, will let another
 user complete the payment.
 
 See:
 [Is it possible to prevent the user from editing the phone number?​](../faqs/landing-page-faq.md#is-it-possible-to-prevent-the-user-from-editing-the-phone-number)
 
-### Never display the landing page in an iframe
+## Never display the landing page in an iframe
 
-**Important:** Never show the Vipps landing page inside an iframe. See:
+**Important:** Never show the landing page inside an iframe. See:
 [Can I show the landing page in an iframe?​](../faqs/landing-page-faq.md#can-i-show-the-landing-page-in-an-iframe)
 
 This is applicable to:
@@ -77,11 +70,11 @@ This is applicable to:
 * [PSP API](https://developer.vippsmobilepay.com/docs/APIs/psp-api)
 * [Recurring API](https://developer.vippsmobilepay.com/docs/APIs/recurring-api)
 
-### Generating a QR code to the Vipps landing page
+## Generating a QR code to the landing page
 
 If you have user-facing display, you may want to generate a QR code based on the
 landing page URL, instead of asking the user for their phone number. Scanning
-the QR code will take the user directly to the payment in the Vipps app.
+the QR code will take the user directly to the payment in the Vipps or MobilePay app.
 
 ![Demo QR code](images/demo-qr.png)
 
@@ -93,7 +86,7 @@ See the
 [Quick start](https://developer.vippsmobilepay.com/docs/APIs/epayment-api/quick-start/)
 for step-by-step examples of generating QR codes and short links for one-time payments initiated from the ePayment API.
 
-### Skip landing page
+## Skip landing page
 
 **Please note:** This functionality is only available for special cases.
 Skipping the landing page is only allowed when it is not possible to show it.
@@ -117,30 +110,30 @@ the landing page.
 
 **Please note:** When using `skipLandingPage`, the user is not sent to a URL
 after completion of the payment. The "result page" is just the confirmation in
-the Vipps app. The required parameter `returnUrl` (called `fallback` for the eCom API)
+the Vipps or MobilePay app. The required parameter `returnUrl` (called `fallback` for the eCom API)
 is not used, so you can provide any URL as that value.
 
 **Important:** When using `"skipLandingPage": true` in the API request that
 initiates the payment:
 
-* Vipps will send a push notification immediately to the Vipps app
+* We will send a push notification immediately to the Vipps or MobilePay app
   for the user with the specified phone number, without showing the landing page.
 * It is crucial to use the correct format for the user's phone number.
   If not, the payment will fail.
 * The user is not able to provide a different phone number for completing the
-  payment. This means that a "Vipps for those under 15" (that cannot pay
+  payment. This means someone under the age of 15 (that cannot pay
   businesses) cannot have someone else pay for them.
 * The user is not sent to a return URL (the result page) after completion
   of the payment.
   Instead of the "result page", the user will just get a confirmation in
-  the Vipps app.
+  the Vipps or MobilePay app.
 * If the sales unit is not whitelisted, the request will fail and an error
   message will be returned.
 
 See:
 [Is it possible to skip the landing page?](../faqs/landing-page-faq.md#is-it-possible-to-skip-the-landing-page.)
 
-### Sequence diagram
+## Sequence diagram
 
 This sequence diagram shows the difference between the normal flow and
 the flow with `"skipLandingPage": true`:
@@ -150,7 +143,7 @@ sequenceDiagram
     participant M as Merchant
     participant API as Vipps MobilePay API
     participant LP as Landing page
-    participant App as Vipps app
+    participant App as Vipps or MobilePay app
     actor U as User
     M-->>API: Initiate payment<br/>with or without skipLandingPage
     alt Normal flow

@@ -9,7 +9,8 @@ pagination_prev: null
 # FAQ: Common errors
 
 See also Common errors
-in the [ePayment API FAQs](https://developer.vippsmobilepay.com/docs/APIs/epayment-api/faq/#what-do-all-the-errors-mean) and in the [eCom API FAQs](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api-faq#common-errors) 
+in the [ePayment API FAQs](https://developer.vippsmobilepay.com/docs/APIs/epayment-api/faq/#what-do-all-the-errors-mean)
+and in the [eCom API FAQs](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api-faq#common-errors).
 
 ## Why do I get `HTTP 400 Bad Request`?
 
@@ -23,9 +24,8 @@ Some common errors:
 * callbackUrl is invalid.
 * Captured amount exceeds the reserved amount. You can not capture a higher amount than the user has accepted.
 * Cannot refund more than captured amount.
-* User unknown. The phone number is either incorrectly formatted (see the API
-  specification), is not a Vipps user, or the user is under 15 years old and
-  cannot pay businesses. Vipps cannot give more details. This error also occurs
+* User unknown. The phone number is either incorrectly formatted, is not a Vipps or MobilePay user, or the user is under 15 years old and
+  cannot pay businesses. Vipps MobilePay cannot give more details. This error also occurs
   if using a non-Norwegian phone number. Look for related questions in this FAQ.
 
 ## Why do I get `HTTP 401 Unauthorized`?
@@ -96,25 +96,26 @@ This should never be necessary, and we do not know of any situations where
 this fixes any known problem, so it's our very last suggestion.
 The old API keys will of course stop working when they have been regenerated.
 
-**Important:** Vipps cannot help with the debugging of your code,
+**Important:** Vipps MobilePay cannot help with the debugging of your code,
 we can only help with the API requests and response. Please do not send us your
 source code asking us to fix it for you.
 
 ## Why do I get `HTTP 403 Forbidden`?
 
 Merchants that only have access to the
-[Vipps Login API](https://developer.vippsmobilepay.com/docs/APIs/login-api)
-and attempt to use the Vipps ePayment API (or eCom API) will get this error, with
+[Login API](https://developer.vippsmobilepay.com/docs/APIs/login-api)
+and attempt to use the ePayment API (or eCom API) will get this error, with
 `Merchant Not Allowed for Ecommerce Payment` in the response body.
 
 This is because the compliance checks required for making payments are not
-done for merchants that only need the Vipps Login API.
-If you need access to the Vipps ePayment API (or eCom API), you can apply for this on
+done for merchants that only need the Login API.
+If you need access to the ePayment API (or eCom API), you can apply for this on
 [portal.vipps.no](https://portal.vipps.no).
 
 Partners can get this error if they use
 [Partner keys](https://developer.vippsmobilepay.com/docs/partner/partner-keys),
 but:
+
 * Do not send the `Merchant-Serial-Number` header.
 * Send a `Merchant-Serial-Number` header for a sales unit (MSN) that is not connected
   to them as a partner. The partner keys can only be used for sales units that are
@@ -125,8 +126,8 @@ See: [HTTP headers](https://developer.vippsmobilepay.com/docs/common-topics/http
 ## Why do I get `HTTP 429 Too Many Requests`?
 
 We rate-limit some API endpoints to prevent incorrect usage.
-The rate-limiting has nothing to do with Vipps' total capacity, but is
-designed to stop obviously incorrect use.
+The rate-limiting has nothing to do with our total capacity, but is
+designed to stop incorrect use.
 
 See:
 
@@ -193,7 +194,7 @@ See:
 Or: `Merchant not available or active`.
 
 Please check that the merchant's organization number is still active in
-[Brønnøysundregistrene](https://www.brreg.no). Vipps automatically deactivates
+[Brønnøysundregistrene](https://www.brreg.no). We automatically deactivate
 merchants (companies) when they are deleted from Brønnøysundregistrene.
 This can also happen if a merchant changes organization type, for instance
 from *ENK* to *AS*.
@@ -225,17 +226,17 @@ See: [Error codes](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps
 
 ## Why do I get "Merchant Not Allowed for Ecommerce Payment"?
 
-This error occurs if you attempt to use the Vipps eCom API with a sales unit (MSN)
-that is only approved for the Vipps Login API.
+This error occurs if you attempt to use the eCom API with a sales unit (MSN)
+that is only approved for the Login API.
 
-Vipps does not do the same checks for sales units that do not make payments,
-so to use the eCom API you need to order "Vipps på nett" on
+We perform different checks for sales units that do not make payments,
+so to use the eCom API you need to order *Vipps på nett* on
 [portal.vipps.no](https://portal.vipps.no)
 to go through the regulatory and legally required checks and get
-access to the Vipps eCom API.
+access to the eCom API.
 
-All sales units that have been approved for the Vipps eCom API can also use
-the Vipps Login API, but not the other way around.
+All sales units that have been approved for the eCom API can also use
+the Login API, but not the other way around.
 
 See:
 [Why do I get `HTTP 403 Forbidden`?](#why-do-i-get-http-403-forbidden)
@@ -251,22 +252,22 @@ The most common reasons are:
   See the API specification:
   [`POST:/ecomm/v2/payments`](https://developer.vippsmobilepay.com/api/ecom#tag/Vipps-eCom-API/operation/initiatePaymentV3UsingPOST).
 * The user is under 15 years old and cannot pay businesses.
-* The phone number is not for a Vipps user.
+* The phone number is not for a Vipps or MobilePay user.
 
-Vipps cannot give more details, as we cannot "leak" information about a user's
+Vipps MobilePay cannot give more details, as we cannot "leak" information about a user's
 age, whether a user has been blocked, whether a user has reached its spending
 limit, etc.
 
-## Why do I get an error about having Vipps installed and being 15 years old?
+## Why do I get an error about having the app installed and being 15 years old?
 
 This can happen when:
 
-* You attempt to use a real Vipps user in the test environment.
-* You have a brand new test user and have not logged into the test app before
+* You attempt to use a real user in the test environment.
+* You have a new test user and have not logged into the test app before
   trying to make payments, etc.
 
 See:
-[The Vipps Test Environment (MT)](../test-environment.md).
+[Test Environment (MT)](../test-environment.md).
 
 ## Why do I get `Invalid MSN: 654321. Check your API keys on portal.vipps.no and see the eCom FAQ for tips.`?
 

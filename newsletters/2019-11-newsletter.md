@@ -12,7 +12,7 @@ This newsletter was sent November 19, 2019.
 
 ## Vipps eCom v1 API to be phased out June 1, 2020
 
-The Vipps eCom API v1 was superseded by the eCom v2 API around two years ago.
+The eCom API v1 was superseded by the eCom v2 API around two years ago.
 The eCom v2 API has all the functionality of eCom v1, and there is no reason
 for not upgrading to eCom v2.
 

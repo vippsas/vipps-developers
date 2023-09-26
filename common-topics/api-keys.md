@@ -11,16 +11,16 @@ pagination_prev: null
 [Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/docs/common-topics/api-keys/).
 <!-- END_COMMENT -->
 
-When you start using the Vipps API, you will need to provide API keys.
+When you start using the API platform, you will need to provide API keys.
 These are like passcodes that confirm your identity and that your API request is valid.
 
 Your API keys are specific for your sales unit, and you will use them to interact with all the
-[Vipps API products](https://developer.vippsmobilepay.com/docs/APIs).
+[API products](https://developer.vippsmobilepay.com/docs/APIs).
 
 The same API keys are used for many types of integration:
 Direct integration, native apps for iOS and Android, point of sale integrations,
-[all the Vipps plugins](https://developer.vippsmobilepay.com/docs/plugins)
-and any other solution based on the Vipps APIs.
+[all the Vipps MobilePay plugins](https://developer.vippsmobilepay.com/docs/plugins)
+and any other solution based on the APIs.
 
 **Please note:** There are no API keys for
 [Vippsnummer](https://www.vipps.no/produkter-og-tjenester/bedrift/ta-betalt-i-butikk/ta-betalt-med-vipps/),
@@ -95,7 +95,7 @@ Having two active keys enables you to
 regenerate one subscription key, while still using the other key, without downtime.
 If you want, you can just ignore the second key.
 
-**Please note:** The header which supplies this subscription key for the Vipps API is
+**Please note:** The header which supplies this subscription key for the API is
 `Ocp-Apim-Subscription-Key`.
 
 ## Historical note

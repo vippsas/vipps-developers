@@ -28,7 +28,7 @@ fail:
 
 The API dashboard is available for both the production and
 [test environment](https://developer.vippsmobilepay.com/docs/test-environment),
-and is an easy way to see if you are using the Vipps APIs correctly.
+and is an easy way to see if you are using the APIs correctly.
 It only gives a high-level overview, so you must check the actual API
 responses for more details about the errors.
 
@@ -43,7 +43,7 @@ From the
 > Make sure to log and handle all errors. All integrations should to display
 > errors in a way that the user can see and understand them.
 
-It is your responsibility to check that you are using the Vipps APIs correctly.
+It is your responsibility to check that you are using the APIs correctly.
 
 **Please note:**
 

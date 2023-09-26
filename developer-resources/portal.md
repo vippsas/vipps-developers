@@ -1,11 +1,11 @@
 ---
-title: Vipps portal
-sidebar_position: 140
+title: Merchant portal
+sidebar_position: 130
 pagination_next: null
 pagination_prev: null
 ---
 
-# The Vipps portal
+# Merchant portal
 
 <!-- START_COMMENT -->
 ℹ️ Please use the website:
@@ -149,5 +149,5 @@ screen where you both can update your name and ad your logo:
 
 ## Questions
 
-For more information about the Vipps Portal, see the
+For more information about the Merchant Portal, see the
 [help pages on vipps.no](https://vipps.no/hjelp/vipps/kundeforholdet-mitt/hva-får-jeg-tilgang-til-når-jeg-logger-meg-inn-på-vippsportalen/).
