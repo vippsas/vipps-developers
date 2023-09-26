@@ -13,14 +13,13 @@ allows you to extend the expiration time.
 
 ## Using a phone
 
-Both the deeplink URL, which causes the app-switch to Vipps, and the landing
-page displayed in browsers, are valid for 5 minutes.
+Both the landing page and the deeplink URL, which causes the app-switch to the Vipps or MobilePay app, are valid for 5 minutes.
 
-If the user does not act on the app-switch (such as not attempting to log in to
-Vipps) within 5 minutes, the payment will time out.
+If the user doesn't act on the app-switch (such as not attempting to log in)
+ within 5 minutes, the payment will time out.
 
-After the app-switch to Vipps, the user has an additional 5 minutes to complete the
-payment in Vipps.
+After the app-switch, the user has an additional 5 minutes to complete the
+payment in Vipps MobilePay.
 
 This means that the user has a total of 10 minutes to complete the payment.
 
@@ -30,6 +29,6 @@ If the user is using a PC, they must confirm or enter their phone number on
 the landing page within 5 minutes; otherwise, the payment times out.
 
 After the user has clicked "OK" on the landing page, the user
-has an additional 5 minutes to complete the payment in Vipps.
+has an additional 5 minutes to complete the payment in Vipps MobilePay.
 
 This means that the user has a total of 10 minutes to complete the payment.

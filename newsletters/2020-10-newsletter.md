@@ -14,9 +14,9 @@ This newsletter was sent in October 2020.
 ## Userinfo
 
 Vipps now offers the possibility for merchants to ask for user profile details as part of the payment flow in the
-[Vipps eCom API v2](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#userinfo)
+[eCom API v2](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#userinfo)
 and
-[Vipps Recurring API](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/vipps-recurring-api#userinfo).
+[Recurring API](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/vipps-recurring-api#userinfo).
 
 This is done by adding a `scope` parameter to the initiate calls:
 
@@ -51,7 +51,7 @@ All [plugins](https://developer.vippsmobilepay.com/docs/plugins) are open source
 
 ## PSP v3
 
-Vipps is launching the
+Vipps MobilePay is launching the
 [PSP API v3](https://developer.vippsmobilepay.com/docs/APIs/psp-api)
 to coincide with our migration of our users' cards from PAN to EMVco network
 tokens. This technological migration is Vipps' strategy for achieving delegated
@@ -71,15 +71,15 @@ more robust and secure service. Most of these limits are only created to
 counteract unexpected and erratic behavior, and it's nothing you should notice
 under normal operation. More information about this is available in the
 documentation for
-[Vipps Recurring API](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/vipps-recurring-api#rate-limiting)
+[Recurring API](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/vipps-recurring-api#rate-limiting)
 and
-[Vipps eCom API](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#rate-limiting)
+[eCom API](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#rate-limiting)
 
 ## Deprecations
 
 ### Deprecation of `/status`
 
-The `/details` endpoint in the Vipps eCom API v2 offers more than the old
+The `/details` endpoint in the eCom API v2 offers more than the old
 and long deprecated `/status` endpoint. We still see some customers using
 the old endpoint and strongly recommend updating to the
 [current one](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#get-payment-details).

@@ -12,7 +12,7 @@ This newsletter was sent in April 2022.
 
 ## Release of remainder after doing a partial capture
 
-The Vipps eCom API now supports both partial capture (as before) and
+The eCom API now supports both partial capture (as before) and
 release of the remainder of the reserved amount.
 
 If you wish to cancel an order which you have partially captured: Send a
@@ -100,14 +100,14 @@ See:
 ### Use the API Dashboard to find problems with your integration
 
 The API Dashboard is available to all merchants for both the production and test environments,
-and is an easy way to see if you are using the Vipps APIs correctly.
+and is an easy way to see if you are using the APIs correctly.
 Think of it as a "health check", that you can use to see if there are any
 problems you need to investigate.
 
 See it on
 [portal.vipps.no](https://portal.vipps.no)
 under the "Utvikler" ("Developer") tab.
-Here's an example for the Vipps eCom API's `/refund` endpoint:
+Here's an example for the eCom API's `/refund` endpoint:
 
 ![API Dashboard example](images/2021-02-api-dashboard-example.png)
 

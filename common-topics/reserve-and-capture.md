@@ -14,7 +14,7 @@ When you initiate a payment, it will be *reserved* until you *capture* it:
   * Captured funds will be settled to the merchant's settlement account after two business days. See
   [Settlement Information](../settlements/README.md) for more details.
 
-Vipps supports both *reserve capture* and *direct capture*:
+We support both *reserve capture* and *direct capture*:
 
 * *Reserve capture* is the default, and works for all types if payments.
   When you initiate a payment, it will be reserved until you capture it.
@@ -34,7 +34,7 @@ Vipps supports both *reserve capture* and *direct capture*:
   Direct capture requires additional compliance checks of the merchant.
 
 **Important:** It's completely fine to use *reserve capture* almost exactly like
-_direct capture*: Just do the capture immediately after the reservation.
+*direct capture*: Just do the capture immediately after the reservation.
 The user experience is exactly the same.
 
 Important things to consider for cancellations and refunds:
@@ -63,7 +63,7 @@ This is applicable to:
 
 ## Reserve
 
-When the user confirms the purchase in Vipps, the payment status changes to `RESERVE`.
+When the user confirms the purchase in the app, the payment status changes to `RESERVE`.
 The respective amount will be reserved for capture, which may be done immediately or later.
 
 For example:
@@ -119,20 +119,20 @@ for historical reasons,  but not available in the newer
 
 When *direct capture* is activated, all payment reservations will instantly be captured.
 
-With *direct capture*, Vipps is responsible for the customer receiving the purchased product.
+With *direct capture*, Vipps MobilePay is responsible for the customer receiving the purchased product.
 Because of this, *direct capture* requires additional compliance checks.
 
-A sales unit can only have one capture type, and it must be configured by Vipps.
+A sales unit can only have one capture type, and it must be configured by Vipps MobilePay.
 You can't turn *direct capture* on or off as a merchant.
 
 We strongly recommend using "reserve capture" in all situations.
 
-**Please note:** Vipps only offers "direct capture" for merchants that use
-Vipps through a partner, and for merchants that have a Key Account Manager.
+**Please note:** We only offer "direct capture" for merchants that use
+Vipps MobilePay through a partner, and for merchants that have a Key Account Manager.
 "Direct capture" must be requested by the partner from the partner manager,
 or by KAM merchants from the Key Account Manager.
 
-**Please note:** Vipps Checkout does *not* support "direct capture".
+**Please note:** The Checkout API does *not* support "direct capture".
 
 See the FAQ:
 

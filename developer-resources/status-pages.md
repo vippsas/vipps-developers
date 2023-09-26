@@ -1,6 +1,6 @@
 ---
 title: Status pages
-sidebar_position: 130
+sidebar_position: 150
 pagination_next: null
 pagination_prev: null
 ---
@@ -15,4 +15,3 @@ Find information about service interruptions on the following status pages:
 We strongly recommend that you subscribe to get notifications from these pages.
 
 You can also use the Atom and RSS feeds on the status pages for integration with other systems.
-

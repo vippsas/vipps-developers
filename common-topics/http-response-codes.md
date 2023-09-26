@@ -6,7 +6,7 @@ pagination_prev: null
 
 # HTTP response codes
 
-The Vipps APIs return the following HTTP statuses in the responses:
+The APIs return the following HTTP statuses in the responses:
 
 | HTTP status             | Description                                            |
 |:------------------------|:-------------------------------------------------------|
@@ -19,7 +19,7 @@ The Vipps APIs return the following HTTP statuses in the responses:
 | `404 Not Found`         | The resource was not found                             |
 | `409 Conflict`          | Unsuccessful due to conflicting resource               |
 | `429 Too Many Requests` | Look at table below to view current rate limits        |
-| `500 Server Error`      | An internal Vipps problem.                             |
+| `500 Server Error`      | An internal Vipps MobilePay problem.                             |
 
 In general:
 

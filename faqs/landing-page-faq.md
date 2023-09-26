@@ -12,13 +12,12 @@ pagination_prev: null
 
 Only in special cases, where displaying it is not possible.
 
-This feature has to be specially enabled by Vipps for eligible sales units:
-The sales units must be whitelisted by Vipps.
+We must enable this feature for eligible sales units, which will be whitelisted.
 Skipping the landing page is typically used at physical points of sale
 where there is no display available.
 
 The landing page is more than just a web page, it is an entire
-application, and it plays an important role in the Vipps payment process.
+application, and it plays an important role in our payment process.
 See
 [landing page](../common-topics/landing-page.md)
 for more information
@@ -38,18 +37,16 @@ Include a detailed description of why it is not possible to display the landing 
 See:
 [Skip landing page](../common-topics/landing-page.md#skip-landing-page)
 
-## How can I check if I have skipLandingPage activated?
-
-Vipps can no longer manually check this for merchant or partners.
+## How can I check if I have `skipLandingPage` activated?
 
 All merchants can log in on
 [portal.vipps.no](https://portal.vipps.no)
 and check if a sales unit has `skipLandingPage` enabled
-for all their sales units under the "Utvikler" menu item.
+for all their sales units under the *Utvikler* menu item.
 
 You can also find information on how to activate `skipLandingPage` there.
 
-If you are a partner and want to check a merchant, see the
+If you are a partner and want to check for a merchant, see the
 [Management API](https://developer.vippsmobilepay.com/docs/APIs/management-api/).
 
 If you are a partner and do not yet use the Management API, you can ask the
@@ -76,10 +73,10 @@ user to reliably be redirected back to the merchant's website, and result in a
 lower success rate.
 
 When the phone's operating system is instructed to open the `fallBack` URL (the
-result page for the payment) and the Vipps app is installed, the
+result page for the payment) and our app is installed, the
 `https://vipps.no?token... [truncated]` URL is recognized
-by the phone's operating system as "owned" by Vipps. Then, instead of opening a browser,
-the Vipps app is automatically opened. This is called an *app-switch*.
+by the phone's operating system as "owned" by Vipps MobilePay. Then, instead of opening a browser,
+the Vipps or MobilePay app is automatically opened. This is called an *app-switch*.
 
 However, if the landing page is displayed inside an iframe, the logic above does
 not work. This results in the user gets a bad user experience, and the success rate for
@@ -106,7 +103,7 @@ and include a detailed description of why this is needed.
 
 **Important:**
 
-* Vipps users should never see the landing page on a device where Vipps
+* Users should never see the landing page on a device where the Vipps or MobilePay
   is installed.
 * Any *optimization* of the normal payment flow may break the Vipps payment
   flow - if not today, then later.

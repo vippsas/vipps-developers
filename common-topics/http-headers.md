@@ -6,12 +6,12 @@ pagination_prev: null
 
 # HTTP headers
 
-Please use the following Vipps HTTP headers for all requests to the
-Vipps APIs. These headers provide useful metadata about the merchant's system,
-which help Vipps improve our services, and also helps in investigating problems.
+Please use the following HTTP headers for all requests to the
+APIs. These headers provide useful metadata about the merchant's system,
+which help us improve our services, and also helps in investigating problems.
 
 These headers are **required for plugins and partners** and sent by the
-[official Vipps plugins](https://developer.vippsmobilepay.com/docs/plugins).
+[official plugins](https://developer.vippsmobilepay.com/docs/plugins).
 We strongly recommend that all customers with direct integration with the API to also do so.
 
 Partners must always send the `Merchant-Serial-Number` header, and we recommend
@@ -46,7 +46,7 @@ so it is as easy as possible to solve problems with your API requests if there a
 
 ## Idempotency
 
-Many API requests to Vipps APIs can be retried without any side effects
+Many API requests to the APIs can be retried without any side effects
 by providing `Idempotency-Key`(in older APIs, this may be called, `Request-Id`)
 in the header of the request.
 

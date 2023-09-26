@@ -58,7 +58,7 @@ pagination_prev: null
   providing a platform, helping set up custom integrations, or developing
   our official plugins.
   See:
-  [Vipps partners](https://developer.vippsmobilepay.com/docs/partner).
+  [Partners](https://developer.vippsmobilepay.com/docs/partner).
 
 * Partner keys - Unique identifiers that allow partners to use their own API
   credentials to make API calls on behalf of their merchants.

@@ -45,10 +45,10 @@ See:
 
 ## Recurring API: The "PROCESSING" status
 
-We would like to emphasize: With the Vipps Recurring API merchants ask Vipps
-to make the charges, and Vipps handles *everything* for the merchant.
+We would like to emphasize: With the Recurring API merchants ask Vipps
+to make the charges, and Vipps MobilePay handles *everything* for the merchant.
 
-Vipps does not "leak" the customers' information about insufficient funds,
+Vipps MobilePay does not "leak" the customers' information about insufficient funds,
 blocked cards, etc. Users are informed about all such problems in Vipps, which
 is the only place they can be corrected. The merchant's customer service should
 always ask the user to check in Vipps if a charge has failed.
@@ -60,7 +60,7 @@ the charge itself has not failed until all the attempts are completed.
 We will therefore continue to use `PROCESSING`, as we have done, but until
 _all* charge attempts have been made.
 
-The status of a charge will be `PROCESSING` while Vipps is taking care of business,
+The status of a charge will be `PROCESSING` while Vipps MobilePay is taking care of business,
 from the `due` date until the charge has succeeded, or until the
 `retryDays` have passed without a successful charge.
 The final status will be `CHARGED` or `FAILED`.
@@ -71,12 +71,12 @@ for more details.
 We are also working on providing an event log for each `chargeId`, so merchants
 can get *some* information, especially if a charge ends as `FAILED`.
 You can "star" the
-[Vipps Recurring API repo](https://developer.vippsmobilepay.com/docs/APIs/recurring-api)
+[Recurring API repo](https://developer.vippsmobilepay.com/docs/APIs/recurring-api)
 and subscribe to this newsletter to get updates.
 
 ## Vipps Login directly from phone number and QR code
 
-The Vipps Login API now supports merchant-initiated logins using the
+The Login API now supports merchant-initiated logins using the
 user's phone number, and by users scanning a QR code.
 
 * Vipps Login directly from phone number is a "Client Initiated Backchannel
@@ -95,7 +95,7 @@ See:
 
 * [Vipps Login from phone number API: How It Works](https://developer.vippsmobilepay.com/docs/APIs/login-api/how-it-works/vipps-login-from-phone-number-api-howitworks)
 * Vipps Login from QR-code API: How It Works (no longer available)
-* [Vipps Login API](https://developer.vippsmobilepay.com/docs/APIs/login-api)
+* [Login API](https://developer.vippsmobilepay.com/docs/APIs/login-api)
 
 ## Deprecation of the Vipps Signup API
 
@@ -110,14 +110,14 @@ and
 ### Use the API Dashboard to find problems with your integration
 
 The API Dashboard is available to all merchants for both the production and test environments,
-and is an easy way to see if you are using the Vipps APIs correctly.
+and is an easy way to see if you are using the APIs correctly.
 Think of it as a "health check", that you can use to see if there are any
 problems you need to investigate.
 
 See it on
 [portal.vipps.no](https://portal.vipps.no)
 under the "Utvikler" ("Developer") tab.
-Here's an example for the Vipps eCom API's `/refund` endpoint:
+Here's an example for the eCom API's `/refund` endpoint:
 
 ![API Dashboard example](images/2021-02-api-dashboard-example.png)
 
@@ -144,7 +144,7 @@ These Vipps solutions are extra relevant (again):
 * Use
   [Vipps Logg inn](https://vipps.no/produkter-og-tjenester/privat/logg-inn-med-vipps/logg-inn-med-vipps/)
   and the
-  [Vipps Login API](https://developer.vippsmobilepay.com/docs/APIs/login-api)
+  [Login API](https://developer.vippsmobilepay.com/docs/APIs/login-api)
   to register visitors - it's free.
 * [Use Userinfo to register visitors when they pay](#use-userinfo-to-register-visitors-when-they-pay)
   as an easy-to-use step in a normal Vipps payment.

@@ -13,10 +13,10 @@ pagination_prev: null
 [Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/docs/).
 <!-- END_COMMENT -->
 
-There are many resources available to developers who want to integrate with Vipps. For example:
+There are many resources available to developers who want to integrate with Vipps MobilePay. For example:
 
 * [API Dashboard](api-dashboard.md)
 * [Demo store](demo-store.md)
+* [Merchant portal](portal.md)
+* [Servers](servers.md)
 * [Status pages](status-pages.md)
-* [Vipps portal](portal.md)
-* [Vipps servers](servers.md)

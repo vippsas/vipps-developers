@@ -54,14 +54,14 @@ This could typically be physical contexts like point of sales (POS) solutions, o
 phone in call center solutions, or devices/terminals like TV boxes. We currently support initiating logins based on the users phone number. We are also working on supporting the same flows with the user scanning the merchant's QR-code as a starting point.
 
 More information can be found in the
-[Vipps Login API Guide](https://developer.vippsmobilepay.com/docs/APIs/login-api).
+[Login API Guide](https://developer.vippsmobilepay.com/docs/APIs/login-api).
 
-## The Vipps Recurring API now supports variable amounts
+## The Recurring API now supports variable amounts
 
 Recurring agreements with variable amount lets merchants charge users a different amount each for interval, based on the user's specified max amount.
 
 More information can be found in the
-[Vipps Recurring API Guide](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/vipps-recurring-api#recurring-agreements-with-variable-amount).
+[Recurring API Guide](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/vipps-recurring-api#recurring-agreements-with-variable-amount).
 
 ## API Dashboard for the test environment
 
@@ -75,7 +75,7 @@ Here's an example:
 
 ## Removed HTTP 402 errors
 
-The Vipps eCom API previously sent `HTTP 402 Payment Required` for some errors.
+The eCom API previously sent `HTTP 402 Payment Required` for some errors.
 That HTTP status is "reserved for future use", and our use was a bit *creative*.
 
 We now send `HTTP 400 Bad Request` instead, with more details in the message body.

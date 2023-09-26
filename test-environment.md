@@ -66,20 +66,20 @@ Functionality that is not available in the test environment, a non-exhaustive li
 1. The user's email address can not be verified in the normal way.
    See: [Email address](#email-address).
 1. Payment of invoices is unavailable.
-1. We allow 10,000 incorrect PIN attempts before locking the Vipps user's account.
+1. We allow 10,000 incorrect PIN attempts before locking the user's account.
 
-To test functionality that is not available in MT, you will have to use the
+To test functionality that is not available in MT, you will have to use
 the production environment in a controlled manner, using a real user and a real merchant.
 
 ## Access to the test environment
 
 ### Merchants
 
-All merchants with API access have access to the Vipps test environment.
+All merchants with API access have access to the test environment.
 
 A test sales unit is automatically created when the merchant submits an order
-for a Vipps product (that has an API), and the details can be found on the
-"Utvikler" (developer) section on
+for a Vipps MobilePay product with an API. The details can then be found on the
+*Utvikler* (*developer*) section on
 [portal.vipps.no](https://portal.vipps.no).
 
 See:
@@ -90,8 +90,7 @@ See:
 ### Partners
 
 Partners can get access to the test environment by ordering
-"Vipps Logg inn" (the
-[Vipps Login API](https://developer.vippsmobilepay.com/docs/APIs/login-api)).
+the [Login API](https://developer.vippsmobilepay.com/docs/APIs/login-api).
 
 See:
 [How to get access to portal.vipps.no](https://developer.vippsmobilepay.com/docs/partner#how-to-get-access-to-portalvippsno).
@@ -104,10 +103,10 @@ The test and production environments are separate and require different API cred
 |-------------------|------------------|
 | api.vipps.no      | apitest.vipps.no |
 
-The servers are accessible around the world. Vipps only relies on the API keys, and
+The servers are accessible around the world. Vipps MobilePay only relies on the API keys, and
 no requests to our servers are blocked on our side by IP addresses or similar.
 
-See [Vipps servers](./developer-resources/servers.md) for more information.
+See [Servers](./developer-resources/servers.md) for more information.
 
 ## Test merchants
 
@@ -115,13 +114,13 @@ The test environment and production environments are completely separate.
 You will, therefore, need to use a different set of API keys for the test environment.
 
 Test merchants have access to all the common APIs on the
-[Vipps MobilePay API platform](https://developer.vippsmobilepay.com/docs/APIs).
+[API platform](https://developer.vippsmobilepay.com/docs/APIs).
 
-All Vipps customers can create as many sales units ("merchants") as they need
+All Vipps MobilePay customers can create as many sales units ("merchants") as they need
 in the test environment. Sale units in the test environment can not be changed.
 
 See:
-[Developer resources: Vipps portal: How to create a test sales unit](./developer-resources/portal.md#how-to-create-a-test-sales-unit).
+[Developer resources: Merchant portal: How to create a test sales unit](./developer-resources/portal.md#how-to-create-a-test-sales-unit).
 
 **Please note:** Sales units in the *production* environment must follow strict
 rules (regulatory and other), so you may not be able to get the same sales unit
@@ -138,7 +137,7 @@ going to the *Utvikler* (*Developer*) section, and selecting the *Test users* ta
 
 **Please note:**
 
-* The provided test user must only be used in the [Vipps test apps](#vipps-test-apps).
+* The provided test user must only be used in the [test apps](#test-apps).
 * You must *log in* (not register) as the test user in the test app, before you
   can complete payments or logins as that user.
 * You may use the same test user on multiple devices.
@@ -161,7 +160,7 @@ The test user has everything required to complete a payment.
 The test user's mobile number works on all phones and on all networks.
 
 **Important:** Do *not* use the test phone number in the production environment,
-as the test number may be a real phone number for a real Vipps user.
+because the test number may be a phone number for a real Vipps or MobilePay user.
 
 You will get your test phone number in the welcome email. If you did not receive this,
 contact your partner contact (if you have one) or
@@ -179,7 +178,7 @@ You can add a real email address on a test user from the
 section in the app.
 
 **Please note:** In the test environment verification of emails can only be triggered in a
-[Vipps Login](https://developer.vippsmobilepay.com/docs/APIs/login-api)
+[Login](https://developer.vippsmobilepay.com/docs/APIs/login-api)
 flow (if the merchant requests the `email` scope), or from clicking “send email”
 from the email address section under the profile page. After updating the email
 address you will need to close and reopen the app for this option to be
@@ -196,7 +195,7 @@ is created and cannot be changed.
 
 ## Test amounts
 
-Vipps supports using special amounts in the Vipps test app.
+Vipps MobilePay supports using special amounts in the test app.
 Use these amounts to always get the same result.
 
 | Amount | Error                     |
@@ -215,10 +214,10 @@ Use these amounts to always get the same result.
 [force approve](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#testing)
 endpoint does not support this functionality.
 
-## Vipps test apps
+## Test apps
 
 The test apps for iOS and Android are identical to the production apps, but connect to
-the Vipps test environment (MT) instead of the production environment.
+the Merchant test environment (MT) instead of the production environment.
 
 The test apps can be installed on the same device as the production apps without conflicts.
 The test apps use the `vippsMT://` URL scheme, and the production apps use `vipps://`.
@@ -227,9 +226,9 @@ Only test users, with random "fake" phone numbers, are available in the test env
 Normal (real) users are not available, so you cannot use your own phone number with the test apps.  
 
 **Important:** Do *not* use the test phone number in the production environment,
-as the test number may be a real phone number for a real Vipps user.
+as the test number may be a phone number for a real Vipps or MobilePay user.
 
-### Install Vipps MT on iOS
+### Install MT on iOS
 
 The iOS test app is available for everyone in Apple TestFlight.
 You do *not* need an invitation or an activation code.
@@ -244,15 +243,15 @@ You do *not* need an invitation or an activation code.
 4. Enter the test phone number, that was sent in the welcome email to the email
    address used in the registration  (please double-check before asking for
    a new test phone number).
-   Your normal Vipps user is not available in the test environment.
+   Your normal Vipps or MobilePay user is not available in the test environment.
 5. On the "Verify your number" screen: Use PIN  `1236`.
 6. On the "Enter your code" screen: Use PIN `1236`.
 7. Enable Face ID (or Touch ID) and confirm with PIN  `1236`.
 8. Accept push notifications.
 
-You are now ready to use the iOS test app connected to the Vipps test environment.
+You are now ready to use the iOS test app connected to the test environment.
 
-### Install Vipps MT on Android
+### Install MT on Android
 
 The Android test app is available for everyone in App Center.
 You do *not* need an invitation or an activation code.
@@ -269,13 +268,13 @@ You do *not* need an invitation or an activation code.
 4. Enter the test phone number, that was sent in the welcome email to the email
    address used in the registration  (please double-check before asking for
    a new test phone number).
-   Your normal Vipps user is not available in the test environment.
+   Your normal Vipps or MobilePay user is not available in the test environment.
 5. On the "Verify your number" screen: Use PIN  `1236`.
 6. On the "Enter your code" screen: Use PIN `1236`.
 7. Enable touch ID and confirm with PIN  `1236`.
 8. Accept push notifications.
 
-You are now ready to use the Android test app connected to the Vipps test environment.
+You are now ready to use the Android test app connected to the test environment.
 
 ### Other versions of the test app
 
@@ -289,4 +288,4 @@ for the test environment with details.
 
 If you use an app emulator, and not the native apps installed on
 a real phone, you may experience problems - including having to log in "from scratch"
-every time you start Vipps in the emulator.
+every time you start the app in the emulator.

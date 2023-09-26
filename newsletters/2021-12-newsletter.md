@@ -17,7 +17,7 @@ These Vipps solutions are extra relevant (again):
 * Use
   [Vipps Logg inn](https://vipps.no/produkter-og-tjenester/privat/logg-inn-med-vipps/logg-inn-med-vipps/)
   and the
-  [Vipps Login API](https://developer.vippsmobilepay.com/docs/APIs/login-api)
+  [Login API](https://developer.vippsmobilepay.com/docs/APIs/login-api)
   to register visitors - it's free.
 * [Use Userinfo to register visitors](#use-userinfo-to-register-visitors)
   as an easy-to-use step in a normal Vipps payment.
@@ -45,14 +45,14 @@ for more details.
 ## Use the API Dashboard to find problems with your integration
 
 The API Dashboard is available for both the production and test environments,
-and is an easy way to see if you are using the Vipps APIs correctly.
+and is an easy way to see if you are using the APIs correctly.
 Think of it as a "health check", that you can use to see if there are any
 problems you need to investigate.
 
 See it on
 [portal.vipps.no](https://portal.vipps.no)
 under the "Utvikler" ("Developer") tab.
-Here's an example for the Vipps eCom API's `/refund` endpoint:
+Here's an example for the eCom API's `/refund` endpoint:
 
 ![API Dashboard example](images/2021-02-api-dashboard-example.png)
 
@@ -128,7 +128,7 @@ existing Vipps transaction. This information is shown to the customer in the
 app in their order history. This functionality is available for both recurring
 and direct payments, but not for pass-through payments.
 
-### The Vipps Recurring API now supports variable amounts
+### The Recurring API now supports variable amounts
 
 Recurring agreements with variable amount lets merchants charge users a different
 amount each for interval, based on the user's specified max amount.

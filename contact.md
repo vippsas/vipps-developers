@@ -11,15 +11,7 @@ pagination_prev: null
 [Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/docs/contact/).
 <!-- END_COMMENT -->
 
-## MobilePay support
-
-While we work to bring together the best features of both Vipps and MobilePay platforms, some information is still under development and will be updated soon.
-
-For those in need of assistance with MobilePay, we recommend checking out the [MobilePay Developer Support page](https://developer.mobilepay.dk/docs/support). Here, users can find a wealth of information and resources to help navigate the platform and troubleshoot any issues that may arise.
-
-## Vipps support
-
-### Non-technical questions
+## Non-technical questions
 
 We offer a wide range of self-service solutions on our portal at [portal.vipps.no](https://portal.vipps.no). We encourage you to check there first to see if your question or issue has already been addressed.
 
@@ -30,15 +22,15 @@ For non-technical question, the fastest way to get help is to start in one of th
 | Questions relating to: | How to get help: |
 |--------|----------------|
 | General questions (e.g., customer relationship, creating sales units, change of admins) | See [Contact info on vipps.no](https://www.vipps.no/kontakt-oss/). |
-| Problems with Vipps services  | Check the status on the [Status pages](./developer-resources/status-pages.md). |
-| Applications for Vipps products (status, follow-ups, etc.) | Check the status on [portal.vipps.no](https://portal.vipps.no). |
-| Vipps plugins (e.g., WooCommerce, Shopify, Wix, etc.) | Check the support info for your plugin in the [Plugin](https://developer.vippsmobilepay.com/docs/plugins) documentation. |
-| Vipps through a partner (for merchants) | Contact your partner. |
-| Vipps through a POS (Point of Sale) vendor | Contact your POS vendor. |
-| Vipps through a PSP (Payment Service Provider) | Contact your PSP. |
+| Problems with Vipps MobilePay services  | Check the status on the [Status pages](./developer-resources/status-pages.md). |
+| Applications for Vipps MobilePay products (status, follow-ups, etc.) | Check the status on [portal.vipps.no](https://portal.vipps.no). |
+| Vipps MobilePay plugins (e.g., WooCommerce, Shopify, Wix, etc.) | Check the support info for your plugin in the [Plugin](https://developer.vippsmobilepay.com/docs/plugins) documentation. |
+| Vipps MobilePay through a partner (for merchants) | Contact your partner. |
+| Vipps MobilePay through a POS (Point of Sale) vendor | Contact your POS vendor. |
+| Vipps MobilePay through a PSP (Payment Service Provider) | Contact your PSP. |
 | Partner assistance (for partners) | Check the [Partner](https://developer.vippsmobilepay.com/docs/partner) and [Management API](https://developer.vippsmobilepay.com/docs/APIs/management-api/) documentation. |
 | Settlements, invoices or similar | Check the [Settlements](./settlements/README.md) documentation. |
-| Suggestions for improvements to [Vipps products](https://www.vipps.no/produkter-og-tjenester/bedrift/)  | Please use [this form](https://www.vipps.no/kontakt-oss/). |
+| Suggestions for improvements to [Vipps MobilePay products](https://www.vipps.no/produkter-og-tjenester/bedrift/)  | Please use [this form](https://www.vipps.no/kontakt-oss/). |
 
 For *technical* issues related to using our APIs, please see the sections below.
 

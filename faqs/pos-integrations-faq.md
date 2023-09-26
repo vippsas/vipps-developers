@@ -17,14 +17,14 @@ customer-facing screen, so there is no need to manually input the mobile number.
 
 Basic flow:
 
-1. Initiate a Vipps eCom payment (`skipLandingPage` must be set to false)
+1. Initiate a eCom payment (`skipLandingPage` must be set to `false`)
 2. Receive the payment URL as response
 3. Post the payment URL to the
-   [Vipps QR API](https://developer.vippsmobilepay.com/docs/APIs/qr-api)
+   [QR API](https://developer.vippsmobilepay.com/docs/APIs/qr-api)
 4. Receive a URL to a QR code in PNG (Portable Network Graphics) format
 5. Present the QR code on the customer-facing screen
-6. The user scans the QR code with Vipps or camera app
-7. The user pays (or cancels the payment) in Vipps
+6. The user scans the QR code with the Vipps or MobilePay app, or the camera app
+7. The user pays (or cancels the payment) in the app
 8. The fallback URL is triggered and will be presented on customers mobile phone
 
 **Please note:**
@@ -34,8 +34,8 @@ also that an error messages if something went wrong.
 
 If it is not possible for the POS solution to handle a fallback URL you may use one of the following options:
 
-1. Set fallbackURL to be the merchant's website
-2. Set fallbackURL to be this Vipps hosted static page: [www.vipps.no/thankyoupage/](https://www.vipps.no/thankyoupage/)
+1. Set `fallbackURL` to be the merchant's website
+2. Set `fallbackURL` to be this static page: [www.vipps.no/thankyoupage/](https://www.vipps.no/thankyoupage/)
 
 See also:
 
@@ -99,26 +99,26 @@ You will use the same API keys for all stores.
 
 Due to compliance requirements in a payment situation where customer is not present, we recommend implementing the
 [Order management API](https://developer.vippsmobilepay.com/docs/APIs/order-management-api/vipps-order-management-api).
-This allows the merchants to send rich receipt information to existing Vipps transactions.
+This allows the merchants to send rich receipt information to existing transactions.
 This information is visible for the customer in the app in their order history.
 
-As an alternative an online sale log must be available for Vipps.
+As an alternative, an online sale log must be available.
 
 ## What is the process to go live in production?
 
-1. The partner establishes a customer relationship with Vipps.
+1. The partner establishes a customer relationship with Vipps MobilePay.
    [Apply here](https://www.vipps.no/produkter-og-tjenester/bedrift/ta-betalt-i-butikk/vipps-i-kassa/).
-2. The partner integrates the POS with Vipps and completes
+2. The partner integrates the POS with Vipps MobilePay and completes
    [the integration checklist](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api-checklist).
    The partner now has a working POS integration.
    This process normally takes 1-4 days.
-3. The partner's merchant establishes a customer relationship with Vipps.
+3. The partner's merchant establishes a customer relationship with Vipps MobilePay.
    [Apply here](https://www.vipps.no/produkter-og-tjenester/bedrift/ta-betalt-i-butikk/vipps-i-kassa/).
    This process normally takes 1-4 days.
-4. If the merchant already has a customer relationship with Vipps, a new sales
+4. If the merchant already has a customer relationship with Vipps MobilePay, a new sales
    unit must be created, with `skipLandingPage` activated.
    The
-   [Vipps customer center](https://vipps.no/hjelp/vipps/)
+   [customer center](https://vipps.no/hjelp/vipps/)
    can help with this.
    See: [landing page FAQ](landing-page-faq.md#is-it-possible-to-skip-the-landing-page).
 5. The POS vendor normally uses
@@ -127,8 +127,8 @@ As an alternative an online sale log must be available for Vipps.
    [retrieves the API keys](../common-topics/api-keys.md#getting-the-api-keys)
    and provides them securely to the partner.
    See: [Which API keys should I use?](#which-api-keys-should-i-use)
-6. The partner configures the merchant's POS for Vipps.
-7. The merchant can now accept Vipps payments in the POS.
+6. The partner configures the merchant's POS for Vipps MobilePay.
+7. The merchant can now accept Vipps MobilePay payments in the POS.
 
 ## Which API keys should I use?
 
@@ -157,9 +157,9 @@ with a phone number that is not registered with Vipps will fail with error 81,
 `User not registered with Vipps`.
 See: [Error codes](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#error-codes).
 
-Users that install Vipps accept the terms and conditions, including being
+Users that install the app accept the terms and conditions, including being
 "looked up" by the merchant if the payment is initiated with the phone number
-is specified.  It is of course possible to pay with Vipps without sharing the
+is specified. It is possible to pay with Vipps without sharing the
 phone number with the merchant.
 See
 [`POST:/ecomm/v2/payments`](https://developer.vippsmobilepay.com/api/ecom#tag/Vipps-eCom-API/operation/initiatePaymentV3UsingPOST)
@@ -174,9 +174,9 @@ not shared with anyone without their explicit consent.
 
 ## How can I save the customer's phone number?
 
-Vipps does not send the customer's phone number to the merchant. When a customer
-enters the phone number on the landing page, that is only used by Vipps
-to send a push alert in Vipps. The number is not passed on to the merchant.
+We don't send the customer's phone number to the merchant. When a customer
+enters the phone number on the landing page, that is only used
+to send a push alert in Vipps MobilePay. The number is not passed on to the merchant.
 
 If the POS integration is implemented so that the customer's phone number
 is entered in the POS, the merchant can of course save it -
@@ -184,9 +184,9 @@ complying with GDPR, etc.
 
 See:
 
-* [Is there an API for retrieving information about a Vipps user?](users-and-payments-faq.md#is-there-an-api-for-retrieving-information-about-a-vipps-user).
-* [The Vipps QR API](https://developer.vippsmobilepay.com/docs/APIs/qr-api)
+* [Is there an API for retrieving information about a user?](users-and-payments-faq.md#is-there-an-api-for-retrieving-information-about-a-user).
+* [The QR API](https://developer.vippsmobilepay.com/docs/APIs/qr-api)
 
 ## How can we mass sign up merchants?
 
-See: [Vipps Partners: How to sign up new merchants](https://developer.vippsmobilepay.com/docs/partner#how-to-sign-up-new-merchants).
+See: [Partners: How to sign up new merchants](https://developer.vippsmobilepay.com/docs/partner#how-to-sign-up-new-merchants).

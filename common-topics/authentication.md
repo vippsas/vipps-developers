@@ -11,7 +11,7 @@ pagination_prev: null
 [Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/docs/).
 <!-- END_COMMENT -->
 
-All Vipps API requests must include the `Authorization` header with
+All Vipps MobilePay API requests must include the `Authorization` header with
 a JSON Web Token (JWT), which we call the *access token*.
 
 To get an access token, first you need to have API keys. Get your API keys, as described in
@@ -38,7 +38,7 @@ curl https://apitest.vipps.no/accessToken/get \
 -X POST
 ```
 
-Read more about the [standard Vipps HTTP headers](http-headers.md).
+Read more about the Vipps MobilePay standard [HTTP headers](http-headers.md).
 
 Many of these headers are optional during testing, but you should include them in your integration, so that error information can be found in the logs.
 

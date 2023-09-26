@@ -28,7 +28,7 @@ We have done a major overhaul of all our API specifications, so all the
 OpenAPI/Swagger specifications and all the Postman collections and environments
 have been improved. See each API's GitHub repo for details.
 
-## Remember: Vipps is always without fees when paying to businesses
+## Remember: Vipps MobilePay is always without fees when paying to businesses
 
 Just a friendly reminder: Users never have to pay a fee when they pay a business
 with Vipps. Please try to make this as clear as possible in your solution.
@@ -36,7 +36,7 @@ with Vipps. Please try to make this as clear as possible in your solution.
 ### Klarna Checkout recommendations
 
 Please make sure to include the text saying
-"Remember: Vipps is always without fees when paying businesses"
+"Remember: Vipps MobilePay is always without fees when paying businesses"
 or similar:
 
 ```json
@@ -54,7 +54,7 @@ or similar:
 More details:
 [Can I use Vipps with Klarna Checkout?](../faqs/other-faq.md#can-i-use-vipps-with-klarna-checkout)
 
-## Vipps eCom API: HTTPS required for all URLs
+## eCom API: HTTPS required for all URLs
 
 From October 1, 2022, URL links in the body of
 [`POST:/payments`](https://developer.vippsmobilepay.com/api/ecom#tag/Vipps-eCom-API/operation/initiatePaymentV3UsingPOST)
@@ -108,14 +108,14 @@ See:
 ### Use the API Dashboard to find problems with your integration
 
 The API Dashboard is available to all merchants for both the production and test environments,
-and is an easy way to see if you are using the Vipps APIs correctly.
+and is an easy way to see if you are using the APIs correctly.
 Think of it as a "health check", that you can use to see if there are any
 problems you need to investigate.
 
 See it on
 [portal.vipps.no](https://portal.vipps.no)
 under the "Utvikler" ("Developer") tab.
-Here's an example for the Vipps eCom API's `/refund` endpoint:
+Here's an example for the eCom API's `/refund` endpoint:
 
 ![API Dashboard example](images/2021-02-api-dashboard-example.png)
 

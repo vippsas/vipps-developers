@@ -8,6 +8,8 @@ pagination_prev: null
 
 # FAQ: Applying for services
 
+*This is in the process of changing as part of the [Vipps MobilePay joint platform launch](https://www.vippsmobilepay.com/#about).*
+
 To apply for services, you need to have a Norwegian organization number
 and applications must be signed with Norwegian BankID.
 
@@ -21,10 +23,10 @@ products.
 Apply for services on
 [portal.vipps.no](https://portal.vipps.no).
 
-**Please note:** If you plan to use Vipps through a PSP, please see
+**Please note:** If you plan to use Vipps MobilePay through a PSP, please see
 [Direct integration and PSP integration](../common-topics/direct-vs-psp.md).
 
-Vipps is required to perform a background check on all merchants who want to use Vipps
+We are required to perform a background check on all merchants who want to use our
 services, so it might take a few days before you hear back from us.
 You can check the status of your application on
 [portal.vipps.no](https://portal.vipps.no)
@@ -36,8 +38,8 @@ you (or the user associated with the order) will receive an email
 with the name and serial number of your test sales unit, along with the
 [test user](https://developer.vippsmobilepay.com/docs/test-environment/#test-users)
 for logging into the
-[Vipps Merchant Test (MT) app](https://developer.vippsmobilepay.com/docs/test-environment/#vipps-test-apps).
-Now, you can start testing with the Vipps APIs.
+[Merchant Test (MT) app](https://developer.vippsmobilepay.com/docs/test-environment/#vipps-test-apps).
+Now, you can start testing with the APIs.
 
 When your product order is approved, you will get an email stating that you can
 get access to the production environment using your production
@@ -45,14 +47,16 @@ get access to the production environment using your production
 on
 [portal.vipps.no](https://portal.vipps.no).
 These API keys will allow you to start making API requests to the production server
-(e.g., create a payment request that goes to a real user's Vipps app).
+(e.g., create a payment request that goes to a real user's app).
 
 ## Requirements
 
+*This is in the process of changing as part of the [Vipps MobilePay joint platform launch](https://www.vippsmobilepay.com/#about).*
+
 ### Non-Norwegian companies
 
-Non-Norwegian companies must have the following in order to use Vipps as a payment
-provider and to receive payments from Vipps users:
+Non-Norwegian companies must have the following in order to use  MobilePay as a payment
+provider and to receive payments from Vipps or MobilePay users:
 
 * A Norwegian organization number
 * A Norwegian bank account
@@ -63,7 +67,7 @@ If the foreign company is registered in
 [Brønnøysundregistrene](https://www.brreg.no/),
 it has a contact person with a Norwegian identity number.
 
-If the foreign company has not yet been formally established, Vipps can
+If the foreign company has not yet been formally established, Vipps MobilePay can
 manually send the agreement for digital signing with Danish NemID,
 Swedish BankID, etc. When this is required, please contact
 [customer service](https://vipps.no/kontakt-oss/)
