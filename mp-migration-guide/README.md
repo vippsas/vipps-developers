@@ -45,7 +45,7 @@ Please visit the [MobilePay developer documentation](https://developer.mobilepay
 
 
 ## MobilePay Reporting 
-You need to integrate to Vipps MobilePay Report API. Your existing Reporting API integration will stop working.  Use the [Reporting API to Report API migration guide](reporting.md) to ease the transition.
+You need to integrate to Vipps MobilePay Report API as the The Reporting API will be unavailable after we move to facades. Your existing Reporting API integration will stop working.  Use the [Reporting API to Report API migration guide](reporting.md).
 
 ## MobilePay Online
 
