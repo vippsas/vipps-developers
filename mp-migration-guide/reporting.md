@@ -32,7 +32,7 @@ Please be aware that a v2 version is in development, which will introduce additi
 |                                    |                                                                                                 |
 | `currencyCode`                     | `currency`                                                                             |
 | `message`                           | N/A                                                                                          |
-| `merchantReference: `"external_id"` | `orderId`                                                      |
+| `merchantReference` | `orderId`                                                      |
 | `merchantPaymentLabel`     | N/A                                                                                          |
 | `transferReference`       | N/A                                                                                          |
 | `transferDate`            | `ledgerDate`                                                                  |
