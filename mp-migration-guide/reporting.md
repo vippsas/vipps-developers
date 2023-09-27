@@ -49,8 +49,8 @@ Please be aware that a v2 version is in development, which will introduce additi
 | `agreementExternalId`     | N/A                                                                                          |
 | `agreementId`             | N/A                                                                                          |
 | `refundId`               | N/A                                                                                          |
-|               | `ledgerId`                                                                                          |
-|               | `fee`                                                                                       |
+| N/A               | `ledgerId`                                                                                          |
+| N/A               | `fee`                                                                                       |
 
 ### Webhook
 Webhook events through [MobilePay Webhook API](https://developer.mobilepay.dk/api/wehooks) will no longer be sent for transfer.succeeded
