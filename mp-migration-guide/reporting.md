@@ -31,7 +31,7 @@ Please be aware that a v2 version is in development, which will introduce additi
 | `amount`                           | `ledgerAmount`                                                                        |
 |                                    |                                                                                                 |
 | `currencyCode`                     | `currency`                                                                             |
-| `message`                           | In the pipeline                                                                                          |
+| `message`                           | Upcomming feature                                                                                         |
 | `merchantReference` | `orderId`                                                      |
 | `merchantPaymentLabel`     | N/A                                                                                          |
 | `transferReference`       | N/A                                                                                          |
