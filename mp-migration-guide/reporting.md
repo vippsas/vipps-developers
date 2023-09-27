@@ -12,7 +12,7 @@ import MT from './_mt.md'
 
 ## API Documentation
 
-Both the Vipps MobilePay Report API and the MobilePay Reporting API allow for the retrieval of data related to payments, reconciliation, and more. The data offered by these APIs is quite similar. The transition from the Reporting API to the Report API is straightforward, involving no advanced logic; it's primarily about retrieving data in a read-only manner. 
+Both the [Vipps MobilePay Report API](https://developer.vippsmobilepay.com/docs/APIs/report-api/) and the [MobilePay Reporting API](https://developer.mobilepay.dk/docs/reporting) allow for the retrieval of data related to payments, reconciliation, and more. The data offered by these APIs is quite similar. The transition from the Reporting API to the Report API is straightforward, involving no advanced logic; it's primarily about retrieving data in a read-only manner. 
 
 ### Notable Differences
 
