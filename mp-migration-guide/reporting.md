@@ -26,7 +26,7 @@ Please be aware that a v2 version is in development, which will introduce additi
 
 
 
-| **MobilePay Reporting**             | **Vipps MobilePay Report**                                                                      |
+| **MobilePay Reporting API**             | **Vipps MobilePay Report API**                                                                      |
 | ---------------------------------- | ----------------------------------------------------------------------------------------------- |
 | `paymentId`:               | `transactionId`: "2000001"                                                                    |
 | `type`: "`Payment"`                  | `transactionType`: "refund"                                                                   |
