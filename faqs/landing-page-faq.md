@@ -1,7 +1,7 @@
 ---
 title: "FAQ: Landing page"
 sidebar_label: Landing page
-sidebar_position: 190
+sidebar_position: 125
 pagination_next: null
 pagination_prev: null
 ---
