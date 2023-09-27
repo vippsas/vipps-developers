@@ -30,6 +30,20 @@ It is a REST API providing data in JSON format.
 * Merchants select their accounting partner on portal.vipps.no as described here:
   [Give access to an accounting partner](https://developer.vippsmobilepay.com/docs/APIs/report-api/api-guide/overview/#give-access-to-an-accounting-partner).
 
+## Management API
+
+The
+[Management API](https://developer.vippsmobilepay.com/docs/APIs/management-api/)
+is available for all merchants and _most_ partners:
+* Pre-fill product orders to simplify and speed up onboarding of merchants
+* Retrieve information about merchants and their sales units
+
+See
+[What are the benefits of the Management API over the Partner API?](https://developer.vippsmobilepay.com/docs/APIs/management-api/management-api-faq/#what-are-the-benefits-of-the-management-api-over-the-partner-api)
+
+Partners: See
+[Types of partner keys](https://developer.vippsmobilepay.com/docs/partner/partner-keys/#types-of-partner-keys).
+
 ## Deprecation of the SFTP service
 
 The
@@ -42,6 +56,16 @@ The
 [Report API](https://developer.vippsmobilepay.com/docs/APIs/report-api/)
 is the replacement. See:
 [What are the benefits of the Report API over the SFTP service?](https://developer.vippsmobilepay.com/docs/APIs/report-api/vipps-report-api-faq/#what-are-the-benefits-of-the-report-api-over-the-sftp-service)
+
+## Deprecation of the Partner API
+
+The
+[Management API](https://developer.vippsmobilepay.com/docs/APIs/management-api/)
+has replaced the
+[Partner API](https://developer.vippsmobilepay.com/docs/APIs/partner-api/.)
+
+For those few that still use the Partner API, please update as soon as possible.
+The Partner API will be unavailable _at the latest_ on February 1 2024.
 
 ## MobilePay migration guides
 
