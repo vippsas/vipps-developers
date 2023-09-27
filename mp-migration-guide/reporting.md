@@ -24,25 +24,23 @@ Please be aware that a v2 version is in development, which will introduce additi
 
 ### Input formats
 
-
-
 | **MobilePay Reporting API**             | **Vipps MobilePay Report API**                                                                      |
 | ---------------------------------- | ----------------------------------------------------------------------------------------------- |
-| `paymentId`:               | `transactionId`: "2000001"                                                                    |
-| `type`: "`Payment"`                  | `transactionType`: "refund"                                                                   |
-| `amount`: 276.45                   | `ledgerAmount`: 49900                                                                         |
-|                                   |                                                                                                 |
-| `currencyCode`: "DKK"             | `currency`: "NOK"                                                                             |
-| `message`                 | N/A                                                                                          |
-| `merchantReference: `"external_id"` | `orderId`: "acme-shop-123-order123abc"                                                       |
-| `merchantPaymentLabel`:     | N/A                                                                                          |
-| `transferReference`:       | N/A                                                                                          |
-| `transferDate`:            | `ledgerDate`: "2020-10-05"                                                                    |
-| `timestamp`: "2019-08-24T14:15:22Z" | `timestamp`: "2020-10-05T10:21:54.141089+0200"                                              |
+| `paymentId`                        | `transactionId`                                                                    |
+| `type`: "`Payment"`                | `transactionType`                                                                  |
+| `amount`                           | `ledgerAmount`                                                                        |
+|                                    |                                                                                                 |
+| `currencyCode`                     | `currency`                                                                             |
+| `message`                           | N/A                                                                                          |
+| `merchantReference: `"external_id"` | `orderId`                                                      |
+| `merchantPaymentLabel`     | N/A                                                                                          |
+| `transferReference`       | N/A                                                                                          |
+| `transferDate`            | `ledgerDate`                                                                  |
+| `timestamp`               | `timestamp`                                           |
 | `userPhoneNumber`         | N/A                                                                                          |
 | `userName`                | N/A                                                                                          |
 | `loyaltyId`               | N/A                                                                                          |
-| `myShopNumber`            | `recipientHandle`: "nor:12345"                                                                                          |
+| `myShopNumber`            | `recipientHandle`                                                                                    |
 | `brandName`               | N/A                                                                                          |
 | `brandId`                 | N/A                                                                                          |
 | `locationId`              | N/A                                                                                          |
@@ -51,5 +49,8 @@ Please be aware that a v2 version is in development, which will introduce additi
 | `agreementExternalId`     | N/A                                                                                          |
 | `agreementId`             | N/A                                                                                          |
 | `refundId`               | N/A                                                                                          |
-|               | ledgerId: "1",
-                                                                                          |
+|               | `ledgerId`                                                                                          |
+|               | `fee`                                                                                       |
+
+### Webhook
+Webhook events through [MobilePay Webhook API](https://developer.mobilepay.dk/api/wehooks) will no longer be sent for transfer.succeeded
