@@ -67,6 +67,16 @@ has replaced the
 For those few that still use the Partner API, please update as soon as possible.
 The Partner API will be unavailable _at the latest_ on February 1 2024.
 
+## Deprecation of the Checkout API V2
+
+The
+[Checkout API version 2](https://developer.vippsmobilepay.com/docs/APIs/checkout-api/)
+will be shut down Jan 1st 2024, so please make sure you're using version 3.
+
+Checkout V3 improves upon V2 through alignment of polling and callback responses, improvement of field names, and expanding models related to logistics options to permit more advanced features. 
+
+[Our migration guide](https://developer.vippsmobilepay.com/docs/APIs/checkout-api/vipps-checkout-api-migration-v3/) will take you through all the details, if you haven't already switched.
+
 ## MobilePay migration guides
 
 There are several migration guides for how to move from the
