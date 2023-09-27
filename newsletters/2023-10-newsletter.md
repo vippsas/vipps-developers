@@ -43,6 +43,11 @@ The
 is the replacement. See:
 [What are the benefits of the Report API over the SFTP service?](https://developer.vippsmobilepay.com/docs/APIs/report-api/vipps-report-api-faq/#what-are-the-benefits-of-the-report-api-over-the-sftp-service)
 
+## MobilePay migration guides
+
+There are several migration guides for how to move from the
+MobilePay APIs to the new APIs:
+[Migration giudes](https://developer.vippsmobilepay.com/docs/mp-migration-guide).
 
 ## Reminders
 
