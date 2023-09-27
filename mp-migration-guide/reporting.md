@@ -16,7 +16,7 @@ Both the [Vipps MobilePay Report API](https://developer.vippsmobilepay.com/docs/
 
 ### Notable Differences
 
-It's important to note that the Reporting API offers some functionalities, such as retrieving payment points, which are not available in the [Management API](https://developer.vippsmobilepay.com/docs/APIs/management-api/management-api-guide/#get-the-sales-units-for-a-merchant-by-orgno) but are present in the Report API.
+It's important to note that the MobilePay Reporting API offered some functionalities, such as retrieving payment points, which are readily available for you in the [Management API](https://developer.vippsmobilepay.com/docs/APIs/management-api/management-api-guide/#get-the-sales-units-for-a-merchant-by-orgno)  
 
 ### Upcoming Changes
 
