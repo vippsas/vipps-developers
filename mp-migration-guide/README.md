@@ -43,6 +43,10 @@ After we have switched to joint platform, you can transition to Vipps MobilePay 
 There is *no need to reintegrate* into the new solution. Your existing *App Payments* integration will continue to work, but some functionality will be changing or closed starting from the moment we transition to the joint platform.
 Please visit the [MobilePay developer documentation](https://developer.mobilepay.dk/docs/app-payments/transition-to-one-platform) for details.
 
+
+## MobilePay Reporting 
+You need to integrate to Vipps MobilePay Report API. Your existing Reporting API integration will stop working.  Use the [Reporting API to Report API migration guide](reporting.md) to ease the transition.
+
 ## MobilePay Online
 
 There is *no need to reintegrate* into the new solution. Your existing *Online* integration will continue to work, but some functionality will be changing or closed starting from the moment we transition to the joint platform.
