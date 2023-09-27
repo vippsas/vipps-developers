@@ -17,6 +17,7 @@ pagination_prev: null
 
 The following are Frequently Asked Questions (FAQs):
 
+* [Applying for services](services.md)
 * [Common errors](common-errors-faq.md)
 * [Common problems](common-problems-faq.md)
 * [Landing page](landing-page-faq.md)
@@ -26,7 +27,6 @@ The following are Frequently Asked Questions (FAQs):
 * [Requirements](requirements-faq.md)
 * [Reservations and capture](reserve-and-capture-faq.md)
 * [Users and payments](users-and-payments-faq.md)
-* [Applying for services](services.md)
 * [Other questions](other-faq.md)
 
 In addition, each API has a specific set of FAQs. For example:
