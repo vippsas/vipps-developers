@@ -219,8 +219,7 @@ can also get this error if the partner itself is deactivated, even though
 the sales unit (that it is acting on behalf of) is active.
 
 **Please note:** We no longer automatically deactivate test merchants.
-Merchants can also create new sales units in the test environment on
-[portal.vipps.no](https://portal.vipps.no).
+Merchants can [create new test sales units](../developer-resources/portal.md#how-to-create-a-test-sales-unit).
 
 See: [Error codes](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#error-codes).
 
@@ -230,7 +229,7 @@ This error occurs if you attempt to use the eCom API with a sales unit (MSN)
 that is only approved for the Login API.
 
 We perform different checks for sales units that do not make payments,
-so to use the eCom API you need to order *Vipps på nett* on
+so to use the eCom API you need to order *Vipps på Nett* on
 [portal.vipps.no](https://portal.vipps.no)
 to go through the regulatory and legally required checks and get
 access to the eCom API.

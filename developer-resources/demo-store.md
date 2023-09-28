@@ -19,4 +19,4 @@ You can test with a *production* version of the Vipps or MobilePay app
 Maybe you want to start by scanning this QR code and go directly to
 Vipps Hurtigkasse (Express Checkout) and buy a nice VHS cassette?
 
-![QR code to Vipps Hurtigkasse](images/demostore-qr-vipps-hurtigkasse_sm.png)
+![QR code to Vipps Hurtigkasse](../images/demostore-qr-vipps-hurtigkasse_sm.png)

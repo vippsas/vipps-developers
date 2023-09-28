@@ -51,7 +51,7 @@ which help Vipps improve our services, and also help in investigating problems.
 
 ## API Dashboard 🚦
 
-We are working on an API Dashboard that will be available under "Utvikler" on
+We are working on an API Dashboard that will be available under *Utvikler* on
 [portal.vipps.no](https://portal.vipps.no).
 The API Dashboard will make it easier for integrators to find errors and
 possible improvements in the use of the APIs.

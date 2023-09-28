@@ -1,5 +1,6 @@
 ---
 title: Vipps MobilePay servers
+sidebar_label: Servers
 sidebar_position: 140
 pagination_next: null
 pagination_prev: null

@@ -58,20 +58,23 @@ You will, therefore, need to use a different set of API keys for the test enviro
 ### Getting the API keys
 
 1. Log-in to [portal.vipps.no](https://portal.vipps.no) using BankID.
-   * If you have problems, see [Permissions and users](../developer-resources/portal.md#permissions-and-users).
-1. Select *Vipps På Nett* > *Utvikler*.
-   In the page that opens, you will see a table with many sales units listed.
+   * If you have problems logging in, check [Permissions and users](../developer-resources/portal.md#permissions-and-users).
+
+2. Select *Utvikler* from the sidebar, and select the *API-keys* tab. You should then see a table with all your company's sales units.
    Hover over the `i` in the column heading for additional information.
-   ![portal.vipps.no: The API products for a sales unit](../images/portalvippsno-salesunit-products.png)
-1. Select either *Production* or *Test*, depending on the type of keys you need.
-1. Find your desired sales unit.
+
+![The API products for a sales unit](../images/portalvippsno-salesunit-products.png)
+
+3. Select either *Production* or *Test*, depending on the type of keys you need.
+4. Find your desired sales unit.
    * If you need to create your own test sales unit,
      select *Test* and then click *Add test sales unit* and fill out the form.
      See [create a new test sales unit](../developer-resources/portal.md#how-to-create-a-test-sales-unit) for more details.
-1. Click the *Show keys* button corresponding to your sales unit.
+5. Click the *Show keys* button corresponding to your sales unit.
    The API keys will be displayed.
    **Please note:** You can only see API keys that you have access to. All others will be hidden.
-   ![portal.vipps.no: The API keys for a sales unit](../images/portalvippsno-salesunit-keys.png)
+
+![API keys](../images/portalvippsno-salesunit-keys.png)
 
 ## How to use the API keys
 
@@ -100,12 +103,10 @@ If you want, you can just ignore the second key.
 
 ## Historical note
 
-Vipps has previously had separate API keys for each API product, and a set of
+We previously had separate API keys for each API product, and a set of
 API keys were directly linked to one sales unit. This meant that customers
 needed to keep track of multiple API keys, and that access to a new API
-required a new sales unit. The API keys for Vipps eCom v1 and v2 APIs have been “upgraded” to include the same APIs as
-Vipps API.  The `Vipps-API` product also includes some *legacy* APIs, such as *eCom API v1* *Signup and Login*.
+required a new sales unit. The API keys for eCom v1 and v2 APIs have been “upgraded” to include the same APIs as `Vipps API`.  The `Vipps-API` product also includes some *legacy* APIs, such as *eCom API v1* *Signup and Login*.
 
 If you are still using a legacy API, you should upgrade as soon as possible.
-See:
-[Vipps API Lifecycle](api-lifecycle.md) for more information.
+See [API Lifecycle](api-lifecycle.md) for more information.

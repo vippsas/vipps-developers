@@ -22,7 +22,7 @@ you use, and keep them up to date. See the
 
 The API Dashboard is now available on
 [portal.vipps.no](https://portal.vipps.no)
-under the "Utvikler" ("Developer") tab.
+in the *Utvikler* (*Developer*) section.
 It lets you see if there are problems with your use of APIs.
 Here's an example:
 

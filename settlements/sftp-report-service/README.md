@@ -93,7 +93,7 @@ ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOu1WvDcTWwZumZZwTvfqUKMA4ouG3mniNsvpNWorm5m
 
 1. Log in with BankID to
    [portal.vipps.no](https://portal.vipps.no)
-   and select the *Utvikler* menu item.
+   and select the *Utvikler* section.
    If you only have *Vippsnummer*, you will find a link to SFTP setup under
    *Rapporter og tall* (i.e., *Reports and numbers*).
 2. Click the tab *SFTP Access* to add users for SFTP access.

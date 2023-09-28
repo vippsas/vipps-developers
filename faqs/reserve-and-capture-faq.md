@@ -147,9 +147,9 @@ See:
 
 We can no longer manually check this for merchant or partners.
 
-All merchants can log in on
-[portal.vipps.no](https://portal.vipps.no)
-and check the capture type for all their sales units under the "Utvikler" menu item.
+All merchants can log in to the
+[merchant portal](https://portal.vipps.no)
+and check the capture type for all their sales units in the *Utvikler* (*Developer*) section.
 
 You can also find information on how to change capture type there.
 We require BankID login for this, as "direct capture" requires additional

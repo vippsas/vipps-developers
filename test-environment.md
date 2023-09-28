@@ -82,6 +82,8 @@ for a Vipps MobilePay product with an API. The details can then be found on the
 *Utvikler* (*developer*) section on
 [portal.vipps.no](https://portal.vipps.no).
 
+![Portal test sales unit](./images/portal-test-keys.png)
+
 See:
 
 * [Common topics: Getting the API keys](https://developer.vippsmobilepay.com/docs/common-topics/api-keys#getting-the-api-keys)
@@ -132,8 +134,10 @@ A welcome email is automatically sent to **all** new customers. This email
 contains information about your test user.  
 Please search your mail, including the spam/junk folder, if you do not find it.
 
-You can also find the same test users by logging in to [portal.vipps.no](https://portal.vipps.no/),
-going to the *Utvikler* (*Developer*) section, and selecting the *Test users* tab.
+You can also find the same test users by logging in to the [portal](https://portal.vipps.no/),
+going to the *Utvikler* section, and selecting the *Test users* tab.
+
+![Portal test users](./images/portal-test-users.png)
 
 **Please note:**
 

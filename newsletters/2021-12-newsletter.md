@@ -51,7 +51,7 @@ problems you need to investigate.
 
 See it on
 [portal.vipps.no](https://portal.vipps.no)
-under the "Utvikler" ("Developer") tab.
+in the *Utvikler* (*Developer*) section.
 Here's an example for the eCom API's `/refund` endpoint:
 
 ![API Dashboard example](images/2021-02-api-dashboard-example.png)

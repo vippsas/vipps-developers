@@ -12,45 +12,50 @@ pagination_prev: null
 [Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/docs/).
 <!-- END_COMMENT -->
 
-The information about
-[portal.vipps.no](https://portal.vipps.no)
-on this page is for *developers*.
-
-All merchants with a signed agreement with Vipps MobilePay have access to
+All merchants with an active customer relationship with Vipps MobilePay have access to the merchant portal at
 [portal.vipps.no](https://portal.vipps.no).
-See (in Norwegian):
-[Who can access portal.vipps.no](https://vipps.no/hjelp/vipps/kundeforholdet-mitt/hvem-kan-logge-inn-i-vippsportalen/),
-and more information about how to use the portal.
 
-**Please note:** Merchants using a PSP will not have access to
-[portal.vipps.no](https://portal.vipps.no)
-(unless they also have
-a direct customer relationship with Vipps MobilePay,
-or has had it previously, and not cancelled the agreement).
+Note, merchants using a PSP will only have access if they have an active customer relationship with Vipps MobilePay.
 
-Contact
-[customer service](https://vipps.no/kontakt-oss/)
-if you have general questions about the portal.
+## Logging in
 
-This page will guide you through the steps to finding API keys and creating
-test sales units on
-[portal.vipps.no](https://portal.vipps.no).
+Log-in to [portal.vipps.no](https://portal.vipps.no) using BankID.
+If you have problems logging in, check [Permissions and users](#permissions-and-users).
+
+## How to find a sales unit
+
+Select *Utvikler* from the sidebar, and select the *API-keys* tab. You should see all your company's sales units.
+
+Select either *Production* or *Test*, depending on the type of keys you need.
+
+![The API products for a sales unit](../images/portalvippsno-salesunit-products.png)
 
 ## How to find the API keys
 
-See [Common topics: Getting the API keys](https://developer.vippsmobilepay.com/docs/common-topics/api-keys#getting-the-api-keys).
+[Find your desired sales unit](#how-to-find-a-sales-unit) and click the *Show keys* button.
+
+![API keys](../images/portalvippsno-salesunit-keys.png)
+
+For more information about API keys, see [API keys](../common-topics/api-keys).
 
 ## How to create a test sales unit
 
-1. Under *Vipps På Nett* > *Utvikler*, select *Environment* > *test*.
-1. Click *Add test sales unit*.
-1. Enter the requested properties and click *Create*.
-   * Name - Enter the name of your test sales unit.
-   * Partner - Enter optional partner data (not usually needed).
-   * Select optional properties:
-     * [Skip Landing Page](../faqs/landing-page-faq.md#is-it-possible-to-skip-the-landing-page)
-     * [Recurring API](https://developer.vippsmobilepay.com/docs/APIs/recurring-api)
-     * [Direct Capture](../common-topics/reserve-and-capture.md#direct-capture)
+Select *Utvikler* from the sidebar, and select the *API-keys* tab. Select the *test* environment.
+
+![Select test radio button](../images/portal-test-keys.png)
+
+Click *Add test sales unit*.
+
+![Create a test sales unit](../images/portal-new-test-salesunit.png)
+
+Enter the requested properties and click *Create*.
+
+* Name - The name of your test sales unit.
+* Partner - Optional partner data (not usually needed).
+* Select optional properties:
+  * [Skip Landing Page](../faqs/landing-page-faq.md#is-it-possible-to-skip-the-landing-page)
+  * [Recurring API](https://developer.vippsmobilepay.com/docs/APIs/recurring-api)
+  * [Direct Capture](../common-topics/reserve-and-capture.md#direct-capture)
 
 After a couple of minutes, your new test sales unit will appear in the bottom of the list (possibly after some browser refreshes).
 Then, you can [get the API keys](../common-topics/api-keys.md#getting-the-api-keys) and begin testing.
@@ -58,10 +63,10 @@ Then, you can [get the API keys](../common-topics/api-keys.md#getting-the-api-ke
 **Please note:** It is not possible to *change* an existing sales unit in the test environment,
 but you can create as many as you need.
 
-## How to set up the Login API for your sales unit
+## How to set up Login for your sales unit
 
-1. Find your desired sales unit.
-   * Under *Vipps På Nett* > *Utvikler*, select *Environment* > *test*, then search for your test sales unit in the list. To create a new test sales unit, see
+1. [Find your desired sales unit](#how-to-find-a-sales-unit).
+   * You can't update an existing test sales unit, but you can
      [create a new test sales unit](#how-to-create-a-test-sales-unit).
 1. Click the *Set up login* button corresponding to your sales unit.
 1. If this is the first time, click *Activate Vipps Login* and fill out the fields:
@@ -70,12 +75,14 @@ but you can create as many as you need.
       endpoint. You can register as many URIs as you want.
       This creates a list of accepted URIs.
 
-      See [Login API FAQ: What are the requirements for redirect URIs?](https://developer.vippsmobilepay.com/docs/APIs/login-api/vipps-login-api-faq#what-are-the-requirements-for-redirect-uris) for details.
+      See [Login API FAQ: What are the requirements for redirect URIs](https://developer.vippsmobilepay.com/docs/APIs/login-api/vipps-login-api-faq#what-are-the-requirements-for-redirect-uris) for details.
       1. Enter the URI. It must be *exactly* the same URI that you use when making API requests.
         Take care to notice if the actual URI is specified with a trailing slash `/` or not.
         For testing, you can use `http://localhost`.
       2. Click *Add URI* for each URI you add.
       3. Click *Save*.
+
+![Add Login](../images/portal-login.png)
 
 ## How to create additional users on portal.vipps.no
 
@@ -88,9 +95,11 @@ See:
 
 ## How to use the API dashboard
 
-See [API dashboard](api-dashboard.md).
+Please see a detailed description on the [API dashboard](api-dashboard.md) page.
 
 ## Permissions and users
+
+*This is in the process of being expanded to allow more users, as part of the [Vipps MobilePay joint platform launch](https://www.vippsmobilepay.com/#about).*
 
 Logging into [portal.vipps.no](https://portal.vipps.no) requires Norwegian BankID.
 
@@ -106,9 +115,9 @@ and see who has the right to sign for the company.
 The merchant's administrator can also create additional users on
 [portal.vipps.no](https://portal.vipps.no).
 
-If you can log in to [portal.vipps.no](https://portal.vipps.no), but cannot see
-the *Utvikler* (developer) option in the menu, you need to have the
-merchant's administrator grant you with developer access for the sales unit.
+If you can log in to [portal.vipps.no](https://portal.vipps.no), but you can't see
+the *Utvikler*  section in the sidebar, ask the
+merchant's administrator to grant you developer access for the sales unit.
 
 For
 [reseller partners](https://developer.vippsmobilepay.com/docs/partner):
@@ -129,25 +138,42 @@ For more information, see:
 The sales unit's name and logo is shown to users in several places, both in
 the app and elsewhere.
 
-You can administer the name and logo on
+You can change the name and logo on
 [portal.vipps.no](https://portal.vipps.no).
+Under *Mine salgssteder* (*My sales units*), select your sales unit.
 
-To change your display name you go to *salgssteder* ("sales units") in the
-left menu and select the correct unit.
+From the next page, you can see the MSN for this sales unit
+![See sales unit info](../images/Sales_unit_see_info.png)
 
-Select the sales unit under *salgssted*.
-From the page that opens, you can see the key information for this sales unit
-![See sales unit info](images/Sales_unit_see_info.png)
+Click *Rediger* (*Edit*) in the top section.
+You will see a new screen where you both can update your name and ad your logo.
 
-By clicking *Rediger* ("Edit") next to the *Visning i appen* ("View in the app") heading, you will come to a
-screen where you both can update your name and ad your logo:
+![Update your name and logo](../images/Sales_unit_change_name_and_logo.png)
 
-![Update your name and you logo](images/Sales_unit_change_name_and_logo.png)
+This will be provided in English soon. For now, it is Norwegian, and it says:
 
-**Please note:** You cannot change the name used for the
-[test environment](https://developer.vippsmobilepay.com/docs/test-environment/).
+*Salgsstedsinfo* (*Sales Unit Info*)
 
-## Questions
+*Legg til eller fjern logo* (*Add or remove the logo*).
 
-For more information about the Merchant Portal, see the
-[help pages on vipps.no](https://vipps.no/hjelp/vipps/kundeforholdet-mitt/hva-får-jeg-tilgang-til-når-jeg-logger-meg-inn-på-vippsportalen/).
+ *Velg et annet bilde* (*Select another image*) 
+
+ *Slett bilde* (*Delete the image*).
+
+*Rediger informasjon* (*Edit the information*)
+
+*Navn på salgsted slik det vil vises for kundene i Vipps-appen* (*Name of the sales unit as it should be shown to customers in the Vipps app*) - soon also the MobilePay app. Note that you are not allowed to change the name of a test sales unit.
+
+## For more information
+
+See
+[Who can access portal.vipps.no (in Norwegian)](https://vipps.no/hjelp/vipps/kundeforholdet-mitt/hvem-kan-logge-inn-i-vippsportalen/),
+for more information about how to use the portal.
+
+See the official
+[portal help pages](https://vipps.no/hjelp/vipps/kundeforholdet-mitt/hva-får-jeg-tilgang-til-når-jeg-logger-meg-inn-på-vippsportalen/) for more information.
+
+
+Contact
+[customer service](https://vipps.no/kontakt-oss/)
+if you have general questions about the portal.

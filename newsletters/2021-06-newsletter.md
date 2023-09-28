@@ -36,7 +36,7 @@ all the benefits apply, just as when the payment card is used outside Vipps.
 The API Dashboard now also shows data for the Login API.
 See it on
 [portal.vipps.no](https://portal.vipps.no)
-under the "Utvikler" ("Developer") tab.
+in the *Utvikler* (*Developer*) section.
 Here's an example:
 
 ![API dashboard login data](images/2021-06-api-dashboard-login-example.png)

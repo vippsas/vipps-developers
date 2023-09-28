@@ -13,7 +13,7 @@ pagination_prev: null
 <!-- END_COMMENT -->
 
 All merchants have access to an API dashboard on
-[portal.vipps.no](https://portal.vipps.no) under the *Utvikler* tab.
+[portal.vipps.no](https://portal.vipps.no) in the *Utvikler* section.
 
 The API dashboard shows information about your API usage, an overview of errors, etc.
 Think of the API dashboard as a "health check" that you can use to see if there
@@ -51,5 +51,5 @@ It is your responsibility to check that you are using the APIs correctly.
 * Partners can ask their merchants to provide access to the
   sales unit(s) for whom they are making payments; therefore, the partner can use the
   API dashboard. There is a guide here:
-  [How to add a user on portal.vipps.no](https://developer.vippsmobilepay.com/docs/partner/add-portal-user)  
-* Keep in mind that the *Utvikler* tab is only available to users with *admin* or *developer* roles.
+  [How to add a user on the portal](https://developer.vippsmobilepay.com/docs/partner/add-portal-user)  
+* Keep in mind that the *Utvikler* section is only available to users with *admin* or *developer* roles.

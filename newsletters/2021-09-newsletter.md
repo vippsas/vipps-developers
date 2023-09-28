@@ -68,7 +68,7 @@ More information can be found in the
 The API Dashboard is now available for both the production and test environments.
 See it on
 [portal.vipps.no](https://portal.vipps.no)
-under the "Utvikler" ("Developer") tab.
+in the *Utvikler* (*Developer*) section.
 Here's an example:
 
 ![API dashboard login data](images/2021-06-api-dashboard-login-example.png)
