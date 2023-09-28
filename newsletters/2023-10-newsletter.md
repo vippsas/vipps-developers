@@ -85,7 +85,7 @@ MobilePay APIs to the new APIs:
 
 ## Reminders
 
-## Deprecation of the Recurring API V2
+### Deprecation of the Recurring API V2
 As announced in [December 2022 newsletter](https://developer.vippsmobilepay.com/docs/newsletters/2022-12-newsletter/#recurring-api-v3),
 the [Recurring API version 2](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/) will be shut down November 1st 2023, so please make sure you're using version 3.
 
