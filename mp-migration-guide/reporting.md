@@ -33,10 +33,6 @@ Both the [Vipps MobilePay Report API](https://developer.vippsmobilepay.com/docs/
 It's important to note that the MobilePay Reporting API offered some functionalities, such as retrieving payment points, which are readily available for you in the [Management API](https://developer.vippsmobilepay.com/docs/APIs/management-api/management-api-guide/#get-the-sales-units-for-a-merchant-by-orgno).
 Please note that Report and Management API are only available in production.
 
-### Upcoming Changes
-
-Please be aware that a v2 version or the Report API is still in development, which will introduce additional endpoints. You will have one endpoint for fetching transactions and another for fetching fees.
-
 ### Input formats
 
 | **MobilePay Reporting API** | **Vipps MobilePay Report API** |
