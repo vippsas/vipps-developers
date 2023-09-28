@@ -39,7 +39,7 @@ Improvements in button text for agreements without initial charge:
 * The button text for agreements **with** initial charge is
   *Betal og start* ("Pay and start").
 
-**Important:** The Recurring API v2 API will be phased out and will not be available from June 1, 2023.
+**Important:** The Recurring API v2 API will be phased out and will not be available from November 1, 2023.
 
 ## ePayment API
 
