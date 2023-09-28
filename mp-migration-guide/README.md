@@ -23,8 +23,7 @@ In that case, we’re excited to introduce you to the [Vipps MobilePay API platf
 a reliable and versatile payment solution that can make the migration hassle-free and even dazzle you with its ease of use and features.
 To ensure a smooth transition, we recommend using our migration guides, which will provide step-by-step instructions and best practices for integrating with the Vipps MobilePay APIs.
 
-**Please note:** While you continue using MobilePay API's, your integration must follow the guidelines
-provided in the [MobilePay developer documentation](https://developer.mobilepay.dk/).
+**Please note:** While you continue using MobilePay API's, your integration must follow the guidelines provided in the [MobilePay developer documentation](https://developer.mobilepay.dk/).
 
 ## MobilePay Invoice
 
