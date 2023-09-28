@@ -302,6 +302,9 @@ Cards issued in the following countries are accepted:
 * USA
 * Australia
 * New Zealand
+* South Korea
+* Japan
+* Israel
 
 **Please note**: Just to avoid confusion: Payments with the app are also done using
 the users' cards that they have been added there. The user gets all the benefits of the card,
