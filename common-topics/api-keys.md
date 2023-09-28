@@ -63,7 +63,7 @@ You will, therefore, need to use a different set of API keys for the test enviro
 2. Select *Utvikler* from the sidebar, and select the *API-keys* tab. You should then see a table with all your company's sales units.
    Hover over the `i` in the column heading for additional information.
 
-![The API products for a sales unit](../images/portalvippsno-salesunit-products.png)
+   ![The API products for a sales unit](../images/portalvippsno-salesunit-products.png)
 
 3. Select either *Production* or *Test*, depending on the type of keys you need.
 4. Find your desired sales unit.
@@ -74,7 +74,7 @@ You will, therefore, need to use a different set of API keys for the test enviro
    The API keys will be displayed.
    **Please note:** You can only see API keys that you have access to. All others will be hidden.
 
-![API keys](../images/portalvippsno-salesunit-keys.png)
+   ![API keys](../images/portalvippsno-salesunit-keys.png)
 
 ## How to use the API keys
 
