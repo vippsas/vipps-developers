@@ -36,7 +36,7 @@ Select either *Production* or *Test*, depending on the type of keys you need.
 
 ![API keys](../images/portalvippsno-salesunit-keys.png)
 
-For more information about API keys, see [API keys](../common-topics/api-keys).
+For more information about API keys, see [API keys](../common-topics/api-keys.md).
 
 ## How to create a test sales unit
 
