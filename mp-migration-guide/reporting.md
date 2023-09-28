@@ -12,6 +12,20 @@ import MT from './_mt.md'
 
 ## API Documentation
 
+Both the [Report API](https://developer.vippsmobilepay.com/docs/APIs/report-api/) and the [Reporting API](https://developer.mobilepay.dk/docs/reporting) allow for the retrieval of data related to payments, reconciliation, and more. The data offered by these APIs is quite similar. The transition from the Reporting API to the Report API is straightforward, involving no advanced logic; it's primarily about retrieving data in a read-only manner. 
+
+## Transition to facades
+
+1. When we transition merchants to facades, settlement data from that date will no longer be accessible in the old [Reporting API](https://developer.mobilepay.dk/docs/reporting). It will be exclusively available in the new [Report API](https://developer.vippsmobilepay.com/docs/APIs/report-api/).
+
+2. Merchants are required to retrieve their historical data using the [Reporting API](https://developer.mobilepay.dk/docs/reporting) and obtain new data using the [Report API](https://developer.vippsmobilepay.com/docs/APIs/report-api/).
+
+3. Merchants will need to combine data from both APIs on their end. This task is not overly complex as both APIs provide read-only JSON with similar data fields.
+
+4. In the future, merchants will be able to access all settlement data, both old and new, through the [Report API](https://developer.vippsmobilepay.com/docs/APIs/report-api/) once the migration is complete.
+
+5. At some point, the [Reporting API](https://developer.mobilepay.dk/docs/reporting) will be deprecated and discontinued since all data will be accessible through the Report API. We may discontinue it before data migration, as there will be no new data available, and we encourage merchants to retrieve their data while it's still accessible.
+
 Both the [Vipps MobilePay Report API](https://developer.vippsmobilepay.com/docs/APIs/report-api/) and the [MobilePay Reporting API](https://developer.mobilepay.dk/docs/reporting) allow for the retrieval of data related to payments, reconciliation, and more. The data offered by these APIs is quite similar. The transition from the Reporting API to the Report API is straightforward, involving no advanced logic. It's primarily about retrieving data in a read-only manner.
 
 ### Notable Differences
