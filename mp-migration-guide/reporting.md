@@ -41,17 +41,16 @@ Please be aware that a v2 version or the Report API is still in development, whi
 
 | **MobilePay Reporting API** | **Vipps MobilePay Report API** |
 | --------------------------- | ------------------------------ |
-| `paymentId`                 | `transactionId`                |
-| `type`: `"Payment"`         | `transactionType`              |
-| `amount`                    | `ledgerAmount`                 |
-|                             |                                |
+| `paymentId`                 | `pspReference`                |
+| `type`: `"Payment"`         | `entryType`              |
+| `amount`                    | `amount`                 |
 | `currencyCode`              | `currency`                     |
 | `message`                   | Upcoming feature               |
-| `merchantReference`         | `orderId`                      |
+| `merchantReference`         | `reference`                      |
 | `merchantPaymentLabel`      | N/A                            |
 | `transferReference`         | N/A                            |
 | `transferDate`              | `ledgerDate`                   |
-| `timestamp`                 | `timestamp`                    |
+| `timestamp`                 | `time`                    |
 | `userPhoneNumber`           | N/A                            |
 | `userName`                  | N/A                            |
 | `loyaltyId`                 | N/A                            |
@@ -64,9 +63,19 @@ Please be aware that a v2 version or the Report API is still in development, whi
 | `agreementExternalId`       | N/A                            |
 | `agreementId`               | N/A                            |
 | `refundId`                  | N/A                            |
-| N/A                         | `ledgerId`                     |
-| N/A                         | `fee`                          |
+| N/A                         | `balanceBefore`                     |
+| N/A                         | `balanceAfter`                          |
+
+## Endpoints
+
+| Operation                      | MobilePay Reporting API                   | Vipps MobilePay Report API                                    | Vipps MobilePay Management API                            |
+|--------------------------------|-------------------------------------------|---------------------------------------------------------------|-----------------------------------------------------------|
+| Fetch list of payment points   | `GET /v3/reporting/paymentpoints`         | N/A                                                           | `GET /management/v1/merchants/{scheme}/{id}/sales-units`  |
+| List of transactions           | `GET /v3/reporting/transactions`          | `GET /report/v2/ledgers/{ledgerId}/{topic}/feed`              |N/A                                                        |
+| List of transfers              | `GET /v3/reporting/transfers`             | N/A                                                           |N/A                                                        |
+| Fetch single transfer          | `GET /v3/reporting/transfers/{transferid}`| `GET /report/v2/ledgers/{ledgerId}/{topic}/dates/{ledgerDate}`|N/A                                                        |
+| Get ledgers                    | N/A                                       | `GET /report/v2/ledgers/{ledgerId}/{topic}/dates/{ledgerDate}`|N/A                                                        |
 
 ### Webhook
 
-Webhook events through the [MobilePay Webhook API](https://developer.mobilepay.dk/api/wehooks) will no longer be sent for transfer.
+Webhook events through the [MobilePay Webhook API](https://developer.mobilepay.dk/api/wehooks) will no longer be sent for `transfer.suceeded`
