@@ -48,7 +48,7 @@ Partners: See
 
 The [Long living payments](https://developer.vippsmobilepay.com/docs/APIs/epayment-api/features/long-living-payments/) feature in ePayments API is now supported in the latest version of the app on both iOS and Android.
 
-When a payment is created with order lines data, users can now see the order lines in the latest version of the app on both iOS and Android before making the payment.
+When a payment is created with order lines, users can now see the them before making the payment in the latest version of the app on both iOS and Android.
 
 See [recommended flows](https://developer.vippsmobilepay.com/docs/solutions/invoice-through-epayments/) for how enduser will see the above scenarios in their app. 
 
