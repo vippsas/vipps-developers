@@ -162,7 +162,7 @@ This will be provided in English soon. For now, it is Norwegian, and it says:
 
 *Rediger informasjon* (*Edit the information*)
 
-*Navn på salgsted slik det vil vises for kundene i Vipps-appen* (*Name of the sales unit as it should be shown to customers in the Vipps app*) - soon also the MobilePay app. Note that you are not allowed to change the name of a test sales unit.
+*Navn på salgssted slik det vil vises for kundene i Vipps-appen* (*Name of the sales unit as it should be shown to customers in the Vipps app*) - soon also the MobilePay app. Note that you are not allowed to change the name of a test sales unit.
 
 ## For more information
 
