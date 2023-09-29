@@ -74,4 +74,4 @@ Please note that Report and Management API are only available in production.
 
 ### Webhook
 
-Webhook events through the [MobilePay Webhook API](https://developer.mobilepay.dk/api/wehooks) will no longer be sent for `transfer.suceeded`
+Webhook events through the [MobilePay Webhook API](https://developer.mobilepay.dk/api/wehooks) will no longer be sent for `transfer.succeeded`.
