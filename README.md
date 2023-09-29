@@ -27,6 +27,8 @@ Migrate from MobilePay:
 
 * [Vipps MobilePay migration guide](./mp-migration-guide/README.md) - If you are currently using MobilePay APIs for your payment integration needs, we recommend using our comprehensive migration guide which provides step-by-step instructions and best practices for integrating with the API platform.
 
+  **Please note:** While you continue using MobilePay API's, your integration must follow the guidelines provided in the [MobilePay developer documentation](https://developer.mobilepay.dk/).
+
 Dive deeper with:
 
 * [Developer resources](https://developer.vippsmobilepay.com/docs/developer-resources) - Learn about the API dashboard, demo store, design guidelines, portal, status pages, etc.

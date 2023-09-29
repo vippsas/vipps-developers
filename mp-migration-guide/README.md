@@ -23,6 +23,8 @@ In that case, we’re excited to introduce you to the [Vipps MobilePay API platf
 a reliable and versatile payment solution that can make the migration hassle-free and even dazzle you with its ease of use and features.
 To ensure a smooth transition, we recommend using our migration guides, which will provide step-by-step instructions and best practices for integrating with the Vipps MobilePay APIs.
 
+**Please note:** While you continue using MobilePay API's, your integration must follow the guidelines provided in the [MobilePay developer documentation](https://developer.mobilepay.dk/).
+
 ## MobilePay Invoice
 
 We must replace the current MobilePay Point of Sale API with new ePayment API on the joint platform by early 2024. This will *require a new integration*. Use the [Invoice to ePayment migration guide](invoice.md) to ease the transition.
