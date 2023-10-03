@@ -12,7 +12,7 @@ From the landing page, enter your phone number and then go to your Vipps or Mobi
 to authorize the operation.
 If you initiated this operation from another website, you should see the status updated there.
 
-![The landing page](../images/vipps-flow-landing-page.png)
+![The landing page](images/vipps-flow-landing-page.png)
 
 The landing page is mandatory for payments initiated on a different device than the user's phone.
 It provides a consistent and recognizable user experience
@@ -76,7 +76,7 @@ If you have user-facing display, you may want to generate a QR code based on the
 landing page URL, instead of asking the user for their phone number. Scanning
 the QR code will take the user directly to the payment in the Vipps or MobilePay app.
 
-![Demo QR code](../images/demo-qr.png)
+![Demo QR code](images/demo-qr.png)
 
 This is done in cooperation with the QR API. See
 [One-time payment QR](https://developer.vippsmobilepay.com/docs/APIs/qr-api/vipps-qr-api#one-time-payment-qr-codes)

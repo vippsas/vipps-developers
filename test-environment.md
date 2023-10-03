@@ -82,7 +82,7 @@ for a Vipps MobilePay product with an API. The details can then be found on the
 *Utvikler* (*developer*) section on
 [portal.vipps.no](https://portal.vipps.no).
 
-![Portal test sales unit](./images/portal-test-keys.png)
+![Portal test sales unit](./images/common/portal-test-keys.png)
 
 See:
 

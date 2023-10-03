@@ -28,13 +28,13 @@ Select *Utvikler* from the sidebar, and select the *API-keys* tab. You should se
 
 Select either *Production* or *Test*, depending on the type of keys you need.
 
-![The API products for a sales unit](../images/portalvippsno-salesunit-products.png)
+![The API products for a sales unit](../images/common/portalvippsno-salesunit-products.png)
 
 ## How to find the API keys
 
 [Find your desired sales unit](#how-to-find-a-sales-unit) and click the *Show keys* button.
 
-![API keys](../images/portalvippsno-salesunit-keys.png)
+![API keys](../images/common/portalvippsno-salesunit-keys.png)
 
 For more information about API keys, see [API keys](../common-topics/api-keys.md).
 
@@ -42,11 +42,11 @@ For more information about API keys, see [API keys](../common-topics/api-keys.md
 
 Select *Utvikler* from the sidebar, and select the *API-keys* tab. Select the *test* environment.
 
-![Select test radio button](../images/portal-test-keys.png)
+![Select test radio button](../images/common/portal-test-keys.png)
 
 Click *Add test sales unit*.
 
-![Create a test sales unit](../images/portal-new-test-salesunit.png)
+![Create a test sales unit](images/portal-new-test-salesunit.png)
 
 Enter the requested properties and click *Create*.
 
@@ -82,7 +82,7 @@ but you can create as many as you need.
       2. Click *Add URI* for each URI you add.
       3. Click *Save*.
 
-![Add Login](../images/portal-login.png)
+![Add Login](images/portal-login.png)
 
 ## How to create additional users on portal.vipps.no
 
@@ -143,12 +143,12 @@ You can change the name and logo on
 Under *Mine salgssteder* (*My sales units*), select your sales unit.
 
 From the next page, you can see the MSN for this sales unit
-![See sales unit info](../images/Sales_unit_see_info.png)
+![See sales unit info](images/Sales_unit_see_info.png)
 
 Click *Rediger* (*Edit*) in the top section.
 You will see a new screen where you both can update your name and ad your logo.
 
-![Update your name and logo](../images/Sales_unit_change_name_and_logo.png)
+![Update your name and logo](images/Sales_unit_change_name_and_logo.png)
 
 This will be provided in English soon. For now, it is Norwegian, and it says:
 

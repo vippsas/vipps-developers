@@ -24,7 +24,7 @@ for
 [`POST:/ecomm/v2/payments/{orderId}/refund`](https://developer.vippsmobilepay.com/api/ecom#tag/Vipps-eCom-API/operation/refundPaymentUsingPOST)
 fail:
 
-![API dashboard](../images/api-dashboard-example.png)
+![API dashboard](images/api-dashboard-example.png)
 
 The API dashboard is available for both the production and
 [test environment](https://developer.vippsmobilepay.com/docs/test-environment),
