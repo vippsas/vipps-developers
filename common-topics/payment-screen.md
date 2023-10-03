@@ -17,7 +17,6 @@ If you don't have their phone number, you can specify that they should be direct
 
 Within the user's Vipps or MobilePay app, they will be presented with a payment screen with the following details:
 
-
 * *Sales unit name* - The name of the sales unit.
   A company or organization can have multiple sales units to represent different physical shops, vending machines, collection points, services, and similar.
 * *Organization name* - The name of the company or organization that owns this sales unit.
@@ -31,20 +30,18 @@ Within the user's Vipps or MobilePay app, they will be presented with a payment 
 When the user authorizes the payment, the amount will be reserved.
 It will remain in the "reserved" state up until you capture it.
 
-The payment details will show the authorized amount in faint gray (e.g., <span style="color: gray">`500 kr`</span>).
+The payment details will show the authorized amount in faint gray (e.g., `500 kr`).
 
 ![Payment reserved](images/payment-screen/2-payment-reserved.png)
 
 ## Payment capture
 
-
 The payment transactions are shown in reverse order, where the oldest transaction is at the bottom of the list.
-So, here you see the authorized amount at the bottom of the *Transactions* list in faint gray (e.g., <span style="color: gray">`500 kr`</span>).
+So, here you see the authorized amount at the bottom of the *Transactions* list in faint gray (e.g., `500 kr`).
 
-The payment transfer (i.e., *capture*) is reflected as a negative transaction in red (e.g., <span style="color: red">`-500 kr`</span>), so the user can see that you have transferred 500 kr from their account.
+The payment transfer (i.e., *capture*) is reflected as a negative transaction in red (e.g., `-500 kr`), so the user can see that you have transferred 500 kr from their account.
 
-If you later refund an amount (perhaps there was a mistake), the refunded amount will be shown in green (e.g., <span style="color: green">`250 kr`</span>) at the top of the list. The total amount paid will be updated to show the new amount.
-
+If you later refund an amount (perhaps there was a mistake), the refunded amount will be shown in green (e.g., `250 kr`) at the top of the list. The total amount paid will be updated to show the new amount.
 
 ![Payment captured and partially refunded](images/payment-screen/3-payment-receipt.png)
 
@@ -54,6 +51,6 @@ it's common to reserve a larger (but reasonable) amount, so they
 have authorization to cover the cost of the service.
 Once the true amount is known, they capture this amount and cancel the remaining.
 
-In this case, you see that the captured amount (e.g., <span style="color: red">`-250 kr`</span>) is less than the original authorized amount (e.g., <span style="color: gray">`500`</span>). The actual amount paid is also updated.
+In this case, you see that the captured amount (e.g., `-250 kr`) is less than the original authorized amount (e.g., `500`). The actual amount paid is also updated.
 
 ![Payment partially captured and cancelled](images/payment-screen/4-payment-partial-capture.png)
