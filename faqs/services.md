@@ -6,9 +6,9 @@ pagination_next: null
 pagination_prev: null
 ---
 
-# FAQ: Applying for services
+# Applying for services
 
-*This is in the process of changing as part of the [Vipps MobilePay joint platform launch](https://www.vippsmobilepay.com/#about).*
+*This will soon be expanded as part of the [Vipps MobilePay joint platform launch](https://www.vippsmobilepay.com/#about).*
 
 To apply for services, you need to have a Norwegian organization number
 and applications must be signed with Norwegian BankID.

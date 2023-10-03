@@ -14,6 +14,38 @@ pagination_prev: null
 [Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/docs/getting-started/).
 <!-- END_COMMENT -->
 
+## Select your product
+
+Under
+*API platform* > [*Overview*](https://developer.vippsmobilepay.com/docs/APIs/),
+you will find a description of the APIs for handling payments (*ePayment API*),
+creating checkout sessions (*Checkout API*), establishing recurring agreements (*Recurring API*),
+and logging the user in to your website with their Vipps or MobilePay credentials (*Login API*).
+
+Once you know what products you want, apply for services on
+[portal.vipps.no](https://portal.vipps.no) or contact
+[customer service](https://www.vipps.no/kontakt-oss/).
+To learn more about the requirements for applying for services, see
+[Applying for services](./faqs/services.md).
+
+## Get familiar with docs
+
+Have a look at the API guide for your new product.
+For example, if you ordered *Vipps på Nett*, see the
+[ePayment API guide](https://developer.vippsmobilepay.com/docs/APIs/epayment-api/) with
+example user flows from purchase to payment transfer.
+
+You will also find general information that applies to several APIs under *Developer info* >
+[*Common API topics*](https://developer.vippsmobilepay.com/docs/common-topics/).
+For example, to learn how to reserve a payment and capture the money, see
+*Common API topics* >
+[Reserve and capture](https://developer.vippsmobilepay.com/docs/common-topics/reserve-and-capture/).
+To learn what happens when you cancel an order,
+see *Common API topics* > [*Cancellations*](https://developer.vippsmobilepay.com/docs/common-topics/cancel/).
+
+
+## Get your credentials
+
 When your *Merchant Agreement* is approved and your product order is sent, you
 will receive an email with credentials for accessing the
 [test environment](test-environment.md):
@@ -21,9 +53,6 @@ will receive an email with credentials for accessing the
 * Sales unit name
 * Merchant serial number
 * Credentials for logging into the test app
-
-For information about applying for services, see the
-[Applying for services FAQ](./faqs/services.md).
 
 ## Start testing in the test environment
 
@@ -55,9 +84,6 @@ You will need the following:
 
       If you wish to use Postman, we have created collections for the APIs (e.g., [ePayment](https://developer.vippsmobilepay.com/docs/APIs/epayment-api/quick-start/)). These can be used to quickly run through the requests after updating a few global variables in the [Vipps MobilePay Global Postman environment](/tools/vipps-api-global-postman-environment.json).
 
-
-## The production environment
-
 When your product order is approved, you will get an email stating that you can
 get access to the API in the production environment.
 
@@ -65,9 +91,6 @@ Log in to
 [portal.vipps.no](https://portal.vipps.no)
 to get your production
 [API keys](./common-topics/api-keys.md).
-
-Now, you can start making API requests to the production server
-(e.g., create a payment request that goes to a real user's Vipps or MobilePay app).
 
 ## Best practices
 
