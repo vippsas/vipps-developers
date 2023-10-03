@@ -19,9 +19,9 @@ The Vipps MobilePay API platform can be used for payments and logins for Point o
 
 Starting points:
 
-* [Recommended payment flows](https://developer.vippsmobilepay.com/docs/solutions/) - See the recommended and alternate payment flows. These include examples combining several API solutions.
 * [Getting started](./getting-started.md) - Find your [API keys](./common-topics/api-keys.md) and start using the [test environment](./test-environment.md).
-* [API platform](https://developer.vippsmobilepay.com/docs/APIs/) - Learn how to use the API products.
+* [API platform](https://developer.vippsmobilepay.com/docs/APIs/) - Learn about the API products.
+* [Recommended payment flows](https://developer.vippsmobilepay.com/docs/solutions/) - See the recommended and alternate payment flows. These include examples combining several API solutions.
 
 Migrate from MobilePay:
 
@@ -31,8 +31,8 @@ Migrate from MobilePay:
 
 Dive deeper with:
 
-* [Developer resources](https://developer.vippsmobilepay.com/docs/developer-resources) - Learn about the API dashboard, demo store, design guidelines, portal, status pages, etc.
 * [Common API topics](https://developer.vippsmobilepay.com/docs/common-topics) - Get details about API keys, API lifecycle, authentication, HTTP headers, polling guidelines, reserve and capture, userinfo, landing page, etc.
+* [Developer resources](https://developer.vippsmobilepay.com/docs/developer-resources) - Learn about the API dashboard, demo store, design guidelines, portal, status pages, etc.
 * [Frequently asked questions](https://developer.vippsmobilepay.com/docs/faqs) - Learn about common problems and FAQs relating to refunds, users and payments, landing page.
 
 Related topics:

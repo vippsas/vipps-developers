@@ -1,12 +1,12 @@
 ---
 sidebar_label: Overview
-sidebar_position: 50
+sidebar_position: 40
 hide_table_of_contents: true
 pagination_next: null
 pagination_prev: null
 ---
 
-# Common API Topics
+# Common topics
 
 These are topics that are applicable across many APIs:
 
