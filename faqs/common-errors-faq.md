@@ -209,7 +209,7 @@ the merchant can reactivate it again.
 and cannot help with this based on email requests.
 
 Deactivation can also happen if the test merchant is not being used for a
-_very long* time. Please
+*very long* time. Please
 [contact customer service](https://vipps.no/kontakt-oss/),
 and we will reactivate the merchant.
 

@@ -104,7 +104,7 @@ See the FAQ:
 
 ### Reserve capture
 
-_Reserve capture* is the normal flow.
+*Reserve capture* is the normal flow.
 
 When the end user approves an initiated payment, it will be reserved until you
 capture it. When the order is reserved, the amount is marked as reserved by the
