@@ -6,10 +6,10 @@ pagination_prev: null
 
 # Errors
 
-The standard response body format for our errors in our APIs follows
+The standard response body format for our error messages follows
 [RFC 7807](https://tools.ietf.org/html/rfc7807).
 
-Here is an example of an error sent together with a
+For example, an error sent together with a
 `HTTP 400 Bad Request`:
 
 ```http

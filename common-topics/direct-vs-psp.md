@@ -19,11 +19,10 @@ There are two ways to use Vipps MobilePay:
   [Login](https://developer.vippsmobilepay.com/docs/APIs/login-api),
   [Userinfo](https://developer.vippsmobilepay.com/docs/APIs/userinfo-api),
   [Order Management](https://developer.vippsmobilepay.com/docs/APIs/order-management-api),
-  [QR](https://developer.vippsmobilepay.com/docs/APIs/qr-api)),
-  etc.
-  All the functionality of the APIs can be used, and also combined as described
+  [QR](https://developer.vippsmobilepay.com/docs/APIs/qr-api)).
+  All the functionality of the APIs can be used and combined, as described
   in
-  [Solutions](https://developer.vippsmobilepay.com/docs/solutions).
+  [Recommended flows](https://developer.vippsmobilepay.com/docs/solutions).
 * PSP integration: The merchant or partner uses the PSP's API, which is
   based on our
   [PSP API](https://developer.vippsmobilepay.com/docs/APIs/psp-api).
