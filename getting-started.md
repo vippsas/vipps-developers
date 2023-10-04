@@ -16,11 +16,11 @@ pagination_prev: null
 
 ## Select your product
 
-Under
-*API platform* > [*Overview*](https://developer.vippsmobilepay.com/docs/APIs/),
-you will find a description of the APIs for handling payments (*ePayment API*),
+There are APIs for handling payments (*ePayment API*),
 creating checkout sessions (*Checkout API*), establishing recurring agreements (*Recurring API*),
 and logging the user in to your website with their Vipps or MobilePay credentials (*Login API*).
+You can get a description of the API products in the [*API platform*](https://developer.vippsmobilepay.com/docs/APIs/)
+section.
 
 Once you know what products you want, apply for services on
 [portal.vipps.no](https://portal.vipps.no) or contact
@@ -42,7 +42,6 @@ For example, to learn how to reserve a payment and capture the money, see
 [Reserve and capture](https://developer.vippsmobilepay.com/docs/common-topics/reserve-and-capture/).
 To learn what happens when you cancel an order,
 see *Common API topics* > [*Cancellations*](https://developer.vippsmobilepay.com/docs/common-topics/cancel/).
-
 
 ## Get your credentials
 

@@ -19,21 +19,26 @@ The Vipps MobilePay API platform can be used for payments and logins for Point o
 
 Starting points:
 
-* [Getting started](./getting-started.md) - Find your [API keys](./common-topics/api-keys.md) and start using the [test environment](./test-environment.md).
-* [API platform](https://developer.vippsmobilepay.com/docs/APIs/) - Learn about the API products.
+* [Getting started](./getting-started.md) - Get a step-by-step guide for getting started with the Vipps MobilePay. Select your products. Get your credentials, and start using the test environment.
+* [API platform](https://developer.vippsmobilepay.com/docs/APIs/) - See the API guides and specifications for all the API products.
 * [Recommended payment flows](https://developer.vippsmobilepay.com/docs/solutions/) - See the recommended and alternate payment flows. These include examples combining several API solutions.
 
 Migrate from MobilePay:
 
-* [Vipps MobilePay migration guide](./mp-migration-guide/README.md) - If you are currently using MobilePay APIs for your payment integration needs, we recommend using our comprehensive migration guide which provides step-by-step instructions and best practices for integrating with the API platform.
+* [Vipps MobilePay migration guide](./mp-migration-guide/README.md) - If you are currently using MobilePay APIs for your
+   payment integration needs, we recommend using our comprehensive migration guide which provides step-by-step instructions
+   and best practices for integrating with the API platform.
 
-  **Please note:** While you continue using MobilePay API's, your integration must follow the guidelines provided in the [MobilePay developer documentation](https://developer.mobilepay.dk/).
+  **Please note:** While you continue using MobilePay API's, your integration must follow the guidelines provided in the
+  [MobilePay developer documentation](https://developer.mobilepay.dk/).
 
 Dive deeper with:
 
-* [Common topics](https://developer.vippsmobilepay.com/docs/common-topics) - Get details about API keys, API lifecycle, authentication, HTTP headers, polling guidelines, reserve and capture, userinfo, landing page, etc.
-* [Developer resources](https://developer.vippsmobilepay.com/docs/developer-resources) - Learn about the API dashboard, demo store, design guidelines, portal, status pages, etc.
-* [Frequently asked questions](https://developer.vippsmobilepay.com/docs/faqs) - Learn about common problems and FAQs relating to refunds, users and payments, landing page.
+* [Common topics](https://developer.vippsmobilepay.com/docs/common-topics) - General information about [API keys](./common-topics/api-keys.md), [app payment screens](./common-topics/payment-screen.md), [Vipps MobilePay landing page](./common-topics/landing-page.md), a description of [reserving and capturing money](./common-topics/reserve-and-capture.md), and much more.
+* [Developer resources](https://developer.vippsmobilepay.com/docs/developer-resources) - Resources available to you, including the [demo store](./developer-resources/demo-store.md), the [merchant portal](./developer-resources/portal.md), and [Vipps MobilePay servers](./developer-resources/servers.md).
+* [Frequently asked questions](https://developer.vippsmobilepay.com/docs/faqs) - See the answers to [common problems](./faqs/common-problems-faq.md), [common errors](./faqs/common-errors-faq.md) and FAQs relating to [refunds](./faqs/refunds-faq.md), [users and payments](./faqs/users-and-payments-faq.md), and more.
+* [Design guidelines](https://developer.vippsmobilepay.com/docs/design-guidelines/) - Find Vipps and MobilePay icons and text guidelines.
+* [Settlements](./settlements/README.md) - Get a general overview of how settlements are processed in Vipps MobilePay.
 
 Related topics:
 

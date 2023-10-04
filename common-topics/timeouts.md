@@ -7,9 +7,8 @@ pagination_prev: null
 # Timeouts
 
 For most APIs, the user has 10 minutes to accept the payment.
-The
-[ePayment API](https://developer.vippsmobilepay.com/docs/APIs/epayment-api/features/long-living-payments)
-allows you to extend the expiration time.
+The ePayment API allows you to extend the expiration time through
+[Long-living payments](https://developer.vippsmobilepay.com/docs/APIs/epayment-api/features/long-living-payments).
 
 ## Using a phone
 
