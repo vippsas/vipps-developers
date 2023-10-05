@@ -82,10 +82,6 @@ This is done in cooperation with the QR API. See
 [One-time payment QR](https://developer.vippsmobilepay.com/docs/APIs/qr-api/vipps-qr-api#one-time-payment-qr-codes)
 for more details about this and other QR services.
 
-See the
-[Quick start](https://developer.vippsmobilepay.com/docs/APIs/epayment-api/quick-start/)
-for step-by-step examples of generating QR codes and short links for one-time payments initiated from the ePayment API.
-
 ## Skip landing page
 
 **Please note:** This functionality is only available for special cases.

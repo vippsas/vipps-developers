@@ -8,10 +8,6 @@ pagination_prev: null
 
 # FAQ: Common problems
 
-See also
-[Common problems](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api-faq#common-problems)
-in the eCom API FAQs.
-
 ## Why do payments fail?
 
 ### High success rate for direct integrations
