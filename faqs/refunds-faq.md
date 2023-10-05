@@ -10,18 +10,19 @@ pagination_prev: null
 
 ## Can I refund a payment?
 
-This depends on your eCommerce solution. The eCom API supports refunds with
-[`POST:/ecomm/v2/payments/{orderId}/refund`](https://developer.vippsmobilepay.com/api/ecom#tag/Vipps-eCom-API/operation/refundPaymentUsingPOST).
-For details on how to offer refunds, please refer to the documentation for your eCommerce solution.
+These APIs allow refunds:
+
+* [ePayment API](https://developer.vippsmobilepay.com/docs/APIs/epayment-api/operations/refund/)
+* [Recurring API](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/vipps-recurring-api/#refund-a-charge)
+* [eCom API](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api/#refund)
 
 ### How can I refund only a part of a payment?
 
-This varies by API. See the following for details:
+These APIs allow partial refunds:
 
 * [ePayment API](https://developer.vippsmobilepay.com/docs/APIs/epayment-api/operations/refund/#partial-refund)
+* [Recurring API](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/vipps-recurring-api/#refund-a-charge)
 * [eCom API](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api-faq/#refunds)
-
-
 
 ## How long does it take from a refund is made until the money is in the customer's account?
 
