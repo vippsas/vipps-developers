@@ -10,43 +10,6 @@ pagination_prev: null
 
 Point Of Sale (POS) is similar to a "cash register".
 
-## How do I use the one-time payment QR?
-
-This feature is for presenting a QR code for opening a payment request from a
-customer-facing screen, so there is no need to manually input the mobile number.
-
-Basic flow:
-
-1. Initiate a eCom payment (`skipLandingPage` must be set to `false`)
-2. Receive the payment URL as response
-3. Post the payment URL to the
-   [QR API](https://developer.vippsmobilepay.com/docs/APIs/qr-api)
-4. Receive a URL to a QR code in PNG (Portable Network Graphics) format
-5. Present the QR code on the customer-facing screen
-6. The user scans the QR code with the Vipps or MobilePay app, or the camera app
-7. The user pays (or cancels the payment) in the app
-8. The fallback URL is triggered and will be presented on customers mobile phone
-
-**Please note:**
-The customer-facing screen will not show the fallback page. We recommend
-presenting the result of the payment in some other way on the screen, and
-also that an error messages if something went wrong.
-
-If it is not possible for the POS solution to handle a fallback URL you may use one of the following options:
-
-1. Set `fallbackURL` to be the merchant's website
-2. Set `fallbackURL` to be this static page: [www.vipps.no/thankyoupage/](https://www.vipps.no/thankyoupage/)
-
-See also:
-
-* [QR API](https://developer.vippsmobilepay.com/docs/APIs/qr-api)
-* [Error codes](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#error-codes)
-* [Do we need to support callbacks?](#do-we-need-to-support-callbacks)
-
-## How can we be whitelisted for `skipLandingPage`?
-
-See: [Is it possible to skip the landing page?](landing-page-faq.md#is-it-possible-to-skip-the-landing-page)
-
 ## Handling refunds on behalf of other stores
 
 It may be relevant for enterprise setup, omnichannel, multiple physical stores within the same chain to refund orders on behalf of other stores.
@@ -126,46 +89,17 @@ As an alternative, an online sale log must be available.
    If not: The merchant
    [retrieves the API keys](../common-topics/api-keys.md#getting-the-api-keys)
    and provides them securely to the partner.
-   See: [Which API keys should I use?](#which-api-keys-should-i-use)
+   See: [Which API keys should I use for POS integrations?](#which-api-keys-should-i-use-for-pos-integrations)
 6. The partner configures the merchant's POS for Vipps MobilePay.
 7. The merchant can now accept Vipps MobilePay payments in the POS.
 
-## Which API keys should I use?
+## Which API keys should I use for POS integrations?
 
-You should probably use
+For POS integrations, you should probably use
 [Partner keys](https://developer.vippsmobilepay.com/docs/partner/partner-keys),
 and not separate API keys for each of your merchants. But it depends.
 
 See: [Partner keys](https://developer.vippsmobilepay.com/docs/partner/partner-keys).
-
-## Do we need to support callbacks?
-
-Please try to implement the API required, even if you do not use the data
-provided in the callback. The API Dashboard will show errors if not.
-
-If it's not possible for your POS to support callbacks (no fixed hostname/IP, etc.),
-you must actively check the payment status.
-
-This is also required if you do support callbacks.
-
-## How can I check if a person has Vipps?
-
-There is no separate API for this, but an attempt to initiate a payment
-with a phone number that is not registered with Vipps will fail with error 81,
-`User not registered with Vipps`.
-See: [Error codes](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#error-codes).
-
-Users that install the app accept the terms and conditions, including being
-"looked up" by the merchant if the payment is initiated with the phone number
-is specified. It is possible to pay with Vipps without sharing the
-phone number with the merchant.
-
-See also
-[vipps.no: privacy and terms](https://vipps.no/vilkar/).
-
-There are users with unlisted numbers, users with secret number, etc.
-These users can still pay with Vipps, since their phone number is
-not shared with anyone without their explicit consent.
 
 ## How can I save the customer's phone number?
 
