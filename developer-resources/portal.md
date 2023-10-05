@@ -53,7 +53,7 @@ Enter the requested properties and click *Create*.
 * Name - The name of your test sales unit.
 * Partner - Optional partner data (not usually needed).
 * Select optional properties:
-  * [Skip Landing Page](../faqs/landing-page-faq.md#is-it-possible-to-skip-the-landing-page)
+  * [Skip Landing Page](../common-topics/landing-page.md#skip-landing-page) - *To use this in production, you will need special permission.*
   * [Recurring API](https://developer.vippsmobilepay.com/docs/APIs/recurring-api)
   * [Direct Capture](../common-topics/reserve-and-capture.md#direct-capture)
 

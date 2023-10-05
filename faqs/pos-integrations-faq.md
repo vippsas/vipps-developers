@@ -80,7 +80,7 @@ As an alternative, an online sale log must be available.
    The
    [customer center](https://vipps.no/hjelp/vipps/)
    can help with this.
-   See: [landing page FAQ](landing-page-faq.md#is-it-possible-to-skip-the-landing-page).
+   See: [landing page](../common-topics/landing-page.md#skip-landing-page).
 5. The POS vendor normally uses
    [Partner keys](https://developer.vippsmobilepay.com/docs/partner/partner-keys).
    If not: The merchant
