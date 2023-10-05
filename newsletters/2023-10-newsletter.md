@@ -52,6 +52,10 @@ When a payment is created with order lines, users can now see the them before ma
 
 See [recommended flows](https://developer.vippsmobilepay.com/docs/solutions/invoice-through-epayments/) for how an user will see the above scenarios in their app. 
 
+## Recurring API
+
+The [Recurring V3 API](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/) now allows to update the interval of an active agreement. See [Update an agreement](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/vipps-recurring-api/#update-an-agreement) for more details.
+
 ## Deprecation of the SFTP service
 
 The
