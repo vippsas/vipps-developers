@@ -139,7 +139,7 @@ and
 
 ### Omikron tips
 
-These Vipps solutions are extra relevant (again):
+These solutions are extra relevant (again):
 
 * Use
   [Vipps Logg inn](https://vipps.no/produkter-og-tjenester/privat/logg-inn-med-vipps/logg-inn-med-vipps/)

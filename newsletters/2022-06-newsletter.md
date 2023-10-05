@@ -10,15 +10,15 @@ pagination_prev: null
 
 This newsletter was sent in June 2022.
 
-## Vipps Order Management API
+## Order Management API
 
-[The Vipps Order Management API](https://developer.vippsmobilepay.com/docs/APIs/order-management-api)
+[The Order Management API](https://developer.vippsmobilepay.com/docs/APIs/order-management-api)
 allows merchants to send rich receipt information to existing Vipps transactions,
 including links to tracking information, tickets, etc.
 
-## Vipps Partner API
+## Partner API
 
-[The Vipps Partner API](https://developer.vippsmobilepay.com/docs/APIs/partner-api)
+[The Partner API](https://developer.vippsmobilepay.com/docs/APIs/partner-api)
 is now available for all partners using partner keys.
 We are very interested in feedback!
 

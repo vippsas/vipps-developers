@@ -10,13 +10,13 @@ pagination_prev: null
 
 This newsletter was sent in September 2021.
 
-## The Vipps QR API
+## The QR API
 
 An early version of the
-[Vipps QR API](https://developer.vippsmobilepay.com/docs/APIs/qr-api)
+[QR API](https://developer.vippsmobilepay.com/docs/APIs/qr-api)
 is available.
 
-The Vipps QR API lets merchants generate Vipps QR codes that can be used to pay
+The QR API lets merchants generate Vipps QR codes that can be used to pay
 over the counter, without requiring the Vipps user to provide their telephone
 number to the merchant.
 
@@ -24,10 +24,10 @@ The QR code, when scanned and opened, will redirect the user to the Vipps
 landing page, which on the phone will automatically trigger a switch to the
 Vipps app where they can pay the merchant.
 
-## The Vipps Order Management API
+## The Order Management API
 
 An early version of the
-[Vipps Order Management API](https://developer.vippsmobilepay.com/docs/APIs/order-management-api)
+[Order Management API](https://developer.vippsmobilepay.com/docs/APIs/order-management-api)
 is available.
 
 The Order Management API allows merchants to send rich receipt information to
@@ -35,13 +35,13 @@ existing Vipps transaction. This information is shown to the customer in the
 app in their order history. This functionality is available for both recurring
 and direct payments, but not for pass-through payments.
 
-## The Vipps Partner API
+## The Partner API
 
 An early version of the
-[Vipps Partner API](https://developer.vippsmobilepay.com/docs/APIs/partner-api/)
+[Partner API](https://developer.vippsmobilepay.com/docs/APIs/partner-api/)
 is available.
 
-The Vipps Partner API will let partners, banks and large corporations
+The Partner API will let partners, banks and large corporations
 manage their merchants and sales units. See the GitHub repository for
 background and priorities.
 

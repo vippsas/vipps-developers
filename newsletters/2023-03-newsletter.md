@@ -23,7 +23,7 @@ don’t subscribe, you will not receive this newsletter again.
 👉 **[Subscribe to the newsletter here](https://cloud.melding.vipps.no/utv)** 👈
 
 In this newsletter, we share information about changes and updates to APIs,
-new functionality, and other important information to ensure that your Vipps solutions run
+new functionality, and other important information to ensure that your solutions run
 smoothly.
 
 The newsletter is sent at irregular intervals, when there is important

@@ -44,7 +44,7 @@ Improvements in button text for agreements without initial charge:
 ## ePayment API
 
 The
-[API specification for the Vipps ePayment API](https://developer.vippsmobilepay.com/api/epayment)
+[API specification for the ePayment API](https://developer.vippsmobilepay.com/api/epayment)
 is now available.
 
 **Please note:** While the API *functionality* is implemented, the

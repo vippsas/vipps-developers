@@ -12,7 +12,7 @@ This newsletter was sent in December 2021.
 
 ## Omikron tips
 
-These Vipps solutions are extra relevant (again):
+These solutions are extra relevant (again):
 
 * Use
   [Vipps Logg inn](https://vipps.no/produkter-og-tjenester/privat/logg-inn-med-vipps/logg-inn-med-vipps/)
@@ -102,13 +102,13 @@ call by including:
 ]
 ```
 
-### The Vipps QR API
+### The QR API
 
 Make window shopping great again!
 
-An [early version of the Vipps QR API](https://developer.vippsmobilepay.com/docs/APIs/qr-api) is available.
+An [early version of the QR API](https://developer.vippsmobilepay.com/docs/APIs/qr-api) is available.
 
-The Vipps QR API lets merchants generate Vipps QR codes that can be used to pay
+The QR API lets merchants generate Vipps QR codes that can be used to pay
 over the counter, without requiring the Vipps user to provide their telephone
 number to the merchant. Or you can create your own QR with a
 [short URL](https://developer.vippsmobilepay.com/docs/APIs/qr-api/vipps-qr-api#qr-formats)

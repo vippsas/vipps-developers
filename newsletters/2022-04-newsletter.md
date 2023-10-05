@@ -22,9 +22,9 @@ The payment must be `RESERVED` for this to take effect.
 See:
 [Cancelling a partially captured order](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#cancelling-a-partially-captured-order).
 
-## The Vipps QR API now works in the test environment
+## The QR API now works in the test environment
 
-[The Vipps QR API](https://developer.vippsmobilepay.com/docs/APIs/qr-api) now works in both in
+[The QR API](https://developer.vippsmobilepay.com/docs/APIs/qr-api) now works in both in
 the production and
 [test environment](../test-environment.md).
 
@@ -33,7 +33,7 @@ the production and
 The response of the
 [`GET:/v1/merchants/{merchantSerialNumber}`](https://developer.vippsmobilepay.com/api/psp-signup#tag/Merchant/operation/getMerchants)
 endpoint in the
-[Vipps PSP API](https://developer.vippsmobilepay.com/docs/APIs/psp-api)
+[PSP API](https://developer.vippsmobilepay.com/docs/APIs/psp-api)
 contains a `logo` field, with the merchant's logo encoded in base64 format.
 
 We are changing this to a URL, with a new field `logoUrl` in the response,

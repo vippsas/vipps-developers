@@ -193,7 +193,7 @@ Note, the description translates to: *Remember: Vipps MobilePay is always fee-fr
 | -------------- | -------------------------------------------------------- |
 | `name`         | The name of the payment method. Use "Vipps".             |
 | `redirect_url` | Merchant hosted URL redirecting to [the Vipps payment deeplink URL](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#the-vipps-deeplink-url)|
-| `image_url`    | The logo to be shown for this payment method. See: [Vipps design guidelines](https://developer.vippsmobilepay.com/docs/design-guidelines).  |
+| `image_url`    | The logo to be shown for this payment method. See: [Design guidelines](https://developer.vippsmobilepay.com/docs/design-guidelines).  |
 | `fee`          | Should not be applicable because of PSD2 surcharge ban.  |
 | `description`  | The `description` field should state that there is no fee when paying with Vipps. The Norwegian text above says: "Vipps is without fees when paying businesses".  |
 
