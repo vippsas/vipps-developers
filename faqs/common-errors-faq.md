@@ -225,16 +225,15 @@ See: [Error codes](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps
 
 ## Why do I get "Merchant Not Allowed for Ecommerce Payment"?
 
-This error occurs if you attempt to use the eCom API with a sales unit (MSN)
+This error occurs if you attempt to use a payment related API with a sales unit (MSN)
 that is only approved for the Login API.
 
-We perform different checks for sales units that do not make payments,
-so to use the eCom API you need to order *Vipps på Nett* on
-[portal.vipps.no](https://portal.vipps.no)
-to go through the regulatory and legally required checks and get
-access to the eCom API.
+Your sales unit will need to go through a different set of regulatory and legally required checks
+to get access to the payment APIs.
+Place an order for *Vipps på Nett* through the
+[merchant portal](https://portal.vipps.no).
 
-All sales units that have been approved for the eCom API can also use
+Note that all sales units that have been approved for the eCom API can also use
 the Login API, but not the other way around.
 
 See:
@@ -248,8 +247,7 @@ The most common reasons are:
   Vipps attempts to correct incorrectly formatted phone numbers
   instead of responding with `HTTP 400 Bad Request`.
   In cases where the phone number still fails, the error will be `errorCode: 81`.
-  See the API specification:
-  [`POST:/ecomm/v2/payments`](https://developer.vippsmobilepay.com/api/ecom#tag/Vipps-eCom-API/operation/initiatePaymentV3UsingPOST).
+  See the API specifications.
 * The user is under 15 years old and cannot pay businesses.
 * The phone number is not for a Vipps or MobilePay user.
 

@@ -10,20 +10,19 @@ pagination_prev: null
 
 ## Is there an API for checking if a number belongs to a user?
 
-No. We don't offer a lookup service for this, as we don't want to
+No, we don't offer a lookup service for this, as we don't want to
 leak information about users. If a payment is initiated for a user that can
 not pay businesses, the response will be an error.
 
-We don't distinguish between the following when initiating a payment with
-[`POST:/ecomm/v2/payments`](https://developer.vippsmobilepay.com/api/ecom#tag/Vipps-eCom-API/operation/initiatePaymentV3UsingPOST)
-and the API call contains a phone number that can't be used to complete the payment:
+If you initiate a payment request with a phone number that can't be used to complete the payment,
+we don't distinguish between the following:
 
 * Not a Vipps MobilePay user
 * A Vipps MobilePay user, but too young to pay businesses
 * A previous Vipps MobilePay user that has deleted his/her account
 * A Vipps MobilePay user that has his/her account temporarily or permanently blocked.
 
-We can't give provide more details about the reason.
+We aren't allowed to provide more details about the reason for the failure.
 
 ## Is there an API for retrieving information about a user?
 
@@ -31,20 +30,7 @@ Yes, but only as part of a payment or login.
 
 We offer the possibility for merchants to ask the user for information
 as part of the payment flow with
-[Userinfo](https://developer.vippsmobilepay.com/docs/APIs/userinfo-api).
-
-This is done by adding a `scope` parameter to the initiate calls:
-[`POST:/ecomm/v2/payments`](https://developer.vippsmobilepay.com/api/ecom#tag/Vipps-eCom-API/operation/initiatePaymentV3UsingPOST) (eCom)
-and
-[`POST:/recurring/v2/agreements`](https://developer.vippsmobilepay.com/api/recurring#tag/Agreement-v2-endpoints/operation/DraftAgreement) (Recurring):
-
-* `address`
-* `birthDate`
-* `email`
-* `name`
-* `phoneNumber`
-* `nin` (national identity number, "fødselsnummer" in Norway)
-* `accountNumbers`
+[Userinfo](https://developer.vippsmobilepay.com/docs/APIs/userinfo-api/userinfo-api-guide/).
 
 **Please note:** Vipps or MobilePay users have not consented to providing any
 information to third parties, and we do not allow it.
@@ -53,7 +39,7 @@ There is no other API to look up a user's address, retrieve a user's purchases, 
 
 ## Where can I find information about payment and settlements?
 
-[portal.vipps.no](https://portal.vipps.no)
+On the [merchant portal](https://portal.vipps.no)
 provides information about your transactions, sales units and settlement reports.
 You can also subscribe to daily or monthly transaction reports by email.
 
@@ -71,7 +57,7 @@ If you want to charge a fee (like 3 %) of your payments, you can:
 1. Receive the full payment, take your 3 %, and then pay the remaining
    97 % to your customer (merchant). In order to receive payments in this way,
    you may need the regulatory approval as
-   [e-pengeforetak (i.e., *e-money institution*)](https://www.finanstilsynet.no/konsesjon/e-pengeforetak/)
+   [*e-pengeforetak* (*e-money institution*)](https://www.finanstilsynet.no/konsesjon/e-pengeforetak/)
    from the Finanstilsynet.
 2. Have your customer (merchant) receive the full payment directly, then send an
    invoice for your 3 % fee.

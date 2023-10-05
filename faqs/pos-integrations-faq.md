@@ -143,16 +143,14 @@ See: [Partner keys](https://developer.vippsmobilepay.com/docs/partner/partner-ke
 Please try to implement the API required, even if you do not use the data
 provided in the callback. The API Dashboard will show errors if not.
 
-If it is not possible for your POS to support callbacks (no fixed hostname/IP, etc.),
-you must actively check the payment status with
-[``GET:/ecomm/v2/payments/{orderId}/details``](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#get-payment-details).
+If it's not possible for your POS to support callbacks (no fixed hostname/IP, etc.),
+you must actively check the payment status.
 
 This is also required if you do support callbacks.
 
 ## How can I check if a person has Vipps?
 
-There is no separate API for this, but an attempt to
-[`POST:/ecomm/v2/payments`](https://developer.vippsmobilepay.com/api/ecom#tag/Vipps-eCom-API/operation/initiatePaymentV3UsingPOST)
+There is no separate API for this, but an attempt to initiate a payment
 with a phone number that is not registered with Vipps will fail with error 81,
 `User not registered with Vipps`.
 See: [Error codes](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#error-codes).
@@ -161,12 +159,9 @@ Users that install the app accept the terms and conditions, including being
 "looked up" by the merchant if the payment is initiated with the phone number
 is specified. It is possible to pay with Vipps without sharing the
 phone number with the merchant.
-See
-[`POST:/ecomm/v2/payments`](https://developer.vippsmobilepay.com/api/ecom#tag/Vipps-eCom-API/operation/initiatePaymentV3UsingPOST)
-for the details of initiating payments with and without phone number.
+
 See also
-[privacy and terms](https://vipps.no/vilkar/)
-on vipps.no.
+[vipps.no: privacy and terms](https://vipps.no/vilkar/).
 
 There are users with unlisted numbers, users with secret number, etc.
 These users can still pay with Vipps, since their phone number is
