@@ -23,6 +23,15 @@ because the users get a familiar user experience and know the payment flow.
 In this way, we take responsibility for helping the user from the browser to the app,
 and to complete the payment in a familiar way.
 
+## Important notes
+
+* Users should never see the landing page on a device where the Vipps or MobilePay
+  app is installed.
+* Any *optimization* of the normal payment flow may break the payment
+  flow - if not today, then later.
+* The default behavior and our recommendations are based on years of experience and data,
+  and we continuously monitor and improve it.
+
 ## User flow
 
 When a payment is initiated, the user is directed to a `url` which will either open
@@ -33,18 +42,17 @@ the Vipps or MobilePay app, MobilePay app, or the landing page:
   This is done by the phone's operating system. It recognizes that the `https://`
   URL for the landing page is a Vipps URL, and knows that it should open the
   Vipps or MobilePay app instead of the opening it in a web browser.
-* In a desktop browser, the landing page will prompt the user for the phone number
-  (the number may also be pre-filled, as described in
-  [the user's phone number](#the-users-phone-number) section).
+* In a desktop browser, the landing page will prompt the user for the phone number.
+  The number may be pre-filled, as described in the
+  [User phone number](#user-phone-number) section.
   The user enters or confirms the phone number.
   It is also possible to enter another user's number, to have that
   person complete the payment.
 
-
-## The user's phone number
+## User phone number
 
 The user's phone number can be set in the payment initiation call. It is
-remembered by the user's browser, eliminating the need for re-typing it on
+stored by the user's browser, eliminating the need for re-typing it on
 subsequent purchases.
 
 In some cases, one user will start the payment process, but the actual payment
@@ -54,21 +62,42 @@ A typical example is one user that is below
 15 years old, and therefore cannot pay to businesses, will let another
 user complete the payment.
 
-See:
-[Is it possible to prevent the user from editing the phone number?​](../faqs/landing-page-faq.md#is-it-possible-to-prevent-the-user-from-editing-the-phone-number)
+### User phone number exceptions
+
+In special cases, it may be a requirement to always specify the user's
+phone number and to make the phone number impossible to edit on the landing page.
+
+This will of course make it impossible for a user to start the payment process,
+but have another user (a parent, for instance) complete the payment.
+
+If you need to make the user's phone number impossible to edit on the landing page:
+Contact your Key Account Manager. If you do not have a KAM:
+[contact us](../contact.md)
+and include a detailed description of why this is needed.
 
 ## Never display the landing page in an iframe
 
-**Important:** Never show the landing page inside an iframe. See:
-[Can I show the landing page in an iframe?​](../faqs/landing-page-faq.md#can-i-show-the-landing-page-in-an-iframe)
+Displaying the landing page inside an iframe makes it impossible for the
+user to reliably be redirected back to the merchant's website, and result in a
+lower success rate.
 
-This is applicable to:
+When the phone's operating system is instructed to open the `fallBack` URL (the
+result page for the payment) and our app is installed, the
+`https://vipps.no?token... [truncated]` URL is recognized
+by the phone's operating system as "owned" by Vipps MobilePay. Then, instead of opening a browser,
+the Vipps or MobilePay app is automatically opened. This is called an *app-switch*.
 
-* [eCom API](https://developer.vippsmobilepay.com/docs/APIs/ecom-api)
-* [Partner API](https://developer.vippsmobilepay.com/docs/APIs/partner-api)
-* [Management API](https://developer.vippsmobilepay.com/docs/APIs/management-api/)
-* [PSP API](https://developer.vippsmobilepay.com/docs/APIs/psp-api)
-* [Recurring API](https://developer.vippsmobilepay.com/docs/APIs/recurring-api)
+However, if the landing page is displayed inside an iframe, the logic above does
+not work. This results in the user gets a bad user experience, and the success rate for
+completing the payment drops.
+
+Also: The `fallBack` URL is opened in the default browser, since it's opened
+by the phone's operating system. It cannot be opened inside an embedded
+browser, or in an iframe. Any session cookies or similar will be gone, so it
+is crucial that the `fallBack` URL is able to correctly show the correct state
+for the payment.
+
+This is applicable to all APIs.
 
 ## Generating a QR code to the landing page
 
@@ -84,8 +113,16 @@ for more details about this and other QR services.
 
 ## Skip landing page
 
-**Please note:** This functionality is only available for special cases.
-Skipping the landing page is only allowed when it is not possible to show it.
+In very special cases, where displaying the landing page is impossible,
+you might be able to skip the landing page. This requires special permission.
+
+You can check if you have `skipLandingPage` activated by logging in to the
+[merchant portal](https://portal.vipps.no).
+You can also find information on how to activate `skipLandingPage` there.
+For details, see [How to check if skip landing page is active](#how-to-check-if-skip-landing-page-is-active).
+
+The landing page is more than just a web page, it is an entire
+application, and it plays an important role in our payment process.
 
 Skipping the landing page is reserved for when the payment is initiated on a
 device that the user does not own or control:
@@ -98,8 +135,8 @@ device that the user does not own or control:
 This `skipLandingpage` functionality must be specially enabled by Vipps MobilePay for each
 sales unit that needs it.
 If you need to skip the landing page, contact your
-Key Account Manager. If you do not have a KAM, please log in on
-[portal.vipps.no](https://portal.vipps.no),
+Key Account Manager. If you do not have a KAM, please log in to the
+[merchant portal](https://portal.vipps.no),
 find the right sales unit and click the email link under the "i" information
 bubble. Include a detailed description of why it is not possible to display
 the landing page.
@@ -126,8 +163,23 @@ initiates the payment:
 * If the sales unit is not whitelisted, the request will fail and an error
   message will be returned.
 
-See:
-[Is it possible to skip the landing page?](../faqs/landing-page-faq.md#is-it-possible-to-skip-the-landing-page.)
+If you need to skip the landing page in a Point of Sale (POS) solution, see:
+[What is the process to go live in production?](pos-integrations-faq.md#what-is-the-process-to-go-live-in-production).
+
+### How to check if skip landing page is active
+
+All merchants can log in to the
+[merchant portal](https://portal.vipps.no)
+and check if a sales unit has `skipLandingPage` enabled.
+You can also find information on how to activate `skipLandingPage` there.
+
+If you are a partner and want to check for a merchant:
+
+* Use the
+[Management API](https://developer.vippsmobilepay.com/docs/APIs/management-api/).
+* Ask the merchant to [create a portal user](https://developer.vippsmobilepay.com/docs/partner/add-portal-user), so you can check on behalf of them.
+* Make a trial attempt with a small payment.
+    If you are not able to log in to the merchant portal, you can initiate a small payment request where `skipLandingPage` is true. If you don't get an error, it's active; otherwise, it's not active.
 
 ## Sequence diagram
 
@@ -160,5 +212,5 @@ sequenceDiagram
 
 See:
 
-* [Is it possible to skip the landing page](../faqs/landing-page-faq.md#is-it-possible-to-skip-the-landing-page)
-* [How can I check if I have skipLandingPage activated?](../faqs/landing-page-faq.md#how-can-i-check-if-i-have-skiplandingpage-activated)
+* [Is it possible to skip the landing page](../common-topics/landing-page.md#skip-landing-page)
+* [How can I check if I have skipLandingPage activated?](../common-topics/landing-page.md#how-to-check-if-skip-landing-page-is-active)
