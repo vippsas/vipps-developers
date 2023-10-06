@@ -7,13 +7,15 @@ pagination_prev: null
 
 # Refunds
 
-The merchant can initiate a refund of the captured amount.
+The merchant can initiate a full or partial refund of the captured amount up to 365 days after payment or reservation.
+It usually takes 2-3 *bank days* until the money is in the customer's account, depending on the bank(s).
+It can take much longer, up to 10 days, and depends on the bank(s).
 
 It is not possible to refund a larger amount than the captured amount.
 
 A refund can be a partial or full.
 
-Partial refunds are done by specifying an `amount` that is lower than the
+Partial refunds are done by specifying an amount that is lower than the
 captured amount. It is possible to make several partial refunds after each
 other.
 
@@ -29,12 +31,15 @@ Refunded funds will be deducted from the merchant's settlement account after
 two business days. See
 [Settlement Information](../settlements/README.md) for more details.
 
-This is applicable to:
+Here are related sections in the API guides:
 
-* [eCom API](https://developer.vippsmobilepay.com/docs/APIs/ecom-api)
-* [ePayment API](https://developer.vippsmobilepay.com/docs/APIs/epayment-api)
-* [Recurring API](https://developer.vippsmobilepay.com/docs/APIs/recurring-api)
+* [ePayment API: Refund](https://developer.vippsmobilepay.com/docs/APIs/epayment-api/operations/refund/)
+* [Recurring API: Refund a charge](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/vipps-recurring-api/#refund-a-charge)
+* [eCom API: Refund](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api/#refund)
 
-See
-[Refund](https://developer.vippsmobilepay.com/docs/faqs/refunds-faq/)
+It is also possible to do refunds on
+[portal.vipps.no](https://portal.vipps.no).
+
+See the
+[Refund FAQ](https://developer.vippsmobilepay.com/docs/faqs/refunds-faq/)
 for common questions.
