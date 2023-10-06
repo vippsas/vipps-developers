@@ -65,6 +65,14 @@ now allows to update the interval of an active agreement. See
 [Update an agreement](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/vipps-recurring-api/#update-an-agreement)
 for more details.
 
+## Test users
+
+You can now create new test users on
+[portal.vipps.no](https://portal.vipps.no).
+See
+[Test users](https://developer.vippsmobilepay.com/docs/test-environment/#test-users)
+for details.
+
 ## Deprecation of the SFTP service
 
 The
@@ -77,14 +85,6 @@ The
 [Report API](https://developer.vippsmobilepay.com/docs/APIs/report-api/)
 is the replacement. See:
 [What are the benefits of the Report API over the SFTP service?](https://developer.vippsmobilepay.com/docs/APIs/report-api/vipps-report-api-faq/#what-are-the-benefits-of-the-report-api-over-the-sftp-service)
-
-## Test users
-
-You can now create new test users on
-[portal.vipps.no](https://portal.vipps.no).
-See
-[Test users](https://developer.vippsmobilepay.com/docs/test-environment/#test-users)
-for details.
 
 ## Deprecation of the Partner API
 
