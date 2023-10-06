@@ -130,8 +130,8 @@ initiates the payment:
 * If the sales unit is not whitelisted, the request will fail and an error
   message will be returned.
 
-See:
-[Is it possible to skip the landing page?](../faqs/landing-page-faq.md#is-it-possible-to-skip-the-landing-page.)
+If you need to skip the landing page in a Point of Sale (POS) solution, see:
+[What is the process to go live in production?](../faqs/pos-integrations-faq.md#what-is-the-process-to-go-live-in-production).
 
 ## Sequence diagram
 
