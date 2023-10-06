@@ -26,7 +26,9 @@ If the payment started in a custom browser (like Chrome on iOS, or an embedded
 browser on Instagram, instead of the default Safari browser), the `fallback` URL
 (the result page) will still be opened in the default browser.
 
-See:
+## Related pages
 
 * [How can I open the fallback URL in a specific (embedded) browser?](common-problems-faq.md#how-can-i-open-the-fallback-url-in-a-specific-embedded-browser).
 * [Recommendations regarding handling redirects](../common-topics/redirects.md).
+* [Payment screen](../common-topics/payment-screen.md)
+* [Landing page](../common-topics/landing-page.md)
