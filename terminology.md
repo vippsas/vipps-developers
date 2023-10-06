@@ -68,9 +68,7 @@ pagination_prev: null
 * Payment Service Provider (PSP) - A third party company that performs online
   payments on behalf of Vipps MobilePay. Settlements for PSP integrations are handled by the PSP.
 
-* Point of Sale (POS) - A POS is a physical store. It is usually discussed in relation
-  to combining QR codes and possibly also scanners and customer-facing screens to enable the
-  users to easily perform payments with Vipps or MobilePay.
+* Point of Sale (POS) - A POS is a physical store. It's a type of sales unit.
 
 * `reference` - The API parameter that supplies a unique identifier for the
   payment. This is the same as `orderId`. Newer APIs will use the name `reference`
