@@ -73,6 +73,12 @@ See
 [Test users](https://developer.vippsmobilepay.com/docs/test-environment/#test-users)
 for details.
 
+## MobilePay migration guides
+
+There are several migration guides for how to move from the
+MobilePay APIs to the new APIs:
+[Migration guides](https://developer.vippsmobilepay.com/docs/mp-migration-guide).
+
 ## Deprecation of the SFTP service
 
 The
@@ -109,12 +115,6 @@ more advanced features.
 Our
 [migration guide](https://developer.vippsmobilepay.com/docs/APIs/checkout-api/vipps-checkout-api-migration-v3/)
 will take you through all the details, if you haven't already switched.
-
-## MobilePay migration guides
-
-There are several migration guides for how to move from the
-MobilePay APIs to the new APIs:
-[Migration guides](https://developer.vippsmobilepay.com/docs/mp-migration-guide).
 
 ## Reminders
 
