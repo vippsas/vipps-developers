@@ -69,6 +69,14 @@ The
 is the replacement. See:
 [What are the benefits of the Report API over the SFTP service?](https://developer.vippsmobilepay.com/docs/APIs/report-api/vipps-report-api-faq/#what-are-the-benefits-of-the-report-api-over-the-sftp-service)
 
+## Test users
+
+You can now create new test users on
+[portal.vipps.no](https://portal.vipps.no). 
+See
+[Test users](https://developer.vippsmobilepay.com/docs/test-environment/#test-users)
+for details.
+
 ## Deprecation of the Partner API
 
 The
