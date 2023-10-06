@@ -23,7 +23,7 @@ It is a REST API providing data in JSON format.
 * Accounting partners must use their
   [accounting keys](https://developer.vippsmobilepay.com/docs/partner/partner-keys/#types-of-partner-keys).
   Merchants are not allowed to share API keys with partners that have not been approved by
-  Vipps MobilePay, as we are strictly regulated and must know who can make payments using our APIs.
+  Vipps MobilePay to make payments, as we are strictly regulated and must know who can make payments using our APIs.
 * Accounting companies can use the
   [form on vipps.no](https://www.vipps.no/developer/become-a-partner/)
   to become an accounting partner.
