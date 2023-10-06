@@ -15,7 +15,7 @@ The APIs return the following HTTP statuses in the responses:
 | `204 No Content`        | Request successful, but empty result                   |
 | `400 Bad Request`       | Invalid request, see the error for details             |
 | `401 Unauthorized`      | Invalid credentials                                    |
-| `403 Forbidden`         | Authentication ok, but credentials lacks authorization |
+| `403 Forbidden`         | Authentication ok, but credentials lack authorization  |
 | `404 Not Found`         | The resource was not found                             |
 | `409 Conflict`          | Unsuccessful due to conflicting resource               |
 | `429 Too Many Requests` | Look at table below to view current rate limits        |
@@ -27,7 +27,7 @@ In general:
 * 4XX responses: Client error. You have a problem, and you must correct it.
 * 5XX responses: Server error. We have a problem, and we must correct it.
 
-See the API specification for each API for details *especially the API's FAQ*.
+See each API specification and FAQ for details.
 
 See:
 [Error](https://developer.vippsmobilepay.com/docs/common-topics/errors/).
