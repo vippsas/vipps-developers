@@ -164,7 +164,7 @@ initiates the payment:
   message will be returned.
 
 If you need to skip the landing page in a Point of Sale (POS) solution, see:
-[What is the process to go live in production?](pos-integrations-faq.md#what-is-the-process-to-go-live-in-production).
+[What is the process to go live in production?](../faqs/pos-integrations-faq.md#what-is-the-process-to-go-live-in-production).
 
 ### How to check if skip landing page is active
 
