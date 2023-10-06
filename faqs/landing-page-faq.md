@@ -8,6 +8,8 @@ pagination_prev: null
 
 # FAQ: Landing page
 
+For more details surrounding the landing page, see [Landing page](../common-topics/landing-page.md#skip-landing-page).
+
 ## Is it possible to skip the landing page?
 
 Only in special cases, where displaying it is not possible.

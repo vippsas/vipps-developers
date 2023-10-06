@@ -23,6 +23,15 @@ because the users get a familiar user experience and know the payment flow.
 In this way, we take responsibility for helping the user from the browser to the app,
 and to complete the payment in a familiar way.
 
+## Important notes
+
+* Users should never see the landing page on a device where the Vipps or MobilePay
+  app is installed.
+* Any *optimization* of the normal payment flow may break the payment
+  flow - if not today, then later.
+* The default behavior and our recommendations are based on years of experience and data,
+  and we continuously monitor and improve it.
+
 ## User flow
 
 When a payment is initiated, the user is directed to a `url` which will either open
@@ -33,18 +42,17 @@ the Vipps or MobilePay app, MobilePay app, or the landing page:
   This is done by the phone's operating system. It recognizes that the `https://`
   URL for the landing page is a Vipps URL, and knows that it should open the
   Vipps or MobilePay app instead of the opening it in a web browser.
-* In a desktop browser, the landing page will prompt the user for the phone number
-  (the number may also be pre-filled, as described in
-  [the user's phone number](#the-users-phone-number) section).
+* In a desktop browser, the landing page will prompt the user for the phone number.
+  The number may be pre-filled, as described in the
+  [User phone number](#user-phone-number) section.
   The user enters or confirms the phone number.
   It is also possible to enter another user's number, to have that
   person complete the payment.
 
-
-## The user's phone number
+## User phone number
 
 The user's phone number can be set in the payment initiation call. It is
-remembered by the user's browser, eliminating the need for re-typing it on
+stored by the user's browser, eliminating the need for re-typing it on
 subsequent purchases.
 
 In some cases, one user will start the payment process, but the actual payment
@@ -62,13 +70,7 @@ See:
 **Important:** Never show the landing page inside an iframe. See:
 [Can I show the landing page in an iframe?​](../faqs/landing-page-faq.md#can-i-show-the-landing-page-in-an-iframe)
 
-This is applicable to:
-
-* [eCom API](https://developer.vippsmobilepay.com/docs/APIs/ecom-api)
-* [Partner API](https://developer.vippsmobilepay.com/docs/APIs/partner-api)
-* [Management API](https://developer.vippsmobilepay.com/docs/APIs/management-api/)
-* [PSP API](https://developer.vippsmobilepay.com/docs/APIs/psp-api)
-* [Recurring API](https://developer.vippsmobilepay.com/docs/APIs/recurring-api)
+This is applicable to all APIs.
 
 ## Generating a QR code to the landing page
 
@@ -81,10 +83,6 @@ the QR code will take the user directly to the payment in the Vipps or MobilePay
 This is done in cooperation with the QR API. See
 [One-time payment QR](https://developer.vippsmobilepay.com/docs/APIs/qr-api/vipps-qr-api#one-time-payment-qr-codes)
 for more details about this and other QR services.
-
-See the
-[Quick start](https://developer.vippsmobilepay.com/docs/APIs/epayment-api/quick-start/)
-for step-by-step examples of generating QR codes and short links for one-time payments initiated from the ePayment API.
 
 ## Skip landing page
 
@@ -133,6 +131,21 @@ initiates the payment:
 If you need to skip the landing page in a Point of Sale (POS) solution, see:
 [What is the process to go live in production?](../faqs/pos-integrations-faq.md#what-is-the-process-to-go-live-in-production).
 
+### How to check if skip landing page is active
+
+All merchants can log in to the
+[merchant portal](https://portal.vipps.no)
+and check if a sales unit has `skipLandingPage` enabled.
+You can also find information on how to activate `skipLandingPage` there.
+
+If you are a partner and want to check for a merchant:
+
+* Use the
+[Management API](https://developer.vippsmobilepay.com/docs/APIs/management-api/).
+* Ask the merchant to [create a portal user](https://developer.vippsmobilepay.com/docs/partner/add-portal-user), so you can check on behalf of them.
+* Make a trial attempt with a small payment.
+    If you are not able to log in to the merchant portal, you can initiate a small payment request where `skipLandingPage` is true. If you don't get an error, it's active; otherwise, it's not active.
+
 ## Sequence diagram
 
 This sequence diagram shows the difference between the normal flow and
@@ -162,7 +175,7 @@ sequenceDiagram
     end
 ```
 
-See:
+See frequently asked questions:
 
 * [Is it possible to skip the landing page](../faqs/landing-page-faq.md#is-it-possible-to-skip-the-landing-page)
 * [How can I check if I have skipLandingPage activated?](../faqs/landing-page-faq.md#how-can-i-check-if-i-have-skiplandingpage-activated)
