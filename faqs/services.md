@@ -8,19 +8,38 @@ pagination_prev: null
 
 # Applying for services
 
-*This will soon be expanded as part of the [Vipps MobilePay joint platform launch](https://www.vippsmobilepay.com/#about).*
+As a merchant, you can apply for a *Merchant Agreement*. This is a legal agreement between you and Vipps MobilePay.
+Once the *Merchant Agreement* has been submitted, you can order products.
 
-To apply for services, you need to have a Norwegian organization number
-and applications must be signed with Norwegian BankID.
+## Requirements
 
-In addition, before you can order any services, you must apply for
-a *Merchant Agreement*. This is a legal agreement between you and Vipps MobilePay.
-Once the *Merchant Agreement* has been submitted, you can order
-products.
+*This is in the process of changing as part of the [Vipps MobilePay joint platform launch](https://www.vippsmobilepay.com/#about).*
+
+Merchants must have the following in order to use Vipps MobilePay as a payment
+provider and to receive payments from Vipps and MobilePay users:
+
+* A Norwegian organization number
+* A Norwegian bank account
+* An appointed contact person with a Norwegian phone number and Norwegian
+  identity number (i.e., "fødselsnummer" or "D-nummer", 11 digits).
+
+If a foreign company is registered in
+[Brønnøysundregistrene](https://www.brreg.no/),
+it has a contact person with a Norwegian identity number.
+
+If a foreign company has not yet been formally established, Vipps MobilePay can
+manually send the agreement for digital signing with Danish NemID,
+Swedish BankID, etc. When this is required, please contact
+[customer service](https://vipps.no/kontakt-oss/)
+or, for partners, please contact your partner manager.
+
+If the above is impossible, the company can use Vipps through a
+[Payment Service Provider (PSP)](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-2).
 
 ## How to apply
 
-Apply for services on
+For a merchant planning to do direct integration toward the Vipps MobilePay APIs,
+apply for a *Merchant Agreement* on
 [portal.vipps.no](https://portal.vipps.no).
 
 **Please note:** If you plan to use Vipps MobilePay through a PSP, please see
@@ -49,34 +68,8 @@ on
 These API keys will allow you to start making API requests to the production server
 (e.g., create a payment request that goes to a real user's app).
 
-## Requirements
 
-*This is in the process of changing as part of the [Vipps MobilePay joint platform launch](https://www.vippsmobilepay.com/#about).*
-
-### Non-Norwegian companies
-
-Non-Norwegian companies must have the following in order to use  MobilePay as a payment
-provider and to receive payments from Vipps or MobilePay users:
-
-* A Norwegian organization number
-* A Norwegian bank account
-* An appointed contact person with a Norwegian phone number and Norwegian
-  identity number (i.e., "fødselsnummer" or "D-nummer", 11 digits).
-
-If the foreign company is registered in
-[Brønnøysundregistrene](https://www.brreg.no/),
-it has a contact person with a Norwegian identity number.
-
-If the foreign company has not yet been formally established, Vipps MobilePay can
-manually send the agreement for digital signing with Danish NemID,
-Swedish BankID, etc. When this is required, please contact
-[customer service](https://vipps.no/kontakt-oss/)
-or, for partners, please contact your partner manager.
-
-If the above is impossible, the company can use Vipps through a
-[Payment Service Provider (PSP)](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-2).
-
-### Vipps users
+## Vipps users
 
 Vipps payments can only be made by customers with a Norwegian phone number and
 with a Norwegian national identity number or D-number.
