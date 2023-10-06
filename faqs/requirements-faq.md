@@ -23,7 +23,7 @@ AML (Anti Money Laundering) and other risk assessment procedures.
 See:
 [Requirements](./services.md#requirements).
 
-It is also possible to use Vipps MobilePay through a Payment Service Provider (PSP)).
+It is also possible to use Vipps MobilePay through a Payment Service Provider (PSP).
 We then rely on the PSP for KYC (Know Your Customer), AML (Anti Money Laundering)
 and other risk assessment procedures.
 To use a PSP, contact the PSP.
