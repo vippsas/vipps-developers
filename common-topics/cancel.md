@@ -55,8 +55,10 @@ any request to cancel after a partial or full capture has been performed will be
 This is a useful and recommended feature, as it releases any reserved balance
 as soon as the card issuer and/or bank permits.
 
-See also the FAQ:
-[How long does it take from a refund is made until the money is in the customer's account?](../faqs/refunds-faq.md#how-long-does-it-take-from-a-refund-is-made-until-the-money-is-in-the-customers-account)
+It usually takes 2-3 *bank days* until the money is in the customer's account, depending on the bank(s).
+It can take much longer, up to 10 days, and depends on the bank(s).
+For more details, see:
+[How long does it take from a refund is made until the money is in the customer's account?](../faqs/refunds-faq.md#how-long-does-it-take-from-a-refund-is-made-until-the-money-is-in-the-customers-account).
 
 **Please note:** Once this operation has been performed, there will be zero
 funds remaining to capture. Do not call this endpoint until you are sure you
