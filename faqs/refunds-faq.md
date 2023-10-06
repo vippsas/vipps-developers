@@ -14,6 +14,12 @@ This depends on your eCommerce solution. The eCom API supports refunds with
 [`POST:/ecomm/v2/payments/{orderId}/refund`](https://developer.vippsmobilepay.com/api/ecom#tag/Vipps-eCom-API/operation/refundPaymentUsingPOST).
 For details on how to offer refunds, please refer to the documentation for your eCommerce solution.
 
+Here are related sections in the API guides:
+
+* [ePayment API: Refund](https://developer.vippsmobilepay.com/docs/APIs/epayment-api/operations/refund/)
+* [Recurring API: Refund a charge](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/vipps-recurring-api/#refund-a-charge)
+* [eCom API: Refund](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api/#refund)
+
 All integrations with the eCom API *must* support refunds.
 
 It is also possible to do refunds on
