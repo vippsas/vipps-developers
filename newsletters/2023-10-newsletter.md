@@ -34,9 +34,9 @@ It is a REST API providing data in JSON format.
 
 The
 [Management API](https://developer.vippsmobilepay.com/docs/APIs/management-api/)
-is available for all merchants and _most_ partners:
+replaces the Partner API, and is available for all merchants and _most_ partners:
 * Pre-fill product orders to simplify and speed up onboarding of merchants
-* Retrieve information about merchants and their sales units
+* Retrieve information about merchants and sales units
 
 See
 [What are the benefits of the Management API over the Partner API?](https://developer.vippsmobilepay.com/docs/APIs/management-api/management-api-faq/#what-are-the-benefits-of-the-management-api-over-the-partner-api)
@@ -46,21 +46,30 @@ Partners: See
 
 ## ePayments API
 
-The [Long living payments](https://developer.vippsmobilepay.com/docs/APIs/epayment-api/features/long-living-payments/) feature in ePayments API is now supported in the latest version of the app on both iOS and Android.
+The
+[Long living payments](https://developer.vippsmobilepay.com/docs/APIs/epayment-api/features/long-living-payments/)
+feature in ePayments API is now supported in the latest version of the app on both iOS and Android.
 
-When a payment is created with order lines, users can now see the them before making the payment in the latest version of the app on both iOS and Android.
+When a payment is created with order lines, users can now see them before making the payment in the
+latest version of the app on both iOS and Android.
 
-See [recommended flows](https://developer.vippsmobilepay.com/docs/solutions/invoice-through-epayments/) for how an user will see the above scenarios in their app. 
+See
+[recommended flows](https://developer.vippsmobilepay.com/docs/solutions/invoice-through-epayments/)
+for how a user will see the above scenarios in their app. 
 
 ## Recurring API
 
-The [Recurring V3 API](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/) now allows to update the interval of an active agreement. See [Update an agreement](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/vipps-recurring-api/#update-an-agreement) for more details.
+The
+[Recurring V3 API](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/)
+now allows to update the interval of an active agreement. See
+[Update an agreement](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/vipps-recurring-api/#update-an-agreement)
+for more details.
 
 ## Deprecation of the SFTP service
 
 The
 [SFTP service](https://developer.vippsmobilepay.com/docs/settlements/sftp-report-service/)
-is now deprecated, and will be shut down on February 1 2024,
+is now deprecated, and will be shut down on March 1 2024,
 with a four month warning according to the
 [API Lifecycle](https://developer.vippsmobilepay.com/docs/common-topics/api-lifecycle/).
 
@@ -72,7 +81,7 @@ is the replacement. See:
 ## Test users
 
 You can now create new test users on
-[portal.vipps.no](https://portal.vipps.no). 
+[portal.vipps.no](https://portal.vipps.no).
 See
 [Test users](https://developer.vippsmobilepay.com/docs/test-environment/#test-users)
 for details.
@@ -85,31 +94,41 @@ has replaced the
 [Partner API](https://developer.vippsmobilepay.com/docs/APIs/partner-api/.)
 
 For those few that still use the Partner API, please update as soon as possible.
-The Partner API will be unavailable _at the latest_ on February 1 2024.
+The Partner API will be unavailable _at the latest_ on March 1 2024.
 
-## Deprecation of the Checkout API V2
+## Deprecation of the Checkout API v2
 
 The
 [Checkout API version 2](https://developer.vippsmobilepay.com/docs/APIs/checkout-api/)
 will be shut down Jan 1st 2024, so please make sure you're using version 3.
 
-Checkout V3 improves upon V2 through alignment of polling and callback responses, improvement of field names, and expanding models related to logistics options to permit more advanced features. 
+Checkout V3 improves upon V2 through alignment of polling and callback responses,
+improvement of field names, and expanding models related to logistics options to permit
+more advanced features. 
 
-[Our migration guide](https://developer.vippsmobilepay.com/docs/APIs/checkout-api/vipps-checkout-api-migration-v3/) will take you through all the details, if you haven't already switched.
+Our
+[migration guide](https://developer.vippsmobilepay.com/docs/APIs/checkout-api/vipps-checkout-api-migration-v3/)
+will take you through all the details, if you haven't already switched.
 
 ## MobilePay migration guides
 
 There are several migration guides for how to move from the
 MobilePay APIs to the new APIs:
-[Migration giudes](https://developer.vippsmobilepay.com/docs/mp-migration-guide).
+[Migration guides](https://developer.vippsmobilepay.com/docs/mp-migration-guide).
 
 ## Reminders
 
-### Deprecation of the Recurring API V2
-As announced in [December 2022 newsletter](https://developer.vippsmobilepay.com/docs/newsletters/2022-12-newsletter/#recurring-api-v3),
-the [Recurring API version 2](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/) will be shut down November 1st 2023, so please make sure you're using version 3.
+### Deprecation of the Recurring API v2
 
-[Our migration guide](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/v2-to-v3-migration-guide/) will take you through all the details, if you haven't already switched.
+As announced in
+[December 2022 newsletter](https://developer.vippsmobilepay.com/docs/newsletters/2022-12-newsletter/#recurring-api-v3),
+the
+[Recurring API version 2](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/)
+will be shut down November 1 2023, so please make sure you're using version 3.
+
+Our
+[migration guide](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/v2-to-v3-migration-guide/)
+will take you through all the details, if you haven't already switched.
 
 ### Please check your API calls for errors
 
