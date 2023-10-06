@@ -68,6 +68,10 @@ pagination_prev: null
 * Payment Service Provider (PSP) - A third party company that performs online
   payments on behalf of Vipps MobilePay. Settlements for PSP integrations are handled by the PSP.
 
+* Point of Sale (POS) - A POS is a physical store. It is usually discussed in relation
+  to combining QR codes and possibly also scanners and customer-facing screens to enable the
+  users to easily perform payments with Vipps or MobilePay.
+
 * `reference` - The API parameter that supplies a unique identifier for the
   payment. This is the same as `orderId`. Newer APIs will use the name `reference`
   instead of `orderId`.
@@ -76,8 +80,10 @@ pagination_prev: null
   approves an initiated payment, it will be marked as *reserved* by the bank,
   but not transferred. It will stay *reserved* until the point at which it is *captured*.
 
-* Sales unit - A merchant can have one or more sales units. It may be different
-  brands, different physical locations, different services, etc.
+* Sales unit - A sales unit is anything that can sell goods or services and offer
+  payment through Vipps or MobilePay. A merchant can have one or more sales units (e.g., a
+  physical store, an online store, and an app). A merchant might also use different sales units
+  for their different physical locations, different services, different brands, etc..
 
 * `Vipps-Subscription-Key` - This subscription key is retrieved by logging
   in on [portal.vipps.no](https://portal.vipps.no).
