@@ -64,17 +64,12 @@
 		},
 		{
 			"key": "auth_req_id",
-			"value": "<This value will be overwritten by calls in Postman during the Login API flow.>",
+			"value": "<This value will be overwritten by calls during the Login API flow.>",
 			"enabled": true
 		},
 		{
 			"key": "base_url",
 			"value": "https://apitest.vipps.no",
-			"enabled": true
-		},
-		{
-			"key": "base_url_production",
-			"value": "<For Vipps-Partner-API. Use https://api.vipps.no>",
 			"enabled": true
 		},
 		{
@@ -99,7 +94,7 @@
 		},
 		{
 			"key": "client_authorization",
-			"value": "<This value will be overwritten by calls in Postman during the Login API flow.>",
+			"value": "<This value will be overwritten by calls during the Login API flow.>",
 			"enabled": true
 		},
 		{
@@ -109,7 +104,7 @@
 		},
 		{
 			"key": "consentRemovalPrefix",
-			"value": "https://example.com/vipps/consent-removal",
+			"value": "https://example.com/consent-removal",
 			"enabled": true
 		},
 		{
@@ -124,17 +119,17 @@
 		},
 		{
 			"key": "description_charge",
-			"value": "This payment was charged with Postman.",
+			"value": "This payment was charged.",
 			"enabled": true
 		},
 		{
 			"key": "description_initial",
-			"value": "This payment was initiated with Postman.",
+			"value": "This payment was initiated.",
 			"enabled": true
 		},
 		{
 			"key": "description_refund",
-			"value": "This charge was refunded with Postman",
+			"value": "This charge was refunded.",
 			"enabled": true
 		},
 		{
@@ -169,7 +164,7 @@
 		},
 		{
 			"key": "init_ciba_endpoint",
-			"value": "<This value will be overwritten by calls in Postman during the Login API flow.>",
+			"value": "<This value will be overwritten by calls during the Login API flow.>",
 			"enabled": true
 		},
 		{
@@ -214,7 +209,7 @@
 		},
 		{
 			"key": "orgno",
-			"value": "<For Vipps-Partner_API. Use the organization number which must be minimum 9 digits>",
+			"value": "<The organization number which must be minimum 9 digits>",
 			"enabled": true
 		},
 		{
@@ -249,12 +244,12 @@
 		},
 		{
 			"key": "productDescription",
-			"value": "This payment was created with Postman",
+			"value": "This payment was created",
 			"enabled": true
 		},
 		{
 			"key": "productDescription_updated",
-			"value": "This product was updated with Postman",
+			"value": "This product was updated",
 			"enabled": true
 		},
 		{
@@ -265,11 +260,6 @@
 		{
 			"key": "productName_updated",
 			"value": "Updated Postman test product",
-			"enabled": true
-		},
-		{
-			"key": "PSP-ID",
-			"value": "<Provided by Vipps>",
 			"enabled": true
 		},
 		{
@@ -294,12 +284,12 @@
 		},
 		{
 			"key": "sessionId",
-			"value": "<This value will be overwritten by calls in Postman during the Checkout API flow.>",
+			"value": "<This value will be overwritten by calls during the Checkout API flow.>",
 			"enabled": true
 		},
 		{
 			"key": "sessionId-known_uri",
-			"value": "<This value will be overwritten by calls in Postman during the Login API flow.>",
+			"value": "<This value will be overwritten by calls during the Login API flow.>",
 			"enabled": true
 		},
 		{
@@ -329,7 +319,7 @@
 		},
 		{
 			"key": "start_login_uri",
-			"value": "<This value will be overwritten by calls in Postman during the Login API flow.>",
+			"value": "<This value will be overwritten by calls during the Login API flow.>",
 			"enabled": true
 		},
 		{
@@ -365,12 +355,12 @@
 		},
 		{
 			"key": "sub",
-			"value": "<This value will be overwritten in use from eCom API Get Payment Details.>",
+			"value": "<This value will be overwritten by ePayment, recurring, and eCom API calls with requests to userinfo.>",
 			"enabled": true
 		},
 		{
 			"key": "termsAndConditionsUrl",
-			"value": "https://example.com/vipps/terms-and-conditions",
+			"value": "https://example.com/terms-and-conditions",
 			"enabled": true
 		},
 		{
@@ -380,22 +370,22 @@
 		},
 		{
 			"key": "transactionTextCancel",
-			"value": "This payment was cancelled with Postman.",
+			"value": "This payment was cancelled.",
 			"enabled": true
 		},
 		{
 			"key": "transactionTextCapture",
-			"value": "This payment was captured with Postman.",
+			"value": "This payment was captured.",
 			"enabled": true
 		},
 		{
 			"key": "transactionTextInitiate",
-			"value": "This payment was initiated with Postman.",
+			"value": "This payment was initiated.",
 			"enabled": true
 		},
 		{
 			"key": "transactionTextRefund",
-			"value": "This payment was refunded with Postman.",
+			"value": "This payment was refunded.",
 			"enabled": true
 		},
 		{
@@ -405,7 +395,7 @@
 		},
 		{
 			"key": "userinfo_endpoint",
-			"value": "<This value will be overwritten by calls in Postman during the Login API flow.>",
+			"value": "<This value will be overwritten by calls during the Login API flow.>",
 			"enabled": true
 		},
 		{
@@ -434,7 +424,7 @@
 		},
 		{
 			"key": "vippsLandingPageURL",
-			"value": "<This value will be overwritten on each Initiate Payment call. It will contain a url to the Vipps landing page, obtained from the eCom api.>",
+			"value": "<This value will be overwritten on each Initiate Payment call. It will contain a url to the landing page, obtained from the eCom api.>",
 			"enabled": true
 		},
 		{
