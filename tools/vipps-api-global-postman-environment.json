@@ -1,6 +1,6 @@
 {
 	"id": "cba32899-298e-4db2-9ec6-68f335895472",
-	"name": "Vipps API Global Environment",
+	"name": "Vipps MobilePay API Global Environment",
 	"values": [
 		{
 			"key": "mobileNumber",
@@ -30,11 +30,6 @@
 		{
 			"key": "Ocp-Apim-Subscription-Key",
 			"value": "<Go to portal.vipps.no -> Select the Utvikler (Developer) tab ->Select Test or Production Keys -> Select 'Show keys' -> copy the Vipps-Subscription-Key>",
-			"enabled": true
-		},
-		{
-			"key": "Ocp-Apim-Subscription-Key-PSP",
-			"value": "<This is the PSP's key, and is the same for all the PSP's merchants. Keep it secret.>",
 			"enabled": true
 		},
 		{
@@ -198,11 +193,6 @@
 			"enabled": true
 		},
 		{
-			"key": "makePaymentUrl",
-			"value": "<PSP URL used by Vipps to send the card data>",
-			"enabled": true
-		},
-		{
 			"key": "merchantAgreementUrl",
 			"value": "https://example.com/agreement-url",
 			"enabled": true
@@ -280,16 +270,6 @@
 		{
 			"key": "PSP-ID",
 			"value": "<Provided by Vipps>",
-			"enabled": true
-		},
-		{
-			"key": "pspRedirectUrl",
-			"value": "<Vipps will use this URL to redirect end user after payment confirmation>",
-			"enabled": true
-		},
-		{
-			"key": "pspTransactionId",
-			"value": "<Used as a globally unique transaction reference for the PSP systems>",
 			"enabled": true
 		},
 		{
