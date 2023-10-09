@@ -30,51 +30,6 @@ as there is no external API.
 Partners use special keys that will work for all their merchants. These are known as
 [*Partner keys*](https://developer.vippsmobilepay.com/docs/partner/partner-keys).
 
-## Production and Test Keys
-
-The test environment and production environments are completely separate.
-You will, therefore, need to use a different set of API keys for the test environment versus the production environment.
-
-* API keys for the test environment:
-  Normally available a few minutes after the sales unit is created.
-  See [Developer resources: How to create a test sales unit](../developer-resources/portal.md#how-to-create-a-test-sales-unit) for details.
-* API keys for the production environment:
-  Normally available after a few days after application, depending on the
-  workload and whether we need additional information.
-
-💥 **Use caution with storing and transferring API keys** 💥
-
-* Vipps MobilePay will never ask for your API keys, and you must keep them secret.
-* *Always* send API keys by encrypted email.
-* If you accidentally share your API keys, you must generate new ones by clicking the *regenerate* button on your [portal.vipps.no](https://portal.vipps.no) page. Please remember to update your integrations, so they will continue working.
-
-**Please note:**
-
-* Vipps MobilePay cannot provide API keys in any other way, such as by
-  email or over the phone, as the API keys give access to transferring money.
-* If your developers do not have Norwegian BankID, you will need to retrieve
-  the API keys for them, and send them to the developers securely.
-
-### Getting the API keys
-
-1. Log-in to [portal.vipps.no](https://portal.vipps.no) using BankID.
-   * If you have problems logging in, check [Permissions and users](../developer-resources/portal.md#permissions-and-users).
-
-2. Select *Utvikler* from the sidebar, and select the *API-keys* tab. You should then see a table with all your company's sales units.
-   Hover over the `i` in the column heading for additional information.
-
-   ![The API products for a sales unit](../images/common/portalvippsno-salesunit-products.png)
-
-3. Select either *Production* or *Test*, depending on the type of keys you need.
-4. Find your desired sales unit.
-   * If you need to create your own test sales unit,
-     select *Test* and then click *Add test sales unit* and fill out the form.
-     See [create a new test sales unit](../developer-resources/portal.md#how-to-create-a-test-sales-unit) for more details.
-5. Click the *Show keys* button corresponding to your sales unit.
-   The API keys will be displayed.
-   **Please note:** You can only see API keys that you have access to. All others will be hidden.
-
-   ![API keys](../images/common/portalvippsno-salesunit-keys.png)
 
 ## How to use the API keys
 
@@ -100,6 +55,53 @@ If you want, you can just ignore the second key.
 
 **Please note:** The header which supplies this subscription key for the API is
 `Ocp-Apim-Subscription-Key`.
+
+## Getting the API keys
+
+1. Log-in to [portal.vipps.no](https://portal.vipps.no) using BankID.
+   * If you have problems logging in, check [Permissions and users](../developer-resources/portal.md#permissions-and-users).
+
+2. Select *Utvikler* from the sidebar, and select the *API-keys* tab. You should then see a table with all your company's sales units.
+   Hover over the `i` in the column heading for additional information.
+
+   ![The API products for a sales unit](../images/common/portalvippsno-salesunit-products.png)
+
+3. Select either *Production* or *Test*, depending on the type of keys you need.
+4. Find your desired sales unit.
+   * If you need to create your own test sales unit,
+     select *Test* and then click *Add test sales unit* and fill out the form.
+     See [create a new test sales unit](../developer-resources/portal.md#how-to-create-a-test-sales-unit) for more details.
+5. Click the *Show keys* button corresponding to your sales unit.
+   The API keys will be displayed.
+   **Please note:** You can only see API keys that you have access to. All others will be hidden.
+
+   ![API keys](../images/common/portalvippsno-salesunit-keys.png)
+
+## Production and Test Keys
+
+The test environment and production environments are completely separate.
+You will, therefore, need to use a different set of API keys for the test environment versus the production environment.
+
+* API keys for the test environment:
+  Normally available a few minutes after the sales unit is created.
+  See [Developer resources: How to create a test sales unit](../developer-resources/portal.md#how-to-create-a-test-sales-unit) for details.
+* API keys for the production environment:
+  Normally available after a few days after application, depending on the
+  workload and whether we need additional information.
+
+💥 **Use caution with storing and transferring API keys** 💥
+
+* Vipps MobilePay will never ask for your API keys, and you must keep them secret.
+* *Always* send API keys by encrypted email.
+* If you accidentally share your API keys, you must generate new ones by clicking the *regenerate* button on your [portal.vipps.no](https://portal.vipps.no) page. Please remember to update your integrations, so they will continue working.
+
+**Please note:**
+
+* Vipps MobilePay cannot provide API keys in any other way, such as by
+  email or over the phone, as the API keys give access to transferring money.
+* If your developers do not have Norwegian BankID, you will need to retrieve
+  the API keys for them, and send them to the developers securely.
+
 
 ## Historical note
 

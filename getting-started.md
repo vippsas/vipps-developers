@@ -36,12 +36,10 @@ For example, if you ordered *Vipps på Nett*, see the
 example user flows from purchase to payment transfer.
 
 You will also find general information that applies to several APIs under *Developer info* >
-[*Common API topics*](https://developer.vippsmobilepay.com/docs/common-topics/).
-For example, to learn how to reserve a payment and capture the money, see
-*Common API topics* >
-[Reserve and capture](https://developer.vippsmobilepay.com/docs/common-topics/reserve-and-capture/).
-To learn what happens when you cancel an order,
-see *Common API topics* > [*Cancellations*](https://developer.vippsmobilepay.com/docs/common-topics/cancel/).
+[*Common topics*](./common-topics/README.md).
+For example, to learn how to find your API keys, see
+[*Common topics*](./common-topics/README.md) >
+[*API keys*](./common-topics/api-keys.md).
 
 ## Get your credentials
 
@@ -53,6 +51,9 @@ will receive an email with credentials for accessing the
 * Merchant serial number
 * Credentials for logging into the test app
 
+You can also find your on the  [merchant portal](https://portal.vipps.no).
+For a description of how to find your keys, see [API keys](./common-topics/api-keys.md).
+
 ## Start testing in the test environment
 
 You will need the following:
@@ -62,7 +63,7 @@ You will need the following:
 
 1. Test keys.
 
-    Log-in to [portal.vipps.no](https://portal.vipps.no) and get your test API keys, as described in
+    Log-in to the [merchant portal](https://portal.vipps.no) and get your test API keys, as described in
     [API keys](./common-topics/api-keys.md).
 
 1. The test app.
