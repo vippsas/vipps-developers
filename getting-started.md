@@ -36,10 +36,10 @@ For example, if you ordered *Vipps på Nett*, see the
 example user flows from purchase to payment transfer.
 
 You will also find general information that applies to several APIs under *Developer info* >
-[*Common API topics*](https://developer.vippsmobilepay.com/docs/common-topics/).
-For example, to learn about API keys, see
-*Common API topics* >
-[API keys](./common-topics/api-keys.md).
+[*Common topics*](./common-topics/README.md).
+For example, to learn how to find your API keys, see
+[*Common topics*](./common-topics/README.md) >
+[*API keys*](./common-topics/api-keys.md).
 
 ## Get your credentials
 
