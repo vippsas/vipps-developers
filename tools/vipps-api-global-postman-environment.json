@@ -4,32 +4,32 @@
 	"values": [
 		{
 			"key": "mobileNumber",
-			"value": "<mobile number for the test app profile (e.g., 12345678)>",
+			"value": "<Set your mobile number for the test app profile (e.g., 12345678) in the CURRENT VALUE column.>",
 			"enabled": true
 		},
 		{
 			"key": "internationalMobileNumber",
-			"value": "<mobile number for the test app profile (e.g., 4712345678)>",
+			"value": "<Set your mobile number for the test app profile (e.g., 4712345678) in the CURRENT VALUE column.>",
 			"enabled": true
 		},
 		{
 			"key": "client_id",
-			"value": "<Go to portal.vipps.no -> Select the Utvikler (Developer) tab -> Select Test or Production Keys -> Select 'Show keys' -> copy the Client Id here>",
+			"value": "<Set your client_id in the CURRENT VALUE column. See https://developer.vippsmobilepay.com/docs/common-topics/api-keys/ for help finding your API keys.>",
 			"enabled": true
 		},
 		{
 			"key": "client_secret",
-			"value": "<Go to portal.vipps.no -> Select the Utvikler (Developer) tab -> Select Test or Production Keys -> Select 'Show keys' -> copy the Client secret here>",
+			"value": "<Set your client_secret in the CURRENT VALUE column. See https://developer.vippsmobilepay.com/docs/common-topics/api-keys/ for help finding your API keys.>",
 			"enabled": true
 		},
 		{
 			"key": "merchantSerialNumber",
-			"value": "<Go to portal.vipps.no -> Select the Utvikler (Developer) tab -> Select Test or Production Keys -> Copy the Merchant Serial Number from the Sales unit you copied the keys from>",
+			"value": "<Set your Merchant Serial Number in the CURRENT VALUE column. See https://developer.vippsmobilepay.com/docs/common-topics/api-keys/ for help finding your API keys.>",
 			"enabled": true
 		},
 		{
 			"key": "Ocp-Apim-Subscription-Key",
-			"value": "<Go to portal.vipps.no -> Select the Utvikler (Developer) tab ->Select Test or Production Keys -> Select 'Show keys' -> copy the Vipps-Subscription-Key>",
+			"value": "<Set your Vipps-Subscription-Key in the CURRENT VALUE column. See https://developer.vippsmobilepay.com/docs/common-topics/api-keys/ for help finding your API keys.>",
 			"enabled": true
 		},
 		{
@@ -74,12 +74,12 @@
 		},
 		{
 			"key": "callbackPrefix",
-			"value": "https://example.com/vipps/callbacks-for-payment-update-from-vipps",
+			"value": "https://example.com/callbacks-for-payment-update-from-vipps",
 			"enabled": true
 		},
 		{
 			"key": "callbackUrl",
-			"value": "https://example.com/vipps/callbacks-for-checkout",
+			"value": "https://example.com/callbacks-for-checkout",
 			"enabled": true
 		},
 		{
@@ -139,7 +139,7 @@
 		},
 		{
 			"key": "dynamicOptionsCallbackUrl",
-			"value": "https://example.com/vipps/dynamic-logistics-option",
+			"value": "https://example.com/dynamic-logistics-option",
 			"enabled": true
 		},
 		{
@@ -149,7 +149,7 @@
 		},
 		{
 			"key": "fallBack",
-			"value": "https://example.com/vipps/fallback-result-page-for-both-success-and-failure/acme-shop-123-order123abc",
+			"value": "https://example.com/fallback-result-page-for-both-success-and-failure/acme-shop-123-order123abc",
 			"enabled": true
 		},
 		{
@@ -304,7 +304,7 @@
 		},
 		{
 			"key": "shippingDetailsPrefix",
-			"value": "https://example.com/vipps/shipping",
+			"value": "https://example.com/shipping",
 			"enabled": true
 		},
 		{
