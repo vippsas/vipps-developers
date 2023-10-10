@@ -19,7 +19,7 @@ The public GitHub repositories used in this website are as follows:
   * eCom API: <https://github.com/vippsas/vipps-ecom-api>
   * ePayment API: <https://github.com/vippsas/vipps-epayment-api>
   * Login API: <https://github.com/vippsas/vipps-login-api>
-  * Management API (private repo)
+  * Management API <https://github.com/vippsas/management-api>
   * Order management API: <https://github.com/vippsas/vipps-order-management-api>
   * Partner API: <https://github.com/vippsas/vipps-partner-api>
   * PSP API: <https://github.com/vippsas/vipps-psp-api>
@@ -33,8 +33,6 @@ The public GitHub repositories used in this website are as follows:
   * Java: <https://github.com/vippsas/java-sdk>
   * Node: <https://github.com/vippsas/node-sdk>
 * Plugins: <https://github.com/vippsas/vipps-plugins>
-  * Craft Commerce:
-    * Login (*Vipps Login for Craft CMS*): <https://github.com/vippsas/vipps-craft-login>
   * Drupal:
     * Payment: (*Commerce Vipps*) <https://github.com/vippsas/vipps-drupal>
     * Recurring: (*Vipps Recurring Payments*) <https://github.com/vippsas/vipps-recurring-drupal>
