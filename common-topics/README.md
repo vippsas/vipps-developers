@@ -6,7 +6,7 @@ pagination_next: null
 pagination_prev: null
 ---
 
-# Common topics
+# Knowledge base
 
 In this section, you'll find a lot of general information relating to the APIs.
 

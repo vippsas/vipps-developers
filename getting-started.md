@@ -35,10 +35,9 @@ For example, if you ordered *Vipps på Nett*, see the
 [ePayment API guide](https://developer.vippsmobilepay.com/docs/APIs/epayment-api/) with
 example user flows from purchase to payment transfer.
 
-You will also find general information that applies to several APIs under *Developer info* >
-[*Common topics*](./common-topics/README.md).
-For example, to learn how to find your API keys, see
-[*Common topics*](./common-topics/README.md) >
+You will also find general information that applies to several APIs in the
+[*Knowledge base*](./common-topics/README.md).
+For example, to learn how to find your API keys, see *Knowledge base* > *API basics* > 
 [*API keys*](./common-topics/api-keys.md).
 
 ## Get your credentials

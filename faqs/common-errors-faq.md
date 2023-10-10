@@ -50,7 +50,7 @@ Please follow these steps to make sure everything is correct:
 2. Check that you are using the correct API credentials for the MSN (Merchant Serial Number)
    you are using
    (See
-   [Common topics: How to use the API keys](../common-topics/api-keys.md#how-to-use-the-api-keys) for more details):
+   [How to use the API keys](../common-topics/api-keys.md#how-to-use-the-api-keys) for more details):
    * `client_id`
    * `client_secret`
    * `Ocp-Apim-Subscription-Key` (the subscription key)
