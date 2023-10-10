@@ -34,7 +34,7 @@ Migrate from MobilePay:
 
 Dive deeper with:
 
-* [Common topics](https://developer.vippsmobilepay.com/docs/common-topics) - General information about [API keys](./common-topics/api-keys.md), [app payment screens](./common-topics/payment-screen.md), [Vipps MobilePay landing page](./common-topics/landing-page.md), a description of [reserving and capturing money](./common-topics/reserve-and-capture.md), and much more.
+* [Knowledge base](https://developer.vippsmobilepay.com/docs/common-topics) - General information about [API keys](./common-topics/api-keys.md), [app payment screens](./common-topics/payment-screen.md), [Vipps MobilePay landing page](./common-topics/landing-page.md), a description of [reserving and capturing money](./common-topics/reserve-and-capture.md), and much more.
 * [Developer resources](https://developer.vippsmobilepay.com/docs/developer-resources) - Resources available to you, including the [demo store](./developer-resources/demo-store.md), the [merchant portal](./developer-resources/portal.md), and [Vipps MobilePay servers](./developer-resources/servers.md).
 * [Frequently asked questions](https://developer.vippsmobilepay.com/docs/faqs) - See the answers to [common problems](./faqs/common-problems-faq.md), [common errors](./faqs/common-errors-faq.md) and FAQs relating to [refunds](./faqs/refunds-faq.md), [users and payments](./faqs/users-and-payments-faq.md), and more.
 * [Design guidelines](https://developer.vippsmobilepay.com/docs/design-guidelines/) - Find Vipps and MobilePay icons and text guidelines.

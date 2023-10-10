@@ -6,7 +6,7 @@ pagination_next: null
 pagination_prev: null
 ---
 
-# Common topics
+# Knowledge base
 
 In this section, you'll find a lot of general information relating to the APIs.
 
@@ -18,7 +18,10 @@ In this section, you'll find a lot of general information relating to the APIs.
 * [Error formats](errors.md) - The standard response body format for our error messages.
 * [HTTP response codes](http-response-codes.md) - HTTP statuses returned in API responses.
 
+## General information
 
+* [Direct integration and PSP integration](direct-vs-psp.md) - The differences between integrating the Vipps MobilePay APIs directly or implementing the PSP API.
+* [API lifecycle](api-lifecycle.md) - General advice about API versioning and deprecation.
 
 ## User experience
 
@@ -35,13 +38,8 @@ In this section, you'll find a lot of general information relating to the APIs.
 
 ## Detailed technical recommendations
 
-* [isApp](isApp.md) - The `isApp` payment flow in the eCom and Recurring API.
 * [Recommendations for payment description and transaction text](transactiontext.md)
 * [Recommendations for reference and orderId](orderid.md)
 * [Redirects](redirects.md) - Redirecting users to your website.
 * [URL validation](url-validation.md) - Details surrounding URL validation in the eCom and PSP APIs.
-
-## General information
-
-* [Direct integration and PSP integration](direct-vs-psp.md) - The differences between integrating the Vipps MobilePay APIs directly or implementing the PSP API.
-* [API lifecycle](api-lifecycle.md) - General advice about API versioning and deprecation.
+* [isApp](isApp.md) - The `isApp` payment flow in the eCom and Recurring API.

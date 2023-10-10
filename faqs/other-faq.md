@@ -213,7 +213,7 @@ the settlements from us will be separate from the settlements from Klarna.
 
 ## What functionality is included in the Vipps MobilePay API, but not the PSP API?
 
-See [Common topics: Benefits of direct integration](../common-topics/direct-vs-psp.md#benefits-of-direct-integration).
+See [Benefits of direct integration](../common-topics/direct-vs-psp.md#benefits-of-direct-integration).
 
 ## What do we have to do with PSD2's SCA requirements?
 

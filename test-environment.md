@@ -86,7 +86,7 @@ for a Vipps MobilePay product with an API. The details can then be found on the
 
 See:
 
-* [Common topics: Getting the API keys](https://developer.vippsmobilepay.com/docs/common-topics/api-keys#getting-the-api-keys)
+* [Getting the API keys](https://developer.vippsmobilepay.com/docs/common-topics/api-keys#getting-the-api-keys)
 * [How to create a test sales unit](https://developer.vippsmobilepay.com/docs/developer-resources/portal#how-to-create-a-test-sales-unit)
 
 ### Partners
