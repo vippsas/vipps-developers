@@ -147,6 +147,12 @@ See [GDPR](#gdpr).
 
 ### SFTP
 
+**Important:** The SFTP service will be deprecated from March 1 2024.
+Use the
+[Report API](https://developer.vippsmobilepay.com/docs/APIs/report-api/).
+See the
+[Technical Newsletter for Developers 2023-10](https://developer.vippsmobilepay.com/docs/newsletters/2023-10-newsletter/#deprecation-of-the-sftp-service).
+
 The SFTP report service is used for downloading settlement reports.
 SFTP-users are created, associated with a public key, and given access to the
 reports of one or more merchants.
@@ -162,7 +168,6 @@ For more details, see [SFTP Report Service](./sftp-report-service/README.md).
 
 ### API
 
-Report API is available in BETA VERSION. The API is publicly available, but may still have minor changes.
 See [Report API](https://developer.vippsmobilepay.com/docs/APIs/report-api).
 
 ## Availability
