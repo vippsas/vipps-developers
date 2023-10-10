@@ -13,7 +13,7 @@ pagination_prev: null
 [Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/docs/newsletters/).
 <!-- END_COMMENT -->
 
-All Vipps customers that have
+All Vipps MobilePay customers that have
 [API](https://developer.vippsmobilepay.com/docs/APIs)
 access receive this technical newsletter,
 with important information about the APIs.
