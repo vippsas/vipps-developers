@@ -10,7 +10,7 @@ pagination_prev: null
 
 🔥 *The SFTP service is deprecated and will be discontinued from March 1, 2024.* 🔥
 
-The SFTP service is now deprecated from October 2023, as announced in the
+The SFTP service is now deprecated, as announced in the
 [Technical Newsletter for Developers 2023-10](https://developer.vippsmobilepay.com/docs/newsletters/2023-10-newsletter/#deprecation-of-the-sftp-service).
 
 Please use the [Report API](https://developer.vippsmobilepay.com/docs/APIs/report-api/)

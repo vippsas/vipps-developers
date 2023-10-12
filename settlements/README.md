@@ -150,8 +150,8 @@ See [GDPR](#gdpr) for more information.
 
 ### SFTP
 
-**Important:** The SFTP service is deprecated and will be discontinued from March 1, 2024
-as announced in the
+**Important:** The SFTP service is deprecated and will be discontinued from March 1, 2024.
+This was announced in the
 [Technical Newsletter for Developers 2023-10](https://developer.vippsmobilepay.com/docs/newsletters/2023-10-newsletter/#deprecation-of-the-sftp-service).
 
 Please use the
