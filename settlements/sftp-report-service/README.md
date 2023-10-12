@@ -1,30 +1,36 @@
 ---
-title: SFTP Report Service
-sidebar_position: 2
+title: SFTP Report (Deprecated)
+sidebar_position: 60
 hide_table_of_contents: false
 pagination_next: null
 pagination_prev: null
 ---
 
-# SFTP Report Service
+# SFTP Report  (Deprecated)
 
-**Important:** The SFTP service will be deprecated from March 1 2024.
-Use the
-[Report API](https://developer.vippsmobilepay.com/docs/APIs/report-api/).
-See the
+🔥 *The SFTP service is deprecated and will be unavailable from March 1, 2024.* 🔥
+
+The SFTP service is now deprecated, as announced in the
 [Technical Newsletter for Developers 2023-10](https://developer.vippsmobilepay.com/docs/newsletters/2023-10-newsletter/#deprecation-of-the-sftp-service).
 
-The SFTP report service is used for downloading settlement reports in
-[several formats](../README.md#settlement-report-formats).
+Please use the [Report API](https://developer.vippsmobilepay.com/docs/APIs/report-api/)
+to get your settlement files programmatically. With this API, you can get daily or continuous-feed reports for your accounts.
+See the [Report API guide](https://developer.vippsmobilepay.com/docs/APIs/report-api/api-guide/) for details.
 
-This service allows for retrieval of settlement files with SFTP.
 
-SFTP is secure file transfer using SSH (Secure Shell), a cryptographic network
-protocol for operating network services securely over an unsecured network.
-SFTP can be used manually (interactively), or automatically/programmatically
-by using SFTP as part of an integration.
+<details>
+<summary>Deprecated SFTP Report guide</summary>
+<div>
 
-See the [Settlements overview](../README.md) for more high-level information.
+## Overview
+
+The SFTP report service is used for downloading and retrieval of settlement files with SFTP.
+
+For an overview of SFTP, see
+[SFTP File Transfer Protocol - get SFTP client & server](https://www.ssh.com/ssh/sftp/).
+
+More information about SFTP and the underlying technology:
+[SSH File Transfer Protocol](https://en.wikipedia.org/wiki/SSH_File_Transfer_Protocol).
 
 ## Reports
 
@@ -42,17 +48,9 @@ Settlements are created every day while the balance is positive.
 See [Settlements overview: Availability](../README.md#availability)
 for more details.
 
-## SFTP Service
-
-For an overview of SFTP, see
-[SFTP File Transfer Protocol - get SFTP client & server](https://www.ssh.com/ssh/sftp/).
-
-More information about SFTP and the underlying technology:
-[SSH File Transfer Protocol](https://en.wikipedia.org/wiki/SSH_File_Transfer_Protocol).
-
 ### Security
 
-For the Vipps MobilePay SFTP service, the public SSH key must be added by logging in with BankID on
+For the SFTP service, the public SSH key must be added by logging in with BankID on
 [portal.vipps.no](https://portal.vipps.no).
 We don't sign the reports in any way.
 
@@ -288,3 +286,6 @@ sftp> quit
 
 All the above is basic SFTP use and should be straight-forward.
 If you use a SFTP client, please refer to its user documentation.
+
+</div>
+</details>
