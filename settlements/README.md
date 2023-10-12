@@ -80,30 +80,145 @@ To change the invoice recipient, please
 See [Availability](#availability) for information about settlement files
 when the balance is negative.
 
-## Settlement report formats
+## File formats
 
-Settlement reports are provided in these formats:
+Settlement reports are provided in:
 
-| Format | Example            | Specification      |
-| ------ | ------------------ | ------------------ |
-| XML    | [Example-Gross.xml](/downloads/settlements/xml/Example-Gross.xml), [Example-Net.xml](/downloads/settlements/xml/Example-Net.xml) | [SettlementReport-3.0.xsd](/downloads/settlements/xml/SettlementReport-3.0.xsd) |
-| CSV    | [settlement-report.csv](/downloads/settlements/csv/settlement-report.csv) | - |
-| PDF    | [PDF](/downloads/settlements/pdf/Vipps-oppgjørsrapport-16655-2018-09-23.pdf) | - |
-| XLSX   | [XLSX](/downloads/settlements/xlsx/vipps-settlement-example.xlsx) | - |
+* [XML](#xml)
+* [CSV](#csv)
+* [PDF](#pdf)
+* [XLSX](#xlsx)
 
-More details:
 
-* XML: See the [xml](./xml/README.md) folder.
-* CSV: See the [csv](./csv/README.md) folder.
-* PDF: See the [pdf](./pdf/README.md) folder.
-* OCR: Not available.
+### XML
+
+Here are schemas and example files for XML settlement reports.
+
+Both [the current settlement report schema v3.0](/downloads/settlements/xml/SettlementReport-3.0.xsd) and the [old v2.0 version](/downloads/settlements/xml/SettlementReport-2.0.xsd) are available.
+
+Example files are available for:
+
+* [Gross settlements](/downloads/settlements/xml/Example-Gross.xml)
+* [Net settlements](/downloads/settlements/xml/Example-Gross.xml)
+
+<details>
+<summary>Changes to the settlement report XML schema from v2.0 to v3.0</summary>
+<div>
+
+**NB!** New settlements will contain a mix of captures and refunds.
+To make the numbers unambiguous we have introduced new fields
+for capture and refund, but kept gross and net fields as before.
+
+* Schema changes from v2.0 to v3.0:
+  * Old schema URL for v2.0 was [SettlementReport-2.0.xsd](/downloads/settlements/xml/SettlementReport-2.0.xsd)
+  * New schema URL is [SettlementReport-3.0.xsd](/downloads/settlements/xml/SettlementReport-3.0.xsd)
+  * New schema validates all amount fields with new types `money`, `positiveMoney`, and `negativeMoney`
+  * Other changes organized by parent element below
+
+* Changes to PaymentsInfo:
+  * `ReportDateFrom` and `ReportDateTo` fields:
+    * Drop time part, keep only date (in YYYY-MM-DD format)
+    * Change schema type from `xs:string` to `xs:date`
+  * Remove control sums (`TotalSettledGrossAmount`, `TotalSettledNetAmount`, `TotalSettledFeeAmount`, and `TotalSettledRefundAmount`)
+  * Move `NumOfSettlements` after `SettlementInfo` blocks to facilitate future streaming optimizations for large files
+
+* Changes to TransactionInfo:
+  * Rename `TransactionDate` to `TransactionTime` and:
+    * Change type from `xs:string` to `xs:dateTime`
+    * Fix time zone bug from previous report system where time UTC formatting was applied to Oslo time.
+    * Now always Oslo time zone, consistent with dates
+  * Change type of `TransactionID` from `xs:string` to `xs:long`
+  * Add field `TransactionCaptureAmount` (always positive)
+  * Add field `TransactionRefundAmount` (always negative)
+  * Note that `TransactionGrossAmount = TransactionCaptureAmount + TransactionRefundAmount`
+
+* Changes to `SettlementInfo`:
+  * Rename `SettlementBatchDate` to `SettlementDate` and:
+    * Drop time part and change type from `xs:string` to `xs:date`
+    * For new settlements, this date is within the inclusive range `[ReportDateFrom, ReportDateTo]` and is equal to or later than the date of the last transaction within the settlement
+    * Note that the bank transfer will typically occur at a later date
+  * Change type of `SettlementID` from `xs:string` to `xs:long`
+  * Move `NumOfTransactions` and all amounts to below `TransactionInfo` fields, to facilitate future streaming optimizations for large files
+  * Add field `SettlementType` (`Net` or `Gross`)
+  * Add field `SettledAmount`, which is the amount paid out or invoiced (net or gross depending on settlement type)
+  * Add field `CaptureSettlementAmount`, sum of `TransactionCaptureAmount` fields
+  * Add field `RefundSettlementAmount`, sum of `TransactionRefundAmount` fields
+  * Note that `GrossSettlementAmount` is still the sum of `TransactionGrossAmount` fields
+  * Note that `GrossSettlementAmount = CaptureSettlementAmount + RefundSettlementAmount`
+
+* Changes to `FeeInfo`:
+  * `FeeInfo` will only be included for old reports with gross settlement type
+  * Change type of `FeeDate` from `xs:string` to `xs:date`
+  * Change type of `FeeAccount` from `xs:long` to `xs:string`
+
+* Changes to `SettlementDetailsInfo`:
+  * Change type of `MainAddressCity` from `xs:NCName` to `xs:string`
+
+* Changes to `VippsInfo`:
+  * Change type of `WebSite` from `xs:NCName` to `xs:anyURI`
+  * Change type of `Country` from `xs:NCName` to `xs:string`
+
+
+</div>
+</details>
+
+### CSV
+
+The following is an example of a CSV settlement file:
+
+* [CSV settlement file](/downloads/settlements/csv/settlement-report.csv)
+
+<details>
+<summary>CSV settlement file contents</summary>
+<div>
+
+The CSV settlement file contains the following info:
+
+| Column title  | Description | Comment  |
+| ------------- | ------------- | ------------- |
+| Salgsdato  | Date of sale  |    |
+| Salgssted  | Sales unit name   |   |
+| Vippsnummer  | Merchant serial number   |   |
+| Produkt  | Vipps product name  | E.G. "Vipps Netthandel"  |
+| Transaksjons-ID  | Transaction ID  | Differs for Reserved, Captured and Refunded transaction  |
+| Ordre-ID  | Ordre ID   |   |
+| Brutto  | Total amount  |   |
+| Gebyr  | Fees   |   |
+| Netto  | Total amount minus fees   |   |
+| Transaksjonstype  | Transaction type  | E.G. Salg (Sale), Refundering (Refund)  |
+| Oppgjørs-ID  | Settlement ID    |
+| Oppgjørsdato  | Settlement date   |
+| Oppgjørssum  | Settlement total amount   |
+| Oppgjørskonto  | Settlement bank account number   |   |
+| Fornavn  | First name  | Only applicable for Vipps number   |
+| Etternavn  | Last name  | Only applicable for Vipps number   |
+| Melding  | Message/Transaction text  |   |
+
+
+</div>
+</details>
+
+### PDF
+
+The following is an example of a PDF settlement file:
+
+* [PDF settlement file](/downloads/settlements/pdf/Vipps-oppgj%C3%B8rsrapport-16655-2018-09-23.pdf)
+
+### XLSX
+
+The following is an example of a CSV settlement file:
+
+* [XLSX settlement file](/downloads/settlements/xlsx/vipps-settlement-example.xlsx)
+
+### Identifying payments
+
+If you need to use `orderId` to identify a payment, please use
+[Vipps på nett](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/) and the
+[ePayment API](https://developer.vippsmobilepay.com/docs/APIs/epayment-api/).
 
 Payments made with
 [*Vippsnummer*](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-i-butikk/ta-betalt-med-vipps/)
 do not have an `orderId`.
-If you need to use `orderId` to identify a payment, please use
-[Vipps på nett](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/).
-See also the [ePayment API](https://developer.vippsmobilepay.com/docs/APIs/epayment-api/).
 
 ### Additional info for recurring payments
 
@@ -156,9 +271,6 @@ This was announced in the
 
 Please use the
 [Report API](https://developer.vippsmobilepay.com/docs/APIs/report-api/) to get your settlement information.
-
-
-
 
 ## Availability
 
