@@ -203,7 +203,7 @@ and
 
 The transaction overview on
 [portal.vipps.no](https://portal.vipps.no)
-and the settlement reports available by e.mail and SFTP show the customer names for
+show the customer names for
 [Vippsnummer](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-i-butikk/ta-betalt-med-vipps/)
 payments.
 
@@ -211,16 +211,15 @@ For other payments, such as
 [*Vipps på nett*](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/)
 and
 [*Faste betalinger* (Recurring payments)](https://vipps.no/produkter-og-tjenester/bedrift/faste-betalinger/faste-betalinger/)
-the `orderId` is shown instead of the customer name.
+the `reference` (ePayment API), or `orderId` (the eCom API), is shown instead of the customer name.
 
-You can click the little "i" in the header on the transaction overview and see the same info as above.
-
-The `reference` (called `orderId` in the older eCom API) is specified by the merchant. See the
+The `reference` (or `orderId` in the older eCom API) is specified by the merchant. See the
 [recommendations for `reference` and `orderId`](../common-topics/orderid.md).
 
 Use
 [Userinfo](https://developer.vippsmobilepay.com/docs/APIs/userinfo-api)
 to get the customer's consent to share name, email address, etc.
+The user can then consent to sharing as part of the payment flow.
 
 **Please note:** *Vippsnummer* is not legal for payments where the customer is
 not physically present. It does also not comply with the Treasury Act, (*Kassaloven*).
