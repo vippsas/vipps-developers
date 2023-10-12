@@ -83,8 +83,8 @@ MobilePay APIs to the new APIs:
 
 The
 [SFTP service](https://developer.vippsmobilepay.com/docs/settlements/sftp-report-service/)
-is now deprecated, and will be shut down on March 1 2024,
-with a four month warning according to the
+is now deprecated, and will be shut down on March 1, 2024,
+with a four-month warning according to the
 [API Lifecycle](https://developer.vippsmobilepay.com/docs/common-topics/api-lifecycle/).
 
 The

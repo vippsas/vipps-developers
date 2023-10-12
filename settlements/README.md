@@ -118,57 +118,47 @@ for more details.
 
 ### GDPR
 
-Vipps MobilePay needs the customer's consent before sharing personal information with the merchant.
+We need the customer's consent before sharing personal information.
 
-The settlement reports do not contain personal information - except for payments made with *Vippsnummer*.
+Settlement reports generally don't contain personal information; however, payments made with *Vippsnummer* may have personal information and must be treated with care.
 
 See the FAQ:
 [Why are the customer names not shown on the transaction overview?](../faqs/common-problems-faq.md#why-are-the-customer-names-not-shown-on-the-transaction-overview).
 
 ## How to get settlement files
 
+### Report API
+
+Use the [Report API](https://developer.vippsmobilepay.com/docs/APIs/report-api)
+to get your settlement files programmatically. With this API, you can get daily or continuous-feed reports for your accounts. See the [Report API guide](https://developer.vippsmobilepay.com/docs/APIs/report-api/api-guide/) for details.
+
 ### Merchant portal
 
-Customers can log in to
-[portal.vipps.no](https://portal.vipps.no),
-choose *Rapporter* (i.e., *Reports*), and download reports in the formats mentioned above.
+You can download reports from the
+[merchant portal](https://portal.vipps.no) in the *Rapporter* (i.e., *Reports*) section.
+Reports are available in the formats mentioned under [Settlement report formats](#settlement-report-formats).
 
 Reports with personal details of the customers are also available.
-See [GDPR](#gdpr).
+Please consider [GDPR](#gdpr).
 
 ### Email
 
-Merchants can log in to
-[portal.vipps.no](https://portal.vipps.no)
-and specify email addresses that we will send settlement reports to.
+Through the [merchant portal](https://portal.vipps.no), you can specify the email addresses to receive settlement reports.
 
-Reports with personal details of the customers cannot be sent by email.
-See [GDPR](#gdpr).
+**Please note:** We are not allowed to send reports with personal customer details.
+See [GDPR](#gdpr) for more information.
 
 ### SFTP
 
-**Important:** The SFTP service will be deprecated from March 1 2024.
-Use the
-[Report API](https://developer.vippsmobilepay.com/docs/APIs/report-api/).
-See the
+**Important:** The SFTP service is deprecated and will be discontinued from March 1, 2024
+as announced in the
 [Technical Newsletter for Developers 2023-10](https://developer.vippsmobilepay.com/docs/newsletters/2023-10-newsletter/#deprecation-of-the-sftp-service).
 
-The SFTP report service is used for downloading settlement reports.
-SFTP-users are created, associated with a public key, and given access to the
-reports of one or more merchants.
-The reports are generated dynamically upon request.
+Please use the
+[Report API](https://developer.vippsmobilepay.com/docs/APIs/report-api/) to get your settlement information.
 
-See [Availability](#availability) for information about when the files
-and directories are available.
 
-Reports with personal details of the customers cannot be sent with SFTP.
-See [GDPR](#gdpr).
 
-For more details, see [SFTP Report Service](./sftp-report-service/README.md).
-
-### API
-
-See [Report API](https://developer.vippsmobilepay.com/docs/APIs/report-api).
 
 ## Availability
 

@@ -5,7 +5,7 @@ pagination_next: null
 pagination_prev: null
 ---
 
-# Vipps settlements: PDF
+# Settlements: PDF
 
 The following is an example of a PDF settlement file:
 
