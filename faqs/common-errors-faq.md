@@ -211,6 +211,14 @@ Deactivation can also happen if the test merchant is not being used for a
 [contact customer service](https://vipps.no/kontakt-oss/),
 and we will reactivate the merchant.
 
+Merchants are required to periodically confirm the information we have
+saved about them. We are required by law to request this confirmation.
+We send multiple emails to notify merchants that they must log on to
+[portal.vipps.no](https://portal.vipps.no)
+to confirm their information.
+If the merchant does not confirm with the 30 days from the first email,
+the merchant will be deactivated.
+
 Partners that use
 [partner keys](https://developer.vippsmobilepay.com/docs/partner/partner-keys)
 can also get this error if the partner itself is deactivated, even though
