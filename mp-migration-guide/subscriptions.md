@@ -85,7 +85,7 @@ These are the possible event types in payment callback
 
 | Event type                            | Description                                                                                                                        |
 |---------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
-| "recurring.charge-reserved.v1"        | Payment was reserved. Event is not sent for recurring payments with transation type "DIRECT_CAPTURE"                               |
+| "recurring.charge-reserved.v1"        | Payment was reserved. Event is not sent for recurring payments with transaction type "DIRECT_CAPTURE"                               |
 | "recurring.charge-captured.v1"        | Payment was fully or partially captured                                                                                            |
 | "recurring.charge-canceled.v1"        | Payment was fully or partially cancelled                                                                                           |
 | "recurring.charge-failed.v1"          | Payment failed and will no longer be retried                                                                                       |
