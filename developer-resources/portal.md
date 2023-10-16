@@ -108,8 +108,8 @@ you will need the merchant's administrator to log in on
 [portal.vipps.no](https://portal.vipps.no)
 and provide the API keys to you securely.
 
-If you don't know who the administrator is, you can check
-[Brønnøysundregistrene](https://www.brreg.no)
+If you don't know who the administrator is, you can check the
+[Brønnøysund Register](https://www.brreg.no)
 and see who has the right to sign for the business or organization.
 
 The merchant's administrator can also create additional users on

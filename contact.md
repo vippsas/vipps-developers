@@ -50,7 +50,7 @@ and include all the following information:
 
 1. **A *detailed* description of the problem with a step-by-step description of what you do and what happens.**
 2. A concise, self-explanatory `Subject` line, such as "`POST:/something` gives `HTTP 400` response".
-3. Company details: Organization number (find yours at [Brønnøysundregistrene](https://brreg.no)).
+3. Business/organization details: Organization number (find yours at the [Brønnøysund Register](https://brreg.no)).
 4. Merchant Serial Number (MSN), found on [portal.vipps.no](https://portal.vipps.no).
    See the
    [portal](https://developer.vippsmobilepay.com/docs/developer-resources/portal) documentation for a description of how to find your MSN and your other API keys.

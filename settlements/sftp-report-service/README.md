@@ -119,7 +119,7 @@ This is what it looks like on [portal.vipps.no](https://portal.vipps.no):
 * The administrator can create additional users on the
   [merchant portal](https://portal.vipps.no).
 * If you don't know who the administrator is, you can check the
-  [Brønnøysund Register Centre](https://www.brreg.no)
+  [Brønnøysund Register](https://www.brreg.no)
   and see who has the right to sign for the business.
 
 ### Partner access

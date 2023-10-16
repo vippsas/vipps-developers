@@ -92,7 +92,7 @@ pagination_prev: null
 
 * BankID - Software that certifies the identity of a person (Norwegian only).
 
-* [Brønnøysundregistrene](https://www.brreg.no/) - The official Norwegian
+* [Brønnøysundregistrene](https://www.brreg.no/) - The Brønnøysund Register is the official Norwegian
   register of companies.
 
 * D-number - A Norwegian identification number given to foreign persons who

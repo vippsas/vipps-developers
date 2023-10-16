@@ -23,8 +23,8 @@ provider and to receive payments from Vipps and MobilePay users:
 * An appointed contact person with a Norwegian phone number and Norwegian
   identity number (i.e., "fødselsnummer" or "D-nummer", 11 digits).
 
-If a foreign business is registered in
-[Brønnøysundregistrene](https://www.brreg.no/),
+If a foreign business is registered in the
+[Brønnøysund Register](https://www.brreg.no/),
 it has a contact person with a Norwegian identity number.
 
 If a foreign business has not yet been formally established, Vipps MobilePay can
