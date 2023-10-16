@@ -61,7 +61,7 @@ If you want, you can just ignore the second key.
 1. Log-in to [portal.vipps.no](https://portal.vipps.no) using BankID.
    * If you have problems logging in, check [Permissions and users](../developer-resources/portal.md#permissions-and-users).
 
-2. Select *Utvikler* from the sidebar, and select the *API-keys* tab. You should then see a table with all your company's sales units.
+2. Select *Utvikler* from the sidebar, and select the *API-keys* tab. You should then see a table with all your sales units.
    Hover over the `i` in the column heading for additional information.
 
    ![The API products for a sales unit](../images/common/portalvippsno-salesunit-products.png)

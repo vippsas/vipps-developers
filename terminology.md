@@ -37,7 +37,7 @@ pagination_prev: null
   additional changes. See the API specification for the requirements for the
   idempotency key.
 
-* Merchant - A juridical unit, typically called a business or company,
+* Merchant - A juridical unit, typically called a business,
   identified with organization number (`orgno`).
 
 * Merchant Serial Number (MSN) - The MSN identifies a sales unit, not a merchant.
@@ -54,7 +54,7 @@ pagination_prev: null
   instead of `orderId`. See the API specification for the requirements for
   this ID.
 
-* Partner - A partner is a company that represents several merchants by
+* Partner - A partner is a business that represents several merchants by
   providing a platform, helping set up custom integrations, or developing
   our official plugins.
   See:
@@ -65,7 +65,7 @@ pagination_prev: null
   See:
   [Partner keys](https://developer.vippsmobilepay.com/docs/partner/partner-keys).
 
-* Payment Service Provider (PSP) - A third party company that performs online
+* Payment Service Provider (PSP) - A third-party business that performs online
   payments on behalf of Vipps MobilePay. Settlements for PSP integrations are handled by the PSP.
 
 * Point of Sale (POS) - A POS is a physical store. It's a type of sales unit.

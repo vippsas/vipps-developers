@@ -115,7 +115,7 @@ We can't offer legal advice for this.
 That depends, but probably: No.
 
 Vipps MobilePay cannot keep money for merchants.
-All Vipps MobilePay payments must be made to a company that is a customer of Vipps MobilePay.
+All Vipps MobilePay payments must be made to a business that is a customer of Vipps MobilePay.
 
 See:
 

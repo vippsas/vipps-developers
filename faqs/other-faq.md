@@ -86,7 +86,7 @@ See:
 [How can I use Vipps MobilePay for different types of payments?](#how-can-i-use-vipps-mobilepay-for-different-types-of-payments)
 
 The bank account number for a sales unit must belong to the organization number
-of the company that has the customer relationship with Vipps MobilePay.
+of the merchant that has the customer relationship with Vipps MobilePay.
 
 A legal entity, the "merchant", may have one or more sales units.
 It is possible for one merchant to have multiple sales units with a separate
@@ -127,25 +127,25 @@ If all sales units have the same organization number, there are two alternatives
 
 ## How can I change my organization number?
 
-A company cannot change its organization number.
+A merchant cannot change its organization number.
 
-Companies (merchants) sometimes merge with other companies, are acquired, etc.
+Businesses (i.e., merchants) sometimes merge with other businesses, are acquired, etc.
 We sometimes get requests from companies that have "changed organization numbers",
 but this is not possible in Norway.
 
 The organization number is a unique identifier for a legal entity, and
-a new legal entity needs a new organization number. The fact that the company
+a new legal entity needs a new organization number. The fact that the business
 has the same name, is owned by the same people, etc. is irrelevant.
 
-Vipps MobilePay is legally required by Finanstilsynet to perform several checks of all
-companies that have a customer relationship with Vipps MobilePay. This is based on each
-company's organization number, and the legally binding agreement between the
-company and Vipps MobilePay. This agreement is signed with BankID.
+Vipps MobilePay is legally required by the financial authorities to perform several checks of all
+businesses that have a customer relationship with Vipps MobilePay. This is based on each
+business' organization number, and the legally binding agreement between the
+businesses and Vipps MobilePay. This agreement is signed with BankID.
 
-If a company has "changed organization numbers", it is a new legal entity,
-and the new company needs a new agreement with Vipps MobilePay. Establishing a new
-customer relationship for the new company is straight-forward on
-[portal.vipps.no](https://portal.vipps.no).
+If a business has "changed organization numbers", it is a new legal entity.
+The new business needs a new agreement with Vipps MobilePay. Establishing a new
+customer relationship for the new business is done on the
+[merchant portal](https://portal.vipps.no).
 
 ## What about webhooks?
 

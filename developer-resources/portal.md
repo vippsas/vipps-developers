@@ -24,7 +24,7 @@ If you have problems logging in, check [Permissions and users](#permissions-and-
 
 ## How to find a sales unit
 
-Select *Utvikler* from the sidebar, and select the *API-keys* tab. You should see all your company's sales units.
+Select *Utvikler* from the sidebar, and select the *API-keys* tab. You should see all your sales units.
 
 Select either *Production* or *Test*, depending on the type of keys you need.
 
@@ -110,7 +110,7 @@ and provide the API keys to you securely.
 
 If you don't know who the administrator is, you can check
 [Brønnøysundregistrene](https://www.brreg.no)
-and see who has the right to sign for the company.
+and see who has the right to sign for the business or organization.
 
 The merchant's administrator can also create additional users on
 [portal.vipps.no](https://portal.vipps.no).

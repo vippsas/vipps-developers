@@ -23,17 +23,17 @@ provider and to receive payments from Vipps and MobilePay users:
 * An appointed contact person with a Norwegian phone number and Norwegian
   identity number (i.e., "fødselsnummer" or "D-nummer", 11 digits).
 
-If a foreign company is registered in
+If a foreign business is registered in
 [Brønnøysundregistrene](https://www.brreg.no/),
 it has a contact person with a Norwegian identity number.
 
-If a foreign company has not yet been formally established, Vipps MobilePay can
+If a foreign business has not yet been formally established, Vipps MobilePay can
 manually send the agreement for digital signing with Danish NemID,
 Swedish BankID, etc. When this is required, please contact
 [customer service](https://vipps.no/kontakt-oss/)
 or, for partners, please contact your partner manager.
 
-If the above is impossible, the company can use Vipps through a
+If the above is impossible, the business can use Vipps MobilePay through a
 [Payment Service Provider (PSP)](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-2).
 
 ## How to apply

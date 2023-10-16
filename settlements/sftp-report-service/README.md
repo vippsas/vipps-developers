@@ -114,13 +114,13 @@ This is what it looks like on [portal.vipps.no](https://portal.vipps.no):
 * We can't test the SSH key for you.
 * If you do not have BankID, or you do not have the required permissions
   to add the SSH key, you will need the administrator to do it for you, or
-  to update your permissions on
-  [portal.vipps.no](https://portal.vipps.no).
-* The administrator can create additional users on
-  [portal.vipps.no](https://portal.vipps.no).
-* If you don't know who the administrator is, you can check
-  [Brønnøysundregistrene](https://www.brreg.no)
-  and see who has the right to sign for the company.
+  to update your permissions on the
+  [merchant portal](https://portal.vipps.no).
+* The administrator can create additional users on the
+  [merchant portal](https://portal.vipps.no).
+* If you don't know who the administrator is, you can check the
+  [Brønnøysund Register Centre](https://www.brreg.no)
+  and see who has the right to sign for the business.
 
 ### Partner access
 
@@ -194,7 +194,7 @@ This is the directory structure (where `[alternative1|alternative2]` indicates t
 /settlements/[inbox|archive]/[file extension]/[orgno]/[merchant-serial-number]/[merchant-serial-number]-[settlement-number].[file extension]
 ```
 
-The `orgno` is the company's organization number, nine digits.
+The `orgno` is the nine-digit organization number for the merchant.
 The `merchant-serial-number` (also called MSN) is the unique five or six-digit
 ID for the sales unit.
 

@@ -18,8 +18,8 @@ If you don't have their phone number, you can specify that they should be direct
 Within the user's Vipps or MobilePay app, they will be presented with a payment screen with the following details:
 
 * *Sales unit name* - The name of the sales unit.
-  A company or organization can have multiple sales units to represent different physical shops, vending machines, collection points, services, and similar.
-* *Organization name* - The name of the company or organization that owns this sales unit.
+  A merchant can have multiple sales units to represent different physical shops, vending machines, collection points, services, and similar.
+* *Organization name* - The name of the merchant that owns this sales unit.
 * *Merchant Serial Number* - The Merchant Serial Number (MSN), or ID number, for a sales unit.
 * *Reference (orderId)* - The orderId associated with this purchase as provided by the merchant.
 
