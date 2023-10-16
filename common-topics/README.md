@@ -22,6 +22,7 @@ In this section, you'll find a lot of general information relating to the APIs.
 
 * [Direct integration and PSP integration](direct-vs-psp.md) - The differences between integrating the Vipps MobilePay APIs directly or implementing the PSP API.
 * [API lifecycle](api-lifecycle.md) - General advice about API versioning and deprecation.
+* [Terminology](terminology.md) - Common Vipps MobilePay terminology, including special terms from Danish, Finnish, and Norwegian.
 
 ## User experience
 
