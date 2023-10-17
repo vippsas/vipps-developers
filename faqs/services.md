@@ -48,9 +48,7 @@ apply for a *Merchant Agreement* on
 We are required to perform a background check on all merchants who want to use our
 services, so it might take a few days before you hear back from us.
 You can check the status of your application on
-[portal.vipps.no](https://portal.vipps.no)
-or
-by contacting [customer service](https://www.vipps.no/kontakt-oss/).
+[portal.vipps.no](https://portal.vipps.no).
 
 When the *Merchant Agreement* is approved and your product order is sent,
 you (or the user associated with the order) will receive an email
