@@ -23,8 +23,7 @@ You can get a description of the API products in the [*API platform*](https://de
 section.
 
 Once you know what products you want, apply for services on
-[portal.vipps.no](https://portal.vipps.no) or contact
-[customer service](https://www.vipps.no/kontakt-oss/).
+[portal.vipps.no](https://portal.vipps.no).
 To learn more about the requirements for applying for services, see
 [Applying for services](./faqs/services.md).
 
