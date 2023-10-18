@@ -67,7 +67,7 @@ You will need the following:
 1. The test app.
 
     Download and install the Merchant Test (MT) app as described in the
-    [test apps](./test-environment.md#vipps-test-apps) section.
+    [test apps](./test-environment.md#test-apps) section.
 
 1. The test server, `apitest.vipps.no`.
     See [test servers](./test-environment.md#test-server) for more information.
