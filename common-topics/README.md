@@ -15,7 +15,7 @@ In this section, you'll find a lot of general information relating to the APIs.
 * [API keys](api-keys.md) - Where to find your credentials.
 * [Authentication](authentication.md) - How to get authentication for API requests.
 * [HTTP headers](http-headers.md) - Headers to use in all your API requests.
-* [Error formats](errors.md) - The standard response body format for our error messages.
+* [Errors](errors.md) - The standard response body format for our error messages.
 * [HTTP response codes](http-response-codes.md) - HTTP statuses returned in API responses.
 
 ## General information
@@ -39,8 +39,8 @@ In this section, you'll find a lot of general information relating to the APIs.
 
 ## Detailed technical recommendations
 
-* [Recommendations for payment description and transaction text](transactiontext.md)
-* [Recommendations for reference and orderId](orderid.md)
+* [isApp](isApp.md) - The `isApp` payment flow in the eCom and Recurring API.
+* [Payment description and transaction text](transactiontext.md) - Recommendations for payment description and transaction text.
+* [reference and orderId](orderid.md) - Recommendations for reference and orderId](
 * [Redirects](redirects.md) - Redirecting users to your website.
 * [URL validation](url-validation.md) - Details surrounding URL validation in the eCom and PSP APIs.
-* [isApp](isApp.md) - The `isApp` payment flow in the eCom and Recurring API.
