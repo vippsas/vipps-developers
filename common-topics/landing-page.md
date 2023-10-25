@@ -63,12 +63,12 @@ A typical example is one user that is below
 user complete the payment.
 
 See:
-[Is it possible to prevent the user from editing the phone number?​](../common-topics/landing-page.md#is-it-possible-to-prevent-the-user-from-editing-the-phone-number)
+[Is it possible to prevent the user from editing the phone number?​](landing-page.md#is-it-possible-to-prevent-the-user-from-editing-the-phone-number)
 
 ## Never display the landing page in an iframe
 
 **Important:** Never show the landing page inside an iframe. See:
-[Can I show the landing page in an iframe?​](../common-topics/landing-page.md#can-i-show-the-landing-page-in-an-iframe)
+[Can I show the landing page in an iframe?​](landing-page.md#can-i-show-the-landing-page-in-an-iframe)
 
 This is applicable to all APIs.
 
