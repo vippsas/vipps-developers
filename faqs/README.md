@@ -20,7 +20,6 @@ The following are Frequently Asked Questions (FAQs):
 * [Applying for services](services.md)
 * [Common errors](common-errors-faq.md)
 * [Common problems](common-problems-faq.md)
-* [Landing page](landing-page-faq.md)
 * [POS integrations](pos-integrations-faq.md)
 * [Problems for end users](problems-for-end-users-faq.md)
 * [Refunds](refunds-faq.md)

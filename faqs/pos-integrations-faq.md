@@ -45,7 +45,7 @@ See also:
 
 ## How can we be whitelisted for `skipLandingPage`?
 
-See: [Is it possible to skip the landing page?](landing-page-faq.md#is-it-possible-to-skip-the-landing-page)
+See: [skip the landing page](../common-topics/landing-page.md#skip-landing-page)
 
 ## Handling refunds on behalf of other stores
 
