@@ -133,7 +133,7 @@ initiates the payment:
 
 If you need to skip the landing page in a Point of Sale (POS) solution, follow
 the steps in:
-[What is the process to go live in production?](../faqs/pos-integrations-faq.md#what-is-the-process-to-go-live-in-production).
+[What is the process to go live in production?](./pos-integrations.md#the-process-to-go-live-in-production).
 
 If you need to skip the landing page for a different reason:
 Contact your Key Account Manager. If you do not have a KAM:
