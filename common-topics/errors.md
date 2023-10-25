@@ -358,3 +358,20 @@ PSP's can only initiate payments for MSNs that are connected to them.
 
 The solution is to create a new MSN with the
 [PSP Signup API](https://developer.vippsmobilepay.com/docs/APIs/psp-api/vipps-psp-signup-api/).
+
+## Why do I get a CORS error?
+
+If you get a CORS (Cross-Origin Resource Sharing) error, it is from your side,
+not an error from Vipps MobilePay. You are most likely attempting to call an API
+from a website, and your web server's configuration prevents it.
+
+CORS is a protocol that enables scripts running on a browser client to interact
+with resources from a different origin. Sometimes servers are configured to
+prevent this, and that results in a CORS error.
+
+We only receive the API requests over HTTPS, and we have no way of detecting
+how the request was made on the caller side - it all looks the same.
+We cannot fix the CORS error for you.
+
+You can read more about CORS here:
+[CORS Tutorial: A Guide to Cross-Origin Resource Sharing](https://auth0.com/blog/cors-tutorial-a-guide-to-cross-origin-resource-sharing/).

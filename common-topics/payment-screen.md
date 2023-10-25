@@ -54,3 +54,17 @@ Once the true amount is known, they capture this amount and cancel the remaining
 In this case, you see that the captured amount (e.g., <span style={{color: 'red'}}>-250 kr</span>) is less than the original authorized amount (e.g., <span style={{color: 'gray'}}>500 kr</span>). The actual amount paid is also updated.
 
 ![Payment partially captured and cancelled](images/payment-screen/4-payment-partial-capture.png)
+
+## Payment screen FAQ
+
+### Why a user doesn't receive the payment notification
+
+Push notifications must be active.
+
+Push notifications are "best effort", and we can't guarantee that all
+push notifications arrive. It depends on services, networks, and other things outside our control.
+
+If the Vipps or MobilePay app is already open and active when the push notification is received,
+the user must press the *Send* button and move to the payments screen to see
+the payment notification. The app isn't able to poll or discover the
+payment notification automatically.

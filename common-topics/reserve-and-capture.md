@@ -231,6 +231,41 @@ See more details below:
 * [What is the difference between "Reserve Capture" and "Direct Capture"?](#what-is-the-difference-between-reserve-capture-and-direct-capture)
 * [When should I use "Direct Capture"?](#when-should-i-use-direct-capture)
 
+## Why does capture fail?
+
+The most common reasons are:
+
+1. Attempt at capturing a higher amount than the one that has been reserved:
+   The user has approved a payment in the app, but you attempt to charge more.
+2. Attempt at capturing a payment that is not reserved:
+   The user has not approved the payment.
+
+All failed capture attempts get an error response from our API.
+The response contains the details of why the capture failed.
+
+If the reserved amount is too low for shipping costs to be included, the capture will fail.
+The reserved amount must at least as high as the amount that is captured.
+
+Example: If the value of the shopping cart is 1000 NOK, and the reserved amount is 1200 NOK,
+the shipping cost can be maximum 200 NOK to be within the reserved amount of 1200 NOK.
+If the shipping cost is 300 NOK, a capture of 1000 + 3000 NOK = 1300 NOK will fail.
+
+It is not possible to capture more than the reserved amount, as that would
+make this sequence possible:
+
+1. The merchant initiates a payment of 1000 NOK
+2. The user confirms the 1000 NOK payment in the app
+3. The merchant captures 50 000 NOK from the user
+
+Similarly: It is not possible to capture an amount that is not reserved, as
+that would make it possible to charge a user's card without requiring the user
+to confirm the payment first.
+
+See:
+
+* [For how long is a payment reserved?](#for-how-long-is-a-payment-reserved)
+
+
 ### What is the difference between "Reserve Capture" and "Direct Capture"?
 
 When you initiate a payment it will be *reserved* until you *capture* it.
