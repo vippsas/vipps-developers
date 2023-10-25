@@ -21,6 +21,8 @@ In this section, you'll find a lot of general information relating to the APIs.
 ## General information
 
 * [Direct integration and PSP integration](direct-vs-psp.md) - The differences between integrating the Vipps MobilePay APIs directly or implementing the PSP API.
+* [Point of Sale integrations](pos-integrations.md) - Learn about setting up a PoS integration.
+* [Applying for services](applying-for-services.md) - Find the process and requirements for applying for Vipps MobilePay services.
 * [API lifecycle](api-lifecycle.md) - General advice about API versioning and deprecation.
 * [Terminology](terminology.md) - Common Vipps MobilePay terminology, including special terms from Danish, Finnish, and Norwegian.
 
@@ -41,6 +43,6 @@ In this section, you'll find a lot of general information relating to the APIs.
 
 * [isApp](isApp.md) - The `isApp` payment flow in the eCom and Recurring API.
 * [Payment description and transaction text](transactiontext.md) - Recommendations for payment description and transaction text.
-* [reference and orderId](orderid.md) - Recommendations for reference and orderId](
+* [reference and orderId](orderid.md) - Recommendations for reference and orderId]
 * [Redirects](redirects.md) - Redirecting users to your website.
 * [URL validation](url-validation.md) - Details surrounding URL validation in the eCom and PSP APIs.
