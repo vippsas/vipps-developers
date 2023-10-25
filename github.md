@@ -21,7 +21,6 @@ The public GitHub repositories used in this website are as follows:
   * Login API: <https://github.com/vippsas/vipps-login-api>
   * Management API <https://github.com/vippsas/management-api>
   * Order management API: <https://github.com/vippsas/vipps-order-management-api>
-  * Partner API: <https://github.com/vippsas/vipps-partner-api>
   * PSP API: <https://github.com/vippsas/vipps-psp-api>
   * QR API: <https://github.com/vippsas/vipps-qr-api>
   * Recurring API: <https://github.com/vippsas/vipps-recurring-api>
