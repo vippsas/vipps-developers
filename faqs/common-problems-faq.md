@@ -145,7 +145,7 @@ to confirm the payment first.
 See:
 
 * [Cancelling a pending order](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#cancelling-a-pending-order)
-* [For how long is a payment reserved?](reserve-and-capture-faq.md#for-how-long-is-a-payment-reserved)
+* [For how long is a payment reserved?](../common-topics/reserve-and-capture.md#for-how-long-is-a-payment-reserved)
 
 ## Why do I get a CORS error?
 

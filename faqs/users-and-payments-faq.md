@@ -211,7 +211,7 @@ The user can also check the payment in the Vipps or MobilePay app:
 5. Verify that the orderId and transaction ID matches the ones in step 6 above.
 
 See:
-[For how long is a payment reserved?](reserve-and-capture-faq.md#for-how-long-is-a-payment-reserved)
+[For how long is a payment reserved?](../common-topics/reserve-and-capture.md#for-how-long-is-a-payment-reserved)
 
 ## In which sequence are callbacks and fallbacks done?
 

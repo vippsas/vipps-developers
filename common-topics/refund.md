@@ -74,7 +74,7 @@ of 750 NOK, and need to refund the remaining 250 NOK.
 
 * The short version: This is done automatically by the bank after a few days.
 See:
-[For how long is a payment reserved?](../faqs/reserve-and-capture-faq.md#for-how-long-is-a-payment-reserved).
+[For how long is a payment reserved?](../common-topics/reserve-and-capture.md#for-how-long-is-a-payment-reserved).
 
 * The long version: It *is* possible to cancel the remaining reservation after a
 partial capture through the eCom API: Send a

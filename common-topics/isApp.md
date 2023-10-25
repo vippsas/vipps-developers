@@ -36,7 +36,7 @@ Attempts at using it after that will result in a timeout and an error.
 See:
 
 * [Timeouts](timeouts.md)
-* [Can I send a payment link in an SMS, QR or email?](../faqs/reserve-and-capture-faq.md#can-i-send-a-payment-link-in-an-sms-qr-or-email)
+* [Can I send a payment link in an SMS, QR or email?](../common-topics/reserve-and-capture.md#can-i-send-a-payment-link-in-an-sms-qr-or-email)
 
 ## Important information when using isApp
 

@@ -70,7 +70,7 @@ For example:
 
 See the FAQ:
 
-* [For how long is a payment reserved?](../faqs/reserve-and-capture-faq.md#for-how-long-is-a-payment-reserved)
+* [For how long is a payment reserved?](../common-topics/reserve-and-capture.md#for-how-long-is-a-payment-reserved)
 
 ## Capture
 
@@ -97,9 +97,9 @@ Attempting to capture an older payment will result in a
 
 See the FAQ:
 
-* [When should I charge the customer?](../faqs/reserve-and-capture-faq.md#when-should-i-charge-the-customer)
-* [What is the difference between "Reserve Capture" and "Direct Capture"?](../faqs/reserve-and-capture-faq.md#what-is-the-difference-between-reserve-capture-and-direct-capture)
-* [When should I use "Direct Capture"?](../faqs/reserve-and-capture-faq.md#when-should-i-use-direct-capture)
+* [When should I charge the customer?](../common-topics/reserve-and-capture.md#when-should-i-charge-the-customer)
+* [What is the difference between "Reserve Capture" and "Direct Capture"?](../common-topics/reserve-and-capture.md#what-is-the-difference-between-reserve-capture-and-direct-capture)
+* [When should I use "Direct Capture"?](../common-topics/reserve-and-capture.md#when-should-i-use-direct-capture)
 
 ### Reserve capture
 
@@ -135,8 +135,8 @@ or by KAM merchants from the Key Account Manager.
 
 See the FAQ:
 
-* [When should I use "Direct Capture"?](../faqs/reserve-and-capture-faq.md#when-should-i-use-direct-capture)
-* [How can I check if I have "reserve capture" or "direct capture"?](../faqs/reserve-and-capture-faq.md#how-can-i-check-if-i-have-reserve-capture-or-direct-capture)
+* [When should I use "Direct Capture"?](../common-topics/reserve-and-capture.md#when-should-i-use-direct-capture)
+* [How can I check if I have "reserve capture" or "direct capture"?](../common-topics/reserve-and-capture.md#how-can-i-check-if-i-have-reserve-capture-or-direct-capture)
 
 ### Partial capture
 
