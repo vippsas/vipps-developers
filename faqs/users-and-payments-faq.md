@@ -64,7 +64,7 @@ If you want to charge a fee (like 3 %) of your payments, you can:
 
 Companies that receive payments through Vipps MobilePay needs to be our customers.
 See:
-[What are the requirements for merchants?](requirements-faq.md#what-are-the-requirements-for-vipps-merchants)
+[What are the requirements for merchants?](../common-topics/applying-for-services.md#what-are-the-requirements-for-merchants)
 
 ## Can I create a marketplace with multiple merchants?
 
@@ -74,7 +74,7 @@ It may not be as straight-forward as expected, and some typical questions
 are covered elsewhere in this FAQ:
 
 * All payments with Vipps MobilePay must be to a merchant that is a customer of Vipps MobilePay. See
-  [What are the requirements for Vipps MobilePay merchants?](requirements-faq.md#what-are-the-requirements-for-vipps-merchants)
+  [What are the requirements for Vipps MobilePay merchants?](../common-topics/applying-for-services.md#what-are-the-requirements-for-merchants)
 * Revenue share between the marketplace and the merchants: See:
   [Can I split payments to charge a fee?](#can-i-split-payments-to-charge-a-fee)
 * Refunds can only be made from the merchant that received the payment. See:
@@ -119,7 +119,7 @@ All Vipps MobilePay payments must be made to a business that is a customer of Vi
 
 See:
 
-* [What are the requirements for merchants?](requirements-faq.md#what-are-the-requirements-for-merchants)
+* [What are the requirements for merchants?](../common-topics/applying-for-services.md#what-are-the-requirements-for-merchants)
 * [Can I create a marketplace with multiple merchants?](#can-i-create-a-marketplace-with-multiple-merchants)
 * [Can I create a service to match buyers and sellers?](#can-i-create-a-service-to-match-buyers-and-sellers)
 

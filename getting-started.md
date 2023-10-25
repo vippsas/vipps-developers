@@ -25,7 +25,7 @@ section.
 Once you know what products you want, apply for services on
 [portal.vipps.no](https://portal.vipps.no).
 To learn more about the requirements for applying for services, see
-[Applying for services](./faqs/services.md).
+[Applying for services](./common-topics/applying-for-services.md).
 
 ## Get familiar with docs
 

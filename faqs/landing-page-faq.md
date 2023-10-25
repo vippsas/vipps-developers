@@ -9,6 +9,6 @@ pagination_prev: null
 # FAQ: Landing page
 
 
-This content is being updated now. Please bear with us 🐻 and have a look at this page:
+This content is being moved to the knowledge base. Please bear with us 🐻 and have a look at this page:
 
 🔎 [Landing page](../common-topics/landing-page.md) 🔍
