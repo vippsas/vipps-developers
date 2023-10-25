@@ -18,12 +18,10 @@ pagination_prev: null
 The following are Frequently Asked Questions (FAQs):
 
 * [Applying for services](services.md)
-* [Common errors](common-errors-faq.md)
 * [Common problems](common-problems-faq.md)
 * [POS integrations](pos-integrations-faq.md)
 * [Problems for end users](problems-for-end-users-faq.md)
 * [Requirements](requirements-faq.md)
-* [Reservations and capture](reserve-and-capture-faq.md)
 * [Users and payments](users-and-payments-faq.md)
 * [Other questions](other-faq.md)
 

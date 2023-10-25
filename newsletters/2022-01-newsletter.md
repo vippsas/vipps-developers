@@ -41,7 +41,7 @@ user experience.
 See:
 
 * [Use the API Dashboard to find problems with your integration](#use-the-api-dashboard-to-find-problems-with-your-integration)
-* [FAQ: Common errors](../faqs/common-errors-faq.md)
+* [FAQ: Common errors](../common-topics/errors.md)
 
 ## Recurring API: The "PROCESSING" status
 
