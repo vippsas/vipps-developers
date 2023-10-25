@@ -210,7 +210,7 @@ sequenceDiagram
 
 Only in special cases, where displaying it is not possible.
 
-We must enable this feature for eligible sales units, which will be white-listed.
+We must enable this feature for eligible sales units, which will be whitelisted.
 Skipping the landing page is typically used at physical points of sale
 where there is no display available.
 
