@@ -61,7 +61,7 @@ and
 API calls will always return the correct status.
 
 See:
-[How can I refund only a part of a payment?](refunds-faq.md#how-can-i-refund-only-a-part-of-a-payment).
+[How can I refund only a part of a payment?](../common-topics/refund.md#how-can-i-refund-only-a-part-of-a-payment).
 
 ## When should I charge the customer?
 
@@ -131,7 +131,7 @@ See:
 
 * [When should I charge the customer?](#when-should-i-charge-the-customer)
 * [When should I use "Direct Capture"?](#when-should-i-use-direct-capture)
-* [How long does it take from a refund is made until the money is in the customer's account?](refunds-faq.md#how-long-does-it-take-from-a-refund-is-made-until-the-money-is-in-the-customers-account)
+* [How long does it take from a refund is made until the money is in the customer's account?](../common-topics/refund.md#how-long-does-it-take-from-a-refund-is-made-until-the-money-is-in-the-customers-account)
 
 ## When should I use "Direct Capture"?
 

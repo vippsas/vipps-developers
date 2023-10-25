@@ -58,7 +58,7 @@ as soon as the card issuer and/or bank permits.
 It usually takes 2-3 *bank days* until the money is in the customer's account, depending on the bank(s).
 It can take much longer, up to 10 days, and depends on the bank(s).
 For more details, see:
-[How long does it take from a refund is made until the money is in the customer's account?](../faqs/refunds-faq.md#how-long-does-it-take-from-a-refund-is-made-until-the-money-is-in-the-customers-account).
+[How long does it take from a refund is made until the money is in the customer's account?](../common-topics/refund.md#how-long-does-it-take-from-a-refund-is-made-until-the-money-is-in-the-customers-account).
 
 **Please note:** Once this operation has been performed, there will be zero
 funds remaining to capture. Do not call this endpoint until you are sure you

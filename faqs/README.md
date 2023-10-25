@@ -22,7 +22,6 @@ The following are Frequently Asked Questions (FAQs):
 * [Common problems](common-problems-faq.md)
 * [POS integrations](pos-integrations-faq.md)
 * [Problems for end users](problems-for-end-users-faq.md)
-* [Refunds](refunds-faq.md)
 * [Requirements](requirements-faq.md)
 * [Reservations and capture](reserve-and-capture-faq.md)
 * [Users and payments](users-and-payments-faq.md)
