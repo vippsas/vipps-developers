@@ -93,7 +93,7 @@ user's phone number, and by users scanning a QR code.
 
 See:
 
-* [Vipps Login from phone number API: How It Works](https://developer.vippsmobilepay.com/docs/APIs/login-api/how-it-works/vipps-login-from-phone-number-api-howitworks)
+* [Vipps Login from phone number API: How It Works](https://developer.vippsmobilepay.com/docs/APIs/login-api/how-it-works/user-initiated-login-howitworks/)
 * Vipps Login from QR-code API: How It Works (no longer available)
 * [Login API](https://developer.vippsmobilepay.com/docs/APIs/login-api)
 
