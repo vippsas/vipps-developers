@@ -10,4 +10,6 @@ pagination_prev: null
 # Frequently asked questions
 
 
-This content is being moved into the knowledge base. Please bear with us. 🐻
+This content is being merged into our knowledge base. Please bear with us 🐻 and have a look at this section:
+
+🔎 [Knowledge base](../common-topics/README.md) 🔎
