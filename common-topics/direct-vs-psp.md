@@ -53,7 +53,7 @@ provides important functionality that is not available in the PSP API:
 1. Direct integration gives you more control over the integration - and the user experience -
    and lets you customize it to your specific needs. This leads to a better user
    experience for your customers and also increased conversion.
-2. [Extremely high completion rate](../faqs/common-problems-faq.md#high-success-rate-for-direct-integrations).
+2. [Extremely high completion rate](payments.md#high-success-rate-for-direct-integrations).
    With a direct integration, you use the Vipps MobilePay APIs directly without
    any additional steps or middleware.
 3. Retry functionality: If the user attempts to pay with a card that is declined,
@@ -67,7 +67,7 @@ provides important functionality that is not available in the PSP API:
    ([SCA, required by the Payment Services Directive 2, PSD2](https://en.wikipedia.org/wiki/Strong_customer_authentication)),
    as we have regulatory approved *delegated SCA* from the card issuers.
    Details:
-   [When do users get a "soft decline" and need to complete a 3-D Secure verification?](https://developer.vippsmobilepay.com/docs/faqs/users-and-payments-faq#when-do-users-get-a-soft-decline-and-need-to-complete-a-3-d-secure-verification)
+   [When do users get a "soft decline" and need to complete a 3-D Secure verification?](payments.md#when-do-users-get-a-soft-decline-and-need-to-complete-a-3-d-secure-verification)
 5. [Express checkout](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#express-checkout-payments),
    where the user selects shipping address and shipping method in the Vipps or MobilePay app,
    is only available with direct integration.
@@ -96,4 +96,4 @@ Users that select Vipps will simply have to use biometric log-in to the app and
 confirm the payment. Very, very simple.
 
 See:
-[Why do payments fail?](../faqs/common-problems-faq.md#why-do-payments-fail)
+[Why do payments fail?](payments.md#why-do-payments-fail)

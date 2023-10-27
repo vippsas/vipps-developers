@@ -9,41 +9,5 @@ pagination_prev: null
 
 # Frequently asked questions
 
-<!-- START_COMMENT -->
-ℹ️ Please use the website:
-[Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/docs/faqs/).
-<!-- END_COMMENT -->
 
-
-The following are Frequently Asked Questions (FAQs):
-
-* [Applying for services](services.md)
-* [Common errors](common-errors-faq.md)
-* [Common problems](common-problems-faq.md)
-* [Landing page](landing-page-faq.md)
-* [POS integrations](pos-integrations-faq.md)
-* [Problems for end users](problems-for-end-users-faq.md)
-* [Refunds](refunds-faq.md)
-* [Requirements](requirements-faq.md)
-* [Reservations and capture](reserve-and-capture-faq.md)
-* [Users and payments](users-and-payments-faq.md)
-* [Other questions](other-faq.md)
-
-In addition, each API has a specific set of FAQs. For example:
-
-* [Checkout API FAQ](https://developer.vippsmobilepay.com/docs/APIs/checkout-api/vipps-checkout-api-faq)
-* [eCom API FAQ](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api-faq)
-* [ePayment API FAQ](https://developer.vippsmobilepay.com/docs/APIs/epayment-api/faq/)
-* [Login API FAQ](https://developer.vippsmobilepay.com/docs/APIs/login-api/vipps-login-api-faq)
-* [QR API FAQ](https://developer.vippsmobilepay.com/docs/APIs/qr-api/vipps-qr-api-faq)
-* [Recurring API FAQ](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/vipps-recurring-api-faq)
-* [Report API FAQ](https://developer.vippsmobilepay.com/docs/APIs/report-api/vipps-report-api-faq)
-* [Userinfo API FAQ](https://developer.vippsmobilepay.com/docs/APIs/userinfo-api/userinfo-api-faq/)
-* [Webhooks API FAQ](https://developer.vippsmobilepay.com/docs/APIs/webhooks-api/faq/)
-
-We're always happy to help with code or other questions you might have!
-Please create an [issue](https://github.com/vippsas/vipps-developers/issues),
-a [pull request](https://github.com/vippsas/vipps-developers/pulls),
-or [contact us](https://developer.vippsmobilepay.com/docs/contact).
-
-Sign up for our [Technical newsletter for developers](https://developer.vippsmobilepay.com/docs/newsletters).
+This content is being moved into the knowledge base. Please bear with us. 🐻

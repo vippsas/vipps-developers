@@ -39,7 +39,7 @@ For *technical* issues related to using our APIs, please see the sections below.
 Most information can be found in the searchable [technical documentation](https://developer.vippsmobilepay.com/search).
 
 You can also check the
-[Frequently Asked Questions (FAQ)](https://developer.vippsmobilepay.com/docs/faqs).
+[Knowledge base](./common-topics/README.md).
 
 If you cannot find the answer, please send an email as described below.
 

@@ -49,3 +49,5 @@ opening URL with custom URL schemas.
 
 See also:
 [changing the default browser on iOS](https://support.apple.com/en-us/HT211336)
+
+See [Payment FAQ](payments.md) for related questions.
