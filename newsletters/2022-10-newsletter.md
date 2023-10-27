@@ -21,7 +21,7 @@ Examples:
 
 * [API Guide](https://developer.vippsmobilepay.com/docs/APIs/ecom-api)
 * [API Reference](https://developer.vippsmobilepay.com/api/ecom)
-* [FAQ](https://developer.vippsmobilepay.com/docs/faqs)
+* [Knowledge base](https://developer.vippsmobilepay.com/docs/common-topics/)
 
 Please
 [tell us what you think](https://forms.office.com/pages/responsepage.aspx?id=XcJbgGSO1k6NJDiDyQaMWuRWudsvYRxEorAi1xx_iqJUQzg4QzExTVhHM1UzMDIwM1lINkpaNTdWUC4u)
