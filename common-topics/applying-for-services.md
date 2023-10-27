@@ -51,9 +51,9 @@ You can check the status of your application on
 When the *Merchant Agreement* is approved and your product order is sent,
 you (or the user associated with the order) will receive an email
 with the name and serial number of your test sales unit, along with the
-[test user](../test-environment/#test-users)
+[test user](../test-environment.md/#test-users)
 for logging into the
-[Merchant Test (MT) app](../test-environment/#vipps-test-apps).
+[Merchant Test (MT) app](../test-environment.md#test-apps).
 Now, you can start testing with the APIs.
 
 When your product order is approved, you will get an email stating that you can

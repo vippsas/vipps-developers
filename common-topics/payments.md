@@ -229,7 +229,7 @@ The most common reasons why payments are not completed are:
    typically if the user has deactivated push notifications and does not open
    Vipps manually.
    See:
-   [Timeouts](timeouts).
+   [Timeouts](timeouts.md).
 8. Attempt to capture an amount that exceeds the reserved amount.
    It's not possible to capture a higher amount than the user has confirmed in Vipps MobilePay.
    Some merchants experience this because of rounding errors on their side.
