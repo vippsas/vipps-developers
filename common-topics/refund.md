@@ -40,7 +40,7 @@ Here are related sections in the API guides:
 It is also possible to do refunds on
 [portal.vipps.no](https://portal.vipps.no).
 
-## Refunds FAQs
+## Refunds FAQ
 
 ### Can I refund a payment?
 

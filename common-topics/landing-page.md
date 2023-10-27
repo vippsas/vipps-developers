@@ -204,7 +204,7 @@ sequenceDiagram
     end
 ```
 
-## Landing page FAQs
+## Landing page FAQ
 
 ### Is it possible to skip the landing page?
 

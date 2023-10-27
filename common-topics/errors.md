@@ -1,10 +1,40 @@
 ---
-title: Errors
+title: Errors and response codes
 pagination_next: null
 pagination_prev: null
 ---
 
-# Errors
+# Errors and response codes
+
+The APIs return the following HTTP statuses in the responses:
+
+| HTTP status             | Description                                            |
+|:------------------------|:-------------------------------------------------------|
+| `200 OK`                | Request successful                                     |
+| `201 Created`           | Request successful, resource created                   |
+| `204 No Content`        | Request successful, but empty result                   |
+| `400 Bad Request`       | Invalid request, see the error for details             |
+| `401 Unauthorized`      | Invalid credentials                                    |
+| `403 Forbidden`         | Authentication ok, but credentials lack authorization  |
+| `404 Not Found`         | The resource was not found                             |
+| `409 Conflict`          | Unsuccessful due to conflicting resource               |
+| `429 Too Many Requests` | Look at table below to view current rate limits        |
+| `500 Server Error`      | An internal Vipps MobilePay problem.                             |
+
+In general:
+
+* 2XX responses: Everything is OK.
+* 4XX responses: Client error. You have a problem, and you must correct it.
+* 5XX responses: Server error. We have a problem, and we must correct it.
+
+The HTTP status overview here is quite good:
+[HTTP Status Codes Glossary](https://www.webfx.com/web-development/glossary/http-status-codes/).
+
+The authoritative reference is:
+[RFC 9110: HTTP Semantics](https://www.rfc-editor.org/rfc/rfc9110.html#name-status-codes).
+
+
+## Errors
 
 The standard response body format for our error messages follows
 [RFC 7807](https://tools.ietf.org/html/rfc7807).
@@ -42,7 +72,7 @@ will use `extraDetails`.
 **Please note:**
 
 * Most of the APIs use this error format, but legacy APIs may not.
-  For details: See each
+  For details: See the
   [API](https://developer.vippsmobilepay.com/docs/APIs)'s
   specification.
 * Some errors are sent from Microsoft Azure, and not the APIs.
@@ -50,13 +80,8 @@ will use `extraDetails`.
   These errors may have a different format, as they are not configurable.
 * It is the integrator's responsibility to monitor and handle all errors.  
 
-See also:
-[HTTP response codes](https://developer.vippsmobilepay.com/docs/common-topics/http-response-codes/).
 
-
-## Common error FAQs
-
-Also, see error descriptions in the specific API guide sections (e.g.,
+See error descriptions in the specific API guide sections (e.g.,
 [ePayment API FAQ](https://developer.vippsmobilepay.com/docs/APIs/epayment-api/faq/#what-do-all-the-errors-mean),
 [eCom API FAQ](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api-faq#common-errors)).
 
@@ -359,7 +384,7 @@ PSP's can only initiate payments for MSNs that are connected to them.
 The solution is to create a new MSN with the
 [PSP Signup API](https://developer.vippsmobilepay.com/docs/APIs/psp-api/vipps-psp-signup-api/).
 
-## Why do I get a CORS error?
+### Why do I get a CORS error?
 
 If you get a CORS (Cross-Origin Resource Sharing) error, it is from your side,
 not an error from Vipps MobilePay. You are most likely attempting to call an API

@@ -50,24 +50,4 @@ opening URL with custom URL schemas.
 See also:
 [changing the default browser on iOS](https://support.apple.com/en-us/HT211336)
 
-## Redirection FAQs
-
-### How can I open the fallback URL in a specific (embedded) browser?
-
-The phone's operating system always opens URLs in the default browser.
-
-This means that the `fallback` URL (the "result page") will be opened in
-the default browser. We have no way to open the `fallback` URL in the
-embedded browser on Facebook, Instagram, etc. Similarly, there is no way
-for us to open the `fallback` URL in the same tab that the user came from
-before the app-switch.
-
-This means that the merchant must be able to detect or recognize the user
-when the `fallback` URL is opened, without relying on session, cookies, etc.
-
-### Why a user might not be sent back to where they came from when they have paid?
-
-If the payment started in a custom browser (like Chrome on iOS, or an embedded
-browser on Instagram, instead of the default Safari browser), the `fallback` URL
-(the result page) will still be opened in the default browser.
-
+See [Payment FAQ](payments.md) for related questions.

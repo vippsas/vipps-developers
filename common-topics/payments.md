@@ -6,21 +6,59 @@ pagination_prev: null
 
 # Payments
 
-It's possible to use the eCom API for several types of payments.
+The following is the payment screen in the Vipps or MobilePay app.
 
-Let's say you run a book store. You can then use eCom API in several ways, such as:
+## Payment request
 
-1. A webshop that sells physical books:
-   eCom API with "reserve capture", since you cannot capture the payment before the book is shipped.
-2. A webshop that sells digital, downloadable books that are immediately available:
-   eCom API with either "reserve capture" or "direct capture", depending on whether the digital product
-   needs to be generated or not.
-3. A physical store where customers buy physical books in person:
-   eCom API with "direct capture", possibly integrated with the POS.
-4. A physical store where customers can buy physical books by scanning a
-   QR code in the window, and have the physical book delivered by mail:
-   eCom API with "reserve capture", since you cannot capture the payment before the book is shipped.
+When you create a [payment request](https://developer.vippsmobilepay.com/docs/APIs/epayment-api/operations/create/),
+with the user's phone number, they will get a notification in their Vipps or MobilePay app.
+If you don't have their phone number, you can specify that they should be directed to the
+[Vipps or MobilePay Landing page](landing-page.md), where they enter their phone number and then open their own app.
 
+Within the user's Vipps or MobilePay app, they will be presented with a payment screen with the following details:
+
+* *Sales unit name* - The name of the sales unit.
+  A merchant can have multiple sales units to represent different physical shops, vending machines, collection points, services, and similar.
+* *Organization name* - The name of the merchant that owns this sales unit.
+* *Merchant Serial Number* - The Merchant Serial Number (MSN), or ID number, for a sales unit.
+* *Reference (orderId)* - The orderId associated with this purchase as provided by the merchant.
+
+![Payment request](images/payments/1-payment-request.png)
+
+## Payment reservation
+
+When the user authorizes the payment, the amount will be reserved.
+It will remain in the "reserved" state up until you capture it.
+
+The payment details will show the authorized amount in faint gray (e.g., <span style={{color: 'gray'}}>500 kr</span>).
+
+![Payment reserved](images/payments/2-payment-reserved.png)
+
+## Payment capture
+
+The payment transactions are shown in reverse order, where the oldest transaction is at the bottom of the list.
+So, here you see the authorized amount at the bottom of the *Transactions* list in faint gray (e.g., <span style={{color: 'gray'}}>500 kr</span>).
+
+The payment transfer (i.e., *capture*) is reflected as a negative transaction in red (e.g., <span style={{color: 'red'}}>-500 kr</span>), so the user can see that you have transferred 500 kr from their account.
+
+If you later refund an amount (perhaps there was a mistake), the refunded amount will be shown in green (e.g., <span style={{color: 'green'}}>250 kr</span>) at the top of the list. The total amount paid will be updated to show the new amount.
+
+![Payment captured and partially refunded](images/payments/3-payment-receipt.png)
+
+In cases where the final amount owed is not known at the time of the payment request
+(e.g., for vending machines, charging stations, and taxis),
+it's common to reserve a larger (but reasonable) amount, so they
+have authorization to cover the cost of the service.
+Once the true amount is known, they capture this amount and cancel the remaining.
+
+In this case, you see that the captured amount (e.g., <span style={{color: 'red'}}>-250 kr</span>) is less than the original authorized amount (e.g., <span style={{color: 'gray'}}>500 kr</span>). The actual amount paid is also updated.
+
+![Payment partially captured and cancelled](images/payments/4-payment-partial-capture.png)
+
+## Using Vipps MobilePay for payments
+
+It's possible to use the [ePayment API](https://developer.vippsmobilepay.com/docs/APIs/epayment-api/)
+for several types of payments.
 The regulatory requirements are different for different types of purchases.
 One major difference is if the cardholder is physically present and
 "can look the seller in the eye" while making the payment.
@@ -107,8 +145,42 @@ You can also subscribe to daily or monthly transaction reports by email.
 
 See:
 
-* [Report API](https://developer.vippsmobilepay.com/docs/APIs/report-api).
+* [Report API](https://developer.vippsmobilepay.com/docs/APIs/report-api)
 * [Settlements](../settlements/README.md)
+
+### How can I use Vipps MobilePay for different types of payments?
+
+It's possible to use the eCom API for several types of payments.
+
+Let's say you run a book store. You can then use eCom API in several ways, such as:
+
+1. A webshop that sells physical books:
+   eCom API with "reserve capture", since you cannot capture the payment before the book is shipped.
+2. A webshop that sells digital, downloadable books that are immediately available:
+   eCom API with either "reserve capture" or "direct capture", depending on whether the digital product
+   needs to be generated or not.
+3. A physical store where customers buy physical books in person:
+   eCom API with "direct capture", possibly integrated with the POS.
+4. A physical store where customers can buy physical books by scanning a
+   QR code in the window, and have the physical book delivered by mail:
+   eCom API with "reserve capture", since you cannot capture the payment before the book is shipped.
+
+The regulatory requirements are different for different types of purchases.
+One major difference is if the cardholder is physically present and
+"can look the seller in the eye" while making the payment.
+
+Vipps MobilePay needs to do more thorough "Know Your Customer" (KYC) and compliance checks
+for some examples above. This must be done per sales unit.
+Vipps MobilePay is also required to have the correct MCC
+([Merchant Category Code](https://en.wikipedia.org/wiki/Merchant_category_code))
+for each sales unit.
+
+Because of this, merchants must use separate sales units for separate types
+of purchases. This also has some benefits:
+
+* Each sales unit has its own name presented to the user in the app
+* Each sales unit has separate transaction logs
+* Each sales unit can have its own settlement account. Sharing a single account across multiple sales units is available on request.
 
 
 ## Common reasons why payments are not completed
@@ -186,11 +258,41 @@ the user in the Vipps or MobilePay app, all necessary information will be provid
 **Tip:** Everyone can test their Vipps or MobilePay app with credit and debit cards in our demo store:
 [demo.vipps.no](https://demo.vipps.no).
 
-See:
-[eCom errors](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#error-codes).
-
+See: [Errors](errors.md)
 
 ## Payment FAQ
+
+### Why a user doesn't receive the payment notification
+
+Push notifications must be active.
+
+Push notifications are "best effort", and we can't guarantee that all
+push notifications arrive. It depends on services, networks, and other things outside our control.
+
+If the Vipps or MobilePay app is already open and active when the push notification is received,
+the user must press the *Send* button and move to the payments screen to see
+the payment notification. The app isn't able to poll or discover the
+payment notification automatically.
+
+### How can I open the fallback URL in a specific (embedded) browser?
+
+The phone's operating system always opens URLs in the default browser.
+
+This means that the `fallback` URL (the "result page") will be opened in
+the default browser. We have no way to open the `fallback` URL in the
+embedded browser on Facebook, Instagram, etc. Similarly, there is no way
+for us to open the `fallback` URL in the same tab that the user came from
+before the app-switch.
+
+This means that the merchant must be able to detect or recognize the user
+when the `fallback` URL is opened, without relying on session, cookies, etc.
+
+### Why a user might not be sent back to where they came from when they have paid?
+
+If the payment started in a custom browser (like Chrome on iOS, or an embedded
+browser on Instagram, instead of the default Safari browser), the `fallback` URL
+(the result page) will still be opened in the default browser.
+
 
 ### Can I split payments to charge a fee?
 
@@ -298,8 +400,7 @@ There are several reasons for this, including:
 We have functionality for getting the user's bank accounts enrolled in
 Vipps MobilePay, with the user's consent. Payments may then be made to the bank account.
 See:
-[Is there an API for retrieving information about a user?](user-data.md#is-there-an-api-for-retrieving-information-about-a-user)
-
+[Is there an API for retrieving information about a user?](merchant-questions.md#is-there-an-api-for-retrieving-information-about-a-user)
 
 
 ### In which sequence are callbacks and fallbacks done?

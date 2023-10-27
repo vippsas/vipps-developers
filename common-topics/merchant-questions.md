@@ -8,8 +8,10 @@ pagination_prev: null
 
 # Merchant questions
 
+## Sales units
 
-## How do I set up multiple sales units?
+
+### How do I set up multiple sales units?
 
 This is typically needed for organization numbers with multiple stores,
 or offers different ways to pay with Vipps MobilePay.
@@ -42,7 +44,7 @@ If all sales units have the same organization number, there are two alternatives
    If you have a Vipps MobilePay platform partner, the partner will use the
    [Partner keys](https://developer.vippsmobilepay.com/docs/partner/partner-keys)
    for all the sales units.
-   See: [How can I use Vipps MobilePay for different types of payments?](#how-can-i-use-vipps-mobilepay-for-different-types-of-payments).
+   See: [How can I use Vipps MobilePay for different types of payments?](payments.md#how-can-i-use-vipps-mobilepay-for-different-types-of-payments).
 
 2: Use only one sales unit (one MSN) for all stores, and use the `orderId` to identify
    which orders belong to which sales units.
@@ -56,7 +58,7 @@ If all sales units have the same organization number, there are two alternatives
    [Partner keys](https://developer.vippsmobilepay.com/docs/partner/partner-keys)
    for all the sales units.
 
-## How can I change my organization number?
+### How can I change my organization number?
 
 A merchant cannot change its organization number.
 
@@ -79,7 +81,7 @@ customer relationship for the new business is done on the
 [merchant portal](https://portal.vipps.no).
 
 
-## Can I use Vipps with Klarna Checkout?
+### Can I use Vipps with Klarna Checkout?
 
 Yes. Klarna Checkout (KCO) supports Vipps as an External Payment Method if you have
 agreement with Klarna for this.
@@ -138,11 +140,11 @@ help with all the details.
 **Important:** When using Vipps as an external payment method in Klarna Checkout,
 the settlements from us will be separate from the settlements from Klarna.
 
-## What functionality is included in the Vipps MobilePay API, but not the PSP API?
+### What functionality is included in the Vipps MobilePay API, but not the PSP API?
 
 See [Benefits of direct integration](direct-vs-psp.md#benefits-of-direct-integration).
 
-## What do we have to do with PSD2's SCA requirements?
+### What do we have to do with PSD2's SCA requirements?
 
 Nothing. We will handle everything for you - both BankID and 3-D Secure.
 
@@ -166,7 +168,7 @@ See:
 **Please note:** The MSN (the number) does *not* change when changing partners.
 
 
-## How can I measure Vipps sales with Google Analytics, Facebook pixel, etc.?
+### How can I measure Vipps sales with Google Analytics, Facebook pixel, etc.?
 
 We don't have any functionality for measuring sales with Google
 Analytics, Facebook pixel, etc. Merchants may of course use any service on
@@ -177,7 +179,7 @@ See:
 [Initiate payment flow: Phone and browser](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#initiate-payment-flow-phone-and-browser).
 
 
-## Can I create a marketplace with multiple merchants?
+### Can I create a marketplace with multiple merchants?
 
 We sometimes get questions whether we can support a marketplace or a
 shopping center, with multiple merchants. The answer is: That depends.
@@ -202,7 +204,7 @@ So, there are two alternatives:
    common shopping cart for all merchants cannot be paid in one operation,
    since: All payments with Vipps MobilePay must be to a merchant that is a customer of Vipps MobilePay.
 
-## Can I create a service to match buyers and sellers?
+### Can I create a service to match buyers and sellers?
 
 Companies that receive payments through Vipps MobilePay must be Vipps MobilePay customers,
 and this is defined in the regulatory approval from Finanstilsynet.
@@ -221,7 +223,7 @@ or one of our
 
 We can't offer legal advice for this.
 
-## Can I use Vipps MobilePay for crowdfunding?
+### Can I use Vipps MobilePay for crowdfunding?
 
 That depends, but probably: No.
 
@@ -233,3 +235,73 @@ See:
 * [What are the requirements for merchants?](applying-for-services.md#what-are-the-requirements-for-merchants)
 * [Can I create a marketplace with multiple merchants?](#can-i-create-a-marketplace-with-multiple-merchants)
 * [Can I create a service to match buyers and sellers?](#can-i-create-a-service-to-match-buyers-and-sellers)
+
+## Users
+
+### Is there an API for checking if a number belongs to a user?
+
+No, we don't offer a lookup service for this, as we don't want to
+leak information about users. If a payment is initiated for a user that can
+not pay businesses, the response will be an error.
+
+If you initiate a payment request with a phone number that can't be used to complete the payment,
+we don't distinguish between the following:
+
+* Not a Vipps MobilePay user
+* A Vipps MobilePay user, but too young to pay businesses
+* A previous Vipps MobilePay user that has deleted his/her account
+* A Vipps MobilePay user that has his/her account temporarily or permanently blocked.
+
+We aren't allowed to provide more details about the reason for the failure.
+
+## Is there an API for retrieving information about a user?
+
+Yes, but only as part of a payment or login.
+
+We offer the possibility for merchants to ask the user for information
+as part of the payment flow with
+[Userinfo](https://developer.vippsmobilepay.com/docs/APIs/userinfo-api/userinfo-api-guide/).
+
+**Please note:** Vipps or MobilePay users have not consented to providing any
+information to third parties, and we do not allow it.
+The user must always give consent to sharing data with a merchant.
+There is no other API to look up a user's address, retrieve a user's purchases, etc.
+
+### Why are the customer names not shown on the transaction overview?
+
+Using Vipps MobilePay is anonymous for the users, by default. Users can pay through Vipps MobilePay without sharing their
+personal data with the merchant. Merchants can use the built-in functionality to
+get the user's consent to share personal data - such as phone number, name,
+e-mail address and address.
+See
+[Userinfo](https://developer.vippsmobilepay.com/docs/APIs/userinfo-api)
+and
+[Express checkout](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#express-checkout-payments).
+
+The transaction overview on
+[portal.vipps.no](https://portal.vipps.no)
+shows the customer names for
+[Vippsnummer](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-i-butikk/ta-betalt-med-vipps/)
+payments.
+
+For other payments, such as
+[*Vipps på nett*](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/)
+and
+[*Faste betalinger* (Recurring payments)](https://vipps.no/produkter-og-tjenester/bedrift/faste-betalinger/faste-betalinger/)
+the `reference` (ePayment API), or `orderId` (the eCom API), is shown instead of the customer name.
+
+The `reference` (or `orderId` in the older eCom API) is specified by the merchant. See the
+[recommendations for `reference` and `orderId`](../common-topics/orderid.md).
+
+Use
+[Userinfo](https://developer.vippsmobilepay.com/docs/APIs/userinfo-api)
+to get the customer's consent to share name, email address, etc.
+The user can then consent to sharing as part of the payment flow.
+
+**Please note:** *Vippsnummer* is not legal for payments where the customer is
+not physically present. It does also not comply with the Treasury Act, (*Kassaloven*).
+
+**Please note:** Vipps or MobilePay users have not consented to providing any
+information to third parties, and we do not allow it.
+The user must always give consent to sharing data with a merchant.
+There is no other API to look up a user's address, retrieve a user's purchases, etc.
