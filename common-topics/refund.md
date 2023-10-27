@@ -1,6 +1,5 @@
 ---
 title: Refunds
-sidebar_label: Refunds
 pagination_next: null
 pagination_prev: null
 ---

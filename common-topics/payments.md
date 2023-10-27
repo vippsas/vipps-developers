@@ -76,6 +76,7 @@ of purchases. This also has some benefits:
 * Each sales unit has separate transaction logs
 * Each sales unit can have its own settlement account. Sharing a single account across multiple sales units is available on request.
 
+
 ## High success rate for direct integrations
 
 **Please note:** We have extremely high success rate (low drop-off) for direct integration.
@@ -183,7 +184,9 @@ of purchases. This also has some benefits:
 * Each sales unit can have its own settlement account. Sharing a single account across multiple sales units is available on request.
 
 
-## Common reasons why payments are not completed
+## Why do payments fail?
+
+### Common reasons why payments are not completed
 
 The most common reasons why payments are not completed are:
 
@@ -202,7 +205,7 @@ The most common reasons why payments are not completed are:
    [ePayment API](https://developer.vippsmobilepay.com/docs/APIs/epayment-api/): If the card issuer does
    not correctly handle the "3D Secure step up", meaning the required secure
    customer identification, the payment will fail. See
-   [Card payments](https://developer.vippsmobilepay.com/docs/faqs/users-and-payments-faq/#card-payments).
+   [Card payments](payments.md/#card-payments).
    Payments also fail if the user is attempting to pay with a card
    from a country that is not allowed.
 4. Insufficient funds on the debit/credit card.
@@ -258,7 +261,7 @@ the user in the Vipps or MobilePay app, all necessary information will be provid
 **Tip:** Everyone can test their Vipps or MobilePay app with credit and debit cards in our demo store:
 [demo.vipps.no](https://demo.vipps.no).
 
-See: [Errors](errors.md)
+See: [HTTP response codes and errors](errors.md)
 
 ## Payment FAQ
 
@@ -373,35 +376,6 @@ The user can also check the payment in the Vipps or MobilePay app:
 
 See:
 [For how long is a payment reserved?](reserve-and-capture.md#for-how-long-is-a-payment-reserved)
-
-### Is it possible for a merchant to pay a Vipps or MobilePay user?
-
-No. We have no functionality to allow a merchant to pay a user,
-except for refunding (part of) a payment.
-
-Vipps MobilePay only has APIs for paying from a person to a merchant.
-
-It is not possible to pay from one merchant to another merchant,
-or to pay from a merchant to a person.
-
-There are several reasons for this, including:
-
-* The Norwegian *Straksbetaling* (instant payments) system is not designed
-  for this, and not all banks support it.
-* There are other account-to-account payment methods, but all have their
-  idiosyncrasies, and none are a perfect fit.
-* Payouts to cards is different from accounts, and will depend on the PSPs,
-  which brings another set of challenges.
-* Some merchant accounts require "four eyes" before making payments from them,
-  and we don't have this functionality in the API.
-* The SCA (Secure Customer Authentication) required by PSD2 further complicates
-  payouts, both with an API and on [portal.vipps.no](https://portal.vipps.no).
-
-We have functionality for getting the user's bank accounts enrolled in
-Vipps MobilePay, with the user's consent. Payments may then be made to the bank account.
-See:
-[Is there an API for retrieving information about a user?](merchant-questions.md#is-there-an-api-for-retrieving-information-about-a-user)
-
 
 ### In which sequence are callbacks and fallbacks done?
 

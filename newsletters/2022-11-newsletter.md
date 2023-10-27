@@ -39,9 +39,9 @@ See: [Please check your API calls for errors](#please-check-your-api-calls-for-e
 Monitor the Vipps Status Page:
 [vipps.statuspage.io]( https://vipps.statuspage.io/).
 
-The FAQ entry
-[Why do payments fail?](../faqs/common-problems-faq.md#why-do-payments-fail)
-may also be useful.
+See:
+[Why do payments fail?](../common-topics/payments.md#why-do-payments-fail)
+
 
 ## eCom API: Don't rely 100 % on callbacks
 

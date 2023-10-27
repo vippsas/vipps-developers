@@ -238,20 +238,21 @@ We need the customer's consent before sharing personal information.
 Settlement reports generally don't contain personal information; however, payments made with *Vippsnummer* may have personal information and must be treated with care.
 
 See the FAQ:
-[Why are the customer names not shown on the transaction overview?](../faqs/common-problems-faq.md#why-are-the-customer-names-not-shown-on-the-transaction-overview).
+[Why are the customer names not shown on the transaction overview?](../common-topics/merchant-questions.md#why-are-the-customer-names-not-shown-on-the-transaction-overview).
 
 ## How to get settlement files
 
 ### Report API
 
 Use the [Report API](https://developer.vippsmobilepay.com/docs/APIs/report-api)
-to get your settlement files programmatically. With this API, you can get daily or continuous-feed reports for your accounts. See the [Report API guide](https://developer.vippsmobilepay.com/docs/APIs/report-api/api-guide/) for details.
+to get your settlement files programmatically. With this API, you can get daily or continuous-feed reports for your accounts. See the
+[Report API guide](https://developer.vippsmobilepay.com/docs/APIs/report-api/api-guide/) for details.
 
 ### Merchant portal
 
 You can download reports from the
 [merchant portal](https://portal.vipps.no) in the *Rapporter* (i.e., *Reports*) section.
-Reports are available in the formats mentioned under [Settlement report formats](#settlement-report-formats).
+Reports are available in the formats mentioned under [File formats](#file-formats).
 
 Reports with personal details of the customers are also available.
 Please consider [GDPR](#gdpr).

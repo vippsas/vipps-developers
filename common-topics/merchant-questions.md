@@ -1,7 +1,4 @@
 ---
-title: "FAQ: Other questions"
-sidebar_label: Other questions
-sidebar_position: 400
 pagination_next: null
 pagination_prev: null
 ---
@@ -160,7 +157,7 @@ two-factor authentication featuring either PIN or biometrics in addition to
 device possession. In addition, we have implemented a Dynamic Linking according
 to the requirements.
 
-## How can I change partner for my Vipps MobilePay integration?
+### How can I change partner for my Vipps MobilePay integration?
 
 See:
 [How to change partners for a merchant](https://developer.vippsmobilepay.com/docs/partner/how-to-change-partners/).
@@ -191,7 +188,7 @@ are covered elsewhere in this FAQ:
 * Revenue share between the marketplace and the merchants: See:
   [Can I split payments to charge a fee?](payments.md#can-i-split-payments-to-charge-a-fee)
 * Refunds can only be made from the merchant that received the payment. See:
-  [Is it possible for a merchant to pay a Vipps or MobilePay user?](user-data.md#is-it-possible-for-a-merchant-to-pay-a-vipps-or-mobilepay-user)
+  [Is it possible for a merchant to pay a Vipps or MobilePay user?](#is-it-possible-for-a-merchant-to-pay-a-vipps-or-mobilepay-user)
 
 So, there are two alternatives:
 
@@ -203,6 +200,35 @@ So, there are two alternatives:
    from a Vipps or MobilePay user is made directly to the merchant. This means that a
    common shopping cart for all merchants cannot be paid in one operation,
    since: All payments with Vipps MobilePay must be to a merchant that is a customer of Vipps MobilePay.
+
+### Is it possible for a merchant to pay a Vipps or MobilePay user?
+
+No. We have no functionality to allow a merchant to pay a user,
+except for refunding (part of) a payment.
+
+Vipps MobilePay only has APIs for paying from a person to a merchant.
+
+It is not possible to pay from one merchant to another merchant,
+or to pay from a merchant to a person.
+
+There are several reasons for this, including:
+
+* The Norwegian *Straksbetaling* (instant payments) system is not designed
+  for this, and not all banks support it.
+* There are other account-to-account payment methods, but all have their
+  idiosyncrasies, and none are a perfect fit.
+* Payouts to cards is different from accounts, and will depend on the PSPs,
+  which brings another set of challenges.
+* Some merchant accounts require "four eyes" before making payments from them,
+  and we don't have this functionality in the API.
+* The SCA (Secure Customer Authentication) required by PSD2 further complicates
+  payouts, both with an API and on [portal.vipps.no](https://portal.vipps.no).
+
+We have functionality for getting the user's bank accounts enrolled in
+Vipps MobilePay, with the user's consent. Payments may then be made to the bank account.
+See:
+[Is there an API for retrieving information about a user?](#is-there-an-api-for-retrieving-information-about-a-user)
+
 
 ### Can I create a service to match buyers and sellers?
 
@@ -254,7 +280,7 @@ we don't distinguish between the following:
 
 We aren't allowed to provide more details about the reason for the failure.
 
-## Is there an API for retrieving information about a user?
+### Is there an API for retrieving information about a user?
 
 Yes, but only as part of a payment or login.
 

@@ -68,7 +68,7 @@ We recommend using this text where users select payment method:
 Roughly translated, this means, "Remember: Vipps MobilePay is always free from fees when you pay to companies".
 
 If you use Klarna Checkout, here are our
-[tips](../faqs/other-faq.md#can-i-use-vipps-with-klarna-checkout).
+[tips](../common-topics/merchant-questions.md#can-i-use-vipps-with-klarna-checkout).
 
 ## Vipps on-site messaging
 

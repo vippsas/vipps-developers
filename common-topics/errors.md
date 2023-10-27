@@ -1,10 +1,9 @@
 ---
-title: Errors and response codes
 pagination_next: null
 pagination_prev: null
 ---
 
-# Errors and response codes
+# HTTP response codes and errors
 
 The APIs return the following HTTP statuses in the responses:
 
@@ -145,7 +144,7 @@ Please follow these steps to make sure everything is correct:
 6. Check both the HTTP response header and the response body from our API for errors.
    For most errors the body contains an explanation of what went wrong.
    See:
-   [Errors](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#errors).
+   [HTTP response codes and errors](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#errors).
 7. If you are a partner, and you are using partner keys: Double check everything
    described here:
    [Partner keys](https://developer.vippsmobilepay.com/docs/partner/partner-keys).

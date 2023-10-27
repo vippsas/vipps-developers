@@ -52,7 +52,7 @@ or similar:
 ```
 
 More details:
-[Can I use Vipps with Klarna Checkout?](../faqs/other-faq.md#can-i-use-vipps-with-klarna-checkout)
+[Can I use Vipps with Klarna Checkout?](../common-topics/merchant-questions.md#can-i-use-vipps-with-klarna-checkout)
 
 ## eCom API: HTTPS required for all URLs
 

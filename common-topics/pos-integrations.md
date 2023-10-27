@@ -1,7 +1,6 @@
 ---
 title: "Point of Sale integrations"
 sidebar_label: POS integrations
-sidebar_position: 130
 pagination_next: null
 pagination_prev: null
 ---
