@@ -99,7 +99,7 @@ Please see a detailed description on the [API dashboard](api-dashboard.md) page.
 
 ## Permissions and users
 
-*This is in the process of being expanded to allow more users, as part of the [Vipps MobilePay joint platform launch](https://www.vippsmobilepay.com/#about).*
+*This is in the process of being expanded to allow more users, as part of the [Vipps MobilePay joint platform launch](https://www.vippsmobilepay.com/about).*
 
 Logging into [portal.vipps.no](https://portal.vipps.no) requires Norwegian BankID.
 

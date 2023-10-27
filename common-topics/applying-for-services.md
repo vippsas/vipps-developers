@@ -11,7 +11,7 @@ Once the *Merchant Agreement* has been submitted, you can order products.
 
 ## Requirements
 
-*This is in the process of changing as part of the [Vipps MobilePay joint platform launch](https://www.vippsmobilepay.com/#about).*
+*This is in the process of changing as part of the [Vipps MobilePay joint platform launch](https://www.vippsmobilepay.com/about).*
 
 Merchants must have the following in order to use Vipps MobilePay as a payment
 provider and to receive payments from Vipps and MobilePay users:
