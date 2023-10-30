@@ -32,7 +32,7 @@ In general, MT does not contain functionality that requires integration with
 third parties.
 
 The test and production environments are completely separate and use different
-[API keys](common-topics/api-keys.md).
+[API keys](knowledge-base/api-keys.md).
 
 ### Limitations of the test environment
 
@@ -86,7 +86,7 @@ for a Vipps MobilePay product with an API. The details can then be found on the
 
 See:
 
-* [Getting the API keys](https://developer.vippsmobilepay.com/docs/common-topics/api-keys#getting-the-api-keys)
+* [Getting the API keys](https://developer.vippsmobilepay.com/docs/knowledge-base/api-keys#getting-the-api-keys)
 * [How to create a test sales unit](https://developer.vippsmobilepay.com/docs/developer-resources/portal#how-to-create-a-test-sales-unit)
 
 ### Partners

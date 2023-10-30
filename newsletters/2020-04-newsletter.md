@@ -27,7 +27,7 @@ Point Of Sale (POS) integrations are now possible with the eCom API.
 See
 [the product page](https://www.vipps.no/produkter-og-tjenester/bedrift/ta-betalt-i-butikk/vipps-i-kassa/)
 and the
-[Frequently Asked Questions for POS integrations](../common-topics/pos-integrations.md#pos-faq).
+[Frequently Asked Questions for POS integrations](../knowledge-base/pos-integrations.md#pos-faq).
 
 ## eCom: skipLandingPage
 
@@ -35,7 +35,7 @@ If there is no way to show the Vipps landing page, it can be skipped.
 
 This may be useful for POS integration, vending machines, etc.
 See
-[Skip landing page](../common-topics/landing-page.md#skip-landing-page)
+[Skip landing page](../knowledge-base/landing-page.md#skip-landing-page)
 for details.
 
 ## eCom: Cancel pending payments
@@ -107,7 +107,7 @@ We have mentioned some things before, and take this opportunity to remind you:
 ### API lifecycle
 
 Our API lifecycle policy is
-[available on GitHub](../common-topics/api-lifecycle.md).
+[available on GitHub](../knowledge-base/api-lifecycle.md).
 
 ### Status pages for test and production environments
 

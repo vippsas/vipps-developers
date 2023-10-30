@@ -52,7 +52,7 @@ or similar:
 ```
 
 More details:
-[Can I use Vipps with Klarna Checkout?](../common-topics/merchant-questions.md#can-i-use-vipps-with-klarna-checkout)
+[Can I use Vipps with Klarna Checkout?](../knowledge-base/merchant-questions.md#can-i-use-vipps-with-klarna-checkout)
 
 ## eCom API: HTTPS required for all URLs
 
@@ -69,7 +69,7 @@ This includes the following fields:
 
  This has been documented for a *long* time already, but not strictly enforced.
  See:
- [URL validation](../common-topics/url-validation.md).
+ [URL validation](../knowledge-base/url-validation.md).
 
 ## Reminders
 
@@ -103,7 +103,7 @@ user experience.
 See:
 
 * [Use the API Dashboard to find problems with your integration](#use-the-api-dashboard-to-find-problems-with-your-integration)
-* [Common errors](../common-topics/errors.md)
+* [Common errors](../knowledge-base/errors.md)
 
 ### Use the API Dashboard to find problems with your integration
 

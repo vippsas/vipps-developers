@@ -36,7 +36,7 @@ Select either *Production* or *Test*, depending on the type of keys you need.
 
 ![API keys](../images/common/portalvippsno-salesunit-keys.png)
 
-For more information about API keys, see [API keys](../common-topics/api-keys.md).
+For more information about API keys, see [API keys](../knowledge-base/api-keys.md).
 
 ## How to create a test sales unit
 
@@ -53,12 +53,12 @@ Enter the requested properties and click *Create*.
 * Name - The name of your test sales unit.
 * Partner - Optional partner data (not usually needed).
 * Select optional properties:
-  * [Skip Landing Page](../common-topics/landing-page.md#skip-landing-page) - *To use this in production, you will need special permission.*
+  * [Skip Landing Page](../knowledge-base/landing-page.md#skip-landing-page) - *To use this in production, you will need special permission.*
   * [Recurring API](https://developer.vippsmobilepay.com/docs/APIs/recurring-api)
-  * [Direct Capture](../common-topics/reserve-and-capture.md#direct-capture)
+  * [Direct Capture](../knowledge-base/reserve-and-capture.md#direct-capture)
 
 After a couple of minutes, your new test sales unit will appear in the bottom of the list (possibly after some browser refreshes).
-Then, you can [get the API keys](../common-topics/api-keys.md#getting-the-api-keys) and begin testing.
+Then, you can [get the API keys](../knowledge-base/api-keys.md#getting-the-api-keys) and begin testing.
 
 **Please note:** It is not possible to *change* an existing sales unit in the test environment,
 but you can create as many as you need.

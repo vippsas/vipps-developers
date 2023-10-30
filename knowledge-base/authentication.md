@@ -15,7 +15,7 @@ All Vipps MobilePay API requests must include the `Authorization` header with
 a JSON Web Token (JWT), which we call the *access token*.
 
 To get an access token, first you need to have API keys. Get your API keys, as described in
-[API keys](https://developer.vippsmobilepay.com/docs/common-topics/api-keys).
+[API keys](https://developer.vippsmobilepay.com/docs/knowledge-base/api-keys).
 Partners should use
 [Partner keys](https://developer.vippsmobilepay.com/docs/partner/partner-keys).
 

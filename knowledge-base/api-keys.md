@@ -8,7 +8,7 @@ pagination_prev: null
 
 <!-- START_COMMENT -->
 ℹ️ Please use the website:
-[Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/docs/common-topics/api-keys/).
+[Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/docs/knowledge-base/api-keys/).
 <!-- END_COMMENT -->
 
 When you start using the API platform, you will need to provide API keys.

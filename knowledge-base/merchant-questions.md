@@ -317,7 +317,7 @@ and
 the `reference` (ePayment API), or `orderId` (the eCom API), is shown instead of the customer name.
 
 The `reference` (or `orderId` in the older eCom API) is specified by the merchant. See the
-[recommendations for `reference` and `orderId`](../common-topics/orderid.md).
+[recommendations for `reference` and `orderId`](../knowledge-base/orderid.md).
 
 Use
 [Userinfo](https://developer.vippsmobilepay.com/docs/APIs/userinfo-api)

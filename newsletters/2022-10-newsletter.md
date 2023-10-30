@@ -21,7 +21,7 @@ Examples:
 
 * [API Guide](https://developer.vippsmobilepay.com/docs/APIs/ecom-api)
 * [API Reference](https://developer.vippsmobilepay.com/api/ecom)
-* [Knowledge base](https://developer.vippsmobilepay.com/docs/common-topics/)
+* [Knowledge base](https://developer.vippsmobilepay.com/docs/knowledge-base/)
 
 Please
 [tell us what you think](https://forms.office.com/pages/responsepage.aspx?id=XcJbgGSO1k6NJDiDyQaMWuRWudsvYRxEorAi1xx_iqJUQzg4QzExTVhHM1UzMDIwM1lINkpaNTdWUC4u)
@@ -68,7 +68,7 @@ We recommend using this text where users select payment method:
 Roughly translated, this means, "Remember: Vipps MobilePay is always free from fees when you pay to companies".
 
 If you use Klarna Checkout, here are our
-[tips](../common-topics/merchant-questions.md#can-i-use-vipps-with-klarna-checkout).
+[tips](../knowledge-base/merchant-questions.md#can-i-use-vipps-with-klarna-checkout).
 
 ## Vipps on-site messaging
 

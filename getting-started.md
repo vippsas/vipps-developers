@@ -25,7 +25,7 @@ section.
 Once you know what products you want, apply for services on
 [portal.vipps.no](https://portal.vipps.no).
 To learn more about the requirements for applying for services, see
-[Applying for services](./common-topics/applying-for-services.md).
+[Applying for services](./knowledge-base/applying-for-services.md).
 
 ## Get familiar with docs
 
@@ -35,9 +35,9 @@ For example, if you ordered *Vipps på Nett*, see the
 example user flows from purchase to payment transfer.
 
 You will also find general information that applies to several APIs in the
-[*Knowledge base*](./common-topics/README.md).
+[*Knowledge base*](./knowledge-base/README.md).
 For example, to learn how to find your API keys, see *Knowledge base* > *API basics* > 
-[*API keys*](./common-topics/api-keys.md).
+[*API keys*](./knowledge-base/api-keys.md).
 
 ## Get your credentials
 
@@ -50,7 +50,7 @@ will receive an email with credentials for accessing the
 * Credentials for logging into the test app
 
 You can also find your on the  [merchant portal](https://portal.vipps.no).
-For a description of how to find your keys, see [API keys](./common-topics/api-keys.md).
+For a description of how to find your keys, see [API keys](./knowledge-base/api-keys.md).
 
 ## Start testing in the test environment
 
@@ -62,7 +62,7 @@ You will need the following:
 1. Test keys.
 
     Log-in to the [merchant portal](https://portal.vipps.no) and get your test API keys, as described in
-    [API keys](./common-topics/api-keys.md).
+    [API keys](./knowledge-base/api-keys.md).
 
 1. The test app.
 
@@ -88,7 +88,7 @@ get access to the API in the production environment.
 Log in to
 [portal.vipps.no](https://portal.vipps.no)
 to get your production
-[API keys](./common-topics/api-keys.md).
+[API keys](./knowledge-base/api-keys.md).
 
 ## Best practices
 

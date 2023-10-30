@@ -97,7 +97,7 @@ We have mentioned some things before, and take this opportunity to remind you:
 ### API lifecycle
 
 Our API lifecycle policy is
-[available on GitHub](../common-topics/api-lifecycle.md).
+[available on GitHub](../knowledge-base/api-lifecycle.md).
 
 ### Status pages for test and production environments
 
