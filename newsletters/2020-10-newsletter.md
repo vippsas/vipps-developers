@@ -33,7 +33,7 @@ The userinfo endpoint is shared with
 and the merchant needs to have
 activated Vipps Login on their account to use this feature. Information on how
 to do this can be found
-[here](https://developer.vippsmobilepay.com/docs/APIs/login-api/vipps-login-api-faq#how-can-i-activate-and-set-up-vipps-login).
+[here](https://developer.vippsmobilepay.com/docs/APIs/login-api/login-api-faq#how-can-i-activate-and-set-up-vipps-login).
 Using the Vipps Login service itself is optional.
 
 ### Customer registration

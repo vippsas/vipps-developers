@@ -75,7 +75,7 @@ but you can create as many as you need.
       endpoint. You can register as many URIs as you want.
       This creates a list of accepted URIs.
 
-      See [Login API FAQ: What are the requirements for redirect URIs](https://developer.vippsmobilepay.com/docs/APIs/login-api/vipps-login-api-faq#what-are-the-requirements-for-redirect-uris) for details.
+      See [Login API FAQ: What are the requirements for redirect URIs](https://developer.vippsmobilepay.com/docs/APIs/login-api/login-api-faq#what-are-the-requirements-for-redirect-uris) for details.
       1. Enter the URI. It must be *exactly* the same URI that you use when making API requests.
         Take care to notice if the actual URI is specified with a trailing slash `/` or not.
         For testing, you can use `http://localhost`.
