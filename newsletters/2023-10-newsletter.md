@@ -90,7 +90,7 @@ with a four-month warning according to the
 The
 [Report API](https://developer.vippsmobilepay.com/docs/APIs/report-api/)
 is the replacement. See:
-[What are the benefits of the Report API over the SFTP service?](https://developer.vippsmobilepay.com/docs/APIs/report-api/vipps-report-api-faq/#what-are-the-benefits-of-the-report-api-over-the-sftp-service)
+[What are the benefits of the Report API over the SFTP service?](https://developer.vippsmobilepay.com/docs/APIs/report-api/report-api-faq/#what-are-the-benefits-of-the-report-api-over-the-sftp-service)
 
 ## Deprecation of the Partner API
 
