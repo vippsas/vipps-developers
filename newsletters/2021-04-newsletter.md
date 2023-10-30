@@ -21,7 +21,7 @@ shipping method to "Click and collect".
 This will significantly speed up the payment process for customers.
 
 This is done in the
-[`POST:​/ecomm​/v2​/payments`](https://developer.vippsmobilepay.com/api/ecom#tag/Vipps-eCom-API/operation/initiatePaymentV3UsingPOST)
+[`POST:​/ecomm​/v2​/payments`](https://developer.vippsmobilepay.com/api/ecom#tag/eCom-API/operation/initiatePaymentV3UsingPOST)
 call by including:
 
 ```json

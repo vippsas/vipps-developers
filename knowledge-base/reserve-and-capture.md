@@ -339,7 +339,7 @@ merchant to create a user for you on
 If you are not able to log in on
 [portal.vipps.no](https://portal.vipps.no)
 you can make a small payment (2 NOK), check the payment with
-[`GET:/ecomm/v2/payments/{orderId}/details`](https://developer.vippsmobilepay.com/api/ecom#tag/Vipps-eCom-API/operation/getPaymentDetailsUsingGET),
+[`GET:/ecomm/v2/payments/{orderId}/details`](https://developer.vippsmobilepay.com/api/ecom#tag/eCom-API/operation/getPaymentDetailsUsingGET),
 and cancel (if it was `RESERVE` and reserve capture) or refund (if it was `SALE` and direct capture).
 
 ### How do I turn direct capture on or off?

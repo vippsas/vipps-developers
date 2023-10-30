@@ -364,7 +364,7 @@ Please check the payment:
 
 This is of course also supported in the [eCom API](https://developer.vippsmobilepay.com/docs/APIs/ecom-api), and it is a requirement to use
 this functionality when integrating with Vipps MobilePay:
-[`GET:/ecomm/v2/payments/{orderId}/details`](https://developer.vippsmobilepay.com/api/ecom#tag/Vipps-eCom-API/operation/getPaymentDetailsUsingGET)
+[`GET:/ecomm/v2/payments/{orderId}/details`](https://developer.vippsmobilepay.com/api/ecom#tag/eCom-API/operation/getPaymentDetailsUsingGET)
 
 The user can also check the payment in the Vipps or MobilePay app:
 

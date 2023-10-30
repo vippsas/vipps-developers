@@ -47,7 +47,7 @@ See:
 
 Callback offers a faster user experience than polling, but you
 cannot rely on callbacks alone. You must also poll
-[`GET:/ecomm/v2/payments/{orderId}/details`](https://developer.vippsmobilepay.com/api/ecom#tag/Vipps-eCom-API/operation/getPaymentDetailsUsingGET)
+[`GET:/ecomm/v2/payments/{orderId}/details`](https://developer.vippsmobilepay.com/api/ecom#tag/eCom-API/operation/getPaymentDetailsUsingGET)
 as described in the
 [Polling guidelines](../knowledge-base/polling-guidelines.md).
 
@@ -92,7 +92,7 @@ This is especially important when using
 as it's impossible to send a push message to a user if the specified phone number is incorrect.
 
 Please see the API specification:
-[`POST:/ecomm/v2/payments`](https://developer.vippsmobilepay.com/api/ecom#tag/Vipps-eCom-API/operation/initiatePaymentV3UsingPOST)
+[`POST:/ecomm/v2/payments`](https://developer.vippsmobilepay.com/api/ecom#tag/eCom-API/operation/initiatePaymentV3UsingPOST)
 
 ![API specification for phone number](images/2022-11-phone-number.png)
 

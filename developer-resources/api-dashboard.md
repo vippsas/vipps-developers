@@ -21,7 +21,7 @@ are any problems you need to investigate.
 
 Here's an example for one endpoint, showing that 2.95 % of the API requests
 for
-[`POST:/ecomm/v2/payments/{orderId}/refund`](https://developer.vippsmobilepay.com/api/ecom#tag/Vipps-eCom-API/operation/refundPaymentUsingPOST)
+[`POST:/ecomm/v2/payments/{orderId}/refund`](https://developer.vippsmobilepay.com/api/ecom#tag/eCom-API/operation/refundPaymentUsingPOST)
 fail:
 
 ![API dashboard](images/api-dashboard-example.png)
