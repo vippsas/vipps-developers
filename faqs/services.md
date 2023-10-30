@@ -10,4 +10,4 @@ pagination_prev: null
 
 This content is being moved to the knowledge base. Please bear with us 🐻 and have a look at this page:
 
-🔎 [Applying for services](../common-topics/applying-for-services.md) 🔍
+🔎 [Applying for services](../knowledge-base/applying-for-services.md) 🔍

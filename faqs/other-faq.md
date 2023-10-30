@@ -10,5 +10,5 @@ pagination_prev: null
 
 This content is being moved to the knowledge base. Please bear with us 🐻 and have a look at this page:
 
-🔎 [Payments](../common-topics/payments.md)
-🔎 [Merchant questions](../common-topics/merchant-questions.md)
+🔎 [Payments](../knowledge-base/payments.md)
+🔎 [Merchant questions](../knowledge-base/merchant-questions.md)

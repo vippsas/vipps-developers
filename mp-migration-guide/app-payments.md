@@ -36,11 +36,11 @@ See:
 | MobilePay App Payments        | ePayment                                                                                                                            |
 | ----------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
 | `apiKey or openId`            | `Authorization` ([`POST:/accesstoken/get`](/api/access-token#tag/Authorization-Service/operation/fetchAuthorizationTokenUsingPost)) |
-| N/A                           | `Vipps-System-Version` (see [HTTP headers](/docs/common-topics/http-headers/))                                                      |
-| N/A                           | `Vipps-System-Name` (see [HTTP headers](/docs/common-topics/http-headers/))                                                         |
-| N/A                           | `Vipps-System-Plugin-Name` (see [HTTP headers](/docs/common-topics/http-headers/))                                                  |
-| N/A                           | `Vipps-System-Plugin-Version` (see [HTTP headers](/docs/common-topics/http-headers/))                                               |
-| `X-MobilePay-Idempotency-Key` | `Idempotency-Key` (see [Idempotency](/docs/common-topics/http-headers/#idempotency))                                                |
+| N/A                           | `Vipps-System-Version` (see [HTTP headers](/docs/knowledge-base/http-headers/))                                                      |
+| N/A                           | `Vipps-System-Name` (see [HTTP headers](/docs/knowledge-base/http-headers/))                                                         |
+| N/A                           | `Vipps-System-Plugin-Name` (see [HTTP headers](/docs/knowledge-base/http-headers/))                                                  |
+| N/A                           | `Vipps-System-Plugin-Version` (see [HTTP headers](/docs/knowledge-base/http-headers/))                                               |
+| `X-MobilePay-Idempotency-Key` | `Idempotency-Key` (see [Idempotency](/docs/knowledge-base/http-headers/#idempotency))                                                |
 | N/A                           | `Ocp-Apim-Subscription-Key`                                                                                                         |
 | N/A                           | `Merchant-Serial-Number`                                                                                                            |
 
@@ -54,18 +54,18 @@ See:
 | --------------------------------------------------------- | --------------------------------------------------------------------- |
 | `amount`                                                  | `amount` (`currency`, `value`)                                        |
 | `idempotencyKey`                                          | `Idempotency-Key`                                                     |
-| `reference`                                               | [`paymentDescription`](/docs/common-topics/transactiontext/)          |
+| `reference`                                               | [`paymentDescription`](/docs/knowledge-base/transactiontext/)          |
 | `paymentPointId`                                          | `Merchant-Serial-Number`                                              |
 | `redirectUri`                                             | `returnUrl`                                                           |
 | `description`                                             | `paymentDescription`                                                  |
 | `customerPhoneNumber` (Used for dual device flows on web) | `customer`  (`phoneNumber`)                                           |
 | N/A                                                       | `customerInteraction` (`"CUSTOMER_NOT_PRESENT"`)                      |
 | N/A                                                       | `paymentMethod` (`type` `"WALLET"`)                                   |
-| N/A                                                       | [`reference`](/docs/common-topics/orderid)                            |
+| N/A                                                       | [`reference`](/docs/knowledge-base/orderid)                            |
 | N/A                                                       | `userFlow` (`"NATIVE_REDIRECT"` `"WEB_REDIRECT"`)                     |
 |                                                           |                                                                       |
 | **Response**                                              |                                                                       |
-| `paymentId`                                               | [`reference`](/docs/common-topics/orderid) (set in paymentInitiation) |
+| `paymentId`                                               | [`reference`](/docs/knowledge-base/orderid) (set in paymentInitiation) |
 
 ## Query Payment
 
@@ -76,10 +76,10 @@ See:
 
 | MobilePay App Payments | ePayment                                                                                                |
 | ---------------------- | ------------------------------------------------------------------------------------------------------- |
-| `paymentId`            | [`reference`](/docs/common-topics/orderid)                                                              |
+| `paymentId`            | [`reference`](/docs/knowledge-base/orderid)                                                              |
 |                        |                                                                                                         |
 | **Response**           |                                                                                                         |
-| `paymentId`            | [`reference`](/docs/common-topics/orderid)                                                              |
+| `paymentId`            | [`reference`](/docs/knowledge-base/orderid)                                                              |
 | `amount`               | `amount` (`currency`, `value`)                                                                          |
 | `description`          | N/A                                                                                                     |
 | `state`                | `state`                                                                                                 |
@@ -98,7 +98,7 @@ See:
 
 | MobilePay App payments                  | ePayment                                                                                |
 | --------------------------------------- | --------------------------------------------------------------------------------------- |
-| `paymentId`                             | [`reference`](/docs/common-topics/orderid)                                              |
+| `paymentId`                             | [`reference`](/docs/knowledge-base/orderid)                                              |
 | `amount`                                | `modificationAmount` (`currency`, `value`) _not applicable for cancel_                  |
 |                                         |                                                                                         |
 | **Response**                            |                                                                                         |
@@ -107,7 +107,7 @@ See:
 | N/A                                     | `aggregate` (`authorizedAmount`, `cancelledAmount`, `capturedAmount`, `refundedAmount`) |
 | `refundId` _only applicable for refund_ | N/A                                                                                     |
 | N/A                                     | `pspReference`                                                                          |
-| N/A                                     | [`reference`](/docs/common-topics/orderid)                                              |
+| N/A                                     | [`reference`](/docs/knowledge-base/orderid)                                              |
 
 ## Test environment
 

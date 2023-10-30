@@ -93,9 +93,9 @@ user has selected card payment and already has manually entered the card number,
 
 The success rate for PSP integrations is not quite as high.
 See:
-[Direct integration and PSP integration](https://developer.vippsmobilepay.com/docs/common-topics/direct-vs-psp)
+[Direct integration and PSP integration](https://developer.vippsmobilepay.com/docs/knowledge-base/direct-vs-psp)
 and
-[Benefits of direct integration](https://developer.vippsmobilepay.com/docs/common-topics/direct-vs-psp#benefits-of-direct-integration).
+[Benefits of direct integration](https://developer.vippsmobilepay.com/docs/knowledge-base/direct-vs-psp#benefits-of-direct-integration).
 
 
 ## Card payments
@@ -214,7 +214,7 @@ The most common reasons why payments are not completed are:
    With a direct integration, the user can retry the same payment with a
    different card, and because of this "second chance" the success rate is high.
    See
-   [Direct integration and PSP integration](https://developer.vippsmobilepay.com/docs/common-topics/direct-vs-psp/).
+   [Direct integration and PSP integration](https://developer.vippsmobilepay.com/docs/knowledge-base/direct-vs-psp/).
 5. The debit/credit card has been rejected by the issuer.
    There are many possible reasons for this, and we may not be allowed to
    give the details to the merchant.

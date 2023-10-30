@@ -46,7 +46,7 @@ Leading zeros should be avoided, as some applications (e.g., Excel)
 tend to remove them, and this may cause misunderstandings.
 
 See also:
-[Recommendations for `paymentDescription` and `transactionText`](https://developer.vippsmobilepay.com/docs/common-topics/transactiontext/).
+[Recommendations for `paymentDescription` and `transactionText`](https://developer.vippsmobilepay.com/docs/knowledge-base/transactiontext/).
 
 ## Multiple sales units
 

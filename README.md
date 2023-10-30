@@ -34,7 +34,7 @@ Migrate from MobilePay:
 
 Dive deeper with:
 
-* [Knowledge base](https://developer.vippsmobilepay.com/docs/common-topics) - General information about [API keys](./common-topics/api-keys.md), [payments](./common-topics/payments.md), [landing page](./common-topics/landing-page.md), a description of [reserving and capturing money](./common-topics/reserve-and-capture.md), and much more.
+* [Knowledge base](https://developer.vippsmobilepay.com/docs/knowledge-base) - General information about [API keys](./knowledge-base/api-keys.md), [payments](./knowledge-base/payments.md), [landing page](./knowledge-base/landing-page.md), a description of [reserving and capturing money](./knowledge-base/reserve-and-capture.md), and much more.
 * [Developer resources](https://developer.vippsmobilepay.com/docs/developer-resources) - Resources available to you, including the [demo store](./developer-resources/demo-store.md), the [merchant portal](./developer-resources/portal.md), and [Vipps MobilePay servers](./developer-resources/servers.md).
 * [Design guidelines](https://developer.vippsmobilepay.com/docs/design-guidelines/) - Find Vipps and MobilePay icons and text guidelines.
 * [Settlements](./settlements/README.md) - Get a general overview of how settlements are processed in Vipps MobilePay.

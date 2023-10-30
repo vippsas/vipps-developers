@@ -10,4 +10,4 @@ pagination_prev: null
 
 This content is being moved to the knowledge base. Please bear with us 🐻 and have a look at this page:
 
-🔎 [Reserve and capture](../common-topics/reserve-and-capture.md) 🔍
+🔎 [Reserve and capture](../knowledge-base/reserve-and-capture.md) 🔍

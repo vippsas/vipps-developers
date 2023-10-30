@@ -10,4 +10,4 @@ pagination_prev: null
 
 This content is being moved to the knowledge base. Please bear with us 🐻 and have a look at this page:
 
-🔎 [HTTP response codes and errors](../common-topics/errors.md) 🔍
+🔎 [HTTP response codes and errors](../knowledge-base/errors.md) 🔍

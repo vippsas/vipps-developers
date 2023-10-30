@@ -10,4 +10,4 @@ pagination_prev: null
 
 This content is being moved to the knowledge base. Please bear with us 🐻 and have a look at this page:
 
-🔎 [Point of Sale integrations](../common-topics/pos-integrations.md) 🔍
+🔎 [Point of Sale integrations](../knowledge-base/pos-integrations.md) 🔍

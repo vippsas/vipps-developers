@@ -238,7 +238,7 @@ We need the customer's consent before sharing personal information.
 Settlement reports generally don't contain personal information; however, payments made with *Vippsnummer* may have personal information and must be treated with care.
 
 See the FAQ:
-[Why are the customer names not shown on the transaction overview?](../common-topics/merchant-questions.md#why-are-the-customer-names-not-shown-on-the-transaction-overview).
+[Why are the customer names not shown on the transaction overview?](../knowledge-base/merchant-questions.md#why-are-the-customer-names-not-shown-on-the-transaction-overview).
 
 ## How to get settlement files
 

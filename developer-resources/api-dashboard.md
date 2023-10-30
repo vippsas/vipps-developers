@@ -34,7 +34,7 @@ responses for more details about the errors.
 
 **Important:** For every API request that has failed, and for every error shown on the API dashboard,
 you have already received a detailed error message, as described on
-[HTTP response codes and errors](https://developer.vippsmobilepay.com/docs/common-topics/errors).
+[HTTP response codes and errors](https://developer.vippsmobilepay.com/docs/knowledge-base/errors).
 We do not have the capacity to manually check our logs and re-send the same error details.
 
 From the

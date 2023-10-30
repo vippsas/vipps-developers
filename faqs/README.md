@@ -12,4 +12,4 @@ pagination_prev: null
 
 This content is being merged into our knowledge base. Please bear with us 🐻 and have a look at this section:
 
-🔎 [Knowledge base](../common-topics/README.md) 🔎
+🔎 [Knowledge base](../knowledge-base/README.md) 🔎

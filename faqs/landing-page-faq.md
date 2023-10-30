@@ -11,4 +11,4 @@ pagination_prev: null
 
 This content is being moved to the knowledge base. Please bear with us 🐻 and have a look at this page:
 
-🔎 [Landing page](../common-topics/landing-page.md) 🔍
+🔎 [Landing page](../knowledge-base/landing-page.md) 🔍
