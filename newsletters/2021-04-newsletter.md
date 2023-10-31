@@ -39,7 +39,7 @@ call by including:
 ## Recurring payments and campaigns
 
 Tip: Use
-[Campaigns](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/vipps-recurring-api#campaigns)
+[Campaigns](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/recurring-api-guide#campaigns)
 if the subscription is cheaper in the beginning, such as "One month for 10 NOK" and then the normal price.
 
 If you use
@@ -48,7 +48,7 @@ looks like the full price period starts immediately. Initial charge should be us
 the customer pays for a phone and a phone subscription, and the first payment includes the phone.
 
 See more details and screenshots here:
-[When to use campaigns or initial charge](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/vipps-recurring-api#when-to-use-campaigns-or-initial-charge).
+[When to use campaigns or initial charge](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/recurring-api-guide#when-to-use-campaigns-or-initial-charge).
 
 ## Easier to use Userinfo
 
@@ -56,7 +56,7 @@ The authentication is now much easier, with no need for additional keys, both fo
 the eCom and Recurring APIs. See the call by call guides:
 
 * [eCom API](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#userinfo-call-by-call-guide)
-* [Recurring API](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/vipps-recurring-api#userinfo-call-by-call-guide)
+* [Recurring API](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/recurring-api-guide#userinfo-call-by-call-guide)
 
 ## New date limits for capture and cancel
 
@@ -150,7 +150,7 @@ The user must of course consent to sharing the information.
 See
 [Userinfo for eCom](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#userinfo)
 and
-[Userinfo for Recurring](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/vipps-recurring-api#userinfo).
+[Userinfo for Recurring](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/recurring-api-guide#userinfo).
 
 ### API Dashboard 🚦
 

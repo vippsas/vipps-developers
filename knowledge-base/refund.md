@@ -33,7 +33,7 @@ two business days. See
 Here are related sections in the API guides:
 
 * [ePayment API: Refund](https://developer.vippsmobilepay.com/docs/APIs/epayment-api/operations/refund/)
-* [Recurring API: Refund a charge](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/vipps-recurring-api/#refund-a-charge)
+* [Recurring API: Refund a charge](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/recurring-api-guide/#refund-a-charge)
 * [eCom API: Refund](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api/#refund)
 
 It is also possible to do refunds on
@@ -48,7 +48,7 @@ For details on how to offer refunds, please refer to the documentation for your 
 Here are related sections in the API guides:
 
 * [ePayment API: Refund](https://developer.vippsmobilepay.com/docs/APIs/epayment-api/operations/refund/)
-* [Recurring API: Refund a charge](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/vipps-recurring-api/#refund-a-charge)
+* [Recurring API: Refund a charge](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/recurring-api-guide/#refund-a-charge)
 * [eCom API: Refund](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api/#refund)
 
 All integrations with the eCom API *must* support refunds.

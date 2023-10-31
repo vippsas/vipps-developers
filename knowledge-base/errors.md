@@ -204,7 +204,7 @@ designed to stop incorrect use.
 See:
 
 * [eCom API Rate limiting](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#rate-limiting)
-* [Recurring API Rate limiting](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/vipps-recurring-api#rate-limiting)
+* [Recurring API Rate limiting](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/recurring-api-guide#rate-limiting)
 
 ### Why do I get `HTTP 404 Not Found`?
 

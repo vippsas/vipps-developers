@@ -11,7 +11,7 @@ pagination_prev: null
 The information below is valid for the
 [eCom API](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api/#payments-initiated-in-an-app)
 and
-[Recurring API](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/vipps-recurring-api/#accept-an-agreement).
+[Recurring API](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/recurring-api-guide/#accept-an-agreement).
 
 It is possible to perform manual handling of the interaction between the user's Vipps app and the Vipps backend, although this is not recommended.
 
@@ -19,7 +19,7 @@ The flow is as follows:
 
 1. The merchant initiates the payment in the [eCom API](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api/#payments-initiated-in-an-app)
 or
-[Recurring API](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/vipps-recurring-api/#accept-an-agreement) with `isApp: true`.
+[Recurring API](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/recurring-api-guide/#accept-an-agreement) with `isApp: true`.
 2. In response, Vipps returns a *deeplink* URL in the `vipps://` format.
 3. The merchant uses the *deeplink* URL to invoke Vipps. (*Note:* Always use this URL *exactly* as it is sent from Vipps.)
 4. The Vipps app opens automatically, without the user having to click *OK* or *Accept*.

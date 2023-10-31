@@ -29,7 +29,7 @@ Upgrading to v3 requires some technical changes, but the overall flow and logic
 is the same as in v2. We have made it as easy as possible to upgrade.
 See the
 [migration guide](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/v2-to-v3-migration-guide)
-and the [quick start](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/vipps-recurring-api-quick-start)
+and the [quick start](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/recurring-api-quick-start)
 for more details. For now the Recurring API v2 will continue to work, but will not support the new functionality.
 
 Improvements in button text for agreements without initial charge:

@@ -178,7 +178,7 @@ The user must of course consent to sharing the information.
 See
 [Userinfo for eCom](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#userinfo)
 and
-[Userinfo for Recurring](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/vipps-recurring-api#userinfo).
+[Userinfo for Recurring](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/recurring-api-guide#userinfo).
 
 ### "Click and collect" recommendations
 

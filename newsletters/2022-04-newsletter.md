@@ -61,7 +61,7 @@ This change only applies to the `GET` method, and does not affect the `POST` and
  created until the next interval for the campaign.
 
  See:
- [Create charge](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/vipps-recurring-api#create-charge).
+ [Create charge](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/recurring-api-guide#create-charge).
 
 ## Reminders
 

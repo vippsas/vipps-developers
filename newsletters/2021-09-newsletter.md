@@ -61,7 +61,7 @@ More information can be found in the
 Recurring agreements with variable amount lets merchants charge users a different amount each for interval, based on the user's specified max amount.
 
 More information can be found in the
-[Recurring API Guide](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/vipps-recurring-api#recurring-agreements-with-variable-amount).
+[Recurring API Guide](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/recurring-api-guide#recurring-agreements-with-variable-amount).
 
 ## API Dashboard for the test environment
 

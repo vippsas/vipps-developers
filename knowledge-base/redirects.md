@@ -13,7 +13,7 @@ Most of the APIs provide the redirect functionality in different flows. For exam
 * [Checkout API](https://developer.vippsmobilepay.com/docs/APIs/checkout-api/checkout-api-guide/)
 * [ePayment API](https://developer.vippsmobilepay.com/docs/APIs/epayment-api/operations/create/)
 * [Login API](https://developer.vippsmobilepay.com/docs/APIs/login-api/api-guide/overview/#login-in-browser)
-* [Recurring API](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/vipps-recurring-api/#agreements)
+* [Recurring API](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/recurring-api-guide/#agreements)
 
 ## Recommendations regarding handling these redirects
 

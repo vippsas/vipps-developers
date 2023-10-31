@@ -62,7 +62,7 @@ for how a user will see the above scenarios in their app.
 The
 [Recurring V3 API](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/)
 now allows to update the interval of an active agreement. See
-[Update an agreement](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/vipps-recurring-api/#update-an-agreement)
+[Update an agreement](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/recurring-api-guide/#update-an-agreement)
 for more details.
 
 ## Test users
