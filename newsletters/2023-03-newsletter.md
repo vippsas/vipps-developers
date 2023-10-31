@@ -108,7 +108,7 @@ now supports all major shipping providers in the Norwegian market, including:
 * Instabox
 
 See
-[How it works for shipping](https://developer.vippsmobilepay.com/docs/APIs/checkout-api/vipps-checkout-how-it-works-shipping)
+[How it works for shipping](https://developer.vippsmobilepay.com/docs/APIs/checkout-api/checkout-how-it-works-shipping)
 for more details, and try for yourself in our
 [demo store](https://demo.vipps.no/vipps-checkout-1/full).
 

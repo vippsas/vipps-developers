@@ -14,7 +14,7 @@ This newsletter was sent in December 2022.
 
 The [Checkout API v3](https://developer.vippsmobilepay.com/docs/APIs/checkout-api) is available. Checkout v3 improves upon v2 through alignment of polling and callback responses, improvement of field names and expanding models related to logistics options to permit more advanced features.
 
-For more information, check out our [migration guide](https://developer.vippsmobilepay.com/docs/APIs/checkout-api/vipps-checkout-api-migration-v3)
+For more information, check out our [migration guide](https://developer.vippsmobilepay.com/docs/APIs/checkout-api/checkout-api-migration-v3)
 
 ## Recurring API v3
 
