@@ -81,7 +81,7 @@ the QR code will take the user directly to the payment in the Vipps or MobilePay
 ![Demo QR code](images/demo-qr.png)
 
 This is done in cooperation with the QR API. See
-[One-time payment QR](https://developer.vippsmobilepay.com/docs/APIs/qr-api/vipps-qr-api#one-time-payment-qr-codes)
+[One-time payment QR](https://developer.vippsmobilepay.com/docs/APIs/qr-api/qr-api-guide#one-time-payment-qr-codes)
 for more details about this and other QR services.
 
 ## Skip landing page

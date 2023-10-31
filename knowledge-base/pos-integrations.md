@@ -38,7 +38,7 @@ If it is not possible for the POS solution to handle a fallback URL, you may use
 
 See also:
 
-* [QR API: One-time payment QR codes](http://localhost:3000/vipps-developer-docs/docs/APIs/qr-api/vipps-qr-api#one-time-payment-qr-codes)
+* [QR API: One-time payment QR codes](http://localhost:3000/vipps-developer-docs/docs/APIs/qr-api/qr-api-guide#one-time-payment-qr-codes)
 * [Error codes](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#error-codes)
 * [Do we need to support callbacks?](#do-we-need-to-support-callbacks)
 
