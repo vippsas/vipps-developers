@@ -113,7 +113,7 @@ improvement of field names, and expanding models related to logistics options to
 more advanced features.
 
 Our
-[migration guide](https://developer.vippsmobilepay.com/docs/APIs/checkout-api/vipps-checkout-api-migration-v3/)
+[migration guide](https://developer.vippsmobilepay.com/docs/APIs/checkout-api/checkout-api-migration-v3/)
 will take you through all the details, if you haven't already switched.
 
 ## Reminders
