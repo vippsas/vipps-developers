@@ -433,9 +433,9 @@ The previous whitelisting functionality has been replaced by the
 [QR API](https://developer.vippsmobilepay.com/docs/APIs/qr-api).
 
 The API supports static
-[merchant redirect](https://developer.vippsmobilepay.com/docs/APIs/qr-api/vipps-qr-api#merchant-redirect-qr-codes)
+[merchant redirect](https://developer.vippsmobilepay.com/docs/APIs/qr-api/qr-api-guide#merchant-redirect-qr-codes)
 with possibility to update the target URL for stickers, billboards, TV-commercials, magazine ads, etc.
 
 The API also support a
-[one-time payment QR code](https://developer.vippsmobilepay.com/docs/APIs/qr-api/vipps-qr-api#one-time-payment-qr-codes)
+[one-time payment QR code](https://developer.vippsmobilepay.com/docs/APIs/qr-api/qr-api-guide#one-time-payment-qr-codes)
 for customer facing screens in POS situations.

@@ -111,7 +111,7 @@ An [early version of the QR API](https://developer.vippsmobilepay.com/docs/APIs/
 The QR API lets merchants generate Vipps QR codes that can be used to pay
 over the counter, without requiring the Vipps user to provide their telephone
 number to the merchant. Or you can create your own QR with a
-[short URL](https://developer.vippsmobilepay.com/docs/APIs/qr-api/vipps-qr-api#qr-formats)
+[short URL](https://developer.vippsmobilepay.com/docs/APIs/qr-api/qr-api-guide#qr-formats)
 that we provide.
 
 The QR code, when scanned and opened, will redirect the user to the Vipps
