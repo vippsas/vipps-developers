@@ -91,7 +91,7 @@ You will use the same API keys for all stores.
 ## Distance selling from a POS solution
 
 Due to compliance requirements in a payment situation where customer is not present, we recommend implementing the
-[Order management API](https://developer.vippsmobilepay.com/docs/APIs/order-management-api/vipps-order-management-api).
+[Order management API](https://developer.vippsmobilepay.com/docs/APIs/order-management-api/order-management-api-guide).
 This allows the merchants to send rich receipt information to existing transactions.
 This information is visible for the customer in the app in their order history.
 
