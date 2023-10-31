@@ -26,7 +26,7 @@ More information:
 * [Vipps Logg inn: Product information](https://vipps.no/produkter-og-tjenester/bedrift/logg-inn-med-vipps/logg-inn-med-vipps/)
 * [Login API](https://developer.vippsmobilepay.com/docs/APIs/login-api)
 * [Userinfo for the eCom API](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#userinfo)
-* [Userinfo for the Recurring API](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/vipps-recurring-api#userinfo)
+* [Userinfo for the Recurring API](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/recurring-api-guide#userinfo)
 
 **Please note:** When a user pays with a debit or credit card using Vipps,
 all the benefits apply, just as when the payment card is used outside Vipps.

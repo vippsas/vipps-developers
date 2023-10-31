@@ -82,7 +82,7 @@ Its purpose is to simplify investigations when the merchant lost track of which
 charge belongs to which agreement.
 
 See:
-[Retrieve a charge](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/vipps-recurring-api#retrieve-a-charge).
+[Retrieve a charge](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/recurring-api-guide#retrieve-a-charge).
 
 ## eCom API and Express Checkout
 

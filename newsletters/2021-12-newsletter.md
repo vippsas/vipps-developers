@@ -74,7 +74,7 @@ The user must of course consent to sharing the information.
 See
 [Userinfo for eCom](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#userinfo)
 and
-[Userinfo for Recurring](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/vipps-recurring-api#userinfo).
+[Userinfo for Recurring](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/recurring-api-guide#userinfo).
 
 ### "Click and collect" recommendations
 
@@ -134,7 +134,7 @@ Recurring agreements with variable amount lets merchants charge users a differen
 amount each for interval, based on the user's specified max amount.
 
 More information can be found in the
-[Recurring guide](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/vipps-recurring-api#recurring-agreements-with-variable-amount).
+[Recurring guide](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/recurring-api-guide#recurring-agreements-with-variable-amount).
 
 ### Vipps Login support for authentication/registration outside of browser/app (CIBA)
 

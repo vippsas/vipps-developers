@@ -228,7 +228,7 @@ the settlement report shows the automatically generated `chargeID` in the `order
 If `orderID` is in use, this is also used in the settlement report.
 
 See the
-[Recurring API](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/vipps-recurring-api#create-a-charge)
+[Recurring API](https://developer.vippsmobilepay.com/docs/APIs/recurring-api/recurring-api-guide#create-a-charge)
 for more details.
 
 ### GDPR

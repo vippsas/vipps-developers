@@ -20,7 +20,7 @@ API documentation:
 ## Agreement
 
 See:
-[Agreements](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/vipps-recurring-api#agreements)
+[Agreements](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/recurring-api-guide#agreements)
 
 | MobilePay Agreement               ​ | Vipps MobilePay Agreement                                                                              |
 |------------------------------------|--------------------------------------------------------------------------------------------------------|
@@ -44,7 +44,7 @@ See:
 ## Charges
 
 See:
-[Charges](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/vipps-recurring-api#charges)
+[Charges](https://vippsas.github.io/vipps-developer-docs/docs/APIs/recurring-api/recurring-api-guide#charges)
 
 | MobilePay one-off​                    | Vipps MobilePay initial charge                                                                 |
 |--------------------------------------|------------------------------------------------------------------------------------------------|
