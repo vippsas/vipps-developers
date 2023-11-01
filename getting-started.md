@@ -80,7 +80,7 @@ You will need the following:
 
       **Please note:** Postman now only supports a cloud version. Many companies don't have permission to save keys in the cloud, as they are very secret and allow for transferring money.
 
-      If you wish to use Postman, we have created collections for the APIs (e.g., [ePayment](https://developer.vippsmobilepay.com/docs/APIs/epayment-api/quick-start/)). These can be used to quickly run through the requests after updating a few global variables in the [Vipps MobilePay Global Postman environment](/tools/vipps-api-global-postman-environment.json).
+      If you wish to use Postman, we have created collections for the APIs (e.g., [ePayment](https://developer.vippsmobilepay.com/docs/APIs/epayment-api/quick-start/)). These can be used to quickly run through the requests after updating a few global variables in the [Vipps MobilePay Global Postman environment](/tools/global-postman-environment.json).
 
 When your product order is approved, you will get an email stating that you can
 get access to the API in the production environment.
