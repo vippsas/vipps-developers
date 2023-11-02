@@ -9,8 +9,8 @@ pagination_prev: null
 
 Find information about service interruptions on the following status pages:
 
-* Test environment: <https://vipps-test.statuspage.io>
-* Production environment: <https://vipps.statuspage.io>
+* Test environment: [https://vipps-test.statuspage.io](https://vipps-test.statuspage.io)
+* Production environment: [https://vipps.statuspage.io](https://vipps.statuspage.io)
 
 We strongly recommend that you subscribe to get notifications from these pages.
 

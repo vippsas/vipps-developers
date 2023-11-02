@@ -111,8 +111,8 @@ Our API lifecycle policy is
 
 ### Status pages for test and production environments
 
-* Test: <https://vipps-test.statuspage.io>
-* Production: <https://vipps.statuspage.io>
+* Test: [https://vipps-test.statuspage.io](https://vipps-test.statuspage.io)
+* Production: [https://vipps.statuspage.io](https://vipps.statuspage.io)
 
 ### How to get help quickly
 

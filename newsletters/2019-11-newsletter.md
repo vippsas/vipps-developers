@@ -40,20 +40,20 @@ We are working on this, and the current version/draft is
 ## vipps.no/developer
 
 New developer pages, in addition to [GitHub](https://github.com/vippsas),
-are available at <https://vipps.no/developer>.
+are available at (previous link is no longer available - see [technical documentation](https://developer.vippsmobilepay.com/)).
 
 ## Status page for test and production
 
 We will soon launch status pages:
 
-* Test environment: <https://vipps-test.statuspage.io>
-* Production environment: <https://vipps.statuspage.io>
+* Test environment: [https://vipps-test.statuspage.io](https://vipps-test.statuspage.io)
+* Production environment: [https://vipps.statuspage.io](https://vipps.statuspage.io)
 
 ## Further plans
 
 We are working on more developer resources, including a data API and
 a developer dashboard. We cannot provide any dates yet, but we
-welcome input in the form of issues on <https://github.com/vippsas/vipps-developers>.
+welcome input.
 
 ## Questions or comments?
 
