@@ -18,6 +18,7 @@ In this section, you'll find a lot of general information relating to the APIs.
 * [HTTP headers](http-headers.md) - Headers to use in all your API requests.
 * [HTTP response codes and errors](errors.md) - HTTP statuses returned in API responses and the standard response body format for our error messages.
 * [Landing page](landing-page.md) - The landing page which opens in a browser and prompts the user to enter their phone number.
+* [Personal QR](personal-qr.md) - Scan the user's personal QR to get their identity.
 * [Redirects](redirects.md) - Guidelines for how to redirect users to your website after a purchase.
 
 ## General information
