@@ -1,12 +1,15 @@
 ---
 title: "Applying for services"
+description: Apply for a services with Vipps MobilePay.
 pagination_next: null
 pagination_prev: null
 ---
 
 # Applying for services
 
-As a merchant, you can apply for a *Merchant Agreement*. This is a legal agreement between you and Vipps MobilePay.
+As a merchant, you can apply to use Vipps or MobilePay payment methods in your online store or Point of Sale.
+
+To start the process, apply for a *Merchant Agreement*. This is a legal agreement between you and Vipps MobilePay.
 Once the *Merchant Agreement* has been submitted, you can order products.
 
 ## Requirements
@@ -21,6 +24,11 @@ provider and to receive payments from Vipps and MobilePay users:
 * An appointed contact person with a Norwegian phone number and Norwegian
   identity number (i.e., "fødselsnummer" or "D-nummer", 11 digits).
 
+A merchant's application must be signed with Norwegian BankID.
+
+We must follow the regulatory requirements for KYC (Know Your Customer),
+AML (Anti Money Laundering) and other risk assessment procedures.
+
 If a foreign business is registered in the
 [Brønnøysund Register](https://www.brreg.no/),
 it has a contact person with a Norwegian identity number.
@@ -33,6 +41,7 @@ or, for partners, please contact your partner manager.
 
 If the above is impossible, the business can use Vipps MobilePay through a
 [Payment Service Provider (PSP)](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-2).
+To use a PSP, contact the PSP.
 
 ## How to apply
 
@@ -80,25 +89,6 @@ Read more on how to
 
 ## Services FAQ
 
-### What are the requirements for merchants?
-
-Vipps MobilePay merchants (corporate customers) must have a:
-
-* A Norwegian organization number
-* A Norwegian bank account
-
-The merchant's application must be signed with Norwegian BankID.
-
-We must follow the regulatory requirements for KYC (Know Your Customer),
-AML (Anti Money Laundering) and other risk assessment procedures.
-
-See:
-[Requirements](#requirements).
-
-It is also possible to use Vipps MobilePay through a Payment Service Provider (PSP).
-We then rely on the PSP for KYC (Know Your Customer), AML (Anti Money Laundering)
-and other risk assessment procedures.
-To use a PSP, contact the PSP.
 
 ### Can I use my "Vippsnummer" in my webshop?
 
