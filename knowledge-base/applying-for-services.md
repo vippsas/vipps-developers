@@ -1,5 +1,4 @@
 ---
-title: "Applying for services"
 description: Apply for a services with Vipps MobilePay.
 pagination_next: null
 pagination_prev: null
@@ -9,35 +8,38 @@ pagination_prev: null
 
 As a merchant, you can apply to use Vipps and MobilePay payment methods in your online store or Point of Sale.
 
-If you want to test the products before starting an agreement, see
-[Do you want to test our products?](https://vippsmobilepay.com/merchant-test-account-sign-up)
-
-To start a service agreement, you will need an approved *Merchant Agreement*. This is a legal agreement between you and Vipps MobilePay.
-Once the *Merchant Agreement* has been submitted, you can order products.
-
-## Register as a MobilePay merchant in Denmark
-
-See:
-
-* [Register as a MobilePay merchant](https://portal.mobilepay.dk/auth/new-user/create?redirectToPortal=true)
-* [Information we need](https://mobilepay.dk/erhverv/id-guide#oplysninger)
-
-## Register as a MobilePay merchant in Finland
-
-See:
-
-* [Register as a MobilePay merchant](https://mobilepay.fi/yrityksille/turvallisuus/yrityksen-rekisteroityminen)
-* [What information do we ask for?](https://mobilepay.fi/yrityksille/turvallisuus/yrityksen-rekisteroityminen)
-
 ## Register as a Vipps merchant in Norway
 
-Merchants must have the following in order to use Vipps MobilePay as a payment
+To start a service agreement, you will to apply for a *Merchant Agreement* on
+[portal.vipps.no](https://portal.vipps.no).
+This is a legal agreement between you and Vipps MobilePay.
+
+
+
+Once the *Merchant Agreement* has been submitted, you can place an order for products.
+This will be processed immediately once your *Merchant Agreement* is approved.
+
+
+When the *Merchant Agreement* is approved and your product order is placed,
+you (or the user associated with the order) will receive an email
+with the name and merchant serial number of your test sales unit.
+You will also receive a [test user](../test-environment.md/#test-users)
+for logging into the
+[Merchant Test (MT) app](../test-environment.md#test-apps), and you can start testing with the APIs.
+
+After your order is approved, you will be granted [production API Keys](api-keys.md#production-and-test-keys)
+which allow you to make API requests in the production environment.
+
+### Requirements for becoming a Vipps merchant
+
+You must have the following information in order to use Vipps MobilePay as a payment
 provider and to receive payments from Vipps users:
 
 * A Norwegian organization number
 * A Norwegian bank account
 * An appointed contact person with a Norwegian phone number and Norwegian
   identity number (i.e., "fødselsnummer" or "D-nummer", 11 digits).
+* Norwegian BankID
 
 A merchant's application must be signed with Norwegian BankID.
 
@@ -55,12 +57,6 @@ If the above is impossible, the business can use Vipps MobilePay through a
 [Payment Service Provider (PSP)](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-2).
 To use a PSP, contact the PSP.
 
-### How to apply
-
-For a merchant planning to do direct integration toward the Vipps MobilePay APIs,
-apply for a *Merchant Agreement* on
-[portal.vipps.no](https://portal.vipps.no).
-
 **Please note:** If you plan to use Vipps MobilePay through a PSP, please see
 [Direct integration and PSP integration](direct-vs-psp.md).
 
@@ -69,23 +65,8 @@ services, so it might take a few days before you hear back from us.
 You can check the status of your application on
 [portal.vipps.no](https://portal.vipps.no).
 
-When the *Merchant Agreement* is approved and your product order is sent,
-you (or the user associated with the order) will receive an email
-with the name and serial number of your test sales unit, along with the
-[test user](../test-environment.md/#test-users)
-for logging into the
-[Merchant Test (MT) app](../test-environment.md#test-apps).
-Now, you can start testing with the APIs.
 
-When your product order is approved, you will get an email stating that you can
-get access to the production environment using your production
-[API keys](api-keys.md)
-on
-[portal.vipps.no](https://portal.vipps.no).
-These API keys will allow you to start making API requests to the production server
-(e.g., create a payment request that goes to a real user's app).
-
-### Vipps users
+### About Vipps users
 
 Vipps payments can only be made by customers with a Norwegian phone number and
 with a Norwegian national identity number or D-number.
@@ -97,3 +78,10 @@ A D-number is given to foreign persons who do not have a Norwegian national iden
 but have a need for identification for the Norwegian authorities.
 Read more on how to
 [apply for a D-number](https://www.skatteetaten.no/en/person/foreign/norwegian-identification-number/).
+
+## Register as a MobilePay merchant in Finland and Denmark
+
+For information about becoming MobilePay merchant, see:
+
+* On mobilepay.fi: [Register as a MobilePay merchant (in Finland)](https://mobilepay.fi/yrityksille/turvallisuus/yrityksen-rekisteroityminen).
+* On mobilepay.dk: [Register as a MobilePay merchant (in Denmark)](https://mobilepay.dk/hjaelp/mobilepay-til-erhverv/mobilepay-portalen/mobilepay-portalen/jeg-er-ny-kunde-hvordan-bestiller-jeg-mobilepay#scroll) and [Information we need](https://mobilepay.dk/erhverv/id-guide#oplysninger).

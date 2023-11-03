@@ -24,7 +24,7 @@ To test the products beforehand, see
 To apply for services in Norway, Denmark, or Finland, see the links below:
 
 * [Register as a Vipps merchant in Norway](./knowledge-base/applying-for-services.md#using-vipps-in-norway)
-* [Register as a MobilePay merchant in Denmark](https://portal.mobilepay.dk/auth/new-user/create?redirectToPortal=true)
+* [Register as a MobilePay merchant in Denmark](https://mobilepay.dk/hjaelp/mobilepay-til-erhverv/mobilepay-portalen/mobilepay-portalen/jeg-er-ny-kunde-hvordan-bestiller-jeg-mobilepay)
 * [Register as a MobilePay merchant in Finland](https://mobilepay.fi/yrityksille/turvallisuus/yrityksen-rekisteroityminen)
 
 ## Select your product
