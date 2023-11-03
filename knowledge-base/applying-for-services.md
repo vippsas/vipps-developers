@@ -10,7 +10,7 @@ pagination_prev: null
 As a merchant, you can apply to use Vipps or MobilePay payment methods in your online store or Point of Sale.
 
 If you want to test the products before starting an agreement, see
-[Do you want to test our products?](https://vippsmobilepay.com/merchant-test-account-sign-up).
+[Do you want to test our products?](https://vippsmobilepay.com/merchant-test-account-sign-up)
 
 To start a service agreement, you will need an approved *Merchant Agreement*. This is a legal agreement between you and Vipps MobilePay.
 Once the *Merchant Agreement* has been submitted, you can order products.

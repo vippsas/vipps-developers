@@ -14,7 +14,13 @@ pagination_prev: null
 [Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/docs/getting-started/).
 <!-- END_COMMENT -->
 
+
 ## Select your product
+
+Vipps and MobilePay payment methods can be added to your online store or Point of Sale.
+
+If you want to test the products, see
+[Do you want to test our products?](https://vippsmobilepay.com/merchant-test-account-sign-up)
 
 There are APIs for handling payments (*ePayment API*),
 creating checkout sessions (*Checkout API*), establishing recurring agreements (*Recurring API*),
