@@ -10,7 +10,7 @@ As a merchant, you can apply to use Vipps and MobilePay payment methods in your 
 
 ## Register as a Vipps merchant in Norway
 
-To start a service agreement, you will to apply for a *Merchant Agreement* on
+To start a service agreement, apply for a *Merchant Agreement* on
 [portal.vipps.no](https://portal.vipps.no/register).
 This is a legal agreement between you and Vipps MobilePay.
 
