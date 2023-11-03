@@ -331,3 +331,19 @@ not physically present. It does also not comply with the Treasury Act, (*Kassalo
 information to third parties, and we do not allow it.
 The user must always give consent to sharing data with a merchant.
 There is no other API to look up a user's address, retrieve a user's purchases, etc.
+
+### Can I use my "Vippsnummer" in my webshop?
+
+No.
+[Vippsnummer](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-i-butikk/ta-betalt-med-vipps/)
+can't be used for
+[*Vipps på Nett*](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/),
+[*Logg inn*](https://vipps.no/produkter-og-tjenester/bedrift/logg-inn-med-vipps/logg-inn-med-vipps/)
+or
+[*Faste Betalinger* (Recurring payments)](https://vipps.no/produkter-og-tjenester/bedrift/faste-betalinger/faste-betalinger/)
+because the Norwegian Tax Administration considers *Vippsnummer* to be cash transactions,
+while eCommerce is defined as remote sales (in Norwegian, *fjernhandel*). The regulations
+associated with both are different enough to require this policy.
+
+You need
+[*Vipps på Nett*](https://www.vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/).

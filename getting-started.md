@@ -14,6 +14,19 @@ pagination_prev: null
 [Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/docs/getting-started/).
 <!-- END_COMMENT -->
 
+Vipps and MobilePay payment methods can be added to your online store or Point of Sale.
+
+To test the products beforehand, see
+[Do you want to test our products](https://vippsmobilepay.com/merchant-test-account-sign-up).
+
+## Apply for services
+
+To apply for services in Norway, Denmark, or Finland, see the links below:
+
+* [Register as a Vipps merchant in Norway](./knowledge-base/applying-for-services.md#using-vipps-in-norway)
+* [mobilepay.dk: Register as a MobilePay merchant in Denmark](https://mobilepay.dk/hjaelp/mobilepay-til-erhverv/mobilepay-portalen/mobilepay-portalen/jeg-er-ny-kunde-hvordan-bestiller-jeg-mobilepay#scroll)
+* [mobilepay.fi: Register as a MobilePay merchant in Finland](https://mobilepay.fi/yrityksille/turvallisuus/yrityksen-rekisteroityminen)
+
 ## Select your product
 
 There are APIs for handling payments (*ePayment API*),
@@ -22,10 +35,7 @@ and logging the user in to your website with their Vipps or MobilePay credential
 You can get a description of the API products in the [*API platform*](https://developer.vippsmobilepay.com/docs/APIs/)
 section.
 
-Once you know what products you want, apply for services on
-[portal.vipps.no](https://portal.vipps.no).
-To learn more about the requirements for applying for services, see
-[Applying for services](./knowledge-base/applying-for-services.md).
+Order your products on [portal.vipps.no](https://portal.vipps.no).
 
 ## Get familiar with docs
 
@@ -49,7 +59,7 @@ will receive an email with credentials for accessing the
 * Merchant serial number
 * Credentials for logging into the test app
 
-You can also find your on the  [merchant portal](https://portal.vipps.no).
+You can also find your keys on [portal.vipps.no](https://portal.vipps.no).
 For a description of how to find your keys, see [API keys](./knowledge-base/api-keys.md).
 
 ## Start testing in the test environment
