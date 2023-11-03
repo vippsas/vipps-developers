@@ -42,7 +42,7 @@ Please note that Report and Management API are only available in production.
 | `amount`                    | `amount`                 |
 | `currencyCode`              | `currency`                     |
 | `message`                   | Upcoming feature               |
-| `merchantReference`         | N/A                      |
+| `merchantReference`         | `reference`                       |
 | `merchantPaymentLabel`      | N/A                            |
 | `transferReference`         | `reference`                            |
 | `transferDate`              | `ledgerDate`                   |
