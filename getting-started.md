@@ -14,13 +14,20 @@ pagination_prev: null
 [Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/docs/getting-started/).
 <!-- END_COMMENT -->
 
-
-## Select your product
-
 Vipps and MobilePay payment methods can be added to your online store or Point of Sale.
 
-If you want to test the products, see
-[Do you want to test our products?](https://vippsmobilepay.com/merchant-test-account-sign-up)
+To test the products beforehand, see
+[Do you want to test our products](https://vippsmobilepay.com/merchant-test-account-sign-up).
+
+## Apply for services
+
+To apply for services in Norway, Denmark, or Finland, see the links below:
+
+* [Register as a Vipps merchant in Norway](./knowledge-base/applying-for-services.md#using-vipps-in-norway)
+* [Register as a MobilePay merchant in Denmark](https://portal.mobilepay.dk/auth/new-user/create?redirectToPortal=true)
+* [Register as a MobilePay merchant in Finland](https://mobilepay.fi/yrityksille/turvallisuus/yrityksen-rekisteroityminen)
+
+## Select your product
 
 There are APIs for handling payments (*ePayment API*),
 creating checkout sessions (*Checkout API*), establishing recurring agreements (*Recurring API*),
@@ -28,10 +35,7 @@ and logging the user in to your website with their Vipps or MobilePay credential
 You can get a description of the API products in the [*API platform*](https://developer.vippsmobilepay.com/docs/APIs/)
 section.
 
-Once you know what products you want, apply for services on
-[portal.vipps.no](https://portal.vipps.no).
-To learn more about the requirements for applying for services, see
-[Applying for services](./knowledge-base/applying-for-services.md).
+Order your products on [portal.vipps.no](https://portal.vipps.no).
 
 ## Get familiar with docs
 

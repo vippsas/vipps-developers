@@ -7,7 +7,7 @@ pagination_prev: null
 
 # Applying for services
 
-As a merchant, you can apply to use Vipps or MobilePay payment methods in your online store or Point of Sale.
+As a merchant, you can apply to use Vipps and MobilePay payment methods in your online store or Point of Sale.
 
 If you want to test the products before starting an agreement, see
 [Do you want to test our products?](https://vippsmobilepay.com/merchant-test-account-sign-up)
@@ -15,14 +15,24 @@ If you want to test the products before starting an agreement, see
 To start a service agreement, you will need an approved *Merchant Agreement*. This is a legal agreement between you and Vipps MobilePay.
 Once the *Merchant Agreement* has been submitted, you can order products.
 
-## Requirements
+## Register as a MobilePay merchant in Denmark
 
-*This is in the process of changing as part of the [Vipps MobilePay joint platform launch](https://www.vippsmobilepay.com/about).*
+See:
 
-### Services in Norway
+* [Register as a MobilePay merchant](https://portal.mobilepay.dk/auth/new-user/create?redirectToPortal=true)
+* [Information we need](https://mobilepay.dk/erhverv/id-guide#oplysninger)
+
+## Register as a MobilePay merchant in Finland
+
+See:
+
+* [Register as a MobilePay merchant](https://mobilepay.fi/yrityksille/turvallisuus/yrityksen-rekisteroityminen)
+* [What information do we ask for?](https://mobilepay.fi/yrityksille/turvallisuus/yrityksen-rekisteroityminen)
+
+## Register as a Vipps merchant in Norway
 
 Merchants must have the following in order to use Vipps MobilePay as a payment
-provider and to receive payments from Vipps and MobilePay users:
+provider and to receive payments from Vipps users:
 
 * A Norwegian organization number
 * A Norwegian bank account
@@ -45,11 +55,7 @@ If the above is impossible, the business can use Vipps MobilePay through a
 [Payment Service Provider (PSP)](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-2).
 To use a PSP, contact the PSP.
 
-### Services in Denmark and Finland
-
-To be determined
-
-## How to apply
+### How to apply
 
 For a merchant planning to do direct integration toward the Vipps MobilePay APIs,
 apply for a *Merchant Agreement* on
@@ -79,8 +85,7 @@ on
 These API keys will allow you to start making API requests to the production server
 (e.g., create a payment request that goes to a real user's app).
 
-
-## Vipps users
+### Vipps users
 
 Vipps payments can only be made by customers with a Norwegian phone number and
 with a Norwegian national identity number or D-number.
@@ -92,22 +97,3 @@ A D-number is given to foreign persons who do not have a Norwegian national iden
 but have a need for identification for the Norwegian authorities.
 Read more on how to
 [apply for a D-number](https://www.skatteetaten.no/en/person/foreign/norwegian-identification-number/).
-
-## Services FAQ
-
-
-### Can I use my "Vippsnummer" in my webshop?
-
-No.
-[Vippsnummer](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-i-butikk/ta-betalt-med-vipps/)
-can't be used for
-[*Vipps på Nett*](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/),
-[*Logg inn*](https://vipps.no/produkter-og-tjenester/bedrift/logg-inn-med-vipps/logg-inn-med-vipps/)
-or
-[*Faste Betalinger* (Recurring payments)](https://vipps.no/produkter-og-tjenester/bedrift/faste-betalinger/faste-betalinger/)
-because the Norwegian Tax Administration considers *Vippsnummer* to be cash transactions,
-while eCommerce is defined as remote sales (in Norwegian, *fjernhandel*). The regulations
-associated with both are different enough to require this policy.
-
-You need
-[*Vipps på Nett*](https://www.vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/).
