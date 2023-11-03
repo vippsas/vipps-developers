@@ -9,12 +9,17 @@ pagination_prev: null
 
 As a merchant, you can apply to use Vipps or MobilePay payment methods in your online store or Point of Sale.
 
-To start the process, apply for a *Merchant Agreement*. This is a legal agreement between you and Vipps MobilePay.
+If you want to test the products before starting an agreement, see
+[Do you want to test our products?](https://vippsmobilepay.com/merchant-test-account-sign-up).
+
+To start a service agreement, you will need an approved *Merchant Agreement*. This is a legal agreement between you and Vipps MobilePay.
 Once the *Merchant Agreement* has been submitted, you can order products.
 
 ## Requirements
 
 *This is in the process of changing as part of the [Vipps MobilePay joint platform launch](https://www.vippsmobilepay.com/about).*
+
+### Services in Norway
 
 Merchants must have the following in order to use Vipps MobilePay as a payment
 provider and to receive payments from Vipps and MobilePay users:
@@ -25,9 +30,6 @@ provider and to receive payments from Vipps and MobilePay users:
   identity number (i.e., "fødselsnummer" or "D-nummer", 11 digits).
 
 A merchant's application must be signed with Norwegian BankID.
-
-We must follow the regulatory requirements for KYC (Know Your Customer),
-AML (Anti Money Laundering) and other risk assessment procedures.
 
 If a foreign business is registered in the
 [Brønnøysund Register](https://www.brreg.no/),
@@ -42,6 +44,10 @@ or, for partners, please contact your partner manager.
 If the above is impossible, the business can use Vipps MobilePay through a
 [Payment Service Provider (PSP)](https://vipps.no/produkter-og-tjenester/bedrift/ta-betalt-paa-nett/ta-betalt-paa-nett/#kom-i-gang-med-vipps-pa-nett-category-2).
 To use a PSP, contact the PSP.
+
+### Services in Denmark and Finland
+
+To be determined
 
 ## How to apply
 
