@@ -24,8 +24,8 @@ To test the products beforehand, see
 To apply for services in Norway, Denmark, or Finland, see the links below:
 
 * [Register as a Vipps merchant in Norway](./knowledge-base/applying-for-services.md#using-vipps-in-norway)
-* [Register as a MobilePay merchant in Denmark](https://mobilepay.dk/hjaelp/mobilepay-til-erhverv/mobilepay-portalen/mobilepay-portalen/jeg-er-ny-kunde-hvordan-bestiller-jeg-mobilepay)
-* [Register as a MobilePay merchant in Finland](https://mobilepay.fi/yrityksille/turvallisuus/yrityksen-rekisteroityminen)
+* [mobilepay.dk: Register as a MobilePay merchant in Denmark](https://mobilepay.dk/hjaelp/mobilepay-til-erhverv/mobilepay-portalen/mobilepay-portalen/jeg-er-ny-kunde-hvordan-bestiller-jeg-mobilepay#scroll)
+* [mobilepay.fi: Register as a MobilePay merchant in Finland](https://mobilepay.fi/yrityksille/turvallisuus/yrityksen-rekisteroityminen)
 
 ## Select your product
 
@@ -59,7 +59,7 @@ will receive an email with credentials for accessing the
 * Merchant serial number
 * Credentials for logging into the test app
 
-You can also find your on the  [merchant portal](https://portal.vipps.no).
+You can also find your keys on [portal.vipps.no](https://portal.vipps.no).
 For a description of how to find your keys, see [API keys](./knowledge-base/api-keys.md).
 
 ## Start testing in the test environment
