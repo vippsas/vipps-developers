@@ -263,45 +263,37 @@ See:
 
 ### Why do I get `errorCode 37 "Merchant not available or deactivated or blocked"`?
 
-Or: `Merchant not available or active`.
+This means that the merchant is not available or active.
+This can be caused by one of the following:
 
-Please check that the merchant's organization number is still active in the
-[Brønnøysund Register](https://www.brreg.no). We automatically deactivate
-merchants (companies) when they are deleted from Brønnøysundregistrene.
-This can also happen if a merchant changes organization type, for instance
-from *ENK* to *AS*.
+* A sales unit can be deactivated on [portal.vipps.no](https://portal.vipps.no).
+  A merchant sometimes does this "by accident", without being
+  aware of the consequences. If a sales unit has been incorrectly deactivated,
+  the merchant can reactivate it again on [portal.vipps.no](https://portal.vipps.no).
 
-Merchants can log in on
-[portal.vipps.no](https://portal.vipps.no)
-and deactivate their sales units. This is sometimes done "by accident", without being
-aware of the consequences. If a sales unit has been incorrectly deactivated,
-the merchant can reactivate it again.
+* A merchant can be deactivated if they haven't confirmed their information with us.
+  Merchants are required to periodically confirm the information we have
+  saved about them. We are required by law to request this confirmation.
+  We send multiple emails to notify merchants that they must log on to
+  [portal.vipps.no](https://portal.vipps.no)
+  to confirm their information.
+  If the merchant doesn't confirm within 30 days from the first email,
+  they will automatically be deactivated.
 
-**Please note:** We require BankID for deactivation and reactivation,
-and cannot help with this based on email requests.
+  **Please note:** To reactivate a merchant,
+  [contact customer service](https://vipps.no/kontakt-oss/).
+  We require BankID for deactivation and reactivation.
 
-Deactivation can also happen if the test merchant is not being used for a
-*very long* time. Please
-[contact customer service](https://vipps.no/kontakt-oss/),
-and we will reactivate the merchant.
+* A merchant can be deactivated if they have been deleted from the
+  [Norwegian Brønnøysund Register](https://www.brreg.no)
+  or if they have changed their organization type (e.g., from *ENK* to *AS*).
+  Please check that the merchant's organization number is still active in the
+  [Brønnøysund Register](https://www.brreg.no).
 
-Merchants are required to periodically confirm the information we have
-saved about them. We are required by law to request this confirmation.
-We send multiple emails to notify merchants that they must log on to
-[portal.vipps.no](https://portal.vipps.no)
-to confirm their information.
-If the merchant does not confirm within 30 days from the first email,
-the merchant will automatically be deactivated.
-
-Partners that use
-[partner keys](https://developer.vippsmobilepay.com/docs/partner/partner-keys)
-can also get this error if the partner itself is deactivated, even though
-the sales unit (that it is acting on behalf of) is active.
-
-**Please note:** We no longer automatically deactivate test merchants.
-Merchants can [create new test sales units](../developer-resources/portal.md#how-to-create-a-test-sales-unit).
-
-See: [Error codes](https://developer.vippsmobilepay.com/docs/APIs/ecom-api/vipps-ecom-api#error-codes).
+* Partners using
+  [partner keys](https://developer.vippsmobilepay.com/docs/partner/partner-keys)
+  can get this error if the partner itself is deactivated, even though
+  the sales unit (that it is acting on behalf of) is active.
 
 ### Why do I get "Merchant Not Allowed for Ecommerce Payment"?
 
@@ -311,7 +303,7 @@ that is only approved for the Login API.
 Your sales unit will need to go through a different set of regulatory and legally required checks
 to get access to the payment APIs.
 Place an order for *Vipps på Nett* through the
-[merchant portal](https://portal.vipps.no).
+[portal.vipps.no](https://portal.vipps.no).
 
 Note that all sales units that have been approved for the eCom API can also use
 the Login API, but not the other way around.
