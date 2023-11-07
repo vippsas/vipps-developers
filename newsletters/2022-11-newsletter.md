@@ -37,7 +37,7 @@ Make sure your use of Vipps MobilePay is as good as it can be, without errors.
 See: [Please check your API calls for errors](#please-check-your-api-calls-for-errors).
 
 Monitor the Vipps Status Page:
-[vipps.statuspage.io]( https://vipps.statuspage.io/).
+[vipps.statuspage.io](https://vipps.statuspage.io).
 
 See:
 [Why do payments fail?](../knowledge-base/payments.md#why-do-payments-fail)
