@@ -66,7 +66,7 @@ When the user confirms the purchase in the app, the payment status changes to `R
 The respective amount will be reserved for capture, which may be done immediately or later.
 
 For example:
-![Payment confirmation](images/vipps-flow-reserve.png)
+![Payment confirmation](images/reserve.png)
 
 See the FAQ:
 
