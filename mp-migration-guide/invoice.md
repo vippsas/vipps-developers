@@ -1,6 +1,7 @@
 ---
 title: "Invoice to ePayment"
 sidebar_label: Invoice to ePayment
+description: Migrating from MobilePay Invoice to Vipps MobilePay ePayment.
 sidebar_position: 36
 pagination_next: null
 pagination_prev: null

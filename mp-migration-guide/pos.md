@@ -1,6 +1,7 @@
 ---
 title: "Point of Sale to ePayment"
 sidebar_label: Point of Sale to ePayment
+description: Migrating from MobilePay Point of Sale to Vipps MobilePay ePayment.
 sidebar_position: 37
 pagination_next: null
 pagination_prev: null

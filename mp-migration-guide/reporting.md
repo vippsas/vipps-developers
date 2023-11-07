@@ -1,6 +1,7 @@
 ---
 title: "Reporting to Report"
 sidebar_label: "Reporting to Report"
+description: Migrating from MobilePay Reporting to Vipps MobilePay Report.
 sidebar_position: 40
 pagination_next: null
 pagination_prev: null

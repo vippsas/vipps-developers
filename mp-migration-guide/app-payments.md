@@ -1,6 +1,7 @@
 ---
 title: "App Payments to ePayment"
 sidebar_label: App Payments to ePayment
+description: Migrating from MobilePay App Payments to Vipps MobilePay ePayment.
 sidebar_position: 39
 pagination_next: null
 pagination_prev: null

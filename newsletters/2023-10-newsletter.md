@@ -1,5 +1,6 @@
 ---
 title: Technical newsletter for developers 2023-10
+description: The Vipps MobilePay technical newsletter provides you with information about upcoming changes. 
 sidebar_label: 2023-10
 sidebar_position: 265
 pagination_next: null

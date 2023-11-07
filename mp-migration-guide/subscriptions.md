@@ -1,6 +1,8 @@
 ---
 title: "Subscriptions to Recurring"
 sidebar_label: Subscriptions to Recurring
+description: 
+description: Migrating from MobilePay Subscriptions to Vipps MobilePay Recurring.
 sidebar_position: 38
 pagination_next: null
 pagination_prev: null
