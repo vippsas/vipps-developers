@@ -20,7 +20,7 @@ This will be processed immediately once your *Merchant Agreement* is approved.
 When the *Merchant Agreement* is approved and your product order is placed,
 you (or the user associated with the order) will receive an email
 with the name and merchant serial number of your test sales unit.
-You will also receive a [test user](../test-environment.md/#test-users)
+You will also receive a [test user](../test-environment.md#test-users)
 for logging into the
 [Merchant Test (MT) app](../test-environment.md#test-apps), and you can start testing with the APIs.
 

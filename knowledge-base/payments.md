@@ -205,7 +205,7 @@ The most common reasons why payments are not completed are:
    [ePayment API](https://developer.vippsmobilepay.com/docs/APIs/epayment-api/): If the card issuer does
    not correctly handle the "3D Secure step up", meaning the required secure
    customer identification, the payment will fail. See
-   [Card payments](payments.md/#card-payments).
+   [Card payments](payments.md#card-payments).
    Payments also fail if the user is attempting to pay with a card
    from a country that is not allowed.
 4. Insufficient funds on the debit/credit card.
