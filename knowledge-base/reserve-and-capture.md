@@ -1,5 +1,5 @@
 ---
-title: Reserve and capture
+description: Vipps MobilePay payment concepts of reserve and capture.
 pagination_next: null
 pagination_prev: null
 ---

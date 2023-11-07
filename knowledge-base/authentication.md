@@ -1,5 +1,5 @@
 ---
-title: Authentication
+description: Vipps MobilePay authentication for API requests.
 pagination_next: null
 pagination_prev: null
 ---

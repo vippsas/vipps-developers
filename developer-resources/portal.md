@@ -1,5 +1,5 @@
 ---
-title: Merchant portal
+description: Manage your sales units and find your API keys through the merchant portal.
 sidebar_position: 130
 pagination_next: null
 pagination_prev: null

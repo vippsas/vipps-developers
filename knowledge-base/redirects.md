@@ -1,4 +1,5 @@
 ---
+description: Guidelines for how to redirect users to your website after a purchase.
 sidebar_label: Redirects
 pagination_next: null
 pagination_prev: null

@@ -1,10 +1,13 @@
 ---
+description: Recommendations for the values of the payment description and transaction text fields in API calls.
 sidebar_label: paymentDescription
 pagination_next: null
 pagination_prev: null
 ---
 
 # Recommendations for payment description and transaction text
+
+Here you will find recommendations for the values of the payment description and transaction text fields in API calls.
 
 This is applicable to:
 

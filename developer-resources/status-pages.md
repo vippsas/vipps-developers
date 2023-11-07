@@ -1,5 +1,6 @@
 ---
 title: Status pages
+description: Vipps MobilePay operational status pages.
 sidebar_position: 150
 pagination_next: null
 pagination_prev: null

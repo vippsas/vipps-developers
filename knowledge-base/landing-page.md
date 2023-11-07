@@ -1,5 +1,5 @@
 ---
-sidebar_label: Landing page
+description: The Vipps MobilePay landing page which opens in a browser and prompts the user to enter their phone number.
 pagination_next: null
 pagination_prev: null
 ---

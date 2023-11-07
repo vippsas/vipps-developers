@@ -1,5 +1,5 @@
 ---
-title: Payments
+description: The payment request screen and receipt details in the Vipps MobilePay app. Payment use cases, success rates, card payments, and common problems.
 pagination_next: null
 pagination_prev: null
 ---

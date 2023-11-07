@@ -1,5 +1,6 @@
 ---
 title: SFTP Report (Deprecated)
+description: Vipps MobilePay SFTP Report (deprecated)
 sidebar_position: 60
 hide_table_of_contents: false
 pagination_next: null

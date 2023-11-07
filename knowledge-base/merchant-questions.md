@@ -1,4 +1,5 @@
 ---
+description: Typical merchant questions about using Vipps MobilePay.
 pagination_next: null
 pagination_prev: null
 ---

@@ -3,7 +3,7 @@ title: Vipps MobilePay developer information
 sidebar_label: Introduction
 sidebar_position: 1
 hide_table_of_contents: true
-description: Find information related to integrating with the Vipps MobilePay APIs.
+description: The Vipps MobilePay API platform can be used for payments and logins for Point of Sale, apps, subscriptions, QR codes, checkout sessions, and invoices.
 pagination_next: null
 pagination_prev: null
 ---

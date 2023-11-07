@@ -1,4 +1,5 @@
 ---
+description: While you use the Vipps MobilePay APIs, your integration must follow the guidelines in this website.
 sidebar_position: 300
 pagination_next: null
 pagination_prev: null

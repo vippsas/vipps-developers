@@ -1,5 +1,5 @@
 ---
-title: HTTP headers
+description: Standard Vipps MobilePay HTTP headers to use in all your API requests.
 pagination_next: null
 pagination_prev: null
 ---

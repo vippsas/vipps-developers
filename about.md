@@ -1,5 +1,6 @@
 ---
 title: About Vipps MobilePay
+description: Vipps MobilePay is dedicated to providing our users with an inclusive and empowering cross-border mobile wallet solution.
 sidebar_label: About us
 sidebar_position: 200
 pagination_next: null

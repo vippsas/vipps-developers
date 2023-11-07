@@ -1,5 +1,5 @@
 ---
-description: Apply for a services with Vipps MobilePay.
+description: Guidelines for applying to provide Vipps MobilePay payment and login services.
 pagination_next: null
 pagination_prev: null
 ---

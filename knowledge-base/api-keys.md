@@ -1,5 +1,6 @@
 ---
 title: API keys
+description: Vipps MobilePay API keys provide authentication for your API requests.
 pagination_next: null
 pagination_prev: null
 ---

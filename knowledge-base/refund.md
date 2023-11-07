@@ -1,5 +1,5 @@
 ---
-title: Refunds
+description: Vipps MobilePay refund payment.
 pagination_next: null
 pagination_prev: null
 ---

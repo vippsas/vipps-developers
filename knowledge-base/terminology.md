@@ -1,5 +1,5 @@
 ---
-sidebar_label: Terminology
+description: Find Vipps MobilePay terminology, including special terms from Danish, Finnish, and Norwegian.
 pagination_next: null
 pagination_prev: null
 ---

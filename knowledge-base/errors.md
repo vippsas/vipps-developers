@@ -1,4 +1,5 @@
 ---
+description: HTTP statuses returned in API responses and the standard response body format for our error messages.
 pagination_next: null
 pagination_prev: null
 ---

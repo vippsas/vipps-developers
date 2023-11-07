@@ -1,5 +1,6 @@
 ---
-title: isApp
+description: The isApp payment flow in the eCom and Recurring API.
+sidebar_label: isApp
 pagination_next: null
 pagination_prev: null
 ---

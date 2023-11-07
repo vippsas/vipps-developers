@@ -1,5 +1,6 @@
 ---
 title: Vipps MobilePay servers
+description: Vipps MobilePay servers for API requests and callbacks.
 sidebar_label: Servers
 sidebar_position: 140
 pagination_next: null
@@ -46,7 +47,7 @@ every three months.
 
 The disaster recovery environment is as important as the production environment.
 
-For API products where we makes requests to your servers, please make sure
+For API products where we make requests to your servers, please make sure
 that these request servers are allowed through firewalls, etc.
 
 ## DNS lookup commands

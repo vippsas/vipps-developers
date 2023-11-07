@@ -1,5 +1,5 @@
 ---
-title: API dashboard
+description: The API dashboard shows information about your API usage and an overview of errors.
 sidebar_position: 110
 pagination_next: null
 pagination_prev: null

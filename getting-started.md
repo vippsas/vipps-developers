@@ -2,7 +2,7 @@
 title: Getting started
 sidebar_label: Getting started
 sidebar_position: 10
-description: Getting started with Vipps MobilePay
+description: Guidelines for getting started with Vipps MobilePay. Apply for services, select your products, and get set up for testing the APIs.
 pagination_next: null
 pagination_prev: null
 ---
@@ -14,7 +14,8 @@ pagination_prev: null
 [Vipps MobilePay Technical Documentation](https://developer.vippsmobilepay.com/docs/getting-started/).
 <!-- END_COMMENT -->
 
-Vipps and MobilePay payment methods can be added to your online store or Point of Sale.
+Vipps and MobilePay payment methods can be added to your online store or in-person payment experience.
+Here are the guidelines for getting started with Vipps MobilePay. Apply for services, select your products, and get set up for testing the APIs.
 
 To test the products beforehand, see
 [Do you want to test our products](https://vippsmobilepay.com/merchant-test-account-sign-up).

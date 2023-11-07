@@ -1,5 +1,5 @@
 ---
-title: Cancellations
+description: Vipps MobilePay cancel payment.
 pagination_next: null
 pagination_prev: null
 ---

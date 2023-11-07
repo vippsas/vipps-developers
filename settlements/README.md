@@ -1,4 +1,5 @@
 ---
+description: Learn how settlements are processed by Vipps MobilePay.
 sidebar_label: Overview
 sidebar_position: 1
 pagination_next: null

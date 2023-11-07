@@ -1,4 +1,5 @@
 ---
+description: How to contact Vipps MobilePay
 sidebar_position: 210
 pagination_next: null
 pagination_prev: null

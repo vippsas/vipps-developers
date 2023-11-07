@@ -1,5 +1,5 @@
 ---
-title: Polling guidelines
+description: Guidelines for using polling to get the status of an API request.
 pagination_next: null
 pagination_prev: null
 ---

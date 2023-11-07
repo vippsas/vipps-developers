@@ -1,4 +1,5 @@
 ---
+description: Recommendations for values to use for the reference and orderId fields in API calls.
 sidebar_label: reference
 pagination_next: null
 pagination_prev: null
@@ -14,7 +15,7 @@ The `reference` is case-sensitive.
 We *strongly* recommend using a format like `acme-shop-123-order123abc`,
 instead of just `123456`.
 
-**Please note:** Having very short orderIds, with just a few digits, can cause internal
+**Please note:** Having very short order IDs, with just a few digits, can cause internal
 processing in the Vipps MobilePay systems to be slower, and this *can* cause problems, such as timeouts.
 Use the recommended format to avoid problems.
 

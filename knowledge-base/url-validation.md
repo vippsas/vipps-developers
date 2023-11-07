@@ -1,5 +1,5 @@
 ---
-title: URL Validation
+description: Guidelines surrounding URL validation in the eCom and PSP APIs.
 pagination_next: null
 pagination_prev: null
 ---

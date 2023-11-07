@@ -1,5 +1,6 @@
 ---
 title: API Lifecycle
+description: Vipps MobilePay API versioning strategy.
 pagination_next: null
 pagination_prev: null
 ---

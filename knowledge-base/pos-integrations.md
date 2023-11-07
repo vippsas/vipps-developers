@@ -1,5 +1,5 @@
 ---
-title: "Point of Sale integrations"
+description: Learn about setting up an in-person payment experience with Vipps MobilePay.
 sidebar_label: POS integrations
 pagination_next: null
 pagination_prev: null
@@ -7,7 +7,7 @@ pagination_prev: null
 
 # Point of Sale integrations
 
-Point Of Sale (POS) is similar to a "cash register".
+Point of Sale (POS) is an in-person payment experience, such as a checkout screen or a cash register.
 
 ## Using the one-time payment QR
 

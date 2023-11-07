@@ -1,13 +1,16 @@
 ---
+description: How to initiate Vipps MobilePay payments in a physical setting.
 pagination_next: null
 pagination_prev: null
 ---
 
-# Personal QR
+# QR codes
 
 ![Vipps](../images/common/vipps.png) *Available for Vipps now.*
 
 ![MobilePay](../images/common/mp.png) *Available for MobilePay in selected markets at the [Vipps MobilePay joint platform launch](https://www.vippsmobilepay.com/about).*
+
+## Personal QR
 
 Every Vipps user has a personal QR code that is available in their app.
 From the home screen, the user taps the *Show QR* button, and they are presented with a page showing their

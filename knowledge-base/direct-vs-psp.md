@@ -1,5 +1,5 @@
 ---
-title: Direct integration and PSP integration
+description: Understand the differences between integrating the Vipps MobilePay APIs directly or implementing the PSP API.
 pagination_next: null
 pagination_prev: null
 ---

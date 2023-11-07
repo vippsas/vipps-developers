@@ -1,5 +1,5 @@
 ---
-sidebar_label: Timeouts
+description: Standard timeouts for Vipps MobilePay payment requests.
 pagination_next: null
 pagination_prev: null
 ---
