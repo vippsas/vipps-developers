@@ -4,7 +4,7 @@ pagination_next: null
 pagination_prev: null
 ---
 
-# QR codes
+# QR codes in Vipps MobilePay
 
 ![Vipps](../images/common/vipps.png) *Available for Vipps now.*
 
@@ -18,14 +18,13 @@ personal QR.
 
 ![Personal QR](images/qr-codes/personal-qr.png)
 
-When you scan this QR, they will get the user's identity.
+If your Point of Sale (POS) is equipped with a 2D QR scanner, you can scan the user's code to get their identity.
 This is called *Merchant Scan*.
 
 The QR currently contains a URL like this:
 `https://qr.vipps.no/28/2/01/031/4791234567?v=1`, where `4791234567` is their phone number in
 [MSISDN](https://en.wikipedia.org/wiki/MSISDN) format.
 However, in December 2023, the phone number will be replaced by a token which can be used for initiating payments.
-
 
 ![Loyalty Flow](images/qr-codes/POS_step_1.png)
 
