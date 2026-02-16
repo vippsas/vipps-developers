@@ -1,5 +1,9 @@
 # API Lifecycle
 
+<p align="center">
+  <img src="images/delivery-truck.png" alt="Delivery" width="200"/>
+</p>
+
 **📍 This page has moved**
 
 This documentation is now available at the new location:
